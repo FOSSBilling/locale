@@ -22,7 +22,7 @@ jobs:
     - name: Add .mo files to git
       run: git add .
     - name: Commit and push .mo files
-      uses: actions-js/push@1.4
+      uses: actions-js/push@v1.4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         messsage: "Automated .mo file generation"
