@@ -18,7 +18,7 @@
     'cs_CZ' => 'Čeština',
     'da_DK' => 'Dansk',
     'de_DE' => 'Deutsch',
-    'el_GR' => 'ελληνικά',
+    'el_GR' => 'Ελληνικά',
     'en_US' => 'English',
     'et_EE' => 'Eesti',
     'es_ES' => 'Español',
