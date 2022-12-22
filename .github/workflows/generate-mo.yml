@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Install gettext extension
       run: sudo apt-get update && sudo apt-get install gettext
     - name: Generate .mo files
