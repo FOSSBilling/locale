@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Generate .mo files
+      run: |
+        for po_file in $(find . -name "*.po"); do
+          dirname=$(dirname $po_file)
+          filename=$(basename $po_file .po)
+          msgfmt $po_file -o "$dirname/$filename.mo"
+        done
