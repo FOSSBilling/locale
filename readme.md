@@ -7,7 +7,9 @@ If you want to contribute to the translations, please join our [Crowdin project]
 All contributors are expected to follow our [Code of Conduct](https://fossbilling.org/docs/contribution-handbook/code-of-conduct) and join our [Discord server](https://fossbilling.com/discord). If you have any questions, please ask them in the #localization channel.
 
 ## Adding a new language
-To have a language added, please create a new issue in this repository or join our [Discord server](https://fossbilling.com/discord) and request your language in the #localization channel. We will add the language as soon as possible.
+To have a language added, please create a new issue in this repository or join our [Discord server](https://fossbilling.com/discord) and request your language in the #localization channel.
+
+If we think think the language is relevant and will be used by a significant number of users, we will add it to Crowdin and you can start translating. A language will be considered relevant if there is an existing userbase that's using the language and willing to contribute to the translations in the long run.
 
 ## Maintenance
 ### Building the .MO files
