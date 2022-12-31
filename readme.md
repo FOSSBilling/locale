@@ -18,6 +18,3 @@ For convenience, you can just create a PR and the workflow will run automaticall
 ### Updating the .POT files
 To update the source files from code, create a custom extractor and use the following command:
 `xgettext -L PHP --keyword=__trans --add-comments=TRANSLATORS: --force-po -o %o %C %F`
-
-## Licensing
-The files in this repository are licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). Please note that the license only applies to the files in this repository and not to the software itself.
