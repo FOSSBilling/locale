@@ -31,3 +31,4 @@ For convenience, you can just create a PR and the workflow will run automaticall
    1. You may need to edit the project settings to correct the translation source location. Make sure to select the 'src' directory.
 4. Save the updated .pot file and commit it to the repository. Crowdin will automatically detect the changes and update all translations.
 
+testing again
