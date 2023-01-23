@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-01-21 21:10-0800\n"
-"PO-Revision-Date: 2023-01-22 06:44\n"
+"POT-Creation-Date: 2023-01-22 16:06-0800\n"
+"PO-Revision-Date: 2023-01-23 00:10\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -394,6 +394,14 @@ msgstr ""
 msgid "Redirecting to 2Checkout.com"
 msgstr ""
 
+#: modules/Activity/Controller/Admin.php:45
+msgid "Activity"
+msgstr ""
+
+#: modules/Activity/Controller/Admin.php:52
+msgid "Event history"
+msgstr ""
+
 #: modules/Api/Controller/Client.php:59
 msgid "Unknown API call :call"
 msgstr ""
@@ -525,6 +533,32 @@ msgstr ""
 msgid "The link have expired or you have already confirmed password reset."
 msgstr ""
 
+#: modules/Client/Controller/Admin.php:45
+#: modules/Client/html_admin/mod_client_index.html.twig:7
+#: modules/Client/html_admin/mod_client_index.html.twig:159
+#: modules/Client/html_admin/mod_client_manage.html.twig:17
+#: themes/admin_default/html/layout_default.html.twig:139
+#: themes/admin_default/html/mod_index_dashboard.html.twig:149
+#: themes/admin_default/html/mod_index_dashboard.html.twig:406
+#: themes/admin_default/html/mod_index_dashboard.html.twig:502
+msgid "Clients"
+msgstr "Πελάτες"
+
+#: modules/Client/Controller/Admin.php:53
+#: modules/Extension/Controller/Admin.php:52
+#: modules/Invoice/Controller/Admin.php:53 modules/Order/Controller/Admin.php:54
+msgid "Overview"
+msgstr ""
+
+#: modules/Client/Controller/Admin.php:60 modules/Invoice/Controller/Admin.php:60
+#: modules/Order/Controller/Admin.php:61
+msgid "Advanced search"
+msgstr ""
+
+#: modules/Client/Controller/Admin.php:68
+msgid "Client login history"
+msgstr ""
+
 #: modules/Client/Controller/Client.php:79
 msgid "Email address was confirmed"
 msgstr ""
@@ -585,6 +619,10 @@ msgstr ""
 msgid "It is required that you provide details for field \":field\""
 msgstr ""
 
+#: modules/Cookieconsent/Controller/Admin.php:45
+msgid "Cookie consent"
+msgstr ""
+
 #: modules/Currency/Api/Admin.php:117
 msgid "Currency already registered"
 msgstr ""
@@ -617,6 +655,13 @@ msgstr ""
 msgid "<b>Currencylayer threw an error:</b><br />"
 msgstr ""
 
+#: modules/Custompages/Controller/Admin.php:45
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:10
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:14
+msgid "Custom Pages"
+msgstr "Προσαρμοσμένες Σελίδες"
+
 #: modules/Email/Api/Admin.php:137 modules/Email/Api/Admin.php:163
 #: modules/Email/Api/Client.php:75 modules/Email/Api/Client.php:100
 #: modules/Email/Api/Client.php:125 modules/Email/Service.php:477
@@ -631,6 +676,13 @@ msgstr ""
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr ""
 
+#: modules/Email/Controller/Admin.php:46
+#: modules/Email/html_admin/mod_email_details.html.twig:17
+#: modules/Email/html_admin/mod_email_history.html.twig:5
+#: modules/Email/html_admin/mod_email_history.html.twig:21
+msgid "Email history"
+msgstr "Ιστορικό email"
+
 #: modules/Email/Service.php:149
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr ""
@@ -639,13 +691,23 @@ msgstr ""
 msgid "From email address can not be empty"
 msgstr ""
 
-#: modules/Email/Service.php:330 modules/Email/Service.php:576
-#: modules/Massmailer/Service.php:165
-msgid "Disabled for security reasons (Demo mode enabled)"
-msgstr ""
-
 #: modules/Email/Service.php:462
 msgid "Email template :code was not found"
+msgstr ""
+
+#: modules/Embed/Controller/Admin.php:45
+msgid "Embed and integrate"
+msgstr ""
+
+#: modules/Example/Controller/Admin.php:57
+#: modules/Example/html_admin/mod_example_index.html.twig:3
+#: modules/Example/html_client/mod_example_index.html.twig:3
+#: modules/Example/html_client/mod_example_index.html.twig:6
+msgid "Example module"
+msgstr ""
+
+#: modules/Example/Controller/Admin.php:63
+msgid "Example module submenu"
 msgstr ""
 
 #: modules/Example/Service.php:210
@@ -663,6 +725,16 @@ msgstr "Η επέκταση δε βρέθηκε"
 #: modules/Extension/Api/Guest.php:69
 msgid "Parameter ext is missing"
 msgstr "Λείπει η παράμετρος ext"
+
+#: modules/Extension/Controller/Admin.php:45
+#: modules/Extension/html_admin/mod_extension_index.html.twig:5
+#: modules/Extension/html_admin/mod_extension_index.html.twig:12
+msgid "Extensions"
+msgstr "Επεκτάσεις"
+
+#: modules/Extension/Controller/Admin.php:59
+msgid "Languages"
+msgstr ""
 
 #: modules/Extension/Service.php:322
 msgid "Could not retrieve version information for extension :ext"
@@ -805,6 +877,52 @@ msgstr ""
 
 #: modules/Invoice/Api/Guest.php:120
 msgid "Payment method not found. Missing param gateway_id"
+msgstr ""
+
+#: modules/Invoice/Controller/Admin.php:45
+#: modules/Client/html_admin/mod_client_manage.html.twig:35
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
+#: modules/Index/html_client/mod_index_dashboard.html.twig:106
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:5
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:165
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:19
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:8
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:11
+#: modules/Order/html_admin/mod_order_manage.html.twig:52
+#: themes/admin_default/html/layout_default.html.twig:172
+#: themes/admin_default/html/mod_index_dashboard.html.twig:185
+#: themes/admin_default/html/mod_index_dashboard.html.twig:231
+#: themes/admin_default/html/mod_index_dashboard.html.twig:397
+#: themes/admin_default/html/mod_index_dashboard.html.twig:501
+#: themes/huraga/html/partial_menu.html.twig:29
+msgid "Invoices"
+msgstr "Παραστατικά"
+
+#: modules/Invoice/Controller/Admin.php:67
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:19
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:5
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:12
+msgid "Subscriptions"
+msgstr "Συνδρομές"
+
+#: modules/Invoice/Controller/Admin.php:74
+msgid "Transactions overview"
+msgstr ""
+
+#: modules/Invoice/Controller/Admin.php:81
+msgid "Transactions search"
+msgstr ""
+
+#: modules/Invoice/Controller/Admin.php:88
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:12
+msgid "Tax rules"
+msgstr ""
+
+#: modules/Invoice/Controller/Admin.php:95
+#: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:19
+#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:7
+#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:12
+msgid "Payment gateways"
 msgstr ""
 
 #: modules/Invoice/Service.php:663
@@ -974,6 +1092,21 @@ msgstr ""
 msgid "Knowledge base category not found"
 msgstr ""
 
+#: modules/Kb/Controller/Admin.php:45 modules/Kb/Controller/Admin.php:54
+#: modules/Kb/html_admin/mod_kb_article.html.twig:19
+#: modules/Kb/html_admin/mod_kb_category.html.twig:17
+#: modules/Kb/html_admin/mod_kb_index.html.twig:5
+#: modules/Kb/html_client/mod_kb_article.html.twig:8
+#: modules/Kb/html_client/mod_kb_category.html.twig:7
+#: modules/Kb/html_client/mod_kb_index.html.twig:3
+#: modules/Kb/html_client/mod_kb_index.html.twig:6
+#: modules/Kb/html_client/mod_kb_index.html.twig:20
+#: themes/huraga/html/layout_default.html.twig:274
+#: themes/huraga/html/layout_default.html.twig:280
+#: themes/huraga/html/partial_menu.html.twig:53
+msgid "Knowledge base"
+msgstr ""
+
 #: modules/Kb/Service.php:250
 msgid "Can not remove category which has articles"
 msgstr ""
@@ -986,9 +1119,23 @@ msgstr ""
 msgid "Add some content before sending message"
 msgstr ""
 
+#: modules/Massmailer/Controller/Admin.php:46
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:5
+msgid "Mass mailer"
+msgstr ""
+
+#: modules/Massmailer/Service.php:165
+msgid "Disabled for security reasons (Demo mode enabled)"
+msgstr ""
+
 #: modules/News/Api/Admin.php:70 modules/News/Api/Guest.php:69
 msgid "News item not found"
 msgstr ""
+
+#: modules/News/Controller/Admin.php:46
+#: themes/huraga/html/layout_default.html.twig:263
+msgid "Announcements"
+msgstr "Ανακοινώσεις"
 
 #: modules/Notification/Api/Admin.php:61 modules/Notification/Api/Admin.php:103
 msgid "Notification message was not found"
@@ -1017,6 +1164,24 @@ msgstr ""
 #: modules/Order/Api/Client.php:122
 msgid "Only pending and failed setup orders can be deleted."
 msgstr ""
+
+#: modules/Order/Controller/Admin.php:45
+#: modules/Client/html_admin/mod_client_manage.html.twig:32
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
+#: modules/Index/html_client/mod_index_dashboard.html.twig:131
+#: modules/Order/html_admin/mod_order_index.html.twig:7
+#: modules/Order/html_admin/mod_order_index.html.twig:143
+#: modules/Order/html_admin/mod_order_manage.html.twig:17
+#: modules/Order/html_admin/mod_order_new.html.twig:17
+#: modules/Order/html_client/mod_order_list.html.twig:9
+#: modules/Order/html_client/mod_order_list.html.twig:17
+#: modules/Order/html_client/mod_order_manage.html.twig:11
+#: themes/admin_default/html/layout_default.html.twig:159
+#: themes/admin_default/html/mod_index_dashboard.html.twig:167
+#: themes/admin_default/html/mod_index_dashboard.html.twig:388
+#: themes/admin_default/html/mod_index_dashboard.html.twig:500
+msgid "Orders"
+msgstr "Παραγγελίες"
 
 #: modules/Order/Service.php:530
 msgid "Currency could not be determined for order"
@@ -1072,6 +1237,21 @@ msgstr ""
 
 #: modules/Product/Api/Guest.php:76
 msgid "Product ID or slug is missing"
+msgstr ""
+
+#: modules/Product/Controller/Admin.php:54
+msgid "Products & services"
+msgstr ""
+
+#: modules/Product/Controller/Admin.php:61
+msgid "Product addons"
+msgstr ""
+
+#: modules/Product/Controller/Admin.php:68
+#: modules/Product/html_admin/mod_product_promo.html.twig:20
+#: modules/Product/html_admin/mod_product_promos.html.twig:5
+#: modules/Product/html_admin/mod_product_promos.html.twig:21
+msgid "Product promotions"
 msgstr ""
 
 #: modules/Product/Service.php:221
@@ -1195,6 +1375,10 @@ msgstr ""
 msgid "Domain can not be transferred."
 msgstr ""
 
+#: modules/Servicedomain/Controller/Admin.php:46
+msgid "Domain registration"
+msgstr ""
+
 #: modules/Servicedomain/Service.php:44
 msgid "Domain :domain registration"
 msgstr ""
@@ -1288,6 +1472,14 @@ msgstr ""
 
 #: modules/Servicehosting/Api/Guest.php:42
 msgid "Product type is invalid"
+msgstr ""
+
+#: modules/Servicehosting/Controller/Admin.php:46
+#: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:5
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:12
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:17
+msgid "Hosting plans and servers"
 msgstr ""
 
 #: modules/Servicehosting/Service.php:49
@@ -1410,6 +1602,10 @@ msgstr ""
 msgid "You are not allowed to login to admin area from :ip address"
 msgstr ""
 
+#: modules/Staff/Controller/Admin.php:48
+msgid "Staff login history"
+msgstr ""
+
 #: modules/Staff/Service.php:53
 msgid "Check your login details"
 msgstr ""
@@ -1442,6 +1638,38 @@ msgstr ""
 msgid "Please enter your message"
 msgstr ""
 
+#: modules/Support/Controller/Admin.php:45
+#: modules/Order/html_admin/mod_order_manage.html.twig:63
+#: modules/Support/html_admin/mod_support_canned_category.html.twig:19
+#: modules/Support/html_admin/mod_support_canned_response.html.twig:19
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:15
+#: themes/huraga/html/partial_menu.html.twig:17
+msgid "Support"
+msgstr ""
+
+#: modules/Support/Controller/Admin.php:52
+#: modules/Support/html_admin/mod_support_ticket.html.twig:42
+msgid "Client tickets"
+msgstr "Αιτήματα πελάτη"
+
+#: modules/Support/Controller/Admin.php:59
+msgid "Advanced ticket search"
+msgstr ""
+
+#: modules/Support/Controller/Admin.php:66
+#: modules/Support/html_admin/mod_support_public_ticket.html.twig:19
+#: modules/Support/html_admin/mod_support_public_tickets.html.twig:72
+msgid "Public tickets"
+msgstr ""
+
+#: modules/Support/Controller/Admin.php:73
+#: modules/Support/html_admin/mod_support_canned_category.html.twig:22
+#: modules/Support/html_admin/mod_support_canned_response.html.twig:22
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:17
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:27
+msgid "Canned responses"
+msgstr ""
+
 #: modules/Support/Service.php:678
 msgid "Can not remove helpdesk which has tickets"
 msgstr ""
@@ -1461,6 +1689,46 @@ msgstr ""
 #: modules/Support/Service.php:1010
 msgid "Public ticket not found"
 msgstr ""
+
+#: modules/System/Controller/Admin.php:45
+#: modules/Product/html_admin/mod_product_manage.html.twig:31
+msgid "Configuration"
+msgstr ""
+
+#: modules/System/Controller/Admin.php:52
+#: modules/Client/html_admin/mod_client_settings.html.twig:19
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:19
+#: modules/Currency/html_admin/mod_currency_manage.html.twig:19
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:19
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:39
+#: modules/Email/html_admin/mod_email_settings.html.twig:16
+#: modules/Email/html_admin/mod_email_template.html.twig:16
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:19
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:29
+#: modules/Order/html_admin/mod_order_settings.html.twig:19
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:25
+#: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:19
+#: modules/Queue/html_admin/mod_queue_settings.html.twig:19
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:19
+#: modules/Seo/html_admin/mod_seo_settings.html.twig:19
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:19
+#: modules/Staff/html_admin/mod_staff_group.html.twig:17
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:19
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:19
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:31
+#: modules/Support/html_admin/mod_support_helpdesk.html.twig:19
+#: modules/Support/html_admin/mod_support_settings.html.twig:19
+#: modules/Support/html_admin/mod_support_settings.html.twig:28
+#: modules/System/html_admin/mod_system_index.html.twig:5
+#: modules/System/html_admin/mod_system_settings.html.twig:19
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:15
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:17
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:46
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:98
+#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:19
+#: themes/admin_default/html/layout_default.html.twig:111
+msgid "Settings"
+msgstr "Ρυθμίσεις"
 
 #: modules/System/Service.php:53
 msgid "Parameter key is missing"
@@ -1854,16 +2122,6 @@ msgstr "Πίσω"
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:46
 msgid "Update"
 msgstr "Ενημέρωση"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:7
-#: modules/Client/html_admin/mod_client_index.html.twig:159
-#: modules/Client/html_admin/mod_client_manage.html.twig:17
-#: themes/admin_default/html/layout_default.html.twig:139
-#: themes/admin_default/html/mod_index_dashboard.html.twig:149
-#: themes/admin_default/html/mod_index_dashboard.html.twig:406
-#: themes/admin_default/html/mod_index_dashboard.html.twig:502
-msgid "Clients"
-msgstr "Πελάτες"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:13
 msgid "Filter clients"
@@ -2334,41 +2592,6 @@ msgstr "Προφίλ"
 #: modules/Product/html_admin/mod_product_manage.html.twig:75
 msgid "Edit"
 msgstr "Επεξεργασία"
-
-#: modules/Client/html_admin/mod_client_manage.html.twig:32
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
-#: modules/Index/html_client/mod_index_dashboard.html.twig:131
-#: modules/Order/html_admin/mod_order_index.html.twig:7
-#: modules/Order/html_admin/mod_order_index.html.twig:143
-#: modules/Order/html_admin/mod_order_manage.html.twig:17
-#: modules/Order/html_admin/mod_order_new.html.twig:17
-#: modules/Order/html_client/mod_order_list.html.twig:9
-#: modules/Order/html_client/mod_order_list.html.twig:17
-#: modules/Order/html_client/mod_order_manage.html.twig:11
-#: themes/admin_default/html/layout_default.html.twig:159
-#: themes/admin_default/html/mod_index_dashboard.html.twig:167
-#: themes/admin_default/html/mod_index_dashboard.html.twig:388
-#: themes/admin_default/html/mod_index_dashboard.html.twig:500
-msgid "Orders"
-msgstr "Παραγγελίες"
-
-#: modules/Client/html_admin/mod_client_manage.html.twig:35
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
-#: modules/Index/html_client/mod_index_dashboard.html.twig:106
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:5
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:165
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:19
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:8
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:11
-#: modules/Order/html_admin/mod_order_manage.html.twig:52
-#: themes/admin_default/html/layout_default.html.twig:172
-#: themes/admin_default/html/mod_index_dashboard.html.twig:185
-#: themes/admin_default/html/mod_index_dashboard.html.twig:231
-#: themes/admin_default/html/mod_index_dashboard.html.twig:397
-#: themes/admin_default/html/mod_index_dashboard.html.twig:501
-#: themes/huraga/html/partial_menu.html.twig:29
-msgid "Invoices"
-msgstr "Παραστατικά"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:38
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:150
@@ -2925,40 +3148,6 @@ msgstr ""
 msgid "Client settings"
 msgstr "Ρυθμίσεις πελάτη"
 
-#: modules/Client/html_admin/mod_client_settings.html.twig:19
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:19
-#: modules/Currency/html_admin/mod_currency_manage.html.twig:19
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:19
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:39
-#: modules/Email/html_admin/mod_email_settings.html.twig:16
-#: modules/Email/html_admin/mod_email_template.html.twig:16
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:19
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:29
-#: modules/Order/html_admin/mod_order_settings.html.twig:19
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:25
-#: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:19
-#: modules/Queue/html_admin/mod_queue_settings.html.twig:19
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:19
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:19
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:19
-#: modules/Staff/html_admin/mod_staff_group.html.twig:17
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:19
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:19
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:31
-#: modules/Support/html_admin/mod_support_helpdesk.html.twig:19
-#: modules/Support/html_admin/mod_support_settings.html.twig:19
-#: modules/Support/html_admin/mod_support_settings.html.twig:28
-#: modules/System/html_admin/mod_system_index.html.twig:5
-#: modules/System/html_admin/mod_system_settings.html.twig:19
-#: modules/Theme/html_admin/mod_theme_preset.html.twig:15
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:17
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:46
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:98
-#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:19
-#: themes/admin_default/html/layout_default.html.twig:111
-msgid "Settings"
-msgstr "Ρυθμίσεις"
-
 #: modules/Client/html_admin/mod_client_settings.html.twig:28
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:21
 #: modules/Example/html_admin/mod_example_settings.html.twig:20
@@ -3406,12 +3595,6 @@ msgstr ""
 msgid "Result"
 msgstr "Αποτέλεσμα"
 
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:10
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:14
-msgid "Custom Pages"
-msgstr "Προσαρμοσμένες Σελίδες"
-
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:11
 msgid "New Custom Page"
 msgstr "Νέα Προσαρμοσμένη Σελίδα"
@@ -3625,12 +3808,6 @@ msgstr "Πρόσφατα emails"
 #: themes/admin_default/html/mod_index_dashboard.html.twig:478
 msgid "ago"
 msgstr ""
-
-#: modules/Email/html_admin/mod_email_details.html.twig:17
-#: modules/Email/html_admin/mod_email_history.html.twig:5
-#: modules/Email/html_admin/mod_email_history.html.twig:21
-msgid "Email history"
-msgstr "Ιστορικό email"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:32
 #: modules/Email/html_admin/mod_email_history.html.twig:32
@@ -3919,12 +4096,6 @@ msgstr ""
 msgid "Send"
 msgstr "Αποστολή"
 
-#: modules/Example/html_admin/mod_example_index.html.twig:3
-#: modules/Example/html_client/mod_example_index.html.twig:3
-#: modules/Example/html_client/mod_example_index.html.twig:6
-msgid "Example module"
-msgstr ""
-
 #: modules/Example/html_admin/mod_example_index.html.twig:10
 msgid "Example module for developers"
 msgstr ""
@@ -3997,11 +4168,6 @@ msgstr ""
 #: modules/Example/html_client/mod_example_index.html.twig:43
 msgid "Manage profile"
 msgstr ""
-
-#: modules/Extension/html_admin/mod_extension_index.html.twig:5
-#: modules/Extension/html_admin/mod_extension_index.html.twig:12
-msgid "Extensions"
-msgstr "Επεκτάσεις"
 
 #: modules/Extension/html_admin/mod_extension_index.html.twig:15
 msgid "Extension Store"
@@ -4298,12 +4464,6 @@ msgstr ""
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:213
 msgid "Textarea"
-msgstr ""
-
-#: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:19
-#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:7
-#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:12
-msgid "Payment gateways"
 msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:28
@@ -4715,12 +4875,6 @@ msgstr ""
 msgid "Subscription"
 msgstr "Συνδρομή"
 
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:19
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:5
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:12
-msgid "Subscriptions"
-msgstr "Συνδρομές"
-
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:39
 msgid "Subscription details"
 msgstr "Λεπτομέρειες συνδρομής"
@@ -4751,10 +4905,6 @@ msgstr ""
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:19
 msgid "New subscription"
 msgstr "Νέα συνδρομή"
-
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:12
-msgid "Tax rules"
-msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:19
 msgid "New tax rule"
@@ -5118,20 +5268,6 @@ msgstr ""
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr ""
 
-#: modules/Kb/html_admin/mod_kb_article.html.twig:19
-#: modules/Kb/html_admin/mod_kb_category.html.twig:17
-#: modules/Kb/html_admin/mod_kb_index.html.twig:5
-#: modules/Kb/html_client/mod_kb_article.html.twig:8
-#: modules/Kb/html_client/mod_kb_category.html.twig:7
-#: modules/Kb/html_client/mod_kb_index.html.twig:3
-#: modules/Kb/html_client/mod_kb_index.html.twig:6
-#: modules/Kb/html_client/mod_kb_index.html.twig:20
-#: themes/huraga/html/layout_default.html.twig:274
-#: themes/huraga/html/layout_default.html.twig:280
-#: themes/huraga/html/partial_menu.html.twig:53
-msgid "Knowledge base"
-msgstr ""
-
 #: modules/Kb/html_admin/mod_kb_article.html.twig:27
 msgid "Article updated"
 msgstr ""
@@ -5217,10 +5353,6 @@ msgstr ""
 
 #: modules/Kb/html_client/mod_kb_index.html.twig:53
 msgid "Try using other keyword. No matches found for keyword:"
-msgstr ""
-
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:5
-msgid "Mass mailer"
 msgstr ""
 
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:14
@@ -5433,14 +5565,6 @@ msgstr ""
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:60
 msgid "History"
-msgstr ""
-
-#: modules/Order/html_admin/mod_order_manage.html.twig:63
-#: modules/Support/html_admin/mod_support_canned_category.html.twig:19
-#: modules/Support/html_admin/mod_support_canned_response.html.twig:19
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:15
-#: themes/huraga/html/partial_menu.html.twig:17
-msgid "Support"
 msgstr ""
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:75
@@ -6280,10 +6404,6 @@ msgstr ""
 msgid "General settings"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:31
-msgid "Configuration"
-msgstr ""
-
 #: modules/Product/html_admin/mod_product_manage.html.twig:37
 msgid "Upgrades"
 msgstr ""
@@ -6356,12 +6476,6 @@ msgstr ""
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:298
 msgid "Add new form"
-msgstr ""
-
-#: modules/Product/html_admin/mod_product_promo.html.twig:20
-#: modules/Product/html_admin/mod_product_promos.html.twig:5
-#: modules/Product/html_admin/mod_product_promos.html.twig:21
-msgid "Product promotions"
 msgstr ""
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:29
@@ -7166,13 +7280,6 @@ msgstr "Νέος διακομιστής"
 msgid "Hosting management"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:5
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:12
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:17
-msgid "Hosting plans and servers"
-msgstr ""
-
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:26
 msgid "Manage hosting plan"
 msgstr ""
@@ -7946,13 +8053,6 @@ msgstr ""
 msgid "Allowed IPs. One per line"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_canned_category.html.twig:22
-#: modules/Support/html_admin/mod_support_canned_response.html.twig:22
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:17
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:27
-msgid "Canned responses"
-msgstr ""
-
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:34
 msgid "Canned category"
 msgstr ""
@@ -8000,11 +8100,6 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:63
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:36
 msgid "Can reopen"
-msgstr ""
-
-#: modules/Support/html_admin/mod_support_public_ticket.html.twig:19
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:72
-msgid "Public tickets"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:28
@@ -8149,10 +8244,6 @@ msgstr "μηνύμα(τα)"
 #: modules/Support/html_client/mod_support_tickets.html.twig:16
 msgid "Support tickets"
 msgstr "Αιτήματα υποστήριξης"
-
-#: modules/Support/html_admin/mod_support_ticket.html.twig:42
-msgid "Client tickets"
-msgstr "Αιτήματα πελάτη"
 
 #: modules/Support/html_admin/mod_support_ticket.html.twig:85
 msgid "Task"
@@ -8697,10 +8788,6 @@ msgstr "Προϊόντα και υπηρεσίες"
 #: themes/huraga/html/layout_default.html.twig:260
 msgid "Latest news and announcements"
 msgstr "Τελευταία νέα και ανακοινώσεις"
-
-#: themes/huraga/html/layout_default.html.twig:263
-msgid "Announcements"
-msgstr "Ανακοινώσεις"
 
 #: themes/huraga/html/layout_default.html.twig:277
 msgid "Browse our KB for answers and FAQ"
