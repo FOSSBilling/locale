@@ -29,4 +29,5 @@ For convenience, you can just create a PR and the workflow will run automaticall
    1. `xgettext -L PHP --keyword=__trans --keyword=__pluralTrans:1,2 --keyword=Box_Exception --keyword=Server_Exception --keyword=Registrar_Exception --keyword=Payment_Exception --add-comments=TRANSLATORS: --force-po -o %o %C %F`
 3. Use Poedit's "Update from code" option to load the latest translations from the FOSSBilling source code.
    1. You may need to edit the project settings to correct the translation source location. Make sure to select the 'src' directory.
+   2. You should also ensure that you either don't have the vendor folder, or that it is excluded from the source list when updating FOSSBilling.
 4. Save the updated .pot file and commit it to the repository. Crowdin will automatically detect the changes and update all translations.
