@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-01-22 16:06-0800\n"
-"PO-Revision-Date: 2023-01-23 00:10\n"
+"POT-Creation-Date: 2023-01-27 13:28-0800\n"
+"PO-Revision-Date: 2023-01-27 21:33\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
@@ -68,7 +68,12 @@ msgstr "Sayfa bulunamadı"
 msgid "php openssl extension must be enabled on your server"
 msgstr "php openssl uzantısı sunucunuzda etkinleştirilmelidir"
 
-#: library/Box/Curl.php:73
+#: library/Box/Curl.php:73 library/Registrar/Adapter/Internetbs.php:12
+#: library/Registrar/Adapter/Namecheap.php:26
+#: library/Registrar/Adapter/Netearthone.php:8
+#: library/Registrar/Adapter/Resellbiz.php:8
+#: library/Registrar/Adapter/Resellerclub.php:39
+#: library/Registrar/Adapter/Resellerid.php:8
 msgid "CURL extension is not enabled"
 msgstr "CURL uzantısı etkinleştirilmemiş"
 
@@ -168,72 +173,80 @@ msgstr ""
 msgid "Core module can not be updated"
 msgstr "Çekirdek modül güncellenemiyor"
 
-#: library/Box/Period.php:49
+#: library/Box/Period.php:50
 msgid "Invalid period code. Period definition must be 2 chars length"
 msgstr ""
 
-#: library/Box/Period.php:58
+#: library/Box/Period.php:59
 msgid "Period Error. Unit :unit is not defined"
 msgstr ""
 
-#: library/Box/Period.php:68
+#: library/Box/Period.php:69
 msgid "Invalid period quantity :qty for unit :unit. Allowed range is from :from to :to"
 msgstr ""
 
-#: library/Box/Period.php:88
+#: library/Box/Period.php:89
 msgid "Every week"
 msgstr "Her hafta"
 
-#: library/Box/Period.php:89
+#: library/Box/Period.php:90
 msgid "Every month"
 msgstr "Her ay"
 
-#: library/Box/Period.php:90
+#: library/Box/Period.php:91
 #: themes/admin_default/html/partial_pricing.html.twig:90
 msgid "Every 3 months"
 msgstr "Üç ayda bir"
 
-#: library/Box/Period.php:91
+#: library/Box/Period.php:92
 #: themes/admin_default/html/partial_pricing.html.twig:108
 msgid "Every 6 months"
 msgstr "Altı ayda bir"
 
-#: library/Box/Period.php:92
+#: library/Box/Period.php:93
 #: themes/admin_default/html/partial_pricing.html.twig:125
 msgid "Every year"
 msgstr "Her yıl"
 
-#: library/Box/Period.php:93
+#: library/Box/Period.php:94
 #: themes/admin_default/html/partial_pricing.html.twig:142
 msgid "Every 2 years"
 msgstr "2 yılda bir"
 
-#: library/Box/Period.php:94
+#: library/Box/Period.php:95
 #: themes/admin_default/html/partial_pricing.html.twig:160
 msgid "Every 3 years"
 msgstr "3 yılda bir"
 
-#: library/Box/Period.php:126
-msgid "Every :number day(s)"
-msgstr ""
+#: library/Box/Period.php:130
+msgid "Every :number day"
+msgid_plural "Every :number days"
+msgstr[0] ":number günde bir"
+msgstr[1] ""
 
-#: library/Box/Period.php:129
-msgid "Every :number week(s)"
-msgstr ":number haftada bir"
+#: library/Box/Period.php:133
+msgid "Every :number week"
+msgid_plural "Every :number weeks"
+msgstr[0] ""
+msgstr[1] ""
 
-#: library/Box/Period.php:132
-msgid "Every :number month(s)"
-msgstr ""
+#: library/Box/Period.php:136
+msgid "Every :number month"
+msgid_plural "Every :number months"
+msgstr[0] ""
+msgstr[1] ":number ayda bir"
 
-#: library/Box/Period.php:135
-msgid "Every :number year(s)"
-msgstr ""
+#: library/Box/Period.php:139
+msgid "Every :number year"
+msgid_plural "Every :number years"
+msgstr[0] ""
+msgstr[1] ":number yılda bir"
 
-#: library/Box/Period.php:138 library/Box/Period.php:197
+#: library/Box/Period.php:142 library/Box/Period.php:202
 msgid "Unit not defined"
 msgstr ""
 
-#: library/Box/Period.php:171
+#: library/Box/Period.php:176
 msgid "Can not determine months amount from unit"
 msgstr ""
 
@@ -369,12 +382,75 @@ msgstr ""
 msgid "Unknown Period selected for price"
 msgstr ""
 
+#: library/Payment/Adapter/AliPay.php:20
+msgid "Payment gateway \"AliPay\" is not configured properly. Please update configuration parameter \"Partner ID\" at \"Configuration -> Payment gateways\"."
+msgstr ""
+
+#: library/Payment/Adapter/AliPay.php:24
+msgid "Payment gateway \"AliPay\" is not configured properly. Please update configuration parameter \"Security Code\" at \"Configuration -> Payment gateways\"."
+msgstr ""
+
+#: library/Payment/Adapter/AliPay.php:28
+msgid "Payment gateway \"AliPay\" is not configured properly. Please update configuration parameter \"Seller email\" at \"Configuration -> Payment gateways\"."
+msgstr ""
+
+#: library/Payment/Adapter/AliPay.php:113
+msgid "Error getting service for contract"
+msgstr ""
+
+#: library/Payment/Adapter/AliPay.php:147
+msgid "AliPay does not support recurrent payments"
+msgstr ""
+
 #: library/Payment/Adapter/ClientBalance.php:57
 msgid "Not enough in balance"
 msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:62
+#: library/Payment/Adapter/ClientBalance.php:91
+#: library/Payment/Adapter/ClientBalance.php:125
 msgid "Forbidden to pay deposit invoice with this gateway"
+msgstr ""
+
+#: library/Payment/Adapter/ClientBalance.php:81
+#: library/Payment/Adapter/Interkassa.php:184
+#: library/Payment/Adapter/PayPalEmail.php:78
+msgid "IPN is not valid"
+msgstr ""
+
+#: library/Payment/Adapter/ClientBalance.php:119
+msgid "ClientBalance gateway is not enabled"
+msgstr ""
+
+#: library/Payment/Adapter/Interkassa.php:41
+msgid "Shop ID is missing in gateway configuration"
+msgstr ""
+
+#: library/Payment/Adapter/Interkassa.php:44
+msgid "Secret key is missing in gateway configuration"
+msgstr ""
+
+#: library/Payment/Adapter/Interkassa.php:133
+msgid "Interkassa payment gateway do not support recurrent payments"
+msgstr ""
+
+#: library/Payment/Adapter/Interkassa.php:225
+#: library/Payment/Adapter/PayPalEmail.php:126
+#: library/Payment/Adapter/TwoCheckout.php:170
+#: library/Payment/Adapter/WebMoney.php:144
+msgid "IPN is duplicate"
+msgstr ""
+
+#: library/Payment/Adapter/Onebip.php:112
+msgid "Not implemented yet"
+msgstr ""
+
+#: library/Payment/Adapter/PayPalEmail.php:36
+msgid "PHP Curl extension must be enabled in order to use PayPal gateway"
+msgstr ""
+
+#: library/Payment/Adapter/PayPalEmail.php:40
+msgid "Payment gateway \"PayPal\" is not configured properly. Please update configuration parameter \"PayPal Email address\" at \"Configuration -> Payments\"."
 msgstr ""
 
 #: library/Payment/Adapter/PayPalEmail.php:298
@@ -386,19 +462,535 @@ msgstr ""
 msgid "Payment for invoice :serie:id [:title]"
 msgstr ""
 
+#: library/Payment/Adapter/Stripe.php:39
+msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"api_key\" at \"Configuration -> Payments\"."
+msgstr ""
+
+#: library/Payment/Adapter/Stripe.php:43
+msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"pub_key\" at \"Configuration -> Payments\"."
+msgstr ""
+
 #: library/Payment/Adapter/Stripe.php:107 modules/Invoice/Service.php:1510
 msgid "Payment for invoice :serie:id"
+msgstr ""
+
+#: library/Payment/Adapter/Stripe.php:287
+msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_pub_key\" at \"Configuration -> Payments\"."
+msgstr ""
+
+#: library/Payment/Adapter/Stripe.php:295
+msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
+msgstr ""
+
+#: library/Payment/Adapter/TwoCheckout.php:34
+msgid "Payment gateway \"2Checkout\" is not configured properly. Please update configuration parameter \"Vendor account number\" at \"Configuration -> Payments\"."
+msgstr ""
+
+#: library/Payment/Adapter/TwoCheckout.php:38
+msgid "Payment gateway \"2Checkout\" is not configured properly. Please update configuration parameter \"Secret word\" at \"Configuration -> Payments\"."
+msgstr ""
+
+#: library/Payment/Adapter/TwoCheckout.php:121
+msgid "2Checkout IPN is not valid"
+msgstr ""
+
+#: library/Payment/Adapter/TwoCheckout.php:135
+msgid "Invoice id could not be determined for this transaction"
 msgstr ""
 
 #: library/Payment/Adapter/TwoCheckout.php:363
 msgid "Redirecting to 2Checkout.com"
 msgstr ""
 
+#: library/Payment/Adapter/WebMoney.php:56
+msgid "Payment gateway \"WebMoney\" is not configured properly. Please update configuration parameter \"Purse\" at \"Configuration -> Payment gateways > WebMoney\"."
+msgstr ""
+
+#: library/Payment/Adapter/WebMoney.php:109
+msgid "WebMoney IPN is not valid"
+msgstr ""
+
+#: library/Payment/AdapterAbstract.php:65
+msgid "Return URL for payment gateway was not set"
+msgstr ""
+
+#: library/Payment/AdapterAbstract.php:72
+msgid "Cancel URL for payment gateway was not set"
+msgstr ""
+
+#: library/Payment/AdapterAbstract.php:80
+msgid "IPN Notification URL for payment gateway was not set"
+msgstr ""
+
+#: library/Payment/AdapterAbstract.php:90
+msgid "IPN redirect URL for payment gateway was not set"
+msgstr ""
+
+#: library/Payment/AdapterAbstract.php:103
+msgid "Payment adapter class did not implement configuration options method"
+msgstr ""
+
+#: library/Registrar/Adapter/Email.php:27
+msgid "Email Registrar config requires param \"email\""
+msgstr ""
+
+#: library/Registrar/Adapter/Email.php:71
+msgid "Email registrar can not determine whether domain is available"
+msgstr ""
+
+#: library/Registrar/Adapter/Email.php:76
+msgid "Email registrar can not determine whether domain can be transferred"
+msgstr ""
+
+#: library/Registrar/Adapter/Internetbs.php:19
+msgid "Domain registrar \"Internetbs\" is not configured properly. Please update configuration parameter \"Internetbs API key\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Internetbs.php:26
+msgid "Domain registrar \"Internetbs\" is not configured properly. Please update configuration parameter \"Internetbs API password\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Internetbs.php:77
+msgid "Domain transfer checking is not implemented"
+msgstr ""
+
+#: library/Registrar/Adapter/Internetbs.php:173
+msgid "Registrar does not support domain removal."
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:33
+msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"Reseller ID\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:40
+msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"API Key\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:47
+msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"Username\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:54
+msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"Server IP Address\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:263
+msgid "Could not update NameServers"
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:365
+msgid "API ERROR: could not retrieve domain details"
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:451
+msgid "This feature is unavailable through the Namecheap API. Please contact your administrator."
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:594
+msgid "Domain deletion is not implemented in the NameCheap adapter. Please contact your system administrator."
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:616
+msgid "Could not retrieve privacy info on this domain."
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:678
+msgid "API ERROR: could not get lock status on domain"
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:701
+#: library/Registrar/Adapter/Namecheap.php:728
+msgid "API ERROR: could not set lock status on domain"
+msgstr ""
+
+#: library/Registrar/Adapter/Netearthone.php:15
+msgid "Domain registrar \"NetEarthOne\" is not configured properly. Please update configuration parameter \"NetEarthOne Reseller ID\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Netearthone.php:22
+msgid "Domain registrar \"NetEarthOne\" is not configured properly. Please update configuration parameter \"NetEarthOne API Key\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Resellbiz.php:15
+msgid "Domain registrar \"Resell.biz\" is not configured properly. Please update configuration parameter \"Resell.biz Reseller ID\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Resellbiz.php:22
+msgid "Domain registrar \"Resell.biz\" is not configured properly. Please update configuration parameter \"Resell.biz API Key\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerclub.php:46
+msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub Reseller ID\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerclub.php:53
+msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub API Key\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerclub.php:341
+msgid "Valid contact company number is required while registering AU domain name"
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerclub.php:404
+msgid "Domain EPP code can be retrieved from domain registrar"
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerclub.php:597
+msgid "You are already registered as reseller"
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerclub.php:844
+msgid "Valid contact Passport information is required while registering ES domain name"
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerclub.php:864
+msgid "Valid contact Passport information is required while registering ASIA domain name"
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerclub.php:888
+msgid "Valid contact Birth Date is required while registering RU domain name"
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerclub.php:892
+msgid "Valid contact Passport information is required while registering RU domain name"
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerclub.php:979
+msgid "Contact not found"
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerid.php:15
+msgid "Domain registrar \"ResellerID\" is not configured properly. Please update configuration parameter \"ResellerID Reseller ID\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/Adapter/Resellerid.php:22
+msgid "Domain registrar \"ResellerID\" is not configured properly. Please update configuration parameter \"ResellerID API Key\" at \"Configuration -> Domain registration\"."
+msgstr ""
+
+#: library/Registrar/AdapterAbstract.php:22
+msgid "Domain registrar class did not implement configuration options method"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:24 library/Server/Manager/Virtualmin.php:23
+#: library/Server/Manager/Whm.php:26
+msgid "cURL extension is not enabled"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:28
+msgid "Server manager \"CWP\" is not configured properly. IP address is not set!"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:32
+msgid "Server manager \"CWP\" is not configured properly. Hostname is not set!"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:36
+msgid "Server manager \"CWP\" is not configured properly. API Key / Access Hash is not set!"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:100
+msgid "Failed to connect to server"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:171
+msgid "Failed to create account!"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:195
+msgid "Failed to suspend account!"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:219
+msgid "Failed to unsuspend account!"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:244
+msgid "Failed to cancel / delete account!"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:269
+msgid "Failed to change the account package!"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:294
+msgid "Failed to change the account password!"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:303
+msgid "CWP does not support username changes"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:308
+msgid "CWP does not support changing the primary domain name"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:313
+msgid "CWP does not support changing the IP"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:20
+msgid "DirectAdmin server manager requires php curl extension to be enabled"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:24
+msgid "Server manager \"DirectAdmin\" is not configured properly. Hostname is not set"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:28
+msgid "Server manager \"DirectAdmin\" is not configured properly. Username is not set"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:32
+msgid "Server manager \"DirectAdmin\" is not configured properly. Password is not set"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:173
+msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:177
+msgid "Error Creating User"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:203
+msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:306
+msgid "DirectAdmin do not support username changes"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:311
+msgid "DirectAdmin do not support domain changes"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:316
+msgid "DirectAdmin do not support ip changes"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:411
+msgid "Server Manager DirectAdmin Error: \"Login failed\""
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:415
+msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
+msgstr ""
+
+#: library/Server/Manager/Hestia.php:24 library/Server/Manager/Ispconfig3.php:27
+#: library/Server/Manager/Vesta.php:24
+msgid "PHP cURL extension is not enabled"
+msgstr ""
+
+#: library/Server/Manager/Hestia.php:113 library/Server/Manager/Hestia.php:150
+#: library/Server/Manager/Vesta.php:91 library/Server/Manager/Vesta.php:126
+#: library/Server/Manager/Vesta.php:131
+msgid "Connection to server failed. Error code: "
+msgstr ""
+
+#: library/Server/Manager/Hestia.php:207
+msgid "Server Manager Hestia CP Error: Unable to create User. Error code: "
+msgstr ""
+
+#: library/Server/Manager/Hestia.php:210
+msgid "Server Manager Hestia CP Error: Create Domain failure. Error code: "
+msgstr ""
+
+#: library/Server/Manager/Hestia.php:236
+msgid "Server Manager Hestia CP Error: Suspend Account Error. Error code: "
+msgstr ""
+
+#: library/Server/Manager/Hestia.php:260
+msgid "Server Manager Hestia CP Error: Unsuspend Account Error. Error code: "
+msgstr ""
+
+#: library/Server/Manager/Hestia.php:288
+msgid "Server Manager Hestia CP Error: Cancel Account Error. Error code: "
+msgstr ""
+
+#: library/Server/Manager/Hestia.php:317
+msgid "Server Manager Hestia CP Error: Change User package Account Error. Error code: "
+msgstr ""
+
+#: library/Server/Manager/Hestia.php:330 library/Server/Manager/Hestia.php:340
+#: library/Server/Manager/Hestia.php:378
+msgid "Server Manager Hestia CP Error: Not Supported"
+msgstr ""
+
+#: library/Server/Manager/Hestia.php:365
+msgid "Server Manager Hestia CP Error: Change Password Account Error. Error code: "
+msgstr ""
+
+#: library/Server/Manager/Ispconfig3.php:23
+msgid "PHP Soap extension required for IspConfig server manager"
+msgstr ""
+
+#: library/Server/Manager/Ispconfig3.php:69
+msgid "Server manager does not support sync"
+msgstr ""
+
+#: library/Server/Manager/Ispconfig3.php:198 library/Server/Manager/Plesk.php:197
+#: library/Server/Manager/Virtualmin.php:171
+msgid "Server manager does not support username changes"
+msgstr ""
+
+#: library/Server/Manager/Ispconfig3.php:203
+#: library/Server/Manager/Virtualmin.php:176
+msgid "Server manager does not support domain changes"
+msgstr ""
+
+#: library/Server/Manager/Ispconfig3.php:208
+#: library/Server/Manager/Virtualmin.php:181
+msgid "Server manager does not support ip changes"
+msgstr ""
+
+#: library/Server/Manager/Ispconfig3.php:546
+msgid "Could not load Soap client"
+msgstr ""
+
+#: library/Server/Manager/Ispconfig3.php:549
+msgid "Could not retrieve session"
+msgstr ""
+
+#: library/Server/Manager/Ispconfig3.php:741
+msgid "Error when making request to the server"
+msgstr ""
+
+#: library/Server/Manager/Plesk.php:46 library/Server/Manager/Virtualmin.php:59
+msgid "Connection to server failed"
+msgstr ""
+
+#: library/Server/Manager/Plesk.php:52
+msgid "The server adapter does not support account synchronization"
+msgstr ""
+
+#: library/Server/Manager/Plesk.php:83
+msgid "Failed to create new account"
+msgstr ""
+
+#: library/Server/Manager/Plesk.php:167
+msgid "Can't modify client"
+msgstr ""
+
+#: library/Server/Manager/Plesk.php:224
+msgid "Server manager does not support changing IP addresses"
+msgstr ""
+
+#: library/Server/Manager/Vesta.php:192
+msgid "Server Manager Vesta CP Error: Create Domain failure! Error code: "
+msgstr ""
+
+#: library/Server/Manager/Vesta.php:196
+msgid "Server Manager Vesta CP Error: Unable to create User! Error code: "
+msgstr ""
+
+#: library/Server/Manager/Vesta.php:220
+msgid "Server Manager Vesta CP Error: Suspend Account Error! Error code: "
+msgstr ""
+
+#: library/Server/Manager/Vesta.php:244
+msgid "Server Manager Vesta CP Error: Unsuspend Account Error! Error code: "
+msgstr ""
+
+#: library/Server/Manager/Vesta.php:273
+msgid "Server Manager Vesta CP Error: Cancel Account Error! Error code: "
+msgstr ""
+
+#: library/Server/Manager/Vesta.php:303
+msgid "Server Manager Vesta CP Error: Change User package Account Error. Error code: "
+msgstr ""
+
+#: library/Server/Manager/Vesta.php:316 library/Server/Manager/Vesta.php:326
+#: library/Server/Manager/Vesta.php:364
+msgid "Server Manager Vesta CP Error: Not Supported"
+msgstr ""
+
+#: library/Server/Manager/Vesta.php:351
+msgid "Server Manager Vesta CP Error: Change Password Account Error! Error code: "
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:95
+#: library/Server/Manager/Virtualmin.php:108
+msgid "Virtualmin can't suspend/unsuspend reseller's account"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:280
+msgid "Create reseller command is only available in Virtualmin PRO version"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:328
+#: library/Server/Manager/Virtualmin.php:684
+msgid "Failed to create reseller's account"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:415
+msgid "Failed to create account"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:437
+msgid "Failed to suspend user's account"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:459
+msgid "Failed to unsuspend user's account"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:482
+msgid "Failed to change user's password"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:504
+msgid "Failed to delete user's account"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:533
+msgid "Failed to modify domain details"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:562
+msgid "Failed to enable features"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:591
+msgid "Failed to disable features"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:598
+msgid "Cancel reseller command only available in Virtualmin PRO version"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:609
+msgid "Failed to delete reseller"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:616
+msgid "Modify reseller comand is only available in Virtualmin PRO version"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:629
+msgid "Failed to change reseller's password"
+msgstr ""
+
+#: library/Server/Manager/Virtualmin.php:636
+msgid "Modify reseller command is only available in Virtualmin PRO version"
+msgstr ""
+
+#: library/Server/Manager/Whm.php:30
+msgid "Server manager \"cPanel WHM\" is not configured properly. Hostname is not set"
+msgstr ""
+
+#: library/Server/Manager/Whm.php:34
+msgid "Server manager \"cPanel WHM\" is not configured properly. Username is not set"
+msgstr ""
+
+#: library/Server/Manager/Whm.php:38
+msgid "Server manager \"cPanel WHM\" is not configured properly. Authentication is not set"
+msgstr ""
+
 #: modules/Activity/Controller/Admin.php:45
 msgid "Activity"
 msgstr ""
 
-#: modules/Activity/Controller/Admin.php:52
+#: modules/Activity/Controller/Admin.php:52 modules/System/Service.php:37
 msgid "Event history"
 msgstr ""
 
@@ -563,6 +1155,22 @@ msgstr ""
 msgid "Email address was confirmed"
 msgstr ""
 
+#: modules/Client/Service.php:46
+msgid "Active clients"
+msgstr ""
+
+#: modules/Client/Service.php:50
+msgid "Suspended clients"
+msgstr ""
+
+#: modules/Client/Service.php:54
+msgid "Canceled clients"
+msgstr ""
+
+#: modules/Client/Service.php:58
+msgid "All clients"
+msgstr ""
+
 #: modules/Client/Service.php:68
 msgid "Invalid email confirmation link"
 msgstr ""
@@ -623,6 +1231,11 @@ msgstr ""
 msgid "Cookie consent"
 msgstr ""
 
+#: modules/Cron/Service.php:38
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:71
+msgid "Execute now"
+msgstr ""
+
 #: modules/Currency/Api/Admin.php:117
 msgid "Currency already registered"
 msgstr ""
@@ -676,7 +1289,7 @@ msgstr "E-posta şablonu bulunamadı"
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr ""
 
-#: modules/Email/Controller/Admin.php:46
+#: modules/Email/Controller/Admin.php:46 modules/Email/Service.php:38
 #: modules/Email/html_admin/mod_email_details.html.twig:17
 #: modules/Email/html_admin/mod_email_history.html.twig:5
 #: modules/Email/html_admin/mod_email_history.html.twig:21
@@ -710,6 +1323,14 @@ msgstr ""
 msgid "Example module submenu"
 msgstr ""
 
+#: modules/Example/Service.php:45
+msgid "View source code"
+msgstr ""
+
+#: modules/Example/Service.php:49
+msgid "This is an example!"
+msgstr ""
+
 #: modules/Example/Service.php:210
 msgid "You have failed to login too many times. Contact support."
 msgstr ""
@@ -732,7 +1353,7 @@ msgstr ""
 msgid "Extensions"
 msgstr ""
 
-#: modules/Extension/Controller/Admin.php:59
+#: modules/Extension/Controller/Admin.php:59 modules/System/Service.php:41
 msgid "Languages"
 msgstr ""
 
@@ -923,6 +1544,22 @@ msgstr ""
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:7
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:12
 msgid "Payment gateways"
+msgstr ""
+
+#: modules/Invoice/Service.php:50
+msgid "Unpaid invoices"
+msgstr ""
+
+#: modules/Invoice/Service.php:54
+msgid "Paid invoices"
+msgstr ""
+
+#: modules/Invoice/Service.php:58
+msgid "Refunded invoices"
+msgstr ""
+
+#: modules/Invoice/Service.php:62
+msgid "All invoices"
 msgstr ""
 
 #: modules/Invoice/Service.php:663
@@ -1183,6 +1820,24 @@ msgstr ""
 msgid "Orders"
 msgstr "Siparişler"
 
+#: modules/Order/Service.php:46
+msgid "Orders pending setup"
+msgstr ""
+
+#: modules/Order/Service.php:50
+msgid "Active orders"
+msgstr ""
+
+#: modules/Order/Service.php:54
+msgid "Suspended orders"
+msgstr ""
+
+#: modules/Order/Service.php:58
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:130
+#: modules/Index/html_client/mod_index_dashboard.html.twig:135
+msgid "All orders"
+msgstr ""
+
 #: modules/Order/Service.php:530
 msgid "Currency could not be determined for order"
 msgstr ""
@@ -1258,15 +1913,15 @@ msgstr ""
 msgid "Pricing type is required"
 msgstr ""
 
-#: modules/Product/Service.php:433
+#: modules/Product/Service.php:431
 msgid "Can not remove product which has active orders."
 msgstr ""
 
-#: modules/Product/Service.php:492
+#: modules/Product/Service.php:490
 msgid "Can not remove product category with products"
 msgstr ""
 
-#: modules/Product/Service.php:547
+#: modules/Product/Service.php:545
 msgid "This promo code already exists."
 msgstr ""
 
@@ -1670,6 +2325,28 @@ msgstr ""
 msgid "Canned responses"
 msgstr ""
 
+#: modules/Support/Service.php:38
+#: modules/Support/html_admin/mod_support_public_tickets.html.twig:20
+#: modules/Support/html_admin/mod_support_tickets.html.twig:90
+msgid "Tickets waiting for staff reply"
+msgstr ""
+
+#: modules/Support/Service.php:42
+#: modules/Support/html_admin/mod_support_public_tickets.html.twig:34
+#: modules/Support/html_admin/mod_support_tickets.html.twig:104
+msgid "Tickets waiting for client reply"
+msgstr ""
+
+#: modules/Support/Service.php:46
+msgid "Resolved tickets"
+msgstr ""
+
+#: modules/Support/Service.php:50
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:154
+#: modules/Index/html_client/mod_index_dashboard.html.twig:159
+msgid "All tickets"
+msgstr ""
+
 #: modules/Support/Service.php:678
 msgid "Can not remove helpdesk which has tickets"
 msgstr ""
@@ -1730,6 +2407,11 @@ msgstr ""
 msgid "Settings"
 msgstr "Ayarlar"
 
+#: modules/System/Service.php:33
+#: themes/admin_default/html/partial_sidebar.html.twig:63
+msgid "Report a bug"
+msgstr "Bir hata bildir"
+
 #: modules/System/Service.php:53
 msgid "Parameter key is missing"
 msgstr ""
@@ -1742,7 +2424,7 @@ msgstr ""
 msgid "Parameter :param does not exist"
 msgstr ""
 
-#: modules/System/Service.php:1346
+#: modules/System/Service.php:1347
 msgid "Country :code phone code is not registered"
 msgstr ""
 
@@ -1951,12 +2633,12 @@ msgstr "Emin misiniz?"
 #: modules/Product/html_admin/mod_product_addons.html.twig:75
 #: modules/Product/html_admin/mod_product_index.html.twig:88
 #: modules/Product/html_admin/mod_product_index.html.twig:167
-#: modules/Product/html_admin/mod_product_manage.html.twig:205
+#: modules/Product/html_admin/mod_product_manage.html.twig:204
 #: modules/Product/html_admin/mod_product_promos.html.twig:106
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:75
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:89
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:121
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:160
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:125
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:164
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:83
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:129
 #: modules/Staff/html_admin/mod_staff_index.html.twig:67
@@ -2029,8 +2711,8 @@ msgstr ""
 #: modules/Product/html_admin/mod_product_index.html.twig:179
 #: modules/Product/html_admin/mod_product_manage.html.twig:140
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:194
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:101
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:140
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:105
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:144
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:41
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:96
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:39
@@ -2092,9 +2774,9 @@ msgstr "Geri dön"
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:84
 #: modules/Product/html_admin/mod_product_category.html.twig:63
 #: modules/Product/html_admin/mod_product_manage.html.twig:162
-#: modules/Product/html_admin/mod_product_manage.html.twig:220
-#: modules/Product/html_admin/mod_product_manage.html.twig:244
-#: modules/Product/html_admin/mod_product_promo.html.twig:166
+#: modules/Product/html_admin/mod_product_manage.html.twig:219
+#: modules/Product/html_admin/mod_product_manage.html.twig:255
+#: modules/Product/html_admin/mod_product_promo.html.twig:172
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:45
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:39
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:53
@@ -2106,7 +2788,7 @@ msgstr "Geri dön"
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:107
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:97
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:199
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:85
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:72
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:138
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:127
@@ -2543,7 +3225,7 @@ msgstr ""
 #: modules/Product/html_admin/mod_product_addons.html.twig:135
 #: modules/Product/html_admin/mod_product_index.html.twig:131
 #: modules/Product/html_admin/mod_product_index.html.twig:199
-#: modules/Product/html_admin/mod_product_promos.html.twig:259
+#: modules/Product/html_admin/mod_product_promos.html.twig:267
 #: modules/Staff/html_admin/mod_staff_index.html.twig:127
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:194
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:119
@@ -2760,7 +3442,7 @@ msgstr ""
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:97
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:24
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:37
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:75
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:79
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:169
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:221
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
@@ -2829,7 +3511,7 @@ msgstr "Evet"
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:101
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:28
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:41
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:79
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:83
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:173
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:225
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
@@ -3456,10 +4138,6 @@ msgstr ""
 msgid "Execute scheduled tasks from browser"
 msgstr ""
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:71
-msgid "Execute now"
-msgstr ""
-
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:7
 msgid "Currency management"
 msgstr ""
@@ -3755,11 +4433,6 @@ msgstr ""
 msgid "Unpaid"
 msgstr ""
 
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:130
-#: modules/Index/html_client/mod_index_dashboard.html.twig:135
-msgid "All orders"
-msgstr ""
-
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:140
 #: modules/Index/html_client/mod_index_dashboard.html.twig:145
 msgid "Expiring"
@@ -3769,11 +4442,6 @@ msgstr ""
 #: modules/Index/html_client/mod_index_dashboard.html.twig:158
 #: modules/Support/html_admin/mod_support_tickets.html.twig:152
 msgid "New ticket"
-msgstr ""
-
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:154
-#: modules/Index/html_client/mod_index_dashboard.html.twig:159
-msgid "All tickets"
 msgstr ""
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:162
@@ -4669,7 +5337,7 @@ msgid "Reminded at"
 msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:129
-#: modules/Product/html_admin/mod_product_manage.html.twig:275
+#: modules/Product/html_admin/mod_product_manage.html.twig:286
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:110
 msgid "View as client"
 msgstr ""
@@ -6414,7 +7082,7 @@ msgstr ""
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:49
 #: modules/Product/html_admin/mod_product_manage.html.twig:179
-#: modules/Product/html_admin/mod_product_manage.html.twig:228
+#: modules/Product/html_admin/mod_product_manage.html.twig:227
 msgid "Product configuration updated"
 msgstr ""
 
@@ -6442,39 +7110,39 @@ msgstr ""
 msgid "Choose which addons you would like to offer with"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:216
+#: modules/Product/html_admin/mod_product_manage.html.twig:215
 msgid "Create new addon"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:227
+#: modules/Product/html_admin/mod_product_manage.html.twig:226
 msgid "Choose which products can client upgrade to"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:231
+#: modules/Product/html_admin/mod_product_manage.html.twig:230
 msgid "Product Upgrades"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:251
+#: modules/Product/html_admin/mod_product_manage.html.twig:262
 msgid "Product links"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:253
+#: modules/Product/html_admin/mod_product_manage.html.twig:264
 msgid "Product ID"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:259
+#: modules/Product/html_admin/mod_product_manage.html.twig:270
 msgid "Order page with ID"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:265
+#: modules/Product/html_admin/mod_product_manage.html.twig:276
 msgid "Order page with slug"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:293
+#: modules/Product/html_admin/mod_product_manage.html.twig:304
 msgid "Edit form"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:298
+#: modules/Product/html_admin/mod_product_manage.html.twig:309
 msgid "Add new form"
 msgstr ""
 
@@ -6549,13 +7217,13 @@ msgstr ""
 msgid "Period when code is valid"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_promo.html.twig:141
-#: modules/Product/html_admin/mod_product_promos.html.twig:226
+#: modules/Product/html_admin/mod_product_promo.html.twig:143
+#: modules/Product/html_admin/mod_product_promos.html.twig:228
 msgid "Periods (Select none to apply to all periods)"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_promo.html.twig:153
-#: modules/Product/html_admin/mod_product_promos.html.twig:237
+#: modules/Product/html_admin/mod_product_promo.html.twig:157
+#: modules/Product/html_admin/mod_product_promos.html.twig:241
 msgid "Client Groups (Select none to apply to all client groups)"
 msgstr ""
 
@@ -7016,8 +7684,8 @@ msgstr ""
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:24
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:25
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:38
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:65
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:66
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:68
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:69
 msgid "Years"
 msgstr ""
 
@@ -7236,41 +7904,44 @@ msgstr ""
 msgid "Select free tlds"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:58
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:60
 msgid "Select free periods"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:61
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:62
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:63
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:64
 msgid "Month"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:64
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:65
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:66
+msgid "Months"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:67
 msgid "Year"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:71
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:75
 msgid "Free domain transfer"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:90
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:94
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:91
 msgid "Hosting plans"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:95
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:99
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:27
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:106
 msgid "New hosting plan"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:129
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:133
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:36
 msgid "Servers"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:134
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:138
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:19
 msgid "New server"
 msgstr ""
@@ -8163,16 +8834,6 @@ msgstr ""
 msgid "Close ticket"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:20
-#: modules/Support/html_admin/mod_support_tickets.html.twig:90
-msgid "Tickets waiting for staff reply"
-msgstr ""
-
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:34
-#: modules/Support/html_admin/mod_support_tickets.html.twig:104
-msgid "Tickets waiting for client reply"
-msgstr ""
-
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:48
 #: modules/Support/html_admin/mod_support_tickets.html.twig:118
 msgid "Solved tickets"
@@ -8744,10 +9405,6 @@ msgstr "Yardım"
 #: themes/admin_default/html/partial_sidebar.html.twig:59
 msgid "Documentation"
 msgstr "Dökümantasyon"
-
-#: themes/admin_default/html/partial_sidebar.html.twig:63
-msgid "Report a bug"
-msgstr "Bir hata bildir"
 
 #: themes/huraga/html/404.html.twig:13
 msgid "Whoops! This is not the web page you are looking for."
