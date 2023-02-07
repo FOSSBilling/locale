@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-01-27 13:28-0800\n"
-"PO-Revision-Date: 2023-01-27 21:33\n"
+"POT-Creation-Date: 2023-02-06 16:53-0800\n"
+"PO-Revision-Date: 2023-02-07 00:56\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Vietnamese\n"
 "MIME-Version: 1.0\n"
@@ -246,23 +246,23 @@ msgstr ""
 msgid "Can not determine months amount from unit"
 msgstr ""
 
-#: library/Box/Tools.php:116 library/Box/Tools.php:452
+#: library/Box/Tools.php:116 library/Box/Tools.php:372
 msgid "Service class :class was not found in :path"
 msgstr ""
 
-#: library/Box/Tools.php:481
+#: library/Box/Tools.php:401
 msgid "Unable to load existing configuration. updateConfig() is unable to progress."
 msgstr ""
 
-#: library/Box/Tools.php:484
+#: library/Box/Tools.php:404
 msgid "Unable to create backup of configuration file. Canceling config migration."
 msgstr ""
 
-#: library/Box/Tools.php:548
+#: library/Box/Tools.php:468
 msgid "Error when writing updated configuration file."
 msgstr ""
 
-#: library/Box/Tools.php:557
+#: library/Box/Tools.php:477
 msgid "Email address is invalid"
 msgstr ""
 
@@ -358,23 +358,23 @@ msgstr ""
 msgid "Domain product can not be removed."
 msgstr ""
 
-#: library/Model/ProductTable.php:86
+#: library/Model/ProductTable.php:74
 msgid "Unknown period selected "
 msgstr ""
 
-#: library/Model/ProductTable.php:98
+#: library/Model/ProductTable.php:86
 msgid "Product pricing could not be determined. "
 msgstr ""
 
-#: library/Model/ProductTable.php:130
+#: library/Model/ProductTable.php:118
 msgid "Unknown Period selected for setup price"
 msgstr ""
 
-#: library/Model/ProductTable.php:154
+#: library/Model/ProductTable.php:142
 msgid "Product :id payment type is recurrent, but period was not selected"
 msgstr ""
 
-#: library/Model/ProductTable.php:166
+#: library/Model/ProductTable.php:154
 msgid "Unknown Period selected for price"
 msgstr ""
 
@@ -454,7 +454,7 @@ msgid "Redirecting to PayPal.com"
 msgstr "Đang chuyển hướng tới Paypal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:341
-#: library/Payment/Adapter/Stripe.php:105 modules/Invoice/Service.php:1508
+#: library/Payment/Adapter/Stripe.php:105 modules/Invoice/Service.php:1486
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Thanh toán cho hóa đơn :serie:id [:title]"
 
@@ -466,7 +466,7 @@ msgstr ""
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"pub_key\" at \"Configuration -> Payments\"."
 msgstr ""
 
-#: library/Payment/Adapter/Stripe.php:107 modules/Invoice/Service.php:1510
+#: library/Payment/Adapter/Stripe.php:107 modules/Invoice/Service.php:1488
 msgid "Payment for invoice :serie:id"
 msgstr "Thanh toán cho hóa đơn :serie:id"
 
@@ -1054,23 +1054,23 @@ msgstr ""
 msgid "You have already used this promo code. Please remove promo code and checkout again."
 msgstr ""
 
-#: modules/Cart/Service.php:482
+#: modules/Cart/Service.php:483
 msgid "Can not checkout empty cart."
 msgstr ""
 
-#: modules/Cart/Service.php:494
+#: modules/Cart/Service.php:495
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
 msgstr ""
 
-#: modules/Cart/Service.php:575
+#: modules/Cart/Service.php:576
 msgid "Discount: :product"
 msgstr "Discount: :product"
 
-#: modules/Cart/Service.php:587
+#: modules/Cart/Service.php:588
 msgid ":product setup"
 msgstr "cài đặt :product"
 
-#: modules/Cart/Service.php:720
+#: modules/Cart/Service.php:721
 msgid ":product_title"
 msgstr ":product_title"
 
@@ -1078,13 +1078,11 @@ msgstr ":product_title"
 msgid "Email is already registered."
 msgstr ""
 
-#: modules/Client/Api/Admin.php:262 modules/Client/Api/Client.php:90
-#: modules/Profile/Service.php:131
+#: modules/Client/Api/Admin.php:262 modules/Profile/Service.php:131
 msgid "Can not change email. It is already registered."
 msgstr ""
 
 #: modules/Client/Api/Admin.php:346 modules/Staff/Api/Admin.php:139
-#: modules/Staff/Api/Admin.php:543
 msgid "Passwords do not match"
 msgstr ""
 
@@ -1092,13 +1090,12 @@ msgstr ""
 msgid "Event not found"
 msgstr ""
 
-#: modules/Client/Api/Client.php:185 modules/Client/Api/Guest.php:81
-#: modules/Profile/Api/Client.php:114
-msgid "Passwords do not match."
-msgstr ""
-
 #: modules/Client/Api/Guest.php:69
 msgid "New registrations are temporary disabled"
+msgstr ""
+
+#: modules/Client/Api/Guest.php:81 modules/Profile/Api/Client.php:114
+msgid "Passwords do not match."
 msgstr ""
 
 #: modules/Client/Api/Guest.php:94
@@ -1147,7 +1144,7 @@ msgstr ""
 msgid "Client login history"
 msgstr ""
 
-#: modules/Client/Controller/Client.php:79
+#: modules/Client/Controller/Client.php:60
 msgid "Email address was confirmed"
 msgstr "Email đã được xác nhận"
 
@@ -1281,7 +1278,7 @@ msgstr ""
 msgid "Email template not found"
 msgstr ""
 
-#: modules/Email/Api/Admin.php:421
+#: modules/Email/Api/Admin.php:426
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr ""
 
@@ -1562,31 +1559,35 @@ msgstr ""
 msgid "Can not refund invoice with negative amount"
 msgstr ""
 
-#: modules/Invoice/Service.php:899
+#: modules/Invoice/Service.php:876
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr ""
 
-#: modules/Invoice/Service.php:966
+#: modules/Invoice/Service.php:943
 msgid "Invoices are not generated for 0 amount orders"
 msgstr ""
 
-#: modules/Invoice/Service.php:1126
+#: modules/Invoice/Service.php:1103
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr ""
 
-#: modules/Invoice/Service.php:1135 modules/Invoice/Service.php:1139
-msgid "Amount is not valid"
+#: modules/Invoice/Service.php:1112
+msgid "Amount must be at least :min_amount"
 msgstr ""
 
-#: modules/Invoice/Service.php:1165 modules/Invoice/Service.php:1229
+#: modules/Invoice/Service.php:1116
+msgid "Amount cannot exceed :max_amount"
+msgstr ""
+
+#: modules/Invoice/Service.php:1142 modules/Invoice/Service.php:1206
 msgid "Invoice not found"
 msgstr ""
 
-#: modules/Invoice/Service.php:1170
+#: modules/Invoice/Service.php:1147
 msgid "Payment method not found"
 msgstr ""
 
-#: modules/Invoice/Service.php:1174
+#: modules/Invoice/Service.php:1151
 msgid "Payment method not enabled"
 msgstr ""
 
@@ -1834,39 +1835,35 @@ msgstr ""
 msgid "All orders"
 msgstr "Tất cả đơn hàng"
 
-#: modules/Order/Service.php:530
+#: modules/Order/Service.php:509
 msgid "Currency could not be determined for order"
 msgstr ""
 
-#: modules/Order/Service.php:546
+#: modules/Order/Service.php:525
 msgid "Product :id is out of stock."
 msgstr ""
 
-#: modules/Order/Service.php:552
+#: modules/Order/Service.php:531
 msgid "Group ID parameter is missing for addon product order"
 msgstr ""
 
-#: modules/Order/Service.php:558
+#: modules/Order/Service.php:537
 msgid "Parent order :group_id was not found"
 msgstr ""
 
-#: modules/Order/Service.php:708
+#: modules/Order/Service.php:687
 msgid "Only pending setup or failed orders can be activated"
 msgstr ""
 
-#: modules/Order/Service.php:736
+#: modules/Order/Service.php:715
 msgid "Error creating "
 msgstr ""
 
-#: modules/Order/Service.php:805
-msgid "Service "
-msgstr "Dịch vụ "
-
-#: modules/Order/Service.php:1008
+#: modules/Order/Service.php:970
 msgid "Only active orders can be suspended"
 msgstr ""
 
-#: modules/Order/Service.php:1060
+#: modules/Order/Service.php:1022
 msgid "Can not cancel "
 msgstr "Không thể hủy bỏ "
 
@@ -2404,7 +2401,7 @@ msgid "Settings"
 msgstr "Thiết lập"
 
 #: modules/System/Service.php:33
-#: themes/admin_default/html/partial_sidebar.html.twig:63
+#: themes/admin_default/html/partial_sidebar.html.twig:61
 msgid "Report a bug"
 msgstr "Báo lỗi"
 
@@ -2482,13 +2479,13 @@ msgstr "Ip"
 #: modules/Client/html_admin/mod_client_manage.html.twig:275
 #: modules/Client/html_admin/mod_client_manage.html.twig:696
 #: modules/Client/html_admin/mod_client_settings.html.twig:77
-#: modules/Client/html_client/mod_client_profile.html.twig:140
+#: modules/Client/html_client/mod_client_profile.html.twig:153
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:393
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:40
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:121
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
-#: modules/Page/html_client/mod_page_signup.html.twig:123
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:159
+#: modules/Page/html_client/mod_page_signup.html.twig:125
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:155
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:25
@@ -2886,7 +2883,6 @@ msgstr "Tên công ty"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:21
 #: modules/Staff/html_admin/mod_staff_login.html.twig:41
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:68
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:20
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:40
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:63
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:163
@@ -3129,10 +3125,10 @@ msgstr "Địa chỉ dòng 2"
 #: modules/Client/html_admin/mod_client_index.html.twig:329
 #: modules/Client/html_admin/mod_client_manage.html.twig:288
 #: modules/Client/html_admin/mod_client_settings.html.twig:78
-#: modules/Client/html_client/mod_client_profile.html.twig:132
+#: modules/Client/html_client/mod_client_profile.html.twig:145
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:380
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
-#: modules/Page/html_client/mod_page_signup.html.twig:113
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:149
+#: modules/Page/html_client/mod_page_signup.html.twig:115
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
 msgid "City"
@@ -3141,12 +3137,12 @@ msgstr "Thành phố"
 #: modules/Client/html_admin/mod_client_index.html.twig:335
 #: modules/Client/html_admin/mod_client_manage.html.twig:281
 #: modules/Client/html_admin/mod_client_settings.html.twig:79
-#: modules/Client/html_client/mod_client_profile.html.twig:153
+#: modules/Client/html_client/mod_client_profile.html.twig:166
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:386
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:127
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:172
-#: modules/Page/html_client/mod_page_signup.html.twig:138
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:174
+#: modules/Page/html_client/mod_page_signup.html.twig:140
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
 msgid "State"
@@ -3174,7 +3170,7 @@ msgstr "Điện thoại"
 #: modules/Client/html_admin/mod_client_manage.html.twig:98
 #: modules/Client/html_admin/mod_client_manage.html.twig:326
 #: modules/Client/html_client/mod_client_profile.html.twig:24
-#: modules/Client/html_client/mod_client_profile.html.twig:233
+#: modules/Client/html_client/mod_client_profile.html.twig:246
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:42
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:142
@@ -3186,13 +3182,13 @@ msgstr "Tiền tệ"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:371
 #: modules/Client/html_admin/mod_client_manage.html.twig:366
-#: modules/Client/html_client/mod_client_profile.html.twig:192
+#: modules/Client/html_client/mod_client_profile.html.twig:205
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:23
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:108
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:110
 #: modules/Page/html_client/mod_page_login.html.twig:35
 #: modules/Page/html_client/mod_page_login.html.twig:37
-#: modules/Page/html_client/mod_page_signup.html.twig:183
+#: modules/Page/html_client/mod_page_signup.html.twig:185
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:121
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:33
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:9
@@ -3200,7 +3196,7 @@ msgstr "Tiền tệ"
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:82
 #: modules/Staff/html_admin/mod_staff_index.html.twig:103
 #: modules/Staff/html_admin/mod_staff_login.html.twig:27
-#: modules/Staff/html_admin/mod_staff_login.html.twig:52
+#: modules/Staff/html_admin/mod_staff_login.html.twig:53
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:43
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:152
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:63
@@ -3330,15 +3326,15 @@ msgid "API Key"
 msgstr "Khoá API"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:125
-#: modules/Client/html_client/mod_client_profile.html.twig:116
+#: modules/Client/html_client/mod_client_profile.html.twig:129
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:312
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:374
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:107
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:159
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:126
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:179
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
-#: modules/Page/html_client/mod_page_signup.html.twig:93
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:129
+#: modules/Page/html_client/mod_page_signup.html.twig:95
 #: modules/System/html_admin/mod_system_settings.html.twig:71
 msgid "Address"
 msgstr "Địa chỉ"
@@ -3558,7 +3554,7 @@ msgid "Address and contact details"
 msgstr "Thông tin địa chỉ và liên hệ"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:310
-#: modules/Client/html_client/mod_client_profile.html.twig:170
+#: modules/Client/html_client/mod_client_profile.html.twig:183
 msgid "Passport number"
 msgstr "Số hộ chiếu"
 
@@ -3585,7 +3581,7 @@ msgstr "Thời gian đăng ký"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:358
 #: modules/Client/html_admin/mod_client_settings.html.twig:114
-#: modules/Client/html_client/mod_client_profile.html.twig:178
+#: modules/Client/html_client/mod_client_profile.html.twig:191
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:53
 msgid "Update profile"
 msgstr "Cập nhật hồ sơ"
@@ -3604,9 +3600,9 @@ msgid "Password changed"
 msgstr "Mật khẩu đã được thay đổi"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:373
-#: modules/Client/html_client/mod_client_profile.html.twig:200
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:116
-#: modules/Page/html_client/mod_page_signup.html.twig:191
+#: modules/Client/html_client/mod_client_profile.html.twig:213
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:118
+#: modules/Page/html_client/mod_page_signup.html.twig:193
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:69
 msgid "Password confirm"
 msgstr "Xác nhận mật khẩu"
@@ -3876,6 +3872,7 @@ msgid "Last Name"
 msgstr "Họ"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:73
+#: modules/Client/html_client/mod_client_profile.html.twig:76
 msgid "Gender"
 msgstr "Giới tính"
 
@@ -3945,7 +3942,7 @@ msgid "Change Password"
 msgstr "Đổi mật khẩu"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:23
-#: modules/Client/html_client/mod_client_profile.html.twig:212
+#: modules/Client/html_client/mod_client_profile.html.twig:225
 msgid "API key"
 msgstr "Khoá API"
 
@@ -3990,11 +3987,11 @@ msgstr "Tên"
 msgid "Birth date"
 msgstr "Ngày sinh"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:76
+#: modules/Client/html_client/mod_client_profile.html.twig:89
 msgid "Company Name"
 msgstr "Tên công ty"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:84
+#: modules/Client/html_client/mod_client_profile.html.twig:97
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:300
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:362
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:154
@@ -4002,80 +3999,80 @@ msgstr "Tên công ty"
 msgid "Company VAT"
 msgstr "VAT công ty"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:92
+#: modules/Client/html_client/mod_client_profile.html.twig:105
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:306
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:368
 msgid "Company Number"
 msgstr "Mã doanh nghiệp"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:100
+#: modules/Client/html_client/mod_client_profile.html.twig:113
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:228
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:183
 msgid "Phone Country Code"
 msgstr "Mã điện thoại quốc gia"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:108
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:193
-#: modules/Page/html_client/mod_page_signup.html.twig:159
+#: modules/Client/html_client/mod_client_profile.html.twig:121
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
+#: modules/Page/html_client/mod_page_signup.html.twig:161
 msgid "Phone Number"
 msgstr "Số điện thoại"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:124
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
-#: modules/Page/html_client/mod_page_signup.html.twig:103
+#: modules/Client/html_client/mod_client_profile.html.twig:137
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:139
+#: modules/Page/html_client/mod_page_signup.html.twig:105
 msgid "Address 2"
 msgstr "Địa chỉ 2"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:143
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:160
-#: modules/Page/html_client/mod_page_signup.html.twig:126
+#: modules/Client/html_client/mod_client_profile.html.twig:156
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:162
+#: modules/Page/html_client/mod_page_signup.html.twig:128
 msgid "-- Select country --"
 msgstr "-- Chọn quốc gia --"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:162
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:183
-#: modules/Page/html_client/mod_page_signup.html.twig:149
+#: modules/Client/html_client/mod_client_profile.html.twig:175
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:185
+#: modules/Page/html_client/mod_page_signup.html.twig:151
 msgid "Zip/Postal Code"
 msgstr "Mã bưu chính"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:185
+#: modules/Client/html_client/mod_client_profile.html.twig:198
 msgid "New password"
 msgstr "Mật khẩu mới"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:186
+#: modules/Client/html_client/mod_client_profile.html.twig:199
 msgid "Please enter new password two times in order avoid mistypes"
 msgstr "Xin vui lòng điền mật khẩu 2 lần để tránh sai sót"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:207
+#: modules/Client/html_client/mod_client_profile.html.twig:220
 msgid "Update password"
 msgstr "Thay đổi mật khẩu"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:213
+#: modules/Client/html_client/mod_client_profile.html.twig:226
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:83
 msgid "API key allows integration with external applications. You will need this key for authentication."
 msgstr "Khóa API cho phép tích hợp với ứng dụng bên ngoài. Bạn cần khóa này cho việc xác thực."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:219
+#: modules/Client/html_client/mod_client_profile.html.twig:232
 msgid "Warning! Resetting the key will break existing applications using it!"
 msgstr "Cảnh báo! Khởi tạo thiết lập khóa sẽ làm hỏng các ứng dụng đang sử dụng nó!"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:222
+#: modules/Client/html_client/mod_client_profile.html.twig:235
 msgid "Your API key"
 msgstr "Khóa API của bạn"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:227
+#: modules/Client/html_client/mod_client_profile.html.twig:240
 msgid "Reset key"
 msgstr "Đặt lại khóa"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:234
+#: modules/Client/html_client/mod_client_profile.html.twig:247
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and can not be changed."
 msgstr "Hồ sơ tiền tệ của bạn được định nghĩa sau lần đặt hàng đầu tiên. Một khi tiền tệ đã được đặt, toàn bộ hồ sơ tài khoản của bạn sẽ được quản lý theo tiền tệ đó và không thể thay đổi được."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:237
+#: modules/Client/html_client/mod_client_profile.html.twig:250
 msgid "Your profile currency is"
 msgstr "Tiền tệ của bạn là"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:238
+#: modules/Client/html_client/mod_client_profile.html.twig:251
 msgid "Create new client profile if you want to manage your money in other currency"
 msgstr "Tạo hồ sơ khách hàng mới nếu bạn muốn quản lý tền của bạn theo đơn vị tiền tệ khác"
 
@@ -6833,7 +6830,7 @@ msgstr "Bạn cần điền mật khẩu của mình."
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:27
 #: modules/Page/html_client/mod_page_login.html.twig:40
-#: modules/Staff/html_admin/mod_staff_login.html.twig:63
+#: modules/Staff/html_admin/mod_staff_login.html.twig:68
 msgid "Remember me"
 msgstr "Ghi nhớ đăng nhập"
 
@@ -6852,14 +6849,14 @@ msgstr "Hoặc đăng ký"
 msgid "You are"
 msgstr "Bạn là"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:221
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:223
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
 #: themes/huraga/html/layout_default.html.twig:123
 #: themes/huraga/html/layout_default.html.twig:229
 msgid "Register"
 msgstr "Đăng ký"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:224
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:226
 msgid "Or Login"
 msgstr "Hoặc đăng nhập"
 
@@ -6909,7 +6906,7 @@ msgstr "Về trang chủ"
 
 #: modules/Page/html_client/mod_page_login.html.twig:20
 #: modules/Page/html_client/mod_page_password-reset.html.twig:48
-#: modules/Page/html_client/mod_page_signup.html.twig:211
+#: modules/Page/html_client/mod_page_signup.html.twig:213
 #: modules/Staff/html_admin/mod_staff_login.html.twig:3
 #: themes/admin_default/html/404.html.twig:14
 #: themes/huraga/html/layout_default.html.twig:113
@@ -6947,7 +6944,7 @@ msgid "Privacy Policy"
 msgstr "Chính sách bảo mật"
 
 #: modules/Page/html_client/mod_page_signup.html.twig:5
-#: modules/Page/html_client/mod_page_signup.html.twig:201
+#: modules/Page/html_client/mod_page_signup.html.twig:203
 msgid "Sign up"
 msgstr "Đăng ký"
 
@@ -8598,12 +8595,12 @@ msgstr "Tạo tài khoản quản trị chính"
 
 #: modules/Staff/html_admin/mod_staff_login.html.twig:23
 #: modules/Staff/html_admin/mod_staff_login.html.twig:47
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:26
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
 msgid "Enter your email address"
 msgstr "Nhập địa chỉ email của bạn"
 
 #: modules/Staff/html_admin/mod_staff_login.html.twig:29
-#: modules/Staff/html_admin/mod_staff_login.html.twig:58
+#: modules/Staff/html_admin/mod_staff_login.html.twig:63
 msgid "Enter your password"
 msgstr "Nhập mật khẩu của bạn"
 
@@ -8611,7 +8608,15 @@ msgstr "Nhập mật khẩu của bạn"
 msgid "Create administrator account"
 msgstr "Tạo tài khoản quản trị"
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:66
+#: modules/Staff/html_admin/mod_staff_login.html.twig:37
+msgid "Log into your account"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_login.html.twig:55
+msgid "Forgot your password?"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_login.html.twig:71
 msgid "Sign in"
 msgstr "Đăng nhập"
 
@@ -8673,11 +8678,24 @@ msgid "Repeat same password"
 msgstr "Lặp lại mật khẩu tương tự"
 
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
-msgid "Password Reset"
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
+msgid "Reset your password"
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:34
-msgid "Reset Password"
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:17
+msgid "Enter your email address. You will receive a confirmation link if your account exists."
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
+msgid "Email address"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:36
+msgid "Send me the link"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:43
+msgid "Take me back to the login screen."
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:20
@@ -9213,7 +9231,7 @@ msgid "Back to Dashboard"
 msgstr "Quay lại Bảng điều khiển"
 
 #: themes/admin_default/html/layout_default.html.twig:65
-#: themes/admin_default/html/partial_sidebar.html.twig:61
+#: themes/admin_default/html/partial_sidebar.html.twig:59
 msgid "Source code"
 msgstr "Mã nguồn"
 
@@ -9394,11 +9412,11 @@ msgstr "Nhập từ khóa..."
 msgid "Search settings"
 msgstr "Cài đặt tìm kiếm"
 
-#: themes/admin_default/html/partial_sidebar.html.twig:55
+#: themes/admin_default/html/partial_sidebar.html.twig:53
 msgid "Help"
 msgstr "Trợ giúp"
 
-#: themes/admin_default/html/partial_sidebar.html.twig:59
+#: themes/admin_default/html/partial_sidebar.html.twig:57
 msgid "Documentation"
 msgstr "Tài liệu"
 
