@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-02-06 16:53-0800\n"
-"PO-Revision-Date: 2023-02-07 00:56\n"
+"POT-Creation-Date: 2023-02-11 03:00-0800\n"
+"PO-Revision-Date: 2023-02-12 10:23\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: English\n"
 "MIME-Version: 1.0\n"
@@ -1087,6 +1087,7 @@ msgid "Can not change email. It is already registered."
 msgstr ""
 
 #: modules/Client/Api/Admin.php:346 modules/Staff/Api/Admin.php:139
+#: modules/Staff/Api/Guest.php:117
 msgid "Passwords do not match"
 msgstr ""
 
@@ -1114,11 +1115,13 @@ msgstr ""
 msgid "Please check your login details"
 msgstr ""
 
-#: modules/Client/Api/Guest.php:184 modules/Staff/Api/Guest.php:111
+#: modules/Client/Api/Guest.php:185 modules/Staff/Api/Guest.php:160
 msgid "Email not found in our database"
 msgstr ""
 
-#: modules/Client/Api/Guest.php:228 modules/Staff/Service.php:704
+#: modules/Client/Api/Guest.php:230 modules/Staff/Api/Guest.php:122
+#: modules/Staff/Api/Guest.php:126 modules/Staff/Controller/Admin.php:132
+#: modules/Staff/Controller/Admin.php:135
 msgid "The link have expired or you have already confirmed password reset."
 msgstr ""
 
@@ -2254,6 +2257,11 @@ msgstr ""
 msgid "You are not allowed to login to admin area from :ip address"
 msgstr ""
 
+#: modules/Staff/Api/Guest.php:104 modules/Staff/Api/Guest.php:148
+#: modules/Staff/Controller/Admin.php:126
+msgid "Password reset has been disabled"
+msgstr ""
+
 #: modules/Staff/Controller/Admin.php:48
 msgid "Staff login history"
 msgstr ""
@@ -2569,7 +2577,7 @@ msgstr "Date"
 #: modules/Staff/html_admin/mod_staff_index.html.twig:150
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:54
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:99
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:220
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:232
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:78
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:146
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:89
@@ -2642,7 +2650,7 @@ msgstr "Are you sure?"
 #: modules/Staff/html_admin/mod_staff_index.html.twig:157
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:64
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:108
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:229
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:241
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:87
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:156
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:123
@@ -2791,7 +2799,7 @@ msgstr "Go back"
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:127
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:94
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:141
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:153
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:46
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:56
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:86
@@ -2850,9 +2858,9 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:62
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:34
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:62
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:157
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:203
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:241
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:169
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:215
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:253
 #: modules/Support/html_client/mod_support_contact_us.html.twig:25
 #: modules/System/html_admin/mod_system_settings.html.twig:53
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
@@ -2885,11 +2893,11 @@ msgstr ""
 #: modules/Staff/html_admin/mod_staff_index.html.twig:31
 #: modules/Staff/html_admin/mod_staff_index.html.twig:96
 #: modules/Staff/html_admin/mod_staff_login.html.twig:21
-#: modules/Staff/html_admin/mod_staff_login.html.twig:41
+#: modules/Staff/html_admin/mod_staff_login.html.twig:42
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:68
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:40
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:63
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:163
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:175
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:45
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:53
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:83
@@ -2910,7 +2918,7 @@ msgstr ""
 #: modules/Staff/html_admin/mod_staff_index.html.twig:80
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:56
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:64
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:151
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:163
 msgid "Group"
 msgstr ""
 
@@ -2961,7 +2969,7 @@ msgstr ""
 #: modules/Staff/html_admin/mod_staff_index.html.twig:117
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:74
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:65
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:181
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:193
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:57
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:127
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:84
@@ -3004,7 +3012,7 @@ msgstr ""
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:44
 #: modules/Staff/html_admin/mod_staff_index.html.twig:122
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:78
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:189
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:201
 msgid "Active"
 msgstr ""
 
@@ -3200,11 +3208,12 @@ msgstr ""
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:82
 #: modules/Staff/html_admin/mod_staff_index.html.twig:103
 #: modules/Staff/html_admin/mod_staff_login.html.twig:27
-#: modules/Staff/html_admin/mod_staff_login.html.twig:53
+#: modules/Staff/html_admin/mod_staff_login.html.twig:54
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:43
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:152
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:36
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:63
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:169
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:181
 msgid "Password"
 msgstr ""
 
@@ -3223,7 +3232,7 @@ msgstr ""
 #: modules/Product/html_admin/mod_product_index.html.twig:199
 #: modules/Product/html_admin/mod_product_promos.html.twig:267
 #: modules/Staff/html_admin/mod_staff_index.html.twig:127
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:194
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:206
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:119
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:174
 #: modules/Support/html_admin/mod_support_tickets.html.twig:288
@@ -3457,6 +3466,7 @@ msgstr ""
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:98
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:121
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:125
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:144
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:67
 #: modules/Support/html_admin/mod_support_settings.html.twig:49
 #: modules/Support/html_admin/mod_support_settings.html.twig:78
@@ -3526,6 +3536,7 @@ msgstr "Yes"
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:99
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:122
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:129
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:148
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:71
 #: modules/Support/html_admin/mod_support_settings.html.twig:53
 #: modules/Support/html_admin/mod_support_settings.html.twig:82
@@ -4048,6 +4059,7 @@ msgid "Please enter new password two times in order avoid mistypes"
 msgstr "Please enter new password two times in order avoid mistypes"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:220
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:60
 msgid "Update password"
 msgstr "Update Password"
 
@@ -4215,6 +4227,7 @@ msgstr ""
 #: modules/Product/html_admin/mod_product_promos.html.twig:47
 #: modules/Product/html_admin/mod_product_promos.html.twig:122
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:248
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:25
 msgid "Code"
 msgstr "Code"
 
@@ -6834,7 +6847,7 @@ msgstr ""
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:27
 #: modules/Page/html_client/mod_page_login.html.twig:40
-#: modules/Staff/html_admin/mod_staff_login.html.twig:68
+#: modules/Staff/html_admin/mod_staff_login.html.twig:71
 msgid "Remember me"
 msgstr ""
 
@@ -8575,7 +8588,7 @@ msgstr ""
 #: modules/Staff/html_admin/mod_staff_index.html.twig:110
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:87
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:47
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:175
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:187
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:51
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
 #: modules/System/html_admin/mod_system_settings.html.twig:115
@@ -8584,12 +8597,12 @@ msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:120
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:82
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:185
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:197
 msgid "Inactive"
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:175
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:247
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:259
 msgid "Create group"
 msgstr ""
 
@@ -8598,13 +8611,15 @@ msgid "Create main administrator account"
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_login.html.twig:23
-#: modules/Staff/html_admin/mod_staff_login.html.twig:47
+#: modules/Staff/html_admin/mod_staff_login.html.twig:48
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
 msgid "Enter your email address"
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_login.html.twig:29
-#: modules/Staff/html_admin/mod_staff_login.html.twig:63
+#: modules/Staff/html_admin/mod_staff_login.html.twig:66
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
 msgid "Enter your password"
 msgstr ""
 
@@ -8612,15 +8627,15 @@ msgstr ""
 msgid "Create administrator account"
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:37
+#: modules/Staff/html_admin/mod_staff_login.html.twig:38
 msgid "Log into your account"
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:55
+#: modules/Staff/html_admin/mod_staff_login.html.twig:57
 msgid "Forgot your password?"
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:71
+#: modules/Staff/html_admin/mod_staff_login.html.twig:74
 msgid "Sign in"
 msgstr ""
 
@@ -8683,6 +8698,8 @@ msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:3
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:16
 msgid "Reset your password"
 msgstr ""
 
@@ -8691,6 +8708,7 @@ msgid "Enter your email address. You will receive a confirmation link if your ac
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr ""
 
@@ -8699,7 +8717,20 @@ msgid "Send me the link"
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:43
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:67
 msgid "Take me back to the login screen."
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:17
+msgid "Update your password"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:31
+msgid "Enter your secret code"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:46
+msgid "Repeat Password"
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:20
@@ -8740,6 +8771,10 @@ msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:134
 msgid "Allowed IPs. One per line"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:140
+msgid "Allow staff reset passwords"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:34
