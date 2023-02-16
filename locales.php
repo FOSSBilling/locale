@@ -1,4 +1,5 @@
 <?php
+
 /**
  * FOSSBilling.
  *
@@ -11,9 +12,10 @@
  * with this source code in the file LICENSE
  */
 
- return [
+return [
     'af_ZA' => 'Afrikaans',
     'ar_EG' => 'عربى',
+    'ar_SA' => 'العربية',
     'bg_BG' => 'Български',
     'cs_CZ' => 'Čeština',
     'da_DK' => 'Dansk',
@@ -38,6 +40,7 @@
     'nl_NL' => 'Nederlands',
     'pl_PL' => 'Polski',
     'pt_PT' => 'Português',
+    'pt_BR' => 'Português (Brasil)',
     'ro_RO' => 'Română',
     'ru_RU' => 'Русский',
     'sk_SK' => 'Slovenčina',
@@ -55,4 +58,3 @@
     'zh_TW' => '正體中文',
     'zh_HK' => '繁體中文（香港)',
 ];
-   
