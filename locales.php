@@ -26,7 +26,7 @@ return [
     'es_ES' => 'Español',
     'fi_FI' => 'Suomi',
     'fr_FR' => 'Français',
-    'he_IL' => 'हिंदी',
+    'he_IL' => 'עִברִית',
     'hu_HU' => 'Magyar',
     'id_ID' => 'Bahasa Indonesia',
     'is_IS' => 'Íslenska',
