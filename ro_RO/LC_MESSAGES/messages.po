@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-03-11 12:31-0800\n"
-"PO-Revision-Date: 2023-03-12 14:22\n"
+"POT-Creation-Date: 2023-03-16 09:52-0700\n"
+"PO-Revision-Date: 2023-03-16 17:04\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Romanian\n"
 "MIME-Version: 1.0\n"
@@ -68,16 +68,7 @@ msgstr "Pagina nu a fost găsită"
 msgid "php openssl extension must be enabled on your server"
 msgstr "php openssl extension trebuie să fie activat pe server"
 
-#: library/Box/Curl.php:73 library/Registrar/Adapter/Internetbs.php:12
-#: library/Registrar/Adapter/Namecheap.php:26
-#: library/Registrar/Adapter/Netearthone.php:8
-#: library/Registrar/Adapter/Resellbiz.php:8
-#: library/Registrar/Adapter/Resellerclub.php:39
-#: library/Registrar/Adapter/Resellerid.php:8
-msgid "CURL extension is not enabled"
-msgstr "Extensia CURL nu este activă"
-
-#: library/Box/Extension.php:92
+#: library/Box/Extension.php:97
 msgid "Unable to connect to FOSSBilling extensions site."
 msgstr "Nu s-a putut conecta la site-ul de extensii FOSSBilling."
 
@@ -133,23 +124,23 @@ msgstr ":stream nu poate fi deschis cu modul :mode"
 msgid "Unable to write to stream"
 msgstr "Imposibil de scris"
 
-#: library/Box/Mail.php:38
+#: library/Box/Mail.php:57
 msgid "Unknown mail transport: :transport"
 msgstr "Transport mail necunoscut :transport"
 
-#: library/Box/Mail.php:87
+#: library/Box/Mail.php:106
 msgid "Sendgrid is not configured"
 msgstr "Sendgrind nu este configurat"
 
-#: library/Box/Mail.php:130
+#: library/Box/Mail.php:146
 msgid "SMTP host not configured"
 msgstr "SMTP host nu este configurat"
 
-#: library/Box/Mail.php:134
+#: library/Box/Mail.php:150
 msgid "SMTP port not configured"
 msgstr "SMTP port nu este configurat"
 
-#: library/Box/Mail.php:144
+#: library/Box/Mail.php:160
 msgid "SMTP hostname is not configured."
 msgstr "SMTP hostname nu este configurat."
 
@@ -254,23 +245,23 @@ msgstr "Unitatea nu este definită"
 msgid "Can not determine months amount from unit"
 msgstr ""
 
-#: library/Box/Tools.php:116 library/Box/Tools.php:372
+#: library/Box/Tools.php:94 library/Box/Tools.php:358
 msgid "Service class :class was not found in :path"
 msgstr ""
 
-#: library/Box/Tools.php:401
+#: library/Box/Tools.php:388
 msgid "Unable to load existing configuration. updateConfig() is unable to progress."
 msgstr "Nu s-a putut încărca configurația existentă. updateConfig() nu poate progresa."
 
-#: library/Box/Tools.php:404
+#: library/Box/Tools.php:391
 msgid "Unable to create backup of configuration file. Canceling config migration."
 msgstr ""
 
-#: library/Box/Tools.php:468
+#: library/Box/Tools.php:424
 msgid "Error when writing updated configuration file."
 msgstr "Eroare la scrierea fișierului de configurare actualizat."
 
-#: library/Box/Tools.php:477
+#: library/Box/Tools.php:434
 msgid "Email address is invalid"
 msgstr "Adresa de e-mail este incorectă"
 
@@ -418,7 +409,7 @@ msgstr "Nu puteți plăti factura de depozitare cu această modalitate de plată
 
 #: library/Payment/Adapter/ClientBalance.php:87
 #: library/Payment/Adapter/Interkassa.php:189
-#: library/Payment/Adapter/PayPalEmail.php:83
+#: library/Payment/Adapter/PayPalEmail.php:85
 msgid "IPN is not valid"
 msgstr ""
 
@@ -439,7 +430,7 @@ msgid "Interkassa payment gateway do not support recurrent payments"
 msgstr ""
 
 #: library/Payment/Adapter/Interkassa.php:230
-#: library/Payment/Adapter/PayPalEmail.php:131
+#: library/Payment/Adapter/PayPalEmail.php:133
 #: library/Payment/Adapter/TwoCheckout.php:175
 #: library/Payment/Adapter/WebMoney.php:149
 msgid "IPN is duplicate"
@@ -449,19 +440,19 @@ msgstr ""
 msgid "Not implemented yet"
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:36
+#: library/Payment/Adapter/PayPalEmail.php:38
 msgid "PHP Curl extension must be enabled in order to use PayPal gateway"
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:40
+#: library/Payment/Adapter/PayPalEmail.php:42
 msgid "Payment gateway \"PayPal\" is not configured properly. Please update configuration parameter \"PayPal Email address\" at \"Configuration -> Payments\"."
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:303
+#: library/Payment/Adapter/PayPalEmail.php:271
 msgid "Redirecting to PayPal.com"
 msgstr "Redirecţionare către PayPal.com"
 
-#: library/Payment/Adapter/PayPalEmail.php:346
+#: library/Payment/Adapter/PayPalEmail.php:314
 #: library/Payment/Adapter/Stripe.php:110 modules/Invoice/Service.php:1491
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Plata pentru factura :serie:id [:title]"
@@ -514,23 +505,23 @@ msgstr ""
 msgid "WebMoney IPN is not valid"
 msgstr ""
 
-#: library/Payment/AdapterAbstract.php:65
+#: library/Payment/AdapterAbstract.php:67
 msgid "Return URL for payment gateway was not set"
 msgstr ""
 
-#: library/Payment/AdapterAbstract.php:72
+#: library/Payment/AdapterAbstract.php:74
 msgid "Cancel URL for payment gateway was not set"
 msgstr ""
 
-#: library/Payment/AdapterAbstract.php:80
+#: library/Payment/AdapterAbstract.php:82
 msgid "IPN Notification URL for payment gateway was not set"
 msgstr ""
 
-#: library/Payment/AdapterAbstract.php:90
+#: library/Payment/AdapterAbstract.php:92
 msgid "IPN redirect URL for payment gateway was not set"
 msgstr ""
 
-#: library/Payment/AdapterAbstract.php:103
+#: library/Payment/AdapterAbstract.php:105
 msgid "Payment adapter class did not implement configuration options method"
 msgstr ""
 
@@ -546,278 +537,265 @@ msgstr ""
 msgid "Email registrar can not determine whether domain can be transferred"
 msgstr ""
 
-#: library/Registrar/Adapter/Internetbs.php:19
+#: library/Registrar/Adapter/Internetbs.php:18
 msgid "Domain registrar \"Internetbs\" is not configured properly. Please update configuration parameter \"Internetbs API key\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Internetbs.php:26
+#: library/Registrar/Adapter/Internetbs.php:25
 msgid "Domain registrar \"Internetbs\" is not configured properly. Please update configuration parameter \"Internetbs API password\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Internetbs.php:77
+#: library/Registrar/Adapter/Internetbs.php:76
 msgid "Domain transfer checking is not implemented"
 msgstr ""
 
-#: library/Registrar/Adapter/Internetbs.php:173
+#: library/Registrar/Adapter/Internetbs.php:172
 msgid "Registrar does not support domain removal."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:33
+#: library/Registrar/Adapter/Namecheap.php:30
 msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"Reseller ID\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:40
+#: library/Registrar/Adapter/Namecheap.php:37
 msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"API Key\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:47
+#: library/Registrar/Adapter/Namecheap.php:44
 msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"Username\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:54
+#: library/Registrar/Adapter/Namecheap.php:51
 msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"Server IP Address\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:263
+#: library/Registrar/Adapter/Namecheap.php:257
 msgid "Could not update NameServers"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:365
+#: library/Registrar/Adapter/Namecheap.php:359
 msgid "API ERROR: could not retrieve domain details"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:451
+#: library/Registrar/Adapter/Namecheap.php:445
 msgid "This feature is unavailable through the Namecheap API. Please contact your administrator."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:594
+#: library/Registrar/Adapter/Namecheap.php:588
 msgid "Domain deletion is not implemented in the NameCheap adapter. Please contact your system administrator."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:616
+#: library/Registrar/Adapter/Namecheap.php:610
 msgid "Could not retrieve privacy info on this domain."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:678
+#: library/Registrar/Adapter/Namecheap.php:672
 msgid "API ERROR: could not get lock status on domain"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:701
-#: library/Registrar/Adapter/Namecheap.php:728
+#: library/Registrar/Adapter/Namecheap.php:695
+#: library/Registrar/Adapter/Namecheap.php:722
 msgid "API ERROR: could not set lock status on domain"
 msgstr ""
 
-#: library/Registrar/Adapter/Netearthone.php:15
+#: library/Registrar/Adapter/Netearthone.php:11
 msgid "Domain registrar \"NetEarthOne\" is not configured properly. Please update configuration parameter \"NetEarthOne Reseller ID\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Netearthone.php:22
+#: library/Registrar/Adapter/Netearthone.php:18
 msgid "Domain registrar \"NetEarthOne\" is not configured properly. Please update configuration parameter \"NetEarthOne API Key\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Resellbiz.php:15
+#: library/Registrar/Adapter/Resellbiz.php:11
 msgid "Domain registrar \"Resell.biz\" is not configured properly. Please update configuration parameter \"Resell.biz Reseller ID\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Resellbiz.php:22
+#: library/Registrar/Adapter/Resellbiz.php:18
 msgid "Domain registrar \"Resell.biz\" is not configured properly. Please update configuration parameter \"Resell.biz API Key\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:46
+#: library/Registrar/Adapter/Resellerclub.php:45
 msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub Reseller ID\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:53
+#: library/Registrar/Adapter/Resellerclub.php:52
 msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub API Key\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:341
+#: library/Registrar/Adapter/Resellerclub.php:340
 msgid "Valid contact company number is required while registering AU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:404
+#: library/Registrar/Adapter/Resellerclub.php:403
 msgid "Domain EPP code can be retrieved from domain registrar"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:597
+#: library/Registrar/Adapter/Resellerclub.php:596
 msgid "You are already registered as reseller"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:844
+#: library/Registrar/Adapter/Resellerclub.php:837
 msgid "Valid contact Passport information is required while registering ES domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:864
+#: library/Registrar/Adapter/Resellerclub.php:857
 msgid "Valid contact Passport information is required while registering ASIA domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:888
+#: library/Registrar/Adapter/Resellerclub.php:881
 msgid "Valid contact Birth Date is required while registering RU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:892
+#: library/Registrar/Adapter/Resellerclub.php:885
 msgid "Valid contact Passport information is required while registering RU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:979
+#: library/Registrar/Adapter/Resellerclub.php:972
 msgid "Contact not found"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerid.php:15
+#: library/Registrar/Adapter/Resellerid.php:11
 msgid "Domain registrar \"ResellerID\" is not configured properly. Please update configuration parameter \"ResellerID Reseller ID\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerid.php:22
+#: library/Registrar/Adapter/Resellerid.php:18
 msgid "Domain registrar \"ResellerID\" is not configured properly. Please update configuration parameter \"ResellerID API Key\" at \"Configuration -> Domain registration\"."
 msgstr ""
 
-#: library/Registrar/AdapterAbstract.php:22
+#: library/Registrar/AdapterAbstract.php:25
 msgid "Domain registrar class did not implement configuration options method"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:25 library/Server/Manager/Virtualmin.php:23
-#: library/Server/Manager/Whm.php:24
-msgid "cURL extension is not enabled"
-msgstr ""
-
-#: library/Server/Manager/CWP.php:29
+#: library/Server/Manager/CWP.php:25
 msgid "Server manager \"CWP\" is not configured properly. IP address is not set!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:33
+#: library/Server/Manager/CWP.php:29
 msgid "Server manager \"CWP\" is not configured properly. Hostname is not set!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:37
+#: library/Server/Manager/CWP.php:33
 msgid "Server manager \"CWP\" is not configured properly. API Key / Access Hash is not set!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:95
+#: library/Server/Manager/CWP.php:91
 msgid "Failed to connect to server"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:152
+#: library/Server/Manager/CWP.php:148
 msgid "Failed to create account!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:168
+#: library/Server/Manager/CWP.php:164
 msgid "Failed to suspend account!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:184
+#: library/Server/Manager/CWP.php:180
 msgid "Failed to unsuspend account!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:203
+#: library/Server/Manager/CWP.php:199
 msgid "Failed to cancel / delete account!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:222
+#: library/Server/Manager/CWP.php:218
 msgid "Failed to change the account package!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:239
+#: library/Server/Manager/CWP.php:235
 msgid "Failed to change the account password!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:248
+#: library/Server/Manager/CWP.php:244
 msgid "CWP does not support username changes"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:253
+#: library/Server/Manager/CWP.php:249
 msgid "CWP does not support changing the primary domain name"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:258
+#: library/Server/Manager/CWP.php:254
 msgid "CWP does not support changing the IP"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:20
-msgid "DirectAdmin server manager requires php curl extension to be enabled"
-msgstr ""
-
-#: library/Server/Manager/Directadmin.php:24
+#: library/Server/Manager/Directadmin.php:22
 msgid "Server manager \"DirectAdmin\" is not configured properly. Hostname is not set"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:28
+#: library/Server/Manager/Directadmin.php:26
 msgid "Server manager \"DirectAdmin\" is not configured properly. Username is not set"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:32
+#: library/Server/Manager/Directadmin.php:30
 msgid "Server manager \"DirectAdmin\" is not configured properly. Password is not set"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:173
+#: library/Server/Manager/Directadmin.php:171
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:177
+#: library/Server/Manager/Directadmin.php:175
 msgid "Error Creating User"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:203
+#: library/Server/Manager/Directadmin.php:201
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:306
+#: library/Server/Manager/Directadmin.php:304
 msgid "DirectAdmin do not support username changes"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:311
+#: library/Server/Manager/Directadmin.php:309
 msgid "DirectAdmin do not support domain changes"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:316
+#: library/Server/Manager/Directadmin.php:314
 msgid "DirectAdmin do not support ip changes"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:411
+#: library/Server/Manager/Directadmin.php:406
 msgid "Server Manager DirectAdmin Error: \"Login failed\""
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:415
+#: library/Server/Manager/Directadmin.php:410
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:24 library/Server/Manager/Ispconfig3.php:27
-msgid "PHP cURL extension is not enabled"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:113 library/Server/Manager/Hestia.php:150
+#: library/Server/Manager/Hestia.php:108 library/Server/Manager/Hestia.php:145
 msgid "Connection to server failed. Error code: "
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:207
+#: library/Server/Manager/Hestia.php:202
 msgid "Server Manager Hestia CP Error: Unable to create User. Error code: "
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:210
+#: library/Server/Manager/Hestia.php:205
 msgid "Server Manager Hestia CP Error: Create Domain failure. Error code: "
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:236
+#: library/Server/Manager/Hestia.php:231
 msgid "Server Manager Hestia CP Error: Suspend Account Error. Error code: "
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:260
+#: library/Server/Manager/Hestia.php:255
 msgid "Server Manager Hestia CP Error: Unsuspend Account Error. Error code: "
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:288
+#: library/Server/Manager/Hestia.php:283
 msgid "Server Manager Hestia CP Error: Cancel Account Error. Error code: "
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:317
+#: library/Server/Manager/Hestia.php:312
 msgid "Server Manager Hestia CP Error: Change User package Account Error. Error code: "
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:330 library/Server/Manager/Hestia.php:340
-#: library/Server/Manager/Hestia.php:378
+#: library/Server/Manager/Hestia.php:325 library/Server/Manager/Hestia.php:335
+#: library/Server/Manager/Hestia.php:373
 msgid "Server Manager Hestia CP Error: Not Supported"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:365
+#: library/Server/Manager/Hestia.php:360
 msgid "Server Manager Hestia CP Error: Change Password Account Error. Error code: "
 msgstr ""
 
@@ -825,38 +803,38 @@ msgstr ""
 msgid "PHP Soap extension required for IspConfig server manager"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:69
+#: library/Server/Manager/Ispconfig3.php:65
 msgid "Server manager does not support sync"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:198 library/Server/Manager/Plesk.php:197
-#: library/Server/Manager/Virtualmin.php:171
+#: library/Server/Manager/Ispconfig3.php:194 library/Server/Manager/Plesk.php:197
+#: library/Server/Manager/Virtualmin.php:167
 msgid "Server manager does not support username changes"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:203
-#: library/Server/Manager/Virtualmin.php:176
+#: library/Server/Manager/Ispconfig3.php:199
+#: library/Server/Manager/Virtualmin.php:172
 msgid "Server manager does not support domain changes"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:208
-#: library/Server/Manager/Virtualmin.php:181
+#: library/Server/Manager/Ispconfig3.php:204
+#: library/Server/Manager/Virtualmin.php:177
 msgid "Server manager does not support ip changes"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:546
+#: library/Server/Manager/Ispconfig3.php:542
 msgid "Could not load Soap client"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:549
+#: library/Server/Manager/Ispconfig3.php:545
 msgid "Could not retrieve session"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:741
+#: library/Server/Manager/Ispconfig3.php:737
 msgid "Error when making request to the server"
 msgstr ""
 
-#: library/Server/Manager/Plesk.php:46 library/Server/Manager/Virtualmin.php:59
+#: library/Server/Manager/Plesk.php:46 library/Server/Manager/Virtualmin.php:55
 msgid "Connection to server failed"
 msgstr ""
 
@@ -876,81 +854,81 @@ msgstr ""
 msgid "Server manager does not support changing IP addresses"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:95
-#: library/Server/Manager/Virtualmin.php:108
+#: library/Server/Manager/Virtualmin.php:91
+#: library/Server/Manager/Virtualmin.php:104
 msgid "Virtualmin can't suspend/unsuspend reseller's account"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:280
+#: library/Server/Manager/Virtualmin.php:272
 msgid "Create reseller command is only available in Virtualmin PRO version"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:322
-#: library/Server/Manager/Virtualmin.php:662
+#: library/Server/Manager/Virtualmin.php:314
+#: library/Server/Manager/Virtualmin.php:654
 msgid "Failed to create reseller's account"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:403
+#: library/Server/Manager/Virtualmin.php:395
 msgid "Failed to create account"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:425
+#: library/Server/Manager/Virtualmin.php:417
 msgid "Failed to suspend user's account"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:447
+#: library/Server/Manager/Virtualmin.php:439
 msgid "Failed to unsuspend user's account"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:470
+#: library/Server/Manager/Virtualmin.php:462
 msgid "Failed to change user's password"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:492
+#: library/Server/Manager/Virtualmin.php:484
 msgid "Failed to delete user's account"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:521
+#: library/Server/Manager/Virtualmin.php:513
 msgid "Failed to modify domain details"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:548
+#: library/Server/Manager/Virtualmin.php:540
 msgid "Failed to enable features"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:575
+#: library/Server/Manager/Virtualmin.php:567
 msgid "Failed to disable features"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:582
+#: library/Server/Manager/Virtualmin.php:574
 msgid "Cancel reseller command only available in Virtualmin PRO version"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:593
+#: library/Server/Manager/Virtualmin.php:585
 msgid "Failed to delete reseller"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:600
+#: library/Server/Manager/Virtualmin.php:592
 msgid "Modify reseller comand is only available in Virtualmin PRO version"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:613
+#: library/Server/Manager/Virtualmin.php:605
 msgid "Failed to change reseller's password"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:620
+#: library/Server/Manager/Virtualmin.php:612
 msgid "Modify reseller command is only available in Virtualmin PRO version"
 msgstr ""
 
-#: library/Server/Manager/Whm.php:28
+#: library/Server/Manager/Whm.php:26
 msgid "Server manager \"cPanel WHM\" is not configured properly. Hostname is not set"
 msgstr ""
 
-#: library/Server/Manager/Whm.php:32
+#: library/Server/Manager/Whm.php:30
 msgid "Server manager \"cPanel WHM\" is not configured properly. Username is not set"
 msgstr ""
 
-#: library/Server/Manager/Whm.php:36
+#: library/Server/Manager/Whm.php:34
 msgid "Server manager \"cPanel WHM\" is not configured properly. Authentication is not set"
 msgstr ""
 
@@ -990,7 +968,7 @@ msgstr "Token CSRF incorect."
 
 #: modules/Cart/Api/Guest.php:65 modules/Currency/Api/Admin.php:75
 #: modules/Currency/Api/Admin.php:255 modules/Currency/Api/Guest.php:54
-#: modules/Currency/Service.php:468 modules/Currency/Service.php:566
+#: modules/Currency/Service.php:468 modules/Currency/Service.php:574
 msgid "Currency not found"
 msgstr "Moneda nu a fost găsită"
 
@@ -1097,7 +1075,6 @@ msgstr "Link-ul a expirat sau ați confirmat deja resetarea parolei."
 #: modules/Client/html_admin/mod_client_index.html.twig:7
 #: modules/Client/html_admin/mod_client_index.html.twig:175
 #: modules/Client/html_admin/mod_client_manage.html.twig:17
-#: themes/admin_default/html/layout_default.html.twig:139
 #: themes/admin_default/html/mod_index_dashboard.html.twig:150
 #: themes/admin_default/html/mod_index_dashboard.html.twig:425
 #: themes/admin_default/html/mod_index_dashboard.html.twig:521
@@ -1187,11 +1164,11 @@ msgstr "Vă rugăm să verificați căsuța poștală și să confirmați adresa
 msgid "Confirmation email was sent to your email address. Please click on link in it in order to verify your email."
 msgstr "E-mailul de confirmare a fost trimis la adresa ta de e-mail. Te rugăm să dai click pe link-ul din ea pentru a verifica adresa ta de e-mail."
 
-#: modules/Client/Service.php:670 modules/Profile/Service.php:122
+#: modules/Client/Service.php:672 modules/Profile/Service.php:122
 msgid "Email can not be changed"
 msgstr "E-mailul nu poate fi schimbat"
 
-#: modules/Client/Service.php:683 modules/Client/Service.php:698
+#: modules/Client/Service.php:685 modules/Client/Service.php:700
 msgid "It is required that you provide details for field \":field\""
 msgstr "Este necesar să furnizați detalii pentru câmpul \":field\""
 
@@ -1232,14 +1209,14 @@ msgstr "Moneda nu a fost găsită"
 msgid "Currency rate is not valid"
 msgstr "Rata monedei nu este validă"
 
-#: modules/Currency/Service.php:554
+#: modules/Currency/Service.php:562
 msgid "<b>Currencylayer threw an error:</b><br />"
 msgstr ""
 
 #: modules/Custompages/Controller/Admin.php:45
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:10
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:14
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:11
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:19
 msgid "Custom Pages"
 msgstr "Pagini personalizate"
 
@@ -1322,35 +1299,35 @@ msgstr "Vizitați magazinul de extensii pentru mai multe informații despre actu
 msgid "FOSSBilling core modules can not be managed"
 msgstr ""
 
-#: modules/Extension/Service.php:466 modules/Extension/Service.php:496
+#: modules/Extension/Service.php:469 modules/Extension/Service.php:499
 msgid "Module seems to be already installed."
 msgstr ""
 
-#: modules/Extension/Service.php:469
+#: modules/Extension/Service.php:472
 msgid "Extension can not be moved. Make sure your server allows you to write to the modules folder."
 msgstr ""
 
-#: modules/Extension/Service.php:477
+#: modules/Extension/Service.php:480
 msgid "Theme can not be moved. Make sure your server allows you to write to the themes folder."
 msgstr ""
 
-#: modules/Extension/Service.php:489
+#: modules/Extension/Service.php:492
 msgid "Locale files can not be moved. Make sure your server allows you to write to the locale folder"
 msgstr ""
 
-#: modules/Extension/Service.php:499
+#: modules/Extension/Service.php:502
 msgid "Payment gateways files can not be moved. Make sure your server allows you to write to the Payment gateway folder"
 msgstr ""
 
-#: modules/Extension/Service.php:504
+#: modules/Extension/Service.php:507
 msgid "Extension does not support auto-install feature. Extension must be installed manually"
 msgstr ""
 
-#: modules/Extension/Service.php:534
+#: modules/Extension/Service.php:537
 msgid "FOSSBilling core modules can not be installed or removed"
 msgstr ""
 
-#: modules/Extension/Service.php:539
+#: modules/Extension/Service.php:542
 msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr ""
 
@@ -1459,7 +1436,6 @@ msgstr "Metoda de plată nu a fost găsită. Lipsește parametrul gateway_id"
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:8
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:11
 #: modules/Order/html_admin/mod_order_manage.html.twig:52
-#: themes/admin_default/html/layout_default.html.twig:172
 #: themes/admin_default/html/mod_index_dashboard.html.twig:186
 #: themes/admin_default/html/mod_index_dashboard.html.twig:233
 #: themes/admin_default/html/mod_index_dashboard.html.twig:416
@@ -1758,7 +1734,7 @@ msgstr ""
 #: modules/Order/Controller/Admin.php:45
 #: modules/Client/html_admin/mod_client_manage.html.twig:32
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:81
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:35
 #: modules/Index/html_client/mod_index_dashboard.html.twig:131
 #: modules/Order/html_admin/mod_order_index.html.twig:7
 #: modules/Order/html_admin/mod_order_index.html.twig:159
@@ -1767,7 +1743,6 @@ msgstr ""
 #: modules/Order/html_client/mod_order_list.html.twig:9
 #: modules/Order/html_client/mod_order_list.html.twig:17
 #: modules/Order/html_client/mod_order_manage.html.twig:11
-#: themes/admin_default/html/layout_default.html.twig:159
 #: themes/admin_default/html/mod_index_dashboard.html.twig:168
 #: themes/admin_default/html/mod_index_dashboard.html.twig:407
 #: themes/admin_default/html/mod_index_dashboard.html.twig:519
@@ -2159,52 +2134,32 @@ msgstr ""
 msgid "Maximum number of iterations reached while generating license key"
 msgstr ""
 
-#: modules/Spamchecker/Service.php:88
+#: modules/Spamchecker/Service.php:71
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
 msgstr ""
 
-#: modules/Spamchecker/Service.php:120
-msgid "Akismet detected this message is spam"
-msgstr ""
-
-#: modules/Spamchecker/Service.php:140
+#: modules/Spamchecker/Service.php:92
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
 msgstr ""
 
-#: modules/Spamchecker/Service.php:144
+#: modules/Spamchecker/Service.php:96
 msgid "You have to complete the CAPTCHA to continue"
 msgstr ""
 
-#: modules/Spamchecker/Service.php:161 modules/Spamchecker/Service.php:164
+#: modules/Spamchecker/Service.php:110 modules/Spamchecker/Service.php:113
 msgid "reCAPTCHA verification failed."
 msgstr ""
 
-#: modules/Spamchecker/Service.php:195
+#: modules/Spamchecker/Service.php:144
 msgid "Your username is blacklisted in the Stop Forum Spam database"
 msgstr ""
 
-#: modules/Spamchecker/Service.php:198
+#: modules/Spamchecker/Service.php:147
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
 msgstr ""
 
-#: modules/Spamchecker/Service.php:201
+#: modules/Spamchecker/Service.php:150
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
-msgstr ""
-
-#: modules/Spamchecker/akismet.curl.class.php:79
-msgid "Akismet API Key not set."
-msgstr ""
-
-#: modules/Spamchecker/akismet.curl.class.php:119
-msgid "Could not start new CURL instance"
-msgstr ""
-
-#: modules/Spamchecker/akismet.curl.class.php:152
-msgid "Could not close the CURL instance"
-msgstr ""
-
-#: modules/Spamchecker/akismet.curl.class.php:175
-msgid "Could not send cURL request"
 msgstr ""
 
 #: modules/Staff/Api/Guest.php:41
@@ -2344,7 +2299,7 @@ msgstr ""
 #: modules/Email/html_admin/mod_email_settings.html.twig:16
 #: modules/Email/html_admin/mod_email_template.html.twig:16
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:19
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:29
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:30
 #: modules/Order/html_admin/mod_order_settings.html.twig:19
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:20
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:19
@@ -2355,7 +2310,7 @@ msgstr ""
 #: modules/Staff/html_admin/mod_staff_group.html.twig:17
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:19
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:19
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:31
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:32
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:19
 #: modules/Support/html_admin/mod_support_settings.html.twig:19
 #: modules/Support/html_admin/mod_support_settings.html.twig:28
@@ -2363,15 +2318,15 @@ msgstr ""
 #: modules/System/html_admin/mod_system_settings.html.twig:19
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:15
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:17
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:46
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:98
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:50
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:104
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:19
-#: themes/admin_default/html/layout_default.html.twig:111
+#: themes/admin_default/html/layout_default.html.twig:118
 msgid "Settings"
 msgstr "Setări"
 
 #: modules/System/Service.php:33
-#: themes/admin_default/html/partial_sidebar.html.twig:61
+#: themes/admin_default/html/layout_default.html.twig:177
 msgid "Report a bug"
 msgstr "Raportați o problemă"
 
@@ -2383,11 +2338,11 @@ msgstr "Cheia parametrului lipsește"
 msgid "Invalid parameter name, received: param_"
 msgstr "Nume de parametru incorect, received: param_"
 
-#: modules/System/Service.php:454
+#: modules/System/Service.php:458
 msgid "Parameter :param does not exist"
 msgstr "Parametrul :param nu există"
 
-#: modules/System/Service.php:1347
+#: modules/System/Service.php:1351
 msgid "Country :code phone code is not registered"
 msgstr ""
 
@@ -2430,6 +2385,7 @@ msgstr "Utilizator"
 
 #: modules/Activity/html_admin/mod_activity_index.html.twig:24
 #: modules/Embed/html_client/mod_embed_contact.html.twig:57
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:118
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
 #: modules/Order/html_client/mod_order_manage.html.twig:193
 #: modules/Support/html_admin/mod_support_tickets.html.twig:311
@@ -2444,7 +2400,7 @@ msgid "Ip"
 msgstr "IP"
 
 #: modules/Activity/html_admin/mod_activity_index.html.twig:26
-#: modules/Client/html_admin/mod_client_index.html.twig:358
+#: modules/Client/html_admin/mod_client_index.html.twig:368
 #: modules/Client/html_admin/mod_client_login_history.html.twig:25
 #: modules/Client/html_admin/mod_client_manage.html.twig:295
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
@@ -2483,7 +2439,7 @@ msgstr "Dată"
 #: modules/Activity/html_admin/mod_activity_index.html.twig:67
 #: modules/Client/html_admin/mod_client_group.html.twig:51
 #: modules/Client/html_admin/mod_client_index.html.twig:262
-#: modules/Client/html_admin/mod_client_index.html.twig:418
+#: modules/Client/html_admin/mod_client_index.html.twig:428
 #: modules/Client/html_admin/mod_client_login_history.html.twig:52
 #: modules/Client/html_admin/mod_client_manage.html.twig:148
 #: modules/Client/html_admin/mod_client_manage.html.twig:672
@@ -2507,7 +2463,7 @@ msgstr "Dată"
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:211
 #: modules/Kb/html_admin/mod_kb_index.html.twig:74
 #: modules/Kb/html_admin/mod_kb_index.html.twig:149
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:66
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:69
 #: modules/News/html_admin/mod_news_index.html.twig:70
 #: modules/Notification/html_admin/mod_notification_index.html.twig:46
 #: modules/Notification/html_admin/mod_notification_index.html.twig:63
@@ -2524,7 +2480,7 @@ msgstr "Dată"
 #: modules/Product/html_admin/mod_product_index.html.twig:158
 #: modules/Product/html_admin/mod_product_promos.html.twig:97
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:57
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:79
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:101
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:81
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:215
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:74
@@ -2534,8 +2490,8 @@ msgstr "Dată"
 #: modules/Staff/html_admin/mod_staff_index.html.twig:57
 #: modules/Staff/html_admin/mod_staff_index.html.twig:150
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:54
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:99
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:232
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:101
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:254
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:78
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:146
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:89
@@ -2547,14 +2503,14 @@ msgstr "Dată"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:183
 #: modules/Support/html_admin/mod_support_ticket.html.twig:325
 #: modules/Support/html_admin/mod_support_tickets.html.twig:251
-#: modules/Theme/html_admin/mod_theme_preset.html.twig:52
-#: themes/admin_default/html/partial_batch_delete.html.twig:13
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:54
+#: themes/admin_default/html/partial_batch_delete.html.twig:36
 msgid "Are you sure?"
 msgstr "Sunteți sigur?"
 
 #: modules/Activity/html_admin/mod_activity_index.html.twig:77
 #: modules/Client/html_admin/mod_client_index.html.twig:271
-#: modules/Client/html_admin/mod_client_index.html.twig:427
+#: modules/Client/html_admin/mod_client_index.html.twig:437
 #: modules/Client/html_admin/mod_client_login_history.html.twig:62
 #: modules/Client/html_admin/mod_client_manage.html.twig:495
 #: modules/Client/html_admin/mod_client_manage.html.twig:564
@@ -2565,7 +2521,7 @@ msgstr "Sunteți sigur?"
 #: modules/Client/html_admin/mod_client_manage.html.twig:836
 #: modules/Client/html_client/mod_client_balance.html.twig:40
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:101
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:58
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:96
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:62
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:192
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:216
@@ -2584,7 +2540,7 @@ msgstr "Sunteți sigur?"
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:91
 #: modules/Kb/html_admin/mod_kb_index.html.twig:83
 #: modules/Kb/html_admin/mod_kb_index.html.twig:159
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:75
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:81
 #: modules/News/html_admin/mod_news_index.html.twig:80
 #: modules/Notification/html_admin/mod_notification_index.html.twig:55
 #: modules/Order/html_admin/mod_order_index.html.twig:249
@@ -2599,7 +2555,7 @@ msgstr "Sunteți sigur?"
 #: modules/Product/html_admin/mod_product_manage.html.twig:204
 #: modules/Product/html_admin/mod_product_promos.html.twig:106
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:75
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:89
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:113
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:125
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:164
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:83
@@ -2607,8 +2563,8 @@ msgstr "Sunteți sigur?"
 #: modules/Staff/html_admin/mod_staff_index.html.twig:67
 #: modules/Staff/html_admin/mod_staff_index.html.twig:157
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:64
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:108
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:241
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:112
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:265
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:87
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:156
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:123
@@ -2617,8 +2573,8 @@ msgstr "Sunteți sigur?"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:261
 #: modules/Support/html_client/mod_support_ticket.html.twig:99
 #: modules/Support/html_client/mod_support_tickets.html.twig:57
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:65
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:117
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:70
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:124
 #: themes/admin_default/html/mod_index_dashboard.html.twig:317
 #: themes/admin_default/html/mod_index_dashboard.html.twig:474
 #: themes/admin_default/html/mod_index_dashboard.html.twig:501
@@ -2635,16 +2591,16 @@ msgid "Edit client group"
 msgstr "Modificați grupul de clienți"
 
 #: modules/Client/html_admin/mod_client_group.html.twig:32
-#: modules/Client/html_admin/mod_client_index.html.twig:402
-#: modules/Client/html_admin/mod_client_index.html.twig:439
+#: modules/Client/html_admin/mod_client_index.html.twig:412
+#: modules/Client/html_admin/mod_client_index.html.twig:449
 #: modules/Client/html_admin/mod_client_manage.html.twig:453
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:36
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:58
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:130
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:24
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:76
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:33
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:80
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:128
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:52
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:112
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:34
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:34
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:31
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:493
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:581
@@ -2708,13 +2664,13 @@ msgstr "Mergeți înapoi"
 #: modules/Client/html_admin/mod_client_settings.html.twig:89
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:33
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:80
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:182
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:67
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:180
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:65
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:81
 #: modules/Email/html_admin/mod_email_template.html.twig:81
 #: modules/Email/html_admin/mod_email_template.html.twig:126
-#: modules/Formbuilder/html_admin/mod_formbuilder_manage.html.twig:71
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:180
+#: modules/Formbuilder/html_admin/mod_formbuilder_manage.html.twig:88
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:133
 #: modules/Index/html_client/mod_index_dashboard.html.twig:86
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:127
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:315
@@ -2729,18 +2685,20 @@ msgstr "Mergeți înapoi"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:210
 #: modules/Kb/html_admin/mod_kb_article.html.twig:86
 #: modules/Kb/html_admin/mod_kb_category.html.twig:62
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:125
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:161
 #: modules/News/html_admin/mod_news_post.html.twig:140
 #: modules/Order/html_admin/mod_order_manage.html.twig:422
 #: modules/Order/html_admin/mod_order_manage.html.twig:491
 #: modules/Order/html_admin/mod_order_settings.html.twig:92
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:66
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:185
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:84
 #: modules/Product/html_admin/mod_product_category.html.twig:63
 #: modules/Product/html_admin/mod_product_manage.html.twig:162
 #: modules/Product/html_admin/mod_product_manage.html.twig:219
 #: modules/Product/html_admin/mod_product_manage.html.twig:255
 #: modules/Product/html_admin/mod_product_promo.html.twig:187
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:45
+#: modules/Seo/html_admin/mod_seo_settings.html.twig:47
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:39
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:53
 #: modules/Servicecustom/html_admin/mod_servicecustom_manage.html.twig:27
@@ -2754,17 +2712,17 @@ msgstr "Mergeți înapoi"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:72
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:138
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:136
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:115
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:94
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:153
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:169
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:46
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:56
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:86
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:134
 #: modules/Support/html_admin/mod_support_settings.html.twig:113
 #: modules/Support/html_admin/mod_support_ticket.html.twig:167
-#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:46
+#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr "Actualizați"
 
@@ -2775,7 +2733,7 @@ msgstr "Filtrați clienții"
 #: modules/Client/html_admin/mod_client_index.html.twig:18
 #: modules/Client/html_admin/mod_client_manage.html.twig:63
 #: modules/Client/html_admin/mod_client_manage.html.twig:808
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:23
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:87
 #: modules/Index/html_client/mod_index_dashboard.html.twig:92
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
@@ -2791,17 +2749,18 @@ msgstr "ID"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:24
 #: modules/Client/html_admin/mod_client_index.html.twig:209
-#: modules/Client/html_admin/mod_client_index.html.twig:314
+#: modules/Client/html_admin/mod_client_index.html.twig:324
 #: modules/Client/html_admin/mod_client_manage.html.twig:67
 #: modules/Client/html_admin/mod_client_manage.html.twig:223
 #: modules/Embed/html_client/mod_embed_contact.html.twig:42
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:12
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:15
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:210
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:35
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:97
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:139
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:116
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:159
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:33
 #: modules/Order/html_admin/mod_order_index.html.twig:184
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:39
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
@@ -2815,14 +2774,14 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_index.html.twig:169
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:62
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:34
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:62
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:169
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:215
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:253
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:63
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:186
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:237
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:278
 #: modules/Support/html_client/mod_support_contact_us.html.twig:25
 #: modules/System/html_admin/mod_system_settings.html.twig:53
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:77
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:83
 msgid "Name"
 msgstr "Nume"
 
@@ -2832,7 +2791,7 @@ msgid "Company name"
 msgstr "Denumirea companiei"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:38
-#: modules/Client/html_admin/mod_client_index.html.twig:308
+#: modules/Client/html_admin/mod_client_index.html.twig:318
 #: modules/Client/html_admin/mod_client_manage.html.twig:75
 #: modules/Client/html_admin/mod_client_manage.html.twig:217
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:89
@@ -2846,6 +2805,7 @@ msgstr "Denumirea companiei"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:468
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:117
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:136
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:36
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:180
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:127
 #: modules/Staff/html_admin/mod_staff_index.html.twig:31
@@ -2854,8 +2814,8 @@ msgstr "Denumirea companiei"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:42
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:68
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:40
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:63
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:175
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:64
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:192
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:45
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:53
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:83
@@ -2869,20 +2829,20 @@ msgid "Email"
 msgstr "E-mail"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:45
-#: modules/Client/html_admin/mod_client_index.html.twig:302
+#: modules/Client/html_admin/mod_client_index.html.twig:312
 #: modules/Client/html_admin/mod_client_manage.html.twig:94
 #: modules/Client/html_admin/mod_client_manage.html.twig:211
 #: modules/Staff/html_admin/mod_staff_index.html.twig:32
 #: modules/Staff/html_admin/mod_staff_index.html.twig:80
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:56
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:64
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:163
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:65
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:180
 msgid "Group"
 msgstr "Grup"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:52
 #: modules/Client/html_admin/mod_client_index.html.twig:211
-#: modules/Client/html_admin/mod_client_index.html.twig:289
+#: modules/Client/html_admin/mod_client_index.html.twig:299
 #: modules/Client/html_admin/mod_client_manage.html.twig:79
 #: modules/Client/html_admin/mod_client_manage.html.twig:164
 #: modules/Client/html_admin/mod_client_manage.html.twig:456
@@ -2906,7 +2866,7 @@ msgstr "Grup"
 #: modules/Kb/html_admin/mod_kb_article.html.twig:63
 #: modules/Kb/html_admin/mod_kb_index.html.twig:44
 #: modules/Kb/html_admin/mod_kb_index.html.twig:109
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:44
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:45
 #: modules/News/html_admin/mod_news_index.html.twig:103
 #: modules/News/html_admin/mod_news_post.html.twig:65
 #: modules/Order/html_admin/mod_order_index.html.twig:29
@@ -2926,8 +2886,8 @@ msgstr "Grup"
 #: modules/Staff/html_admin/mod_staff_index.html.twig:33
 #: modules/Staff/html_admin/mod_staff_index.html.twig:117
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:74
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:65
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:193
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:66
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:211
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:57
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:127
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:84
@@ -2949,7 +2909,7 @@ msgstr "Tot"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:60
 #: modules/Client/html_admin/mod_client_index.html.twig:120
-#: modules/Client/html_admin/mod_client_index.html.twig:293
+#: modules/Client/html_admin/mod_client_index.html.twig:303
 #: modules/Client/html_admin/mod_client_manage.html.twig:168
 #: modules/Client/html_admin/mod_client_settings.html.twig:103
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:138
@@ -2958,7 +2918,7 @@ msgstr "Tot"
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:136
 #: modules/Kb/html_admin/mod_kb_article.html.twig:71
 #: modules/Kb/html_admin/mod_kb_index.html.twig:117
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:46
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:72
 #: modules/News/html_admin/mod_news_index.html.twig:36
 #: modules/News/html_admin/mod_news_index.html.twig:111
 #: modules/News/html_admin/mod_news_post.html.twig:73
@@ -2970,26 +2930,26 @@ msgstr "Tot"
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:44
 #: modules/Staff/html_admin/mod_staff_index.html.twig:122
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:78
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:201
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:223
 msgid "Active"
 msgstr "Activ"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:64
 #: modules/Client/html_admin/mod_client_index.html.twig:134
 #: modules/Client/html_admin/mod_client_manage.html.twig:172
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:47
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:73
 #: modules/Order/html_admin/mod_order_index.html.twig:133
 msgid "Suspended"
 msgstr "Suspendat"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:68
 #: modules/Client/html_admin/mod_client_index.html.twig:148
-#: modules/Client/html_admin/mod_client_index.html.twig:297
+#: modules/Client/html_admin/mod_client_index.html.twig:307
 #: modules/Client/html_admin/mod_client_manage.html.twig:176
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:190
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:125
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:140
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:48
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:74
 msgid "Canceled"
 msgstr "Anulat"
 
@@ -3054,12 +3014,12 @@ msgstr "Grupuri"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:193
 #: modules/Staff/html_admin/mod_staff_index.html.twig:20
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:49
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:50
 msgid "New group"
 msgstr "Grup nou"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:210
-#: modules/Client/html_admin/mod_client_index.html.twig:327
+#: modules/Client/html_admin/mod_client_index.html.twig:337
 #: modules/Client/html_admin/mod_client_manage.html.twig:71
 #: modules/Client/html_admin/mod_client_manage.html.twig:189
 #: modules/Client/html_admin/mod_client_settings.html.twig:72
@@ -3076,7 +3036,12 @@ msgstr "Grup nou"
 msgid "Company"
 msgstr "Companie"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:333
+#: modules/Client/html_admin/mod_client_index.html.twig:284
+#: modules/Client/html_admin/mod_client_index.html.twig:288
+msgid "Export Clients"
+msgstr ""
+
+#: modules/Client/html_admin/mod_client_index.html.twig:343
 #: modules/Client/html_admin/mod_client_manage.html.twig:282
 #: modules/Client/html_admin/mod_client_settings.html.twig:80
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:192
@@ -3084,7 +3049,7 @@ msgstr "Companie"
 msgid "Address Line 1"
 msgstr "Adresă rândul 1"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:339
+#: modules/Client/html_admin/mod_client_index.html.twig:349
 #: modules/Client/html_admin/mod_client_manage.html.twig:288
 #: modules/Client/html_admin/mod_client_settings.html.twig:81
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:198
@@ -3092,7 +3057,7 @@ msgstr "Adresă rândul 1"
 msgid "Address Line 2"
 msgstr "Adresă rândul 2"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:345
+#: modules/Client/html_admin/mod_client_index.html.twig:355
 #: modules/Client/html_admin/mod_client_manage.html.twig:308
 #: modules/Client/html_admin/mod_client_settings.html.twig:78
 #: modules/Client/html_client/mod_client_profile.html.twig:145
@@ -3104,7 +3069,7 @@ msgstr "Adresă rândul 2"
 msgid "City"
 msgstr "Oraș"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:351
+#: modules/Client/html_admin/mod_client_index.html.twig:361
 #: modules/Client/html_admin/mod_client_manage.html.twig:301
 #: modules/Client/html_admin/mod_client_settings.html.twig:79
 #: modules/Client/html_client/mod_client_profile.html.twig:166
@@ -3118,12 +3083,12 @@ msgstr "Oraș"
 msgid "State"
 msgstr "Stat"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:364
+#: modules/Client/html_admin/mod_client_index.html.twig:374
 #: modules/Client/html_admin/mod_client_manage.html.twig:314
 msgid "Postcode"
 msgstr "Cod poștal"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:370
+#: modules/Client/html_admin/mod_client_index.html.twig:380
 #: modules/Client/html_admin/mod_client_manage.html.twig:320
 #: modules/Client/html_admin/mod_client_settings.html.twig:83
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:375
@@ -3136,7 +3101,7 @@ msgstr "Cod poștal"
 msgid "Phone"
 msgstr "Telefon"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:381
+#: modules/Client/html_admin/mod_client_index.html.twig:391
 #: modules/Client/html_admin/mod_client_manage.html.twig:98
 #: modules/Client/html_admin/mod_client_manage.html.twig:346
 #: modules/Client/html_client/mod_client_profile.html.twig:24
@@ -3150,7 +3115,7 @@ msgstr "Telefon"
 msgid "Currency"
 msgstr "Monedă"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:387
+#: modules/Client/html_admin/mod_client_index.html.twig:397
 #: modules/Client/html_admin/mod_client_manage.html.twig:405
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:23
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
@@ -3169,26 +3134,26 @@ msgstr "Monedă"
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:43
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:152
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:36
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:181
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:199
 msgid "Password"
 msgstr "Parolă"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:393
-#: modules/Client/html_admin/mod_client_index.html.twig:445
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:103
+#: modules/Client/html_admin/mod_client_index.html.twig:403
+#: modules/Client/html_admin/mod_client_index.html.twig:455
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:137
 #: modules/Email/html_admin/mod_email_settings.html.twig:164
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:163
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:136
 #: modules/Kb/html_admin/mod_kb_index.html.twig:128
 #: modules/Kb/html_admin/mod_kb_index.html.twig:183
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:94
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:105
 #: modules/News/html_admin/mod_news_index.html.twig:123
 #: modules/Product/html_admin/mod_product_addons.html.twig:135
 #: modules/Product/html_admin/mod_product_index.html.twig:131
 #: modules/Product/html_admin/mod_product_index.html.twig:199
 #: modules/Product/html_admin/mod_product_promos.html.twig:280
 #: modules/Staff/html_admin/mod_staff_index.html.twig:127
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:206
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:228
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:119
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:174
 #: modules/Support/html_admin/mod_support_tickets.html.twig:316
@@ -3224,14 +3189,14 @@ msgstr "IP"
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:37
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
-#: themes/admin_default/html/layout_default.html.twig:109
+#: themes/admin_default/html/layout_default.html.twig:116
 #: themes/huraga/html/layout_default.html.twig:109
 #: themes/huraga/html/layout_default.html.twig:220
 msgid "Profile"
 msgstr "Profil"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:29
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:44
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:75
 #: modules/Product/html_admin/mod_product_manage.html.twig:75
 msgid "Edit"
 msgstr "Modificați"
@@ -3239,7 +3204,6 @@ msgstr "Modificați"
 #: modules/Client/html_admin/mod_client_manage.html.twig:38
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:150
 #: modules/Index/html_client/mod_index_dashboard.html.twig:155
-#: themes/admin_default/html/layout_default.html.twig:186
 #: themes/admin_default/html/mod_index_dashboard.html.twig:204
 #: themes/admin_default/html/mod_index_dashboard.html.twig:434
 #: themes/admin_default/html/mod_index_dashboard.html.twig:522
@@ -3283,7 +3247,7 @@ msgstr "Balanța fondurilor"
 #: modules/Order/html_admin/mod_order_manage.html.twig:415
 #: modules/Order/html_client/mod_order_manage.html.twig:278
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
-#: modules/Support/html_admin/mod_support_tickets.html.twig:375
+#: modules/Support/html_admin/mod_support_tickets.html.twig:376
 #: modules/System/html_admin/mod_system_settings.html.twig:136
 msgid "Notes"
 msgstr "Notițe"
@@ -3317,7 +3281,7 @@ msgid "Login to client area"
 msgstr "Autentificare în zona client"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:153
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:49
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:82
 #: modules/Email/html_admin/mod_email_details.html.twig:64
 #: modules/Email/html_client/mod_email_email.html.twig:36
 #: modules/Email/html_client/mod_email_index.html.twig:45
@@ -3386,7 +3350,6 @@ msgstr "E-mail aprobat"
 #: modules/Product/html_admin/mod_product_promos.html.twig:159
 #: modules/Product/html_admin/mod_product_promos.html.twig:172
 #: modules/Product/html_admin/mod_product_promos.html.twig:187
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:39
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:11
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:24
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:68
@@ -3416,8 +3379,8 @@ msgstr "E-mail aprobat"
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:86
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:104
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:122
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:144
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:132
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:158
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:67
 #: modules/Support/html_admin/mod_support_settings.html.twig:49
 #: modules/Support/html_admin/mod_support_settings.html.twig:78
@@ -3452,7 +3415,6 @@ msgstr "Da"
 #: modules/Product/html_admin/mod_product_promos.html.twig:163
 #: modules/Product/html_admin/mod_product_promos.html.twig:176
 #: modules/Product/html_admin/mod_product_promos.html.twig:191
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:40
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:15
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:28
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:68
@@ -3482,8 +3444,8 @@ msgstr "Da"
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:88
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:106
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:124
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:129
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:148
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:137
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:164
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:71
 #: modules/Support/html_admin/mod_support_settings.html.twig:53
 #: modules/Support/html_admin/mod_support_settings.html.twig:82
@@ -3521,7 +3483,7 @@ msgid "Passport number"
 msgstr "Numărul pașaportului"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:338
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:99
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:85
 msgid "Additional settings"
 msgstr "Setări suplimentare"
 
@@ -3590,7 +3552,7 @@ msgstr "Comenzile clientului"
 #: modules/Client/html_admin/mod_client_manage.html.twig:697
 #: modules/Client/html_admin/mod_client_manage.html.twig:811
 #: modules/Client/html_client/mod_client_balance.html.twig:27
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:193
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:191
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:640
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:50
@@ -3677,9 +3639,9 @@ msgstr "Centru de asistenţă"
 #: modules/Email/html_admin/mod_email_settings.html.twig:152
 #: modules/Embed/html_client/mod_embed_contact.html.twig:52
 #: modules/Index/html_client/mod_index_dashboard.html.twig:48
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:42
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:88
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:30
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:52
 #: modules/Order/html_admin/mod_order_manage.html.twig:672
 #: modules/Order/html_client/mod_order_manage.html.twig:186
 #: modules/Order/html_client/mod_order_manage.html.twig:225
@@ -3713,7 +3675,7 @@ msgstr "Istoric plăți client"
 #: modules/Client/html_admin/mod_client_manage.html.twig:705
 #: modules/Client/html_client/mod_client_balance.html.twig:25
 #: modules/Extension/html_admin/mod_extension_index.html.twig:41
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:176
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:174
 #: modules/Kb/html_admin/mod_kb_category.html.twig:46
 #: modules/Kb/html_admin/mod_kb_index.html.twig:177
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:75
@@ -3754,7 +3716,6 @@ msgstr "Subiect e-mail"
 #: modules/Client/html_admin/mod_client_manage.html.twig:768
 #: modules/Email/html_admin/mod_email_details.html.twig:37
 #: modules/Email/html_admin/mod_email_history.html.twig:31
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:58
 msgid "To"
 msgstr "Către"
 
@@ -3781,12 +3742,12 @@ msgstr "Setările clientului"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:28
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:101
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:118
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:32
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:118
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:123
 #: modules/Support/html_admin/mod_support_settings.html.twig:42
-#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:31
+#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
 msgid "Configuration updated"
 msgstr "Configurație actualizată"
 
@@ -3847,7 +3808,7 @@ msgid "Custom_"
 msgstr "Personalizat _"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:107
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:85
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:69
 msgid "Required"
 msgstr "Obligatoriu"
 
@@ -4123,12 +4084,12 @@ msgstr "Moneda a fost actualizată"
 
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:42
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:59
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:136
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:134
 msgid "Conversion rate"
 msgstr "Rata de conversie"
 
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:48
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:142
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:140
 msgid "Format"
 msgstr "Format"
 
@@ -4165,16 +4126,16 @@ msgid "Example price"
 msgstr "Exemplu de preț"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:91
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:56
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:108
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:61
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:115
 msgid "Set as default"
 msgstr "Setați ca prestabilit"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:114
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:112
 msgid "Update Rates"
 msgstr "Actualizați tarifele"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:124
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:122
 #: modules/Email/html_admin/mod_email_settings.html.twig:50
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:29
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:32
@@ -4187,29 +4148,29 @@ msgstr "Actualizați tarifele"
 msgid "Code"
 msgstr "Cod"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:148
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:48
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:146
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:62
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:180
 msgid "Add"
 msgstr "Adăugaţi"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:155
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:153
 msgid "Adjust settings for currency rate updater"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:159
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:157
 msgid "Successfully updated settings"
 msgstr "Setări actualizate cu succes"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:162
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:160
 msgid "API key for currencylayer"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:168
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:166
 msgid "Enable CRON jobs"
 msgstr "Activați servicii CRON"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:172
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:170
 #: modules/Email/html_admin/mod_email_settings.html.twig:51
 #: modules/Email/html_admin/mod_email_settings.html.twig:127
 #: modules/Email/html_admin/mod_email_template.html.twig:106
@@ -4223,7 +4184,7 @@ msgstr "Activați servicii CRON"
 msgid "Enabled"
 msgstr "Activat"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:176
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:174
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:41
 #: modules/Product/html_admin/mod_product_addons.html.twig:95
 #: modules/Product/html_admin/mod_product_manage.html.twig:97
@@ -4231,20 +4192,20 @@ msgstr "Activat"
 msgid "Disabled"
 msgstr "Dezactivat"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:178
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:176
 msgid "If you enable this, conversion rates will be automatically updated whenever the CRON job fires up."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:195
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:193
 msgid "Result"
 msgstr "Rezultat"
 
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:11
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:17
 msgid "New Custom Page"
 msgstr "Pagină nouă personalizată"
 
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:25
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:54
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:53
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:52
 #: modules/Kb/html_admin/mod_kb_article.html.twig:51
 #: modules/Kb/html_admin/mod_kb_category.html.twig:40
 #: modules/News/html_admin/mod_news_post.html.twig:59
@@ -4252,39 +4213,24 @@ msgstr "Pagină nouă personalizată"
 msgid "Slug"
 msgstr "Slug (titlu url)"
 
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:39
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:69
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:86
 #: modules/Support/html_client/mod_support_tickets.html.twig:50
 msgid "View"
 msgstr "Vizualizați"
 
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:78
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:35
-msgid "Enter page title here."
-msgstr "Introduceți titlul paginii aici."
-
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:83
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:118
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:40
 msgid "Meta Description"
 msgstr "Descriere Meta"
 
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:85
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:42
-msgid "Enter page meta description here."
-msgstr "Introduceți aici descrierea meta pentru pagină."
-
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:90
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:47
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:124
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:46
 msgid "Meta Keywords"
 msgstr "Cuvinte cheie Meta"
 
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:92
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:49
-msgid "Enter page meta keywords here."
-msgstr ""
-
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:61
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:130
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:58
 #: modules/Email/html_admin/mod_email_settings.html.twig:158
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:203
 #: modules/Kb/html_admin/mod_kb_article.html.twig:45
@@ -4295,29 +4241,37 @@ msgstr ""
 msgid "Content"
 msgstr "Conținut"
 
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:99
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:63
-msgid "Enter page content here."
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:132
+msgid "Add page content"
 msgstr ""
 
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:7
 msgid "Edit Custom Page"
 msgstr "Modificați pagina personalizată"
 
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:13
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
-#: modules/Index/html_client/mod_index_dashboard.html.twig:10
-#: themes/huraga/html/layout_default.html.twig:196
-msgid "Home"
-msgstr ""
-
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:28
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:29
 msgid "Custom page updated"
 msgstr ""
 
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:56
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:36
+msgid "Enter page title here."
+msgstr "Introduceți titlul paginii aici."
+
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:42
+msgid "Enter page meta description here."
+msgstr "Introduceți aici descrierea meta pentru pagină."
+
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:48
+msgid "Enter page meta keywords here."
+msgstr ""
+
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:54
 msgid "Enter page slug here."
 msgstr "Introduceți titlul paginii aici."
+
+#: modules/Custompages/html_admin/mod_custompages_page.html.twig:60
+msgid "Enter page content here."
+msgstr ""
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:3
 #: modules/Index/html_client/mod_index_dashboard.html.twig:3
@@ -4328,12 +4282,19 @@ msgstr "Zona clientului"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:12
 #: modules/Index/html_client/mod_index_dashboard.html.twig:4
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
+#: themes/admin_default/html/layout_default.html.twig:141
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
 #: themes/huraga/html/layout_default.html.twig:98
 #: themes/huraga/html/layout_default.html.twig:198
 #: themes/huraga/html/partial_menu.html.twig:5
 msgid "Dashboard"
 msgstr "Panou de control"
+
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
+#: modules/Index/html_client/mod_index_dashboard.html.twig:10
+#: themes/huraga/html/layout_default.html.twig:196
+msgid "Home"
+msgstr ""
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:36
 #: modules/Index/html_client/mod_index_dashboard.html.twig:41
@@ -4444,9 +4405,8 @@ msgstr "în urmă"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:32
 #: modules/Email/html_admin/mod_email_history.html.twig:32
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:18
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:57
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:44
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:29
 msgid "From"
 msgstr "De la"
 
@@ -4650,6 +4610,7 @@ msgstr "Mesaj email"
 
 #: modules/Email/html_admin/mod_email_template.html.twig:78
 #: modules/Email/html_admin/mod_email_template.html.twig:227
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:122
 msgid "Preview"
 msgstr "Previzualizați"
 
@@ -4869,98 +4830,106 @@ msgstr ""
 msgid "Removing languages from FOSSBilling is really simple. Just delete language folder you wish from"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:4
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:6
 msgid "Edit field"
 msgstr "Modificați câmp"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:14
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:18
 msgid "Please keep in mind that field name can not start with number. Special characters will be replaced with underscores ( _ )"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:18
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:31
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:22
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:33
 msgid "Label"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:25
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:29
 msgid "options"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:35
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:36
 msgid "Value"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:67
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:58
 msgid "+ Add new option"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:80
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:64
 msgid "Options"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:88
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:74
 msgid "Hide label"
 msgstr "Ascundeți eticheta"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:91
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:79
 msgid "Read only"
 msgstr "Doar în citire"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:102
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:87
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:11
+msgid "Prefix"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:90
 msgid "Prepend text"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:107
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:96
+msgid "Suffix"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:99
 msgid "Append text"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:120
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:108
 msgid "Textarea size"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:123
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:119
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:122
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:110
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:87
 msgid "Width"
 msgstr "Lățime"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:128
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:134
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:114
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:122
 msgid "px"
 msgstr "px"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:129
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:118
 msgid "Height"
 msgstr "Înălțime"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:142
-msgid "Default value/option"
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:128
+msgid "Default value"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:185
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:182
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:138
 msgid "Save"
 msgstr "Salvați"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_preview.html.twig:23
-#: modules/Formbuilder/html_admin/mod_formbuilder_preview.html.twig:38
-#: modules/Formbuilder/html_admin/mod_formbuilder_preview.html.twig:56
+#: modules/Formbuilder/html_admin/mod_formbuilder_preview.html.twig:22
+#: modules/Formbuilder/html_admin/mod_formbuilder_preview.html.twig:37
+#: modules/Formbuilder/html_admin/mod_formbuilder_preview.html.twig:55
 msgid "Please click on \"Edit\" in order to add options"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:60
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:13
 msgid "Custom forms"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:63
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:16
 msgid "Import form"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:71
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:24
 msgid "Create new form"
 msgstr "Creați un formular nou"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:82
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:36
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:17
 #: modules/Product/html_admin/mod_product_addons.html.twig:17
 #: modules/Product/html_admin/mod_product_category.html.twig:19
@@ -4973,62 +4942,62 @@ msgstr "Creați un formular nou"
 msgid "Products"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:139
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:92
 msgid "Form options"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:142
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:95
 msgid "Form options were updated"
 msgstr "Opțiunile formularului au fost actualizate"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:149
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:102
 msgid "Form title"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:156
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:109
 msgid "Labels position"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:159
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:112
 msgid "Labels on\n"
 "                            top"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:162
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:115
 msgid "Labels on the left"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:167
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:120
 msgid "Form title visibilty"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:170
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:123
 msgid "Show form\n"
 "                            title"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:172
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:125
 msgid "Do not show form\n"
 "                            title"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:198
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:151
 msgid "Text"
 msgstr "Text"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:205
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:158
 msgid "Dropdown"
 msgstr "Listă verticală"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:212
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:165
 msgid "Radio"
 msgstr "Radio"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:219
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:172
 msgid "Checkbox"
 msgstr "Căsuţă de validare"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:226
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:179
 msgid "Textarea"
 msgstr "Zonă pentru text"
 
@@ -5144,11 +5113,11 @@ msgid "Number"
 msgstr "Număr"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:29
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:289
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:299
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:62
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
-#: modules/Order/html_admin/mod_order_index.html.twig:267
+#: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:55
 #: modules/Support/html_admin/mod_support_tickets.html.twig:191
@@ -5158,9 +5127,10 @@ msgid "Client"
 msgstr "Client"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:32
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:293
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:303
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:106
-#: modules/Order/html_admin/mod_order_index.html.twig:271
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:149
+#: modules/Order/html_admin/mod_order_index.html.twig:281
 #: modules/Support/html_admin/mod_support_tickets.html.twig:284
 msgid "Start typing the client name or ID"
 msgstr ""
@@ -5183,7 +5153,12 @@ msgstr "Data emiterii"
 msgid "New Invoice"
 msgstr "Factură nouă"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:306
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:284
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:288
+msgid "Export Invoices"
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:316
 msgid "Prepare"
 msgstr ""
 
@@ -5425,8 +5400,6 @@ msgid "Maximum amount for add funds invoice"
 msgstr "Suma maximă pentru facturarea fondurilor adăugate"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:120
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:59
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:151
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:81
 #: modules/System/html_admin/mod_system_settings.html.twig:121
 #: modules/System/html_admin/mod_system_settings.html.twig:140
@@ -5891,7 +5864,6 @@ msgstr ""
 
 #: modules/Kb/html_client/mod_kb_article.html.twig:29
 #: modules/Kb/html_client/mod_kb_category.html.twig:27
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:102
 #: modules/News/html_client/mod_news_post.html.twig:43
 msgid "Back to list"
 msgstr ""
@@ -5921,68 +5893,72 @@ msgstr ""
 msgid "Try using other keyword. No matches found for keyword:"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:14
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:15
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:41
 msgid "Messages"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:21
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:22
 msgid "New message"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:99
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:100
+msgid "Message subject"
+msgstr ""
+
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:113
 msgid "Mass Mail Settings"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:118
-msgid "Client ID to send test email while creating message"
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:146
+msgid "Client to send test email"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:10
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:11
 msgid "Send Email Message"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:21
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:42
 msgid "From name"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:23
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:46
 msgid "From email"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:40
-msgid "Recipients filter. Select none to send message to all clients"
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:61
+msgid "Recipients filter"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:42
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:66
 msgid "Client status and group"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:61
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:89
 msgid "Has order"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:79
-msgid "Message content"
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:112
+msgid "Email content"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:93
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:157
 msgid "Update and preview"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:94
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:158
 msgid "Send test message"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:95
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:160
 msgid "Send message to clients"
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:126
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:188
 msgid "Message was added to mail queue and will be sent with scheduled tasks."
 msgstr ""
 
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:139
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:201
 msgid "Message was sent."
 msgstr ""
 
@@ -6055,7 +6031,6 @@ msgstr ""
 
 #: modules/Notification/html_admin/mod_notification_index.html.twig:12
 #: modules/Notification/html_admin/mod_notification_index.html.twig:28
-#: themes/admin_default/html/layout_default.html.twig:146
 msgid "Notifications"
 msgstr ""
 
@@ -6077,7 +6052,7 @@ msgid "Filter orders"
 msgstr ""
 
 #: modules/Order/html_admin/mod_order_index.html.twig:41
-#: modules/Order/html_admin/mod_order_index.html.twig:285
+#: modules/Order/html_admin/mod_order_index.html.twig:295
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:13
 #: themes/admin_default/html/partial_menu_top.html.twig:15
 msgid "Product"
@@ -6097,7 +6072,12 @@ msgstr ""
 msgid "Pending setup"
 msgstr ""
 
-#: modules/Order/html_admin/mod_order_index.html.twig:290
+#: modules/Order/html_admin/mod_order_index.html.twig:262
+#: modules/Order/html_admin/mod_order_index.html.twig:266
+msgid "Export Orders"
+msgstr ""
+
+#: modules/Order/html_admin/mod_order_index.html.twig:300
 #: themes/huraga/html/partial_pricing.html.twig:78
 msgid "Continue"
 msgstr ""
@@ -6509,134 +6489,130 @@ msgstr ""
 msgid "Order Button settings"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:30
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:32
 msgid "Order window settings"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:31
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:67
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:35
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:76
 msgid "Advanced settings"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:41
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:48
 msgid "Order popup settings"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:42
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:68
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:49
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:77
 msgid "Configure how your popup window will look like"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:47
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:54
 msgid "Theme color"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:50
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:57
 msgid "Green"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:51
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:58
 msgid "Red"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:52
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:59
 msgid "Blue"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:53
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:60
 msgid "Dark"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:73
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:90
 msgid "Border radius"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:82
-msgid "Background"
-msgstr ""
-
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:85
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:115
 msgid "Color"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:89
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:118
 msgid "Opacity"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:102
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:140
 msgid "Loader (while content of popup is being loaded)"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:132
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:163
 msgid "Close (ESC key by default)"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:135
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:167
 msgid "Click on background closes popup"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:142
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:174
 msgid "Show values of custom form before checkout"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:145
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:178
 msgid "User input will be shown before checkout for custom form"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:161
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:195
 msgid "Order Button code"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:170
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
 msgid "Clicking on html element with classname or ID"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:172
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:210
 msgid "will open popup window for"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:176
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:216
 msgid "symbols"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:180
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:224
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:29
 msgid "IMPORTANT"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:180
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:226
 msgid "You need to add ID (if you want to use it for one html element) or class (if you want to use it for multiple elements) in order for it to work"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:182
-msgid "Add order-button class to your elements which must call popup. For example: "
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:228
+msgid "Add order-button class to your elements which must call popup. For example:"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:183
-msgid "Add data-product attribute to your element to open specific product. For example:<br/>"
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:231
+msgid "Add data-product attribute to your element to open specific product. For example:"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:184
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:233
 msgid "data-product attribute value will be overridden if popup's product is selected from select-box above"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:192
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:240
 msgid "Copy this code to your website"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:200
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:258
 msgid "Try your popup"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:279
-msgid "It must start with dot(.) if it is classname or with a hashtag(#)"
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:331
+msgid "Class name should start with dot (.) or hashtag (#) for ID"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:284
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:336
 msgid "Add \" + selector + \" class to your elements which must call popup. For example: "
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:289
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:341
 msgid "Add \" + selector + \" ID to your element which must call popup. For example: "
 msgstr ""
 
@@ -7161,12 +7137,20 @@ msgstr ""
 
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:5
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:20
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:26
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:28
 msgid "Redirects"
 msgstr ""
 
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:31
 msgid "Create new redirect"
+msgstr ""
+
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:73
+msgid "Path"
+msgstr ""
+
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:75
+msgid "Target"
 msgstr ""
 
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:5
@@ -7175,7 +7159,7 @@ msgstr ""
 msgid "SEO settings"
 msgstr ""
 
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:37
+#: modules/Seo/html_admin/mod_seo_settings.html.twig:38
 msgid "Ping sitemap to Google"
 msgstr ""
 
@@ -8200,10 +8184,6 @@ msgstr ""
 msgid "License settings"
 msgstr ""
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:11
-msgid "Prefix"
-msgstr ""
-
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:18
 msgid "Length"
 msgstr ""
@@ -8406,30 +8386,14 @@ msgid "reCAPTCHA Secret key"
 msgstr ""
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:101
-msgid "Akismet settings"
-msgstr ""
-
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:102
-msgid "Enable forum messages checking on the <a href=\"https://akismet.com/\" target=\"_blank\">Akismet</a> database"
-msgstr ""
-
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:104
-msgid "Enable Akismet"
-msgstr ""
-
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:113
-msgid "Akismet API key"
-msgstr ""
-
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:122
 msgid "Stop Forum Spam settings"
 msgstr ""
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:123
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:102
 msgid "If enabled, client IP will be checked on the <a href=\"https://stopforumspam.com/\" target=\"_blank\">Stop Forum Spam</a> database before registration"
 msgstr ""
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:125
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:104
 msgid "Enable Stop Forum Spam"
 msgstr ""
 
@@ -8442,7 +8406,7 @@ msgstr ""
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:22
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:5
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:21
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:28
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:29
 msgid "Staff"
 msgstr ""
 
@@ -8460,19 +8424,19 @@ msgid "Staff members"
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:14
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:38
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:39
 msgid "New staff member"
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:17
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:42
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:43
 msgid "Manage groups"
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:110
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:87
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:47
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:187
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:205
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:51
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
 #: modules/System/html_admin/mod_system_settings.html.twig:115
@@ -8481,12 +8445,12 @@ msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:120
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:82
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:197
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:217
 msgid "Inactive"
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:175
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:259
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:285
 msgid "Create group"
 msgstr ""
 
@@ -8653,15 +8617,15 @@ msgstr ""
 msgid "New API key generated. Applications using old key are now not working."
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:121
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:126
 msgid "Check login IP"
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:134
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:144
 msgid "Allowed IPs. One per line"
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:140
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:152
 msgid "Allow staff reset passwords"
 msgstr ""
 
@@ -9108,22 +9072,27 @@ msgstr "Teme"
 
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:20
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:24
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:42
 msgid "Settings for"
 msgstr "Setări pentru"
 
-#: modules/Theme/html_admin/mod_theme_preset.html.twig:41
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:43
 msgid "Switch to a predefined set of theme settings from the dropdown. Adjust each section and apply the changes once you're done."
 msgstr "Comutați la un set predefinit de setări ale temei din meniul derulant. Reglaţi fiecare secţiune şi aplicaţi modificările după ce aţi terminat."
 
-#: modules/Theme/html_admin/mod_theme_preset.html.twig:43
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:45
 msgid "Your current preset"
 msgstr "Presetarea dumneavoastră curentă"
 
-#: modules/Theme/html_admin/mod_theme_preset.html.twig:69
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:71
+msgid "Config for"
+msgstr ""
+
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:78
 msgid "Save current settings as a new preset called"
 msgstr "Salvează setările curente ca presetare nouă apelată"
 
-#: modules/Theme/html_admin/mod_theme_preset.html.twig:75
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:87
 msgid "Apply changes"
 msgstr "Aplicați modificările"
 
@@ -9131,13 +9100,13 @@ msgstr "Aplicați modificările"
 msgid "Client area themes"
 msgstr "Teme pentru spațiul clientului"
 
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:72
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:78
 msgid "Admin area themes"
 msgstr "Teme pentru spațiul administratorului"
 
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:21
-#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:28
+#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:30
 msgid "Wysiwyg settings"
 msgstr "Setări Wysiwyg"
 
@@ -9153,34 +9122,34 @@ msgstr "Ups... Tocmai ați găsit o pagină de eroare"
 msgid "Back to Dashboard"
 msgstr "Înapoi la tabloul de bord"
 
-#: themes/admin_default/html/layout_default.html.twig:65
-#: themes/admin_default/html/partial_sidebar.html.twig:59
+#: themes/admin_default/html/layout_default.html.twig:72
+#: themes/admin_default/html/layout_default.html.twig:176
 msgid "Source code"
 msgstr "Cod sursă"
 
-#: themes/admin_default/html/layout_default.html.twig:71
+#: themes/admin_default/html/layout_default.html.twig:78
 msgid "Sponsor"
 msgstr "Sponsor"
 
-#: themes/admin_default/html/layout_default.html.twig:80
+#: themes/admin_default/html/layout_default.html.twig:87
 msgid "Enable dark mode"
 msgstr "Activati modul intunecat"
 
-#: themes/admin_default/html/layout_default.html.twig:89
+#: themes/admin_default/html/layout_default.html.twig:96
 msgid "Enable light mode"
 msgstr "Activati modul luminos"
 
-#: themes/admin_default/html/layout_default.html.twig:115
+#: themes/admin_default/html/layout_default.html.twig:122
 msgid "Logout"
 msgstr "Deconectare"
 
-#: themes/admin_default/html/layout_default.html.twig:125
-msgid "Visit client area"
-msgstr "Vizitaţi spațiul clientului"
+#: themes/admin_default/html/layout_default.html.twig:170
+msgid "Help"
+msgstr "Ajutor"
 
-#: themes/admin_default/html/layout_default.html.twig:195
-msgid "Inquiries"
-msgstr "Întrebări"
+#: themes/admin_default/html/layout_default.html.twig:175
+msgid "Documentation"
+msgstr "Documentaţie"
 
 #: themes/admin_default/html/macro_functions.html.twig:131
 msgid "Search:"
@@ -9277,15 +9246,15 @@ msgstr "Activitate recentă a personalului"
 msgid "Delete selected"
 msgstr "Ştergeţi selecţia"
 
-#: themes/admin_default/html/partial_batch_delete.html.twig:14
+#: themes/admin_default/html/partial_batch_delete.html.twig:37
 msgid "Are you sure you want to delete the selected items?"
 msgstr ""
 
-#: themes/admin_default/html/partial_batch_delete.html.twig:27
+#: themes/admin_default/html/partial_batch_delete.html.twig:50
 msgid "No items selected"
 msgstr ""
 
-#: themes/admin_default/html/partial_batch_delete.html.twig:28
+#: themes/admin_default/html/partial_batch_delete.html.twig:51
 msgid "You need to select at least one item to delete"
 msgstr ""
 
@@ -9346,14 +9315,6 @@ msgstr "Introduceţi textul de căutare..."
 #: themes/admin_default/html/partial_search.html.twig:20
 msgid "Search settings"
 msgstr "Căutați setări"
-
-#: themes/admin_default/html/partial_sidebar.html.twig:53
-msgid "Help"
-msgstr "Ajutor"
-
-#: themes/admin_default/html/partial_sidebar.html.twig:57
-msgid "Documentation"
-msgstr "Documentaţie"
 
 #: themes/huraga/html/404.html.twig:13
 msgid "Whoops! This is not the web page you are looking for."
