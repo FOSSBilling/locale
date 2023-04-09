@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-03-31 21:21-0700\n"
-"PO-Revision-Date: 2023-04-01 17:17\n"
+"POT-Creation-Date: 2023-04-09 02:17-0700\n"
+"PO-Revision-Date: 2023-04-09 12:29\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -23,6 +23,18 @@ msgstr ""
 "X-Crowdin-File: /main/messages.pot\n"
 "X-Crowdin-File-ID: 302\n"
 "Language: ru_RU\n"
+
+#: di.php:345
+msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
+msgstr ""
+
+#: index.php:40 library/Box/App.php:384 library/Box/AppClient.php:64
+msgid "Page :url not found"
+msgstr "Страница не найдена"
+
+#: index.php:45
+msgid "HTTP Error :err_code occured attempting to load :url"
+msgstr ""
 
 #: library/Api/Abstract.php:74
 msgid "Mod object is not set for the service"
@@ -56,11 +68,7 @@ msgstr ":type API вызов :method не существует в модуле :
 msgid "The system is undergoing maintenance. Please try again later."
 msgstr "Идут технические работы, приносим извинения за неудобства!"
 
-#: library/Box/App.php:384 library/Box/AppClient.php:64
-msgid "Page :url not found"
-msgstr "Страница не найдена"
-
-#: library/Box/AppClient.php:81
+#: library/Box/AppClient.php:82
 msgid "Page not found"
 msgstr "Страница не найдена"
 
@@ -123,26 +131,6 @@ msgstr ":stream не может быть открыт в режиме :mode"
 #: library/Box/LogStream.php:68
 msgid "Unable to write to stream"
 msgstr "Невозможно написать текст"
-
-#: library/Box/Mail.php:57
-msgid "Unknown mail transport: :transport"
-msgstr "Неизвестный почтовый транспорт: :transport"
-
-#: library/Box/Mail.php:106
-msgid "Sendgrid is not configured"
-msgstr "Расширение не настроено"
-
-#: library/Box/Mail.php:146
-msgid "SMTP host not configured"
-msgstr "SMTP хост не настроен"
-
-#: library/Box/Mail.php:150
-msgid "SMTP port not configured"
-msgstr "SMTP хост не настроен"
-
-#: library/Box/Mail.php:160
-msgid "SMTP hostname is not configured."
-msgstr "SMTP хост не настроен."
 
 #: library/Box/Mod.php:80
 msgid "Module :mod manifest file is missing"
@@ -258,8 +246,8 @@ msgid "Unable to load existing configuration. updateConfig() is unable to progre
 msgstr "Не удается загрузить существующую конфигурацию. updateConfig() не удается выполнить."
 
 #: library/Box/Tools.php:391
-msgid "Unable to create backup of configuration file. Canceling config migration."
-msgstr "Не удается создать резервную копию файла конфигурации. Отмена миграции конфигурации."
+msgid "Unable to create backup of configuration file. Cancelling config migration."
+msgstr ""
 
 #: library/Box/Tools.php:435
 msgid "Error when writing updated configuration file."
@@ -348,6 +336,30 @@ msgstr "Файл не существует"
 #: library/Box/Zip.php:43
 msgid "Failed to extract file! Exception:<br>"
 msgstr "Не удалось извлечь файл! Исключение:<br>"
+
+#: library/FOSSBilling/Mail.php:148
+msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
+msgstr ""
+
+#: library/FOSSBilling/Mail.php:171
+msgid "A Sendgrid API key is required to send emails via Sendgrid"
+msgstr ""
+
+#: library/FOSSBilling/Mail.php:178
+msgid "Error: No transport method was provided and the custom DSN is empty"
+msgstr ""
+
+#: library/FOSSBilling/Mail.php:183
+msgid "Unknown mail transport: :transport"
+msgstr "Неизвестный почтовый транспорт: :transport"
+
+#: library/FOSSBilling/Mail.php:191
+msgid "Failed to send email via :transport with the exception :e"
+msgstr ""
+
+#: library/FOSSBilling/Mail.php:208
+msgid "SMTP host or port is not configured"
+msgstr ""
 
 #: library/Model/ProductDomainTable.php:222
 msgid "Could not determine domain price. Domain action is missing"
@@ -1091,9 +1103,9 @@ msgstr "Срок действия ссылки истек, или вы уже п
 #: modules/Client/html_admin/mod_client_index.html.twig:7
 #: modules/Client/html_admin/mod_client_index.html.twig:175
 #: modules/Client/html_admin/mod_client_manage.html.twig:17
-#: themes/admin_default/html/mod_index_dashboard.html.twig:150
-#: themes/admin_default/html/mod_index_dashboard.html.twig:425
-#: themes/admin_default/html/mod_index_dashboard.html.twig:521
+#: themes/admin_default/html/mod_index_dashboard.html.twig:162
+#: themes/admin_default/html/mod_index_dashboard.html.twig:437
+#: themes/admin_default/html/mod_index_dashboard.html.twig:533
 msgid "Clients"
 msgstr "Клиенты"
 
@@ -1242,7 +1254,7 @@ msgstr "Пользовательские страницы"
 
 #: modules/Email/Api/Admin.php:137 modules/Email/Api/Admin.php:163
 #: modules/Email/Api/Client.php:75 modules/Email/Api/Client.php:100
-#: modules/Email/Api/Client.php:125 modules/Email/Service.php:477
+#: modules/Email/Api/Client.php:125 modules/Email/Service.php:472
 msgid "Email not found"
 msgstr "Электронная почта не найдена"
 
@@ -1269,7 +1281,7 @@ msgstr "Приемник не определен. Определите пара�
 msgid "From email address can not be empty"
 msgstr "Поле Почтовый ящик нельзя оставлять пустым"
 
-#: modules/Email/Service.php:462
+#: modules/Email/Service.php:457
 msgid "Email template :code was not found"
 msgstr "Шаблон фильтра не найден"
 
@@ -1448,10 +1460,10 @@ msgstr "Способ оплаты не найден. Отсутствует па
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:8
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:11
 #: modules/Order/html_admin/mod_order_manage.html.twig:52
-#: themes/admin_default/html/mod_index_dashboard.html.twig:186
-#: themes/admin_default/html/mod_index_dashboard.html.twig:233
-#: themes/admin_default/html/mod_index_dashboard.html.twig:416
-#: themes/admin_default/html/mod_index_dashboard.html.twig:520
+#: themes/admin_default/html/mod_index_dashboard.html.twig:198
+#: themes/admin_default/html/mod_index_dashboard.html.twig:245
+#: themes/admin_default/html/mod_index_dashboard.html.twig:428
+#: themes/admin_default/html/mod_index_dashboard.html.twig:532
 #: themes/huraga/html/partial_menu.html.twig:29
 msgid "Invoices"
 msgstr "Счет-фактуры"
@@ -1755,9 +1767,9 @@ msgstr "Только отложенные и неудачные заказы н�
 #: modules/Order/html_client/mod_order_list.html.twig:9
 #: modules/Order/html_client/mod_order_list.html.twig:17
 #: modules/Order/html_client/mod_order_manage.html.twig:11
-#: themes/admin_default/html/mod_index_dashboard.html.twig:168
-#: themes/admin_default/html/mod_index_dashboard.html.twig:407
-#: themes/admin_default/html/mod_index_dashboard.html.twig:519
+#: themes/admin_default/html/mod_index_dashboard.html.twig:180
+#: themes/admin_default/html/mod_index_dashboard.html.twig:419
+#: themes/admin_default/html/mod_index_dashboard.html.twig:531
 msgid "Orders"
 msgstr "Заказы"
 
@@ -2375,15 +2387,15 @@ msgstr "Тема \":name\" не настраивается"
 msgid "Theme \":name\" does not exist"
 msgstr "Тема \":name\" не существует"
 
-#: modules/Theme/Service.php:177
+#: modules/Theme/Service.php:187
 msgid "Error uploading file :file Error code: :error"
 msgstr "Ошибка при загрузке файла :file код ошибки: :error"
 
-#: modules/Theme/Service.php:340
+#: modules/Theme/Service.php:352
 msgid "Theme was not found in path :path"
 msgstr "Тема не найдена в пути :path"
 
-#: modules/Theme/Service.php:357
+#: modules/Theme/Service.php:369
 msgid "Unable to decode theme manifest file :file"
 msgstr "Невозможно декодировать файл манифеста темы :file"
 
@@ -2453,7 +2465,7 @@ msgstr "Страна"
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:170
 #: modules/News/html_admin/mod_news_index.html.twig:37
 #: modules/Notification/html_admin/mod_notification_index.html.twig:35
-#: modules/Order/html_admin/mod_order_manage.html.twig:569
+#: modules/Order/html_admin/mod_order_manage.html.twig:571
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:26
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:85
 msgid "Date"
@@ -2478,10 +2490,10 @@ msgstr "Дата"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:153
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:516
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:680
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:90
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:91
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:76
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:80
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:118
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:120
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:211
 #: modules/Kb/html_admin/mod_kb_index.html.twig:74
 #: modules/Kb/html_admin/mod_kb_index.html.twig:149
@@ -2492,11 +2504,11 @@ msgstr "Дата"
 #: modules/Order/html_admin/mod_order_index.html.twig:240
 #: modules/Order/html_admin/mod_order_manage.html.twig:173
 #: modules/Order/html_admin/mod_order_manage.html.twig:186
-#: modules/Order/html_admin/mod_order_manage.html.twig:253
-#: modules/Order/html_admin/mod_order_manage.html.twig:263
-#: modules/Order/html_admin/mod_order_manage.html.twig:273
-#: modules/Order/html_admin/mod_order_manage.html.twig:284
-#: modules/Order/html_admin/mod_order_manage.html.twig:597
+#: modules/Order/html_admin/mod_order_manage.html.twig:255
+#: modules/Order/html_admin/mod_order_manage.html.twig:265
+#: modules/Order/html_admin/mod_order_manage.html.twig:275
+#: modules/Order/html_admin/mod_order_manage.html.twig:286
+#: modules/Order/html_admin/mod_order_manage.html.twig:604
 #: modules/Product/html_admin/mod_product_addons.html.twig:66
 #: modules/Product/html_admin/mod_product_index.html.twig:79
 #: modules/Product/html_admin/mod_product_index.html.twig:158
@@ -2566,9 +2578,9 @@ msgstr "Ты уверен(а)?"
 #: modules/News/html_admin/mod_news_index.html.twig:80
 #: modules/Notification/html_admin/mod_notification_index.html.twig:55
 #: modules/Order/html_admin/mod_order_index.html.twig:249
-#: modules/Order/html_admin/mod_order_manage.html.twig:555
-#: modules/Order/html_admin/mod_order_manage.html.twig:606
-#: modules/Order/html_admin/mod_order_manage.html.twig:661
+#: modules/Order/html_admin/mod_order_manage.html.twig:557
+#: modules/Order/html_admin/mod_order_manage.html.twig:613
+#: modules/Order/html_admin/mod_order_manage.html.twig:668
 #: modules/Order/html_client/mod_order_list.html.twig:48
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:89
 #: modules/Product/html_admin/mod_product_addons.html.twig:75
@@ -2597,9 +2609,9 @@ msgstr "Ты уверен(а)?"
 #: modules/Support/html_client/mod_support_tickets.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:70
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:124
-#: themes/admin_default/html/mod_index_dashboard.html.twig:317
-#: themes/admin_default/html/mod_index_dashboard.html.twig:474
-#: themes/admin_default/html/mod_index_dashboard.html.twig:501
+#: themes/admin_default/html/mod_index_dashboard.html.twig:329
+#: themes/admin_default/html/mod_index_dashboard.html.twig:486
+#: themes/admin_default/html/mod_index_dashboard.html.twig:513
 msgid "The list is empty"
 msgstr "Список пуст"
 
@@ -2642,7 +2654,7 @@ msgstr "Редактировать группу клиентов"
 #: modules/Order/html_admin/mod_order_index.html.twig:23
 #: modules/Order/html_admin/mod_order_index.html.twig:185
 #: modules/Order/html_admin/mod_order_manage.html.twig:83
-#: modules/Order/html_admin/mod_order_manage.html.twig:304
+#: modules/Order/html_admin/mod_order_manage.html.twig:306
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:69
 #: modules/Product/html_admin/mod_product_addons.html.twig:45
 #: modules/Product/html_admin/mod_product_addons.html.twig:123
@@ -2701,17 +2713,17 @@ msgstr "Вернуться"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:388
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:572
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:149
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:150
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:159
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:46
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:191
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:210
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:195
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:214
 #: modules/Kb/html_admin/mod_kb_article.html.twig:86
 #: modules/Kb/html_admin/mod_kb_category.html.twig:62
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:161
 #: modules/News/html_admin/mod_news_post.html.twig:140
-#: modules/Order/html_admin/mod_order_manage.html.twig:372
-#: modules/Order/html_admin/mod_order_manage.html.twig:441
+#: modules/Order/html_admin/mod_order_manage.html.twig:374
+#: modules/Order/html_admin/mod_order_manage.html.twig:443
 #: modules/Order/html_admin/mod_order_settings.html.twig:92
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:66
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:185
@@ -2734,8 +2746,8 @@ msgstr "Вернуться"
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:97
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:199
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:72
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:138
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:115
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:94
@@ -2880,8 +2892,8 @@ msgstr "Группа"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:68
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:641
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:62
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:117
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:63
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:118
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:39
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:132
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:81
@@ -2895,10 +2907,10 @@ msgstr "Группа"
 #: modules/News/html_admin/mod_news_post.html.twig:65
 #: modules/Order/html_admin/mod_order_index.html.twig:29
 #: modules/Order/html_admin/mod_order_index.html.twig:188
-#: modules/Order/html_admin/mod_order_manage.html.twig:457
-#: modules/Order/html_admin/mod_order_manage.html.twig:518
-#: modules/Order/html_admin/mod_order_manage.html.twig:570
-#: modules/Order/html_admin/mod_order_manage.html.twig:623
+#: modules/Order/html_admin/mod_order_manage.html.twig:459
+#: modules/Order/html_admin/mod_order_manage.html.twig:520
+#: modules/Order/html_admin/mod_order_manage.html.twig:572
+#: modules/Order/html_admin/mod_order_manage.html.twig:630
 #: modules/Order/html_client/mod_order_list.html.twig:28
 #: modules/Order/html_client/mod_order_manage.html.twig:139
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:33
@@ -2938,7 +2950,7 @@ msgstr "Все"
 #: modules/Client/html_admin/mod_client_settings.html.twig:108
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:138
 #: modules/Index/html_client/mod_index_dashboard.html.twig:143
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:121
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:122
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:136
 #: modules/Kb/html_admin/mod_kb_article.html.twig:71
 #: modules/Kb/html_admin/mod_kb_index.html.twig:117
@@ -2971,7 +2983,7 @@ msgstr "Приостановленный"
 #: modules/Client/html_admin/mod_client_index.html.twig:307
 #: modules/Client/html_admin/mod_client_manage.html.twig:176
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:190
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:125
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:126
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:140
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:74
 msgid "Canceled"
@@ -3023,7 +3035,7 @@ msgstr "Сброс"
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:62
 #: modules/Support/html_admin/mod_support_tickets.html.twig:148
-#: themes/admin_default/html/mod_index_dashboard.html.twig:127
+#: themes/admin_default/html/mod_index_dashboard.html.twig:139
 #: themes/admin_default/html/partial_pricing.html.twig:26
 msgid "Total"
 msgstr "Сумма"
@@ -3133,9 +3145,9 @@ msgstr "Телефон"
 #: modules/Client/html_client/mod_client_profile.html.twig:262
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:142
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:157
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:143
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:147
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:35
 msgid "Currency"
 msgstr "Валюта"
@@ -3224,9 +3236,9 @@ msgstr "Редактировать"
 #: modules/Client/html_admin/mod_client_manage.html.twig:38
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:150
 #: modules/Index/html_client/mod_index_dashboard.html.twig:155
-#: themes/admin_default/html/mod_index_dashboard.html.twig:204
-#: themes/admin_default/html/mod_index_dashboard.html.twig:434
-#: themes/admin_default/html/mod_index_dashboard.html.twig:522
+#: themes/admin_default/html/mod_index_dashboard.html.twig:216
+#: themes/admin_default/html/mod_index_dashboard.html.twig:446
+#: themes/admin_default/html/mod_index_dashboard.html.twig:534
 msgid "Tickets"
 msgstr "Тикет"
 
@@ -3264,7 +3276,7 @@ msgstr "Остаток средств"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:117
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:308
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:34
-#: modules/Order/html_admin/mod_order_manage.html.twig:365
+#: modules/Order/html_admin/mod_order_manage.html.twig:367
 #: modules/Order/html_client/mod_order_manage.html.twig:278
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
 #: modules/Support/html_admin/mod_support_tickets.html.twig:376
@@ -3313,9 +3325,9 @@ msgstr "Войдите в клиентский кабинет"
 #: modules/Email/html_client/mod_email_index.html.twig:45
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:681
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:95
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:120
-#: modules/Order/html_admin/mod_order_manage.html.twig:278
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:124
+#: modules/Order/html_admin/mod_order_manage.html.twig:280
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:106
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:254
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:92
@@ -3368,7 +3380,7 @@ msgstr "Одобренная почта"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:199
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:150
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:161
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:165
 #: modules/Order/html_admin/mod_order_new.html.twig:44
 #: modules/Order/html_admin/mod_order_settings.html.twig:55
 #: modules/Product/html_admin/mod_product_manage.html.twig:106
@@ -3399,14 +3411,14 @@ msgstr "Одобренная почта"
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:94
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:35
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:45
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:29
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:42
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:55
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:65
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:68
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:86
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:104
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:122
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:68
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:53
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:69
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:85
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:101
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:135
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:157
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:69
@@ -3427,8 +3439,8 @@ msgstr "Да"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:203
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:56
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:154
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:165
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:285
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:169
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:289
 #: modules/Order/html_admin/mod_order_new.html.twig:48
 #: modules/Order/html_admin/mod_order_settings.html.twig:59
 #: modules/Product/html_admin/mod_product_manage.html.twig:110
@@ -3459,14 +3471,14 @@ msgstr "Да"
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:63
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:98
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:37
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:47
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:57
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:67
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:70
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:88
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:106
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:124
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:33
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:46
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:59
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:72
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:55
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:71
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:87
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:103
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:139
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:163
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:73
@@ -3576,23 +3588,23 @@ msgstr "Клиентские заказы"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:640
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:50
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:136
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:137
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:37
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:151
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:65
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:137
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:141
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:169
 #: modules/Order/html_admin/mod_order_index.html.twig:187
-#: modules/Order/html_admin/mod_order_manage.html.twig:515
+#: modules/Order/html_admin/mod_order_manage.html.twig:517
 msgid "Amount"
 msgstr "Сумма"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:455
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:130
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:145
 #: modules/Order/html_admin/mod_order_index.html.twig:47
 #: modules/Order/html_admin/mod_order_index.html.twig:186
-#: modules/Order/html_admin/mod_order_manage.html.twig:334
+#: modules/Order/html_admin/mod_order_manage.html.twig:336
 #: modules/Order/html_admin/mod_order_new.html.twig:54
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:153
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:49
@@ -3629,7 +3641,7 @@ msgstr "Обращения в службу поддержки клиентов"
 #: modules/Client/html_admin/mod_client_manage.html.twig:593
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:44
 #: modules/Index/html_client/mod_index_dashboard.html.twig:49
-#: modules/Order/html_admin/mod_order_manage.html.twig:621
+#: modules/Order/html_admin/mod_order_manage.html.twig:628
 #: modules/Order/html_client/mod_order_manage.html.twig:179
 #: modules/Order/html_client/mod_order_manage.html.twig:218
 #: modules/Order/html_client/mod_order_manage.html.twig:264
@@ -3655,7 +3667,7 @@ msgstr "Справочная служба"
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:52
-#: modules/Order/html_admin/mod_order_manage.html.twig:622
+#: modules/Order/html_admin/mod_order_manage.html.twig:629
 #: modules/Order/html_client/mod_order_manage.html.twig:186
 #: modules/Order/html_client/mod_order_manage.html.twig:225
 #: modules/Order/html_client/mod_order_manage.html.twig:257
@@ -3860,6 +3872,7 @@ msgstr "Настройки профиля пользователя"
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:7
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:8
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:16
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:6
 msgid "Details"
 msgstr "Подробности"
 
@@ -4223,7 +4236,7 @@ msgstr "Мета-ключевые слова"
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:131
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:58
 #: modules/Email/html_admin/mod_email_settings.html.twig:165
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:203
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:207
 #: modules/Kb/html_admin/mod_kb_article.html.twig:45
 #: modules/Kb/html_admin/mod_kb_index.html.twig:122
 #: modules/News/html_admin/mod_news_index.html.twig:116
@@ -4320,9 +4333,9 @@ msgstr "Действия"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:229
 #: modules/Support/html_client/mod_support_ticket.html.twig:95
 #: modules/Support/html_client/mod_support_tickets.html.twig:48
-#: themes/admin_default/html/mod_index_dashboard.html.twig:307
-#: themes/admin_default/html/mod_index_dashboard.html.twig:470
-#: themes/admin_default/html/mod_index_dashboard.html.twig:497
+#: themes/admin_default/html/mod_index_dashboard.html.twig:319
+#: themes/admin_default/html/mod_index_dashboard.html.twig:482
+#: themes/admin_default/html/mod_index_dashboard.html.twig:509
 msgid "ago"
 msgstr "тому назад"
 
@@ -4540,47 +4553,55 @@ msgstr "SMTP"
 msgid "SendGrid"
 msgstr "Отправить сетку"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:235
+#: modules/Email/html_admin/mod_email_settings.html.twig:232
+msgid "Custom"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:239
 msgid "SMTP Hostname"
 msgstr "SMTP Имя сервера"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:241
+#: modules/Email/html_admin/mod_email_settings.html.twig:245
 msgid "SMTP Port"
 msgstr "Порт SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:247
+#: modules/Email/html_admin/mod_email_settings.html.twig:251
 msgid "SMTP Username"
 msgstr "Имя пользователя SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:253
+#: modules/Email/html_admin/mod_email_settings.html.twig:257
 msgid "SMTP Password"
 msgstr "Пароль пользователя SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:259
-msgid "SMTP Security"
-msgstr "Безопасность SMTP"
+#: modules/Email/html_admin/mod_email_settings.html.twig:266
+msgid "SendGrid API Key"
+msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:263
-msgid "None"
-msgstr "Ничего"
+#: modules/Email/html_admin/mod_email_settings.html.twig:275
+msgid "Custom DSN"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:277
+msgid "If one of the available options don't quite meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:278
+msgid "More information"
+msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:279
-msgid "SendGrid Username"
-msgstr "Имя пользователя SendGrid"
+msgid "Example"
+msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:285
-msgid "SendGrid Password"
-msgstr "Пароль для отправки сетки"
-
-#: modules/Email/html_admin/mod_email_settings.html.twig:299
+#: modules/Email/html_admin/mod_email_settings.html.twig:292
 msgid "Send test email to staff members"
 msgstr "Отправьте тестовое электронное письмо сотрудникам"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:301
+#: modules/Email/html_admin/mod_email_settings.html.twig:294
 msgid "Update email settings"
 msgstr "Обновите настройки электронной почты"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:315
+#: modules/Email/html_admin/mod_email_settings.html.twig:308
 msgid "Email was successfully sent"
 msgstr "Электронное письмо было успешно отправлено"
 
@@ -4731,7 +4752,7 @@ msgstr "Деактивировать"
 
 #: modules/Extension/html_admin/mod_extension_index.html.twig:90
 #: modules/Order/html_admin/mod_order_manage.html.twig:178
-#: modules/Order/html_admin/mod_order_manage.html.twig:267
+#: modules/Order/html_admin/mod_order_manage.html.twig:269
 msgid "Activate"
 msgstr "Активировать"
 
@@ -4883,7 +4904,7 @@ msgid "Read only"
 msgstr "Только для чтения"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:87
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:11
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:7
 msgid "Prefix"
 msgstr "Prefix"
 
@@ -5169,13 +5190,13 @@ msgid "New Invoice"
 msgstr "Когда вам выставляют новый счет"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:212
-#: modules/Order/html_admin/mod_order_manage.html.twig:516
+#: modules/Order/html_admin/mod_order_manage.html.twig:518
 msgid "Issued at"
 msgstr "Выпущенный в"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:213
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:283
-#: modules/Order/html_admin/mod_order_manage.html.twig:517
+#: modules/Order/html_admin/mod_order_manage.html.twig:519
 msgid "Paid at"
 msgstr "Оплачено в"
 
@@ -5286,7 +5307,7 @@ msgid "Payment method"
 msgstr "Спосіб оплати"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:233
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:74
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:75
 #: modules/Support/html_admin/mod_support_tickets.html.twig:60
 msgid "Created at"
 msgstr "Созданный в"
@@ -5332,8 +5353,8 @@ msgstr "Позиции счета"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:494
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:185
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:205
-#: modules/Order/html_admin/mod_order_manage.html.twig:322
-#: modules/Order/html_admin/mod_order_manage.html.twig:455
+#: modules/Order/html_admin/mod_order_manage.html.twig:324
+#: modules/Order/html_admin/mod_order_manage.html.twig:457
 #: modules/Order/html_client/mod_order_list.html.twig:26
 #: modules/Order/html_client/mod_order_manage.html.twig:136
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:14
@@ -5458,19 +5479,23 @@ msgid "Payment gateway"
 msgstr "Платежная система"
 
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:58
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:111
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:112
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:126
 msgid "Subscription ID on payment gateway"
 msgstr "ID подписки на платёжном шлюзе"
 
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:79
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:59
+msgid "Subscription ID on PG"
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:80
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:105
 msgid "Updated at"
 msgstr "Дата изменения"
 
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:105
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:106
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:120
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:151
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:155
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:47
 msgid "Payment Gateway"
 msgstr "Платежный шлюз"
@@ -5601,7 +5626,7 @@ msgstr "Id подписки на платёжном шлюзе"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:146
 #: modules/Notification/html_admin/mod_notification_index.html.twig:78
-#: modules/Order/html_admin/mod_order_manage.html.twig:571
+#: modules/Order/html_admin/mod_order_manage.html.twig:573
 #: modules/Support/html_admin/mod_support_ticket.html.twig:199
 msgid "Note"
 msgstr "Заметка"
@@ -5611,79 +5636,79 @@ msgstr "Заметка"
 msgid "Received at"
 msgstr "Получено на"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:116
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:118
 msgid "Process"
 msgstr "Процесс"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:127
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:131
 msgid "Transaction updated"
 msgstr "Транзакция отклонена"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:129
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:133
 msgid "Transaction payment information"
 msgstr "Информация о транзакции"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:131
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:135
 msgid "Invoice ID"
 msgstr "Идентификатор инвойса"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:149
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:153
 msgid "Transaction processing information"
 msgstr "Информация о транзакции"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:157
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:161
 msgid "Validate IPN"
 msgstr "Validate IPN"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:170
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:174
 msgid "Transaction information on payment gateway"
 msgstr "Id подписки на платёжном шлюзе"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:172
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:176
 msgid "Transaction type"
 msgstr "Тип транзакции"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:178
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:182
 msgid "Transaction status on Payment Gateway"
 msgstr "Id подписки на платёжном шлюзе"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:184
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:188
 msgid "Transaction ID on Payment Gateway"
 msgstr "ID подписки на платёжном шлюзе"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:198
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:202
 msgid "Note about this transaction"
 msgstr "Примечание о транзакции"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:200
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:204
 msgid "Transaction note updated."
 msgstr "Транзакция отклонена."
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:217
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:221
 msgid "GET"
 msgstr "ПОЛУЧИТЬ"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:232
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:236
 msgid "No GET parameters received"
 msgstr "Получены неверные параметры"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:237
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:241
 msgid "POST"
 msgstr "ПОСТ"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:252
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:256
 msgid "No POST parameters received"
 msgstr "Получены неверные параметры"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:257
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:261
 msgid "SERVER"
 msgstr "SERVER"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:272
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:276
 msgid "No SERVER parameters logged"
 msgstr "Параметры сервера не записаны"
 
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:285
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:289
 msgid "parameters received"
 msgstr "Получены неверные параметры"
 
@@ -5700,7 +5725,8 @@ msgid "Processed"
 msgstr "Обрабатывается"
 
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:128
-#: themes/admin_default/html/404.html.twig:3 themes/huraga/html/404.html.twig:3
+#: themes/admin_default/html/error.html.twig:3
+#: themes/huraga/html/error.html.twig:3
 msgid "Error"
 msgstr "Ошибка"
 
@@ -6094,7 +6120,7 @@ msgid "Product"
 msgstr "Услуга"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:53
-#: modules/Order/html_admin/mod_order_manage.html.twig:316
+#: modules/Order/html_admin/mod_order_manage.html.twig:318
 #: modules/Order/html_admin/mod_order_new.html.twig:34
 msgid "Invoice option"
 msgstr "Настройки накладной"
@@ -6118,7 +6144,7 @@ msgid "Continue"
 msgstr "Продолжить"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:33
-#: modules/Order/html_admin/mod_order_manage.html.twig:300
+#: modules/Order/html_admin/mod_order_manage.html.twig:302
 msgid "Order Management"
 msgstr ""
 
@@ -6213,7 +6239,7 @@ msgid "Active support tickets"
 msgstr "Обращения в службу поддержки клиентов"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:174
-#: modules/Order/html_admin/mod_order_manage.html.twig:254
+#: modules/Order/html_admin/mod_order_manage.html.twig:256
 msgid "Order activated"
 msgstr "Заказ создан"
 
@@ -6243,86 +6269,86 @@ msgstr "Заказ приостановлен"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:205
 #: modules/Order/html_admin/mod_order_manage.html.twig:222
-#: modules/Order/html_admin/mod_order_manage.html.twig:233
+#: modules/Order/html_admin/mod_order_manage.html.twig:235
 msgid "Suspend"
 msgstr "Приостановить"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:240
+#: modules/Order/html_admin/mod_order_manage.html.twig:242
 msgid "Reason of cancelation"
 msgstr "Причина отмены"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:241
+#: modules/Order/html_admin/mod_order_manage.html.twig:243
 msgid "Cancelation reason"
 msgstr "Причина отмены"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:242
+#: modules/Order/html_admin/mod_order_manage.html.twig:244
 msgid "Order canceled"
 msgstr "Заказ отменен"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:246
+#: modules/Order/html_admin/mod_order_manage.html.twig:248
 msgid "Cancel"
 msgstr "Отмена"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:258
+#: modules/Order/html_admin/mod_order_manage.html.twig:260
 msgid "Unsuspend"
 msgstr "Возобновлено"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:289
+#: modules/Order/html_admin/mod_order_manage.html.twig:291
 msgid "Issue invoice"
 msgstr "Выставить счёт"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:310
+#: modules/Order/html_admin/mod_order_manage.html.twig:312
 msgid "Changes status without performing action"
 msgstr "Изменить статус без выполнения действия"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:328
+#: modules/Order/html_admin/mod_order_manage.html.twig:330
 #: modules/Order/html_client/mod_order_manage.html.twig:232
 msgid "Reason"
 msgstr "Причина"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:340
+#: modules/Order/html_admin/mod_order_manage.html.twig:342
 msgid "Date Expires"
 msgstr ""
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:420
+#: modules/Order/html_admin/mod_order_manage.html.twig:422
 msgid "Order config management"
 msgstr "Управление настройками заказов"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:421
+#: modules/Order/html_admin/mod_order_manage.html.twig:423
 msgid "Please be cautious and make sure you know what you are doing when editing order config! FOSSBilling relies on these parameters and you might get unexpected results if you change some of them."
 msgstr "Пожалуйста, будьте осторожны и убедитесь, что вы знаете, что делаете при редактировании заказа настройки! FOSSBilling опирается на эти параметры, и вы можете получить неожиданные результаты, если измените некоторые из них."
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:448
+#: modules/Order/html_admin/mod_order_manage.html.twig:450
 #: modules/Order/html_client/mod_order_manage.html.twig:128
 msgid "Addons you have ordered with this service"
 msgstr "Дополнения, которые вы заказали с этой службой"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:453
+#: modules/Order/html_admin/mod_order_manage.html.twig:455
 #: modules/Order/html_client/mod_order_list.html.twig:25
 #: modules/Order/html_client/mod_order_manage.html.twig:135
 msgid "Product/Service"
 msgstr "Продукт / Услуга"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:454
+#: modules/Order/html_admin/mod_order_manage.html.twig:456
 #: modules/Order/html_client/mod_order_manage.html.twig:137
 msgid "Billing Cycle"
 msgstr "Периодичность оплаты"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:456
+#: modules/Order/html_admin/mod_order_manage.html.twig:458
 #: modules/Order/html_client/mod_order_list.html.twig:27
 #: modules/Order/html_client/mod_order_manage.html.twig:138
 msgid "Next due date"
 msgstr "Следующая дата оплаты"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:509
+#: modules/Order/html_admin/mod_order_manage.html.twig:511
 msgid "Order invoices"
 msgstr "Счёт заказа"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:564
-msgid "Order status change history"
-msgstr "История изменения статуса заказа"
+#: modules/Order/html_admin/mod_order_manage.html.twig:566
+msgid "Order status history"
+msgstr ""
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:615
+#: modules/Order/html_admin/mod_order_manage.html.twig:622
 msgid "Support tickets regarding this order"
 msgstr "Поддержка заявок на этот заказ"
 
@@ -6822,7 +6848,7 @@ msgstr "Вернуться на главную"
 #: modules/Page/html_client/mod_page_password-reset.html.twig:48
 #: modules/Page/html_client/mod_page_signup.html.twig:212
 #: modules/Staff/html_admin/mod_staff_login.html.twig:3
-#: themes/admin_default/html/404.html.twig:14
+#: themes/admin_default/html/error.html.twig:14
 #: themes/huraga/html/layout_default.html.twig:111
 #: themes/huraga/html/layout_default.html.twig:226
 msgid "Login"
@@ -7230,9 +7256,9 @@ msgid "Quantity in stock"
 msgstr "Количество товара в наличии"
 
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:43
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:25
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:18
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:55
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:19
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:14
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:43
 msgid "Plugin"
 msgstr "Приложение"
 
@@ -8235,36 +8261,40 @@ msgstr "Я хочу зарегистрировать новый домен"
 msgid "mydomain"
 msgstr "мой домен"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:4
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:3
 msgid "License settings"
 msgstr "Настройки лицензии"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:18
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:4
+msgid "License settings updated"
+msgstr ""
+
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:13
 msgid "Length"
 msgstr "Длительность"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:32
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:65
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:25
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:51
 msgid "Validate IP"
 msgstr "Проверка IP-адреса"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:42
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:38
 msgid "Validate Hostname"
 msgstr "Проверка имени хоста"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:52
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:51
 msgid "Validate Version"
 msgstr "Проверка версии"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:62
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:64
 msgid "Validate Path"
 msgstr "Проверка пути"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:79
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:81
 msgid "License plugins"
 msgstr "Лицензионные плагины"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:80
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:82
 msgid "FOSSBilling gives you ability to provide your own license generation script. Follow the instructions bellow to install new license plugin"
 msgstr "FOSSBilling дает вам возможность предоставлять собственный скрипт генерации лицензий. Следуйте инструкциям ниже для установки плагина новой лицензии"
 
@@ -8288,55 +8318,62 @@ msgstr "FOSSBilling определит новый плагин"
 msgid "for more information."
 msgstr "показать больше информации."
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:2
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:9
-msgid "License details"
-msgstr "Подробная информация о лицензии"
-
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:9
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:10
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:13
 msgid "Key"
 msgstr "Спецификация"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:25
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:20
 msgid "Last ping"
 msgstr "Последний пинг"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:46
-msgid "License data"
-msgstr "Данные лицензии"
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:32
+msgid "License configuration"
+msgstr ""
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:48
-msgid "License Key"
-msgstr "Лицензионный ключ"
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:34
+msgid "License updated"
+msgstr ""
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:75
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:37
+msgid "License key"
+msgstr ""
+
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:49
+msgid "License validation rules"
+msgstr ""
+
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:60
 msgid "Valid IPs (one per line)"
 msgstr "Допустимые IP адреса (по одному в строке)"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:83
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:67
 msgid "Validate host"
 msgstr "Проверка хоста"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:93
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:76
 msgid "Valid hosts (one per line)"
 msgstr "Допустимые хосты (по одному в строке)"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:101
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:83
 msgid "Validate path"
 msgstr "Проверить путь"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:111
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:92
 msgid "Valid paths (one per line)"
 msgstr "Допустимые пути (по одному в строке)"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:119
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:99
 msgid "Validate version"
 msgstr "Проверка версии"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:129
+#: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:108
 msgid "Valid versions (one per line)"
 msgstr "Действительные версии (по одному в строке)"
+
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:9
+msgid "License details"
+msgstr "Подробная информация о лицензии"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:22
 msgid "Valid IPs"
@@ -9178,11 +9215,11 @@ msgstr "Настройки Wysiwyg"
 msgid "Default editor"
 msgstr "Редактор по умолчанию"
 
-#: themes/admin_default/html/404.html.twig:10
+#: themes/admin_default/html/error.html.twig:10
 msgid "Oops... You just found an error page"
 msgstr "Упс... Вы только что нашли страницу ошибки"
 
-#: themes/admin_default/html/404.html.twig:20
+#: themes/admin_default/html/error.html.twig:20
 msgid "Back to Dashboard"
 msgstr "Вернуться к панели"
 
@@ -9231,78 +9268,78 @@ msgstr "Опасность!"
 msgid "Warning"
 msgstr "Предупреждение"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:48
+#: themes/admin_default/html/mod_index_dashboard.html.twig:51
 msgid "clients"
 msgstr "клиенты"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:49
-#: themes/admin_default/html/mod_index_dashboard.html.twig:68
+#: themes/admin_default/html/mod_index_dashboard.html.twig:52
+#: themes/admin_default/html/mod_index_dashboard.html.twig:74
 msgid "suspended"
 msgstr "приостановленный"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:67
+#: themes/admin_default/html/mod_index_dashboard.html.twig:73
 msgid "orders"
 msgstr "заказы"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:86
+#: themes/admin_default/html/mod_index_dashboard.html.twig:95
 msgid "invoices"
 msgstr "счет-фактуры"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:87
+#: themes/admin_default/html/mod_index_dashboard.html.twig:96
 msgid "unpaid"
 msgstr "неоплачено"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:105
+#: themes/admin_default/html/mod_index_dashboard.html.twig:117
 msgid "tickets"
 msgstr "тикет"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:106
+#: themes/admin_default/html/mod_index_dashboard.html.twig:118
 msgid "waiting for staff reply"
 msgstr "ожидание ответа сотрудника"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:116
+#: themes/admin_default/html/mod_index_dashboard.html.twig:128
 msgid "Statistics"
 msgstr "Статистика"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:123
+#: themes/admin_default/html/mod_index_dashboard.html.twig:135
 msgid "Today"
 msgstr "Сегодня"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:124
+#: themes/admin_default/html/mod_index_dashboard.html.twig:136
 msgid "Yesterday"
 msgstr "Вчера"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:125
+#: themes/admin_default/html/mod_index_dashboard.html.twig:137
 msgid "This month so far"
 msgstr "В этом месяце"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:126
+#: themes/admin_default/html/mod_index_dashboard.html.twig:138
 msgid "Last month"
 msgstr "Прошлый месяц"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:132
-#: themes/admin_default/html/mod_index_dashboard.html.twig:398
-#: themes/admin_default/html/mod_index_dashboard.html.twig:518
+#: themes/admin_default/html/mod_index_dashboard.html.twig:144
+#: themes/admin_default/html/mod_index_dashboard.html.twig:410
+#: themes/admin_default/html/mod_index_dashboard.html.twig:530
 msgid "Income"
 msgstr "Доход"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:290
+#: themes/admin_default/html/mod_index_dashboard.html.twig:302
 msgid "Latest orders"
 msgstr "Последние заказы"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:363
+#: themes/admin_default/html/mod_index_dashboard.html.twig:375
 msgid "Define date interval for graphs"
 msgstr "Определить интервал дат для графиков"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:388
+#: themes/admin_default/html/mod_index_dashboard.html.twig:400
 msgid "Update graphs"
 msgstr "Обновить график"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:445
+#: themes/admin_default/html/mod_index_dashboard.html.twig:457
 msgid "Recent clients activity"
 msgstr "Последняя активность клиента"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:448
+#: themes/admin_default/html/mod_index_dashboard.html.twig:460
 msgid "Recent staff activity"
 msgstr "Недавняя деятельность персонала"
 
@@ -9380,7 +9417,7 @@ msgstr "Введите текст для поиска..."
 msgid "Search settings"
 msgstr "Настройки поиска"
 
-#: themes/huraga/html/404.html.twig:13
+#: themes/huraga/html/error.html.twig:13
 msgid "Whoops! This is not the web page you are looking for."
 msgstr "Упс, возможно, эта страница недоступна или мы ее не нашли."
 
