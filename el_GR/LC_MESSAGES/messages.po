@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-04-13 21:29-0700\n"
-"PO-Revision-Date: 2023-04-14 22:49\n"
+"POT-Creation-Date: 2023-04-15 17:32-0700\n"
+"PO-Revision-Date: 2023-04-17 01:01\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,7 @@ msgid "Page :url not found"
 msgstr ""
 
 #: index.php:45
-msgid "HTTP Error :err_code occured attempting to load :url"
+msgid "HTTP Error :err_code occured while attempting to load :url"
 msgstr ""
 
 #: library/Api/Abstract.php:74
@@ -73,11 +73,11 @@ msgid "Page not found"
 msgstr "Η σελίδα δεν βρέθηκε"
 
 #: library/Box/Crypt.php:25
-msgid "php openssl extension must be enabled on your server"
-msgstr "η επέκταση openssl για τη php πρέπει να είναι ενεργοποιημένη στο διακομιστή σας"
+msgid "The PHP openssl extension must be enabled on your server"
+msgstr ""
 
 #: library/Box/Extension.php:97
-msgid "Unable to connect to FOSSBilling extensions site."
+msgid "Unable to connect to FOSSBilling extension directory."
 msgstr ""
 
 #: library/Box/Ftp.php:29
@@ -226,7 +226,7 @@ msgid "Unit not defined"
 msgstr "Η μονάδα δεν ορίστηκε"
 
 #: library/Box/Period.php:176
-msgid "Can not determine months amount from unit"
+msgid "Unable to get the number of months for :unit"
 msgstr ""
 
 #: library/Box/Tools.php:94 library/Box/Tools.php:358
@@ -294,7 +294,7 @@ msgid "Missing type param for Box_TwigLoader"
 msgstr ""
 
 #: library/Box/Validate.php:59
-msgid "Email is not valid"
+msgid "Email is invalid"
 msgstr ""
 
 #: library/Box/Validate.php:67
@@ -317,16 +317,16 @@ msgstr ""
 msgid "Password must include at least one uppercase letter."
 msgstr ""
 
-#: library/Box/Validate.php:122 modules/Profile/Service.php:144
-msgid "Invalid birth date value"
+#: library/Box/Validate.php:122
+msgid "Birthdate is invalid"
 msgstr ""
 
 #: library/Box/Zip.php:30
 msgid "File :file does not exist"
 msgstr "Το αρχείο :file δεν υπάρχει"
 
-#: library/Box/Zip.php:43
-msgid "Failed to extract file! Exception:<br>"
+#: library/Box/Zip.php:44
+msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr ""
 
 #: library/FOSSBilling/Mail.php:148
@@ -374,7 +374,7 @@ msgid "Product pricing could not be determined. "
 msgstr ""
 
 #: library/Model/ProductTable.php:118
-msgid "Unknown Period selected for setup price"
+msgid "Unknown period selected for setup price"
 msgstr ""
 
 #: library/Model/ProductTable.php:142
@@ -385,16 +385,16 @@ msgstr ""
 msgid "Unknown Period selected for price"
 msgstr ""
 
-#: library/Payment/Adapter/AliPay.php:20
-msgid "Payment gateway \"AliPay\" is not configured properly. Please update configuration parameter \"Partner ID\" at \"Configuration -> Payment gateways\"."
-msgstr ""
-
-#: library/Payment/Adapter/AliPay.php:24
-msgid "Payment gateway \"AliPay\" is not configured properly. Please update configuration parameter \"Security Code\" at \"Configuration -> Payment gateways\"."
-msgstr ""
-
+#: library/Payment/Adapter/AliPay.php:20 library/Payment/Adapter/AliPay.php:24
 #: library/Payment/Adapter/AliPay.php:28
-msgid "Payment gateway \"AliPay\" is not configured properly. Please update configuration parameter \"Seller email\" at \"Configuration -> Payment gateways\"."
+#: library/Payment/Adapter/Interkassa.php:41
+#: library/Payment/Adapter/Interkassa.php:44
+#: library/Payment/Adapter/PayPalEmail.php:38
+#: library/Payment/Adapter/Stripe.php:39 library/Payment/Adapter/Stripe.php:43
+#: library/Payment/Adapter/TwoCheckout.php:34
+#: library/Payment/Adapter/TwoCheckout.php:38
+#: library/Payment/Adapter/WebMoney.php:56
+msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
 msgstr ""
 
 #: library/Payment/Adapter/AliPay.php:118
@@ -412,12 +412,12 @@ msgstr ""
 #: library/Payment/Adapter/ClientBalance.php:68
 #: library/Payment/Adapter/ClientBalance.php:97
 #: library/Payment/Adapter/ClientBalance.php:131
-msgid "Forbidden to pay deposit invoice with this gateway"
+msgid "It is forbidden to pay a deposit invoice with this gateway"
 msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:87
 #: library/Payment/Adapter/Interkassa.php:189
-#: library/Payment/Adapter/PayPalEmail.php:85
+#: library/Payment/Adapter/PayPalEmail.php:81
 msgid "IPN is not valid"
 msgstr ""
 
@@ -425,52 +425,28 @@ msgstr ""
 msgid "ClientBalance gateway is not enabled"
 msgstr ""
 
-#: library/Payment/Adapter/Interkassa.php:41
-msgid "Shop ID is missing in gateway configuration"
-msgstr ""
-
-#: library/Payment/Adapter/Interkassa.php:44
-msgid "Secret key is missing in gateway configuration"
-msgstr ""
-
 #: library/Payment/Adapter/Interkassa.php:138
 msgid "Interkassa payment gateway do not support recurrent payments"
 msgstr ""
 
 #: library/Payment/Adapter/Interkassa.php:230
-#: library/Payment/Adapter/PayPalEmail.php:133
+#: library/Payment/Adapter/PayPalEmail.php:129
 #: library/Payment/Adapter/TwoCheckout.php:175
 #: library/Payment/Adapter/WebMoney.php:149
-msgid "IPN is duplicate"
+msgid "Cannot process duplicate IPN"
 msgstr ""
 
 #: library/Payment/Adapter/Onebip.php:117
-msgid "Not implemented yet"
+msgid "This feature is unimplemented"
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:38
-msgid "PHP Curl extension must be enabled in order to use PayPal gateway"
-msgstr ""
-
-#: library/Payment/Adapter/PayPalEmail.php:42
-msgid "Payment gateway \"PayPal\" is not configured properly. Please update configuration parameter \"PayPal Email address\" at \"Configuration -> Payments\"."
-msgstr ""
-
-#: library/Payment/Adapter/PayPalEmail.php:271
+#: library/Payment/Adapter/PayPalEmail.php:267
 msgid "Redirecting to PayPal.com"
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:314
+#: library/Payment/Adapter/PayPalEmail.php:310
 #: library/Payment/Adapter/Stripe.php:110 modules/Invoice/Service.php:1500
 msgid "Payment for invoice :serie:id [:title]"
-msgstr ""
-
-#: library/Payment/Adapter/Stripe.php:39
-msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"api_key\" at \"Configuration -> Payments\"."
-msgstr ""
-
-#: library/Payment/Adapter/Stripe.php:43
-msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"pub_key\" at \"Configuration -> Payments\"."
 msgstr ""
 
 #: library/Payment/Adapter/Stripe.php:112 modules/Invoice/Service.php:1502
@@ -485,14 +461,6 @@ msgstr ""
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
 msgstr ""
 
-#: library/Payment/Adapter/TwoCheckout.php:34
-msgid "Payment gateway \"2Checkout\" is not configured properly. Please update configuration parameter \"Vendor account number\" at \"Configuration -> Payments\"."
-msgstr ""
-
-#: library/Payment/Adapter/TwoCheckout.php:38
-msgid "Payment gateway \"2Checkout\" is not configured properly. Please update configuration parameter \"Secret word\" at \"Configuration -> Payments\"."
-msgstr ""
-
 #: library/Payment/Adapter/TwoCheckout.php:126
 msgid "2Checkout IPN is not valid"
 msgstr ""
@@ -503,10 +471,6 @@ msgstr ""
 
 #: library/Payment/Adapter/TwoCheckout.php:368
 msgid "Redirecting to 2Checkout.com"
-msgstr ""
-
-#: library/Payment/Adapter/WebMoney.php:56
-msgid "Payment gateway \"WebMoney\" is not configured properly. Please update configuration parameter \"Purse\" at \"Configuration -> Payment gateways > WebMoney\"."
 msgstr ""
 
 #: library/Payment/Adapter/WebMoney.php:114
@@ -534,7 +498,18 @@ msgid "Payment adapter class did not implement configuration options method"
 msgstr ""
 
 #: library/Registrar/Adapter/Email.php:27
-msgid "Email Registrar config requires param \"email\""
+#: library/Registrar/Adapter/Internetbs.php:18
+#: library/Registrar/Adapter/Internetbs.php:25
+#: library/Registrar/Adapter/Namecheap.php:29
+#: library/Registrar/Adapter/Namecheap.php:35
+#: library/Registrar/Adapter/Namecheap.php:45
+#: library/Registrar/Adapter/Netearthone.php:11
+#: library/Registrar/Adapter/Netearthone.php:18
+#: library/Registrar/Adapter/Resellbiz.php:11
+#: library/Registrar/Adapter/Resellbiz.php:18
+#: library/Registrar/Adapter/Resellerid.php:11
+#: library/Registrar/Adapter/Resellerid.php:18
+msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
 msgstr ""
 
 #: library/Registrar/Adapter/Email.php:71
@@ -545,14 +520,6 @@ msgstr ""
 msgid "Email registrar can not determine whether domain can be transferred"
 msgstr ""
 
-#: library/Registrar/Adapter/Internetbs.php:18
-msgid "Domain registrar \"Internetbs\" is not configured properly. Please update configuration parameter \"Internetbs API key\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
-#: library/Registrar/Adapter/Internetbs.php:25
-msgid "Domain registrar \"Internetbs\" is not configured properly. Please update configuration parameter \"Internetbs API password\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
 #: library/Registrar/Adapter/Internetbs.php:76
 msgid "Domain transfer checking is not implemented"
 msgstr ""
@@ -561,24 +528,12 @@ msgstr ""
 msgid "Registrar does not support domain removal."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:29
-msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"API Key\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
-#: library/Registrar/Adapter/Namecheap.php:35
-msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"Username\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
-#: library/Registrar/Adapter/Namecheap.php:45
-msgid "Domain registrar \"Namecheap\" is not configured properly. Please update configuration parameter \"Server IP Address\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
 #: library/Registrar/Adapter/Namecheap.php:115
 msgid "Premium domains cannot be registered."
 msgstr ""
 
 #: library/Registrar/Adapter/Namecheap.php:247
-msgid "Could not update NameServers"
+msgid "Could not update name servers"
 msgstr ""
 
 #: library/Registrar/Adapter/Namecheap.php:343
@@ -606,22 +561,6 @@ msgstr ""
 msgid "API ERROR: could not set lock status on domain"
 msgstr ""
 
-#: library/Registrar/Adapter/Netearthone.php:11
-msgid "Domain registrar \"NetEarthOne\" is not configured properly. Please update configuration parameter \"NetEarthOne Reseller ID\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
-#: library/Registrar/Adapter/Netearthone.php:18
-msgid "Domain registrar \"NetEarthOne\" is not configured properly. Please update configuration parameter \"NetEarthOne API Key\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
-#: library/Registrar/Adapter/Resellbiz.php:11
-msgid "Domain registrar \"Resell.biz\" is not configured properly. Please update configuration parameter \"Resell.biz Reseller ID\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
-#: library/Registrar/Adapter/Resellbiz.php:18
-msgid "Domain registrar \"Resell.biz\" is not configured properly. Please update configuration parameter \"Resell.biz API Key\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
 #: library/Registrar/Adapter/Resellerclub.php:45
 msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub Reseller ID\" at \"Configuration -> Domain registration\"."
 msgstr ""
@@ -643,47 +582,35 @@ msgid "You are already registered as reseller"
 msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:837
-msgid "Valid contact Passport information is required while registering ES domain name"
+msgid "Valid contact passport information is required while registering ES domain name"
 msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:857
-msgid "Valid contact Passport information is required while registering ASIA domain name"
+msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:881
-msgid "Valid contact Birth Date is required while registering RU domain name"
+msgid "Valid contact birth date is required while registering RU domain name"
 msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:885
-msgid "Valid contact Passport information is required while registering RU domain name"
+msgid "Valid contact passport information is required while registering RU domain name"
 msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:972
 msgid "Contact not found"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerid.php:11
-msgid "Domain registrar \"ResellerID\" is not configured properly. Please update configuration parameter \"ResellerID Reseller ID\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
-#: library/Registrar/Adapter/Resellerid.php:18
-msgid "Domain registrar \"ResellerID\" is not configured properly. Please update configuration parameter \"ResellerID API Key\" at \"Configuration -> Domain registration\"."
-msgstr ""
-
 #: library/Registrar/AdapterAbstract.php:25
 msgid "Domain registrar class did not implement configuration options method"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:25
-msgid "Server manager \"CWP\" is not configured properly. IP address is not set!"
-msgstr ""
-
-#: library/Server/Manager/CWP.php:29
-msgid "Server manager \"CWP\" is not configured properly. Hostname is not set!"
-msgstr ""
-
-#: library/Server/Manager/CWP.php:33
-msgid "Server manager \"CWP\" is not configured properly. API Key / Access Hash is not set!"
+#: library/Server/Manager/CWP.php:25 library/Server/Manager/CWP.php:29
+#: library/Server/Manager/CWP.php:33 library/Server/Manager/Directadmin.php:22
+#: library/Server/Manager/Directadmin.php:26
+#: library/Server/Manager/Directadmin.php:30 library/Server/Manager/Whm.php:26
+#: library/Server/Manager/Whm.php:30 library/Server/Manager/Whm.php:34
+msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr ""
 
 #: library/Server/Manager/CWP.php:91
@@ -726,20 +653,8 @@ msgstr ""
 msgid "CWP does not support changing the IP"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:22
-msgid "Server manager \"DirectAdmin\" is not configured properly. Hostname is not set"
-msgstr ""
-
-#: library/Server/Manager/Directadmin.php:26
-msgid "Server manager \"DirectAdmin\" is not configured properly. Username is not set"
-msgstr ""
-
-#: library/Server/Manager/Directadmin.php:30
-msgid "Server manager \"DirectAdmin\" is not configured properly. Password is not set"
-msgstr ""
-
 #: library/Server/Manager/Directadmin.php:70
-msgid "Server Manager DirectAdmin Error: \"There are no IPs on DirectAdmin server\""
+msgid "There are no available IPs on this server."
 msgstr ""
 
 #: library/Server/Manager/Directadmin.php:171
@@ -747,7 +662,7 @@ msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigne
 msgstr ""
 
 #: library/Server/Manager/Directadmin.php:175
-msgid "Error Creating User"
+msgid "Error creating user"
 msgstr ""
 
 #: library/Server/Manager/Directadmin.php:201
@@ -940,18 +855,6 @@ msgstr ""
 msgid "Modify reseller command is only available in Virtualmin PRO version"
 msgstr ""
 
-#: library/Server/Manager/Whm.php:26
-msgid "Server manager \"cPanel WHM\" is not configured properly. Hostname is not set"
-msgstr ""
-
-#: library/Server/Manager/Whm.php:30
-msgid "Server manager \"cPanel WHM\" is not configured properly. Username is not set"
-msgstr ""
-
-#: library/Server/Manager/Whm.php:34
-msgid "Server manager \"cPanel WHM\" is not configured properly. Authentication is not set"
-msgstr ""
-
 #: modules/Activity/Controller/Admin.php:45
 msgid "Activity"
 msgstr ""
@@ -1005,11 +908,11 @@ msgid "Selected billing period is not valid"
 msgstr ""
 
 #: modules/Cart/Service.php:97
-msgid "I'm afraid we are out of stock."
+msgid "This item is currently out of stock"
 msgstr ""
 
 #: modules/Cart/Service.php:130
-msgid "Selected billing period is not valid for addon"
+msgid "Selected billing period is not valid for the selected addon"
 msgstr ""
 
 #: modules/Cart/Service.php:224 modules/Product/Api/Guest.php:90
@@ -1189,7 +1092,7 @@ msgid "Email can not be changed"
 msgstr ""
 
 #: modules/Client/Service.php:685 modules/Client/Service.php:700
-msgid "It is required that you provide details for field \":field\""
+msgid "Field :field cannot be empty"
 msgstr ""
 
 #: modules/Cookieconsent/Controller/Admin.php:45
@@ -1868,6 +1771,10 @@ msgstr ""
 
 #: modules/Product/Service.php:546
 msgid "This promo code already exists."
+msgstr ""
+
+#: modules/Profile/Service.php:144
+msgid "Invalid birth date value"
 msgstr ""
 
 #: modules/Queue/Api/Admin.php:107
