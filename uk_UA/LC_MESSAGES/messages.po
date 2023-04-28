@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-04-25 15:52-0700\n"
-"PO-Revision-Date: 2023-04-25 22:55\n"
+"POT-Creation-Date: 2023-04-28 15:16-0700\n"
+"PO-Revision-Date: 2023-04-28 23:50\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -309,12 +309,96 @@ msgstr ""
 msgid "Birthdate is invalid"
 msgstr ""
 
+#: library/Error/ErrorPage.php:32
+msgid "Unable to find Composer Packages"
+msgstr ""
+
+#: library/Error/ErrorPage.php:35
+msgid "View more info on the composer website"
+msgstr ""
+
+#: library/Error/ErrorPage.php:40
+msgid "For security reasons, you must delete the installation directory before you can use FOSSBilling. :code"
+msgstr ""
+
+#: library/Error/ErrorPage.php:42
+msgid "View more info on the Getting Started guide"
+msgstr ""
+
+#: library/Error/ErrorPage.php:47
+msgid "Your Configuration is Empty"
+msgstr ""
+
+#: library/Error/ErrorPage.php:48
+msgid "Your FOSSBilling configuration seems to either be empty or non-existient. You may need to re-install FOSSBilling, or re-create the :code file based on the example config"
+msgstr ""
+
+#: library/Error/ErrorPage.php:50
+msgid "See the example config."
+msgstr ""
+
+#: library/Error/ErrorPage.php:55
+msgid "Migration is required"
+msgstr ""
+
+#: library/Error/ErrorPage.php:56
+msgid "Legacy BoxBilling or FOSSBilling preview files have been found. The file structure within FOSSBilling, along with the configuration format, has since changed. :lineBreak See the migration guide for assistance in migrating to the latest version of FOSSBilling."
+msgstr ""
+
+#: library/Error/ErrorPage.php:58
+msgid "Check the migration guide."
+msgstr ""
+
+#: library/Error/ErrorPage.php:63
+msgid "Misssing .htaccess file"
+msgstr ""
+
+#: library/Error/ErrorPage.php:64
+msgid "You appear to be running an Apache or LiteSpeed based webserver without a valid :code file. Please create one using the default FOSSBilling .htaccess file."
+msgstr ""
+
+#: library/Error/ErrorPage.php:66
+msgid "Check the default .htaccess"
+msgstr ""
+
+#: library/Error/ErrorPage.php:96
+msgid "An error has occured."
+msgstr ""
+
+#: library/Error/ErrorPage.php:98
+msgid "View the FOSSBilling documentation"
+msgstr ""
+
+#: library/Error/ErrorPage.php:101
+msgid "None"
+msgstr "Відсутньо"
+
+#: library/Error/ErrorPage.php:130
+msgid "Uh-oh! You've received a generic error message: :errorMessage"
+msgstr ""
+
+#: library/Error/ErrorPage.php:246
+msgid "Error Code: #:number"
+msgstr ""
+
+#: library/Error/ErrorPage.php:247
+msgid "Component: :category"
+msgstr ""
+
+#: library/Error/ErrorPage.php:252 library/Error/ErrorPage.php:281
+msgid "Show original message"
+msgstr ""
+
+#: library/Error/ErrorPage.php:277
+msgid "Show specialized message"
+msgstr ""
+
 #: library/FOSSBilling/ExtensionManager.php:66
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr ""
 
 #: library/FOSSBilling/ExtensionManager.php:86
-msgid "Unable to fetch the releaes of the extension from the FOSSBilling extension directory."
+msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
 msgstr ""
 
 #: library/FOSSBilling/ExtensionManager.php:107
@@ -701,7 +785,7 @@ msgstr ""
 msgid "DirectAdmin does not support IP changes"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:426 library/Server/Manager/Whm.php:412
+#: library/Server/Manager/Directadmin.php:426 library/Server/Manager/Whm.php:415
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
@@ -2339,11 +2423,11 @@ msgstr ""
 msgid "Invalid parameter name, received: param_"
 msgstr ""
 
-#: modules/System/Service.php:428
+#: modules/System/Service.php:442
 msgid "Parameter :param does not exist"
 msgstr ""
 
-#: modules/System/Service.php:1321
+#: modules/System/Service.php:1335
 msgid "Country :code phone code is not registered"
 msgstr ""
 
@@ -2434,7 +2518,7 @@ msgstr "Країна"
 #: modules/Client/html_admin/mod_client_manage.html.twig:658
 #: modules/Client/html_admin/mod_client_manage.html.twig:736
 #: modules/Client/html_admin/mod_client_manage.html.twig:769
-#: modules/Client/html_admin/mod_client_manage.html.twig:813
+#: modules/Client/html_admin/mod_client_manage.html.twig:815
 #: modules/Client/html_client/mod_client_balance.html.twig:26
 #: modules/Email/html_admin/mod_email_history.html.twig:34
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:642
@@ -2527,8 +2611,8 @@ msgstr "Ви впевнені?"
 #: modules/Client/html_admin/mod_client_manage.html.twig:630
 #: modules/Client/html_admin/mod_client_manage.html.twig:681
 #: modules/Client/html_admin/mod_client_manage.html.twig:750
-#: modules/Client/html_admin/mod_client_manage.html.twig:789
-#: modules/Client/html_admin/mod_client_manage.html.twig:836
+#: modules/Client/html_admin/mod_client_manage.html.twig:791
+#: modules/Client/html_admin/mod_client_manage.html.twig:838
 #: modules/Client/html_client/mod_client_balance.html.twig:40
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:105
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
@@ -2672,7 +2756,7 @@ msgstr "Фільтр клієнтів"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:18
 #: modules/Client/html_admin/mod_client_manage.html.twig:63
-#: modules/Client/html_admin/mod_client_manage.html.twig:808
+#: modules/Client/html_admin/mod_client_manage.html.twig:810
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:87
 #: modules/Index/html_client/mod_index_dashboard.html.twig:92
@@ -2788,7 +2872,7 @@ msgstr "Група"
 #: modules/Client/html_admin/mod_client_manage.html.twig:456
 #: modules/Client/html_admin/mod_client_manage.html.twig:525
 #: modules/Client/html_admin/mod_client_manage.html.twig:595
-#: modules/Client/html_admin/mod_client_manage.html.twig:812
+#: modules/Client/html_admin/mod_client_manage.html.twig:814
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:45
 #: modules/Index/html_client/mod_index_dashboard.html.twig:50
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:52
@@ -3251,7 +3335,7 @@ msgid "Client Profile updated"
 msgstr "Профіль клієнта оновлено"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:181
-#: modules/Client/html_admin/mod_client_manage.html.twig:809
+#: modules/Client/html_admin/mod_client_manage.html.twig:811
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:638
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:166
 #: modules/Order/html_admin/mod_order_index.html.twig:35
@@ -3486,7 +3570,7 @@ msgstr "Замовлення клієнта"
 #: modules/Client/html_admin/mod_client_manage.html.twig:522
 #: modules/Client/html_admin/mod_client_manage.html.twig:656
 #: modules/Client/html_admin/mod_client_manage.html.twig:697
-#: modules/Client/html_admin/mod_client_manage.html.twig:811
+#: modules/Client/html_admin/mod_client_manage.html.twig:813
 #: modules/Client/html_client/mod_client_balance.html.twig:27
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:204
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
@@ -3648,11 +3732,11 @@ msgstr "Тема електронного листа"
 msgid "To"
 msgstr "До"
 
-#: modules/Client/html_admin/mod_client_manage.html.twig:800
+#: modules/Client/html_admin/mod_client_manage.html.twig:802
 msgid "Transactions received"
 msgstr "Отримані транзакції"
 
-#: modules/Client/html_admin/mod_client_manage.html.twig:810
+#: modules/Client/html_admin/mod_client_manage.html.twig:812
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:639
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:38
