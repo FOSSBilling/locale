@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-04-28 15:16-0700\n"
-"PO-Revision-Date: 2023-04-28 23:49\n"
+"POT-Creation-Date: 2023-04-30 17:42-0700\n"
+"PO-Revision-Date: 2023-05-01 00:43\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Czech\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: cs_CZ\n"
 
-#: di.php:330
+#: di.php:331
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr ""
 
@@ -33,7 +33,7 @@ msgid "Page :url not found"
 msgstr "Stránka :url nenalezena"
 
 #: index.php:45
-msgid "HTTP Error :err_code occured while attempting to load :url"
+msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr ""
 
 #: library/Api/Abstract.php:74
@@ -205,11 +205,11 @@ msgstr "Jednotka není definována"
 msgid "Unable to get the number of months for :unit"
 msgstr ""
 
-#: library/Box/Tools.php:84 library/Box/Tools.php:288
+#: library/Box/Tools.php:81 library/Box/Tools.php:262
 msgid "Service class :class was not found in :path"
 msgstr "Třída služby :class nebyla nalezena v :path"
 
-#: library/Box/Tools.php:318
+#: library/Box/Tools.php:292
 msgid "Email address is invalid"
 msgstr "E-mailová adresa je neplatná"
 
@@ -257,27 +257,27 @@ msgstr "Chybějící parametr pro téma Box_TwigLoader"
 msgid "Missing type param for Box_TwigLoader"
 msgstr "Chybějící typ parametru pro Box_TwigLoader"
 
-#: library/Box/Update.php:163 modules/System/Api/Admin.php:175
+#: library/Box/Update.php:173 modules/System/Api/Admin.php:185
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Máte nejnovější verzi FOSSBillingu. Není třeba aktualizovat."
 
-#: library/Box/Update.php:186
+#: library/Box/Update.php:196
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr ""
 
-#: library/Box/Update.php:199 modules/Extension/Service.php:455
+#: library/Box/Update.php:209 modules/Extension/Service.php:455
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr ""
 
-#: library/Box/Update.php:233
+#: library/Box/Update.php:243
 msgid "Unable to load existing configuration. performConfigUpdate() is unable to progress."
 msgstr ""
 
-#: library/Box/Update.php:236
+#: library/Box/Update.php:246
 msgid "Unable to create backup of configuration file. Cancelling config migration."
 msgstr ""
 
-#: library/Box/Update.php:280
+#: library/Box/Update.php:290
 msgid "Error when writing updated configuration file."
 msgstr "Chyba při zápisu do aktualizovaného konfiguračního souboru."
 
@@ -330,7 +330,7 @@ msgid "Your Configuration is Empty"
 msgstr ""
 
 #: library/Error/ErrorPage.php:48
-msgid "Your FOSSBilling configuration seems to either be empty or non-existient. You may need to re-install FOSSBilling, or re-create the :code file based on the example config"
+msgid "Your FOSSBilling configuration seems to either be empty or non-existent. You may need to re-install FOSSBilling, or re-create the :code file based on the example config."
 msgstr ""
 
 #: library/Error/ErrorPage.php:50
@@ -350,7 +350,7 @@ msgid "Check the migration guide."
 msgstr ""
 
 #: library/Error/ErrorPage.php:63
-msgid "Misssing .htaccess file"
+msgid "Missing .htaccess file"
 msgstr ""
 
 #: library/Error/ErrorPage.php:64
@@ -362,7 +362,7 @@ msgid "Check the default .htaccess"
 msgstr ""
 
 #: library/Error/ErrorPage.php:96
-msgid "An error has occured."
+msgid "An error has occurred."
 msgstr ""
 
 #: library/Error/ErrorPage.php:98
@@ -391,6 +391,10 @@ msgstr ""
 
 #: library/Error/ErrorPage.php:277
 msgid "Show specialized message"
+msgstr ""
+
+#: library/FOSSBilling/CentralAlerts.php:133
+msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr ""
 
 #: library/FOSSBilling/ExtensionManager.php:66
@@ -439,22 +443,6 @@ msgstr ""
 
 #: library/FOSSBilling/Mail.php:210
 msgid "SMTP host or port is not configured"
-msgstr ""
-
-#: library/FileCache.php:31
-msgid "The specified cache directory is invalid."
-msgstr ""
-
-#: library/FileCache.php:44
-msgid "Error saving data with the key "
-msgstr ""
-
-#: library/FileCache.php:57
-msgid "Error reading data with the key "
-msgstr ""
-
-#: library/FileCache.php:72
-msgid "Error deleting the file cache with key "
 msgstr ""
 
 #: library/Model/ProductDomainTable.php:222
@@ -1102,9 +1090,9 @@ msgstr "Platnost odkazu vypršela nebo jste již obnovili heslo."
 #: modules/Client/html_admin/mod_client_index.html.twig:7
 #: modules/Client/html_admin/mod_client_index.html.twig:175
 #: modules/Client/html_admin/mod_client_manage.html.twig:17
-#: themes/admin_default/html/mod_index_dashboard.html.twig:162
-#: themes/admin_default/html/mod_index_dashboard.html.twig:437
-#: themes/admin_default/html/mod_index_dashboard.html.twig:533
+#: themes/admin_default/html/mod_index_dashboard.html.twig:178
+#: themes/admin_default/html/mod_index_dashboard.html.twig:453
+#: themes/admin_default/html/mod_index_dashboard.html.twig:549
 msgid "Clients"
 msgstr ""
 
@@ -1443,10 +1431,10 @@ msgstr ""
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:8
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:11
 #: modules/Order/html_admin/mod_order_manage.html.twig:52
-#: themes/admin_default/html/mod_index_dashboard.html.twig:198
-#: themes/admin_default/html/mod_index_dashboard.html.twig:245
-#: themes/admin_default/html/mod_index_dashboard.html.twig:428
-#: themes/admin_default/html/mod_index_dashboard.html.twig:532
+#: themes/admin_default/html/mod_index_dashboard.html.twig:214
+#: themes/admin_default/html/mod_index_dashboard.html.twig:261
+#: themes/admin_default/html/mod_index_dashboard.html.twig:444
+#: themes/admin_default/html/mod_index_dashboard.html.twig:548
 #: themes/huraga/html/partial_menu.html.twig:29
 msgid "Invoices"
 msgstr ""
@@ -1750,9 +1738,9 @@ msgstr ""
 #: modules/Order/html_client/mod_order_list.html.twig:9
 #: modules/Order/html_client/mod_order_list.html.twig:17
 #: modules/Order/html_client/mod_order_manage.html.twig:11
-#: themes/admin_default/html/mod_index_dashboard.html.twig:180
-#: themes/admin_default/html/mod_index_dashboard.html.twig:419
-#: themes/admin_default/html/mod_index_dashboard.html.twig:531
+#: themes/admin_default/html/mod_index_dashboard.html.twig:196
+#: themes/admin_default/html/mod_index_dashboard.html.twig:435
+#: themes/admin_default/html/mod_index_dashboard.html.twig:547
 msgid "Orders"
 msgstr ""
 
@@ -2423,11 +2411,11 @@ msgstr ""
 msgid "Invalid parameter name, received: param_"
 msgstr ""
 
-#: modules/System/Service.php:442
+#: modules/System/Service.php:452
 msgid "Parameter :param does not exist"
 msgstr ""
 
-#: modules/System/Service.php:1335
+#: modules/System/Service.php:1345
 msgid "Country :code phone code is not registered"
 msgstr ""
 
@@ -2669,9 +2657,9 @@ msgstr ""
 #: modules/Support/html_client/mod_support_tickets.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:70
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:124
-#: themes/admin_default/html/mod_index_dashboard.html.twig:329
-#: themes/admin_default/html/mod_index_dashboard.html.twig:486
-#: themes/admin_default/html/mod_index_dashboard.html.twig:513
+#: themes/admin_default/html/mod_index_dashboard.html.twig:345
+#: themes/admin_default/html/mod_index_dashboard.html.twig:502
+#: themes/admin_default/html/mod_index_dashboard.html.twig:529
 msgid "The list is empty"
 msgstr ""
 
@@ -3023,7 +3011,7 @@ msgstr ""
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:62
 #: modules/Support/html_admin/mod_support_tickets.html.twig:148
-#: themes/admin_default/html/mod_index_dashboard.html.twig:139
+#: themes/admin_default/html/mod_index_dashboard.html.twig:155
 #: themes/admin_default/html/partial_pricing.html.twig:26
 msgid "Total"
 msgstr ""
@@ -3224,9 +3212,9 @@ msgstr ""
 #: modules/Client/html_admin/mod_client_manage.html.twig:38
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:150
 #: modules/Index/html_client/mod_index_dashboard.html.twig:155
-#: themes/admin_default/html/mod_index_dashboard.html.twig:216
-#: themes/admin_default/html/mod_index_dashboard.html.twig:446
-#: themes/admin_default/html/mod_index_dashboard.html.twig:534
+#: themes/admin_default/html/mod_index_dashboard.html.twig:232
+#: themes/admin_default/html/mod_index_dashboard.html.twig:462
+#: themes/admin_default/html/mod_index_dashboard.html.twig:550
 msgid "Tickets"
 msgstr ""
 
@@ -4319,9 +4307,9 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_tickets.html.twig:229
 #: modules/Support/html_client/mod_support_ticket.html.twig:95
 #: modules/Support/html_client/mod_support_tickets.html.twig:48
-#: themes/admin_default/html/mod_index_dashboard.html.twig:319
-#: themes/admin_default/html/mod_index_dashboard.html.twig:482
-#: themes/admin_default/html/mod_index_dashboard.html.twig:509
+#: themes/admin_default/html/mod_index_dashboard.html.twig:335
+#: themes/admin_default/html/mod_index_dashboard.html.twig:498
+#: themes/admin_default/html/mod_index_dashboard.html.twig:525
 msgid "ago"
 msgstr ""
 
@@ -4416,7 +4404,7 @@ msgid "Resend"
 msgstr ""
 
 #: modules/Email/html_admin/mod_email_history.html.twig:13
-#: themes/admin_default/html/mod_index_dashboard.html.twig:22
+#: themes/admin_default/html/mod_index_dashboard.html.twig:38
 msgid "Information"
 msgstr ""
 
@@ -4955,7 +4943,7 @@ msgid "Labels on the left"
 msgstr ""
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:120
-msgid "Form title visibilty"
+msgid "Form title visibility"
 msgstr ""
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:123
@@ -9052,7 +9040,7 @@ msgid "Automatic Update"
 msgstr ""
 
 #: modules/System/html_admin/mod_system_update.html.twig:14
-msgid "The automatic updater is a one-click tool for updating FOSSBilling. It works on hosting environments where PHP can overwrite files uploaded via FTP."
+msgid "The automatic updater is a one-click tool for updating FOSSBilling. PHP must be able to write to the directory where FOSSBilling is installed."
 msgstr ""
 
 #: modules/System/html_admin/mod_system_update.html.twig:25
@@ -9188,86 +9176,86 @@ msgstr ""
 msgid "Enter search text.."
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:10
+#: themes/admin_default/html/mod_index_dashboard.html.twig:26
 msgid "Danger!"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:16
+#: themes/admin_default/html/mod_index_dashboard.html.twig:32
 msgid "Warning"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:51
+#: themes/admin_default/html/mod_index_dashboard.html.twig:67
 msgid "clients"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:52
-#: themes/admin_default/html/mod_index_dashboard.html.twig:74
+#: themes/admin_default/html/mod_index_dashboard.html.twig:68
+#: themes/admin_default/html/mod_index_dashboard.html.twig:90
 msgid "suspended"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:73
+#: themes/admin_default/html/mod_index_dashboard.html.twig:89
 msgid "orders"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:95
+#: themes/admin_default/html/mod_index_dashboard.html.twig:111
 msgid "invoices"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:96
+#: themes/admin_default/html/mod_index_dashboard.html.twig:112
 msgid "unpaid"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:117
+#: themes/admin_default/html/mod_index_dashboard.html.twig:133
 msgid "tickets"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:118
+#: themes/admin_default/html/mod_index_dashboard.html.twig:134
 msgid "waiting for staff reply"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:128
+#: themes/admin_default/html/mod_index_dashboard.html.twig:144
 msgid "Statistics"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:135
+#: themes/admin_default/html/mod_index_dashboard.html.twig:151
 msgid "Today"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:136
+#: themes/admin_default/html/mod_index_dashboard.html.twig:152
 msgid "Yesterday"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:137
+#: themes/admin_default/html/mod_index_dashboard.html.twig:153
 msgid "This month so far"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:138
+#: themes/admin_default/html/mod_index_dashboard.html.twig:154
 msgid "Last month"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:144
-#: themes/admin_default/html/mod_index_dashboard.html.twig:410
-#: themes/admin_default/html/mod_index_dashboard.html.twig:530
+#: themes/admin_default/html/mod_index_dashboard.html.twig:160
+#: themes/admin_default/html/mod_index_dashboard.html.twig:426
+#: themes/admin_default/html/mod_index_dashboard.html.twig:546
 msgid "Income"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:302
+#: themes/admin_default/html/mod_index_dashboard.html.twig:318
 msgid "Latest orders"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:375
+#: themes/admin_default/html/mod_index_dashboard.html.twig:391
 msgid "Define date interval for graphs"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:400
+#: themes/admin_default/html/mod_index_dashboard.html.twig:416
 msgid "Update graphs"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:457
+#: themes/admin_default/html/mod_index_dashboard.html.twig:473
 msgid "Recent clients activity"
 msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:460
+#: themes/admin_default/html/mod_index_dashboard.html.twig:476
 msgid "Recent staff activity"
 msgstr ""
 
