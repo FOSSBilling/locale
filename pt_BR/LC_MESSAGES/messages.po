@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-04-30 17:42-0700\n"
-"PO-Revision-Date: 2023-05-03 00:56\n"
+"POT-Creation-Date: 2023-05-02 19:17-0700\n"
+"PO-Revision-Date: 2023-05-03 02:21\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: pt_BR\n"
 
-#: di.php:331
+#: di.php:330
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Parece que você está tentando usar o FOSSBilling sem a extensão php intl habilitada. O FOSSBilling inclui um polyfill para a extensão intl, mas não suporta :locale. Por favor, habilite a extensão intl."
 
@@ -36,7 +36,7 @@ msgstr "Página :url não encontrada"
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "Erro HTTP :err_code ocorreu durante a tentativa de carregar :url"
 
-#: library/Api/Abstract.php:74
+#: library/Api/Abstract.php:71
 msgid "Mod object is not set for the service"
 msgstr "Objeto de modelo não está definido para o serviço"
 
@@ -76,29 +76,13 @@ msgstr "Página não encontrada"
 msgid "The PHP openssl extension must be enabled on your server"
 msgstr "A extensão openssl PHP deve estar ativada no seu servidor"
 
-#: library/Box/Log.php:77
+#: library/Box/Log.php:76
 msgid "Missing log message"
 msgstr "Mensagem de registro ausente"
 
-#: library/Box/Log.php:92 library/Box/Log.php:104
+#: library/Box/Log.php:91 library/Box/Log.php:110
 msgid "Bad log priority"
 msgstr "Prioridade de registro inválida"
-
-#: library/Box/LogStream.php:32
-msgid "Resource is not a stream"
-msgstr "Recurso não é uma transmissão"
-
-#: library/Box/LogStream.php:36
-msgid "Mode cannot be changed on existing streams"
-msgstr "O modo não pode ser alterado nas transmissões existentes"
-
-#: library/Box/LogStream.php:50
-msgid ":stream cannot be opened with mode :mode"
-msgstr ":stream não pode ser aberto com o modo :mode"
-
-#: library/Box/LogStream.php:68
-msgid "Unable to write to stream"
-msgstr "Não é possível gravar na transmissão"
 
 #: library/Box/Mod.php:80
 msgid "Module :mod manifest file is missing"
@@ -116,7 +100,7 @@ msgstr "Módulo :mod não tem uma classe de serviço"
 msgid "Module :mod Client controller class was not found"
 msgstr "Módulo :mod classe controladora do cliente não foi encontrada"
 
-#: library/Box/Mod.php:246
+#: library/Box/Mod.php:214
 msgid "Core module can not be updated"
 msgstr "O núcleo do módulo não pode ser atualizado"
 
@@ -197,43 +181,43 @@ msgstr "Unidade não definida"
 msgid "Unable to get the number of months for :unit"
 msgstr "Não foi possível obter o número de meses para :unit"
 
-#: library/Box/Tools.php:81 library/Box/Tools.php:262
+#: library/Box/Tools.php:78 library/Box/Tools.php:259
 msgid "Service class :class was not found in :path"
 msgstr "Classe de serviço :class não foi encontrada em :path"
 
-#: library/Box/Tools.php:292
+#: library/Box/Tools.php:289
 msgid "Email address is invalid"
 msgstr "O endereço de e-mail é inválido"
 
-#: library/Box/TwigExtensions.php:269
+#: library/Box/TwigExtensions.php:263
 msgid "second"
 msgstr "segundo"
 
-#: library/Box/TwigExtensions.php:269
+#: library/Box/TwigExtensions.php:263
 msgid "minute"
 msgstr "minuto"
 
-#: library/Box/TwigExtensions.php:269
+#: library/Box/TwigExtensions.php:263
 msgid "hour"
 msgstr "hora"
 
-#: library/Box/TwigExtensions.php:269
+#: library/Box/TwigExtensions.php:263
 msgid "day"
 msgstr "dia"
 
-#: library/Box/TwigExtensions.php:269
+#: library/Box/TwigExtensions.php:263
 msgid "week"
 msgstr "semana"
 
-#: library/Box/TwigExtensions.php:269
+#: library/Box/TwigExtensions.php:263
 msgid "month"
 msgstr "mês"
 
-#: library/Box/TwigExtensions.php:269
+#: library/Box/TwigExtensions.php:263
 msgid "year"
 msgstr "ano"
 
-#: library/Box/TwigExtensions.php:269
+#: library/Box/TwigExtensions.php:263
 msgid "decade"
 msgstr "década"
 
@@ -249,55 +233,55 @@ msgstr "Faltando parâmetro do tema para o Box_TwigLoader"
 msgid "Missing type param for Box_TwigLoader"
 msgstr "Faltando parâmetro do tema para o Box_TwigLoader"
 
-#: library/Box/Update.php:173 modules/System/Api/Admin.php:185
+#: library/Box/Update.php:170 modules/System/Api/Admin.php:185
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Você tem a versão mais recente do FOSSBilling. Você não precisa atualizar."
 
-#: library/Box/Update.php:196
+#: library/Box/Update.php:193
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Falha ao baixar o arquivo de atualização. Outros detalhes estão disponíveis no registro de erros."
 
-#: library/Box/Update.php:209 modules/Extension/Service.php:455
+#: library/Box/Update.php:206 modules/Extension/Service.php:451
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Falha ao extrair o arquivo, por favor, verifique as permissões de arquivo e pasta. Mais detalhes estão disponíveis no registro de erros."
 
-#: library/Box/Update.php:243
+#: library/Box/Update.php:240
 msgid "Unable to load existing configuration. performConfigUpdate() is unable to progress."
 msgstr "Não foi possível carregar a configuração existente. PerformConfigUpdate() não foi possível continuar."
 
-#: library/Box/Update.php:246
+#: library/Box/Update.php:243
 msgid "Unable to create backup of configuration file. Cancelling config migration."
 msgstr "Não é possível criar o backup do arquivo de configuração. Cancelando migração de configuração."
 
-#: library/Box/Update.php:290
+#: library/Box/Update.php:287
 msgid "Error when writing updated configuration file."
 msgstr "Erro ao escrever o arquivo de configuração atualizado."
 
-#: library/Box/Validate.php:59
+#: library/Box/Validate.php:55
 msgid "Email is invalid"
 msgstr "O e-mail é inválido"
 
-#: library/Box/Validate.php:67
+#: library/Box/Validate.php:63
 msgid "Minimum password length is 8 characters."
 msgstr "O tamanho mínimo da senha é de 8 caracteres."
 
-#: library/Box/Validate.php:71
+#: library/Box/Validate.php:67
 msgid "Maximum password length is 256 characters."
 msgstr "O tamanho máximo da senha é de 256 caracteres."
 
-#: library/Box/Validate.php:75
+#: library/Box/Validate.php:71
 msgid "Password must include at least one number."
 msgstr "A senha deve conter pelo menos um número."
 
-#: library/Box/Validate.php:79
+#: library/Box/Validate.php:75
 msgid "Password must include at least one lowercase letter."
 msgstr "A senha deve conter pelo menos uma letra minúscula."
 
-#: library/Box/Validate.php:83
+#: library/Box/Validate.php:79
 msgid "Password must include at least one uppercase letter."
 msgstr "A senha deve conter pelo menos uma letra maiúscula."
 
-#: library/Box/Validate.php:122
+#: library/Box/Validate.php:118
 msgid "Birthdate is invalid"
 msgstr "Data de nascimento inválida"
 
@@ -385,55 +369,55 @@ msgstr "Exibir mensagem original"
 msgid "Show specialized message"
 msgstr "Exibir mensagem especializada"
 
-#: library/FOSSBilling/CentralAlerts.php:133
+#: library/FOSSBilling/CentralAlerts.php:127
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "Resposta inválida do Sistema de Alerta da Central do FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:66
+#: library/FOSSBilling/ExtensionManager.php:60
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "Não foi possível obter os detalhes da extensão do diretório de extensões do FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:86
+#: library/FOSSBilling/ExtensionManager.php:80
 msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
 msgstr "Não foi possível buscar os lançamentos da extensão no diretório de extensões FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:107
+#: library/FOSSBilling/ExtensionManager.php:101
 msgid "Unable to fetch the latest release of the extension."
 msgstr "Não foi possível obter a última versão da extensão."
 
-#: library/FOSSBilling/ExtensionManager.php:176
+#: library/FOSSBilling/ExtensionManager.php:170
 msgid "Unable to connect to the FOSSBilling extension directory."
 msgstr "Não foi possível conectar ao diretório de extensões do FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:184
+#: library/FOSSBilling/ExtensionManager.php:178
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr "Resposta inválida do diretório de extensões do FOSSBilling."
 
-#: library/FOSSBilling/Mail.php:148
+#: library/FOSSBilling/Mail.php:145
 msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
 msgstr "Prioridade (:priority) fornecida é inválida. Forneça um número inteiro entre 1 e 5 ou use as constantes pré-definidas do symfony."
 
-#: library/FOSSBilling/Mail.php:166
+#: library/FOSSBilling/Mail.php:163
 msgid "FOSSBilling requires the proc_open PHP function to be enabled when using the sendmail transport"
 msgstr "FOSSBilling requer que a função \"proc_open PHP\" esteja ativada ao utilizar o transporte sendmail"
 
-#: library/FOSSBilling/Mail.php:174
+#: library/FOSSBilling/Mail.php:171
 msgid "A Sendgrid API key is required to send emails via Sendgrid"
 msgstr "Uma chave da API do Sendgrid é necessária para enviar e-mails pelo Sendgrid"
 
-#: library/FOSSBilling/Mail.php:180
+#: library/FOSSBilling/Mail.php:177
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
 msgstr "Não foi possível enviar o e-mail: 'Personalizado' método de envio selecionado sem um DSN personalizado"
 
-#: library/FOSSBilling/Mail.php:185
+#: library/FOSSBilling/Mail.php:182
 msgid "Unknown mail transport: :transport"
 msgstr "Transporte de e-mail desconhecido: :transport"
 
-#: library/FOSSBilling/Mail.php:193
+#: library/FOSSBilling/Mail.php:190
 msgid "Failed to send email via :transport with the exception :e"
 msgstr "Falha ao enviar o e-mail via :transport com a exceção :e"
 
-#: library/FOSSBilling/Mail.php:210
+#: library/FOSSBilling/Mail.php:207
 msgid "SMTP host or port is not configured"
 msgstr "O host SMTP ou a porta não está configurado"
 
@@ -449,30 +433,30 @@ msgstr "TLD desconhecido. Não foi possível determinar o preço do registro"
 msgid "Domain product can not be removed."
 msgstr "O produto do domínio não pode ser removido."
 
-#: library/Model/ProductTable.php:74
+#: library/Model/ProductTable.php:68
 msgid "Unknown period selected "
 msgstr "Período desconhecido selecionado "
 
-#: library/Model/ProductTable.php:86
+#: library/Model/ProductTable.php:80
 msgid "Product pricing could not be determined. "
 msgstr "O preço do produto não pôde ser determinado. "
 
-#: library/Model/ProductTable.php:118
+#: library/Model/ProductTable.php:112
 msgid "Unknown period selected for setup price"
 msgstr "Período desconhecido selecionado para o preço de instalação"
 
-#: library/Model/ProductTable.php:142
+#: library/Model/ProductTable.php:136
 msgid "Product :id payment type is recurrent, but period was not selected"
 msgstr "Produto :id tipo de pagamento é recorrente, mas o período não foi selecionado"
 
-#: library/Model/ProductTable.php:154
+#: library/Model/ProductTable.php:148
 msgid "Unknown Period selected for price"
 msgstr "Período Desconhecido selecionado para o preço"
 
 #: library/Payment/Adapter/AliPay.php:20 library/Payment/Adapter/AliPay.php:24
 #: library/Payment/Adapter/AliPay.php:28
+#: library/Payment/Adapter/Interkassa.php:38
 #: library/Payment/Adapter/Interkassa.php:41
-#: library/Payment/Adapter/Interkassa.php:44
 #: library/Payment/Adapter/PayPalEmail.php:38
 #: library/Payment/Adapter/Stripe.php:39 library/Payment/Adapter/Stripe.php:43
 #: library/Payment/Adapter/TwoCheckout.php:34
@@ -500,7 +484,7 @@ msgid "It is forbidden to pay a deposit invoice with this gateway"
 msgstr "Não é permitido pagar uma fatura de depósito com este método"
 
 #: library/Payment/Adapter/ClientBalance.php:87
-#: library/Payment/Adapter/Interkassa.php:189
+#: library/Payment/Adapter/Interkassa.php:186
 #: library/Payment/Adapter/PayPalEmail.php:81
 msgid "IPN is not valid"
 msgstr "O IPN não é válido"
@@ -509,11 +493,11 @@ msgstr "O IPN não é válido"
 msgid "ClientBalance gateway is not enabled"
 msgstr "O método de Saldo do Cliente não está ativado"
 
-#: library/Payment/Adapter/Interkassa.php:138
+#: library/Payment/Adapter/Interkassa.php:135
 msgid "Interkassa payment gateway do not support recurrent payments"
 msgstr "O método de pagamento Interkassa não suporta pagamentos recorrentes"
 
-#: library/Payment/Adapter/Interkassa.php:230
+#: library/Payment/Adapter/Interkassa.php:227
 #: library/Payment/Adapter/PayPalEmail.php:129
 #: library/Payment/Adapter/TwoCheckout.php:175
 #: library/Payment/Adapter/WebMoney.php:149
@@ -529,11 +513,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Redirecionando para o PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:310
-#: library/Payment/Adapter/Stripe.php:110 modules/Invoice/Service.php:1500
+#: library/Payment/Adapter/Stripe.php:110 modules/Invoice/Service.php:1475
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Pagamento para a fatura :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:112 modules/Invoice/Service.php:1502
+#: library/Payment/Adapter/Stripe.php:112 modules/Invoice/Service.php:1477
 msgid "Payment for invoice :serie:id"
 msgstr "Pagamento para a fatura :serie:id"
 
@@ -939,37 +923,37 @@ msgstr "Falha ao modificar a senha do revendedor"
 msgid "Modify reseller command is only available in Virtualmin PRO version"
 msgstr "O comando de modificar o revendedor está disponível apenas na versão Virtualmin PRO"
 
-#: modules/Activity/Controller/Admin.php:45
+#: modules/Activity/Controller/Admin.php:39
 msgid "Activity"
 msgstr "Atividade"
 
-#: modules/Activity/Controller/Admin.php:52 modules/System/Service.php:39
+#: modules/Activity/Controller/Admin.php:46
 msgid "Event history"
 msgstr "Histórico de eventos"
 
-#: modules/Api/Controller/Client.php:59
+#: modules/Api/Controller/Client.php:53
 msgid "Unknown API call :call"
 msgstr "Chamada API desconhecida :call"
 
-#: modules/Api/Controller/Client.php:136
+#: modules/Api/Controller/Client.php:130
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Solicitação inválida. Certifique-se de que a origem da solicitação é :from"
 
-#: modules/Api/Controller/Client.php:147
+#: modules/Api/Controller/Client.php:141
 msgid "Unauthorized IP"
 msgstr "IP não autorizado"
 
-#: modules/Api/Controller/Client.php:201 modules/Api/Controller/Client.php:205
-#: modules/Api/Controller/Client.php:209 modules/Api/Controller/Client.php:223
-#: modules/Api/Controller/Client.php:231 modules/Api/Controller/Client.php:244
+#: modules/Api/Controller/Client.php:195 modules/Api/Controller/Client.php:199
+#: modules/Api/Controller/Client.php:203 modules/Api/Controller/Client.php:217
+#: modules/Api/Controller/Client.php:225 modules/Api/Controller/Client.php:238
 msgid "Authentication Failed"
 msgstr "Falha na Autenticação"
 
-#: modules/Api/Controller/Client.php:257
+#: modules/Api/Controller/Client.php:251
 msgid "Unknown API call"
 msgstr "Chamada API desconhecida"
 
-#: modules/Api/Controller/Client.php:336
+#: modules/Api/Controller/Client.php:330
 msgid "CSRF token invalid."
 msgstr "Token CSRF inválido."
 
@@ -1073,12 +1057,12 @@ msgid "Email not found in our database"
 msgstr "E-mail não encontrado em nosso banco de dados"
 
 #: modules/Client/Api/Guest.php:230 modules/Staff/Api/Guest.php:122
-#: modules/Staff/Api/Guest.php:126 modules/Staff/Controller/Admin.php:134
-#: modules/Staff/Controller/Admin.php:137
+#: modules/Staff/Api/Guest.php:126 modules/Staff/Controller/Admin.php:128
+#: modules/Staff/Controller/Admin.php:131
 msgid "The link have expired or you have already confirmed password reset."
 msgstr "O link expirou ou você já confirmou a redefinição da senha."
 
-#: modules/Client/Controller/Admin.php:45
+#: modules/Client/Controller/Admin.php:39
 #: modules/Client/html_admin/mod_client_index.html.twig:7
 #: modules/Client/html_admin/mod_client_index.html.twig:175
 #: modules/Client/html_admin/mod_client_manage.html.twig:17
@@ -1088,105 +1072,84 @@ msgstr "O link expirou ou você já confirmou a redefinição da senha."
 msgid "Clients"
 msgstr "Clientes"
 
-#: modules/Client/Controller/Admin.php:53
-#: modules/Extension/Controller/Admin.php:52
-#: modules/Invoice/Controller/Admin.php:53 modules/Order/Controller/Admin.php:54
+#: modules/Client/Controller/Admin.php:47
+#: modules/Extension/Controller/Admin.php:46
+#: modules/Invoice/Controller/Admin.php:47 modules/Order/Controller/Admin.php:48
 msgid "Overview"
 msgstr "Visão geral"
 
-#: modules/Client/Controller/Admin.php:60 modules/Invoice/Controller/Admin.php:60
-#: modules/Order/Controller/Admin.php:61
+#: modules/Client/Controller/Admin.php:54 modules/Invoice/Controller/Admin.php:54
+#: modules/Order/Controller/Admin.php:55
 msgid "Advanced search"
 msgstr "Pesquisa avançada"
 
-#: modules/Client/Controller/Admin.php:68
+#: modules/Client/Controller/Admin.php:62
 msgid "Client login history"
 msgstr "Histórico de acesso de cliente"
 
-#: modules/Client/Controller/Client.php:60
+#: modules/Client/Controller/Client.php:54
 msgid "Email address was confirmed"
 msgstr "O endereço de e-mail foi confirmado"
 
-#: modules/Client/Service.php:46
-msgid "Active clients"
-msgstr "Clientes ativos"
-
-#: modules/Client/Service.php:50
-msgid "Suspended clients"
-msgstr "Clientes suspensos"
-
-#: modules/Client/Service.php:54
-msgid "Canceled clients"
-msgstr "Clientes cancelados"
-
-#: modules/Client/Service.php:58
-msgid "All clients"
-msgstr "Todos os clientes"
-
-#: modules/Client/Service.php:68
+#: modules/Client/Service.php:43
 msgid "Invalid email confirmation link"
 msgstr "Link de confirmação de e-mail inválido"
 
-#: modules/Client/Service.php:103
+#: modules/Client/Service.php:78
 msgid "The password you chose when creating your account."
 msgstr "A senha que você escolheu ao criar sua conta."
 
-#: modules/Client/Service.php:253
+#: modules/Client/Service.php:228
 msgid "Currency can not be changed. Client already have invoices issued."
 msgstr "A moeda não pode ser alterada. O cliente já tem faturas emitidas."
 
-#: modules/Client/Service.php:258
+#: modules/Client/Service.php:233
 msgid "Currency can not be changed. Client already have orders."
 msgstr "A moeda não pode ser alterada. Cliente já possui pedidos."
 
-#: modules/Client/Service.php:267
+#: modules/Client/Service.php:242
 msgid "Define clients currency before adding funds."
 msgstr "Defina a moeda dos clientes antes de adicionar fundos."
 
-#: modules/Client/Service.php:271 modules/Client/ServiceBalance.php:138
+#: modules/Client/Service.php:246 modules/Client/ServiceBalance.php:135
 msgid "Funds amount is not valid"
 msgstr "O valor dos fundos não é válido"
 
-#: modules/Client/Service.php:275 modules/Client/ServiceBalance.php:142
+#: modules/Client/Service.php:250 modules/Client/ServiceBalance.php:139
 msgid "Funds description is not valid"
 msgstr "A descrição dos fundos é inválida"
 
-#: modules/Client/Service.php:442
+#: modules/Client/Service.php:417
 msgid "Client ID or email is required"
 msgstr "O ID do cliente ou e-mail é necessário"
 
-#: modules/Client/Service.php:456
+#: modules/Client/Service.php:431
 msgid "Client not found"
 msgstr "Cliente não encontrado"
 
-#: modules/Client/Service.php:499
+#: modules/Client/Service.php:474
 msgid "Can not remove group with clients"
 msgstr "Não é possível remover o grupo com clientes"
 
-#: modules/Client/Service.php:636
+#: modules/Client/Service.php:611
 msgid "Please check your mailbox and confirm email address."
 msgstr "Por favor, verifique seu e-mail e confirme seu endereço de e-mail."
 
-#: modules/Client/Service.php:639
+#: modules/Client/Service.php:614
 msgid "Confirmation email was sent to your email address. Please click on link in it in order to verify your email."
 msgstr "O e-mail de confirmação foi enviado para o seu endereço de e-mail. Por favor, clique no link para verificar seu e-mail."
 
-#: modules/Client/Service.php:672 modules/Profile/Service.php:123
+#: modules/Client/Service.php:647 modules/Profile/Service.php:123
 msgid "Email can not be changed"
 msgstr "O e-mail não pode ser alterado"
 
-#: modules/Client/Service.php:685 modules/Client/Service.php:700
+#: modules/Client/Service.php:660 modules/Client/Service.php:675
 msgid "Field :field cannot be empty"
 msgstr "O campo :field não pode estar vazio"
 
-#: modules/Cookieconsent/Controller/Admin.php:45
+#: modules/Cookieconsent/Controller/Admin.php:39
 msgid "Cookie consent"
 msgstr "Consentimento de cookie"
-
-#: modules/Cron/Service.php:38
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:75
-msgid "Execute now"
-msgstr "Executar agora"
 
 #: modules/Currency/Api/Admin.php:117
 msgid "Currency already registered"
@@ -1224,7 +1187,7 @@ msgstr "Falha ao obter as taxas de câmbio para o :currency da API do Banco Cent
 msgid "<b>Currencylayer threw an error:</b><br />:errorInfo"
 msgstr "<b>Currencylayer deu um erro:</b><br />:errorInfo"
 
-#: modules/Custompages/Controller/Admin.php:45
+#: modules/Custompages/Controller/Admin.php:39
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:11
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:19
@@ -1233,7 +1196,7 @@ msgstr "Páginas Personalizadas"
 
 #: modules/Email/Api/Admin.php:137 modules/Email/Api/Admin.php:163
 #: modules/Email/Api/Client.php:75 modules/Email/Api/Client.php:100
-#: modules/Email/Api/Client.php:125 modules/Email/Service.php:472
+#: modules/Email/Api/Client.php:125 modules/Email/Service.php:462
 msgid "Email not found"
 msgstr "E-mail não encontrado"
 
@@ -1245,26 +1208,26 @@ msgstr "Modelo de email não encontrado"
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "O destinatário não está definido. Defina para ou to_client ou parâmetro to_staff"
 
-#: modules/Email/Controller/Admin.php:46 modules/Email/Service.php:38
+#: modules/Email/Controller/Admin.php:40
 #: modules/Email/html_admin/mod_email_details.html.twig:17
 #: modules/Email/html_admin/mod_email_history.html.twig:5
 #: modules/Email/html_admin/mod_email_history.html.twig:21
 msgid "Email history"
 msgstr "Histórico de e-mail"
 
-#: modules/Email/Service.php:149
+#: modules/Email/Service.php:139
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "O destinatário não está definido. Defina para o parâmetro to_client ou to_staff ou to_admin"
 
-#: modules/Email/Service.php:206
+#: modules/Email/Service.php:196
 msgid "From email address can not be empty"
 msgstr "O endereço de e-mail do remetente não pode estar vazio"
 
-#: modules/Email/Service.php:457
+#: modules/Email/Service.php:447
 msgid "Email template :code was not found"
 msgstr "Modelo de e-mail :code não foi encontrado"
 
-#: modules/Embed/Controller/Admin.php:45
+#: modules/Embed/Controller/Admin.php:39
 msgid "Embed and integrate"
 msgstr "Incorporar e integrar"
 
@@ -1276,45 +1239,45 @@ msgstr "Extensão não encontrada"
 msgid "Parameter ext is missing"
 msgstr "Modelo de parâmetro está faltando"
 
-#: modules/Extension/Controller/Admin.php:45
+#: modules/Extension/Controller/Admin.php:39
 #: modules/Extension/html_admin/mod_extension_index.html.twig:5
 #: modules/Extension/html_admin/mod_extension_index.html.twig:13
 msgid "Extensions"
 msgstr "Extensões"
 
-#: modules/Extension/Controller/Admin.php:59 modules/System/Service.php:43
+#: modules/Extension/Controller/Admin.php:53
 msgid "Languages"
 msgstr "Idiomas"
 
-#: modules/Extension/Service.php:328
+#: modules/Extension/Service.php:324
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "Visite o diretório de extensão para obter mais informações sobre como atualizar esta extensão."
 
-#: modules/Extension/Service.php:375
+#: modules/Extension/Service.php:371
 msgid "FOSSBilling core modules can not be managed"
 msgstr "Os módulos principais do FOSSBilling não podem ser gerenciados"
 
-#: modules/Extension/Service.php:440
+#: modules/Extension/Service.php:436
 msgid "Failed to download the extension with error :code"
 msgstr "Não foi possível baixar a extensão com erro :code"
 
-#: modules/Extension/Service.php:475
+#: modules/Extension/Service.php:471
 msgid "Extension :id seems to be already installed."
 msgstr "Extensão :id parece já estar instalada."
 
-#: modules/Extension/Service.php:478
+#: modules/Extension/Service.php:474
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "Falha ao mover a extensão para seu destino final. Por favor, verifique as permissões para a pasta de destino. (:destination)"
 
-#: modules/Extension/Service.php:481
+#: modules/Extension/Service.php:477
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "Tipo de extensão (:type) não pode ser instalado automaticamente."
 
-#: modules/Extension/Service.php:512
+#: modules/Extension/Service.php:508
 msgid "FOSSBilling core modules can not be installed or removed"
 msgstr "Módulos principais do FOSSBilling não podem ser instalados ou removidos"
 
-#: modules/Extension/Service.php:517
+#: modules/Extension/Service.php:513
 msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr "O módulo não pode ser instalado. É necessário pelo menos a versão :min do FOSSBilling. Você está usando :v"
 
@@ -1347,27 +1310,27 @@ msgstr "Tipo de formulário não foi aceito"
 msgid "Field type not supported"
 msgstr "Tipo de campo não suportado"
 
-#: modules/Formbuilder/Service.php:154
+#: modules/Formbuilder/Service.php:151
 msgid "Field name can not start with number."
 msgstr "Nome do campo não pode começar com número."
 
-#: modules/Formbuilder/Service.php:158
+#: modules/Formbuilder/Service.php:155
 msgid "Field name can not be empty. Please make sure it is not empty and does not contain special characters."
 msgstr "Nome do campo não pode estar vazio. Por favor, certifique-se que não esteja vazio e não contém caracteres especiais."
 
-#: modules/Formbuilder/Service.php:175
+#: modules/Formbuilder/Service.php:172
 msgid "Unfortunately field with this name exists in this form already. Form must have different field names."
 msgstr "Infelizmente o campo com este nome já existe neste formulário. O formulário deve ter diferentes nomes de campo."
 
-#: modules/Formbuilder/Service.php:186
+#: modules/Formbuilder/Service.php:183
 msgid " values must be unique"
 msgstr " valores devem ser exclusivos"
 
-#: modules/Formbuilder/Service.php:189
+#: modules/Formbuilder/Service.php:186
 msgid " labels must be unique"
 msgstr " rótulos devem ser únicos"
 
-#: modules/Formbuilder/Service.php:197
+#: modules/Formbuilder/Service.php:194
 msgid "Textarea size options must be integer values"
 msgstr "Opções de tamanho da área de texto deve ser valores inteiros"
 
@@ -1413,7 +1376,7 @@ msgstr "Hash da fatura não informado. Hash de parâmetro ausente"
 msgid "Payment method not found. Missing param gateway_id"
 msgstr "Método de pagamento não encontrado. Faltando parâmetro gateway_id"
 
-#: modules/Invoice/Controller/Admin.php:45
+#: modules/Invoice/Controller/Admin.php:39
 #: modules/Client/html_admin/mod_client_manage.html.twig:35
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
 #: modules/Index/html_client/mod_index_dashboard.html.twig:106
@@ -1431,187 +1394,171 @@ msgstr "Método de pagamento não encontrado. Faltando parâmetro gateway_id"
 msgid "Invoices"
 msgstr "Faturas"
 
-#: modules/Invoice/Controller/Admin.php:67
+#: modules/Invoice/Controller/Admin.php:61
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:12
 msgid "Subscriptions"
 msgstr "Assinaturas"
 
-#: modules/Invoice/Controller/Admin.php:74
+#: modules/Invoice/Controller/Admin.php:68
 msgid "Transactions overview"
 msgstr "Visão geral das transações"
 
-#: modules/Invoice/Controller/Admin.php:81
+#: modules/Invoice/Controller/Admin.php:75
 msgid "Transactions search"
 msgstr "Pesquisa de transações"
 
-#: modules/Invoice/Controller/Admin.php:88
+#: modules/Invoice/Controller/Admin.php:82
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:14
 msgid "Tax rules"
 msgstr "Regra de taxas"
 
-#: modules/Invoice/Controller/Admin.php:95
+#: modules/Invoice/Controller/Admin.php:89
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:7
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:12
 msgid "Payment gateways"
 msgstr "Métodos de pagamento"
 
-#: modules/Invoice/Service.php:50
-msgid "Unpaid invoices"
-msgstr "Faturas não pagas"
-
-#: modules/Invoice/Service.php:54
-msgid "Paid invoices"
-msgstr "Faturas pagas"
-
-#: modules/Invoice/Service.php:58
-msgid "Refunded invoices"
-msgstr "Faturas reembolsadas"
-
-#: modules/Invoice/Service.php:62
-msgid "All invoices"
-msgstr "Todas as faturas"
-
-#: modules/Invoice/Service.php:663
+#: modules/Invoice/Service.php:638
 msgid "Can not refund invoice with negative amount"
 msgstr "Não pode reembolsar a fatura com valor negativo"
 
-#: modules/Invoice/Service.php:877
+#: modules/Invoice/Service.php:852
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "A fatura está relacionada ao pedido #:id. Por favor, cancele o pedido primeiro."
 
-#: modules/Invoice/Service.php:944
+#: modules/Invoice/Service.php:919
 msgid "Invoices are not generated for 0 amount orders"
 msgstr "Faturas não são geradas para pedidos com valor 0"
 
-#: modules/Invoice/Service.php:1104
+#: modules/Invoice/Service.php:1079
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "Você deve ter pelo menos um pedido ativo antes de poder adicionar fundos, portanto não pode prosseguir no momento atual!"
 
-#: modules/Invoice/Service.php:1113
+#: modules/Invoice/Service.php:1088
 msgid "Amount must be at least :min_amount"
 msgstr "A quantia deve ser de pelo menos :min_amount"
 
-#: modules/Invoice/Service.php:1117
+#: modules/Invoice/Service.php:1092
 msgid "Amount cannot exceed :max_amount"
 msgstr "A quantia não pode exceder :max_amount"
 
-#: modules/Invoice/Service.php:1143 modules/Invoice/Service.php:1207
+#: modules/Invoice/Service.php:1118 modules/Invoice/Service.php:1182
 msgid "Invoice not found"
 msgstr "Fatura não encontrada"
 
-#: modules/Invoice/Service.php:1148
+#: modules/Invoice/Service.php:1123
 msgid "Payment method not found"
 msgstr "O método de pagamento não foi encontrado"
 
-#: modules/Invoice/Service.php:1152
+#: modules/Invoice/Service.php:1127
 msgid "Payment method not enabled"
 msgstr "Método de pagamento não está ativado"
 
-#: modules/Invoice/ServiceInvoiceItem.php:76
+#: modules/Invoice/ServiceInvoiceItem.php:73
 msgid "Could not activate proforma item. Order :id not found"
 msgstr "Não foi possível ativar o item proforma. Pedido :id não encontrado"
 
-#: modules/Invoice/ServiceInvoiceItem.php:141
+#: modules/Invoice/ServiceInvoiceItem.php:138
 msgid "Invoice item title is missing"
 msgstr "Está faltando o título do item da fatura"
 
-#: modules/Invoice/ServiceInvoiceItem.php:231
+#: modules/Invoice/ServiceInvoiceItem.php:228
 msgid "Add funds to account"
 msgstr "Adicionar fundos à conta"
 
-#: modules/Invoice/ServiceInvoiceItem.php:349
+#: modules/Invoice/ServiceInvoiceItem.php:346
 msgid "Promotional Code: :code - :value Discount"
 msgstr "Código Promocional: :code - :value Desconto"
 
-#: modules/Invoice/ServiceInvoiceItem.php:352
+#: modules/Invoice/ServiceInvoiceItem.php:349
 msgid "Promotional Code: :code - :value%"
 msgstr "Código Promocional: :code - :value%"
 
-#: modules/Invoice/ServicePayGateway.php:113
+#: modules/Invoice/ServicePayGateway.php:110
 msgid "Payment gateway is not available for installation."
 msgstr "O método de pagamento não está disponível para instalação."
 
-#: modules/Invoice/ServicePayGateway.php:266
-#: modules/Invoice/ServicePayGateway.php:295
+#: modules/Invoice/ServicePayGateway.php:263
+#: modules/Invoice/ServicePayGateway.php:292
 msgid "Payment gateway :adapter was not found"
 msgstr "O método de pagamento :adapter não foi encontrado"
 
-#: modules/Invoice/ServiceTransaction.php:96
+#: modules/Invoice/ServiceTransaction.php:93
 msgid "Transaction invoice id is missing"
 msgstr "O Id da fatura da transação está ausente"
 
-#: modules/Invoice/ServiceTransaction.php:100
+#: modules/Invoice/ServiceTransaction.php:97
 msgid "Payment gateway id is missing"
 msgstr "Id do método de pagamento está ausente"
 
-#: modules/Invoice/ServiceTransaction.php:376
+#: modules/Invoice/ServiceTransaction.php:373
 msgid "Transaction :id not found."
 msgstr "Transação :id não encontrado."
 
-#: modules/Invoice/ServiceTransaction.php:380
-#: modules/Invoice/ServiceTransaction.php:500
+#: modules/Invoice/ServiceTransaction.php:377
+#: modules/Invoice/ServiceTransaction.php:497
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
 msgstr "Não foi possível determinar a origem da transação. O método de pagamento da transação é desconhecido."
 
-#: modules/Invoice/ServiceTransaction.php:385
-#: modules/Invoice/ServiceTransaction.php:505
+#: modules/Invoice/ServiceTransaction.php:382
+#: modules/Invoice/ServiceTransaction.php:502
 msgid "Can not handle transaction received from unknown payment gateway: :id"
 msgstr "Não é possível manipular a transação recebida do método de pagamento desconhecido: :id"
 
-#: modules/Invoice/ServiceTransaction.php:391
-#: modules/Invoice/ServiceTransaction.php:534
+#: modules/Invoice/ServiceTransaction.php:388
+#: modules/Invoice/ServiceTransaction.php:531
 msgid "Payment adapter :adapter does not support action :action"
 msgstr "Adaptador de pagamento :adapter não suporta a ação :action"
 
-#: modules/Invoice/ServiceTransaction.php:425
+#: modules/Invoice/ServiceTransaction.php:422
 msgid "Unknown transaction #:id type: :type"
 msgstr "Transação desconhecida #:id tipo: :type"
 
-#: modules/Invoice/ServiceTransaction.php:514
-#: modules/Invoice/ServiceTransaction.php:679
+#: modules/Invoice/ServiceTransaction.php:511
+#: modules/Invoice/ServiceTransaction.php:676
 msgid "Transaction :id is not associated with an invoice."
 msgstr "A transação :id não está associada com uma fatura."
 
-#: modules/Invoice/ServiceTransaction.php:519
+#: modules/Invoice/ServiceTransaction.php:516
 msgid "Invoice #:id not found"
 msgstr "Fatura #:id não encontrada"
 
-#: modules/Invoice/ServiceTransaction.php:528
+#: modules/Invoice/ServiceTransaction.php:525
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
 msgstr "A notificação de pagamento instantâneo (IPN) não passou na validação do gateway :id"
 
-#: modules/Invoice/ServiceTransaction.php:539
+#: modules/Invoice/ServiceTransaction.php:536
 msgid "Payment gateway :id method getTransaction should return Payment_Transaction object"
 msgstr "Método de pagamento :id método getTransaction deve retornar o objeto Payment_Transaction"
 
-#: modules/Invoice/ServiceTransaction.php:627
+#: modules/Invoice/ServiceTransaction.php:624
 msgid "Can not create subscription. Subscription id from payment gateway was not received"
 msgstr "Não foi possível criar uma assinatura. O Id de assinatura do método de pagamento não foi recebido"
 
-#: modules/Invoice/ServiceTransaction.php:662
+#: modules/Invoice/ServiceTransaction.php:659
 msgid "Subscription #:id was not found. Could not unsubscribe"
 msgstr "A assinatura #:id não foi encontrada. Não foi possível cancelar a inscrição"
 
-#: modules/Invoice/ServiceTransaction.php:675
+#: modules/Invoice/ServiceTransaction.php:672
 msgid "Only approved transaction can be processed"
 msgstr "Apenas transações aprovadas podem ser processadas"
 
-#: modules/Invoice/ServiceTransaction.php:686
+#: modules/Invoice/ServiceTransaction.php:683
 msgid "Transaction currency :code do not match required currency :required"
 msgstr "Moeda da transação :code não coincide com a moeda requerida :required"
 
-#: modules/Invoice/ServiceTransaction.php:691
+#: modules/Invoice/ServiceTransaction.php:688
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
 msgstr "O status da transação do método de pagamento é Pendente. Apenas transações completas ou desconhecidas podem ser processadas."
 
-#: modules/Invoice/ServiceTransaction.php:701
+#: modules/Invoice/ServiceTransaction.php:698
 msgid "Client currency do not match invoice currency"
 msgstr "A moeda de cliente não corresponde à moeda da fatura"
 
-#: modules/Invoice/ServiceTransaction.php:706
+#: modules/Invoice/ServiceTransaction.php:703
 msgid "Can not add negative amount to client balance for debit transaction"
 msgstr "Não é possível adicionar valor negativo ao saldo do cliente para transação de débito"
 
@@ -1645,7 +1592,7 @@ msgstr "ID da categoria ou link encurtado ausente"
 msgid "Knowledge base category not found"
 msgstr "Categoria da base de conhecimento não encontrada"
 
-#: modules/Kb/Controller/Admin.php:45 modules/Kb/Controller/Admin.php:54
+#: modules/Kb/Controller/Admin.php:39 modules/Kb/Controller/Admin.php:48
 #: modules/Kb/html_admin/mod_kb_article.html.twig:19
 #: modules/Kb/html_admin/mod_kb_category.html.twig:17
 #: modules/Kb/html_admin/mod_kb_index.html.twig:5
@@ -1672,7 +1619,7 @@ msgstr "A mensagem do nome não pode estar vazia"
 msgid "Add some content before sending message"
 msgstr "Adicione algum conteúdo antes de enviar a mensagem"
 
-#: modules/Massmailer/Controller/Admin.php:46
+#: modules/Massmailer/Controller/Admin.php:40
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:5
 msgid "Mass mailer"
 msgstr "Envio em massa"
@@ -1685,7 +1632,7 @@ msgstr "Desativado por razões de segurança (Modo de demonstração ativado)"
 msgid "News item not found"
 msgstr "Item das notícias não encontrado"
 
-#: modules/News/Controller/Admin.php:46
+#: modules/News/Controller/Admin.php:40
 #: themes/huraga/html/layout_default.html.twig:261
 msgid "Announcements"
 msgstr "Comunicados"
@@ -1718,7 +1665,7 @@ msgstr "Emitir faturas manualmente"
 msgid "Only pending and failed setup orders can be deleted."
 msgstr "Apenas pedidos de configuração pendentes e com falha podem ser excluídos."
 
-#: modules/Order/Controller/Admin.php:45
+#: modules/Order/Controller/Admin.php:39
 #: modules/Client/html_admin/mod_client_manage.html.twig:32
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:35
@@ -1736,57 +1683,39 @@ msgstr "Apenas pedidos de configuração pendentes e com falha podem ser excluí
 msgid "Orders"
 msgstr "Pedidos"
 
-#: modules/Order/Service.php:46
-msgid "Orders pending setup"
-msgstr "Pedidos com configuração pendente"
-
-#: modules/Order/Service.php:50
-msgid "Active orders"
-msgstr "Pedidos ativos"
-
-#: modules/Order/Service.php:54
-msgid "Suspended orders"
-msgstr "Pedidos suspensos"
-
-#: modules/Order/Service.php:58
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:130
-#: modules/Index/html_client/mod_index_dashboard.html.twig:135
-msgid "All orders"
-msgstr "Todos os pedidos"
-
-#: modules/Order/Service.php:532
+#: modules/Order/Service.php:504
 msgid "Currency could not be determined for order"
 msgstr "A moeda não pode ser determinada para o pedido"
 
-#: modules/Order/Service.php:548
+#: modules/Order/Service.php:520
 msgid "Product :id is out of stock."
 msgstr "Produto :id está sem estoque."
 
-#: modules/Order/Service.php:554
+#: modules/Order/Service.php:526
 msgid "Group ID parameter is missing for addon product order"
 msgstr "O parâmetro de ID do grupo está ausente para o pedido do produto complementar"
 
-#: modules/Order/Service.php:560
+#: modules/Order/Service.php:532
 msgid "Parent order :group_id was not found"
 msgstr "Pedido principal :group_id não foi encontrado"
 
-#: modules/Order/Service.php:710
+#: modules/Order/Service.php:682
 msgid "Only pending setup or failed orders can be activated"
 msgstr "Somente pedidos pendentes ou com falha podem ser ativados"
 
-#: modules/Order/Service.php:738
+#: modules/Order/Service.php:710
 msgid "Error creating "
 msgstr "Erro ao criar "
 
-#: modules/Order/Service.php:807
+#: modules/Order/Service.php:779
 msgid "Service "
 msgstr "Serviço "
 
-#: modules/Order/Service.php:1012
+#: modules/Order/Service.php:984
 msgid "Only active orders can be suspended"
 msgstr "Apenas pedidos ativos podem ser suspensos"
 
-#: modules/Order/Service.php:1064
+#: modules/Order/Service.php:1036
 msgid "Can not cancel "
 msgstr "Não é possível cancelar "
 
@@ -1810,15 +1739,15 @@ msgstr "Complemento não encontrado"
 msgid "Product ID or slug is missing"
 msgstr "ID ou link encurtado do produto ausente"
 
-#: modules/Product/Controller/Admin.php:54
+#: modules/Product/Controller/Admin.php:48
 msgid "Products & Services"
 msgstr "Produtos e Serviços"
 
-#: modules/Product/Controller/Admin.php:61
+#: modules/Product/Controller/Admin.php:55
 msgid "Product Addons"
 msgstr "Produtos Adicionais"
 
-#: modules/Product/Controller/Admin.php:68
+#: modules/Product/Controller/Admin.php:62
 #: modules/Product/html_admin/mod_product_promo.html.twig:3
 #: modules/Product/html_admin/mod_product_promo.html.twig:20
 #: modules/Product/html_admin/mod_product_promos.html.twig:5
@@ -1826,19 +1755,19 @@ msgstr "Produtos Adicionais"
 msgid "Product Promotions"
 msgstr "Promoções de Produto"
 
-#: modules/Product/Service.php:221
+#: modules/Product/Service.php:218
 msgid "Pricing type is required"
 msgstr "Tipo de preço é obrigatório"
 
-#: modules/Product/Service.php:432
+#: modules/Product/Service.php:429
 msgid "Can not remove product which has active orders."
 msgstr "Não é possível remover o produto que tem pedidos ativos."
 
-#: modules/Product/Service.php:491
+#: modules/Product/Service.php:488
 msgid "Can not remove product category with products"
 msgstr "Não é possível remover a categoria de produtos com produtos"
 
-#: modules/Product/Service.php:887
+#: modules/Product/Service.php:884
 msgid "This promotion code already exists."
 msgstr "Este código promocional já existe."
 
@@ -1866,28 +1795,28 @@ msgstr "Id do pedido obrigatório"
 msgid "API call is missing arguments"
 msgstr "A chamada da API está sem argumentos"
 
-#: modules/Servicecustom/Service.php:48
+#: modules/Servicecustom/Service.php:42
 msgid "You must fill in all required fields. "
 msgstr "Você deve preencher todos os campos obrigatórios. "
 
-#: modules/Servicecustom/Service.php:55
+#: modules/Servicecustom/Service.php:49
 msgid "Field "
 msgstr "Campo "
 
-#: modules/Servicecustom/Service.php:89 modules/Servicedomain/Service.php:227
-#: modules/Servicelicense/Service.php:126
+#: modules/Servicecustom/Service.php:83 modules/Servicedomain/Service.php:221
+#: modules/Servicelicense/Service.php:123
 msgid "Could not activate order. Service was not created"
 msgstr "Não foi possível ativar o pedido. O serviço não foi criado"
 
-#: modules/Servicecustom/Service.php:229
+#: modules/Servicecustom/Service.php:223
 msgid "Custom plugin method :method is forbidden"
 msgstr "Método plugin personalizado :method é proibido"
 
-#: modules/Servicecustom/Service.php:238
+#: modules/Servicecustom/Service.php:232
 msgid "Config must be an array"
 msgstr "A configuração deve ser uma matriz"
 
-#: modules/Servicecustom/Service.php:258 modules/Servicedomain/Api/Client.php:150
+#: modules/Servicecustom/Service.php:252 modules/Servicedomain/Api/Client.php:150
 #: modules/Servicedownloadable/Api/Admin.php:75
 #: modules/Servicedownloadable/Api/Client.php:46
 #: modules/Servicehosting/Api/Admin.php:450
@@ -1897,25 +1826,25 @@ msgstr "A configuração deve ser uma matriz"
 msgid "Order is not activated"
 msgstr "Pedido não está ativado"
 
-#: modules/Servicecustom/Service.php:275
+#: modules/Servicecustom/Service.php:269
 msgid "Plugin class file :file was not found"
 msgstr "Arquivo de classe do plugin :file não foi encontrado"
 
-#: modules/Servicecustom/Service.php:289
+#: modules/Servicecustom/Service.php:283
 msgid "Plugin :plugin does not support action :action"
 msgstr "Plugin :plugin não suporta a ação :action"
 
-#: modules/Servicecustom/Service.php:305 modules/Servicedomain/Service.php:261
-#: modules/Servicedomain/Service.php:300 modules/Servicehosting/Service.php:109
-#: modules/Servicehosting/Service.php:154 modules/Servicehosting/Service.php:172
-#: modules/Servicehosting/Service.php:191 modules/Servicehosting/Service.php:210
+#: modules/Servicecustom/Service.php:299 modules/Servicedomain/Service.php:255
+#: modules/Servicedomain/Service.php:294 modules/Servicehosting/Service.php:106
+#: modules/Servicehosting/Service.php:151 modules/Servicehosting/Service.php:169
+#: modules/Servicehosting/Service.php:188 modules/Servicehosting/Service.php:207
 msgid "Order :id has no active service"
 msgstr "Pedido :id não tem nenhum serviço ativo"
 
 #: modules/Servicedomain/Api/Admin.php:194
 #: modules/Servicedomain/Api/Admin.php:244
 #: modules/Servicedomain/Api/Admin.php:304 modules/Servicedomain/Api/Guest.php:75
-#: modules/Servicedomain/Service.php:105 modules/Servicedomain/Service.php:137
+#: modules/Servicedomain/Service.php:99 modules/Servicedomain/Service.php:131
 msgid "TLD not found"
 msgstr "TLD não encontrado"
 
@@ -1955,81 +1884,81 @@ msgstr "TLD não está ativo."
 msgid "Domain can not be transferred."
 msgstr "O domínio não pode ser transferido."
 
-#: modules/Servicedomain/Controller/Admin.php:46
+#: modules/Servicedomain/Controller/Admin.php:40
 msgid "Domain registration"
 msgstr "Registro de domínio"
 
-#: modules/Servicedomain/Service.php:44
+#: modules/Servicedomain/Service.php:38
 msgid "Domain :domain registration"
 msgstr "Domínio :domain registro"
 
-#: modules/Servicedomain/Service.php:50
+#: modules/Servicedomain/Service.php:44
 msgid "Domain :domain transfer"
 msgstr "Domínio :domain transferência"
 
-#: modules/Servicedomain/Service.php:67
+#: modules/Servicedomain/Service.php:61
 msgid "Invalid domain action."
 msgstr "Ação de domínio inválida."
 
-#: modules/Servicedomain/Service.php:72 modules/Servicedomain/Service.php:89
-#: modules/Servicedomain/Service.php:120
+#: modules/Servicedomain/Service.php:66 modules/Servicedomain/Service.php:83
+#: modules/Servicedomain/Service.php:114
 msgid "Order data must contain :field configuration field"
 msgstr "Dados do pedido devem conter :field no campo de configuração"
 
-#: modules/Servicedomain/Service.php:77 modules/Servicedomain/Service.php:94
-#: modules/Servicedomain/Service.php:125 modules/Servicedomain/Service.php:560
+#: modules/Servicedomain/Service.php:71 modules/Servicedomain/Service.php:88
+#: modules/Servicedomain/Service.php:119 modules/Servicedomain/Service.php:554
 msgid "Domain name :domain is not valid"
 msgstr "Nome de domínio :domain não é válido"
 
-#: modules/Servicedomain/Service.php:110
+#: modules/Servicedomain/Service.php:104
 msgid ":domain can not be transferred!"
 msgstr ":domain não pode ser transferido!"
 
-#: modules/Servicedomain/Service.php:142
+#: modules/Servicedomain/Service.php:136
 msgid ":tld can be registered for at least :years years"
 msgstr ":tld pode ser registrado por pelo menos :years anos"
 
-#: modules/Servicedomain/Service.php:147
+#: modules/Servicedomain/Service.php:141
 msgid ":domain is already registered!"
 msgstr ":domain já está registrado!"
 
-#: modules/Servicedomain/Service.php:175
+#: modules/Servicedomain/Service.php:169
 msgid "Default domain nameservers are not configured"
 msgstr "Os nameservers de domínio padrão não estão configurado"
 
-#: modules/Servicedomain/Service.php:376
+#: modules/Servicedomain/Service.php:370
 msgid "Nameserver 1 is required"
 msgstr "Nameserver 1 é obrigatório"
 
-#: modules/Servicedomain/Service.php:379
+#: modules/Servicedomain/Service.php:373
 msgid "Nameserver 2 is required"
 msgstr "Nameserver 2 é obrigatório"
 
-#: modules/Servicedomain/Service.php:533 modules/Servicedomain/Service.php:554
+#: modules/Servicedomain/Service.php:527 modules/Servicedomain/Service.php:548
 msgid "Domain name is not valid"
 msgstr "Nome do domínio não é válido"
 
-#: modules/Servicedomain/Service.php:537
+#: modules/Servicedomain/Service.php:531
 msgid "Domain can not be transferred"
 msgstr "Domain não pode ser transferido"
 
-#: modules/Servicedomain/Service.php:564
+#: modules/Servicedomain/Service.php:558
 msgid "Domain can not be registered"
 msgstr "Domínio não pode ser registrado"
 
-#: modules/Servicedomain/Service.php:959
+#: modules/Servicedomain/Service.php:953
 msgid "Domain registrar :adapter was not found"
 msgstr "O registrador do domínio :adapter não foi encontrado"
 
-#: modules/Servicedomain/Service.php:964
+#: modules/Servicedomain/Service.php:958
 msgid "Registrar :adapter was not found"
 msgstr "O registro :adapter não foi encontrado"
 
-#: modules/Servicedomain/Service.php:976
+#: modules/Servicedomain/Service.php:970
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr "Adaptador de Registro :adapter deve estender o Registrar_AdapterAbstract"
 
-#: modules/Servicedomain/Service.php:1035
+#: modules/Servicedomain/Service.php:1029
 msgid "Can not remove registrar which has domains"
 msgstr "Não é possível remover registro que possui domínios"
 
@@ -2037,12 +1966,12 @@ msgstr "Não é possível remover registro que possui domínios"
 msgid "File was not uploaded"
 msgstr "O arquivo não foi enviado"
 
-#: modules/Servicedownloadable/Service.php:183
-#: modules/Servicedownloadable/Service.php:214
+#: modules/Servicedownloadable/Service.php:180
+#: modules/Servicedownloadable/Service.php:211
 msgid "Error uploading file"
 msgstr "Erro ao enviar o arquivo"
 
-#: modules/Servicedownloadable/Service.php:267
+#: modules/Servicedownloadable/Service.php:264
 msgid "File can not be downloaded at the moment. Please contact support"
 msgstr "O arquivo não pode ser baixado no momento. Entre em contato com o suporte"
 
@@ -2054,7 +1983,7 @@ msgstr "plan_id está faltando"
 msgid "Product type is invalid"
 msgstr "O tipo de produto é inválido"
 
-#: modules/Servicehosting/Controller/Admin.php:46
+#: modules/Servicehosting/Controller/Admin.php:40
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:5
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:12
@@ -2062,95 +1991,95 @@ msgstr "O tipo de produto é inválido"
 msgid "Hosting plans and servers"
 msgstr "Planos e servidores de hospedagem"
 
-#: modules/Servicehosting/Service.php:49
+#: modules/Servicehosting/Service.php:46
 msgid ":hosting for :domain"
 msgstr ":hosting para :domain"
 
-#: modules/Servicehosting/Service.php:61
+#: modules/Servicehosting/Service.php:58
 msgid "Hosting product is not configured completely. Configure server for hosting product."
 msgstr "O produto de hospedagem não está configurado completamente. Configure o servidor para hospedagem do produto."
 
-#: modules/Servicehosting/Service.php:64
+#: modules/Servicehosting/Service.php:61
 msgid "Hosting product is not configured completely. Configure hosting plan for hosting product."
 msgstr "O produto de hospedagem não está configurado completamente. Configure o plano de hospedagem para o produto de hospedagem."
 
-#: modules/Servicehosting/Service.php:67
+#: modules/Servicehosting/Service.php:64
 msgid "Domain name is not valid."
 msgstr "Nome do domínio não é válido."
 
-#: modules/Servicehosting/Service.php:70
+#: modules/Servicehosting/Service.php:67
 msgid "Domain extension is not valid."
 msgstr "A extensão do domínio não é válida."
 
-#: modules/Servicehosting/Service.php:270
+#: modules/Servicehosting/Service.php:267
 msgid "Account username is missing or is not valid"
 msgstr "Nome de usuário da conta não existe ou não é válido"
 
-#: modules/Servicehosting/Service.php:292
+#: modules/Servicehosting/Service.php:289
 msgid "Account ip is missing or is not valid"
 msgstr "O Ip da conta está ausente ou não é válido"
 
-#: modules/Servicehosting/Service.php:316
+#: modules/Servicehosting/Service.php:313
 msgid "Domain sld or tld is missing"
 msgstr "O sld ou tld do domínio está faltando"
 
-#: modules/Servicehosting/Service.php:342
+#: modules/Servicehosting/Service.php:339
 msgid "Account password is missing or is not valid"
 msgstr "A senha da conta está ausente ou não é válida"
 
-#: modules/Servicehosting/Service.php:725
+#: modules/Servicehosting/Service.php:722
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Gerenciador de servidor inválido. O servidor não foi configurado corretamente."
 
-#: modules/Servicehosting/Service.php:740
+#: modules/Servicehosting/Service.php:737
 msgid "Server manager :adapter is not valid"
 msgstr "Gerenciador de servidor :adapter não é válido"
 
-#: modules/Servicehosting/Service.php:780
+#: modules/Servicehosting/Service.php:777
 msgid "Can not remove hosting plan which has active accounts"
 msgstr "Não é possível remover o plano de hospedagem que tem contas ativas"
 
-#: modules/Servicehosting/Service.php:965
+#: modules/Servicehosting/Service.php:962
 msgid "Could not find main domain product"
 msgstr "Não foi possível encontrar o principal produto do domínio"
 
-#: modules/Servicelicense/Service.php:132
+#: modules/Servicelicense/Service.php:129
 msgid "License plugin :plugin was not found"
 msgstr "Plugin de licença :plugin não foi encontrado"
 
-#: modules/Servicelicense/Service.php:136
+#: modules/Servicelicense/Service.php:133
 msgid "License plugin do not have generate method"
 msgstr "Plugin de licença não possui método de geração"
 
-#: modules/Servicelicense/Service.php:147
+#: modules/Servicelicense/Service.php:144
 msgid "Maximum number of iterations reached while generating license key"
 msgstr "Número máximo de iterações atingido durante a geração da chave de licença"
 
-#: modules/Spamchecker/Service.php:72
+#: modules/Spamchecker/Service.php:69
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
 msgstr "Seu endereço IP (:ip) está bloqueado. Entre em contato com nosso suporte para remover seu bloqueio."
 
-#: modules/Spamchecker/Service.php:93
+#: modules/Spamchecker/Service.php:90
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
 msgstr "Para usar reCAPTCHA você deve obter uma chave de API <a href='https://www.google.com/recaptcha/admin/create'>aqui</a>"
 
-#: modules/Spamchecker/Service.php:97
+#: modules/Spamchecker/Service.php:94
 msgid "You have to complete the CAPTCHA to continue"
 msgstr "Você precisa completar o CAPTCHA para continuar"
 
-#: modules/Spamchecker/Service.php:111 modules/Spamchecker/Service.php:114
+#: modules/Spamchecker/Service.php:108 modules/Spamchecker/Service.php:111
 msgid "reCAPTCHA verification failed."
 msgstr "verificação reCAPTCHA falhou."
 
-#: modules/Spamchecker/Service.php:145
+#: modules/Spamchecker/Service.php:142
 msgid "Your username is blacklisted in the Stop Forum Spam database"
 msgstr "Seu nome de usuário está na lista negra na base de dados do Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:148
+#: modules/Spamchecker/Service.php:145
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
 msgstr "Seu e-mail está na lista negra no banco de dados do Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:151
+#: modules/Spamchecker/Service.php:148
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "Seu endereço IP está na lista negra na base de dados do Stop Forum Spam"
 
@@ -2163,11 +2092,11 @@ msgid "You are not allowed to login to admin area from :ip address"
 msgstr "Você não tem permissão para acessar a área de administrador a partir do endereço :ip"
 
 #: modules/Staff/Api/Guest.php:104 modules/Staff/Api/Guest.php:148
-#: modules/Staff/Controller/Admin.php:128
+#: modules/Staff/Controller/Admin.php:122
 msgid "Password reset has been disabled"
 msgstr "A redefinição de senha foi desativada"
 
-#: modules/Staff/Controller/Admin.php:48
+#: modules/Staff/Controller/Admin.php:42
 msgid "Staff login history"
 msgstr "Histórico de acesso da equipe"
 
@@ -2191,7 +2120,7 @@ msgstr "O grupo de administradores não pode ser removido"
 msgid "Can not remove group which has staff members"
 msgstr "Não é possível remover o grupo que tem membros da equipe"
 
-#: modules/Support/Api/Client.php:139 modules/Support/Service.php:275
+#: modules/Support/Api/Client.php:139 modules/Support/Service.php:253
 msgid "Ticket not found"
 msgstr "Ticket não encontrado"
 
@@ -2203,7 +2132,7 @@ msgstr "Ticket não pode ser reaberto."
 msgid "Please enter your message"
 msgstr "Por favor, digite sua mensagem"
 
-#: modules/Support/Controller/Admin.php:45
+#: modules/Support/Controller/Admin.php:39
 #: modules/Order/html_admin/mod_order_manage.html.twig:63
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:19
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:19
@@ -2212,22 +2141,22 @@ msgstr "Por favor, digite sua mensagem"
 msgid "Support"
 msgstr "Suporte"
 
-#: modules/Support/Controller/Admin.php:52
+#: modules/Support/Controller/Admin.php:46
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 msgid "Client tickets"
 msgstr "Tickets do cliente"
 
-#: modules/Support/Controller/Admin.php:59
+#: modules/Support/Controller/Admin.php:53
 msgid "Advanced ticket search"
 msgstr "Pesquisa avançada de tickets"
 
-#: modules/Support/Controller/Admin.php:66
+#: modules/Support/Controller/Admin.php:60
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:19
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:72
 msgid "Public tickets"
 msgstr "Tickets públicos"
 
-#: modules/Support/Controller/Admin.php:73
+#: modules/Support/Controller/Admin.php:67
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:22
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:22
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:17
@@ -2235,53 +2164,31 @@ msgstr "Tickets públicos"
 msgid "Canned responses"
 msgstr "Respostas predefinidas"
 
-#: modules/Support/Service.php:38
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:20
-#: modules/Support/html_admin/mod_support_tickets.html.twig:106
-msgid "Tickets waiting for staff reply"
-msgstr "Tickets aguardando resposta da equipe"
-
-#: modules/Support/Service.php:42
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:34
-#: modules/Support/html_admin/mod_support_tickets.html.twig:120
-msgid "Tickets waiting for client reply"
-msgstr "Tickets aguardando resposta do cliente"
-
-#: modules/Support/Service.php:46
-msgid "Resolved tickets"
-msgstr "Tickets resolvidos"
-
-#: modules/Support/Service.php:50
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:154
-#: modules/Index/html_client/mod_index_dashboard.html.twig:159
-msgid "All tickets"
-msgstr "Todos os Tickets"
-
-#: modules/Support/Service.php:679
+#: modules/Support/Service.php:657
 msgid "Can not remove helpdesk which has tickets"
 msgstr "Não é possível remover o suporte técnico que tem tickets"
 
-#: modules/Support/Service.php:898
+#: modules/Support/Service.php:876
 msgid "Order ID does not exist"
 msgstr "ID do pedido não existe"
 
-#: modules/Support/Service.php:908
+#: modules/Support/Service.php:886
 msgid "We have already received this request."
 msgstr "Esse pedido já foi recebido."
 
-#: modules/Support/Service.php:983
+#: modules/Support/Service.php:961
 msgid "Identity is not valid"
 msgstr "Identidade não é válida"
 
-#: modules/Support/Service.php:1012
+#: modules/Support/Service.php:990
 msgid "Public ticket not found"
 msgstr "Ticket público não encontrado"
 
-#: modules/System/Controller/Admin.php:45
+#: modules/System/Controller/Admin.php:39
 msgid "System"
 msgstr "Sistema"
 
-#: modules/System/Controller/Admin.php:52
+#: modules/System/Controller/Admin.php:46
 #: modules/Client/html_admin/mod_client_settings.html.twig:19
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:19
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:19
@@ -2317,7 +2224,7 @@ msgstr "Sistema"
 msgid "Settings"
 msgstr "Configurações"
 
-#: modules/System/Controller/Admin.php:59
+#: modules/System/Controller/Admin.php:53
 #: modules/Client/html_admin/mod_client_group.html.twig:48
 #: modules/Client/html_admin/mod_client_manage.html.twig:277
 #: modules/Client/html_admin/mod_client_manage.html.twig:335
@@ -2390,36 +2297,31 @@ msgstr "Configurações"
 msgid "Update"
 msgstr "Atualizar"
 
-#: modules/System/Service.php:35
-#: themes/admin_default/html/layout_default.html.twig:177
-msgid "Report a bug"
-msgstr "Relatar um bug"
-
-#: modules/System/Service.php:55
+#: modules/System/Service.php:37
 msgid "Parameter key is missing"
 msgstr "Chave de parâmetro está faltando"
 
-#: modules/System/Service.php:120
+#: modules/System/Service.php:102
 msgid "Invalid parameter name, received: param_"
 msgstr "Nome de parâmetro inválido, recebido: param_"
 
-#: modules/System/Service.php:452
+#: modules/System/Service.php:434
 msgid "Parameter :param does not exist"
 msgstr "Parâmetro :param não existe"
 
-#: modules/System/Service.php:1345
+#: modules/System/Service.php:1327
 msgid "Country :code phone code is not registered"
 msgstr "O código do telefone :code do país não está registrado"
 
-#: modules/Theme/Controller/Admin.php:75
+#: modules/Theme/Controller/Admin.php:69
 msgid "Theme \":name\" assets folder is not writable. Files can not be uploaded and settings can not be saved. Set folder permissions to 777"
 msgstr "A pasta de arquivos \":name\" não é gravável. Arquivos não podem ser carregados e configurações não podem ser salvas. Configure as permissões de pasta para 777"
 
-#: modules/Theme/Controller/Admin.php:112
+#: modules/Theme/Controller/Admin.php:106
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
 msgstr "A pasta assets do tema \":name\" não é gravável. Defina a permissão da pasta :folder para 777"
 
-#: modules/Theme/Controller/Admin.php:116
+#: modules/Theme/Controller/Admin.php:110
 msgid "Theme \":name\" is not configurable"
 msgstr "Tema \":nome\" não é configurável"
 
@@ -2427,15 +2329,15 @@ msgstr "Tema \":nome\" não é configurável"
 msgid "Theme \":name\" does not exist"
 msgstr "Tema \":name\" não existe"
 
-#: modules/Theme/Service.php:187
+#: modules/Theme/Service.php:181
 msgid "Error uploading file :file Error code: :error"
 msgstr "Erro ao enviar arquivo :file Código de erro: error"
 
-#: modules/Theme/Service.php:352
+#: modules/Theme/Service.php:346
 msgid "Theme was not found in path :path"
 msgstr "Tema não foi encontrado no caminho :path"
 
-#: modules/Theme/Service.php:369
+#: modules/Theme/Service.php:363
 msgid "Unable to decode theme manifest file :file"
 msgstr "Não foi possível decodificar o arquivo de manifesto do tema :file"
 
@@ -4054,6 +3956,10 @@ msgstr "Configuração do crontab do Unix"
 msgid "Execute scheduled tasks from browser"
 msgstr "Executar tarefas agendadas do navegador"
 
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:75
+msgid "Execute now"
+msgstr "Executar agora"
+
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:7
 msgid "Currency management"
 msgstr "Gestor de moedas"
@@ -4343,6 +4249,11 @@ msgstr "Pago"
 msgid "Unpaid"
 msgstr "Não Paga"
 
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:130
+#: modules/Index/html_client/mod_index_dashboard.html.twig:135
+msgid "All orders"
+msgstr "Todos os pedidos"
+
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:140
 #: modules/Index/html_client/mod_index_dashboard.html.twig:145
 msgid "Expiring"
@@ -4353,6 +4264,11 @@ msgstr "Expirando"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:168
 msgid "New ticket"
 msgstr "Novo Ticket"
+
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:154
+#: modules/Index/html_client/mod_index_dashboard.html.twig:159
+msgid "All tickets"
+msgstr "Todos os Tickets"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:162
 #: modules/Index/html_client/mod_index_dashboard.html.twig:167
@@ -8765,6 +8681,16 @@ msgstr "Enviar"
 msgid "Close ticket"
 msgstr "Fechar ticket"
 
+#: modules/Support/html_admin/mod_support_public_tickets.html.twig:20
+#: modules/Support/html_admin/mod_support_tickets.html.twig:106
+msgid "Tickets waiting for staff reply"
+msgstr "Tickets aguardando resposta da equipe"
+
+#: modules/Support/html_admin/mod_support_public_tickets.html.twig:34
+#: modules/Support/html_admin/mod_support_tickets.html.twig:120
+msgid "Tickets waiting for client reply"
+msgstr "Tickets aguardando resposta do cliente"
+
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:48
 #: modules/Support/html_admin/mod_support_tickets.html.twig:134
 msgid "Solved tickets"
@@ -9162,6 +9088,10 @@ msgstr "Ajuda"
 #: themes/admin_default/html/layout_default.html.twig:175
 msgid "Documentation"
 msgstr "Documentação"
+
+#: themes/admin_default/html/layout_default.html.twig:177
+msgid "Report a bug"
+msgstr "Relatar um bug"
 
 #: themes/admin_default/html/macro_functions.html.twig:131
 msgid "Search:"
