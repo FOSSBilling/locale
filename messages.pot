@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 4\n"
-"POT-Creation-Date: 2023-05-18 15:24-0700\n"
+"POT-Creation-Date: 2023-06-05 02:31-0700\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: FOSSBilling TM <info@fossbilling.org>\n"
@@ -229,38 +229,13 @@ msgstr ""
 msgid "Missing type param for Box_TwigLoader"
 msgstr ""
 
-#: library/Box/Update.php:160 modules/System/Api/Admin.php:179
-msgid "You have latest version of FOSSBilling. You do not need to update."
-msgstr ""
-
-#: library/Box/Update.php:183
+#: library/FOSSBilling/CentralAlerts.php:118
 msgid ""
-"Failed to download the update archive. Further details are available in the "
-"error log."
+"Unable to fetch alerts from Central Alerts System. See error log for more "
+"information."
 msgstr ""
 
-#: library/Box/Update.php:196 modules/Extension/Service.php:443
-msgid ""
-"Failed to extract file, please check file and folder permissions. Further "
-"details are available in the error log."
-msgstr ""
-
-#: library/Box/Update.php:230
-msgid ""
-"Unable to load existing configuration. performConfigUpdate() is unable to "
-"progress."
-msgstr ""
-
-#: library/Box/Update.php:233
-msgid ""
-"Unable to create backup of configuration file. Cancelling config migration."
-msgstr ""
-
-#: library/Box/Update.php:277
-msgid "Error when writing updated configuration file."
-msgstr ""
-
-#: library/FOSSBilling/CentralAlerts.php:121
+#: library/FOSSBilling/CentralAlerts.php:126
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr ""
 
@@ -360,60 +335,60 @@ msgstr ""
 msgid "Show specialized message"
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:54
+#: library/FOSSBilling/ExtensionManager.php:53
 msgid ""
 "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:74
+#: library/FOSSBilling/ExtensionManager.php:73
 msgid ""
 "Unable to fetch the releases of the extension from the FOSSBilling extension "
 "directory."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:95
+#: library/FOSSBilling/ExtensionManager.php:94
 msgid "Unable to fetch the latest release of the extension."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:164
+#: library/FOSSBilling/ExtensionManager.php:163
 msgid "Unable to connect to the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:172
+#: library/FOSSBilling/ExtensionManager.php:171
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:140
+#: library/FOSSBilling/Mail.php:139
 msgid ""
 "Provided priority (:priority) is invalid. Please provide an integer between 1 "
 "and 5 or use the pre-defined symfony constants."
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:158
+#: library/FOSSBilling/Mail.php:157
 msgid ""
 "FOSSBilling requires the proc_open PHP function to be enabled when using the "
 "sendmail transport"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:166
+#: library/FOSSBilling/Mail.php:165
 msgid "A Sendgrid API key is required to send emails via Sendgrid"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:172
+#: library/FOSSBilling/Mail.php:171
 msgid ""
 "Unable to send email: 'Custom' transport method was selected without a custom "
 "DSN"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:177
+#: library/FOSSBilling/Mail.php:176
 msgid "Unknown mail transport: :transport"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:185
+#: library/FOSSBilling/Mail.php:184
 msgid "Failed to send email via :transport with the exception :e"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:202
+#: library/FOSSBilling/Mail.php:201
 msgid "SMTP host or port is not configured"
 msgstr ""
 
@@ -423,6 +398,47 @@ msgstr ""
 
 #: library/FOSSBilling/Tools.php:283
 msgid "Email address is invalid"
+msgstr ""
+
+#: library/FOSSBilling/Update.php:104
+msgid ""
+"Failed to download the latest version information. Further details are "
+"available in the error log."
+msgstr ""
+
+#: library/FOSSBilling/Update.php:172 modules/System/Api/Admin.php:179
+msgid "You have latest version of FOSSBilling. You do not need to update."
+msgstr ""
+
+#: library/FOSSBilling/Update.php:194
+msgid ""
+"Failed to download the update archive. Further details are available in the "
+"error log."
+msgstr ""
+
+#: library/FOSSBilling/Update.php:207 modules/Extension/Service.php:443
+msgid ""
+"Failed to extract file, please check file and folder permissions. Further "
+"details are available in the error log."
+msgstr ""
+
+#: library/FOSSBilling/Update.php:225
+msgid ""
+"Unable to clear cache and/or remove install folder. Further details are "
+"available in the error log."
+msgstr ""
+
+#: library/FOSSBilling/UpdatePatcher.php:44
+msgid "Unable to load existing configuration."
+msgstr ""
+
+#: library/FOSSBilling/UpdatePatcher.php:51
+msgid ""
+"Unable to create backup of configuration file. Cancelling config migration."
+msgstr ""
+
+#: library/FOSSBilling/UpdatePatcher.php:90
+msgid "Error when writing updated configuration file."
 msgstr ""
 
 #: library/FOSSBilling/Validate.php:51
@@ -604,7 +620,7 @@ msgstr ""
 #: library/Registrar/Adapter/Internetbs.php:25
 #: library/Registrar/Adapter/Namecheap.php:29
 #: library/Registrar/Adapter/Namecheap.php:35
-#: library/Registrar/Adapter/Namecheap.php:45
+#: library/Registrar/Adapter/Namecheap.php:47
 #: library/Registrar/Adapter/Netearthone.php:11
 #: library/Registrar/Adapter/Netearthone.php:18
 #: library/Registrar/Adapter/Resellbiz.php:11
@@ -632,40 +648,45 @@ msgstr ""
 msgid "Registrar does not support domain removal."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:115
+#: library/Registrar/Adapter/Namecheap.php:117
 msgid "Premium domains cannot be registered."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:247
+#: library/Registrar/Adapter/Namecheap.php:169
+#: library/Registrar/Adapter/Namecheap.php:173
+msgid "Error: :error"
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:249
 msgid "Could not update name servers"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:343
+#: library/Registrar/Adapter/Namecheap.php:345
 msgid "API ERROR: could not retrieve domain details"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:427
+#: library/Registrar/Adapter/Namecheap.php:429
 msgid ""
 "This feature is unavailable through the Namecheap API. Please contact your "
 "administrator."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:566
+#: library/Registrar/Adapter/Namecheap.php:568
 msgid ""
 "Domain deletion is not implemented in the NameCheap adapter. Please contact "
 "your system administrator."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:588
+#: library/Registrar/Adapter/Namecheap.php:590
 msgid "Could not retrieve privacy info on this domain."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:650
+#: library/Registrar/Adapter/Namecheap.php:652
 msgid "API ERROR: could not get lock status on domain"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:673
-#: library/Registrar/Adapter/Namecheap.php:700
+#: library/Registrar/Adapter/Namecheap.php:675
+#: library/Registrar/Adapter/Namecheap.php:702
 msgid "API ERROR: could not set lock status on domain"
 msgstr ""
 
@@ -1073,10 +1094,6 @@ msgstr ""
 
 #: modules/Cart/Service.php:585
 msgid ":product setup"
-msgstr ""
-
-#: modules/Cart/Service.php:718
-msgid ":product_title"
 msgstr ""
 
 #: modules/Client/Api/Admin.php:162
@@ -2390,25 +2407,25 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:101
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:134
 #: modules/Support/html_admin/mod_support_settings.html.twig:106
-#: modules/Support/html_admin/mod_support_ticket.html.twig:167
+#: modules/Support/html_admin/mod_support_ticket.html.twig:160
 #: modules/System/html_admin/mod_system_update.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr ""
 
-#: modules/System/Service.php:31
+#: modules/System/Service.php:32
 msgid "Parameter key is missing"
 msgstr ""
 
-#: modules/System/Service.php:96
+#: modules/System/Service.php:97
 msgid "Invalid parameter name, received: param_"
 msgstr ""
 
-#: modules/System/Service.php:428
+#: modules/System/Service.php:438
 msgid "Parameter :param does not exist"
 msgstr ""
 
-#: modules/System/Service.php:1321
+#: modules/System/Service.php:1331
 msgid "Country :code phone code is not registered"
 msgstr ""
 
@@ -2577,10 +2594,10 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:97
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:196
 #: modules/Support/html_admin/mod_support_settings.html.twig:151
-#: modules/Support/html_admin/mod_support_ticket.html.twig:110
-#: modules/Support/html_admin/mod_support_ticket.html.twig:120
-#: modules/Support/html_admin/mod_support_ticket.html.twig:183
-#: modules/Support/html_admin/mod_support_ticket.html.twig:325
+#: modules/Support/html_admin/mod_support_ticket.html.twig:103
+#: modules/Support/html_admin/mod_support_ticket.html.twig:113
+#: modules/Support/html_admin/mod_support_ticket.html.twig:176
+#: modules/Support/html_admin/mod_support_ticket.html.twig:318
 #: modules/Support/html_admin/mod_support_tickets.html.twig:251
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:54
 #: themes/admin_default/html/partial_batch_delete.html.twig:36
@@ -2648,7 +2665,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:156
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:123
 #: modules/Support/html_admin/mod_support_settings.html.twig:164
-#: modules/Support/html_admin/mod_support_ticket.html.twig:258
+#: modules/Support/html_admin/mod_support_ticket.html.twig:251
 #: modules/Support/html_admin/mod_support_tickets.html.twig:261
 #: modules/Support/html_client/mod_support_ticket.html.twig:99
 #: modules/Support/html_client/mod_support_tickets.html.twig:57
@@ -2752,7 +2769,7 @@ msgstr ""
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
 #: modules/Order/html_admin/mod_order_index.html.twig:17
-#: modules/Support/html_admin/mod_support_ticket.html.twig:220
+#: modules/Support/html_admin/mod_support_ticket.html.twig:213
 msgid "ID"
 msgstr ""
 
@@ -2900,9 +2917,9 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:57
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:127
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:84
-#: modules/Support/html_admin/mod_support_ticket.html.twig:65
-#: modules/Support/html_admin/mod_support_ticket.html.twig:154
-#: modules/Support/html_admin/mod_support_ticket.html.twig:223
+#: modules/Support/html_admin/mod_support_ticket.html.twig:63
+#: modules/Support/html_admin/mod_support_ticket.html.twig:147
+#: modules/Support/html_admin/mod_support_ticket.html.twig:216
 #: modules/Support/html_admin/mod_support_tickets.html.twig:48
 #: modules/Support/html_admin/mod_support_tickets.html.twig:193
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:45
@@ -3307,7 +3324,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:102
 #: modules/Support/html_admin/mod_support_settings.html.twig:152
 #: modules/Support/html_admin/mod_support_settings.html.twig:155
-#: modules/Support/html_admin/mod_support_ticket.html.twig:125
+#: modules/Support/html_admin/mod_support_ticket.html.twig:118
 msgid "Delete"
 msgstr ""
 
@@ -3619,8 +3636,8 @@ msgstr ""
 #: modules/Order/html_client/mod_order_manage.html.twig:218
 #: modules/Order/html_client/mod_order_manage.html.twig:264
 #: modules/Support/html_admin/mod_support_ticket.html.twig:59
-#: modules/Support/html_admin/mod_support_ticket.html.twig:148
-#: modules/Support/html_admin/mod_support_ticket.html.twig:221
+#: modules/Support/html_admin/mod_support_ticket.html.twig:141
+#: modules/Support/html_admin/mod_support_ticket.html.twig:214
 #: modules/Support/html_admin/mod_support_tickets.html.twig:54
 #: modules/Support/html_admin/mod_support_tickets.html.twig:299
 #: modules/Support/html_client/mod_support_ticket.html.twig:35
@@ -3647,8 +3664,8 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:45
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:120
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:82
-#: modules/Support/html_admin/mod_support_ticket.html.twig:142
-#: modules/Support/html_admin/mod_support_ticket.html.twig:222
+#: modules/Support/html_admin/mod_support_ticket.html.twig:135
+#: modules/Support/html_admin/mod_support_ticket.html.twig:215
 #: modules/Support/html_admin/mod_support_tickets.html.twig:192
 #: modules/Support/html_admin/mod_support_tickets.html.twig:305
 #: modules/Support/html_admin/mod_support_tickets.html.twig:339
@@ -3661,7 +3678,7 @@ msgid "Subject"
 msgstr ""
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:642
-#: modules/Support/html_admin/mod_support_ticket.html.twig:269
+#: modules/Support/html_admin/mod_support_ticket.html.twig:262
 msgid "New support ticket"
 msgstr ""
 
@@ -5655,7 +5672,7 @@ msgstr ""
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:146
 #: modules/Notification/html_admin/mod_notification_index.html.twig:78
 #: modules/Order/html_admin/mod_order_manage.html.twig:573
-#: modules/Support/html_admin/mod_support_ticket.html.twig:199
+#: modules/Support/html_admin/mod_support_ticket.html.twig:192
 msgid "Note"
 msgstr ""
 
@@ -6141,7 +6158,7 @@ msgid "Delete all"
 msgstr ""
 
 #: modules/Notification/html_admin/mod_notification_index.html.twig:83
-#: modules/Support/html_admin/mod_support_ticket.html.twig:210
+#: modules/Support/html_admin/mod_support_ticket.html.twig:203
 msgid "Add note"
 msgstr ""
 
@@ -6579,7 +6596,7 @@ msgid "I would like to upgrade"
 msgstr ""
 
 #: modules/Order/html_client/mod_order_manage.html.twig:271
-#: modules/Support/html_admin/mod_support_ticket.html.twig:99
+#: modules/Support/html_admin/mod_support_ticket.html.twig:92
 msgid "Upgrade to"
 msgstr ""
 
@@ -7037,7 +7054,7 @@ msgid "New product"
 msgstr ""
 
 #: modules/Product/html_admin/mod_product_index.html.twig:49
-#: modules/Support/html_admin/mod_support_ticket.html.twig:160
+#: modules/Support/html_admin/mod_support_ticket.html.twig:153
 #: modules/Support/html_admin/mod_support_tickets.html.twig:42
 msgid "Priority"
 msgstr ""
@@ -8892,7 +8909,7 @@ msgid "Author"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:72
-#: modules/Support/html_admin/mod_support_ticket.html.twig:76
+#: modules/Support/html_admin/mod_support_ticket.html.twig:71
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
 #: modules/Support/html_client/mod_support_ticket.html.twig:47
 msgid "Time opened"
@@ -8903,34 +8920,34 @@ msgid "Last updated"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:92
-#: modules/Support/html_admin/mod_support_ticket.html.twig:115
+#: modules/Support/html_admin/mod_support_ticket.html.twig:108
 msgid "Close"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:171
-#: modules/Support/html_admin/mod_support_ticket.html.twig:301
+#: modules/Support/html_admin/mod_support_ticket.html.twig:294
 msgid "Reply as"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:175
-#: modules/Support/html_admin/mod_support_ticket.html.twig:305
+#: modules/Support/html_admin/mod_support_ticket.html.twig:298
 msgid "Hello"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:187
-#: modules/Support/html_admin/mod_support_ticket.html.twig:316
+#: modules/Support/html_admin/mod_support_ticket.html.twig:309
 msgid "Show/Hide messages"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:191
-#: modules/Support/html_admin/mod_support_ticket.html.twig:320
+#: modules/Support/html_admin/mod_support_ticket.html.twig:313
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:106
 #: modules/Support/html_client/mod_support_ticket.html.twig:153
 msgid "Post"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:201
-#: modules/Support/html_admin/mod_support_ticket.html.twig:330
+#: modules/Support/html_admin/mod_support_ticket.html.twig:323
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
 #: modules/Support/html_client/mod_support_ticket.html.twig:22
 msgid "Close ticket"
@@ -9016,16 +9033,16 @@ msgstr ""
 msgid "Support tickets"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_ticket.html.twig:85
+#: modules/Support/html_admin/mod_support_ticket.html.twig:78
 msgid "Task"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_ticket.html.twig:92
+#: modules/Support/html_admin/mod_support_ticket.html.twig:85
 #: modules/Support/html_client/mod_support_ticket.html.twig:53
 msgid "Related to"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_ticket.html.twig:131
+#: modules/Support/html_admin/mod_support_ticket.html.twig:124
 msgid "Set Task complete"
 msgstr ""
 
@@ -9228,24 +9245,17 @@ msgid "Update FOSSBilling"
 msgstr ""
 
 #: modules/System/html_admin/mod_system_update.html.twig:29
-#: modules/System/html_admin/mod_system_update.html.twig:35
-msgid "Migrate Configuration"
+msgid "Manual Update"
 msgstr ""
 
 #: modules/System/html_admin/mod_system_update.html.twig:30
 msgid ""
-"This tool automatically migrates your configuration file to ensure "
-"compatibility with the latest FOSSBilling changes."
-msgstr ""
-
-#: modules/System/html_admin/mod_system_update.html.twig:39
-msgid "Manual Update"
-msgstr ""
-
-#: modules/System/html_admin/mod_system_update.html.twig:40
-msgid ""
 "If the auto updater is unable to function in your current installation "
 "environment, a manual update is available as an alternative solution."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:43
+msgid "Apply Patches & Update Configuration"
 msgstr ""
 
 #: modules/System/html_client/mod_system_maintenance.html.twig:4
