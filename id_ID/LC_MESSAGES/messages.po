@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-05-02 19:17-0700\n"
-"PO-Revision-Date: 2023-05-03 02:21\n"
+"POT-Creation-Date: 2023-06-05 02:31-0700\n"
+"PO-Revision-Date: 2023-06-05 09:35\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Indonesian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
@@ -24,550 +24,558 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: id_ID\n"
 
-#: di.php:330
+#: di.php:321
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
-msgstr ""
+msgstr "Sepertinya anda mencoba menggunakan FOSSBilling tanpa ekstensi PHP intl. FOSSBilling menggunakan polyfill pada ekstensi intl, tetapi pengaturan server tidak didukung. Silakan aktifkan ekstensi intl."
 
-#: index.php:39 library/Box/App.php:385 library/Box/AppClient.php:64
+#: index.php:34 library/Box/App.php:380 library/Box/AppClient.php:59
 msgid "Page :url not found"
 msgstr "Halaman :url tidak ditemukan"
 
-#: index.php:45
+#: index.php:40
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr ""
 
-#: library/Api/Abstract.php:71
+#: library/Api/Abstract.php:61
 msgid "Mod object is not set for the service"
 msgstr "Objek mod tidak disetel untuk layanan"
 
-#: library/Api/Handler.php:49
+#: library/Api/Handler.php:44
 msgid "Method :method must contain underscore"
 msgstr "Metode :metode harus berisi garis bawah"
 
-#: library/Api/Handler.php:62 library/Box/Mod.php:61
+#: library/Api/Handler.php:57 library/Box/Mod.php:53
 msgid "Invalid module name"
 msgstr "Nama modul tidak valid"
 
-#: library/Api/Handler.php:74
+#: library/Api/Handler.php:69
 msgid "FOSSBilling module :mod is not installed/activated"
 msgstr "Modul FOSSBilling :mod tidak diinstal/diaktifkan"
 
-#: library/Api/Handler.php:82
+#: library/Api/Handler.php:77
 msgid "You do not have access to :mod module"
 msgstr "Anda tidak memiliki akses ke modul :mod"
 
-#: library/Api/Handler.php:97
+#: library/Api/Handler.php:92
 msgid "Api class must be instance of Api_Abstract"
 msgstr "Kelas api harus merupakan instance dari Api_Abstract"
 
-#: library/Api/Handler.php:113
+#: library/Api/Handler.php:108
 msgid ":type API call :method does not exist in module :module"
 msgstr ":type API call :method tidak ada di modul :module"
 
-#: library/Box/App.php:357
+#: library/Box/App.php:352
 msgid "The system is undergoing maintenance. Please try again later."
 msgstr "Kami akan menjalani pemeliharaan. Silakan coba lagi nanti."
 
-#: library/Box/AppClient.php:82
+#: library/Box/AppClient.php:77
 msgid "Page not found"
 msgstr "Halaman tidak ditemukan"
 
-#: library/Box/Crypt.php:25
+#: library/Box/Crypt.php:20
 msgid "The PHP openssl extension must be enabled on your server"
-msgstr ""
+msgstr "Ekstensi PHP openssl harus diaktifkan di server"
 
-#: library/Box/Log.php:76
+#: library/Box/Log.php:72
 msgid "Missing log message"
 msgstr "Pesan log tidak ada"
 
-#: library/Box/Log.php:91 library/Box/Log.php:110
+#: library/Box/Log.php:87 library/Box/Log.php:106
 msgid "Bad log priority"
 msgstr "Prioritas log buruk"
 
-#: library/Box/Mod.php:80
+#: library/Box/Mod.php:72
 msgid "Module :mod manifest file is missing"
 msgstr "Modul :mod manifes tidak ada"
 
-#: library/Box/Mod.php:85
+#: library/Box/Mod.php:77
 msgid "Module :mod manifest file is not valid. Check file syntax and permissions."
 msgstr "Modul :mod file manifest tidak valid. Cek file sintax dan permisi."
 
-#: library/Box/Mod.php:126
+#: library/Box/Mod.php:118
 msgid "Module :mod does not have service class"
 msgstr "Modul :mod class service tidak ada"
 
-#: library/Box/Mod.php:144
+#: library/Box/Mod.php:136
 msgid "Module :mod Client controller class was not found"
 msgstr "Modul :mod class controller Client tidak ada"
 
-#: library/Box/Mod.php:214
+#: library/Box/Mod.php:206
 msgid "Core module can not be updated"
 msgstr "Modul tidak bisa di ubah"
 
-#: library/Box/Period.php:50
+#: library/Box/Period.php:44
 msgid "Invalid period code. Period definition must be 2 chars length"
 msgstr "Kode priode tidak valid. Periode harus 2 karakter"
 
-#: library/Box/Period.php:59
+#: library/Box/Period.php:53
 msgid "Period Error. Unit :unit is not defined"
 msgstr "Periode salah. Unit :unit tak terdefinisi"
 
-#: library/Box/Period.php:69
+#: library/Box/Period.php:63
 msgid "Invalid period quantity :qty for unit :unit. Allowed range is from :from to :to"
 msgstr "Kualiti periode tak valid :qty untuk unit :unit.\n"
 "Izinkan antara :from sampai :to"
 
-#: library/Box/Period.php:89
+#: library/Box/Period.php:83
 msgid "Every week"
 msgstr "Setiap minggu"
 
-#: library/Box/Period.php:90
+#: library/Box/Period.php:84
 msgid "Every month"
 msgstr "Setiap bulan"
 
-#: library/Box/Period.php:91
+#: library/Box/Period.php:85
 #: themes/admin_default/html/partial_pricing.html.twig:90
 msgid "Every 3 months"
 msgstr "Setiap 3 bulan"
 
-#: library/Box/Period.php:92
+#: library/Box/Period.php:86
 #: themes/admin_default/html/partial_pricing.html.twig:108
 msgid "Every 6 months"
 msgstr "Setiap 6 bulan"
 
-#: library/Box/Period.php:93
+#: library/Box/Period.php:87
 #: themes/admin_default/html/partial_pricing.html.twig:125
 msgid "Every year"
 msgstr "Setiap tahun"
 
-#: library/Box/Period.php:94
+#: library/Box/Period.php:88
 #: themes/admin_default/html/partial_pricing.html.twig:142
 msgid "Every 2 years"
 msgstr "Setiap 2 tahun"
 
-#: library/Box/Period.php:95
+#: library/Box/Period.php:89
 #: themes/admin_default/html/partial_pricing.html.twig:160
 msgid "Every 3 years"
 msgstr "Setiap 3 tahun"
 
-#: library/Box/Period.php:130
+#: library/Box/Period.php:124
 msgid "Every :number day"
 msgid_plural "Every :number days"
 msgstr[0] "Setiap :number hari"
 
-#: library/Box/Period.php:133
+#: library/Box/Period.php:127
 msgid "Every :number week"
 msgid_plural "Every :number weeks"
 msgstr[0] "Setiap :number pekan"
 
-#: library/Box/Period.php:136
+#: library/Box/Period.php:130
 msgid "Every :number month"
 msgid_plural "Every :number months"
 msgstr[0] "Setiap :number bulan"
 
-#: library/Box/Period.php:139
+#: library/Box/Period.php:133
 msgid "Every :number year"
 msgid_plural "Every :number years"
 msgstr[0] "Setiap :number tahun"
 
-#: library/Box/Period.php:142 library/Box/Period.php:202
+#: library/Box/Period.php:136 library/Box/Period.php:196
 msgid "Unit not defined"
 msgstr "Unit tak terdefinisi"
 
-#: library/Box/Period.php:176
+#: library/Box/Period.php:170
 msgid "Unable to get the number of months for :unit"
-msgstr ""
+msgstr "Gagal mendapatkan jumlah bulan untuk :unit"
 
-#: library/Box/Tools.php:78 library/Box/Tools.php:259
-msgid "Service class :class was not found in :path"
-msgstr "Class service :class tak ada di :path"
-
-#: library/Box/Tools.php:289
-msgid "Email address is invalid"
-msgstr "Alamat email tidak valid"
-
-#: library/Box/TwigExtensions.php:263
+#: library/Box/TwigExtensions.php:258
 msgid "second"
 msgstr "detik"
 
-#: library/Box/TwigExtensions.php:263
+#: library/Box/TwigExtensions.php:258
 msgid "minute"
 msgstr "menit"
 
-#: library/Box/TwigExtensions.php:263
+#: library/Box/TwigExtensions.php:258
 msgid "hour"
 msgstr "jam"
 
-#: library/Box/TwigExtensions.php:263
+#: library/Box/TwigExtensions.php:258
 msgid "day"
 msgstr "hari"
 
-#: library/Box/TwigExtensions.php:263
+#: library/Box/TwigExtensions.php:258
 msgid "week"
 msgstr "minggu"
 
-#: library/Box/TwigExtensions.php:263
+#: library/Box/TwigExtensions.php:258
 msgid "month"
 msgstr "bulan"
 
-#: library/Box/TwigExtensions.php:263
+#: library/Box/TwigExtensions.php:258
 msgid "year"
 msgstr "tahun"
 
-#: library/Box/TwigExtensions.php:263
+#: library/Box/TwigExtensions.php:258
 msgid "decade"
 msgstr "dasawarsa"
 
-#: library/Box/TwigLoader.php:30
+#: library/Box/TwigLoader.php:24
 msgid "Missing mods param for Box_TwigLoader"
 msgstr "Parameter mods untuk Box_TwigLoader tidak ditemukan"
 
-#: library/Box/TwigLoader.php:34
+#: library/Box/TwigLoader.php:28
 msgid "Missing theme param for Box_TwigLoader"
-msgstr ""
+msgstr "Parameter theme untuk Box_TwigLoader tidak ditemukan"
 
-#: library/Box/TwigLoader.php:38
+#: library/Box/TwigLoader.php:32
 msgid "Missing type param for Box_TwigLoader"
+msgstr "Parameter theme untuk Box_TwigLoader tidak ditemukan"
+
+#: library/FOSSBilling/CentralAlerts.php:118
+msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
 msgstr ""
 
-#: library/Box/Update.php:170 modules/System/Api/Admin.php:185
-msgid "You have latest version of FOSSBilling. You do not need to update."
-msgstr ""
-
-#: library/Box/Update.php:193
-msgid "Failed to download the update archive. Further details are available in the error log."
-msgstr ""
-
-#: library/Box/Update.php:206 modules/Extension/Service.php:451
-msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
-msgstr ""
-
-#: library/Box/Update.php:240
-msgid "Unable to load existing configuration. performConfigUpdate() is unable to progress."
-msgstr ""
-
-#: library/Box/Update.php:243
-msgid "Unable to create backup of configuration file. Cancelling config migration."
-msgstr ""
-
-#: library/Box/Update.php:287
-msgid "Error when writing updated configuration file."
-msgstr "Salah ketika membuat pembaruan konfigurasi file."
-
-#: library/Box/Validate.php:55
-msgid "Email is invalid"
-msgstr ""
-
-#: library/Box/Validate.php:63
-msgid "Minimum password length is 8 characters."
-msgstr "Panjang kata sandi minimum adalah 8 karakter."
-
-#: library/Box/Validate.php:67
-msgid "Maximum password length is 256 characters."
-msgstr "Panjang kata sandi maksimum adalah 256 karakter."
-
-#: library/Box/Validate.php:71
-msgid "Password must include at least one number."
-msgstr "Kata sandi harus menyertakan setidaknya satu angka."
-
-#: library/Box/Validate.php:75
-msgid "Password must include at least one lowercase letter."
-msgstr "Kata Sandi harus ada huruf kecil."
-
-#: library/Box/Validate.php:79
-msgid "Password must include at least one uppercase letter."
-msgstr "Kata Sandi harus ada huruf besar."
-
-#: library/Box/Validate.php:118
-msgid "Birthdate is invalid"
-msgstr ""
-
-#: library/Error/ErrorPage.php:32
-msgid "Unable to find Composer Packages"
-msgstr ""
-
-#: library/Error/ErrorPage.php:35
-msgid "View more info on the composer website"
-msgstr ""
-
-#: library/Error/ErrorPage.php:40
-msgid "For security reasons, you must delete the installation directory before you can use FOSSBilling. :code"
-msgstr ""
-
-#: library/Error/ErrorPage.php:42
-msgid "View more info on the Getting Started guide"
-msgstr ""
-
-#: library/Error/ErrorPage.php:47
-msgid "Your Configuration is Empty"
-msgstr ""
-
-#: library/Error/ErrorPage.php:48
-msgid "Your FOSSBilling configuration seems to either be empty or non-existent. You may need to re-install FOSSBilling, or re-create the :code file based on the example config."
-msgstr ""
-
-#: library/Error/ErrorPage.php:50
-msgid "See the example config."
-msgstr ""
-
-#: library/Error/ErrorPage.php:55
-msgid "Migration is required"
-msgstr ""
-
-#: library/Error/ErrorPage.php:56
-msgid "Legacy BoxBilling or FOSSBilling preview files have been found. The file structure within FOSSBilling, along with the configuration format, has since changed. :lineBreak See the migration guide for assistance in migrating to the latest version of FOSSBilling."
-msgstr ""
-
-#: library/Error/ErrorPage.php:58
-msgid "Check the migration guide."
-msgstr ""
-
-#: library/Error/ErrorPage.php:63
-msgid "Missing .htaccess file"
-msgstr ""
-
-#: library/Error/ErrorPage.php:64
-msgid "You appear to be running an Apache or LiteSpeed based webserver without a valid :code file. Please create one using the default FOSSBilling .htaccess file."
-msgstr ""
-
-#: library/Error/ErrorPage.php:66
-msgid "Check the default .htaccess"
-msgstr ""
-
-#: library/Error/ErrorPage.php:96
-msgid "An error has occurred."
-msgstr ""
-
-#: library/Error/ErrorPage.php:98
-msgid "View the FOSSBilling documentation"
-msgstr ""
-
-#: library/Error/ErrorPage.php:101
-msgid "None"
-msgstr ""
-
-#: library/Error/ErrorPage.php:130
-msgid "Uh-oh! You've received a generic error message: :errorMessage"
-msgstr ""
-
-#: library/Error/ErrorPage.php:246
-msgid "Error Code: #:number"
-msgstr ""
-
-#: library/Error/ErrorPage.php:247
-msgid "Component: :category"
-msgstr ""
-
-#: library/Error/ErrorPage.php:252 library/Error/ErrorPage.php:281
-msgid "Show original message"
-msgstr ""
-
-#: library/Error/ErrorPage.php:277
-msgid "Show specialized message"
-msgstr ""
-
-#: library/FOSSBilling/CentralAlerts.php:127
+#: library/FOSSBilling/CentralAlerts.php:126
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:60
+#: library/FOSSBilling/ErrorPage.php:42
+msgid "Unable to find Composer Packages"
+msgstr "Gagal menemukan paket Composer"
+
+#: library/FOSSBilling/ErrorPage.php:45
+msgid "View more info on the composer website"
+msgstr ""
+
+#: library/FOSSBilling/ErrorPage.php:50
+msgid "For security reasons, you must delete the installation directory before you can use FOSSBilling. :code"
+msgstr ""
+
+#: library/FOSSBilling/ErrorPage.php:52
+msgid "View more info on the Getting Started guide"
+msgstr ""
+
+#: library/FOSSBilling/ErrorPage.php:57
+msgid "Your Configuration is Empty"
+msgstr "Pengaturan kosong"
+
+#: library/FOSSBilling/ErrorPage.php:58
+msgid "Your FOSSBilling configuration seems to either be empty or non-existent. You may need to re-install FOSSBilling, or re-create the :code file based on the example config."
+msgstr ""
+
+#: library/FOSSBilling/ErrorPage.php:60
+msgid "See the example config."
+msgstr "Lihat contoh pengaturan."
+
+#: library/FOSSBilling/ErrorPage.php:65
+msgid "Migration is required"
+msgstr "Diperlukan migrasi"
+
+#: library/FOSSBilling/ErrorPage.php:66
+msgid "Legacy BoxBilling or FOSSBilling preview files have been found. The file structure within FOSSBilling, along with the configuration format, has since changed. :lineBreak See the migration guide for assistance in migrating to the latest version of FOSSBilling."
+msgstr ""
+
+#: library/FOSSBilling/ErrorPage.php:68
+msgid "Check the migration guide."
+msgstr "Cek panduan migrasi."
+
+#: library/FOSSBilling/ErrorPage.php:73
+msgid "Missing .htaccess file"
+msgstr "File .htaccess tidak ditemukan"
+
+#: library/FOSSBilling/ErrorPage.php:74
+msgid "You appear to be running an Apache or LiteSpeed based webserver without a valid :code file. Please create one using the default FOSSBilling .htaccess file."
+msgstr ""
+
+#: library/FOSSBilling/ErrorPage.php:76
+msgid "Check the default .htaccess"
+msgstr "Cek .htaccess default"
+
+#: library/FOSSBilling/ErrorPage.php:106
+msgid "An error has occurred."
+msgstr "Terjadi kesalahan."
+
+#: library/FOSSBilling/ErrorPage.php:108
+msgid "View the FOSSBilling documentation"
+msgstr ""
+
+#: library/FOSSBilling/ErrorPage.php:111
+msgid "None"
+msgstr "Tidak ada"
+
+#: library/FOSSBilling/ErrorPage.php:140
+msgid "Uh-oh! You've received a generic error message: :errorMessage"
+msgstr ""
+
+#: library/FOSSBilling/ErrorPage.php:256
+msgid "Error Code: #:number"
+msgstr ""
+
+#: library/FOSSBilling/ErrorPage.php:257
+msgid "Component: :category"
+msgstr "Komponen :category"
+
+#: library/FOSSBilling/ErrorPage.php:262 library/FOSSBilling/ErrorPage.php:291
+msgid "Show original message"
+msgstr "Tampilkan pesan asli"
+
+#: library/FOSSBilling/ErrorPage.php:287
+msgid "Show specialized message"
+msgstr ""
+
+#: library/FOSSBilling/ExtensionManager.php:53
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:80
+#: library/FOSSBilling/ExtensionManager.php:73
 msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:101
+#: library/FOSSBilling/ExtensionManager.php:94
 msgid "Unable to fetch the latest release of the extension."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:170
+#: library/FOSSBilling/ExtensionManager.php:163
 msgid "Unable to connect to the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:178
+#: library/FOSSBilling/ExtensionManager.php:171
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:145
+#: library/FOSSBilling/Mail.php:139
 msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:163
+#: library/FOSSBilling/Mail.php:157
 msgid "FOSSBilling requires the proc_open PHP function to be enabled when using the sendmail transport"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:171
+#: library/FOSSBilling/Mail.php:165
 msgid "A Sendgrid API key is required to send emails via Sendgrid"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:177
+#: library/FOSSBilling/Mail.php:171
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:182
+#: library/FOSSBilling/Mail.php:176
 msgid "Unknown mail transport: :transport"
 msgstr "Pengaturan email tidak dikenal transport: :transport"
 
-#: library/FOSSBilling/Mail.php:190
+#: library/FOSSBilling/Mail.php:184
 msgid "Failed to send email via :transport with the exception :e"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:207
+#: library/FOSSBilling/Mail.php:201
 msgid "SMTP host or port is not configured"
 msgstr ""
 
-#: library/Model/ProductDomainTable.php:222
+#: library/FOSSBilling/Tools.php:72 library/FOSSBilling/Tools.php:253
+msgid "Service class :class was not found in :path"
+msgstr "Class service :class tak ada di :path"
+
+#: library/FOSSBilling/Tools.php:283
+msgid "Email address is invalid"
+msgstr "Alamat email tidak valid"
+
+#: library/FOSSBilling/Update.php:104
+msgid "Failed to download the latest version information. Further details are available in the error log."
+msgstr ""
+
+#: library/FOSSBilling/Update.php:172 modules/System/Api/Admin.php:179
+msgid "You have latest version of FOSSBilling. You do not need to update."
+msgstr "Anda telah menggunakan versi terbaru dari FOSSBilling. Anda belum perlu memperbarui FOSSBilling untuk saat ini."
+
+#: library/FOSSBilling/Update.php:194
+msgid "Failed to download the update archive. Further details are available in the error log."
+msgstr ""
+
+#: library/FOSSBilling/Update.php:207 modules/Extension/Service.php:443
+msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
+msgstr ""
+
+#: library/FOSSBilling/Update.php:225
+msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
+msgstr ""
+
+#: library/FOSSBilling/UpdatePatcher.php:44
+msgid "Unable to load existing configuration."
+msgstr ""
+
+#: library/FOSSBilling/UpdatePatcher.php:51
+msgid "Unable to create backup of configuration file. Cancelling config migration."
+msgstr ""
+
+#: library/FOSSBilling/UpdatePatcher.php:90
+msgid "Error when writing updated configuration file."
+msgstr "Salah ketika membuat pembaruan konfigurasi file."
+
+#: library/FOSSBilling/Validate.php:51
+msgid "Minimum password length is 8 characters."
+msgstr "Panjang kata sandi minimum adalah 8 karakter."
+
+#: library/FOSSBilling/Validate.php:55
+msgid "Maximum password length is 256 characters."
+msgstr "Panjang kata sandi maksimum adalah 256 karakter."
+
+#: library/FOSSBilling/Validate.php:59
+msgid "Password must include at least one number."
+msgstr "Kata sandi harus menyertakan setidaknya satu angka."
+
+#: library/FOSSBilling/Validate.php:63
+msgid "Password must include at least one lowercase letter."
+msgstr "Kata Sandi harus ada huruf kecil."
+
+#: library/FOSSBilling/Validate.php:67
+msgid "Password must include at least one uppercase letter."
+msgstr "Kata Sandi harus ada huruf besar."
+
+#: library/FOSSBilling/Validate.php:106
+msgid "Birth date is invalid"
+msgstr ""
+
+#: library/Model/ProductDomainTable.php:217
 msgid "Could not determine domain price. Domain action is missing"
 msgstr "Tak dapat mendefinisikan harga domain. Aksi domain hilang"
 
-#: library/Model/ProductDomainTable.php:239
+#: library/Model/ProductDomainTable.php:234
 msgid "Unknown TLD. Could not determine registration price"
 msgstr "TLD tak diketahui. Tak dapat mendefinisikan harga pendaftaran"
 
-#: library/Model/ProductDomainTable.php:260
+#: library/Model/ProductDomainTable.php:255
 msgid "Domain product can not be removed."
 msgstr "Produk Domain tidak bisa dihapus."
 
-#: library/Model/ProductTable.php:68
+#: library/Model/ProductTable.php:62
 msgid "Unknown period selected "
 msgstr "Periode yang dipilih tidak diketahui "
 
-#: library/Model/ProductTable.php:80
+#: library/Model/ProductTable.php:74
 msgid "Product pricing could not be determined. "
 msgstr "Harga produk tidak dapat ditentukan. "
 
-#: library/Model/ProductTable.php:112
+#: library/Model/ProductTable.php:106
 msgid "Unknown period selected for setup price"
 msgstr ""
 
-#: library/Model/ProductTable.php:136
+#: library/Model/ProductTable.php:130
 msgid "Product :id payment type is recurrent, but period was not selected"
 msgstr "Product :id jenis pembayaran berulang, tetapi periode tidak dipilih"
 
-#: library/Model/ProductTable.php:148
+#: library/Model/ProductTable.php:142
 msgid "Unknown Period selected for price"
 msgstr "Tak diketahui terpilihnya harga"
 
-#: library/Payment/Adapter/AliPay.php:20 library/Payment/Adapter/AliPay.php:24
-#: library/Payment/Adapter/AliPay.php:28
-#: library/Payment/Adapter/Interkassa.php:38
-#: library/Payment/Adapter/Interkassa.php:41
-#: library/Payment/Adapter/PayPalEmail.php:38
-#: library/Payment/Adapter/Stripe.php:39 library/Payment/Adapter/Stripe.php:43
+#: library/Payment/Adapter/AliPay.php:16 library/Payment/Adapter/AliPay.php:20
+#: library/Payment/Adapter/AliPay.php:24
+#: library/Payment/Adapter/Interkassa.php:28
+#: library/Payment/Adapter/Interkassa.php:31
+#: library/Payment/Adapter/PayPalEmail.php:34
+#: library/Payment/Adapter/Stripe.php:34 library/Payment/Adapter/Stripe.php:38
+#: library/Payment/Adapter/TwoCheckout.php:30
 #: library/Payment/Adapter/TwoCheckout.php:34
-#: library/Payment/Adapter/TwoCheckout.php:38
-#: library/Payment/Adapter/WebMoney.php:56
+#: library/Payment/Adapter/WebMoney.php:45
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Payment/Adapter/AliPay.php:118
+#: library/Payment/Adapter/AliPay.php:114
 msgid "Error getting service for contract"
 msgstr ""
 
-#: library/Payment/Adapter/AliPay.php:152
+#: library/Payment/Adapter/AliPay.php:148
 msgid "AliPay does not support recurrent payments"
 msgstr ""
 
-#: library/Payment/Adapter/ClientBalance.php:63
+#: library/Payment/Adapter/ClientBalance.php:59
 msgid "Not enough in balance"
 msgstr "Saldo tidak mencukupi"
 
-#: library/Payment/Adapter/ClientBalance.php:68
-#: library/Payment/Adapter/ClientBalance.php:97
-#: library/Payment/Adapter/ClientBalance.php:131
+#: library/Payment/Adapter/ClientBalance.php:64
+#: library/Payment/Adapter/ClientBalance.php:93
+#: library/Payment/Adapter/ClientBalance.php:127
 msgid "It is forbidden to pay a deposit invoice with this gateway"
 msgstr ""
 
-#: library/Payment/Adapter/ClientBalance.php:87
-#: library/Payment/Adapter/Interkassa.php:186
-#: library/Payment/Adapter/PayPalEmail.php:81
+#: library/Payment/Adapter/ClientBalance.php:83
+#: library/Payment/Adapter/Interkassa.php:176
+#: library/Payment/Adapter/PayPalEmail.php:77
 msgid "IPN is not valid"
-msgstr ""
+msgstr "IPN tidak valid"
 
-#: library/Payment/Adapter/ClientBalance.php:125
+#: library/Payment/Adapter/ClientBalance.php:121
 msgid "ClientBalance gateway is not enabled"
 msgstr ""
 
-#: library/Payment/Adapter/Interkassa.php:135
+#: library/Payment/Adapter/Interkassa.php:125
 msgid "Interkassa payment gateway do not support recurrent payments"
 msgstr ""
 
-#: library/Payment/Adapter/Interkassa.php:227
-#: library/Payment/Adapter/PayPalEmail.php:129
-#: library/Payment/Adapter/TwoCheckout.php:175
-#: library/Payment/Adapter/WebMoney.php:149
+#: library/Payment/Adapter/Interkassa.php:217
+#: library/Payment/Adapter/PayPalEmail.php:125
+#: library/Payment/Adapter/TwoCheckout.php:171
+#: library/Payment/Adapter/WebMoney.php:138
 msgid "Cannot process duplicate IPN"
 msgstr ""
 
-#: library/Payment/Adapter/Onebip.php:117
+#: library/Payment/Adapter/Onebip.php:113
 msgid "This feature is unimplemented"
-msgstr ""
+msgstr "Fitur ini belum diimplementasikan"
 
-#: library/Payment/Adapter/PayPalEmail.php:267
+#: library/Payment/Adapter/PayPalEmail.php:263
 msgid "Redirecting to PayPal.com"
 msgstr "Mengalihkan ke PayPal.com"
 
-#: library/Payment/Adapter/PayPalEmail.php:310
-#: library/Payment/Adapter/Stripe.php:110 modules/Invoice/Service.php:1475
+#: library/Payment/Adapter/PayPalEmail.php:306
+#: library/Payment/Adapter/Stripe.php:105 modules/Invoice/Service.php:1463
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Pembayaran tagihan :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:112 modules/Invoice/Service.php:1477
+#: library/Payment/Adapter/Stripe.php:107 modules/Invoice/Service.php:1465
 msgid "Payment for invoice :serie:id"
 msgstr "Pembayaran tagihan :serie:id"
 
-#: library/Payment/Adapter/Stripe.php:292
+#: library/Payment/Adapter/Stripe.php:287
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_pub_key\" at \"Configuration -> Payments\"."
 msgstr ""
 
-#: library/Payment/Adapter/Stripe.php:300
+#: library/Payment/Adapter/Stripe.php:295
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
 msgstr ""
 
-#: library/Payment/Adapter/TwoCheckout.php:126
+#: library/Payment/Adapter/TwoCheckout.php:122
 msgid "2Checkout IPN is not valid"
 msgstr ""
 
-#: library/Payment/Adapter/TwoCheckout.php:140
+#: library/Payment/Adapter/TwoCheckout.php:136
 msgid "Invoice id could not be determined for this transaction"
 msgstr ""
 
-#: library/Payment/Adapter/TwoCheckout.php:368
+#: library/Payment/Adapter/TwoCheckout.php:364
 msgid "Redirecting to 2Checkout.com"
 msgstr "Mengalihkan ke 2Checkout.com"
 
-#: library/Payment/Adapter/WebMoney.php:114
+#: library/Payment/Adapter/WebMoney.php:103
 msgid "WebMoney IPN is not valid"
 msgstr ""
 
-#: library/Payment/AdapterAbstract.php:65
+#: library/Payment/AdapterAbstract.php:61
 msgid "Return URL for payment gateway was not set"
 msgstr ""
 
-#: library/Payment/AdapterAbstract.php:72
+#: library/Payment/AdapterAbstract.php:68
 msgid "Cancel URL for payment gateway was not set"
 msgstr ""
 
-#: library/Payment/AdapterAbstract.php:80
+#: library/Payment/AdapterAbstract.php:76
 msgid "IPN Notification URL for payment gateway was not set"
 msgstr ""
 
-#: library/Payment/AdapterAbstract.php:90
+#: library/Payment/AdapterAbstract.php:86
 msgid "IPN redirect URL for payment gateway was not set"
 msgstr ""
 
-#: library/Payment/AdapterAbstract.php:103
+#: library/Payment/AdapterAbstract.php:99
 msgid "Payment adapter class did not implement configuration options method"
 msgstr ""
 
-#: library/Registrar/Adapter/Email.php:27
+#: library/Registrar/Adapter/Email.php:23
 #: library/Registrar/Adapter/Internetbs.php:18
 #: library/Registrar/Adapter/Internetbs.php:25
 #: library/Registrar/Adapter/Namecheap.php:29
 #: library/Registrar/Adapter/Namecheap.php:35
-#: library/Registrar/Adapter/Namecheap.php:45
+#: library/Registrar/Adapter/Namecheap.php:47
 #: library/Registrar/Adapter/Netearthone.php:11
 #: library/Registrar/Adapter/Netearthone.php:18
 #: library/Registrar/Adapter/Resellbiz.php:11
@@ -577,11 +585,11 @@ msgstr ""
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Registrar/Adapter/Email.php:71
+#: library/Registrar/Adapter/Email.php:67
 msgid "Email registrar can not determine whether domain is available"
 msgstr ""
 
-#: library/Registrar/Adapter/Email.php:76
+#: library/Registrar/Adapter/Email.php:72
 msgid "Email registrar can not determine whether domain can be transferred"
 msgstr ""
 
@@ -593,473 +601,474 @@ msgstr ""
 msgid "Registrar does not support domain removal."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:115
+#: library/Registrar/Adapter/Namecheap.php:117
 msgid "Premium domains cannot be registered."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:247
+#: library/Registrar/Adapter/Namecheap.php:169
+#: library/Registrar/Adapter/Namecheap.php:173
+msgid "Error: :error"
+msgstr ""
+
+#: library/Registrar/Adapter/Namecheap.php:249
 msgid "Could not update name servers"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:343
+#: library/Registrar/Adapter/Namecheap.php:345
 msgid "API ERROR: could not retrieve domain details"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:427
+#: library/Registrar/Adapter/Namecheap.php:429
 msgid "This feature is unavailable through the Namecheap API. Please contact your administrator."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:566
+#: library/Registrar/Adapter/Namecheap.php:568
 msgid "Domain deletion is not implemented in the NameCheap adapter. Please contact your system administrator."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:588
+#: library/Registrar/Adapter/Namecheap.php:590
 msgid "Could not retrieve privacy info on this domain."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:650
+#: library/Registrar/Adapter/Namecheap.php:652
 msgid "API ERROR: could not get lock status on domain"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:673
-#: library/Registrar/Adapter/Namecheap.php:700
+#: library/Registrar/Adapter/Namecheap.php:675
+#: library/Registrar/Adapter/Namecheap.php:702
 msgid "API ERROR: could not set lock status on domain"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:45
+#: library/Registrar/Adapter/Resellerclub.php:40
 msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub Reseller ID\" at \"Configuration -> Domain registration\"."
 msgstr "Registrar Domain \"ResellerClub\" tidak dikonfigurasi dengan benar. Silahkan atur ulang \"ID Reseller ResellerClub\" pada menu \"Konfigurasi -> Registrasi Domain\"."
 
-#: library/Registrar/Adapter/Resellerclub.php:52
+#: library/Registrar/Adapter/Resellerclub.php:47
 msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub API Key\" at \"Configuration -> Domain registration\"."
 msgstr "Registrar Domain \"ResellerClub\" tidak dikonfigurasi dengan benar. Silahkan atur ulang \"API Key ResellClub\" pada menu \"Konfigurasi -> Registrasi Domain\"."
 
-#: library/Registrar/Adapter/Resellerclub.php:340
+#: library/Registrar/Adapter/Resellerclub.php:335
 msgid "Valid contact company number is required while registering AU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:403
+#: library/Registrar/Adapter/Resellerclub.php:398
 msgid "Domain EPP code can be retrieved from domain registrar"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:596
+#: library/Registrar/Adapter/Resellerclub.php:591
 msgid "You are already registered as reseller"
 msgstr "Anda telah terdaftar sebagai reseller"
 
-#: library/Registrar/Adapter/Resellerclub.php:837
+#: library/Registrar/Adapter/Resellerclub.php:832
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:857
+#: library/Registrar/Adapter/Resellerclub.php:852
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:881
+#: library/Registrar/Adapter/Resellerclub.php:876
 msgid "Valid contact birth date is required while registering RU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:885
+#: library/Registrar/Adapter/Resellerclub.php:880
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:972
+#: library/Registrar/Adapter/Resellerclub.php:967
 msgid "Contact not found"
 msgstr "Kontak tidak ditemukan"
 
-#: library/Registrar/AdapterAbstract.php:23
+#: library/Registrar/AdapterAbstract.php:31
 msgid "Domain registrar class did not implement configuration options method"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:25 library/Server/Manager/CWP.php:29
-#: library/Server/Manager/CWP.php:33 library/Server/Manager/Directadmin.php:20
-#: library/Server/Manager/Directadmin.php:24
-#: library/Server/Manager/Directadmin.php:28 library/Server/Manager/Whm.php:26
-#: library/Server/Manager/Whm.php:30 library/Server/Manager/Whm.php:34
+#: library/Server/Manager/CWP.php:20 library/Server/Manager/CWP.php:24
+#: library/Server/Manager/CWP.php:28 library/Server/Manager/Directadmin.php:16
+#: library/Server/Manager/Directadmin.php:20
+#: library/Server/Manager/Directadmin.php:24 library/Server/Manager/Whm.php:22
+#: library/Server/Manager/Whm.php:26 library/Server/Manager/Whm.php:30
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:91
+#: library/Server/Manager/CWP.php:86
 msgid "Failed to connect to server"
 msgstr "Gagal koneksi ke Server"
 
-#: library/Server/Manager/CWP.php:148
+#: library/Server/Manager/CWP.php:143
 msgid "Failed to create account!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:164
+#: library/Server/Manager/CWP.php:159
 msgid "Failed to suspend account!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:180
+#: library/Server/Manager/CWP.php:175
 msgid "Failed to unsuspend account!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:199
+#: library/Server/Manager/CWP.php:194
 msgid "Failed to cancel / delete account!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:218
+#: library/Server/Manager/CWP.php:213
 msgid "Failed to change the account package!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:235
+#: library/Server/Manager/CWP.php:230
 msgid "Failed to change the account password!"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:244
+#: library/Server/Manager/CWP.php:239
 msgid "CWP does not support username changes"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:249
+#: library/Server/Manager/CWP.php:244
 msgid "CWP does not support changing the primary domain name"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:254
+#: library/Server/Manager/CWP.php:249
 msgid "CWP does not support changing the IP"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:99
+#: library/Server/Manager/Directadmin.php:95
 msgid "There are no available IPs on this server."
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:200
+#: library/Server/Manager/Directadmin.php:196
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:204
+#: library/Server/Manager/Directadmin.php:200
 msgid "Error creating user"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:230
+#: library/Server/Manager/Directadmin.php:226
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:333
+#: library/Server/Manager/Directadmin.php:329
 msgid "DirectAdmin does not support username changes"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:338
+#: library/Server/Manager/Directadmin.php:334
 msgid "DirectAdmin does not support domain changes"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:343
+#: library/Server/Manager/Directadmin.php:339
 msgid "DirectAdmin does not support IP changes"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:426 library/Server/Manager/Whm.php:415
+#: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:411
 msgid "HttpClientException: :error"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:432
+#: library/Server/Manager/Directadmin.php:428
 msgid "Server Manager DirectAdmin Error: \"Login failed\""
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:436
+#: library/Server/Manager/Directadmin.php:432
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:442
+#: library/Server/Manager/Directadmin.php:438
 msgid "Server Manager DirectAdmin Error: :error"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:108 library/Server/Manager/Hestia.php:145
+#: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:141
 msgid "Connection to server failed. Error code: :code"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:202
+#: library/Server/Manager/Hestia.php:198
 msgid "Server Manager Hestia CP Error: Unable to create User. Error code: :code"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:205
+#: library/Server/Manager/Hestia.php:201
 msgid "Server Manager Hestia CP Error: Create Domain failure. Error code: :code"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:231
+#: library/Server/Manager/Hestia.php:227
 msgid "Server Manager Hestia CP Error: Suspend Account Error. Error code: :code"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:255
+#: library/Server/Manager/Hestia.php:251
 msgid "Server Manager Hestia CP Error: Unsuspend Account Error. Error code: :code"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:283
+#: library/Server/Manager/Hestia.php:279
 msgid "Server Manager Hestia CP Error: Cancel Account Error. Error code: :code"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:312
+#: library/Server/Manager/Hestia.php:308
 msgid "Server Manager Hestia CP Error: Change User package Account Error. Error code: :code"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:325 library/Server/Manager/Hestia.php:335
-#: library/Server/Manager/Hestia.php:373
+#: library/Server/Manager/Hestia.php:321 library/Server/Manager/Hestia.php:331
+#: library/Server/Manager/Hestia.php:369
 msgid "Server Manager Hestia CP Error: Not Supported"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:360
+#: library/Server/Manager/Hestia.php:356
 msgid "Server Manager Hestia CP Error: Change Password Account Error. Error code: :code"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:23
+#: library/Server/Manager/Ispconfig3.php:19
 msgid "PHP Soap extension required for IspConfig server manager"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:65
+#: library/Server/Manager/Ispconfig3.php:61
 msgid "Server manager does not support sync"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:194 library/Server/Manager/Plesk.php:201
-#: library/Server/Manager/Virtualmin.php:167
+#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:200
+#: library/Server/Manager/Virtualmin.php:163
 msgid "Server manager does not support username changes"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:199
-#: library/Server/Manager/Virtualmin.php:172
+#: library/Server/Manager/Ispconfig3.php:195
+#: library/Server/Manager/Virtualmin.php:168
 msgid "Server manager does not support domain changes"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:204
-#: library/Server/Manager/Virtualmin.php:177
+#: library/Server/Manager/Ispconfig3.php:200
+#: library/Server/Manager/Virtualmin.php:173
 msgid "Server manager does not support ip changes"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:542
+#: library/Server/Manager/Ispconfig3.php:538
 msgid "Could not load Soap client"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:545
+#: library/Server/Manager/Ispconfig3.php:541
 msgid "Could not retrieve session"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:737
+#: library/Server/Manager/Ispconfig3.php:733
 msgid "Error when making request to the server"
 msgstr ""
 
-#: library/Server/Manager/Plesk.php:48 library/Server/Manager/Virtualmin.php:55
+#: library/Server/Manager/Plesk.php:47 library/Server/Manager/Virtualmin.php:51
 msgid "Connection to server failed"
 msgstr "Koneksi ke Server gagal"
 
-#: library/Server/Manager/Plesk.php:56
+#: library/Server/Manager/Plesk.php:55
 msgid "The server adapter does not support account synchronization"
 msgstr ""
 
-#: library/Server/Manager/Plesk.php:87
+#: library/Server/Manager/Plesk.php:86
 msgid "Failed to create new account"
 msgstr "Gagal buat akun baru"
 
-#: library/Server/Manager/Plesk.php:171
+#: library/Server/Manager/Plesk.php:170
 msgid "Can't modify client"
 msgstr "Tidak data modifikasi klien"
 
-#: library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Plesk.php:227
 msgid "Server manager does not support changing IP addresses"
 msgstr "Server manager tidak dapat ganti alamat IP"
 
-#: library/Server/Manager/Virtualmin.php:91
-#: library/Server/Manager/Virtualmin.php:104
+#: library/Server/Manager/Virtualmin.php:87
+#: library/Server/Manager/Virtualmin.php:100
 msgid "Virtualmin can't suspend/unsuspend reseller's account"
 msgstr "Virtualmin tidak dapat membuat penangguhan akun reseller"
 
-#: library/Server/Manager/Virtualmin.php:272
+#: library/Server/Manager/Virtualmin.php:268
 msgid "Create reseller command is only available in Virtualmin PRO version"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:314
-#: library/Server/Manager/Virtualmin.php:654
+#: library/Server/Manager/Virtualmin.php:310
+#: library/Server/Manager/Virtualmin.php:650
 msgid "Failed to create reseller's account"
 msgstr "Gagal membuat akun reseller"
 
-#: library/Server/Manager/Virtualmin.php:395
+#: library/Server/Manager/Virtualmin.php:391
 msgid "Failed to create account"
 msgstr "Gagal membuat akun"
 
-#: library/Server/Manager/Virtualmin.php:417
+#: library/Server/Manager/Virtualmin.php:413
 msgid "Failed to suspend user's account"
 msgstr "Gagal menangguhkan akun user"
 
-#: library/Server/Manager/Virtualmin.php:439
+#: library/Server/Manager/Virtualmin.php:435
 msgid "Failed to unsuspend user's account"
 msgstr "Gagal mengaktifkan akun user"
 
-#: library/Server/Manager/Virtualmin.php:462
+#: library/Server/Manager/Virtualmin.php:458
 msgid "Failed to change user's password"
 msgstr "Gagal mengganti sandi user"
 
-#: library/Server/Manager/Virtualmin.php:484
+#: library/Server/Manager/Virtualmin.php:480
 msgid "Failed to delete user's account"
 msgstr "Gagal menghapus akun user"
 
-#: library/Server/Manager/Virtualmin.php:513
+#: library/Server/Manager/Virtualmin.php:509
 msgid "Failed to modify domain details"
 msgstr "Gagal modifikasi detail domain"
 
-#: library/Server/Manager/Virtualmin.php:540
+#: library/Server/Manager/Virtualmin.php:536
 msgid "Failed to enable features"
 msgstr "Gagal aktifkan fitur"
 
-#: library/Server/Manager/Virtualmin.php:567
+#: library/Server/Manager/Virtualmin.php:563
 msgid "Failed to disable features"
 msgstr "Gagal non aktifkan fitur"
 
-#: library/Server/Manager/Virtualmin.php:574
+#: library/Server/Manager/Virtualmin.php:570
 msgid "Cancel reseller command only available in Virtualmin PRO version"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:585
+#: library/Server/Manager/Virtualmin.php:581
 msgid "Failed to delete reseller"
 msgstr "Gagal hapus reseller"
 
-#: library/Server/Manager/Virtualmin.php:592
+#: library/Server/Manager/Virtualmin.php:588
 msgid "Modify reseller comand is only available in Virtualmin PRO version"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:605
+#: library/Server/Manager/Virtualmin.php:601
 msgid "Failed to change reseller's password"
 msgstr "Gagal mengubah sandi reseller"
 
-#: library/Server/Manager/Virtualmin.php:612
+#: library/Server/Manager/Virtualmin.php:608
 msgid "Modify reseller command is only available in Virtualmin PRO version"
 msgstr ""
 
-#: modules/Activity/Controller/Admin.php:39
+#: modules/Activity/Controller/Admin.php:33
 msgid "Activity"
 msgstr "Aktifitas"
 
-#: modules/Activity/Controller/Admin.php:46
+#: modules/Activity/Controller/Admin.php:40
 msgid "Event history"
 msgstr ""
 
-#: modules/Api/Controller/Client.php:53
+#: modules/Api/Controller/Client.php:47
 msgid "Unknown API call :call"
 msgstr "API tidak dikenal call :call"
 
-#: modules/Api/Controller/Client.php:130
+#: modules/Api/Controller/Client.php:124
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Permintaan tidak valid. Pastikan asal permintaan adalah :from"
 
-#: modules/Api/Controller/Client.php:141
+#: modules/Api/Controller/Client.php:135
 msgid "Unauthorized IP"
 msgstr "IP tidak sah"
 
-#: modules/Api/Controller/Client.php:195 modules/Api/Controller/Client.php:199
-#: modules/Api/Controller/Client.php:203 modules/Api/Controller/Client.php:217
-#: modules/Api/Controller/Client.php:225 modules/Api/Controller/Client.php:238
+#: modules/Api/Controller/Client.php:189 modules/Api/Controller/Client.php:193
+#: modules/Api/Controller/Client.php:197 modules/Api/Controller/Client.php:211
+#: modules/Api/Controller/Client.php:219 modules/Api/Controller/Client.php:232
 msgid "Authentication Failed"
 msgstr "Otentikasi gagal"
 
-#: modules/Api/Controller/Client.php:251
+#: modules/Api/Controller/Client.php:245
 msgid "Unknown API call"
 msgstr "Call API tidak dikenal"
 
-#: modules/Api/Controller/Client.php:330
+#: modules/Api/Controller/Client.php:324
 msgid "CSRF token invalid."
 msgstr "Token CSRF tidak valid."
 
-#: modules/Cart/Api/Guest.php:65 modules/Currency/Api/Admin.php:75
-#: modules/Currency/Api/Admin.php:255 modules/Currency/Api/Guest.php:54
-#: modules/Currency/Service.php:469 modules/Currency/Service.php:579
+#: modules/Cart/Api/Guest.php:59 modules/Currency/Api/Admin.php:69
+#: modules/Currency/Api/Admin.php:249 modules/Currency/Api/Guest.php:48
+#: modules/Currency/Service.php:463 modules/Currency/Service.php:573
 msgid "Currency not found"
 msgstr "Mata Uang tidak ditemukan"
 
-#: modules/Cart/Api/Guest.php:106 modules/Cart/Api/Guest.php:114
+#: modules/Cart/Api/Guest.php:100 modules/Cart/Api/Guest.php:108
 msgid "Promo code is expired or does not exist"
 msgstr "Kode promo kedaluwarsa atau tidak ada"
 
-#: modules/Cart/Api/Guest.php:110
+#: modules/Cart/Api/Guest.php:104
 msgid "Promo can not be applied to your account"
 msgstr "Kupon promo tidak dapat digunakan untuk akun Anda"
 
-#: modules/Cart/Service.php:90
+#: modules/Cart/Service.php:84
 msgid "Selected billing period is not valid"
 msgstr "Pilihan periode billing tidak valid"
 
-#: modules/Cart/Service.php:97
+#: modules/Cart/Service.php:91
 msgid "This item is currently out of stock"
 msgstr ""
 
-#: modules/Cart/Service.php:130
+#: modules/Cart/Service.php:124
 msgid "Selected billing period is not valid for the selected addon"
 msgstr ""
 
-#: modules/Cart/Service.php:224 modules/Product/Api/Guest.php:90
+#: modules/Cart/Service.php:218 modules/Product/Api/Guest.php:84
 msgid "Product not found"
 msgstr "Produk tidak ditemukan"
 
-#: modules/Cart/Service.php:286
+#: modules/Cart/Service.php:280
 msgid "Add products to cart before applying promo code"
 msgstr "Tambahkan produk ke keranjang sebelum pasang kode promo"
 
-#: modules/Cart/Service.php:431
+#: modules/Cart/Service.php:425
 msgid "You have already used this promo code. Please remove promo code and checkout again."
 msgstr "Kamu telah menggunakan kode promo tersebut. Silahkan hapus kode dan checkout lagi."
 
-#: modules/Cart/Service.php:483
+#: modules/Cart/Service.php:477
 msgid "Can not checkout empty cart."
 msgstr "Tidak bisa ceeckout saat keranjang kosong."
 
-#: modules/Cart/Service.php:495
+#: modules/Cart/Service.php:489
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
 msgstr "Mata uang yang dipilih :dipilih tidak cocok dengan mata uang profil Anda :kode. Harap ubah mata uang keranjang untuk melanjutkan."
 
-#: modules/Cart/Service.php:579
+#: modules/Cart/Service.php:573
 msgid "Discount: :product"
 msgstr "Diskon :product"
 
-#: modules/Cart/Service.php:591
+#: modules/Cart/Service.php:585
 msgid ":product setup"
 msgstr ":product setup"
 
-#: modules/Cart/Service.php:724
-msgid ":product_title"
-msgstr ":product_title"
-
-#: modules/Client/Api/Admin.php:168
+#: modules/Client/Api/Admin.php:162
 msgid "Email is already registered."
 msgstr "Email telah terdaftar."
 
-#: modules/Client/Api/Admin.php:262 modules/Profile/Service.php:132
+#: modules/Client/Api/Admin.php:256 modules/Profile/Service.php:125
 msgid "Can not change email. It is already registered."
 msgstr "Tidak bisa mengubah email. Itu sudah terdaftar."
 
-#: modules/Client/Api/Admin.php:347 modules/Staff/Api/Admin.php:139
-#: modules/Staff/Api/Guest.php:117
+#: modules/Client/Api/Admin.php:341 modules/Staff/Api/Admin.php:133
+#: modules/Staff/Api/Guest.php:111
 msgid "Passwords do not match"
 msgstr "Kata sandi tidak cocok"
 
-#: modules/Client/Api/Admin.php:512
+#: modules/Client/Api/Admin.php:506
 msgid "Event not found"
 msgstr "Acara/Kegiatan tidak ditemukan"
 
-#: modules/Client/Api/Guest.php:69
+#: modules/Client/Api/Guest.php:63
 msgid "New registrations are temporary disabled"
 msgstr "Pendaftaran baru dinonaktifkan sementara"
 
-#: modules/Client/Api/Guest.php:81
+#: modules/Client/Api/Guest.php:75
 msgid "Passwords do not match."
 msgstr "Sandi tidak cocok."
 
-#: modules/Client/Api/Guest.php:94
+#: modules/Client/Api/Guest.php:88
 msgid "Email is already registered. You may want to login instead of registering."
 msgstr "Email telah terdaftar. Anda dapat masuk dengan akun email anda."
 
-#: modules/Client/Api/Guest.php:100
+#: modules/Client/Api/Guest.php:94
 msgid "Account has been created. Please check your mailbox and confirm email address."
 msgstr "Akun telah dibuat. Silakan periksa kotak surat Anda dan konfirmasikan alamat email."
 
-#: modules/Client/Api/Guest.php:144
+#: modules/Client/Api/Guest.php:136
 msgid "Please check your login details."
 msgstr ""
 
-#: modules/Client/Api/Guest.php:185 modules/Staff/Api/Guest.php:160
+#: modules/Client/Api/Guest.php:177 modules/Staff/Api/Guest.php:154
 msgid "Email not found in our database"
 msgstr "Email tidak ditemukan didatabase kami"
 
-#: modules/Client/Api/Guest.php:230 modules/Staff/Api/Guest.php:122
-#: modules/Staff/Api/Guest.php:126 modules/Staff/Controller/Admin.php:128
-#: modules/Staff/Controller/Admin.php:131
+#: modules/Client/Api/Guest.php:222 modules/Staff/Api/Guest.php:116
+#: modules/Staff/Api/Guest.php:120 modules/Staff/Controller/Admin.php:122
+#: modules/Staff/Controller/Admin.php:125
 msgid "The link have expired or you have already confirmed password reset."
 msgstr "Tautan telah kedaluwarsa atau Anda telah mengonfirmasi pengaturan ulang kata sandi."
 
-#: modules/Client/Controller/Admin.php:39
+#: modules/Client/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_index.html.twig:7
 #: modules/Client/html_admin/mod_client_index.html.twig:175
 #: modules/Client/html_admin/mod_client_manage.html.twig:17
@@ -1069,311 +1078,311 @@ msgstr "Tautan telah kedaluwarsa atau Anda telah mengonfirmasi pengaturan ulang 
 msgid "Clients"
 msgstr "Klien"
 
-#: modules/Client/Controller/Admin.php:47
-#: modules/Extension/Controller/Admin.php:46
-#: modules/Invoice/Controller/Admin.php:47 modules/Order/Controller/Admin.php:48
+#: modules/Client/Controller/Admin.php:41
+#: modules/Extension/Controller/Admin.php:40
+#: modules/Invoice/Controller/Admin.php:41 modules/Order/Controller/Admin.php:42
 msgid "Overview"
 msgstr "Ringkasan"
 
-#: modules/Client/Controller/Admin.php:54 modules/Invoice/Controller/Admin.php:54
-#: modules/Order/Controller/Admin.php:55
+#: modules/Client/Controller/Admin.php:48 modules/Invoice/Controller/Admin.php:48
+#: modules/Order/Controller/Admin.php:49
 msgid "Advanced search"
 msgstr "Pencarian Lanjutan"
 
-#: modules/Client/Controller/Admin.php:62
+#: modules/Client/Controller/Admin.php:56
 msgid "Client login history"
 msgstr "Histori login Klien"
 
-#: modules/Client/Controller/Client.php:54
+#: modules/Client/Controller/Client.php:48
 msgid "Email address was confirmed"
 msgstr "Alamat email telah dikonfirmasi"
 
-#: modules/Client/Service.php:43
+#: modules/Client/Service.php:34
 msgid "Invalid email confirmation link"
 msgstr "Tautan konfirmasi email tidak valid"
 
-#: modules/Client/Service.php:78
+#: modules/Client/Service.php:69
 msgid "The password you chose when creating your account."
 msgstr "Kata sandi yang Anda pilih saat membuat akun."
 
-#: modules/Client/Service.php:228
+#: modules/Client/Service.php:219
 msgid "Currency can not be changed. Client already have invoices issued."
 msgstr "Mata uang tidak dapat diubah. Klien sudah memiliki invoice yang diterbitkan."
 
-#: modules/Client/Service.php:233
+#: modules/Client/Service.php:224
 msgid "Currency can not be changed. Client already have orders."
 msgstr "Mata uang tidak dapat diubah. Klien sudah memiliki pesanan."
 
-#: modules/Client/Service.php:242
+#: modules/Client/Service.php:233
 msgid "Define clients currency before adding funds."
 msgstr "Tentukan mata uang klien sebelum menambahkan dana."
 
-#: modules/Client/Service.php:246 modules/Client/ServiceBalance.php:135
+#: modules/Client/Service.php:237 modules/Client/ServiceBalance.php:126
 msgid "Funds amount is not valid"
 msgstr "Jumlah dana tidak valid"
 
-#: modules/Client/Service.php:250 modules/Client/ServiceBalance.php:139
+#: modules/Client/Service.php:241 modules/Client/ServiceBalance.php:130
 msgid "Funds description is not valid"
 msgstr "Deskripsi dana tidak valid"
 
-#: modules/Client/Service.php:417
+#: modules/Client/Service.php:408
 msgid "Client ID or email is required"
 msgstr "ID klien atau email diperlukan"
 
-#: modules/Client/Service.php:431
+#: modules/Client/Service.php:422
 msgid "Client not found"
 msgstr "Klien tidak ada"
 
-#: modules/Client/Service.php:474
+#: modules/Client/Service.php:465
 msgid "Can not remove group with clients"
 msgstr "Tidak dapat menghapus grup dengan klien"
 
-#: modules/Client/Service.php:611
+#: modules/Client/Service.php:602
 msgid "Please check your mailbox and confirm email address."
 msgstr "Silakan periksa kotak surat Anda dan konfirmasikan alamat email."
 
-#: modules/Client/Service.php:614
+#: modules/Client/Service.php:605
 msgid "Confirmation email was sent to your email address. Please click on link in it in order to verify your email."
 msgstr "Email konfirmasi telah dikirim ke alamat email Anda. Silakan klik tautan di dalamnya untuk memverifikasi email Anda."
 
-#: modules/Client/Service.php:647 modules/Profile/Service.php:123
+#: modules/Client/Service.php:638 modules/Profile/Service.php:117
 msgid "Email can not be changed"
 msgstr "Key: Email tidak dapat diganti"
 
-#: modules/Client/Service.php:660 modules/Client/Service.php:675
+#: modules/Client/Service.php:651 modules/Client/Service.php:666
 msgid "Field :field cannot be empty"
 msgstr ""
 
-#: modules/Cookieconsent/Controller/Admin.php:39
+#: modules/Cookieconsent/Controller/Admin.php:33
 msgid "Cookie consent"
 msgstr ""
 
-#: modules/Currency/Api/Admin.php:117
+#: modules/Currency/Api/Admin.php:111
 msgid "Currency already registered"
 msgstr "Key: Mata uang sudah terdaftar"
 
-#: modules/Currency/Api/Admin.php:121
+#: modules/Currency/Api/Admin.php:115
 msgid "Currency code is not valid"
 msgstr "Key: Kode mata uang tidak valid"
 
-#: modules/Currency/Service.php:64
+#: modules/Currency/Service.php:58
 msgid "Currency conversion rate can not be zero"
 msgstr ""
 
-#: modules/Currency/Service.php:130
+#: modules/Currency/Service.php:124
 msgid "Currency code not provided"
 msgstr ""
 
-#: modules/Currency/Service.php:328
+#: modules/Currency/Service.php:322
 msgid "Can not remove default currency"
 msgstr ""
 
-#: modules/Currency/Service.php:332
+#: modules/Currency/Service.php:326
 msgid "Currency code not found"
 msgstr ""
 
-#: modules/Currency/Service.php:487
+#: modules/Currency/Service.php:481
 msgid "Currency rate is not valid"
 msgstr "Kurs mata uang tidak valid"
 
-#: modules/Currency/Service.php:551
+#: modules/Currency/Service.php:545
 msgid "Failed to get currency rates for :currency from the European Central Bank API"
 msgstr ""
 
-#: modules/Currency/Service.php:567
+#: modules/Currency/Service.php:561
 msgid "<b>Currencylayer threw an error:</b><br />:errorInfo"
 msgstr ""
 
-#: modules/Custompages/Controller/Admin.php:39
+#: modules/Custompages/Controller/Admin.php:33
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:11
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:19
 msgid "Custom Pages"
 msgstr "Laman kustom"
 
-#: modules/Email/Api/Admin.php:137 modules/Email/Api/Admin.php:163
-#: modules/Email/Api/Client.php:75 modules/Email/Api/Client.php:100
-#: modules/Email/Api/Client.php:125 modules/Email/Service.php:462
+#: modules/Email/Api/Admin.php:131 modules/Email/Api/Admin.php:157
+#: modules/Email/Api/Client.php:69 modules/Email/Api/Client.php:94
+#: modules/Email/Api/Client.php:119 modules/Email/Service.php:456
 msgid "Email not found"
 msgstr "Email tidak ditemukan"
 
-#: modules/Email/Api/Admin.php:241
+#: modules/Email/Api/Admin.php:235
 msgid "Email template not found"
 msgstr "Template email tidak ditemukan"
 
-#: modules/Email/Api/Admin.php:426
+#: modules/Email/Api/Admin.php:420
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr ""
 
-#: modules/Email/Controller/Admin.php:40
+#: modules/Email/Controller/Admin.php:34
 #: modules/Email/html_admin/mod_email_details.html.twig:17
 #: modules/Email/html_admin/mod_email_history.html.twig:5
 #: modules/Email/html_admin/mod_email_history.html.twig:21
 msgid "Email history"
 msgstr "Histori email"
 
-#: modules/Email/Service.php:139
+#: modules/Email/Service.php:133
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr ""
 
-#: modules/Email/Service.php:196
+#: modules/Email/Service.php:190
 msgid "From email address can not be empty"
 msgstr "Alamat email tidak boleh kosong"
 
-#: modules/Email/Service.php:447
+#: modules/Email/Service.php:441
 msgid "Email template :code was not found"
 msgstr ""
 
-#: modules/Embed/Controller/Admin.php:39
+#: modules/Embed/Controller/Admin.php:33
 msgid "Embed and integrate"
 msgstr ""
 
-#: modules/Extension/Api/Admin.php:271
+#: modules/Extension/Api/Admin.php:265
 msgid "Extension not found"
 msgstr ""
 
-#: modules/Extension/Api/Guest.php:69
+#: modules/Extension/Api/Guest.php:63
 msgid "Parameter ext is missing"
 msgstr ""
 
-#: modules/Extension/Controller/Admin.php:39
+#: modules/Extension/Controller/Admin.php:33
 #: modules/Extension/html_admin/mod_extension_index.html.twig:5
 #: modules/Extension/html_admin/mod_extension_index.html.twig:13
 msgid "Extensions"
 msgstr "Ekstensi"
 
-#: modules/Extension/Controller/Admin.php:53
+#: modules/Extension/Controller/Admin.php:47
 msgid "Languages"
 msgstr "Bahasa"
 
-#: modules/Extension/Service.php:324
+#: modules/Extension/Service.php:316
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr ""
 
-#: modules/Extension/Service.php:371
+#: modules/Extension/Service.php:363
 msgid "FOSSBilling core modules can not be managed"
 msgstr ""
 
-#: modules/Extension/Service.php:436
+#: modules/Extension/Service.php:428
 msgid "Failed to download the extension with error :code"
 msgstr ""
 
-#: modules/Extension/Service.php:471
+#: modules/Extension/Service.php:463
 msgid "Extension :id seems to be already installed."
 msgstr ""
 
-#: modules/Extension/Service.php:474
+#: modules/Extension/Service.php:466
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr ""
 
-#: modules/Extension/Service.php:477
+#: modules/Extension/Service.php:469
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr ""
 
-#: modules/Extension/Service.php:508
+#: modules/Extension/Service.php:500
 msgid "FOSSBilling core modules can not be installed or removed"
 msgstr "FOSSBilling modul core tidak dapat diinstal atau dihapus"
 
-#: modules/Extension/Service.php:513
+#: modules/Extension/Service.php:505
 msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr ""
 
-#: modules/Formbuilder/Api/Admin.php:44
+#: modules/Formbuilder/Api/Admin.php:38
 msgid "Form style was not found in predefined list"
 msgstr ""
 
-#: modules/Formbuilder/Api/Admin.php:85
+#: modules/Formbuilder/Api/Admin.php:79
 msgid "Form field type is not valid"
 msgstr "Key: tipe field tidak valid"
 
-#: modules/Formbuilder/Api/Admin.php:88 modules/Formbuilder/Api/Admin.php:261
+#: modules/Formbuilder/Api/Admin.php:82 modules/Formbuilder/Api/Admin.php:255
 msgid "This input type must have unique values"
 msgstr "Input data unik"
 
-#: modules/Formbuilder/Api/Admin.php:91 modules/Formbuilder/Api/Admin.php:294
-#: modules/Formbuilder/Api/Admin.php:317
+#: modules/Formbuilder/Api/Admin.php:85 modules/Formbuilder/Api/Admin.php:288
+#: modules/Formbuilder/Api/Admin.php:311
 msgid "Form id was not passed"
 msgstr "Formulir id tidak diteruskan"
 
-#: modules/Formbuilder/Api/Admin.php:297 modules/Formbuilder/Api/Admin.php:320
+#: modules/Formbuilder/Api/Admin.php:291 modules/Formbuilder/Api/Admin.php:314
 msgid "Form name was not passed"
 msgstr ""
 
-#: modules/Formbuilder/Api/Admin.php:324
+#: modules/Formbuilder/Api/Admin.php:318
 msgid "Form type was not passed"
 msgstr ""
 
-#: modules/Formbuilder/Api/Admin.php:328
+#: modules/Formbuilder/Api/Admin.php:322
 msgid "Field type not supported"
 msgstr ""
 
-#: modules/Formbuilder/Service.php:151
+#: modules/Formbuilder/Service.php:139
 msgid "Field name can not start with number."
 msgstr ""
 
-#: modules/Formbuilder/Service.php:155
+#: modules/Formbuilder/Service.php:143
 msgid "Field name can not be empty. Please make sure it is not empty and does not contain special characters."
 msgstr ""
 
-#: modules/Formbuilder/Service.php:172
+#: modules/Formbuilder/Service.php:160
 msgid "Unfortunately field with this name exists in this form already. Form must have different field names."
 msgstr ""
 
-#: modules/Formbuilder/Service.php:183
+#: modules/Formbuilder/Service.php:171
 msgid " values must be unique"
 msgstr ""
 
-#: modules/Formbuilder/Service.php:186
+#: modules/Formbuilder/Service.php:174
 msgid " labels must be unique"
 msgstr ""
 
-#: modules/Formbuilder/Service.php:194
+#: modules/Formbuilder/Service.php:182
 msgid "Textarea size options must be integer values"
 msgstr ""
 
-#: modules/Invoice/Api/Admin.php:248 modules/Invoice/Api/Client.php:126
+#: modules/Invoice/Api/Admin.php:242 modules/Invoice/Api/Client.php:120
 msgid "Order :id is free. No need to generate invoice."
 msgstr ""
 
-#: modules/Invoice/Api/Admin.php:774
+#: modules/Invoice/Api/Admin.php:768
 msgid "Client currency must match subscription currency. Check if clients currency is defined."
 msgstr ""
 
-#: modules/Invoice/Api/Admin.php:838
+#: modules/Invoice/Api/Admin.php:832
 msgid "Subscription not found"
 msgstr ""
 
-#: modules/Invoice/Api/Client.php:63 modules/Invoice/Api/Client.php:89
-#: modules/Invoice/Api/Client.php:182 modules/Invoice/Api/Guest.php:43
-#: modules/Invoice/Api/Guest.php:69
+#: modules/Invoice/Api/Client.php:57 modules/Invoice/Api/Client.php:83
+#: modules/Invoice/Api/Client.php:176 modules/Invoice/Api/Guest.php:37
+#: modules/Invoice/Api/Guest.php:63
 msgid "Invoice was not found"
 msgstr ""
 
-#: modules/Invoice/Api/Client.php:92 modules/Invoice/Api/Guest.php:72
+#: modules/Invoice/Api/Client.php:86 modules/Invoice/Api/Guest.php:66
 msgid "Paid Invoice can not be modified"
 msgstr ""
 
-#: modules/Invoice/Api/Client.php:123 modules/Order/Api/Client.php:137
-#: modules/Servicedomain/Api/Client.php:145
-#: modules/Servicedownloadable/Api/Client.php:40
-#: modules/Servicehosting/Api/Client.php:89
-#: modules/Servicelicense/Api/Client.php:53
+#: modules/Invoice/Api/Client.php:117 modules/Order/Api/Client.php:131
+#: modules/Servicedomain/Api/Client.php:139
+#: modules/Servicedownloadable/Api/Client.php:34
+#: modules/Servicehosting/Api/Client.php:83
+#: modules/Servicelicense/Api/Client.php:47
 msgid "Order not found"
 msgstr ""
 
-#: modules/Invoice/Api/Client.php:153
+#: modules/Invoice/Api/Client.php:147
 msgid "You need to enter numeric value"
 msgstr ""
 
-#: modules/Invoice/Api/Guest.php:116
+#: modules/Invoice/Api/Guest.php:110
 msgid "Invoice hash not passed. Missing param hash"
 msgstr ""
 
-#: modules/Invoice/Api/Guest.php:120
+#: modules/Invoice/Api/Guest.php:114
 msgid "Payment method not found. Missing param gateway_id"
 msgstr ""
 
-#: modules/Invoice/Controller/Admin.php:39
+#: modules/Invoice/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_manage.html.twig:35
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
 #: modules/Index/html_client/mod_index_dashboard.html.twig:106
@@ -1391,205 +1400,205 @@ msgstr ""
 msgid "Invoices"
 msgstr "Tagihan"
 
-#: modules/Invoice/Controller/Admin.php:61
+#: modules/Invoice/Controller/Admin.php:55
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:12
 msgid "Subscriptions"
 msgstr ""
 
-#: modules/Invoice/Controller/Admin.php:68
+#: modules/Invoice/Controller/Admin.php:62
 msgid "Transactions overview"
 msgstr "Lihat Transaksi"
 
-#: modules/Invoice/Controller/Admin.php:75
+#: modules/Invoice/Controller/Admin.php:69
 msgid "Transactions search"
 msgstr "Cari Transaksi"
 
-#: modules/Invoice/Controller/Admin.php:82
+#: modules/Invoice/Controller/Admin.php:76
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:14
 msgid "Tax rules"
 msgstr ""
 
-#: modules/Invoice/Controller/Admin.php:89
+#: modules/Invoice/Controller/Admin.php:83
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:7
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:12
 msgid "Payment gateways"
 msgstr ""
 
-#: modules/Invoice/Service.php:638
+#: modules/Invoice/Service.php:626
 msgid "Can not refund invoice with negative amount"
 msgstr ""
 
-#: modules/Invoice/Service.php:852
+#: modules/Invoice/Service.php:840
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr ""
 
-#: modules/Invoice/Service.php:919
+#: modules/Invoice/Service.php:907
 msgid "Invoices are not generated for 0 amount orders"
 msgstr ""
 
-#: modules/Invoice/Service.php:1079
+#: modules/Invoice/Service.php:1067
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr ""
 
-#: modules/Invoice/Service.php:1088
+#: modules/Invoice/Service.php:1076
 msgid "Amount must be at least :min_amount"
 msgstr "Harga minimal :min_amount"
 
-#: modules/Invoice/Service.php:1092
+#: modules/Invoice/Service.php:1080
 msgid "Amount cannot exceed :max_amount"
 msgstr ""
 
-#: modules/Invoice/Service.php:1118 modules/Invoice/Service.php:1182
+#: modules/Invoice/Service.php:1106 modules/Invoice/Service.php:1170
 msgid "Invoice not found"
 msgstr ""
 
-#: modules/Invoice/Service.php:1123
+#: modules/Invoice/Service.php:1111
 msgid "Payment method not found"
 msgstr ""
 
-#: modules/Invoice/Service.php:1127
+#: modules/Invoice/Service.php:1115
 msgid "Payment method not enabled"
 msgstr ""
 
-#: modules/Invoice/ServiceInvoiceItem.php:73
+#: modules/Invoice/ServiceInvoiceItem.php:61
 msgid "Could not activate proforma item. Order :id not found"
 msgstr ""
 
-#: modules/Invoice/ServiceInvoiceItem.php:138
+#: modules/Invoice/ServiceInvoiceItem.php:126
 msgid "Invoice item title is missing"
 msgstr ""
 
-#: modules/Invoice/ServiceInvoiceItem.php:228
+#: modules/Invoice/ServiceInvoiceItem.php:216
 msgid "Add funds to account"
 msgstr ""
 
-#: modules/Invoice/ServiceInvoiceItem.php:346
+#: modules/Invoice/ServiceInvoiceItem.php:334
 msgid "Promotional Code: :code - :value Discount"
 msgstr ""
 
-#: modules/Invoice/ServiceInvoiceItem.php:349
+#: modules/Invoice/ServiceInvoiceItem.php:337
 msgid "Promotional Code: :code - :value%"
 msgstr ""
 
-#: modules/Invoice/ServicePayGateway.php:110
+#: modules/Invoice/ServicePayGateway.php:98
 msgid "Payment gateway is not available for installation."
 msgstr ""
 
-#: modules/Invoice/ServicePayGateway.php:263
-#: modules/Invoice/ServicePayGateway.php:292
+#: modules/Invoice/ServicePayGateway.php:251
+#: modules/Invoice/ServicePayGateway.php:280
 msgid "Payment gateway :adapter was not found"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:93
+#: modules/Invoice/ServiceTransaction.php:81
 msgid "Transaction invoice id is missing"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:97
+#: modules/Invoice/ServiceTransaction.php:85
 msgid "Payment gateway id is missing"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:373
+#: modules/Invoice/ServiceTransaction.php:361
 msgid "Transaction :id not found."
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:377
-#: modules/Invoice/ServiceTransaction.php:497
+#: modules/Invoice/ServiceTransaction.php:365
+#: modules/Invoice/ServiceTransaction.php:485
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:382
-#: modules/Invoice/ServiceTransaction.php:502
+#: modules/Invoice/ServiceTransaction.php:370
+#: modules/Invoice/ServiceTransaction.php:490
 msgid "Can not handle transaction received from unknown payment gateway: :id"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:388
-#: modules/Invoice/ServiceTransaction.php:531
+#: modules/Invoice/ServiceTransaction.php:376
+#: modules/Invoice/ServiceTransaction.php:519
 msgid "Payment adapter :adapter does not support action :action"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:422
+#: modules/Invoice/ServiceTransaction.php:410
 msgid "Unknown transaction #:id type: :type"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:511
-#: modules/Invoice/ServiceTransaction.php:676
+#: modules/Invoice/ServiceTransaction.php:499
+#: modules/Invoice/ServiceTransaction.php:664
 msgid "Transaction :id is not associated with an invoice."
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:516
+#: modules/Invoice/ServiceTransaction.php:504
 msgid "Invoice #:id not found"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:525
+#: modules/Invoice/ServiceTransaction.php:513
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:536
+#: modules/Invoice/ServiceTransaction.php:524
 msgid "Payment gateway :id method getTransaction should return Payment_Transaction object"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:624
+#: modules/Invoice/ServiceTransaction.php:612
 msgid "Can not create subscription. Subscription id from payment gateway was not received"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:659
+#: modules/Invoice/ServiceTransaction.php:647
 msgid "Subscription #:id was not found. Could not unsubscribe"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:672
+#: modules/Invoice/ServiceTransaction.php:660
 msgid "Only approved transaction can be processed"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:683
+#: modules/Invoice/ServiceTransaction.php:671
 msgid "Transaction currency :code do not match required currency :required"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:688
+#: modules/Invoice/ServiceTransaction.php:676
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:698
+#: modules/Invoice/ServiceTransaction.php:686
 msgid "Client currency do not match invoice currency"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:703
+#: modules/Invoice/ServiceTransaction.php:691
 msgid "Can not add negative amount to client balance for debit transaction"
 msgstr "Tidak dapat menambahkan jumlah negatif ke saldo klien untuk transaksi debit"
 
-#: modules/Kb/Api/Admin.php:63 modules/Kb/Api/Admin.php:144
-#: modules/Kb/Service.php:153
+#: modules/Kb/Api/Admin.php:57 modules/Kb/Api/Admin.php:138
+#: modules/Kb/Service.php:147
 msgid "Article not found"
 msgstr "Artikel tidak ada"
 
-#: modules/Kb/Api/Admin.php:188 modules/Kb/Api/Admin.php:237
+#: modules/Kb/Api/Admin.php:182 modules/Kb/Api/Admin.php:231
 msgid "Article Category not found"
 msgstr "Kategori Artikel tidak ada"
 
-#: modules/Kb/Api/Admin.php:264
+#: modules/Kb/Api/Admin.php:258
 msgid "Category not found"
 msgstr "Kategori tidak ada"
 
-#: modules/Kb/Api/Guest.php:62 modules/News/Api/Admin.php:54
-#: modules/News/Api/Guest.php:56
+#: modules/Kb/Api/Guest.php:56 modules/News/Api/Admin.php:48
+#: modules/News/Api/Guest.php:50
 msgid "ID or slug is missing"
 msgstr "ID atau slug hilang"
 
-#: modules/Kb/Api/Guest.php:76
+#: modules/Kb/Api/Guest.php:70
 msgid "Article item not found"
 msgstr "Item artikel tidak ada"
 
-#: modules/Kb/Api/Guest.php:127
+#: modules/Kb/Api/Guest.php:121
 msgid "Category ID or slug is missing"
 msgstr "ID kategori atau slug hilang"
 
-#: modules/Kb/Api/Guest.php:141
+#: modules/Kb/Api/Guest.php:135
 msgid "Knowledge base category not found"
 msgstr "Kategori Basis Pengetahuan tidak ada"
 
-#: modules/Kb/Controller/Admin.php:39 modules/Kb/Controller/Admin.php:48
+#: modules/Kb/Controller/Admin.php:33 modules/Kb/Controller/Admin.php:42
 #: modules/Kb/html_admin/mod_kb_article.html.twig:19
 #: modules/Kb/html_admin/mod_kb_category.html.twig:17
 #: modules/Kb/html_admin/mod_kb_index.html.twig:5
@@ -1604,65 +1613,65 @@ msgstr "Kategori Basis Pengetahuan tidak ada"
 msgid "Knowledge base"
 msgstr ""
 
-#: modules/Kb/Service.php:250
+#: modules/Kb/Service.php:244
 msgid "Can not remove category which has articles"
 msgstr "Tidak dapat menghapus kategori yang terdapat artikel"
 
-#: modules/Massmailer/Api/Admin.php:82
+#: modules/Massmailer/Api/Admin.php:76
 msgid "Message from name can not be empty"
 msgstr ""
 
-#: modules/Massmailer/Api/Admin.php:166 modules/Massmailer/Api/Admin.php:188
+#: modules/Massmailer/Api/Admin.php:161 modules/Massmailer/Api/Admin.php:183
 msgid "Add some content before sending message"
 msgstr ""
 
-#: modules/Massmailer/Controller/Admin.php:40
+#: modules/Massmailer/Controller/Admin.php:34
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:5
 msgid "Mass mailer"
 msgstr ""
 
-#: modules/Massmailer/Service.php:165
+#: modules/Massmailer/Service.php:159
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr ""
 
-#: modules/News/Api/Admin.php:70 modules/News/Api/Guest.php:69
+#: modules/News/Api/Admin.php:64 modules/News/Api/Guest.php:63
 msgid "News item not found"
 msgstr ""
 
-#: modules/News/Controller/Admin.php:40
+#: modules/News/Controller/Admin.php:34
 #: themes/huraga/html/layout_default.html.twig:261
 msgid "Announcements"
 msgstr ""
 
-#: modules/Notification/Api/Admin.php:61 modules/Notification/Api/Admin.php:103
+#: modules/Notification/Api/Admin.php:55 modules/Notification/Api/Admin.php:97
 msgid "Notification message was not found"
 msgstr ""
 
-#: modules/Order/Api/Admin.php:187
+#: modules/Order/Api/Admin.php:181
 msgid "Only suspended orders can be unsuspended"
 msgstr ""
 
-#: modules/Order/Api/Admin.php:223
+#: modules/Order/Api/Admin.php:217
 msgid "Only canceled orders can be uncanceled"
 msgstr ""
 
-#: modules/Order/Api/Admin.php:287
+#: modules/Order/Api/Admin.php:281
 msgid "Order config not passed"
 msgstr ""
 
-#: modules/Order/Api/Admin.php:385
+#: modules/Order/Api/Admin.php:379
 msgid "Automatically issue renewal invoices"
 msgstr ""
 
-#: modules/Order/Api/Admin.php:386
+#: modules/Order/Api/Admin.php:380
 msgid "Issue invoices manually"
 msgstr ""
 
-#: modules/Order/Api/Client.php:122
+#: modules/Order/Api/Client.php:116
 msgid "Only pending and failed setup orders can be deleted."
 msgstr ""
 
-#: modules/Order/Controller/Admin.php:39
+#: modules/Order/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_manage.html.twig:32
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:35
@@ -1680,71 +1689,71 @@ msgstr ""
 msgid "Orders"
 msgstr "Pesanan"
 
-#: modules/Order/Service.php:504
+#: modules/Order/Service.php:498
 msgid "Currency could not be determined for order"
 msgstr ""
 
-#: modules/Order/Service.php:520
+#: modules/Order/Service.php:514
 msgid "Product :id is out of stock."
 msgstr ""
 
-#: modules/Order/Service.php:526
+#: modules/Order/Service.php:520
 msgid "Group ID parameter is missing for addon product order"
 msgstr ""
 
-#: modules/Order/Service.php:532
+#: modules/Order/Service.php:526
 msgid "Parent order :group_id was not found"
 msgstr ""
 
-#: modules/Order/Service.php:682
+#: modules/Order/Service.php:676
 msgid "Only pending setup or failed orders can be activated"
 msgstr ""
 
-#: modules/Order/Service.php:710
+#: modules/Order/Service.php:704
 msgid "Error creating "
 msgstr ""
 
-#: modules/Order/Service.php:779
+#: modules/Order/Service.php:773
 msgid "Service "
 msgstr "Layanan "
 
-#: modules/Order/Service.php:984
+#: modules/Order/Service.php:978
 msgid "Only active orders can be suspended"
 msgstr ""
 
-#: modules/Order/Service.php:1036
+#: modules/Order/Service.php:1030
 msgid "Can not cancel "
 msgstr ""
 
-#: modules/Product/Api/Admin.php:107
+#: modules/Product/Api/Admin.php:101
 msgid "You have already created domain product."
 msgstr ""
 
-#: modules/Product/Api/Admin.php:113
+#: modules/Product/Api/Admin.php:107
 msgid "Product type :type is not registered"
 msgstr ""
 
-#: modules/Product/Api/Admin.php:166
+#: modules/Product/Api/Admin.php:160
 msgid "priority params is missing"
 msgstr ""
 
-#: modules/Product/Api/Admin.php:247 modules/Product/Api/Admin.php:288
+#: modules/Product/Api/Admin.php:241 modules/Product/Api/Admin.php:282
 msgid "Addon not found"
 msgstr ""
 
-#: modules/Product/Api/Guest.php:76
+#: modules/Product/Api/Guest.php:70
 msgid "Product ID or slug is missing"
 msgstr ""
 
-#: modules/Product/Controller/Admin.php:48
+#: modules/Product/Controller/Admin.php:42
 msgid "Products & Services"
 msgstr ""
 
-#: modules/Product/Controller/Admin.php:55
+#: modules/Product/Controller/Admin.php:49
 msgid "Product Addons"
 msgstr ""
 
-#: modules/Product/Controller/Admin.php:62
+#: modules/Product/Controller/Admin.php:56
 #: modules/Product/html_admin/mod_product_promo.html.twig:3
 #: modules/Product/html_admin/mod_product_promo.html.twig:20
 #: modules/Product/html_admin/mod_product_promos.html.twig:5
@@ -1752,236 +1761,236 @@ msgstr ""
 msgid "Product Promotions"
 msgstr ""
 
-#: modules/Product/Service.php:218
+#: modules/Product/Service.php:206
 msgid "Pricing type is required"
 msgstr ""
 
-#: modules/Product/Service.php:429
+#: modules/Product/Service.php:417
 msgid "Can not remove product which has active orders."
 msgstr ""
 
-#: modules/Product/Service.php:488
+#: modules/Product/Service.php:476
 msgid "Can not remove product category with products"
 msgstr ""
 
-#: modules/Product/Service.php:884
+#: modules/Product/Service.php:872
 msgid "This promotion code already exists."
 msgstr ""
 
-#: modules/Profile/Service.php:144
+#: modules/Profile/Service.php:137
 msgid "Invalid birth date value"
 msgstr "Nilai tanggal lahir tidak valid"
 
-#: modules/Queue/Api/Admin.php:107
+#: modules/Queue/Api/Admin.php:101
 msgid "Message handler function :method does not exists"
 msgstr ""
 
-#: modules/Redirect/Api/Admin.php:146
+#: modules/Redirect/Api/Admin.php:140
 msgid "Redirect not found"
 msgstr ""
 
-#: modules/Servicecustom/Api/Admin.php:32 modules/Servicecustom/Api/Admin.php:59
-#: modules/Servicecustom/Api/Client.php:41
-#: modules/Servicedomain/Api/Client.php:139
-#: modules/Servicedownloadable/Api/Client.php:35
-#: modules/Servicehosting/Api/Client.php:84
+#: modules/Servicecustom/Api/Admin.php:26 modules/Servicecustom/Api/Admin.php:53
+#: modules/Servicecustom/Api/Client.php:35
+#: modules/Servicedomain/Api/Client.php:133
+#: modules/Servicedownloadable/Api/Client.php:29
+#: modules/Servicehosting/Api/Client.php:78
 msgid "Order id is required"
 msgstr ""
 
-#: modules/Servicecustom/Api/Admin.php:53 modules/Servicecustom/Api/Client.php:35
+#: modules/Servicecustom/Api/Admin.php:47 modules/Servicecustom/Api/Client.php:29
 msgid "API call is missing arguments"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:42
+#: modules/Servicecustom/Service.php:36
 msgid "You must fill in all required fields. "
 msgstr ""
 
-#: modules/Servicecustom/Service.php:49
+#: modules/Servicecustom/Service.php:43
 msgid "Field "
 msgstr ""
 
-#: modules/Servicecustom/Service.php:83 modules/Servicedomain/Service.php:221
-#: modules/Servicelicense/Service.php:123
+#: modules/Servicecustom/Service.php:77 modules/Servicedomain/Service.php:215
+#: modules/Servicelicense/Service.php:111
 msgid "Could not activate order. Service was not created"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:223
+#: modules/Servicecustom/Service.php:217
 msgid "Custom plugin method :method is forbidden"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:232
+#: modules/Servicecustom/Service.php:226
 msgid "Config must be an array"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:252 modules/Servicedomain/Api/Client.php:150
-#: modules/Servicedownloadable/Api/Admin.php:75
-#: modules/Servicedownloadable/Api/Client.php:46
-#: modules/Servicehosting/Api/Admin.php:450
-#: modules/Servicehosting/Api/Client.php:95
-#: modules/Servicelicense/Api/Admin.php:95
-#: modules/Servicelicense/Api/Client.php:59
+#: modules/Servicecustom/Service.php:246 modules/Servicedomain/Api/Client.php:144
+#: modules/Servicedownloadable/Api/Admin.php:69
+#: modules/Servicedownloadable/Api/Client.php:40
+#: modules/Servicehosting/Api/Admin.php:444
+#: modules/Servicehosting/Api/Client.php:89
+#: modules/Servicelicense/Api/Admin.php:89
+#: modules/Servicelicense/Api/Client.php:53
 msgid "Order is not activated"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:269
+#: modules/Servicecustom/Service.php:263
 msgid "Plugin class file :file was not found"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:283
+#: modules/Servicecustom/Service.php:277
 msgid "Plugin :plugin does not support action :action"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:299 modules/Servicedomain/Service.php:255
-#: modules/Servicedomain/Service.php:294 modules/Servicehosting/Service.php:106
-#: modules/Servicehosting/Service.php:151 modules/Servicehosting/Service.php:169
-#: modules/Servicehosting/Service.php:188 modules/Servicehosting/Service.php:207
+#: modules/Servicecustom/Service.php:293 modules/Servicedomain/Service.php:249
+#: modules/Servicedomain/Service.php:288 modules/Servicehosting/Service.php:94
+#: modules/Servicehosting/Service.php:139 modules/Servicehosting/Service.php:157
+#: modules/Servicehosting/Service.php:176 modules/Servicehosting/Service.php:195
 msgid "Order :id has no active service"
 msgstr ""
 
-#: modules/Servicedomain/Api/Admin.php:194
-#: modules/Servicedomain/Api/Admin.php:244
-#: modules/Servicedomain/Api/Admin.php:304 modules/Servicedomain/Api/Guest.php:75
-#: modules/Servicedomain/Service.php:99 modules/Servicedomain/Service.php:131
+#: modules/Servicedomain/Api/Admin.php:188
+#: modules/Servicedomain/Api/Admin.php:238
+#: modules/Servicedomain/Api/Admin.php:298 modules/Servicedomain/Api/Guest.php:69
+#: modules/Servicedomain/Service.php:93 modules/Servicedomain/Service.php:125
 msgid "TLD not found"
 msgstr ""
 
-#: modules/Servicedomain/Api/Admin.php:219
+#: modules/Servicedomain/Api/Admin.php:213
 msgid "ID not found"
 msgstr ""
 
-#: modules/Servicedomain/Api/Admin.php:275
+#: modules/Servicedomain/Api/Admin.php:269
 msgid "Tld already registered"
 msgstr ""
 
-#: modules/Servicedomain/Api/Admin.php:369
+#: modules/Servicedomain/Api/Admin.php:363
 msgid "Registrar is not available for installation."
 msgstr ""
 
-#: modules/Servicedomain/Api/Admin.php:480
+#: modules/Servicedomain/Api/Admin.php:474
 msgid "Domain order is not activated"
 msgstr ""
 
-#: modules/Servicedomain/Api/Guest.php:101
+#: modules/Servicedomain/Api/Guest.php:95
 msgid "Domain :domain is not valid"
 msgstr ""
 
-#: modules/Servicedomain/Api/Guest.php:106
+#: modules/Servicedomain/Api/Guest.php:100
 msgid "Domain availability could not be determined. TLD is not active."
 msgstr ""
 
-#: modules/Servicedomain/Api/Guest.php:110
+#: modules/Servicedomain/Api/Guest.php:104
 msgid "Domain is not available."
 msgstr ""
 
-#: modules/Servicedomain/Api/Guest.php:135
+#: modules/Servicedomain/Api/Guest.php:129
 msgid "TLD is not active."
 msgstr ""
 
-#: modules/Servicedomain/Api/Guest.php:138
+#: modules/Servicedomain/Api/Guest.php:132
 msgid "Domain can not be transferred."
 msgstr ""
 
-#: modules/Servicedomain/Controller/Admin.php:40
+#: modules/Servicedomain/Controller/Admin.php:34
 msgid "Domain registration"
 msgstr "Registrasi Domain"
 
-#: modules/Servicedomain/Service.php:38
+#: modules/Servicedomain/Service.php:32
 msgid "Domain :domain registration"
 msgstr "Pendaftaran domain :domain"
 
-#: modules/Servicedomain/Service.php:44
+#: modules/Servicedomain/Service.php:38
 msgid "Domain :domain transfer"
 msgstr "Transfer domain :domain"
 
-#: modules/Servicedomain/Service.php:61
+#: modules/Servicedomain/Service.php:55
 msgid "Invalid domain action."
 msgstr "Aksi domain tidak valid."
 
-#: modules/Servicedomain/Service.php:66 modules/Servicedomain/Service.php:83
-#: modules/Servicedomain/Service.php:114
+#: modules/Servicedomain/Service.php:60 modules/Servicedomain/Service.php:77
+#: modules/Servicedomain/Service.php:108
 msgid "Order data must contain :field configuration field"
 msgstr "Data pesanan harus berisi kolom konfigurasi :field"
 
-#: modules/Servicedomain/Service.php:71 modules/Servicedomain/Service.php:88
-#: modules/Servicedomain/Service.php:119 modules/Servicedomain/Service.php:554
+#: modules/Servicedomain/Service.php:65 modules/Servicedomain/Service.php:82
+#: modules/Servicedomain/Service.php:113 modules/Servicedomain/Service.php:548
 msgid "Domain name :domain is not valid"
 msgstr "Nama domain :domain tidak valid"
 
-#: modules/Servicedomain/Service.php:104
+#: modules/Servicedomain/Service.php:98
 msgid ":domain can not be transferred!"
 msgstr ":domain tidak dapat ditransfer!"
 
-#: modules/Servicedomain/Service.php:136
+#: modules/Servicedomain/Service.php:130
 msgid ":tld can be registered for at least :years years"
 msgstr ":tld tidak dapat didaftarkan sampai :years tahun"
 
-#: modules/Servicedomain/Service.php:141
+#: modules/Servicedomain/Service.php:135
 msgid ":domain is already registered!"
 msgstr ":domain sudah terdaftar!"
 
-#: modules/Servicedomain/Service.php:169
+#: modules/Servicedomain/Service.php:163
 msgid "Default domain nameservers are not configured"
 msgstr "Name Server bawaan tidak dikonfigurasi"
 
-#: modules/Servicedomain/Service.php:370
+#: modules/Servicedomain/Service.php:364
 msgid "Nameserver 1 is required"
 msgstr "ns1 dibutuhkan"
 
-#: modules/Servicedomain/Service.php:373
+#: modules/Servicedomain/Service.php:367
 msgid "Nameserver 2 is required"
 msgstr "ns2 dibutuhkan"
 
-#: modules/Servicedomain/Service.php:527 modules/Servicedomain/Service.php:548
+#: modules/Servicedomain/Service.php:521 modules/Servicedomain/Service.php:542
 msgid "Domain name is not valid"
 msgstr "Nama domain tidak valid"
 
-#: modules/Servicedomain/Service.php:531
+#: modules/Servicedomain/Service.php:525
 msgid "Domain can not be transferred"
 msgstr "Domain tidak dapat ditransfer"
 
-#: modules/Servicedomain/Service.php:558
+#: modules/Servicedomain/Service.php:552
 msgid "Domain can not be registered"
 msgstr "Domain tidak dapat didaftarkan"
 
-#: modules/Servicedomain/Service.php:953
+#: modules/Servicedomain/Service.php:947
 msgid "Domain registrar :adapter was not found"
 msgstr "Registrar domain :adapter tidak ada"
 
-#: modules/Servicedomain/Service.php:958
+#: modules/Servicedomain/Service.php:952
 msgid "Registrar :adapter was not found"
 msgstr "Registrar :adapter tidak ada"
 
-#: modules/Servicedomain/Service.php:970
+#: modules/Servicedomain/Service.php:964
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr ""
 
-#: modules/Servicedomain/Service.php:1029
+#: modules/Servicedomain/Service.php:1023
 msgid "Can not remove registrar which has domains"
 msgstr "Tidak dapat menghapus registrar yang memiliki domain"
 
-#: modules/Servicedownloadable/Api/Admin.php:43
+#: modules/Servicedownloadable/Api/Admin.php:37
 msgid "File was not uploaded"
 msgstr "File tidak terunggah"
 
-#: modules/Servicedownloadable/Service.php:180
-#: modules/Servicedownloadable/Service.php:211
+#: modules/Servicedownloadable/Service.php:168
+#: modules/Servicedownloadable/Service.php:199
 msgid "Error uploading file"
 msgstr "Kesalahan Unggah file"
 
-#: modules/Servicedownloadable/Service.php:264
+#: modules/Servicedownloadable/Service.php:252
 msgid "File can not be downloaded at the moment. Please contact support"
 msgstr "File tidak dapat diunduh.\n"
 "Hubungi teknisi"
 
-#: modules/Servicehosting/Api/Admin.php:35
+#: modules/Servicehosting/Api/Admin.php:29
 msgid "plan_id is missing"
 msgstr "plan_id salah"
 
-#: modules/Servicehosting/Api/Guest.php:42
+#: modules/Servicehosting/Api/Guest.php:36
 msgid "Product type is invalid"
 msgstr "Tipe produk tidak valid"
 
-#: modules/Servicehosting/Controller/Admin.php:40
+#: modules/Servicehosting/Controller/Admin.php:34
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:5
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:12
@@ -1989,149 +1998,149 @@ msgstr "Tipe produk tidak valid"
 msgid "Hosting plans and servers"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:46
+#: modules/Servicehosting/Service.php:34
 msgid ":hosting for :domain"
 msgstr ":hosting untuk :domain"
 
-#: modules/Servicehosting/Service.php:58
+#: modules/Servicehosting/Service.php:46
 msgid "Hosting product is not configured completely. Configure server for hosting product."
 msgstr "Produk Hosting tidak diseting dengan benar. \n"
 "Atur server pada produk hosting."
 
-#: modules/Servicehosting/Service.php:61
+#: modules/Servicehosting/Service.php:49
 msgid "Hosting product is not configured completely. Configure hosting plan for hosting product."
 msgstr ""
 
-#: modules/Servicehosting/Service.php:64
+#: modules/Servicehosting/Service.php:52
 msgid "Domain name is not valid."
 msgstr ""
 
-#: modules/Servicehosting/Service.php:67
+#: modules/Servicehosting/Service.php:55
 msgid "Domain extension is not valid."
 msgstr ""
 
-#: modules/Servicehosting/Service.php:267
+#: modules/Servicehosting/Service.php:255
 msgid "Account username is missing or is not valid"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:289
+#: modules/Servicehosting/Service.php:277
 msgid "Account ip is missing or is not valid"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:313
+#: modules/Servicehosting/Service.php:301
 msgid "Domain sld or tld is missing"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:339
+#: modules/Servicehosting/Service.php:327
 msgid "Account password is missing or is not valid"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:722
+#: modules/Servicehosting/Service.php:710
 msgid "Invalid server manager. Server was not configured properly."
 msgstr ""
 
-#: modules/Servicehosting/Service.php:737
+#: modules/Servicehosting/Service.php:725
 msgid "Server manager :adapter is not valid"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:777
+#: modules/Servicehosting/Service.php:765
 msgid "Can not remove hosting plan which has active accounts"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:962
+#: modules/Servicehosting/Service.php:950
 msgid "Could not find main domain product"
 msgstr ""
 
-#: modules/Servicelicense/Service.php:129
+#: modules/Servicelicense/Service.php:117
 msgid "License plugin :plugin was not found"
 msgstr ""
 
-#: modules/Servicelicense/Service.php:133
+#: modules/Servicelicense/Service.php:121
 msgid "License plugin do not have generate method"
 msgstr ""
 
-#: modules/Servicelicense/Service.php:144
+#: modules/Servicelicense/Service.php:132
 msgid "Maximum number of iterations reached while generating license key"
 msgstr ""
 
-#: modules/Spamchecker/Service.php:69
+#: modules/Spamchecker/Service.php:57
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
 msgstr ""
 
-#: modules/Spamchecker/Service.php:90
+#: modules/Spamchecker/Service.php:78
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
 msgstr ""
 
-#: modules/Spamchecker/Service.php:94
+#: modules/Spamchecker/Service.php:82
 msgid "You have to complete the CAPTCHA to continue"
 msgstr ""
 
-#: modules/Spamchecker/Service.php:108 modules/Spamchecker/Service.php:111
+#: modules/Spamchecker/Service.php:96 modules/Spamchecker/Service.php:99
 msgid "reCAPTCHA verification failed."
 msgstr ""
 
-#: modules/Spamchecker/Service.php:142
+#: modules/Spamchecker/Service.php:130
 msgid "Your username is blacklisted in the Stop Forum Spam database"
 msgstr ""
 
-#: modules/Spamchecker/Service.php:145
+#: modules/Spamchecker/Service.php:133
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
 msgstr ""
 
-#: modules/Spamchecker/Service.php:148
+#: modules/Spamchecker/Service.php:136
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr ""
 
-#: modules/Staff/Api/Guest.php:41
+#: modules/Staff/Api/Guest.php:35
 msgid "Administrator account already exists"
 msgstr ""
 
-#: modules/Staff/Api/Guest.php:93
+#: modules/Staff/Api/Guest.php:87
 msgid "You are not allowed to login to admin area from :ip address"
 msgstr ""
 
-#: modules/Staff/Api/Guest.php:104 modules/Staff/Api/Guest.php:148
-#: modules/Staff/Controller/Admin.php:122
+#: modules/Staff/Api/Guest.php:98 modules/Staff/Api/Guest.php:142
+#: modules/Staff/Controller/Admin.php:116
 msgid "Password reset has been disabled"
 msgstr "Ganti Kata sandi tidak diizinkan"
 
-#: modules/Staff/Controller/Admin.php:42
+#: modules/Staff/Controller/Admin.php:36
 msgid "Staff login history"
 msgstr "Histori login Staff"
 
-#: modules/Staff/Service.php:53
+#: modules/Staff/Service.php:41
 msgid "Check your login details"
 msgstr ""
 
-#: modules/Staff/Service.php:435
+#: modules/Staff/Service.php:423
 msgid "This administrator account is protected and can not be removed"
 msgstr ""
 
-#: modules/Staff/Service.php:487
+#: modules/Staff/Service.php:475
 msgid "Staff member with email :email is already registered"
 msgstr ""
 
-#: modules/Staff/Service.php:575
+#: modules/Staff/Service.php:563
 msgid "Administrators group can not be removed"
 msgstr ""
 
-#: modules/Staff/Service.php:583
+#: modules/Staff/Service.php:571
 msgid "Can not remove group which has staff members"
 msgstr ""
 
-#: modules/Support/Api/Client.php:139 modules/Support/Service.php:253
+#: modules/Support/Api/Client.php:133 modules/Support/Service.php:247
 msgid "Ticket not found"
 msgstr ""
 
-#: modules/Support/Api/Client.php:143
+#: modules/Support/Api/Client.php:137
 msgid "Ticket can not be reopened."
 msgstr ""
 
-#: modules/Support/Api/Guest.php:46
+#: modules/Support/Api/Guest.php:40
 msgid "Please enter your message"
 msgstr ""
 
-#: modules/Support/Controller/Admin.php:39
+#: modules/Support/Controller/Admin.php:33
 #: modules/Order/html_admin/mod_order_manage.html.twig:63
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:19
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:19
@@ -2140,22 +2149,22 @@ msgstr ""
 msgid "Support"
 msgstr ""
 
-#: modules/Support/Controller/Admin.php:46
+#: modules/Support/Controller/Admin.php:40
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 msgid "Client tickets"
 msgstr ""
 
-#: modules/Support/Controller/Admin.php:53
+#: modules/Support/Controller/Admin.php:47
 msgid "Advanced ticket search"
 msgstr "Cari Tiket Detail"
 
-#: modules/Support/Controller/Admin.php:60
+#: modules/Support/Controller/Admin.php:54
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:19
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:72
 msgid "Public tickets"
 msgstr ""
 
-#: modules/Support/Controller/Admin.php:67
+#: modules/Support/Controller/Admin.php:61
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:22
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:22
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:17
@@ -2163,31 +2172,31 @@ msgstr ""
 msgid "Canned responses"
 msgstr ""
 
-#: modules/Support/Service.php:657
+#: modules/Support/Service.php:651
 msgid "Can not remove helpdesk which has tickets"
 msgstr ""
 
-#: modules/Support/Service.php:876
+#: modules/Support/Service.php:870
 msgid "Order ID does not exist"
 msgstr ""
 
-#: modules/Support/Service.php:886
+#: modules/Support/Service.php:880
 msgid "We have already received this request."
 msgstr ""
 
-#: modules/Support/Service.php:961
+#: modules/Support/Service.php:955
 msgid "Identity is not valid"
 msgstr ""
 
-#: modules/Support/Service.php:990
+#: modules/Support/Service.php:984
 msgid "Public ticket not found"
 msgstr ""
 
-#: modules/System/Controller/Admin.php:39
+#: modules/System/Controller/Admin.php:33
 msgid "System"
 msgstr ""
 
-#: modules/System/Controller/Admin.php:46
+#: modules/System/Controller/Admin.php:40
 #: modules/Client/html_admin/mod_client_settings.html.twig:19
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:19
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:19
@@ -2223,7 +2232,7 @@ msgstr ""
 msgid "Settings"
 msgstr "Pengaturan"
 
-#: modules/System/Controller/Admin.php:53
+#: modules/System/Controller/Admin.php:47
 #: modules/Client/html_admin/mod_client_group.html.twig:48
 #: modules/Client/html_admin/mod_client_manage.html.twig:277
 #: modules/Client/html_admin/mod_client_manage.html.twig:335
@@ -2290,53 +2299,53 @@ msgstr "Pengaturan"
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:101
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:134
 #: modules/Support/html_admin/mod_support_settings.html.twig:106
-#: modules/Support/html_admin/mod_support_ticket.html.twig:167
+#: modules/Support/html_admin/mod_support_ticket.html.twig:160
 #: modules/System/html_admin/mod_system_update.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr "Perbarui"
 
-#: modules/System/Service.php:37
+#: modules/System/Service.php:32
 msgid "Parameter key is missing"
 msgstr ""
 
-#: modules/System/Service.php:102
+#: modules/System/Service.php:97
 msgid "Invalid parameter name, received: param_"
 msgstr ""
 
-#: modules/System/Service.php:434
+#: modules/System/Service.php:438
 msgid "Parameter :param does not exist"
 msgstr ""
 
-#: modules/System/Service.php:1327
+#: modules/System/Service.php:1331
 msgid "Country :code phone code is not registered"
 msgstr "Negara :kode kode telepon tidak terdaftar"
 
-#: modules/Theme/Controller/Admin.php:69
+#: modules/Theme/Controller/Admin.php:63
 msgid "Theme \":name\" assets folder is not writable. Files can not be uploaded and settings can not be saved. Set folder permissions to 777"
 msgstr ""
 
-#: modules/Theme/Controller/Admin.php:106
+#: modules/Theme/Controller/Admin.php:100
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
 msgstr ""
 
-#: modules/Theme/Controller/Admin.php:110
+#: modules/Theme/Controller/Admin.php:104
 msgid "Theme \":name\" is not configurable"
 msgstr ""
 
-#: modules/Theme/Model/Theme.php:24
+#: modules/Theme/Model/Theme.php:18
 msgid "Theme \":name\" does not exist"
 msgstr "Tema \":name\" tidak ada"
 
-#: modules/Theme/Service.php:181
+#: modules/Theme/Service.php:175
 msgid "Error uploading file :file Error code: :error"
 msgstr ""
 
-#: modules/Theme/Service.php:346
+#: modules/Theme/Service.php:340
 msgid "Theme was not found in path :path"
 msgstr ""
 
-#: modules/Theme/Service.php:363
+#: modules/Theme/Service.php:357
 msgid "Unable to decode theme manifest file :file"
 msgstr ""
 
@@ -2473,10 +2482,10 @@ msgstr "Tanggal"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:97
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:196
 #: modules/Support/html_admin/mod_support_settings.html.twig:151
-#: modules/Support/html_admin/mod_support_ticket.html.twig:110
-#: modules/Support/html_admin/mod_support_ticket.html.twig:120
-#: modules/Support/html_admin/mod_support_ticket.html.twig:183
-#: modules/Support/html_admin/mod_support_ticket.html.twig:325
+#: modules/Support/html_admin/mod_support_ticket.html.twig:103
+#: modules/Support/html_admin/mod_support_ticket.html.twig:113
+#: modules/Support/html_admin/mod_support_ticket.html.twig:176
+#: modules/Support/html_admin/mod_support_ticket.html.twig:318
 #: modules/Support/html_admin/mod_support_tickets.html.twig:251
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:54
 #: themes/admin_default/html/partial_batch_delete.html.twig:36
@@ -2544,7 +2553,7 @@ msgstr "Apakah Anda yakin?"
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:156
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:123
 #: modules/Support/html_admin/mod_support_settings.html.twig:164
-#: modules/Support/html_admin/mod_support_ticket.html.twig:258
+#: modules/Support/html_admin/mod_support_ticket.html.twig:251
 #: modules/Support/html_admin/mod_support_tickets.html.twig:261
 #: modules/Support/html_client/mod_support_ticket.html.twig:99
 #: modules/Support/html_client/mod_support_tickets.html.twig:57
@@ -2648,7 +2657,7 @@ msgstr "Filter Klien"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
 #: modules/Order/html_admin/mod_order_index.html.twig:17
-#: modules/Support/html_admin/mod_support_ticket.html.twig:220
+#: modules/Support/html_admin/mod_support_ticket.html.twig:213
 msgid "ID"
 msgstr "ID"
 
@@ -2796,9 +2805,9 @@ msgstr "Grup"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:57
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:127
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:84
-#: modules/Support/html_admin/mod_support_ticket.html.twig:65
-#: modules/Support/html_admin/mod_support_ticket.html.twig:154
-#: modules/Support/html_admin/mod_support_ticket.html.twig:223
+#: modules/Support/html_admin/mod_support_ticket.html.twig:63
+#: modules/Support/html_admin/mod_support_ticket.html.twig:147
+#: modules/Support/html_admin/mod_support_ticket.html.twig:216
 #: modules/Support/html_admin/mod_support_tickets.html.twig:48
 #: modules/Support/html_admin/mod_support_tickets.html.twig:193
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:45
@@ -3203,7 +3212,7 @@ msgstr "Masuk ke Area Klien"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:102
 #: modules/Support/html_admin/mod_support_settings.html.twig:152
 #: modules/Support/html_admin/mod_support_settings.html.twig:155
-#: modules/Support/html_admin/mod_support_ticket.html.twig:125
+#: modules/Support/html_admin/mod_support_ticket.html.twig:118
 msgid "Delete"
 msgstr "Hapus"
 
@@ -3515,8 +3524,8 @@ msgstr ""
 #: modules/Order/html_client/mod_order_manage.html.twig:218
 #: modules/Order/html_client/mod_order_manage.html.twig:264
 #: modules/Support/html_admin/mod_support_ticket.html.twig:59
-#: modules/Support/html_admin/mod_support_ticket.html.twig:148
-#: modules/Support/html_admin/mod_support_ticket.html.twig:221
+#: modules/Support/html_admin/mod_support_ticket.html.twig:141
+#: modules/Support/html_admin/mod_support_ticket.html.twig:214
 #: modules/Support/html_admin/mod_support_tickets.html.twig:54
 #: modules/Support/html_admin/mod_support_tickets.html.twig:299
 #: modules/Support/html_client/mod_support_ticket.html.twig:35
@@ -3543,8 +3552,8 @@ msgstr "Pusat Bantuan"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:45
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:120
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:82
-#: modules/Support/html_admin/mod_support_ticket.html.twig:142
-#: modules/Support/html_admin/mod_support_ticket.html.twig:222
+#: modules/Support/html_admin/mod_support_ticket.html.twig:135
+#: modules/Support/html_admin/mod_support_ticket.html.twig:215
 #: modules/Support/html_admin/mod_support_tickets.html.twig:192
 #: modules/Support/html_admin/mod_support_tickets.html.twig:305
 #: modules/Support/html_admin/mod_support_tickets.html.twig:339
@@ -3557,7 +3566,7 @@ msgid "Subject"
 msgstr "Subjek"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:642
-#: modules/Support/html_admin/mod_support_ticket.html.twig:269
+#: modules/Support/html_admin/mod_support_ticket.html.twig:262
 msgid "New support ticket"
 msgstr ""
 
@@ -5472,7 +5481,7 @@ msgstr ""
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:146
 #: modules/Notification/html_admin/mod_notification_index.html.twig:78
 #: modules/Order/html_admin/mod_order_manage.html.twig:573
-#: modules/Support/html_admin/mod_support_ticket.html.twig:199
+#: modules/Support/html_admin/mod_support_ticket.html.twig:192
 msgid "Note"
 msgstr ""
 
@@ -5949,7 +5958,7 @@ msgid "Delete all"
 msgstr ""
 
 #: modules/Notification/html_admin/mod_notification_index.html.twig:83
-#: modules/Support/html_admin/mod_support_ticket.html.twig:210
+#: modules/Support/html_admin/mod_support_ticket.html.twig:203
 msgid "Add note"
 msgstr ""
 
@@ -6380,7 +6389,7 @@ msgid "I would like to upgrade"
 msgstr ""
 
 #: modules/Order/html_client/mod_order_manage.html.twig:271
-#: modules/Support/html_admin/mod_support_ticket.html.twig:99
+#: modules/Support/html_admin/mod_support_ticket.html.twig:92
 msgid "Upgrade to"
 msgstr ""
 
@@ -6826,7 +6835,7 @@ msgid "New product"
 msgstr ""
 
 #: modules/Product/html_admin/mod_product_index.html.twig:49
-#: modules/Support/html_admin/mod_support_ticket.html.twig:160
+#: modules/Support/html_admin/mod_support_ticket.html.twig:153
 #: modules/Support/html_admin/mod_support_tickets.html.twig:42
 msgid "Priority"
 msgstr ""
@@ -8633,7 +8642,7 @@ msgid "Author"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:72
-#: modules/Support/html_admin/mod_support_ticket.html.twig:76
+#: modules/Support/html_admin/mod_support_ticket.html.twig:71
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
 #: modules/Support/html_client/mod_support_ticket.html.twig:47
 msgid "Time opened"
@@ -8644,34 +8653,34 @@ msgid "Last updated"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:92
-#: modules/Support/html_admin/mod_support_ticket.html.twig:115
+#: modules/Support/html_admin/mod_support_ticket.html.twig:108
 msgid "Close"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:171
-#: modules/Support/html_admin/mod_support_ticket.html.twig:301
+#: modules/Support/html_admin/mod_support_ticket.html.twig:294
 msgid "Reply as"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:175
-#: modules/Support/html_admin/mod_support_ticket.html.twig:305
+#: modules/Support/html_admin/mod_support_ticket.html.twig:298
 msgid "Hello"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:187
-#: modules/Support/html_admin/mod_support_ticket.html.twig:316
+#: modules/Support/html_admin/mod_support_ticket.html.twig:309
 msgid "Show/Hide messages"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:191
-#: modules/Support/html_admin/mod_support_ticket.html.twig:320
+#: modules/Support/html_admin/mod_support_ticket.html.twig:313
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:106
 #: modules/Support/html_client/mod_support_ticket.html.twig:153
 msgid "Post"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:201
-#: modules/Support/html_admin/mod_support_ticket.html.twig:330
+#: modules/Support/html_admin/mod_support_ticket.html.twig:323
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
 #: modules/Support/html_client/mod_support_ticket.html.twig:22
 msgid "Close ticket"
@@ -8755,16 +8764,16 @@ msgstr ""
 msgid "Support tickets"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_ticket.html.twig:85
+#: modules/Support/html_admin/mod_support_ticket.html.twig:78
 msgid "Task"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_ticket.html.twig:92
+#: modules/Support/html_admin/mod_support_ticket.html.twig:85
 #: modules/Support/html_client/mod_support_ticket.html.twig:53
 msgid "Related to"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_ticket.html.twig:131
+#: modules/Support/html_admin/mod_support_ticket.html.twig:124
 msgid "Set Task complete"
 msgstr ""
 
@@ -8965,20 +8974,15 @@ msgid "Update FOSSBilling"
 msgstr "Update FOSSBilling"
 
 #: modules/System/html_admin/mod_system_update.html.twig:29
-#: modules/System/html_admin/mod_system_update.html.twig:35
-msgid "Migrate Configuration"
-msgstr ""
-
-#: modules/System/html_admin/mod_system_update.html.twig:30
-msgid "This tool automatically migrates your configuration file to ensure compatibility with the latest FOSSBilling changes."
-msgstr ""
-
-#: modules/System/html_admin/mod_system_update.html.twig:39
 msgid "Manual Update"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:40
+#: modules/System/html_admin/mod_system_update.html.twig:30
 msgid "If the auto updater is unable to function in your current installation environment, a manual update is available as an alternative solution."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:43
+msgid "Apply Patches & Update Configuration"
 msgstr ""
 
 #: modules/System/html_client/mod_system_maintenance.html.twig:4
