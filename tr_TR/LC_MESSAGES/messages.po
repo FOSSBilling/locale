@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-06-05 02:31-0700\n"
-"PO-Revision-Date: 2023-06-05 09:35\n"
+"POT-Creation-Date: 2023-06-11 23:14-0700\n"
+"PO-Revision-Date: 2023-06-12 10:06\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
@@ -977,12 +977,21 @@ msgid "Currency not found"
 msgstr "Para birimi bulunamadı"
 
 #: modules/Cart/Api/Guest.php:100 modules/Cart/Api/Guest.php:108
+#: modules/Cart/Service.php:429
 msgid "Promo code is expired or does not exist"
 msgstr "Promosyon süresi doldu veya mevcut değil"
 
-#: modules/Cart/Api/Guest.php:104
+#: modules/Cart/Api/Guest.php:104 modules/Cart/Service.php:433
 msgid "Promo can not be applied to your account"
 msgstr "Promosyon hesabınıza uygulanamaz"
+
+#: modules/Cart/Api/Guest.php:170
+msgid "Addon products cannot be added separately."
+msgstr ""
+
+#: modules/Cart/Api/Guest.php:180
+msgid "One or more of your selected addons are not valid for the associated product."
+msgstr ""
 
 #: modules/Cart/Service.php:84
 msgid "Selected billing period is not valid"
@@ -1008,19 +1017,23 @@ msgstr "Promosyon kodunu uygulamadan önce ürünleri sepete ekleyin"
 msgid "You have already used this promo code. Please remove promo code and checkout again."
 msgstr "Bu promosyon kodunu zaten kullandınız. Lütfen promosyon kodunu kaldırıp tekrar ödeme işlemine geçin."
 
-#: modules/Cart/Service.php:477
+#: modules/Cart/Service.php:485
 msgid "Can not checkout empty cart."
 msgstr "Boş sepette ödeme yapılamıyor."
 
-#: modules/Cart/Service.php:489
+#: modules/Cart/Service.php:497
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
 msgstr "Seçilen para birimi :selected profilinizdeki :code para birimiyle eşleşmiyor. Devam etmek için lütfen sepet para birimini değiştirin."
 
-#: modules/Cart/Service.php:573
+#: modules/Cart/Service.php:513
+msgid "Unable to complete order. One or more of the selected products are invalid."
+msgstr ""
+
+#: modules/Cart/Service.php:586
 msgid "Discount: :product"
 msgstr "İndirim: :product"
 
-#: modules/Cart/Service.php:585
+#: modules/Cart/Service.php:598
 msgid ":product setup"
 msgstr ":product kurulumu"
 
@@ -1478,11 +1491,11 @@ msgstr "Fatura öğesi başlığı eksik"
 msgid "Add funds to account"
 msgstr "Hesaba para yükle"
 
-#: modules/Invoice/ServiceInvoiceItem.php:334
+#: modules/Invoice/ServiceInvoiceItem.php:331
 msgid "Promotional Code: :code - :value Discount"
 msgstr "Promosyon kodu: :code - :value İndirim"
 
-#: modules/Invoice/ServiceInvoiceItem.php:337
+#: modules/Invoice/ServiceInvoiceItem.php:334
 msgid "Promotional Code: :code - :value%"
 msgstr "Promosyon Kodu: :code - %:value"
 
@@ -1826,7 +1839,7 @@ msgid "Config must be an array"
 msgstr ""
 
 #: modules/Servicecustom/Service.php:246 modules/Servicedomain/Api/Client.php:144
-#: modules/Servicedownloadable/Api/Admin.php:69
+#: modules/Servicedownloadable/Api/Admin.php:70
 #: modules/Servicedownloadable/Api/Client.php:40
 #: modules/Servicehosting/Api/Admin.php:444
 #: modules/Servicehosting/Api/Client.php:89
@@ -1971,7 +1984,7 @@ msgstr ""
 msgid "Can not remove registrar which has domains"
 msgstr ""
 
-#: modules/Servicedownloadable/Api/Admin.php:37
+#: modules/Servicedownloadable/Api/Admin.php:38
 msgid "File was not uploaded"
 msgstr ""
 
@@ -2182,14 +2195,22 @@ msgid "Order ID does not exist"
 msgstr ""
 
 #: modules/Support/Service.php:880
+msgid "You must provide both an order ID and a new product ID in order to request an upgrade."
+msgstr ""
+
+#: modules/Support/Service.php:887
+msgid "Sorry, but \":product\" is not allowed to be upgraded to \":upgrade\""
+msgstr ""
+
+#: modules/Support/Service.php:893
 msgid "We have already received this request."
 msgstr ""
 
-#: modules/Support/Service.php:955
+#: modules/Support/Service.php:968
 msgid "Identity is not valid"
 msgstr ""
 
-#: modules/Support/Service.php:984
+#: modules/Support/Service.php:997
 msgid "Public ticket not found"
 msgstr ""
 
