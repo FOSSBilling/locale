@@ -2,27 +2,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2023-06-20 16:32-0700\n"
-"PO-Revision-Date: 2023-06-22 23:49\n"
+"PO-Revision-Date: 2023-06-23 23:45+0200\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.0\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SearchPathExcluded-1: *.html\n"
-"X-Poedit-SearchPathExcluded-2: *.css\n"
-"X-Poedit-SearchPathExcluded-3: *.scss\n"
-"X-Poedit-SearchPathExcluded-4: *.md\n"
 "X-Crowdin-Project: ddc573f086bad0aea827918f4284d176\n"
 "X-Crowdin-Project-ID: 4\n"
 "X-Crowdin-Language: pt-BR\n"
 "X-Crowdin-File: /main/messages.pot\n"
 "X-Crowdin-File-ID: 303\n"
 "Language: pt_BR\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: *.html\n"
+"X-Poedit-SearchPathExcluded-2: *.css\n"
+"X-Poedit-SearchPathExcluded-3: *.scss\n"
+"X-Poedit-SearchPathExcluded-4: *.md\n"
 
 #: di.php:326
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
@@ -762,7 +762,8 @@ msgstr "DirectAdmin não suporta alterações de domínio"
 msgid "DirectAdmin does not support IP changes"
 msgstr "DirectAdmin não suporta alterações de IP"
 
-#: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:411
+#: library/Server/Manager/Directadmin.php:422
+#: library/Server/Manager/Whm.php:411
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
@@ -823,7 +824,8 @@ msgstr "Extensão PHP Soap é necessária para o gerenciador de servidores do Is
 msgid "Server manager does not support sync"
 msgstr "Gerenciador de servidores não suporta sincronização"
 
-#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:200
+#: library/Server/Manager/Ispconfig3.php:190
+#: library/Server/Manager/Plesk.php:200
 #: library/Server/Manager/Virtualmin.php:163
 msgid "Server manager does not support username changes"
 msgstr "O gerenciador do servidor não suporta alterações de nome de usuário"
@@ -1096,11 +1098,13 @@ msgstr "Clientes"
 
 #: modules/Client/Controller/Admin.php:41
 #: modules/Extension/Controller/Admin.php:40
-#: modules/Invoice/Controller/Admin.php:41 modules/Order/Controller/Admin.php:42
+#: modules/Invoice/Controller/Admin.php:41
+#: modules/Order/Controller/Admin.php:42
 msgid "Overview"
 msgstr "Visão geral"
 
-#: modules/Client/Controller/Admin.php:48 modules/Invoice/Controller/Admin.php:48
+#: modules/Client/Controller/Admin.php:48
+#: modules/Invoice/Controller/Admin.php:48
 #: modules/Order/Controller/Admin.php:49
 msgid "Advanced search"
 msgstr "Pesquisa avançada"
@@ -1805,7 +1809,8 @@ msgstr "Função manipuladora de mensagem :method não existe"
 msgid "Redirect not found"
 msgstr "Redirecionamento não encontrado"
 
-#: modules/Servicecustom/Api/Admin.php:26 modules/Servicecustom/Api/Admin.php:53
+#: modules/Servicecustom/Api/Admin.php:26
+#: modules/Servicecustom/Api/Admin.php:53
 #: modules/Servicecustom/Api/Client.php:35
 #: modules/Servicedomain/Api/Client.php:133
 #: modules/Servicedownloadable/Api/Client.php:29
@@ -1813,7 +1818,8 @@ msgstr "Redirecionamento não encontrado"
 msgid "Order id is required"
 msgstr "Id do pedido obrigatório"
 
-#: modules/Servicecustom/Api/Admin.php:47 modules/Servicecustom/Api/Client.php:29
+#: modules/Servicecustom/Api/Admin.php:47
+#: modules/Servicecustom/Api/Client.php:29
 msgid "API call is missing arguments"
 msgstr "A chamada da API está sem argumentos"
 
@@ -1838,7 +1844,8 @@ msgstr "Método plugin personalizado :method é proibido"
 msgid "Config must be an array"
 msgstr "A configuração deve ser uma matriz"
 
-#: modules/Servicecustom/Service.php:246 modules/Servicedomain/Api/Client.php:144
+#: modules/Servicecustom/Service.php:246
+#: modules/Servicedomain/Api/Client.php:144
 #: modules/Servicedownloadable/Api/Admin.php:70
 #: modules/Servicedownloadable/Api/Client.php:40
 #: modules/Servicehosting/Api/Admin.php:444
@@ -1858,15 +1865,18 @@ msgstr "Plugin :plugin não suporta a ação :action"
 
 #: modules/Servicecustom/Service.php:293 modules/Servicedomain/Service.php:249
 #: modules/Servicedomain/Service.php:288 modules/Servicehosting/Service.php:94
-#: modules/Servicehosting/Service.php:139 modules/Servicehosting/Service.php:157
-#: modules/Servicehosting/Service.php:176 modules/Servicehosting/Service.php:195
+#: modules/Servicehosting/Service.php:139
+#: modules/Servicehosting/Service.php:157
+#: modules/Servicehosting/Service.php:176
+#: modules/Servicehosting/Service.php:195
 msgid "Order :id has no active service"
 msgstr "Pedido :id não tem nenhum serviço ativo"
 
 #: modules/Servicedomain/Api/Admin.php:188
 #: modules/Servicedomain/Api/Admin.php:238
-#: modules/Servicedomain/Api/Admin.php:298 modules/Servicedomain/Api/Guest.php:69
-#: modules/Servicedomain/Service.php:93 modules/Servicedomain/Service.php:125
+#: modules/Servicedomain/Api/Admin.php:298
+#: modules/Servicedomain/Api/Guest.php:69 modules/Servicedomain/Service.php:93
+#: modules/Servicedomain/Service.php:125
 msgid "TLD not found"
 msgstr "TLD não encontrado"
 
@@ -4878,9 +4888,11 @@ msgid "Labels position"
 msgstr "Posição dos rótulos"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:136
-msgid "Labels on\n"
+msgid ""
+"Labels on\n"
 "                            top"
-msgstr "Rótulos no\n"
+msgstr ""
+"Rótulos no\n"
 "                            topo"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:139
@@ -4892,15 +4904,19 @@ msgid "Form title visibility"
 msgstr "Visibilidade do título do formulário"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:147
-msgid "Show form\n"
+msgid ""
+"Show form\n"
 "                            title"
-msgstr "Mostrar título do\n"
+msgstr ""
+"Mostrar título do\n"
 "                            formulário"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:149
-msgid "Do not show form\n"
+msgid ""
+"Do not show form\n"
 "                            title"
-msgstr "Não mostrar o título do\n"
+msgstr ""
+"Não mostrar o título do\n"
 "                            fomulário"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:175
@@ -6758,8 +6774,8 @@ msgid "Enter your email to reset password. You will receive new password after r
 msgstr "Digite seu e-mail para redefinir a senha. Você receberá uma nova senha após que o link de redefinição for confirmado."
 
 #: modules/Page/html_client/mod_page_password-reset.html.twig:62
-msgid "Password reset confirmation email was sent"
-msgstr "O e-mail de confirmação de redefinição de senha foi enviado"
+msgid "If you have entered an E-Mail adress that is associated with an Account, a Password reset confirmation email was sent"
+msgstr "Se você inseriu um endereço de e-mail associado a uma conta, um e-mail de confirmação para redefinição de senha foi enviado"
 
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:3
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:17
@@ -9368,4 +9384,3 @@ msgstr "Preço de instalação"
 #: themes/huraga/html/partial_pricing.html.twig:80
 msgid "Order now"
 msgstr "Solicite agora"
-
