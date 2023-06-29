@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-06-20 16:32-0700\n"
-"PO-Revision-Date: 2023-06-20 23:48\n"
+"POT-Creation-Date: 2023-06-28 11:19-0700\n"
+"PO-Revision-Date: 2023-06-29 10:42\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Romanian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
@@ -993,7 +993,7 @@ msgstr "Promoția nu poate fi aplicată pe contul dvs"
 msgid "Addon products cannot be added separately."
 msgstr ""
 
-#: modules/Cart/Api/Guest.php:180
+#: modules/Cart/Api/Guest.php:184
 msgid "One or more of your selected addons are not valid for the associated product."
 msgstr ""
 
@@ -1049,12 +1049,12 @@ msgstr "E-mailul este deja înregistrat."
 msgid "Can not change email. It is already registered."
 msgstr "Nu se poate schimba adresa de e-mail. Aceasta este deja înregistrată."
 
-#: modules/Client/Api/Admin.php:341 modules/Staff/Api/Admin.php:133
+#: modules/Client/Api/Admin.php:344 modules/Staff/Api/Admin.php:133
 #: modules/Staff/Api/Guest.php:111
 msgid "Passwords do not match"
 msgstr "Parolele nu coincid"
 
-#: modules/Client/Api/Admin.php:506
+#: modules/Client/Api/Admin.php:509
 msgid "Event not found"
 msgstr "Evenimentul nu a fost găsit"
 
@@ -1809,6 +1809,40 @@ msgstr ""
 msgid "Redirect not found"
 msgstr "Redirecționarea nu a fost găsită"
 
+#: modules/Serviceapikey/Service.php:60
+msgid "Order does not exist."
+msgstr ""
+
+#: modules/Serviceapikey/Service.php:123 modules/Serviceapikey/Service.php:143
+msgid "You must provide an API key to check it's validity."
+msgstr ""
+
+#: modules/Serviceapikey/Service.php:128 modules/Serviceapikey/Service.php:148
+#: modules/Serviceapikey/Service.php:198 modules/Serviceapikey/Service.php:210
+#: modules/Serviceapikey/Service.php:239 modules/Serviceapikey/Service.php:348
+msgid "API key does not exist"
+msgstr ""
+
+#: modules/Serviceapikey/Service.php:188
+msgid "You must provide either the API key or API key order ID in order to reset it."
+msgstr ""
+
+#: modules/Serviceapikey/Service.php:231
+msgid "You must provide the API key order ID in order to update it."
+msgstr ""
+
+#: modules/Serviceapikey/Service.php:243
+msgid "To change the API key, please use the reset function rather than updating it."
+msgstr ""
+
+#: modules/Serviceapikey/Service.php:304
+msgid "Maximum number of iterations reached while generating API key"
+msgstr ""
+
+#: modules/Serviceapikey/Service.php:337
+msgid "Unknown uppercase option ':case:'. API generator only accepts 'lower', 'upper', or 'mixed'."
+msgstr ""
+
 #: modules/Servicecustom/Api/Admin.php:26 modules/Servicecustom/Api/Admin.php:53
 #: modules/Servicecustom/Api/Client.php:35
 #: modules/Servicedomain/Api/Client.php:133
@@ -2304,6 +2338,8 @@ msgstr "Setări"
 #: modules/Product/html_admin/mod_product_manage.html.twig:255
 #: modules/Product/html_admin/mod_product_promo.html.twig:178
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:75
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:75
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:100
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:39
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:53
 #: modules/Servicecustom/html_admin/mod_servicecustom_manage.html.twig:27
@@ -2492,6 +2528,8 @@ msgstr "Data"
 #: modules/Product/html_admin/mod_product_promos.html.twig:97
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:53
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:101
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:21
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:34
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:81
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:215
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:74
@@ -2914,6 +2952,7 @@ msgstr "Filtru"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:114
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:83
 #: modules/Order/html_admin/mod_order_index.html.twig:89
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:23
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:85
 #: modules/Support/html_admin/mod_support_tickets.html.twig:90
 msgid "Reset"
@@ -3190,6 +3229,7 @@ msgid "Notes"
 msgstr "Notițe"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:10
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:88
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:96
 msgid "API Key"
@@ -3295,6 +3335,8 @@ msgstr "E-mail aprobat"
 #: modules/Product/html_admin/mod_product_promos.html.twig:159
 #: modules/Product/html_admin/mod_product_promos.html.twig:172
 #: modules/Product/html_admin/mod_product_promos.html.twig:187
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:22
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:50
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:11
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:24
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:68
@@ -3355,6 +3397,8 @@ msgstr "Da"
 #: modules/Product/html_admin/mod_product_promos.html.twig:163
 #: modules/Product/html_admin/mod_product_promos.html.twig:176
 #: modules/Product/html_admin/mod_product_promos.html.twig:191
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:26
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:54
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:15
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:28
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:68
@@ -3773,6 +3817,7 @@ msgstr "Setări profil utilizator"
 #: modules/Client/html_client/mod_client_profile.html.twig:21
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:33
 #: modules/Order/html_admin/mod_order_manage.html.twig:38
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:6
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:9
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:7
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:8
@@ -3791,6 +3836,7 @@ msgstr "Schimbați parola"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:23
 #: modules/Client/html_client/mod_client_profile.html.twig:241
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:13
 msgid "API key"
 msgstr "Cheie API"
 
@@ -7130,6 +7176,102 @@ msgstr ""
 msgid "A ping wasn't sent yet"
 msgstr ""
 
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:3
+msgid "API Key settings"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:4
+msgid "API key settings updated"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:7
+msgid "Here you can configured the length of the API keys that will be generated. We recommend making this no less than 16 at a minimum. When in doubt, leave this at 32."
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:8
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:37
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:13
+msgid "Length"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:17
+msgid "FOSSBilling can split the generated API key with dashes depending on the following options. The dashes will not count towards the API key length. If any API key is generated with dashes, they must be included in order for it to be considered valid."
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:18
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:46
+msgid "Split API key with dashes"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:32
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:60
+msgid "Split Interval"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:41
+msgid "Here you can configure what case you want the API keys to be generated with. \"Uppercase\" makes all letters uppercase, \"lowercase\" makes them all lowercase, and \"mixed\" does a combination of the two options."
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:42
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:69
+msgid "API key capitalization"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:45
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:72
+msgid "Uppercase"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:46
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:73
+msgid "Lowercase"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:47
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:74
+msgid "Mixed"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:55
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:82
+msgid "Custom Parameters"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:56
+msgid "Here, you have the option to include custom parameters that can be requested from the API. This is particularly useful if you want to set specific limits for API keys. Your application can connect to the FOSSBilling API and retrieve the custom parameters you have defined for an API key."
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:57
+msgid "FOSSBilling will remove the \"custom_\" prefix from the value name when requesting them from the API. IE: custom_monthlyLimit will be named monthlyLimit when fetched through the API."
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:59
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:84
+#: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:116
+msgid "Add new field"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:26
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
+msgid "Reset API key"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:31
+msgid "API key configuration"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:32
+msgid "Changing the API key generation options will not automatically regenerate the API key. You must do so manually."
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:34
+msgid "API key updated"
+msgstr ""
+
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:9
+msgid "API key details"
+msgstr ""
+
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:2
 msgid "Stock control settings"
 msgstr ""
@@ -7859,10 +8001,6 @@ msgstr ""
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters. List of parameters server managers requires you can find on extensions page."
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:116
-msgid "Add new field"
-msgstr ""
-
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:43
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:204
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:206
@@ -8158,10 +8296,6 @@ msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:4
 msgid "License settings updated"
-msgstr ""
-
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:13
-msgid "Length"
 msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:25
