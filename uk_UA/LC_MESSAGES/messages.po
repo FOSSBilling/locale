@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-06-28 11:19-0700\n"
-"PO-Revision-Date: 2023-06-29 10:43\n"
+"POT-Creation-Date: 2023-07-02 13:03-0700\n"
+"PO-Revision-Date: 2023-07-02 20:14\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -28,11 +28,11 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr ""
 
-#: index.php:34 library/Box/App.php:380 library/Box/AppClient.php:59
+#: index.php:51 library/Box/App.php:380 library/Box/AppClient.php:59
 msgid "Page :url not found"
 msgstr "Сторінка :url не знайдена"
 
-#: index.php:40
+#: index.php:57
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr ""
 
@@ -103,6 +103,15 @@ msgstr ""
 #: library/Box/Mod.php:206
 msgid "Core module can not be updated"
 msgstr "Модуль ядра не може бути оновлений"
+
+#: library/Box/Pagination.php:44 library/Box/Pagination.php:76
+msgid "Invalid page number"
+msgstr ""
+
+#: library/Box/Pagination.php:47 library/Box/Pagination.php:79
+#: modules/Client/Service.php:181
+msgid "Invalid per page number"
+msgstr ""
 
 #: library/Box/Period.php:44
 msgid "Invalid period code. Period definition must be 2 chars length"
@@ -306,7 +315,7 @@ msgid "None"
 msgstr "Відсутньо"
 
 #: library/FOSSBilling/ErrorPage.php:140
-msgid "Uh-oh! You've received a generic error message: :errorMessage"
+msgid "You've received a generic error message: :errorMessage"
 msgstr ""
 
 #: library/FOSSBilling/ErrorPage.php:256
@@ -401,15 +410,15 @@ msgstr ""
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr ""
 
-#: library/FOSSBilling/UpdatePatcher.php:44
+#: library/FOSSBilling/UpdatePatcher.php:52
 msgid "Unable to load existing configuration."
 msgstr ""
 
-#: library/FOSSBilling/UpdatePatcher.php:51
+#: library/FOSSBilling/UpdatePatcher.php:59
 msgid "Unable to create backup of configuration file. Cancelling config migration."
 msgstr ""
 
-#: library/FOSSBilling/UpdatePatcher.php:90
+#: library/FOSSBilling/UpdatePatcher.php:99
 msgid "Error when writing updated configuration file."
 msgstr ""
 
@@ -518,22 +527,22 @@ msgstr "Платіжний шлюз Interkassa не підтримує регу�
 #: library/Payment/Adapter/TwoCheckout.php:171
 #: library/Payment/Adapter/WebMoney.php:138
 msgid "Cannot process duplicate IPN"
-msgstr ""
+msgstr "Неможливо обробити дубльований IPN"
 
 #: library/Payment/Adapter/Onebip.php:113
 msgid "This feature is unimplemented"
-msgstr ""
+msgstr "Ця функція не реалізована"
 
 #: library/Payment/Adapter/PayPalEmail.php:263
 msgid "Redirecting to PayPal.com"
 msgstr "Перенаправлення на PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:306
-#: library/Payment/Adapter/Stripe.php:105 modules/Invoice/Service.php:1463
+#: library/Payment/Adapter/Stripe.php:105 modules/Invoice/Service.php:1411
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Оплата рахунку :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:107 modules/Invoice/Service.php:1465
+#: library/Payment/Adapter/Stripe.php:107 modules/Invoice/Service.php:1413
 msgid "Payment for invoice :serie:id"
 msgstr "Оплата рахунку :serie:id"
 
@@ -956,25 +965,25 @@ msgstr ""
 msgid "Unknown API call :call"
 msgstr ""
 
-#: modules/Api/Controller/Client.php:124
+#: modules/Api/Controller/Client.php:127
 msgid "Invalid request. Make sure request origin is :from"
 msgstr ""
 
-#: modules/Api/Controller/Client.php:135
+#: modules/Api/Controller/Client.php:138
 msgid "Unauthorized IP"
 msgstr ""
 
-#: modules/Api/Controller/Client.php:189 modules/Api/Controller/Client.php:193
-#: modules/Api/Controller/Client.php:197 modules/Api/Controller/Client.php:211
-#: modules/Api/Controller/Client.php:219 modules/Api/Controller/Client.php:232
+#: modules/Api/Controller/Client.php:192 modules/Api/Controller/Client.php:196
+#: modules/Api/Controller/Client.php:200 modules/Api/Controller/Client.php:214
+#: modules/Api/Controller/Client.php:222 modules/Api/Controller/Client.php:235
 msgid "Authentication Failed"
 msgstr ""
 
-#: modules/Api/Controller/Client.php:245
+#: modules/Api/Controller/Client.php:248
 msgid "Unknown API call"
 msgstr ""
 
-#: modules/Api/Controller/Client.php:324
+#: modules/Api/Controller/Client.php:327
 msgid "CSRF token invalid."
 msgstr "Невірний CSRF-токен."
 
@@ -1129,51 +1138,51 @@ msgstr "Невірне посилання для підтвердження ел
 msgid "The password you chose when creating your account."
 msgstr "Пароль, який ви обрали при створенні облікового запису."
 
-#: modules/Client/Service.php:219
+#: modules/Client/Service.php:223
 msgid "Currency can not be changed. Client already have invoices issued."
 msgstr "Валюта не може бути змінена. Клієнту вже виставлені інвойси."
 
-#: modules/Client/Service.php:224
+#: modules/Client/Service.php:228
 msgid "Currency can not be changed. Client already have orders."
 msgstr "Валюта не може бути змінена. У клієнта вже є замовлення."
 
-#: modules/Client/Service.php:233
+#: modules/Client/Service.php:237
 msgid "Define clients currency before adding funds."
 msgstr "Визначте валюту клієнта перед додаванням коштів."
 
-#: modules/Client/Service.php:237 modules/Client/ServiceBalance.php:126
+#: modules/Client/Service.php:241 modules/Client/ServiceBalance.php:126
 msgid "Funds amount is not valid"
 msgstr "Сума не дійсна"
 
-#: modules/Client/Service.php:241 modules/Client/ServiceBalance.php:130
+#: modules/Client/Service.php:245 modules/Client/ServiceBalance.php:130
 msgid "Funds description is not valid"
 msgstr "Опис коштів не дійсний"
 
-#: modules/Client/Service.php:408
+#: modules/Client/Service.php:412
 msgid "Client ID or email is required"
 msgstr "Потрібно ідентифікатор клієнта"
 
-#: modules/Client/Service.php:422
+#: modules/Client/Service.php:426
 msgid "Client not found"
 msgstr "Не знайдено клієнта"
 
-#: modules/Client/Service.php:465
+#: modules/Client/Service.php:469
 msgid "Can not remove group with clients"
 msgstr "Неможливо видалити групу з клієнтами"
 
-#: modules/Client/Service.php:602
+#: modules/Client/Service.php:606
 msgid "Please check your mailbox and confirm email address."
 msgstr "Будь ласка, перевірте свою поштову скриньку для підтвердження адреси електронної пошти."
 
-#: modules/Client/Service.php:605
+#: modules/Client/Service.php:609
 msgid "Confirmation email was sent to your email address. Please click on link in it in order to verify your email."
 msgstr "На вашу електронну адресу було надіслано лист з підтвердженням. Будь ласка, перейдіть за посиланням у ньому, щоб підтвердити свою електронну пошту."
 
-#: modules/Client/Service.php:638 modules/Profile/Service.php:117
+#: modules/Client/Service.php:642 modules/Profile/Service.php:117
 msgid "Email can not be changed"
 msgstr "Електронну пошту не можна змінити"
 
-#: modules/Client/Service.php:651 modules/Client/Service.php:666
+#: modules/Client/Service.php:655 modules/Client/Service.php:670
 msgid "Field :field cannot be empty"
 msgstr ""
 
@@ -1475,17 +1484,17 @@ msgstr ""
 msgid "Amount cannot exceed :max_amount"
 msgstr "Сума не може перевищувати :max_amount"
 
-#: modules/Invoice/Service.php:1106 modules/Invoice/Service.php:1170
+#: modules/Invoice/Service.php:1106 modules/Invoice/Service.php:1171
 msgid "Invoice not found"
 msgstr ""
 
 #: modules/Invoice/Service.php:1111
 msgid "Payment method not found"
-msgstr ""
+msgstr "Спосіб оплати не знайдено"
 
 #: modules/Invoice/Service.php:1115
 msgid "Payment method not enabled"
-msgstr ""
+msgstr "Спосіб оплати не активовано"
 
 #: modules/Invoice/ServiceInvoiceItem.php:61
 msgid "Could not activate proforma item. Order :id not found"
@@ -1883,7 +1892,7 @@ msgstr ""
 #: modules/Servicecustom/Service.php:246 modules/Servicedomain/Api/Client.php:144
 #: modules/Servicedownloadable/Api/Admin.php:70
 #: modules/Servicedownloadable/Api/Client.php:40
-#: modules/Servicehosting/Api/Admin.php:444
+#: modules/Servicehosting/Api/Admin.php:449
 #: modules/Servicehosting/Api/Client.php:89
 #: modules/Servicelicense/Api/Admin.php:89
 #: modules/Servicelicense/Api/Client.php:53
@@ -2091,19 +2100,19 @@ msgstr ""
 msgid "Account password is missing or is not valid"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:710
+#: modules/Servicehosting/Service.php:716
 msgid "Invalid server manager. Server was not configured properly."
 msgstr ""
 
-#: modules/Servicehosting/Service.php:725
+#: modules/Servicehosting/Service.php:736
 msgid "Server manager :adapter is not valid"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:765
+#: modules/Servicehosting/Service.php:776
 msgid "Can not remove hosting plan which has active accounts"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:950
+#: modules/Servicehosting/Service.php:961
 msgid "Could not find main domain product"
 msgstr ""
 
@@ -2392,11 +2401,11 @@ msgstr ""
 msgid "Theme \":name\" assets folder is not writable. Files can not be uploaded and settings can not be saved. Set folder permissions to 777"
 msgstr ""
 
-#: modules/Theme/Controller/Admin.php:100
+#: modules/Theme/Controller/Admin.php:99
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
 msgstr "Директорія файлів теми \":name\" недоступна для запису. Установіть дозволи для теки :folder до 777"
 
-#: modules/Theme/Controller/Admin.php:104
+#: modules/Theme/Controller/Admin.php:103
 msgid "Theme \":name\" is not configurable"
 msgstr "Тема \":name\" не налаштовується"
 
@@ -2404,15 +2413,11 @@ msgstr "Тема \":name\" не налаштовується"
 msgid "Theme \":name\" does not exist"
 msgstr "Тема \":name\" не існує"
 
-#: modules/Theme/Service.php:175
-msgid "Error uploading file :file Error code: :error"
-msgstr ""
-
-#: modules/Theme/Service.php:340
+#: modules/Theme/Service.php:322
 msgid "Theme was not found in path :path"
 msgstr ""
 
-#: modules/Theme/Service.php:357
+#: modules/Theme/Service.php:339
 msgid "Unable to decode theme manifest file :file"
 msgstr ""
 
@@ -4997,7 +5002,7 @@ msgstr "Дозволити одноразові платежі"
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:89
 msgid "Allow subscription payments"
-msgstr ""
+msgstr "Дозволити платежі-підписки"
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:106
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:38
@@ -5798,7 +5803,7 @@ msgstr "Ваш платіж в обробці, це може зайняти до
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
 msgid "Payment for invoice received"
-msgstr ""
+msgstr "Отримано платіж за рахунком"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:16
 msgid "You will be automatically redirected to invoice page after 5 minutes."
@@ -6728,7 +6733,7 @@ msgstr ""
 #: themes/huraga/html/layout_default.html.twig:121
 #: themes/huraga/html/layout_default.html.twig:227
 msgid "Register"
-msgstr ""
+msgstr "Реєстрація"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:226
 msgid "Or Login"
@@ -6736,11 +6741,11 @@ msgstr ""
 
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:70
 msgid "Payment"
-msgstr ""
+msgstr "Оплата"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:82
 msgid "Powered by FOSSBilling"
-msgstr ""
+msgstr "За підтримки FOSSBilling"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:103
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:127
@@ -7351,7 +7356,7 @@ msgstr "Новий реєстратор доменних імен"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:12
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:105
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Nameservers"
 msgstr "Nameservers"
 
@@ -7508,7 +7513,7 @@ msgstr ""
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:39
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:107
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:117
 msgid "Nameserver 1"
 msgstr "Nameserver 1"
 
@@ -7519,7 +7524,7 @@ msgstr "Nameserver 1"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:113
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
 msgid "Nameserver 2"
 msgstr "Nameserver 2"
 
@@ -7530,7 +7535,7 @@ msgstr "Nameserver 2"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:119
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
 msgid "Nameserver 3"
 msgstr "Nameserver 3"
 
@@ -7541,7 +7546,7 @@ msgstr "Nameserver 3"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:48
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:125
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
 msgid "Nameserver 4"
 msgstr "Nameserver 4"
 
@@ -7679,7 +7684,7 @@ msgstr ""
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:30
 msgid "Transfer domain"
-msgstr ""
+msgstr "Перенести домен"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:33
 msgid "Domain name to transfer"
@@ -7687,7 +7692,7 @@ msgstr ""
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:37
 msgid "Domain transfer code"
-msgstr ""
+msgstr "Код передачі доменного імені"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:19
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:19
@@ -7769,7 +7774,7 @@ msgstr ""
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:210
 msgid "All domain names (except a .EU, .UK domain name) have a Domain (Transfer) Secret Key/Authorization Code (EPP Code) associated with them. This would be required if you want to transfer service."
-msgstr ""
+msgstr "Всі доменні імена (крім доменних імен у зонах .EU, .UK) мають власний секретний ключ/авторизаційний (EPP) код. Це буде необхідно, якщо ви хочете передати послугу."
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:213
 msgid "Get EPP code"
@@ -8018,7 +8023,7 @@ msgid "Test connection"
 msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:64
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:157
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:167
 msgid "Server connected"
 msgstr ""
 
@@ -8249,7 +8254,19 @@ msgstr "Користувацький порт. Залиште порожнім �
 msgid "Update and test connection"
 msgstr "Оновити та перевірити з'єднання"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:132
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:105
+msgid "Optional configuration"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:107
+msgid "Users prefix"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
+msgid "Prefix for created users (especially for database)"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:142
 msgid "Update server"
 msgstr "Оновити сервер"
 
@@ -9478,7 +9495,7 @@ msgstr ""
 
 #: themes/huraga/html/layout_default.html.twig:347
 msgid "Powered by the FOSSBilling Community"
-msgstr ""
+msgstr "За підтримки спільноти FOSSBilling"
 
 #: themes/huraga/html/layout_default.html.twig:352
 msgid "Top"
