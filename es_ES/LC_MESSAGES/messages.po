@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-06-28 11:19-0700\n"
-"PO-Revision-Date: 2023-06-29 10:43\n"
+"POT-Creation-Date: 2023-07-02 13:03-0700\n"
+"PO-Revision-Date: 2023-07-02 20:13\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -28,11 +28,11 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Parece que está intentando usar FOSSBilling sin la extensión intl habilitada para php. FOSSBilling incluye un polyfill para la extensión intl, sin embargo no es compatible con :locale. Por favor habilite la extensión intl."
 
-#: index.php:34 library/Box/App.php:380 library/Box/AppClient.php:59
+#: index.php:51 library/Box/App.php:380 library/Box/AppClient.php:59
 msgid "Page :url not found"
 msgstr "Página: Url no encontrada"
 
-#: index.php:40
+#: index.php:57
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr ""
 
@@ -103,6 +103,15 @@ msgstr "Module :mod No se encontró la clase de controlador de cliente"
 #: library/Box/Mod.php:206
 msgid "Core module can not be updated"
 msgstr "El módulo principal no se puede actualizar"
+
+#: library/Box/Pagination.php:44 library/Box/Pagination.php:76
+msgid "Invalid page number"
+msgstr ""
+
+#: library/Box/Pagination.php:47 library/Box/Pagination.php:79
+#: modules/Client/Service.php:181
+msgid "Invalid per page number"
+msgstr ""
 
 #: library/Box/Period.php:44
 msgid "Invalid period code. Period definition must be 2 chars length"
@@ -298,7 +307,7 @@ msgid "None"
 msgstr "Ninguno"
 
 #: library/FOSSBilling/ErrorPage.php:140
-msgid "Uh-oh! You've received a generic error message: :errorMessage"
+msgid "You've received a generic error message: :errorMessage"
 msgstr ""
 
 #: library/FOSSBilling/ErrorPage.php:256
@@ -393,15 +402,15 @@ msgstr "No se pudo extraer el archivo, por favor, compruebe los permisos de arch
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr ""
 
-#: library/FOSSBilling/UpdatePatcher.php:44
+#: library/FOSSBilling/UpdatePatcher.php:52
 msgid "Unable to load existing configuration."
 msgstr ""
 
-#: library/FOSSBilling/UpdatePatcher.php:51
+#: library/FOSSBilling/UpdatePatcher.php:59
 msgid "Unable to create backup of configuration file. Cancelling config migration."
 msgstr "No se ha podido crear la copia de seguridad del archivo de configuración. Cancelando la migración de configuración."
 
-#: library/FOSSBilling/UpdatePatcher.php:90
+#: library/FOSSBilling/UpdatePatcher.php:99
 msgid "Error when writing updated configuration file."
 msgstr "Error al escribir el archivo de configuración actualizado."
 
@@ -521,11 +530,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Redirigiendo a PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:306
-#: library/Payment/Adapter/Stripe.php:105 modules/Invoice/Service.php:1463
+#: library/Payment/Adapter/Stripe.php:105 modules/Invoice/Service.php:1411
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Pago de factura :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:107 modules/Invoice/Service.php:1465
+#: library/Payment/Adapter/Stripe.php:107 modules/Invoice/Service.php:1413
 msgid "Payment for invoice :serie:id"
 msgstr "Pago por factura :serie:id"
 
@@ -948,25 +957,25 @@ msgstr "Historial de eventos"
 msgid "Unknown API call :call"
 msgstr "Llamada API desconocida :call"
 
-#: modules/Api/Controller/Client.php:124
+#: modules/Api/Controller/Client.php:127
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Solicitud no válida. Asegúrese de que el origen de la solicitud sea: de"
 
-#: modules/Api/Controller/Client.php:135
+#: modules/Api/Controller/Client.php:138
 msgid "Unauthorized IP"
 msgstr "IP sin autorización"
 
-#: modules/Api/Controller/Client.php:189 modules/Api/Controller/Client.php:193
-#: modules/Api/Controller/Client.php:197 modules/Api/Controller/Client.php:211
-#: modules/Api/Controller/Client.php:219 modules/Api/Controller/Client.php:232
+#: modules/Api/Controller/Client.php:192 modules/Api/Controller/Client.php:196
+#: modules/Api/Controller/Client.php:200 modules/Api/Controller/Client.php:214
+#: modules/Api/Controller/Client.php:222 modules/Api/Controller/Client.php:235
 msgid "Authentication Failed"
 msgstr "Autenticación fallida"
 
-#: modules/Api/Controller/Client.php:245
+#: modules/Api/Controller/Client.php:248
 msgid "Unknown API call"
 msgstr "Llamada API desconocida"
 
-#: modules/Api/Controller/Client.php:324
+#: modules/Api/Controller/Client.php:327
 msgid "CSRF token invalid."
 msgstr "Token CSRF no válido."
 
@@ -1121,51 +1130,51 @@ msgstr "Invalid email confirmation link"
 msgid "The password you chose when creating your account."
 msgstr "La contraseña que eligió al crear su cuenta."
 
-#: modules/Client/Service.php:219
+#: modules/Client/Service.php:223
 msgid "Currency can not be changed. Client already have invoices issued."
 msgstr "La moneda no puede ser cambiada. El cliente ya tiene facturas emitidas."
 
-#: modules/Client/Service.php:224
+#: modules/Client/Service.php:228
 msgid "Currency can not be changed. Client already have orders."
 msgstr "La moneda no puede ser cambiada. El cliente ya tiene pedidos."
 
-#: modules/Client/Service.php:233
+#: modules/Client/Service.php:237
 msgid "Define clients currency before adding funds."
 msgstr "Definir la moneda de los clientes antes de agregar fondos."
 
-#: modules/Client/Service.php:237 modules/Client/ServiceBalance.php:126
+#: modules/Client/Service.php:241 modules/Client/ServiceBalance.php:126
 msgid "Funds amount is not valid"
 msgstr "El monto de los fondos no es válido"
 
-#: modules/Client/Service.php:241 modules/Client/ServiceBalance.php:130
+#: modules/Client/Service.php:245 modules/Client/ServiceBalance.php:130
 msgid "Funds description is not valid"
 msgstr "La descripción de los fondos no es válida"
 
-#: modules/Client/Service.php:408
+#: modules/Client/Service.php:412
 msgid "Client ID or email is required"
 msgstr "Se requiere ID de cliente o correo electrónico"
 
-#: modules/Client/Service.php:422
+#: modules/Client/Service.php:426
 msgid "Client not found"
 msgstr "Cliente no encontrado"
 
-#: modules/Client/Service.php:465
+#: modules/Client/Service.php:469
 msgid "Can not remove group with clients"
 msgstr "No se puede eliminar el grupo con los clientes"
 
-#: modules/Client/Service.php:602
+#: modules/Client/Service.php:606
 msgid "Please check your mailbox and confirm email address."
 msgstr "Por favor, compruebe su buzón y confirme la dirección de correo electrónico."
 
-#: modules/Client/Service.php:605
+#: modules/Client/Service.php:609
 msgid "Confirmation email was sent to your email address. Please click on link in it in order to verify your email."
 msgstr "El correo electrónico de confirmación se envió a su dirección de correo electrónico. Haga clic en el enlace para verificar su correo electrónico."
 
-#: modules/Client/Service.php:638 modules/Profile/Service.php:117
+#: modules/Client/Service.php:642 modules/Profile/Service.php:117
 msgid "Email can not be changed"
 msgstr "El correo electrónico no se puede cambiar"
 
-#: modules/Client/Service.php:651 modules/Client/Service.php:666
+#: modules/Client/Service.php:655 modules/Client/Service.php:670
 msgid "Field :field cannot be empty"
 msgstr ""
 
@@ -1467,7 +1476,7 @@ msgstr ""
 msgid "Amount cannot exceed :max_amount"
 msgstr ""
 
-#: modules/Invoice/Service.php:1106 modules/Invoice/Service.php:1170
+#: modules/Invoice/Service.php:1106 modules/Invoice/Service.php:1171
 msgid "Invoice not found"
 msgstr "Factura no encontrada"
 
@@ -1875,7 +1884,7 @@ msgstr "La configuración debe ser una matriz"
 #: modules/Servicecustom/Service.php:246 modules/Servicedomain/Api/Client.php:144
 #: modules/Servicedownloadable/Api/Admin.php:70
 #: modules/Servicedownloadable/Api/Client.php:40
-#: modules/Servicehosting/Api/Admin.php:444
+#: modules/Servicehosting/Api/Admin.php:449
 #: modules/Servicehosting/Api/Client.php:89
 #: modules/Servicelicense/Api/Admin.php:89
 #: modules/Servicelicense/Api/Client.php:53
@@ -2083,19 +2092,19 @@ msgstr "El tld o sld del dominio no existe"
 msgid "Account password is missing or is not valid"
 msgstr "La contraseña de la cuenta no es válida"
 
-#: modules/Servicehosting/Service.php:710
+#: modules/Servicehosting/Service.php:716
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Administrador de servidor inválido. El servidor no ha sido configurado correctamente."
 
-#: modules/Servicehosting/Service.php:725
+#: modules/Servicehosting/Service.php:736
 msgid "Server manager :adapter is not valid"
 msgstr "Administrador del servidor :adapter no es válido"
 
-#: modules/Servicehosting/Service.php:765
+#: modules/Servicehosting/Service.php:776
 msgid "Can not remove hosting plan which has active accounts"
 msgstr "No se puede eliminar el plan de alojamiento que tiene cuentas activas"
 
-#: modules/Servicehosting/Service.php:950
+#: modules/Servicehosting/Service.php:961
 msgid "Could not find main domain product"
 msgstr "No se pudo encontrar el dominio principal del producto"
 
@@ -2384,11 +2393,11 @@ msgstr "País: el código del teléfono no está registrado"
 msgid "Theme \":name\" assets folder is not writable. Files can not be uploaded and settings can not be saved. Set folder permissions to 777"
 msgstr "La carpeta de elementos \":name\" del tema no se puede escribir. Los archivos no se pueden cargar y la configuración no se puede guardar. Establecer permisos de carpeta en 777"
 
-#: modules/Theme/Controller/Admin.php:100
+#: modules/Theme/Controller/Admin.php:99
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
 msgstr "La carpeta de recursos del tema \":name\" no tiene permisos de escritura. Establezca los permisos de la carpeta :folder a 777"
 
-#: modules/Theme/Controller/Admin.php:104
+#: modules/Theme/Controller/Admin.php:103
 msgid "Theme \":name\" is not configurable"
 msgstr "El tema \":name\" no es configurable"
 
@@ -2396,15 +2405,11 @@ msgstr "El tema \":name\" no es configurable"
 msgid "Theme \":name\" does not exist"
 msgstr "El tema \":name\" no existe"
 
-#: modules/Theme/Service.php:175
-msgid "Error uploading file :file Error code: :error"
-msgstr "Error al cargar el archivo :archivo Código de error: :error"
-
-#: modules/Theme/Service.php:340
+#: modules/Theme/Service.php:322
 msgid "Theme was not found in path :path"
 msgstr "El tema no se encontró en la ruta: ruta"
 
-#: modules/Theme/Service.php:357
+#: modules/Theme/Service.php:339
 msgid "Unable to decode theme manifest file :file"
 msgstr "No se puede decodificar el archivo de manifiesto del tema :file"
 
@@ -7343,7 +7348,7 @@ msgstr ""
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:12
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:105
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Nameservers"
 msgstr "Servidores de nombres"
 
@@ -7500,7 +7505,7 @@ msgstr ""
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:39
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:107
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:117
 msgid "Nameserver 1"
 msgstr "Servidor de nombres 1"
 
@@ -7511,7 +7516,7 @@ msgstr "Servidor de nombres 1"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:113
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
 msgid "Nameserver 2"
 msgstr ""
 
@@ -7522,7 +7527,7 @@ msgstr ""
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:119
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
 msgid "Nameserver 3"
 msgstr ""
 
@@ -7533,7 +7538,7 @@ msgstr ""
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:48
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:125
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
 msgid "Nameserver 4"
 msgstr ""
 
@@ -8010,7 +8015,7 @@ msgid "Test connection"
 msgstr "Probar conexión"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:64
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:157
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:167
 msgid "Server connected"
 msgstr ""
 
@@ -8241,7 +8246,19 @@ msgstr ""
 msgid "Update and test connection"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:132
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:105
+msgid "Optional configuration"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:107
+msgid "Users prefix"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
+msgid "Prefix for created users (especially for database)"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:142
 msgid "Update server"
 msgstr ""
 
