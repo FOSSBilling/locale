@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-07-02 13:03-0700\n"
-"PO-Revision-Date: 2023-07-02 20:14\n"
+"POT-Creation-Date: 2023-07-03 14:55-0700\n"
+"PO-Revision-Date: 2023-07-03 21:58\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Vietnamese\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr ""
 
-#: index.php:51 library/Box/App.php:380 library/Box/AppClient.php:59
+#: index.php:51 library/Box/App.php:378 library/Box/AppClient.php:58
 msgid "Page :url not found"
 msgstr "Trang :url không tồn tại"
 
@@ -64,11 +64,11 @@ msgstr "Class Api phải là thực thể của Api_Abstract"
 msgid ":type API call :method does not exist in module :module"
 msgstr "Lời gọi :type API :method không tồn tại trong mô-đun :module"
 
-#: library/Box/App.php:352
-msgid "The system is undergoing maintenance. Please try again later."
-msgstr "Hệ thống đang được bảo trì. Xin vui lòng thử lại."
+#: library/Box/App.php:350
+msgid "The system is undergoing maintenance. Please try again later"
+msgstr ""
 
-#: library/Box/AppClient.php:77
+#: library/Box/AppClient.php:76
 msgid "Page not found"
 msgstr "Trang không tồn tại"
 
@@ -89,8 +89,8 @@ msgid "Module :mod manifest file is missing"
 msgstr "Tệp tin mô-đun manifest :mod bị thiếu"
 
 #: library/Box/Mod.php:77
-msgid "Module :mod manifest file is not valid. Check file syntax and permissions."
-msgstr "Tệp tin mô-đun manifest :mod không hợp lệ. Kiểm tra cú pháp và quyền tệp tin."
+msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
+msgstr ""
 
 #: library/Box/Mod.php:118
 msgid "Module :mod does not have service class"
@@ -218,17 +218,10 @@ msgstr "năm"
 msgid "decade"
 msgstr "thập kỷ"
 
-#: library/Box/TwigLoader.php:24
-msgid "Missing mods param for Box_TwigLoader"
-msgstr "Missing mods param for Box_TwigLoader"
-
-#: library/Box/TwigLoader.php:28
-msgid "Missing theme param for Box_TwigLoader"
-msgstr "Missing theme param for Box_TwigLoader"
-
+#: library/Box/TwigLoader.php:24 library/Box/TwigLoader.php:28
 #: library/Box/TwigLoader.php:32
-msgid "Missing type param for Box_TwigLoader"
-msgstr "Missing type param for Box_TwigLoader"
+msgid "Missing :missing: param for Box_TwigLoader"
+msgstr ""
 
 #: library/FOSSBilling/CentralAlerts.php:118
 msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
@@ -375,8 +368,15 @@ msgid "Service class :class was not found in :path"
 msgstr "Service class :class không tồn tại trong :path"
 
 #: library/FOSSBilling/Tools.php:283
-msgid "Email address is invalid"
-msgstr "Địa chỉ email không hợp lệ"
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
+msgid "Email address"
+msgstr "Địa chỉ email"
+
+#: library/FOSSBilling/Tools.php:284 library/FOSSBilling/Validate.php:107
+#: modules/Servicehosting/Api/Guest.php:37
+msgid ":friendlyName: is invalid"
+msgstr ""
 
 #: library/FOSSBilling/Update.php:104
 msgid "Failed to download the latest version information. Further details are available in the error log."
@@ -399,11 +399,11 @@ msgid "Unable to clear cache and/or remove install folder. Further details are a
 msgstr ""
 
 #: library/FOSSBilling/UpdatePatcher.php:52
-msgid "Unable to load existing configuration."
+msgid "Unable to load existing configuration"
 msgstr ""
 
 #: library/FOSSBilling/UpdatePatcher.php:59
-msgid "Unable to create backup of configuration file. Cancelling config migration."
+msgid "Unable to create backup of configuration file"
 msgstr ""
 
 #: library/FOSSBilling/UpdatePatcher.php:99
@@ -431,7 +431,8 @@ msgid "Password must include at least one uppercase letter."
 msgstr "Mật khẩu phải bao gồm ít nhất một chữ cái viết hoa."
 
 #: library/FOSSBilling/Validate.php:106
-msgid "Birth date is invalid"
+#: modules/Client/html_client/mod_client_profile.html.twig:68
+msgid "Birthdate"
 msgstr ""
 
 #: library/Model/ProductDomainTable.php:217
@@ -483,8 +484,31 @@ msgid "Error getting service for contract"
 msgstr "Lỗi lấy dịch vụ cho hợp đồng"
 
 #: library/Payment/Adapter/AliPay.php:148
-msgid "AliPay does not support recurrent payments"
-msgstr "AliPay không hỗ trợ thanh toán định kỳ"
+#: library/Payment/Adapter/Interkassa.php:125
+msgid "reccurent payments"
+msgstr ""
+
+#: library/Payment/Adapter/AliPay.php:148
+#: library/Payment/Adapter/Interkassa.php:125
+#: library/Registrar/Adapter/Internetbs.php:76
+#: library/Registrar/Adapter/Internetbs.php:172
+#: library/Registrar/Adapter/Namecheap.php:435
+#: library/Registrar/Adapter/Namecheap.php:574 library/Server/Manager/CWP.php:245
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
+#: library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:329 library/Server/Manager/Hestia.php:339
+#: library/Server/Manager/Hestia.php:378 library/Server/Manager/Ispconfig3.php:61
+#: library/Server/Manager/Ispconfig3.php:190
+#: library/Server/Manager/Ispconfig3.php:195
+#: library/Server/Manager/Ispconfig3.php:200 library/Server/Manager/Plesk.php:55
+#: library/Server/Manager/Plesk.php:201 library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Virtualmin.php:163
+#: library/Server/Manager/Virtualmin.php:168
+#: library/Server/Manager/Virtualmin.php:173
+msgid ":type: does not support :action:"
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:59
 msgid "Not enough in balance"
@@ -499,16 +523,14 @@ msgstr ""
 #: library/Payment/Adapter/ClientBalance.php:83
 #: library/Payment/Adapter/Interkassa.php:176
 #: library/Payment/Adapter/PayPalEmail.php:77
-msgid "IPN is not valid"
-msgstr "IPN không hợp lệ"
+#: library/Payment/Adapter/TwoCheckout.php:122
+#: library/Payment/Adapter/WebMoney.php:103
+msgid "IPN is invalid"
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:121
 msgid "ClientBalance gateway is not enabled"
 msgstr "Cổng thanh toán ClientBalance không được bật"
-
-#: library/Payment/Adapter/Interkassa.php:125
-msgid "Interkassa payment gateway do not support recurrent payments"
-msgstr "Cổng thanh toán Interkassa không hỗ trợ thanh toán định kỳ"
 
 #: library/Payment/Adapter/Interkassa.php:217
 #: library/Payment/Adapter/PayPalEmail.php:125
@@ -542,21 +564,13 @@ msgstr "Cổng thanh toán \"Stripe\" chưa được cấu hình chính xác. H�
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
 msgstr "Cổng thanh toán \"Stripe\" chưa được cấu hình chính xác. Hãy cập nhật tham số \"test_api_key\" tại \"Cấu hình -> Thanh toán\"."
 
-#: library/Payment/Adapter/TwoCheckout.php:122
-msgid "2Checkout IPN is not valid"
-msgstr "2Checkout IPN không hợp lệ"
-
 #: library/Payment/Adapter/TwoCheckout.php:136
-msgid "Invoice id could not be determined for this transaction"
-msgstr "ID hóa đơn không thể nhận dạng cho giao dịch này"
+msgid "Invoice ID could not be determined for this transaction"
+msgstr ""
 
 #: library/Payment/Adapter/TwoCheckout.php:364
 msgid "Redirecting to 2Checkout.com"
 msgstr "Đang chuyển hướng tới 2Checkout.com"
-
-#: library/Payment/Adapter/WebMoney.php:103
-msgid "WebMoney IPN is not valid"
-msgstr "WebMoney IPN không hợp lệ"
 
 #: library/Payment/AdapterAbstract.php:61
 msgid "Return URL for payment gateway was not set"
@@ -593,59 +607,62 @@ msgstr "Lớp payment adapter chưa được triển khai cấu hình phương t
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Registrar/Adapter/Email.php:67
-msgid "Email registrar can not determine whether domain is available"
-msgstr "Nhà đăng ký email không thể xác định tên miền có còn tự do"
-
-#: library/Registrar/Adapter/Email.php:72
-msgid "Email registrar can not determine whether domain can be transferred"
-msgstr "Nhà đăng ký email không thể xác định tên miền có thể được chuyển về"
+#: library/Registrar/Adapter/Email.php:67 library/Registrar/Adapter/Email.php:72
+msgid "Email registrar is unable to :action:"
+msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:76
-msgid "Domain transfer checking is not implemented"
-msgstr "Kiểm tra trạng thái chuyển đổi tên miền chưa được triển khai"
+msgid "checking domain transferability"
+msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:172
-msgid "Registrar does not support domain removal."
-msgstr "Nhà đăng ký không hỗ trợ xóa tên miền."
+#: library/Registrar/Adapter/Namecheap.php:574
+msgid "deleting domains"
+msgstr ""
 
 #: library/Registrar/Adapter/Namecheap.php:117
 msgid "Premium domains cannot be registered."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:169
-#: library/Registrar/Adapter/Namecheap.php:173
-msgid "Error: :error"
+#: library/Registrar/Adapter/Namecheap.php:171
+#: library/Registrar/Adapter/Namecheap.php:177
+#: library/Registrar/Adapter/Namecheap.php:254
+#: library/Registrar/Adapter/Namecheap.php:351
+#: library/Registrar/Adapter/Namecheap.php:597
+#: library/Registrar/Adapter/Namecheap.php:660
+#: library/Registrar/Adapter/Namecheap.php:684
+#: library/Registrar/Adapter/Namecheap.php:712
+#: library/Registrar/Adapter/Resellerclub.php:399
+#: library/Registrar/Adapter/Resellerclub.php:709
+#: library/Registrar/Adapter/Resellerclub.php:715
+#: library/Registrar/Adapter/Resellerclub.php:721
+msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:249
-msgid "Could not update name servers"
+#: library/Registrar/Adapter/Namecheap.php:253
+msgid "update nameservers"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:345
-msgid "API ERROR: could not retrieve domain details"
-msgstr "LỖI API: không thể lấy thông tin chi tiết tên miền"
+#: library/Registrar/Adapter/Namecheap.php:350
+msgid "retrieve domain details"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:429
-msgid "This feature is unavailable through the Namecheap API. Please contact your administrator."
-msgstr "Tính năng không khả dụng qua API Namecheap. Hãy liên hệ với người quản trị của bạn."
+#: library/Registrar/Adapter/Namecheap.php:435
+msgid "retrieving the transfer code"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:568
-msgid "Domain deletion is not implemented in the NameCheap adapter. Please contact your system administrator."
-msgstr "Tính năng xóa tên miền chưa được triển khai tại bộ kết nối Namecheap. Vui lòng liên hệ với người quản trị hệ thống của bạn."
+#: library/Registrar/Adapter/Namecheap.php:596
+msgid "retrieve privacy information"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:590
-msgid "Could not retrieve privacy info on this domain."
-msgstr "Không truy xuất thông tin cá nhân của tên miền này."
+#: library/Registrar/Adapter/Namecheap.php:659
+msgid "get the domain lock status"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:652
-msgid "API ERROR: could not get lock status on domain"
-msgstr "LỖI API: không thể lấy trạng thái khóa của tên miền"
-
-#: library/Registrar/Adapter/Namecheap.php:675
-#: library/Registrar/Adapter/Namecheap.php:702
-msgid "API ERROR: could not set lock status on domain"
-msgstr "LỖI API: không thể đặt trạng thái khóa cho tên miền"
+#: library/Registrar/Adapter/Namecheap.php:683
+#: library/Registrar/Adapter/Namecheap.php:711
+msgid "set the domain lock status"
+msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:40
 msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub Reseller ID\" at \"Configuration -> Domain registration\"."
@@ -656,34 +673,34 @@ msgid "Domain registrar \"ResellerClub\" is not configured properly. Please upda
 msgstr "Nhà đăng ký \"ResellerClub\" chưa được cấu hình chính xác. Vui lòng cập nhật tham số cấu hình \"ResellerClub API Key\" tại \"Cấu hình -> Đăng ký tên miền\"."
 
 #: library/Registrar/Adapter/Resellerclub.php:335
-msgid "Valid contact company number is required while registering AU domain name"
-msgstr "Mã số doanh nghiệp hợp lệ của đầu mối liên lạc buộc phải có khi đăng ký tên miền AU"
+msgid "A valid contact company number is mandatory for registering an .AU domain name"
+msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:398
-msgid "Domain EPP code can be retrieved from domain registrar"
-msgstr "Không thể truy xuất mã EPP tên miền từ nhà đăng ký tên miền"
+msgid "get the transfer code"
+msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:591
+#: library/Registrar/Adapter/Resellerclub.php:592
 msgid "You are already registered as reseller"
 msgstr "Bạn đã đăng ký như với vai trò đại lý"
 
-#: library/Registrar/Adapter/Resellerclub.php:832
+#: library/Registrar/Adapter/Resellerclub.php:839
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:852
+#: library/Registrar/Adapter/Resellerclub.php:859
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:876
-msgid "Valid contact birth date is required while registering RU domain name"
+#: library/Registrar/Adapter/Resellerclub.php:883
+msgid "Valid contact birthdate is required while registering RU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:880
+#: library/Registrar/Adapter/Resellerclub.php:887
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:967
+#: library/Registrar/Adapter/Resellerclub.php:974
 msgid "Contact not found"
 msgstr "Không tìm thấy liên hệ"
 
@@ -699,45 +716,85 @@ msgstr "Lớp nhà đăng ký tên miền chưa triển khai phương thức c�
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:86
-msgid "Failed to connect to server"
-msgstr "Kết nối đến máy chủ thất bại"
+#: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:428
+#: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:143
+#: library/Server/Manager/Plesk.php:47 library/Server/Manager/Virtualmin.php:51
+msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:143
-msgid "Failed to create account!"
-msgstr "Tạo tài khoản thất bại!"
+#: library/Server/Manager/CWP.php:143 library/Server/Manager/Plesk.php:86
+#: library/Server/Manager/Virtualmin.php:392
+msgid "create account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:159
-msgid "Failed to suspend account!"
-msgstr "Khóa tài khoản thất bại!"
+#: library/Server/Manager/CWP.php:144 library/Server/Manager/CWP.php:161
+#: library/Server/Manager/CWP.php:178 library/Server/Manager/CWP.php:198
+#: library/Server/Manager/CWP.php:218 library/Server/Manager/CWP.php:236
+#: library/Server/Manager/Directadmin.php:439
+#: library/Server/Manager/Hestia.php:201 library/Server/Manager/Hestia.php:205
+#: library/Server/Manager/Hestia.php:232 library/Server/Manager/Hestia.php:257
+#: library/Server/Manager/Hestia.php:286 library/Server/Manager/Hestia.php:316
+#: library/Server/Manager/Hestia.php:365
+#: library/Server/Manager/Ispconfig3.php:734 library/Server/Manager/Plesk.php:87
+#: library/Server/Manager/Virtualmin.php:311
+#: library/Server/Manager/Virtualmin.php:393
+#: library/Server/Manager/Virtualmin.php:416
+#: library/Server/Manager/Virtualmin.php:439
+#: library/Server/Manager/Virtualmin.php:463
+#: library/Server/Manager/Virtualmin.php:486
+#: library/Server/Manager/Virtualmin.php:516
+#: library/Server/Manager/Virtualmin.php:544
+#: library/Server/Manager/Virtualmin.php:572
+#: library/Server/Manager/Virtualmin.php:660 library/Server/Manager/Whm.php:422
+#: library/Server/Manager/Whm.php:427 library/Server/Manager/Whm.php:432
+#: library/Server/Manager/Whm.php:437 library/Server/Manager/Whm.php:442
+msgid "Failed to :action: on the :type: server, check the error logs for further details"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:175
-msgid "Failed to unsuspend account!"
-msgstr "Mở khóa tài khoản thất bại!"
+#: library/Server/Manager/CWP.php:160 library/Server/Manager/Hestia.php:231
+#: library/Server/Manager/Virtualmin.php:415
+msgid "suspend account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:194
-msgid "Failed to cancel / delete account!"
-msgstr "Hủy/xóa tài khoản thất bại!"
+#: library/Server/Manager/CWP.php:177 library/Server/Manager/Hestia.php:256
+#: library/Server/Manager/Virtualmin.php:438
+msgid "unsuspend account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:213
-msgid "Failed to change the account package!"
-msgstr "Thay đổi gói tài khoản thất bại!"
+#: library/Server/Manager/CWP.php:197 library/Server/Manager/Hestia.php:285
+#: library/Server/Manager/Virtualmin.php:485
+msgid "cancel account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:230
-msgid "Failed to change the account password!"
-msgstr "Thay đổi mật khẩu tài khoản thất bại!"
+#: library/Server/Manager/CWP.php:217 library/Server/Manager/Hestia.php:315
+msgid "change account package"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:239
-msgid "CWP does not support username changes"
-msgstr "CWP không hỗ trợ thay đổi tên người dùng"
+#: library/Server/Manager/CWP.php:235 library/Server/Manager/Hestia.php:364
+#: library/Server/Manager/Virtualmin.php:462
+msgid "change account password"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:244
-msgid "CWP does not support changing the primary domain name"
-msgstr "CWP không hỗ trợ thay đổi tên miền chính"
+#: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/Hestia.php:329
+#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:201
+msgid "username changes"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:249
-msgid "CWP does not support changing the IP"
-msgstr "CWP không hỗ trợ đổi IP"
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/Hestia.php:339
+#: library/Server/Manager/Ispconfig3.php:195
+msgid "changing the account domain"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:378
+#: library/Server/Manager/Ispconfig3.php:200 library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Virtualmin.php:163
+#: library/Server/Manager/Virtualmin.php:168
+#: library/Server/Manager/Virtualmin.php:173
+msgid "changing the account IP"
+msgstr ""
 
 #: library/Server/Manager/Directadmin.php:95
 msgid "There are no available IPs on this server."
@@ -755,93 +812,29 @@ msgstr ""
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Lỗi bộ quản lý máy chủ \"DirectAdmin\": \"Tài khoản không bị khóa\""
 
-#: library/Server/Manager/Directadmin.php:329
-msgid "DirectAdmin does not support username changes"
-msgstr ""
-
-#: library/Server/Manager/Directadmin.php:334
-msgid "DirectAdmin does not support domain changes"
-msgstr ""
-
-#: library/Server/Manager/Directadmin.php:339
-msgid "DirectAdmin does not support IP changes"
-msgstr ""
-
 #: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:411
 msgid "HttpClientException: :error"
 msgstr ""
-
-#: library/Server/Manager/Directadmin.php:428
-msgid "Server Manager DirectAdmin Error: \"Login failed\""
-msgstr "Lỗi bộ quản lý máy chủ \"DirectAdmin\": \"Lỗi đăng nhập\""
 
 #: library/Server/Manager/Directadmin.php:432
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Lỗi bộ quản lý máy chủ \"DirectAdmin\": \"Yêu cầu của bạn không thể thực hiện được vì nó không thuộc cấp độ thẩm quyền của bạn\""
 
-#: library/Server/Manager/Directadmin.php:438
-msgid "Server Manager DirectAdmin Error: :error"
+#: library/Server/Manager/Hestia.php:200
+msgid "create user"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:141
-msgid "Connection to server failed. Error code: :code"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:198
-msgid "Server Manager Hestia CP Error: Unable to create User. Error code: :code"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:201
-msgid "Server Manager Hestia CP Error: Create Domain failure. Error code: :code"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:227
-msgid "Server Manager Hestia CP Error: Suspend Account Error. Error code: :code"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:251
-msgid "Server Manager Hestia CP Error: Unsuspend Account Error. Error code: :code"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:279
-msgid "Server Manager Hestia CP Error: Cancel Account Error. Error code: :code"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:308
-msgid "Server Manager Hestia CP Error: Change User package Account Error. Error code: :code"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:321 library/Server/Manager/Hestia.php:331
-#: library/Server/Manager/Hestia.php:369
-msgid "Server Manager Hestia CP Error: Not Supported"
-msgstr "Lỗi Hestia CP: Không được hỗ trợ"
-
-#: library/Server/Manager/Hestia.php:356
-msgid "Server Manager Hestia CP Error: Change Password Account Error. Error code: :code"
+#: library/Server/Manager/Hestia.php:204
+msgid "create domain"
 msgstr ""
 
 #: library/Server/Manager/Ispconfig3.php:19
 msgid "PHP Soap extension required for IspConfig server manager"
 msgstr "Phần mở rộng PHP Soap là bắt buộc cho trình quản lý máy chủ IspConfig"
 
-#: library/Server/Manager/Ispconfig3.php:61
-msgid "Server manager does not support sync"
-msgstr "Trình quản lý máy chủ không hỗ trợ đồng bộ"
-
-#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:200
-#: library/Server/Manager/Virtualmin.php:163
-msgid "Server manager does not support username changes"
-msgstr "Trình quản lý máy chủ không hỗ trợ đổi tên người dùng"
-
-#: library/Server/Manager/Ispconfig3.php:195
-#: library/Server/Manager/Virtualmin.php:168
-msgid "Server manager does not support domain changes"
-msgstr "Trình quản lý máy chủ không hỗ trợ đổi tên miền"
-
-#: library/Server/Manager/Ispconfig3.php:200
-#: library/Server/Manager/Virtualmin.php:173
-msgid "Server manager does not support ip changes"
-msgstr "Trình quản lý máy chủ không hỗ trợ đổi ip"
+#: library/Server/Manager/Ispconfig3.php:61 library/Server/Manager/Plesk.php:55
+msgid "account synchronization"
+msgstr ""
 
 #: library/Server/Manager/Ispconfig3.php:538
 msgid "Could not load Soap client"
@@ -851,29 +844,9 @@ msgstr "Không thể tải Soap client"
 msgid "Could not retrieve session"
 msgstr "Không thể lấy phiên làm việc"
 
-#: library/Server/Manager/Ispconfig3.php:733
-msgid "Error when making request to the server"
-msgstr "Lỗi khi tại yêu cầu đến máy chủ"
-
-#: library/Server/Manager/Plesk.php:47 library/Server/Manager/Virtualmin.php:51
-msgid "Connection to server failed"
-msgstr "Kết nối đến máy chủ thất bại"
-
-#: library/Server/Manager/Plesk.php:55
-msgid "The server adapter does not support account synchronization"
-msgstr "Bộ kết nối máy chủ không hỗ trợ đồng bộ tài khoản"
-
-#: library/Server/Manager/Plesk.php:86
-msgid "Failed to create new account"
-msgstr "Lỗi tạo tài khoản mới"
-
-#: library/Server/Manager/Plesk.php:170
+#: library/Server/Manager/Plesk.php:171
 msgid "Can't modify client"
 msgstr "Không thể sửa khách hàng"
-
-#: library/Server/Manager/Plesk.php:227
-msgid "Server manager does not support changing IP addresses"
-msgstr "Trình quản lý máy chủ không hỗ trợ đổi địa chỉ IP"
 
 #: library/Server/Manager/Virtualmin.php:87
 #: library/Server/Manager/Virtualmin.php:100
@@ -885,59 +858,39 @@ msgid "Create reseller command is only available in Virtualmin PRO version"
 msgstr "Lệnh tạo đại lý chỉ khả dụng với bản Virtualmin PRO"
 
 #: library/Server/Manager/Virtualmin.php:310
-#: library/Server/Manager/Virtualmin.php:650
-msgid "Failed to create reseller's account"
-msgstr "Tạo tài khoản đại lý thất bại"
+#: library/Server/Manager/Virtualmin.php:659
+msgid "create reseller account"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:391
-msgid "Failed to create account"
-msgstr "Lỗi tạo tài khoản"
+#: library/Server/Manager/Virtualmin.php:515
+msgid "modify domain details"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:413
-msgid "Failed to suspend user's account"
-msgstr "Lỗi khóa tài khoản người dùng"
+#: library/Server/Manager/Virtualmin.php:543
+msgid "enable features"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:435
-msgid "Failed to unsuspend user's account"
-msgstr "Lỗi mở khóa tài khoản người dùng"
+#: library/Server/Manager/Virtualmin.php:571
+msgid "disable features"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:458
-msgid "Failed to change user's password"
-msgstr "Lỗi thay đổi mật khẩu người dùng"
-
-#: library/Server/Manager/Virtualmin.php:480
-msgid "Failed to delete user's account"
-msgstr "Lỗi xóa tài khoản người dùng"
-
-#: library/Server/Manager/Virtualmin.php:509
-msgid "Failed to modify domain details"
-msgstr "Sửa thông tin tên miền thất bại"
-
-#: library/Server/Manager/Virtualmin.php:536
-msgid "Failed to enable features"
-msgstr "Bật tính năng thất bại"
-
-#: library/Server/Manager/Virtualmin.php:563
-msgid "Failed to disable features"
-msgstr "Tắt tính năng thất bại"
-
-#: library/Server/Manager/Virtualmin.php:570
+#: library/Server/Manager/Virtualmin.php:579
 msgid "Cancel reseller command only available in Virtualmin PRO version"
 msgstr "Lệnh hủy đại lý chỉ khả dụng với bản Virtualmin PRO"
 
-#: library/Server/Manager/Virtualmin.php:581
+#: library/Server/Manager/Virtualmin.php:590
 msgid "Failed to delete reseller"
 msgstr "Xóa đại lý thất bại"
 
-#: library/Server/Manager/Virtualmin.php:588
+#: library/Server/Manager/Virtualmin.php:597
 msgid "Modify reseller comand is only available in Virtualmin PRO version"
 msgstr "Lệnh sửa đại lý chỉ khả dụng với bản Virtualmin PRO"
 
-#: library/Server/Manager/Virtualmin.php:601
+#: library/Server/Manager/Virtualmin.php:610
 msgid "Failed to change reseller's password"
 msgstr "Thay đổi mật khẩu đại lý thất bại"
 
-#: library/Server/Manager/Virtualmin.php:608
+#: library/Server/Manager/Virtualmin.php:617
 msgid "Modify reseller command is only available in Virtualmin PRO version"
 msgstr "Lệnh sửa đại lý chỉ khả dụng với bản Virtualmin PRO"
 
@@ -949,7 +902,7 @@ msgstr "Hoạt động"
 msgid "Event history"
 msgstr "Lịch sử sự kiện"
 
-#: modules/Api/Controller/Client.php:47
+#: modules/Api/Controller/Client.php:47 modules/Api/Controller/Client.php:248
 msgid "Unknown API call :call"
 msgstr "Lời gọi API không xác định :call"
 
@@ -967,17 +920,14 @@ msgstr "IP chưa được cấp quyền"
 msgid "Authentication Failed"
 msgstr "Xác thực thất bại"
 
-#: modules/Api/Controller/Client.php:248
-msgid "Unknown API call"
-msgstr "Lời gọi API không rõ ràng"
-
 #: modules/Api/Controller/Client.php:327
-msgid "CSRF token invalid."
-msgstr "Khóa CSRF không hợp lệ."
+msgid "CSRF token invalid"
+msgstr ""
 
 #: modules/Cart/Api/Guest.php:59 modules/Currency/Api/Admin.php:69
 #: modules/Currency/Api/Admin.php:249 modules/Currency/Api/Guest.php:48
-#: modules/Currency/Service.php:463 modules/Currency/Service.php:573
+#: modules/Currency/Service.php:326 modules/Currency/Service.php:463
+#: modules/Currency/Service.php:573
 msgid "Currency not found"
 msgstr "Tiền tệ không tồn tại"
 
@@ -995,19 +945,19 @@ msgid "Addon products cannot be added separately."
 msgstr ""
 
 #: modules/Cart/Api/Guest.php:184
-msgid "One or more of your selected addons are not valid for the associated product."
+msgid "One or more of your selected addons are invalid for the associated product."
 msgstr ""
 
 #: modules/Cart/Service.php:84
-msgid "Selected billing period is not valid"
-msgstr "Giai đoạn hóa đơn thanh toán được chọn là không hợp lệ"
+msgid "Selected billing period is invalid"
+msgstr ""
 
 #: modules/Cart/Service.php:91
 msgid "This item is currently out of stock"
 msgstr ""
 
 #: modules/Cart/Service.php:124
-msgid "Selected billing period is not valid for the selected addon"
+msgid "Selected billing period is invalid for the selected addon"
 msgstr ""
 
 #: modules/Cart/Service.php:218 modules/Product/Api/Guest.php:84
@@ -1023,8 +973,8 @@ msgid "You have already used this promo code. Please remove promo code and check
 msgstr "Bạn đã sử dụng mã giảm giá này. Vui lòng xóa mã giảm giá và làm thủ tục thanh toán lần nữa."
 
 #: modules/Cart/Service.php:485
-msgid "Can not checkout empty cart."
-msgstr "Không thể thanh toán giỏ hàng rỗng."
+msgid "Can not checkout an empty cart"
+msgstr ""
 
 #: modules/Cart/Service.php:497
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -1139,12 +1089,12 @@ msgid "Define clients currency before adding funds."
 msgstr "Định nghĩa tiền tệ của khách hàng trước khi thêm quỹ."
 
 #: modules/Client/Service.php:241 modules/Client/ServiceBalance.php:126
-msgid "Funds amount is not valid"
-msgstr "Tổng quỹ không hợp lệ"
+msgid "Funds amount is invalid"
+msgstr ""
 
 #: modules/Client/Service.php:245 modules/Client/ServiceBalance.php:130
-msgid "Funds description is not valid"
-msgstr "Mô tả quỹ không hợp lệ"
+msgid "Funds description is invalid"
+msgstr ""
 
 #: modules/Client/Service.php:412
 msgid "Client ID or email is required"
@@ -1183,8 +1133,8 @@ msgid "Currency already registered"
 msgstr "Tiền tệ đã đăng ký"
 
 #: modules/Currency/Api/Admin.php:115
-msgid "Currency code is not valid"
-msgstr "Mã tiền tệ không hợp lệ"
+msgid "Currency code is invalid"
+msgstr ""
 
 #: modules/Currency/Service.php:58
 msgid "Currency conversion rate can not be zero"
@@ -1198,13 +1148,9 @@ msgstr "Mã tiền tệ chưa được cung cấp"
 msgid "Can not remove default currency"
 msgstr "Không thể xóa tiền tệ mặc định"
 
-#: modules/Currency/Service.php:326
-msgid "Currency code not found"
-msgstr "Mã tiền tệ không tồn tại"
-
 #: modules/Currency/Service.php:481
-msgid "Currency rate is not valid"
-msgstr "Tỉ giá hối đoái không hợp lệ"
+msgid "Currency rate is invalid"
+msgstr ""
 
 #: modules/Currency/Service.php:545
 msgid "Failed to get currency rates for :currency from the European Central Bank API"
@@ -1313,8 +1259,8 @@ msgid "Form style was not found in predefined list"
 msgstr "Style biểu mẫu không tồn tại trong danh sách định nghĩa trước"
 
 #: modules/Formbuilder/Api/Admin.php:79
-msgid "Form field type is not valid"
-msgstr "Loại trường biểu mẫu không hợp lệ"
+msgid "Form field type is invalid"
+msgstr ""
 
 #: modules/Formbuilder/Api/Admin.php:82 modules/Formbuilder/Api/Admin.php:255
 msgid "This input type must have unique values"
@@ -1799,8 +1745,8 @@ msgid "This promotion code already exists."
 msgstr ""
 
 #: modules/Profile/Service.php:137
-msgid "Invalid birth date value"
-msgstr "Sai định dạng ngày sinh"
+msgid "Invalid birthdate value"
+msgstr ""
 
 #: modules/Queue/Api/Admin.php:101
 msgid "Message handler function :method does not exists"
@@ -1926,8 +1872,8 @@ msgid "Domain order is not activated"
 msgstr "Đơn đặt tên miền chưa được kích hoạt"
 
 #: modules/Servicedomain/Api/Guest.php:95
-msgid "Domain :domain is not valid"
-msgstr "Tên miền :domain không hợp lệ"
+msgid "Domain :domain is invalid"
+msgstr ""
 
 #: modules/Servicedomain/Api/Guest.php:100
 msgid "Domain availability could not be determined. TLD is not active."
@@ -1968,8 +1914,8 @@ msgstr "Dữ liệu đặt hàng phải chứa trường cấu hình :field"
 
 #: modules/Servicedomain/Service.php:65 modules/Servicedomain/Service.php:82
 #: modules/Servicedomain/Service.php:113 modules/Servicedomain/Service.php:548
-msgid "Domain name :domain is not valid"
-msgstr "Tên miền :domain không hợp lệ"
+msgid "Domain name :domain is invalid"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:98
 msgid ":domain can not be transferred!"
@@ -1996,8 +1942,8 @@ msgid "Nameserver 2 is required"
 msgstr "Nameserver 2 là bắt buộc"
 
 #: modules/Servicedomain/Service.php:521 modules/Servicedomain/Service.php:542
-msgid "Domain name is not valid"
-msgstr "Tên miền không hợp lệ"
+msgid "Domain name is invalid"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:525
 msgid "Domain can not be transferred"
@@ -2041,8 +1987,8 @@ msgid "plan_id is missing"
 msgstr "plan_id bị thiếu"
 
 #: modules/Servicehosting/Api/Guest.php:36
-msgid "Product type is invalid"
-msgstr "Loại sản phẩm không hợp lệ"
+msgid "Product type"
+msgstr ""
 
 #: modules/Servicehosting/Controller/Admin.php:34
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
@@ -2065,36 +2011,36 @@ msgid "Hosting product is not configured completely. Configure hosting plan for 
 msgstr "Sản phẩm lưu trữ web chưa được cấu hình xong. Hãy cấu hình gói cho sản phẩm lưu trữ web."
 
 #: modules/Servicehosting/Service.php:52
-msgid "Domain name is not valid."
-msgstr "Tên miền không hợp lệ."
+msgid "Domain name is invalid."
+msgstr ""
 
 #: modules/Servicehosting/Service.php:55
-msgid "Domain extension is not valid."
-msgstr "Phần đuôi tên miền không hợp lệ."
+msgid "Domain extension is invalid."
+msgstr ""
 
 #: modules/Servicehosting/Service.php:255
-msgid "Account username is missing or is not valid"
-msgstr "Tên đăng nhập tài khoản bị thiếu hoặc không hợp lệ"
+msgid "Account username is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:277
-msgid "Account ip is missing or is not valid"
-msgstr "Ip tài khoản bị thiếu hoặc không hợp lệ"
+msgid "Account ip is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:301
 msgid "Domain sld or tld is missing"
 msgstr "Sld hoặc tld tên miền bị thiếu"
 
 #: modules/Servicehosting/Service.php:327
-msgid "Account password is missing or is not valid"
-msgstr "Mật khẩu tài khoản bị thiếu hoặc không hợp lệ"
+msgid "Account password is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:716
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Trình quản lý máy chủ không hợp lệ. Máy chủ chưa được cấu hình chính xác."
 
 #: modules/Servicehosting/Service.php:736
-msgid "Server manager :adapter is not valid"
-msgstr "Trình quản lý máy chủ :adapter không hợp lệ"
+msgid "Server manager :adapter is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:776
 msgid "Can not remove hosting plan which has active accounts"
@@ -2246,8 +2192,8 @@ msgid "We have already received this request."
 msgstr "Bạn đã nhận được yêu cầu này."
 
 #: modules/Support/Service.php:968
-msgid "Identity is not valid"
-msgstr "Định danh không hợp lệ"
+msgid "Identity is invalid"
+msgstr ""
 
 #: modules/Support/Service.php:997
 msgid "Public ticket not found"
@@ -2290,7 +2236,7 @@ msgstr ""
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:50
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:104
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:19
-#: themes/admin_default/html/layout_default.html.twig:118
+#: themes/admin_default/html/layout_default.html.twig:124
 msgid "Settings"
 msgstr "Thiết lập"
 
@@ -3156,7 +3102,7 @@ msgstr "Lịch sử đăng nhập"
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:37
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
-#: themes/admin_default/html/layout_default.html.twig:116
+#: themes/admin_default/html/layout_default.html.twig:122
 #: themes/huraga/html/layout_default.html.twig:109
 #: themes/huraga/html/layout_default.html.twig:220
 msgid "Profile"
@@ -3874,10 +3820,6 @@ msgstr "Địa chỉ email"
 msgid "First Name"
 msgstr "Tên"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:68
-msgid "Birth date"
-msgstr "Ngày sinh"
-
 #: modules/Client/html_client/mod_client_profile.html.twig:89
 msgid "Company Name"
 msgstr "Tên công ty"
@@ -4236,7 +4178,7 @@ msgstr "Vùng khách hàng"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:12
 #: modules/Index/html_client/mod_index_dashboard.html.twig:4
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
-#: themes/admin_default/html/layout_default.html.twig:141
+#: themes/admin_default/html/layout_default.html.twig:147
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
 #: themes/huraga/html/layout_default.html.twig:98
 #: themes/huraga/html/layout_default.html.twig:198
@@ -8681,11 +8623,6 @@ msgstr "Đặt lại mật khẩu của bạn"
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
 msgstr "Nhập địa chỉ email của bạn. Bạn sẽ nhận được liên kết xác nhận nếu tài khoản đã tồn tại."
 
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
-msgid "Email address"
-msgstr "Địa chỉ email"
-
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:36
 msgid "Send me the link"
 msgstr "Gửi liên kết cho tôi"
@@ -9235,36 +9172,36 @@ msgstr "Úi... Bạn đang truy cập 1 trang lỗi"
 msgid "Back to Dashboard"
 msgstr "Quay lại Bảng điều khiển"
 
-#: themes/admin_default/html/layout_default.html.twig:72
-#: themes/admin_default/html/layout_default.html.twig:176
+#: themes/admin_default/html/layout_default.html.twig:78
+#: themes/admin_default/html/layout_default.html.twig:182
 msgid "Source code"
 msgstr "Mã nguồn"
 
-#: themes/admin_default/html/layout_default.html.twig:78
+#: themes/admin_default/html/layout_default.html.twig:84
 msgid "Sponsor"
 msgstr "Tài trợ"
 
-#: themes/admin_default/html/layout_default.html.twig:87
+#: themes/admin_default/html/layout_default.html.twig:93
 msgid "Enable dark mode"
 msgstr "Bật Chế độ nền tối"
 
-#: themes/admin_default/html/layout_default.html.twig:96
+#: themes/admin_default/html/layout_default.html.twig:102
 msgid "Enable light mode"
 msgstr "Bật Chế độ nền sáng"
 
-#: themes/admin_default/html/layout_default.html.twig:122
+#: themes/admin_default/html/layout_default.html.twig:128
 msgid "Logout"
 msgstr "Đăng xuất"
 
-#: themes/admin_default/html/layout_default.html.twig:170
+#: themes/admin_default/html/layout_default.html.twig:176
 msgid "Help"
 msgstr "Trợ giúp"
 
-#: themes/admin_default/html/layout_default.html.twig:175
+#: themes/admin_default/html/layout_default.html.twig:181
 msgid "Documentation"
 msgstr "Tài liệu"
 
-#: themes/admin_default/html/layout_default.html.twig:177
+#: themes/admin_default/html/layout_default.html.twig:183
 msgid "Report a bug"
 msgstr "Báo lỗi"
 
