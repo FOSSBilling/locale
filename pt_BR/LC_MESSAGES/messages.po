@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-07-02 13:03-0700\n"
-"PO-Revision-Date: 2023-07-02 20:14\n"
+"POT-Creation-Date: 2023-07-03 14:55-0700\n"
+"PO-Revision-Date: 2023-07-03 21:58\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Parece que você está tentando usar o FOSSBilling sem a extensão php intl habilitada. O FOSSBilling inclui um polyfill para a extensão intl, mas não suporta :locale. Por favor, habilite a extensão intl."
 
-#: index.php:51 library/Box/App.php:380 library/Box/AppClient.php:59
+#: index.php:51 library/Box/App.php:378 library/Box/AppClient.php:58
 msgid "Page :url not found"
 msgstr "Página :url não encontrada"
 
@@ -64,11 +64,11 @@ msgstr "A classe Api deve ser a instância do Api_Abstract"
 msgid ":type API call :method does not exist in module :module"
 msgstr ":type API call :method não existe no módulo :module"
 
-#: library/Box/App.php:352
-msgid "The system is undergoing maintenance. Please try again later."
-msgstr "O sistema está em manutenção. Por favor, tente mais tarde."
+#: library/Box/App.php:350
+msgid "The system is undergoing maintenance. Please try again later"
+msgstr ""
 
-#: library/Box/AppClient.php:77
+#: library/Box/AppClient.php:76
 msgid "Page not found"
 msgstr "Página não encontrada"
 
@@ -89,8 +89,8 @@ msgid "Module :mod manifest file is missing"
 msgstr "Módulo :mod arquivo de manifesto está ausente"
 
 #: library/Box/Mod.php:77
-msgid "Module :mod manifest file is not valid. Check file syntax and permissions."
-msgstr "Módulo :mod arquivo de manifesto não é válido. Verifique a sintaxe do arquivo e as permissões."
+msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
+msgstr ""
 
 #: library/Box/Mod.php:118
 msgid "Module :mod does not have service class"
@@ -222,17 +222,10 @@ msgstr "ano"
 msgid "decade"
 msgstr "década"
 
-#: library/Box/TwigLoader.php:24
-msgid "Missing mods param for Box_TwigLoader"
-msgstr "Modelos de parâmetros ausentes para o Box_TwigLoader"
-
-#: library/Box/TwigLoader.php:28
-msgid "Missing theme param for Box_TwigLoader"
-msgstr "Faltando parâmetro do tema para o Box_TwigLoader"
-
+#: library/Box/TwigLoader.php:24 library/Box/TwigLoader.php:28
 #: library/Box/TwigLoader.php:32
-msgid "Missing type param for Box_TwigLoader"
-msgstr "Faltando parâmetro do tema para o Box_TwigLoader"
+msgid "Missing :missing: param for Box_TwigLoader"
+msgstr ""
 
 #: library/FOSSBilling/CentralAlerts.php:118
 msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
@@ -379,8 +372,15 @@ msgid "Service class :class was not found in :path"
 msgstr "Classe de serviço :class não foi encontrada em :path"
 
 #: library/FOSSBilling/Tools.php:283
-msgid "Email address is invalid"
-msgstr "O endereço de e-mail é inválido"
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
+msgid "Email address"
+msgstr "E-mail"
+
+#: library/FOSSBilling/Tools.php:284 library/FOSSBilling/Validate.php:107
+#: modules/Servicehosting/Api/Guest.php:37
+msgid ":friendlyName: is invalid"
+msgstr ""
 
 #: library/FOSSBilling/Update.php:104
 msgid "Failed to download the latest version information. Further details are available in the error log."
@@ -403,12 +403,12 @@ msgid "Unable to clear cache and/or remove install folder. Further details are a
 msgstr "Não foi possível limpar o cache e/ou remover a pasta de instalação. Mais detalhes estão disponíveis no registro de erros."
 
 #: library/FOSSBilling/UpdatePatcher.php:52
-msgid "Unable to load existing configuration."
-msgstr "Não foi possível carregar a configuração existente."
+msgid "Unable to load existing configuration"
+msgstr ""
 
 #: library/FOSSBilling/UpdatePatcher.php:59
-msgid "Unable to create backup of configuration file. Cancelling config migration."
-msgstr "Não é possível criar o backup do arquivo de configuração. Cancelando migração de configuração."
+msgid "Unable to create backup of configuration file"
+msgstr ""
 
 #: library/FOSSBilling/UpdatePatcher.php:99
 msgid "Error when writing updated configuration file."
@@ -435,8 +435,9 @@ msgid "Password must include at least one uppercase letter."
 msgstr "A senha deve conter pelo menos uma letra maiúscula."
 
 #: library/FOSSBilling/Validate.php:106
-msgid "Birth date is invalid"
-msgstr "Data de nascimento é inválida"
+#: modules/Client/html_client/mod_client_profile.html.twig:68
+msgid "Birthdate"
+msgstr ""
 
 #: library/Model/ProductDomainTable.php:217
 msgid "Could not determine domain price. Domain action is missing"
@@ -487,8 +488,31 @@ msgid "Error getting service for contract"
 msgstr "Erro ao obter o serviço para o contrato"
 
 #: library/Payment/Adapter/AliPay.php:148
-msgid "AliPay does not support recurrent payments"
-msgstr "O AliPay não suporta pagamentos recorrentes"
+#: library/Payment/Adapter/Interkassa.php:125
+msgid "reccurent payments"
+msgstr ""
+
+#: library/Payment/Adapter/AliPay.php:148
+#: library/Payment/Adapter/Interkassa.php:125
+#: library/Registrar/Adapter/Internetbs.php:76
+#: library/Registrar/Adapter/Internetbs.php:172
+#: library/Registrar/Adapter/Namecheap.php:435
+#: library/Registrar/Adapter/Namecheap.php:574 library/Server/Manager/CWP.php:245
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
+#: library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:329 library/Server/Manager/Hestia.php:339
+#: library/Server/Manager/Hestia.php:378 library/Server/Manager/Ispconfig3.php:61
+#: library/Server/Manager/Ispconfig3.php:190
+#: library/Server/Manager/Ispconfig3.php:195
+#: library/Server/Manager/Ispconfig3.php:200 library/Server/Manager/Plesk.php:55
+#: library/Server/Manager/Plesk.php:201 library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Virtualmin.php:163
+#: library/Server/Manager/Virtualmin.php:168
+#: library/Server/Manager/Virtualmin.php:173
+msgid ":type: does not support :action:"
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:59
 msgid "Not enough in balance"
@@ -503,16 +527,14 @@ msgstr "Não é permitido pagar uma fatura de depósito com este método"
 #: library/Payment/Adapter/ClientBalance.php:83
 #: library/Payment/Adapter/Interkassa.php:176
 #: library/Payment/Adapter/PayPalEmail.php:77
-msgid "IPN is not valid"
-msgstr "O IPN não é válido"
+#: library/Payment/Adapter/TwoCheckout.php:122
+#: library/Payment/Adapter/WebMoney.php:103
+msgid "IPN is invalid"
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:121
 msgid "ClientBalance gateway is not enabled"
 msgstr "O método de Saldo do Cliente não está ativado"
-
-#: library/Payment/Adapter/Interkassa.php:125
-msgid "Interkassa payment gateway do not support recurrent payments"
-msgstr "O método de pagamento Interkassa não suporta pagamentos recorrentes"
 
 #: library/Payment/Adapter/Interkassa.php:217
 #: library/Payment/Adapter/PayPalEmail.php:125
@@ -546,21 +568,13 @@ msgstr "O método de pagamento \"Stripe\" não está configurado corretamente. A
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
 msgstr "O método de pagamento \"Stripe\" não está configurado corretamente. Atualize o parâmetro de configuração \"test_api_key\" em \"Configuração -> Pagamentos\"."
 
-#: library/Payment/Adapter/TwoCheckout.php:122
-msgid "2Checkout IPN is not valid"
-msgstr "2Checkout IPN não é válido"
-
 #: library/Payment/Adapter/TwoCheckout.php:136
-msgid "Invoice id could not be determined for this transaction"
-msgstr "O Id da fatura não pôde ser determinado para esta transação"
+msgid "Invoice ID could not be determined for this transaction"
+msgstr ""
 
 #: library/Payment/Adapter/TwoCheckout.php:364
 msgid "Redirecting to 2Checkout.com"
 msgstr "Redirecionando para o 2Checkout.com"
-
-#: library/Payment/Adapter/WebMoney.php:103
-msgid "WebMoney IPN is not valid"
-msgstr "WebMoney IPN não é válido"
 
 #: library/Payment/AdapterAbstract.php:61
 msgid "Return URL for payment gateway was not set"
@@ -597,59 +611,62 @@ msgstr "A classe do adaptador de pagamento não implementou o método de opçõe
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
 msgstr "O registrador de domínio \":domain_registrar\" não está totalmente configurado. Por favor, configure o :missing"
 
-#: library/Registrar/Adapter/Email.php:67
-msgid "Email registrar can not determine whether domain is available"
-msgstr "O registrador de e-mail não pode determinar se o domínio está disponível"
-
-#: library/Registrar/Adapter/Email.php:72
-msgid "Email registrar can not determine whether domain can be transferred"
-msgstr "O registrador de e-mail não pode determinar se o domínio pode ser transferido"
+#: library/Registrar/Adapter/Email.php:67 library/Registrar/Adapter/Email.php:72
+msgid "Email registrar is unable to :action:"
+msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:76
-msgid "Domain transfer checking is not implemented"
-msgstr "A verificação de transferência de domínio não foi implementada"
+msgid "checking domain transferability"
+msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:172
-msgid "Registrar does not support domain removal."
-msgstr "O registrador não oferece suporte à remoção de domínio."
+#: library/Registrar/Adapter/Namecheap.php:574
+msgid "deleting domains"
+msgstr ""
 
 #: library/Registrar/Adapter/Namecheap.php:117
 msgid "Premium domains cannot be registered."
 msgstr "Domínios premium não podem ser registados."
 
-#: library/Registrar/Adapter/Namecheap.php:169
-#: library/Registrar/Adapter/Namecheap.php:173
-msgid "Error: :error"
-msgstr "Erro: :error"
+#: library/Registrar/Adapter/Namecheap.php:171
+#: library/Registrar/Adapter/Namecheap.php:177
+#: library/Registrar/Adapter/Namecheap.php:254
+#: library/Registrar/Adapter/Namecheap.php:351
+#: library/Registrar/Adapter/Namecheap.php:597
+#: library/Registrar/Adapter/Namecheap.php:660
+#: library/Registrar/Adapter/Namecheap.php:684
+#: library/Registrar/Adapter/Namecheap.php:712
+#: library/Registrar/Adapter/Resellerclub.php:399
+#: library/Registrar/Adapter/Resellerclub.php:709
+#: library/Registrar/Adapter/Resellerclub.php:715
+#: library/Registrar/Adapter/Resellerclub.php:721
+msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:249
-msgid "Could not update name servers"
-msgstr "Não foi possível atualizar os NameServers"
+#: library/Registrar/Adapter/Namecheap.php:253
+msgid "update nameservers"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:345
-msgid "API ERROR: could not retrieve domain details"
-msgstr "Erro de API: não foi possível recuperar detalhes do domínio"
+#: library/Registrar/Adapter/Namecheap.php:350
+msgid "retrieve domain details"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:429
-msgid "This feature is unavailable through the Namecheap API. Please contact your administrator."
-msgstr "Esta função não está disponível através da API da Namecheap. Por favor, contate o administrador."
+#: library/Registrar/Adapter/Namecheap.php:435
+msgid "retrieving the transfer code"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:568
-msgid "Domain deletion is not implemented in the NameCheap adapter. Please contact your system administrator."
-msgstr "A exclusão de domínio não está implementada no adaptador NameCheap. Por favor contate o administrador do sistema."
+#: library/Registrar/Adapter/Namecheap.php:596
+msgid "retrieve privacy information"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:590
-msgid "Could not retrieve privacy info on this domain."
-msgstr "Não foi possível recuperar informações de privacidade neste domínio."
+#: library/Registrar/Adapter/Namecheap.php:659
+msgid "get the domain lock status"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:652
-msgid "API ERROR: could not get lock status on domain"
-msgstr "ERRO da API: não foi possível obter o status de bloqueio no domínio"
-
-#: library/Registrar/Adapter/Namecheap.php:675
-#: library/Registrar/Adapter/Namecheap.php:702
-msgid "API ERROR: could not set lock status on domain"
-msgstr "ERRO da API: não foi possível definir o status de bloqueio no domínio"
+#: library/Registrar/Adapter/Namecheap.php:683
+#: library/Registrar/Adapter/Namecheap.php:711
+msgid "set the domain lock status"
+msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:40
 msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub Reseller ID\" at \"Configuration -> Domain registration\"."
@@ -660,34 +677,34 @@ msgid "Domain registrar \"ResellerClub\" is not configured properly. Please upda
 msgstr "O registrador de domínio \"ResellerClub\" não está configurado corretamente. Atualize o parâmetro de configuração \"Chave de API ResellerClub\" em \"Configuração -> Registro de domínio\"."
 
 #: library/Registrar/Adapter/Resellerclub.php:335
-msgid "Valid contact company number is required while registering AU domain name"
-msgstr "O número válido da empresa de contato é necessário ao registrar o nome de domínio da AU"
+msgid "A valid contact company number is mandatory for registering an .AU domain name"
+msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:398
-msgid "Domain EPP code can be retrieved from domain registrar"
-msgstr "O código EPP do domínio pode ser recuperado do registrador de domínio"
+msgid "get the transfer code"
+msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:591
+#: library/Registrar/Adapter/Resellerclub.php:592
 msgid "You are already registered as reseller"
 msgstr "Você já está cadastrado como revendedor"
 
-#: library/Registrar/Adapter/Resellerclub.php:832
+#: library/Registrar/Adapter/Resellerclub.php:839
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr "Informações válidas do passaporte de contato são necessárias ao registrar o nome de domínio ES"
 
-#: library/Registrar/Adapter/Resellerclub.php:852
+#: library/Registrar/Adapter/Resellerclub.php:859
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr "Informações válidas do passaporte de contato são necessárias ao registrar o nome de domínio ASIA"
 
-#: library/Registrar/Adapter/Resellerclub.php:876
-msgid "Valid contact birth date is required while registering RU domain name"
-msgstr "A data de nascimento válida do contato é necessária ao registrar o nome de domínio RU"
+#: library/Registrar/Adapter/Resellerclub.php:883
+msgid "Valid contact birthdate is required while registering RU domain name"
+msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:880
+#: library/Registrar/Adapter/Resellerclub.php:887
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr "Informações válidas do passaporte de contato são necessárias ao registrar o nome de domínio RU"
 
-#: library/Registrar/Adapter/Resellerclub.php:967
+#: library/Registrar/Adapter/Resellerclub.php:974
 msgid "Contact not found"
 msgstr "Contato não encontrado"
 
@@ -703,45 +720,85 @@ msgstr "A classe de registro de domínio não implementou o método de opções 
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "O gerenciador de servidores \":server_manager\" não está totalmente configurado. Por favor, configure o :missing"
 
-#: library/Server/Manager/CWP.php:86
-msgid "Failed to connect to server"
-msgstr "Falha ao conectar ao servidor"
+#: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:428
+#: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:143
+#: library/Server/Manager/Plesk.php:47 library/Server/Manager/Virtualmin.php:51
+msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:143
-msgid "Failed to create account!"
-msgstr "Falha ao criar a conta!"
+#: library/Server/Manager/CWP.php:143 library/Server/Manager/Plesk.php:86
+#: library/Server/Manager/Virtualmin.php:392
+msgid "create account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:159
-msgid "Failed to suspend account!"
-msgstr "Falha ao suspender a conta!"
+#: library/Server/Manager/CWP.php:144 library/Server/Manager/CWP.php:161
+#: library/Server/Manager/CWP.php:178 library/Server/Manager/CWP.php:198
+#: library/Server/Manager/CWP.php:218 library/Server/Manager/CWP.php:236
+#: library/Server/Manager/Directadmin.php:439
+#: library/Server/Manager/Hestia.php:201 library/Server/Manager/Hestia.php:205
+#: library/Server/Manager/Hestia.php:232 library/Server/Manager/Hestia.php:257
+#: library/Server/Manager/Hestia.php:286 library/Server/Manager/Hestia.php:316
+#: library/Server/Manager/Hestia.php:365
+#: library/Server/Manager/Ispconfig3.php:734 library/Server/Manager/Plesk.php:87
+#: library/Server/Manager/Virtualmin.php:311
+#: library/Server/Manager/Virtualmin.php:393
+#: library/Server/Manager/Virtualmin.php:416
+#: library/Server/Manager/Virtualmin.php:439
+#: library/Server/Manager/Virtualmin.php:463
+#: library/Server/Manager/Virtualmin.php:486
+#: library/Server/Manager/Virtualmin.php:516
+#: library/Server/Manager/Virtualmin.php:544
+#: library/Server/Manager/Virtualmin.php:572
+#: library/Server/Manager/Virtualmin.php:660 library/Server/Manager/Whm.php:422
+#: library/Server/Manager/Whm.php:427 library/Server/Manager/Whm.php:432
+#: library/Server/Manager/Whm.php:437 library/Server/Manager/Whm.php:442
+msgid "Failed to :action: on the :type: server, check the error logs for further details"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:175
-msgid "Failed to unsuspend account!"
-msgstr "Falha ao reativar a conta!"
+#: library/Server/Manager/CWP.php:160 library/Server/Manager/Hestia.php:231
+#: library/Server/Manager/Virtualmin.php:415
+msgid "suspend account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:194
-msgid "Failed to cancel / delete account!"
-msgstr "Falha ao cancelar / excluir a conta!"
+#: library/Server/Manager/CWP.php:177 library/Server/Manager/Hestia.php:256
+#: library/Server/Manager/Virtualmin.php:438
+msgid "unsuspend account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:213
-msgid "Failed to change the account package!"
-msgstr "Falha ao alterar o plano da conta!"
+#: library/Server/Manager/CWP.php:197 library/Server/Manager/Hestia.php:285
+#: library/Server/Manager/Virtualmin.php:485
+msgid "cancel account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:230
-msgid "Failed to change the account password!"
-msgstr "Falha ao alterar a senha da conta!"
+#: library/Server/Manager/CWP.php:217 library/Server/Manager/Hestia.php:315
+msgid "change account package"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:239
-msgid "CWP does not support username changes"
-msgstr "CWP não suporta alterações de nome de usuário"
+#: library/Server/Manager/CWP.php:235 library/Server/Manager/Hestia.php:364
+#: library/Server/Manager/Virtualmin.php:462
+msgid "change account password"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:244
-msgid "CWP does not support changing the primary domain name"
-msgstr "CWP não suporta alterar o nome de domínio principal"
+#: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/Hestia.php:329
+#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:201
+msgid "username changes"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:249
-msgid "CWP does not support changing the IP"
-msgstr "CWP não suporta a alteração do IP"
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/Hestia.php:339
+#: library/Server/Manager/Ispconfig3.php:195
+msgid "changing the account domain"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:378
+#: library/Server/Manager/Ispconfig3.php:200 library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Virtualmin.php:163
+#: library/Server/Manager/Virtualmin.php:168
+#: library/Server/Manager/Virtualmin.php:173
+msgid "changing the account IP"
+msgstr ""
 
 #: library/Server/Manager/Directadmin.php:95
 msgid "There are no available IPs on this server."
@@ -759,93 +816,29 @@ msgstr "Erro ao criar o usuário"
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Erro no Gerenciador de Servidor DirectAdmin: \"Conta não está suspensa\""
 
-#: library/Server/Manager/Directadmin.php:329
-msgid "DirectAdmin does not support username changes"
-msgstr "DirectAdmin não suporta alterações do nome de usuário"
-
-#: library/Server/Manager/Directadmin.php:334
-msgid "DirectAdmin does not support domain changes"
-msgstr "DirectAdmin não suporta alterações de domínio"
-
-#: library/Server/Manager/Directadmin.php:339
-msgid "DirectAdmin does not support IP changes"
-msgstr "DirectAdmin não suporta alterações de IP"
-
 #: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:411
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
-
-#: library/Server/Manager/Directadmin.php:428
-msgid "Server Manager DirectAdmin Error: \"Login failed\""
-msgstr "Erro no Gerenciador de Servidor DirectAdmin: \"Login falhou\""
 
 #: library/Server/Manager/Directadmin.php:432
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Erro do DirectAdmin do Gerenciador do servidor: \"A solicitação que você fez não pode ser executada porque não existe em seu nível de autoridade\""
 
-#: library/Server/Manager/Directadmin.php:438
-msgid "Server Manager DirectAdmin Error: :error"
-msgstr "Erro de Gerenciador de Servidor DirectAdmin: :error"
+#: library/Server/Manager/Hestia.php:200
+msgid "create user"
+msgstr ""
 
-#: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:141
-msgid "Connection to server failed. Error code: :code"
-msgstr "Falha na conexão ao servidor. Código de erro: :code"
-
-#: library/Server/Manager/Hestia.php:198
-msgid "Server Manager Hestia CP Error: Unable to create User. Error code: :code"
-msgstr "Erro no Gerenciador de Servidor do Hestia CP: Não é possível criar usuário. Código de erro: :code"
-
-#: library/Server/Manager/Hestia.php:201
-msgid "Server Manager Hestia CP Error: Create Domain failure. Error code: :code"
-msgstr "Erro de Gerenciador de Servidor Hestia CP: Falha ao criar domínio. Código de erro: code"
-
-#: library/Server/Manager/Hestia.php:227
-msgid "Server Manager Hestia CP Error: Suspend Account Error. Error code: :code"
-msgstr "Erro no Gerenciador de Servidor do Hestia CP: Erro ao Suspender a Conta. Código do erro: :code"
-
-#: library/Server/Manager/Hestia.php:251
-msgid "Server Manager Hestia CP Error: Unsuspend Account Error. Error code: :code"
-msgstr "Erro no Gerenciador de Servidor do Hestia CP: Erro ao Reativar a Conta. Código do erro: :code"
-
-#: library/Server/Manager/Hestia.php:279
-msgid "Server Manager Hestia CP Error: Cancel Account Error. Error code: :code"
-msgstr "Erro no Gerenciador de Servidor do Hestia CP: Erro ao Cancelar a Conta. Código do erro: :code"
-
-#: library/Server/Manager/Hestia.php:308
-msgid "Server Manager Hestia CP Error: Change User package Account Error. Error code: :code"
-msgstr "Erro no Gerenciador de Servidor do Hestia CP: Erro ao Alterar o Plano da Conta. Código do erro: :code"
-
-#: library/Server/Manager/Hestia.php:321 library/Server/Manager/Hestia.php:331
-#: library/Server/Manager/Hestia.php:369
-msgid "Server Manager Hestia CP Error: Not Supported"
-msgstr "Erro no Gerenciador de Servidores do Hestia CP: Não Suportado"
-
-#: library/Server/Manager/Hestia.php:356
-msgid "Server Manager Hestia CP Error: Change Password Account Error. Error code: :code"
-msgstr "Erro no Gerenciador de Servidor do Hestia CP: Erro ao Alterar a Senha da Conta. Código do erro: :code"
+#: library/Server/Manager/Hestia.php:204
+msgid "create domain"
+msgstr ""
 
 #: library/Server/Manager/Ispconfig3.php:19
 msgid "PHP Soap extension required for IspConfig server manager"
 msgstr "Extensão PHP Soap é necessária para o gerenciador de servidores do IspConfig"
 
-#: library/Server/Manager/Ispconfig3.php:61
-msgid "Server manager does not support sync"
-msgstr "Gerenciador de servidores não suporta sincronização"
-
-#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:200
-#: library/Server/Manager/Virtualmin.php:163
-msgid "Server manager does not support username changes"
-msgstr "O gerenciador do servidor não suporta alterações de nome de usuário"
-
-#: library/Server/Manager/Ispconfig3.php:195
-#: library/Server/Manager/Virtualmin.php:168
-msgid "Server manager does not support domain changes"
-msgstr "Gerenciador de servidores não suporta alterações de domínio"
-
-#: library/Server/Manager/Ispconfig3.php:200
-#: library/Server/Manager/Virtualmin.php:173
-msgid "Server manager does not support ip changes"
-msgstr "O gerenciador do servidor não suporta alterações de Ip"
+#: library/Server/Manager/Ispconfig3.php:61 library/Server/Manager/Plesk.php:55
+msgid "account synchronization"
+msgstr ""
 
 #: library/Server/Manager/Ispconfig3.php:538
 msgid "Could not load Soap client"
@@ -855,29 +848,9 @@ msgstr "Não foi possível carregar o cliente Soap"
 msgid "Could not retrieve session"
 msgstr "Não foi possível recuperar a sessão"
 
-#: library/Server/Manager/Ispconfig3.php:733
-msgid "Error when making request to the server"
-msgstr "Erro ao fazer a requisição ao servidor"
-
-#: library/Server/Manager/Plesk.php:47 library/Server/Manager/Virtualmin.php:51
-msgid "Connection to server failed"
-msgstr "Falha na conexão ao servidor"
-
-#: library/Server/Manager/Plesk.php:55
-msgid "The server adapter does not support account synchronization"
-msgstr "O adaptador do servidor não suporta a sincronização da conta"
-
-#: library/Server/Manager/Plesk.php:86
-msgid "Failed to create new account"
-msgstr "Falha ao criar uma nova conta"
-
-#: library/Server/Manager/Plesk.php:170
+#: library/Server/Manager/Plesk.php:171
 msgid "Can't modify client"
 msgstr "Não é possível modificar o cliente"
-
-#: library/Server/Manager/Plesk.php:227
-msgid "Server manager does not support changing IP addresses"
-msgstr "O gerenciador de servidor não suporta alteração de endereços IP"
 
 #: library/Server/Manager/Virtualmin.php:87
 #: library/Server/Manager/Virtualmin.php:100
@@ -889,59 +862,39 @@ msgid "Create reseller command is only available in Virtualmin PRO version"
 msgstr "O comando de criar o revendedor está disponível apenas na versão Virtualmin PRO"
 
 #: library/Server/Manager/Virtualmin.php:310
-#: library/Server/Manager/Virtualmin.php:650
-msgid "Failed to create reseller's account"
-msgstr "Falha ao criar a conta de revendedor"
+#: library/Server/Manager/Virtualmin.php:659
+msgid "create reseller account"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:391
-msgid "Failed to create account"
-msgstr "Falha ao criar a conta"
+#: library/Server/Manager/Virtualmin.php:515
+msgid "modify domain details"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:413
-msgid "Failed to suspend user's account"
-msgstr "Falha ao suspender a conta do usuário"
+#: library/Server/Manager/Virtualmin.php:543
+msgid "enable features"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:435
-msgid "Failed to unsuspend user's account"
-msgstr "Falha ao reativar a conta do usuário"
+#: library/Server/Manager/Virtualmin.php:571
+msgid "disable features"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:458
-msgid "Failed to change user's password"
-msgstr "Falha ao alterar a senha do usuário"
-
-#: library/Server/Manager/Virtualmin.php:480
-msgid "Failed to delete user's account"
-msgstr "Falha ao excluir a conta do usuário"
-
-#: library/Server/Manager/Virtualmin.php:509
-msgid "Failed to modify domain details"
-msgstr "Falha ao modificar os detalhes de domínio"
-
-#: library/Server/Manager/Virtualmin.php:536
-msgid "Failed to enable features"
-msgstr "Falha ao ativar os recursos"
-
-#: library/Server/Manager/Virtualmin.php:563
-msgid "Failed to disable features"
-msgstr "Falha ao desativar os recursos"
-
-#: library/Server/Manager/Virtualmin.php:570
+#: library/Server/Manager/Virtualmin.php:579
 msgid "Cancel reseller command only available in Virtualmin PRO version"
 msgstr "Comando de cancelamento de revendedor disponível apenas na versão Virtualmin PRO"
 
-#: library/Server/Manager/Virtualmin.php:581
+#: library/Server/Manager/Virtualmin.php:590
 msgid "Failed to delete reseller"
 msgstr "Falha ao excluir o revendedor"
 
-#: library/Server/Manager/Virtualmin.php:588
+#: library/Server/Manager/Virtualmin.php:597
 msgid "Modify reseller comand is only available in Virtualmin PRO version"
 msgstr "O comando de modificar o revendedor está disponível apenas na versão Virtualmin PRO"
 
-#: library/Server/Manager/Virtualmin.php:601
+#: library/Server/Manager/Virtualmin.php:610
 msgid "Failed to change reseller's password"
 msgstr "Falha ao modificar a senha do revendedor"
 
-#: library/Server/Manager/Virtualmin.php:608
+#: library/Server/Manager/Virtualmin.php:617
 msgid "Modify reseller command is only available in Virtualmin PRO version"
 msgstr "O comando de modificar o revendedor está disponível apenas na versão Virtualmin PRO"
 
@@ -953,7 +906,7 @@ msgstr "Atividade"
 msgid "Event history"
 msgstr "Histórico de eventos"
 
-#: modules/Api/Controller/Client.php:47
+#: modules/Api/Controller/Client.php:47 modules/Api/Controller/Client.php:248
 msgid "Unknown API call :call"
 msgstr "Chamada API desconhecida :call"
 
@@ -971,17 +924,14 @@ msgstr "IP não autorizado"
 msgid "Authentication Failed"
 msgstr "Falha na Autenticação"
 
-#: modules/Api/Controller/Client.php:248
-msgid "Unknown API call"
-msgstr "Chamada API desconhecida"
-
 #: modules/Api/Controller/Client.php:327
-msgid "CSRF token invalid."
-msgstr "Token CSRF inválido."
+msgid "CSRF token invalid"
+msgstr ""
 
 #: modules/Cart/Api/Guest.php:59 modules/Currency/Api/Admin.php:69
 #: modules/Currency/Api/Admin.php:249 modules/Currency/Api/Guest.php:48
-#: modules/Currency/Service.php:463 modules/Currency/Service.php:573
+#: modules/Currency/Service.php:326 modules/Currency/Service.php:463
+#: modules/Currency/Service.php:573
 msgid "Currency not found"
 msgstr "Moeda não encontrada"
 
@@ -999,20 +949,20 @@ msgid "Addon products cannot be added separately."
 msgstr "Produtos adicionais não podem ser adicionados separadamente."
 
 #: modules/Cart/Api/Guest.php:184
-msgid "One or more of your selected addons are not valid for the associated product."
-msgstr "Um ou mais complementos selecionados não são válidos para o produto associado."
+msgid "One or more of your selected addons are invalid for the associated product."
+msgstr ""
 
 #: modules/Cart/Service.php:84
-msgid "Selected billing period is not valid"
-msgstr "O período de faturamento selecionado é inválido"
+msgid "Selected billing period is invalid"
+msgstr ""
 
 #: modules/Cart/Service.php:91
 msgid "This item is currently out of stock"
 msgstr "Este item está atualmente fora de estoque"
 
 #: modules/Cart/Service.php:124
-msgid "Selected billing period is not valid for the selected addon"
-msgstr "O período de faturamento selecionado não é válido para a extensão selecionada"
+msgid "Selected billing period is invalid for the selected addon"
+msgstr ""
 
 #: modules/Cart/Service.php:218 modules/Product/Api/Guest.php:84
 msgid "Product not found"
@@ -1027,8 +977,8 @@ msgid "You have already used this promo code. Please remove promo code and check
 msgstr "Você já usou este código promocional. Remova o código promocional e finalize a compra novamente."
 
 #: modules/Cart/Service.php:485
-msgid "Can not checkout empty cart."
-msgstr "Não é possível finalizar com o carrinho vazio."
+msgid "Can not checkout an empty cart"
+msgstr ""
 
 #: modules/Cart/Service.php:497
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -1143,12 +1093,12 @@ msgid "Define clients currency before adding funds."
 msgstr "Defina a moeda dos clientes antes de adicionar fundos."
 
 #: modules/Client/Service.php:241 modules/Client/ServiceBalance.php:126
-msgid "Funds amount is not valid"
-msgstr "O valor dos fundos não é válido"
+msgid "Funds amount is invalid"
+msgstr ""
 
 #: modules/Client/Service.php:245 modules/Client/ServiceBalance.php:130
-msgid "Funds description is not valid"
-msgstr "A descrição dos fundos é inválida"
+msgid "Funds description is invalid"
+msgstr ""
 
 #: modules/Client/Service.php:412
 msgid "Client ID or email is required"
@@ -1187,8 +1137,8 @@ msgid "Currency already registered"
 msgstr "Moeda já cadastrada"
 
 #: modules/Currency/Api/Admin.php:115
-msgid "Currency code is not valid"
-msgstr "O código da moeda não é válido"
+msgid "Currency code is invalid"
+msgstr ""
 
 #: modules/Currency/Service.php:58
 msgid "Currency conversion rate can not be zero"
@@ -1202,13 +1152,9 @@ msgstr "Código de moeda não informado"
 msgid "Can not remove default currency"
 msgstr "Não é possível remover a moeda padrão"
 
-#: modules/Currency/Service.php:326
-msgid "Currency code not found"
-msgstr "Código da moeda não encontrado"
-
 #: modules/Currency/Service.php:481
-msgid "Currency rate is not valid"
-msgstr "A taxa de câmbio não é válida"
+msgid "Currency rate is invalid"
+msgstr ""
 
 #: modules/Currency/Service.php:545
 msgid "Failed to get currency rates for :currency from the European Central Bank API"
@@ -1317,8 +1263,8 @@ msgid "Form style was not found in predefined list"
 msgstr "O estilo de formulário não foi encontrado na lista predefinida"
 
 #: modules/Formbuilder/Api/Admin.php:79
-msgid "Form field type is not valid"
-msgstr "Tipo de campo de formulário não é válido"
+msgid "Form field type is invalid"
+msgstr ""
 
 #: modules/Formbuilder/Api/Admin.php:82 modules/Formbuilder/Api/Admin.php:255
 msgid "This input type must have unique values"
@@ -1803,8 +1749,8 @@ msgid "This promotion code already exists."
 msgstr "Este código promocional já existe."
 
 #: modules/Profile/Service.php:137
-msgid "Invalid birth date value"
-msgstr "Valor da data de nascimento inválido"
+msgid "Invalid birthdate value"
+msgstr ""
 
 #: modules/Queue/Api/Admin.php:101
 msgid "Message handler function :method does not exists"
@@ -1930,8 +1876,8 @@ msgid "Domain order is not activated"
 msgstr "Pedido de domínio não está ativado"
 
 #: modules/Servicedomain/Api/Guest.php:95
-msgid "Domain :domain is not valid"
-msgstr "O domínio :domain não é válido"
+msgid "Domain :domain is invalid"
+msgstr ""
 
 #: modules/Servicedomain/Api/Guest.php:100
 msgid "Domain availability could not be determined. TLD is not active."
@@ -1972,8 +1918,8 @@ msgstr "Dados do pedido devem conter :field no campo de configuração"
 
 #: modules/Servicedomain/Service.php:65 modules/Servicedomain/Service.php:82
 #: modules/Servicedomain/Service.php:113 modules/Servicedomain/Service.php:548
-msgid "Domain name :domain is not valid"
-msgstr "Nome de domínio :domain não é válido"
+msgid "Domain name :domain is invalid"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:98
 msgid ":domain can not be transferred!"
@@ -2000,8 +1946,8 @@ msgid "Nameserver 2 is required"
 msgstr "Nameserver 2 é obrigatório"
 
 #: modules/Servicedomain/Service.php:521 modules/Servicedomain/Service.php:542
-msgid "Domain name is not valid"
-msgstr "Nome do domínio não é válido"
+msgid "Domain name is invalid"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:525
 msgid "Domain can not be transferred"
@@ -2045,8 +1991,8 @@ msgid "plan_id is missing"
 msgstr "plan_id está faltando"
 
 #: modules/Servicehosting/Api/Guest.php:36
-msgid "Product type is invalid"
-msgstr "O tipo de produto é inválido"
+msgid "Product type"
+msgstr ""
 
 #: modules/Servicehosting/Controller/Admin.php:34
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
@@ -2069,36 +2015,36 @@ msgid "Hosting product is not configured completely. Configure hosting plan for 
 msgstr "O produto de hospedagem não está configurado completamente. Configure o plano de hospedagem para o produto de hospedagem."
 
 #: modules/Servicehosting/Service.php:52
-msgid "Domain name is not valid."
-msgstr "Nome do domínio não é válido."
+msgid "Domain name is invalid."
+msgstr ""
 
 #: modules/Servicehosting/Service.php:55
-msgid "Domain extension is not valid."
-msgstr "A extensão do domínio não é válida."
+msgid "Domain extension is invalid."
+msgstr ""
 
 #: modules/Servicehosting/Service.php:255
-msgid "Account username is missing or is not valid"
-msgstr "Nome de usuário da conta não existe ou não é válido"
+msgid "Account username is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:277
-msgid "Account ip is missing or is not valid"
-msgstr "O Ip da conta está ausente ou não é válido"
+msgid "Account ip is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:301
 msgid "Domain sld or tld is missing"
 msgstr "O sld ou tld do domínio está faltando"
 
 #: modules/Servicehosting/Service.php:327
-msgid "Account password is missing or is not valid"
-msgstr "A senha da conta está ausente ou não é válida"
+msgid "Account password is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:716
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Gerenciador de servidor inválido. O servidor não foi configurado corretamente."
 
 #: modules/Servicehosting/Service.php:736
-msgid "Server manager :adapter is not valid"
-msgstr "Gerenciador de servidor :adapter não é válido"
+msgid "Server manager :adapter is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:776
 msgid "Can not remove hosting plan which has active accounts"
@@ -2250,8 +2196,8 @@ msgid "We have already received this request."
 msgstr "Esse pedido já foi recebido."
 
 #: modules/Support/Service.php:968
-msgid "Identity is not valid"
-msgstr "Identidade não é válida"
+msgid "Identity is invalid"
+msgstr ""
 
 #: modules/Support/Service.php:997
 msgid "Public ticket not found"
@@ -2294,7 +2240,7 @@ msgstr "Sistema"
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:50
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:104
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:19
-#: themes/admin_default/html/layout_default.html.twig:118
+#: themes/admin_default/html/layout_default.html.twig:124
 msgid "Settings"
 msgstr "Configurações"
 
@@ -3160,7 +3106,7 @@ msgstr "Histórico Acesso de Clientes"
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:37
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
-#: themes/admin_default/html/layout_default.html.twig:116
+#: themes/admin_default/html/layout_default.html.twig:122
 #: themes/huraga/html/layout_default.html.twig:109
 #: themes/huraga/html/layout_default.html.twig:220
 msgid "Profile"
@@ -3878,10 +3824,6 @@ msgstr "Endereço de e-mail"
 msgid "First Name"
 msgstr "Primeiro Nome"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:68
-msgid "Birth date"
-msgstr "Data de nascimento"
-
 #: modules/Client/html_client/mod_client_profile.html.twig:89
 msgid "Company Name"
 msgstr "Nome de empresa"
@@ -4240,7 +4182,7 @@ msgstr "Área do cliente"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:12
 #: modules/Index/html_client/mod_index_dashboard.html.twig:4
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
-#: themes/admin_default/html/layout_default.html.twig:141
+#: themes/admin_default/html/layout_default.html.twig:147
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
 #: themes/huraga/html/layout_default.html.twig:98
 #: themes/huraga/html/layout_default.html.twig:198
@@ -8688,11 +8630,6 @@ msgstr "Redefinir sua senha"
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
 msgstr "Digite seu e-mail. Você receberá um link de confirmação se a sua conta existir."
 
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
-msgid "Email address"
-msgstr "E-mail"
-
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:36
 msgid "Send me the link"
 msgstr "Envie-me o link"
@@ -9242,36 +9179,36 @@ msgstr "Ops... Você encontrou uma página de erro"
 msgid "Back to Dashboard"
 msgstr "Voltar ao Painel"
 
-#: themes/admin_default/html/layout_default.html.twig:72
-#: themes/admin_default/html/layout_default.html.twig:176
+#: themes/admin_default/html/layout_default.html.twig:78
+#: themes/admin_default/html/layout_default.html.twig:182
 msgid "Source code"
 msgstr "Código-fonte"
 
-#: themes/admin_default/html/layout_default.html.twig:78
+#: themes/admin_default/html/layout_default.html.twig:84
 msgid "Sponsor"
 msgstr "Apoiar"
 
-#: themes/admin_default/html/layout_default.html.twig:87
+#: themes/admin_default/html/layout_default.html.twig:93
 msgid "Enable dark mode"
 msgstr "Ativar o modo escuro"
 
-#: themes/admin_default/html/layout_default.html.twig:96
+#: themes/admin_default/html/layout_default.html.twig:102
 msgid "Enable light mode"
 msgstr "Ativar modo claro"
 
-#: themes/admin_default/html/layout_default.html.twig:122
+#: themes/admin_default/html/layout_default.html.twig:128
 msgid "Logout"
 msgstr "Sair"
 
-#: themes/admin_default/html/layout_default.html.twig:170
+#: themes/admin_default/html/layout_default.html.twig:176
 msgid "Help"
 msgstr "Ajuda"
 
-#: themes/admin_default/html/layout_default.html.twig:175
+#: themes/admin_default/html/layout_default.html.twig:181
 msgid "Documentation"
 msgstr "Documentação"
 
-#: themes/admin_default/html/layout_default.html.twig:177
+#: themes/admin_default/html/layout_default.html.twig:183
 msgid "Report a bug"
 msgstr "Relatar um bug"
 

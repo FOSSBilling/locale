@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-07-02 13:03-0700\n"
-"PO-Revision-Date: 2023-07-02 20:13\n"
+"POT-Creation-Date: 2023-07-03 14:55-0700\n"
+"PO-Revision-Date: 2023-07-03 21:58\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Lithuanian\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Atrodo, kad bandote naudoti FOSSBilling neįjungę php intl plėtinio. FOSSBilling apima polyfill intl plėtiniui, tačiau nepalaiko :locale. Prašome įjungti intl plėtinį."
 
-#: index.php:51 library/Box/App.php:380 library/Box/AppClient.php:59
+#: index.php:51 library/Box/App.php:378 library/Box/AppClient.php:58
 msgid "Page :url not found"
 msgstr "Puslapis :url nerastas"
 
@@ -64,11 +64,11 @@ msgstr "Api klasė turi būti Api_Abstract pavyzdys"
 msgid ":type API call :method does not exist in module :module"
 msgstr ":type API kvietimas :method neegzistuoja modulyje :module"
 
-#: library/Box/App.php:352
-msgid "The system is undergoing maintenance. Please try again later."
-msgstr "Šiuo metu vyksta sistemos tvarkymas. Prašome pabandyti vėliau."
+#: library/Box/App.php:350
+msgid "The system is undergoing maintenance. Please try again later"
+msgstr ""
 
-#: library/Box/AppClient.php:77
+#: library/Box/AppClient.php:76
 msgid "Page not found"
 msgstr "Puslapis nerastas"
 
@@ -89,8 +89,8 @@ msgid "Module :mod manifest file is missing"
 msgstr "Trūksta modulio :mod aprašo failo"
 
 #: library/Box/Mod.php:77
-msgid "Module :mod manifest file is not valid. Check file syntax and permissions."
-msgstr "Modulio :mod aprašo failas neteisingas. Patikrinkite failo sintaksę ir leidimus."
+msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
+msgstr ""
 
 #: library/Box/Mod.php:118
 msgid "Module :mod does not have service class"
@@ -230,17 +230,10 @@ msgstr "metai"
 msgid "decade"
 msgstr "dešimtmetis"
 
-#: library/Box/TwigLoader.php:24
-msgid "Missing mods param for Box_TwigLoader"
-msgstr "Trūksta Box_TwigLoader modifikacijų parametro"
-
-#: library/Box/TwigLoader.php:28
-msgid "Missing theme param for Box_TwigLoader"
-msgstr "Trūksta Box_TwigLoader temos parametro"
-
+#: library/Box/TwigLoader.php:24 library/Box/TwigLoader.php:28
 #: library/Box/TwigLoader.php:32
-msgid "Missing type param for Box_TwigLoader"
-msgstr "Trūksta Box_TwigLoader tipo parametro"
+msgid "Missing :missing: param for Box_TwigLoader"
+msgstr ""
 
 #: library/FOSSBilling/CentralAlerts.php:118
 msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
@@ -387,8 +380,15 @@ msgid "Service class :class was not found in :path"
 msgstr "Paslaugos klasė :class nerasta :path kataloge"
 
 #: library/FOSSBilling/Tools.php:283
-msgid "Email address is invalid"
-msgstr "El. pašto adresas neteisingas"
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
+msgid "Email address"
+msgstr "El. pašto adresas"
+
+#: library/FOSSBilling/Tools.php:284 library/FOSSBilling/Validate.php:107
+#: modules/Servicehosting/Api/Guest.php:37
+msgid ":friendlyName: is invalid"
+msgstr ""
 
 #: library/FOSSBilling/Update.php:104
 msgid "Failed to download the latest version information. Further details are available in the error log."
@@ -411,12 +411,12 @@ msgid "Unable to clear cache and/or remove install folder. Further details are a
 msgstr "Nepavyko išvalyti talpyklos ir/arba pašalinti diegimo aplanko. Daugiau informacijos rasite klaidų žurnale."
 
 #: library/FOSSBilling/UpdatePatcher.php:52
-msgid "Unable to load existing configuration."
-msgstr "Nepavyko įkelti esamos konfigūracijos."
+msgid "Unable to load existing configuration"
+msgstr ""
 
 #: library/FOSSBilling/UpdatePatcher.php:59
-msgid "Unable to create backup of configuration file. Cancelling config migration."
-msgstr "Nepavyko sukurti atsarginės konfigūracijos failo. Atšaukiamas konfigūracijos migravimas."
+msgid "Unable to create backup of configuration file"
+msgstr ""
 
 #: library/FOSSBilling/UpdatePatcher.php:99
 msgid "Error when writing updated configuration file."
@@ -443,8 +443,9 @@ msgid "Password must include at least one uppercase letter."
 msgstr "Slaptažodyje turi būti bent viena didžioji raidė."
 
 #: library/FOSSBilling/Validate.php:106
-msgid "Birth date is invalid"
-msgstr "Neteisinga gimimo data"
+#: modules/Client/html_client/mod_client_profile.html.twig:68
+msgid "Birthdate"
+msgstr ""
 
 #: library/Model/ProductDomainTable.php:217
 msgid "Could not determine domain price. Domain action is missing"
@@ -495,8 +496,31 @@ msgid "Error getting service for contract"
 msgstr "Klaida gaunant paslaugą pagal sutartį"
 
 #: library/Payment/Adapter/AliPay.php:148
-msgid "AliPay does not support recurrent payments"
-msgstr "AliPay nepalaiko pasikartojančių mokėjimų"
+#: library/Payment/Adapter/Interkassa.php:125
+msgid "reccurent payments"
+msgstr ""
+
+#: library/Payment/Adapter/AliPay.php:148
+#: library/Payment/Adapter/Interkassa.php:125
+#: library/Registrar/Adapter/Internetbs.php:76
+#: library/Registrar/Adapter/Internetbs.php:172
+#: library/Registrar/Adapter/Namecheap.php:435
+#: library/Registrar/Adapter/Namecheap.php:574 library/Server/Manager/CWP.php:245
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
+#: library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:329 library/Server/Manager/Hestia.php:339
+#: library/Server/Manager/Hestia.php:378 library/Server/Manager/Ispconfig3.php:61
+#: library/Server/Manager/Ispconfig3.php:190
+#: library/Server/Manager/Ispconfig3.php:195
+#: library/Server/Manager/Ispconfig3.php:200 library/Server/Manager/Plesk.php:55
+#: library/Server/Manager/Plesk.php:201 library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Virtualmin.php:163
+#: library/Server/Manager/Virtualmin.php:168
+#: library/Server/Manager/Virtualmin.php:173
+msgid ":type: does not support :action:"
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:59
 msgid "Not enough in balance"
@@ -511,16 +535,14 @@ msgstr "Su šiais vartais apmokėti depozitinę sąskaitą draudžiama"
 #: library/Payment/Adapter/ClientBalance.php:83
 #: library/Payment/Adapter/Interkassa.php:176
 #: library/Payment/Adapter/PayPalEmail.php:77
-msgid "IPN is not valid"
-msgstr "IPN negalioja"
+#: library/Payment/Adapter/TwoCheckout.php:122
+#: library/Payment/Adapter/WebMoney.php:103
+msgid "IPN is invalid"
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:121
 msgid "ClientBalance gateway is not enabled"
 msgstr "ClientBalance vartai neįjungti"
-
-#: library/Payment/Adapter/Interkassa.php:125
-msgid "Interkassa payment gateway do not support recurrent payments"
-msgstr "Interkassa mokėjimo vartai nepalaiko pasikartojančių mokėjimų"
 
 #: library/Payment/Adapter/Interkassa.php:217
 #: library/Payment/Adapter/PayPalEmail.php:125
@@ -554,21 +576,13 @@ msgstr "\"Stripe\" mokėjimo vartai netinkamai sukonfigūruoti. Atnaujinkite kon
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
 msgstr "\"Stripe\" mokėjimo vartai netinkamai sukonfigūruoti. Atnaujinkite konfigūracijos parametrą \"test_api_key\" skiltyje \"Konfigūravimas -> Mokėjimai\"."
 
-#: library/Payment/Adapter/TwoCheckout.php:122
-msgid "2Checkout IPN is not valid"
-msgstr "2Checkout IPN negalioja"
-
 #: library/Payment/Adapter/TwoCheckout.php:136
-msgid "Invoice id could not be determined for this transaction"
-msgstr "Nepavyko nustatyti šios operacijos sąskaitos faktūros id"
+msgid "Invoice ID could not be determined for this transaction"
+msgstr ""
 
 #: library/Payment/Adapter/TwoCheckout.php:364
 msgid "Redirecting to 2Checkout.com"
 msgstr "Peradresuojama į 2Checkout.com"
-
-#: library/Payment/Adapter/WebMoney.php:103
-msgid "WebMoney IPN is not valid"
-msgstr "WebMoney IPN negalioja"
 
 #: library/Payment/AdapterAbstract.php:61
 msgid "Return URL for payment gateway was not set"
@@ -605,59 +619,62 @@ msgstr "Mokėjimo adapterio klasė neįdiegė konfigūracijos parinkčių metodo
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
 msgstr "\":domain_registrar\" domeno registras nėra pilnai sukonfigūruotas. Prašome sukonfigūruoti :missing"
 
-#: library/Registrar/Adapter/Email.php:67
-msgid "Email registrar can not determine whether domain is available"
-msgstr "El. pašto registras negali nustatyti, ar domenas yra prieinamas"
-
-#: library/Registrar/Adapter/Email.php:72
-msgid "Email registrar can not determine whether domain can be transferred"
-msgstr "Pašto registras negali nustatyti, ar domenas gali būti perkeltas"
+#: library/Registrar/Adapter/Email.php:67 library/Registrar/Adapter/Email.php:72
+msgid "Email registrar is unable to :action:"
+msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:76
-msgid "Domain transfer checking is not implemented"
-msgstr "Domeno perkėlimo tikrinimas neįdiegtas"
+msgid "checking domain transferability"
+msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:172
-msgid "Registrar does not support domain removal."
-msgstr "Registras nepalaiko domeno pašalinimo."
+#: library/Registrar/Adapter/Namecheap.php:574
+msgid "deleting domains"
+msgstr ""
 
 #: library/Registrar/Adapter/Namecheap.php:117
 msgid "Premium domains cannot be registered."
 msgstr "Premium domenai negali būti registruojami."
 
-#: library/Registrar/Adapter/Namecheap.php:169
-#: library/Registrar/Adapter/Namecheap.php:173
-msgid "Error: :error"
-msgstr "Klaida: :error"
+#: library/Registrar/Adapter/Namecheap.php:171
+#: library/Registrar/Adapter/Namecheap.php:177
+#: library/Registrar/Adapter/Namecheap.php:254
+#: library/Registrar/Adapter/Namecheap.php:351
+#: library/Registrar/Adapter/Namecheap.php:597
+#: library/Registrar/Adapter/Namecheap.php:660
+#: library/Registrar/Adapter/Namecheap.php:684
+#: library/Registrar/Adapter/Namecheap.php:712
+#: library/Registrar/Adapter/Resellerclub.php:399
+#: library/Registrar/Adapter/Resellerclub.php:709
+#: library/Registrar/Adapter/Resellerclub.php:715
+#: library/Registrar/Adapter/Resellerclub.php:721
+msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:249
-msgid "Could not update name servers"
-msgstr "Nepavyko atnaujinti vardinių serverių"
+#: library/Registrar/Adapter/Namecheap.php:253
+msgid "update nameservers"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:345
-msgid "API ERROR: could not retrieve domain details"
-msgstr "API KLAIDA: nepavyko gauti domeno informacijos"
+#: library/Registrar/Adapter/Namecheap.php:350
+msgid "retrieve domain details"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:429
-msgid "This feature is unavailable through the Namecheap API. Please contact your administrator."
-msgstr "Ši funkcija nepasiekiama naudojant Namecheap API. Susisiekite su administratoriumi."
+#: library/Registrar/Adapter/Namecheap.php:435
+msgid "retrieving the transfer code"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:568
-msgid "Domain deletion is not implemented in the NameCheap adapter. Please contact your system administrator."
-msgstr "NameCheap adapteryje domeno ištrynimas neįdiegtas. Susisiekite su sistemos administratoriumi."
+#: library/Registrar/Adapter/Namecheap.php:596
+msgid "retrieve privacy information"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:590
-msgid "Could not retrieve privacy info on this domain."
-msgstr "Nepavyko gauti šio domeno privatumo informacijos."
+#: library/Registrar/Adapter/Namecheap.php:659
+msgid "get the domain lock status"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:652
-msgid "API ERROR: could not get lock status on domain"
-msgstr "API KLAIDA: nepavyko gauti domeno užrakto būsenos"
-
-#: library/Registrar/Adapter/Namecheap.php:675
-#: library/Registrar/Adapter/Namecheap.php:702
-msgid "API ERROR: could not set lock status on domain"
-msgstr "API KLAIDA: nepavyko nustatyti užrakto būsenos domene"
+#: library/Registrar/Adapter/Namecheap.php:683
+#: library/Registrar/Adapter/Namecheap.php:711
+msgid "set the domain lock status"
+msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:40
 msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub Reseller ID\" at \"Configuration -> Domain registration\"."
@@ -668,34 +685,34 @@ msgid "Domain registrar \"ResellerClub\" is not configured properly. Please upda
 msgstr "Domeno registras \"ResellerClub\" netinkamai sukonfigūruotas. Atnaujinkite konfigūracijos parametrą \"ResellerClub API Key\" skiltyje \"Konfigūracija -> Domeno registracija\"."
 
 #: library/Registrar/Adapter/Resellerclub.php:335
-msgid "Valid contact company number is required while registering AU domain name"
-msgstr "Registruojant AU domeno vardą reikalingas galiojantis kontaktinės įmonės numeris"
+msgid "A valid contact company number is mandatory for registering an .AU domain name"
+msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:398
-msgid "Domain EPP code can be retrieved from domain registrar"
-msgstr "Domeno EPP kodą galima gauti iš domenų registro"
+msgid "get the transfer code"
+msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:591
+#: library/Registrar/Adapter/Resellerclub.php:592
 msgid "You are already registered as reseller"
 msgstr "Jūs jau užsiregistravote kaip perpardavėjas"
 
-#: library/Registrar/Adapter/Resellerclub.php:832
+#: library/Registrar/Adapter/Resellerclub.php:839
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr "Registruojant ES domeno vardą reikalinga galiojanti kontaktinio paso informacija"
 
-#: library/Registrar/Adapter/Resellerclub.php:852
+#: library/Registrar/Adapter/Resellerclub.php:859
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr "Registruojant ASIA domeno vardą reikalinga galiojanti kontaktinio paso informacija"
 
-#: library/Registrar/Adapter/Resellerclub.php:876
-msgid "Valid contact birth date is required while registering RU domain name"
-msgstr "Registruojant RU domeno vardą būtina nurodyti galiojantį kontakto gimimo datą"
+#: library/Registrar/Adapter/Resellerclub.php:883
+msgid "Valid contact birthdate is required while registering RU domain name"
+msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:880
+#: library/Registrar/Adapter/Resellerclub.php:887
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr "Registruojant RU domeno vardą reikalinga galiojanti kontaktinio paso informacija"
 
-#: library/Registrar/Adapter/Resellerclub.php:967
+#: library/Registrar/Adapter/Resellerclub.php:974
 msgid "Contact not found"
 msgstr "Kontaktas nerastas"
 
@@ -711,45 +728,85 @@ msgstr "Domeno registro klasė neįdiegė konfigūracijos parinkčių metodo"
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "\":server_manager\" serverio tvarkyklė nėra pilnai sukonfigūruota. Prašome sukonfigūruoti :missing"
 
-#: library/Server/Manager/CWP.php:86
-msgid "Failed to connect to server"
-msgstr "Nepavyko prisijungti prie serverio"
+#: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:428
+#: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:143
+#: library/Server/Manager/Plesk.php:47 library/Server/Manager/Virtualmin.php:51
+msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:143
-msgid "Failed to create account!"
-msgstr "Nepavyko sukurti paskyros!"
+#: library/Server/Manager/CWP.php:143 library/Server/Manager/Plesk.php:86
+#: library/Server/Manager/Virtualmin.php:392
+msgid "create account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:159
-msgid "Failed to suspend account!"
-msgstr "Nepavyko sustabdyti vartotojo paskyros!"
+#: library/Server/Manager/CWP.php:144 library/Server/Manager/CWP.php:161
+#: library/Server/Manager/CWP.php:178 library/Server/Manager/CWP.php:198
+#: library/Server/Manager/CWP.php:218 library/Server/Manager/CWP.php:236
+#: library/Server/Manager/Directadmin.php:439
+#: library/Server/Manager/Hestia.php:201 library/Server/Manager/Hestia.php:205
+#: library/Server/Manager/Hestia.php:232 library/Server/Manager/Hestia.php:257
+#: library/Server/Manager/Hestia.php:286 library/Server/Manager/Hestia.php:316
+#: library/Server/Manager/Hestia.php:365
+#: library/Server/Manager/Ispconfig3.php:734 library/Server/Manager/Plesk.php:87
+#: library/Server/Manager/Virtualmin.php:311
+#: library/Server/Manager/Virtualmin.php:393
+#: library/Server/Manager/Virtualmin.php:416
+#: library/Server/Manager/Virtualmin.php:439
+#: library/Server/Manager/Virtualmin.php:463
+#: library/Server/Manager/Virtualmin.php:486
+#: library/Server/Manager/Virtualmin.php:516
+#: library/Server/Manager/Virtualmin.php:544
+#: library/Server/Manager/Virtualmin.php:572
+#: library/Server/Manager/Virtualmin.php:660 library/Server/Manager/Whm.php:422
+#: library/Server/Manager/Whm.php:427 library/Server/Manager/Whm.php:432
+#: library/Server/Manager/Whm.php:437 library/Server/Manager/Whm.php:442
+msgid "Failed to :action: on the :type: server, check the error logs for further details"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:175
-msgid "Failed to unsuspend account!"
-msgstr "Nepavyko atšaukti naudotojo paskyros sustabdymo!"
+#: library/Server/Manager/CWP.php:160 library/Server/Manager/Hestia.php:231
+#: library/Server/Manager/Virtualmin.php:415
+msgid "suspend account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:194
-msgid "Failed to cancel / delete account!"
-msgstr "Nepavyko atšaukti / ištrinti paskyros!"
+#: library/Server/Manager/CWP.php:177 library/Server/Manager/Hestia.php:256
+#: library/Server/Manager/Virtualmin.php:438
+msgid "unsuspend account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:213
-msgid "Failed to change the account package!"
-msgstr "Nepavyko pakeisti paskyros paketo!"
+#: library/Server/Manager/CWP.php:197 library/Server/Manager/Hestia.php:285
+#: library/Server/Manager/Virtualmin.php:485
+msgid "cancel account"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:230
-msgid "Failed to change the account password!"
-msgstr "Nepavyko pakeisti paskyros slaptažodžio!"
+#: library/Server/Manager/CWP.php:217 library/Server/Manager/Hestia.php:315
+msgid "change account package"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:239
-msgid "CWP does not support username changes"
-msgstr "CWP nepalaiko vartotojo vardo keitimo"
+#: library/Server/Manager/CWP.php:235 library/Server/Manager/Hestia.php:364
+#: library/Server/Manager/Virtualmin.php:462
+msgid "change account password"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:244
-msgid "CWP does not support changing the primary domain name"
-msgstr "CWP nepalaiko pirminio domeno vardo keitimo"
+#: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/Hestia.php:329
+#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:201
+msgid "username changes"
+msgstr ""
 
-#: library/Server/Manager/CWP.php:249
-msgid "CWP does not support changing the IP"
-msgstr "CWP nepalaiko IP keitimo"
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/Hestia.php:339
+#: library/Server/Manager/Ispconfig3.php:195
+msgid "changing the account domain"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:378
+#: library/Server/Manager/Ispconfig3.php:200 library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Virtualmin.php:163
+#: library/Server/Manager/Virtualmin.php:168
+#: library/Server/Manager/Virtualmin.php:173
+msgid "changing the account IP"
+msgstr ""
 
 #: library/Server/Manager/Directadmin.php:95
 msgid "There are no available IPs on this server."
@@ -767,93 +824,29 @@ msgstr "Klaida sukuriant vartotoją"
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Serverio tvarkyklės \"DirectAdmin\" Klaida: \"Paskyra nėra sustabdyta\""
 
-#: library/Server/Manager/Directadmin.php:329
-msgid "DirectAdmin does not support username changes"
-msgstr "DirectAdmin nepalaiko vartotojo vardo keitimų"
-
-#: library/Server/Manager/Directadmin.php:334
-msgid "DirectAdmin does not support domain changes"
-msgstr "\"DirectAdmin\" nepalaiko domeno pakeitimų"
-
-#: library/Server/Manager/Directadmin.php:339
-msgid "DirectAdmin does not support IP changes"
-msgstr "DirectAdmin nepalaiko IP pakeitimų"
-
 #: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:411
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
-
-#: library/Server/Manager/Directadmin.php:428
-msgid "Server Manager DirectAdmin Error: \"Login failed\""
-msgstr "Serverio tvarkyklės DirectAdmin Klaida: \"Prisijungti nepavyko\""
 
 #: library/Server/Manager/Directadmin.php:432
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Serverio tvarkyklės DirectAdmin Klaida: \"Jūsų pateikta užklausa negali būti įvykdyta, nes jos nėra jūsų įgaliojimų lygyje\""
 
-#: library/Server/Manager/Directadmin.php:438
-msgid "Server Manager DirectAdmin Error: :error"
-msgstr "Serverio tvarkyklės \"DirectAdmin\" Klaida: :error"
+#: library/Server/Manager/Hestia.php:200
+msgid "create user"
+msgstr ""
 
-#: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:141
-msgid "Connection to server failed. Error code: :code"
-msgstr "Prisijungimas prie serverio nepavyko. Klaidos kodas: :code"
-
-#: library/Server/Manager/Hestia.php:198
-msgid "Server Manager Hestia CP Error: Unable to create User. Error code: :code"
-msgstr "Serverio Tvarkyklės Hestia CP Klaida: Nepavyko Sukurti Vartotojo. Klaidos Kodas: :code"
-
-#: library/Server/Manager/Hestia.php:201
-msgid "Server Manager Hestia CP Error: Create Domain failure. Error code: :code"
-msgstr "Serverio Tvarkyklės Hestia CP Klaida: Domeno Sukūrimo Klaida. Klaidos Kodas: :code"
-
-#: library/Server/Manager/Hestia.php:227
-msgid "Server Manager Hestia CP Error: Suspend Account Error. Error code: :code"
-msgstr "Serverio Tvarkyklės Hestia CP Klaida: Paskyros Sustabdymo Klaida. Klaidos Kodas: :code"
-
-#: library/Server/Manager/Hestia.php:251
-msgid "Server Manager Hestia CP Error: Unsuspend Account Error. Error code: :code"
-msgstr "Serverio Tvarkyklės Hestia CP Klaida: Atšaukti Paskyros Sustabdymo Klaida. Klaidos Kodas: :code"
-
-#: library/Server/Manager/Hestia.php:279
-msgid "Server Manager Hestia CP Error: Cancel Account Error. Error code: :code"
-msgstr "Serverio Tvarkyklės Hestia CP Klaida: Paskyros Atšaukimo Klaida. Klaidos Kodas: :code"
-
-#: library/Server/Manager/Hestia.php:308
-msgid "Server Manager Hestia CP Error: Change User package Account Error. Error code: :code"
-msgstr "Serverio Tvarkyklės Hestia CP Klaida: Pakeisti Vartotojo Paketo Paskyros Klaida. Klaidos Kodas: :code"
-
-#: library/Server/Manager/Hestia.php:321 library/Server/Manager/Hestia.php:331
-#: library/Server/Manager/Hestia.php:369
-msgid "Server Manager Hestia CP Error: Not Supported"
-msgstr "Serverio Tvarkyklės Hestia CP Klaida: Nepalaikoma"
-
-#: library/Server/Manager/Hestia.php:356
-msgid "Server Manager Hestia CP Error: Change Password Account Error. Error code: :code"
-msgstr "Serverio Tvarkyklės Hestia CP Klaida: Paskyros Slaptažodžio Keitimo Klaida. Klaidos Kodas: :code"
+#: library/Server/Manager/Hestia.php:204
+msgid "create domain"
+msgstr ""
 
 #: library/Server/Manager/Ispconfig3.php:19
 msgid "PHP Soap extension required for IspConfig server manager"
 msgstr "IspConfig serverio tvarkyklei reikalingas PHP Soap plėtinys"
 
-#: library/Server/Manager/Ispconfig3.php:61
-msgid "Server manager does not support sync"
-msgstr "Serverio tvarkyklė nepalaiko sinchronizavimo"
-
-#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:200
-#: library/Server/Manager/Virtualmin.php:163
-msgid "Server manager does not support username changes"
-msgstr "Serverio tvarkyklė nepalaiko vartotojo vardo keitimo"
-
-#: library/Server/Manager/Ispconfig3.php:195
-#: library/Server/Manager/Virtualmin.php:168
-msgid "Server manager does not support domain changes"
-msgstr "Serverio tvarkyklė nepalaiko domeno pakeitimų"
-
-#: library/Server/Manager/Ispconfig3.php:200
-#: library/Server/Manager/Virtualmin.php:173
-msgid "Server manager does not support ip changes"
-msgstr "Serverio tvarkyklė nepalaiko ip pakeitimų"
+#: library/Server/Manager/Ispconfig3.php:61 library/Server/Manager/Plesk.php:55
+msgid "account synchronization"
+msgstr ""
 
 #: library/Server/Manager/Ispconfig3.php:538
 msgid "Could not load Soap client"
@@ -863,29 +856,9 @@ msgstr "Nepavyko įkelti Soap kliento"
 msgid "Could not retrieve session"
 msgstr "Nepavyko nuskaityti sesijos"
 
-#: library/Server/Manager/Ispconfig3.php:733
-msgid "Error when making request to the server"
-msgstr "Klaida pateikiant užklausą serveriui"
-
-#: library/Server/Manager/Plesk.php:47 library/Server/Manager/Virtualmin.php:51
-msgid "Connection to server failed"
-msgstr "Prisijungimas prie serverio nepavyko"
-
-#: library/Server/Manager/Plesk.php:55
-msgid "The server adapter does not support account synchronization"
-msgstr "Serverio adapteris nepalaiko paskyros sinchronizavimo"
-
-#: library/Server/Manager/Plesk.php:86
-msgid "Failed to create new account"
-msgstr "Nepavyko sukurti naujos paskyros"
-
-#: library/Server/Manager/Plesk.php:170
+#: library/Server/Manager/Plesk.php:171
 msgid "Can't modify client"
 msgstr "Negalima modifikuoti kliento"
-
-#: library/Server/Manager/Plesk.php:227
-msgid "Server manager does not support changing IP addresses"
-msgstr "Serverio tvarkyklė nepalaiko ip adresų keitimo"
 
 #: library/Server/Manager/Virtualmin.php:87
 #: library/Server/Manager/Virtualmin.php:100
@@ -897,59 +870,39 @@ msgid "Create reseller command is only available in Virtualmin PRO version"
 msgstr "Komanda kurti perpardavėją galima tik Virtualmin PRO versijoje"
 
 #: library/Server/Manager/Virtualmin.php:310
-#: library/Server/Manager/Virtualmin.php:650
-msgid "Failed to create reseller's account"
-msgstr "Nepavyko sukurti perpardavėjo paskyros"
+#: library/Server/Manager/Virtualmin.php:659
+msgid "create reseller account"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:391
-msgid "Failed to create account"
-msgstr "Nepavyko sukurti paskyros"
+#: library/Server/Manager/Virtualmin.php:515
+msgid "modify domain details"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:413
-msgid "Failed to suspend user's account"
-msgstr "Nepavyko sustabdyti vartotojo paskyros"
+#: library/Server/Manager/Virtualmin.php:543
+msgid "enable features"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:435
-msgid "Failed to unsuspend user's account"
-msgstr "Nepavyko atšaukti naudotojo paskyros sustabdymo"
+#: library/Server/Manager/Virtualmin.php:571
+msgid "disable features"
+msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:458
-msgid "Failed to change user's password"
-msgstr "Nepavyko pakeisti vartotojo slaptažodžio"
-
-#: library/Server/Manager/Virtualmin.php:480
-msgid "Failed to delete user's account"
-msgstr "Nepavyko ištrinti vartotojo paskyros"
-
-#: library/Server/Manager/Virtualmin.php:509
-msgid "Failed to modify domain details"
-msgstr "Nepavyko pakeisti domeno informacijos"
-
-#: library/Server/Manager/Virtualmin.php:536
-msgid "Failed to enable features"
-msgstr "Nepavyko įgalinti funkcijų"
-
-#: library/Server/Manager/Virtualmin.php:563
-msgid "Failed to disable features"
-msgstr "Nepavyko išjungti funkcijų"
-
-#: library/Server/Manager/Virtualmin.php:570
+#: library/Server/Manager/Virtualmin.php:579
 msgid "Cancel reseller command only available in Virtualmin PRO version"
 msgstr "Atšaukti perpardavėjo komandą galima tik Virtualmin PRO versijoje"
 
-#: library/Server/Manager/Virtualmin.php:581
+#: library/Server/Manager/Virtualmin.php:590
 msgid "Failed to delete reseller"
 msgstr "Nepavyko ištrinti perpardavėjo"
 
-#: library/Server/Manager/Virtualmin.php:588
+#: library/Server/Manager/Virtualmin.php:597
 msgid "Modify reseller comand is only available in Virtualmin PRO version"
 msgstr "Modifikuoti perpardavėjo komandą galima tik Virtualmin PRO versijoje"
 
-#: library/Server/Manager/Virtualmin.php:601
+#: library/Server/Manager/Virtualmin.php:610
 msgid "Failed to change reseller's password"
 msgstr "Nepavyko pakeisti perpardavėjo slaptažodžio"
 
-#: library/Server/Manager/Virtualmin.php:608
+#: library/Server/Manager/Virtualmin.php:617
 msgid "Modify reseller command is only available in Virtualmin PRO version"
 msgstr "Komanda modifikuoti perpardavėją galima tik Virtualmin PRO versijoje"
 
@@ -961,7 +914,7 @@ msgstr "Veikla"
 msgid "Event history"
 msgstr "Įvykių istorija"
 
-#: modules/Api/Controller/Client.php:47
+#: modules/Api/Controller/Client.php:47 modules/Api/Controller/Client.php:248
 msgid "Unknown API call :call"
 msgstr "Nežinomas API pranešimas :call"
 
@@ -979,17 +932,14 @@ msgstr "Neteisėtas IP"
 msgid "Authentication Failed"
 msgstr "Autentifikavimas nepavyko"
 
-#: modules/Api/Controller/Client.php:248
-msgid "Unknown API call"
-msgstr "Nežinomas API pranešimas"
-
 #: modules/Api/Controller/Client.php:327
-msgid "CSRF token invalid."
-msgstr "CSRF prieigos raktas neteisingas."
+msgid "CSRF token invalid"
+msgstr ""
 
 #: modules/Cart/Api/Guest.php:59 modules/Currency/Api/Admin.php:69
 #: modules/Currency/Api/Admin.php:249 modules/Currency/Api/Guest.php:48
-#: modules/Currency/Service.php:463 modules/Currency/Service.php:573
+#: modules/Currency/Service.php:326 modules/Currency/Service.php:463
+#: modules/Currency/Service.php:573
 msgid "Currency not found"
 msgstr "Valiuta nerasta"
 
@@ -1007,20 +957,20 @@ msgid "Addon products cannot be added separately."
 msgstr ""
 
 #: modules/Cart/Api/Guest.php:184
-msgid "One or more of your selected addons are not valid for the associated product."
+msgid "One or more of your selected addons are invalid for the associated product."
 msgstr ""
 
 #: modules/Cart/Service.php:84
-msgid "Selected billing period is not valid"
-msgstr "Pasirinktas atsiskaitymo laikotarpis negalioja"
+msgid "Selected billing period is invalid"
+msgstr ""
 
 #: modules/Cart/Service.php:91
 msgid "This item is currently out of stock"
 msgstr "Šios paslaugos šiuo metu neturime"
 
 #: modules/Cart/Service.php:124
-msgid "Selected billing period is not valid for the selected addon"
-msgstr "Pasirinktas atsiskaitymo laikotarpis negalioja pasirinktam priedui"
+msgid "Selected billing period is invalid for the selected addon"
+msgstr ""
 
 #: modules/Cart/Service.php:218 modules/Product/Api/Guest.php:84
 msgid "Product not found"
@@ -1035,8 +985,8 @@ msgid "You have already used this promo code. Please remove promo code and check
 msgstr "Jūs jau panaudojote šį promo kodą. Pašalinkite promo kodą ir atsiskaitykite dar kartą."
 
 #: modules/Cart/Service.php:485
-msgid "Can not checkout empty cart."
-msgstr "Negalima atsiskaityti su tuščiu krepšeliu."
+msgid "Can not checkout an empty cart"
+msgstr ""
 
 #: modules/Cart/Service.php:497
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -1151,12 +1101,12 @@ msgid "Define clients currency before adding funds."
 msgstr "Prieš pridėdami lėšų, nustatykite klientų valiutą."
 
 #: modules/Client/Service.php:241 modules/Client/ServiceBalance.php:126
-msgid "Funds amount is not valid"
-msgstr "Lėšų suma negalioja"
+msgid "Funds amount is invalid"
+msgstr ""
 
 #: modules/Client/Service.php:245 modules/Client/ServiceBalance.php:130
-msgid "Funds description is not valid"
-msgstr "Lėšų aprašymas negalioja"
+msgid "Funds description is invalid"
+msgstr ""
 
 #: modules/Client/Service.php:412
 msgid "Client ID or email is required"
@@ -1195,8 +1145,8 @@ msgid "Currency already registered"
 msgstr "Tokia valiuta jau registruota"
 
 #: modules/Currency/Api/Admin.php:115
-msgid "Currency code is not valid"
-msgstr "Valiutos kodas negalioja"
+msgid "Currency code is invalid"
+msgstr ""
 
 #: modules/Currency/Service.php:58
 msgid "Currency conversion rate can not be zero"
@@ -1210,13 +1160,9 @@ msgstr "Valiutos kodas nepateiktas"
 msgid "Can not remove default currency"
 msgstr "Negalima pašalinti numatytosios valiutos"
 
-#: modules/Currency/Service.php:326
-msgid "Currency code not found"
-msgstr "Valiutos kodas nerastas"
-
 #: modules/Currency/Service.php:481
-msgid "Currency rate is not valid"
-msgstr "Valiutos kursas negalioja"
+msgid "Currency rate is invalid"
+msgstr ""
 
 #: modules/Currency/Service.php:545
 msgid "Failed to get currency rates for :currency from the European Central Bank API"
@@ -1325,8 +1271,8 @@ msgid "Form style was not found in predefined list"
 msgstr "Formos stilius iš anksto nustatytame sąraše nerastas"
 
 #: modules/Formbuilder/Api/Admin.php:79
-msgid "Form field type is not valid"
-msgstr "Formos lauko tipas netinkamas"
+msgid "Form field type is invalid"
+msgstr ""
 
 #: modules/Formbuilder/Api/Admin.php:82 modules/Formbuilder/Api/Admin.php:255
 msgid "This input type must have unique values"
@@ -1811,8 +1757,8 @@ msgid "This promotion code already exists."
 msgstr "Šis promo kodas jau egzistuoja."
 
 #: modules/Profile/Service.php:137
-msgid "Invalid birth date value"
-msgstr "Neteisinga gimimo datos reikšmė"
+msgid "Invalid birthdate value"
+msgstr ""
 
 #: modules/Queue/Api/Admin.php:101
 msgid "Message handler function :method does not exists"
@@ -1938,8 +1884,8 @@ msgid "Domain order is not activated"
 msgstr "Domeno užsakymas nesuaktyvintas"
 
 #: modules/Servicedomain/Api/Guest.php:95
-msgid "Domain :domain is not valid"
-msgstr "Domenas :domain negalioja"
+msgid "Domain :domain is invalid"
+msgstr ""
 
 #: modules/Servicedomain/Api/Guest.php:100
 msgid "Domain availability could not be determined. TLD is not active."
@@ -1980,8 +1926,8 @@ msgstr "Užsakymo duomenyse turi būti :field konfigūracijos laukas"
 
 #: modules/Servicedomain/Service.php:65 modules/Servicedomain/Service.php:82
 #: modules/Servicedomain/Service.php:113 modules/Servicedomain/Service.php:548
-msgid "Domain name :domain is not valid"
-msgstr "Domeno pavadinimas :domain neteisingas"
+msgid "Domain name :domain is invalid"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:98
 msgid ":domain can not be transferred!"
@@ -2008,8 +1954,8 @@ msgid "Nameserver 2 is required"
 msgstr "Vardų serveris 2 privalomas"
 
 #: modules/Servicedomain/Service.php:521 modules/Servicedomain/Service.php:542
-msgid "Domain name is not valid"
-msgstr "Netinkamas domeno pavadinimas"
+msgid "Domain name is invalid"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:525
 msgid "Domain can not be transferred"
@@ -2053,8 +1999,8 @@ msgid "plan_id is missing"
 msgstr "Trūksta plan_id"
 
 #: modules/Servicehosting/Api/Guest.php:36
-msgid "Product type is invalid"
-msgstr "Netinkamas produkto tipas"
+msgid "Product type"
+msgstr ""
 
 #: modules/Servicehosting/Controller/Admin.php:34
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
@@ -2077,36 +2023,36 @@ msgid "Hosting product is not configured completely. Configure hosting plan for 
 msgstr "Hostingo produktas nėra pilnai sukonfigūruotas. Sukonfigūruokite produkto hostingo planą."
 
 #: modules/Servicehosting/Service.php:52
-msgid "Domain name is not valid."
-msgstr "Netinkamas domeno pavadinimas."
+msgid "Domain name is invalid."
+msgstr ""
 
 #: modules/Servicehosting/Service.php:55
-msgid "Domain extension is not valid."
-msgstr "Neteisinga domeno galūnė."
+msgid "Domain extension is invalid."
+msgstr ""
 
 #: modules/Servicehosting/Service.php:255
-msgid "Account username is missing or is not valid"
-msgstr "Trūksta paskyros vartotojo vardo arba jis netinkamas"
+msgid "Account username is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:277
-msgid "Account ip is missing or is not valid"
-msgstr "Trūksta paskyros ip arba jis netinkamas"
+msgid "Account ip is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:301
 msgid "Domain sld or tld is missing"
 msgstr "Trūksta domeno sld arba tld"
 
 #: modules/Servicehosting/Service.php:327
-msgid "Account password is missing or is not valid"
-msgstr "Trūksta paskyros slaptažodžio arba jis netinkamas"
+msgid "Account password is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:716
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Netinkama serverio tvarkyklė. Serveris nebuvo tinkamai sukonfigūruotas."
 
 #: modules/Servicehosting/Service.php:736
-msgid "Server manager :adapter is not valid"
-msgstr "Serverio tvarkyklės :adapter netinkamas"
+msgid "Server manager :adapter is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:776
 msgid "Can not remove hosting plan which has active accounts"
@@ -2258,8 +2204,8 @@ msgid "We have already received this request."
 msgstr "Šį prašymą jau gavome."
 
 #: modules/Support/Service.php:968
-msgid "Identity is not valid"
-msgstr "Tapatybė negalioja"
+msgid "Identity is invalid"
+msgstr ""
 
 #: modules/Support/Service.php:997
 msgid "Public ticket not found"
@@ -2302,7 +2248,7 @@ msgstr "Sistema"
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:50
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:104
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:19
-#: themes/admin_default/html/layout_default.html.twig:118
+#: themes/admin_default/html/layout_default.html.twig:124
 msgid "Settings"
 msgstr "Nustatymai"
 
@@ -3168,7 +3114,7 @@ msgstr "Klientų prisijungimų istorija"
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:37
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
-#: themes/admin_default/html/layout_default.html.twig:116
+#: themes/admin_default/html/layout_default.html.twig:122
 #: themes/huraga/html/layout_default.html.twig:109
 #: themes/huraga/html/layout_default.html.twig:220
 msgid "Profile"
@@ -3886,10 +3832,6 @@ msgstr "El. pašto adresas"
 msgid "First Name"
 msgstr "Vardas"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:68
-msgid "Birth date"
-msgstr "Gimimo data"
-
 #: modules/Client/html_client/mod_client_profile.html.twig:89
 msgid "Company Name"
 msgstr "Įmonės pavadinimas"
@@ -4248,7 +4190,7 @@ msgstr "Klientų sistema"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:12
 #: modules/Index/html_client/mod_index_dashboard.html.twig:4
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
-#: themes/admin_default/html/layout_default.html.twig:141
+#: themes/admin_default/html/layout_default.html.twig:147
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
 #: themes/huraga/html/layout_default.html.twig:98
 #: themes/huraga/html/layout_default.html.twig:198
@@ -8696,11 +8638,6 @@ msgstr "Atstatyti slaptažodį"
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
 msgstr "Įveskite savo el. pašto adresą. Jei jūsų paskyra egzistuoja, gausite patvirtinimo nuorodą."
 
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
-msgid "Email address"
-msgstr "El. pašto adresas"
-
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:36
 msgid "Send me the link"
 msgstr "Siųsti man nuorodą"
@@ -9250,36 +9187,36 @@ msgstr "Oi... Ką tik radote klaidos puslapį"
 msgid "Back to Dashboard"
 msgstr "Grįžti į valdymo skydelį"
 
-#: themes/admin_default/html/layout_default.html.twig:72
-#: themes/admin_default/html/layout_default.html.twig:176
+#: themes/admin_default/html/layout_default.html.twig:78
+#: themes/admin_default/html/layout_default.html.twig:182
 msgid "Source code"
 msgstr "Programinis kodas"
 
-#: themes/admin_default/html/layout_default.html.twig:78
+#: themes/admin_default/html/layout_default.html.twig:84
 msgid "Sponsor"
 msgstr "Rėmėjas"
 
-#: themes/admin_default/html/layout_default.html.twig:87
+#: themes/admin_default/html/layout_default.html.twig:93
 msgid "Enable dark mode"
 msgstr "Įjungti tamsujį režimą"
 
-#: themes/admin_default/html/layout_default.html.twig:96
+#: themes/admin_default/html/layout_default.html.twig:102
 msgid "Enable light mode"
 msgstr "Įjungti šviesujį režimą"
 
-#: themes/admin_default/html/layout_default.html.twig:122
+#: themes/admin_default/html/layout_default.html.twig:128
 msgid "Logout"
 msgstr "Atsijungti"
 
-#: themes/admin_default/html/layout_default.html.twig:170
+#: themes/admin_default/html/layout_default.html.twig:176
 msgid "Help"
 msgstr "Pagalba"
 
-#: themes/admin_default/html/layout_default.html.twig:175
+#: themes/admin_default/html/layout_default.html.twig:181
 msgid "Documentation"
 msgstr "Dokumentacija"
 
-#: themes/admin_default/html/layout_default.html.twig:177
+#: themes/admin_default/html/layout_default.html.twig:183
 msgid "Report a bug"
 msgstr "Panešti apie klaidą"
 

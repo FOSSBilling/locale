@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-07-02 13:03-0700\n"
-"PO-Revision-Date: 2023-07-02 20:14\n"
+"POT-Creation-Date: 2023-07-03 14:55-0700\n"
+"PO-Revision-Date: 2023-07-03 21:58\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "您似乎正在尝试使用 FOSSBilling 而不启用 php intl 扩展。 FOSSBilling包含一个用于intl扩展的聚合物，但它不支持 :locale。请启用 intl 扩展。"
 
-#: index.php:51 library/Box/App.php:380 library/Box/AppClient.php:59
+#: index.php:51 library/Box/App.php:378 library/Box/AppClient.php:58
 msgid "Page :url not found"
 msgstr "找不到 :url 页面"
 
@@ -64,11 +64,11 @@ msgstr "Api类必须是 Api_Abstract 的实例"
 msgid ":type API call :method does not exist in module :module"
 msgstr ":type API 调用 :method 在模块 :module 中不存在"
 
-#: library/Box/App.php:352
-msgid "The system is undergoing maintenance. Please try again later."
-msgstr "系统正在进行维护。请稍后再试。"
+#: library/Box/App.php:350
+msgid "The system is undergoing maintenance. Please try again later"
+msgstr ""
 
-#: library/Box/AppClient.php:77
+#: library/Box/AppClient.php:76
 msgid "Page not found"
 msgstr "未找到页面"
 
@@ -89,8 +89,8 @@ msgid "Module :mod manifest file is missing"
 msgstr "模块 :mod manifest 文件丢失"
 
 #: library/Box/Mod.php:77
-msgid "Module :mod manifest file is not valid. Check file syntax and permissions."
-msgstr "模块 :mod manifest 文件无效。请检查文件的语法和权限。"
+msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
+msgstr ""
 
 #: library/Box/Mod.php:118
 msgid "Module :mod does not have service class"
@@ -218,17 +218,10 @@ msgstr "年"
 msgid "decade"
 msgstr "十年"
 
-#: library/Box/TwigLoader.php:24
-msgid "Missing mods param for Box_TwigLoader"
-msgstr "Box_TwigLoader缺少模组参数"
-
-#: library/Box/TwigLoader.php:28
-msgid "Missing theme param for Box_TwigLoader"
-msgstr "Box_TwigLoader缺少主题参数"
-
+#: library/Box/TwigLoader.php:24 library/Box/TwigLoader.php:28
 #: library/Box/TwigLoader.php:32
-msgid "Missing type param for Box_TwigLoader"
-msgstr "Box_TwigLoader缺少类型参数"
+msgid "Missing :missing: param for Box_TwigLoader"
+msgstr ""
 
 #: library/FOSSBilling/CentralAlerts.php:118
 msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
@@ -375,8 +368,15 @@ msgid "Service class :class was not found in :path"
 msgstr "在 :path 中找不到服务类 :class。"
 
 #: library/FOSSBilling/Tools.php:283
-msgid "Email address is invalid"
-msgstr "邮箱地址无效"
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
+msgid "Email address"
+msgstr ""
+
+#: library/FOSSBilling/Tools.php:284 library/FOSSBilling/Validate.php:107
+#: modules/Servicehosting/Api/Guest.php:37
+msgid ":friendlyName: is invalid"
+msgstr ""
 
 #: library/FOSSBilling/Update.php:104
 msgid "Failed to download the latest version information. Further details are available in the error log."
@@ -399,12 +399,12 @@ msgid "Unable to clear cache and/or remove install folder. Further details are a
 msgstr ""
 
 #: library/FOSSBilling/UpdatePatcher.php:52
-msgid "Unable to load existing configuration."
+msgid "Unable to load existing configuration"
 msgstr ""
 
 #: library/FOSSBilling/UpdatePatcher.php:59
-msgid "Unable to create backup of configuration file. Cancelling config migration."
-msgstr "无法创建配置文件的备份。正在取消配置迁移。"
+msgid "Unable to create backup of configuration file"
+msgstr ""
 
 #: library/FOSSBilling/UpdatePatcher.php:99
 msgid "Error when writing updated configuration file."
@@ -431,7 +431,8 @@ msgid "Password must include at least one uppercase letter."
 msgstr "密码必须至少包含 1 个大写字母。"
 
 #: library/FOSSBilling/Validate.php:106
-msgid "Birth date is invalid"
+#: modules/Client/html_client/mod_client_profile.html.twig:68
+msgid "Birthdate"
 msgstr ""
 
 #: library/Model/ProductDomainTable.php:217
@@ -483,8 +484,31 @@ msgid "Error getting service for contract"
 msgstr "获取合同服务时出错"
 
 #: library/Payment/Adapter/AliPay.php:148
-msgid "AliPay does not support recurrent payments"
-msgstr "支付宝不支持连续付款"
+#: library/Payment/Adapter/Interkassa.php:125
+msgid "reccurent payments"
+msgstr ""
+
+#: library/Payment/Adapter/AliPay.php:148
+#: library/Payment/Adapter/Interkassa.php:125
+#: library/Registrar/Adapter/Internetbs.php:76
+#: library/Registrar/Adapter/Internetbs.php:172
+#: library/Registrar/Adapter/Namecheap.php:435
+#: library/Registrar/Adapter/Namecheap.php:574 library/Server/Manager/CWP.php:245
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
+#: library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:329 library/Server/Manager/Hestia.php:339
+#: library/Server/Manager/Hestia.php:378 library/Server/Manager/Ispconfig3.php:61
+#: library/Server/Manager/Ispconfig3.php:190
+#: library/Server/Manager/Ispconfig3.php:195
+#: library/Server/Manager/Ispconfig3.php:200 library/Server/Manager/Plesk.php:55
+#: library/Server/Manager/Plesk.php:201 library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Virtualmin.php:163
+#: library/Server/Manager/Virtualmin.php:168
+#: library/Server/Manager/Virtualmin.php:173
+msgid ":type: does not support :action:"
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:59
 msgid "Not enough in balance"
@@ -499,16 +523,14 @@ msgstr "禁止在此网关上支付发票"
 #: library/Payment/Adapter/ClientBalance.php:83
 #: library/Payment/Adapter/Interkassa.php:176
 #: library/Payment/Adapter/PayPalEmail.php:77
-msgid "IPN is not valid"
-msgstr "IPN无效"
+#: library/Payment/Adapter/TwoCheckout.php:122
+#: library/Payment/Adapter/WebMoney.php:103
+msgid "IPN is invalid"
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:121
 msgid "ClientBalance gateway is not enabled"
 msgstr "客户端余额网关未启用"
-
-#: library/Payment/Adapter/Interkassa.php:125
-msgid "Interkassa payment gateway do not support recurrent payments"
-msgstr "Interkassa付款网关不支持连续付款"
 
 #: library/Payment/Adapter/Interkassa.php:217
 #: library/Payment/Adapter/PayPalEmail.php:125
@@ -542,20 +564,12 @@ msgstr "支付网关 “Stripe” 配置不正确。请在 “配置 -> 支付�
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
 msgstr "“Stripe” 支付网关配置不完全。请在 \"配置 -> 支付网关\" 中的 \"test_api_key” 更新配置。"
 
-#: library/Payment/Adapter/TwoCheckout.php:122
-msgid "2Checkout IPN is not valid"
-msgstr "2Checkout IPN 无效"
-
 #: library/Payment/Adapter/TwoCheckout.php:136
-msgid "Invoice id could not be determined for this transaction"
+msgid "Invoice ID could not be determined for this transaction"
 msgstr ""
 
 #: library/Payment/Adapter/TwoCheckout.php:364
 msgid "Redirecting to 2Checkout.com"
-msgstr ""
-
-#: library/Payment/Adapter/WebMoney.php:103
-msgid "WebMoney IPN is not valid"
 msgstr ""
 
 #: library/Payment/AdapterAbstract.php:61
@@ -593,58 +607,61 @@ msgstr ""
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Registrar/Adapter/Email.php:67
-msgid "Email registrar can not determine whether domain is available"
-msgstr ""
-
-#: library/Registrar/Adapter/Email.php:72
-msgid "Email registrar can not determine whether domain can be transferred"
+#: library/Registrar/Adapter/Email.php:67 library/Registrar/Adapter/Email.php:72
+msgid "Email registrar is unable to :action:"
 msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:76
-msgid "Domain transfer checking is not implemented"
+msgid "checking domain transferability"
 msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:172
-msgid "Registrar does not support domain removal."
+#: library/Registrar/Adapter/Namecheap.php:574
+msgid "deleting domains"
 msgstr ""
 
 #: library/Registrar/Adapter/Namecheap.php:117
 msgid "Premium domains cannot be registered."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:169
-#: library/Registrar/Adapter/Namecheap.php:173
-msgid "Error: :error"
+#: library/Registrar/Adapter/Namecheap.php:171
+#: library/Registrar/Adapter/Namecheap.php:177
+#: library/Registrar/Adapter/Namecheap.php:254
+#: library/Registrar/Adapter/Namecheap.php:351
+#: library/Registrar/Adapter/Namecheap.php:597
+#: library/Registrar/Adapter/Namecheap.php:660
+#: library/Registrar/Adapter/Namecheap.php:684
+#: library/Registrar/Adapter/Namecheap.php:712
+#: library/Registrar/Adapter/Resellerclub.php:399
+#: library/Registrar/Adapter/Resellerclub.php:709
+#: library/Registrar/Adapter/Resellerclub.php:715
+#: library/Registrar/Adapter/Resellerclub.php:721
+msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:249
-msgid "Could not update name servers"
+#: library/Registrar/Adapter/Namecheap.php:253
+msgid "update nameservers"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:345
-msgid "API ERROR: could not retrieve domain details"
+#: library/Registrar/Adapter/Namecheap.php:350
+msgid "retrieve domain details"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:429
-msgid "This feature is unavailable through the Namecheap API. Please contact your administrator."
+#: library/Registrar/Adapter/Namecheap.php:435
+msgid "retrieving the transfer code"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:568
-msgid "Domain deletion is not implemented in the NameCheap adapter. Please contact your system administrator."
+#: library/Registrar/Adapter/Namecheap.php:596
+msgid "retrieve privacy information"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:590
-msgid "Could not retrieve privacy info on this domain."
+#: library/Registrar/Adapter/Namecheap.php:659
+msgid "get the domain lock status"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:652
-msgid "API ERROR: could not get lock status on domain"
-msgstr ""
-
-#: library/Registrar/Adapter/Namecheap.php:675
-#: library/Registrar/Adapter/Namecheap.php:702
-msgid "API ERROR: could not set lock status on domain"
+#: library/Registrar/Adapter/Namecheap.php:683
+#: library/Registrar/Adapter/Namecheap.php:711
+msgid "set the domain lock status"
 msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:40
@@ -656,34 +673,34 @@ msgid "Domain registrar \"ResellerClub\" is not configured properly. Please upda
 msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:335
-msgid "Valid contact company number is required while registering AU domain name"
+msgid "A valid contact company number is mandatory for registering an .AU domain name"
 msgstr ""
 
 #: library/Registrar/Adapter/Resellerclub.php:398
-msgid "Domain EPP code can be retrieved from domain registrar"
+msgid "get the transfer code"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:591
+#: library/Registrar/Adapter/Resellerclub.php:592
 msgid "You are already registered as reseller"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:832
+#: library/Registrar/Adapter/Resellerclub.php:839
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:852
+#: library/Registrar/Adapter/Resellerclub.php:859
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:876
-msgid "Valid contact birth date is required while registering RU domain name"
+#: library/Registrar/Adapter/Resellerclub.php:883
+msgid "Valid contact birthdate is required while registering RU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:880
+#: library/Registrar/Adapter/Resellerclub.php:887
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:967
+#: library/Registrar/Adapter/Resellerclub.php:974
 msgid "Contact not found"
 msgstr ""
 
@@ -699,44 +716,84 @@ msgstr ""
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:86
-msgid "Failed to connect to server"
+#: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:428
+#: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:143
+#: library/Server/Manager/Plesk.php:47 library/Server/Manager/Virtualmin.php:51
+msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:143
-msgid "Failed to create account!"
+#: library/Server/Manager/CWP.php:143 library/Server/Manager/Plesk.php:86
+#: library/Server/Manager/Virtualmin.php:392
+msgid "create account"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:159
-msgid "Failed to suspend account!"
+#: library/Server/Manager/CWP.php:144 library/Server/Manager/CWP.php:161
+#: library/Server/Manager/CWP.php:178 library/Server/Manager/CWP.php:198
+#: library/Server/Manager/CWP.php:218 library/Server/Manager/CWP.php:236
+#: library/Server/Manager/Directadmin.php:439
+#: library/Server/Manager/Hestia.php:201 library/Server/Manager/Hestia.php:205
+#: library/Server/Manager/Hestia.php:232 library/Server/Manager/Hestia.php:257
+#: library/Server/Manager/Hestia.php:286 library/Server/Manager/Hestia.php:316
+#: library/Server/Manager/Hestia.php:365
+#: library/Server/Manager/Ispconfig3.php:734 library/Server/Manager/Plesk.php:87
+#: library/Server/Manager/Virtualmin.php:311
+#: library/Server/Manager/Virtualmin.php:393
+#: library/Server/Manager/Virtualmin.php:416
+#: library/Server/Manager/Virtualmin.php:439
+#: library/Server/Manager/Virtualmin.php:463
+#: library/Server/Manager/Virtualmin.php:486
+#: library/Server/Manager/Virtualmin.php:516
+#: library/Server/Manager/Virtualmin.php:544
+#: library/Server/Manager/Virtualmin.php:572
+#: library/Server/Manager/Virtualmin.php:660 library/Server/Manager/Whm.php:422
+#: library/Server/Manager/Whm.php:427 library/Server/Manager/Whm.php:432
+#: library/Server/Manager/Whm.php:437 library/Server/Manager/Whm.php:442
+msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:175
-msgid "Failed to unsuspend account!"
+#: library/Server/Manager/CWP.php:160 library/Server/Manager/Hestia.php:231
+#: library/Server/Manager/Virtualmin.php:415
+msgid "suspend account"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:194
-msgid "Failed to cancel / delete account!"
+#: library/Server/Manager/CWP.php:177 library/Server/Manager/Hestia.php:256
+#: library/Server/Manager/Virtualmin.php:438
+msgid "unsuspend account"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:213
-msgid "Failed to change the account package!"
+#: library/Server/Manager/CWP.php:197 library/Server/Manager/Hestia.php:285
+#: library/Server/Manager/Virtualmin.php:485
+msgid "cancel account"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:230
-msgid "Failed to change the account password!"
+#: library/Server/Manager/CWP.php:217 library/Server/Manager/Hestia.php:315
+msgid "change account package"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:239
-msgid "CWP does not support username changes"
+#: library/Server/Manager/CWP.php:235 library/Server/Manager/Hestia.php:364
+#: library/Server/Manager/Virtualmin.php:462
+msgid "change account password"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:244
-msgid "CWP does not support changing the primary domain name"
+#: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/Hestia.php:329
+#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:201
+msgid "username changes"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:249
-msgid "CWP does not support changing the IP"
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/Hestia.php:339
+#: library/Server/Manager/Ispconfig3.php:195
+msgid "changing the account domain"
+msgstr ""
+
+#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:378
+#: library/Server/Manager/Ispconfig3.php:200 library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Virtualmin.php:163
+#: library/Server/Manager/Virtualmin.php:168
+#: library/Server/Manager/Virtualmin.php:173
+msgid "changing the account IP"
 msgstr ""
 
 #: library/Server/Manager/Directadmin.php:95
@@ -755,92 +812,28 @@ msgstr ""
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:329
-msgid "DirectAdmin does not support username changes"
-msgstr ""
-
-#: library/Server/Manager/Directadmin.php:334
-msgid "DirectAdmin does not support domain changes"
-msgstr ""
-
-#: library/Server/Manager/Directadmin.php:339
-msgid "DirectAdmin does not support IP changes"
-msgstr ""
-
 #: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:411
 msgid "HttpClientException: :error"
 msgstr "HttpClientException：:error"
-
-#: library/Server/Manager/Directadmin.php:428
-msgid "Server Manager DirectAdmin Error: \"Login failed\""
-msgstr "服务器管理器 DirectAdmin 错误: \"登录失败\""
 
 #: library/Server/Manager/Directadmin.php:432
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "DirectAdmin 错误: \"The request you have made cannot be executed because it does not exist in your authority level\""
 
-#: library/Server/Manager/Directadmin.php:438
-msgid "Server Manager DirectAdmin Error: :error"
-msgstr "DirectAdmin错误: :error"
-
-#: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:141
-msgid "Connection to server failed. Error code: :code"
-msgstr "连接到服务器失败，错误代码: :code"
-
-#: library/Server/Manager/Hestia.php:198
-msgid "Server Manager Hestia CP Error: Unable to create User. Error code: :code"
-msgstr "服务器管理器 Hestia CP 错误：无法创建用户。错误代码：:code"
-
-#: library/Server/Manager/Hestia.php:201
-msgid "Server Manager Hestia CP Error: Create Domain failure. Error code: :code"
-msgstr "服务器管理器 Hestia CP 错误：无法创建域名。错误代码：:code"
-
-#: library/Server/Manager/Hestia.php:227
-msgid "Server Manager Hestia CP Error: Suspend Account Error. Error code: :code"
-msgstr "服务器管理器 Hestia CP 错误：暂停账户错误。错误代码: :code"
-
-#: library/Server/Manager/Hestia.php:251
-msgid "Server Manager Hestia CP Error: Unsuspend Account Error. Error code: :code"
+#: library/Server/Manager/Hestia.php:200
+msgid "create user"
 msgstr ""
 
-#: library/Server/Manager/Hestia.php:279
-msgid "Server Manager Hestia CP Error: Cancel Account Error. Error code: :code"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:308
-msgid "Server Manager Hestia CP Error: Change User package Account Error. Error code: :code"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:321 library/Server/Manager/Hestia.php:331
-#: library/Server/Manager/Hestia.php:369
-msgid "Server Manager Hestia CP Error: Not Supported"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:356
-msgid "Server Manager Hestia CP Error: Change Password Account Error. Error code: :code"
+#: library/Server/Manager/Hestia.php:204
+msgid "create domain"
 msgstr ""
 
 #: library/Server/Manager/Ispconfig3.php:19
 msgid "PHP Soap extension required for IspConfig server manager"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:61
-msgid "Server manager does not support sync"
-msgstr ""
-
-#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:200
-#: library/Server/Manager/Virtualmin.php:163
-msgid "Server manager does not support username changes"
-msgstr ""
-
-#: library/Server/Manager/Ispconfig3.php:195
-#: library/Server/Manager/Virtualmin.php:168
-msgid "Server manager does not support domain changes"
-msgstr ""
-
-#: library/Server/Manager/Ispconfig3.php:200
-#: library/Server/Manager/Virtualmin.php:173
-msgid "Server manager does not support ip changes"
+#: library/Server/Manager/Ispconfig3.php:61 library/Server/Manager/Plesk.php:55
+msgid "account synchronization"
 msgstr ""
 
 #: library/Server/Manager/Ispconfig3.php:538
@@ -851,28 +844,8 @@ msgstr ""
 msgid "Could not retrieve session"
 msgstr ""
 
-#: library/Server/Manager/Ispconfig3.php:733
-msgid "Error when making request to the server"
-msgstr ""
-
-#: library/Server/Manager/Plesk.php:47 library/Server/Manager/Virtualmin.php:51
-msgid "Connection to server failed"
-msgstr ""
-
-#: library/Server/Manager/Plesk.php:55
-msgid "The server adapter does not support account synchronization"
-msgstr ""
-
-#: library/Server/Manager/Plesk.php:86
-msgid "Failed to create new account"
-msgstr ""
-
-#: library/Server/Manager/Plesk.php:170
+#: library/Server/Manager/Plesk.php:171
 msgid "Can't modify client"
-msgstr ""
-
-#: library/Server/Manager/Plesk.php:227
-msgid "Server manager does not support changing IP addresses"
 msgstr ""
 
 #: library/Server/Manager/Virtualmin.php:87
@@ -885,59 +858,39 @@ msgid "Create reseller command is only available in Virtualmin PRO version"
 msgstr ""
 
 #: library/Server/Manager/Virtualmin.php:310
-#: library/Server/Manager/Virtualmin.php:650
-msgid "Failed to create reseller's account"
+#: library/Server/Manager/Virtualmin.php:659
+msgid "create reseller account"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:391
-msgid "Failed to create account"
+#: library/Server/Manager/Virtualmin.php:515
+msgid "modify domain details"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:413
-msgid "Failed to suspend user's account"
+#: library/Server/Manager/Virtualmin.php:543
+msgid "enable features"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:435
-msgid "Failed to unsuspend user's account"
+#: library/Server/Manager/Virtualmin.php:571
+msgid "disable features"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:458
-msgid "Failed to change user's password"
-msgstr ""
-
-#: library/Server/Manager/Virtualmin.php:480
-msgid "Failed to delete user's account"
-msgstr ""
-
-#: library/Server/Manager/Virtualmin.php:509
-msgid "Failed to modify domain details"
-msgstr ""
-
-#: library/Server/Manager/Virtualmin.php:536
-msgid "Failed to enable features"
-msgstr ""
-
-#: library/Server/Manager/Virtualmin.php:563
-msgid "Failed to disable features"
-msgstr ""
-
-#: library/Server/Manager/Virtualmin.php:570
+#: library/Server/Manager/Virtualmin.php:579
 msgid "Cancel reseller command only available in Virtualmin PRO version"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:581
+#: library/Server/Manager/Virtualmin.php:590
 msgid "Failed to delete reseller"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:588
+#: library/Server/Manager/Virtualmin.php:597
 msgid "Modify reseller comand is only available in Virtualmin PRO version"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:601
+#: library/Server/Manager/Virtualmin.php:610
 msgid "Failed to change reseller's password"
 msgstr ""
 
-#: library/Server/Manager/Virtualmin.php:608
+#: library/Server/Manager/Virtualmin.php:617
 msgid "Modify reseller command is only available in Virtualmin PRO version"
 msgstr ""
 
@@ -949,7 +902,7 @@ msgstr ""
 msgid "Event history"
 msgstr ""
 
-#: modules/Api/Controller/Client.php:47
+#: modules/Api/Controller/Client.php:47 modules/Api/Controller/Client.php:248
 msgid "Unknown API call :call"
 msgstr "未知的 API 调用 :calls"
 
@@ -967,17 +920,14 @@ msgstr ""
 msgid "Authentication Failed"
 msgstr ""
 
-#: modules/Api/Controller/Client.php:248
-msgid "Unknown API call"
-msgstr ""
-
 #: modules/Api/Controller/Client.php:327
-msgid "CSRF token invalid."
+msgid "CSRF token invalid"
 msgstr ""
 
 #: modules/Cart/Api/Guest.php:59 modules/Currency/Api/Admin.php:69
 #: modules/Currency/Api/Admin.php:249 modules/Currency/Api/Guest.php:48
-#: modules/Currency/Service.php:463 modules/Currency/Service.php:573
+#: modules/Currency/Service.php:326 modules/Currency/Service.php:463
+#: modules/Currency/Service.php:573
 msgid "Currency not found"
 msgstr "未找到该币种"
 
@@ -995,11 +945,11 @@ msgid "Addon products cannot be added separately."
 msgstr ""
 
 #: modules/Cart/Api/Guest.php:184
-msgid "One or more of your selected addons are not valid for the associated product."
+msgid "One or more of your selected addons are invalid for the associated product."
 msgstr ""
 
 #: modules/Cart/Service.php:84
-msgid "Selected billing period is not valid"
+msgid "Selected billing period is invalid"
 msgstr ""
 
 #: modules/Cart/Service.php:91
@@ -1007,7 +957,7 @@ msgid "This item is currently out of stock"
 msgstr ""
 
 #: modules/Cart/Service.php:124
-msgid "Selected billing period is not valid for the selected addon"
+msgid "Selected billing period is invalid for the selected addon"
 msgstr ""
 
 #: modules/Cart/Service.php:218 modules/Product/Api/Guest.php:84
@@ -1023,7 +973,7 @@ msgid "You have already used this promo code. Please remove promo code and check
 msgstr ""
 
 #: modules/Cart/Service.php:485
-msgid "Can not checkout empty cart."
+msgid "Can not checkout an empty cart"
 msgstr ""
 
 #: modules/Cart/Service.php:497
@@ -1139,11 +1089,11 @@ msgid "Define clients currency before adding funds."
 msgstr ""
 
 #: modules/Client/Service.php:241 modules/Client/ServiceBalance.php:126
-msgid "Funds amount is not valid"
+msgid "Funds amount is invalid"
 msgstr ""
 
 #: modules/Client/Service.php:245 modules/Client/ServiceBalance.php:130
-msgid "Funds description is not valid"
+msgid "Funds description is invalid"
 msgstr ""
 
 #: modules/Client/Service.php:412
@@ -1183,7 +1133,7 @@ msgid "Currency already registered"
 msgstr ""
 
 #: modules/Currency/Api/Admin.php:115
-msgid "Currency code is not valid"
+msgid "Currency code is invalid"
 msgstr ""
 
 #: modules/Currency/Service.php:58
@@ -1198,12 +1148,8 @@ msgstr ""
 msgid "Can not remove default currency"
 msgstr ""
 
-#: modules/Currency/Service.php:326
-msgid "Currency code not found"
-msgstr ""
-
 #: modules/Currency/Service.php:481
-msgid "Currency rate is not valid"
+msgid "Currency rate is invalid"
 msgstr ""
 
 #: modules/Currency/Service.php:545
@@ -1313,7 +1259,7 @@ msgid "Form style was not found in predefined list"
 msgstr ""
 
 #: modules/Formbuilder/Api/Admin.php:79
-msgid "Form field type is not valid"
+msgid "Form field type is invalid"
 msgstr ""
 
 #: modules/Formbuilder/Api/Admin.php:82 modules/Formbuilder/Api/Admin.php:255
@@ -1799,8 +1745,8 @@ msgid "This promotion code already exists."
 msgstr ""
 
 #: modules/Profile/Service.php:137
-msgid "Invalid birth date value"
-msgstr "无效的出生日期"
+msgid "Invalid birthdate value"
+msgstr ""
 
 #: modules/Queue/Api/Admin.php:101
 msgid "Message handler function :method does not exists"
@@ -1926,7 +1872,7 @@ msgid "Domain order is not activated"
 msgstr ""
 
 #: modules/Servicedomain/Api/Guest.php:95
-msgid "Domain :domain is not valid"
+msgid "Domain :domain is invalid"
 msgstr ""
 
 #: modules/Servicedomain/Api/Guest.php:100
@@ -1968,7 +1914,7 @@ msgstr ""
 
 #: modules/Servicedomain/Service.php:65 modules/Servicedomain/Service.php:82
 #: modules/Servicedomain/Service.php:113 modules/Servicedomain/Service.php:548
-msgid "Domain name :domain is not valid"
+msgid "Domain name :domain is invalid"
 msgstr ""
 
 #: modules/Servicedomain/Service.php:98
@@ -1996,7 +1942,7 @@ msgid "Nameserver 2 is required"
 msgstr ""
 
 #: modules/Servicedomain/Service.php:521 modules/Servicedomain/Service.php:542
-msgid "Domain name is not valid"
+msgid "Domain name is invalid"
 msgstr ""
 
 #: modules/Servicedomain/Service.php:525
@@ -2041,7 +1987,7 @@ msgid "plan_id is missing"
 msgstr ""
 
 #: modules/Servicehosting/Api/Guest.php:36
-msgid "Product type is invalid"
+msgid "Product type"
 msgstr ""
 
 #: modules/Servicehosting/Controller/Admin.php:34
@@ -2065,19 +2011,19 @@ msgid "Hosting product is not configured completely. Configure hosting plan for 
 msgstr ""
 
 #: modules/Servicehosting/Service.php:52
-msgid "Domain name is not valid."
+msgid "Domain name is invalid."
 msgstr ""
 
 #: modules/Servicehosting/Service.php:55
-msgid "Domain extension is not valid."
+msgid "Domain extension is invalid."
 msgstr ""
 
 #: modules/Servicehosting/Service.php:255
-msgid "Account username is missing or is not valid"
+msgid "Account username is missing or is invalid"
 msgstr ""
 
 #: modules/Servicehosting/Service.php:277
-msgid "Account ip is missing or is not valid"
+msgid "Account ip is missing or is invalid"
 msgstr ""
 
 #: modules/Servicehosting/Service.php:301
@@ -2085,7 +2031,7 @@ msgid "Domain sld or tld is missing"
 msgstr ""
 
 #: modules/Servicehosting/Service.php:327
-msgid "Account password is missing or is not valid"
+msgid "Account password is missing or is invalid"
 msgstr ""
 
 #: modules/Servicehosting/Service.php:716
@@ -2093,7 +2039,7 @@ msgid "Invalid server manager. Server was not configured properly."
 msgstr ""
 
 #: modules/Servicehosting/Service.php:736
-msgid "Server manager :adapter is not valid"
+msgid "Server manager :adapter is invalid"
 msgstr ""
 
 #: modules/Servicehosting/Service.php:776
@@ -2246,7 +2192,7 @@ msgid "We have already received this request."
 msgstr ""
 
 #: modules/Support/Service.php:968
-msgid "Identity is not valid"
+msgid "Identity is invalid"
 msgstr ""
 
 #: modules/Support/Service.php:997
@@ -2290,7 +2236,7 @@ msgstr ""
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:50
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:104
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:19
-#: themes/admin_default/html/layout_default.html.twig:118
+#: themes/admin_default/html/layout_default.html.twig:124
 msgid "Settings"
 msgstr "设置"
 
@@ -3156,7 +3102,7 @@ msgstr "客户登录历史"
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:37
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
-#: themes/admin_default/html/layout_default.html.twig:116
+#: themes/admin_default/html/layout_default.html.twig:122
 #: themes/huraga/html/layout_default.html.twig:109
 #: themes/huraga/html/layout_default.html.twig:220
 msgid "Profile"
@@ -3874,10 +3820,6 @@ msgstr "电邮地址"
 msgid "First Name"
 msgstr "名字"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:68
-msgid "Birth date"
-msgstr "出生日期"
-
 #: modules/Client/html_client/mod_client_profile.html.twig:89
 msgid "Company Name"
 msgstr "公司名称"
@@ -4236,7 +4178,7 @@ msgstr "客户区域"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:12
 #: modules/Index/html_client/mod_index_dashboard.html.twig:4
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
-#: themes/admin_default/html/layout_default.html.twig:141
+#: themes/admin_default/html/layout_default.html.twig:147
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
 #: themes/huraga/html/layout_default.html.twig:98
 #: themes/huraga/html/layout_default.html.twig:198
@@ -8681,11 +8623,6 @@ msgstr ""
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
-msgid "Email address"
-msgstr ""
-
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:36
 msgid "Send me the link"
 msgstr ""
@@ -9235,36 +9172,36 @@ msgstr ""
 msgid "Back to Dashboard"
 msgstr ""
 
-#: themes/admin_default/html/layout_default.html.twig:72
-#: themes/admin_default/html/layout_default.html.twig:176
+#: themes/admin_default/html/layout_default.html.twig:78
+#: themes/admin_default/html/layout_default.html.twig:182
 msgid "Source code"
 msgstr ""
 
-#: themes/admin_default/html/layout_default.html.twig:78
+#: themes/admin_default/html/layout_default.html.twig:84
 msgid "Sponsor"
 msgstr ""
 
-#: themes/admin_default/html/layout_default.html.twig:87
+#: themes/admin_default/html/layout_default.html.twig:93
 msgid "Enable dark mode"
 msgstr ""
 
-#: themes/admin_default/html/layout_default.html.twig:96
+#: themes/admin_default/html/layout_default.html.twig:102
 msgid "Enable light mode"
 msgstr ""
 
-#: themes/admin_default/html/layout_default.html.twig:122
+#: themes/admin_default/html/layout_default.html.twig:128
 msgid "Logout"
 msgstr "注销"
 
-#: themes/admin_default/html/layout_default.html.twig:170
+#: themes/admin_default/html/layout_default.html.twig:176
 msgid "Help"
 msgstr "帮助"
 
-#: themes/admin_default/html/layout_default.html.twig:175
+#: themes/admin_default/html/layout_default.html.twig:181
 msgid "Documentation"
 msgstr ""
 
-#: themes/admin_default/html/layout_default.html.twig:177
+#: themes/admin_default/html/layout_default.html.twig:183
 msgid "Report a bug"
 msgstr "报告错误"
 
