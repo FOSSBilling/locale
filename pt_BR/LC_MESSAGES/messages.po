@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-07-03 14:55-0700\n"
-"PO-Revision-Date: 2023-07-18 03:52\n"
+"POT-Creation-Date: 2023-07-19 01:45-0700\n"
+"PO-Revision-Date: 2023-07-20 03:55\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: pt_BR\n"
 
-#: di.php:326
+#: di.php:327
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Parece que você está tentando usar o FOSSBilling sem a extensão php intl habilitada. O FOSSBilling inclui um polyfill para a extensão intl, mas não suporta :locale. Por favor, habilite a extensão intl."
 
@@ -435,7 +435,7 @@ msgid "Password must include at least one uppercase letter."
 msgstr "A senha deve conter pelo menos uma letra maiúscula."
 
 #: library/FOSSBilling/Validate.php:106
-#: modules/Client/html_client/mod_client_profile.html.twig:68
+#: modules/Client/html_client/mod_client_profile.html.twig:78
 msgid "Birthdate"
 msgstr "Data de nascimento"
 
@@ -1100,31 +1100,23 @@ msgstr "O valor dos fundos não é válido"
 msgid "Funds description is invalid"
 msgstr "A descrição dos fundos é inválida"
 
-#: modules/Client/Service.php:412
+#: modules/Client/Service.php:413
 msgid "Client ID or email is required"
 msgstr "O ID do cliente ou e-mail é necessário"
 
-#: modules/Client/Service.php:426
+#: modules/Client/Service.php:427
 msgid "Client not found"
 msgstr "Cliente não encontrado"
 
-#: modules/Client/Service.php:469
+#: modules/Client/Service.php:470
 msgid "Can not remove group with clients"
 msgstr "Não é possível remover o grupo com clientes"
 
-#: modules/Client/Service.php:606
-msgid "Please check your mailbox and confirm email address."
-msgstr "Por favor, verifique seu e-mail e confirme seu endereço de e-mail."
-
-#: modules/Client/Service.php:609
-msgid "Confirmation email was sent to your email address. Please click on link in it in order to verify your email."
-msgstr "O e-mail de confirmação foi enviado para o seu endereço de e-mail. Por favor, clique no link para verificar seu e-mail."
-
-#: modules/Client/Service.php:642 modules/Profile/Service.php:117
+#: modules/Client/Service.php:630 modules/Profile/Service.php:117
 msgid "Email can not be changed"
 msgstr "O e-mail não pode ser alterado"
 
-#: modules/Client/Service.php:655 modules/Client/Service.php:670
+#: modules/Client/Service.php:643 modules/Client/Service.php:658
 msgid "Field :field cannot be empty"
 msgstr "O campo :field não pode estar vazio"
 
@@ -2237,8 +2229,12 @@ msgstr "Sistema"
 #: modules/System/html_admin/mod_system_settings.html.twig:19
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:15
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:17
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:50
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:104
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:32
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:49
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:56
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:99
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:116
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:123
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:19
 #: themes/admin_default/html/layout_default.html.twig:124
 msgid "Settings"
@@ -2398,7 +2394,7 @@ msgstr "IP"
 #: modules/Client/html_admin/mod_client_manage.html.twig:295
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
 #: modules/Client/html_admin/mod_client_settings.html.twig:81
-#: modules/Client/html_client/mod_client_profile.html.twig:153
+#: modules/Client/html_client/mod_client_profile.html.twig:163
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:28
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:450
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:42
@@ -2569,8 +2565,8 @@ msgstr "Você tem certeza?"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:261
 #: modules/Support/html_client/mod_support_ticket.html.twig:99
 #: modules/Support/html_client/mod_support_tickets.html.twig:57
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:70
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:124
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:84
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:151
 #: themes/admin_default/html/mod_index_dashboard.html.twig:345
 #: themes/admin_default/html/mod_index_dashboard.html.twig:502
 #: themes/admin_default/html/mod_index_dashboard.html.twig:529
@@ -2707,7 +2703,7 @@ msgstr "ID"
 #: modules/Support/html_client/mod_support_contact_us.html.twig:25
 #: modules/System/html_admin/mod_system_settings.html.twig:54
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:83
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:98
 msgid "Name"
 msgstr "Nome"
 
@@ -2975,7 +2971,7 @@ msgstr "Exportar Clientes"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:192
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:141
 msgid "Address Line 1"
-msgstr "Endereço - Linha 1"
+msgstr "Endereço Linha 1"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:349
 #: modules/Client/html_admin/mod_client_manage.html.twig:288
@@ -2988,7 +2984,7 @@ msgstr "Endereço Linha 2"
 #: modules/Client/html_admin/mod_client_index.html.twig:355
 #: modules/Client/html_admin/mod_client_manage.html.twig:308
 #: modules/Client/html_admin/mod_client_settings.html.twig:82
-#: modules/Client/html_client/mod_client_profile.html.twig:145
+#: modules/Client/html_client/mod_client_profile.html.twig:155
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:437
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:149
 #: modules/Page/html_client/mod_page_signup.html.twig:115
@@ -3000,7 +2996,7 @@ msgstr "Cidade"
 #: modules/Client/html_admin/mod_client_index.html.twig:361
 #: modules/Client/html_admin/mod_client_manage.html.twig:301
 #: modules/Client/html_admin/mod_client_settings.html.twig:83
-#: modules/Client/html_client/mod_client_profile.html.twig:166
+#: modules/Client/html_client/mod_client_profile.html.twig:176
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:443
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:129
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
@@ -3032,8 +3028,8 @@ msgstr "Telefone"
 #: modules/Client/html_admin/mod_client_index.html.twig:391
 #: modules/Client/html_admin/mod_client_manage.html.twig:98
 #: modules/Client/html_admin/mod_client_manage.html.twig:346
-#: modules/Client/html_client/mod_client_profile.html.twig:24
-#: modules/Client/html_client/mod_client_profile.html.twig:262
+#: modules/Client/html_client/mod_client_profile.html.twig:34
+#: modules/Client/html_client/mod_client_profile.html.twig:272
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
@@ -3131,7 +3127,7 @@ msgstr "Editar"
 #: themes/admin_default/html/mod_index_dashboard.html.twig:462
 #: themes/admin_default/html/mod_index_dashboard.html.twig:550
 msgid "Tickets"
-msgstr "Pedidos de Suporte"
+msgstr "Tickets"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:41
 msgid "Payments"
@@ -3183,7 +3179,7 @@ msgid "API Key"
 msgstr "Chave da API"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:125
-#: modules/Client/html_client/mod_client_profile.html.twig:129
+#: modules/Client/html_client/mod_client_profile.html.twig:139
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:369
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:431
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:107
@@ -3396,7 +3392,7 @@ msgstr "Detalhes da empresa"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:149
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:168
 msgid "Company number"
-msgstr "Número Da Empresa"
+msgstr "Número da Empresa"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:272
 msgid "Company VAT number"
@@ -3407,7 +3403,7 @@ msgid "Address and contact details"
 msgstr "Endereço e detalhes de contato"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:330
-#: modules/Client/html_client/mod_client_profile.html.twig:183
+#: modules/Client/html_client/mod_client_profile.html.twig:193
 msgid "Passport number"
 msgstr "Número de passaporte"
 
@@ -3433,7 +3429,7 @@ msgid "Signed up time"
 msgstr "Hora de registro"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:397
-#: modules/Client/html_client/mod_client_profile.html.twig:204
+#: modules/Client/html_client/mod_client_profile.html.twig:214
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:53
 msgid "Update profile"
 msgstr "Atulizar perfil"
@@ -3697,7 +3693,7 @@ msgid "Required fields"
 msgstr "Campos obrigatórios"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:75
-#: modules/Client/html_client/mod_client_profile.html.twig:60
+#: modules/Client/html_client/mod_client_profile.html.twig:70
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:65
 #: modules/Page/html_client/mod_page_signup.html.twig:49
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:174
@@ -3706,7 +3702,7 @@ msgid "Last Name"
 msgstr "Sobrenome"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:77
-#: modules/Client/html_client/mod_client_profile.html.twig:76
+#: modules/Client/html_client/mod_client_profile.html.twig:86
 msgid "Gender"
 msgstr "Sexo"
 
@@ -3761,7 +3757,15 @@ msgstr "Detalhes do perfil"
 msgid "User profile settings"
 msgstr "Configurações de perfil usuário"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:21
+#: modules/Client/html_client/mod_client_profile.html.twig:24
+msgid "Verification email has been resent"
+msgstr "A verificação de e-mail foi reenviada"
+
+#: modules/Client/html_client/mod_client_profile.html.twig:24
+msgid "Resend verification email"
+msgstr "Re-enviar a verificação de e-mail"
+
+#: modules/Client/html_client/mod_client_profile.html.twig:31
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:33
 #: modules/Order/html_admin/mod_order_manage.html.twig:38
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:6
@@ -3773,41 +3777,41 @@ msgstr "Configurações de perfil usuário"
 msgid "Details"
 msgstr "Detalhes"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:22
-#: modules/Client/html_client/mod_client_profile.html.twig:211
-#: modules/Client/html_client/mod_client_profile.html.twig:235
+#: modules/Client/html_client/mod_client_profile.html.twig:32
+#: modules/Client/html_client/mod_client_profile.html.twig:221
+#: modules/Client/html_client/mod_client_profile.html.twig:245
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:17
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:81
 msgid "Change Password"
 msgstr "Alterar senha"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:23
-#: modules/Client/html_client/mod_client_profile.html.twig:241
+#: modules/Client/html_client/mod_client_profile.html.twig:33
+#: modules/Client/html_client/mod_client_profile.html.twig:251
 #: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:13
 msgid "API key"
 msgstr "Chave da API"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:31
+#: modules/Client/html_client/mod_client_profile.html.twig:41
 msgid "Update details"
 msgstr "Atualizar Detalhes"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:32
+#: modules/Client/html_client/mod_client_profile.html.twig:42
 msgid "Keep your personal data up to date."
 msgstr "Mantenha seus dados pessoais atualizados."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:40
+#: modules/Client/html_client/mod_client_profile.html.twig:50
 msgid "Please register with"
 msgstr "Por favor registre-se com"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:40
+#: modules/Client/html_client/mod_client_profile.html.twig:50
 msgid "at "
 msgstr "no "
 
-#: modules/Client/html_client/mod_client_profile.html.twig:40
+#: modules/Client/html_client/mod_client_profile.html.twig:50
 msgid "to change your profile image. Gravatar image updates may not appear immediately."
-msgstr "para alterar a imagem do seu perfil. Gravatar imagens podem não aparecer imediatamente."
+msgstr "para alterar a imagem do seu perfil. As imagens do Gravatar podem não aparecer imediatamente."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:44
+#: modules/Client/html_client/mod_client_profile.html.twig:54
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:16
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:48
 #: modules/Page/html_client/mod_page_login.html.twig:28
@@ -3816,7 +3820,7 @@ msgstr "para alterar a imagem do seu perfil. Gravatar imagens podem não aparece
 msgid "Email Address"
 msgstr "Endereço de e-mail"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:52
+#: modules/Client/html_client/mod_client_profile.html.twig:62
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:56
 #: modules/Page/html_client/mod_page_signup.html.twig:39
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:168
@@ -3824,11 +3828,11 @@ msgstr "Endereço de e-mail"
 msgid "First Name"
 msgstr "Primeiro Nome"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:89
+#: modules/Client/html_client/mod_client_profile.html.twig:99
 msgid "Company Name"
 msgstr "Nome de empresa"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:97
+#: modules/Client/html_client/mod_client_profile.html.twig:107
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:357
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:419
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:154
@@ -3836,92 +3840,92 @@ msgstr "Nome de empresa"
 msgid "Company VAT"
 msgstr "ICMS"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:105
+#: modules/Client/html_client/mod_client_profile.html.twig:115
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:363
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:425
 msgid "Company Number"
-msgstr "Número Da Empresa"
+msgstr "Número da Empresa"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:113
+#: modules/Client/html_client/mod_client_profile.html.twig:123
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:228
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:183
 msgid "Phone Country Code"
 msgstr "Código do País do Telefone"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:121
+#: modules/Client/html_client/mod_client_profile.html.twig:131
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
 #: modules/Page/html_client/mod_page_signup.html.twig:161
 msgid "Phone Number"
 msgstr "Número de telefone"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:137
+#: modules/Client/html_client/mod_client_profile.html.twig:147
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:139
 #: modules/Page/html_client/mod_page_signup.html.twig:105
 msgid "Address 2"
 msgstr "Complemento"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:156
+#: modules/Client/html_client/mod_client_profile.html.twig:166
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:162
 #: modules/Page/html_client/mod_page_signup.html.twig:128
 msgid "-- Select country --"
 msgstr "-- Selecione o país --"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:175
+#: modules/Client/html_client/mod_client_profile.html.twig:185
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:185
 #: modules/Page/html_client/mod_page_signup.html.twig:151
 msgid "Zip/Postal Code"
 msgstr "CEP"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:212
+#: modules/Client/html_client/mod_client_profile.html.twig:222
 msgid "Please enter new password two times in order avoid mistypes"
 msgstr "Por favor, digite a nova senha duas vezes para evitar erros"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:214
+#: modules/Client/html_client/mod_client_profile.html.twig:224
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:60
 msgid "Password Changed"
 msgstr "Senha Alterada"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:217
+#: modules/Client/html_client/mod_client_profile.html.twig:227
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:63
 msgid "Current Password"
 msgstr "Senha Atual"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:223
+#: modules/Client/html_client/mod_client_profile.html.twig:233
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:69
 msgid "New Password"
 msgstr "Nova Senha"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:229
+#: modules/Client/html_client/mod_client_profile.html.twig:239
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:75
 msgid "Confirm Password"
 msgstr "Confirmar Senha"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:242
+#: modules/Client/html_client/mod_client_profile.html.twig:252
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:89
 msgid "API key allows integration with external applications. You will need this key for authentication."
 msgstr "A chave API permite integração com aplicações externas. Você precisará dessa chave para autenticação."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:248
+#: modules/Client/html_client/mod_client_profile.html.twig:258
 msgid "Warning! Resetting the key will break existing applications using it!"
 msgstr "Aviso! Redefinir a chave quebrará os aplicativos existentes que usam!"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:251
+#: modules/Client/html_client/mod_client_profile.html.twig:261
 msgid "Your API key"
 msgstr "Sua chave da API"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:256
+#: modules/Client/html_client/mod_client_profile.html.twig:266
 msgid "Reset key"
 msgstr "Reset key"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:263
+#: modules/Client/html_client/mod_client_profile.html.twig:273
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and can not be changed."
 msgstr "A moeda do seu perfil é definida após o seu primeiro pedido. Uma vez que sua moeda estiver definida, toda a sua contabilidade de perfil será gerenciada nessa moeda e não poderá ser alterada."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:266
+#: modules/Client/html_client/mod_client_profile.html.twig:276
 msgid "Your profile currency is"
 msgstr "A moeda do seu perfil é"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:267
+#: modules/Client/html_client/mod_client_profile.html.twig:277
 msgid "Create new client profile if you want to manage your money in other currency"
 msgstr "Crie um novo perfil de cliente se quiser gerenciar o seu dinheiro em outra moeda"
 
@@ -3979,6 +3983,10 @@ msgstr "Configuração do crontab do Unix"
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:64
 msgid "Execute scheduled tasks from browser"
 msgstr "Executar tarefas agendadas do navegador"
+
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:71
+msgid "Cron executed"
+msgstr "Cron executado"
 
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:75
 msgid "Execute now"
@@ -4050,8 +4058,10 @@ msgid "Are you sure you want to delete?"
 msgstr "Tem certeza de que deseja excluir?"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:95
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:61
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:115
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:67
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:75
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:134
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:142
 msgid "Set as default"
 msgstr "Definir como padrão"
 
@@ -4297,7 +4307,7 @@ msgstr "Todos os Tickets"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:162
 #: modules/Index/html_client/mod_index_dashboard.html.twig:167
 msgid "Open"
-msgstr "Abrir"
+msgstr "Aberto"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:164
 #: modules/Index/html_client/mod_index_dashboard.html.twig:169
@@ -9157,7 +9167,12 @@ msgstr "Aplicar alterações"
 msgid "Client area themes"
 msgstr "Temas da área do cliente"
 
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:78
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:33
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:100
+msgid "Default"
+msgstr "Padrão"
+
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:93
 msgid "Admin area themes"
 msgstr "Temas da área do admin"
 
@@ -9255,7 +9270,7 @@ msgstr "tickets"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:134
 msgid "waiting for staff reply"
-msgstr "aguardando resposta da equipe"
+msgstr "aguardando por uma resposta da equipe"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:144
 msgid "Statistics"
