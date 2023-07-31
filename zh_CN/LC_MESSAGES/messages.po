@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-07-19 01:45-0700\n"
-"PO-Revision-Date: 2023-07-29 04:08\n"
+"POT-Creation-Date: 2023-07-30 09:17-0700\n"
+"PO-Revision-Date: 2023-07-31 04:10\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "您似乎正在尝试使用 FOSSBilling 而不启用 php intl 扩展。 FOSSBilling包含一个用于intl扩展的聚合物，但它不支持 :locale。请启用 intl 扩展。"
 
-#: index.php:51 library/Box/App.php:378 library/Box/AppClient.php:58
+#: index.php:50 library/Box/App.php:381 library/Box/AppClient.php:58
 msgid "Page :url not found"
 msgstr "找不到 :url 页面"
 
@@ -40,31 +40,31 @@ msgstr "HTTP 错误 :err_code 尝试加载 :url 时出错"
 msgid "Mod object is not set for the service"
 msgstr "模块对象未为服务设置"
 
-#: library/Api/Handler.php:44
+#: library/Api/Handler.php:42
 msgid "Method :method must contain underscore"
 msgstr "方法：方法中必须包含下划线"
 
-#: library/Api/Handler.php:57 library/Box/Mod.php:53
+#: library/Api/Handler.php:55 library/Box/Mod.php:53
 msgid "Invalid module name"
 msgstr "无效的模块名称"
 
-#: library/Api/Handler.php:69
+#: library/Api/Handler.php:67
 msgid "FOSSBilling module :mod is not installed/activated"
 msgstr "FOSSBilling 模块 :mod 未安装/激活"
 
-#: library/Api/Handler.php:77
+#: library/Api/Handler.php:75
 msgid "You do not have access to :mod module"
 msgstr "您无权访问 :mod 模块"
 
-#: library/Api/Handler.php:92
+#: library/Api/Handler.php:90
 msgid "Api class must be instance of Api_Abstract"
 msgstr "Api类必须是 Api_Abstract 的实例"
 
-#: library/Api/Handler.php:108
+#: library/Api/Handler.php:106
 msgid ":type API call :method does not exist in module :module"
 msgstr ":type API 调用 :method 在模块 :module 中不存在"
 
-#: library/Box/App.php:350
+#: library/Box/App.php:352
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "系统正在维护，请稍后再试"
 
@@ -109,7 +109,7 @@ msgid "Invalid page number"
 msgstr "无效的页码"
 
 #: library/Box/Pagination.php:47 library/Box/Pagination.php:79
-#: modules/Client/Service.php:181
+#: modules/Client/Service.php:182
 msgid "Invalid per page number"
 msgstr "每页的个数无效"
 
@@ -158,63 +158,63 @@ msgstr "每 2 年"
 msgid "Every 3 years"
 msgstr "每 3 年"
 
-#: library/Box/Period.php:124
+#: library/Box/Period.php:123
 msgid "Every :number day"
 msgid_plural "Every :number days"
 msgstr[0] "每 :number 天"
 
-#: library/Box/Period.php:127
+#: library/Box/Period.php:124
 msgid "Every :number week"
 msgid_plural "Every :number weeks"
 msgstr[0] "每 :number 周"
 
-#: library/Box/Period.php:130
+#: library/Box/Period.php:125
 msgid "Every :number month"
 msgid_plural "Every :number months"
 msgstr[0] "每 :number 月"
 
-#: library/Box/Period.php:133
+#: library/Box/Period.php:126
 msgid "Every :number year"
 msgid_plural "Every :number years"
 msgstr[0] "每 :number 年"
 
-#: library/Box/Period.php:136 library/Box/Period.php:196
+#: library/Box/Period.php:127 library/Box/Period.php:169
 msgid "Unit not defined"
 msgstr "未定义单位"
 
-#: library/Box/Period.php:170
+#: library/Box/Period.php:152
 msgid "Unable to get the number of months for :unit"
 msgstr "无法获取 :unit 的月数"
 
-#: library/Box/TwigExtensions.php:247
+#: library/Box/TwigExtensions.php:251
 msgid "second"
 msgstr "秒"
 
-#: library/Box/TwigExtensions.php:247
+#: library/Box/TwigExtensions.php:251
 msgid "minute"
 msgstr "分钟"
 
-#: library/Box/TwigExtensions.php:247
+#: library/Box/TwigExtensions.php:251
 msgid "hour"
 msgstr "小时"
 
-#: library/Box/TwigExtensions.php:247
+#: library/Box/TwigExtensions.php:251
 msgid "day"
 msgstr "天"
 
-#: library/Box/TwigExtensions.php:247
+#: library/Box/TwigExtensions.php:251
 msgid "week"
 msgstr "周"
 
-#: library/Box/TwigExtensions.php:247
+#: library/Box/TwigExtensions.php:251
 msgid "month"
 msgstr "月"
 
-#: library/Box/TwigExtensions.php:247
+#: library/Box/TwigExtensions.php:251
 msgid "year"
 msgstr "年"
 
-#: library/Box/TwigExtensions.php:247
+#: library/Box/TwigExtensions.php:251
 msgid "decade"
 msgstr "十年"
 
@@ -223,11 +223,11 @@ msgstr "十年"
 msgid "Missing :missing: param for Box_TwigLoader"
 msgstr "Box_TwigLoader缺少参数 :missing:"
 
-#: library/FOSSBilling/CentralAlerts.php:118
+#: library/FOSSBilling/CentralAlerts.php:114
 msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
 msgstr "无法从警报中心系统获取警报。详情请查看错误日志。"
 
-#: library/FOSSBilling/CentralAlerts.php:126
+#: library/FOSSBilling/CentralAlerts.php:122
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "FOSSBilling 中央警报系统的响应无效。"
 
@@ -363,18 +363,18 @@ msgstr "通过 :e 传输发送邮件失败"
 msgid "SMTP host or port is not configured"
 msgstr "SMTP 主机或端口未配置"
 
-#: library/FOSSBilling/Tools.php:72 library/FOSSBilling/Tools.php:253
+#: library/FOSSBilling/Tools.php:72 library/FOSSBilling/Tools.php:249
 msgid "Service class :class was not found in :path"
 msgstr "在 :path 中找不到服务类 :class。"
 
-#: library/FOSSBilling/Tools.php:283
+#: library/FOSSBilling/Tools.php:279
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "邮箱"
 
-#: library/FOSSBilling/Tools.php:284 library/FOSSBilling/Validate.php:107
-#: modules/Servicehosting/Api/Guest.php:37
+#: library/FOSSBilling/Tools.php:280 library/FOSSBilling/Validate.php:107
+#: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: 无效"
 
@@ -382,7 +382,7 @@ msgstr ":friendlyName: 无效"
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "下载最新版本信息失败。在错误日志中可以获得更多信息。"
 
-#: library/FOSSBilling/Update.php:172 modules/System/Api/Admin.php:179
+#: library/FOSSBilling/Update.php:172 modules/System/Api/Admin.php:168
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "您有最新版本的 FOSSBilling。您无需更新。"
 
@@ -390,7 +390,7 @@ msgstr "您有最新版本的 FOSSBilling。您无需更新。"
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "无法下载更新归档。在错误日志中可获得更多详细信息。"
 
-#: library/FOSSBilling/Update.php:207 modules/Extension/Service.php:443
+#: library/FOSSBilling/Update.php:207 modules/Extension/Service.php:451
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "提取文件失败，请检查文件和文件夹权限。在错误日志中有更多详细信息。"
 
@@ -447,23 +447,23 @@ msgstr "未知的 TLD。无法确定注册价格"
 msgid "Domain product can not be removed."
 msgstr "域名产品不能被删除。"
 
-#: library/Model/ProductTable.php:62
+#: library/Model/ProductTable.php:61
 msgid "Unknown period selected "
 msgstr "选择的是未知周期"
 
-#: library/Model/ProductTable.php:74
+#: library/Model/ProductTable.php:73
 msgid "Product pricing could not be determined. "
 msgstr "无法确定产品价格。"
 
-#: library/Model/ProductTable.php:106
+#: library/Model/ProductTable.php:105
 msgid "Unknown period selected for setup price"
 msgstr "为设置价格选择的未知周期"
 
-#: library/Model/ProductTable.php:130
+#: library/Model/ProductTable.php:129
 msgid "Product :id payment type is recurrent, but period was not selected"
 msgstr "产品号 :id 的付款类型是自动续费，但周期没有被选择"
 
-#: library/Model/ProductTable.php:142
+#: library/Model/ProductTable.php:141
 msgid "Unknown Period selected for price"
 msgstr "为设置价格选择的未知周期"
 
@@ -471,11 +471,11 @@ msgstr "为设置价格选择的未知周期"
 #: library/Payment/Adapter/AliPay.php:24
 #: library/Payment/Adapter/Interkassa.php:28
 #: library/Payment/Adapter/Interkassa.php:31
-#: library/Payment/Adapter/PayPalEmail.php:34
-#: library/Payment/Adapter/Stripe.php:34 library/Payment/Adapter/Stripe.php:38
+#: library/Payment/Adapter/PayPalEmail.php:30
+#: library/Payment/Adapter/Stripe.php:30 library/Payment/Adapter/Stripe.php:34
 #: library/Payment/Adapter/TwoCheckout.php:30
 #: library/Payment/Adapter/TwoCheckout.php:34
-#: library/Payment/Adapter/WebMoney.php:45
+#: library/Payment/Adapter/WebMoney.php:42
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
 msgstr "“:pay_gateway”支付网关未完全配置。请配置 :missing"
 
@@ -484,26 +484,26 @@ msgid "Error getting service for contract"
 msgstr "获取合同服务时出错"
 
 #: library/Payment/Adapter/AliPay.php:148
-#: library/Payment/Adapter/Interkassa.php:125
+#: library/Payment/Adapter/Interkassa.php:124
 msgid "reccurent payments"
 msgstr "周期扣款"
 
 #: library/Payment/Adapter/AliPay.php:148
-#: library/Payment/Adapter/Interkassa.php:125
+#: library/Payment/Adapter/Interkassa.php:124
 #: library/Registrar/Adapter/Internetbs.php:76
 #: library/Registrar/Adapter/Internetbs.php:172
-#: library/Registrar/Adapter/Namecheap.php:435
-#: library/Registrar/Adapter/Namecheap.php:574 library/Server/Manager/CWP.php:245
+#: library/Registrar/Adapter/Namecheap.php:434
+#: library/Registrar/Adapter/Namecheap.php:573 library/Server/Manager/CWP.php:245
 #: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
 #: library/Server/Manager/Directadmin.php:329
 #: library/Server/Manager/Directadmin.php:334
 #: library/Server/Manager/Directadmin.php:339
 #: library/Server/Manager/Hestia.php:329 library/Server/Manager/Hestia.php:339
 #: library/Server/Manager/Hestia.php:378 library/Server/Manager/Ispconfig3.php:61
-#: library/Server/Manager/Ispconfig3.php:190
-#: library/Server/Manager/Ispconfig3.php:195
-#: library/Server/Manager/Ispconfig3.php:200 library/Server/Manager/Plesk.php:55
-#: library/Server/Manager/Plesk.php:201 library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Ispconfig3.php:191
+#: library/Server/Manager/Ispconfig3.php:196
+#: library/Server/Manager/Ispconfig3.php:201 library/Server/Manager/Plesk.php:55
+#: library/Server/Manager/Plesk.php:202 library/Server/Manager/Plesk.php:229
 #: library/Server/Manager/Virtualmin.php:163
 #: library/Server/Manager/Virtualmin.php:168
 #: library/Server/Manager/Virtualmin.php:173
@@ -521,10 +521,10 @@ msgid "It is forbidden to pay a deposit invoice with this gateway"
 msgstr "禁止在此网关上支付发票"
 
 #: library/Payment/Adapter/ClientBalance.php:83
-#: library/Payment/Adapter/Interkassa.php:176
-#: library/Payment/Adapter/PayPalEmail.php:77
+#: library/Payment/Adapter/Interkassa.php:175
+#: library/Payment/Adapter/PayPalEmail.php:73
 #: library/Payment/Adapter/TwoCheckout.php:122
-#: library/Payment/Adapter/WebMoney.php:103
+#: library/Payment/Adapter/WebMoney.php:100
 msgid "IPN is invalid"
 msgstr "IPN无效"
 
@@ -532,35 +532,39 @@ msgstr "IPN无效"
 msgid "ClientBalance gateway is not enabled"
 msgstr "客户端余额网关未启用"
 
-#: library/Payment/Adapter/Interkassa.php:217
-#: library/Payment/Adapter/PayPalEmail.php:125
+#: library/Payment/Adapter/Interkassa.php:216
+#: library/Payment/Adapter/PayPalEmail.php:121
 #: library/Payment/Adapter/TwoCheckout.php:171
-#: library/Payment/Adapter/WebMoney.php:138
+#: library/Payment/Adapter/WebMoney.php:135
 msgid "Cannot process duplicate IPN"
 msgstr "无法处理重复 IPN"
 
-#: library/Payment/Adapter/Onebip.php:113
+#: library/Payment/Adapter/Onebip.php:111
 msgid "This feature is unimplemented"
 msgstr "此功能尚未实现"
 
-#: library/Payment/Adapter/PayPalEmail.php:263
+#: library/Payment/Adapter/PayPalEmail.php:259
 msgid "Redirecting to PayPal.com"
 msgstr "正在重定向到 PayPal.com"
 
-#: library/Payment/Adapter/PayPalEmail.php:306
-#: library/Payment/Adapter/Stripe.php:105 modules/Invoice/Service.php:1411
+#: library/Payment/Adapter/PayPalEmail.php:302
+#: library/Payment/Adapter/Stripe.php:101 modules/Invoice/Service.php:1346
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "发票 :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:107 modules/Invoice/Service.php:1413
+#: library/Payment/Adapter/Stripe.php:103 modules/Invoice/Service.php:1348
 msgid "Payment for invoice :serie:id"
 msgstr "发票 :serie:id"
 
-#: library/Payment/Adapter/Stripe.php:287
+#: library/Payment/Adapter/Stripe.php:167
+msgid "There was an error when processing the transaction"
+msgstr ""
+
+#: library/Payment/Adapter/Stripe.php:274
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_pub_key\" at \"Configuration -> Payments\"."
 msgstr "支付网关 “Stripe” 配置不正确。请在 “配置 -> 支付网关” 更新配置参数 “test_pub_key”。"
 
-#: library/Payment/Adapter/Stripe.php:295
+#: library/Payment/Adapter/Stripe.php:282
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
 msgstr "“Stripe” 支付网关配置不完全。请在 \"配置 -> 支付网关\" 中的 \"test_api_key” 更新配置。"
 
@@ -568,27 +572,27 @@ msgstr "“Stripe” 支付网关配置不完全。请在 \"配置 -> 支付网�
 msgid "Invoice ID could not be determined for this transaction"
 msgstr "无法关联此交易的账单号"
 
-#: library/Payment/Adapter/TwoCheckout.php:364
+#: library/Payment/Adapter/TwoCheckout.php:325
 msgid "Redirecting to 2Checkout.com"
 msgstr "重定向到 2Checkout.com"
 
-#: library/Payment/AdapterAbstract.php:61
+#: library/Payment/AdapterAbstract.php:52
 msgid "Return URL for payment gateway was not set"
 msgstr "未设置支付网关的返回 URL"
 
-#: library/Payment/AdapterAbstract.php:68
+#: library/Payment/AdapterAbstract.php:59
 msgid "Cancel URL for payment gateway was not set"
 msgstr "未设置取消支付的 URL"
 
-#: library/Payment/AdapterAbstract.php:76
+#: library/Payment/AdapterAbstract.php:67
 msgid "IPN Notification URL for payment gateway was not set"
 msgstr "未设置支付网关的 IPN 通知 URL"
 
-#: library/Payment/AdapterAbstract.php:86
+#: library/Payment/AdapterAbstract.php:77
 msgid "IPN redirect URL for payment gateway was not set"
 msgstr "未设置支付网关的 IPN 重定向 URL"
 
-#: library/Payment/AdapterAbstract.php:99
+#: library/Payment/AdapterAbstract.php:90
 msgid "Payment adapter class did not implement configuration options method"
 msgstr "支付适配器类没有实现配置选项"
 
@@ -616,7 +620,7 @@ msgid "checking domain transferability"
 msgstr "检查域名是否可转移"
 
 #: library/Registrar/Adapter/Internetbs.php:172
-#: library/Registrar/Adapter/Namecheap.php:574
+#: library/Registrar/Adapter/Namecheap.php:573
 msgid "deleting domains"
 msgstr "等待删除域名"
 
@@ -626,41 +630,41 @@ msgstr "不能注册精品域名。"
 
 #: library/Registrar/Adapter/Namecheap.php:171
 #: library/Registrar/Adapter/Namecheap.php:177
-#: library/Registrar/Adapter/Namecheap.php:254
-#: library/Registrar/Adapter/Namecheap.php:351
-#: library/Registrar/Adapter/Namecheap.php:597
-#: library/Registrar/Adapter/Namecheap.php:660
-#: library/Registrar/Adapter/Namecheap.php:684
-#: library/Registrar/Adapter/Namecheap.php:712
+#: library/Registrar/Adapter/Namecheap.php:253
+#: library/Registrar/Adapter/Namecheap.php:350
+#: library/Registrar/Adapter/Namecheap.php:596
+#: library/Registrar/Adapter/Namecheap.php:659
+#: library/Registrar/Adapter/Namecheap.php:683
+#: library/Registrar/Adapter/Namecheap.php:711
 #: library/Registrar/Adapter/Resellerclub.php:399
-#: library/Registrar/Adapter/Resellerclub.php:709
-#: library/Registrar/Adapter/Resellerclub.php:715
-#: library/Registrar/Adapter/Resellerclub.php:721
+#: library/Registrar/Adapter/Resellerclub.php:708
+#: library/Registrar/Adapter/Resellerclub.php:714
+#: library/Registrar/Adapter/Resellerclub.php:720
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr "在 :type: 的 :action: 失败，请在错误日志中查看详情"
 
-#: library/Registrar/Adapter/Namecheap.php:253
+#: library/Registrar/Adapter/Namecheap.php:252
 msgid "update nameservers"
 msgstr "修改DNS服务器"
 
-#: library/Registrar/Adapter/Namecheap.php:350
+#: library/Registrar/Adapter/Namecheap.php:349
 msgid "retrieve domain details"
 msgstr "获取域名详情"
 
-#: library/Registrar/Adapter/Namecheap.php:435
+#: library/Registrar/Adapter/Namecheap.php:434
 msgid "retrieving the transfer code"
 msgstr "获取域名转移密码"
 
-#: library/Registrar/Adapter/Namecheap.php:596
+#: library/Registrar/Adapter/Namecheap.php:595
 msgid "retrieve privacy information"
 msgstr "获取隐私信息"
 
-#: library/Registrar/Adapter/Namecheap.php:659
+#: library/Registrar/Adapter/Namecheap.php:658
 msgid "get the domain lock status"
 msgstr "获取域名锁定与否状态"
 
-#: library/Registrar/Adapter/Namecheap.php:683
-#: library/Registrar/Adapter/Namecheap.php:711
+#: library/Registrar/Adapter/Namecheap.php:682
+#: library/Registrar/Adapter/Namecheap.php:710
 msgid "set the domain lock status"
 msgstr "设定域名锁定状态"
 
@@ -684,23 +688,23 @@ msgstr "获取域名转移密码"
 msgid "You are already registered as reseller"
 msgstr "您已经注册为代理商"
 
-#: library/Registrar/Adapter/Resellerclub.php:839
+#: library/Registrar/Adapter/Resellerclub.php:838
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr "注册ES域名时须有有效的联系人护照信息"
 
-#: library/Registrar/Adapter/Resellerclub.php:859
+#: library/Registrar/Adapter/Resellerclub.php:858
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr "注册ASIA域名时须有有效的联系人护照信息"
 
-#: library/Registrar/Adapter/Resellerclub.php:883
+#: library/Registrar/Adapter/Resellerclub.php:882
 msgid "Valid contact birthdate is required while registering RU domain name"
 msgstr "注册RU域名时须有联系人的出生日期"
 
-#: library/Registrar/Adapter/Resellerclub.php:887
+#: library/Registrar/Adapter/Resellerclub.php:886
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr "注册RU域名时须有有效的联系人护照信息"
 
-#: library/Registrar/Adapter/Resellerclub.php:974
+#: library/Registrar/Adapter/Resellerclub.php:973
 msgid "Contact not found"
 msgstr "未找到联系人"
 
@@ -723,7 +727,7 @@ msgid "Failed to connect to the :type: server. Please verify your credentials an
 msgstr ":type: 服务器连接失败。请正确填写连接信息和配置内容"
 
 #: library/Server/Manager/CWP.php:143 library/Server/Manager/Plesk.php:86
-#: library/Server/Manager/Virtualmin.php:392
+#: library/Server/Manager/Virtualmin.php:390
 msgid "create account"
 msgstr "创建账号"
 
@@ -735,34 +739,34 @@ msgstr "创建账号"
 #: library/Server/Manager/Hestia.php:232 library/Server/Manager/Hestia.php:257
 #: library/Server/Manager/Hestia.php:286 library/Server/Manager/Hestia.php:316
 #: library/Server/Manager/Hestia.php:365
-#: library/Server/Manager/Ispconfig3.php:734 library/Server/Manager/Plesk.php:87
-#: library/Server/Manager/Virtualmin.php:311
-#: library/Server/Manager/Virtualmin.php:393
-#: library/Server/Manager/Virtualmin.php:416
-#: library/Server/Manager/Virtualmin.php:439
-#: library/Server/Manager/Virtualmin.php:463
-#: library/Server/Manager/Virtualmin.php:486
-#: library/Server/Manager/Virtualmin.php:516
-#: library/Server/Manager/Virtualmin.php:544
-#: library/Server/Manager/Virtualmin.php:572
-#: library/Server/Manager/Virtualmin.php:660 library/Server/Manager/Whm.php:422
-#: library/Server/Manager/Whm.php:427 library/Server/Manager/Whm.php:432
-#: library/Server/Manager/Whm.php:437 library/Server/Manager/Whm.php:442
+#: library/Server/Manager/Ispconfig3.php:745 library/Server/Manager/Plesk.php:87
+#: library/Server/Manager/Virtualmin.php:310
+#: library/Server/Manager/Virtualmin.php:391
+#: library/Server/Manager/Virtualmin.php:413
+#: library/Server/Manager/Virtualmin.php:435
+#: library/Server/Manager/Virtualmin.php:458
+#: library/Server/Manager/Virtualmin.php:480
+#: library/Server/Manager/Virtualmin.php:509
+#: library/Server/Manager/Virtualmin.php:536
+#: library/Server/Manager/Virtualmin.php:563
+#: library/Server/Manager/Virtualmin.php:651 library/Server/Manager/Whm.php:421
+#: library/Server/Manager/Whm.php:426 library/Server/Manager/Whm.php:431
+#: library/Server/Manager/Whm.php:436 library/Server/Manager/Whm.php:441
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr "在 :type: 服务器的 :action: 失败，请在错误日志中查看详情"
 
 #: library/Server/Manager/CWP.php:160 library/Server/Manager/Hestia.php:231
-#: library/Server/Manager/Virtualmin.php:415
+#: library/Server/Manager/Virtualmin.php:412
 msgid "suspend account"
 msgstr "暂停账号"
 
 #: library/Server/Manager/CWP.php:177 library/Server/Manager/Hestia.php:256
-#: library/Server/Manager/Virtualmin.php:438
+#: library/Server/Manager/Virtualmin.php:434
 msgid "unsuspend account"
 msgstr "恢复账号"
 
 #: library/Server/Manager/CWP.php:197 library/Server/Manager/Hestia.php:285
-#: library/Server/Manager/Virtualmin.php:485
+#: library/Server/Manager/Virtualmin.php:479
 msgid "cancel account"
 msgstr "取消账号"
 
@@ -771,25 +775,25 @@ msgid "change account package"
 msgstr "更换账号套餐"
 
 #: library/Server/Manager/CWP.php:235 library/Server/Manager/Hestia.php:364
-#: library/Server/Manager/Virtualmin.php:462
+#: library/Server/Manager/Virtualmin.php:457
 msgid "change account password"
 msgstr "修改账号密码"
 
 #: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:329
 #: library/Server/Manager/Hestia.php:329
-#: library/Server/Manager/Ispconfig3.php:190 library/Server/Manager/Plesk.php:201
+#: library/Server/Manager/Ispconfig3.php:191 library/Server/Manager/Plesk.php:202
 msgid "username changes"
 msgstr "用户名修改"
 
 #: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:334
 #: library/Server/Manager/Hestia.php:339
-#: library/Server/Manager/Ispconfig3.php:195
+#: library/Server/Manager/Ispconfig3.php:196
 msgid "changing the account domain"
 msgstr "修改账号的域名"
 
 #: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
 #: library/Server/Manager/Hestia.php:378
-#: library/Server/Manager/Ispconfig3.php:200 library/Server/Manager/Plesk.php:228
+#: library/Server/Manager/Ispconfig3.php:201 library/Server/Manager/Plesk.php:229
 #: library/Server/Manager/Virtualmin.php:163
 #: library/Server/Manager/Virtualmin.php:168
 #: library/Server/Manager/Virtualmin.php:173
@@ -812,7 +816,7 @@ msgstr "创建用户时出错"
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "服务器管理器 DirectAdmin 错误: \"暂停账号失败\""
 
-#: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:411
+#: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:410
 msgid "HttpClientException: :error"
 msgstr "HttpClientException：:error"
 
@@ -836,15 +840,15 @@ msgstr "IspConfig 服务器管理器需要 PHP Soap 扩展"
 msgid "account synchronization"
 msgstr "账号同步"
 
-#: library/Server/Manager/Ispconfig3.php:538
+#: library/Server/Manager/Ispconfig3.php:549
 msgid "Could not load Soap client"
 msgstr "无法加载 Soap 客户端"
 
-#: library/Server/Manager/Ispconfig3.php:541
+#: library/Server/Manager/Ispconfig3.php:552
 msgid "Could not retrieve session"
 msgstr "无法获取会话"
 
-#: library/Server/Manager/Plesk.php:171
+#: library/Server/Manager/Plesk.php:172
 msgid "Can't modify client"
 msgstr "无法修改用户"
 
@@ -853,44 +857,44 @@ msgstr "无法修改用户"
 msgid "Virtualmin can't suspend/unsuspend reseller's account"
 msgstr "Virtualmin 无法 暂停/取消暂停 代理商账号"
 
-#: library/Server/Manager/Virtualmin.php:268
+#: library/Server/Manager/Virtualmin.php:267
 msgid "Create reseller command is only available in Virtualmin PRO version"
 msgstr "创建代理商账号的命令仅在 Virtualmin PRO 版本中可用"
 
-#: library/Server/Manager/Virtualmin.php:310
-#: library/Server/Manager/Virtualmin.php:659
+#: library/Server/Manager/Virtualmin.php:309
+#: library/Server/Manager/Virtualmin.php:650
 msgid "create reseller account"
 msgstr "创建代理商账号"
 
-#: library/Server/Manager/Virtualmin.php:515
+#: library/Server/Manager/Virtualmin.php:508
 msgid "modify domain details"
 msgstr "修改域名详细信息"
 
-#: library/Server/Manager/Virtualmin.php:543
+#: library/Server/Manager/Virtualmin.php:535
 msgid "enable features"
 msgstr "启用功能"
 
-#: library/Server/Manager/Virtualmin.php:571
+#: library/Server/Manager/Virtualmin.php:562
 msgid "disable features"
 msgstr "禁用功能"
 
-#: library/Server/Manager/Virtualmin.php:579
+#: library/Server/Manager/Virtualmin.php:570
 msgid "Cancel reseller command only available in Virtualmin PRO version"
 msgstr "创建代理商账号的命令仅在 Virtualmin PRO 版本中可用"
 
-#: library/Server/Manager/Virtualmin.php:590
+#: library/Server/Manager/Virtualmin.php:581
 msgid "Failed to delete reseller"
 msgstr "删除代理商失败"
 
-#: library/Server/Manager/Virtualmin.php:597
+#: library/Server/Manager/Virtualmin.php:588
 msgid "Modify reseller comand is only available in Virtualmin PRO version"
 msgstr "修改代理商账号的命令仅在 Virtualmin PRO 版本中可用"
 
-#: library/Server/Manager/Virtualmin.php:610
+#: library/Server/Manager/Virtualmin.php:601
 msgid "Failed to change reseller's password"
 msgstr "修改代理商的密码失败"
 
-#: library/Server/Manager/Virtualmin.php:617
+#: library/Server/Manager/Virtualmin.php:608
 msgid "Modify reseller command is only available in Virtualmin PRO version"
 msgstr "修改代理商账号的命令仅在 Virtualmin PRO 版本中可用"
 
@@ -902,7 +906,7 @@ msgstr "活动"
 msgid "Event history"
 msgstr "事件记录"
 
-#: modules/Api/Controller/Client.php:47 modules/Api/Controller/Client.php:248
+#: modules/Api/Controller/Client.php:47 modules/Api/Controller/Client.php:250
 msgid "Unknown API call :call"
 msgstr "未知的 API 调用 :calls"
 
@@ -916,35 +920,35 @@ msgstr "未授权的 IP"
 
 #: modules/Api/Controller/Client.php:192 modules/Api/Controller/Client.php:196
 #: modules/Api/Controller/Client.php:200 modules/Api/Controller/Client.php:214
-#: modules/Api/Controller/Client.php:222 modules/Api/Controller/Client.php:235
+#: modules/Api/Controller/Client.php:223 modules/Api/Controller/Client.php:237
 msgid "Authentication Failed"
 msgstr "验证失败"
 
-#: modules/Api/Controller/Client.php:327
+#: modules/Api/Controller/Client.php:329
 msgid "CSRF token invalid"
 msgstr "CSRF 令牌无效"
 
-#: modules/Cart/Api/Guest.php:59 modules/Currency/Api/Admin.php:69
-#: modules/Currency/Api/Admin.php:249 modules/Currency/Api/Guest.php:48
-#: modules/Currency/Service.php:326 modules/Currency/Service.php:463
-#: modules/Currency/Service.php:573
+#: modules/Cart/Api/Guest.php:57 modules/Currency/Api/Admin.php:67
+#: modules/Currency/Api/Admin.php:238 modules/Currency/Api/Guest.php:46
+#: modules/Currency/Service.php:326 modules/Currency/Service.php:461
+#: modules/Currency/Service.php:572
 msgid "Currency not found"
 msgstr "未找到该币种"
 
-#: modules/Cart/Api/Guest.php:100 modules/Cart/Api/Guest.php:108
+#: modules/Cart/Api/Guest.php:96 modules/Cart/Api/Guest.php:104
 #: modules/Cart/Service.php:429
 msgid "Promo code is expired or does not exist"
 msgstr "优惠码已过期或不存在"
 
-#: modules/Cart/Api/Guest.php:104 modules/Cart/Service.php:433
+#: modules/Cart/Api/Guest.php:100 modules/Cart/Service.php:433
 msgid "Promo can not be applied to your account"
 msgstr "您的账号不能享受此优惠"
 
-#: modules/Cart/Api/Guest.php:170
+#: modules/Cart/Api/Guest.php:161
 msgid "Addon products cannot be added separately."
 msgstr "附加组件产品不能单独添加。"
 
-#: modules/Cart/Api/Guest.php:184
+#: modules/Cart/Api/Guest.php:175
 msgid "One or more of your selected addons are invalid for the associated product."
 msgstr "您所选的一个或多个附加组件对产品无效。"
 
@@ -960,7 +964,7 @@ msgstr "该产品目前缺货"
 msgid "Selected billing period is invalid for the selected addon"
 msgstr "选定的附加组件的计费周期无效"
 
-#: modules/Cart/Service.php:218 modules/Product/Api/Guest.php:84
+#: modules/Cart/Service.php:218 modules/Product/Api/Guest.php:82
 msgid "Product not found"
 msgstr "未找到产品"
 
@@ -992,50 +996,46 @@ msgstr "折扣：产品"
 msgid ":product setup"
 msgstr ":产品 设置"
 
-#: modules/Client/Api/Admin.php:162
+#: modules/Client/Api/Admin.php:149
 msgid "Email is already registered."
 msgstr "该邮箱已注册。"
 
-#: modules/Client/Api/Admin.php:256 modules/Profile/Service.php:125
+#: modules/Client/Api/Admin.php:239 modules/Profile/Service.php:125
 msgid "Can not change email. It is already registered."
 msgstr "修改邮箱失败，因为已经注册。"
 
-#: modules/Client/Api/Admin.php:344 modules/Staff/Api/Admin.php:133
-#: modules/Staff/Api/Guest.php:111
+#: modules/Client/Api/Admin.php:323 modules/Staff/Api/Admin.php:123
+#: modules/Staff/Api/Guest.php:104
 msgid "Passwords do not match"
 msgstr "密码不一致"
 
-#: modules/Client/Api/Admin.php:509
+#: modules/Client/Api/Admin.php:483
 msgid "Event not found"
 msgstr "找不到事件"
 
-#: modules/Client/Api/Guest.php:63
+#: modules/Client/Api/Guest.php:58
 msgid "New registrations are temporary disabled"
 msgstr "暂停注册"
 
-#: modules/Client/Api/Guest.php:75
+#: modules/Client/Api/Guest.php:70
 msgid "Passwords do not match."
 msgstr "密码不一致。"
 
-#: modules/Client/Api/Guest.php:88
+#: modules/Client/Api/Guest.php:83
 msgid "Email is already registered. You may want to login instead of registering."
 msgstr "邮箱已注册。您可以尝试直接登录。"
 
-#: modules/Client/Api/Guest.php:94
+#: modules/Client/Api/Guest.php:89
 msgid "Account has been created. Please check your mailbox and confirm email address."
 msgstr "账户已创建。请查看您的收件箱并确认邮件地址。"
 
-#: modules/Client/Api/Guest.php:136
+#: modules/Client/Api/Guest.php:129
 msgid "Please check your login details."
 msgstr "请检查您的登录信息。"
 
-#: modules/Client/Api/Guest.php:172 modules/Staff/Api/Guest.php:154
-msgid "Email not found in our database"
-msgstr "在数据库中找不到该邮箱"
-
-#: modules/Client/Api/Guest.php:217 modules/Staff/Api/Guest.php:116
-#: modules/Staff/Api/Guest.php:120 modules/Staff/Controller/Admin.php:122
-#: modules/Staff/Controller/Admin.php:125
+#: modules/Client/Api/Guest.php:206 modules/Staff/Api/Guest.php:109
+#: modules/Staff/Api/Guest.php:113 modules/Staff/Controller/Admin.php:124
+#: modules/Staff/Controller/Admin.php:127
 msgid "The link have expired or you have already confirmed password reset."
 msgstr "链接已过期或您已经完成密码重置。"
 
@@ -1072,47 +1072,47 @@ msgstr "邮箱地址已确认"
 msgid "Invalid email confirmation link"
 msgstr "无效的邮件确认链接"
 
-#: modules/Client/Service.php:69
+#: modules/Client/Service.php:70
 msgid "The password you chose when creating your account."
 msgstr "在创建账号时选定的密码。"
 
-#: modules/Client/Service.php:223
+#: modules/Client/Service.php:224
 msgid "Currency can not be changed. Client already have invoices issued."
 msgstr "无法更换币种，因为已经出账单了。"
 
-#: modules/Client/Service.php:228
+#: modules/Client/Service.php:229
 msgid "Currency can not be changed. Client already have orders."
 msgstr "无法更换币种，因为用户已经提交订单了。"
 
-#: modules/Client/Service.php:237
+#: modules/Client/Service.php:238
 msgid "Define clients currency before adding funds."
 msgstr "为用户充值前设置币种。"
 
-#: modules/Client/Service.php:241 modules/Client/ServiceBalance.php:126
+#: modules/Client/Service.php:242 modules/Client/ServiceBalance.php:125
 msgid "Funds amount is invalid"
 msgstr "充值金额无效"
 
-#: modules/Client/Service.php:245 modules/Client/ServiceBalance.php:130
+#: modules/Client/Service.php:246 modules/Client/ServiceBalance.php:129
 msgid "Funds description is invalid"
 msgstr "充值的描述无效。"
 
-#: modules/Client/Service.php:413
+#: modules/Client/Service.php:414
 msgid "Client ID or email is required"
 msgstr "必须有用户 ID 或邮箱"
 
-#: modules/Client/Service.php:427
+#: modules/Client/Service.php:428
 msgid "Client not found"
 msgstr "找不到用户"
 
-#: modules/Client/Service.php:470
+#: modules/Client/Service.php:471
 msgid "Can not remove group with clients"
 msgstr "无法移除用户组"
 
-#: modules/Client/Service.php:630 modules/Profile/Service.php:117
+#: modules/Client/Service.php:631 modules/Profile/Service.php:117
 msgid "Email can not be changed"
 msgstr "无法修改邮箱"
 
-#: modules/Client/Service.php:643 modules/Client/Service.php:658
+#: modules/Client/Service.php:645 modules/Client/Service.php:661
 msgid "Field :field cannot be empty"
 msgstr ":field 此字段不能为空"
 
@@ -1120,11 +1120,11 @@ msgstr ":field 此字段不能为空"
 msgid "Cookie consent"
 msgstr "Cookie 政策"
 
-#: modules/Currency/Api/Admin.php:111
+#: modules/Currency/Api/Admin.php:106
 msgid "Currency already registered"
 msgstr "币种已设置"
 
-#: modules/Currency/Api/Admin.php:115
+#: modules/Currency/Api/Admin.php:110
 msgid "Currency code is invalid"
 msgstr "货币代码无效"
 
@@ -1140,15 +1140,15 @@ msgstr "货币代码未写明"
 msgid "Can not remove default currency"
 msgstr "不能删除默认币种"
 
-#: modules/Currency/Service.php:481
+#: modules/Currency/Service.php:479
 msgid "Currency rate is invalid"
 msgstr "汇率无效"
 
-#: modules/Currency/Service.php:545
+#: modules/Currency/Service.php:544
 msgid "Failed to get currency rates for :currency from the European Central Bank API"
 msgstr "无法从 European Central Bank API 获取 :currency 的货币汇率"
 
-#: modules/Currency/Service.php:561
+#: modules/Currency/Service.php:560
 msgid "<b>Currencylayer threw an error:</b><br />:errorInfo"
 msgstr "<b>Currencylayer 报错：</b><br />: 错误信息"
 
@@ -1159,17 +1159,17 @@ msgstr "<b>Currencylayer 报错：</b><br />: 错误信息"
 msgid "Custom Pages"
 msgstr "自定义的页面"
 
-#: modules/Email/Api/Admin.php:131 modules/Email/Api/Admin.php:157
-#: modules/Email/Api/Client.php:69 modules/Email/Api/Client.php:94
-#: modules/Email/Api/Client.php:119 modules/Email/Service.php:456
+#: modules/Email/Api/Admin.php:120 modules/Email/Api/Admin.php:144
+#: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
+#: modules/Email/Api/Client.php:113 modules/Email/Service.php:457
 msgid "Email not found"
 msgstr "未找到邮箱"
 
-#: modules/Email/Api/Admin.php:235
+#: modules/Email/Api/Admin.php:218
 msgid "Email template not found"
 msgstr "找不到电子邮件模板"
 
-#: modules/Email/Api/Admin.php:420
+#: modules/Email/Api/Admin.php:392
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "未指定收件人。可设置用户或员工作为参数"
 
@@ -1188,7 +1188,7 @@ msgstr "未指定收件人。可设置用户、员工或管理员作为参数"
 msgid "From email address can not be empty"
 msgstr "发件人邮箱不能为空"
 
-#: modules/Email/Service.php:441
+#: modules/Email/Service.php:442
 msgid "Email template :code was not found"
 msgstr "找不到邮件模板 :code"
 
@@ -1196,11 +1196,11 @@ msgstr "找不到邮件模板 :code"
 msgid "Embed and integrate"
 msgstr "插入和整合"
 
-#: modules/Extension/Api/Admin.php:265
+#: modules/Extension/Api/Admin.php:246
 msgid "Extension not found"
 msgstr "找不到扩展"
 
-#: modules/Extension/Api/Guest.php:63
+#: modules/Extension/Api/Guest.php:59
 msgid "Parameter ext is missing"
 msgstr "缺少参数 ext"
 
@@ -1214,64 +1214,64 @@ msgstr "扩展组件"
 msgid "Languages"
 msgstr "语言"
 
-#: modules/Extension/Service.php:316
+#: modules/Extension/Service.php:320
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "请访问扩展目录以了解更多关于更新扩展的信息。"
 
-#: modules/Extension/Service.php:363
+#: modules/Extension/Service.php:369
 msgid "FOSSBilling core modules can not be managed"
 msgstr "FOSSBilling 核心模块无法管理"
 
-#: modules/Extension/Service.php:428
+#: modules/Extension/Service.php:434
 msgid "Failed to download the extension with error :code"
 msgstr "下载扩展时出现错误 :code"
 
-#: modules/Extension/Service.php:463
+#: modules/Extension/Service.php:475
 msgid "Extension :id seems to be already installed."
 msgstr "扩展 :id 似乎已经安装。"
 
-#: modules/Extension/Service.php:466
+#: modules/Extension/Service.php:478
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "无法移动扩展。请检查目标目录的权限。(:destination)"
 
-#: modules/Extension/Service.php:469
+#: modules/Extension/Service.php:481
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "不能自动安装扩展类型 (:type) 。"
 
-#: modules/Extension/Service.php:500
+#: modules/Extension/Service.php:512
 msgid "FOSSBilling core modules can not be installed or removed"
 msgstr "FOSSBilling 核心模块无法安装或删除"
 
-#: modules/Extension/Service.php:505
+#: modules/Extension/Service.php:517
 msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr "无法安装模块。它至少需要 :min 版本的 FOSSBilling。您正在使用 :v"
 
-#: modules/Formbuilder/Api/Admin.php:38
+#: modules/Formbuilder/Api/Admin.php:36
 msgid "Form style was not found in predefined list"
 msgstr "在预设定的列表中找不到表单样式"
 
-#: modules/Formbuilder/Api/Admin.php:79
+#: modules/Formbuilder/Api/Admin.php:74
 msgid "Form field type is invalid"
 msgstr "表单字段类型无效"
 
-#: modules/Formbuilder/Api/Admin.php:82 modules/Formbuilder/Api/Admin.php:255
+#: modules/Formbuilder/Api/Admin.php:77 modules/Formbuilder/Api/Admin.php:238
 msgid "This input type must have unique values"
 msgstr "输入类型必须有唯一的值"
 
-#: modules/Formbuilder/Api/Admin.php:85 modules/Formbuilder/Api/Admin.php:288
-#: modules/Formbuilder/Api/Admin.php:311
+#: modules/Formbuilder/Api/Admin.php:80 modules/Formbuilder/Api/Admin.php:266
+#: modules/Formbuilder/Api/Admin.php:286
 msgid "Form id was not passed"
 msgstr "表单 id 未通过"
 
-#: modules/Formbuilder/Api/Admin.php:291 modules/Formbuilder/Api/Admin.php:314
+#: modules/Formbuilder/Api/Admin.php:269 modules/Formbuilder/Api/Admin.php:289
 msgid "Form name was not passed"
 msgstr "表单名称未通过"
 
-#: modules/Formbuilder/Api/Admin.php:318
+#: modules/Formbuilder/Api/Admin.php:293
 msgid "Form type was not passed"
 msgstr "表单类型未通过"
 
-#: modules/Formbuilder/Api/Admin.php:322
+#: modules/Formbuilder/Api/Admin.php:297
 msgid "Field type not supported"
 msgstr "不支持的字段类型"
 
@@ -1299,45 +1299,45 @@ msgstr " 标签名称必须是唯一的"
 msgid "Textarea size options must be integer values"
 msgstr "文本区的大小选项值必须是整数"
 
-#: modules/Invoice/Api/Admin.php:242 modules/Invoice/Api/Client.php:120
+#: modules/Invoice/Api/Admin.php:222 modules/Invoice/Api/Client.php:114
 msgid "Order :id is free. No need to generate invoice."
 msgstr "订单 :id 是免费的。无需生成账单。"
 
-#: modules/Invoice/Api/Admin.php:768
+#: modules/Invoice/Api/Admin.php:721
 msgid "Client currency must match subscription currency. Check if clients currency is defined."
 msgstr "用户的币种必须与订阅付款的相同。请检查用户是否已经设置币种。"
 
-#: modules/Invoice/Api/Admin.php:832
+#: modules/Invoice/Api/Admin.php:780
 msgid "Subscription not found"
 msgstr "没有找到订阅付款"
 
-#: modules/Invoice/Api/Client.php:57 modules/Invoice/Api/Client.php:83
-#: modules/Invoice/Api/Client.php:176 modules/Invoice/Api/Guest.php:37
-#: modules/Invoice/Api/Guest.php:63
+#: modules/Invoice/Api/Client.php:55 modules/Invoice/Api/Client.php:79
+#: modules/Invoice/Api/Client.php:166 modules/Invoice/Api/Guest.php:35
+#: modules/Invoice/Api/Guest.php:59
 msgid "Invoice was not found"
 msgstr "未找到账单"
 
-#: modules/Invoice/Api/Client.php:86 modules/Invoice/Api/Guest.php:66
+#: modules/Invoice/Api/Client.php:82 modules/Invoice/Api/Guest.php:62
 msgid "Paid Invoice can not be modified"
 msgstr "不能修改已支付的账单"
 
-#: modules/Invoice/Api/Client.php:117 modules/Order/Api/Client.php:131
-#: modules/Servicedomain/Api/Client.php:139
-#: modules/Servicedownloadable/Api/Client.php:34
-#: modules/Servicehosting/Api/Client.php:83
-#: modules/Servicelicense/Api/Client.php:47
+#: modules/Invoice/Api/Client.php:111 modules/Order/Api/Client.php:121
+#: modules/Servicedomain/Api/Client.php:122
+#: modules/Servicedownloadable/Api/Client.php:32
+#: modules/Servicehosting/Api/Client.php:72
+#: modules/Servicelicense/Api/Client.php:45
 msgid "Order not found"
 msgstr "没有找到订单"
 
-#: modules/Invoice/Api/Client.php:147
+#: modules/Invoice/Api/Client.php:139
 msgid "You need to enter numeric value"
 msgstr "请输入数字"
 
-#: modules/Invoice/Api/Guest.php:110
+#: modules/Invoice/Api/Guest.php:103
 msgid "Invoice hash not passed. Missing param hash"
 msgstr "账单哈希未通过。缺少哈希参数"
 
-#: modules/Invoice/Api/Guest.php:114
+#: modules/Invoice/Api/Guest.php:107
 msgid "Payment method not found. Missing param gateway_id"
 msgstr "找不到付款方式。缺少参数 gateway id"
 
@@ -1386,39 +1386,39 @@ msgstr "税率"
 msgid "Payment gateways"
 msgstr "支付网关"
 
-#: modules/Invoice/Service.php:626
+#: modules/Invoice/Service.php:627
 msgid "Can not refund invoice with negative amount"
 msgstr "无法为负数金额的账单退款"
 
-#: modules/Invoice/Service.php:840
+#: modules/Invoice/Service.php:843
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "账单与订单 #:id 有关。请先取消订单。"
 
-#: modules/Invoice/Service.php:907
+#: modules/Invoice/Service.php:910
 msgid "Invoices are not generated for 0 amount orders"
 msgstr "不能为金额为零的订单创建账单"
 
-#: modules/Invoice/Service.php:1067
+#: modules/Invoice/Service.php:1078
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "充值前，您名下必须有一个有效的订单。"
 
-#: modules/Invoice/Service.php:1076
+#: modules/Invoice/Service.php:1087
 msgid "Amount must be at least :min_amount"
 msgstr "充值金额最低 :min_amount 始"
 
-#: modules/Invoice/Service.php:1080
+#: modules/Invoice/Service.php:1091
 msgid "Amount cannot exceed :max_amount"
 msgstr "充值金额最高为 :max_amount"
 
-#: modules/Invoice/Service.php:1106 modules/Invoice/Service.php:1171
+#: modules/Invoice/Service.php:1117 modules/Invoice/Service.php:1181
 msgid "Invoice not found"
 msgstr "找不到账单"
 
-#: modules/Invoice/Service.php:1111
+#: modules/Invoice/Service.php:1122
 msgid "Payment method not found"
 msgstr "找不到付款方式"
 
-#: modules/Invoice/Service.php:1115
+#: modules/Invoice/Service.php:1126
 msgid "Payment method not enabled"
 msgstr "付款方式未启用"
 
@@ -1426,19 +1426,19 @@ msgstr "付款方式未启用"
 msgid "Could not activate proforma item. Order :id not found"
 msgstr "无法激活相关项。找不到 :id 订单"
 
-#: modules/Invoice/ServiceInvoiceItem.php:126
+#: modules/Invoice/ServiceInvoiceItem.php:128
 msgid "Invoice item title is missing"
 msgstr "缺少账单项目名称"
 
-#: modules/Invoice/ServiceInvoiceItem.php:216
+#: modules/Invoice/ServiceInvoiceItem.php:218
 msgid "Add funds to account"
 msgstr "充值"
 
-#: modules/Invoice/ServiceInvoiceItem.php:331
+#: modules/Invoice/ServiceInvoiceItem.php:333
 msgid "Promotional Code: :code - :value Discount"
 msgstr "优惠码：:code - :value 折扣"
 
-#: modules/Invoice/ServiceInvoiceItem.php:334
+#: modules/Invoice/ServiceInvoiceItem.php:336
 msgid "Promotional Code: :code - :value%"
 msgstr "优惠码：:code - :value%"
 
@@ -1446,8 +1446,8 @@ msgstr "优惠码：:code - :value%"
 msgid "Payment gateway is not available for installation."
 msgstr "支付网关不可用。"
 
-#: modules/Invoice/ServicePayGateway.php:251
-#: modules/Invoice/ServicePayGateway.php:280
+#: modules/Invoice/ServicePayGateway.php:252
+#: modules/Invoice/ServicePayGateway.php:281
 msgid "Payment gateway :adapter was not found"
 msgstr "未找到支付网关 :adapter"
 
@@ -1459,35 +1459,35 @@ msgstr "缺少交易编号 id"
 msgid "Payment gateway id is missing"
 msgstr "缺少支付网关的 id"
 
-#: modules/Invoice/ServiceTransaction.php:361
+#: modules/Invoice/ServiceTransaction.php:360
 msgid "Transaction :id not found."
 msgstr "未找到交易 :id。"
 
-#: modules/Invoice/ServiceTransaction.php:365
-#: modules/Invoice/ServiceTransaction.php:485
+#: modules/Invoice/ServiceTransaction.php:364
+#: modules/Invoice/ServiceTransaction.php:484
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
 msgstr "无法确定交易的来源。交易支付网关未知。"
 
-#: modules/Invoice/ServiceTransaction.php:370
-#: modules/Invoice/ServiceTransaction.php:490
+#: modules/Invoice/ServiceTransaction.php:369
+#: modules/Invoice/ServiceTransaction.php:489
 msgid "Can not handle transaction received from unknown payment gateway: :id"
 msgstr "无法处理从未知支付网关收到的交易：:id"
 
-#: modules/Invoice/ServiceTransaction.php:376
+#: modules/Invoice/ServiceTransaction.php:375
 #: modules/Invoice/ServiceTransaction.php:519
 msgid "Payment adapter :adapter does not support action :action"
 msgstr "支付适配器 :adapter 不支持操作 :action"
 
-#: modules/Invoice/ServiceTransaction.php:410
+#: modules/Invoice/ServiceTransaction.php:409
 msgid "Unknown transaction #:id type: :type"
 msgstr "未知交易编号 #:id 类型: :type"
 
-#: modules/Invoice/ServiceTransaction.php:499
+#: modules/Invoice/ServiceTransaction.php:498
 #: modules/Invoice/ServiceTransaction.php:664
 msgid "Transaction :id is not associated with an invoice."
 msgstr "交易编号 :id 没有与之相关联的账单。"
 
-#: modules/Invoice/ServiceTransaction.php:504
+#: modules/Invoice/ServiceTransaction.php:503
 msgid "Invoice #:id not found"
 msgstr "未找到账单号 #:id"
 
@@ -1527,33 +1527,33 @@ msgstr "用户的币种与账单的不匹配"
 msgid "Can not add negative amount to client balance for debit transaction"
 msgstr "不能为借记交易添加负数到用户的余额"
 
-#: modules/Kb/Api/Admin.php:57 modules/Kb/Api/Admin.php:138
+#: modules/Kb/Api/Admin.php:55 modules/Kb/Api/Admin.php:129
 #: modules/Kb/Service.php:147
 msgid "Article not found"
 msgstr "未找到文章"
 
-#: modules/Kb/Api/Admin.php:182 modules/Kb/Api/Admin.php:231
+#: modules/Kb/Api/Admin.php:171 modules/Kb/Api/Admin.php:216
 msgid "Article Category not found"
 msgstr "未找到文章分类"
 
-#: modules/Kb/Api/Admin.php:258
+#: modules/Kb/Api/Admin.php:241
 msgid "Category not found"
 msgstr "未找到分类"
 
-#: modules/Kb/Api/Guest.php:56 modules/News/Api/Admin.php:48
-#: modules/News/Api/Guest.php:50
+#: modules/Kb/Api/Guest.php:53 modules/News/Api/Admin.php:46
+#: modules/News/Api/Guest.php:47
 msgid "ID or slug is missing"
 msgstr "缺少 ID 或 别名"
 
-#: modules/Kb/Api/Guest.php:70
+#: modules/Kb/Api/Guest.php:67
 msgid "Article item not found"
 msgstr "未找到文章"
 
-#: modules/Kb/Api/Guest.php:121
+#: modules/Kb/Api/Guest.php:115
 msgid "Category ID or slug is missing"
 msgstr "缺少文章 ID 或 别名"
 
-#: modules/Kb/Api/Guest.php:135
+#: modules/Kb/Api/Guest.php:129
 msgid "Knowledge base category not found"
 msgstr "未找到知识库的分类"
 
@@ -1576,11 +1576,11 @@ msgstr "知识库"
 msgid "Can not remove category which has articles"
 msgstr "删除分类前请确保该分类的文章数为零"
 
-#: modules/Massmailer/Api/Admin.php:76
+#: modules/Massmailer/Api/Admin.php:72
 msgid "Message from name can not be empty"
 msgstr "发信人不能留空"
 
-#: modules/Massmailer/Api/Admin.php:161 modules/Massmailer/Api/Admin.php:183
+#: modules/Massmailer/Api/Admin.php:153 modules/Massmailer/Api/Admin.php:173
 msgid "Add some content before sending message"
 msgstr "请添加内容后发送消息"
 
@@ -1593,7 +1593,7 @@ msgstr "群发邮件"
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "因安全原因禁用 (启用演示模式)"
 
-#: modules/News/Api/Admin.php:64 modules/News/Api/Guest.php:63
+#: modules/News/Api/Admin.php:62 modules/News/Api/Guest.php:60
 msgid "News item not found"
 msgstr "未找到消息"
 
@@ -1602,31 +1602,31 @@ msgstr "未找到消息"
 msgid "Announcements"
 msgstr "通知"
 
-#: modules/Notification/Api/Admin.php:55 modules/Notification/Api/Admin.php:97
+#: modules/Notification/Api/Admin.php:53 modules/Notification/Api/Admin.php:91
 msgid "Notification message was not found"
 msgstr "未找到通知信息"
 
-#: modules/Order/Api/Admin.php:181
+#: modules/Order/Api/Admin.php:166
 msgid "Only suspended orders can be unsuspended"
 msgstr "已暂停的订单才能取消暂停"
 
-#: modules/Order/Api/Admin.php:217
+#: modules/Order/Api/Admin.php:198
 msgid "Only canceled orders can be uncanceled"
 msgstr "已取消的订单才能恢复"
 
-#: modules/Order/Api/Admin.php:281
+#: modules/Order/Api/Admin.php:257
 msgid "Order config not passed"
 msgstr "订单配置未通过"
 
-#: modules/Order/Api/Admin.php:379
+#: modules/Order/Api/Admin.php:346
 msgid "Automatically issue renewal invoices"
 msgstr "自动创建续订账单"
 
-#: modules/Order/Api/Admin.php:380
+#: modules/Order/Api/Admin.php:347
 msgid "Issue invoices manually"
 msgstr "手动创建账单"
 
-#: modules/Order/Api/Client.php:116
+#: modules/Order/Api/Client.php:106
 msgid "Only pending and failed setup orders can be deleted."
 msgstr "只有待处理和上架失败的订单才能删除。"
 
@@ -1684,23 +1684,23 @@ msgstr "只能暂停有效的订单"
 msgid "Can not cancel "
 msgstr "无法取消 "
 
-#: modules/Product/Api/Admin.php:101
+#: modules/Product/Api/Admin.php:96
 msgid "You have already created domain product."
 msgstr "您已经创建了域名产品。"
 
-#: modules/Product/Api/Admin.php:107
+#: modules/Product/Api/Admin.php:102
 msgid "Product type :type is not registered"
 msgstr "产品类型 :type 未注册"
 
-#: modules/Product/Api/Admin.php:160
+#: modules/Product/Api/Admin.php:151
 msgid "priority params is missing"
 msgstr "缺少优先级参数"
 
-#: modules/Product/Api/Admin.php:241 modules/Product/Api/Admin.php:282
+#: modules/Product/Api/Admin.php:226 modules/Product/Api/Admin.php:265
 msgid "Addon not found"
 msgstr "找不到附加组件"
 
-#: modules/Product/Api/Guest.php:70
+#: modules/Product/Api/Guest.php:68
 msgid "Product ID or slug is missing"
 msgstr "缺少产品 ID 或 别名"
 
@@ -1732,7 +1732,7 @@ msgstr "无法删除有有效订单的产品。"
 msgid "Can not remove product category with products"
 msgstr "无法删除有产品的分类"
 
-#: modules/Product/Service.php:872
+#: modules/Product/Service.php:880
 msgid "This promotion code already exists."
 msgstr "此优惠码已存在。"
 
@@ -1740,57 +1740,65 @@ msgstr "此优惠码已存在。"
 msgid "Invalid birthdate value"
 msgstr "无效的出生日期"
 
-#: modules/Queue/Api/Admin.php:101
+#: modules/Profile/Service.php:235
+msgid "Unable to invalidate sessions, nobody is logged in"
+msgstr ""
+
+#: modules/Profile/Service.php:254
+msgid "Unable to invalidate sessions, an invalid type was used"
+msgstr ""
+
+#: modules/Queue/Api/Admin.php:94
 msgid "Message handler function :method does not exists"
 msgstr "消息处理函数 :method 不存在"
 
-#: modules/Redirect/Api/Admin.php:140
+#: modules/Redirect/Api/Admin.php:131
 msgid "Redirect not found"
 msgstr "未找到重定向"
 
-#: modules/Serviceapikey/Service.php:60
+#: modules/Serviceapikey/Service.php:61
 msgid "Order does not exist."
 msgstr "订单不存在。"
 
-#: modules/Serviceapikey/Service.php:123 modules/Serviceapikey/Service.php:143
+#: modules/Serviceapikey/Service.php:123 modules/Serviceapikey/Service.php:142
 msgid "You must provide an API key to check it's validity."
 msgstr "您必须提供一个 API 密钥来检查其有效性。"
 
-#: modules/Serviceapikey/Service.php:128 modules/Serviceapikey/Service.php:148
-#: modules/Serviceapikey/Service.php:198 modules/Serviceapikey/Service.php:210
-#: modules/Serviceapikey/Service.php:239 modules/Serviceapikey/Service.php:348
+#: modules/Serviceapikey/Service.php:128 modules/Serviceapikey/Service.php:147
+#: modules/Serviceapikey/Service.php:197 modules/Serviceapikey/Service.php:208
+#: modules/Serviceapikey/Service.php:238 modules/Serviceapikey/Service.php:351
 msgid "API key does not exist"
 msgstr "API 密钥不存在"
 
-#: modules/Serviceapikey/Service.php:188
+#: modules/Serviceapikey/Service.php:187
 msgid "You must provide either the API key or API key order ID in order to reset it."
 msgstr "你必须提供 API 密钥或 API 密钥订单的 ID 才能重置。"
 
-#: modules/Serviceapikey/Service.php:231
+#: modules/Serviceapikey/Service.php:230
 msgid "You must provide the API key order ID in order to update it."
 msgstr "你必须提供 API 密钥订单的 ID 才能更新。"
 
-#: modules/Serviceapikey/Service.php:243
+#: modules/Serviceapikey/Service.php:242
 msgid "To change the API key, please use the reset function rather than updating it."
 msgstr "要更改 API 密钥，请使用重置的功能而不是直接编辑。"
 
-#: modules/Serviceapikey/Service.php:304
+#: modules/Serviceapikey/Service.php:305
 msgid "Maximum number of iterations reached while generating API key"
 msgstr "生成 API 密钥时达到最大的迭代次数"
 
-#: modules/Serviceapikey/Service.php:337
+#: modules/Serviceapikey/Service.php:340
 msgid "Unknown uppercase option ':case:'. API generator only accepts 'lower', 'upper', or 'mixed'."
 msgstr "未知的选项 ':case:' 。API 生成器接受 小写、大写 或 大小写 的。"
 
-#: modules/Servicecustom/Api/Admin.php:26 modules/Servicecustom/Api/Admin.php:53
-#: modules/Servicecustom/Api/Client.php:35
-#: modules/Servicedomain/Api/Client.php:133
-#: modules/Servicedownloadable/Api/Client.php:29
-#: modules/Servicehosting/Api/Client.php:78
+#: modules/Servicecustom/Api/Admin.php:26 modules/Servicecustom/Api/Admin.php:51
+#: modules/Servicecustom/Api/Client.php:33
+#: modules/Servicedomain/Api/Client.php:116
+#: modules/Servicedownloadable/Api/Client.php:27
+#: modules/Servicehosting/Api/Client.php:67
 msgid "Order id is required"
 msgstr "订单 id 是必需的"
 
-#: modules/Servicecustom/Api/Admin.php:47 modules/Servicecustom/Api/Client.php:29
+#: modules/Servicecustom/Api/Admin.php:45 modules/Servicecustom/Api/Client.php:27
 msgid "API call is missing arguments"
 msgstr "API 调用缺少参数"
 
@@ -1802,8 +1810,8 @@ msgstr "请填写所有必填的字段。 "
 msgid "Field "
 msgstr "字段 "
 
-#: modules/Servicecustom/Service.php:77 modules/Servicedomain/Service.php:215
-#: modules/Servicelicense/Service.php:111
+#: modules/Servicecustom/Service.php:77 modules/Servicedomain/Service.php:218
+#: modules/Servicelicense/Service.php:112
 msgid "Could not activate order. Service was not created"
 msgstr "无法激活订单。服务未创建"
 
@@ -1815,13 +1823,13 @@ msgstr "自定义插件 :method 被禁用"
 msgid "Config must be an array"
 msgstr "配置必须是一个数组"
 
-#: modules/Servicecustom/Service.php:246 modules/Servicedomain/Api/Client.php:144
-#: modules/Servicedownloadable/Api/Admin.php:70
-#: modules/Servicedownloadable/Api/Client.php:40
-#: modules/Servicehosting/Api/Admin.php:449
-#: modules/Servicehosting/Api/Client.php:89
-#: modules/Servicelicense/Api/Admin.php:89
-#: modules/Servicelicense/Api/Client.php:53
+#: modules/Servicecustom/Service.php:246 modules/Servicedomain/Api/Client.php:127
+#: modules/Servicedownloadable/Api/Admin.php:64
+#: modules/Servicedownloadable/Api/Client.php:38
+#: modules/Servicehosting/Api/Admin.php:408
+#: modules/Servicehosting/Api/Client.php:78
+#: modules/Servicelicense/Api/Admin.php:85
+#: modules/Servicelicense/Api/Client.php:51
 msgid "Order is not activated"
 msgstr "订单未生效"
 
@@ -1833,53 +1841,53 @@ msgstr "未找到插件类文件 :file"
 msgid "Plugin :plugin does not support action :action"
 msgstr "插件 :plugin 不支持操作 :action"
 
-#: modules/Servicecustom/Service.php:293 modules/Servicedomain/Service.php:249
-#: modules/Servicedomain/Service.php:288 modules/Servicehosting/Service.php:94
+#: modules/Servicecustom/Service.php:293 modules/Servicedomain/Service.php:252
+#: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:94
 #: modules/Servicehosting/Service.php:139 modules/Servicehosting/Service.php:157
 #: modules/Servicehosting/Service.php:176 modules/Servicehosting/Service.php:195
 msgid "Order :id has no active service"
 msgstr "订单 :id 没有有效的服务"
 
-#: modules/Servicedomain/Api/Admin.php:188
-#: modules/Servicedomain/Api/Admin.php:238
-#: modules/Servicedomain/Api/Admin.php:298 modules/Servicedomain/Api/Guest.php:69
-#: modules/Servicedomain/Service.php:93 modules/Servicedomain/Service.php:125
+#: modules/Servicedomain/Api/Admin.php:167
+#: modules/Servicedomain/Api/Admin.php:212
+#: modules/Servicedomain/Api/Admin.php:264 modules/Servicedomain/Api/Guest.php:67
+#: modules/Servicedomain/Service.php:95 modules/Servicedomain/Service.php:128
 msgid "TLD not found"
 msgstr "域名后缀未找到"
 
-#: modules/Servicedomain/Api/Admin.php:213
+#: modules/Servicedomain/Api/Admin.php:189
 msgid "ID not found"
 msgstr "ID 未找到"
 
-#: modules/Servicedomain/Api/Admin.php:269
+#: modules/Servicedomain/Api/Admin.php:237
 msgid "Tld already registered"
 msgstr "域名后缀已注册"
 
-#: modules/Servicedomain/Api/Admin.php:363
+#: modules/Servicedomain/Api/Admin.php:327
 msgid "Registrar is not available for installation."
 msgstr "暂不支持该域名注册商"
 
-#: modules/Servicedomain/Api/Admin.php:474
+#: modules/Servicedomain/Api/Admin.php:430
 msgid "Domain order is not activated"
 msgstr "域名订单未生效"
 
-#: modules/Servicedomain/Api/Guest.php:95
+#: modules/Servicedomain/Api/Guest.php:90
 msgid "Domain :domain is invalid"
 msgstr "域名 :domain 无效"
 
-#: modules/Servicedomain/Api/Guest.php:100
+#: modules/Servicedomain/Api/Guest.php:95
 msgid "Domain availability could not be determined. TLD is not active."
 msgstr "无法确认域名是否可注册。因为该域名后缀未启用。"
 
-#: modules/Servicedomain/Api/Guest.php:104
+#: modules/Servicedomain/Api/Guest.php:99
 msgid "Domain is not available."
 msgstr "域名不可用"
 
-#: modules/Servicedomain/Api/Guest.php:129
+#: modules/Servicedomain/Api/Guest.php:121
 msgid "TLD is not active."
 msgstr "域名后缀未启用"
 
-#: modules/Servicedomain/Api/Guest.php:132
+#: modules/Servicedomain/Api/Guest.php:124
 msgid "Domain can not be transferred."
 msgstr "域名不能转移。"
 
@@ -1899,69 +1907,69 @@ msgstr "域名 :domain 转移"
 msgid "Invalid domain action."
 msgstr "无效的域名操作。"
 
-#: modules/Servicedomain/Service.php:60 modules/Servicedomain/Service.php:77
-#: modules/Servicedomain/Service.php:108
+#: modules/Servicedomain/Service.php:60 modules/Servicedomain/Service.php:78
+#: modules/Servicedomain/Service.php:110
 msgid "Order data must contain :field configuration field"
 msgstr "订单数据必须包含 :field 配置字段"
 
-#: modules/Servicedomain/Service.php:65 modules/Servicedomain/Service.php:82
-#: modules/Servicedomain/Service.php:113 modules/Servicedomain/Service.php:548
+#: modules/Servicedomain/Service.php:66 modules/Servicedomain/Service.php:84
+#: modules/Servicedomain/Service.php:116 modules/Servicedomain/Service.php:552
 msgid "Domain name :domain is invalid"
 msgstr "域名 :domain 无效"
 
-#: modules/Servicedomain/Service.php:98
+#: modules/Servicedomain/Service.php:100
 msgid ":domain can not be transferred!"
 msgstr ":domain 无法转移！"
 
-#: modules/Servicedomain/Service.php:130
+#: modules/Servicedomain/Service.php:133
 msgid ":tld can be registered for at least :years years"
 msgstr ":tld 可以注册至少 :year 年"
 
-#: modules/Servicedomain/Service.php:135
+#: modules/Servicedomain/Service.php:138
 msgid ":domain is already registered!"
 msgstr ":domain 域名已被注册！"
 
-#: modules/Servicedomain/Service.php:163
+#: modules/Servicedomain/Service.php:166
 msgid "Default domain nameservers are not configured"
 msgstr "域名未设置默认的DNS服务器"
 
-#: modules/Servicedomain/Service.php:364
+#: modules/Servicedomain/Service.php:367
 msgid "Nameserver 1 is required"
 msgstr "第1个DNS服务器是必填的"
 
-#: modules/Servicedomain/Service.php:367
+#: modules/Servicedomain/Service.php:370
 msgid "Nameserver 2 is required"
 msgstr "第2个DNS服务器是必填的"
 
-#: modules/Servicedomain/Service.php:521 modules/Servicedomain/Service.php:542
+#: modules/Servicedomain/Service.php:524 modules/Servicedomain/Service.php:545
 msgid "Domain name is invalid"
 msgstr "域名无效"
 
-#: modules/Servicedomain/Service.php:525
+#: modules/Servicedomain/Service.php:528
 msgid "Domain can not be transferred"
 msgstr "域名不能转移"
 
-#: modules/Servicedomain/Service.php:552
+#: modules/Servicedomain/Service.php:556
 msgid "Domain can not be registered"
 msgstr "域名不能注册"
 
-#: modules/Servicedomain/Service.php:947
+#: modules/Servicedomain/Service.php:951
 msgid "Domain registrar :adapter was not found"
 msgstr "未找到域名注册商 :adapter"
 
-#: modules/Servicedomain/Service.php:952
+#: modules/Servicedomain/Service.php:956
 msgid "Registrar :adapter was not found"
 msgstr "未找到注册商 :adapter"
 
-#: modules/Servicedomain/Service.php:964
+#: modules/Servicedomain/Service.php:968
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr "注册商适配器 :adapter 应使用 Registrar_AdapterAbstract"
 
-#: modules/Servicedomain/Service.php:1023
+#: modules/Servicedomain/Service.php:1027
 msgid "Can not remove registrar which has domains"
 msgstr "无法移除已有域名注册的注册商"
 
-#: modules/Servicedownloadable/Api/Admin.php:38
+#: modules/Servicedownloadable/Api/Admin.php:35
 msgid "File was not uploaded"
 msgstr "文件未上传"
 
@@ -1974,7 +1982,7 @@ msgstr "上传文件出错"
 msgid "File can not be downloaded at the moment. Please contact support"
 msgstr "文件目前无法下载。请联系客服。"
 
-#: modules/Servicehosting/Api/Admin.php:29
+#: modules/Servicehosting/Api/Admin.php:26
 msgid "plan_id is missing"
 msgstr "缺少 plan_id"
 
@@ -2026,31 +2034,31 @@ msgstr "域名的后缀或次级后缀缺失"
 msgid "Account password is missing or is invalid"
 msgstr "账号的密码缺失或无效"
 
-#: modules/Servicehosting/Service.php:716
+#: modules/Servicehosting/Service.php:717
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "无效的服务器管理器。服务器配置不正确。"
 
-#: modules/Servicehosting/Service.php:736
+#: modules/Servicehosting/Service.php:737
 msgid "Server manager :adapter is invalid"
 msgstr "服务器管理器 :adapter 无效"
 
-#: modules/Servicehosting/Service.php:776
+#: modules/Servicehosting/Service.php:777
 msgid "Can not remove hosting plan which has active accounts"
 msgstr "无法删除有有效账户的虚拟主机套餐"
 
-#: modules/Servicehosting/Service.php:961
+#: modules/Servicehosting/Service.php:962
 msgid "Could not find main domain product"
 msgstr "未找到产品的主域名"
 
-#: modules/Servicelicense/Service.php:117
+#: modules/Servicelicense/Service.php:118
 msgid "License plugin :plugin was not found"
 msgstr "找不到授权插件 :plugin"
 
-#: modules/Servicelicense/Service.php:121
+#: modules/Servicelicense/Service.php:122
 msgid "License plugin do not have generate method"
 msgstr "授权插件没有生成 method"
 
-#: modules/Servicelicense/Service.php:132
+#: modules/Servicelicense/Service.php:133
 msgid "Maximum number of iterations reached while generating license key"
 msgstr "生成授权码时达到最大的迭代次数"
 
@@ -2082,16 +2090,16 @@ msgstr "您的电子邮箱列在 Stop Forum Spam 数据库的黑名单中"
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "您的 IP 地址列在 Stop Forum Spam 数据库的黑名单中"
 
-#: modules/Staff/Api/Guest.php:35
+#: modules/Staff/Api/Guest.php:32
 msgid "Administrator account already exists"
 msgstr "管理员账号已存在"
 
-#: modules/Staff/Api/Guest.php:87
+#: modules/Staff/Api/Guest.php:79
 msgid "You are not allowed to login to admin area from :ip address"
 msgstr "不允许从 :ip 登录到管理后台"
 
-#: modules/Staff/Api/Guest.php:98 modules/Staff/Api/Guest.php:142
-#: modules/Staff/Controller/Admin.php:116
+#: modules/Staff/Api/Guest.php:91 modules/Staff/Api/Guest.php:136
+#: modules/Staff/Controller/Admin.php:118
 msgid "Password reset has been disabled"
 msgstr "密码重置的功能已被禁用"
 
@@ -2107,27 +2115,27 @@ msgstr "请检查您的登录信息"
 msgid "This administrator account is protected and can not be removed"
 msgstr "此管理员账号保留使用，不能删除"
 
-#: modules/Staff/Service.php:476
+#: modules/Staff/Service.php:479
 msgid "Staff member with email :email is already registered"
 msgstr "员工的邮箱 :email 已注册"
 
-#: modules/Staff/Service.php:562
+#: modules/Staff/Service.php:564
 msgid "Administrators group can not be removed"
 msgstr "无法删除管理员群组"
 
-#: modules/Staff/Service.php:570
+#: modules/Staff/Service.php:572
 msgid "Can not remove group which has staff members"
 msgstr "无法删除拥有员工的群组"
 
-#: modules/Support/Api/Client.php:133 modules/Support/Service.php:247
+#: modules/Support/Api/Client.php:124 modules/Support/Service.php:247
 msgid "Ticket not found"
 msgstr "工单未找到"
 
-#: modules/Support/Api/Client.php:137
+#: modules/Support/Api/Client.php:128
 msgid "Ticket can not be reopened."
 msgstr "不能重新打开工单。"
 
-#: modules/Support/Api/Guest.php:40
+#: modules/Support/Api/Guest.php:35
 msgid "Please enter your message"
 msgstr "请输入您的留言"
 
@@ -2175,19 +2183,19 @@ msgstr "订单 ID 不存在"
 msgid "You must provide both an order ID and a new product ID in order to request an upgrade."
 msgstr "如需升级，请同时提供订单和产品的 ID 。"
 
-#: modules/Support/Service.php:887
+#: modules/Support/Service.php:888
 msgid "Sorry, but \":product\" is not allowed to be upgraded to \":upgrade\""
 msgstr "抱歉，\":product\" 不能升级到 \":upgrade\""
 
-#: modules/Support/Service.php:893
+#: modules/Support/Service.php:894
 msgid "We have already received this request."
 msgstr "我们已经收到了这项请求。"
 
-#: modules/Support/Service.php:968
+#: modules/Support/Service.php:969
 msgid "Identity is invalid"
 msgstr "身份无效"
 
-#: modules/Support/Service.php:997
+#: modules/Support/Service.php:998
 msgid "Public ticket not found"
 msgstr "未找到工单"
 
@@ -2319,23 +2327,23 @@ msgstr "缺少参数"
 msgid "Invalid parameter name, received: param_"
 msgstr "无效的参数名称，收到：param_"
 
-#: modules/System/Service.php:438
+#: modules/System/Service.php:441
 msgid "Parameter :param does not exist"
 msgstr "参数 :param 不存在"
 
-#: modules/System/Service.php:1331
+#: modules/System/Service.php:1334
 msgid "Country :code phone code is not registered"
 msgstr "国家电话区号 :code 未注册"
 
-#: modules/Theme/Controller/Admin.php:63
+#: modules/Theme/Controller/Admin.php:61
 msgid "Theme \":name\" assets folder is not writable. Files can not be uploaded and settings can not be saved. Set folder permissions to 777"
 msgstr "主题 “:name” 的 assets 目录不可写入。无法上传和保存文件。请尝试将目录权限设为777"
 
-#: modules/Theme/Controller/Admin.php:99
+#: modules/Theme/Controller/Admin.php:97
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
 msgstr "主题 “:name” 的 assets 目录不可写入。请尝试将目录 :folder 的权限设为777"
 
-#: modules/Theme/Controller/Admin.php:103
+#: modules/Theme/Controller/Admin.php:101
 msgid "Theme \":name\" is not configurable"
 msgstr "主题 “:name” 无法配置"
 
@@ -2396,7 +2404,7 @@ msgstr "IP"
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:42
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:123
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:159
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
 #: modules/Page/html_client/mod_page_signup.html.twig:125
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:155
@@ -2949,7 +2957,7 @@ msgstr "新建组"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:144
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:112
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:163
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:76
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:74
 #: modules/Page/html_client/mod_page_signup.html.twig:60
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:186
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:134
@@ -2982,7 +2990,7 @@ msgstr "地址 2"
 #: modules/Client/html_admin/mod_client_settings.html.twig:82
 #: modules/Client/html_client/mod_client_profile.html.twig:155
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:437
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:149
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
 #: modules/Page/html_client/mod_page_signup.html.twig:115
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
@@ -2996,7 +3004,7 @@ msgstr "城市"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:443
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:129
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:174
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:172
 #: modules/Page/html_client/mod_page_signup.html.twig:140
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
@@ -3039,7 +3047,7 @@ msgstr "币种"
 #: modules/Client/html_admin/mod_client_manage.html.twig:405
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:23
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:110
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:108
 #: modules/Page/html_client/mod_page_login.html.twig:35
 #: modules/Page/html_client/mod_page_login.html.twig:37
 #: modules/Page/html_client/mod_page_signup.html.twig:184
@@ -3182,7 +3190,7 @@ msgstr "API密钥"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:159
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:125
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:178
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:129
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
 #: modules/Page/html_client/mod_page_signup.html.twig:95
 #: modules/System/html_admin/mod_system_settings.html.twig:72
 msgid "Address"
@@ -3441,7 +3449,7 @@ msgid "Password changed"
 msgstr "密码已更改"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:412
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:118
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:116
 #: modules/Page/html_client/mod_page_signup.html.twig:192
 msgid "Password confirm"
 msgstr "确认密码"
@@ -3690,7 +3698,7 @@ msgstr "必填栏"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:75
 #: modules/Client/html_client/mod_client_profile.html.twig:70
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:65
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:63
 #: modules/Page/html_client/mod_page_signup.html.twig:49
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:174
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:120
@@ -3703,7 +3711,7 @@ msgid "Gender"
 msgstr "性别"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:78
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:86
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:84
 #: modules/Page/html_client/mod_page_signup.html.twig:70
 msgid "Birthday"
 msgstr "生日"
@@ -3809,7 +3817,7 @@ msgstr "更改您的个人资料图片。Gravatar图像的更新可能不会立�
 
 #: modules/Client/html_client/mod_client_profile.html.twig:54
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:16
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:48
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:46
 #: modules/Page/html_client/mod_page_login.html.twig:28
 #: modules/Page/html_client/mod_page_password-reset.html.twig:30
 #: modules/Page/html_client/mod_page_signup.html.twig:31
@@ -3817,7 +3825,7 @@ msgid "Email Address"
 msgstr "电邮地址"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:62
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:56
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:54
 #: modules/Page/html_client/mod_page_signup.html.twig:39
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:168
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:113
@@ -3849,25 +3857,25 @@ msgid "Phone Country Code"
 msgstr "手机号国家代码"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:131
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:193
 #: modules/Page/html_client/mod_page_signup.html.twig:161
 msgid "Phone Number"
 msgstr "电话号码"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:147
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:139
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
 #: modules/Page/html_client/mod_page_signup.html.twig:105
 msgid "Address 2"
 msgstr "地址2"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:166
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:162
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:160
 #: modules/Page/html_client/mod_page_signup.html.twig:128
 msgid "-- Select country --"
 msgstr "-- 选择国家/地区 --"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:185
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:185
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:183
 #: modules/Page/html_client/mod_page_signup.html.twig:151
 msgid "Zip/Postal Code"
 msgstr "邮政编码"
@@ -6649,35 +6657,29 @@ msgstr "必须填写邮箱。"
 msgid "You must fill in your password."
 msgstr "必须填写密码。"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:27
-#: modules/Page/html_client/mod_page_login.html.twig:40
-#: modules/Staff/html_admin/mod_staff_login.html.twig:71
-msgid "Remember me"
-msgstr "自动登录"
-
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:34
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:32
 #: modules/Page/html_client/mod_page_login.html.twig:3
-#: modules/Page/html_client/mod_page_login.html.twig:47
+#: modules/Page/html_client/mod_page_login.html.twig:42
 msgid "Log in"
 msgstr "登录"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:36
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:34
 msgid "Or register"
 msgstr "或注册"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:96
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
 #: modules/Page/html_client/mod_page_signup.html.twig:80
 msgid "You are"
 msgstr "您是"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:223
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:221
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
 #: themes/huraga/html/layout_default.html.twig:121
 #: themes/huraga/html/layout_default.html.twig:227
 msgid "Register"
 msgstr "注册"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:226
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:224
 msgid "Or Login"
 msgstr "或登录"
 
@@ -6735,13 +6737,13 @@ msgstr "返回首页"
 msgid "Login"
 msgstr "登录"
 
-#: modules/Page/html_client/mod_page_login.html.twig:58
+#: modules/Page/html_client/mod_page_login.html.twig:53
 #: modules/Page/html_client/mod_page_password-reset.html.twig:47
 #: modules/Page/html_client/mod_page_signup.html.twig:18
 msgid "Signup"
 msgstr "注册"
 
-#: modules/Page/html_client/mod_page_login.html.twig:62
+#: modules/Page/html_client/mod_page_login.html.twig:57
 msgid "Forgot password?"
 msgstr "忘记密码?"
 
@@ -6756,8 +6758,9 @@ msgid "Enter your email to reset password. You will receive new password after r
 msgstr "输入您的电子邮件重置密码。重置链接确认后，您将收到新密码。"
 
 #: modules/Page/html_client/mod_page_password-reset.html.twig:62
-msgid "Password reset confirmation email was sent"
-msgstr "已向您发送了一封密码重置确认邮件。"
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:18
+msgid "A password reset confirmation email will be sent to you if we found an account with that email address."
+msgstr ""
 
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:3
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:17
@@ -8563,7 +8566,7 @@ msgstr "登入"
 msgid "Forgot your password?"
 msgstr "忘记了密码？"
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:74
+#: modules/Staff/html_admin/mod_staff_login.html.twig:70
 msgid "Sign in"
 msgstr "登录"
 
