@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2023-08-09 23:06-0700\n"
-"PO-Revision-Date: 2023-08-10 08:19\n"
+"PO-Revision-Date: 2023-08-13 08:27\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: di.php:327
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
-msgstr ""
+msgstr "Görünüşe göre \"php intl\" uzantısı etkin olmadan FOSSBilling'i kullanmaya çalışıyorsunuz. FOSSBilling, \"intl\" uzantısı için bir çoklu doldurma içerir, ancak :locale'i desteklemez. Lütfen \"intl\" uzantısını etkinleştirin."
 
 #: index.php:50 library/Box/App.php:381 library/Box/AppClient.php:58
 msgid "Page :url not found"
@@ -34,7 +34,7 @@ msgstr "Ulaşmaya çalıştığınız :url sayfası bulunamadı"
 
 #: index.php:57
 msgid "HTTP Error :err_code occurred while attempting to load :url"
-msgstr ""
+msgstr ":url adresi yüklenmeye çalışılırken \"HTTP Hata Kodu :err_code\" oluştu"
 
 #: library/Api/Abstract.php:61
 msgid "Mod object is not set for the service"
@@ -62,7 +62,7 @@ msgstr "Api sınıfı Api_Abstract'ın bir örneği olmalıdır"
 
 #: library/Api/Handler.php:106
 msgid ":type API call :method does not exist in module :module"
-msgstr ""
+msgstr ":type API call :method, :module modülünde mevcut değil"
 
 #: library/Box/App.php:352
 msgid "The system is undergoing maintenance. Please try again later"
@@ -74,7 +74,7 @@ msgstr "Sayfa bulunamadı"
 
 #: library/Box/Crypt.php:20
 msgid "The PHP openssl extension must be enabled on your server"
-msgstr ""
+msgstr "PHP openssl uzantısı sunucunuzda etkinleştirilmelidir"
 
 #: library/Box/Log.php:72
 msgid "Missing log message"
@@ -90,15 +90,15 @@ msgstr ":mod modülü manifest dosyası eksik"
 
 #: library/Box/Mod.php:77
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
-msgstr ""
+msgstr ":mod modülü bildirim (manifest) dosyası geçersiz. Dosya söz dizimini (syntax) ve izinleri kontrol edin."
 
 #: library/Box/Mod.php:118
 msgid "Module :mod does not have service class"
-msgstr ""
+msgstr ":mod modülü hizmet sınıfına sahip değil"
 
 #: library/Box/Mod.php:136
 msgid "Module :mod Client controller class was not found"
-msgstr "Module :mod Client controller sınıfı bulunamadı"
+msgstr ":mod modülü Müşteri kontrolcüsü (Client Controller) sınıfı bulunamadı"
 
 #: library/Box/Mod.php:206
 msgid "Core module can not be updated"
@@ -106,12 +106,12 @@ msgstr "Çekirdek modül güncellenemiyor"
 
 #: library/Box/Pagination.php:44 library/Box/Pagination.php:76
 msgid "Invalid page number"
-msgstr ""
+msgstr "Geçersiz sayfa numarası"
 
 #: library/Box/Pagination.php:47 library/Box/Pagination.php:79
 #: modules/Client/Service.php:182
 msgid "Invalid per page number"
-msgstr ""
+msgstr "Sayfa numarası başına geçersiz"
 
 #: library/Box/Period.php:44
 msgid "Invalid period code. Period definition must be 2 chars length"
@@ -123,7 +123,7 @@ msgstr "Periyot hatası. :unit adlı birim tanımlı değil"
 
 #: library/Box/Period.php:63
 msgid "Invalid period quantity :qty for unit :unit. Allowed range is from :from to :to"
-msgstr ""
+msgstr ":unit için geçersiz dönem miktarı :qty. İzin verilen aralık :from -> :to"
 
 #: library/Box/Period.php:83
 msgid "Every week"
@@ -161,30 +161,30 @@ msgstr "3 yılda bir"
 #: library/Box/Period.php:123
 msgid "Every :number day"
 msgid_plural "Every :number days"
-msgstr[0] ":number günde bir"
-msgstr[1] ""
+msgstr[0] "Her :number günde bir"
+msgstr[1] "Her :number günde bir"
 
 #: library/Box/Period.php:124
 msgid "Every :number week"
 msgid_plural "Every :number weeks"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Her :number haftada bir"
+msgstr[1] "Her :number haftada bir"
 
 #: library/Box/Period.php:125
 msgid "Every :number month"
 msgid_plural "Every :number months"
-msgstr[0] ""
-msgstr[1] ":number ayda bir"
+msgstr[0] "Her :number ayda bir"
+msgstr[1] "Her :number ayda bir"
 
 #: library/Box/Period.php:126
 msgid "Every :number year"
 msgid_plural "Every :number years"
-msgstr[0] ""
-msgstr[1] ":number yılda bir"
+msgstr[0] "Her :number yılda bir"
+msgstr[1] "Her :number yılda bir"
 
 #: library/Box/Period.php:127 library/Box/Period.php:169
 msgid "Unit not defined"
-msgstr ""
+msgstr "Birim (Unit) tanımlanmadı"
 
 #: library/Box/Period.php:152
 msgid "Unable to get the number of months for :unit"
@@ -225,19 +225,19 @@ msgstr "on yıl"
 #: library/Box/TwigLoader.php:24 library/Box/TwigLoader.php:28
 #: library/Box/TwigLoader.php:32
 msgid "Missing :missing: param for Box_TwigLoader"
-msgstr ""
+msgstr "Box_TwigLoader için eksik :missing: parametre"
 
 #: library/FOSSBilling/CentralAlerts.php:114
 msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
-msgstr "Merkezi uyarı sisteminden uyarı mesajları alınamıyor. Daha fazla bilgi için hata loglarına bakınız."
+msgstr "Merkezi Uyarı Sisteminden uyarılar alınamıyor. Daha fazla bilgi için hata günlüğüne bakın."
 
 #: library/FOSSBilling/CentralAlerts.php:122
 msgid "Invalid response from the FOSSBilling Central Alerts System."
-msgstr "FOSSBilling merkezi uyarı sisteminden geçersiz cevap."
+msgstr "FOSSBilling Merkezi Uyarı Sisteminden geçersiz yanıt."
 
 #: library/FOSSBilling/ErrorPage.php:42
 msgid "Unable to find Composer Packages"
-msgstr "Composer paketleri bulunamadı"
+msgstr "Composer Paketleri bulunamadı"
 
 #: library/FOSSBilling/ErrorPage.php:45
 msgid "View more info on the composer website"
@@ -245,11 +245,11 @@ msgstr "Daha fazla bilgi içi Composer web sitesini ziyaret edin."
 
 #: library/FOSSBilling/ErrorPage.php:50
 msgid "For security reasons, you must delete the installation directory before you can use FOSSBilling. :code"
-msgstr "Daha fazla bilgi içi Composer web sitesini ziyaret edin"
+msgstr "Güvenlik nedeniyle, FOSSBilling'i kullanmadan önce kurulum dizinini silmelisiniz. :code"
 
 #: library/FOSSBilling/ErrorPage.php:52
 msgid "View more info on the Getting Started guide"
-msgstr "Composer web sitesinden daha fazla bilgi edinebilirsiniz"
+msgstr "Başlagıç klavuzundan daha fazla bilgi görüntüleyebilirsiniz"
 
 #: library/FOSSBilling/ErrorPage.php:57
 msgid "Your Configuration is Empty"
@@ -257,31 +257,31 @@ msgstr "Konfigürasyon dosyanız boş"
 
 #: library/FOSSBilling/ErrorPage.php:58
 msgid "Your FOSSBilling configuration seems to either be empty or non-existent. You may need to re-install FOSSBilling, or re-create the :code file based on the example config."
-msgstr "FOSSBilling konfigürasyon dosyanız boş veya hiç oluşturulmamış görünüyor. FOSSBilling'i yeniden kurmanız veya :code örnek konfigürasyon dosyasını kullanarka yeni bir tane oluşturmanız gerekiyor."
+msgstr "FOSSBilling yapılandırma dosyanız boş veya hiç oluşturulmamış görünüyor. FOSSBilling'i yeniden kurmanız veya :code örnek yapılandırma dosyasını kullanarak yeni bir tane oluşturmanız gerekiyor."
 
 #: library/FOSSBilling/ErrorPage.php:60
 msgid "See the example config."
-msgstr "Örnek konfigürasyon doyasını görüntüle."
+msgstr "Örnek yapılandırma dosyasına bakın."
 
 #: library/FOSSBilling/ErrorPage.php:65
 msgid "Migration is required"
-msgstr ""
+msgstr "Taşıma gerekli"
 
 #: library/FOSSBilling/ErrorPage.php:66
 msgid "Legacy BoxBilling or FOSSBilling preview files have been found. The file structure within FOSSBilling, along with the configuration format, has since changed. :lineBreak See the migration guide for assistance in migrating to the latest version of FOSSBilling."
-msgstr ""
+msgstr "Eski BoxBilling veya FOSSBilling önizleme dosyaları bulundu. FOSSBilling içindeki dosya yapısı, yapılandırma formatı ile birlikte değişti. :lineBreak FOSSBilling'in en son sürümüne geçiş konusunda yardım için geçiş kılavuzuna bakın."
 
 #: library/FOSSBilling/ErrorPage.php:68
 msgid "Check the migration guide."
-msgstr ""
+msgstr "Geçiş kılavuzunu kontrol edin."
 
 #: library/FOSSBilling/ErrorPage.php:73
 msgid "Missing .htaccess file"
-msgstr ".htaccess dsoyası bulunamadı"
+msgstr ".htaccess dosyası bulunamadı"
 
 #: library/FOSSBilling/ErrorPage.php:74
 msgid "You appear to be running an Apache or LiteSpeed based webserver without a valid :code file. Please create one using the default FOSSBilling .htaccess file."
-msgstr ""
+msgstr "Geçerli bir :code dosyası olmadan Apache veya LiteSpeed tabanlı bir web sunucusu çalıştırıyor gibisiniz. Lütfen varsayılan FOSSBilling .htaccess dosyasını kullanarak bir tane oluşturun."
 
 #: library/FOSSBilling/ErrorPage.php:76
 msgid "Check the default .htaccess"
@@ -289,19 +289,19 @@ msgstr "Varsayılan .htaccess dosyasını kontrol ediniz"
 
 #: library/FOSSBilling/ErrorPage.php:106
 msgid "An error has occurred."
-msgstr ""
+msgstr "Bir hata oluştu."
 
 #: library/FOSSBilling/ErrorPage.php:108
 msgid "View the FOSSBilling documentation"
-msgstr "FOSSBilling dokümantasyonunu görüntüle"
+msgstr "FOSSBilling dokümanını görüntüleyin"
 
 #: library/FOSSBilling/ErrorPage.php:111
 msgid "None"
-msgstr ""
+msgstr "Hiçbiri"
 
 #: library/FOSSBilling/ErrorPage.php:140
 msgid "You've received a generic error message: :errorMessage"
-msgstr "Genel bir hata mesajı alındı: :errorMessage"
+msgstr "Genel bir hata mesajı aldınız: :errorMessage"
 
 #: library/FOSSBilling/ErrorPage.php:256
 msgid "Error Code: #:number"
@@ -313,19 +313,19 @@ msgstr "Bileşen: :category"
 
 #: library/FOSSBilling/ErrorPage.php:262 library/FOSSBilling/ErrorPage.php:291
 msgid "Show original message"
-msgstr ""
+msgstr "Orijinal mesajı göster"
 
 #: library/FOSSBilling/ErrorPage.php:287
 msgid "Show specialized message"
-msgstr ""
+msgstr "Özel mesajı göster"
 
 #: library/FOSSBilling/ExtensionManager.php:53
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
-msgstr "FOSSBilling uzantı klasöründen uzantı ile ilgili bilgi alınamadı."
+msgstr "FOSSBilling uzantı dizininden uzantı ayrıntıları alınamadı."
 
 #: library/FOSSBilling/ExtensionManager.php:73
 msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
-msgstr ""
+msgstr "Uzantının sürümleri FOSSBilling uzantı dizininden alınamıyor."
 
 #: library/FOSSBilling/ExtensionManager.php:94
 msgid "Unable to fetch the latest release of the extension."
@@ -333,27 +333,27 @@ msgstr "Uzantının son sürüm bilgisi alınamadı."
 
 #: library/FOSSBilling/ExtensionManager.php:163
 msgid "Unable to connect to the FOSSBilling extension directory."
-msgstr ""
+msgstr "FOSSBilling uzantı dizinine bağlanılamıyor."
 
 #: library/FOSSBilling/ExtensionManager.php:171
 msgid "Invalid response from the FOSSBilling extension directory."
-msgstr ""
+msgstr "FOSSBilling uzantı dizininden geçersiz yanıt."
 
 #: library/FOSSBilling/Mail.php:139
 msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
-msgstr ""
+msgstr "Sağlanan öncelik (:priority) geçersiz. Lütfen 1 ile 5 arasında bir tamsayı girin veya önceden tanımlanmış symfony sabitlerini kullanın."
 
 #: library/FOSSBilling/Mail.php:157
 msgid "FOSSBilling requires the proc_open PHP function to be enabled when using the sendmail transport"
-msgstr "FOSSBilling sendmail iletimi aktif olduğunda proc_open PHP fonksiyonun olmasını bulunmasını gerektirir"
+msgstr "FOSSBilling, \"sendmail\" aktarımı kullanılırken \"proc_open\" PHP fonksiyonun etkinleştirilmesini gerektirir"
 
 #: library/FOSSBilling/Mail.php:165
 msgid "A Sendgrid API key is required to send emails via Sendgrid"
-msgstr "Sendgrid ile eposta gönderimi için Sendgrid API anahtarı gerekmektedir"
+msgstr "Sendgrid aracılığıyla e-posta göndermek için bir Sendgrid API anahtarı gerekir"
 
 #: library/FOSSBilling/Mail.php:171
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
-msgstr ""
+msgstr "E-posta gönderilemiyor: Özel bir DSN olmadan 'Özel' taşıma yöntemi seçildi"
 
 #: library/FOSSBilling/Mail.php:176
 msgid "Unknown mail transport: :transport"
@@ -361,30 +361,30 @@ msgstr "Bilinmeyen posta aktarımı: :transport"
 
 #: library/FOSSBilling/Mail.php:184
 msgid "Failed to send email via :transport with the exception :e"
-msgstr ""
+msgstr ":e istisnası dışında :transport aracılığıyla e-posta gönderilemedi"
 
 #: library/FOSSBilling/Mail.php:201
 msgid "SMTP host or port is not configured"
-msgstr ""
+msgstr "SMTP sunucu veya bağlantı noktası yapılandırılmamış"
 
 #: library/FOSSBilling/Tools.php:72 library/FOSSBilling/Tools.php:249
 msgid "Service class :class was not found in :path"
-msgstr ""
+msgstr "Hizmet sınıfı :class :path içinde bulunamadı"
 
 #: library/FOSSBilling/Tools.php:279
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
-msgstr ""
+msgstr "E-posta adresi"
 
 #: library/FOSSBilling/Tools.php:280 library/FOSSBilling/Validate.php:107
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
-msgstr ""
+msgstr ":friendlyName: geçersiz"
 
 #: library/FOSSBilling/Update.php:104
 msgid "Failed to download the latest version information. Further details are available in the error log."
-msgstr ""
+msgstr "En son sürüm bilgileri indirilemedi. Daha fazla ayrıntı hata günlüğünde mevcuttur."
 
 #: library/FOSSBilling/Update.php:172 modules/System/Api/Admin.php:168
 msgid "You have latest version of FOSSBilling. You do not need to update."
@@ -392,23 +392,23 @@ msgstr "En güncel FOSSBilling sürümüne sahipsiniz. Güncellemenize gerek yok
 
 #: library/FOSSBilling/Update.php:194
 msgid "Failed to download the update archive. Further details are available in the error log."
-msgstr ""
+msgstr "Güncelleme arşivi indirilemedi. Daha fazla ayrıntı hata günlüğünde mevcuttur."
 
 #: library/FOSSBilling/Update.php:207 modules/Extension/Service.php:451
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
-msgstr ""
+msgstr "Dosya çıkarılamadı, lütfen dosya ve klasör izinlerini kontrol edin. Daha fazla ayrıntı hata günlüğünde mevcuttur."
 
 #: library/FOSSBilling/Update.php:225
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
-msgstr ""
+msgstr "Önbellek temizlenemiyor ve/veya yükleme klasörü kaldırılamıyor. Daha fazla ayrıntı hata günlüğünde mevcuttur."
 
 #: library/FOSSBilling/UpdatePatcher.php:52
 msgid "Unable to load existing configuration"
-msgstr ""
+msgstr "Mevcut yapılandırma yüklenemiyor"
 
 #: library/FOSSBilling/UpdatePatcher.php:59
 msgid "Unable to create backup of configuration file"
-msgstr ""
+msgstr "Yapılandırma dosyasının yedeği oluşturulamıyor"
 
 #: library/FOSSBilling/UpdatePatcher.php:99
 msgid "Error when writing updated configuration file."
@@ -437,39 +437,39 @@ msgstr "Şifrenizde en az bir büyük harf olmalıdır."
 #: library/FOSSBilling/Validate.php:106
 #: modules/Client/html_client/mod_client_profile.html.twig:78
 msgid "Birthdate"
-msgstr ""
+msgstr "Doğum tarihi"
 
 #: library/Model/ProductDomainTable.php:217
 msgid "Could not determine domain price. Domain action is missing"
-msgstr ""
+msgstr "Domain fiyatı belirlenemedi. Domain eylemi eksik"
 
 #: library/Model/ProductDomainTable.php:234
 msgid "Unknown TLD. Could not determine registration price"
-msgstr ""
+msgstr "Bilinmeyen TLD. Kayıt fiyatı belirlenemedi"
 
 #: library/Model/ProductDomainTable.php:255
 msgid "Domain product can not be removed."
-msgstr ""
+msgstr "Domain ürünü kaldırılamaz."
 
 #: library/Model/ProductTable.php:61
 msgid "Unknown period selected "
-msgstr ""
+msgstr "Bilinmeyen dönem seçildi "
 
 #: library/Model/ProductTable.php:73
 msgid "Product pricing could not be determined. "
-msgstr ""
+msgstr "Ürün fiyatı belirlenemedi. "
 
 #: library/Model/ProductTable.php:105
 msgid "Unknown period selected for setup price"
-msgstr ""
+msgstr "Kurulum fiyatı için bilinmeyen dönem seçildi"
 
 #: library/Model/ProductTable.php:129
 msgid "Product :id payment type is recurrent, but period was not selected"
-msgstr ""
+msgstr ":id hizmeti ödeme türü 'Yinelenen', fakat dönem seçilmedi"
 
 #: library/Model/ProductTable.php:141
 msgid "Unknown Period selected for price"
-msgstr ""
+msgstr "Fiyat için Bilinmeyen Dönem seçildi"
 
 #: library/Payment/Adapter/AliPay.php:16 library/Payment/Adapter/AliPay.php:20
 #: library/Payment/Adapter/AliPay.php:24
@@ -481,16 +481,16 @@ msgstr ""
 #: library/Payment/Adapter/TwoCheckout.php:34
 #: library/Payment/Adapter/WebMoney.php:42
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
-msgstr ""
+msgstr "\":pay_gateway\" ödeme yöntemi tam olarak yapılandırılmamış. Lütfen :missing yapılandırın"
 
 #: library/Payment/Adapter/AliPay.php:114
 msgid "Error getting service for contract"
-msgstr ""
+msgstr "Sözleşme için hizmet alınırken hata oluştu"
 
 #: library/Payment/Adapter/AliPay.php:148
 #: library/Payment/Adapter/Interkassa.php:124
 msgid "reccurent payments"
-msgstr ""
+msgstr "yinelenen ödemeler"
 
 #: library/Payment/Adapter/AliPay.php:148
 #: library/Payment/Adapter/Interkassa.php:124
@@ -506,17 +506,17 @@ msgstr ""
 #: library/Server/Manager/Hestia.php:388 library/Server/Manager/Plesk.php:55
 #: library/Server/Manager/Plesk.php:202 library/Server/Manager/Plesk.php:229
 msgid ":type: does not support :action:"
-msgstr ""
+msgstr ":type: :action: 'ı desteklemiyor"
 
 #: library/Payment/Adapter/ClientBalance.php:59
 msgid "Not enough in balance"
-msgstr ""
+msgstr "Yetersiz bakiye"
 
 #: library/Payment/Adapter/ClientBalance.php:64
 #: library/Payment/Adapter/ClientBalance.php:93
 #: library/Payment/Adapter/ClientBalance.php:127
 msgid "It is forbidden to pay a deposit invoice with this gateway"
-msgstr ""
+msgstr "Bu ödeme yöntemi ile bir depozito faturası ödemek yasaktır"
 
 #: library/Payment/Adapter/ClientBalance.php:83
 #: library/Payment/Adapter/Interkassa.php:175
@@ -524,75 +524,75 @@ msgstr ""
 #: library/Payment/Adapter/TwoCheckout.php:122
 #: library/Payment/Adapter/WebMoney.php:100
 msgid "IPN is invalid"
-msgstr ""
+msgstr "IPN geçersiz"
 
 #: library/Payment/Adapter/ClientBalance.php:121
 msgid "ClientBalance gateway is not enabled"
-msgstr ""
+msgstr "ClientBalance ağ geçidi etkin değil"
 
 #: library/Payment/Adapter/Interkassa.php:216
 #: library/Payment/Adapter/PayPalEmail.php:121
 #: library/Payment/Adapter/TwoCheckout.php:171
 #: library/Payment/Adapter/WebMoney.php:135
 msgid "Cannot process duplicate IPN"
-msgstr ""
+msgstr "Tekrarlanan IPN işlenemiyor"
 
 #: library/Payment/Adapter/Onebip.php:111
 msgid "This feature is unimplemented"
-msgstr ""
+msgstr "Bu özellik uygulanmamıştır"
 
 #: library/Payment/Adapter/PayPalEmail.php:259
 msgid "Redirecting to PayPal.com"
-msgstr ""
+msgstr "PayPal.com'a Yönlendiriliyorsunuz"
 
 #: library/Payment/Adapter/PayPalEmail.php:302
 #: library/Payment/Adapter/Stripe.php:101 modules/Invoice/Service.php:1346
 msgid "Payment for invoice :serie:id [:title]"
-msgstr ""
+msgstr ":serie:id [:title] faturası için ödeme"
 
 #: library/Payment/Adapter/Stripe.php:103 modules/Invoice/Service.php:1348
 msgid "Payment for invoice :serie:id"
-msgstr ""
+msgstr ":serie:id faturası için ödeme"
 
 #: library/Payment/Adapter/Stripe.php:167
 msgid "There was an error when processing the transaction"
-msgstr ""
+msgstr "İşlem gerçekleştirilirken bir hata oluştu"
 
 #: library/Payment/Adapter/Stripe.php:274
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_pub_key\" at \"Configuration -> Payments\"."
-msgstr ""
+msgstr "Ödeme ağ geçidi \"Stripe\" düzgün yapılandırılmamış. Lütfen \"Yapılandırma -> Ödemeler\" bölümünde \"test_pub_key\" yapılandırma parametresini güncelleyin."
 
 #: library/Payment/Adapter/Stripe.php:282
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
-msgstr ""
+msgstr "Ödeme ağ geçidi \"Stripe\" düzgün yapılandırılmamış. Lütfen \"Yapılandırma -> Ödemeler\" bölümünde \"test_api_key\" yapılandırma parametresini güncelleyin."
 
 #: library/Payment/Adapter/TwoCheckout.php:136
 msgid "Invoice ID could not be determined for this transaction"
-msgstr ""
+msgstr "Bu işlem için fatura numarası belirlenemedi"
 
 #: library/Payment/Adapter/TwoCheckout.php:325
 msgid "Redirecting to 2Checkout.com"
-msgstr ""
+msgstr "2Checkout.com'a Yönlendiriliyorsunuz"
 
 #: library/Payment/AdapterAbstract.php:52
 msgid "Return URL for payment gateway was not set"
-msgstr ""
+msgstr "Ödeme ağ geçidi için Dönüş URL'si ayarlanmadı"
 
 #: library/Payment/AdapterAbstract.php:59
 msgid "Cancel URL for payment gateway was not set"
-msgstr ""
+msgstr "Ödeme ağ geçidi için İptal URL'si ayarlanmadı"
 
 #: library/Payment/AdapterAbstract.php:67
 msgid "IPN Notification URL for payment gateway was not set"
-msgstr ""
+msgstr "Ödeme ağ geçidi için IPN Bildirim URL'si ayarlanmadı"
 
 #: library/Payment/AdapterAbstract.php:77
 msgid "IPN redirect URL for payment gateway was not set"
-msgstr ""
+msgstr "Ödeme ağ geçidi için IPN Yönlendirme URL'si ayarlanmadı"
 
 #: library/Payment/AdapterAbstract.php:90
 msgid "Payment adapter class did not implement configuration options method"
-msgstr ""
+msgstr "Ödeme adaptörü sınıfı, yapılandırma seçenekleri yöntemini uygulamadı"
 
 #: library/Registrar/Adapter/Email.php:23
 #: library/Registrar/Adapter/Internetbs.php:18
@@ -607,24 +607,24 @@ msgstr ""
 #: library/Registrar/Adapter/Resellerid.php:11
 #: library/Registrar/Adapter/Resellerid.php:18
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
-msgstr ""
+msgstr "\":domain_registrar\" domain kayıt şirketi tam olarak yapılandırılmamış. Lütfen :missing 'i yapılandırın"
 
 #: library/Registrar/Adapter/Email.php:67 library/Registrar/Adapter/Email.php:72
 msgid "Email registrar is unable to :action:"
-msgstr ""
+msgstr "E-posta kayıt şirketi :action: yapamıyor"
 
 #: library/Registrar/Adapter/Internetbs.php:76
 msgid "checking domain transferability"
-msgstr ""
+msgstr "alan adının transfer edilebilirliği kontrol ediliyor"
 
 #: library/Registrar/Adapter/Internetbs.php:172
 #: library/Registrar/Adapter/Namecheap.php:573
 msgid "deleting domains"
-msgstr ""
+msgstr "alan adları siliniyor"
 
 #: library/Registrar/Adapter/Namecheap.php:117
 msgid "Premium domains cannot be registered."
-msgstr ""
+msgstr "Premium alan adları kaydedilemez."
 
 #: library/Registrar/Adapter/Namecheap.php:171
 #: library/Registrar/Adapter/Namecheap.php:177
@@ -639,76 +639,76 @@ msgstr ""
 #: library/Registrar/Adapter/Resellerclub.php:714
 #: library/Registrar/Adapter/Resellerclub.php:720
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
-msgstr ""
+msgstr ":type: kayıt şirketiyle :action: işlemi başarısız oldu, daha fazla ayrıntı için hata günlüklerini kontrol edin"
 
 #: library/Registrar/Adapter/Namecheap.php:252
 msgid "update nameservers"
-msgstr ""
+msgstr "ad sunucularını (nameserver) güncelle"
 
 #: library/Registrar/Adapter/Namecheap.php:349
 msgid "retrieve domain details"
-msgstr ""
+msgstr "alan adı ayrıntılarını al"
 
 #: library/Registrar/Adapter/Namecheap.php:434
 msgid "retrieving the transfer code"
-msgstr ""
+msgstr "transfer kodu alınıyor"
 
 #: library/Registrar/Adapter/Namecheap.php:595
 msgid "retrieve privacy information"
-msgstr ""
+msgstr "gizlilik bilgilerini al"
 
 #: library/Registrar/Adapter/Namecheap.php:658
 msgid "get the domain lock status"
-msgstr ""
+msgstr "alan adı kilit durumunu al"
 
 #: library/Registrar/Adapter/Namecheap.php:682
 #: library/Registrar/Adapter/Namecheap.php:710
 msgid "set the domain lock status"
-msgstr ""
+msgstr "alan adı kilit durumunu ayarla"
 
 #: library/Registrar/Adapter/Resellerclub.php:40
 msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub Reseller ID\" at \"Configuration -> Domain registration\"."
-msgstr ""
+msgstr "Alan Adı kayıt şirketi \"ResellerClub\" düzgün yapılandırılmamış. Lütfen \"Yapılandırma -> Alan Adı kaydı\" bölümündeki \"ResellerClub Reseller ID\" yapılandırma parametresini güncelleyin."
 
 #: library/Registrar/Adapter/Resellerclub.php:47
 msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub API Key\" at \"Configuration -> Domain registration\"."
-msgstr ""
+msgstr "Alan Adı kayıt şirketi \"ResellerClub\" düzgün yapılandırılmamış. Lütfen \"Yapılandırma -> Alan Adı kaydı\" bölümündeki \"ResellerClub API Key\" yapılandırma parametresini güncelleyin."
 
 #: library/Registrar/Adapter/Resellerclub.php:335
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
-msgstr ""
+msgstr "Bir .AU alan adını kaydettirmek için geçerli bir şirket iletişim numarası zorunludur"
 
 #: library/Registrar/Adapter/Resellerclub.php:398
 msgid "get the transfer code"
-msgstr ""
+msgstr "transfer kodunu al"
 
 #: library/Registrar/Adapter/Resellerclub.php:592
 msgid "You are already registered as reseller"
-msgstr ""
+msgstr "Bayi olarak zaten kayıtlısınız"
 
 #: library/Registrar/Adapter/Resellerclub.php:838
 msgid "Valid contact passport information is required while registering ES domain name"
-msgstr ""
+msgstr "ES alan adı kaydı yapılırken geçerli pasaport bilgisi gereklidir"
 
 #: library/Registrar/Adapter/Resellerclub.php:858
 msgid "Valid contact passport information is required while registering ASIA domain name"
-msgstr ""
+msgstr "ASIA alan adı kaydı yapılırken geçerli pasaport bilgisi gereklidir"
 
 #: library/Registrar/Adapter/Resellerclub.php:882
 msgid "Valid contact birthdate is required while registering RU domain name"
-msgstr ""
+msgstr "RU alan adı kaydı yapılırken geçerli bir doğum tarihi gereklidir"
 
 #: library/Registrar/Adapter/Resellerclub.php:886
 msgid "Valid contact passport information is required while registering RU domain name"
-msgstr ""
+msgstr "RU alan adı kaydı yapılırken geçerli pasaport bilgisi gereklidir"
 
 #: library/Registrar/Adapter/Resellerclub.php:973
 msgid "Contact not found"
-msgstr ""
+msgstr "Kişi bulunamadı"
 
 #: library/Registrar/AdapterAbstract.php:31
 msgid "Domain registrar class did not implement configuration options method"
-msgstr ""
+msgstr "Alan Adı kayıt şirketi sınıfı, yapılandırma seçenekleri yöntemini uygulamadı"
 
 #: library/Server/Manager/CWP.php:20 library/Server/Manager/CWP.php:24
 #: library/Server/Manager/CWP.php:28 library/Server/Manager/Directadmin.php:16
@@ -716,17 +716,17 @@ msgstr ""
 #: library/Server/Manager/Directadmin.php:24 library/Server/Manager/Whm.php:22
 #: library/Server/Manager/Whm.php:26 library/Server/Manager/Whm.php:30
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
-msgstr ""
+msgstr "\":server_manager\" sunucu yöneticisi tam olarak yapılandırılmamış. Lütfen :missing değerini yapılandırın"
 
 #: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:428
 #: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:143
 #: library/Server/Manager/Plesk.php:47
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
-msgstr ""
+msgstr ":type: sunucusuna bağlanılamadı. Lütfen kimlik bilgilerinizi ve yapılandırmanızı kontrol edin"
 
 #: library/Server/Manager/CWP.php:143 library/Server/Manager/Plesk.php:86
 msgid "create account"
-msgstr ""
+msgstr "hesap oluştur"
 
 #: library/Server/Manager/CWP.php:144 library/Server/Manager/CWP.php:161
 #: library/Server/Manager/CWP.php:178 library/Server/Manager/CWP.php:198
@@ -740,106 +740,106 @@ msgstr ""
 #: library/Server/Manager/Whm.php:431 library/Server/Manager/Whm.php:436
 #: library/Server/Manager/Whm.php:441
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
-msgstr ""
+msgstr ":type: sunucusunda :action: işlemi başarısız oldu, daha fazla ayrıntı için hata günlüklerini kontrol edin"
 
 #: library/Server/Manager/CWP.php:160 library/Server/Manager/Hestia.php:241
 msgid "suspend account"
-msgstr ""
+msgstr "hesabı askıya al"
 
 #: library/Server/Manager/CWP.php:177 library/Server/Manager/Hestia.php:266
 msgid "unsuspend account"
-msgstr ""
+msgstr "hesabın askıya alınmasını kaldır"
 
 #: library/Server/Manager/CWP.php:197 library/Server/Manager/Hestia.php:295
 msgid "cancel account"
-msgstr ""
+msgstr "hesabı iptal et"
 
 #: library/Server/Manager/CWP.php:217 library/Server/Manager/Hestia.php:325
 msgid "change account package"
-msgstr ""
+msgstr "hesap paketini değiştir"
 
 #: library/Server/Manager/CWP.php:235 library/Server/Manager/Hestia.php:374
 msgid "change account password"
-msgstr ""
+msgstr "hesap şifresini değiştir"
 
 #: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:329
 #: library/Server/Manager/Hestia.php:339 library/Server/Manager/Plesk.php:202
 msgid "username changes"
-msgstr ""
+msgstr "kullanıcı adı değişiklikleri"
 
 #: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:334
 #: library/Server/Manager/Hestia.php:349
 msgid "changing the account domain"
-msgstr ""
+msgstr "hesap alan adı değiştiriliyor"
 
 #: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
 #: library/Server/Manager/Hestia.php:388 library/Server/Manager/Plesk.php:229
 msgid "changing the account IP"
-msgstr ""
+msgstr "hesap IP adresi değiştiriliyor"
 
 #: library/Server/Manager/Directadmin.php:95
 msgid "There are no available IPs on this server."
-msgstr ""
+msgstr "Bu sunucuda kullanılabilir IP yok."
 
 #: library/Server/Manager/Directadmin.php:196
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
-msgstr ""
+msgstr "Bayiye ANY IP atanamıyor. Boşta, atanmamış IP'lere sahip olduğunuzdan emin olun."
 
 #: library/Server/Manager/Directadmin.php:200
 msgid "Error creating user"
-msgstr ""
+msgstr "Kullanıcı oluşturulurken hata oluştu"
 
 #: library/Server/Manager/Directadmin.php:226
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
-msgstr ""
+msgstr "Sunucu Yöneticisi DirectAdmin Hatası: \"Hesap askıya alınmadı\""
 
 #: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:410
 msgid "HttpClientException: :error"
-msgstr ""
+msgstr "HttpClientException: :error"
 
 #: library/Server/Manager/Directadmin.php:432
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
-msgstr ""
+msgstr "Sunucu Yöneticisi DirectAdmin Hatası: \"Yapmış olduğunuz istek, yetki seviyenizde bulunmadığından çalıştırılamıyor\""
 
 #: library/Server/Manager/Hestia.php:200
 msgid "create user"
-msgstr ""
+msgstr "kullanıcı oluştur"
 
 #: library/Server/Manager/Hestia.php:211
 msgid "delete domain"
-msgstr ""
+msgstr "alan adı sil"
 
 #: library/Server/Manager/Hestia.php:211 library/Server/Manager/Hestia.php:214
 msgid "create domain"
-msgstr ""
+msgstr "alan adı oluştur"
 
 #: library/Server/Manager/Hestia.php:212
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
-msgstr ""
+msgstr ":type: sunucusunda :action2: başarısız olduktan sonra :action1: başarısız oldu, daha fazla ayrıntı için hata günlüklerini kontrol edin"
 
 #: library/Server/Manager/Plesk.php:55
 msgid "account synchronization"
-msgstr ""
+msgstr "hesap eşitleme"
 
 #: library/Server/Manager/Plesk.php:172
 msgid "Can't modify client"
-msgstr ""
+msgstr "Müşteri değiştirilemiyor"
 
 #: modules/Activity/Controller/Admin.php:33
 msgid "Activity"
-msgstr ""
+msgstr "Aktivite"
 
 #: modules/Activity/Controller/Admin.php:40
 msgid "Event history"
-msgstr ""
+msgstr "Olay geçmişi"
 
 #: modules/Api/Controller/Client.php:47 modules/Api/Controller/Client.php:250
 msgid "Unknown API call :call"
-msgstr ""
+msgstr "Bilinmeyen API çağrısı :call"
 
 #: modules/Api/Controller/Client.php:127
 msgid "Invalid request. Make sure request origin is :from"
-msgstr ""
+msgstr "Geçersiz istek. İstek kaynağının :from olduğundan emin olun"
 
 #: modules/Api/Controller/Client.php:138
 msgid "Unauthorized IP"
@@ -853,7 +853,7 @@ msgstr "Kimlik doğrulama başarısız"
 
 #: modules/Api/Controller/Client.php:329
 msgid "CSRF token invalid"
-msgstr ""
+msgstr "CSRF token geçersiz"
 
 #: modules/Cart/Api/Guest.php:57 modules/Currency/Api/Admin.php:67
 #: modules/Currency/Api/Admin.php:238 modules/Currency/Api/Guest.php:46
@@ -873,23 +873,23 @@ msgstr "Promosyon hesabınıza uygulanamaz"
 
 #: modules/Cart/Api/Guest.php:161
 msgid "Addon products cannot be added separately."
-msgstr ""
+msgstr "Eklenti ürünleri ayrı olarak eklenemez."
 
 #: modules/Cart/Api/Guest.php:175
 msgid "One or more of your selected addons are invalid for the associated product."
-msgstr ""
+msgstr "Seçtiğiniz eklentilerden biri veya birkaçı ilgili ürün için geçersiz."
 
 #: modules/Cart/Service.php:84
 msgid "Selected billing period is invalid"
-msgstr ""
+msgstr "Seçilen faturalandırma dönemi geçersiz"
 
 #: modules/Cart/Service.php:91
 msgid "This item is currently out of stock"
-msgstr ""
+msgstr "Bu ürün şu anda stokta yok"
 
 #: modules/Cart/Service.php:124
 msgid "Selected billing period is invalid for the selected addon"
-msgstr ""
+msgstr "Seçili eklenti için seçilen faturalandırma dönemi geçersiz"
 
 #: modules/Cart/Service.php:218 modules/Product/Api/Guest.php:82
 msgid "Product not found"
@@ -905,7 +905,7 @@ msgstr "Bu promosyon kodunu zaten kullandınız. Lütfen promosyon kodunu kaldı
 
 #: modules/Cart/Service.php:485
 msgid "Can not checkout an empty cart"
-msgstr ""
+msgstr "Boş bir sepet satın alınamaz"
 
 #: modules/Cart/Service.php:497
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -913,7 +913,7 @@ msgstr "Seçilen para birimi :selected profilinizdeki :code para birimiyle eşle
 
 #: modules/Cart/Service.php:513
 msgid "Unable to complete order. One or more of the selected products are invalid."
-msgstr ""
+msgstr "Sipariş tamamlanamıyor. Seçilen ürünlerden biri veya birkaçı geçersiz."
 
 #: modules/Cart/Service.php:586
 msgid "Discount: :product"
@@ -929,7 +929,7 @@ msgstr "E-posta zaten kayıtlı."
 
 #: modules/Client/Api/Admin.php:239 modules/Profile/Service.php:125
 msgid "Can not change email. It is already registered."
-msgstr ""
+msgstr "E-posta değiştirilemiyor. Zaten kayıtlı."
 
 #: modules/Client/Api/Admin.php:323 modules/Staff/Api/Admin.php:123
 #: modules/Staff/Api/Guest.php:104
@@ -942,7 +942,7 @@ msgstr "Etkinlik bulunamadı"
 
 #: modules/Client/Api/Admin.php:573
 msgid "Group has clients assigned. Please reassign them first."
-msgstr ""
+msgstr "Grubun atanmış müşterileri var. Lütfen önce onları yeniden atayın."
 
 #: modules/Client/Api/Guest.php:58
 msgid "New registrations are temporary disabled"
@@ -954,15 +954,15 @@ msgstr "Parolalar uyuşmuyor."
 
 #: modules/Client/Api/Guest.php:83
 msgid "Email is already registered. You may want to login instead of registering."
-msgstr ""
+msgstr "E-posta zaten kayıtlı. Kayıt olmak yerine giriş yapmak isteyebilirsiniz."
 
 #: modules/Client/Api/Guest.php:89
 msgid "Account has been created. Please check your mailbox and confirm email address."
-msgstr ""
+msgstr "Hesap oluşturuldu. Lütfen posta kutunuzu kontrol edin ve e-posta adresini onaylayın."
 
 #: modules/Client/Api/Guest.php:129
 msgid "Please check your login details."
-msgstr ""
+msgstr "Lütfen giriş bilgilerinizi kontrol edin."
 
 #: modules/Client/Api/Guest.php:206 modules/Staff/Api/Guest.php:109
 #: modules/Staff/Api/Guest.php:113 modules/Staff/Controller/Admin.php:124
@@ -984,20 +984,20 @@ msgstr "Müşteriler"
 #: modules/Extension/Controller/Admin.php:40
 #: modules/Invoice/Controller/Admin.php:41 modules/Order/Controller/Admin.php:42
 msgid "Overview"
-msgstr ""
+msgstr "Genel Bakış"
 
 #: modules/Client/Controller/Admin.php:48 modules/Invoice/Controller/Admin.php:48
 #: modules/Order/Controller/Admin.php:49
 msgid "Advanced search"
-msgstr ""
+msgstr "Gelişmiş arama"
 
 #: modules/Client/Controller/Admin.php:56
 msgid "Client login history"
-msgstr ""
+msgstr "Müşteri oturum açma geçmişi"
 
 #: modules/Client/Controller/Client.php:48
 msgid "Email address was confirmed"
-msgstr ""
+msgstr "E-posta adresi onaylandı"
 
 #: modules/Client/Service.php:34
 msgid "Invalid email confirmation link"
@@ -1021,11 +1021,11 @@ msgstr "Para yüklemeden önce müşterinin para birimini belirleyin."
 
 #: modules/Client/Service.php:242 modules/Client/ServiceBalance.php:125
 msgid "Funds amount is invalid"
-msgstr ""
+msgstr "Fon miktarı geçersiz"
 
 #: modules/Client/Service.php:246 modules/Client/ServiceBalance.php:129
 msgid "Funds description is invalid"
-msgstr ""
+msgstr "Fon açıklaması geçersiz"
 
 #: modules/Client/Service.php:414
 msgid "Client ID or email is required"
@@ -1037,7 +1037,7 @@ msgstr "Müşteri bulunamadı"
 
 #: modules/Client/Service.php:471
 msgid "Can not remove group with clients"
-msgstr ""
+msgstr "Müşterileri olan grup kaldırılamaz"
 
 #: modules/Client/Service.php:631 modules/Profile/Service.php:117
 msgid "Email can not be changed"
@@ -1045,11 +1045,11 @@ msgstr "E-posta değiştirilemez"
 
 #: modules/Client/Service.php:645 modules/Client/Service.php:661
 msgid "Field :field cannot be empty"
-msgstr ""
+msgstr ":field alanı boş olamaz"
 
 #: modules/Cookieconsent/Controller/Admin.php:33
 msgid "Cookie consent"
-msgstr ""
+msgstr "Çerez onayı"
 
 #: modules/Currency/Api/Admin.php:106
 msgid "Currency already registered"
@@ -1057,7 +1057,7 @@ msgstr "Para birimi zaten kayıtlı"
 
 #: modules/Currency/Api/Admin.php:110
 msgid "Currency code is invalid"
-msgstr ""
+msgstr "Para birimi kodu geçersiz"
 
 #: modules/Currency/Service.php:58
 msgid "Currency conversion rate can not be zero"
@@ -1073,15 +1073,15 @@ msgstr "Varsayılan para birimi kaldırılamaz"
 
 #: modules/Currency/Service.php:479
 msgid "Currency rate is invalid"
-msgstr ""
+msgstr "Döviz kuru geçersiz"
 
 #: modules/Currency/Service.php:544
 msgid "Failed to get currency rates for :currency from the European Central Bank API"
-msgstr ""
+msgstr "Avrupa Merkez Bankası API'sinden :currency için para birimi oranları alınamadı"
 
 #: modules/Currency/Service.php:560
 msgid "<b>Currencylayer threw an error:</b><br />:errorInfo"
-msgstr ""
+msgstr "<b>Currencylayer hata verdi:</b><br />:errorInfo"
 
 #: modules/Custompages/Controller/Admin.php:33
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
@@ -1102,18 +1102,18 @@ msgstr "E-posta şablonu bulunamadı"
 
 #: modules/Email/Api/Admin.php:392
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
-msgstr ""
+msgstr "Alıcı tanımlı değil. \"to\" veya \"to_client\" veya \"to_staff\" parametresini tanımlayın"
 
 #: modules/Email/Controller/Admin.php:34
 #: modules/Email/html_admin/mod_email_details.html.twig:17
 #: modules/Email/html_admin/mod_email_history.html.twig:5
 #: modules/Email/html_admin/mod_email_history.html.twig:21
 msgid "Email history"
-msgstr ""
+msgstr "E-Posta geçmişi"
 
 #: modules/Email/Service.php:133
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
-msgstr ""
+msgstr "Alıcı tanımlı değil. \"to\" veya \"to_client\" veya \"to_staff\" veya \"to_admin\" parametresini tanımlayın"
 
 #: modules/Email/Service.php:190
 msgid "From email address can not be empty"
@@ -1125,7 +1125,7 @@ msgstr ":code adlı e-posta şablonu bulunamadı"
 
 #: modules/Embed/Controller/Admin.php:33
 msgid "Embed and integrate"
-msgstr ""
+msgstr "Yerleştirin ve entegre edin"
 
 #: modules/Extension/Api/Admin.php:246
 msgid "Extension not found"
@@ -1133,21 +1133,21 @@ msgstr "Eklenti bulunamadı"
 
 #: modules/Extension/Api/Guest.php:59
 msgid "Parameter ext is missing"
-msgstr ""
+msgstr "Parametre ext eksik"
 
 #: modules/Extension/Controller/Admin.php:33
 #: modules/Extension/html_admin/mod_extension_index.html.twig:5
 #: modules/Extension/html_admin/mod_extension_index.html.twig:13
 msgid "Extensions"
-msgstr ""
+msgstr "Eklentiler"
 
 #: modules/Extension/Controller/Admin.php:47
 msgid "Languages"
-msgstr ""
+msgstr "Diller"
 
 #: modules/Extension/Service.php:320
 msgid "Visit the extension directory for more information on updating this extension."
-msgstr ""
+msgstr "Bu eklentiyi güncelleme hakkında daha fazla bilgi için eklenti dizinini ziyaret edin."
 
 #: modules/Extension/Service.php:369
 msgid "FOSSBilling core modules can not be managed"
@@ -6622,7 +6622,7 @@ msgstr ""
 #: themes/huraga/html/layout_default.html.twig:121
 #: themes/huraga/html/layout_default.html.twig:227
 msgid "Register"
-msgstr "Kaydol"
+msgstr "Kayıt Ol"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:224
 msgid "Or Login"
@@ -9188,7 +9188,7 @@ msgstr "Yardım"
 
 #: themes/admin_default/html/layout_default.html.twig:181
 msgid "Documentation"
-msgstr "Dökümantasyon"
+msgstr "Dokümantasyon"
 
 #: themes/admin_default/html/layout_default.html.twig:183
 msgid "Report a bug"
@@ -9433,7 +9433,7 @@ msgstr "Toplam fiyat:"
 
 #: themes/huraga/html/partial_pricing.html.twig:58
 msgid "Setup Price"
-msgstr "Kurulum fiyatı"
+msgstr "Kurulum Fiyatı"
 
 #: themes/huraga/html/partial_pricing.html.twig:80
 msgid "Order now"
