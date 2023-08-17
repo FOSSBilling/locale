@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-08-09 23:06-0700\n"
-"PO-Revision-Date: 2023-08-10 08:18\n"
+"POT-Creation-Date: 2023-08-16 07:23-0700\n"
+"PO-Revision-Date: 2023-08-17 09:04\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -471,43 +471,6 @@ msgstr ""
 msgid "Unknown Period selected for price"
 msgstr ""
 
-#: library/Payment/Adapter/AliPay.php:16 library/Payment/Adapter/AliPay.php:20
-#: library/Payment/Adapter/AliPay.php:24
-#: library/Payment/Adapter/Interkassa.php:28
-#: library/Payment/Adapter/Interkassa.php:31
-#: library/Payment/Adapter/PayPalEmail.php:30
-#: library/Payment/Adapter/Stripe.php:30 library/Payment/Adapter/Stripe.php:34
-#: library/Payment/Adapter/TwoCheckout.php:30
-#: library/Payment/Adapter/TwoCheckout.php:34
-#: library/Payment/Adapter/WebMoney.php:42
-msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
-msgstr ""
-
-#: library/Payment/Adapter/AliPay.php:114
-msgid "Error getting service for contract"
-msgstr ""
-
-#: library/Payment/Adapter/AliPay.php:148
-#: library/Payment/Adapter/Interkassa.php:124
-msgid "reccurent payments"
-msgstr ""
-
-#: library/Payment/Adapter/AliPay.php:148
-#: library/Payment/Adapter/Interkassa.php:124
-#: library/Registrar/Adapter/Internetbs.php:76
-#: library/Registrar/Adapter/Internetbs.php:172
-#: library/Registrar/Adapter/Namecheap.php:434
-#: library/Registrar/Adapter/Namecheap.php:573 library/Server/Manager/CWP.php:245
-#: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
-#: library/Server/Manager/Directadmin.php:329
-#: library/Server/Manager/Directadmin.php:334
-#: library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:349
-#: library/Server/Manager/Hestia.php:388 library/Server/Manager/Plesk.php:55
-#: library/Server/Manager/Plesk.php:202 library/Server/Manager/Plesk.php:229
-msgid ":type: does not support :action:"
-msgstr ""
-
 #: library/Payment/Adapter/ClientBalance.php:59
 msgid "Not enough in balance"
 msgstr "Μη επαρκές υπόλοιπο"
@@ -519,10 +482,7 @@ msgid "It is forbidden to pay a deposit invoice with this gateway"
 msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:83
-#: library/Payment/Adapter/Interkassa.php:175
 #: library/Payment/Adapter/PayPalEmail.php:73
-#: library/Payment/Adapter/TwoCheckout.php:122
-#: library/Payment/Adapter/WebMoney.php:100
 msgid "IPN is invalid"
 msgstr ""
 
@@ -530,15 +490,13 @@ msgstr ""
 msgid "ClientBalance gateway is not enabled"
 msgstr ""
 
-#: library/Payment/Adapter/Interkassa.php:216
-#: library/Payment/Adapter/PayPalEmail.php:121
-#: library/Payment/Adapter/TwoCheckout.php:171
-#: library/Payment/Adapter/WebMoney.php:135
-msgid "Cannot process duplicate IPN"
+#: library/Payment/Adapter/PayPalEmail.php:30
+#: library/Payment/Adapter/Stripe.php:30 library/Payment/Adapter/Stripe.php:34
+msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Payment/Adapter/Onebip.php:111
-msgid "This feature is unimplemented"
+#: library/Payment/Adapter/PayPalEmail.php:121
+msgid "Cannot process duplicate IPN"
 msgstr ""
 
 #: library/Payment/Adapter/PayPalEmail.php:259
@@ -546,11 +504,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Ανακατεύθυνση στο PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:302
-#: library/Payment/Adapter/Stripe.php:101 modules/Invoice/Service.php:1346
+#: library/Payment/Adapter/Stripe.php:101 modules/Invoice/Service.php:1344
 msgid "Payment for invoice :serie:id [:title]"
 msgstr ""
 
-#: library/Payment/Adapter/Stripe.php:103 modules/Invoice/Service.php:1348
+#: library/Payment/Adapter/Stripe.php:103 modules/Invoice/Service.php:1346
 msgid "Payment for invoice :serie:id"
 msgstr ""
 
@@ -564,14 +522,6 @@ msgstr ""
 
 #: library/Payment/Adapter/Stripe.php:282
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
-msgstr ""
-
-#: library/Payment/Adapter/TwoCheckout.php:136
-msgid "Invoice ID could not be determined for this transaction"
-msgstr ""
-
-#: library/Payment/Adapter/TwoCheckout.php:325
-msgid "Redirecting to 2Checkout.com"
 msgstr ""
 
 #: library/Payment/AdapterAbstract.php:52
@@ -615,6 +565,20 @@ msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:76
 msgid "checking domain transferability"
+msgstr ""
+
+#: library/Registrar/Adapter/Internetbs.php:76
+#: library/Registrar/Adapter/Internetbs.php:172
+#: library/Registrar/Adapter/Namecheap.php:434
+#: library/Registrar/Adapter/Namecheap.php:573 library/Server/Manager/CWP.php:245
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
+#: library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:349
+#: library/Server/Manager/Hestia.php:388 library/Server/Manager/Plesk.php:55
+#: library/Server/Manager/Plesk.php:202 library/Server/Manager/Plesk.php:229
+msgid ":type: does not support :action:"
 msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:172
@@ -1317,39 +1281,43 @@ msgstr ""
 msgid "Payment gateways"
 msgstr ""
 
-#: modules/Invoice/Service.php:627
+#: modules/Invoice/Service.php:412
+msgid "Unable to determine the next invoice number"
+msgstr ""
+
+#: modules/Invoice/Service.php:626
 msgid "Can not refund invoice with negative amount"
 msgstr ""
 
-#: modules/Invoice/Service.php:843
+#: modules/Invoice/Service.php:841
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr ""
 
-#: modules/Invoice/Service.php:910
+#: modules/Invoice/Service.php:908
 msgid "Invoices are not generated for 0 amount orders"
 msgstr ""
 
-#: modules/Invoice/Service.php:1078
+#: modules/Invoice/Service.php:1076
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr ""
 
-#: modules/Invoice/Service.php:1087
+#: modules/Invoice/Service.php:1085
 msgid "Amount must be at least :min_amount"
 msgstr ""
 
-#: modules/Invoice/Service.php:1091
+#: modules/Invoice/Service.php:1089
 msgid "Amount cannot exceed :max_amount"
 msgstr ""
 
-#: modules/Invoice/Service.php:1117 modules/Invoice/Service.php:1181
+#: modules/Invoice/Service.php:1115 modules/Invoice/Service.php:1179
 msgid "Invoice not found"
 msgstr ""
 
-#: modules/Invoice/Service.php:1122
+#: modules/Invoice/Service.php:1120
 msgid "Payment method not found"
 msgstr ""
 
-#: modules/Invoice/Service.php:1126
+#: modules/Invoice/Service.php:1124
 msgid "Payment method not enabled"
 msgstr ""
 

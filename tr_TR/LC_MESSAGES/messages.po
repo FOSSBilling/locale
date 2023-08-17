@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-08-09 23:06-0700\n"
-"PO-Revision-Date: 2023-08-15 07:34\n"
+"POT-Creation-Date: 2023-08-16 07:23-0700\n"
+"PO-Revision-Date: 2023-08-17 09:04\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
@@ -471,43 +471,6 @@ msgstr ":id hizmeti ödeme türü 'Yinelenen', fakat dönem seçilmedi"
 msgid "Unknown Period selected for price"
 msgstr "Fiyat için Bilinmeyen Dönem seçildi"
 
-#: library/Payment/Adapter/AliPay.php:16 library/Payment/Adapter/AliPay.php:20
-#: library/Payment/Adapter/AliPay.php:24
-#: library/Payment/Adapter/Interkassa.php:28
-#: library/Payment/Adapter/Interkassa.php:31
-#: library/Payment/Adapter/PayPalEmail.php:30
-#: library/Payment/Adapter/Stripe.php:30 library/Payment/Adapter/Stripe.php:34
-#: library/Payment/Adapter/TwoCheckout.php:30
-#: library/Payment/Adapter/TwoCheckout.php:34
-#: library/Payment/Adapter/WebMoney.php:42
-msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
-msgstr "\":pay_gateway\" ödeme yöntemi tam olarak yapılandırılmamış. Lütfen :missing yapılandırın"
-
-#: library/Payment/Adapter/AliPay.php:114
-msgid "Error getting service for contract"
-msgstr "Sözleşme için hizmet alınırken hata oluştu"
-
-#: library/Payment/Adapter/AliPay.php:148
-#: library/Payment/Adapter/Interkassa.php:124
-msgid "reccurent payments"
-msgstr "yinelenen ödemeler"
-
-#: library/Payment/Adapter/AliPay.php:148
-#: library/Payment/Adapter/Interkassa.php:124
-#: library/Registrar/Adapter/Internetbs.php:76
-#: library/Registrar/Adapter/Internetbs.php:172
-#: library/Registrar/Adapter/Namecheap.php:434
-#: library/Registrar/Adapter/Namecheap.php:573 library/Server/Manager/CWP.php:245
-#: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
-#: library/Server/Manager/Directadmin.php:329
-#: library/Server/Manager/Directadmin.php:334
-#: library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:349
-#: library/Server/Manager/Hestia.php:388 library/Server/Manager/Plesk.php:55
-#: library/Server/Manager/Plesk.php:202 library/Server/Manager/Plesk.php:229
-msgid ":type: does not support :action:"
-msgstr ":type: :action: 'ı desteklemiyor"
-
 #: library/Payment/Adapter/ClientBalance.php:59
 msgid "Not enough in balance"
 msgstr "Yetersiz bakiye"
@@ -519,10 +482,7 @@ msgid "It is forbidden to pay a deposit invoice with this gateway"
 msgstr "Bu ödeme yöntemi ile bir depozito faturası ödemek yasaktır"
 
 #: library/Payment/Adapter/ClientBalance.php:83
-#: library/Payment/Adapter/Interkassa.php:175
 #: library/Payment/Adapter/PayPalEmail.php:73
-#: library/Payment/Adapter/TwoCheckout.php:122
-#: library/Payment/Adapter/WebMoney.php:100
 msgid "IPN is invalid"
 msgstr "IPN geçersiz"
 
@@ -530,27 +490,25 @@ msgstr "IPN geçersiz"
 msgid "ClientBalance gateway is not enabled"
 msgstr "ClientBalance ağ geçidi etkin değil"
 
-#: library/Payment/Adapter/Interkassa.php:216
+#: library/Payment/Adapter/PayPalEmail.php:30
+#: library/Payment/Adapter/Stripe.php:30 library/Payment/Adapter/Stripe.php:34
+msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
+msgstr "\":pay_gateway\" ödeme yöntemi tam olarak yapılandırılmamış. Lütfen :missing yapılandırın"
+
 #: library/Payment/Adapter/PayPalEmail.php:121
-#: library/Payment/Adapter/TwoCheckout.php:171
-#: library/Payment/Adapter/WebMoney.php:135
 msgid "Cannot process duplicate IPN"
 msgstr "Tekrarlanan IPN işlenemiyor"
-
-#: library/Payment/Adapter/Onebip.php:111
-msgid "This feature is unimplemented"
-msgstr "Bu özellik uygulanmamıştır"
 
 #: library/Payment/Adapter/PayPalEmail.php:259
 msgid "Redirecting to PayPal.com"
 msgstr "PayPal.com'a Yönlendiriliyorsunuz"
 
 #: library/Payment/Adapter/PayPalEmail.php:302
-#: library/Payment/Adapter/Stripe.php:101 modules/Invoice/Service.php:1346
+#: library/Payment/Adapter/Stripe.php:101 modules/Invoice/Service.php:1344
 msgid "Payment for invoice :serie:id [:title]"
 msgstr ":serie:id [:title] faturası için ödeme"
 
-#: library/Payment/Adapter/Stripe.php:103 modules/Invoice/Service.php:1348
+#: library/Payment/Adapter/Stripe.php:103 modules/Invoice/Service.php:1346
 msgid "Payment for invoice :serie:id"
 msgstr ":serie:id faturası için ödeme"
 
@@ -565,14 +523,6 @@ msgstr "Ödeme ağ geçidi \"Stripe\" düzgün yapılandırılmamış. Lütfen \
 #: library/Payment/Adapter/Stripe.php:282
 msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
 msgstr "Ödeme ağ geçidi \"Stripe\" düzgün yapılandırılmamış. Lütfen \"Yapılandırma -> Ödemeler\" bölümünde \"test_api_key\" yapılandırma parametresini güncelleyin."
-
-#: library/Payment/Adapter/TwoCheckout.php:136
-msgid "Invoice ID could not be determined for this transaction"
-msgstr "Bu işlem için fatura numarası belirlenemedi"
-
-#: library/Payment/Adapter/TwoCheckout.php:325
-msgid "Redirecting to 2Checkout.com"
-msgstr "2Checkout.com'a Yönlendiriliyorsunuz"
 
 #: library/Payment/AdapterAbstract.php:52
 msgid "Return URL for payment gateway was not set"
@@ -616,6 +566,20 @@ msgstr "E-posta kayıt operatörü :action: yapamıyor"
 #: library/Registrar/Adapter/Internetbs.php:76
 msgid "checking domain transferability"
 msgstr "alan adının transfer edilebilirliği kontrol ediliyor"
+
+#: library/Registrar/Adapter/Internetbs.php:76
+#: library/Registrar/Adapter/Internetbs.php:172
+#: library/Registrar/Adapter/Namecheap.php:434
+#: library/Registrar/Adapter/Namecheap.php:573 library/Server/Manager/CWP.php:245
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
+#: library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:349
+#: library/Server/Manager/Hestia.php:388 library/Server/Manager/Plesk.php:55
+#: library/Server/Manager/Plesk.php:202 library/Server/Manager/Plesk.php:229
+msgid ":type: does not support :action:"
+msgstr ":type: :action: 'ı desteklemiyor"
 
 #: library/Registrar/Adapter/Internetbs.php:172
 #: library/Registrar/Adapter/Namecheap.php:573
@@ -1317,39 +1281,43 @@ msgstr "Vergi Kuralları"
 msgid "Payment gateways"
 msgstr "Ödeme Yöntemleri"
 
-#: modules/Invoice/Service.php:627
-msgid "Can not refund invoice with negative amount"
-msgstr "Negatif tutara sahip fatura iade edilemez"
+#: modules/Invoice/Service.php:412
+msgid "Unable to determine the next invoice number"
+msgstr ""
 
-#: modules/Invoice/Service.php:843
+#: modules/Invoice/Service.php:626
+msgid "Can not refund invoice with negative amount"
+msgstr "Negatif tutara sahip faturanın ücret iadesi yapılamaz"
+
+#: modules/Invoice/Service.php:841
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "Fatura, #:id numaralı siparişle bağlantılı. Lütfen öncelikle siparişi iptal edin."
 
-#: modules/Invoice/Service.php:910
+#: modules/Invoice/Service.php:908
 msgid "Invoices are not generated for 0 amount orders"
 msgstr "0 adet sipariş için fatura oluşturulmaz"
 
-#: modules/Invoice/Service.php:1078
+#: modules/Invoice/Service.php:1076
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "Para eklemeden önce en az bir etkin siparişinizin olması gerekir. Bu yüzden şu anda devam edemezsiniz!"
 
-#: modules/Invoice/Service.php:1087
+#: modules/Invoice/Service.php:1085
 msgid "Amount must be at least :min_amount"
 msgstr "Tutar en az :min_amount olmalıdır"
 
-#: modules/Invoice/Service.php:1091
+#: modules/Invoice/Service.php:1089
 msgid "Amount cannot exceed :max_amount"
 msgstr "Tutar :max_amount değerini aşamaz"
 
-#: modules/Invoice/Service.php:1117 modules/Invoice/Service.php:1181
+#: modules/Invoice/Service.php:1115 modules/Invoice/Service.php:1179
 msgid "Invoice not found"
 msgstr "Fatura bulunamadı"
 
-#: modules/Invoice/Service.php:1122
+#: modules/Invoice/Service.php:1120
 msgid "Payment method not found"
 msgstr "Ödeme yöntemi bulunamadı"
 
-#: modules/Invoice/Service.php:1126
+#: modules/Invoice/Service.php:1124
 msgid "Payment method not enabled"
 msgstr "Ödeme yöntemi devre dışı"
 
@@ -4876,114 +4844,114 @@ msgstr "Metin Alanı"
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:28
 msgid "Payment gateway configuration"
-msgstr ""
+msgstr "Ödeme Yöntemi:"
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:32
 msgid "Gateway updated"
-msgstr ""
+msgstr "Ödeme yöntemi güncellendi"
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:35
 msgid "Payment gateway title"
-msgstr ""
+msgstr "Ödeme Yöntemi Başlığı"
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:45
 msgid "Select which currencies can accept this payment gateway (Select none to allow all currencies)"
-msgstr ""
+msgstr "Bu ödeme yönteminde hangi para birimlerinin kabul edilebileceğini seçin (Tüm para birimlerine izin vermek için hiçbirini seçmeyin)"
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:71
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:34
 msgid "Allow one time payments"
-msgstr ""
+msgstr "Tek seferlik ödemelere izin ver"
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:89
 msgid "Allow subscription payments"
-msgstr ""
+msgstr "Abonelik ödemelerine izin ver"
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:106
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:38
 msgid "Enable test mode"
-msgstr ""
+msgstr "Test modunu etkinleştir"
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:120
 msgid "IPN Callback URL"
-msgstr ""
+msgstr "IPN Callback Adresi (URL)"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:19
 msgid "New payment gateway"
-msgstr ""
+msgstr "Yeni Ödeme Yöntemi"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:35
 msgid "Allow subscriptions"
-msgstr ""
+msgstr "Aboneliklere İzin Ver"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:52
 msgid "Copy"
-msgstr ""
+msgstr "Kopyala"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:87
 msgid "Adding new payment gateway"
-msgstr ""
+msgstr "Yeni ödeme ağ geçidi ekleme"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:88
 msgid "Although FOSSBilling ships with most popular payment gateways, you can install other gateways."
-msgstr ""
+msgstr "FOSSBilling en popüler ödeme yöntemleriyle birlikte gelse de, başka ödeme yöntemlerini kurabilirsiniz."
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:89
 msgid "Follow these instructions to install new payment gateway."
-msgstr ""
+msgstr "Yeni ödeme yöntemi eklemek için bu talimatları izleyin."
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:91
 msgid "Check for payment gateway at"
-msgstr ""
+msgstr "Daha fazla ödeme yöntemi için"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:91
 msgid "for more payment gateways"
-msgstr ""
+msgstr "adresini ziyaret edin"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:92
 msgid "Download payment gateway extension file and place it to"
-msgstr ""
+msgstr "Ödeme yöntemi eklentisi dosyalarını indirin ve şu klasöre kopyalayın: "
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:93
 msgid "After file is uploaded in place, reload this page."
-msgstr ""
+msgstr "Dosyayı ilgili klasöre kopyaladıktan sonra sayfayı yenileyin."
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:94
 msgid "Select uploaded file name and click on install."
-msgstr ""
+msgstr "Kopyaladığınız dosyayı seçin ve Yükle butonuna basın."
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:95
 msgid "Payment gateway will be installed in FOSSBilling and can be configured in \"Payment gateways\" tab."
-msgstr ""
+msgstr "Ödeme yöntemi, FOSSBilling'e yüklenecek ve \"Ödeme Yöntemleri\" sekmesinden yönetilebilecek."
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:96
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:239
 msgid "For developers. Read"
-msgstr ""
+msgstr "Geliştiriciler, kendi ödeme yönteminizi nasıl oluşturacağınızı ve bunu toplulukla nasıl paylaşacağınızı öğrenmek için"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:96
 msgid "to learn how to create your own payment gateway and share it with community"
-msgstr ""
+msgstr "adresindeki dokümanı inceleyebilirler."
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:105
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:115
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:249
 msgid "Install"
-msgstr ""
+msgstr "Yükle"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:127
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:268
 msgid "All payment gateways installed"
-msgstr ""
+msgstr "Bütün ödeme yöntemleri yüklendi"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:13
 msgid "Filter invoices"
-msgstr ""
+msgstr "Faturaları Filtrele"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:23
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:58
 msgid "Number"
-msgstr ""
+msgstr "Fatura No"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:29
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:299
@@ -4997,7 +4965,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_tickets.html.twig:280
 #: themes/admin_default/html/partial_menu_top.html.twig:11
 msgid "Client"
-msgstr ""
+msgstr "Müşteri"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:32
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:303
@@ -5006,30 +4974,30 @@ msgstr ""
 #: modules/Order/html_admin/mod_order_index.html.twig:281
 #: modules/Support/html_admin/mod_support_tickets.html.twig:284
 msgid "Start typing the client name or ID"
-msgstr ""
+msgstr "Müşteri adını veya ID'sini yazmaya başlayın"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:56
 msgid "All statuses"
-msgstr ""
+msgstr "Tüm Faturalar"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:68
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:158
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:186
 msgid "Refunded"
-msgstr ""
+msgstr "Geri Ödenmiş"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:84
 msgid "Issue date"
-msgstr ""
+msgstr "Düzenleme tarihi"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:192
 msgid "New Invoice"
-msgstr ""
+msgstr "Yeni Fatura"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:212
 #: modules/Order/html_admin/mod_order_manage.html.twig:518
 msgid "Issued at"
-msgstr ""
+msgstr "Düzenlendiği Tarih"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:213
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:283
@@ -5040,11 +5008,11 @@ msgstr "Ödendi"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:284
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:288
 msgid "Export Invoices"
-msgstr ""
+msgstr "Faturaları Dışa Aktar"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:316
 msgid "Prepare"
-msgstr ""
+msgstr "Hazırla"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:28
@@ -5054,7 +5022,7 @@ msgstr ""
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:73
 #: themes/admin_default/html/partial_menu_top.html.twig:7
 msgid "Invoice"
-msgstr ""
+msgstr "Fatura"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:36
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:31
@@ -5062,74 +5030,74 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:31
 #: modules/Support/html_admin/mod_support_ticket.html.twig:36
 msgid "Manage"
-msgstr ""
+msgstr "Yönet"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:39
 msgid "Texts"
-msgstr ""
+msgstr "İlave Yazılar"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:42
 msgid "Client credentials"
-msgstr ""
+msgstr "Müşteri Bilgileri"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:45
 msgid "Company credentials"
-msgstr ""
+msgstr "Firma Bilgileriniz"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:100
 msgid "Date Created"
-msgstr ""
+msgstr "Oluşturma Tarihi"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:104
 msgid "Date Due"
-msgstr ""
+msgstr "Son Ödeme Tarihi"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:108
 msgid "Date Paid"
-msgstr ""
+msgstr "Ödeme Tarihi"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:112
 msgid "Last Reminded"
-msgstr ""
+msgstr "Son Hatırlatma"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:129
 #: modules/Product/html_admin/mod_product_manage.html.twig:282
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:110
 msgid "View as client"
-msgstr ""
+msgstr "Müşteri olarak görüntüle"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:142
 msgid "Send reminder"
-msgstr ""
+msgstr "Hatırlama gönder"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:148
 msgid "Mark as paid"
-msgstr ""
+msgstr "Ödendi olarak işaretle"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:157
 msgid "Refund"
-msgstr ""
+msgstr "Ücret İadesi"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:164
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:53
 msgid "PDF"
-msgstr ""
+msgstr "PDF"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:171
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:322
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:348
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:398
 msgid "Invoice updated"
-msgstr ""
+msgstr "Fatura güncellendi"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:195
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:114
 msgid "Approved"
-msgstr ""
+msgstr "Onaylandı"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:208
 msgid "Serie and number"
-msgstr ""
+msgstr "Fatura Serisi ve Numarası"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:217
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:495
@@ -5137,55 +5105,55 @@ msgstr ""
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:5
 msgid "Tax"
-msgstr ""
+msgstr "Vergi"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:227
 msgid "Payment method"
-msgstr ""
+msgstr "Ödeme Yöntemi"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:233
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:75
 #: modules/Support/html_admin/mod_support_tickets.html.twig:60
 msgid "Created at"
-msgstr ""
+msgstr "Oluşturma Tarihi"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:258
 msgid "Due at"
-msgstr ""
+msgstr "Son Ödeme Tarihi"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:325
 msgid "Text before invoice items table"
-msgstr ""
+msgstr "Fatura kalemleri tablosundan önceki metin"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:331
 msgid "Text after invoice items table"
-msgstr ""
+msgstr "Fatura kalemleri tablosundan sonraki metin"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:345
 msgid "Company details at the moment of purchase"
-msgstr ""
+msgstr "Satın alma yapıldığı sıradaki firma bilgileriniz"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:395
 msgid "Client details at the moment of purchase"
-msgstr ""
+msgstr "Satın alma yapıldığı sıradaki müşteri bilgileri"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:401
 msgid "First name"
-msgstr ""
+msgstr "Adı"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
 msgid "Last name"
-msgstr ""
+msgstr "Soyadı"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:462
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:222
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:176
 msgid "Zip"
-msgstr ""
+msgstr "Posta Kodu"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:484
 msgid "Invoice items"
-msgstr ""
+msgstr "Faturadaki Ürünler"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:494
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:185
@@ -5198,70 +5166,70 @@ msgstr ""
 #: themes/admin_default/html/partial_pricing.html.twig:25
 #: themes/huraga/html/partial_pricing.html.twig:54
 msgid "Price"
-msgstr ""
+msgstr "Fiyat"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:544
 msgid "Subtotal"
-msgstr ""
+msgstr "Ara Toplam"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:568
 msgid "Approve"
-msgstr ""
+msgstr "Onayla"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:678
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:56
 msgid "Print"
-msgstr ""
+msgstr "Yazdır"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:21
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:28
 msgid "Invoice settings"
-msgstr ""
+msgstr "Fatura Ayarları"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:36
 msgid "Number of days to generate new invoice before order expiration"
-msgstr ""
+msgstr "Yeni fatura, siparişin yenileme süresinin sona ermesinden kaç gün önce oluşturulmalı"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:42
 msgid "Invoice due days"
-msgstr ""
+msgstr "Fatura oluşturulduktan maksimum kaç gün gün sonra ödenebilir (Vade Tarihi)"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:48
 msgid "Auto invoice approval"
-msgstr ""
+msgstr "Otomatik fatura onayı"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:62
 msgid "Proforma Invoicing / Sequential Invoice Numbering"
-msgstr ""
+msgstr "Proforma Faturalama / Sıralı Fatura Numaralandırma"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:64
 msgid "Remove unpaid invoices after days"
-msgstr ""
+msgstr "Ödenmemiş faturalar kaç gün sonra kaldırılmalı?"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:67
 msgid "Set 0 to keep invoices forever."
-msgstr ""
+msgstr "0 = Faturaları kaldırma"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:71
 msgid "Proforma invoice prefix/series"
-msgstr ""
+msgstr "Proforma fatura ön eki/seri"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:77
 msgid "Paid invoice prefix/series"
-msgstr ""
+msgstr "Ödenen fatura ön eki/seri"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:83
 msgid "Next paid invoice number"
-msgstr ""
+msgstr "Sonraki ödenen fatura numarası"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:90
 msgid "Refunds settings"
-msgstr ""
+msgstr "Ücret İadesi Ayarları"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:92
 msgid "Refunds logic"
-msgstr ""
+msgstr "Ücret İadesi Yöntemi"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:96
 msgid "Negative invoice. Generate refund invoice continuing paid invoices numbering"
