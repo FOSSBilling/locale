@@ -67,11 +67,11 @@ jobs:
             statistics=$(msgfmt --statistics "$po_file")
 
             # Extract the number of translated and total messages
-            translated_messages=$(echo "$statistics" | awk -F ',' '{print $1}' | awk '{print $1}')
-            total_messages=$(echo "$statistics" | awk -F ',' '{print $2}' | awk '{print $1}')
+            translated_messages=$(echo "$statistics" | grep -oP '(\d+) translated' | grep -oP '\d+')
+            total_messages=$(echo "$statistics" | grep -oP '(\d+) untranslated' | grep -oP '\d+')
 
             # Calculate completion percentage
-            if [ "$total_messages" -gt 0 ]; then
+            if [ -n "$translated_messages" ] && [ -n "$total_messages" ]; then
               completion_percentage=$((translated_messages * 100 / total_messages))
             else
               completion_percentage=0
