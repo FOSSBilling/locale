@@ -56,22 +56,26 @@ jobs:
       - name: Install gettext
         run: sudo apt-get update && sudo apt-get install gettext -y
 
-      - name: Get translation completion for each
+      - name: Remove translations with low completion
         working-directory: translations
         run: |
           for po_file in $(find . -name "*.po"); do
             dirname=$(dirname "$po_file")
-            filename=$(basename "$po_file" .po)
+            translation=$(dirname "$dirname") 
 
-            # Extract statistics from msgfmt
-            statistics=$(msgfmt --statistics "$po_file")
+            # Use msgfmt to generate temporary file with statistics
+            msgfmt --statistics "$po_file" >/tmp/msgfmt_stats.tmp 2>&1
+
+            # Capture the statistics output
+            statistics=$(cat /tmp/msgfmt_stats.tmp)
+
+            # Remove the temporary file
+            rm /tmp/msgfmt_stats.tmp
 
             # Extract the number of translated and total messages
             translated_messages=$(echo "$statistics" | awk -F ',' '{print $1}' | awk '{print $1}')
-            total_messages=$(echo "$statistics" | awk -F ',' '{print $2}' | awk '{print $1}')
-
-            echo "Translated: $translated_messages"
-            echo "Total: $total_messages"
+            untranslated_messages=$(echo "$statistics" | awk -F ',' '{print $2}' | awk '{print $1}')
+            total_messages=$((translated_messages + untranslated_messages))
 
             # Calculate completion percentage
             if [ -n "$translated_messages" ] && [ -n "$total_messages" ]; then
@@ -80,5 +84,15 @@ jobs:
               completion_percentage=0
             fi
 
-            echo "Completion Percentage for $dirname: $completion_percentage%"
-          done
+            # If the translation is less than 25% complete, delete it entirely. Otherwise, just remove the source file to make things cleaner
+            if [ "$completion_percentage" -lt 25 ] && [ "$dirname" != "./en_US/LC_MESSAGES" ]; then
+              rm -rf "$translation"
+              echo "Removing $translation from the final translation as it is only $completion_percentage% complete."
+            else 
+              rm -f "$dirname/messages.po"
+            fi
+           done
+           rm -f messages.mo
+
+      - name: Display the new file structure
+        run: ls -R
