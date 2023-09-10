@@ -53,6 +53,9 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R
 
+      - name: Install gettext
+        run: sudo apt-get update && sudo apt-get install gettext
+
       - name: Get translation completion for each
         working-directory: translations
         run: |
