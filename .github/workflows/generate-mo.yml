@@ -60,8 +60,22 @@ jobs:
         working-directory: translations
         run: |
           for po_file in $(find . -name "*.po"); do
-            dirname=$(dirname $po_file)
-            filename=$(basename $po_file .po)
-            completion_percentage=$(msgfmt --statistics "$po_file" | awk '{print $1}')
+            dirname=$(dirname "$po_file")
+            filename=$(basename "$po_file" .po)
+
+            # Extract statistics from msgfmt
+            statistics=$(msgfmt --statistics "$po_file")
+
+            # Extract the number of translated and total messages
+            translated_messages=$(echo "$statistics" | awk -F ',' '{print $1}' | awk '{print $1}')
+            total_messages=$(echo "$statistics" | awk -F ',' '{print $2}' | awk '{print $1}')
+
+            # Calculate completion percentage
+            if [ "$total_messages" -gt 0 ]; then
+              completion_percentage=$((translated_messages * 100 / total_messages))
+            else
+              completion_percentage=0
+            fi
+
             echo "Completion Percentage for $dirname: $completion_percentage%"
           done
