@@ -37,8 +37,10 @@ jobs:
       - name: Create artifact
         uses: actions/upload-artifact@v3
         with:
-          name: Compiled translations
-          path: ./**/messages.mo
+          name: translations
+          path: |
+            ./**/messages.mo
+            ./**/messages.po
 
   release:
     name: Publish to release
@@ -50,3 +52,13 @@ jobs:
 
       - name: Display structure of downloaded files
         run: ls -R
+
+      - name: Get translation completion for each
+        working-directory: translations
+        run: |
+          for po_file in $(find . -name "*.po"); do
+            dirname=$(dirname $po_file)
+            filename=$(basename $po_file .po)
+            completion_percentage=$(msgfmt --statistics "$po_file" | awk '{print $1}')
+            echo "Completion Percentage for $dirname: $completion_percentage%"
+          done
