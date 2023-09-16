@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-08-16 07:23-0700\n"
-"PO-Revision-Date: 2023-08-17 09:04\n"
+"POT-Creation-Date: 2023-09-16 11:38-0700\n"
+"PO-Revision-Date: 2023-09-16 18:45\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-2: *.css\n"
 "X-Poedit-SearchPathExcluded-3: *.scss\n"
 "X-Poedit-SearchPathExcluded-4: *.md\n"
+"X-Poedit-SearchPathExcluded-5: vendor\n"
 "X-Crowdin-Project: ddc573f086bad0aea827918f4284d176\n"
 "X-Crowdin-Project-ID: 4\n"
 "X-Crowdin-Language: de\n"
@@ -24,7 +25,7 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: de_DE\n"
 
-#: di.php:327
+#: di.php:330
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr ""
 
@@ -382,23 +383,23 @@ msgstr ""
 msgid ":friendlyName: is invalid"
 msgstr ""
 
-#: library/FOSSBilling/Update.php:104
+#: library/FOSSBilling/Update.php:116
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Herunterladen der neuesten Versionsinformationen fehlgeschlagen. Weitere Details finden Sie im Fehlerprotokoll."
 
-#: library/FOSSBilling/Update.php:172 modules/System/Api/Admin.php:168
+#: library/FOSSBilling/Update.php:185 modules/System/Api/Admin.php:180
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Sie sind auf dem neusten Stand. Sie müssen nicht updaten."
 
-#: library/FOSSBilling/Update.php:194
+#: library/FOSSBilling/Update.php:207
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Das Update-Archiv konnte nicht heruntergeladen werden. Weitere Details finden Sie im Fehlerprotokoll."
 
-#: library/FOSSBilling/Update.php:207 modules/Extension/Service.php:451
+#: library/FOSSBilling/Update.php:220 modules/Extension/Service.php:451
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Fehler beim Entpacken der Datei, bitte überprüfen Sie die Datei- und Ordnerberechtigungen. Weitere Details finden Sie im Fehlerprotokoll."
 
-#: library/FOSSBilling/Update.php:225
+#: library/FOSSBilling/Update.php:238
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr ""
 
@@ -920,10 +921,6 @@ msgstr "Passwörter stimmen nicht überein."
 msgid "Email is already registered. You may want to login instead of registering."
 msgstr "E-Mail ist bereits registriert. Sie können sich anmelden, anstatt sich zu registrieren."
 
-#: modules/Client/Api/Guest.php:89
-msgid "Account has been created. Please check your mailbox and confirm email address."
-msgstr "Konto wurde erstellt. Bitte überprüfen Sie Ihr Postfach und bestätigen Sie Ihre E-Mail-Adresse."
-
 #: modules/Client/Api/Guest.php:129
 msgid "Please check your login details."
 msgstr ""
@@ -1056,7 +1053,7 @@ msgstr "Benutzerdefinierte Seiten"
 
 #: modules/Email/Api/Admin.php:120 modules/Email/Api/Admin.php:144
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
-#: modules/Email/Api/Client.php:113 modules/Email/Service.php:457
+#: modules/Email/Api/Client.php:113 modules/Email/Service.php:462
 msgid "Email not found"
 msgstr "E-Mail nicht gefunden"
 
@@ -1064,7 +1061,7 @@ msgstr "E-Mail nicht gefunden"
 msgid "Email template not found"
 msgstr "E-Mail Vorlage nicht gefunden"
 
-#: modules/Email/Api/Admin.php:392
+#: modules/Email/Api/Admin.php:399
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr ""
 
@@ -1079,12 +1076,16 @@ msgstr "E-Mail-Verlauf"
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr ""
 
-#: modules/Email/Service.php:190
+#: modules/Email/Service.php:193
 msgid "From email address can not be empty"
 msgstr ""
 
-#: modules/Email/Service.php:442
+#: modules/Email/Service.php:447
 msgid "Email template :code was not found"
+msgstr ""
+
+#: modules/Email/Service.php:634
+msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr ""
 
 #: modules/Embed/Controller/Admin.php:33
@@ -2195,7 +2196,7 @@ msgstr "Einstellungen"
 #: modules/Order/html_admin/mod_order_manage.html.twig:443
 #: modules/Order/html_admin/mod_order_settings.html.twig:92
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:66
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:185
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:173
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:96
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:84
 #: modules/Product/html_admin/mod_product_category.html.twig:63
@@ -2288,8 +2289,8 @@ msgstr "Benutzer"
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:118
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
 #: modules/Order/html_client/mod_order_manage.html.twig:193
-#: modules/Support/html_admin/mod_support_tickets.html.twig:311
-#: modules/Support/html_admin/mod_support_tickets.html.twig:345
+#: modules/Support/html_admin/mod_support_tickets.html.twig:309
+#: modules/Support/html_admin/mod_support_tickets.html.twig:343
 #: modules/Support/html_client/mod_support_contact_us.html.twig:46
 #: modules/Support/html_client/mod_support_tickets.html.twig:107
 msgid "Message"
@@ -2661,7 +2662,7 @@ msgstr "Firmenname"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:53
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:83
 #: modules/Support/html_admin/mod_support_settings.html.twig:128
-#: modules/Support/html_admin/mod_support_tickets.html.twig:333
+#: modules/Support/html_admin/mod_support_tickets.html.twig:331
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:32
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
@@ -2999,8 +3000,8 @@ msgstr "Passwort"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:224
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:119
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:174
-#: modules/Support/html_admin/mod_support_tickets.html.twig:316
-#: modules/Support/html_admin/mod_support_tickets.html.twig:350
+#: modules/Support/html_admin/mod_support_tickets.html.twig:314
+#: modules/Support/html_admin/mod_support_tickets.html.twig:348
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:51
 msgid "Create"
 msgstr "Erstellen"
@@ -3085,7 +3086,7 @@ msgstr "Guthaben"
 #: modules/Order/html_admin/mod_order_manage.html.twig:367
 #: modules/Order/html_client/mod_order_manage.html.twig:278
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
-#: modules/Support/html_admin/mod_support_tickets.html.twig:376
+#: modules/Support/html_admin/mod_support_tickets.html.twig:374
 #: modules/System/html_admin/mod_system_settings.html.twig:183
 msgid "Notes"
 msgstr "Anmerkungen"
@@ -3464,7 +3465,7 @@ msgstr "Kunden-Support Tickets"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:141
 #: modules/Support/html_admin/mod_support_ticket.html.twig:214
 #: modules/Support/html_admin/mod_support_tickets.html.twig:54
-#: modules/Support/html_admin/mod_support_tickets.html.twig:299
+#: modules/Support/html_admin/mod_support_tickets.html.twig:297
 #: modules/Support/html_client/mod_support_ticket.html.twig:35
 #: modules/Support/html_client/mod_support_ticket.html.twig:81
 #: modules/Support/html_client/mod_support_tickets.html.twig:30
@@ -3492,8 +3493,8 @@ msgstr "Helpdesk"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:135
 #: modules/Support/html_admin/mod_support_ticket.html.twig:215
 #: modules/Support/html_admin/mod_support_tickets.html.twig:192
-#: modules/Support/html_admin/mod_support_tickets.html.twig:305
-#: modules/Support/html_admin/mod_support_tickets.html.twig:339
+#: modules/Support/html_admin/mod_support_tickets.html.twig:303
+#: modules/Support/html_admin/mod_support_tickets.html.twig:337
 #: modules/Support/html_client/mod_support_contact_us.html.twig:39
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:30
 #: modules/Support/html_client/mod_support_ticket.html.twig:80
@@ -3549,7 +3550,7 @@ msgstr "An den Kunden gesendete E-Mails"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:767
 #: modules/Email/html_admin/mod_email_template.html.twig:56
-#: modules/Support/html_admin/mod_support_tickets.html.twig:341
+#: modules/Support/html_admin/mod_support_tickets.html.twig:339
 msgid "Email subject"
 msgstr "E-Mail-Betreff"
 
@@ -4429,8 +4430,8 @@ msgid "Example"
 msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:292
-msgid "Send test email to staff members"
-msgstr "Test E-Mail an Mitarbeiter senden"
+msgid "Send a test email to yourself"
+msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:294
 msgid "Update email settings"
@@ -4962,7 +4963,7 @@ msgstr "Nummer"
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:55
 #: modules/Support/html_admin/mod_support_tickets.html.twig:191
-#: modules/Support/html_admin/mod_support_tickets.html.twig:280
+#: modules/Support/html_admin/mod_support_tickets.html.twig:279
 #: themes/admin_default/html/partial_menu_top.html.twig:11
 msgid "Client"
 msgstr "Kunde"
@@ -4972,7 +4973,7 @@ msgstr "Kunde"
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:106
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:150
 #: modules/Order/html_admin/mod_order_index.html.twig:281
-#: modules/Support/html_admin/mod_support_tickets.html.twig:284
+#: modules/Support/html_admin/mod_support_tickets.html.twig:283
 msgid "Start typing the client name or ID"
 msgstr ""
 
@@ -6390,64 +6391,64 @@ msgstr "Blau"
 msgid "Dark"
 msgstr "Dunkel"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:90
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:94
 msgid "Border radius"
 msgstr "Eckenradius"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:115
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:109
 msgid "Color"
 msgstr "Farbe"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:118
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:116
 msgid "Opacity"
 msgstr "Transparenz"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:140
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:128
 msgid "Loader (while content of popup is being loaded)"
 msgstr "Lader (während Inhalt des Popups geladen wird)"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:163
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:151
 msgid "Close (ESC key by default)"
 msgstr "Schließen (ESC - standardmäßig)"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:167
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:155
 msgid "Click on background closes popup"
 msgstr "Klick auf Hintergrund um Popup zu schließen"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:174
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:162
 msgid "Show values of custom form before checkout"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:178
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:166
 msgid "User input will be shown before checkout for custom form"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:195
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:183
 msgid "Order Button code"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:192
 msgid "Clicking on html element with classname or ID"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:210
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:198
 msgid "will open popup window for"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:216
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
 msgid "symbols"
 msgstr "Symbole"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:224
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:212
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:29
 msgid "IMPORTANT"
 msgstr "WICHTIG"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:226
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:214
 msgid "You need to add ID (if you want to use it for one html element) or class (if you want to use it for multiple elements) in order for it to work"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:228
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:216
 msgid "Add order-button class to your elements which must call popup. For example:"
 msgstr ""
 
@@ -6455,27 +6456,27 @@ msgstr ""
 msgid "Add data-product attribute to your element to open specific product. For example:"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:233
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:245
 msgid "data-product attribute value will be overridden if popup's product is selected from select-box above"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:240
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:252
 msgid "Copy this code to your website"
 msgstr "Fügen Sie den Code zu Ihrer Seite hinzu"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:258
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:270
 msgid "Try your popup"
 msgstr "Probiere dein Popup aus"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:331
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:343
 msgid "Class name should start with dot (.) or hashtag (#) for ID"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:336
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:348
 msgid "Add \" + selector + \" class to your elements which must call popup. For example: "
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:341
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:353
 msgid "Add \" + selector + \" ID to your element which must call popup. For example: "
 msgstr ""
 
@@ -8853,19 +8854,19 @@ msgstr "Neue E-Mail"
 msgid "Open ticket for existing client"
 msgstr "Ticket für bestehende Kunden öffnen"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:323
+#: modules/Support/html_admin/mod_support_tickets.html.twig:321
 msgid "Open public ticket for non client"
 msgstr "Öffentliches Ticket für Nicht-Kunden öffnen"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:327
+#: modules/Support/html_admin/mod_support_tickets.html.twig:325
 msgid "Receivers name"
 msgstr "Name des Empfängers"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:329
+#: modules/Support/html_admin/mod_support_tickets.html.twig:327
 msgid "John Smith"
 msgstr "Max Mustermann"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:335
+#: modules/Support/html_admin/mod_support_tickets.html.twig:333
 msgid "user@domail.com"
 msgstr "user@domail.com"
 
@@ -9025,27 +9026,35 @@ msgstr "Cache zurücksetzen"
 msgid "About FOSSBilling"
 msgstr "Über FOSSBilling"
 
-#: modules/System/html_admin/mod_system_update.html.twig:13
+#: modules/System/html_admin/mod_system_update.html.twig:14
 msgid "Automatic Update"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:14
+#: modules/System/html_admin/mod_system_update.html.twig:15
 msgid "The automatic updater is a one-click tool for updating FOSSBilling. PHP must be able to write to the directory where FOSSBilling is installed."
 msgstr ""
 
+#: modules/System/html_admin/mod_system_update.html.twig:19
+msgid "This update is considered to be a major update, you should check the release notes for any breaking changes."
+msgstr ""
+
 #: modules/System/html_admin/mod_system_update.html.twig:25
+msgid "This update is considered to be a minor update, there are low chances of incompatibilities."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:39
 msgid "Update FOSSBilling"
 msgstr "FOSSBilling aktualisieren"
 
-#: modules/System/html_admin/mod_system_update.html.twig:29
+#: modules/System/html_admin/mod_system_update.html.twig:43
 msgid "Manual Update"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:30
+#: modules/System/html_admin/mod_system_update.html.twig:44
 msgid "If the auto updater is unable to function in your current installation environment, a manual update is available as an alternative solution."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:43
+#: modules/System/html_admin/mod_system_update.html.twig:57
 msgid "Apply Patches & Update Configuration"
 msgstr ""
 

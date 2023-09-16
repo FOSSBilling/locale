@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-08-16 07:23-0700\n"
-"PO-Revision-Date: 2023-08-17 09:04\n"
+"POT-Creation-Date: 2023-09-16 11:38-0700\n"
+"PO-Revision-Date: 2023-09-16 18:46\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-2: *.css\n"
 "X-Poedit-SearchPathExcluded-3: *.scss\n"
 "X-Poedit-SearchPathExcluded-4: *.md\n"
+"X-Poedit-SearchPathExcluded-5: vendor\n"
 "X-Crowdin-Project: ddc573f086bad0aea827918f4284d176\n"
 "X-Crowdin-Project-ID: 4\n"
 "X-Crowdin-Language: zh-CN\n"
@@ -24,7 +25,7 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: zh_CN\n"
 
-#: di.php:327
+#: di.php:330
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "您似乎正在尝试使用 FOSSBilling 而不启用 php intl 扩展。 FOSSBilling包含一个用于intl扩展的聚合物，但它不支持 :locale。请启用 intl 扩展。"
 
@@ -378,23 +379,23 @@ msgstr "邮箱"
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: 无效"
 
-#: library/FOSSBilling/Update.php:104
+#: library/FOSSBilling/Update.php:116
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "下载最新版本信息失败。在错误日志中可以获得更多信息。"
 
-#: library/FOSSBilling/Update.php:172 modules/System/Api/Admin.php:168
+#: library/FOSSBilling/Update.php:185 modules/System/Api/Admin.php:180
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "您有最新版本的 FOSSBilling。您无需更新。"
 
-#: library/FOSSBilling/Update.php:194
+#: library/FOSSBilling/Update.php:207
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "无法下载更新归档。在错误日志中可获得更多详细信息。"
 
-#: library/FOSSBilling/Update.php:207 modules/Extension/Service.php:451
+#: library/FOSSBilling/Update.php:220 modules/Extension/Service.php:451
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "提取文件失败，请检查文件和文件夹权限。在错误日志中有更多详细信息。"
 
-#: library/FOSSBilling/Update.php:225
+#: library/FOSSBilling/Update.php:238
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "无法清除缓存或删除安装目录。通过错误日志可查看详情。"
 
@@ -916,10 +917,6 @@ msgstr "密码不一致。"
 msgid "Email is already registered. You may want to login instead of registering."
 msgstr "邮箱已注册。您可以尝试直接登录。"
 
-#: modules/Client/Api/Guest.php:89
-msgid "Account has been created. Please check your mailbox and confirm email address."
-msgstr "账户已创建。请查看您的收件箱并确认邮件地址。"
-
 #: modules/Client/Api/Guest.php:129
 msgid "Please check your login details."
 msgstr "请检查您的登录信息。"
@@ -1052,7 +1049,7 @@ msgstr "自定义的页面"
 
 #: modules/Email/Api/Admin.php:120 modules/Email/Api/Admin.php:144
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
-#: modules/Email/Api/Client.php:113 modules/Email/Service.php:457
+#: modules/Email/Api/Client.php:113 modules/Email/Service.php:462
 msgid "Email not found"
 msgstr "未找到邮箱"
 
@@ -1060,7 +1057,7 @@ msgstr "未找到邮箱"
 msgid "Email template not found"
 msgstr "找不到电子邮件模板"
 
-#: modules/Email/Api/Admin.php:392
+#: modules/Email/Api/Admin.php:399
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "未指定收件人。可设置用户或员工作为参数"
 
@@ -1075,13 +1072,17 @@ msgstr "电子邮件历史记录"
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "未指定收件人。可设置用户、员工或管理员作为参数"
 
-#: modules/Email/Service.php:190
+#: modules/Email/Service.php:193
 msgid "From email address can not be empty"
 msgstr "发件人邮箱不能为空"
 
-#: modules/Email/Service.php:442
+#: modules/Email/Service.php:447
 msgid "Email template :code was not found"
 msgstr "找不到邮件模板 :code"
+
+#: modules/Email/Service.php:634
+msgid "Error message truncated due to length, please check the error log for the complete message: "
+msgstr ""
 
 #: modules/Embed/Controller/Admin.php:33
 msgid "Embed and integrate"
@@ -2191,7 +2192,7 @@ msgstr "设置"
 #: modules/Order/html_admin/mod_order_manage.html.twig:443
 #: modules/Order/html_admin/mod_order_settings.html.twig:92
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:66
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:185
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:173
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:96
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:84
 #: modules/Product/html_admin/mod_product_category.html.twig:63
@@ -2284,8 +2285,8 @@ msgstr "用户"
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:118
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
 #: modules/Order/html_client/mod_order_manage.html.twig:193
-#: modules/Support/html_admin/mod_support_tickets.html.twig:311
-#: modules/Support/html_admin/mod_support_tickets.html.twig:345
+#: modules/Support/html_admin/mod_support_tickets.html.twig:309
+#: modules/Support/html_admin/mod_support_tickets.html.twig:343
 #: modules/Support/html_client/mod_support_contact_us.html.twig:46
 #: modules/Support/html_client/mod_support_tickets.html.twig:107
 msgid "Message"
@@ -2657,7 +2658,7 @@ msgstr "公司名称"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:53
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:83
 #: modules/Support/html_admin/mod_support_settings.html.twig:128
-#: modules/Support/html_admin/mod_support_tickets.html.twig:333
+#: modules/Support/html_admin/mod_support_tickets.html.twig:331
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:32
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
@@ -2995,8 +2996,8 @@ msgstr "密码"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:224
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:119
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:174
-#: modules/Support/html_admin/mod_support_tickets.html.twig:316
-#: modules/Support/html_admin/mod_support_tickets.html.twig:350
+#: modules/Support/html_admin/mod_support_tickets.html.twig:314
+#: modules/Support/html_admin/mod_support_tickets.html.twig:348
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:51
 msgid "Create"
 msgstr "创建"
@@ -3081,7 +3082,7 @@ msgstr "资金余额"
 #: modules/Order/html_admin/mod_order_manage.html.twig:367
 #: modules/Order/html_client/mod_order_manage.html.twig:278
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
-#: modules/Support/html_admin/mod_support_tickets.html.twig:376
+#: modules/Support/html_admin/mod_support_tickets.html.twig:374
 #: modules/System/html_admin/mod_system_settings.html.twig:183
 msgid "Notes"
 msgstr "备注"
@@ -3460,7 +3461,7 @@ msgstr "客户服务单"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:141
 #: modules/Support/html_admin/mod_support_ticket.html.twig:214
 #: modules/Support/html_admin/mod_support_tickets.html.twig:54
-#: modules/Support/html_admin/mod_support_tickets.html.twig:299
+#: modules/Support/html_admin/mod_support_tickets.html.twig:297
 #: modules/Support/html_client/mod_support_ticket.html.twig:35
 #: modules/Support/html_client/mod_support_ticket.html.twig:81
 #: modules/Support/html_client/mod_support_tickets.html.twig:30
@@ -3488,8 +3489,8 @@ msgstr "客服中心"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:135
 #: modules/Support/html_admin/mod_support_ticket.html.twig:215
 #: modules/Support/html_admin/mod_support_tickets.html.twig:192
-#: modules/Support/html_admin/mod_support_tickets.html.twig:305
-#: modules/Support/html_admin/mod_support_tickets.html.twig:339
+#: modules/Support/html_admin/mod_support_tickets.html.twig:303
+#: modules/Support/html_admin/mod_support_tickets.html.twig:337
 #: modules/Support/html_client/mod_support_contact_us.html.twig:39
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:30
 #: modules/Support/html_client/mod_support_ticket.html.twig:80
@@ -3545,7 +3546,7 @@ msgstr "已向客户发送邮件"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:767
 #: modules/Email/html_admin/mod_email_template.html.twig:56
-#: modules/Support/html_admin/mod_support_tickets.html.twig:341
+#: modules/Support/html_admin/mod_support_tickets.html.twig:339
 msgid "Email subject"
 msgstr "邮件主题"
 
@@ -4425,8 +4426,8 @@ msgid "Example"
 msgstr "示例"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:292
-msgid "Send test email to staff members"
-msgstr "向员工发送测试电子邮件"
+msgid "Send a test email to yourself"
+msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:294
 msgid "Update email settings"
@@ -4960,7 +4961,7 @@ msgstr "数字"
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:55
 #: modules/Support/html_admin/mod_support_tickets.html.twig:191
-#: modules/Support/html_admin/mod_support_tickets.html.twig:280
+#: modules/Support/html_admin/mod_support_tickets.html.twig:279
 #: themes/admin_default/html/partial_menu_top.html.twig:11
 msgid "Client"
 msgstr "客户"
@@ -4970,7 +4971,7 @@ msgstr "客户"
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:106
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:150
 #: modules/Order/html_admin/mod_order_index.html.twig:281
-#: modules/Support/html_admin/mod_support_tickets.html.twig:284
+#: modules/Support/html_admin/mod_support_tickets.html.twig:283
 msgid "Start typing the client name or ID"
 msgstr "开始输入客户人名或 ID"
 
@@ -6388,64 +6389,64 @@ msgstr "蓝色"
 msgid "Dark"
 msgstr "深色"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:90
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:94
 msgid "Border radius"
 msgstr "圆角"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:115
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:109
 msgid "Color"
 msgstr "颜色"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:118
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:116
 msgid "Opacity"
 msgstr "透明度"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:140
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:128
 msgid "Loader (while content of popup is being loaded)"
 msgstr "加载器 (在加载弹出窗口内容时)"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:163
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:151
 msgid "Close (ESC key by default)"
 msgstr "关闭 (默认为 ESC 键)"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:167
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:155
 msgid "Click on background closes popup"
 msgstr "点击背景关闭弹出窗口"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:174
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:162
 msgid "Show values of custom form before checkout"
 msgstr "结帐前显示自定义表单的值"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:178
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:166
 msgid "User input will be shown before checkout for custom form"
 msgstr "用户在表单填写的自定义内容会结账前显示"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:195
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:183
 msgid "Order Button code"
 msgstr "订单按钮代码"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:192
 msgid "Clicking on html element with classname or ID"
 msgstr "点击带有类名或ID的 html 元素"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:210
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:198
 msgid "will open popup window for"
 msgstr "将打开弹出窗口"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:216
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
 msgid "symbols"
 msgstr "符号"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:224
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:212
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:29
 msgid "IMPORTANT"
 msgstr "重要信息"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:226
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:214
 msgid "You need to add ID (if you want to use it for one html element) or class (if you want to use it for multiple elements) in order for it to work"
 msgstr "您需要添加 ID (如果您想要将它用于一个 html 元素) 或类 (如果您想要将它用于多个元素) 才能正常工作"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:228
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:216
 msgid "Add order-button class to your elements which must call popup. For example:"
 msgstr "将订单按钮类添加到必须调用弹出窗口的元素中。例如："
 
@@ -6453,27 +6454,27 @@ msgstr "将订单按钮类添加到必须调用弹出窗口的元素中。例如
 msgid "Add data-product attribute to your element to open specific product. For example:"
 msgstr "将数据产品属性添加到您的元素以打开特定的产品。例如："
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:233
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:245
 msgid "data-product attribute value will be overridden if popup's product is selected from select-box above"
 msgstr "如果从上面的选择框中选择弹出的产品，数据产品属性值将被覆盖"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:240
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:252
 msgid "Copy this code to your website"
 msgstr "复制代码到您的网站"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:258
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:270
 msgid "Try your popup"
 msgstr "测试弹出窗口"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:331
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:343
 msgid "Class name should start with dot (.) or hashtag (#) for ID"
 msgstr "类名称应该以点 (.) 开头，ID 则是以开 (#) 开头"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:336
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:348
 msgid "Add \" + selector + \" class to your elements which must call popup. For example: "
 msgstr "将 \" + selector + \" 类添加到必须调用弹出弹出窗口的元素中。例如： "
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:341
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:353
 msgid "Add \" + selector + \" ID to your element which must call popup. For example: "
 msgstr "将 \" + selector + \" ID添加到必须调用弹出弹出窗口的元素中。例如： "
 
@@ -8851,19 +8852,19 @@ msgstr "新邮件"
 msgid "Open ticket for existing client"
 msgstr "为现有客户新建工单"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:323
+#: modules/Support/html_admin/mod_support_tickets.html.twig:321
 msgid "Open public ticket for non client"
 msgstr "为访客创建工单"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:327
+#: modules/Support/html_admin/mod_support_tickets.html.twig:325
 msgid "Receivers name"
 msgstr "接收人姓名"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:329
+#: modules/Support/html_admin/mod_support_tickets.html.twig:327
 msgid "John Smith"
 msgstr "李四"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:335
+#: modules/Support/html_admin/mod_support_tickets.html.twig:333
 msgid "user@domail.com"
 msgstr "user@domail.com"
 
@@ -9023,27 +9024,35 @@ msgstr "作废缓存"
 msgid "About FOSSBilling"
 msgstr "关于 FOSSBilling"
 
-#: modules/System/html_admin/mod_system_update.html.twig:13
+#: modules/System/html_admin/mod_system_update.html.twig:14
 msgid "Automatic Update"
 msgstr "自动更新"
 
-#: modules/System/html_admin/mod_system_update.html.twig:14
+#: modules/System/html_admin/mod_system_update.html.twig:15
 msgid "The automatic updater is a one-click tool for updating FOSSBilling. PHP must be able to write to the directory where FOSSBilling is installed."
 msgstr "自动更新可一键更新 FOSSBilling。PHP 必须能够写入 FOSSBilling 所在的目录。"
 
+#: modules/System/html_admin/mod_system_update.html.twig:19
+msgid "This update is considered to be a major update, you should check the release notes for any breaking changes."
+msgstr ""
+
 #: modules/System/html_admin/mod_system_update.html.twig:25
+msgid "This update is considered to be a minor update, there are low chances of incompatibilities."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:39
 msgid "Update FOSSBilling"
 msgstr "更新 FOSSBilling"
 
-#: modules/System/html_admin/mod_system_update.html.twig:29
+#: modules/System/html_admin/mod_system_update.html.twig:43
 msgid "Manual Update"
 msgstr "手动更新"
 
-#: modules/System/html_admin/mod_system_update.html.twig:30
+#: modules/System/html_admin/mod_system_update.html.twig:44
 msgid "If the auto updater is unable to function in your current installation environment, a manual update is available as an alternative solution."
 msgstr "如果自动更新失败，可尝试手动更新。"
 
-#: modules/System/html_admin/mod_system_update.html.twig:43
+#: modules/System/html_admin/mod_system_update.html.twig:57
 msgid "Apply Patches & Update Configuration"
 msgstr "应用补丁和更新配置"
 
