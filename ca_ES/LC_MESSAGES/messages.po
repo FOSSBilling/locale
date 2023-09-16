@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-08-16 07:23-0700\n"
-"PO-Revision-Date: 2023-08-17 09:04\n"
+"POT-Creation-Date: 2023-09-16 11:38-0700\n"
+"PO-Revision-Date: 2023-09-16 18:45\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Catalan\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-2: *.css\n"
 "X-Poedit-SearchPathExcluded-3: *.scss\n"
 "X-Poedit-SearchPathExcluded-4: *.md\n"
+"X-Poedit-SearchPathExcluded-5: vendor\n"
 "X-Crowdin-Project: ddc573f086bad0aea827918f4284d176\n"
 "X-Crowdin-Project-ID: 4\n"
 "X-Crowdin-Language: ca\n"
@@ -24,7 +25,7 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: ca_ES\n"
 
-#: di.php:327
+#: di.php:330
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Sembla que esteu intentant utilitzar FOSSBilling sense l'extensió php intl activada. FOSSBilling inclou un polyfill per a l'extensió intl, però no és compatible amb :locale. Si us plau, activeu l'extensió intl."
 
@@ -382,23 +383,23 @@ msgstr "Adreça de correu electrònic"
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: no és vàlid"
 
-#: library/FOSSBilling/Update.php:104
+#: library/FOSSBilling/Update.php:116
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "No s'ha pogut baixar la informació de la darrera versió. Hi ha més detalls disponibles al registre d'errors."
 
-#: library/FOSSBilling/Update.php:172 modules/System/Api/Admin.php:168
+#: library/FOSSBilling/Update.php:185 modules/System/Api/Admin.php:180
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Tens la darrera versió de FOSSBilling. No cal actualitzar."
 
-#: library/FOSSBilling/Update.php:194
+#: library/FOSSBilling/Update.php:207
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "No s'ha pogut baixar l'arxiu d'actualització. Hi ha més detalls disponibles al registre d'errors."
 
-#: library/FOSSBilling/Update.php:207 modules/Extension/Service.php:451
+#: library/FOSSBilling/Update.php:220 modules/Extension/Service.php:451
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "No s'ha pogut extreure el fitxer, comproveu els permisos de fitxers i carpetes. Hi ha més detalls disponibles al registre d'errors."
 
-#: library/FOSSBilling/Update.php:225
+#: library/FOSSBilling/Update.php:238
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "No es pot esborrar la memòria cau i/o eliminar la carpeta d'instal·lació. Hi ha més detalls disponibles al registre d'errors."
 
@@ -920,10 +921,6 @@ msgstr "Les contrasenyes no coincideixen."
 msgid "Email is already registered. You may want to login instead of registering."
 msgstr "El correu electrònic ja està registrat. És possible que vulgueu iniciar sessió en lloc de registrar-vos."
 
-#: modules/Client/Api/Guest.php:89
-msgid "Account has been created. Please check your mailbox and confirm email address."
-msgstr "S'ha creat el compte. Si us plau, comproveu la vostra bústia de correu i confirmeu l'adreça de correu electrònic."
-
 #: modules/Client/Api/Guest.php:129
 msgid "Please check your login details."
 msgstr "Comproveu les vostres dades d'inici de sessió."
@@ -1056,7 +1053,7 @@ msgstr "Pàgines personalitzades"
 
 #: modules/Email/Api/Admin.php:120 modules/Email/Api/Admin.php:144
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
-#: modules/Email/Api/Client.php:113 modules/Email/Service.php:457
+#: modules/Email/Api/Client.php:113 modules/Email/Service.php:462
 msgid "Email not found"
 msgstr "No s'ha trobat el correu electrònic"
 
@@ -1064,7 +1061,7 @@ msgstr "No s'ha trobat el correu electrònic"
 msgid "Email template not found"
 msgstr "No s'ha trobat la plantilla de correu electrònic"
 
-#: modules/Email/Api/Admin.php:392
+#: modules/Email/Api/Admin.php:399
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "El receptor no està definit. Definiu el paràmetre to o to_client o to_staff"
 
@@ -1079,13 +1076,17 @@ msgstr "Historial de correu electrònic"
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "El receptor no està definit. Definiu el paràmetre to o to_client o to_staff o to_admin"
 
-#: modules/Email/Service.php:190
+#: modules/Email/Service.php:193
 msgid "From email address can not be empty"
 msgstr "De l'adreça de correu electrònic no pot estar buida"
 
-#: modules/Email/Service.php:442
+#: modules/Email/Service.php:447
 msgid "Email template :code was not found"
 msgstr "No s'ha trobat la plantilla de correu electrònic:codi"
+
+#: modules/Email/Service.php:634
+msgid "Error message truncated due to length, please check the error log for the complete message: "
+msgstr ""
 
 #: modules/Embed/Controller/Admin.php:33
 msgid "Embed and integrate"
@@ -2195,7 +2196,7 @@ msgstr "Configuració"
 #: modules/Order/html_admin/mod_order_manage.html.twig:443
 #: modules/Order/html_admin/mod_order_settings.html.twig:92
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:66
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:185
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:173
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:96
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:84
 #: modules/Product/html_admin/mod_product_category.html.twig:63
@@ -2288,8 +2289,8 @@ msgstr "Usuari"
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:118
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
 #: modules/Order/html_client/mod_order_manage.html.twig:193
-#: modules/Support/html_admin/mod_support_tickets.html.twig:311
-#: modules/Support/html_admin/mod_support_tickets.html.twig:345
+#: modules/Support/html_admin/mod_support_tickets.html.twig:309
+#: modules/Support/html_admin/mod_support_tickets.html.twig:343
 #: modules/Support/html_client/mod_support_contact_us.html.twig:46
 #: modules/Support/html_client/mod_support_tickets.html.twig:107
 msgid "Message"
@@ -2661,7 +2662,7 @@ msgstr "Empresa"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:53
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:83
 #: modules/Support/html_admin/mod_support_settings.html.twig:128
-#: modules/Support/html_admin/mod_support_tickets.html.twig:333
+#: modules/Support/html_admin/mod_support_tickets.html.twig:331
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:32
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
@@ -2999,8 +3000,8 @@ msgstr "Contrasenya"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:224
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:119
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:174
-#: modules/Support/html_admin/mod_support_tickets.html.twig:316
-#: modules/Support/html_admin/mod_support_tickets.html.twig:350
+#: modules/Support/html_admin/mod_support_tickets.html.twig:314
+#: modules/Support/html_admin/mod_support_tickets.html.twig:348
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:51
 msgid "Create"
 msgstr "Crear"
@@ -3085,7 +3086,7 @@ msgstr "Saldo del fons"
 #: modules/Order/html_admin/mod_order_manage.html.twig:367
 #: modules/Order/html_client/mod_order_manage.html.twig:278
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
-#: modules/Support/html_admin/mod_support_tickets.html.twig:376
+#: modules/Support/html_admin/mod_support_tickets.html.twig:374
 #: modules/System/html_admin/mod_system_settings.html.twig:183
 msgid "Notes"
 msgstr ""
@@ -3464,7 +3465,7 @@ msgstr "Bitllets d'atenció al client"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:141
 #: modules/Support/html_admin/mod_support_ticket.html.twig:214
 #: modules/Support/html_admin/mod_support_tickets.html.twig:54
-#: modules/Support/html_admin/mod_support_tickets.html.twig:299
+#: modules/Support/html_admin/mod_support_tickets.html.twig:297
 #: modules/Support/html_client/mod_support_ticket.html.twig:35
 #: modules/Support/html_client/mod_support_ticket.html.twig:81
 #: modules/Support/html_client/mod_support_tickets.html.twig:30
@@ -3492,8 +3493,8 @@ msgstr "Taulell d'ajuda"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:135
 #: modules/Support/html_admin/mod_support_ticket.html.twig:215
 #: modules/Support/html_admin/mod_support_tickets.html.twig:192
-#: modules/Support/html_admin/mod_support_tickets.html.twig:305
-#: modules/Support/html_admin/mod_support_tickets.html.twig:339
+#: modules/Support/html_admin/mod_support_tickets.html.twig:303
+#: modules/Support/html_admin/mod_support_tickets.html.twig:337
 #: modules/Support/html_client/mod_support_contact_us.html.twig:39
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:30
 #: modules/Support/html_client/mod_support_ticket.html.twig:80
@@ -3549,7 +3550,7 @@ msgstr "Correus electrònics enviats al client"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:767
 #: modules/Email/html_admin/mod_email_template.html.twig:56
-#: modules/Support/html_admin/mod_support_tickets.html.twig:341
+#: modules/Support/html_admin/mod_support_tickets.html.twig:339
 msgid "Email subject"
 msgstr "Assumpte del Correu"
 
@@ -4429,8 +4430,8 @@ msgid "Example"
 msgstr "Exemple"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:292
-msgid "Send test email to staff members"
-msgstr "Envieu un correu electrònic de prova als membres del personal"
+msgid "Send a test email to yourself"
+msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:294
 msgid "Update email settings"
@@ -4965,7 +4966,7 @@ msgstr "Número"
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:55
 #: modules/Support/html_admin/mod_support_tickets.html.twig:191
-#: modules/Support/html_admin/mod_support_tickets.html.twig:280
+#: modules/Support/html_admin/mod_support_tickets.html.twig:279
 #: themes/admin_default/html/partial_menu_top.html.twig:11
 msgid "Client"
 msgstr ""
@@ -4975,7 +4976,7 @@ msgstr ""
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:106
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:150
 #: modules/Order/html_admin/mod_order_index.html.twig:281
-#: modules/Support/html_admin/mod_support_tickets.html.twig:284
+#: modules/Support/html_admin/mod_support_tickets.html.twig:283
 msgid "Start typing the client name or ID"
 msgstr "Comenceu a escriure el nom o l'identificador del client"
 
@@ -6393,64 +6394,64 @@ msgstr "Blau"
 msgid "Dark"
 msgstr "Fosc"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:90
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:94
 msgid "Border radius"
 msgstr "Radi de la vora"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:115
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:109
 msgid "Color"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:118
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:116
 msgid "Opacity"
 msgstr "Opacitat"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:140
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:128
 msgid "Loader (while content of popup is being loaded)"
 msgstr "Carregador (mentre es carrega el contingut de la finestra emergent)"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:163
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:151
 msgid "Close (ESC key by default)"
 msgstr "Tanca (tecla ESC per defecte)"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:167
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:155
 msgid "Click on background closes popup"
 msgstr "Feu clic a fons per tancar la finestra emergent"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:174
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:162
 msgid "Show values of custom form before checkout"
 msgstr "Mostra els valors del formulari personalitzat abans de pagar"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:178
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:166
 msgid "User input will be shown before checkout for custom form"
 msgstr "L'entrada de l'usuari es mostrarà abans de pagar per al formulari personalitzat"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:195
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:183
 msgid "Order Button code"
 msgstr "Codi del botó de comanda"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:192
 msgid "Clicking on html element with classname or ID"
 msgstr "Fent clic a l'element html amb nom de classe o identificador"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:210
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:198
 msgid "will open popup window for"
 msgstr "obrirà una finestra emergent per"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:216
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
 msgid "symbols"
 msgstr "símbols"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:224
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:212
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:29
 msgid "IMPORTANT"
 msgstr ""
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:226
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:214
 msgid "You need to add ID (if you want to use it for one html element) or class (if you want to use it for multiple elements) in order for it to work"
 msgstr "Heu d'afegir un identificador (si voleu utilitzar-lo per a un element html) o una classe (si voleu utilitzar-lo per a diversos elements) perquè funcioni"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:228
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:216
 msgid "Add order-button class to your elements which must call popup. For example:"
 msgstr "Afegiu la classe de botó d'ordre als vostres elements que han de cridar la finestra emergent. Per exemple:"
 
@@ -6458,27 +6459,27 @@ msgstr "Afegiu la classe de botó d'ordre als vostres elements que han de cridar
 msgid "Add data-product attribute to your element to open specific product. For example:"
 msgstr "Afegiu l'atribut de producte de dades al vostre element per obrir un producte específic. Per exemple:"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:233
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:245
 msgid "data-product attribute value will be overridden if popup's product is selected from select-box above"
 msgstr "El valor de l'atribut del producte de dades se substituirà si el producte de la finestra emergent es selecciona a la casella de selecció de dalt"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:240
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:252
 msgid "Copy this code to your website"
 msgstr "Copieu aquest codi al vostre lloc web"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:258
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:270
 msgid "Try your popup"
 msgstr "Prova la teva finestra emergent"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:331
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:343
 msgid "Class name should start with dot (.) or hashtag (#) for ID"
 msgstr "El nom de la classe ha de començar amb un punt (.) o un hashtag (#) per a l'identificador"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:336
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:348
 msgid "Add \" + selector + \" class to your elements which must call popup. For example: "
 msgstr "Afegiu la classe \" + selector + \" als vostres elements que han de cridar la finestra emergent. Per exemple:"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:341
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:353
 msgid "Add \" + selector + \" ID to your element which must call popup. For example: "
 msgstr "Afegiu \" + selector + \" ID al vostre element que ha de cridar la finestra emergent. Per exemple:"
 
@@ -8856,19 +8857,19 @@ msgstr "Nou correu electrònic"
 msgid "Open ticket for existing client"
 msgstr "Entrada oberta per al client existent"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:323
+#: modules/Support/html_admin/mod_support_tickets.html.twig:321
 msgid "Open public ticket for non client"
 msgstr "Entrada pública oberta per a no client"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:327
+#: modules/Support/html_admin/mod_support_tickets.html.twig:325
 msgid "Receivers name"
 msgstr "Nom del receptor"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:329
+#: modules/Support/html_admin/mod_support_tickets.html.twig:327
 msgid "John Smith"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:335
+#: modules/Support/html_admin/mod_support_tickets.html.twig:333
 msgid "user@domail.com"
 msgstr "usuari@domail.com"
 
@@ -9028,27 +9029,35 @@ msgstr "Invalida la memòria cau"
 msgid "About FOSSBilling"
 msgstr "Sobre FOSSBilling"
 
-#: modules/System/html_admin/mod_system_update.html.twig:13
+#: modules/System/html_admin/mod_system_update.html.twig:14
 msgid "Automatic Update"
 msgstr "Actualització automàtica"
 
-#: modules/System/html_admin/mod_system_update.html.twig:14
+#: modules/System/html_admin/mod_system_update.html.twig:15
 msgid "The automatic updater is a one-click tool for updating FOSSBilling. PHP must be able to write to the directory where FOSSBilling is installed."
 msgstr "L'actualització automàtica és una eina d'un sol clic per actualitzar FOSSBilling. PHP ha de ser capaç d'escriure al directori on està instal·lat FOSSBilling."
 
+#: modules/System/html_admin/mod_system_update.html.twig:19
+msgid "This update is considered to be a major update, you should check the release notes for any breaking changes."
+msgstr ""
+
 #: modules/System/html_admin/mod_system_update.html.twig:25
+msgid "This update is considered to be a minor update, there are low chances of incompatibilities."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:39
 msgid "Update FOSSBilling"
 msgstr "Actualitza FOSSBilling"
 
-#: modules/System/html_admin/mod_system_update.html.twig:29
+#: modules/System/html_admin/mod_system_update.html.twig:43
 msgid "Manual Update"
 msgstr "Actualització manual"
 
-#: modules/System/html_admin/mod_system_update.html.twig:30
+#: modules/System/html_admin/mod_system_update.html.twig:44
 msgid "If the auto updater is unable to function in your current installation environment, a manual update is available as an alternative solution."
 msgstr "Si l'actualització automàtica no pot funcionar al vostre entorn d'instal·lació actual, hi ha disponible una actualització manual com a solució alternativa."
 
-#: modules/System/html_admin/mod_system_update.html.twig:43
+#: modules/System/html_admin/mod_system_update.html.twig:57
 msgid "Apply Patches & Update Configuration"
 msgstr "Aplicar pedaços i actualitzar la configuració"
 
