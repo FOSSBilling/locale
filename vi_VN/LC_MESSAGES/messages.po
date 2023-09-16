@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-08-16 07:23-0700\n"
-"PO-Revision-Date: 2023-08-17 09:04\n"
+"POT-Creation-Date: 2023-09-16 11:38-0700\n"
+"PO-Revision-Date: 2023-09-16 18:46\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Vietnamese\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-2: *.css\n"
 "X-Poedit-SearchPathExcluded-3: *.scss\n"
 "X-Poedit-SearchPathExcluded-4: *.md\n"
+"X-Poedit-SearchPathExcluded-5: vendor\n"
 "X-Crowdin-Project: ddc573f086bad0aea827918f4284d176\n"
 "X-Crowdin-Project-ID: 4\n"
 "X-Crowdin-Language: vi\n"
@@ -24,7 +25,7 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: vi_VN\n"
 
-#: di.php:327
+#: di.php:330
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr ""
 
@@ -378,23 +379,23 @@ msgstr "Địa chỉ email"
 msgid ":friendlyName: is invalid"
 msgstr ""
 
-#: library/FOSSBilling/Update.php:104
+#: library/FOSSBilling/Update.php:116
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr ""
 
-#: library/FOSSBilling/Update.php:172 modules/System/Api/Admin.php:168
+#: library/FOSSBilling/Update.php:185 modules/System/Api/Admin.php:180
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Bạn đang dùng bản mới nhất của FOSSBilling. Bạn không cần cập nhật."
 
-#: library/FOSSBilling/Update.php:194
+#: library/FOSSBilling/Update.php:207
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr ""
 
-#: library/FOSSBilling/Update.php:207 modules/Extension/Service.php:451
+#: library/FOSSBilling/Update.php:220 modules/Extension/Service.php:451
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr ""
 
-#: library/FOSSBilling/Update.php:225
+#: library/FOSSBilling/Update.php:238
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr ""
 
@@ -916,10 +917,6 @@ msgstr "Mật khâu không khớp."
 msgid "Email is already registered. You may want to login instead of registering."
 msgstr "Email đã được đăng ký. Bạn có thể muốn đăng nhập thay vì đăng ký."
 
-#: modules/Client/Api/Guest.php:89
-msgid "Account has been created. Please check your mailbox and confirm email address."
-msgstr "Tài khoản đã được tạo. Vui lòng kiểm tra hộp thư của bạn và xác nhận địa chỉ email."
-
 #: modules/Client/Api/Guest.php:129
 msgid "Please check your login details."
 msgstr "Xin vui lòng kiểm tra thông tin đăng nhập."
@@ -1052,7 +1049,7 @@ msgstr "Trang tùy chỉnh"
 
 #: modules/Email/Api/Admin.php:120 modules/Email/Api/Admin.php:144
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
-#: modules/Email/Api/Client.php:113 modules/Email/Service.php:457
+#: modules/Email/Api/Client.php:113 modules/Email/Service.php:462
 msgid "Email not found"
 msgstr "Email không tồn tại"
 
@@ -1060,7 +1057,7 @@ msgstr "Email không tồn tại"
 msgid "Email template not found"
 msgstr "Mẫu email không tồn tại"
 
-#: modules/Email/Api/Admin.php:392
+#: modules/Email/Api/Admin.php:399
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "Receiver chưa được định nghĩa. Định nghĩa cho hoặc là to_client hay to_staff parameter"
 
@@ -1075,13 +1072,17 @@ msgstr "Lịch sử Email"
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "Receiver chưa được định nghĩa. Hãy định nghĩa tham số hoặc là to_client hay to_staff hoặc to_admin"
 
-#: modules/Email/Service.php:190
+#: modules/Email/Service.php:193
 msgid "From email address can not be empty"
 msgstr "Trường Từ địa chỉ email không thể rỗng"
 
-#: modules/Email/Service.php:442
+#: modules/Email/Service.php:447
 msgid "Email template :code was not found"
 msgstr "Mẫu email :code không tồn tại"
+
+#: modules/Email/Service.php:634
+msgid "Error message truncated due to length, please check the error log for the complete message: "
+msgstr ""
 
 #: modules/Embed/Controller/Admin.php:33
 msgid "Embed and integrate"
@@ -2191,7 +2192,7 @@ msgstr "Thiết lập"
 #: modules/Order/html_admin/mod_order_manage.html.twig:443
 #: modules/Order/html_admin/mod_order_settings.html.twig:92
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:66
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:185
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:173
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:96
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:84
 #: modules/Product/html_admin/mod_product_category.html.twig:63
@@ -2284,8 +2285,8 @@ msgstr "Người dùng"
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:118
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
 #: modules/Order/html_client/mod_order_manage.html.twig:193
-#: modules/Support/html_admin/mod_support_tickets.html.twig:311
-#: modules/Support/html_admin/mod_support_tickets.html.twig:345
+#: modules/Support/html_admin/mod_support_tickets.html.twig:309
+#: modules/Support/html_admin/mod_support_tickets.html.twig:343
 #: modules/Support/html_client/mod_support_contact_us.html.twig:46
 #: modules/Support/html_client/mod_support_tickets.html.twig:107
 msgid "Message"
@@ -2657,7 +2658,7 @@ msgstr "Tên công ty"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:53
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:83
 #: modules/Support/html_admin/mod_support_settings.html.twig:128
-#: modules/Support/html_admin/mod_support_tickets.html.twig:333
+#: modules/Support/html_admin/mod_support_tickets.html.twig:331
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:32
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
@@ -2995,8 +2996,8 @@ msgstr "Mật khẩu"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:224
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:119
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:174
-#: modules/Support/html_admin/mod_support_tickets.html.twig:316
-#: modules/Support/html_admin/mod_support_tickets.html.twig:350
+#: modules/Support/html_admin/mod_support_tickets.html.twig:314
+#: modules/Support/html_admin/mod_support_tickets.html.twig:348
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:51
 msgid "Create"
 msgstr "Tạo"
@@ -3081,7 +3082,7 @@ msgstr "Quỹ"
 #: modules/Order/html_admin/mod_order_manage.html.twig:367
 #: modules/Order/html_client/mod_order_manage.html.twig:278
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
-#: modules/Support/html_admin/mod_support_tickets.html.twig:376
+#: modules/Support/html_admin/mod_support_tickets.html.twig:374
 #: modules/System/html_admin/mod_system_settings.html.twig:183
 msgid "Notes"
 msgstr "Ghi chú"
@@ -3460,7 +3461,7 @@ msgstr "Phiếu yêu cầu hỗ trợ"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:141
 #: modules/Support/html_admin/mod_support_ticket.html.twig:214
 #: modules/Support/html_admin/mod_support_tickets.html.twig:54
-#: modules/Support/html_admin/mod_support_tickets.html.twig:299
+#: modules/Support/html_admin/mod_support_tickets.html.twig:297
 #: modules/Support/html_client/mod_support_ticket.html.twig:35
 #: modules/Support/html_client/mod_support_ticket.html.twig:81
 #: modules/Support/html_client/mod_support_tickets.html.twig:30
@@ -3488,8 +3489,8 @@ msgstr "Bàn trợ giúp"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:135
 #: modules/Support/html_admin/mod_support_ticket.html.twig:215
 #: modules/Support/html_admin/mod_support_tickets.html.twig:192
-#: modules/Support/html_admin/mod_support_tickets.html.twig:305
-#: modules/Support/html_admin/mod_support_tickets.html.twig:339
+#: modules/Support/html_admin/mod_support_tickets.html.twig:303
+#: modules/Support/html_admin/mod_support_tickets.html.twig:337
 #: modules/Support/html_client/mod_support_contact_us.html.twig:39
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:30
 #: modules/Support/html_client/mod_support_ticket.html.twig:80
@@ -3545,7 +3546,7 @@ msgstr "Email được gửi tới khách hàng"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:767
 #: modules/Email/html_admin/mod_email_template.html.twig:56
-#: modules/Support/html_admin/mod_support_tickets.html.twig:341
+#: modules/Support/html_admin/mod_support_tickets.html.twig:339
 msgid "Email subject"
 msgstr "Tiêu đề email"
 
@@ -4425,8 +4426,8 @@ msgid "Example"
 msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:292
-msgid "Send test email to staff members"
-msgstr "Gửi email test tới các thành viên quản trị"
+msgid "Send a test email to yourself"
+msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:294
 msgid "Update email settings"
@@ -4958,7 +4959,7 @@ msgstr "Số"
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:55
 #: modules/Support/html_admin/mod_support_tickets.html.twig:191
-#: modules/Support/html_admin/mod_support_tickets.html.twig:280
+#: modules/Support/html_admin/mod_support_tickets.html.twig:279
 #: themes/admin_default/html/partial_menu_top.html.twig:11
 msgid "Client"
 msgstr "Khách hàng"
@@ -4968,7 +4969,7 @@ msgstr "Khách hàng"
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:106
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:150
 #: modules/Order/html_admin/mod_order_index.html.twig:281
-#: modules/Support/html_admin/mod_support_tickets.html.twig:284
+#: modules/Support/html_admin/mod_support_tickets.html.twig:283
 msgid "Start typing the client name or ID"
 msgstr "Bắt đầu nhập tên hoặc ID khách hàng"
 
@@ -6386,64 +6387,64 @@ msgstr "Xanh dương"
 msgid "Dark"
 msgstr "Tối"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:90
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:94
 msgid "Border radius"
 msgstr "Góc khung"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:115
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:109
 msgid "Color"
 msgstr "Màu sắc"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:118
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:116
 msgid "Opacity"
 msgstr "Độ mờ đục"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:140
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:128
 msgid "Loader (while content of popup is being loaded)"
 msgstr "Loader (Khi nội dung popup đang được nạp)"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:163
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:151
 msgid "Close (ESC key by default)"
 msgstr "Đóng (phím ESC là mặc định)"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:167
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:155
 msgid "Click on background closes popup"
 msgstr "Click vào vùng bên ngoài để đóng popup"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:174
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:162
 msgid "Show values of custom form before checkout"
 msgstr "Hiện giá trị của form tùy chỉnh trước khi thanh toán"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:178
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:166
 msgid "User input will be shown before checkout for custom form"
 msgstr "Đầu vào người dùng sẽ được hiển thị trước khi thanh toán theo form tùy chỉnh"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:195
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:183
 msgid "Order Button code"
 msgstr "Mã nút đặt hàng"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:192
 msgid "Clicking on html element with classname or ID"
 msgstr "Nhấp vào phần tử html với classname hoặc ID"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:210
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:198
 msgid "will open popup window for"
 msgstr "sẽ mở cửa sổ popup mới cho"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:216
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
 msgid "symbols"
 msgstr "biểu tượng"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:224
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:212
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:29
 msgid "IMPORTANT"
 msgstr "QUAN TRỌNG"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:226
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:214
 msgid "You need to add ID (if you want to use it for one html element) or class (if you want to use it for multiple elements) in order for it to work"
 msgstr "Bạn cần thêm ID (nếu bạn muốn sử dụng nó cho một phần tử HTML) hoặc class (nếu bạn muốn sử dụng nót cho nhiều phần tử) để nó làm việc được"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:228
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:216
 msgid "Add order-button class to your elements which must call popup. For example:"
 msgstr "Thêm class order-button cho phần tử của bạn muốn mở cửa sổ popup. Ví dụ:"
 
@@ -6451,27 +6452,27 @@ msgstr "Thêm class order-button cho phần tử của bạn muốn mở cửa s
 msgid "Add data-product attribute to your element to open specific product. For example:"
 msgstr "Thêm thuộc tính data-product vào phần tử của bạn để chỉ định sản phẩm cần mở. Vì dụ:"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:233
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:245
 msgid "data-product attribute value will be overridden if popup's product is selected from select-box above"
 msgstr "giá trị thuộc tính data-product sẽ bị ghi đè nếu popup sản phẩm được chọn từ hộp chọn phía trên"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:240
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:252
 msgid "Copy this code to your website"
 msgstr "Sao chép đoạn mã này vào website của bạn"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:258
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:270
 msgid "Try your popup"
 msgstr "Thử popup của bạn"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:331
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:343
 msgid "Class name should start with dot (.) or hashtag (#) for ID"
 msgstr "Tên class phải bắt đầu với dấu chấm (.) hoặc dấu thăng (#) với ID"
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:336
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:348
 msgid "Add \" + selector + \" class to your elements which must call popup. For example: "
 msgstr "Thêm \" + selector + \" class vào phần tử của bạn cái phải gọi popup. Ví dụ: "
 
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:341
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:353
 msgid "Add \" + selector + \" ID to your element which must call popup. For example: "
 msgstr "Thêm \" + selector + \" ID vào phần tử của bạn cái phải gọi popup. Ví dụ: "
 
@@ -8849,19 +8850,19 @@ msgstr "Email mới"
 msgid "Open ticket for existing client"
 msgstr "Mở phiếu yêu cầu cho khách hàng hiện tại"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:323
+#: modules/Support/html_admin/mod_support_tickets.html.twig:321
 msgid "Open public ticket for non client"
 msgstr "Mở phiếu yêu cầu cho khách"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:327
+#: modules/Support/html_admin/mod_support_tickets.html.twig:325
 msgid "Receivers name"
 msgstr "Tên người nhận"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:329
+#: modules/Support/html_admin/mod_support_tickets.html.twig:327
 msgid "John Smith"
 msgstr "Nam Nguyễn"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:335
+#: modules/Support/html_admin/mod_support_tickets.html.twig:333
 msgid "user@domail.com"
 msgstr "user@domail.com"
 
@@ -9021,27 +9022,35 @@ msgstr "Bộ nhớ cache không hợp lệ"
 msgid "About FOSSBilling"
 msgstr "Về FOSSBilling"
 
-#: modules/System/html_admin/mod_system_update.html.twig:13
+#: modules/System/html_admin/mod_system_update.html.twig:14
 msgid "Automatic Update"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:14
+#: modules/System/html_admin/mod_system_update.html.twig:15
 msgid "The automatic updater is a one-click tool for updating FOSSBilling. PHP must be able to write to the directory where FOSSBilling is installed."
 msgstr ""
 
+#: modules/System/html_admin/mod_system_update.html.twig:19
+msgid "This update is considered to be a major update, you should check the release notes for any breaking changes."
+msgstr ""
+
 #: modules/System/html_admin/mod_system_update.html.twig:25
+msgid "This update is considered to be a minor update, there are low chances of incompatibilities."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:39
 msgid "Update FOSSBilling"
 msgstr "Cập nhật FOSSBilling"
 
-#: modules/System/html_admin/mod_system_update.html.twig:29
+#: modules/System/html_admin/mod_system_update.html.twig:43
 msgid "Manual Update"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:30
+#: modules/System/html_admin/mod_system_update.html.twig:44
 msgid "If the auto updater is unable to function in your current installation environment, a manual update is available as an alternative solution."
 msgstr "Nếu chức năng cập nhật tự động không thể hoạt động trên môi trường cài đặt hiện tại, bạn có thể lựa chọn giải pháp khác là cập nhật thủ công."
 
-#: modules/System/html_admin/mod_system_update.html.twig:43
+#: modules/System/html_admin/mod_system_update.html.twig:57
 msgid "Apply Patches & Update Configuration"
 msgstr ""
 
