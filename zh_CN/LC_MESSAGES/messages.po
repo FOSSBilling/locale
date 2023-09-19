@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2023-09-16 11:38-0700\n"
-"PO-Revision-Date: 2023-09-16 18:46\n"
+"PO-Revision-Date: 2023-09-19 10:49\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -768,7 +768,7 @@ msgstr "创建用户"
 
 #: library/Server/Manager/Hestia.php:211
 msgid "delete domain"
-msgstr ""
+msgstr "删除域名"
 
 #: library/Server/Manager/Hestia.php:211 library/Server/Manager/Hestia.php:214
 msgid "create domain"
@@ -776,7 +776,7 @@ msgstr "创建域名"
 
 #: library/Server/Manager/Hestia.php:212
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
-msgstr ""
+msgstr "在执行 :action2: 失败后在 :type: 服务器执行 :action1: 失败，请在错误日志查看详细信息"
 
 #: library/Server/Manager/Plesk.php:55
 msgid "account synchronization"
@@ -903,7 +903,7 @@ msgstr "找不到事件"
 
 #: modules/Client/Api/Admin.php:573
 msgid "Group has clients assigned. Please reassign them first."
-msgstr ""
+msgstr "仍有客户所在该群组，请先将他们分配到其他群组"
 
 #: modules/Client/Api/Guest.php:58
 msgid "New registrations are temporary disabled"
@@ -1082,7 +1082,7 @@ msgstr "找不到邮件模板 :code"
 
 #: modules/Email/Service.php:634
 msgid "Error message truncated due to length, please check the error log for the complete message: "
-msgstr ""
+msgstr "由于长度过长错误消息被截断，请检查错误日志以获取完整消息： "
 
 #: modules/Embed/Controller/Admin.php:33
 msgid "Embed and integrate"
@@ -1280,7 +1280,7 @@ msgstr "支付网关"
 
 #: modules/Invoice/Service.php:412
 msgid "Unable to determine the next invoice number"
-msgstr ""
+msgstr "无法确定下一个发票编号"
 
 #: modules/Invoice/Service.php:626
 msgid "Can not refund invoice with negative amount"
@@ -1757,7 +1757,7 @@ msgstr "ID 未找到"
 
 #: modules/Servicedomain/Api/Admin.php:218
 msgid "TLD is used by :count: domains"
-msgstr ""
+msgstr "顶级域名后缀被 :count: 个域名所使用"
 
 #: modules/Servicedomain/Api/Admin.php:243
 msgid "Tld already registered"
@@ -1769,7 +1769,7 @@ msgstr "暂不支持该域名注册商"
 
 #: modules/Servicedomain/Api/Admin.php:360
 msgid "Registrar is used by :count: domains"
-msgstr ""
+msgstr "该注册服务机构被 :count: 个域名所使用"
 
 #: modules/Servicedomain/Api/Admin.php:446
 msgid "Domain order is not activated"
@@ -1892,11 +1892,11 @@ msgstr "缺少 plan_id"
 
 #: modules/Servicehosting/Api/Admin.php:235
 msgid "Hosting server is used by :count: service hostings"
-msgstr ""
+msgstr "有 :count: 个服务托管在该托管服务器"
 
 #: modules/Servicehosting/Api/Admin.php:347
 msgid "Hosting plan is used by :count: service hostings"
-msgstr ""
+msgstr "有 :count: 个服务在使用此托管计划"
 
 #: modules/Servicehosting/Api/Guest.php:36
 msgid "Product type"
@@ -4427,7 +4427,7 @@ msgstr "示例"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:292
 msgid "Send a test email to yourself"
-msgstr ""
+msgstr "向自己发送测试邮件"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:294
 msgid "Update email settings"
@@ -7678,11 +7678,11 @@ msgstr "文件"
 
 #: modules/Servicedownloadable/html_admin/mod_servicedownloadable_config.html.twig:9
 msgid "Keep Orders Updated"
-msgstr ""
+msgstr "保持订单更新"
 
 #: modules/Servicedownloadable/html_admin/mod_servicedownloadable_config.html.twig:23
 msgid "Save config"
-msgstr ""
+msgstr "保存配置"
 
 #: modules/Servicedownloadable/html_admin/mod_servicedownloadable_config.html.twig:29
 msgid "Currently uploaded file"
@@ -8978,19 +8978,19 @@ msgstr "银行账号"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:117
 msgid "Disallow guest API to fetch FOSSBilling version"
-msgstr ""
+msgstr "禁止访客API获取FOSSBilling版本"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:119
 msgid "Enabling this functionality may effect modules that depend on it."
-msgstr ""
+msgstr "启用此功能可能会影响依赖它的模块。"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:138
 msgid "Hide some company information in the guest API"
-msgstr ""
+msgstr "在访客API中隐藏一些公司信息"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:140
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
-msgstr ""
+msgstr "启用此选项将隐藏“公司”访客API端点中的一些信息，例如地址、电话号码、电子邮件、增值税号码等等。"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:175
 msgid "Company terms of service, legal regulation"
@@ -9034,11 +9034,11 @@ msgstr "自动更新可一键更新 FOSSBilling。PHP 必须能够写入 FOSSBil
 
 #: modules/System/html_admin/mod_system_update.html.twig:19
 msgid "This update is considered to be a major update, you should check the release notes for any breaking changes."
-msgstr ""
+msgstr "此更新被认为是一个重要的更新，您应该检查更新日志中的重大更改项目。"
 
 #: modules/System/html_admin/mod_system_update.html.twig:25
 msgid "This update is considered to be a minor update, there are low chances of incompatibilities."
-msgstr ""
+msgstr "此更新被认为是一个次要的更新，有较低可能存在不兼容问题。"
 
 #: modules/System/html_admin/mod_system_update.html.twig:39
 msgid "Update FOSSBilling"
