@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-09-16 11:38-0700\n"
-"PO-Revision-Date: 2023-09-16 18:45\n"
+"POT-Creation-Date: 2023-09-22 18:21-0700\n"
+"PO-Revision-Date: 2023-09-23 11:47\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Lithuanian\n"
 "MIME-Version: 1.0\n"
@@ -110,7 +110,7 @@ msgid "Invalid page number"
 msgstr ""
 
 #: library/Box/Pagination.php:47 library/Box/Pagination.php:79
-#: modules/Client/Service.php:182
+#: modules/Client/Service.php:183
 msgid "Invalid per page number"
 msgstr ""
 
@@ -419,7 +419,7 @@ msgstr ""
 msgid "Unable to create backup of configuration file"
 msgstr ""
 
-#: library/FOSSBilling/UpdatePatcher.php:99
+#: library/FOSSBilling/UpdatePatcher.php:101
 msgid "Error when writing updated configuration file."
 msgstr "Klaida rašant atnaujintą konfigūracijos failą."
 
@@ -491,7 +491,7 @@ msgid "It is forbidden to pay a deposit invoice with this gateway"
 msgstr "Su šiais vartais apmokėti depozitinę sąskaitą draudžiama"
 
 #: library/Payment/Adapter/ClientBalance.php:83
-#: library/Payment/Adapter/PayPalEmail.php:73
+#: library/Payment/Adapter/PayPalEmail.php:74
 msgid "IPN is invalid"
 msgstr ""
 
@@ -499,20 +499,20 @@ msgstr ""
 msgid "ClientBalance gateway is not enabled"
 msgstr "ClientBalance vartai neįjungti"
 
-#: library/Payment/Adapter/PayPalEmail.php:30
+#: library/Payment/Adapter/PayPalEmail.php:31
 #: library/Payment/Adapter/Stripe.php:30 library/Payment/Adapter/Stripe.php:34
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
 msgstr "\":pay_gateway\" mokėjimo vartai nepilnai sukonfigūruoti. Prašome sukonfigūruoti :missing"
 
-#: library/Payment/Adapter/PayPalEmail.php:121
+#: library/Payment/Adapter/PayPalEmail.php:122
 msgid "Cannot process duplicate IPN"
 msgstr "Nepavyko apdoroti pasikartojančio IPN"
 
-#: library/Payment/Adapter/PayPalEmail.php:259
+#: library/Payment/Adapter/PayPalEmail.php:260
 msgid "Redirecting to PayPal.com"
 msgstr "Peradresuojama į PayPal.com"
 
-#: library/Payment/Adapter/PayPalEmail.php:302
+#: library/Payment/Adapter/PayPalEmail.php:303
 #: library/Payment/Adapter/Stripe.php:101 modules/Invoice/Service.php:1344
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Apmokėjimas už sąskaitą faktūrą :serie:id [:title]"
@@ -806,25 +806,25 @@ msgstr "Veikla"
 msgid "Event history"
 msgstr "Įvykių istorija"
 
-#: modules/Api/Controller/Client.php:47 modules/Api/Controller/Client.php:250
+#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:251
 msgid "Unknown API call :call"
 msgstr "Nežinomas API pranešimas :call"
 
-#: modules/Api/Controller/Client.php:127
+#: modules/Api/Controller/Client.php:128
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Neteisingas prašymas. Įsitikinkite, kad užklausos kilmė yra iš :from"
 
-#: modules/Api/Controller/Client.php:138
+#: modules/Api/Controller/Client.php:139
 msgid "Unauthorized IP"
 msgstr "Neteisėtas IP"
 
-#: modules/Api/Controller/Client.php:192 modules/Api/Controller/Client.php:196
-#: modules/Api/Controller/Client.php:200 modules/Api/Controller/Client.php:214
-#: modules/Api/Controller/Client.php:223 modules/Api/Controller/Client.php:237
+#: modules/Api/Controller/Client.php:193 modules/Api/Controller/Client.php:197
+#: modules/Api/Controller/Client.php:201 modules/Api/Controller/Client.php:215
+#: modules/Api/Controller/Client.php:224 modules/Api/Controller/Client.php:238
 msgid "Authentication Failed"
 msgstr "Autentifikavimas nepavyko"
 
-#: modules/Api/Controller/Client.php:329
+#: modules/Api/Controller/Client.php:330
 msgid "CSRF token invalid"
 msgstr ""
 
@@ -904,8 +904,8 @@ msgstr "El. paštas jau užregistruotas."
 msgid "Can not change email. It is already registered."
 msgstr "Negalima pakeisti el. pašto. Jis jau užregistruotas."
 
-#: modules/Client/Api/Admin.php:323 modules/Staff/Api/Admin.php:123
-#: modules/Staff/Api/Guest.php:104
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
+#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:104
 msgid "Passwords do not match"
 msgstr "Slaptažodžiai nesutampa"
 
@@ -917,27 +917,26 @@ msgstr "Įvykis nerastas"
 msgid "Group has clients assigned. Please reassign them first."
 msgstr ""
 
-#: modules/Client/Api/Guest.php:58
+#: modules/Client/Api/Guest.php:59
 msgid "New registrations are temporary disabled"
 msgstr "Naujos registracijos laikinai išjungtos"
 
-#: modules/Client/Api/Guest.php:70
+#: modules/Client/Api/Guest.php:71
 msgid "Passwords do not match."
 msgstr "Slaptažodžiai nesutampa."
 
-#: modules/Client/Api/Guest.php:83
+#: modules/Client/Api/Guest.php:84
 msgid "Email is already registered. You may want to login instead of registering."
 msgstr "El. paštas jau užregistruotas. Galbūt norite prisijungti, o ne užsiregistruoti."
 
-#: modules/Client/Api/Guest.php:129
+#: modules/Client/Api/Guest.php:130
 msgid "Please check your login details."
 msgstr "Patikrinkite prisijungimo duomenis."
 
-#: modules/Client/Api/Guest.php:206 modules/Staff/Api/Guest.php:109
-#: modules/Staff/Api/Guest.php:113 modules/Staff/Controller/Admin.php:124
-#: modules/Staff/Controller/Admin.php:127
-msgid "The link have expired or you have already confirmed password reset."
-msgstr "Nuorodos galiojimo laikas baigėsi arba jūs jau patvirtinote slaptažodį."
+#: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
+#: modules/Client/Service.php:701
+msgid "The link has expired or you have already reset your password."
+msgstr ""
 
 #: modules/Client/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_index.html.twig:7
@@ -968,51 +967,51 @@ msgstr "Klientų prisijungimo istorija"
 msgid "Email address was confirmed"
 msgstr "El. pašto adresas patvirtintas"
 
-#: modules/Client/Service.php:34
+#: modules/Client/Service.php:35
 msgid "Invalid email confirmation link"
 msgstr "Netinkama el. pašto patvirtinimo nuoroda"
 
-#: modules/Client/Service.php:70
+#: modules/Client/Service.php:71
 msgid "The password you chose when creating your account."
 msgstr "Slaptažodis, kurį pasirinkote kurdami paskyrą."
 
-#: modules/Client/Service.php:224
+#: modules/Client/Service.php:225
 msgid "Currency can not be changed. Client already have invoices issued."
 msgstr "Valiutos pakeisti negalima. Klientas jau turi išrašytas sąskaitas faktūras."
 
-#: modules/Client/Service.php:229
+#: modules/Client/Service.php:230
 msgid "Currency can not be changed. Client already have orders."
 msgstr "Valiutos pakeisti negalima. Klientas jau turi išrašytas sąskaitas faktūras."
 
-#: modules/Client/Service.php:238
+#: modules/Client/Service.php:239
 msgid "Define clients currency before adding funds."
 msgstr "Prieš pridėdami lėšų, nustatykite klientų valiutą."
 
-#: modules/Client/Service.php:242 modules/Client/ServiceBalance.php:125
+#: modules/Client/Service.php:243 modules/Client/ServiceBalance.php:125
 msgid "Funds amount is invalid"
 msgstr ""
 
-#: modules/Client/Service.php:246 modules/Client/ServiceBalance.php:129
+#: modules/Client/Service.php:247 modules/Client/ServiceBalance.php:129
 msgid "Funds description is invalid"
 msgstr ""
 
-#: modules/Client/Service.php:414
+#: modules/Client/Service.php:415
 msgid "Client ID or email is required"
 msgstr "Būtinas kliento ID arba el. paštas"
 
-#: modules/Client/Service.php:428
+#: modules/Client/Service.php:429
 msgid "Client not found"
 msgstr "Klientas nerastas"
 
-#: modules/Client/Service.php:471
+#: modules/Client/Service.php:472
 msgid "Can not remove group with clients"
 msgstr "Negalima pašalinti grupės su klientais"
 
-#: modules/Client/Service.php:631 modules/Profile/Service.php:117
+#: modules/Client/Service.php:632 modules/Profile/Service.php:117
 msgid "Email can not be changed"
 msgstr "El. pašto pakeisti negalima"
 
-#: modules/Client/Service.php:645 modules/Client/Service.php:661
+#: modules/Client/Service.php:646 modules/Client/Service.php:662
 msgid "Field :field cannot be empty"
 msgstr "Teksto laukas :field negali būti tuščias"
 
@@ -1061,7 +1060,7 @@ msgstr "Pasirinktiniai puslapiai"
 
 #: modules/Email/Api/Admin.php:120 modules/Email/Api/Admin.php:144
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
-#: modules/Email/Api/Client.php:113 modules/Email/Service.php:462
+#: modules/Email/Api/Client.php:113 modules/Email/Service.php:466
 msgid "Email not found"
 msgstr "El. pašto adresas nerastas"
 
@@ -1080,19 +1079,19 @@ msgstr "Gavėjas neapibrėžtas. Apibrėžkite to arba to_client arba to_staff p
 msgid "Email history"
 msgstr "El. pašto istorija"
 
-#: modules/Email/Service.php:133
+#: modules/Email/Service.php:137
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "Gavėjas neapibrėžtas. Apibrėžkite to arba to_client arba to_staff arba to_admin parametrą"
 
-#: modules/Email/Service.php:193
+#: modules/Email/Service.php:196
 msgid "From email address can not be empty"
 msgstr "Nuo El. pašto adresas negali būti tuščias"
 
-#: modules/Email/Service.php:447
+#: modules/Email/Service.php:451
 msgid "Email template :code was not found"
 msgstr "El. pašto šablonas :code nerastas"
 
-#: modules/Email/Service.php:634
+#: modules/Email/Service.php:638
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr ""
 
@@ -1359,79 +1358,79 @@ msgstr "Mokėjimo vartai neprieinami įdiegimui."
 msgid "Payment gateway :adapter was not found"
 msgstr "Mokėjimo vartų :adapter nerastas"
 
-#: modules/Invoice/ServiceTransaction.php:81
+#: modules/Invoice/ServiceTransaction.php:82
 msgid "Transaction invoice id is missing"
 msgstr "Trūksta operacijos sąskaitos faktūros id"
 
-#: modules/Invoice/ServiceTransaction.php:85
+#: modules/Invoice/ServiceTransaction.php:86
 msgid "Payment gateway id is missing"
 msgstr "Trūksta mokėjimo vartų id"
 
-#: modules/Invoice/ServiceTransaction.php:360
+#: modules/Invoice/ServiceTransaction.php:361
 msgid "Transaction :id not found."
 msgstr "Operacija :id nerasta."
 
-#: modules/Invoice/ServiceTransaction.php:364
-#: modules/Invoice/ServiceTransaction.php:484
+#: modules/Invoice/ServiceTransaction.php:365
+#: modules/Invoice/ServiceTransaction.php:485
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
 msgstr "Nepavyko nustatyti operacijos kilmės. Operacijų mokėjimo vartai nežinomi."
 
-#: modules/Invoice/ServiceTransaction.php:369
-#: modules/Invoice/ServiceTransaction.php:489
+#: modules/Invoice/ServiceTransaction.php:370
+#: modules/Invoice/ServiceTransaction.php:490
 msgid "Can not handle transaction received from unknown payment gateway: :id"
 msgstr "Negalima apdoroti operacijos, gautos iš nežinomų mokėjimo vartų: :id"
 
-#: modules/Invoice/ServiceTransaction.php:375
-#: modules/Invoice/ServiceTransaction.php:519
+#: modules/Invoice/ServiceTransaction.php:376
+#: modules/Invoice/ServiceTransaction.php:520
 msgid "Payment adapter :adapter does not support action :action"
 msgstr "Mokėjimo adapteris :adapter nepalaiko veiksmo :action"
 
-#: modules/Invoice/ServiceTransaction.php:409
+#: modules/Invoice/ServiceTransaction.php:410
 msgid "Unknown transaction #:id type: :type"
 msgstr "Nežinomas operacijos #:id tipas: :type"
 
-#: modules/Invoice/ServiceTransaction.php:498
-#: modules/Invoice/ServiceTransaction.php:664
+#: modules/Invoice/ServiceTransaction.php:499
+#: modules/Invoice/ServiceTransaction.php:665
 msgid "Transaction :id is not associated with an invoice."
 msgstr "Operacija :id nesusieta su sąskaita faktūra."
 
-#: modules/Invoice/ServiceTransaction.php:503
+#: modules/Invoice/ServiceTransaction.php:504
 msgid "Invoice #:id not found"
 msgstr "Sąskaita faktūra #:id nerasta"
 
-#: modules/Invoice/ServiceTransaction.php:513
+#: modules/Invoice/ServiceTransaction.php:514
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
 msgstr "Momentinio mokėjimo pranešimas (IPN) nepraėjo vartų :id patvirtinimo"
 
-#: modules/Invoice/ServiceTransaction.php:524
+#: modules/Invoice/ServiceTransaction.php:525
 msgid "Payment gateway :id method getTransaction should return Payment_Transaction object"
 msgstr "Mokėjimo vartų :id metodas getTransaction turėtų grąžinti objektą Payment_Transaction"
 
-#: modules/Invoice/ServiceTransaction.php:612
+#: modules/Invoice/ServiceTransaction.php:613
 msgid "Can not create subscription. Subscription id from payment gateway was not received"
 msgstr "Nepavyko sukurti prenumeratos. Prenumeratos id iš mokėjimo vartų negautas"
 
-#: modules/Invoice/ServiceTransaction.php:647
+#: modules/Invoice/ServiceTransaction.php:648
 msgid "Subscription #:id was not found. Could not unsubscribe"
 msgstr "Prenumeratos #:id nerastas. Nepavyko atšaukti prenumeratos"
 
-#: modules/Invoice/ServiceTransaction.php:660
+#: modules/Invoice/ServiceTransaction.php:661
 msgid "Only approved transaction can be processed"
 msgstr "Galima apdoroti tik patvirtintą operaciją"
 
-#: modules/Invoice/ServiceTransaction.php:671
+#: modules/Invoice/ServiceTransaction.php:672
 msgid "Transaction currency :code do not match required currency :required"
 msgstr "Operacijos valiuta :code nesutampa su reikalaujama valiuta :required"
 
-#: modules/Invoice/ServiceTransaction.php:676
+#: modules/Invoice/ServiceTransaction.php:677
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
 msgstr "Mokėjimo vartų operacijos būsena Laukiama. Galima apdoroti tik užbaigtas arba Nežinomas operacijas."
 
-#: modules/Invoice/ServiceTransaction.php:686
+#: modules/Invoice/ServiceTransaction.php:687
 msgid "Client currency do not match invoice currency"
 msgstr "Kliento valiuta nesutampa su sąskaitos faktūros valiuta"
 
-#: modules/Invoice/ServiceTransaction.php:691
+#: modules/Invoice/ServiceTransaction.php:692
 msgid "Can not add negative amount to client balance for debit transaction"
 msgstr "Negalima pridėti neigiamos sumos prie debeto operacijos kliento balanso"
 
@@ -1497,7 +1496,7 @@ msgstr "Prieš siųsdami pranešimą pridėkite turinio"
 msgid "Mass mailer"
 msgstr "Masinis laiškų siuntimas"
 
-#: modules/Massmailer/Service.php:159
+#: modules/Massmailer/Service.php:161
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "Išjungta dėl saugumo sumetimų (Demo režimas įjungtas)"
 
@@ -1656,7 +1655,7 @@ msgstr ""
 msgid "Unable to invalidate sessions, an invalid type was used"
 msgstr ""
 
-#: modules/Queue/Api/Admin.php:94
+#: modules/Queue/Api/Admin.php:96
 msgid "Message handler function :method does not exists"
 msgstr "Pranešimų tvarkyklės funkcija :method neegzistuoja"
 
@@ -1710,28 +1709,28 @@ msgstr "Užsakymo id yra būtinas"
 msgid "API call is missing arguments"
 msgstr "API kvietime trūksta argumentų"
 
-#: modules/Servicecustom/Service.php:36
+#: modules/Servicecustom/Service.php:38
 msgid "You must fill in all required fields. "
 msgstr "Turite užpildyti visus privalomus laukus. "
 
-#: modules/Servicecustom/Service.php:43
+#: modules/Servicecustom/Service.php:45
 msgid "Field "
 msgstr "Laukas "
 
-#: modules/Servicecustom/Service.php:77 modules/Servicedomain/Service.php:218
+#: modules/Servicecustom/Service.php:79 modules/Servicedomain/Service.php:218
 #: modules/Servicelicense/Service.php:112
 msgid "Could not activate order. Service was not created"
 msgstr "Nepavyko suaktyvinti užsakymo. Paslauga nebuvo sukurta"
 
-#: modules/Servicecustom/Service.php:217
+#: modules/Servicecustom/Service.php:219
 msgid "Custom plugin method :method is forbidden"
 msgstr "Pasirinktinis papildinio metodas :method draudžiamas"
 
-#: modules/Servicecustom/Service.php:226
+#: modules/Servicecustom/Service.php:228
 msgid "Config must be an array"
 msgstr "Konfigūracija turi būti masyvas"
 
-#: modules/Servicecustom/Service.php:246 modules/Servicedomain/Api/Client.php:127
+#: modules/Servicecustom/Service.php:248 modules/Servicedomain/Api/Client.php:127
 #: modules/Servicedownloadable/Api/Admin.php:64
 #: modules/Servicedownloadable/Api/Client.php:38
 #: modules/Servicehosting/Api/Admin.php:425
@@ -1741,15 +1740,15 @@ msgstr "Konfigūracija turi būti masyvas"
 msgid "Order is not activated"
 msgstr "Užsakymas neaktyvuotas"
 
-#: modules/Servicecustom/Service.php:263
+#: modules/Servicecustom/Service.php:265
 msgid "Plugin class file :file was not found"
 msgstr "Papildinio klasės failas :file nerastas"
 
-#: modules/Servicecustom/Service.php:277
+#: modules/Servicecustom/Service.php:279
 msgid "Plugin :plugin does not support action :action"
 msgstr "Papildinys :plugin nepalaiko veiksmo :action"
 
-#: modules/Servicecustom/Service.php:293 modules/Servicedomain/Service.php:252
+#: modules/Servicecustom/Service.php:295 modules/Servicedomain/Service.php:252
 #: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:94
 #: modules/Servicehosting/Service.php:139 modules/Servicehosting/Service.php:157
 #: modules/Servicehosting/Service.php:176 modules/Servicehosting/Service.php:195
@@ -1889,12 +1888,12 @@ msgstr "Negalima pašalinti registro, kuris turi domenų"
 msgid "File was not uploaded"
 msgstr "Failas nebuvo įkeltas"
 
-#: modules/Servicedownloadable/Service.php:168
-#: modules/Servicedownloadable/Service.php:221
+#: modules/Servicedownloadable/Service.php:169
+#: modules/Servicedownloadable/Service.php:222
 msgid "Error uploading file"
 msgstr "Klaida įkeliant failą"
 
-#: modules/Servicedownloadable/Service.php:274
+#: modules/Servicedownloadable/Service.php:275
 msgid "File can not be downloaded at the moment. Please contact support"
 msgstr "Šiuo metu failo atsisiųsti negalima. Susisiekite su pagalbos komanda"
 
@@ -2026,6 +2025,11 @@ msgstr "Jums neleidžiama prisijungti prie administravimo skydelio iš :ip adres
 #: modules/Staff/Controller/Admin.php:118
 msgid "Password reset has been disabled"
 msgstr "Slaptažodžio atstatymas buvo išjungtas"
+
+#: modules/Staff/Api/Guest.php:109 modules/Staff/Api/Guest.php:113
+#: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
+msgid "The link have expired or you have already confirmed password reset."
+msgstr "Nuorodos galiojimo laikas baigėsi arba jūs jau patvirtinote slaptažodį."
 
 #: modules/Staff/Controller/Admin.php:36
 msgid "Staff login history"
@@ -2364,7 +2368,7 @@ msgstr "Data"
 #: modules/Client/html_admin/mod_client_manage.html.twig:672
 #: modules/Email/html_admin/mod_email_details.html.twig:59
 #: modules/Email/html_admin/mod_email_history.html.twig:60
-#: modules/Email/html_admin/mod_email_settings.html.twig:84
+#: modules/Email/html_admin/mod_email_settings.html.twig:105
 #: modules/Email/html_admin/mod_email_template.html.twig:77
 #: modules/Extension/html_admin/mod_extension_index.html.twig:74
 #: modules/Extension/html_admin/mod_extension_index.html.twig:84
@@ -2993,7 +2997,7 @@ msgstr "Slaptažodis"
 #: modules/Client/html_admin/mod_client_index.html.twig:403
 #: modules/Client/html_admin/mod_client_index.html.twig:455
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:138
-#: modules/Email/html_admin/mod_email_settings.html.twig:172
+#: modules/Email/html_admin/mod_email_settings.html.twig:173
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:163
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:136
 #: modules/Kb/html_admin/mod_kb_index.html.twig:128
@@ -3039,7 +3043,7 @@ msgstr "Profilis"
 #: modules/Client/html_admin/mod_client_manage.html.twig:29
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:75
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:75
-#: modules/Email/html_admin/mod_email_settings.html.twig:77
+#: modules/Email/html_admin/mod_email_settings.html.twig:98
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:80
 #: modules/Product/html_admin/mod_product_manage.html.twig:75
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:98
@@ -3135,8 +3139,8 @@ msgstr "Prisijungti prie klientų sistemos"
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:85
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:87
 #: modules/Email/html_admin/mod_email_details.html.twig:64
-#: modules/Email/html_admin/mod_email_settings.html.twig:87
-#: modules/Email/html_admin/mod_email_settings.html.twig:89
+#: modules/Email/html_admin/mod_email_settings.html.twig:108
+#: modules/Email/html_admin/mod_email_settings.html.twig:110
 #: modules/Email/html_client/mod_email_email.html.twig:36
 #: modules/Email/html_client/mod_email_index.html.twig:45
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
@@ -3186,8 +3190,8 @@ msgstr "Paštas patvirtintas"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:202
 #: modules/Client/html_admin/mod_client_manage.html.twig:356
-#: modules/Email/html_admin/mod_email_settings.html.twig:138
-#: modules/Email/html_admin/mod_email_settings.html.twig:207
+#: modules/Email/html_admin/mod_email_settings.html.twig:139
+#: modules/Email/html_admin/mod_email_settings.html.twig:208
 #: modules/Email/html_admin/mod_email_template.html.twig:112
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:75
@@ -3249,8 +3253,8 @@ msgstr "Taip"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:206
 #: modules/Client/html_admin/mod_client_manage.html.twig:360
-#: modules/Email/html_admin/mod_email_settings.html.twig:142
-#: modules/Email/html_admin/mod_email_settings.html.twig:211
+#: modules/Email/html_admin/mod_email_settings.html.twig:143
+#: modules/Email/html_admin/mod_email_settings.html.twig:212
 #: modules/Email/html_admin/mod_email_template.html.twig:116
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:79
@@ -3484,8 +3488,8 @@ msgstr "Pagalbos tarnyba"
 #: modules/Client/html_admin/mod_client_manage.html.twig:594
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:43
 #: modules/Email/html_admin/mod_email_history.html.twig:33
-#: modules/Email/html_admin/mod_email_settings.html.twig:50
-#: modules/Email/html_admin/mod_email_settings.html.twig:159
+#: modules/Email/html_admin/mod_email_settings.html.twig:71
+#: modules/Email/html_admin/mod_email_settings.html.twig:160
 #: modules/Embed/html_client/mod_embed_contact.html.twig:52
 #: modules/Index/html_client/mod_index_dashboard.html.twig:48
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
@@ -3861,6 +3865,40 @@ msgstr "Jūsų profilio valiuta yra"
 msgid "Create new client profile if you want to manage your money in other currency"
 msgstr "Sukurkite naują kliento profilį, jei norite tvarkyti savo pinigus kita valiuta"
 
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:3
+msgid "Set new Password"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:20
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:43
+msgid "Set new password"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:31
+msgid "New password"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:36
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:38
+msgid "Repeat new password"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:54
+msgid "Sign Up"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:58
+#: modules/Page/html_client/mod_page_login.html.twig:20
+#: modules/Page/html_client/mod_page_password-reset.html.twig:48
+#: modules/Page/html_client/mod_page_signup.html.twig:212
+#: modules/Staff/html_admin/mod_staff_login.html.twig:3
+#: themes/admin_default/html/error.html.twig:14
+#: themes/huraga/html/layout_default.html.twig:111
+#: themes/huraga/html/layout_default.html.twig:226
+msgid "Login"
+msgstr "Prisijungti"
+
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
 msgstr "Redaguoti sutikimo dėl slapukų tekstą"
@@ -3998,7 +4036,7 @@ msgid "Update Rates"
 msgstr "Atnaujinti tarifus"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:127
-#: modules/Email/html_admin/mod_email_settings.html.twig:52
+#: modules/Email/html_admin/mod_email_settings.html.twig:73
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:30
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:32
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:104
@@ -4069,7 +4107,7 @@ msgstr "Meta Raktažodžiai"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:131
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:58
-#: modules/Email/html_admin/mod_email_settings.html.twig:165
+#: modules/Email/html_admin/mod_email_settings.html.twig:166
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:207
 #: modules/Kb/html_admin/mod_kb_article.html.twig:45
 #: modules/Kb/html_admin/mod_kb_index.html.twig:122
@@ -4298,7 +4336,7 @@ msgstr "Naujas šablonas"
 msgid "Email settings"
 msgstr "El. pašto nustatymai"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:51
+#: modules/Email/html_admin/mod_email_settings.html.twig:72
 #: modules/Extension/html_admin/mod_extension_index.html.twig:41
 #: modules/Extension/html_admin/mod_extension_index.html.twig:172
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:36
@@ -4306,8 +4344,8 @@ msgstr "El. pašto nustatymai"
 msgid "Extension"
 msgstr "Plėtinys"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:53
-#: modules/Email/html_admin/mod_email_settings.html.twig:134
+#: modules/Email/html_admin/mod_email_settings.html.twig:74
+#: modules/Email/html_admin/mod_email_settings.html.twig:135
 #: modules/Email/html_admin/mod_email_template.html.twig:108
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:56
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:33
@@ -4319,23 +4357,23 @@ msgstr "Plėtinys"
 msgid "Enabled"
 msgstr "Įjungtas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:85
+#: modules/Email/html_admin/mod_email_settings.html.twig:106
 msgid "Are you sure you want to delete this template?"
 msgstr "Ar tikrai norite ištrinti šį šabloną?"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:98
+#: modules/Email/html_admin/mod_email_settings.html.twig:119
 msgid "The list is empty. Depending on modules enabled email templates will be inserted after first event occurrence."
 msgstr "Sąrašas tuščias. Priklausomai nuo įgalintų modulių, el. pašto šablonai bus įterpti po pirmojo įvykio."
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:130
+#: modules/Email/html_admin/mod_email_settings.html.twig:131
 msgid "Where I can use new email template?"
 msgstr "Kur galiu naudoti naują el. pašto šabloną?"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:131
+#: modules/Email/html_admin/mod_email_settings.html.twig:132
 msgid "Newly created email templates can be used in custom event hooks."
 msgstr "Naujai sukurti el. pašto šablonai gali būti naudojami tinkintuose įvykių kabliukuose."
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:147
+#: modules/Email/html_admin/mod_email_settings.html.twig:148
 #: modules/Email/html_admin/mod_email_template.html.twig:121
 #: modules/Kb/html_admin/mod_kb_article.html.twig:33
 #: modules/Kb/html_admin/mod_kb_index.html.twig:43
@@ -4349,103 +4387,103 @@ msgstr "Naujai sukurti el. pašto šablonai gali būti naudojami tinkintuose įv
 msgid "Category"
 msgstr "Kategorija"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:153
+#: modules/Email/html_admin/mod_email_settings.html.twig:154
 msgid "Action code"
 msgstr "Veiksmo kodas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:179
+#: modules/Email/html_admin/mod_email_settings.html.twig:180
 msgid "Email settings updated"
 msgstr "El. pašto nustatymai atnaujinti"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:182
+#: modules/Email/html_admin/mod_email_settings.html.twig:183
 msgid "Configure email options"
 msgstr "Konfigūruoti el. pašto parinktis"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:183
+#: modules/Email/html_admin/mod_email_settings.html.twig:184
 msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can configure your own SMTP server"
 msgstr "FOSSBilling pagal numatytuosius nustatymus siunčia el. laiškus naudojant <em>sendmail</em> arba galite sukonfigūruoti savo SMTP serverį"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:189
+#: modules/Email/html_admin/mod_email_settings.html.twig:190
 msgid "Send emails per cron run (0 = unlimited)"
 msgstr "Siųsti el. laiškus per cron paleidimą (0 = neribota)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:193
+#: modules/Email/html_admin/mod_email_settings.html.twig:194
 msgid "Max email sending time in minutes (0 = unlimited, default 5 min.)"
 msgstr "Maksimalus el. laiškų siuntimo laikas minutėmis (0 = neribotas, numatytoji 5 min.)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:197
+#: modules/Email/html_admin/mod_email_settings.html.twig:198
 msgid "Cancel sending email after unsuccessful tries (0 = do not cancel)"
 msgstr "Atšaukti el. laiško siuntimą po nesėkmingų bandymų (0 = neatšaukti)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:203
+#: modules/Email/html_admin/mod_email_settings.html.twig:204
 msgid "Log sent emails to database"
 msgstr "Išsaugoti išsiųstus el. laiškus į žurnalo duom. bazę"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:216
+#: modules/Email/html_admin/mod_email_settings.html.twig:217
 msgid "Email transport"
 msgstr "El. pašto transportavimas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:220
+#: modules/Email/html_admin/mod_email_settings.html.twig:221
 msgid "SendMail"
 msgstr "SendMail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:224
+#: modules/Email/html_admin/mod_email_settings.html.twig:225
 msgid "SMTP"
 msgstr "SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:228
+#: modules/Email/html_admin/mod_email_settings.html.twig:229
 msgid "SendGrid"
 msgstr "SendGrid"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:232
+#: modules/Email/html_admin/mod_email_settings.html.twig:233
 msgid "Custom"
 msgstr "Pasirinktinis"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:239
+#: modules/Email/html_admin/mod_email_settings.html.twig:240
 msgid "SMTP Hostname"
 msgstr "SMTP serveris"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:245
+#: modules/Email/html_admin/mod_email_settings.html.twig:246
 msgid "SMTP Port"
 msgstr "SMTP prievadas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:251
+#: modules/Email/html_admin/mod_email_settings.html.twig:252
 msgid "SMTP Username"
 msgstr "SMTP vartotojo vardas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:257
+#: modules/Email/html_admin/mod_email_settings.html.twig:258
 msgid "SMTP Password"
 msgstr "SMTP slaptažodis"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:266
+#: modules/Email/html_admin/mod_email_settings.html.twig:267
 msgid "SendGrid API Key"
 msgstr "SendGrid API raktas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:275
+#: modules/Email/html_admin/mod_email_settings.html.twig:276
 msgid "Custom DSN"
 msgstr "Pasirinktinis DSN"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:277
+#: modules/Email/html_admin/mod_email_settings.html.twig:278
 msgid "If one of the available options don't quite meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
 msgstr "Jei viena iš galimų parinkčių ne visai atitinka jūsų poreikius, galite apibrėžti tinkintą DSN. Atminkite, kad naudotojų vardai, slaptažodžiai ir serverių pavadinimai su specialiais simboliais turi būti URL-užkoduoti."
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:278
+#: modules/Email/html_admin/mod_email_settings.html.twig:279
 msgid "More information"
 msgstr "Daugiau informacijos"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:279
+#: modules/Email/html_admin/mod_email_settings.html.twig:280
 msgid "Example"
 msgstr "Pavyzdys"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:292
+#: modules/Email/html_admin/mod_email_settings.html.twig:293
 msgid "Send a test email to yourself"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:294
+#: modules/Email/html_admin/mod_email_settings.html.twig:295
 msgid "Update email settings"
 msgstr "Atnaujinti el. pašto nustatymus"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:308
+#: modules/Email/html_admin/mod_email_settings.html.twig:309
 msgid "Email was successfully sent"
 msgstr "El. laiškas sėkmingai išsiųstas"
 
@@ -6651,16 +6689,6 @@ msgstr "Apie mus"
 #: modules/Page/html_client/mod_page_tos.html.twig:27
 msgid "Back to Homepage"
 msgstr "Grįžti į pagrindinį puslapį"
-
-#: modules/Page/html_client/mod_page_login.html.twig:20
-#: modules/Page/html_client/mod_page_password-reset.html.twig:48
-#: modules/Page/html_client/mod_page_signup.html.twig:212
-#: modules/Staff/html_admin/mod_staff_login.html.twig:3
-#: themes/admin_default/html/error.html.twig:14
-#: themes/huraga/html/layout_default.html.twig:111
-#: themes/huraga/html/layout_default.html.twig:226
-msgid "Login"
-msgstr "Prisijungti"
 
 #: modules/Page/html_client/mod_page_login.html.twig:53
 #: modules/Page/html_client/mod_page_password-reset.html.twig:47
