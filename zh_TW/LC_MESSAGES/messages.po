@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-09-16 11:38-0700\n"
-"PO-Revision-Date: 2023-09-16 18:46\n"
+"POT-Creation-Date: 2023-09-22 18:21-0700\n"
+"PO-Revision-Date: 2023-09-23 11:47\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -110,7 +110,7 @@ msgid "Invalid page number"
 msgstr ""
 
 #: library/Box/Pagination.php:47 library/Box/Pagination.php:79
-#: modules/Client/Service.php:182
+#: modules/Client/Service.php:183
 msgid "Invalid per page number"
 msgstr ""
 
@@ -407,7 +407,7 @@ msgstr ""
 msgid "Unable to create backup of configuration file"
 msgstr ""
 
-#: library/FOSSBilling/UpdatePatcher.php:99
+#: library/FOSSBilling/UpdatePatcher.php:101
 msgid "Error when writing updated configuration file."
 msgstr "寫入更新的設定檔時出錯。"
 
@@ -479,7 +479,7 @@ msgid "It is forbidden to pay a deposit invoice with this gateway"
 msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:83
-#: library/Payment/Adapter/PayPalEmail.php:73
+#: library/Payment/Adapter/PayPalEmail.php:74
 msgid "IPN is invalid"
 msgstr ""
 
@@ -487,20 +487,20 @@ msgstr ""
 msgid "ClientBalance gateway is not enabled"
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:30
+#: library/Payment/Adapter/PayPalEmail.php:31
 #: library/Payment/Adapter/Stripe.php:30 library/Payment/Adapter/Stripe.php:34
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:121
+#: library/Payment/Adapter/PayPalEmail.php:122
 msgid "Cannot process duplicate IPN"
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:259
+#: library/Payment/Adapter/PayPalEmail.php:260
 msgid "Redirecting to PayPal.com"
 msgstr "重新導向至 PayPal.com"
 
-#: library/Payment/Adapter/PayPalEmail.php:302
+#: library/Payment/Adapter/PayPalEmail.php:303
 #: library/Payment/Adapter/Stripe.php:101 modules/Invoice/Service.php:1344
 msgid "Payment for invoice :serie:id [:title]"
 msgstr ""
@@ -794,25 +794,25 @@ msgstr "活動歷程"
 msgid "Event history"
 msgstr "事件歷程記錄"
 
-#: modules/Api/Controller/Client.php:47 modules/Api/Controller/Client.php:250
+#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:251
 msgid "Unknown API call :call"
 msgstr "未知的 API 呼叫 :call"
 
-#: modules/Api/Controller/Client.php:127
+#: modules/Api/Controller/Client.php:128
 msgid "Invalid request. Make sure request origin is :from"
 msgstr ""
 
-#: modules/Api/Controller/Client.php:138
+#: modules/Api/Controller/Client.php:139
 msgid "Unauthorized IP"
 msgstr "未授權 IP"
 
-#: modules/Api/Controller/Client.php:192 modules/Api/Controller/Client.php:196
-#: modules/Api/Controller/Client.php:200 modules/Api/Controller/Client.php:214
-#: modules/Api/Controller/Client.php:223 modules/Api/Controller/Client.php:237
+#: modules/Api/Controller/Client.php:193 modules/Api/Controller/Client.php:197
+#: modules/Api/Controller/Client.php:201 modules/Api/Controller/Client.php:215
+#: modules/Api/Controller/Client.php:224 modules/Api/Controller/Client.php:238
 msgid "Authentication Failed"
 msgstr "驗證失敗"
 
-#: modules/Api/Controller/Client.php:329
+#: modules/Api/Controller/Client.php:330
 msgid "CSRF token invalid"
 msgstr ""
 
@@ -892,8 +892,8 @@ msgstr "該電子郵件地址已被註冊。"
 msgid "Can not change email. It is already registered."
 msgstr ""
 
-#: modules/Client/Api/Admin.php:323 modules/Staff/Api/Admin.php:123
-#: modules/Staff/Api/Guest.php:104
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
+#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:104
 msgid "Passwords do not match"
 msgstr "密碼不一致。"
 
@@ -905,27 +905,26 @@ msgstr "找不到事件"
 msgid "Group has clients assigned. Please reassign them first."
 msgstr ""
 
-#: modules/Client/Api/Guest.php:58
+#: modules/Client/Api/Guest.php:59
 msgid "New registrations are temporary disabled"
 msgstr "新用戶註冊被暫時停用"
 
-#: modules/Client/Api/Guest.php:70
+#: modules/Client/Api/Guest.php:71
 msgid "Passwords do not match."
 msgstr "密碼不一致。"
 
-#: modules/Client/Api/Guest.php:83
+#: modules/Client/Api/Guest.php:84
 msgid "Email is already registered. You may want to login instead of registering."
 msgstr "該電子郵件地址已被註冊，您可能想要登錄而不是註冊。"
 
-#: modules/Client/Api/Guest.php:129
+#: modules/Client/Api/Guest.php:130
 msgid "Please check your login details."
 msgstr ""
 
-#: modules/Client/Api/Guest.php:206 modules/Staff/Api/Guest.php:109
-#: modules/Staff/Api/Guest.php:113 modules/Staff/Controller/Admin.php:124
-#: modules/Staff/Controller/Admin.php:127
-msgid "The link have expired or you have already confirmed password reset."
-msgstr "連結已過期或您已確認過該密碼重設連結。"
+#: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
+#: modules/Client/Service.php:701
+msgid "The link has expired or you have already reset your password."
+msgstr ""
 
 #: modules/Client/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_index.html.twig:7
@@ -956,51 +955,51 @@ msgstr "客戶登入歷程記錄"
 msgid "Email address was confirmed"
 msgstr "電子郵件地址已確認"
 
-#: modules/Client/Service.php:34
+#: modules/Client/Service.php:35
 msgid "Invalid email confirmation link"
 msgstr "電子郵件確認連結無效"
 
-#: modules/Client/Service.php:70
+#: modules/Client/Service.php:71
 msgid "The password you chose when creating your account."
 msgstr "您在建立帳戶時選擇的密碼。"
 
-#: modules/Client/Service.php:224
+#: modules/Client/Service.php:225
 msgid "Currency can not be changed. Client already have invoices issued."
 msgstr "不能更改貨幣不能更改，客戶已經開立收據。"
 
-#: modules/Client/Service.php:229
+#: modules/Client/Service.php:230
 msgid "Currency can not be changed. Client already have orders."
 msgstr "不能更改貨幣，客戶已有訂單。"
 
-#: modules/Client/Service.php:238
+#: modules/Client/Service.php:239
 msgid "Define clients currency before adding funds."
 msgstr "在增加資金前設定客戶貨幣。"
 
-#: modules/Client/Service.php:242 modules/Client/ServiceBalance.php:125
+#: modules/Client/Service.php:243 modules/Client/ServiceBalance.php:125
 msgid "Funds amount is invalid"
 msgstr ""
 
-#: modules/Client/Service.php:246 modules/Client/ServiceBalance.php:129
+#: modules/Client/Service.php:247 modules/Client/ServiceBalance.php:129
 msgid "Funds description is invalid"
 msgstr ""
 
-#: modules/Client/Service.php:414
+#: modules/Client/Service.php:415
 msgid "Client ID or email is required"
 msgstr "客戶 ID 或電子郵件為必填"
 
-#: modules/Client/Service.php:428
+#: modules/Client/Service.php:429
 msgid "Client not found"
 msgstr "找不到此客戶"
 
-#: modules/Client/Service.php:471
+#: modules/Client/Service.php:472
 msgid "Can not remove group with clients"
 msgstr ""
 
-#: modules/Client/Service.php:631 modules/Profile/Service.php:117
+#: modules/Client/Service.php:632 modules/Profile/Service.php:117
 msgid "Email can not be changed"
 msgstr "電子郵件無法更改"
 
-#: modules/Client/Service.php:645 modules/Client/Service.php:661
+#: modules/Client/Service.php:646 modules/Client/Service.php:662
 msgid "Field :field cannot be empty"
 msgstr ""
 
@@ -1049,7 +1048,7 @@ msgstr "自訂頁面"
 
 #: modules/Email/Api/Admin.php:120 modules/Email/Api/Admin.php:144
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
-#: modules/Email/Api/Client.php:113 modules/Email/Service.php:462
+#: modules/Email/Api/Client.php:113 modules/Email/Service.php:466
 msgid "Email not found"
 msgstr "找不到電子郵件"
 
@@ -1068,19 +1067,19 @@ msgstr ""
 msgid "Email history"
 msgstr "電子郵件歷程記錄"
 
-#: modules/Email/Service.php:133
+#: modules/Email/Service.php:137
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr ""
 
-#: modules/Email/Service.php:193
+#: modules/Email/Service.php:196
 msgid "From email address can not be empty"
 msgstr "寄件者電子郵件地址不能為空"
 
-#: modules/Email/Service.php:447
+#: modules/Email/Service.php:451
 msgid "Email template :code was not found"
 msgstr "找不到電子郵件範本 :code"
 
-#: modules/Email/Service.php:634
+#: modules/Email/Service.php:638
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr ""
 
@@ -1347,79 +1346,79 @@ msgstr ""
 msgid "Payment gateway :adapter was not found"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:81
+#: modules/Invoice/ServiceTransaction.php:82
 msgid "Transaction invoice id is missing"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:85
+#: modules/Invoice/ServiceTransaction.php:86
 msgid "Payment gateway id is missing"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:360
+#: modules/Invoice/ServiceTransaction.php:361
 msgid "Transaction :id not found."
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:364
-#: modules/Invoice/ServiceTransaction.php:484
+#: modules/Invoice/ServiceTransaction.php:365
+#: modules/Invoice/ServiceTransaction.php:485
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:369
-#: modules/Invoice/ServiceTransaction.php:489
+#: modules/Invoice/ServiceTransaction.php:370
+#: modules/Invoice/ServiceTransaction.php:490
 msgid "Can not handle transaction received from unknown payment gateway: :id"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:375
-#: modules/Invoice/ServiceTransaction.php:519
+#: modules/Invoice/ServiceTransaction.php:376
+#: modules/Invoice/ServiceTransaction.php:520
 msgid "Payment adapter :adapter does not support action :action"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:409
+#: modules/Invoice/ServiceTransaction.php:410
 msgid "Unknown transaction #:id type: :type"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:498
-#: modules/Invoice/ServiceTransaction.php:664
+#: modules/Invoice/ServiceTransaction.php:499
+#: modules/Invoice/ServiceTransaction.php:665
 msgid "Transaction :id is not associated with an invoice."
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:503
+#: modules/Invoice/ServiceTransaction.php:504
 msgid "Invoice #:id not found"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:513
+#: modules/Invoice/ServiceTransaction.php:514
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:524
+#: modules/Invoice/ServiceTransaction.php:525
 msgid "Payment gateway :id method getTransaction should return Payment_Transaction object"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:612
+#: modules/Invoice/ServiceTransaction.php:613
 msgid "Can not create subscription. Subscription id from payment gateway was not received"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:647
+#: modules/Invoice/ServiceTransaction.php:648
 msgid "Subscription #:id was not found. Could not unsubscribe"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:660
+#: modules/Invoice/ServiceTransaction.php:661
 msgid "Only approved transaction can be processed"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:671
+#: modules/Invoice/ServiceTransaction.php:672
 msgid "Transaction currency :code do not match required currency :required"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:676
+#: modules/Invoice/ServiceTransaction.php:677
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:686
+#: modules/Invoice/ServiceTransaction.php:687
 msgid "Client currency do not match invoice currency"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:691
+#: modules/Invoice/ServiceTransaction.php:692
 msgid "Can not add negative amount to client balance for debit transaction"
 msgstr ""
 
@@ -1485,7 +1484,7 @@ msgstr ""
 msgid "Mass mailer"
 msgstr ""
 
-#: modules/Massmailer/Service.php:159
+#: modules/Massmailer/Service.php:161
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "出於安全因素禁止使用（已啟用展示模式）"
 
@@ -1644,7 +1643,7 @@ msgstr ""
 msgid "Unable to invalidate sessions, an invalid type was used"
 msgstr ""
 
-#: modules/Queue/Api/Admin.php:94
+#: modules/Queue/Api/Admin.php:96
 msgid "Message handler function :method does not exists"
 msgstr ""
 
@@ -1698,28 +1697,28 @@ msgstr ""
 msgid "API call is missing arguments"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:36
+#: modules/Servicecustom/Service.php:38
 msgid "You must fill in all required fields. "
 msgstr "您需要填寫所有必填欄位。 "
 
-#: modules/Servicecustom/Service.php:43
+#: modules/Servicecustom/Service.php:45
 msgid "Field "
 msgstr ""
 
-#: modules/Servicecustom/Service.php:77 modules/Servicedomain/Service.php:218
+#: modules/Servicecustom/Service.php:79 modules/Servicedomain/Service.php:218
 #: modules/Servicelicense/Service.php:112
 msgid "Could not activate order. Service was not created"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:217
+#: modules/Servicecustom/Service.php:219
 msgid "Custom plugin method :method is forbidden"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:226
+#: modules/Servicecustom/Service.php:228
 msgid "Config must be an array"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:246 modules/Servicedomain/Api/Client.php:127
+#: modules/Servicecustom/Service.php:248 modules/Servicedomain/Api/Client.php:127
 #: modules/Servicedownloadable/Api/Admin.php:64
 #: modules/Servicedownloadable/Api/Client.php:38
 #: modules/Servicehosting/Api/Admin.php:425
@@ -1729,15 +1728,15 @@ msgstr ""
 msgid "Order is not activated"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:263
+#: modules/Servicecustom/Service.php:265
 msgid "Plugin class file :file was not found"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:277
+#: modules/Servicecustom/Service.php:279
 msgid "Plugin :plugin does not support action :action"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:293 modules/Servicedomain/Service.php:252
+#: modules/Servicecustom/Service.php:295 modules/Servicedomain/Service.php:252
 #: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:94
 #: modules/Servicehosting/Service.php:139 modules/Servicehosting/Service.php:157
 #: modules/Servicehosting/Service.php:176 modules/Servicehosting/Service.php:195
@@ -1877,12 +1876,12 @@ msgstr ""
 msgid "File was not uploaded"
 msgstr ""
 
-#: modules/Servicedownloadable/Service.php:168
-#: modules/Servicedownloadable/Service.php:221
+#: modules/Servicedownloadable/Service.php:169
+#: modules/Servicedownloadable/Service.php:222
 msgid "Error uploading file"
 msgstr "上傳檔案時發生錯誤"
 
-#: modules/Servicedownloadable/Service.php:274
+#: modules/Servicedownloadable/Service.php:275
 msgid "File can not be downloaded at the moment. Please contact support"
 msgstr ""
 
@@ -2014,6 +2013,11 @@ msgstr "您不能從此 :ip 地址登入到管理區域"
 #: modules/Staff/Controller/Admin.php:118
 msgid "Password reset has been disabled"
 msgstr ""
+
+#: modules/Staff/Api/Guest.php:109 modules/Staff/Api/Guest.php:113
+#: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
+msgid "The link have expired or you have already confirmed password reset."
+msgstr "連結已過期或您已確認過該密碼重設連結。"
 
 #: modules/Staff/Controller/Admin.php:36
 msgid "Staff login history"
@@ -2352,7 +2356,7 @@ msgstr "日期"
 #: modules/Client/html_admin/mod_client_manage.html.twig:672
 #: modules/Email/html_admin/mod_email_details.html.twig:59
 #: modules/Email/html_admin/mod_email_history.html.twig:60
-#: modules/Email/html_admin/mod_email_settings.html.twig:84
+#: modules/Email/html_admin/mod_email_settings.html.twig:105
 #: modules/Email/html_admin/mod_email_template.html.twig:77
 #: modules/Extension/html_admin/mod_extension_index.html.twig:74
 #: modules/Extension/html_admin/mod_extension_index.html.twig:84
@@ -2981,7 +2985,7 @@ msgstr "密碼"
 #: modules/Client/html_admin/mod_client_index.html.twig:403
 #: modules/Client/html_admin/mod_client_index.html.twig:455
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:138
-#: modules/Email/html_admin/mod_email_settings.html.twig:172
+#: modules/Email/html_admin/mod_email_settings.html.twig:173
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:163
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:136
 #: modules/Kb/html_admin/mod_kb_index.html.twig:128
@@ -3027,7 +3031,7 @@ msgstr "個人資料"
 #: modules/Client/html_admin/mod_client_manage.html.twig:29
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:75
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:75
-#: modules/Email/html_admin/mod_email_settings.html.twig:77
+#: modules/Email/html_admin/mod_email_settings.html.twig:98
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:80
 #: modules/Product/html_admin/mod_product_manage.html.twig:75
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:98
@@ -3123,8 +3127,8 @@ msgstr "登入客戶專區"
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:85
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:87
 #: modules/Email/html_admin/mod_email_details.html.twig:64
-#: modules/Email/html_admin/mod_email_settings.html.twig:87
-#: modules/Email/html_admin/mod_email_settings.html.twig:89
+#: modules/Email/html_admin/mod_email_settings.html.twig:108
+#: modules/Email/html_admin/mod_email_settings.html.twig:110
 #: modules/Email/html_client/mod_email_email.html.twig:36
 #: modules/Email/html_client/mod_email_index.html.twig:45
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
@@ -3174,8 +3178,8 @@ msgstr "郵件核准"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:202
 #: modules/Client/html_admin/mod_client_manage.html.twig:356
-#: modules/Email/html_admin/mod_email_settings.html.twig:138
-#: modules/Email/html_admin/mod_email_settings.html.twig:207
+#: modules/Email/html_admin/mod_email_settings.html.twig:139
+#: modules/Email/html_admin/mod_email_settings.html.twig:208
 #: modules/Email/html_admin/mod_email_template.html.twig:112
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:75
@@ -3237,8 +3241,8 @@ msgstr "是"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:206
 #: modules/Client/html_admin/mod_client_manage.html.twig:360
-#: modules/Email/html_admin/mod_email_settings.html.twig:142
-#: modules/Email/html_admin/mod_email_settings.html.twig:211
+#: modules/Email/html_admin/mod_email_settings.html.twig:143
+#: modules/Email/html_admin/mod_email_settings.html.twig:212
 #: modules/Email/html_admin/mod_email_template.html.twig:116
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:79
@@ -3472,8 +3476,8 @@ msgstr "服務台"
 #: modules/Client/html_admin/mod_client_manage.html.twig:594
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:43
 #: modules/Email/html_admin/mod_email_history.html.twig:33
-#: modules/Email/html_admin/mod_email_settings.html.twig:50
-#: modules/Email/html_admin/mod_email_settings.html.twig:159
+#: modules/Email/html_admin/mod_email_settings.html.twig:71
+#: modules/Email/html_admin/mod_email_settings.html.twig:160
 #: modules/Embed/html_client/mod_embed_contact.html.twig:52
 #: modules/Index/html_client/mod_index_dashboard.html.twig:48
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
@@ -3849,6 +3853,40 @@ msgstr "您的個人貨幣是"
 msgid "Create new client profile if you want to manage your money in other currency"
 msgstr ""
 
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:3
+msgid "Set new Password"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:20
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:43
+msgid "Set new password"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:31
+msgid "New password"
+msgstr "新密碼"
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:36
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:38
+msgid "Repeat new password"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:54
+msgid "Sign Up"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:58
+#: modules/Page/html_client/mod_page_login.html.twig:20
+#: modules/Page/html_client/mod_page_password-reset.html.twig:48
+#: modules/Page/html_client/mod_page_signup.html.twig:212
+#: modules/Staff/html_admin/mod_staff_login.html.twig:3
+#: themes/admin_default/html/error.html.twig:14
+#: themes/huraga/html/layout_default.html.twig:111
+#: themes/huraga/html/layout_default.html.twig:226
+msgid "Login"
+msgstr "登入"
+
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
 msgstr "編輯同意 cookie 訊息內容"
@@ -3986,7 +4024,7 @@ msgid "Update Rates"
 msgstr "匯率更新"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:127
-#: modules/Email/html_admin/mod_email_settings.html.twig:52
+#: modules/Email/html_admin/mod_email_settings.html.twig:73
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:30
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:32
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:104
@@ -4057,7 +4095,7 @@ msgstr "Meta 關鍵字"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:131
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:58
-#: modules/Email/html_admin/mod_email_settings.html.twig:165
+#: modules/Email/html_admin/mod_email_settings.html.twig:166
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:207
 #: modules/Kb/html_admin/mod_kb_article.html.twig:45
 #: modules/Kb/html_admin/mod_kb_index.html.twig:122
@@ -4286,7 +4324,7 @@ msgstr "新增範本"
 msgid "Email settings"
 msgstr "電子郵件設定"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:51
+#: modules/Email/html_admin/mod_email_settings.html.twig:72
 #: modules/Extension/html_admin/mod_extension_index.html.twig:41
 #: modules/Extension/html_admin/mod_extension_index.html.twig:172
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:36
@@ -4294,8 +4332,8 @@ msgstr "電子郵件設定"
 msgid "Extension"
 msgstr "擴充套件"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:53
-#: modules/Email/html_admin/mod_email_settings.html.twig:134
+#: modules/Email/html_admin/mod_email_settings.html.twig:74
+#: modules/Email/html_admin/mod_email_settings.html.twig:135
 #: modules/Email/html_admin/mod_email_template.html.twig:108
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:56
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:33
@@ -4307,23 +4345,23 @@ msgstr "擴充套件"
 msgid "Enabled"
 msgstr "啟用"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:85
+#: modules/Email/html_admin/mod_email_settings.html.twig:106
 msgid "Are you sure you want to delete this template?"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:98
+#: modules/Email/html_admin/mod_email_settings.html.twig:119
 msgid "The list is empty. Depending on modules enabled email templates will be inserted after first event occurrence."
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:130
+#: modules/Email/html_admin/mod_email_settings.html.twig:131
 msgid "Where I can use new email template?"
 msgstr "我可以在哪裡使用新的電子郵件範本？"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:131
+#: modules/Email/html_admin/mod_email_settings.html.twig:132
 msgid "Newly created email templates can be used in custom event hooks."
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:147
+#: modules/Email/html_admin/mod_email_settings.html.twig:148
 #: modules/Email/html_admin/mod_email_template.html.twig:121
 #: modules/Kb/html_admin/mod_kb_article.html.twig:33
 #: modules/Kb/html_admin/mod_kb_index.html.twig:43
@@ -4337,103 +4375,103 @@ msgstr ""
 msgid "Category"
 msgstr "分類"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:153
+#: modules/Email/html_admin/mod_email_settings.html.twig:154
 msgid "Action code"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:179
+#: modules/Email/html_admin/mod_email_settings.html.twig:180
 msgid "Email settings updated"
 msgstr "已更新電子郵件設定"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:182
+#: modules/Email/html_admin/mod_email_settings.html.twig:183
 msgid "Configure email options"
 msgstr "設置電子郵件選項"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:183
+#: modules/Email/html_admin/mod_email_settings.html.twig:184
 msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can configure your own SMTP server"
 msgstr "FOSSBilling 預設使用 <em>sendmail</em> 傳送電子郵件，或者您可以設定自己的 SMTP 伺服器"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:189
+#: modules/Email/html_admin/mod_email_settings.html.twig:190
 msgid "Send emails per cron run (0 = unlimited)"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:193
+#: modules/Email/html_admin/mod_email_settings.html.twig:194
 msgid "Max email sending time in minutes (0 = unlimited, default 5 min.)"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:197
+#: modules/Email/html_admin/mod_email_settings.html.twig:198
 msgid "Cancel sending email after unsuccessful tries (0 = do not cancel)"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:203
+#: modules/Email/html_admin/mod_email_settings.html.twig:204
 msgid "Log sent emails to database"
 msgstr "將傳送的電子郵件記錄到資料庫"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:216
+#: modules/Email/html_admin/mod_email_settings.html.twig:217
 msgid "Email transport"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:220
+#: modules/Email/html_admin/mod_email_settings.html.twig:221
 msgid "SendMail"
 msgstr "發送郵件"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:224
+#: modules/Email/html_admin/mod_email_settings.html.twig:225
 msgid "SMTP"
 msgstr "SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:228
+#: modules/Email/html_admin/mod_email_settings.html.twig:229
 msgid "SendGrid"
 msgstr "SendGrid"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:232
+#: modules/Email/html_admin/mod_email_settings.html.twig:233
 msgid "Custom"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:239
+#: modules/Email/html_admin/mod_email_settings.html.twig:240
 msgid "SMTP Hostname"
 msgstr "SMTP 主機名稱"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:245
+#: modules/Email/html_admin/mod_email_settings.html.twig:246
 msgid "SMTP Port"
 msgstr "SMTP 通訊埠"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:251
+#: modules/Email/html_admin/mod_email_settings.html.twig:252
 msgid "SMTP Username"
 msgstr "SMTP 使用者名稱"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:257
+#: modules/Email/html_admin/mod_email_settings.html.twig:258
 msgid "SMTP Password"
 msgstr "SMTP 密碼"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:266
+#: modules/Email/html_admin/mod_email_settings.html.twig:267
 msgid "SendGrid API Key"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:275
+#: modules/Email/html_admin/mod_email_settings.html.twig:276
 msgid "Custom DSN"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:277
+#: modules/Email/html_admin/mod_email_settings.html.twig:278
 msgid "If one of the available options don't quite meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:278
+#: modules/Email/html_admin/mod_email_settings.html.twig:279
 msgid "More information"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:279
+#: modules/Email/html_admin/mod_email_settings.html.twig:280
 msgid "Example"
 msgstr "範例"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:292
+#: modules/Email/html_admin/mod_email_settings.html.twig:293
 msgid "Send a test email to yourself"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:294
+#: modules/Email/html_admin/mod_email_settings.html.twig:295
 msgid "Update email settings"
 msgstr "更新電子郵件設定"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:308
+#: modules/Email/html_admin/mod_email_settings.html.twig:309
 msgid "Email was successfully sent"
 msgstr "已成功發送電子郵件"
 
@@ -6636,16 +6674,6 @@ msgstr "關於我們"
 #: modules/Page/html_client/mod_page_tos.html.twig:27
 msgid "Back to Homepage"
 msgstr "回到首頁"
-
-#: modules/Page/html_client/mod_page_login.html.twig:20
-#: modules/Page/html_client/mod_page_password-reset.html.twig:48
-#: modules/Page/html_client/mod_page_signup.html.twig:212
-#: modules/Staff/html_admin/mod_staff_login.html.twig:3
-#: themes/admin_default/html/error.html.twig:14
-#: themes/huraga/html/layout_default.html.twig:111
-#: themes/huraga/html/layout_default.html.twig:226
-msgid "Login"
-msgstr "登入"
 
 #: modules/Page/html_client/mod_page_login.html.twig:53
 #: modules/Page/html_client/mod_page_password-reset.html.twig:47
