@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-09-16 11:38-0700\n"
-"PO-Revision-Date: 2023-09-16 18:45\n"
+"POT-Creation-Date: 2023-09-22 18:21-0700\n"
+"PO-Revision-Date: 2023-09-23 11:46\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Romanian\n"
 "MIME-Version: 1.0\n"
@@ -110,7 +110,7 @@ msgid "Invalid page number"
 msgstr "Numărul paginii este incorect"
 
 #: library/Box/Pagination.php:47 library/Box/Pagination.php:79
-#: modules/Client/Service.php:182
+#: modules/Client/Service.php:183
 msgid "Invalid per page number"
 msgstr "Număr de pagină incorect"
 
@@ -415,7 +415,7 @@ msgstr ""
 msgid "Unable to create backup of configuration file"
 msgstr ""
 
-#: library/FOSSBilling/UpdatePatcher.php:99
+#: library/FOSSBilling/UpdatePatcher.php:101
 msgid "Error when writing updated configuration file."
 msgstr "Eroare la scrierea fișierului de configurare actualizat."
 
@@ -487,7 +487,7 @@ msgid "It is forbidden to pay a deposit invoice with this gateway"
 msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:83
-#: library/Payment/Adapter/PayPalEmail.php:73
+#: library/Payment/Adapter/PayPalEmail.php:74
 msgid "IPN is invalid"
 msgstr "IPN-ul nu este valid"
 
@@ -495,20 +495,20 @@ msgstr "IPN-ul nu este valid"
 msgid "ClientBalance gateway is not enabled"
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:30
+#: library/Payment/Adapter/PayPalEmail.php:31
 #: library/Payment/Adapter/Stripe.php:30 library/Payment/Adapter/Stripe.php:34
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:121
+#: library/Payment/Adapter/PayPalEmail.php:122
 msgid "Cannot process duplicate IPN"
 msgstr ""
 
-#: library/Payment/Adapter/PayPalEmail.php:259
+#: library/Payment/Adapter/PayPalEmail.php:260
 msgid "Redirecting to PayPal.com"
 msgstr "Redirecţionare către PayPal.com"
 
-#: library/Payment/Adapter/PayPalEmail.php:302
+#: library/Payment/Adapter/PayPalEmail.php:303
 #: library/Payment/Adapter/Stripe.php:101 modules/Invoice/Service.php:1344
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Plata pentru factura :serie:id [:title]"
@@ -802,25 +802,25 @@ msgstr ""
 msgid "Event history"
 msgstr ""
 
-#: modules/Api/Controller/Client.php:47 modules/Api/Controller/Client.php:250
+#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:251
 msgid "Unknown API call :call"
 msgstr "Apel API necunoscut :call"
 
-#: modules/Api/Controller/Client.php:127
+#: modules/Api/Controller/Client.php:128
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Cerere incorectă. Asigurați-vă că solicitarea provine de la :from"
 
-#: modules/Api/Controller/Client.php:138
+#: modules/Api/Controller/Client.php:139
 msgid "Unauthorized IP"
 msgstr "IP neautorizat"
 
-#: modules/Api/Controller/Client.php:192 modules/Api/Controller/Client.php:196
-#: modules/Api/Controller/Client.php:200 modules/Api/Controller/Client.php:214
-#: modules/Api/Controller/Client.php:223 modules/Api/Controller/Client.php:237
+#: modules/Api/Controller/Client.php:193 modules/Api/Controller/Client.php:197
+#: modules/Api/Controller/Client.php:201 modules/Api/Controller/Client.php:215
+#: modules/Api/Controller/Client.php:224 modules/Api/Controller/Client.php:238
 msgid "Authentication Failed"
 msgstr "Autentificare nereușită"
 
-#: modules/Api/Controller/Client.php:329
+#: modules/Api/Controller/Client.php:330
 msgid "CSRF token invalid"
 msgstr "Token-ul CSRF este invalid "
 
@@ -900,8 +900,8 @@ msgstr "E-mailul este deja înregistrat."
 msgid "Can not change email. It is already registered."
 msgstr "Nu se poate schimba adresa de e-mail. Aceasta este deja înregistrată."
 
-#: modules/Client/Api/Admin.php:323 modules/Staff/Api/Admin.php:123
-#: modules/Staff/Api/Guest.php:104
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
+#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:104
 msgid "Passwords do not match"
 msgstr "Parolele nu coincid"
 
@@ -913,27 +913,26 @@ msgstr "Evenimentul nu a fost găsit"
 msgid "Group has clients assigned. Please reassign them first."
 msgstr ""
 
-#: modules/Client/Api/Guest.php:58
+#: modules/Client/Api/Guest.php:59
 msgid "New registrations are temporary disabled"
 msgstr "Noi înregistrări sunt dezactivate temporar"
 
-#: modules/Client/Api/Guest.php:70
+#: modules/Client/Api/Guest.php:71
 msgid "Passwords do not match."
 msgstr "Parolele nu coincid."
 
-#: modules/Client/Api/Guest.php:83
+#: modules/Client/Api/Guest.php:84
 msgid "Email is already registered. You may want to login instead of registering."
 msgstr "E-mail-ul este deja înregistrat. Poate doriți să vă autentificați în loc să vă înregistrați."
 
-#: modules/Client/Api/Guest.php:129
+#: modules/Client/Api/Guest.php:130
 msgid "Please check your login details."
 msgstr ""
 
-#: modules/Client/Api/Guest.php:206 modules/Staff/Api/Guest.php:109
-#: modules/Staff/Api/Guest.php:113 modules/Staff/Controller/Admin.php:124
-#: modules/Staff/Controller/Admin.php:127
-msgid "The link have expired or you have already confirmed password reset."
-msgstr "Link-ul a expirat sau ați confirmat deja resetarea parolei."
+#: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
+#: modules/Client/Service.php:701
+msgid "The link has expired or you have already reset your password."
+msgstr ""
 
 #: modules/Client/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_index.html.twig:7
@@ -964,51 +963,51 @@ msgstr ""
 msgid "Email address was confirmed"
 msgstr "Adresa de e-mail a fost confirmată"
 
-#: modules/Client/Service.php:34
+#: modules/Client/Service.php:35
 msgid "Invalid email confirmation link"
 msgstr "Link de confirmare e-mail incorect"
 
-#: modules/Client/Service.php:70
+#: modules/Client/Service.php:71
 msgid "The password you chose when creating your account."
 msgstr "Parola pe care ați ales-o când creați contul."
 
-#: modules/Client/Service.php:224
+#: modules/Client/Service.php:225
 msgid "Currency can not be changed. Client already have invoices issued."
 msgstr ""
 
-#: modules/Client/Service.php:229
+#: modules/Client/Service.php:230
 msgid "Currency can not be changed. Client already have orders."
 msgstr "Moneda nu poate fi schimbată. Clientul are deja comenzi."
 
-#: modules/Client/Service.php:238
+#: modules/Client/Service.php:239
 msgid "Define clients currency before adding funds."
 msgstr "Definiți moneda clienților înainte de a adăuga fonduri."
 
-#: modules/Client/Service.php:242 modules/Client/ServiceBalance.php:125
+#: modules/Client/Service.php:243 modules/Client/ServiceBalance.php:125
 msgid "Funds amount is invalid"
 msgstr ""
 
-#: modules/Client/Service.php:246 modules/Client/ServiceBalance.php:129
+#: modules/Client/Service.php:247 modules/Client/ServiceBalance.php:129
 msgid "Funds description is invalid"
 msgstr ""
 
-#: modules/Client/Service.php:414
+#: modules/Client/Service.php:415
 msgid "Client ID or email is required"
 msgstr "Este necesar ID-ul clientului sau adresa de e-mail"
 
-#: modules/Client/Service.php:428
+#: modules/Client/Service.php:429
 msgid "Client not found"
 msgstr "Clientul nu a fost găsit"
 
-#: modules/Client/Service.php:471
+#: modules/Client/Service.php:472
 msgid "Can not remove group with clients"
 msgstr "Nu se poate elimina grupul cu clienți"
 
-#: modules/Client/Service.php:631 modules/Profile/Service.php:117
+#: modules/Client/Service.php:632 modules/Profile/Service.php:117
 msgid "Email can not be changed"
 msgstr "E-mailul nu poate fi schimbat"
 
-#: modules/Client/Service.php:645 modules/Client/Service.php:661
+#: modules/Client/Service.php:646 modules/Client/Service.php:662
 msgid "Field :field cannot be empty"
 msgstr ""
 
@@ -1057,7 +1056,7 @@ msgstr "Pagini personalizate"
 
 #: modules/Email/Api/Admin.php:120 modules/Email/Api/Admin.php:144
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
-#: modules/Email/Api/Client.php:113 modules/Email/Service.php:462
+#: modules/Email/Api/Client.php:113 modules/Email/Service.php:466
 msgid "Email not found"
 msgstr "Adresa de e-mail nu a putut fi găsită"
 
@@ -1076,19 +1075,19 @@ msgstr "Destinatarul nu este definit. Definește la sau to_client sau la paramet
 msgid "Email history"
 msgstr "Istoricul e-mail-urilor"
 
-#: modules/Email/Service.php:133
+#: modules/Email/Service.php:137
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr ""
 
-#: modules/Email/Service.php:193
+#: modules/Email/Service.php:196
 msgid "From email address can not be empty"
 msgstr ""
 
-#: modules/Email/Service.php:447
+#: modules/Email/Service.php:451
 msgid "Email template :code was not found"
 msgstr "Șablonul de email :code nu a putut fi găsit"
 
-#: modules/Email/Service.php:634
+#: modules/Email/Service.php:638
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr ""
 
@@ -1355,79 +1354,79 @@ msgstr "Metoda de plată nu este disponibilă pentru instalare."
 msgid "Payment gateway :adapter was not found"
 msgstr "Metoda de plată :adapter nu a fost găsită"
 
-#: modules/Invoice/ServiceTransaction.php:81
+#: modules/Invoice/ServiceTransaction.php:82
 msgid "Transaction invoice id is missing"
 msgstr "ID-ul facturii lipsește"
 
-#: modules/Invoice/ServiceTransaction.php:85
+#: modules/Invoice/ServiceTransaction.php:86
 msgid "Payment gateway id is missing"
 msgstr "ID-ul gateway-ului de plată lipsește"
 
-#: modules/Invoice/ServiceTransaction.php:360
+#: modules/Invoice/ServiceTransaction.php:361
 msgid "Transaction :id not found."
 msgstr "Tranzacția :id nu a fost găsită."
 
-#: modules/Invoice/ServiceTransaction.php:364
-#: modules/Invoice/ServiceTransaction.php:484
+#: modules/Invoice/ServiceTransaction.php:365
+#: modules/Invoice/ServiceTransaction.php:485
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:369
-#: modules/Invoice/ServiceTransaction.php:489
+#: modules/Invoice/ServiceTransaction.php:370
+#: modules/Invoice/ServiceTransaction.php:490
 msgid "Can not handle transaction received from unknown payment gateway: :id"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:375
-#: modules/Invoice/ServiceTransaction.php:519
+#: modules/Invoice/ServiceTransaction.php:376
+#: modules/Invoice/ServiceTransaction.php:520
 msgid "Payment adapter :adapter does not support action :action"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:409
+#: modules/Invoice/ServiceTransaction.php:410
 msgid "Unknown transaction #:id type: :type"
 msgstr "Tranzacție necunoscută #:id tip: :type"
 
-#: modules/Invoice/ServiceTransaction.php:498
-#: modules/Invoice/ServiceTransaction.php:664
+#: modules/Invoice/ServiceTransaction.php:499
+#: modules/Invoice/ServiceTransaction.php:665
 msgid "Transaction :id is not associated with an invoice."
 msgstr "Tranzacția :id nu este asociată cu o factură."
 
-#: modules/Invoice/ServiceTransaction.php:503
+#: modules/Invoice/ServiceTransaction.php:504
 msgid "Invoice #:id not found"
 msgstr "Factura #:id nu a fost găsită"
 
-#: modules/Invoice/ServiceTransaction.php:513
+#: modules/Invoice/ServiceTransaction.php:514
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:524
+#: modules/Invoice/ServiceTransaction.php:525
 msgid "Payment gateway :id method getTransaction should return Payment_Transaction object"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:612
+#: modules/Invoice/ServiceTransaction.php:613
 msgid "Can not create subscription. Subscription id from payment gateway was not received"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:647
+#: modules/Invoice/ServiceTransaction.php:648
 msgid "Subscription #:id was not found. Could not unsubscribe"
 msgstr "Abonamentul #:id nu a fost găsit. Nu s-a putut dezabona"
 
-#: modules/Invoice/ServiceTransaction.php:660
+#: modules/Invoice/ServiceTransaction.php:661
 msgid "Only approved transaction can be processed"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:671
+#: modules/Invoice/ServiceTransaction.php:672
 msgid "Transaction currency :code do not match required currency :required"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:676
+#: modules/Invoice/ServiceTransaction.php:677
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:686
+#: modules/Invoice/ServiceTransaction.php:687
 msgid "Client currency do not match invoice currency"
 msgstr "Moneda clientului nu coincide cu moneda facturii"
 
-#: modules/Invoice/ServiceTransaction.php:691
+#: modules/Invoice/ServiceTransaction.php:692
 msgid "Can not add negative amount to client balance for debit transaction"
 msgstr "Nu se poate adăuga o sumă negativă în soldul clientului pentru tranzacția de debit"
 
@@ -1493,7 +1492,7 @@ msgstr ""
 msgid "Mass mailer"
 msgstr ""
 
-#: modules/Massmailer/Service.php:159
+#: modules/Massmailer/Service.php:161
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "Dezactivat din motive de securitate (modul Demo este activat)"
 
@@ -1652,7 +1651,7 @@ msgstr ""
 msgid "Unable to invalidate sessions, an invalid type was used"
 msgstr ""
 
-#: modules/Queue/Api/Admin.php:94
+#: modules/Queue/Api/Admin.php:96
 msgid "Message handler function :method does not exists"
 msgstr ""
 
@@ -1706,28 +1705,28 @@ msgstr "Id-ul comenzii este necesar"
 msgid "API call is missing arguments"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:36
+#: modules/Servicecustom/Service.php:38
 msgid "You must fill in all required fields. "
 msgstr ""
 
-#: modules/Servicecustom/Service.php:43
+#: modules/Servicecustom/Service.php:45
 msgid "Field "
 msgstr "Câmp "
 
-#: modules/Servicecustom/Service.php:77 modules/Servicedomain/Service.php:218
+#: modules/Servicecustom/Service.php:79 modules/Servicedomain/Service.php:218
 #: modules/Servicelicense/Service.php:112
 msgid "Could not activate order. Service was not created"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:217
+#: modules/Servicecustom/Service.php:219
 msgid "Custom plugin method :method is forbidden"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:226
+#: modules/Servicecustom/Service.php:228
 msgid "Config must be an array"
 msgstr "Configurația trebuie să fie o matrice"
 
-#: modules/Servicecustom/Service.php:246 modules/Servicedomain/Api/Client.php:127
+#: modules/Servicecustom/Service.php:248 modules/Servicedomain/Api/Client.php:127
 #: modules/Servicedownloadable/Api/Admin.php:64
 #: modules/Servicedownloadable/Api/Client.php:38
 #: modules/Servicehosting/Api/Admin.php:425
@@ -1737,15 +1736,15 @@ msgstr "Configurația trebuie să fie o matrice"
 msgid "Order is not activated"
 msgstr "Comanda nu este activată"
 
-#: modules/Servicecustom/Service.php:263
+#: modules/Servicecustom/Service.php:265
 msgid "Plugin class file :file was not found"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:277
+#: modules/Servicecustom/Service.php:279
 msgid "Plugin :plugin does not support action :action"
 msgstr ""
 
-#: modules/Servicecustom/Service.php:293 modules/Servicedomain/Service.php:252
+#: modules/Servicecustom/Service.php:295 modules/Servicedomain/Service.php:252
 #: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:94
 #: modules/Servicehosting/Service.php:139 modules/Servicehosting/Service.php:157
 #: modules/Servicehosting/Service.php:176 modules/Servicehosting/Service.php:195
@@ -1885,12 +1884,12 @@ msgstr ""
 msgid "File was not uploaded"
 msgstr "Fișierul nu a fost încărcat"
 
-#: modules/Servicedownloadable/Service.php:168
-#: modules/Servicedownloadable/Service.php:221
+#: modules/Servicedownloadable/Service.php:169
+#: modules/Servicedownloadable/Service.php:222
 msgid "Error uploading file"
 msgstr "Eroare la încărcarea fișierului"
 
-#: modules/Servicedownloadable/Service.php:274
+#: modules/Servicedownloadable/Service.php:275
 msgid "File can not be downloaded at the moment. Please contact support"
 msgstr "Fișierul nu poate fi descărcat momentan. Vă rugăm să contactați asistența"
 
@@ -2022,6 +2021,11 @@ msgstr ""
 #: modules/Staff/Controller/Admin.php:118
 msgid "Password reset has been disabled"
 msgstr ""
+
+#: modules/Staff/Api/Guest.php:109 modules/Staff/Api/Guest.php:113
+#: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
+msgid "The link have expired or you have already confirmed password reset."
+msgstr "Link-ul a expirat sau ați confirmat deja resetarea parolei."
 
 #: modules/Staff/Controller/Admin.php:36
 msgid "Staff login history"
@@ -2360,7 +2364,7 @@ msgstr "Data"
 #: modules/Client/html_admin/mod_client_manage.html.twig:672
 #: modules/Email/html_admin/mod_email_details.html.twig:59
 #: modules/Email/html_admin/mod_email_history.html.twig:60
-#: modules/Email/html_admin/mod_email_settings.html.twig:84
+#: modules/Email/html_admin/mod_email_settings.html.twig:105
 #: modules/Email/html_admin/mod_email_template.html.twig:77
 #: modules/Extension/html_admin/mod_extension_index.html.twig:74
 #: modules/Extension/html_admin/mod_extension_index.html.twig:84
@@ -2989,7 +2993,7 @@ msgstr "Parolă"
 #: modules/Client/html_admin/mod_client_index.html.twig:403
 #: modules/Client/html_admin/mod_client_index.html.twig:455
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:138
-#: modules/Email/html_admin/mod_email_settings.html.twig:172
+#: modules/Email/html_admin/mod_email_settings.html.twig:173
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:163
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:136
 #: modules/Kb/html_admin/mod_kb_index.html.twig:128
@@ -3035,7 +3039,7 @@ msgstr "Profil"
 #: modules/Client/html_admin/mod_client_manage.html.twig:29
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:75
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:75
-#: modules/Email/html_admin/mod_email_settings.html.twig:77
+#: modules/Email/html_admin/mod_email_settings.html.twig:98
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:80
 #: modules/Product/html_admin/mod_product_manage.html.twig:75
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:98
@@ -3131,8 +3135,8 @@ msgstr "Autentificare în zona client"
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:85
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:87
 #: modules/Email/html_admin/mod_email_details.html.twig:64
-#: modules/Email/html_admin/mod_email_settings.html.twig:87
-#: modules/Email/html_admin/mod_email_settings.html.twig:89
+#: modules/Email/html_admin/mod_email_settings.html.twig:108
+#: modules/Email/html_admin/mod_email_settings.html.twig:110
 #: modules/Email/html_client/mod_email_email.html.twig:36
 #: modules/Email/html_client/mod_email_index.html.twig:45
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
@@ -3182,8 +3186,8 @@ msgstr "E-mail aprobat"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:202
 #: modules/Client/html_admin/mod_client_manage.html.twig:356
-#: modules/Email/html_admin/mod_email_settings.html.twig:138
-#: modules/Email/html_admin/mod_email_settings.html.twig:207
+#: modules/Email/html_admin/mod_email_settings.html.twig:139
+#: modules/Email/html_admin/mod_email_settings.html.twig:208
 #: modules/Email/html_admin/mod_email_template.html.twig:112
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:75
@@ -3245,8 +3249,8 @@ msgstr "Da"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:206
 #: modules/Client/html_admin/mod_client_manage.html.twig:360
-#: modules/Email/html_admin/mod_email_settings.html.twig:142
-#: modules/Email/html_admin/mod_email_settings.html.twig:211
+#: modules/Email/html_admin/mod_email_settings.html.twig:143
+#: modules/Email/html_admin/mod_email_settings.html.twig:212
 #: modules/Email/html_admin/mod_email_template.html.twig:116
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:79
@@ -3480,8 +3484,8 @@ msgstr "Centru de asistenţă"
 #: modules/Client/html_admin/mod_client_manage.html.twig:594
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:43
 #: modules/Email/html_admin/mod_email_history.html.twig:33
-#: modules/Email/html_admin/mod_email_settings.html.twig:50
-#: modules/Email/html_admin/mod_email_settings.html.twig:159
+#: modules/Email/html_admin/mod_email_settings.html.twig:71
+#: modules/Email/html_admin/mod_email_settings.html.twig:160
 #: modules/Embed/html_client/mod_embed_contact.html.twig:52
 #: modules/Index/html_client/mod_index_dashboard.html.twig:48
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
@@ -3857,6 +3861,40 @@ msgstr "Moneda profilului dumneavoastră este"
 msgid "Create new client profile if you want to manage your money in other currency"
 msgstr ""
 
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:3
+msgid "Set new Password"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:20
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:43
+msgid "Set new password"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:31
+msgid "New password"
+msgstr "Parolă nouă"
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:36
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:38
+msgid "Repeat new password"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:54
+msgid "Sign Up"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:58
+#: modules/Page/html_client/mod_page_login.html.twig:20
+#: modules/Page/html_client/mod_page_password-reset.html.twig:48
+#: modules/Page/html_client/mod_page_signup.html.twig:212
+#: modules/Staff/html_admin/mod_staff_login.html.twig:3
+#: themes/admin_default/html/error.html.twig:14
+#: themes/huraga/html/layout_default.html.twig:111
+#: themes/huraga/html/layout_default.html.twig:226
+msgid "Login"
+msgstr ""
+
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
 msgstr "Modificați consimțământul cookie"
@@ -3994,7 +4032,7 @@ msgid "Update Rates"
 msgstr "Actualizați tarifele"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:127
-#: modules/Email/html_admin/mod_email_settings.html.twig:52
+#: modules/Email/html_admin/mod_email_settings.html.twig:73
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:30
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:32
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:104
@@ -4065,7 +4103,7 @@ msgstr "Cuvinte cheie Meta"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:131
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:58
-#: modules/Email/html_admin/mod_email_settings.html.twig:165
+#: modules/Email/html_admin/mod_email_settings.html.twig:166
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:207
 #: modules/Kb/html_admin/mod_kb_article.html.twig:45
 #: modules/Kb/html_admin/mod_kb_index.html.twig:122
@@ -4294,7 +4332,7 @@ msgstr "Șablon nou"
 msgid "Email settings"
 msgstr "Setări e-mail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:51
+#: modules/Email/html_admin/mod_email_settings.html.twig:72
 #: modules/Extension/html_admin/mod_extension_index.html.twig:41
 #: modules/Extension/html_admin/mod_extension_index.html.twig:172
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:36
@@ -4302,8 +4340,8 @@ msgstr "Setări e-mail"
 msgid "Extension"
 msgstr "Extensie"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:53
-#: modules/Email/html_admin/mod_email_settings.html.twig:134
+#: modules/Email/html_admin/mod_email_settings.html.twig:74
+#: modules/Email/html_admin/mod_email_settings.html.twig:135
 #: modules/Email/html_admin/mod_email_template.html.twig:108
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:56
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:33
@@ -4315,23 +4353,23 @@ msgstr "Extensie"
 msgid "Enabled"
 msgstr "Activat"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:85
+#: modules/Email/html_admin/mod_email_settings.html.twig:106
 msgid "Are you sure you want to delete this template?"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:98
+#: modules/Email/html_admin/mod_email_settings.html.twig:119
 msgid "The list is empty. Depending on modules enabled email templates will be inserted after first event occurrence."
 msgstr "Lista este goala. In funcție de modulele activate, sabloanele de e-mail vor fi inserate dupa prima apariție a evenimentului."
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:130
+#: modules/Email/html_admin/mod_email_settings.html.twig:131
 msgid "Where I can use new email template?"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:131
+#: modules/Email/html_admin/mod_email_settings.html.twig:132
 msgid "Newly created email templates can be used in custom event hooks."
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:147
+#: modules/Email/html_admin/mod_email_settings.html.twig:148
 #: modules/Email/html_admin/mod_email_template.html.twig:121
 #: modules/Kb/html_admin/mod_kb_article.html.twig:33
 #: modules/Kb/html_admin/mod_kb_index.html.twig:43
@@ -4345,103 +4383,103 @@ msgstr ""
 msgid "Category"
 msgstr "Categorie"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:153
+#: modules/Email/html_admin/mod_email_settings.html.twig:154
 msgid "Action code"
 msgstr "Cod de acţiune"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:179
+#: modules/Email/html_admin/mod_email_settings.html.twig:180
 msgid "Email settings updated"
 msgstr "Setări de e-mail actualizate"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:182
+#: modules/Email/html_admin/mod_email_settings.html.twig:183
 msgid "Configure email options"
 msgstr "Configurați opțiunile de e-mail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:183
+#: modules/Email/html_admin/mod_email_settings.html.twig:184
 msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can configure your own SMTP server"
 msgstr "FOSSBilling trimite email-uri folosind <em>sendmail</em> în mod implicit sau puteți configura propriul server SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:189
+#: modules/Email/html_admin/mod_email_settings.html.twig:190
 msgid "Send emails per cron run (0 = unlimited)"
 msgstr "E-mail-uri pe ciclu cron (0 = nelimitat)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:193
+#: modules/Email/html_admin/mod_email_settings.html.twig:194
 msgid "Max email sending time in minutes (0 = unlimited, default 5 min.)"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:197
+#: modules/Email/html_admin/mod_email_settings.html.twig:198
 msgid "Cancel sending email after unsuccessful tries (0 = do not cancel)"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:203
+#: modules/Email/html_admin/mod_email_settings.html.twig:204
 msgid "Log sent emails to database"
 msgstr "Înregistrați e-mail-urile trimise în baza de date"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:216
+#: modules/Email/html_admin/mod_email_settings.html.twig:217
 msgid "Email transport"
 msgstr "Transport prin e-mail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:220
+#: modules/Email/html_admin/mod_email_settings.html.twig:221
 msgid "SendMail"
 msgstr "Sendmail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:224
+#: modules/Email/html_admin/mod_email_settings.html.twig:225
 msgid "SMTP"
 msgstr "SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:228
+#: modules/Email/html_admin/mod_email_settings.html.twig:229
 msgid "SendGrid"
 msgstr "SendGrid"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:232
+#: modules/Email/html_admin/mod_email_settings.html.twig:233
 msgid "Custom"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:239
+#: modules/Email/html_admin/mod_email_settings.html.twig:240
 msgid "SMTP Hostname"
 msgstr "Hostname SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:245
+#: modules/Email/html_admin/mod_email_settings.html.twig:246
 msgid "SMTP Port"
 msgstr "Port SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:251
+#: modules/Email/html_admin/mod_email_settings.html.twig:252
 msgid "SMTP Username"
 msgstr "Utilizator SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:257
+#: modules/Email/html_admin/mod_email_settings.html.twig:258
 msgid "SMTP Password"
 msgstr "Parolă SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:266
+#: modules/Email/html_admin/mod_email_settings.html.twig:267
 msgid "SendGrid API Key"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:275
+#: modules/Email/html_admin/mod_email_settings.html.twig:276
 msgid "Custom DSN"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:277
+#: modules/Email/html_admin/mod_email_settings.html.twig:278
 msgid "If one of the available options don't quite meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:278
+#: modules/Email/html_admin/mod_email_settings.html.twig:279
 msgid "More information"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:279
+#: modules/Email/html_admin/mod_email_settings.html.twig:280
 msgid "Example"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:292
+#: modules/Email/html_admin/mod_email_settings.html.twig:293
 msgid "Send a test email to yourself"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:294
+#: modules/Email/html_admin/mod_email_settings.html.twig:295
 msgid "Update email settings"
 msgstr "Actualizați setările pentru e-mail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:308
+#: modules/Email/html_admin/mod_email_settings.html.twig:309
 msgid "Email was successfully sent"
 msgstr ""
 
@@ -6643,16 +6681,6 @@ msgstr ""
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:28
 #: modules/Page/html_client/mod_page_tos.html.twig:27
 msgid "Back to Homepage"
-msgstr ""
-
-#: modules/Page/html_client/mod_page_login.html.twig:20
-#: modules/Page/html_client/mod_page_password-reset.html.twig:48
-#: modules/Page/html_client/mod_page_signup.html.twig:212
-#: modules/Staff/html_admin/mod_staff_login.html.twig:3
-#: themes/admin_default/html/error.html.twig:14
-#: themes/huraga/html/layout_default.html.twig:111
-#: themes/huraga/html/layout_default.html.twig:226
-msgid "Login"
 msgstr ""
 
 #: modules/Page/html_client/mod_page_login.html.twig:53
