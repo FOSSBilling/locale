@@ -72,7 +72,7 @@ jobs:
 
           for po_file in $(find . -name "*.po"); do
             dirname=$(dirname "$po_file")
-            translation=${dirname#./}  # Remove './' from the start
+            translation=$(dirname "$dirname")
 
             # Use msgfmt to generate temporary file with statistics
             msgfmt --statistics "$po_file" >/tmp/msgfmt_stats.tmp 2>&1
@@ -101,6 +101,7 @@ jobs:
               echo "Removing $translation from the final translation as it is only $completion_percentage% complete."
             else
               if [ "$dirname" != "./en_US/LC_MESSAGES" ]; then
+                translation=${translation#./}
                 echo " - \`$translation\` is $completion_percentage% translated" >>translations.md
                 completion_array["$translation"]=$completion_percentage
               fi
@@ -110,13 +111,12 @@ jobs:
 
           # Create a PHP file with the completion percentages
           echo '<?php' > completion.php
-          echo '$completionArray = [' >> completion.php
+          echo 'return [' >> completion.php
           for locale in "${!completion_array[@]}"; do
             percentage=${completion_array[$locale]}
             echo "  '$locale' => $percentage," >> completion.php
           done
           echo '];' >> completion.php
-          echo 'return $completionArray;' >> completion.php
 
           rm -f messages.mo
 
