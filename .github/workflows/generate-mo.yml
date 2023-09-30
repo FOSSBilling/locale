@@ -111,11 +111,19 @@ jobs:
 
           # Create a PHP file with the completion percentages
           echo '<?php' > completion.php
+
+          echo '/**' >> completion.md
+          echo ' * FOSSBilling translations' >> completion.md
+          echo " * Dated: $now" >> completion.md
+          echo ' * Licence: https://github.com/FOSSBilling/locale/blob/main/LICENSE.md' >> completion.md
+          echo ' */' >> completion.md
+
           echo 'return [' >> completion.php
           for locale in "${!completion_array[@]}"; do
             percentage=${completion_array[$locale]}
             echo "  '$locale' => $percentage," >> completion.php
           done
+
           echo '];' >> completion.php
 
           rm -f messages.mo
