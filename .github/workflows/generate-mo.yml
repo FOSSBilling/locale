@@ -42,6 +42,9 @@ jobs:
           path: |
             ./**/messages.mo
             ./**/messages.po
+            locales.php
+            LICENSE.md
+            readme.md
 
   release:
     name: Publish to release
@@ -64,9 +67,12 @@ jobs:
           echo "## FOSSBilling Translations" >>translations.md
           echo "Dated: $now" >>translations.md
 
+          # Create an associative array to store completion percentages
+          declare -A completion_array
+
           for po_file in $(find . -name "*.po"); do
             dirname=$(dirname "$po_file")
-            translation=$(dirname "$dirname") 
+            translation=${dirname#./}  # Remove './' from the start
 
             # Use msgfmt to generate temporary file with statistics
             msgfmt --statistics "$po_file" >/tmp/msgfmt_stats.tmp 2>&1
@@ -96,11 +102,23 @@ jobs:
             else
               if [ "$dirname" != "./en_US/LC_MESSAGES" ]; then
                 echo " - \`$translation\` is $completion_percentage% translated" >>translations.md
+                completion_array["$translation"]=$completion_percentage
               fi
               rm -f "$dirname/messages.po"
             fi
-           done
-           rm -f messages.mo
+          done
+
+          # Create a PHP file with the completion percentages
+          echo '<?php' > completion.php
+          echo '$completionArray = [' >> completion.php
+          for locale in "${!completion_array[@]}"; do
+            percentage=${completion_array[$locale]}
+            echo "  '$locale' => $percentage," >> completion.php
+          done
+          echo '];' >> completion.php
+          echo 'return $completionArray;' >> completion.php
+
+          rm -f messages.mo
 
       - name: Create a zip of the translations
         run: zip -r ./translations.zip .
