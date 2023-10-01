@@ -98,7 +98,10 @@ jobs:
             # If the translation is less than 25% complete, delete it entirely. Otherwise, just remove the source file to make things cleaner
             if [ "$completion_percentage" -lt 25 ] && [ "$dirname" != "./en_US/LC_MESSAGES" ]; then
               rm -rf "$translation"
-              echo "Removing $translation from the final translation as it is only $completion_percentage% complete."
+
+              translation=${translation#./}
+              completion_array["$translation"]=$completion_percentage
+              echo " - \`$translation\` was skipped for only being $completion_percentage% translated" >>translations.md
             else
               if [ "$dirname" != "./en_US/LC_MESSAGES" ]; then
                 translation=${translation#./}
