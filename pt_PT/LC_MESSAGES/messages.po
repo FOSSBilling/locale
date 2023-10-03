@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-09-22 18:21-0700\n"
-"PO-Revision-Date: 2023-09-23 11:47\n"
+"POT-Creation-Date: 2023-10-02 23:04-0700\n"
+"PO-Revision-Date: 2023-10-03 06:10\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
@@ -37,7 +37,7 @@ msgstr "Página :url não encontrada"
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "Ocorreu um erro HTTP :err_code ao tentar carregar :url"
 
-#: library/Api/Abstract.php:61
+#: library/Api/Abstract.php:59
 msgid "Mod object is not set for the service"
 msgstr "O objeto Mod não está definido para o serviço"
 
@@ -320,23 +320,23 @@ msgstr "Mostrar mensagem original"
 msgid "Show specialized message"
 msgstr "Mostrar mensagem especializada"
 
-#: library/FOSSBilling/ExtensionManager.php:53
+#: library/FOSSBilling/ExtensionManager.php:54
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "Não foi possível obter os detalhes da extensão no diretório de extensões do FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:73
+#: library/FOSSBilling/ExtensionManager.php:74
 msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
 msgstr "Não foi possível obter as versões da extensão no diretório de extensões do FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:94
+#: library/FOSSBilling/ExtensionManager.php:95
 msgid "Unable to fetch the latest release of the extension."
 msgstr "Não foi possível obter a versão mais recente da extensão."
 
-#: library/FOSSBilling/ExtensionManager.php:163
+#: library/FOSSBilling/ExtensionManager.php:168
 msgid "Unable to connect to the FOSSBilling extension directory."
 msgstr "Não é possível ligar ao diretório de extensão FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:171
+#: library/FOSSBilling/ExtensionManager.php:176
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr "Resposta inválida do diretório de extensão FOSSBilling."
 
@@ -344,27 +344,27 @@ msgstr "Resposta inválida do diretório de extensão FOSSBilling."
 msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
 msgstr "A prioridade fornecida (:priority) é inválida. Por favor, forneça um número inteiro entre 1 e 5 ou utilize as constantes symfony pré-definidas."
 
-#: library/FOSSBilling/Mail.php:157
+#: library/FOSSBilling/Mail.php:156
 msgid "FOSSBilling requires the proc_open PHP function to be enabled when using the sendmail transport"
 msgstr "O FOSSBilling requer que a função PHP proc_open seja activada quando se utiliza o transporte sendmail"
 
-#: library/FOSSBilling/Mail.php:165
+#: library/FOSSBilling/Mail.php:164
 msgid "A Sendgrid API key is required to send emails via Sendgrid"
 msgstr "É necessária uma chave da API do Sendgrid para enviar e-mails através do Sendgrid"
 
-#: library/FOSSBilling/Mail.php:171
+#: library/FOSSBilling/Mail.php:170
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
 msgstr "Não é possível enviar correio eletrónico: O método de transporte 'Personalizado' foi selecionado sem um DSN personalizado"
 
-#: library/FOSSBilling/Mail.php:176
+#: library/FOSSBilling/Mail.php:175
 msgid "Unknown mail transport: :transport"
 msgstr "Transporte de correio desconhecido: :transport"
 
-#: library/FOSSBilling/Mail.php:184
+#: library/FOSSBilling/Mail.php:183
 msgid "Failed to send email via :transport with the exception :e"
 msgstr "Falha no envio de correio eletrónico através de :transport com a exceção :e"
 
-#: library/FOSSBilling/Mail.php:201
+#: library/FOSSBilling/Mail.php:199
 msgid "SMTP host or port is not configured"
 msgstr "O anfitrião ou a porta SMTP não está configurado"
 
@@ -440,6 +440,10 @@ msgstr "A palavra-passe deve incluir pelo menos uma letra maiúscula."
 msgid "Birthdate"
 msgstr "Data de nascimento"
 
+#: library/FOSSBilling/i18n.php:135
+msgid "Unable to enable / disable the locale as it is not present in the locale folder."
+msgstr ""
+
 #: library/Model/ProductDomainTable.php:217
 msgid "Could not determine domain price. Domain action is missing"
 msgstr "Não foi possível determinar o preço do domínio. Falta a ação de domínio"
@@ -492,7 +496,8 @@ msgid "ClientBalance gateway is not enabled"
 msgstr "O gateway ClientBalance não está ativado"
 
 #: library/Payment/Adapter/PayPalEmail.php:31
-#: library/Payment/Adapter/Stripe.php:30 library/Payment/Adapter/Stripe.php:34
+#: library/Payment/Adapter/Stripe.php:33 library/Payment/Adapter/Stripe.php:36
+#: library/Payment/Adapter/Stripe.php:42 library/Payment/Adapter/Stripe.php:45
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
 msgstr "O gateway de pagamento \":pay_gateway\" não está totalmente configurado. Por favor, configure o :missing"
 
@@ -504,26 +509,18 @@ msgstr "Não é possível processar uma IPN duplicada"
 msgid "Redirecting to PayPal.com"
 msgstr "Redirecionar para PayPal.com"
 
-#: library/Payment/Adapter/PayPalEmail.php:303
-#: library/Payment/Adapter/Stripe.php:101 modules/Invoice/Service.php:1344
+#: library/Payment/Adapter/PayPalEmail.php:300
+#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1355
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Pagamento da fatura :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:103 modules/Invoice/Service.php:1346
+#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1357
 msgid "Payment for invoice :serie:id"
 msgstr "Pagamento da fatura :serie:id"
 
-#: library/Payment/Adapter/Stripe.php:167
+#: library/Payment/Adapter/Stripe.php:175
 msgid "There was an error when processing the transaction"
 msgstr "Ocorreu um erro ao processar a transação"
-
-#: library/Payment/Adapter/Stripe.php:274
-msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_pub_key\" at \"Configuration -> Payments\"."
-msgstr "O gateway de pagamento \"Stripe\" não está corretamente configurado. Actualize o parâmetro de configuração \"test_pub_key\" em \"Configuração -> Pagamentos\"."
-
-#: library/Payment/Adapter/Stripe.php:282
-msgid "Payment gateway \"Stripe\" is not configured properly. Please update configuration parameter \"test_api_key\" at \"Configuration -> Payments\"."
-msgstr "O gateway de pagamento \"Stripe\" não está corretamente configurado. Actualize o parâmetro de configuração \"test_api_key\" em \"Configuração -> Pagamentos\"."
 
 #: library/Payment/AdapterAbstract.php:52
 msgid "Return URL for payment gateway was not set"
@@ -569,28 +566,24 @@ msgid "checking domain transferability"
 msgstr "verificar a transferibilidade do domínio"
 
 #: library/Registrar/Adapter/Internetbs.php:76
-#: library/Registrar/Adapter/Internetbs.php:172
+#: library/Registrar/Adapter/Internetbs.php:176
 #: library/Registrar/Adapter/Namecheap.php:434
 #: library/Registrar/Adapter/Namecheap.php:573 library/Server/Manager/CWP.php:245
 #: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
 #: library/Server/Manager/Directadmin.php:329
 #: library/Server/Manager/Directadmin.php:334
 #: library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:349
-#: library/Server/Manager/Hestia.php:388 library/Server/Manager/Plesk.php:55
+#: library/Server/Manager/Hestia.php:335 library/Server/Manager/Hestia.php:343
+#: library/Server/Manager/Hestia.php:378 library/Server/Manager/Plesk.php:55
 #: library/Server/Manager/Plesk.php:202 library/Server/Manager/Plesk.php:229
 msgid ":type: does not support :action:"
 msgstr ":type: não suporta :action:"
 
-#: library/Registrar/Adapter/Internetbs.php:172
-#: library/Registrar/Adapter/Namecheap.php:573
-msgid "deleting domains"
-msgstr "eliminação de domínios"
+#: library/Registrar/Adapter/Internetbs.php:169
+msgid "get domain details"
+msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:117
-msgid "Premium domains cannot be registered."
-msgstr "Os domínios premium não podem ser registados."
-
+#: library/Registrar/Adapter/Internetbs.php:170
 #: library/Registrar/Adapter/Namecheap.php:171
 #: library/Registrar/Adapter/Namecheap.php:177
 #: library/Registrar/Adapter/Namecheap.php:253
@@ -605,6 +598,15 @@ msgstr "Os domínios premium não podem ser registados."
 #: library/Registrar/Adapter/Resellerclub.php:720
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr "Falha na :action: com o :type: registador, verifique os registos de erros para mais detalhes"
+
+#: library/Registrar/Adapter/Internetbs.php:176
+#: library/Registrar/Adapter/Namecheap.php:573
+msgid "deleting domains"
+msgstr "eliminação de domínios"
+
+#: library/Registrar/Adapter/Namecheap.php:117
+msgid "Premium domains cannot be registered."
+msgstr "Os domínios premium não podem ser registados."
 
 #: library/Registrar/Adapter/Namecheap.php:252
 msgid "update nameservers"
@@ -684,7 +686,7 @@ msgid "The \":server_manager\" server manager is not fully configured. Please co
 msgstr "O gestor do servidor \":server_manager\" não está totalmente configurado. Por favor, configure o :missing"
 
 #: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:428
-#: library/Server/Manager/Hestia.php:104 library/Server/Manager/Hestia.php:143
+#: library/Server/Manager/Hestia.php:102 library/Server/Manager/Hestia.php:141
 #: library/Server/Manager/Plesk.php:47
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
 msgstr "Falha na ligação ao servidor :type:. Verifique as suas credenciais e configuração"
@@ -697,48 +699,48 @@ msgstr "criar conta"
 #: library/Server/Manager/CWP.php:178 library/Server/Manager/CWP.php:198
 #: library/Server/Manager/CWP.php:218 library/Server/Manager/CWP.php:236
 #: library/Server/Manager/Directadmin.php:439
-#: library/Server/Manager/Hestia.php:201 library/Server/Manager/Hestia.php:215
-#: library/Server/Manager/Hestia.php:242 library/Server/Manager/Hestia.php:267
-#: library/Server/Manager/Hestia.php:296 library/Server/Manager/Hestia.php:326
-#: library/Server/Manager/Hestia.php:375 library/Server/Manager/Plesk.php:87
+#: library/Server/Manager/Hestia.php:199 library/Server/Manager/Hestia.php:213
+#: library/Server/Manager/Hestia.php:240 library/Server/Manager/Hestia.php:265
+#: library/Server/Manager/Hestia.php:294 library/Server/Manager/Hestia.php:324
+#: library/Server/Manager/Hestia.php:367 library/Server/Manager/Plesk.php:87
 #: library/Server/Manager/Whm.php:421 library/Server/Manager/Whm.php:426
 #: library/Server/Manager/Whm.php:431 library/Server/Manager/Whm.php:436
 #: library/Server/Manager/Whm.php:441
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr "Falha na :action: no servidor :type:, verifique os registos de erros para mais detalhes"
 
-#: library/Server/Manager/CWP.php:160 library/Server/Manager/Hestia.php:241
+#: library/Server/Manager/CWP.php:160 library/Server/Manager/Hestia.php:239
 msgid "suspend account"
 msgstr "suspender conta"
 
-#: library/Server/Manager/CWP.php:177 library/Server/Manager/Hestia.php:266
+#: library/Server/Manager/CWP.php:177 library/Server/Manager/Hestia.php:264
 msgid "unsuspend account"
 msgstr "cancelar a suspensão da conta"
 
-#: library/Server/Manager/CWP.php:197 library/Server/Manager/Hestia.php:295
+#: library/Server/Manager/CWP.php:197 library/Server/Manager/Hestia.php:293
 msgid "cancel account"
 msgstr "cancelar conta"
 
-#: library/Server/Manager/CWP.php:217 library/Server/Manager/Hestia.php:325
+#: library/Server/Manager/CWP.php:217 library/Server/Manager/Hestia.php:323
 msgid "change account package"
 msgstr "alterar pacote de contas"
 
-#: library/Server/Manager/CWP.php:235 library/Server/Manager/Hestia.php:374
+#: library/Server/Manager/CWP.php:235 library/Server/Manager/Hestia.php:366
 msgid "change account password"
 msgstr "alterar a palavra-passe da conta"
 
 #: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:329
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Plesk.php:202
+#: library/Server/Manager/Hestia.php:335 library/Server/Manager/Plesk.php:202
 msgid "username changes"
 msgstr "alterações de nome de utilizador"
 
 #: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:334
-#: library/Server/Manager/Hestia.php:349
+#: library/Server/Manager/Hestia.php:343
 msgid "changing the account domain"
 msgstr "alterar o domínio da conta"
 
 #: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Hestia.php:388 library/Server/Manager/Plesk.php:229
+#: library/Server/Manager/Hestia.php:378 library/Server/Manager/Plesk.php:229
 msgid "changing the account IP"
 msgstr "alterar o IP da conta"
 
@@ -766,19 +768,19 @@ msgstr "HttpClientException: :error"
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Erro do DirectAdmin do Gestor de servidor: \"O pedido que efectuou não pode ser executado porque não existe no seu nível de autoridade\""
 
-#: library/Server/Manager/Hestia.php:200
+#: library/Server/Manager/Hestia.php:198
 msgid "create user"
 msgstr "criar utilizador"
 
-#: library/Server/Manager/Hestia.php:211
+#: library/Server/Manager/Hestia.php:209
 msgid "delete domain"
 msgstr "eliminar domínio"
 
-#: library/Server/Manager/Hestia.php:211 library/Server/Manager/Hestia.php:214
+#: library/Server/Manager/Hestia.php:209 library/Server/Manager/Hestia.php:212
 msgid "create domain"
 msgstr "criar domínio"
 
-#: library/Server/Manager/Hestia.php:212
+#: library/Server/Manager/Hestia.php:210
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
 msgstr "Falha na :action1: no servidor :type: depois de falhar a :action2:, verifique os registos de erros para mais detalhes"
 
@@ -821,9 +823,9 @@ msgid "CSRF token invalid"
 msgstr "Token CSRF inválido"
 
 #: modules/Cart/Api/Guest.php:57 modules/Currency/Api/Admin.php:67
-#: modules/Currency/Api/Admin.php:238 modules/Currency/Api/Guest.php:46
-#: modules/Currency/Service.php:326 modules/Currency/Service.php:461
-#: modules/Currency/Service.php:572
+#: modules/Currency/Api/Admin.php:238 modules/Currency/Api/Guest.php:47
+#: modules/Currency/Service.php:326 modules/Currency/Service.php:457
+#: modules/Currency/Service.php:568
 msgid "Currency not found"
 msgstr "Moeda não encontrada"
 
@@ -896,7 +898,7 @@ msgstr "O e-mail já está registado."
 msgid "Can not change email. It is already registered."
 msgstr "Não é possível alterar o correio eletrónico. Já está registado."
 
-#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:223
 #: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:104
 msgid "Passwords do not match"
 msgstr "As palavras-passe não coincidem"
@@ -905,7 +907,7 @@ msgstr "As palavras-passe não coincidem"
 msgid "Event not found"
 msgstr "Evento não encontrado"
 
-#: modules/Client/Api/Admin.php:573
+#: modules/Client/Api/Admin.php:567
 msgid "Group has clients assigned. Please reassign them first."
 msgstr "O grupo tem clientes atribuídos. Por favor, reatribua-os primeiro."
 
@@ -925,8 +927,8 @@ msgstr "O e-mail já está registado. Poderá querer iniciar sessão em vez de s
 msgid "Please check your login details."
 msgstr "Verifique os seus dados de acesso."
 
-#: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
-#: modules/Client/Service.php:701
+#: modules/Client/Api/Guest.php:228 modules/Client/Api/Guest.php:232
+#: modules/Client/Service.php:702
 msgid "The link has expired or you have already reset your password."
 msgstr ""
 
@@ -1031,15 +1033,15 @@ msgstr "Código da moeda não fornecido"
 msgid "Can not remove default currency"
 msgstr "Não é possível remover a moeda predefinida"
 
-#: modules/Currency/Service.php:479
+#: modules/Currency/Service.php:475
 msgid "Currency rate is invalid"
 msgstr "A taxa de câmbio é inválida"
 
-#: modules/Currency/Service.php:544
+#: modules/Currency/Service.php:540
 msgid "Failed to get currency rates for :currency from the European Central Bank API"
 msgstr "Falha ao obter as taxas de câmbio para a moeda :da API do Banco Central Europeu"
 
-#: modules/Currency/Service.php:560
+#: modules/Currency/Service.php:556
 msgid "<b>Currencylayer threw an error:</b><br />:errorInfo"
 msgstr "O <b>Currencylayer lançou um erro:</b><br />:errorInfo"
 
@@ -1050,17 +1052,17 @@ msgstr "O <b>Currencylayer lançou um erro:</b><br />:errorInfo"
 msgid "Custom Pages"
 msgstr "Páginas personalizadas"
 
-#: modules/Email/Api/Admin.php:120 modules/Email/Api/Admin.php:144
-#: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
-#: modules/Email/Api/Client.php:113 modules/Email/Service.php:466
+#: modules/Email/Api/Admin.php:114 modules/Email/Api/Admin.php:137
+#: modules/Email/Api/Client.php:66 modules/Email/Api/Client.php:88
+#: modules/Email/Api/Client.php:110 modules/Email/Service.php:466
 msgid "Email not found"
 msgstr "Correio eletrónico não encontrado"
 
-#: modules/Email/Api/Admin.php:218
+#: modules/Email/Api/Admin.php:209
 msgid "Email template not found"
 msgstr "Modelo de correio eletrónico não encontrado"
 
-#: modules/Email/Api/Admin.php:399
+#: modules/Email/Api/Admin.php:385
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "O recetor não está definido. Definir o parâmetro to ou to_client ou to_staff"
 
@@ -1091,7 +1093,7 @@ msgstr ""
 msgid "Embed and integrate"
 msgstr "Incorporar e integrar"
 
-#: modules/Extension/Api/Admin.php:246
+#: modules/Extension/Api/Admin.php:276
 msgid "Extension not found"
 msgstr "Extensão não encontrada"
 
@@ -1149,24 +1151,24 @@ msgstr "O estilo do formulário não foi encontrado na lista predefinida"
 msgid "Form field type is invalid"
 msgstr "O tipo de campo do formulário é inválido"
 
-#: modules/Formbuilder/Api/Admin.php:77 modules/Formbuilder/Api/Admin.php:238
+#: modules/Formbuilder/Api/Admin.php:77 modules/Formbuilder/Api/Admin.php:237
 msgid "This input type must have unique values"
 msgstr "Este tipo de entrada deve ter valores únicos"
 
-#: modules/Formbuilder/Api/Admin.php:80 modules/Formbuilder/Api/Admin.php:266
-#: modules/Formbuilder/Api/Admin.php:286
+#: modules/Formbuilder/Api/Admin.php:80 modules/Formbuilder/Api/Admin.php:265
+#: modules/Formbuilder/Api/Admin.php:285
 msgid "Form id was not passed"
 msgstr "O id do formulário não foi transmitido"
 
-#: modules/Formbuilder/Api/Admin.php:269 modules/Formbuilder/Api/Admin.php:289
+#: modules/Formbuilder/Api/Admin.php:268 modules/Formbuilder/Api/Admin.php:288
 msgid "Form name was not passed"
 msgstr "O nome do formulário não foi transmitido"
 
-#: modules/Formbuilder/Api/Admin.php:293
+#: modules/Formbuilder/Api/Admin.php:292
 msgid "Form type was not passed"
 msgstr "O tipo de formulário não foi transmitido"
 
-#: modules/Formbuilder/Api/Admin.php:297
+#: modules/Formbuilder/Api/Admin.php:296
 msgid "Field type not supported"
 msgstr "Tipo de campo não suportado"
 
@@ -1194,20 +1196,20 @@ msgstr " os rótulos devem ser únicos"
 msgid "Textarea size options must be integer values"
 msgstr "As opções de tamanho da área de texto devem ser valores inteiros"
 
-#: modules/Invoice/Api/Admin.php:222 modules/Invoice/Api/Client.php:114
+#: modules/Invoice/Api/Admin.php:245 modules/Invoice/Api/Client.php:113
 msgid "Order :id is free. No need to generate invoice."
 msgstr "A identificação da encomenda é gratuita. Não é necessário gerar fatura."
 
-#: modules/Invoice/Api/Admin.php:721
+#: modules/Invoice/Api/Admin.php:736
 msgid "Client currency must match subscription currency. Check if clients currency is defined."
 msgstr "A moeda do cliente tem de corresponder à moeda da subscrição. Verificar se a moeda do cliente está definida."
 
-#: modules/Invoice/Api/Admin.php:780
+#: modules/Invoice/Api/Admin.php:795
 msgid "Subscription not found"
 msgstr "Subscrição não encontrada"
 
 #: modules/Invoice/Api/Client.php:55 modules/Invoice/Api/Client.php:79
-#: modules/Invoice/Api/Client.php:166 modules/Invoice/Api/Guest.php:35
+#: modules/Invoice/Api/Client.php:165 modules/Invoice/Api/Guest.php:35
 #: modules/Invoice/Api/Guest.php:59
 msgid "Invoice was not found"
 msgstr "A fatura não foi encontrada"
@@ -1216,7 +1218,7 @@ msgstr "A fatura não foi encontrada"
 msgid "Paid Invoice can not be modified"
 msgstr "A fatura paga não pode ser modificada"
 
-#: modules/Invoice/Api/Client.php:111 modules/Order/Api/Client.php:121
+#: modules/Invoice/Api/Client.php:110 modules/Order/Api/Client.php:121
 #: modules/Servicedomain/Api/Client.php:122
 #: modules/Servicedownloadable/Api/Client.php:32
 #: modules/Servicehosting/Api/Client.php:72
@@ -1224,15 +1226,15 @@ msgstr "A fatura paga não pode ser modificada"
 msgid "Order not found"
 msgstr "Ordem não encontrada"
 
-#: modules/Invoice/Api/Client.php:139
+#: modules/Invoice/Api/Client.php:138
 msgid "You need to enter numeric value"
 msgstr "É necessário introduzir um valor numérico"
 
-#: modules/Invoice/Api/Guest.php:103
+#: modules/Invoice/Api/Guest.php:102
 msgid "Invoice hash not passed. Missing param hash"
 msgstr "O hash da fatura não foi transmitido. Falta o parâmetro hash"
 
-#: modules/Invoice/Api/Guest.php:107
+#: modules/Invoice/Api/Guest.php:106
 msgid "Payment method not found. Missing param gateway_id"
 msgstr "Método de pagamento não encontrado. Falta o parâmetro gateway_id"
 
@@ -1281,43 +1283,43 @@ msgstr "Regras fiscais"
 msgid "Payment gateways"
 msgstr "Métodos de pagamento"
 
-#: modules/Invoice/Service.php:412
+#: modules/Invoice/Service.php:417
 msgid "Unable to determine the next invoice number"
 msgstr "Não é possível determinar o próximo número de fatura"
 
-#: modules/Invoice/Service.php:626
+#: modules/Invoice/Service.php:631
 msgid "Can not refund invoice with negative amount"
 msgstr "Não é possível reembolsar uma fatura com um montante negativo"
 
-#: modules/Invoice/Service.php:841
+#: modules/Invoice/Service.php:846
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "A fatura está relacionada com a encomenda #:id. Por favor, cancele a encomenda primeiro."
 
-#: modules/Invoice/Service.php:908
+#: modules/Invoice/Service.php:913
 msgid "Invoices are not generated for 0 amount orders"
 msgstr "As facturas não são geradas para encomendas de montante 0"
 
-#: modules/Invoice/Service.php:1076
+#: modules/Invoice/Service.php:1081
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "É necessário ter, pelo menos, uma encomenda ativa antes de poder adicionar fundos, pelo que não é possível avançar neste momento!"
 
-#: modules/Invoice/Service.php:1085
+#: modules/Invoice/Service.php:1090
 msgid "Amount must be at least :min_amount"
 msgstr "O montante deve ser, pelo menos, :min_amount"
 
-#: modules/Invoice/Service.php:1089
+#: modules/Invoice/Service.php:1094
 msgid "Amount cannot exceed :max_amount"
 msgstr "O montante não pode exceder :max_amount"
 
-#: modules/Invoice/Service.php:1115 modules/Invoice/Service.php:1179
+#: modules/Invoice/Service.php:1120 modules/Invoice/Service.php:1188
 msgid "Invoice not found"
 msgstr "Fatura não encontrada"
 
-#: modules/Invoice/Service.php:1120
+#: modules/Invoice/Service.php:1125
 msgid "Payment method not found"
 msgstr "Método de pagamento não encontrado"
 
-#: modules/Invoice/Service.php:1124
+#: modules/Invoice/Service.php:1129
 msgid "Payment method not enabled"
 msgstr "Método de pagamento não ativado"
 
@@ -1358,71 +1360,71 @@ msgstr "O ID da fatura da transação está em falta"
 msgid "Payment gateway id is missing"
 msgstr "O ID do gateway de pagamento está em falta"
 
-#: modules/Invoice/ServiceTransaction.php:361
+#: modules/Invoice/ServiceTransaction.php:347
 msgid "Transaction :id not found."
 msgstr "Transação :id não encontrada."
 
-#: modules/Invoice/ServiceTransaction.php:365
-#: modules/Invoice/ServiceTransaction.php:485
+#: modules/Invoice/ServiceTransaction.php:351
+#: modules/Invoice/ServiceTransaction.php:471
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
 msgstr "Não foi possível determinar a origem da transação. O gateway de pagamento da transação é desconhecido."
 
-#: modules/Invoice/ServiceTransaction.php:370
-#: modules/Invoice/ServiceTransaction.php:490
+#: modules/Invoice/ServiceTransaction.php:356
+#: modules/Invoice/ServiceTransaction.php:476
 msgid "Can not handle transaction received from unknown payment gateway: :id"
 msgstr "Não é possível tratar a transação recebida de uma plataforma de pagamento desconhecida: :id"
 
-#: modules/Invoice/ServiceTransaction.php:376
-#: modules/Invoice/ServiceTransaction.php:520
+#: modules/Invoice/ServiceTransaction.php:362
+#: modules/Invoice/ServiceTransaction.php:506
 msgid "Payment adapter :adapter does not support action :action"
 msgstr "O adaptador de pagamento :adaptador não suporta a ação :ação"
 
-#: modules/Invoice/ServiceTransaction.php:410
+#: modules/Invoice/ServiceTransaction.php:396
 msgid "Unknown transaction #:id type: :type"
 msgstr "Transação desconhecida #:id type: :type"
 
-#: modules/Invoice/ServiceTransaction.php:499
-#: modules/Invoice/ServiceTransaction.php:665
+#: modules/Invoice/ServiceTransaction.php:485
+#: modules/Invoice/ServiceTransaction.php:651
 msgid "Transaction :id is not associated with an invoice."
 msgstr "A transação :id não está associada a uma fatura."
 
-#: modules/Invoice/ServiceTransaction.php:504
+#: modules/Invoice/ServiceTransaction.php:490
 msgid "Invoice #:id not found"
 msgstr "Fatura #:id não encontrado"
 
-#: modules/Invoice/ServiceTransaction.php:514
+#: modules/Invoice/ServiceTransaction.php:500
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
 msgstr "A notificação de pagamento instantâneo (IPN) não passou na validação do gateway :id"
 
-#: modules/Invoice/ServiceTransaction.php:525
+#: modules/Invoice/ServiceTransaction.php:511
 msgid "Payment gateway :id method getTransaction should return Payment_Transaction object"
 msgstr "O método getTransaction do gateway de pagamento :id deve devolver o objeto Payment_Transaction"
 
-#: modules/Invoice/ServiceTransaction.php:613
+#: modules/Invoice/ServiceTransaction.php:599
 msgid "Can not create subscription. Subscription id from payment gateway was not received"
 msgstr "Não é possível criar uma subscrição. O ID de subscrição da plataforma de pagamento não foi recebido"
 
-#: modules/Invoice/ServiceTransaction.php:648
+#: modules/Invoice/ServiceTransaction.php:634
 msgid "Subscription #:id was not found. Could not unsubscribe"
 msgstr "A subscrição #:id não foi encontrada. Não foi possível cancelar a subscrição"
 
-#: modules/Invoice/ServiceTransaction.php:661
+#: modules/Invoice/ServiceTransaction.php:647
 msgid "Only approved transaction can be processed"
 msgstr "Apenas as transacções aprovadas podem ser processadas"
 
-#: modules/Invoice/ServiceTransaction.php:672
+#: modules/Invoice/ServiceTransaction.php:658
 msgid "Transaction currency :code do not match required currency :required"
 msgstr "A moeda de transação :código não corresponde à moeda requerida :obrigatório"
 
-#: modules/Invoice/ServiceTransaction.php:677
+#: modules/Invoice/ServiceTransaction.php:663
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
 msgstr "O estado da transação no gateway de pagamento é Pendente. Apenas as transacções Completas ou Desconhecidas podem ser processadas."
 
-#: modules/Invoice/ServiceTransaction.php:687
+#: modules/Invoice/ServiceTransaction.php:673
 msgid "Client currency do not match invoice currency"
 msgstr "A moeda do cliente não corresponde à moeda da fatura"
 
-#: modules/Invoice/ServiceTransaction.php:692
+#: modules/Invoice/ServiceTransaction.php:678
 msgid "Can not add negative amount to client balance for debit transaction"
 msgstr "Não é possível adicionar um montante negativo ao saldo do cliente para uma transação de débito"
 
@@ -1479,7 +1481,7 @@ msgstr "Não é possível remover a categoria que tem artigos"
 msgid "Message from name can not be empty"
 msgstr "A mensagem do nome não pode estar vazia"
 
-#: modules/Massmailer/Api/Admin.php:153 modules/Massmailer/Api/Admin.php:173
+#: modules/Massmailer/Api/Admin.php:154 modules/Massmailer/Api/Admin.php:175
 msgid "Add some content before sending message"
 msgstr "Adicionar algum conteúdo antes de enviar a mensagem"
 
@@ -1639,11 +1641,11 @@ msgstr "Este código promocional já existe."
 msgid "Invalid birthdate value"
 msgstr "Valor de data de nascimento inválido"
 
-#: modules/Profile/Service.php:235
+#: modules/Profile/Service.php:229
 msgid "Unable to invalidate sessions, nobody is logged in"
 msgstr "Não é possível invalidar as sessões, ninguém tem sessão iniciada"
 
-#: modules/Profile/Service.php:254
+#: modules/Profile/Service.php:248
 msgid "Unable to invalidate sessions, an invalid type was used"
 msgstr "Não é possível invalidar sessões, foi utilizado um tipo inválido"
 
@@ -1655,37 +1657,37 @@ msgstr "A função de tratamento de mensagens :method não existe"
 msgid "Redirect not found"
 msgstr "Redireccionamento não encontrado"
 
-#: modules/Serviceapikey/Service.php:61
+#: modules/Serviceapikey/Service.php:54
 msgid "Order does not exist."
 msgstr "A ordem não existe."
 
-#: modules/Serviceapikey/Service.php:123 modules/Serviceapikey/Service.php:142
+#: modules/Serviceapikey/Service.php:116 modules/Serviceapikey/Service.php:135
 msgid "You must provide an API key to check it's validity."
 msgstr "É necessário fornecer uma chave API para verificar a sua validade."
 
-#: modules/Serviceapikey/Service.php:128 modules/Serviceapikey/Service.php:147
-#: modules/Serviceapikey/Service.php:197 modules/Serviceapikey/Service.php:208
-#: modules/Serviceapikey/Service.php:238 modules/Serviceapikey/Service.php:351
+#: modules/Serviceapikey/Service.php:121 modules/Serviceapikey/Service.php:140
+#: modules/Serviceapikey/Service.php:190 modules/Serviceapikey/Service.php:201
+#: modules/Serviceapikey/Service.php:231 modules/Serviceapikey/Service.php:344
 msgid "API key does not exist"
 msgstr "A chave API não existe"
 
-#: modules/Serviceapikey/Service.php:187
+#: modules/Serviceapikey/Service.php:180
 msgid "You must provide either the API key or API key order ID in order to reset it."
 msgstr "É necessário fornecer a chave da API ou o ID da ordem da chave da API para a repor."
 
-#: modules/Serviceapikey/Service.php:230
+#: modules/Serviceapikey/Service.php:223
 msgid "You must provide the API key order ID in order to update it."
 msgstr "É necessário fornecer o ID da ordem da chave API para a atualizar."
 
-#: modules/Serviceapikey/Service.php:242
+#: modules/Serviceapikey/Service.php:235
 msgid "To change the API key, please use the reset function rather than updating it."
 msgstr "Para alterar a chave API, utilize a função de reposição em vez de a atualizar."
 
-#: modules/Serviceapikey/Service.php:305
+#: modules/Serviceapikey/Service.php:298
 msgid "Maximum number of iterations reached while generating API key"
 msgstr "Número máximo de iterações atingido durante a geração da chave API"
 
-#: modules/Serviceapikey/Service.php:340
+#: modules/Serviceapikey/Service.php:333
 msgid "Unknown uppercase option ':case:'. API generator only accepts 'lower', 'upper', or 'mixed'."
 msgstr "Opção desconhecida para maiúsculas ':case:'. O gerador da API só aceita 'lower', 'upper' ou 'mixed'."
 
@@ -2182,11 +2184,11 @@ msgstr "Definições"
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:157
 #: modules/Index/html_client/mod_index_dashboard.html.twig:86
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:127
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:315
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:338
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:388
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:572
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:347
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:370
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:420
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:507
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:604
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:150
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:159
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:46
@@ -2239,19 +2241,19 @@ msgstr "Definições"
 msgid "Update"
 msgstr "Atualização"
 
-#: modules/System/Service.php:32
+#: modules/System/Service.php:34
 msgid "Parameter key is missing"
 msgstr "Falta uma chave de parâmetro"
 
-#: modules/System/Service.php:96
+#: modules/System/Service.php:98
 msgid "Invalid parameter name, received: param_"
 msgstr "Nome de parâmetro inválido, recebido: param_"
 
-#: modules/System/Service.php:440
+#: modules/System/Service.php:471
 msgid "Parameter :param does not exist"
 msgstr "O parâmetro :param não existe"
 
-#: modules/System/Service.php:1333
+#: modules/System/Service.php:1364
 msgid "Country :code phone code is not registered"
 msgstr "País: o código do telefone não está registado"
 
@@ -2319,8 +2321,9 @@ msgstr "IP"
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
 #: modules/Client/html_admin/mod_client_settings.html.twig:81
 #: modules/Client/html_client/mod_client_profile.html.twig:163
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:28
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:450
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:30
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:87
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:482
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:42
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:123
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
@@ -2341,7 +2344,7 @@ msgstr "País"
 #: modules/Client/html_admin/mod_client_manage.html.twig:815
 #: modules/Client/html_client/mod_client_balance.html.twig:26
 #: modules/Email/html_admin/mod_email_history.html.twig:34
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:642
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:674
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:170
 #: modules/News/html_admin/mod_news_index.html.twig:37
 #: modules/Notification/html_admin/mod_notification_index.html.twig:35
@@ -2367,9 +2370,9 @@ msgstr "Data"
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:65
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:262
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:131
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:153
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:516
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:680
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:185
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:548
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:712
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:91
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:76
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:80
@@ -2443,7 +2446,8 @@ msgstr "Tens a certeza?"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:216
 #: modules/Email/html_admin/mod_email_history.html.twig:69
 #: modules/Extension/html_admin/mod_extension_index.html.twig:109
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:44
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:72
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:131
 #: modules/Index/html_client/mod_index_dashboard.html.twig:67
 #: modules/Index/html_client/mod_index_dashboard.html.twig:197
 #: modules/Index/html_client/mod_index_dashboard.html.twig:221
@@ -2517,13 +2521,13 @@ msgstr "Editar grupo de clientes"
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:34
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:59
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:31
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:493
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:581
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:525
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:613
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:41
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:34
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:69
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:184
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:203
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:213
 #: modules/Kb/html_admin/mod_kb_article.html.twig:39
 #: modules/Kb/html_admin/mod_kb_category.html.twig:34
 #: modules/Kb/html_admin/mod_kb_index.html.twig:42
@@ -2584,7 +2588,7 @@ msgstr "Filtrar clientes"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:92
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:637
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
@@ -2605,7 +2609,7 @@ msgstr "ID"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:97
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:139
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:115
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:158
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:168
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:33
 #: modules/Order/html_admin/mod_order_index.html.twig:184
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:35
@@ -2647,10 +2651,11 @@ msgstr "Nome da empresa"
 #: modules/Email/html_client/mod_email_email.html.twig:3
 #: modules/Embed/html_client/mod_embed_contact.html.twig:47
 #: modules/Index/html_client/mod_index_dashboard.html.twig:94
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:381
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:468
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:413
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:117
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:135
+#: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:36
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:180
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:127
@@ -2700,8 +2705,8 @@ msgstr "Grupo"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:214
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:68
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:641
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:206
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:673
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:63
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:118
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:39
@@ -2792,7 +2797,7 @@ msgstr "Suspenso"
 #: modules/Client/html_admin/mod_client_index.html.twig:148
 #: modules/Client/html_admin/mod_client_index.html.twig:307
 #: modules/Client/html_admin/mod_client_manage.html.twig:176
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:190
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:222
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:126
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:140
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:74
@@ -2834,15 +2839,15 @@ msgstr "Reiniciar"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:165
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:172
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:92
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:554
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:583
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:586
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:615
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:142
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:37
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:72
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:186
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:229
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:205
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:250
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:215
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:260
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:62
 #: modules/Support/html_admin/mod_support_tickets.html.twig:148
@@ -2871,12 +2876,12 @@ msgstr "Novo grupo"
 #: modules/Client/html_admin/mod_client_manage.html.twig:71
 #: modules/Client/html_admin/mod_client_manage.html.twig:189
 #: modules/Client/html_admin/mod_client_settings.html.twig:76
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:351
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:413
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:383
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:445
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:94
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:144
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:112
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:163
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:173
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:74
 #: modules/Page/html_client/mod_page_signup.html.twig:60
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:186
@@ -2909,7 +2914,7 @@ msgstr "Endereço Linha 2"
 #: modules/Client/html_admin/mod_client_manage.html.twig:308
 #: modules/Client/html_admin/mod_client_settings.html.twig:82
 #: modules/Client/html_client/mod_client_profile.html.twig:155
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:437
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
 #: modules/Page/html_client/mod_page_signup.html.twig:115
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
@@ -2921,7 +2926,7 @@ msgstr "Cidade"
 #: modules/Client/html_admin/mod_client_manage.html.twig:301
 #: modules/Client/html_admin/mod_client_settings.html.twig:83
 #: modules/Client/html_client/mod_client_profile.html.twig:176
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:443
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:129
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:172
@@ -2939,12 +2944,13 @@ msgstr "Código postal"
 #: modules/Client/html_admin/mod_client_index.html.twig:380
 #: modules/Client/html_admin/mod_client_manage.html.twig:320
 #: modules/Client/html_admin/mod_client_settings.html.twig:87
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:375
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:456
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:488
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:112
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:166
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:130
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:185
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:195
+#: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/System/html_admin/mod_system_settings.html.twig:66
 msgid "Phone"
 msgstr "Telefone"
@@ -3071,7 +3077,7 @@ msgid "Emails"
 msgstr "Emails"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:50
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:631
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:663
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:155
@@ -3085,13 +3091,13 @@ msgstr "Saldo do fundo"
 #: modules/Client/html_admin/mod_client_manage.html.twig:107
 #: modules/Client/html_admin/mod_client_manage.html.twig:390
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:117
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:308
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:340
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:34
 #: modules/Order/html_admin/mod_order_manage.html.twig:367
 #: modules/Order/html_client/mod_order_manage.html.twig:278
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
 #: modules/Support/html_admin/mod_support_tickets.html.twig:374
-#: modules/System/html_admin/mod_system_settings.html.twig:183
+#: modules/System/html_admin/mod_system_settings.html.twig:221
 msgid "Notes"
 msgstr "Notas"
 
@@ -3104,12 +3110,12 @@ msgstr "Chave API"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:125
 #: modules/Client/html_client/mod_client_profile.html.twig:139
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:369
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:431
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:401
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:463
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:107
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:159
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:125
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:188
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
 #: modules/Page/html_client/mod_page_signup.html.twig:95
 #: modules/System/html_admin/mod_system_settings.html.twig:72
@@ -3136,7 +3142,7 @@ msgstr "Aceder à área de cliente"
 #: modules/Email/html_client/mod_email_email.html.twig:36
 #: modules/Email/html_client/mod_email_index.html.twig:45
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:681
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:713
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:124
 #: modules/Order/html_admin/mod_order_manage.html.twig:280
@@ -3160,7 +3166,7 @@ msgstr "Perfil do cliente atualizado"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:181
 #: modules/Client/html_admin/mod_client_manage.html.twig:811
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:638
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:670
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:166
 #: modules/Order/html_admin/mod_order_index.html.twig:35
 #: modules/Product/html_admin/mod_product_index.html.twig:45
@@ -3189,8 +3195,9 @@ msgstr "Correio aprovado"
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:75
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:93
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:110
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:199
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:231
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:52
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:109
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:150
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:165
 #: modules/Order/html_admin/mod_order_new.html.twig:44
@@ -3237,8 +3244,10 @@ msgstr "Correio aprovado"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:157
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:69
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:40
-#: modules/System/html_admin/mod_system_settings.html.twig:125
-#: modules/System/html_admin/mod_system_settings.html.twig:146
+#: modules/System/html_admin/mod_system_settings.html.twig:132
+#: modules/System/html_admin/mod_system_settings.html.twig:145
+#: modules/System/html_admin/mod_system_settings.html.twig:163
+#: modules/System/html_admin/mod_system_settings.html.twig:184
 #: themes/admin_default/html/macro_functions.html.twig:3
 msgid "Yes"
 msgstr "Sim"
@@ -3252,8 +3261,9 @@ msgstr "Sim"
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:79
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:97
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:114
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:203
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:235
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:56
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:113
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:154
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:169
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:289
@@ -3301,8 +3311,10 @@ msgstr "Sim"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:163
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:73
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:44
-#: modules/System/html_admin/mod_system_settings.html.twig:131
-#: modules/System/html_admin/mod_system_settings.html.twig:152
+#: modules/System/html_admin/mod_system_settings.html.twig:136
+#: modules/System/html_admin/mod_system_settings.html.twig:149
+#: modules/System/html_admin/mod_system_settings.html.twig:169
+#: modules/System/html_admin/mod_system_settings.html.twig:190
 #: themes/admin_default/html/macro_functions.html.twig:5
 msgid "No"
 msgstr "Não"
@@ -3318,7 +3330,7 @@ msgstr "Dados da empresa"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:269
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:149
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:168
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:178
 msgid "Company number"
 msgstr "Número da empresa"
 
@@ -3406,7 +3418,7 @@ msgstr "Encomendas de clientes"
 #: modules/Client/html_client/mod_client_balance.html.twig:27
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:204
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:640
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:672
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:50
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:137
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:37
@@ -3570,7 +3582,7 @@ msgstr "Transacções recebidas"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:812
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:5
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:639
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:671
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:38
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:168
 msgid "Gateway"
@@ -3761,16 +3773,16 @@ msgid "Company Name"
 msgstr "Nome da empresa"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:107
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:357
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:419
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:389
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:451
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:154
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:173
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:183
 msgid "Company VAT"
 msgstr "Empresa IVA"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:115
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:363
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:425
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:395
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:457
 msgid "Company Number"
 msgstr "Número da empresa"
 
@@ -4029,7 +4041,8 @@ msgstr "Atualizar taxas"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:127
 #: modules/Email/html_admin/mod_email_settings.html.twig:73
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:30
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:33
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:90
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:32
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:104
 #: modules/Product/html_admin/mod_product_promos.html.twig:47
@@ -4182,7 +4195,7 @@ msgstr "Última atualização"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:47
 #: modules/Index/html_client/mod_index_dashboard.html.twig:52
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:674
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:706
 #: modules/Support/html_client/mod_support_tickets.html.twig:33
 msgid "Actions"
 msgstr "Acções"
@@ -4225,7 +4238,7 @@ msgstr "Todas as facturas"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:117
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:144
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:178
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:210
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:24
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:64
 msgid "Paid"
@@ -4235,7 +4248,7 @@ msgstr "Pago"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:119
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:130
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:182
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:214
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:23
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:29
 msgid "Unpaid"
@@ -4330,7 +4343,7 @@ msgstr "Definições de correio eletrónico"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:72
 #: modules/Extension/html_admin/mod_extension_index.html.twig:41
-#: modules/Extension/html_admin/mod_extension_index.html.twig:172
+#: modules/Extension/html_admin/mod_extension_index.html.twig:173
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:36
 #: themes/admin_default/html/partial_extensions.html.twig:12
 msgid "Extension"
@@ -4632,79 +4645,80 @@ msgstr "Extensão do FOSSBilling"
 msgid "FOSSBilling gives developers all the capabilities to customize, integrate & extend the core system into your own website & applications."
 msgstr "O FOSSBilling oferece aos programadores todas as capacidades para personalizar, integrar e alargar o sistema central ao seu próprio sítio Web e aplicações."
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:173
+#: modules/Extension/html_admin/mod_extension_index.html.twig:174
 msgid "Hook"
 msgstr "Gancho"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:3
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:11
-msgid "Client area languages"
-msgstr "Línguas da área de clientes"
+msgid "Manage translations"
+msgstr ""
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:18
-msgid "New language"
-msgstr "Nova língua"
+msgid "New translations"
+msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:29
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:26
+msgid "Enabled translations"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:31
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:88
 msgid "Language"
 msgstr "Língua"
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:53
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:32
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:89
+msgid "Completion"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:34
+msgid "Disable"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:83
+msgid "Disabled translations"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:91
+msgid "Enable"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:141
 msgid "List of translations on extensions site"
 msgstr "Lista de traduções no sítio das extensões"
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:55
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:143
 msgid "FOSSBilling in your language"
 msgstr "FOSSBilling na sua língua"
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:56
-msgid "Although FOSSBilling displays in U.S. English by default, the software has the built-in capability to be used in any language. Follow instructions bellow to install new language."
-msgstr "Embora o FOSSBilling seja apresentado por defeito em inglês dos EUA, o software tem a capacidade de ser utilizado em qualquer idioma. Siga as instruções abaixo para instalar o novo idioma."
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:144
+msgid "Although FOSSBilling displays in U.S. English by default, it has the capability to be used in any language. Follow instructions bellow to install new language."
+msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:59
-msgid "Check if your language translation file is available at"
-msgstr "Verifique se o ficheiro de tradução da sua língua está disponível em"
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:147
+msgid "Locale repository"
+msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:59
-msgid "FOSSBilling translations repository"
-msgstr "Repositório de traduções FOSSBilling"
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:148
+msgid "Follow the instructions on the FOSSBilling documentation to install the new language's translation files."
+msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:60
-msgid "Download language files and place them to"
-msgstr "Descarregue os ficheiros de idiomas e coloque-os em"
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:148
+msgid "Installing a new language"
+msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:61
-msgid "Language will be automatically available and can be changed in client area"
-msgstr "O idioma estará automaticamente disponível e pode ser alterado na área do cliente"
-
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:62
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
-msgid "Read"
-msgstr "Ler"
-
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:62
-msgid "Using FOSSBilling in your language"
-msgstr "Utilizar o FOSSBilling na sua língua"
-
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:62
-msgid "to learn how to install a new language."
-msgstr "para saber como instalar uma nova língua."
-
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:66
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:152
 msgid "Changing default language"
 msgstr "Alterar o idioma predefinido"
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:67
-msgid "Default language can be set in"
-msgstr "O idioma predefinido pode ser definido em"
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:153
+msgid "Instructions for changing the default language can be found on the FOSSBilling documentation."
+msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:69
-msgid "Removing language"
-msgstr "Remover a língua"
-
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:70
-msgid "Removing languages from FOSSBilling is really simple. Just delete language folder you wish from"
-msgstr "A remoção de línguas do FOSSBilling é muito simples. Basta eliminar a pasta de línguas que pretende da"
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:153
+msgid "Changing the default language"
+msgstr ""
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:6
 msgid "Edit field"
@@ -5024,7 +5038,7 @@ msgstr "Todos os estados"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:68
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:158
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:186
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:218
 msgid "Refunded"
 msgstr "Reembolsado"
 
@@ -5042,7 +5056,7 @@ msgid "Issued at"
 msgstr "Emitido em"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:213
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:283
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:315
 #: modules/Order/html_admin/mod_order_manage.html.twig:519
 msgid "Paid at"
 msgstr "Pago em"
@@ -5116,90 +5130,119 @@ msgstr "Enviar lembrete"
 msgid "Mark as paid"
 msgstr "Marcar como pago"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:157
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:154
+msgid "Enter Custom Transaction ID"
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:161
+msgid "Transaction ID"
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:168
+msgid "Add the transaction ID of the payment to mark the invoice as paid."
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:169
+msgid "This should be the transaction ID you use to reconcile your bank statement."
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
+#: modules/Order/html_admin/mod_order_manage.html.twig:248
+msgid "Cancel"
+msgstr "Cancel"
+
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:175
+#: modules/Order/html_client/mod_order_manage.html.twig:204
+#: modules/Order/html_client/mod_order_manage.html.twig:242
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:165
+#: modules/Support/html_client/mod_support_tickets.html.twig:114
+msgid "Submit"
+msgstr "Enviar"
+
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:189
 msgid "Refund"
 msgstr "Reembolso"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:164
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:196
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:53
 msgid "PDF"
 msgstr "PDF"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:171
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:322
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:348
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:398
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:203
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:354
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:380
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:430
 msgid "Invoice updated"
 msgstr "Fatura actualizada"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:195
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:227
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:114
 msgid "Approved"
 msgstr "Aprovado"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:208
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:240
 msgid "Serie and number"
 msgstr "Série e número"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:217
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:495
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:582
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:249
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:527
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:614
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:5
 msgid "Tax"
 msgstr "Imposto"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:227
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:259
 msgid "Payment method"
 msgstr "Método de pagamento"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:233
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:265
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:75
 #: modules/Support/html_admin/mod_support_tickets.html.twig:60
 msgid "Created at"
 msgstr "Criado em"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:258
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:290
 msgid "Due at"
 msgstr "Vencimento em"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:325
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:357
 msgid "Text before invoice items table"
 msgstr "Texto antes da tabela de itens de faturação"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:331
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:363
 msgid "Text after invoice items table"
 msgstr "Texto após a tabela de itens da fatura"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:345
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:377
 msgid "Company details at the moment of purchase"
 msgstr "Dados da empresa no momento da compra"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:395
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:427
 msgid "Client details at the moment of purchase"
 msgstr "Dados do cliente no momento da compra"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:401
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:433
 msgid "First name"
 msgstr "Nome próprio"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:439
 msgid "Last name"
 msgstr "Apelido"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:462
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:494
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:222
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:176
 msgid "Zip"
 msgstr "Fecho"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:484
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:516
 msgid "Invoice items"
 msgstr "Itens da fatura"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:494
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:526
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:185
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:204
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:214
 #: modules/Order/html_admin/mod_order_manage.html.twig:324
 #: modules/Order/html_admin/mod_order_manage.html.twig:457
 #: modules/Order/html_client/mod_order_list.html.twig:26
@@ -5210,15 +5253,15 @@ msgstr "Itens da fatura"
 msgid "Price"
 msgstr "Preço"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:544
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:576
 msgid "Subtotal"
 msgstr "Subtotal"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:568
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:600
 msgid "Approve"
 msgstr "Aprovar"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:678
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:710
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:56
 msgid "Print"
 msgstr "Imprimir"
@@ -5266,46 +5309,66 @@ msgid "Next paid invoice number"
 msgstr "Número da próxima fatura paga"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:90
+msgid "Document settings"
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:92
+msgid "Document format"
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:96
+msgid "Letter"
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:100
+msgid "A4"
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:105
+msgid "Allow access to invoices without authentication"
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:120
 msgid "Refunds settings"
 msgstr "Definições de reembolsos"
 
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:92
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:122
 msgid "Refunds logic"
 msgstr "Lógica dos reembolsos"
 
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:96
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:126
 msgid "Negative invoice. Generate refund invoice continuing paid invoices numbering"
 msgstr "Fatura negativa. Gerar fatura de reembolso com numeração contínua de facturas pagas"
 
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:100
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:130
 msgid "Credit note. Generate credit note with unique numbering"
 msgstr "Nota de crédito. Gerar nota de crédito com numeração única"
 
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:104
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:134
 msgid "Manual. No actions performed"
 msgstr "Manual. Não foram realizadas acções"
 
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:110
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:140
 msgid "Add funds settings"
 msgstr "Adicionar definições de fundos"
 
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:112
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:142
 msgid "Minimum amount for add funds invoice"
 msgstr "Montante mínimo para adicionar fundos à fatura"
 
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:114
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:121
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:144
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:151
 msgid "Unlimited"
 msgstr "Ilimitado"
 
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:119
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:149
 msgid "Maximum amount for add funds invoice"
 msgstr "Montante máximo da fatura de adição de fundos"
 
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:126
-#: modules/System/html_admin/mod_system_settings.html.twig:165
-#: modules/System/html_admin/mod_system_settings.html.twig:188
-#: modules/System/html_admin/mod_system_settings.html.twig:453
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:156
+#: modules/System/html_admin/mod_system_settings.html.twig:203
+#: modules/System/html_admin/mod_system_settings.html.twig:226
+#: modules/System/html_admin/mod_system_settings.html.twig:491
 msgid "Update settings"
 msgstr "Atualizar definições"
 
@@ -5470,7 +5533,7 @@ msgstr "Estado da transação no portal de pagamento"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:90
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:145
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:155
 #: modules/Notification/html_admin/mod_notification_index.html.twig:78
 #: modules/Order/html_admin/mod_order_manage.html.twig:573
 #: modules/Support/html_admin/mod_support_ticket.html.twig:192
@@ -5672,22 +5735,21 @@ msgid "VAT"
 msgstr "IVA"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:122
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:140
 msgid "Account"
 msgstr "Conta"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:136
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:155
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:165
 msgid "Billing & Delivery address"
 msgstr "Endereço de faturação e entrega"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:183
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:202
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:212
 msgid "#"
 msgstr "#"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:224
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:244
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:254
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "Desconto"
@@ -5695,6 +5757,23 @@ msgstr "Desconto"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 msgid "Invoice number"
 msgstr "Número da fatura"
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:140
+#: modules/System/html_admin/mod_system_settings.html.twig:110
+#: themes/huraga/html/layout_default.html.twig:299
+msgid "Bank Name"
+msgstr ""
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:145
+#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/System/html_admin/mod_system_settings.html.twig:116
+#: themes/huraga/html/layout_default.html.twig:299
+msgid "BIC / SWIFT Code"
+msgstr ""
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:150
+msgid "Bank Account"
+msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:3
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:4
@@ -5713,6 +5792,35 @@ msgstr "Pagamento da fatura recebida"
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:16
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr "Será automaticamente redireccionado para a página de faturação após 5 minutos."
+
+#: modules/Invoice/pdf_template/default-pdf.twig:32
+#: modules/Invoice/pdf_template/default-pdf.twig:44
+msgid "Tel"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:95
+msgid "Account Owner"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:95
+msgid "Bank"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:95
+msgid "Account number"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:98
+msgid "VAT ID"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:98
+msgid "Company Reg. No"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:98
+msgid "Web"
+msgstr ""
 
 #: modules/Kb/html_admin/mod_kb_article.html.twig:27
 msgid "Article updated"
@@ -6131,10 +6239,6 @@ msgstr "Motivo do cancelamento"
 msgid "Order canceled"
 msgstr "Encomenda cancelada"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:248
-msgid "Cancel"
-msgstr "Cancel"
-
 #: modules/Order/html_admin/mod_order_manage.html.twig:260
 msgid "Unsuspend"
 msgstr "Não suspender"
@@ -6355,13 +6459,6 @@ msgstr "Voltar aos serviços"
 #: modules/Support/html_client/mod_support_tickets.html.twig:86
 msgid "Submit new support ticket"
 msgstr "Enviar novo ticket de suporte"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:204
-#: modules/Order/html_client/mod_order_manage.html.twig:242
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:165
-#: modules/Support/html_client/mod_support_tickets.html.twig:114
-msgid "Submit"
-msgstr "Enviar"
 
 #: modules/Order/html_client/mod_order_manage.html.twig:212
 msgid "Submit cancellation request"
@@ -8259,6 +8356,10 @@ msgid "FOSSBilling will automatically detect new plugin"
 msgstr "O FOSSBilling detectará automaticamente o novo plugin"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
+msgid "Read"
+msgstr "Ler"
+
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
 msgid "for more information."
 msgstr "para mais informações."
 
@@ -8475,7 +8576,7 @@ msgstr "Gerir grupos"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:204
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
-#: modules/System/html_admin/mod_system_settings.html.twig:158
+#: modules/System/html_admin/mod_system_settings.html.twig:196
 msgid "Signature"
 msgstr "Assinatura"
 
@@ -8969,7 +9070,7 @@ msgid "About"
 msgstr "Sobre"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:50
-#: modules/System/html_admin/mod_system_settings.html.twig:171
+#: modules/System/html_admin/mod_system_settings.html.twig:209
 msgid "Company updated"
 msgstr "Empresa actualizada"
 
@@ -9005,55 +9106,63 @@ msgstr "Número da empresa, número da câmara de comércio"
 msgid "VAT number"
 msgstr "Número de IVA"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:110
+#: modules/System/html_admin/mod_system_settings.html.twig:122
 msgid "Bank Account number"
 msgstr "Número da conta bancária"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:117
+#: modules/System/html_admin/mod_system_settings.html.twig:128
+msgid "Display bank account information on documents?"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:141
+msgid "Display bank account information on the bottom of every page?"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:155
 msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr "Não permitir que a API convidada obtenha a versão do FOSSBilling"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:119
+#: modules/System/html_admin/mod_system_settings.html.twig:157
 msgid "Enabling this functionality may effect modules that depend on it."
 msgstr "A ativação desta funcionalidade pode afetar os módulos que dela dependem."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:138
+#: modules/System/html_admin/mod_system_settings.html.twig:176
 msgid "Hide some company information in the guest API"
 msgstr "Ocultar algumas informações da empresa na API de convidado"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:140
+#: modules/System/html_admin/mod_system_settings.html.twig:178
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
 msgstr "A ativação desta opção irá ocultar algumas informações do ponto de extremidade da API de convidado \"empresa\", como o endereço, número de telefone, e-mail, número de IVA e muito mais."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:175
+#: modules/System/html_admin/mod_system_settings.html.twig:213
 msgid "Company terms of service, legal regulation"
 msgstr "Termos de serviço da empresa, regulamentação legal"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:179
+#: modules/System/html_admin/mod_system_settings.html.twig:217
 msgid "Company privacy policy"
 msgstr "Política de privacidade da empresa"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:194
+#: modules/System/html_admin/mod_system_settings.html.twig:232
 msgid "Countries updated"
 msgstr "Países actualizados"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:446
+#: modules/System/html_admin/mod_system_settings.html.twig:484
 msgid "List of countries"
 msgstr "Lista de países"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:460
+#: modules/System/html_admin/mod_system_settings.html.twig:498
 msgid "Cache control"
 msgstr "Controlo da cache"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:462
+#: modules/System/html_admin/mod_system_settings.html.twig:500
 msgid "Cache directory is cleared"
 msgstr "O diretório de cache é limpo"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:464
+#: modules/System/html_admin/mod_system_settings.html.twig:502
 msgid "Invalidate cache"
 msgstr "Invalidar a cache"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:472
+#: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "About FOSSBilling"
 msgstr "Sobre a FOSSBilling"
 
@@ -9415,11 +9524,19 @@ msgstr "Últimas notícias e anúncios"
 msgid "Browse our KB for answers and FAQ"
 msgstr "Navegue na nossa base de dados para obter respostas e FAQ"
 
-#: themes/huraga/html/layout_default.html.twig:347
+#: themes/huraga/html/layout_default.html.twig:299
+msgid "Payment Information"
+msgstr ""
+
+#: themes/huraga/html/layout_default.html.twig:299
+msgid "Account Number"
+msgstr ""
+
+#: themes/huraga/html/layout_default.html.twig:352
 msgid "Powered by the FOSSBilling Community"
 msgstr "Desenvolvido pela comunidade FOSSBilling"
 
-#: themes/huraga/html/layout_default.html.twig:352
+#: themes/huraga/html/layout_default.html.twig:357
 msgid "Top"
 msgstr "Topo"
 
