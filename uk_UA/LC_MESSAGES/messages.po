@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-10-07 04:13-0700\n"
-"PO-Revision-Date: 2023-10-22 10:15\n"
+"POT-Creation-Date: 2023-10-29 01:54-0700\n"
+"PO-Revision-Date: 2023-10-29 08:56\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.4.1\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
@@ -18,6 +18,8 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-3: *.scss\n"
 "X-Poedit-SearchPathExcluded-4: *.md\n"
 "X-Poedit-SearchPathExcluded-5: vendor\n"
+"X-Poedit-SearchPathExcluded-6: load.php\n"
+"X-Poedit-SearchPathExcluded-7: install\n"
 "X-Crowdin-Project: ddc573f086bad0aea827918f4284d176\n"
 "X-Crowdin-Project-ID: 4\n"
 "X-Crowdin-Language: uk\n"
@@ -28,6 +30,22 @@ msgstr ""
 #: di.php:330
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Схоже, ви намагаєтеся використовувати FOSSBilling без увімкненого розширення php intl. FOSSBilling включає полізаповнення для intl розширення, проте він не підтримує :locale. Будь ласка, увімкніть розширення intl."
+
+#: di.php:374 di.php:448
+msgid "Client is not logged in"
+msgstr ""
+
+#: di.php:414 di.php:486
+msgid "Admin is not logged in"
+msgstr ""
+
+#: di.php:523
+msgid "Unrecognized Handler type: "
+msgstr ""
+
+#: di.php:533
+msgid "Please check your mailbox and confirm email address."
+msgstr "Будь ласка, перевірте свою поштову скриньку для підтвердження адреси електронної пошти."
 
 #: index.php:50 library/Box/App.php:381 library/Box/AppClient.php:58
 msgid "Page :url not found"
@@ -199,6 +217,10 @@ msgstr "Одиниця не визначена"
 msgid "Unable to get the number of months for :unit"
 msgstr "Не вдалося отримати кількість місяців за :unit"
 
+#: library/Box/Translate.php:54
+msgid "Unable to setup FOSSBilling translation functionality, locale was undefined."
+msgstr ""
+
 #: library/Box/TwigExtensions.php:251
 msgid "second"
 msgstr "секунд"
@@ -244,107 +266,23 @@ msgstr "Не вдається отримати повідомлення від �
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "Недійсна відповідь від центральної системи оповіщення FOSSBilling."
 
-#: library/FOSSBilling/ErrorPage.php:42
-msgid "Unable to find Composer Packages"
-msgstr "Не вдалося знайти пакети Composer"
-
-#: library/FOSSBilling/ErrorPage.php:45
-msgid "View more info on the composer website"
-msgstr "Переглянути більше інформації на сайті composer"
-
-#: library/FOSSBilling/ErrorPage.php:50
-msgid "For security reasons, you must delete the installation directory before you can use FOSSBilling. :code"
-msgstr "З міркувань безпеки, вам потрібно видалити каталог \"install\", перш ніж ви зможете використовувати FOSSBilling. :code"
-
-#: library/FOSSBilling/ErrorPage.php:52
-msgid "View more info on the Getting Started guide"
-msgstr "Перегляньте більше інформації в початковій інструкції"
-
-#: library/FOSSBilling/ErrorPage.php:57
-msgid "Your Configuration is Empty"
-msgstr "Ваша конфігурація порожня"
-
-#: library/FOSSBilling/ErrorPage.php:58
-msgid "Your FOSSBilling configuration seems to either be empty or non-existent. You may need to re-install FOSSBilling, or re-create the :code file based on the example config."
-msgstr "Конфігурація FOSSBilling здається порожньою або відсутня. Вам може знадобитися перевстановити FOSSBilling, або повторно створити файл :code на основі прикладу конфігурації."
-
-#: library/FOSSBilling/ErrorPage.php:60
-msgid "See the example config."
-msgstr "Подивіться приклад конфігурації."
-
-#: library/FOSSBilling/ErrorPage.php:65
-msgid "Migration is required"
-msgstr "Необхідна міграція"
-
-#: library/FOSSBilling/ErrorPage.php:66
-msgid "Legacy BoxBilling or FOSSBilling preview files have been found. The file structure within FOSSBilling, along with the configuration format, has since changed. :lineBreak See the migration guide for assistance in migrating to the latest version of FOSSBilling."
-msgstr "Ідентичні файли попереднього перегляду BoxBilling або FOSSBilling знайдені. Структура файлу в FOSSBilling, а також з форматом конфігурації з часом змінилася. :lineBreak Перегляньте посібник щодо міграції при перенесенні на останню версію FOSSBilling."
-
-#: library/FOSSBilling/ErrorPage.php:68
-msgid "Check the migration guide."
-msgstr "Перевірте посібник по міграції."
-
-#: library/FOSSBilling/ErrorPage.php:73
-msgid "Missing .htaccess file"
-msgstr "Відсутній файл .htaccess"
-
-#: library/FOSSBilling/ErrorPage.php:74
-msgid "You appear to be running an Apache or LiteSpeed based webserver without a valid :code file. Please create one using the default FOSSBilling .htaccess file."
-msgstr "Схоже, що Ви використовуєте Apache або LiteSpeed на основі вебсервера, без коректного файлу коду. Будь ласка, створіть його, використовуючи стандартний файл FOSSBilling .htaccess."
-
-#: library/FOSSBilling/ErrorPage.php:76
-msgid "Check the default .htaccess"
-msgstr "Перевірте стандартний .htaccess"
-
-#: library/FOSSBilling/ErrorPage.php:106
-msgid "An error has occurred."
-msgstr "Сталася помилка."
-
-#: library/FOSSBilling/ErrorPage.php:108
-msgid "View the FOSSBilling documentation"
-msgstr "Переглянути документацію FOSSBilling"
-
-#: library/FOSSBilling/ErrorPage.php:111
-msgid "None"
-msgstr "Відсутньо"
-
-#: library/FOSSBilling/ErrorPage.php:140
-msgid "You've received a generic error message: :errorMessage"
-msgstr "Ви отримали повідомлення про загальну помилку: :errorMessage"
-
-#: library/FOSSBilling/ErrorPage.php:256
-msgid "Error Code: #:number"
-msgstr "Код помилки: #:number"
-
-#: library/FOSSBilling/ErrorPage.php:257
-msgid "Component: :category"
-msgstr "Компонент: :category"
-
-#: library/FOSSBilling/ErrorPage.php:262 library/FOSSBilling/ErrorPage.php:291
-msgid "Show original message"
-msgstr "Переглянути оригінал повідомлення"
-
-#: library/FOSSBilling/ErrorPage.php:287
-msgid "Show specialized message"
-msgstr "Показати спеціалізоване повідомлення"
-
-#: library/FOSSBilling/ExtensionManager.php:54
+#: library/FOSSBilling/ExtensionManager.php:55
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "Неможливо отримати відомості про розширення з каталогу розширень FOSSBill."
 
-#: library/FOSSBilling/ExtensionManager.php:74
+#: library/FOSSBilling/ExtensionManager.php:76
 msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
 msgstr "Не вдається отримати релізи розширення з каталогу розширень FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:95
+#: library/FOSSBilling/ExtensionManager.php:98
 msgid "Unable to fetch the latest release of the extension."
 msgstr "Не вдалося отримати останню версію розширення."
 
-#: library/FOSSBilling/ExtensionManager.php:168
+#: library/FOSSBilling/ExtensionManager.php:172
 msgid "Unable to connect to the FOSSBilling extension directory."
 msgstr "Не вдається підключитися до каталогу розширень FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:176
+#: library/FOSSBilling/ExtensionManager.php:180
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr "Неправильна відповідь від каталогу розширень FOSSBilling."
 
@@ -386,7 +324,7 @@ msgstr "Сервісний клас :class не знайдено в :path"
 msgid "Email address"
 msgstr "Адреса електронної пошти"
 
-#: library/FOSSBilling/Tools.php:280 library/FOSSBilling/Validate.php:107
+#: library/FOSSBilling/Tools.php:280 library/FOSSBilling/Validate.php:108
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: є неприпустимим"
@@ -395,7 +333,7 @@ msgstr ":friendlyName: є неприпустимим"
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Не вдалося завантажити інформацію про останню версію. Подробиці доступні в журналі помилок."
 
-#: library/FOSSBilling/Update.php:185 modules/System/Api/Admin.php:180
+#: library/FOSSBilling/Update.php:185 modules/System/Api/Admin.php:182
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "У вас остання версія FOSSBilling. Вам не потрібно її оновлювати."
 
@@ -419,9 +357,13 @@ msgstr "Не вдалося завантажити існуючу конфігу
 msgid "Unable to create backup of configuration file"
 msgstr "Не вдалося створити резервну копію файлу конфігурації"
 
-#: library/FOSSBilling/UpdatePatcher.php:101
+#: library/FOSSBilling/UpdatePatcher.php:107
 msgid "Error when writing updated configuration file."
 msgstr "Помилка запису оновлень в конфігураційний файл."
+
+#: library/FOSSBilling/UpdatePatcher.php:168
+msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
+msgstr ""
 
 #: library/FOSSBilling/Validate.php:51
 msgid "Minimum password length is 8 characters."
@@ -443,7 +385,7 @@ msgstr "Пароль повинен містити принаймні одну �
 msgid "Password must include at least one uppercase letter."
 msgstr "Пароль повинен містити принаймні одну велику літеру."
 
-#: library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Validate.php:107
 #: modules/Client/html_client/mod_client_profile.html.twig:78
 msgid "Birthdate"
 msgstr "Дата народження"
@@ -560,6 +502,8 @@ msgstr "Клас платіжного адаптера не реалізував
 #: library/Registrar/Adapter/Netearthone.php:18
 #: library/Registrar/Adapter/Resellbiz.php:11
 #: library/Registrar/Adapter/Resellbiz.php:18
+#: library/Registrar/Adapter/Resellerclub.php:40
+#: library/Registrar/Adapter/Resellerclub.php:47
 #: library/Registrar/Adapter/Resellerid.php:11
 #: library/Registrar/Adapter/Resellerid.php:18
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
@@ -578,9 +522,9 @@ msgstr "Перевірка можливості перенесення доме�
 #: library/Registrar/Adapter/Namecheap.php:434
 #: library/Registrar/Adapter/Namecheap.php:573 library/Server/Manager/CWP.php:245
 #: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
-#: library/Server/Manager/Directadmin.php:329
 #: library/Server/Manager/Directadmin.php:334
 #: library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Directadmin.php:344
 #: library/Server/Manager/Hestia.php:335 library/Server/Manager/Hestia.php:343
 #: library/Server/Manager/Hestia.php:378 library/Server/Manager/Plesk.php:55
 #: library/Server/Manager/Plesk.php:202 library/Server/Manager/Plesk.php:229
@@ -641,14 +585,6 @@ msgstr "Отримати статус блокування домену"
 msgid "set the domain lock status"
 msgstr "Отримати статус блокування домену"
 
-#: library/Registrar/Adapter/Resellerclub.php:40
-msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub Reseller ID\" at \"Configuration -> Domain registration\"."
-msgstr "Реєстратор домену \"ResellerClub\" налаштований не належним чином. Будь ласка, оновіть параметр \"ID продавця ResellerClub \" у \"Конфігурація -> Реєстрація домену\"."
-
-#: library/Registrar/Adapter/Resellerclub.php:47
-msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub API Key\" at \"Configuration -> Domain registration\"."
-msgstr "Реєстратор домену \"ResellerClub\" налаштований неправильно. Будь ласка, оновіть параметр \"Ключ API ResellerClub \" на \"Конфігурація -> Реєстрація домену\"."
-
 #: library/Registrar/Adapter/Resellerclub.php:335
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
 msgstr "Коректний контактний номер компанії обов'язковий для реєстрації доменного імені .AU"
@@ -681,7 +617,7 @@ msgstr "При реєстрації доменного імені користу
 msgid "Contact not found"
 msgstr "Контакт не знайдено"
 
-#: library/Registrar/AdapterAbstract.php:31
+#: library/Registrar/AdapterAbstract.php:36
 msgid "Domain registrar class did not implement configuration options method"
 msgstr "Клас реєстратора домену не реалізував метод конфігурації"
 
@@ -693,7 +629,7 @@ msgstr "Клас реєстратора домену не реалізував �
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "Менеджер серверів \":server_manager\" не повністю налаштовано. Налаштуйте :missing"
 
-#: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:428
+#: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:433
 #: library/Server/Manager/Hestia.php:102 library/Server/Manager/Hestia.php:141
 #: library/Server/Manager/Plesk.php:47
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
@@ -706,7 +642,7 @@ msgstr "Створити обліковий запис"
 #: library/Server/Manager/CWP.php:144 library/Server/Manager/CWP.php:161
 #: library/Server/Manager/CWP.php:178 library/Server/Manager/CWP.php:198
 #: library/Server/Manager/CWP.php:218 library/Server/Manager/CWP.php:236
-#: library/Server/Manager/Directadmin.php:439
+#: library/Server/Manager/Directadmin.php:444
 #: library/Server/Manager/Hestia.php:199 library/Server/Manager/Hestia.php:213
 #: library/Server/Manager/Hestia.php:240 library/Server/Manager/Hestia.php:265
 #: library/Server/Manager/Hestia.php:294 library/Server/Manager/Hestia.php:324
@@ -737,42 +673,42 @@ msgstr "Змінити пакет облікового запису"
 msgid "change account password"
 msgstr "Змінити пароль облікового запису"
 
-#: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:334
 #: library/Server/Manager/Hestia.php:335 library/Server/Manager/Plesk.php:202
 msgid "username changes"
 msgstr "Змінити ім'я користувача"
 
-#: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:339
 #: library/Server/Manager/Hestia.php:343
 msgid "changing the account domain"
 msgstr "Зміна домену облікового запису"
 
-#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:344
 #: library/Server/Manager/Hestia.php:378 library/Server/Manager/Plesk.php:229
 msgid "changing the account IP"
 msgstr "Зміна IP облікового запису"
 
-#: library/Server/Manager/Directadmin.php:95
+#: library/Server/Manager/Directadmin.php:100
 msgid "There are no available IPs on this server."
 msgstr "На цьому сервері немає доступних IP-адрес."
 
-#: library/Server/Manager/Directadmin.php:196
+#: library/Server/Manager/Directadmin.php:201
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
 msgstr "Не вдалося призначити ips продавця. Переконайтеся, що він має безкоштовні, непризначені ip."
 
-#: library/Server/Manager/Directadmin.php:200
+#: library/Server/Manager/Directadmin.php:205
 msgid "Error creating user"
 msgstr "Помилка створення користувача"
 
-#: library/Server/Manager/Directadmin.php:226
+#: library/Server/Manager/Directadmin.php:231
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Помилка DirectAdmin сервера: \"Обліковий запис не призупинено\""
 
-#: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:410
+#: library/Server/Manager/Directadmin.php:427 library/Server/Manager/Whm.php:410
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
-#: library/Server/Manager/Directadmin.php:432
+#: library/Server/Manager/Directadmin.php:437
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Помилка DirectAdmin Server: \"Запит, який ви зробили не можна виконати, оскільки він не існує на вашому рівні прав\""
 
@@ -808,25 +744,25 @@ msgstr "Активність"
 msgid "Event history"
 msgstr "Історія подій"
 
-#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:251
+#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:253
 msgid "Unknown API call :call"
 msgstr "Невідомий виклик API :call"
 
-#: modules/Api/Controller/Client.php:128
+#: modules/Api/Controller/Client.php:130
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Некоректний запит. Переконайтеся, що джерело запиту :from"
 
-#: modules/Api/Controller/Client.php:139
+#: modules/Api/Controller/Client.php:141
 msgid "Unauthorized IP"
 msgstr "Неавторизований IP"
 
-#: modules/Api/Controller/Client.php:193 modules/Api/Controller/Client.php:197
-#: modules/Api/Controller/Client.php:201 modules/Api/Controller/Client.php:215
-#: modules/Api/Controller/Client.php:224 modules/Api/Controller/Client.php:238
+#: modules/Api/Controller/Client.php:195 modules/Api/Controller/Client.php:199
+#: modules/Api/Controller/Client.php:203 modules/Api/Controller/Client.php:217
+#: modules/Api/Controller/Client.php:226 modules/Api/Controller/Client.php:240
 msgid "Authentication Failed"
 msgstr "Помилка автентифікації"
 
-#: modules/Api/Controller/Client.php:330
+#: modules/Api/Controller/Client.php:332
 msgid "CSRF token invalid"
 msgstr "Невірний CSRF-токен"
 
@@ -906,7 +842,8 @@ msgstr "Така скринька вже використовується."
 msgid "Can not change email. It is already registered."
 msgstr "Неможливо змінити адресу електронної пошти. Вона вже зареєстрована."
 
-#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:223
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:228
+#: modules/Profile/Api/Admin.php:110 modules/Profile/Api/Client.php:113
 #: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:104
 msgid "Passwords do not match"
 msgstr "Паролі не збігаються"
@@ -935,7 +872,7 @@ msgstr "Така поштова адреса вже використовуєть
 msgid "Please check your login details."
 msgstr "Будь ласка, перевірте свої дані для входу."
 
-#: modules/Client/Api/Guest.php:228 modules/Client/Api/Guest.php:232
+#: modules/Client/Api/Guest.php:233 modules/Client/Api/Guest.php:237
 #: modules/Client/Service.php:702
 msgid "The link has expired or you have already reset your password."
 msgstr "Посилання застаріло, або ви вже змінили пароль."
@@ -1041,6 +978,10 @@ msgstr "Код валюти не вказано"
 msgid "Can not remove default currency"
 msgstr "Не вдається вилучити валюту за замовчуванням"
 
+#: modules/Currency/Service.php:447
+msgid "Currency format must include {{price}} tag"
+msgstr ""
+
 #: modules/Currency/Service.php:475
 msgid "Currency rate is invalid"
 msgstr "Код валюти не дійсний"
@@ -1101,7 +1042,7 @@ msgstr "Повідомлення про помилку обрізано чере
 msgid "Embed and integrate"
 msgstr "Вбудувати та інтегрувати"
 
-#: modules/Extension/Api/Admin.php:296
+#: modules/Extension/Api/Admin.php:295
 msgid "Extension not found"
 msgstr "Розширення не знайдено"
 
@@ -1126,6 +1067,14 @@ msgstr "Відвідайте магазин розширень для отрим
 #: modules/Extension/Service.php:369
 msgid "FOSSBilling core modules can not be managed"
 msgstr "Не можливо керування ядром модулів FOSSBilling"
+
+#: modules/Extension/Service.php:414
+msgid "Coudn't find a valid download URL for the extension."
+msgstr ""
+
+#: modules/Extension/Service.php:418
+msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
+msgstr ""
 
 #: modules/Extension/Service.php:434
 msgid "Failed to download the extension with error :code"
@@ -1498,9 +1447,17 @@ msgstr "Додайте вміст перед надсиланням повідо
 msgid "Mass mailer"
 msgstr "Масова розсилка"
 
+#: modules/Massmailer/Service.php:114
+msgid " "
+msgstr ""
+
 #: modules/Massmailer/Service.php:161
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "Вимкнено з міркувань безпеки (увімкнуто демо-режим)"
+
+#: modules/Massmailer/Service.php:231
+msgid "Mass mail message not found"
+msgstr ""
 
 #: modules/News/Api/Admin.php:62 modules/News/Api/Guest.php:60
 msgid "News item not found"
@@ -1645,6 +1602,10 @@ msgstr "Неможливо видалити категорію товарів з
 msgid "This promotion code already exists."
 msgstr "Цей промо-код вже існує."
 
+#: modules/Profile/Api/Admin.php:116 modules/Profile/Api/Client.php:119
+msgid "Current password incorrect"
+msgstr ""
+
 #: modules/Profile/Service.php:137
 msgid "Invalid birthdate value"
 msgstr "Некоректне значення дати народження"
@@ -1660,6 +1621,18 @@ msgstr "Не вдалося перевірити сеанс, було викор
 #: modules/Queue/Api/Admin.php:96
 msgid "Message handler function :method does not exists"
 msgstr "Функція обробника повідомлень :method не існує"
+
+#: modules/Queue/Api/Admin.php:153 modules/Queue/Api/Admin.php:236
+msgid "Queue not found"
+msgstr ""
+
+#: modules/Queue/Api/Admin.php:162
+msgid "This queue is being executed by other process."
+msgstr ""
+
+#: modules/Queue/Service.php:134
+msgid "Received params: "
+msgstr ""
 
 #: modules/Redirect/Api/Admin.php:131
 msgid "Redirect not found"
@@ -1870,19 +1843,19 @@ msgstr "Домен не може бути перенесений"
 msgid "Domain can not be registered"
 msgstr "Домен не може бути зареєстрований"
 
-#: modules/Servicedomain/Service.php:951
+#: modules/Servicedomain/Service.php:948
 msgid "Domain registrar :adapter was not found"
 msgstr "Реєстратор домену :adapter не знайдений"
 
-#: modules/Servicedomain/Service.php:956
+#: modules/Servicedomain/Service.php:953
 msgid "Registrar :adapter was not found"
 msgstr "Реєстратор :adapter не знайдено"
 
-#: modules/Servicedomain/Service.php:968
+#: modules/Servicedomain/Service.php:965
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr "Реєстраційний адаптер :adapter повинен розширити Registrar_AdapterAbstract"
 
-#: modules/Servicedomain/Service.php:1027
+#: modules/Servicedomain/Service.php:1028
 msgid "Can not remove registrar which has domains"
 msgstr "Не можна видалити реєстратора, який має домен"
 
@@ -2024,12 +1997,12 @@ msgid "You are not allowed to login to admin area from :ip address"
 msgstr "Вхід в панель адміністратора не дозволено з :ip адреси"
 
 #: modules/Staff/Api/Guest.php:91 modules/Staff/Api/Guest.php:136
-#: modules/Staff/Controller/Admin.php:118
+#: modules/Staff/Controller/Admin.php:121
 msgid "Password reset has been disabled"
 msgstr "Відновлення пароля було вимкнуто"
 
 #: modules/Staff/Api/Guest.php:109 modules/Staff/Api/Guest.php:113
-#: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
+#: modules/Staff/Controller/Admin.php:127 modules/Staff/Controller/Admin.php:130
 msgid "The link have expired or you have already confirmed password reset."
 msgstr "Термін дії посилання закінчився або ви вже підтвердили скидання пароля."
 
@@ -2105,27 +2078,27 @@ msgstr "Швидкі відповіді"
 msgid "Can not remove helpdesk which has tickets"
 msgstr "Не можна видалити систему допомоги, в якій є заявки"
 
-#: modules/Support/Service.php:870
+#: modules/Support/Service.php:874
 msgid "Order ID does not exist"
 msgstr "ID замовлення не існує"
 
-#: modules/Support/Service.php:880
+#: modules/Support/Service.php:884
 msgid "You must provide both an order ID and a new product ID in order to request an upgrade."
 msgstr "Ви повинні вказати і ID замовлення, і новий ID товару, щоб подати запит на оновлення."
 
-#: modules/Support/Service.php:888
+#: modules/Support/Service.php:892
 msgid "Sorry, but \":product\" is not allowed to be upgraded to \":upgrade\""
 msgstr "Вибачте, але \":product\" не може бути оновлено до \":upgrade\""
 
-#: modules/Support/Service.php:894
+#: modules/Support/Service.php:898
 msgid "We have already received this request."
 msgstr "Ми вже отримали цей запит."
 
-#: modules/Support/Service.php:969
+#: modules/Support/Service.php:973
 msgid "Identity is invalid"
 msgstr "Ідентифікація недійсна"
 
-#: modules/Support/Service.php:998
+#: modules/Support/Service.php:1002
 msgid "Public ticket not found"
 msgstr "Публічна заявка не знайдена"
 
@@ -2249,19 +2222,19 @@ msgstr "Налаштування"
 msgid "Update"
 msgstr "Оновити"
 
-#: modules/System/Service.php:34
+#: modules/System/Service.php:36
 msgid "Parameter key is missing"
 msgstr "Ключ параметра відсутній"
 
-#: modules/System/Service.php:98
+#: modules/System/Service.php:100
 msgid "Invalid parameter name, received: param_"
 msgstr "Неприпустиме ім'я параметра, отримано: param_"
 
-#: modules/System/Service.php:470
+#: modules/System/Service.php:510
 msgid "Parameter :param does not exist"
 msgstr "Параметр :param не існує"
 
-#: modules/System/Service.php:1363
+#: modules/System/Service.php:1403
 msgid "Country :code phone code is not registered"
 msgstr "Код країни :code не зареєстрований"
 
@@ -2623,7 +2596,7 @@ msgstr "ID"
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:35
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:242
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:31
 #: modules/Staff/html_admin/mod_staff_group.html.twig:37
 #: modules/Staff/html_admin/mod_staff_index.html.twig:30
@@ -2637,7 +2610,7 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:233
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:276
 #: modules/Support/html_client/mod_support_contact_us.html.twig:25
-#: modules/System/html_admin/mod_system_settings.html.twig:54
+#: modules/System/html_admin/mod_system_settings.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
 msgid "Name"
@@ -2683,7 +2656,7 @@ msgstr "Назва компанії"
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:32
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
-#: modules/System/html_admin/mod_system_settings.html.twig:60
+#: modules/System/html_admin/mod_system_settings.html.twig:63
 msgid "Email"
 msgstr "Електронна пошта"
 
@@ -2959,7 +2932,7 @@ msgstr "Поштовий індекс"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:130
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:195
 #: modules/Invoice/pdf_template/default-pdf.twig:97
-#: modules/System/html_admin/mod_system_settings.html.twig:66
+#: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
 msgstr "Телефон"
 
@@ -3105,7 +3078,7 @@ msgstr "Баланс рахунку"
 #: modules/Order/html_client/mod_order_manage.html.twig:278
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
 #: modules/Support/html_admin/mod_support_tickets.html.twig:374
-#: modules/System/html_admin/mod_system_settings.html.twig:221
+#: modules/System/html_admin/mod_system_settings.html.twig:224
 msgid "Notes"
 msgstr "Примітки"
 
@@ -3126,7 +3099,7 @@ msgstr "Ключ API"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:188
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
 #: modules/Page/html_client/mod_page_signup.html.twig:95
-#: modules/System/html_admin/mod_system_settings.html.twig:72
+#: modules/System/html_admin/mod_system_settings.html.twig:75
 msgid "Address"
 msgstr "Адреса"
 
@@ -3236,7 +3209,7 @@ msgstr "Пошту підтверджено"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:37
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:79
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:169
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:221
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:227
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:94
@@ -3252,10 +3225,10 @@ msgstr "Пошту підтверджено"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:157
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:69
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:40
-#: modules/System/html_admin/mod_system_settings.html.twig:132
-#: modules/System/html_admin/mod_system_settings.html.twig:145
-#: modules/System/html_admin/mod_system_settings.html.twig:163
-#: modules/System/html_admin/mod_system_settings.html.twig:184
+#: modules/System/html_admin/mod_system_settings.html.twig:135
+#: modules/System/html_admin/mod_system_settings.html.twig:148
+#: modules/System/html_admin/mod_system_settings.html.twig:166
+#: modules/System/html_admin/mod_system_settings.html.twig:187
 #: themes/admin_default/html/macro_functions.html.twig:3
 msgid "Yes"
 msgstr "Так"
@@ -3303,7 +3276,7 @@ msgstr "Так"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:41
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:83
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:173
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:225
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:231
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:63
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:98
@@ -3319,10 +3292,10 @@ msgstr "Так"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:163
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:73
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:44
-#: modules/System/html_admin/mod_system_settings.html.twig:136
-#: modules/System/html_admin/mod_system_settings.html.twig:149
-#: modules/System/html_admin/mod_system_settings.html.twig:169
-#: modules/System/html_admin/mod_system_settings.html.twig:190
+#: modules/System/html_admin/mod_system_settings.html.twig:139
+#: modules/System/html_admin/mod_system_settings.html.twig:152
+#: modules/System/html_admin/mod_system_settings.html.twig:172
+#: modules/System/html_admin/mod_system_settings.html.twig:193
 #: themes/admin_default/html/macro_functions.html.twig:5
 msgid "No"
 msgstr "Ні"
@@ -5376,9 +5349,9 @@ msgid "Maximum amount for add funds invoice"
 msgstr "Максимальна сума для поповнення рахунку"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:156
-#: modules/System/html_admin/mod_system_settings.html.twig:203
-#: modules/System/html_admin/mod_system_settings.html.twig:226
-#: modules/System/html_admin/mod_system_settings.html.twig:491
+#: modules/System/html_admin/mod_system_settings.html.twig:206
+#: modules/System/html_admin/mod_system_settings.html.twig:229
+#: modules/System/html_admin/mod_system_settings.html.twig:494
 msgid "Update settings"
 msgstr "Оновити налаштування"
 
@@ -5769,14 +5742,14 @@ msgid "Invoice number"
 msgstr "№ Рахунку"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:140
-#: modules/System/html_admin/mod_system_settings.html.twig:110
+#: modules/System/html_admin/mod_system_settings.html.twig:113
 #: themes/huraga/html/layout_default.html.twig:299
 msgid "Bank Name"
 msgstr "Назва банку"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:145
 #: modules/Invoice/pdf_template/default-pdf.twig:95
-#: modules/System/html_admin/mod_system_settings.html.twig:116
+#: modules/System/html_admin/mod_system_settings.html.twig:119
 #: themes/huraga/html/layout_default.html.twig:299
 msgid "BIC / SWIFT Code"
 msgstr "BIC / SWIFT код"
@@ -7958,7 +7931,7 @@ msgid "Hosting plan updated"
 msgstr "Тарифний план оновлено"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:32
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:244
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:250
 msgid "Unique name to identify this hosting plan"
 msgstr "Унікальне ім'я для ідентифікації цього тарифного плану"
 
@@ -8089,31 +8062,41 @@ msgid "ns4.yourdomain.com"
 msgstr "ns4.yourdomain.com"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:217
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:84
+msgid "Connection port"
+msgstr "Порт підключення"
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:219
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:86
+msgid "Custom port. Use blank to use default. Used to connect to the API"
+msgstr "Користувацький порт. Залиште порожнім для використання за замовчуванням. Використовується для підключення до API"
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:223
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:90
 msgid "Use Secure connection"
 msgstr "Використовувати безпечне з'єднання"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:229
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:235
 msgid "Add server"
 msgstr "Додати сервер"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:236
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:242
 msgid "Adding new hosting plan"
 msgstr "Додати новий тарифний план хостингу"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:237
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:243
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters in next step. In this step provide basic hosting plan information."
 msgstr "Залежно від менеджера сервера, який використовується для налаштування облікового запису хостингу, вам може знадобитися надати додаткові параметри на наступному кроці. На цьому кроці надайте основну інформацію про план хостингу."
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
 msgid "Disk quota (MB)"
 msgstr "Квота на диску (МБ)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
 msgid "Bandwidth (MB)"
 msgstr "Об'єм трафіку (МБ)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
 msgid "Create hosting plan"
 msgstr "Створити план хостингу"
 
@@ -8246,14 +8229,6 @@ msgstr "Сервер оновлено"
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:45
 msgid "Primary IP address of the server used to connect to it like: 127.0.0.1"
 msgstr "Основна IP адреса сервера, що використовується для з'єднання: 127.0.0.1"
-
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:84
-msgid "Connection port"
-msgstr "Порт підключення"
-
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:86
-msgid "Custom port. Use blank to use default. Used to connect to the API"
-msgstr "Користувацький порт. Залиште порожнім для використання за замовчуванням. Використовується для підключення до API"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:103
 msgid "Update and test connection"
@@ -8586,7 +8561,7 @@ msgstr "Керування групами"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:204
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
-#: modules/System/html_admin/mod_system_settings.html.twig:196
+#: modules/System/html_admin/mod_system_settings.html.twig:199
 msgid "Signature"
 msgstr "Підпис"
 
@@ -9065,8 +9040,8 @@ msgid "System settings"
 msgstr "Системні налаштування"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:34
-msgid "Company Legal"
-msgstr "Юридична інформація компанії"
+msgid "Company legal"
+msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:37
 msgid "Countries"
@@ -9080,102 +9055,175 @@ msgstr "Кеш"
 msgid "About"
 msgstr "Про"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:50
-#: modules/System/html_admin/mod_system_settings.html.twig:209
+#: modules/System/html_admin/mod_system_settings.html.twig:46
+#: modules/System/html_admin/mod_system_settings.html.twig:539
+msgid "Error reporting"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:53
+#: modules/System/html_admin/mod_system_settings.html.twig:212
 msgid "Company updated"
 msgstr "Компанія оновлена"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:74
+#: modules/System/html_admin/mod_system_settings.html.twig:77
 msgid "Address line 1"
 msgstr "Адреса, рядок 1"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:75
+#: modules/System/html_admin/mod_system_settings.html.twig:78
 msgid "Address line 2"
 msgstr "Адреса, рядок 2"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:76
+#: modules/System/html_admin/mod_system_settings.html.twig:79
 msgid "Address line 3"
 msgstr "Адреса, рядок 3"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:80
+#: modules/System/html_admin/mod_system_settings.html.twig:83
 msgid "Logo URL"
 msgstr "URL логотипу"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:86
+#: modules/System/html_admin/mod_system_settings.html.twig:89
 msgid "Logo URL (dark mode)"
 msgstr "URL логотипу (темний режим)"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:92
+#: modules/System/html_admin/mod_system_settings.html.twig:95
 msgid "Favicon"
 msgstr "Іконка сайту"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:98
+#: modules/System/html_admin/mod_system_settings.html.twig:101
 msgid "Company number, chamber of commerce number"
 msgstr "Номер компанії, номер торгово-промислової палати"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:104
+#: modules/System/html_admin/mod_system_settings.html.twig:107
 msgid "VAT number"
 msgstr "Номер свідоцтва платника ПДВ"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:122
+#: modules/System/html_admin/mod_system_settings.html.twig:125
 msgid "Bank Account number"
 msgstr "Номер банківського рахунку"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:128
+#: modules/System/html_admin/mod_system_settings.html.twig:131
 msgid "Display bank account information on documents?"
 msgstr "Відображати інформацію про банківський рахунок у документах?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:141
+#: modules/System/html_admin/mod_system_settings.html.twig:144
 msgid "Display bank account information on the bottom of every page?"
 msgstr "Відображати інформацію про банківський рахунок внизу кожної сторінки?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:155
+#: modules/System/html_admin/mod_system_settings.html.twig:158
 msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr "Заборонити гостьовому API отримувати версію FOSSBilling"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:157
+#: modules/System/html_admin/mod_system_settings.html.twig:160
 msgid "Enabling this functionality may effect modules that depend on it."
 msgstr "Увімкнення цієї функції може впливати на модулі, залежні від неї."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:176
+#: modules/System/html_admin/mod_system_settings.html.twig:179
 msgid "Hide some company information in the guest API"
 msgstr "Приховати деяку інформацію про компанію в гостьовому API"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:178
+#: modules/System/html_admin/mod_system_settings.html.twig:181
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
 msgstr "Увімкнення цього параметра приховає деяку інформацію від кінцевої точки гостьового API «компанії», як-от адресу, номер телефону, електронну адресу, номер платника ПДВ тощо."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:213
+#: modules/System/html_admin/mod_system_settings.html.twig:216
 msgid "Company terms of service, legal regulation"
 msgstr "Умови обслуговування компанії, правове регулювання"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:217
+#: modules/System/html_admin/mod_system_settings.html.twig:220
 msgid "Company privacy policy"
 msgstr "Політика конфіденційності компанії"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:232
+#: modules/System/html_admin/mod_system_settings.html.twig:235
 msgid "Countries updated"
 msgstr "Країни оновлено"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:484
+#: modules/System/html_admin/mod_system_settings.html.twig:487
 msgid "List of countries"
 msgstr "Список країн"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:498
+#: modules/System/html_admin/mod_system_settings.html.twig:501
 msgid "Cache control"
 msgstr "Керування Кешем"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:500
+#: modules/System/html_admin/mod_system_settings.html.twig:503
 msgid "Cache directory is cleared"
 msgstr "Кеш каталогу очищений"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:502
+#: modules/System/html_admin/mod_system_settings.html.twig:505
 msgid "Invalidate cache"
 msgstr "Очистити кеш"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:510
+#: modules/System/html_admin/mod_system_settings.html.twig:513
 msgid "About FOSSBilling"
 msgstr "Про FOSSBilling"
+
+#: modules/System/html_admin/mod_system_settings.html.twig:518
+msgid "FOSSBilling version"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:522
+msgid "PHP version"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:526
+msgid "Instance ID"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:530
+msgid "License"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:545
+msgid "Error reporting is enabled."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:546
+msgid "This FOSSBilling instance is automatically sending errors which allows us to more easily improve the software and keep it stable. Thanks!"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:547
+msgid "Error reporting is now disabled."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:547
+msgid "Disable error reporting"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:551
+msgid "Error reporting is disabled."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:552
+msgid "Please consider enabling error reporting. Doing so allows us to provide you with better technical support and helps us to proactively improve FOSSBilling."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:553
+msgid "Error reporting is now enabled."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:553
+msgid "Enable error reporting"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:556
+msgid "FOSSBilling optionally includes autoamted error reporting to help aid the project's development and stability. To find the most up-to-date information about it, you should review the links and information below."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:558
+msgid "Learn more about error reporting"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:560
+msgid "Error reporting changelog"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:561
+msgid "Last applicable behavior change change: "
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:564
+msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
+msgstr ""
 
 #: modules/System/html_admin/mod_system_update.html.twig:14
 msgid "Automatic Update"

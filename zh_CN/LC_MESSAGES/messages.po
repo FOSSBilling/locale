@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-10-07 04:13-0700\n"
-"PO-Revision-Date: 2023-10-20 10:19\n"
+"POT-Creation-Date: 2023-10-29 01:54-0700\n"
+"PO-Revision-Date: 2023-10-29 08:56\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.4.1\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
@@ -18,6 +18,8 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-3: *.scss\n"
 "X-Poedit-SearchPathExcluded-4: *.md\n"
 "X-Poedit-SearchPathExcluded-5: vendor\n"
+"X-Poedit-SearchPathExcluded-6: load.php\n"
+"X-Poedit-SearchPathExcluded-7: install\n"
 "X-Crowdin-Project: ddc573f086bad0aea827918f4284d176\n"
 "X-Crowdin-Project-ID: 4\n"
 "X-Crowdin-Language: zh-CN\n"
@@ -28,6 +30,22 @@ msgstr ""
 #: di.php:330
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "您似乎正在尝试使用 FOSSBilling 而不启用 php intl 扩展。 FOSSBilling包含一个用于intl扩展的聚合物，但它不支持 :locale。请启用 intl 扩展。"
+
+#: di.php:374 di.php:448
+msgid "Client is not logged in"
+msgstr ""
+
+#: di.php:414 di.php:486
+msgid "Admin is not logged in"
+msgstr ""
+
+#: di.php:523
+msgid "Unrecognized Handler type: "
+msgstr ""
+
+#: di.php:533
+msgid "Please check your mailbox and confirm email address."
+msgstr ""
 
 #: index.php:50 library/Box/App.php:381 library/Box/AppClient.php:58
 msgid "Page :url not found"
@@ -187,6 +205,10 @@ msgstr "未定义单位"
 msgid "Unable to get the number of months for :unit"
 msgstr "无法获取 :unit 的月数"
 
+#: library/Box/Translate.php:54
+msgid "Unable to setup FOSSBilling translation functionality, locale was undefined."
+msgstr ""
+
 #: library/Box/TwigExtensions.php:251
 msgid "second"
 msgstr "秒"
@@ -232,107 +254,23 @@ msgstr "无法从警报中心系统获取警报。详情请查看错误日志。
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "FOSSBilling 中央警报系统的响应无效。"
 
-#: library/FOSSBilling/ErrorPage.php:42
-msgid "Unable to find Composer Packages"
-msgstr "无法找到 Composer 软件包"
-
-#: library/FOSSBilling/ErrorPage.php:45
-msgid "View more info on the composer website"
-msgstr "在 composer 网站找到更多信息"
-
-#: library/FOSSBilling/ErrorPage.php:50
-msgid "For security reasons, you must delete the installation directory before you can use FOSSBilling. :code"
-msgstr "出于安全原因，您必须先删除安装目录才能使用 FOSSBilling。 :code"
-
-#: library/FOSSBilling/ErrorPage.php:52
-msgid "View more info on the Getting Started guide"
-msgstr "在入门指南上查看更多信息"
-
-#: library/FOSSBilling/ErrorPage.php:57
-msgid "Your Configuration is Empty"
-msgstr "您的配置为空"
-
-#: library/FOSSBilling/ErrorPage.php:58
-msgid "Your FOSSBilling configuration seems to either be empty or non-existent. You may need to re-install FOSSBilling, or re-create the :code file based on the example config."
-msgstr "您的 FOSSBilling 配置似乎不是空就是不存在。 您可能需要重新安装 FOSSBilling，或者基于示例配置重新创建 :code 文件。"
-
-#: library/FOSSBilling/ErrorPage.php:60
-msgid "See the example config."
-msgstr "查看示例配置。"
-
-#: library/FOSSBilling/ErrorPage.php:65
-msgid "Migration is required"
-msgstr "需要迁移"
-
-#: library/FOSSBilling/ErrorPage.php:66
-msgid "Legacy BoxBilling or FOSSBilling preview files have been found. The file structure within FOSSBilling, along with the configuration format, has since changed. :lineBreak See the migration guide for assistance in migrating to the latest version of FOSSBilling."
-msgstr "找到了旧的 BoxBilling 或 FOSSBilling 预览文件。FOSSBilling 中的文件结构以及配置格式已经改变。 :lineBreak 查看迁移指南来迁移到最新版本的 FOSSBilling。"
-
-#: library/FOSSBilling/ErrorPage.php:68
-msgid "Check the migration guide."
-msgstr "检查迁移指南。"
-
-#: library/FOSSBilling/ErrorPage.php:73
-msgid "Missing .htaccess file"
-msgstr "缺少了 .htaccess 文件"
-
-#: library/FOSSBilling/ErrorPage.php:74
-msgid "You appear to be running an Apache or LiteSpeed based webserver without a valid :code file. Please create one using the default FOSSBilling .htaccess file."
-msgstr "您似乎正在运行一个基于 Apache 或 LiteSpeed 的没有有效的 :code 文件的web服务器。请使用默认的 FOSSBilling .htaccess 文件创建一个。"
-
-#: library/FOSSBilling/ErrorPage.php:76
-msgid "Check the default .htaccess"
-msgstr "检查默认的 .htaccess"
-
-#: library/FOSSBilling/ErrorPage.php:106
-msgid "An error has occurred."
-msgstr "发生错误。"
-
-#: library/FOSSBilling/ErrorPage.php:108
-msgid "View the FOSSBilling documentation"
-msgstr "查看 FOSSBilling 文档"
-
-#: library/FOSSBilling/ErrorPage.php:111
-msgid "None"
-msgstr "无"
-
-#: library/FOSSBilling/ErrorPage.php:140
-msgid "You've received a generic error message: :errorMessage"
-msgstr "您收到了一个常见的错误信息：:errorMessage"
-
-#: library/FOSSBilling/ErrorPage.php:256
-msgid "Error Code: #:number"
-msgstr "错误代码: #:number"
-
-#: library/FOSSBilling/ErrorPage.php:257
-msgid "Component: :category"
-msgstr "组件: :category"
-
-#: library/FOSSBilling/ErrorPage.php:262 library/FOSSBilling/ErrorPage.php:291
-msgid "Show original message"
-msgstr "显示原始消息"
-
-#: library/FOSSBilling/ErrorPage.php:287
-msgid "Show specialized message"
-msgstr "显示特定消息"
-
-#: library/FOSSBilling/ExtensionManager.php:54
+#: library/FOSSBilling/ExtensionManager.php:55
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "无法从 FOSSBilling 扩展目录获取扩展详细信息。"
 
-#: library/FOSSBilling/ExtensionManager.php:74
+#: library/FOSSBilling/ExtensionManager.php:76
 msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
 msgstr "无法从 FOSSBilling 扩展目录获取扩展详细信息。"
 
-#: library/FOSSBilling/ExtensionManager.php:95
+#: library/FOSSBilling/ExtensionManager.php:98
 msgid "Unable to fetch the latest release of the extension."
 msgstr "无法获取扩展的最新版本。"
 
-#: library/FOSSBilling/ExtensionManager.php:168
+#: library/FOSSBilling/ExtensionManager.php:172
 msgid "Unable to connect to the FOSSBilling extension directory."
 msgstr "无法连接到 FOSSBilling 扩展目录。"
 
-#: library/FOSSBilling/ExtensionManager.php:176
+#: library/FOSSBilling/ExtensionManager.php:180
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr "FOSSBilling 扩展目录到响应无效。"
 
@@ -374,7 +312,7 @@ msgstr "在 :path 中找不到服务类 :class。"
 msgid "Email address"
 msgstr "邮箱"
 
-#: library/FOSSBilling/Tools.php:280 library/FOSSBilling/Validate.php:107
+#: library/FOSSBilling/Tools.php:280 library/FOSSBilling/Validate.php:108
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: 无效"
@@ -383,7 +321,7 @@ msgstr ":friendlyName: 无效"
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "下载最新版本信息失败。在错误日志中可以获得更多信息。"
 
-#: library/FOSSBilling/Update.php:185 modules/System/Api/Admin.php:180
+#: library/FOSSBilling/Update.php:185 modules/System/Api/Admin.php:182
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "您有最新版本的 FOSSBilling。您无需更新。"
 
@@ -407,9 +345,13 @@ msgstr "无法加载配置"
 msgid "Unable to create backup of configuration file"
 msgstr "无法创建配置文件的备份"
 
-#: library/FOSSBilling/UpdatePatcher.php:101
+#: library/FOSSBilling/UpdatePatcher.php:107
 msgid "Error when writing updated configuration file."
 msgstr "写入更新的配置文件时出错。"
+
+#: library/FOSSBilling/UpdatePatcher.php:168
+msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
+msgstr ""
 
 #: library/FOSSBilling/Validate.php:51
 msgid "Minimum password length is 8 characters."
@@ -431,7 +373,7 @@ msgstr "密码必须至少包含 1 个小写字母。"
 msgid "Password must include at least one uppercase letter."
 msgstr "密码必须至少包含 1 个大写字母。"
 
-#: library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Validate.php:107
 #: modules/Client/html_client/mod_client_profile.html.twig:78
 msgid "Birthdate"
 msgstr "生日"
@@ -548,6 +490,8 @@ msgstr "支付适配器类没有实现配置选项"
 #: library/Registrar/Adapter/Netearthone.php:18
 #: library/Registrar/Adapter/Resellbiz.php:11
 #: library/Registrar/Adapter/Resellbiz.php:18
+#: library/Registrar/Adapter/Resellerclub.php:40
+#: library/Registrar/Adapter/Resellerclub.php:47
 #: library/Registrar/Adapter/Resellerid.php:11
 #: library/Registrar/Adapter/Resellerid.php:18
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
@@ -566,9 +510,9 @@ msgstr "检查域名是否可转移"
 #: library/Registrar/Adapter/Namecheap.php:434
 #: library/Registrar/Adapter/Namecheap.php:573 library/Server/Manager/CWP.php:245
 #: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
-#: library/Server/Manager/Directadmin.php:329
 #: library/Server/Manager/Directadmin.php:334
 #: library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Directadmin.php:344
 #: library/Server/Manager/Hestia.php:335 library/Server/Manager/Hestia.php:343
 #: library/Server/Manager/Hestia.php:378 library/Server/Manager/Plesk.php:55
 #: library/Server/Manager/Plesk.php:202 library/Server/Manager/Plesk.php:229
@@ -629,14 +573,6 @@ msgstr "获取域名锁定与否状态"
 msgid "set the domain lock status"
 msgstr "设定域名锁定状态"
 
-#: library/Registrar/Adapter/Resellerclub.php:40
-msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub Reseller ID\" at \"Configuration -> Domain registration\"."
-msgstr "域名注册商“ResellerClub”配置错误。请在“配置 -> 域名注册”，修改“ResellerClub代理商ID”的参数。"
-
-#: library/Registrar/Adapter/Resellerclub.php:47
-msgid "Domain registrar \"ResellerClub\" is not configured properly. Please update configuration parameter \"ResellerClub API Key\" at \"Configuration -> Domain registration\"."
-msgstr "域名注册商“ResellerClub”配置错误。请在“配置 -> 域名注册”，修改“ResellerClub API 密匙”的参数。"
-
 #: library/Registrar/Adapter/Resellerclub.php:335
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
 msgstr "注册 .AU 域名必须持有有效的公司注册号"
@@ -669,7 +605,7 @@ msgstr "注册RU域名时须有有效的联系人护照信息"
 msgid "Contact not found"
 msgstr "未找到联系人"
 
-#: library/Registrar/AdapterAbstract.php:31
+#: library/Registrar/AdapterAbstract.php:36
 msgid "Domain registrar class did not implement configuration options method"
 msgstr "域名注册商类没有实现配置选项"
 
@@ -681,7 +617,7 @@ msgstr "域名注册商类没有实现配置选项"
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "\":server_manager\"服务器未配置好。请配置 :missing"
 
-#: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:428
+#: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:433
 #: library/Server/Manager/Hestia.php:102 library/Server/Manager/Hestia.php:141
 #: library/Server/Manager/Plesk.php:47
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
@@ -694,7 +630,7 @@ msgstr "创建账号"
 #: library/Server/Manager/CWP.php:144 library/Server/Manager/CWP.php:161
 #: library/Server/Manager/CWP.php:178 library/Server/Manager/CWP.php:198
 #: library/Server/Manager/CWP.php:218 library/Server/Manager/CWP.php:236
-#: library/Server/Manager/Directadmin.php:439
+#: library/Server/Manager/Directadmin.php:444
 #: library/Server/Manager/Hestia.php:199 library/Server/Manager/Hestia.php:213
 #: library/Server/Manager/Hestia.php:240 library/Server/Manager/Hestia.php:265
 #: library/Server/Manager/Hestia.php:294 library/Server/Manager/Hestia.php:324
@@ -725,42 +661,42 @@ msgstr "更换账号套餐"
 msgid "change account password"
 msgstr "修改账号密码"
 
-#: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:329
+#: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:334
 #: library/Server/Manager/Hestia.php:335 library/Server/Manager/Plesk.php:202
 msgid "username changes"
 msgstr "用户名修改"
 
-#: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:334
+#: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:339
 #: library/Server/Manager/Hestia.php:343
 msgid "changing the account domain"
 msgstr "修改账号的域名"
 
-#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:344
 #: library/Server/Manager/Hestia.php:378 library/Server/Manager/Plesk.php:229
 msgid "changing the account IP"
 msgstr "修改账号的IP地址"
 
-#: library/Server/Manager/Directadmin.php:95
+#: library/Server/Manager/Directadmin.php:100
 msgid "There are no available IPs on this server."
 msgstr "此服务器上没有可用的 IP 地址。"
 
-#: library/Server/Manager/Directadmin.php:196
+#: library/Server/Manager/Directadmin.php:201
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
 msgstr "无法为代理商分配IP地址。请确保有空闲的未分配IP地址。"
 
-#: library/Server/Manager/Directadmin.php:200
+#: library/Server/Manager/Directadmin.php:205
 msgid "Error creating user"
 msgstr "创建用户时出错"
 
-#: library/Server/Manager/Directadmin.php:226
+#: library/Server/Manager/Directadmin.php:231
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "服务器管理器 DirectAdmin 错误: \"暂停账号失败\""
 
-#: library/Server/Manager/Directadmin.php:422 library/Server/Manager/Whm.php:410
+#: library/Server/Manager/Directadmin.php:427 library/Server/Manager/Whm.php:410
 msgid "HttpClientException: :error"
 msgstr "HttpClientException：:error"
 
-#: library/Server/Manager/Directadmin.php:432
+#: library/Server/Manager/Directadmin.php:437
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "DirectAdmin 错误: \"The request you have made cannot be executed because it does not exist in your authority level\""
 
@@ -796,25 +732,25 @@ msgstr "活动"
 msgid "Event history"
 msgstr "事件记录"
 
-#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:251
+#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:253
 msgid "Unknown API call :call"
 msgstr "未知的 API 调用 :calls"
 
-#: modules/Api/Controller/Client.php:128
+#: modules/Api/Controller/Client.php:130
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "无效的请求。请确保请求来源是 :from"
 
-#: modules/Api/Controller/Client.php:139
+#: modules/Api/Controller/Client.php:141
 msgid "Unauthorized IP"
 msgstr "未授权的 IP"
 
-#: modules/Api/Controller/Client.php:193 modules/Api/Controller/Client.php:197
-#: modules/Api/Controller/Client.php:201 modules/Api/Controller/Client.php:215
-#: modules/Api/Controller/Client.php:224 modules/Api/Controller/Client.php:238
+#: modules/Api/Controller/Client.php:195 modules/Api/Controller/Client.php:199
+#: modules/Api/Controller/Client.php:203 modules/Api/Controller/Client.php:217
+#: modules/Api/Controller/Client.php:226 modules/Api/Controller/Client.php:240
 msgid "Authentication Failed"
 msgstr "验证失败"
 
-#: modules/Api/Controller/Client.php:330
+#: modules/Api/Controller/Client.php:332
 msgid "CSRF token invalid"
 msgstr "CSRF 令牌无效"
 
@@ -894,7 +830,8 @@ msgstr "该邮箱已注册。"
 msgid "Can not change email. It is already registered."
 msgstr "修改邮箱失败，因为已经注册。"
 
-#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:223
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:228
+#: modules/Profile/Api/Admin.php:110 modules/Profile/Api/Client.php:113
 #: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:104
 msgid "Passwords do not match"
 msgstr "密码不一致"
@@ -923,7 +860,7 @@ msgstr "邮箱已注册。您可以尝试直接登录。"
 msgid "Please check your login details."
 msgstr "请检查您的登录信息。"
 
-#: modules/Client/Api/Guest.php:228 modules/Client/Api/Guest.php:232
+#: modules/Client/Api/Guest.php:233 modules/Client/Api/Guest.php:237
 #: modules/Client/Service.php:702
 msgid "The link has expired or you have already reset your password."
 msgstr "链接已过期或您已经完成密码重置。"
@@ -1029,6 +966,10 @@ msgstr "货币代码未写明"
 msgid "Can not remove default currency"
 msgstr "不能删除默认币种"
 
+#: modules/Currency/Service.php:447
+msgid "Currency format must include {{price}} tag"
+msgstr ""
+
 #: modules/Currency/Service.php:475
 msgid "Currency rate is invalid"
 msgstr "汇率无效"
@@ -1089,7 +1030,7 @@ msgstr "由于长度过长错误消息被截断，请检查错误日志以获取
 msgid "Embed and integrate"
 msgstr "插入和整合"
 
-#: modules/Extension/Api/Admin.php:296
+#: modules/Extension/Api/Admin.php:295
 msgid "Extension not found"
 msgstr "找不到扩展"
 
@@ -1114,6 +1055,14 @@ msgstr "请访问扩展目录以了解更多关于更新扩展的信息。"
 #: modules/Extension/Service.php:369
 msgid "FOSSBilling core modules can not be managed"
 msgstr "FOSSBilling 核心模块无法管理"
+
+#: modules/Extension/Service.php:414
+msgid "Coudn't find a valid download URL for the extension."
+msgstr ""
+
+#: modules/Extension/Service.php:418
+msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
+msgstr ""
 
 #: modules/Extension/Service.php:434
 msgid "Failed to download the extension with error :code"
@@ -1486,9 +1435,17 @@ msgstr "请添加内容后发送消息"
 msgid "Mass mailer"
 msgstr "群发邮件"
 
+#: modules/Massmailer/Service.php:114
+msgid " "
+msgstr ""
+
 #: modules/Massmailer/Service.php:161
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "因安全原因禁用 (启用演示模式)"
+
+#: modules/Massmailer/Service.php:231
+msgid "Mass mail message not found"
+msgstr ""
 
 #: modules/News/Api/Admin.php:62 modules/News/Api/Guest.php:60
 msgid "News item not found"
@@ -1633,6 +1590,10 @@ msgstr "无法删除有产品的分类"
 msgid "This promotion code already exists."
 msgstr "此优惠码已存在。"
 
+#: modules/Profile/Api/Admin.php:116 modules/Profile/Api/Client.php:119
+msgid "Current password incorrect"
+msgstr ""
+
 #: modules/Profile/Service.php:137
 msgid "Invalid birthdate value"
 msgstr "无效的出生日期"
@@ -1648,6 +1609,18 @@ msgstr "无法取消会话，使用了无效的类型"
 #: modules/Queue/Api/Admin.php:96
 msgid "Message handler function :method does not exists"
 msgstr "消息处理函数 :method 不存在"
+
+#: modules/Queue/Api/Admin.php:153 modules/Queue/Api/Admin.php:236
+msgid "Queue not found"
+msgstr ""
+
+#: modules/Queue/Api/Admin.php:162
+msgid "This queue is being executed by other process."
+msgstr ""
+
+#: modules/Queue/Service.php:134
+msgid "Received params: "
+msgstr ""
 
 #: modules/Redirect/Api/Admin.php:131
 msgid "Redirect not found"
@@ -1858,19 +1831,19 @@ msgstr "域名不能转移"
 msgid "Domain can not be registered"
 msgstr "域名不能注册"
 
-#: modules/Servicedomain/Service.php:951
+#: modules/Servicedomain/Service.php:948
 msgid "Domain registrar :adapter was not found"
 msgstr "未找到域名注册商 :adapter"
 
-#: modules/Servicedomain/Service.php:956
+#: modules/Servicedomain/Service.php:953
 msgid "Registrar :adapter was not found"
 msgstr "未找到注册商 :adapter"
 
-#: modules/Servicedomain/Service.php:968
+#: modules/Servicedomain/Service.php:965
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr "注册商适配器 :adapter 应使用 Registrar_AdapterAbstract"
 
-#: modules/Servicedomain/Service.php:1027
+#: modules/Servicedomain/Service.php:1028
 msgid "Can not remove registrar which has domains"
 msgstr "无法移除已有域名注册的注册商"
 
@@ -2012,12 +1985,12 @@ msgid "You are not allowed to login to admin area from :ip address"
 msgstr "不允许从 :ip 登录到管理后台"
 
 #: modules/Staff/Api/Guest.php:91 modules/Staff/Api/Guest.php:136
-#: modules/Staff/Controller/Admin.php:118
+#: modules/Staff/Controller/Admin.php:121
 msgid "Password reset has been disabled"
 msgstr "密码重置的功能已被禁用"
 
 #: modules/Staff/Api/Guest.php:109 modules/Staff/Api/Guest.php:113
-#: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
+#: modules/Staff/Controller/Admin.php:127 modules/Staff/Controller/Admin.php:130
 msgid "The link have expired or you have already confirmed password reset."
 msgstr "链接已过期或您已经完成密码重置。"
 
@@ -2093,27 +2066,27 @@ msgstr "预设的回复"
 msgid "Can not remove helpdesk which has tickets"
 msgstr "无法删除有工单的服务台"
 
-#: modules/Support/Service.php:870
+#: modules/Support/Service.php:874
 msgid "Order ID does not exist"
 msgstr "订单 ID 不存在"
 
-#: modules/Support/Service.php:880
+#: modules/Support/Service.php:884
 msgid "You must provide both an order ID and a new product ID in order to request an upgrade."
 msgstr "如需升级，请同时提供订单和产品的 ID 。"
 
-#: modules/Support/Service.php:888
+#: modules/Support/Service.php:892
 msgid "Sorry, but \":product\" is not allowed to be upgraded to \":upgrade\""
 msgstr "抱歉，\":product\" 不能升级到 \":upgrade\""
 
-#: modules/Support/Service.php:894
+#: modules/Support/Service.php:898
 msgid "We have already received this request."
 msgstr "我们已经收到了这项请求。"
 
-#: modules/Support/Service.php:969
+#: modules/Support/Service.php:973
 msgid "Identity is invalid"
 msgstr "身份无效"
 
-#: modules/Support/Service.php:998
+#: modules/Support/Service.php:1002
 msgid "Public ticket not found"
 msgstr "未找到工单"
 
@@ -2237,19 +2210,19 @@ msgstr "设置"
 msgid "Update"
 msgstr "更新"
 
-#: modules/System/Service.php:34
+#: modules/System/Service.php:36
 msgid "Parameter key is missing"
 msgstr "缺少参数"
 
-#: modules/System/Service.php:98
+#: modules/System/Service.php:100
 msgid "Invalid parameter name, received: param_"
 msgstr "无效的参数名称，收到：param_"
 
-#: modules/System/Service.php:470
+#: modules/System/Service.php:510
 msgid "Parameter :param does not exist"
 msgstr "参数 :param 不存在"
 
-#: modules/System/Service.php:1363
+#: modules/System/Service.php:1403
 msgid "Country :code phone code is not registered"
 msgstr "国家电话区号 :code 未注册"
 
@@ -2611,7 +2584,7 @@ msgstr "ID"
 #: modules/Queue/html_admin/mod_queue_settings.html.twig:35
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:242
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:31
 #: modules/Staff/html_admin/mod_staff_group.html.twig:37
 #: modules/Staff/html_admin/mod_staff_index.html.twig:30
@@ -2625,7 +2598,7 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:233
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:276
 #: modules/Support/html_client/mod_support_contact_us.html.twig:25
-#: modules/System/html_admin/mod_system_settings.html.twig:54
+#: modules/System/html_admin/mod_system_settings.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
 msgid "Name"
@@ -2671,7 +2644,7 @@ msgstr "公司名称"
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:32
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
-#: modules/System/html_admin/mod_system_settings.html.twig:60
+#: modules/System/html_admin/mod_system_settings.html.twig:63
 msgid "Email"
 msgstr "邮箱"
 
@@ -2947,7 +2920,7 @@ msgstr "邮政编码"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:130
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:195
 #: modules/Invoice/pdf_template/default-pdf.twig:97
-#: modules/System/html_admin/mod_system_settings.html.twig:66
+#: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
 msgstr "手机号码"
 
@@ -3093,7 +3066,7 @@ msgstr "资金余额"
 #: modules/Order/html_client/mod_order_manage.html.twig:278
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
 #: modules/Support/html_admin/mod_support_tickets.html.twig:374
-#: modules/System/html_admin/mod_system_settings.html.twig:221
+#: modules/System/html_admin/mod_system_settings.html.twig:224
 msgid "Notes"
 msgstr "备注"
 
@@ -3114,7 +3087,7 @@ msgstr "API密钥"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:188
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
 #: modules/Page/html_client/mod_page_signup.html.twig:95
-#: modules/System/html_admin/mod_system_settings.html.twig:72
+#: modules/System/html_admin/mod_system_settings.html.twig:75
 msgid "Address"
 msgstr "地址"
 
@@ -3224,7 +3197,7 @@ msgstr "邮件已批准"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:37
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:79
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:169
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:221
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:227
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:94
@@ -3240,10 +3213,10 @@ msgstr "邮件已批准"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:157
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:69
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:40
-#: modules/System/html_admin/mod_system_settings.html.twig:132
-#: modules/System/html_admin/mod_system_settings.html.twig:145
-#: modules/System/html_admin/mod_system_settings.html.twig:163
-#: modules/System/html_admin/mod_system_settings.html.twig:184
+#: modules/System/html_admin/mod_system_settings.html.twig:135
+#: modules/System/html_admin/mod_system_settings.html.twig:148
+#: modules/System/html_admin/mod_system_settings.html.twig:166
+#: modules/System/html_admin/mod_system_settings.html.twig:187
 #: themes/admin_default/html/macro_functions.html.twig:3
 msgid "Yes"
 msgstr "确定"
@@ -3291,7 +3264,7 @@ msgstr "确定"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:41
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:83
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:173
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:225
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:231
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:63
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:98
@@ -3307,10 +3280,10 @@ msgstr "确定"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:163
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:73
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:44
-#: modules/System/html_admin/mod_system_settings.html.twig:136
-#: modules/System/html_admin/mod_system_settings.html.twig:149
-#: modules/System/html_admin/mod_system_settings.html.twig:169
-#: modules/System/html_admin/mod_system_settings.html.twig:190
+#: modules/System/html_admin/mod_system_settings.html.twig:139
+#: modules/System/html_admin/mod_system_settings.html.twig:152
+#: modules/System/html_admin/mod_system_settings.html.twig:172
+#: modules/System/html_admin/mod_system_settings.html.twig:193
 #: themes/admin_default/html/macro_functions.html.twig:5
 msgid "No"
 msgstr "取消"
@@ -5366,9 +5339,9 @@ msgid "Maximum amount for add funds invoice"
 msgstr "站内充值的最大金额"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:156
-#: modules/System/html_admin/mod_system_settings.html.twig:203
-#: modules/System/html_admin/mod_system_settings.html.twig:226
-#: modules/System/html_admin/mod_system_settings.html.twig:491
+#: modules/System/html_admin/mod_system_settings.html.twig:206
+#: modules/System/html_admin/mod_system_settings.html.twig:229
+#: modules/System/html_admin/mod_system_settings.html.twig:494
 msgid "Update settings"
 msgstr "更新设置"
 
@@ -5759,14 +5732,14 @@ msgid "Invoice number"
 msgstr "账单号"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:140
-#: modules/System/html_admin/mod_system_settings.html.twig:110
+#: modules/System/html_admin/mod_system_settings.html.twig:113
 #: themes/huraga/html/layout_default.html.twig:299
 msgid "Bank Name"
 msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:145
 #: modules/Invoice/pdf_template/default-pdf.twig:95
-#: modules/System/html_admin/mod_system_settings.html.twig:116
+#: modules/System/html_admin/mod_system_settings.html.twig:119
 #: themes/huraga/html/layout_default.html.twig:299
 msgid "BIC / SWIFT Code"
 msgstr ""
@@ -7948,7 +7921,7 @@ msgid "Hosting plan updated"
 msgstr "虚拟主机套餐已更新"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:32
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:244
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:250
 msgid "Unique name to identify this hosting plan"
 msgstr "标识此虚拟主机套餐的唯一名称"
 
@@ -8079,31 +8052,41 @@ msgid "ns4.yourdomain.com"
 msgstr "ns4.yourdomain.com"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:217
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:84
+msgid "Connection port"
+msgstr "连接端口"
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:219
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:86
+msgid "Custom port. Use blank to use default. Used to connect to the API"
+msgstr "自定义端口。留空则使用默认值。用于连接到 API"
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:223
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:90
 msgid "Use Secure connection"
 msgstr "使用安全连接"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:229
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:235
 msgid "Add server"
 msgstr "增加服务器"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:236
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:242
 msgid "Adding new hosting plan"
 msgstr "添加虚拟主机套餐"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:237
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:243
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters in next step. In this step provide basic hosting plan information."
 msgstr "取决于用于设置虚拟主机账户的服务器管理器，您可能需要在下一步中提供额外的参数。 在这一步骤中，提供基本的虚拟主机套餐信息。"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
 msgid "Disk quota (MB)"
 msgstr "磁盘配额 (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
 msgid "Bandwidth (MB)"
 msgstr "流量 (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
 msgid "Create hosting plan"
 msgstr "新增虚拟主机套餐"
 
@@ -8236,14 +8219,6 @@ msgstr "服务器已更新"
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:45
 msgid "Primary IP address of the server used to connect to it like: 127.0.0.1"
 msgstr "用于连接到服务器的主IP地址，如：127.0.0.1"
-
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:84
-msgid "Connection port"
-msgstr "连接端口"
-
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:86
-msgid "Custom port. Use blank to use default. Used to connect to the API"
-msgstr "自定义端口。留空则使用默认值。用于连接到 API"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:103
 msgid "Update and test connection"
@@ -8576,7 +8551,7 @@ msgstr "管理群组"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:204
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
-#: modules/System/html_admin/mod_system_settings.html.twig:196
+#: modules/System/html_admin/mod_system_settings.html.twig:199
 msgid "Signature"
 msgstr "签名"
 
@@ -9055,8 +9030,8 @@ msgid "System settings"
 msgstr "系统设置"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:34
-msgid "Company Legal"
-msgstr "公司法务"
+msgid "Company legal"
+msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:37
 msgid "Countries"
@@ -9070,102 +9045,175 @@ msgstr "缓存"
 msgid "About"
 msgstr "关于"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:50
-#: modules/System/html_admin/mod_system_settings.html.twig:209
+#: modules/System/html_admin/mod_system_settings.html.twig:46
+#: modules/System/html_admin/mod_system_settings.html.twig:539
+msgid "Error reporting"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:53
+#: modules/System/html_admin/mod_system_settings.html.twig:212
 msgid "Company updated"
 msgstr "公司信息已更新"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:74
+#: modules/System/html_admin/mod_system_settings.html.twig:77
 msgid "Address line 1"
 msgstr "地址行 1"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:75
+#: modules/System/html_admin/mod_system_settings.html.twig:78
 msgid "Address line 2"
 msgstr "地址行 2"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:76
+#: modules/System/html_admin/mod_system_settings.html.twig:79
 msgid "Address line 3"
 msgstr "地址行 3"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:80
+#: modules/System/html_admin/mod_system_settings.html.twig:83
 msgid "Logo URL"
 msgstr "Logo地址"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:86
+#: modules/System/html_admin/mod_system_settings.html.twig:89
 msgid "Logo URL (dark mode)"
 msgstr "Logo URL (dark 模式)"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:92
+#: modules/System/html_admin/mod_system_settings.html.twig:95
 msgid "Favicon"
 msgstr "收藏夹图标"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:98
+#: modules/System/html_admin/mod_system_settings.html.twig:101
 msgid "Company number, chamber of commerce number"
 msgstr "工商营业执照注册号"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:104
+#: modules/System/html_admin/mod_system_settings.html.twig:107
 msgid "VAT number"
 msgstr "增值税号"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:122
+#: modules/System/html_admin/mod_system_settings.html.twig:125
 msgid "Bank Account number"
 msgstr "银行账号"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:128
+#: modules/System/html_admin/mod_system_settings.html.twig:131
 msgid "Display bank account information on documents?"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:141
+#: modules/System/html_admin/mod_system_settings.html.twig:144
 msgid "Display bank account information on the bottom of every page?"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:155
+#: modules/System/html_admin/mod_system_settings.html.twig:158
 msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr "禁止访客API获取FOSSBilling版本"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:157
+#: modules/System/html_admin/mod_system_settings.html.twig:160
 msgid "Enabling this functionality may effect modules that depend on it."
 msgstr "启用此功能可能会影响依赖它的模块。"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:176
+#: modules/System/html_admin/mod_system_settings.html.twig:179
 msgid "Hide some company information in the guest API"
 msgstr "在访客API中隐藏一些公司信息"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:178
+#: modules/System/html_admin/mod_system_settings.html.twig:181
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
 msgstr "启用此选项将隐藏“公司”访客API端点中的一些信息，例如地址、电话号码、电子邮件、增值税号码等等。"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:213
+#: modules/System/html_admin/mod_system_settings.html.twig:216
 msgid "Company terms of service, legal regulation"
 msgstr "使用须知、法律声明"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:217
+#: modules/System/html_admin/mod_system_settings.html.twig:220
 msgid "Company privacy policy"
 msgstr "隐私权政策"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:232
+#: modules/System/html_admin/mod_system_settings.html.twig:235
 msgid "Countries updated"
 msgstr "国家/地区已更新"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:484
+#: modules/System/html_admin/mod_system_settings.html.twig:487
 msgid "List of countries"
 msgstr "国家/地区列表"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:498
+#: modules/System/html_admin/mod_system_settings.html.twig:501
 msgid "Cache control"
 msgstr "缓存控制"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:500
+#: modules/System/html_admin/mod_system_settings.html.twig:503
 msgid "Cache directory is cleared"
 msgstr "已清除缓存目录"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:502
+#: modules/System/html_admin/mod_system_settings.html.twig:505
 msgid "Invalidate cache"
 msgstr "作废缓存"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:510
+#: modules/System/html_admin/mod_system_settings.html.twig:513
 msgid "About FOSSBilling"
 msgstr "关于 FOSSBilling"
+
+#: modules/System/html_admin/mod_system_settings.html.twig:518
+msgid "FOSSBilling version"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:522
+msgid "PHP version"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:526
+msgid "Instance ID"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:530
+msgid "License"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:545
+msgid "Error reporting is enabled."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:546
+msgid "This FOSSBilling instance is automatically sending errors which allows us to more easily improve the software and keep it stable. Thanks!"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:547
+msgid "Error reporting is now disabled."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:547
+msgid "Disable error reporting"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:551
+msgid "Error reporting is disabled."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:552
+msgid "Please consider enabling error reporting. Doing so allows us to provide you with better technical support and helps us to proactively improve FOSSBilling."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:553
+msgid "Error reporting is now enabled."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:553
+msgid "Enable error reporting"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:556
+msgid "FOSSBilling optionally includes autoamted error reporting to help aid the project's development and stability. To find the most up-to-date information about it, you should review the links and information below."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:558
+msgid "Learn more about error reporting"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:560
+msgid "Error reporting changelog"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:561
+msgid "Last applicable behavior change change: "
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:564
+msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
+msgstr ""
 
 #: modules/System/html_admin/mod_system_update.html.twig:14
 msgid "Automatic Update"
