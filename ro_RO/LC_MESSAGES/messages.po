@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-11-16 15:32-0800\n"
-"PO-Revision-Date: 2023-11-16 23:40\n"
+"POT-Creation-Date: 2023-11-21 16:34-0800\n"
+"PO-Revision-Date: 2023-11-22 23:39\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Romanian\n"
 "MIME-Version: 1.0\n"
@@ -47,11 +47,11 @@ msgstr ""
 msgid "Please check your mailbox and confirm email address."
 msgstr "Vă rugăm să verificați căsuța poștală și să confirmați adresa de e-mail."
 
-#: index.php:71 library/Box/App.php:408 library/Box/AppClient.php:68
+#: index.php:66 library/Box/App.php:416 library/Box/AppClient.php:68
 msgid "Page :url not found"
 msgstr "Pagina :url nu a fost găsită"
 
-#: index.php:78
+#: index.php:73
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "Eroarea HTTP :err_code a apărut în timpul încercării de a încărca :url"
 
@@ -83,9 +83,13 @@ msgstr "Clasa Api trebuie să fie o instanță Api_Abstract"
 msgid ":type API call :method does not exist in module :module"
 msgstr ":type apel API :method nu există în modulul :module"
 
-#: library/Box/App.php:373
+#: library/Box/App.php:381
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "Sistemul este în mentenanță. Vă rugăm să încercați mai târziu"
+
+#: library/Box/AppAdmin.php:34 modules/Extension/Service.php:739
+msgid "You do not have permission to access the :mod: module"
+msgstr ""
 
 #: library/Box/AppClient.php:86
 msgid "Page not found"
@@ -329,7 +333,7 @@ msgstr ":friendlyName: este incorect"
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Descărcarea celei mai recente versiuni a eșuat. Mai multe detalii sunt disponibile în jurnalul de erori."
 
-#: library/FOSSBilling/Update.php:170 modules/System/Api/Admin.php:182
+#: library/FOSSBilling/Update.php:170 modules/System/Api/Admin.php:184
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Aveți cea mai recentă versiune de FOSSBilling. Nu trebuie să actualizați."
 
@@ -337,7 +341,7 @@ msgstr "Aveți cea mai recentă versiune de FOSSBilling. Nu trebuie să actualiz
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Descărcarea arhivei de actualizare a eșuat. Mai multe detalii sunt disponibile în jurnalul de erori."
 
-#: library/FOSSBilling/Update.php:205 modules/Extension/Service.php:451
+#: library/FOSSBilling/Update.php:205 modules/Extension/Service.php:474
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Nu s-a putut extrage fișierul, vă rugăm să verificați permisiunile fișierului și folderului. Detaliile suplimentare sunt disponibile în jurnalul de erori."
 
@@ -345,19 +349,19 @@ msgstr "Nu s-a putut extrage fișierul, vă rugăm să verificați permisiunile 
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "Nu se poate șterge memoria cache și/sau elimina folderul de instalare. Detalii suplimentare sunt disponibile în jurnalul de erori."
 
-#: library/FOSSBilling/UpdatePatcher.php:52
+#: library/FOSSBilling/UpdatePatcher.php:46
 msgid "Unable to load existing configuration"
 msgstr "Imposibil de încărcat configurația existentă"
 
-#: library/FOSSBilling/UpdatePatcher.php:59
+#: library/FOSSBilling/UpdatePatcher.php:53
 msgid "Unable to create backup of configuration file"
 msgstr "Imposibil de creat o copie de rezervă a fișierului de configurare"
 
-#: library/FOSSBilling/UpdatePatcher.php:107
+#: library/FOSSBilling/UpdatePatcher.php:108
 msgid "Error when writing updated configuration file."
 msgstr "Eroare la scrierea fișierului de configurare actualizat."
 
-#: library/FOSSBilling/UpdatePatcher.php:168
+#: library/FOSSBilling/UpdatePatcher.php:169
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr ""
 
@@ -386,7 +390,7 @@ msgstr "Parola trebuie să conțină cel puțin o literă mare."
 msgid "Birthdate"
 msgstr "Data nașterii"
 
-#: library/FOSSBilling/i18n.php:135
+#: library/FOSSBilling/i18n.php:141
 msgid "Unable to enable / disable the locale as it is not present in the locale folder."
 msgstr "Imposibil de activat/dezactivat localizarea deoarece nu este prezent în folderul local."
 
@@ -740,6 +744,14 @@ msgstr "Activitate"
 msgid "Event history"
 msgstr "Istoric eveniment"
 
+#: modules/Activity/Service.php:34
+msgid "Delete activity"
+msgstr ""
+
+#: modules/Activity/Service.php:35
+msgid "Allows the staff member to delete recorded activity."
+msgstr ""
+
 #: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:253
 msgid "Unknown API call :call"
 msgstr "Apel API necunoscut :call"
@@ -764,17 +776,17 @@ msgstr "Token-ul CSRF este invalid "
 
 #: modules/Cart/Api/Guest.php:57 modules/Currency/Api/Admin.php:67
 #: modules/Currency/Api/Admin.php:238 modules/Currency/Api/Guest.php:47
-#: modules/Currency/Service.php:326 modules/Currency/Service.php:457
-#: modules/Currency/Service.php:568
+#: modules/Currency/Service.php:334 modules/Currency/Service.php:465
+#: modules/Currency/Service.php:576
 msgid "Currency not found"
 msgstr "Moneda nu a fost găsită"
 
 #: modules/Cart/Api/Guest.php:96 modules/Cart/Api/Guest.php:104
-#: modules/Cart/Service.php:429
+#: modules/Cart/Service.php:436
 msgid "Promo code is expired or does not exist"
 msgstr "Codul promoțional este expirat sau nu există"
 
-#: modules/Cart/Api/Guest.php:100 modules/Cart/Service.php:433
+#: modules/Cart/Api/Guest.php:100 modules/Cart/Service.php:440
 msgid "Promo can not be applied to your account"
 msgstr "Promoția nu poate fi aplicată pe contul dvs"
 
@@ -786,47 +798,47 @@ msgstr "Produsele suplimentare nu pot fi adăugate separat."
 msgid "One or more of your selected addons are invalid for the associated product."
 msgstr "Una sau mai multe din suplimentele selectate nu sunt valide pentru produsul asociat."
 
-#: modules/Cart/Service.php:84
+#: modules/Cart/Service.php:91
 msgid "Selected billing period is invalid"
 msgstr "Perioada selectată pentru facturare nu este validă"
 
-#: modules/Cart/Service.php:91
+#: modules/Cart/Service.php:98
 msgid "This item is currently out of stock"
 msgstr "Acest articol nu este momentan în stoc"
 
-#: modules/Cart/Service.php:124
+#: modules/Cart/Service.php:131
 msgid "Selected billing period is invalid for the selected addon"
 msgstr "Perioada de facturare selectată nu este validă pentru suplimentul selectat"
 
-#: modules/Cart/Service.php:218 modules/Product/Api/Guest.php:82
+#: modules/Cart/Service.php:225 modules/Product/Api/Guest.php:82
 msgid "Product not found"
 msgstr "Produsul nu a fost găsit"
 
-#: modules/Cart/Service.php:280
+#: modules/Cart/Service.php:287
 msgid "Add products to cart before applying promo code"
 msgstr "Adaugă produsele în coș înainte de a aplica codul promoțional"
 
-#: modules/Cart/Service.php:425
+#: modules/Cart/Service.php:432
 msgid "You have already used this promo code. Please remove promo code and checkout again."
 msgstr "Ați utilizat deja acest cod promoțional. Vă rugăm să eliminați codul promoțional și să faceți plata din nou."
 
-#: modules/Cart/Service.php:485
+#: modules/Cart/Service.php:492
 msgid "Can not checkout an empty cart"
 msgstr "Nu puteți face plata unui coș de cumpărături gol"
 
-#: modules/Cart/Service.php:497
+#: modules/Cart/Service.php:504
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
 msgstr "Moneda :selected selectată nu coincide cu moneda :code profilului tău. Te rog să schimbi moneda coșului de cumpărături pentru a continua."
 
-#: modules/Cart/Service.php:513
+#: modules/Cart/Service.php:520
 msgid "Unable to complete order. One or more of the selected products are invalid."
 msgstr "Nu se poate finaliza comanda. Unul sau mai multe produse selectate sunt invalide."
 
-#: modules/Cart/Service.php:586
+#: modules/Cart/Service.php:593
 msgid "Discount: :product"
 msgstr "Reducere :product"
 
-#: modules/Cart/Service.php:598
+#: modules/Cart/Service.php:605
 msgid ":product setup"
 msgstr "Configurare :product"
 
@@ -834,7 +846,7 @@ msgstr "Configurare :product"
 msgid "Email is already registered."
 msgstr "E-mailul este deja înregistrat."
 
-#: modules/Client/Api/Admin.php:239 modules/Profile/Service.php:125
+#: modules/Client/Api/Admin.php:239 modules/Profile/Service.php:133
 msgid "Can not change email. It is already registered."
 msgstr "Nu se poate schimba adresa de e-mail. Aceasta este deja înregistrată."
 
@@ -942,7 +954,7 @@ msgstr "Clientul nu a fost găsit"
 msgid "Can not remove group with clients"
 msgstr "Nu se poate elimina grupul cu clienți"
 
-#: modules/Client/Service.php:632 modules/Profile/Service.php:117
+#: modules/Client/Service.php:632 modules/Profile/Service.php:125
 msgid "Email can not be changed"
 msgstr "E-mailul nu poate fi schimbat"
 
@@ -962,31 +974,31 @@ msgstr "Moneda există deja"
 msgid "Currency code is invalid"
 msgstr "Codul valutei este invalid"
 
-#: modules/Currency/Service.php:58
+#: modules/Currency/Service.php:66
 msgid "Currency conversion rate can not be zero"
 msgstr "Rata de conversie valutară nu poate fi egală cu 0"
 
-#: modules/Currency/Service.php:124
+#: modules/Currency/Service.php:132
 msgid "Currency code not provided"
 msgstr "Codul monedei nu este furnizat"
 
-#: modules/Currency/Service.php:322
+#: modules/Currency/Service.php:330
 msgid "Can not remove default currency"
 msgstr "Nu se poate elimina moneda implicită"
 
-#: modules/Currency/Service.php:447
+#: modules/Currency/Service.php:455
 msgid "Currency format must include {{price}} tag"
 msgstr ""
 
-#: modules/Currency/Service.php:475
+#: modules/Currency/Service.php:483
 msgid "Currency rate is invalid"
 msgstr "Rata valutară nu este validă"
 
-#: modules/Currency/Service.php:540
+#: modules/Currency/Service.php:548
 msgid "Failed to get currency rates for :currency from the European Central Bank API"
 msgstr "Nu s-a reușit obținerea ratelor de schimb valutar pentru :currency de la API-ul Băncii Centrale Europene"
 
-#: modules/Currency/Service.php:556
+#: modules/Currency/Service.php:564
 msgid "<b>Currencylayer threw an error:</b><br />:errorInfo"
 msgstr "<b>Currencylayer a trimis eroarea:</b><br />:errorInfo"
 
@@ -999,7 +1011,7 @@ msgstr "Pagini personalizate"
 
 #: modules/Email/Api/Admin.php:114 modules/Email/Api/Admin.php:137
 #: modules/Email/Api/Client.php:66 modules/Email/Api/Client.php:88
-#: modules/Email/Api/Client.php:110 modules/Email/Service.php:488
+#: modules/Email/Api/Client.php:110 modules/Email/Service.php:496
 msgid "Email not found"
 msgstr "Adresa de e-mail nu a putut fi găsită"
 
@@ -1018,19 +1030,19 @@ msgstr "Destinatarul nu este definit. Definește la sau to_client sau la paramet
 msgid "Email history"
 msgstr "Istoricul e-mail-urilor"
 
-#: modules/Email/Service.php:138
+#: modules/Email/Service.php:146
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "Destinatarul nu este definit. Definește parametrul to, to_client sau to_staff ori to_admin"
 
-#: modules/Email/Service.php:197
+#: modules/Email/Service.php:205
 msgid "From email address can not be empty"
 msgstr "Câmpul \"de la adresa de e-mail\" nu poate fi gol"
 
-#: modules/Email/Service.php:473
+#: modules/Email/Service.php:481
 msgid "Email template :code was not found"
 msgstr "Șablonul de email :code nu a putut fi găsit"
 
-#: modules/Email/Service.php:666
+#: modules/Email/Service.php:674
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr "Mesaj de eroare trunchiat din cauza lungimii, verificați jurnalul de erori pentru mesajul complet: "
 
@@ -1056,45 +1068,65 @@ msgstr "Extensii"
 msgid "Languages"
 msgstr "Limbi"
 
-#: modules/Extension/Service.php:320
+#: modules/Extension/Service.php:37
+msgid "Manage extensions"
+msgstr ""
+
+#: modules/Extension/Service.php:38
+msgid "Allows the staff member to install, update, or remove extensions."
+msgstr ""
+
+#: modules/Extension/Service.php:335
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "Vizitați magazinul de extensii pentru mai multe informații despre actualizarea acestei extensii."
 
-#: modules/Extension/Service.php:369
+#: modules/Extension/Service.php:388
 msgid "FOSSBilling core modules can not be managed"
 msgstr "Modulele de bază FOSSBilling nu pot fi gestionate"
 
-#: modules/Extension/Service.php:414
+#: modules/Extension/Service.php:437
 msgid "Coudn't find a valid download URL for the extension."
 msgstr ""
 
-#: modules/Extension/Service.php:418
+#: modules/Extension/Service.php:441
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
 msgstr ""
 
-#: modules/Extension/Service.php:434
+#: modules/Extension/Service.php:457
 msgid "Failed to download the extension with error :code"
 msgstr "Nu s-a reușit descărcarea extensiei cu eroarea :code"
 
-#: modules/Extension/Service.php:475
+#: modules/Extension/Service.php:498
 msgid "Extension :id seems to be already installed."
 msgstr "Extensia :id pare să fie deja instalată."
 
-#: modules/Extension/Service.php:478
+#: modules/Extension/Service.php:501
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "Nu s-a reușit mutarea extensiei în destinația finală. Vă rugăm să verificați permisiunile pentru dosarul de destinație. (:destination)"
 
-#: modules/Extension/Service.php:481
+#: modules/Extension/Service.php:504
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "Tipul extensiei (:type) nu poate fi instalat automat."
 
-#: modules/Extension/Service.php:512
+#: modules/Extension/Service.php:537
 msgid "FOSSBilling core modules can not be installed or removed"
 msgstr "Modulele de bază FOSSBilling nu pot fi instalate sau eliminate"
 
-#: modules/Extension/Service.php:517
+#: modules/Extension/Service.php:542
 msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr "Modulul nu poate fi instalat. Este nevoie de cel puțin :min versiunea FOSSBilling. Utilizați :v"
+
+#: modules/Extension/Service.php:716
+msgid "Manage settings"
+msgstr ""
+
+#: modules/Extension/Service.php:717
+msgid "Allows the staff member to edit settings for this module."
+msgstr ""
+
+#: modules/Extension/Service.php:753 modules/Staff/Service.php:198
+msgid "You do not have permission to perform this action"
+msgstr ""
 
 #: modules/Formbuilder/Api/Admin.php:36
 msgid "Form style was not found in predefined list"
@@ -1558,15 +1590,15 @@ msgstr "Acest cod promoțional există deja."
 msgid "Current password incorrect"
 msgstr ""
 
-#: modules/Profile/Service.php:137
+#: modules/Profile/Service.php:145
 msgid "Invalid birthdate value"
 msgstr "Data nașterii este incorectă"
 
-#: modules/Profile/Service.php:229
+#: modules/Profile/Service.php:237
 msgid "Unable to invalidate sessions, nobody is logged in"
 msgstr "Nu se pot invalida sesiunile, nimeni nu este conectat"
 
-#: modules/Profile/Service.php:248
+#: modules/Profile/Service.php:256
 msgid "Unable to invalidate sessions, an invalid type was used"
 msgstr "Nu s-au putut invalida sesiunile, a fost folosit un tip nevalid"
 
@@ -1950,23 +1982,79 @@ msgstr "Link-ul a expirat sau ați confirmat deja resetarea parolei."
 msgid "Staff login history"
 msgstr "Istoric autentificare echipă"
 
-#: modules/Staff/Service.php:41
+#: modules/Staff/Service.php:34
+msgid "Create and edit administrators"
+msgstr ""
+
+#: modules/Staff/Service.php:35 modules/Staff/Service.php:40
+#: modules/Staff/Service.php:45
+msgid "administrator"
+msgstr ""
+
+#: modules/Staff/Service.php:35 modules/Staff/Service.php:50
+msgid "Allows the staff member to create and edit :type: accounts."
+msgstr ""
+
+#: modules/Staff/Service.php:39
+msgid "Delete administrators"
+msgstr ""
+
+#: modules/Staff/Service.php:40 modules/Staff/Service.php:55
+msgid "Allows the staff member to delete :type: accounts."
+msgstr ""
+
+#: modules/Staff/Service.php:44
+msgid "Reset administrator passwords"
+msgstr ""
+
+#: modules/Staff/Service.php:45 modules/Staff/Service.php:60
+msgid "Allows the staff member to perform password resets on :type: accounts."
+msgstr ""
+
+#: modules/Staff/Service.php:49
+msgid "Create and edit staff members"
+msgstr ""
+
+#: modules/Staff/Service.php:50 modules/Staff/Service.php:55
+#: modules/Staff/Service.php:60
+msgid "staff"
+msgstr ""
+
+#: modules/Staff/Service.php:54
+msgid "Delete staff members"
+msgstr ""
+
+#: modules/Staff/Service.php:59
+msgid "Reset staff passwords"
+msgstr ""
+
+#: modules/Staff/Service.php:64
+#: modules/Staff/html_admin/mod_staff_index.html.twig:17
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:43
+msgid "Manage groups"
+msgstr "Gestionează grupuri"
+
+#: modules/Staff/Service.php:65
+msgid "Allows the staff member to manage staff member groups."
+msgstr ""
+
+#: modules/Staff/Service.php:83
 msgid "Check your login details"
 msgstr "Vă rugăm să verificați detaliile de autentificare"
 
-#: modules/Staff/Service.php:424
+#: modules/Staff/Service.php:510
 msgid "This administrator account is protected and can not be removed"
 msgstr "Acest cont de administrator este protejat și nu poate fi șters"
 
-#: modules/Staff/Service.php:479
+#: modules/Staff/Service.php:581
 msgid "Staff member with email :email is already registered"
 msgstr "Membrul de echipă cu email-ul :email este deja înregistrat"
 
-#: modules/Staff/Service.php:564
+#: modules/Staff/Service.php:673
 msgid "Administrators group can not be removed"
 msgstr "Grupul de administratori nu poate fi șters"
 
-#: modules/Staff/Service.php:572
+#: modules/Staff/Service.php:681
 msgid "Can not remove group which has staff members"
 msgstr "Nu se poate elimina grupul care are membri ai personalului"
 
@@ -2178,15 +2266,14 @@ msgstr "Setări"
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:96
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:84
 #: modules/Product/html_admin/mod_product_category.html.twig:63
-#: modules/Product/html_admin/mod_product_manage.html.twig:162
-#: modules/Product/html_admin/mod_product_manage.html.twig:219
-#: modules/Product/html_admin/mod_product_manage.html.twig:255
+#: modules/Product/html_admin/mod_product_manage.html.twig:203
+#: modules/Product/html_admin/mod_product_manage.html.twig:260
+#: modules/Product/html_admin/mod_product_manage.html.twig:296
 #: modules/Product/html_admin/mod_product_promo.html.twig:178
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:75
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:75
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:100
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:39
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:53
+#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:14
 #: modules/Servicecustom/html_admin/mod_servicecustom_manage.html.twig:27
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:139
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:160
@@ -2215,19 +2302,53 @@ msgstr "Setări"
 msgid "Update"
 msgstr "Actualizați"
 
-#: modules/System/Service.php:36
+#: modules/System/Service.php:37
+msgid "Manage company details"
+msgstr ""
+
+#: modules/System/Service.php:38
+msgid "Allows the staff member to update company details as set under the system module."
+msgstr ""
+
+#: modules/System/Service.php:42
+msgid "Manage company legal"
+msgstr ""
+
+#: modules/System/Service.php:43
+msgid "Allows the staff member to update company legal as set under the system module."
+msgstr ""
+
+#: modules/System/Service.php:47
+#: modules/System/html_admin/mod_system_settings.html.twig:505
+msgid "Invalidate cache"
+msgstr "Invalidați memoria cache"
+
+#: modules/System/Service.php:48
+msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
+msgstr ""
+
+#: modules/System/Service.php:52
+#: modules/System/html_admin/mod_system_update.html.twig:39
+msgid "Update FOSSBilling"
+msgstr "Actualizați FOSSBilling"
+
+#: modules/System/Service.php:53
+msgid "Allows the staff member to update FOSSBilling."
+msgstr ""
+
+#: modules/System/Service.php:65
 msgid "Parameter key is missing"
 msgstr "Cheia parametrului lipsește"
 
-#: modules/System/Service.php:100
+#: modules/System/Service.php:134
 msgid "Invalid parameter name, received: param_"
 msgstr "Nume de parametru incorect, received: param_"
 
-#: modules/System/Service.php:504
+#: modules/System/Service.php:538
 msgid "Parameter :param does not exist"
 msgstr "Parametrul :param nu există"
 
-#: modules/System/Service.php:1364
+#: modules/System/Service.php:1398
 msgid "Country :code phone code is not registered"
 msgstr "Codul de telefon al țării :code nu este înregistrat"
 
@@ -2444,7 +2565,7 @@ msgstr "Sunteți sigur?"
 #: modules/Product/html_admin/mod_product_addons.html.twig:75
 #: modules/Product/html_admin/mod_product_index.html.twig:88
 #: modules/Product/html_admin/mod_product_index.html.twig:167
-#: modules/Product/html_admin/mod_product_manage.html.twig:204
+#: modules/Product/html_admin/mod_product_manage.html.twig:245
 #: modules/Product/html_admin/mod_product_promos.html.twig:106
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:113
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:125
@@ -2516,7 +2637,7 @@ msgstr "Modificați grupul de clienți"
 #: modules/Product/html_admin/mod_product_index.html.twig:125
 #: modules/Product/html_admin/mod_product_index.html.twig:141
 #: modules/Product/html_admin/mod_product_index.html.twig:179
-#: modules/Product/html_admin/mod_product_manage.html.twig:140
+#: modules/Product/html_admin/mod_product_manage.html.twig:143
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:202
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:105
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:144
@@ -2698,7 +2819,7 @@ msgstr "Grup"
 #: modules/Product/html_admin/mod_product_addons.html.twig:47
 #: modules/Product/html_admin/mod_product_addons.html.twig:87
 #: modules/Product/html_admin/mod_product_index.html.twig:48
-#: modules/Product/html_admin/mod_product_manage.html.twig:89
+#: modules/Product/html_admin/mod_product_manage.html.twig:92
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:12
 #: modules/Staff/html_admin/mod_staff_index.html.twig:33
 #: modules/Staff/html_admin/mod_staff_index.html.twig:117
@@ -2955,7 +3076,7 @@ msgstr "Monedă"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:27
 #: modules/Staff/html_admin/mod_staff_login.html.twig:54
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:43
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:152
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:188
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:36
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:198
 msgid "Password"
@@ -3012,7 +3133,7 @@ msgstr "Profil"
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:75
 #: modules/Email/html_admin/mod_email_settings.html.twig:103
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:80
-#: modules/Product/html_admin/mod_product_manage.html.twig:75
+#: modules/Product/html_admin/mod_product_manage.html.twig:78
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:98
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:246
 #: modules/Support/html_admin/mod_support_settings.html.twig:153
@@ -3174,7 +3295,9 @@ msgstr "E-mail aprobat"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:165
 #: modules/Order/html_admin/mod_order_new.html.twig:44
 #: modules/Order/html_admin/mod_order_settings.html.twig:55
-#: modules/Product/html_admin/mod_product_manage.html.twig:106
+#: modules/Product/html_admin/mod_product_manage.html.twig:109
+#: modules/Product/html_admin/mod_product_manage.html.twig:163
+#: modules/Product/html_admin/mod_product_manage.html.twig:176
 #: modules/Product/html_admin/mod_product_promo.html.twig:70
 #: modules/Product/html_admin/mod_product_promo.html.twig:83
 #: modules/Product/html_admin/mod_product_promo.html.twig:98
@@ -3183,8 +3306,6 @@ msgstr "E-mail aprobat"
 #: modules/Product/html_admin/mod_product_promos.html.twig:187
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:22
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:50
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:11
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:24
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:76
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:77
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:78
@@ -3241,7 +3362,9 @@ msgstr "Da"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:289
 #: modules/Order/html_admin/mod_order_new.html.twig:48
 #: modules/Order/html_admin/mod_order_settings.html.twig:59
-#: modules/Product/html_admin/mod_product_manage.html.twig:110
+#: modules/Product/html_admin/mod_product_manage.html.twig:113
+#: modules/Product/html_admin/mod_product_manage.html.twig:167
+#: modules/Product/html_admin/mod_product_manage.html.twig:180
 #: modules/Product/html_admin/mod_product_promo.html.twig:74
 #: modules/Product/html_admin/mod_product_promo.html.twig:87
 #: modules/Product/html_admin/mod_product_promo.html.twig:102
@@ -3250,8 +3373,6 @@ msgstr "Da"
 #: modules/Product/html_admin/mod_product_promos.html.twig:191
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:26
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:54
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:15
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:28
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:76
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:77
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:78
@@ -3504,7 +3625,7 @@ msgstr "Istoric plăți client"
 #: modules/Product/html_admin/mod_product_addons.html.twig:46
 #: modules/Product/html_admin/mod_product_addons.html.twig:129
 #: modules/Product/html_admin/mod_product_index.html.twig:193
-#: modules/Product/html_admin/mod_product_manage.html.twig:155
+#: modules/Product/html_admin/mod_product_manage.html.twig:195
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:49
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:193
 #: themes/admin_default/html/partial_extensions.html.twig:28
@@ -4053,7 +4174,7 @@ msgstr "Pagină nouă personalizată"
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:53
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:52
 #: modules/News/html_admin/mod_news_post.html.twig:59
-#: modules/Product/html_admin/mod_product_manage.html.twig:146
+#: modules/Product/html_admin/mod_product_manage.html.twig:149
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:57
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:43
 msgid "Slug"
@@ -4324,7 +4445,7 @@ msgstr "Extensie"
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:41
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:37
 #: modules/Product/html_admin/mod_product_addons.html.twig:91
-#: modules/Product/html_admin/mod_product_manage.html.twig:93
+#: modules/Product/html_admin/mod_product_manage.html.twig:96
 #: modules/Product/html_admin/mod_product_promos.html.twig:52
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:51
 msgid "Enabled"
@@ -4350,7 +4471,7 @@ msgstr "Șabloanele de e-mail nou create pot fi utilizate în carlige de evenime
 #: modules/Email/html_admin/mod_email_template.html.twig:121
 #: modules/Product/html_admin/mod_product_index.html.twig:46
 #: modules/Product/html_admin/mod_product_index.html.twig:119
-#: modules/Product/html_admin/mod_product_manage.html.twig:52
+#: modules/Product/html_admin/mod_product_manage.html.twig:55
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:37
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:59
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:101
@@ -4797,7 +4918,7 @@ msgid "Default value"
 msgstr "Valoare implicită"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:182
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:138
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:173
 msgid "Save"
 msgstr "Salvați"
 
@@ -5122,7 +5243,7 @@ msgid "Last Reminded"
 msgstr "Ultima reamintire"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:129
-#: modules/Product/html_admin/mod_product_manage.html.twig:282
+#: modules/Product/html_admin/mod_product_manage.html.twig:323
 msgid "View as client"
 msgstr "Vizualizați ca și client"
 
@@ -5159,7 +5280,7 @@ msgstr "Anulează"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:175
 #: modules/Order/html_client/mod_order_manage.html.twig:204
 #: modules/Order/html_client/mod_order_manage.html.twig:242
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:165
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:201
 #: modules/Support/html_client/mod_support_tickets.html.twig:114
 msgid "Submit"
 msgstr "Trimiteți"
@@ -6270,8 +6391,7 @@ msgid "Orders settings"
 msgstr "Setări comenzi"
 
 #: modules/Order/html_admin/mod_order_settings.html.twig:31
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:4
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:44
+#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:5
 msgid "Settings updated"
 msgstr "Setările au fost actualizate"
 
@@ -6804,32 +6924,32 @@ msgstr "Supliment actualizat"
 
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:41
 #: modules/Product/html_admin/mod_product_addons.html.twig:95
-#: modules/Product/html_admin/mod_product_manage.html.twig:97
+#: modules/Product/html_admin/mod_product_manage.html.twig:100
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:53
 msgid "Disabled"
 msgstr "Dezactivat"
 
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:46
 #: modules/Product/html_admin/mod_product_addons.html.twig:100
-#: modules/Product/html_admin/mod_product_manage.html.twig:115
+#: modules/Product/html_admin/mod_product_manage.html.twig:118
 msgid "Activation"
 msgstr "Activarea"
 
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:50
 #: modules/Product/html_admin/mod_product_addons.html.twig:104
-#: modules/Product/html_admin/mod_product_manage.html.twig:119
+#: modules/Product/html_admin/mod_product_manage.html.twig:122
 msgid "After order is placed"
 msgstr "După ce comanda este plasată"
 
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:54
 #: modules/Product/html_admin/mod_product_addons.html.twig:108
-#: modules/Product/html_admin/mod_product_manage.html.twig:123
+#: modules/Product/html_admin/mod_product_manage.html.twig:126
 msgid "After payment is received"
 msgstr "După ce plata a fost primită"
 
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:58
 #: modules/Product/html_admin/mod_product_addons.html.twig:112
-#: modules/Product/html_admin/mod_product_manage.html.twig:127
+#: modules/Product/html_admin/mod_product_manage.html.twig:130
 msgid "Manual activation"
 msgstr "Activare manuală"
 
@@ -6882,7 +7002,6 @@ msgid "Product configuration"
 msgstr "Configurarea produsului"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:28
-#: modules/Product/html_admin/mod_product_manage.html.twig:48
 msgid "General settings"
 msgstr "Setări generale"
 
@@ -6898,65 +7017,86 @@ msgstr "Upgrade-uri"
 msgid "Links"
 msgstr "Legături"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:49
-#: modules/Product/html_admin/mod_product_manage.html.twig:179
-#: modules/Product/html_admin/mod_product_manage.html.twig:227
+#: modules/Product/html_admin/mod_product_manage.html.twig:48
+#: modules/Product/html_admin/mod_product_manage.html.twig:52
+msgid "General Settings"
+msgstr ""
+
+#: modules/Product/html_admin/mod_product_manage.html.twig:51
+#: modules/Product/html_admin/mod_product_manage.html.twig:220
+#: modules/Product/html_admin/mod_product_manage.html.twig:268
 msgid "Product configuration updated"
 msgstr "Configurația produsului actualizată"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:59
+#: modules/Product/html_admin/mod_product_manage.html.twig:62
 msgid "Order Form"
 msgstr "Formular de comandă"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:80
+#: modules/Product/html_admin/mod_product_manage.html.twig:83
 msgid "Add new"
 msgstr "Adaugă nou"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:102
+#: modules/Product/html_admin/mod_product_manage.html.twig:105
 msgid "Hidden"
 msgstr "Ascuns"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:132
+#: modules/Product/html_admin/mod_product_manage.html.twig:135
 msgid "Icon/Image URL"
 msgstr "URL-ul pictogramelor/imaginii"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:173
+#: modules/Product/html_admin/mod_product_manage.html.twig:157
+msgid "Pricing & Stock Control"
+msgstr ""
+
+#: modules/Product/html_admin/mod_product_manage.html.twig:159
+msgid "Enable stock control"
+msgstr "Activare control stoc"
+
+#: modules/Product/html_admin/mod_product_manage.html.twig:172
+msgid "Allow quantity selection on order form"
+msgstr ""
+
+#: modules/Product/html_admin/mod_product_manage.html.twig:185
+msgid "Quantity in stock"
+msgstr "Cantitate in stoc"
+
+#: modules/Product/html_admin/mod_product_manage.html.twig:214
 msgid "No additional configuration for this product is required"
 msgstr "Nu este necesară nici o configurare suplimentară pentru acest produs"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:182
+#: modules/Product/html_admin/mod_product_manage.html.twig:223
 msgid "Choose which addons you would like to offer with"
 msgstr "Alegeți cu ce suplimente doriți să oferiți"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:215
+#: modules/Product/html_admin/mod_product_manage.html.twig:256
 msgid "Create new addon"
 msgstr "Crează supliment nou"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:226
+#: modules/Product/html_admin/mod_product_manage.html.twig:267
 msgid "Choose which products can client upgrade to"
 msgstr "Alege la ce produse poate clientul să facă upgrade"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:230
+#: modules/Product/html_admin/mod_product_manage.html.twig:271
 msgid "Product Upgrades"
 msgstr "Upgrade-uri produs"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:262
+#: modules/Product/html_admin/mod_product_manage.html.twig:303
 msgid "Product Links"
 msgstr "Linkuri produs"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:264
+#: modules/Product/html_admin/mod_product_manage.html.twig:305
 msgid "Order Page (via ID)"
 msgstr "Pagina de comandă (prin ID)"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:270
+#: modules/Product/html_admin/mod_product_manage.html.twig:311
 msgid "Order Page (via Link)"
 msgstr "Pagina de comandă (prin Link)"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:300
+#: modules/Product/html_admin/mod_product_manage.html.twig:341
 msgid "Edit form"
 msgstr "Modificați formularul"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:305
+#: modules/Product/html_admin/mod_product_manage.html.twig:346
 msgid "Add new form"
 msgstr "Adaugă formular nou"
 
@@ -7212,40 +7352,28 @@ msgstr "Detalii cheie API"
 msgid "Stock control settings"
 msgstr "Setări control stoc"
 
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:7
-msgid "Enable stock control"
-msgstr "Activare control stoc"
-
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:20
-msgid "Allow quantity select on order form"
-msgstr "Permiteți selectarea cantității în formularul de comandă"
-
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:33
-msgid "Quantity in stock"
-msgstr "Cantitate in stoc"
-
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:43
+#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:4
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:19
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:14
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:43
 msgid "Plugin"
 msgstr "Plugin"
 
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:47
+#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:8
 msgid "Plugin name"
 msgstr "Nume plugin"
 
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:71
+#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:32
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:107
 msgid "Parameter name"
 msgstr "Nume parametru"
 
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:78
+#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:39
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:111
 msgid "Parameter value"
 msgstr "Valoare parametru"
 
-#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:84
+#: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:45
 msgid "Update configuration fields"
 msgstr "Actualizați câmpurile de configurare"
 
@@ -8519,11 +8647,6 @@ msgstr "Membrii staff"
 msgid "New staff member"
 msgstr "Membru nou staff"
 
-#: modules/Staff/html_admin/mod_staff_index.html.twig:17
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:43
-msgid "Manage groups"
-msgstr "Gestionează grupuri"
-
 #: modules/Staff/html_admin/mod_staff_index.html.twig:110
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:87
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:47
@@ -8607,31 +8730,47 @@ msgstr "Permisiuni"
 msgid "This staff member updated."
 msgstr "Acest membru al personalului a fost actualizat."
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:101
-msgid "permissions"
-msgstr "permisiuni"
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:102
+msgid "Permissions for: "
+msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:104
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:105
+msgid "Give all permissions"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:106
+msgid "Revoke all permissions"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:112
 msgid "This administrator is allowed to do everything"
 msgstr "Acest administrator are permisiunea de a face totul"
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:109
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:116
 msgid "Permissions updated"
 msgstr "Permisiuni actualizate"
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:118
-msgid "Module"
-msgstr "Module"
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:130
+msgid "Module access"
+msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:147
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:131
+msgid "Can be disabled to prevent the staff member from using any part of this module."
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:153
+msgid "None"
+msgstr "Niciunul"
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:183
 msgid "Change staff member password"
 msgstr "Schimbare parolă membru al personalului"
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:149
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:185
 msgid "Staff member password changed"
 msgstr "Parola de membru al personalului schimbată"
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:158
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:194
 msgid "Repeat same password"
 msgstr "Repetă aceeași parolă"
 
@@ -9235,10 +9374,6 @@ msgstr "Control Cache"
 msgid "Cache directory is cleared"
 msgstr "Directorul cache este golit"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:505
-msgid "Invalidate cache"
-msgstr "Invalidați memoria cache"
-
 #: modules/System/html_admin/mod_system_settings.html.twig:513
 msgid "About FOSSBilling"
 msgstr "Despre FOSSBilling"
@@ -9326,10 +9461,6 @@ msgstr "Această actualizare este considerată a fi o actualizare majoră, ar tr
 #: modules/System/html_admin/mod_system_update.html.twig:25
 msgid "This update is considered to be a minor update, there are low chances of incompatibilities."
 msgstr "Această actualizare este considerată a fi o actualizare minoră, există șanse mici de incompatibilități."
-
-#: modules/System/html_admin/mod_system_update.html.twig:39
-msgid "Update FOSSBilling"
-msgstr "Actualizați FOSSBilling"
 
 #: modules/System/html_admin/mod_system_update.html.twig:43
 msgid "Manual Update"
