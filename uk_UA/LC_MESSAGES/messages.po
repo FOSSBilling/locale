@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-11-21 16:34-0800\n"
-"PO-Revision-Date: 2023-11-22 23:39\n"
+"POT-Creation-Date: 2023-11-24 17:04-0800\n"
+"PO-Revision-Date: 2023-11-25 23:36\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -390,7 +390,7 @@ msgid "Password must include at least one uppercase letter."
 msgstr "Пароль повинен містити принаймні одну велику літеру."
 
 #: library/FOSSBilling/Validate.php:107
-#: modules/Client/html_client/mod_client_profile.html.twig:78
+#: modules/Client/html_client/mod_client_profile.html.twig:70
 msgid "Birthdate"
 msgstr "Дата народження"
 
@@ -1046,7 +1046,7 @@ msgstr "Адреса електронної пошти не може бути п
 msgid "Email template :code was not found"
 msgstr "Шаблон електронної пошти :code не знайдено"
 
-#: modules/Email/Service.php:674
+#: modules/Email/Service.php:678
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr "Повідомлення про помилку обрізано через довжину, будь ласка, перевірте журнал помилок для повного повідомлення: "
 
@@ -1230,18 +1230,20 @@ msgstr "Спосіб оплати не знайдено. Відсутній па
 #: modules/Invoice/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_manage.html.twig:35
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
-#: modules/Index/html_client/mod_index_dashboard.html.twig:106
+#: modules/Index/html_client/mod_index_dashboard.html.twig:73
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:185
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:19
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:6
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:8
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:11
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:22
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
 #: modules/Order/html_admin/mod_order_manage.html.twig:52
 #: themes/admin_default/html/mod_index_dashboard.html.twig:214
 #: themes/admin_default/html/mod_index_dashboard.html.twig:261
 #: themes/admin_default/html/mod_index_dashboard.html.twig:444
 #: themes/admin_default/html/mod_index_dashboard.html.twig:548
-#: themes/huraga/html/partial_menu.html.twig:29
+#: themes/huraga/html/partial_menu.html.twig:44
 msgid "Invoices"
 msgstr "Рахунки"
 
@@ -1430,15 +1432,15 @@ msgstr "Додайте вміст перед надсиланням повідо
 msgid "Mass mailer"
 msgstr "Масова розсилка"
 
-#: modules/Massmailer/Service.php:115
+#: modules/Massmailer/Service.php:114
 msgid " "
 msgstr ""
 
-#: modules/Massmailer/Service.php:162
+#: modules/Massmailer/Service.php:161
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "Вимкнено з міркувань безпеки (увімкнуто демо-режим)"
 
-#: modules/Massmailer/Service.php:198
+#: modules/Massmailer/Service.php:197
 msgid "Mass mail message not found"
 msgstr ""
 
@@ -1452,7 +1454,7 @@ msgid "News item not found"
 msgstr "Пункт новин не знайдено"
 
 #: modules/News/Controller/Admin.php:34
-#: themes/huraga/html/layout_default.html.twig:263
+#: modules/Index/html_client/mod_index_dashboard.html.twig:240
 msgid "Announcements"
 msgstr "Оголошення"
 
@@ -1488,14 +1490,11 @@ msgstr "Тільки відкладені та невдалі замовленн
 #: modules/Client/html_admin/mod_client_manage.html.twig:32
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:60
-#: modules/Index/html_client/mod_index_dashboard.html.twig:131
+#: modules/Index/html_client/mod_index_dashboard.html.twig:97
 #: modules/Order/html_admin/mod_order_index.html.twig:7
 #: modules/Order/html_admin/mod_order_index.html.twig:159
 #: modules/Order/html_admin/mod_order_manage.html.twig:17
 #: modules/Order/html_admin/mod_order_new.html.twig:17
-#: modules/Order/html_client/mod_order_list.html.twig:9
-#: modules/Order/html_client/mod_order_list.html.twig:17
-#: modules/Order/html_client/mod_order_manage.html.twig:11
 #: themes/admin_default/html/mod_index_dashboard.html.twig:196
 #: themes/admin_default/html/mod_index_dashboard.html.twig:435
 #: themes/admin_default/html/mod_index_dashboard.html.twig:547
@@ -2113,7 +2112,7 @@ msgstr "Категорія бази знань не знайдена"
 #: modules/Support/html_admin/mod_support_settings.html.twig:21
 #: modules/Support/html_admin/mod_support_ticket.html.twig:17
 #: modules/Support/html_admin/mod_support_tickets.html.twig:17
-#: themes/huraga/html/partial_menu.html.twig:17
+#: themes/huraga/html/partial_menu.html.twig:26
 msgid "Support"
 msgstr "Підтримка"
 
@@ -2147,13 +2146,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:19
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:23
 #: modules/Support/html_admin/mod_support_settings.html.twig:104
-#: modules/Support/html_client/mod_support_kb_article.html.twig:8
-#: modules/Support/html_client/mod_support_kb_category.html.twig:7
 #: modules/Support/html_client/mod_support_kb_index.html.twig:3
-#: modules/Support/html_client/mod_support_kb_index.html.twig:20
-#: themes/huraga/html/layout_default.html.twig:274
-#: themes/huraga/html/layout_default.html.twig:280
-#: themes/huraga/html/partial_menu.html.twig:47
 msgid "Knowledge Base"
 msgstr ""
 
@@ -2248,7 +2241,7 @@ msgstr "Налаштування"
 #: modules/Email/html_admin/mod_email_template.html.twig:128
 #: modules/Formbuilder/html_admin/mod_formbuilder_manage.html.twig:88
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:157
-#: modules/Index/html_client/mod_index_dashboard.html.twig:86
+#: modules/Index/html_client/mod_index_dashboard.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:127
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:347
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:370
@@ -2284,8 +2277,8 @@ msgstr "Налаштування"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:241
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:62
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:107
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:97
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:199
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:105
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:193
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
@@ -2393,12 +2386,12 @@ msgstr "Користувач"
 #: modules/Embed/html_client/mod_embed_contact.html.twig:57
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:115
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
-#: modules/Order/html_client/mod_order_manage.html.twig:193
+#: modules/Order/html_client/mod_order_manage.html.twig:219
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:49
 #: modules/Support/html_admin/mod_support_tickets.html.twig:325
 #: modules/Support/html_admin/mod_support_tickets.html.twig:359
-#: modules/Support/html_client/mod_support_contact_us.html.twig:46
-#: modules/Support/html_client/mod_support_tickets.html.twig:107
+#: modules/Support/html_client/mod_support_contact_us.html.twig:39
+#: modules/Support/html_client/mod_support_tickets.html.twig:93
 msgid "Message"
 msgstr "Повідомлення"
 
@@ -2420,17 +2413,17 @@ msgstr "IP"
 #: modules/Client/html_admin/mod_client_manage.html.twig:295
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
 #: modules/Client/html_admin/mod_client_settings.html.twig:81
-#: modules/Client/html_client/mod_client_profile.html.twig:163
+#: modules/Client/html_client/mod_client_profile.html.twig:135
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:30
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:87
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:482
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:39
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:120
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
-#: modules/Page/html_client/mod_page_signup.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:177
+#: modules/Page/html_client/mod_page_signup.html.twig:100
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:155
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:157
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:25
 msgid "Country"
 msgstr "Країна"
@@ -2442,7 +2435,7 @@ msgstr "Країна"
 #: modules/Client/html_admin/mod_client_manage.html.twig:736
 #: modules/Client/html_admin/mod_client_manage.html.twig:769
 #: modules/Client/html_admin/mod_client_manage.html.twig:815
-#: modules/Client/html_client/mod_client_balance.html.twig:26
+#: modules/Client/html_client/mod_client_balance.html.twig:33
 #: modules/Email/html_admin/mod_email_history.html.twig:34
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:674
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:170
@@ -2496,13 +2489,13 @@ msgstr "Дата"
 #: modules/Product/html_admin/mod_product_promos.html.twig:97
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:101
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:21
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:34
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:89
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:223
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:74
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:120
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:91
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:96
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:92
 #: modules/Staff/html_admin/mod_staff_index.html.twig:57
 #: modules/Staff/html_admin/mod_staff_index.html.twig:150
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:54
@@ -2537,7 +2530,7 @@ msgstr "Ви впевнені?"
 #: modules/Client/html_admin/mod_client_manage.html.twig:750
 #: modules/Client/html_admin/mod_client_manage.html.twig:791
 #: modules/Client/html_admin/mod_client_manage.html.twig:838
-#: modules/Client/html_client/mod_client_balance.html.twig:40
+#: modules/Client/html_client/mod_client_balance.html.twig:47
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:105
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:62
@@ -2547,16 +2540,13 @@ msgstr "Ви впевнені?"
 #: modules/Extension/html_admin/mod_extension_index.html.twig:109
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:72
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:131
-#: modules/Index/html_client/mod_index_dashboard.html.twig:67
-#: modules/Index/html_client/mod_index_dashboard.html.twig:197
-#: modules/Index/html_client/mod_index_dashboard.html.twig:221
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:272
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:89
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:220
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:54
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:91
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:70
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:102
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:81
 #: modules/News/html_admin/mod_news_index.html.twig:80
 #: modules/Notification/html_admin/mod_notification_index.html.twig:55
@@ -2564,7 +2554,6 @@ msgstr "Ви впевнені?"
 #: modules/Order/html_admin/mod_order_manage.html.twig:557
 #: modules/Order/html_admin/mod_order_manage.html.twig:613
 #: modules/Order/html_admin/mod_order_manage.html.twig:668
-#: modules/Order/html_client/mod_order_list.html.twig:48
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:89
 #: modules/Product/html_admin/mod_product_addons.html.twig:75
 #: modules/Product/html_admin/mod_product_index.html.twig:88
@@ -2589,8 +2578,6 @@ msgstr "Ви впевнені?"
 #: modules/Support/html_admin/mod_support_settings.html.twig:173
 #: modules/Support/html_admin/mod_support_ticket.html.twig:254
 #: modules/Support/html_admin/mod_support_tickets.html.twig:277
-#: modules/Support/html_client/mod_support_ticket.html.twig:99
-#: modules/Support/html_client/mod_support_tickets.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:84
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:151
 #: themes/admin_default/html/mod_index_dashboard.html.twig:345
@@ -2622,10 +2609,10 @@ msgstr "Редагувати групу клієнтів"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:525
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:613
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:38
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:34
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:69
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:187
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:213
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:48
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:81
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:197
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:152
 #: modules/News/html_admin/mod_news_index.html.twig:35
 #: modules/News/html_admin/mod_news_index.html.twig:97
 #: modules/News/html_admin/mod_news_post.html.twig:34
@@ -2679,7 +2666,7 @@ msgstr "Фільтр клієнтів"
 #: modules/Client/html_admin/mod_client_manage.html.twig:810
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:87
-#: modules/Index/html_client/mod_index_dashboard.html.twig:92
+#: modules/Index/html_client/mod_index_dashboard.html.twig:59
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
@@ -2700,12 +2687,13 @@ msgstr "ID"
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:15
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:210
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:100
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:142
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:115
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:168
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:107
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:151
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:64
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:109
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:32
 #: modules/Order/html_admin/mod_order_index.html.twig:184
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:29
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
@@ -2721,7 +2709,7 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:185
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:233
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:276
-#: modules/Support/html_client/mod_support_contact_us.html.twig:25
+#: modules/Support/html_client/mod_support_contact_us.html.twig:27
 #: modules/System/html_admin/mod_system_settings.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
@@ -2743,15 +2731,17 @@ msgstr "Назва компанії"
 #: modules/Email/html_admin/mod_email_template.html.twig:19
 #: modules/Email/html_client/mod_email_email.html.twig:3
 #: modules/Embed/html_client/mod_embed_contact.html.twig:47
-#: modules/Index/html_client/mod_index_dashboard.html.twig:94
+#: modules/Index/html_client/mod_index_dashboard.html.twig:61
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:413
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:120
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:135
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:80
 #: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
+#: modules/Page/html_client/mod_page_login.html.twig:23
+#: modules/Page/html_client/mod_page_password-reset.html.twig:24
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:180
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:127
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:133
 #: modules/Staff/html_admin/mod_staff_index.html.twig:31
 #: modules/Staff/html_admin/mod_staff_index.html.twig:96
 #: modules/Staff/html_admin/mod_staff_login.html.twig:21
@@ -2766,9 +2756,10 @@ msgstr "Назва компанії"
 #: modules/Support/html_admin/mod_support_settings.html.twig:137
 #: modules/Support/html_admin/mod_support_tickets.html.twig:347
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
-#: modules/Support/html_client/mod_support_contact_us.html.twig:32
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
+#: modules/Support/html_client/mod_support_contact_us.html.twig:31
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
 #: modules/System/html_admin/mod_system_settings.html.twig:63
+#: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
 msgstr "Електронна пошта"
 
@@ -2795,7 +2786,6 @@ msgstr "Група"
 #: modules/Client/html_admin/mod_client_manage.html.twig:814
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:45
 #: modules/Email/html_admin/mod_email_settings.html.twig:194
-#: modules/Index/html_client/mod_index_dashboard.html.twig:50
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:214
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:68
@@ -2808,6 +2798,7 @@ msgstr "Група"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:81
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:41
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:167
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:92
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:45
 #: modules/News/html_admin/mod_news_index.html.twig:103
 #: modules/News/html_admin/mod_news_post.html.twig:65
@@ -2817,7 +2808,7 @@ msgstr "Група"
 #: modules/Order/html_admin/mod_order_manage.html.twig:520
 #: modules/Order/html_admin/mod_order_manage.html.twig:572
 #: modules/Order/html_admin/mod_order_manage.html.twig:630
-#: modules/Order/html_client/mod_order_list.html.twig:28
+#: modules/Order/html_client/mod_order_list.html.twig:34
 #: modules/Order/html_client/mod_order_manage.html.twig:139
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:33
 #: modules/Product/html_admin/mod_product_addons.html.twig:47
@@ -2841,10 +2832,9 @@ msgstr "Група"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:219
 #: modules/Support/html_admin/mod_support_tickets.html.twig:64
 #: modules/Support/html_admin/mod_support_tickets.html.twig:209
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:45
-#: modules/Support/html_client/mod_support_ticket.html.twig:40
-#: modules/Support/html_client/mod_support_ticket.html.twig:82
-#: modules/Support/html_client/mod_support_tickets.html.twig:31
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:37
+#: modules/Support/html_client/mod_support_ticket.html.twig:47
+#: modules/Support/html_client/mod_support_tickets.html.twig:35
 msgid "Status"
 msgstr "Статус"
 
@@ -2858,7 +2848,7 @@ msgstr "Всі"
 #: modules/Client/html_admin/mod_client_manage.html.twig:168
 #: modules/Client/html_admin/mod_client_settings.html.twig:108
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:138
-#: modules/Index/html_client/mod_index_dashboard.html.twig:143
+#: modules/Index/html_client/mod_index_dashboard.html.twig:109
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:122
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:136
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:70
@@ -2900,7 +2890,6 @@ msgstr "Скасовано"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:74
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:62
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:27
 msgid "Registration date"
 msgstr "Дата реєстрації"
 
@@ -2918,30 +2907,31 @@ msgstr "Фільтр"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:114
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:83
 #: modules/Order/html_admin/mod_order_index.html.twig:89
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:23
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:85
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:83
 #: modules/Support/html_admin/mod_support_tickets.html.twig:106
 msgid "Reset"
 msgstr "Скинути"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:162
+#: modules/Client/html_client/mod_client_balance.html.twig:53
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:110
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:136
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:160
-#: modules/Index/html_client/mod_index_dashboard.html.twig:115
-#: modules/Index/html_client/mod_index_dashboard.html.twig:141
-#: modules/Index/html_client/mod_index_dashboard.html.twig:165
+#: modules/Index/html_client/mod_index_dashboard.html.twig:81
+#: modules/Index/html_client/mod_index_dashboard.html.twig:107
+#: modules/Index/html_client/mod_index_dashboard.html.twig:130
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:172
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:92
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:586
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:615
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:142
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:37
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:72
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:189
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:232
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:215
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:260
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:51
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:199
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:154
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:190
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -2972,14 +2962,15 @@ msgstr "Нова група"
 #: modules/Client/html_admin/mod_client_settings.html.twig:76
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:383
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:445
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:97
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:147
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:112
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:173
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:74
-#: modules/Page/html_client/mod_page_signup.html.twig:60
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:104
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:156
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:61
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:113
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
+#: modules/Page/html_client/mod_page_signup.html.twig:49
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:186
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:134
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:138
 msgid "Company"
 msgstr "Компанія"
 
@@ -2992,7 +2983,7 @@ msgstr "Експорт клієнтів"
 #: modules/Client/html_admin/mod_client_manage.html.twig:282
 #: modules/Client/html_admin/mod_client_settings.html.twig:84
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:192
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:141
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:145
 msgid "Address Line 1"
 msgstr "Адреса"
 
@@ -3000,17 +2991,18 @@ msgstr "Адреса"
 #: modules/Client/html_admin/mod_client_manage.html.twig:288
 #: modules/Client/html_admin/mod_client_settings.html.twig:85
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:198
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:148
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:150
 msgid "Address Line 2"
 msgstr "Додаткова адреса"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:355
 #: modules/Client/html_admin/mod_client_manage.html.twig:308
 #: modules/Client/html_admin/mod_client_settings.html.twig:82
-#: modules/Client/html_client/mod_client_profile.html.twig:155
+#: modules/Client/html_client/mod_client_profile.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
-#: modules/Page/html_client/mod_page_signup.html.twig:115
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:166
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:169
+#: modules/Page/html_client/mod_page_signup.html.twig:92
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
 msgid "City"
@@ -3019,12 +3011,13 @@ msgstr "Місто"
 #: modules/Client/html_admin/mod_client_index.html.twig:361
 #: modules/Client/html_admin/mod_client_manage.html.twig:301
 #: modules/Client/html_admin/mod_client_settings.html.twig:83
-#: modules/Client/html_client/mod_client_profile.html.twig:176
+#: modules/Client/html_client/mod_client_profile.html.twig:147
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:126
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:172
-#: modules/Page/html_client/mod_page_signup.html.twig:140
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:192
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
+#: modules/Page/html_client/mod_page_signup.html.twig:112
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
 msgid "State"
@@ -3040,10 +3033,10 @@ msgstr "Поштовий індекс"
 #: modules/Client/html_admin/mod_client_settings.html.twig:87
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:488
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:115
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:169
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:130
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:195
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:122
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:76
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:131
 #: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
@@ -3052,8 +3045,8 @@ msgstr "Телефон"
 #: modules/Client/html_admin/mod_client_index.html.twig:391
 #: modules/Client/html_admin/mod_client_manage.html.twig:98
 #: modules/Client/html_admin/mod_client_manage.html.twig:346
-#: modules/Client/html_client/mod_client_profile.html.twig:34
-#: modules/Client/html_client/mod_client_profile.html.twig:272
+#: modules/Client/html_client/mod_client_profile.html.twig:33
+#: modules/Client/html_client/mod_client_profile.html.twig:215
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
@@ -3065,17 +3058,17 @@ msgstr "Валюта"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:397
 #: modules/Client/html_admin/mod_client_manage.html.twig:405
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:23
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:108
-#: modules/Page/html_client/mod_page_login.html.twig:35
-#: modules/Page/html_client/mod_page_login.html.twig:37
-#: modules/Page/html_client/mod_page_signup.html.twig:184
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:33
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:37
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:128
+#: modules/Page/html_client/mod_page_login.html.twig:27
+#: modules/Page/html_client/mod_page_signup.html.twig:152
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:121
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:33
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:9
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:44
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:82
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:12
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:52
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:91
 #: modules/Staff/html_admin/mod_staff_index.html.twig:103
 #: modules/Staff/html_admin/mod_staff_login.html.twig:27
 #: modules/Staff/html_admin/mod_staff_login.html.twig:54
@@ -3119,16 +3112,16 @@ msgid "Clients logins history"
 msgstr "Історія входу клієнтів"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:26
-#: modules/Client/html_client/mod_client_profile.html.twig:5
+#: modules/Client/html_client/mod_client_profile.html.twig:6
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:78
-#: modules/Index/html_client/mod_index_dashboard.html.twig:83
+#: modules/Index/html_client/mod_index_dashboard.html.twig:51
+#: modules/Index/html_client/mod_index_dashboard.html.twig:210
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:5
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:37
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
 #: themes/admin_default/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:111
-#: themes/huraga/html/layout_default.html.twig:222
+#: themes/huraga/html/layout_default.html.twig:120
 msgid "Profile"
 msgstr "Профіль"
 
@@ -3146,7 +3139,7 @@ msgstr "Редагувати"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:38
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:150
-#: modules/Index/html_client/mod_index_dashboard.html.twig:155
+#: modules/Index/html_client/mod_index_dashboard.html.twig:121
 #: modules/Support/html_admin/mod_support_ticket.html.twig:20
 #: modules/Support/html_admin/mod_support_tickets.html.twig:19
 #: modules/Support/html_admin/mod_support_tickets.html.twig:177
@@ -3167,9 +3160,8 @@ msgstr "Вхід"
 #: modules/Client/html_admin/mod_client_manage.html.twig:47
 #: modules/Email/html_client/mod_email_email.html.twig:6
 #: modules/Email/html_client/mod_email_index.html.twig:3
-#: modules/Email/html_client/mod_email_index.html.twig:4
-#: modules/Email/html_client/mod_email_index.html.twig:14
-#: themes/huraga/html/partial_menu.html.twig:35
+#: modules/Email/html_client/mod_email_index.html.twig:5
+#: modules/Email/html_client/mod_email_index.html.twig:17
 msgid "Emails"
 msgstr "Сповіщення"
 
@@ -3191,7 +3183,7 @@ msgstr "Баланс рахунку"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:340
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:34
 #: modules/Order/html_admin/mod_order_manage.html.twig:367
-#: modules/Order/html_client/mod_order_manage.html.twig:278
+#: modules/Order/html_client/mod_order_manage.html.twig:257
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 #: modules/Support/html_admin/mod_support_tickets.html.twig:390
 #: modules/System/html_admin/mod_system_settings.html.twig:224
@@ -3199,6 +3191,7 @@ msgid "Notes"
 msgstr "Примітки"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
+#: modules/Client/html_client/mod_client_profile.html.twig:31
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:10
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:88
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:96
@@ -3206,20 +3199,22 @@ msgid "API Key"
 msgstr "Ключ API"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:125
-#: modules/Client/html_client/mod_client_profile.html.twig:139
+#: modules/Client/html_client/mod_client_profile.html.twig:121
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:401
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:463
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:110
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:162
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:117
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:171
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:72
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:125
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:188
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
-#: modules/Page/html_client/mod_page_signup.html.twig:95
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:144
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
+#: modules/Page/html_client/mod_page_signup.html.twig:76
 #: modules/System/html_admin/mod_system_settings.html.twig:75
 msgid "Address"
 msgstr "Адреса"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:132
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:37
 msgid "Registered on"
 msgstr "Зареєстровано на"
 
@@ -3236,8 +3231,8 @@ msgstr "Увійти як клієнт"
 #: modules/Email/html_admin/mod_email_details.html.twig:64
 #: modules/Email/html_admin/mod_email_settings.html.twig:113
 #: modules/Email/html_admin/mod_email_settings.html.twig:115
-#: modules/Email/html_client/mod_email_email.html.twig:36
-#: modules/Email/html_client/mod_email_index.html.twig:45
+#: modules/Email/html_client/mod_email_email.html.twig:26
+#: modules/Email/html_client/mod_email_index.html.twig:63
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:713
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
@@ -3426,8 +3421,8 @@ msgid "Company details"
 msgstr "Інформація про компанію"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:269
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:152
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:161
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:117
 msgid "Company number"
 msgstr "Номер компанії"
 
@@ -3440,7 +3435,7 @@ msgid "Address and contact details"
 msgstr "Контактна інформація"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:330
-#: modules/Client/html_client/mod_client_profile.html.twig:193
+#: modules/Client/html_client/mod_client_profile.html.twig:155
 msgid "Passport number"
 msgstr "Номер паспорта"
 
@@ -3466,14 +3461,14 @@ msgid "Signed up time"
 msgstr "За часом реєстрації"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:397
-#: modules/Client/html_client/mod_client_profile.html.twig:214
+#: modules/Client/html_client/mod_client_profile.html.twig:169
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:53
 msgid "Update profile"
 msgstr "Оновити профіль"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:401
 #: modules/Client/html_admin/mod_client_manage.html.twig:419
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:97
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:106
 msgid "Change password"
 msgstr "Змінити пароль"
 
@@ -3482,8 +3477,7 @@ msgid "Password changed"
 msgstr "Пароль змінено"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:412
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:116
-#: modules/Page/html_client/mod_page_signup.html.twig:192
+#: modules/Page/html_client/mod_page_signup.html.twig:158
 msgid "Password confirm"
 msgstr "Підтвердження паролю"
 
@@ -3512,7 +3506,7 @@ msgstr "Замовлення клієнта"
 #: modules/Client/html_admin/mod_client_manage.html.twig:656
 #: modules/Client/html_admin/mod_client_manage.html.twig:697
 #: modules/Client/html_admin/mod_client_manage.html.twig:813
-#: modules/Client/html_client/mod_client_balance.html.twig:27
+#: modules/Client/html_client/mod_client_balance.html.twig:34
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:204
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:672
@@ -3536,13 +3530,11 @@ msgstr "Сума"
 #: modules/Order/html_admin/mod_order_manage.html.twig:336
 #: modules/Order/html_admin/mod_order_new.html.twig:54
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:153
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:49
 msgid "Period"
 msgstr "Період"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:507
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:129
-#: modules/Index/html_client/mod_index_dashboard.html.twig:134
 #: modules/Order/html_admin/mod_order_index.html.twig:166
 msgid "New order"
 msgstr "Нове замовлення"
@@ -3569,15 +3561,12 @@ msgstr "Звернення клієнта"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:593
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:44
-#: modules/Index/html_client/mod_index_dashboard.html.twig:49
 #: modules/Order/html_admin/mod_order_manage.html.twig:628
-#: modules/Order/html_client/mod_order_manage.html.twig:179
-#: modules/Order/html_client/mod_order_manage.html.twig:218
-#: modules/Order/html_client/mod_order_manage.html.twig:264
-#: modules/Support/html_client/mod_support_ticket.html.twig:35
-#: modules/Support/html_client/mod_support_ticket.html.twig:81
-#: modules/Support/html_client/mod_support_tickets.html.twig:30
-#: modules/Support/html_client/mod_support_tickets.html.twig:93
+#: modules/Order/html_client/mod_order_manage.html.twig:178
+#: modules/Order/html_client/mod_order_manage.html.twig:211
+#: modules/Order/html_client/mod_order_manage.html.twig:245
+#: modules/Support/html_client/mod_support_ticket.html.twig:42
+#: modules/Support/html_client/mod_support_tickets.html.twig:34
 msgid "Help desk"
 msgstr "Підтримка"
 
@@ -3588,14 +3577,13 @@ msgstr "Підтримка"
 #: modules/Email/html_admin/mod_email_settings.html.twig:165
 #: modules/Email/html_admin/mod_email_settings.html.twig:191
 #: modules/Embed/html_client/mod_embed_contact.html.twig:52
-#: modules/Index/html_client/mod_index_dashboard.html.twig:48
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:51
 #: modules/Order/html_admin/mod_order_manage.html.twig:629
-#: modules/Order/html_client/mod_order_manage.html.twig:186
-#: modules/Order/html_client/mod_order_manage.html.twig:225
-#: modules/Order/html_client/mod_order_manage.html.twig:257
+#: modules/Order/html_client/mod_order_manage.html.twig:182
+#: modules/Order/html_client/mod_order_manage.html.twig:215
+#: modules/Order/html_client/mod_order_manage.html.twig:249
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:48
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:123
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:98
@@ -3604,11 +3592,10 @@ msgstr "Підтримка"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:208
 #: modules/Support/html_admin/mod_support_tickets.html.twig:319
 #: modules/Support/html_admin/mod_support_tickets.html.twig:353
-#: modules/Support/html_client/mod_support_contact_us.html.twig:39
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:30
-#: modules/Support/html_client/mod_support_ticket.html.twig:80
-#: modules/Support/html_client/mod_support_tickets.html.twig:29
-#: modules/Support/html_client/mod_support_tickets.html.twig:100
+#: modules/Support/html_client/mod_support_contact_us.html.twig:35
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
+#: modules/Support/html_client/mod_support_tickets.html.twig:33
+#: modules/Support/html_client/mod_support_tickets.html.twig:89
 msgid "Subject"
 msgstr "Тема"
 
@@ -3622,7 +3609,7 @@ msgstr "Історія платежів"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:657
 #: modules/Client/html_admin/mod_client_manage.html.twig:705
-#: modules/Client/html_client/mod_client_balance.html.twig:25
+#: modules/Client/html_client/mod_client_balance.html.twig:32
 #: modules/Extension/html_admin/mod_extension_index.html.twig:42
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:174
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:75
@@ -3665,6 +3652,8 @@ msgstr "Тема електронного листа"
 #: modules/Email/html_admin/mod_email_details.html.twig:37
 #: modules/Email/html_admin/mod_email_history.html.twig:31
 #: modules/Email/html_admin/mod_email_settings.html.twig:192
+#: modules/Email/html_client/mod_email_email.html.twig:19
+#: modules/Email/html_client/mod_email_index.html.twig:53
 msgid "To"
 msgstr "До"
 
@@ -3724,22 +3713,25 @@ msgid "Required fields"
 msgstr "Обов'язкові поля"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:75
-#: modules/Client/html_client/mod_client_profile.html.twig:70
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:63
-#: modules/Page/html_client/mod_page_signup.html.twig:49
+#: modules/Client/html_client/mod_client_profile.html.twig:58
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:78
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:82
+#: modules/Page/html_client/mod_page_signup.html.twig:35
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:174
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:120
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:126
 msgid "Last Name"
 msgstr "Прізвище"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:77
-#: modules/Client/html_client/mod_client_profile.html.twig:86
+#: modules/Client/html_client/mod_client_profile.html.twig:75
+#: modules/Page/html_client/mod_page_signup.html.twig:64
 msgid "Gender"
 msgstr "Стать"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:78
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:84
-#: modules/Page/html_client/mod_page_signup.html.twig:70
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:102
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:104
+#: modules/Page/html_client/mod_page_signup.html.twig:57
 msgid "Birthday"
 msgstr "День народження"
 
@@ -3762,22 +3754,18 @@ msgstr "Назва поля"
 
 #: modules/Client/html_client/mod_client_balance.html.twig:5
 #: modules/Client/html_client/mod_client_balance.html.twig:6
-#: modules/Client/html_client/mod_client_balance.html.twig:17
-msgid "Payment history"
-msgstr "Історія платежів"
-
 #: modules/Client/html_client/mod_client_balance.html.twig:18
-msgid "Here you can track what you have been charged for and add more funds to your account"
-msgstr "Тут Ви можете відстежити поповнення за Вашим рахунком та додати більше коштів на свій рахунок"
+#: themes/huraga/html/partial_menu.html.twig:62
+msgid "Wallet"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_balance.html.twig:46
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:162
-msgid "Total:"
-msgstr "Всього:"
+#: modules/Client/html_client/mod_client_balance.html.twig:19
+msgid "Here you can manage and track your account balance"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_balance.html.twig:61
-msgid "Add funds!"
-msgstr "Поповнити!"
+#: modules/Client/html_client/mod_client_balance.html.twig:24
+msgid "Add fund"
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:3
 msgid "Profile details"
@@ -3787,211 +3775,199 @@ msgstr "Деталі профілю"
 msgid "User profile settings"
 msgstr "Налаштування профілю користувача"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:24
+#: modules/Client/html_client/mod_client_profile.html.twig:13
+msgid "You must verify your email address before you may access our services."
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:17
 msgid "Verification email has been resent"
 msgstr "Підтвердження надіслано на email"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:24
+#: modules/Client/html_client/mod_client_profile.html.twig:17
 msgid "Resend verification email"
 msgstr "Повторно надіслати лист з підтвердженням"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:31
+#: modules/Client/html_client/mod_client_profile.html.twig:27
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:33
 #: modules/Order/html_admin/mod_order_manage.html.twig:38
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:6
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:9
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:7
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:8
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:16
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:9
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:24
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:6
 msgid "Details"
 msgstr "Деталі"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:32
-#: modules/Client/html_client/mod_client_profile.html.twig:221
-#: modules/Client/html_client/mod_client_profile.html.twig:245
+#: modules/Client/html_client/mod_client_profile.html.twig:29
+#: modules/Client/html_client/mod_client_profile.html.twig:173
+#: modules/Client/html_client/mod_client_profile.html.twig:192
+#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:17
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:81
 msgid "Change Password"
 msgstr "Змінити пароль"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:33
-#: modules/Client/html_client/mod_client_profile.html.twig:251
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:13
-msgid "API key"
-msgstr "Ключ API"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:41
+#: modules/Client/html_client/mod_client_profile.html.twig:38
 msgid "Update details"
 msgstr "Оновити деталі"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:42
+#: modules/Client/html_client/mod_client_profile.html.twig:39
 msgid "Keep your personal data up to date."
 msgstr "Ваші особисті дані в актуальному стані."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "Please register with"
-msgstr "Зареєструйтеся через"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "at "
-msgstr "на "
-
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "to change your profile image. Gravatar image updates may not appear immediately."
-msgstr "щоб змінити Ваше зображення профілю."
+#: modules/Client/html_client/mod_client_profile.html.twig:49
+msgid "To change your avatar visit"
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:54
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:16
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:46
-#: modules/Page/html_client/mod_page_login.html.twig:28
-#: modules/Page/html_client/mod_page_password-reset.html.twig:30
-#: modules/Page/html_client/mod_page_signup.html.twig:31
-msgid "Email Address"
-msgstr "Адреса електронної пошти"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:62
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:54
-#: modules/Page/html_client/mod_page_signup.html.twig:39
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:67
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:71
+#: modules/Page/html_client/mod_page_signup.html.twig:28
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:168
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:113
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:121
 msgid "First Name"
 msgstr "Ім’я"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:99
+#: modules/Client/html_client/mod_client_profile.html.twig:64
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:29
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:57
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:61
+#: modules/Page/html_client/mod_page_signup.html.twig:42
+msgid "Email Address"
+msgstr "Адреса електронної пошти"
+
+#: modules/Client/html_client/mod_client_profile.html.twig:95
 msgid "Company Name"
 msgstr "Назва компанії"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:107
+#: modules/Client/html_client/mod_client_profile.html.twig:101
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:389
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:451
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:157
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:183
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:166
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:121
 msgid "Company VAT"
 msgstr "Номер ПДВ компанії"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:115
+#: modules/Client/html_client/mod_client_profile.html.twig:105
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:395
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:457
 msgid "Company Number"
 msgstr "Номер компанії"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:123
+#: modules/Client/html_client/mod_client_profile.html.twig:111
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:228
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:183
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:182
 msgid "Phone Country Code"
 msgstr "Код країни телефону"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:131
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:193
-#: modules/Page/html_client/mod_page_signup.html.twig:161
+#: modules/Client/html_client/mod_client_profile.html.twig:115
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:214
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:220
+#: modules/Page/html_client/mod_page_signup.html.twig:128
 msgid "Phone Number"
 msgstr "Номер телефону"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:147
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
-#: modules/Page/html_client/mod_page_signup.html.twig:105
+#: modules/Client/html_client/mod_client_profile.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:155
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:158
+#: modules/Page/html_client/mod_page_signup.html.twig:84
 msgid "Address 2"
 msgstr "Додаткова адреса"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:166
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:160
-#: modules/Page/html_client/mod_page_signup.html.twig:128
+#: modules/Client/html_client/mod_client_profile.html.twig:137
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:180
+#: modules/Page/html_client/mod_page_signup.html.twig:102
 msgid "-- Select country --"
 msgstr "Оберіть країну"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:185
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:183
-#: modules/Page/html_client/mod_page_signup.html.twig:151
+#: modules/Client/html_client/mod_client_profile.html.twig:151
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:203
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:206
+#: modules/Page/html_client/mod_page_signup.html.twig:120
 msgid "Zip/Postal Code"
 msgstr "Поштовий індекс"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:222
+#: modules/Client/html_client/mod_client_profile.html.twig:174
 msgid "Please enter new password two times in order avoid mistypes"
 msgstr "Будь ласка, введіть новий пароль два рази, щоб уникнути помилок"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:224
-#: modules/Staff/html_admin/mod_staff_profile.html.twig:60
-msgid "Password Changed"
-msgstr "Пароль змінено"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:227
+#: modules/Client/html_client/mod_client_profile.html.twig:178
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:63
 msgid "Current Password"
 msgstr "Поточний пароль"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:233
+#: modules/Client/html_client/mod_client_profile.html.twig:183
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:69
 msgid "New Password"
 msgstr "Новий пароль"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:239
+#: modules/Client/html_client/mod_client_profile.html.twig:188
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:75
 msgid "Confirm Password"
 msgstr "Підтвердження паролю"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:252
+#: modules/Client/html_client/mod_client_profile.html.twig:197
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:89
 msgid "API key allows integration with external applications. You will need this key for authentication."
 msgstr "Ключ API дозволяє інтегрувати із зовнішніми програмами. Цей ключ буде необхідний для автентифікації."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:258
-msgid "Warning! Resetting the key will break existing applications using it!"
-msgstr "Увага! Скидання ключа порушить наявні інтеграції!"
+#: modules/Client/html_client/mod_client_profile.html.twig:203
+msgid "Warning!"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:261
+#: modules/Client/html_client/mod_client_profile.html.twig:203
+msgid "Resetting the key will break existing applications using it!"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:207
 msgid "Your API key"
 msgstr "Ваш API ключ"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:266
-msgid "Reset key"
-msgstr "Скинути ключ"
+#: modules/Client/html_client/mod_client_profile.html.twig:211
+msgid "Generate a new key"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:273
+#: modules/Client/html_client/mod_client_profile.html.twig:216
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and can not be changed."
 msgstr "Валюта Ваших платежів буде встановлена після першого замовлення і Ви не зможете її змінити."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:276
+#: modules/Client/html_client/mod_client_profile.html.twig:218
 msgid "Your profile currency is"
 msgstr "Ваша валюта"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:277
-msgid "Create new client profile if you want to manage your money in other currency"
-msgstr "Створити новий профіль клієнта, якщо ви хочете керувати своїми грошима в іншій валюті"
+#: modules/Client/html_client/mod_client_profile.html.twig:219
+msgid "Create new client profile if you want to manage your money in other currency."
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:222
+msgid "You do not yet have a currency associated with your profile. You can select the correct one when making your first order."
+msgstr ""
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:3
 msgid "Set new Password"
 msgstr "Встановити новий пароль"
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:20
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:43
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:32
 msgid "Set new password"
 msgstr "Встановити новий пароль"
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:31
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:25
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:26
 msgid "New password"
 msgstr "Новий пароль"
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:36
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:38
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:30
 msgid "Repeat new password"
 msgstr "Повторіть новий пароль"
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:54
-msgid "Sign Up"
-msgstr "Зареєструватися"
-
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:58
-#: modules/Page/html_client/mod_page_login.html.twig:20
-#: modules/Page/html_client/mod_page_password-reset.html.twig:48
-#: modules/Page/html_client/mod_page_signup.html.twig:212
-#: modules/Staff/html_admin/mod_staff_login.html.twig:3
-#: themes/admin_default/html/error.html.twig:14
-#: themes/huraga/html/layout_default.html.twig:113
-#: themes/huraga/html/layout_default.html.twig:228
-msgid "Login"
-msgstr "Увійти"
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:34
+#: modules/Page/html_client/mod_page_password-reset.html.twig:30
+msgid "Back to login"
+msgstr ""
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
@@ -4185,8 +4161,9 @@ msgid "Slug"
 msgstr "Мітка"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:69
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:86
-#: modules/Support/html_client/mod_support_tickets.html.twig:50
+#: modules/Email/html_client/mod_email_index.html.twig:57
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:97
+#: modules/Support/html_client/mod_support_tickets.html.twig:52
 msgid "View"
 msgstr "Перегляд"
 
@@ -4255,52 +4232,52 @@ msgstr "Область клієнта"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
 #: themes/admin_default/html/layout_default.html.twig:148
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
-#: themes/huraga/html/layout_default.html.twig:100
-#: themes/huraga/html/layout_default.html.twig:200
-#: themes/huraga/html/partial_menu.html.twig:5
+#: themes/huraga/html/layout_default.html.twig:88
+#: themes/huraga/html/layout_default.html.twig:153
+#: themes/huraga/html/partial_menu.html.twig:8
 msgid "Dashboard"
 msgstr "Панель управління"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
 #: modules/Index/html_client/mod_index_dashboard.html.twig:10
-#: themes/huraga/html/layout_default.html.twig:198
+#: themes/huraga/html/layout_default.html.twig:150
 msgid "Home"
 msgstr "Головна"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:36
-#: modules/Index/html_client/mod_index_dashboard.html.twig:41
 msgid "Tickets waiting your reply"
 msgstr "Звернення, що очікують на Вашу відповідь"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:42
-#: modules/Index/html_client/mod_index_dashboard.html.twig:47
-#: modules/Support/html_client/mod_support_tickets.html.twig:28
+#: modules/Support/html_client/mod_support_tickets.html.twig:32
 msgid "Id"
 msgstr "Id"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:46
-#: modules/Index/html_client/mod_index_dashboard.html.twig:51
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:80
 msgid "Last Updated"
 msgstr "Останнє оновлення"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:47
-#: modules/Index/html_client/mod_index_dashboard.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:706
-#: modules/Support/html_client/mod_support_tickets.html.twig:33
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:52
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:85
+#: modules/Order/html_client/mod_order_list.html.twig:35
+#: modules/Order/html_client/mod_order_manage.html.twig:140
+#: modules/Support/html_client/mod_support_tickets.html.twig:37
 msgid "Actions"
 msgstr "Дії"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:57
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:212
-#: modules/Index/html_client/mod_index_dashboard.html.twig:62
-#: modules/Index/html_client/mod_index_dashboard.html.twig:217
+#: modules/Index/html_client/mod_index_dashboard.html.twig:37
+#: modules/Index/html_client/mod_index_dashboard.html.twig:156
+#: modules/Index/html_client/mod_index_dashboard.html.twig:188
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:113
 #: modules/Order/html_admin/mod_order_manage.html.twig:135
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:81
 #: modules/Support/html_admin/mod_support_tickets.html.twig:245
-#: modules/Support/html_client/mod_support_ticket.html.twig:95
-#: modules/Support/html_client/mod_support_tickets.html.twig:48
+#: modules/Support/html_client/mod_support_tickets.html.twig:49
 #: themes/admin_default/html/mod_index_dashboard.html.twig:335
 #: themes/admin_default/html/mod_index_dashboard.html.twig:498
 #: themes/admin_default/html/mod_index_dashboard.html.twig:525
@@ -4308,85 +4285,86 @@ msgid "ago"
 msgstr "тому"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:58
-#: modules/Index/html_client/mod_index_dashboard.html.twig:63
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:88
-#: modules/Support/html_client/mod_support_ticket.html.twig:133
-#: modules/Support/html_client/mod_support_tickets.html.twig:50
+#: modules/Index/html_client/mod_index_dashboard.html.twig:39
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:69
+#: modules/Support/html_client/mod_support_ticket.html.twig:29
+#: modules/Support/html_client/mod_support_tickets.html.twig:54
 msgid "Reply"
 msgstr "Відповісти"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:91
-#: modules/Index/html_client/mod_index_dashboard.html.twig:96
+#: modules/Index/html_client/mod_index_dashboard.html.twig:63
 msgid "Balance"
 msgstr "Баланс"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:104
-#: modules/Index/html_client/mod_index_dashboard.html.twig:109
+#: modules/Index/html_client/mod_index_dashboard.html.twig:76
 msgid "All Invoices"
 msgstr "Всі рахунки"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:112
-#: modules/Index/html_client/mod_index_dashboard.html.twig:117
+#: modules/Index/html_client/mod_index_dashboard.html.twig:83
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:144
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:210
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:24
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:64
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:38
 msgid "Paid"
 msgstr "Сплачено"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:114
-#: modules/Index/html_client/mod_index_dashboard.html.twig:119
+#: modules/Index/html_client/mod_index_dashboard.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:130
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:214
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:23
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:29
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:34
 msgid "Unpaid"
 msgstr "Не сплачено"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:130
-#: modules/Index/html_client/mod_index_dashboard.html.twig:135
+#: modules/Index/html_client/mod_index_dashboard.html.twig:102
 msgid "All orders"
 msgstr "Всі замовлення"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:140
-#: modules/Index/html_client/mod_index_dashboard.html.twig:145
+#: modules/Index/html_client/mod_index_dashboard.html.twig:111
 msgid "Expiring"
 msgstr "Expiring"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:153
-#: modules/Index/html_client/mod_index_dashboard.html.twig:158
+#: modules/Index/html_client/mod_index_dashboard.html.twig:124
+#: modules/Support/html_client/mod_support_tickets.html.twig:22
 msgid "New ticket"
 msgstr "Нове звернення"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:154
-#: modules/Index/html_client/mod_index_dashboard.html.twig:159
+#: modules/Index/html_client/mod_index_dashboard.html.twig:125
 msgid "All tickets"
 msgstr "Усі звернення"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:162
-#: modules/Index/html_client/mod_index_dashboard.html.twig:167
+#: modules/Index/html_client/mod_index_dashboard.html.twig:132
 msgid "Open"
 msgstr "Відкрито"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:164
-#: modules/Index/html_client/mod_index_dashboard.html.twig:169
+#: modules/Index/html_client/mod_index_dashboard.html.twig:134
 msgid "On Hold"
 msgstr "Очікує"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:176
-#: modules/Index/html_client/mod_index_dashboard.html.twig:181
+#: modules/Index/html_client/mod_index_dashboard.html.twig:144
 msgid "Recent orders"
 msgstr "Останні замовлення"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:204
-#: modules/Index/html_client/mod_index_dashboard.html.twig:209
 msgid "Recent emails"
 msgstr "Недавні листи"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:32
 #: modules/Email/html_admin/mod_email_history.html.twig:32
+#: modules/Email/html_client/mod_email_email.html.twig:18
+#: modules/Email/html_client/mod_email_index.html.twig:52
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:44
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:28
 msgid "From"
@@ -4401,8 +4379,8 @@ msgid "Email resent"
 msgstr "Email було надіслано повторно"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:55
-#: modules/Email/html_client/mod_email_email.html.twig:35
-#: modules/Email/html_client/mod_email_index.html.twig:44
+#: modules/Email/html_client/mod_email_email.html.twig:23
+#: modules/Email/html_client/mod_email_index.html.twig:60
 msgid "Resend"
 msgstr "Надіслати повторно"
 
@@ -4692,30 +4670,11 @@ msgstr "Приклади шаблонів листів"
 msgid "Email template playground. Use this tool to try rendering email templates."
 msgstr "Тестовий майданчик шаблону електронної пошти. Використовуйте цей інструмент, щоб спробувати відобразити шаблони електронних листів."
 
-#: modules/Email/html_client/mod_email_email.html.twig:19
-msgid "Back to emails list"
-msgstr "Назад до списку листів"
-
-#: modules/Email/html_client/mod_email_email.html.twig:27
-#: modules/Email/html_client/mod_email_index.html.twig:36
-msgid "From:"
-msgstr "Від:"
-
-#: modules/Email/html_client/mod_email_email.html.twig:28
-#: modules/Email/html_client/mod_email_index.html.twig:37
-msgid "To:"
-msgstr "До:"
-
-#: modules/Email/html_client/mod_email_email.html.twig:29
-#: modules/Email/html_client/mod_email_index.html.twig:38
-msgid "Created at:"
-msgstr "Дата створення:"
-
-#: modules/Email/html_client/mod_email_index.html.twig:15
-msgid "Here you can find all the emails we sent you. Please click on email topic in left column and it will be displayed in right side."
-msgstr "Тут ви можете знайти всі електронні листи, які ми вам надіслали. Натисніть на електронну пошту в лівій колонці, щоб показати її в правій частині."
-
 #: modules/Email/html_client/mod_email_index.html.twig:19
+msgid "Here you can find all the emails we've sent you."
+msgstr ""
+
+#: modules/Email/html_client/mod_email_index.html.twig:26
 msgid "There are no emails to display"
 msgstr "Немає листів для показу"
 
@@ -4728,7 +4687,7 @@ msgid "Enter the words above"
 msgstr "Введіть слова вище"
 
 #: modules/Embed/html_client/mod_embed_contact.html.twig:102
-#: modules/Support/html_client/mod_support_contact_us.html.twig:56
+#: modules/Support/html_client/mod_support_contact_us.html.twig:46
 msgid "Send"
 msgstr "Надіслати"
 
@@ -5020,6 +4979,96 @@ msgstr "Відмітка"
 msgid "Textarea"
 msgstr "Текстове поле"
 
+#: modules/Index/html_client/mod_index_dashboard.html.twig:100
+msgid "New orders"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:166
+msgid "No recent orders"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:176
+#: modules/Support/html_client/mod_support_ticket.html.twig:13
+#: modules/Support/html_client/mod_support_tickets.html.twig:5
+#: modules/Support/html_client/mod_support_tickets.html.twig:6
+#: modules/Support/html_client/mod_support_tickets.html.twig:9
+#: modules/Support/html_client/mod_support_tickets.html.twig:18
+msgid "Support tickets"
+msgstr "Звернення"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:198
+msgid "No recent support tickets"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:212
+msgid "You are logged out"
+msgstr "Ви вийшли з системи"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:214
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:43
+#: modules/Page/html_client/mod_page_login.html.twig:3
+#: modules/Page/html_client/mod_page_login.html.twig:30
+#: modules/Staff/html_admin/mod_staff_login.html.twig:3
+#: modules/Staff/html_admin/mod_staff_login.html.twig:70
+#: themes/admin_default/html/error.html.twig:14
+#: themes/huraga/html/layout_default.html.twig:101
+msgid "Login"
+msgstr "Увійти"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:242
+#: modules/Page/html_client/mod_page_signup.html.twig:5
+#: modules/Page/html_client/mod_page_signup.html.twig:165
+#: themes/huraga/html/layout_default.html.twig:127
+msgid "Sign up"
+msgstr "Зареєструватися"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:223
+#: modules/Index/html_client/mod_index_dashboard.html.twig:227
+#: modules/Order/html_admin/mod_order_manage.html.twig:75
+#: modules/Order/html_client/mod_order_index.html.twig:5
+#: modules/Order/html_client/mod_order_index.html.twig:12
+#: modules/Order/html_client/mod_order_manage.html.twig:35
+#: modules/Order/html_client/mod_order_product.html.twig:5
+#: themes/admin_default/html/partial_menu_top.html.twig:3
+#: themes/huraga/html/layout_default.html.twig:94
+#: themes/huraga/html/partial_menu.html.twig:17
+msgid "Order"
+msgstr "Замовити"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:225
+msgid "Products and services"
+msgstr "Продукти та послуги"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:236
+#: modules/News/html_admin/mod_news_index.html.twig:7
+#: modules/News/html_admin/mod_news_post.html.twig:19
+#: modules/News/html_client/mod_news_index.html.twig:3
+#: modules/News/html_client/mod_news_index.html.twig:7
+#: modules/News/html_client/mod_news_post.html.twig:8
+#: themes/huraga/html/partial_menu.html.twig:71
+msgid "News"
+msgstr "Новини"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:238
+msgid "Latest news and announcements"
+msgstr "Новини та оголошення"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:250
+#: modules/Index/html_client/mod_index_dashboard.html.twig:254
+#: modules/Support/html_client/mod_support_kb_article.html.twig:8
+#: modules/Support/html_client/mod_support_kb_category.html.twig:7
+#: modules/Support/html_client/mod_support_kb_index.html.twig:10
+#: modules/Support/html_client/mod_support_kb_index.html.twig:14
+#: modules/Support/html_client/mod_support_kb_index.html.twig:31
+#: themes/huraga/html/partial_menu.html.twig:80
+msgid "Knowledge base"
+msgstr "База знань"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:252
+msgid "Browse our KB for answers and FAQ"
+msgstr "Перегляньте нашу базу знань для відповідей на часті запитання"
+
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:28
 msgid "Payment gateway configuration"
 msgstr "Налаштування платіжного шлюзу"
@@ -5141,6 +5190,7 @@ msgstr "Номер"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:62
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -5200,9 +5250,10 @@ msgstr "Підготувати"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:28
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:165
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:52
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:73
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:7
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:57
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:74
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:18
 #: themes/admin_default/html/partial_menu_top.html.twig:7
 msgid "Invoice"
 msgstr "Рахунок"
@@ -5210,6 +5261,8 @@ msgstr "Рахунок"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:36
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:31
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:31
+#: modules/Order/html_client/mod_order_manage.html.twig:154
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:5
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:34
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
 msgid "Manage"
@@ -5273,16 +5326,14 @@ msgid "This should be the transaction ID you use to reconcile your bank statemen
 msgstr "Це має бути ID транзакції, який ви використовуєте для звірки вашої банківської виписки."
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:263
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:270
 #: modules/Order/html_admin/mod_order_manage.html.twig:248
 msgid "Cancel"
 msgstr "Скасувати"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:175
-#: modules/Order/html_client/mod_order_manage.html.twig:204
-#: modules/Order/html_client/mod_order_manage.html.twig:242
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:201
-#: modules/Support/html_client/mod_support_tickets.html.twig:114
+#: modules/Support/html_client/mod_support_tickets.html.twig:98
 msgid "Submit"
 msgstr "Надіслати"
 
@@ -5291,7 +5342,7 @@ msgid "Refund"
 msgstr "Повернення"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:196
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:56
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:62
 msgid "PDF"
 msgstr "PDF"
 
@@ -5353,7 +5404,7 @@ msgstr "Прізвище"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:494
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:222
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:176
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:175
 msgid "Zip"
 msgstr "Поштовий індекс"
 
@@ -5362,13 +5413,13 @@ msgid "Invoice items"
 msgstr "Елементи рахунку-фактури"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:526
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:188
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:214
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:198
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:153
 #: modules/Order/html_admin/mod_order_manage.html.twig:324
 #: modules/Order/html_admin/mod_order_manage.html.twig:457
-#: modules/Order/html_client/mod_order_list.html.twig:26
+#: modules/Order/html_client/mod_order_list.html.twig:32
 #: modules/Order/html_client/mod_order_manage.html.twig:136
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:14
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:17
 #: themes/admin_default/html/partial_pricing.html.twig:25
 #: themes/huraga/html/partial_pricing.html.twig:54
 msgid "Price"
@@ -5383,7 +5434,7 @@ msgid "Approve"
 msgstr "Затверджено"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:710
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:59
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:63
 msgid "Print"
 msgstr "Друкувати"
 
@@ -5406,8 +5457,8 @@ msgid "Auto invoice approval"
 msgstr "Автоматичне схвалення рахунку"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:62
-msgid "Proforma Invoicing / Sequential Invoice Numbering"
-msgstr "Виставлення проформи / послідовна нумерація рахунків-фактур"
+msgid "Invoicing / Sequential Invoice Numbering"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:64
 msgid "Remove unpaid invoices after days"
@@ -5418,8 +5469,8 @@ msgid "Set 0 to keep invoices forever."
 msgstr "Установіть 0, щоб зберігати рахунки-фактури назавжди."
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:71
-msgid "Proforma invoice prefix/series"
-msgstr "Префікс/серія рахунку-проформи"
+msgid "Invoice prefix/series"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:77
 msgid "Paid invoice prefix/series"
@@ -5620,8 +5671,8 @@ msgid "Transaction status on payment gateway"
 msgstr "Статус транзакції у платіжному шлюзі"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:90
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:130
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:155
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:137
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:96
 #: modules/Notification/html_admin/mod_notification_index.html.twig:78
 #: modules/Order/html_admin/mod_order_manage.html.twig:573
 #: modules/Support/html_admin/mod_support_ticket.html.twig:195
@@ -5732,19 +5783,19 @@ msgid "n/a"
 msgstr "Не вказано"
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:3
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:15
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
 msgid "Processing payment ..."
 msgstr "Обробка платежу..."
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:17
 msgid "Thank you for your patience."
 msgstr "Дякуємо за терпіння."
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:23
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:24
 msgid "Redirecting to payment gateway.."
 msgstr "Перенаправлення на платіжний шлюз.."
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:29
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:30
 msgid "Please click here to continue if this page does not redirect automatically in 5 seconds"
 msgstr "Будь ласка, натисніть тут, щоб продовжити, якщо ця сторінка не завантажиться автоматично через 5 секунд"
 
@@ -5753,158 +5804,138 @@ msgstr "Будь ласка, натисніть тут, щоб продовжи�
 msgid "Invoice management"
 msgstr "Управління рахунками"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:20
-msgid "List of invoices"
-msgstr "Список рахунків"
-
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:21
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:24
 msgid "All of your invoices can be found here. You can choose to see either paid or unpaid invoices by clicking corresponding button."
 msgstr "Усі Ваші рахунки можуть бути знайдені тут. Ви можете натиснути на рахунок, щоб дізнатись деталі."
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:70
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:73
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:86
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:49
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:82
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:76
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:31
 msgid "Invoice Date"
 msgstr "Дата рахунку"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:36
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:80
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:93
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:50
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:39
 msgid "Due Date"
 msgstr "Дата виконання"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:49
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:64
 msgid "Pay"
 msgstr "Оплата"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:71
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:83
 msgid "Paid Date"
 msgstr "Дата платежу"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:7
-msgid "Proforma invoice"
-msgstr "Попередній рахунок"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:52
-msgid "Receipt"
-msgstr "Квитанція"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:25
 msgid "Payment methods"
 msgstr "Методи оплати"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:26
-msgid "Please choose payment type and pay for your chosen products."
-msgstr "Будь ласка, виберіть тип оплати та оплатіть вибрані вами продукти."
+msgid "Please choose a payment type and pay for your chosen products."
+msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:315
-msgid "Pay with"
-msgstr "Сплатити за допомогою"
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:58
+msgid "You can print this invoice or export it to a PDF file by clicking on the corresponding button."
+msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:53
-msgid "You can print this invoice or export it to PDF file by clicking on corresponding button."
-msgstr "Ви можете надрукувати цей рахунок або експортувати його до PDF-файлу натиснувши на відповідну кнопку."
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:71
-msgid "Invoice Number"
-msgstr "Номер рахунку"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:87
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:100
-msgid "Invoice Status"
-msgstr "Статус рахунку"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:105
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:120
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:157
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:112
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:68
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:152
 msgid "VAT"
 msgstr "ПДВ"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:125
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:132
 msgid "Account"
 msgstr "Профіль"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:139
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:165
-msgid "Billing & Delivery address"
-msgstr "Адреса для виставлення рахунку та отримання"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:186
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:212
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:196
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:151
 msgid "#"
 msgstr "#"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:227
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:254
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:185
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "Знижка"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:258
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:265
 msgid "Pay now with a one-time payment"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:259
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:266
 msgid "Pay now and create a subscription"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:260
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:267
 msgid "Pay now"
 msgstr "Оплатити зараз"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:295
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:301
 msgid "The invoice you are paying and your chosen payment gateway both support subscription payments. What type of payment would you like to continue with?"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:298
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:304
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:309
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:310
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:315
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:302
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:308
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it. Optionally, you may choose a different payment gateway if you wish to pay using a subscription."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:321
+msgid "Pay with"
+msgstr "Сплатити за допомогою"
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:29
 msgid "Invoice number"
 msgstr "№ Рахунку"
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:140
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:47
+msgid "Invoice Status"
+msgstr "Статус рахунку"
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 #: modules/System/html_admin/mod_system_settings.html.twig:113
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Bank Name"
 msgstr "Назва банку"
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:145
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:95
 #: modules/System/html_admin/mod_system_settings.html.twig:119
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "BIC / SWIFT Code"
 msgstr "BIC / SWIFT код"
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:150
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:92
 msgid "Bank Account"
 msgstr "Банківський рахунок"
 
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:106
+msgid "Billing & Delivery address"
+msgstr "Адреса для виставлення рахунку та отримання"
+
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:3
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:4
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:10
 msgid "Thank you"
 msgstr "Дякуємо"
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:12
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
 msgid "Your payment is being processed right now. It can take up 5 minutes to complete."
 msgstr "Ваш платіж в обробці, це може зайняти до 5 хвилин."
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
 msgid "Payment for invoice received"
 msgstr "Отримано платіж за рахунком"
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:16
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr "Ви будете автоматично перенаправлені на сторінку рахунків через 5 хвилин."
 
@@ -6023,16 +6054,6 @@ msgstr "Повідомлення додано до поштової черги �
 msgid "Message was sent."
 msgstr "Повідомлення надіслано."
 
-#: modules/News/html_admin/mod_news_index.html.twig:7
-#: modules/News/html_admin/mod_news_post.html.twig:19
-#: modules/News/html_client/mod_news_index.html.twig:3
-#: modules/News/html_client/mod_news_index.html.twig:6
-#: modules/News/html_client/mod_news_post.html.twig:8
-#: themes/huraga/html/layout_default.html.twig:257
-#: themes/huraga/html/partial_menu.html.twig:53
-msgid "News"
-msgstr "Новини"
-
 #: modules/News/html_admin/mod_news_index.html.twig:12
 msgid "News and announcements"
 msgstr "Новини та оголошення"
@@ -6076,26 +6097,29 @@ msgstr "Пост створений"
 msgid "Last update"
 msgstr "Останнє оновлення"
 
-#: modules/News/html_client/mod_news_index.html.twig:14
+#: modules/News/html_client/mod_news_index.html.twig:16
 msgid "News & Announcements"
 msgstr "Новини та оголошення"
 
-#: modules/News/html_client/mod_news_index.html.twig:15
+#: modules/News/html_client/mod_news_index.html.twig:17
 msgid "Track our latest information."
 msgstr "Відстежуйте наші новини та оновлення."
 
-#: modules/News/html_client/mod_news_index.html.twig:32
-msgid "Read more ..."
-msgstr "Докладніше..."
+#: modules/News/html_client/mod_news_index.html.twig:36
+msgid "Continue reading"
+msgstr ""
 
-#: modules/News/html_client/mod_news_post.html.twig:34
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:72
-msgid "by "
-msgstr "за "
+#: modules/News/html_client/mod_news_index.html.twig:44
+msgid "No news or announcements"
+msgstr ""
+
+#: modules/News/html_client/mod_news_post.html.twig:33
+msgid "by"
+msgstr ""
 
 #: modules/News/html_client/mod_news_post.html.twig:43
-msgid "Back to list"
-msgstr "Назад до списку"
+msgid "Back to the list"
+msgstr ""
 
 #: modules/Notification/html_admin/mod_notification_index.html.twig:5
 msgid "Notifications center"
@@ -6125,7 +6149,7 @@ msgstr "Фільтр замовлень"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:41
 #: modules/Order/html_admin/mod_order_index.html.twig:295
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:13
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
 #: themes/admin_default/html/partial_menu_top.html.twig:15
 msgid "Product"
 msgstr "Продукт"
@@ -6172,7 +6196,7 @@ msgid "Service management"
 msgstr "Керування послугами"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:56
-#: modules/Order/html_client/mod_order_manage.html.twig:127
+#: modules/Order/html_client/mod_order_manage.html.twig:126
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:20
 #: modules/Product/html_admin/mod_product_addons.html.twig:5
 #: modules/Product/html_admin/mod_product_addons.html.twig:19
@@ -6185,20 +6209,8 @@ msgstr "Додатки"
 msgid "History"
 msgstr "Історія"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:75
-#: modules/Order/html_client/mod_order_index.html.twig:5
-#: modules/Order/html_client/mod_order_manage.html.twig:30
-#: modules/Order/html_client/mod_order_product.html.twig:5
-#: themes/admin_default/html/partial_menu_top.html.twig:3
-#: themes/huraga/html/layout_default.html.twig:105
-#: themes/huraga/html/layout_default.html.twig:239
-#: themes/huraga/html/layout_default.html.twig:245
-#: themes/huraga/html/partial_menu.html.twig:11
-msgid "Order"
-msgstr "Замовити"
-
 #: modules/Order/html_admin/mod_order_manage.html.twig:87
-#: modules/Order/html_client/mod_order_manage.html.twig:40
+#: modules/Order/html_client/mod_order_manage.html.twig:45
 msgid "Payment amount"
 msgstr "Сума"
 
@@ -6211,12 +6223,12 @@ msgid "Payment amount after discount"
 msgstr "Сума платежу після знижки"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:101
-#: modules/Order/html_client/mod_order_manage.html.twig:52
+#: modules/Order/html_client/mod_order_manage.html.twig:57
 msgid "Order status"
 msgstr "Статус замовлення"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:120
-#: modules/Order/html_client/mod_order_manage.html.twig:77
+#: modules/Order/html_client/mod_order_manage.html.twig:82
 msgid "Order notes"
 msgstr "Примітки до замовлення"
 
@@ -6245,7 +6257,7 @@ msgid "Order promo code"
 msgstr "Промо-код замовлення"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:156
-#: modules/Order/html_client/mod_order_manage.html.twig:84
+#: modules/Order/html_client/mod_order_manage.html.twig:89
 msgid "Active support tickets"
 msgstr "Активні звернення"
 
@@ -6309,7 +6321,7 @@ msgid "Changes status without performing action"
 msgstr "Зміна статусу без виконання дій"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:330
-#: modules/Order/html_client/mod_order_manage.html.twig:232
+#: modules/Order/html_client/mod_order_manage.html.twig:186
 msgid "Reason"
 msgstr "Причина"
 
@@ -6326,12 +6338,12 @@ msgid "Please be cautious and make sure you know what you are doing when editing
 msgstr "Будьте обережні та переконайтеся, що ви робите, коли редагуєте конфігурацію замовлення! FOSSBilling покладається на ці параметри, і якщо змінити деякі з них, ви можете отримати несподівані результати."
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:450
-#: modules/Order/html_client/mod_order_manage.html.twig:128
+#: modules/Order/html_client/mod_order_manage.html.twig:127
 msgid "Addons you have ordered with this service"
 msgstr "Додатки, які ви замовили за допомогою цієї послуги"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:455
-#: modules/Order/html_client/mod_order_list.html.twig:25
+#: modules/Order/html_client/mod_order_list.html.twig:31
 #: modules/Order/html_client/mod_order_manage.html.twig:135
 msgid "Product/Service"
 msgstr "Продукт/Послуга"
@@ -6342,7 +6354,7 @@ msgid "Billing Cycle"
 msgstr "Платіжний Цикл"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:458
-#: modules/Order/html_client/mod_order_list.html.twig:27
+#: modules/Order/html_client/mod_order_list.html.twig:33
 #: modules/Order/html_client/mod_order_manage.html.twig:138
 msgid "Next due date"
 msgstr "Наступна дата сплати"
@@ -6444,14 +6456,12 @@ msgstr "Днів після призупинення замовлення з п�
 msgid "Suspension reasons"
 msgstr "Причини призупинення"
 
-#: modules/Order/html_client/mod_order_index.html.twig:18
-#: modules/Order/html_client/mod_order_product.html.twig:18
-#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:5
-msgid "Select Product"
-msgstr "Виберіть продукт"
+#: modules/Order/html_client/mod_order_index.html.twig:23
+msgid "Order Product"
+msgstr ""
 
-#: modules/Order/html_client/mod_order_index.html.twig:19
-#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Order/html_client/mod_order_index.html.twig:24
+#: modules/Order/html_client/mod_order_product.html.twig:20
 msgid "Choose products we offer for selling"
 msgstr "Оберіть продукти для замовлення"
 
@@ -6459,87 +6469,100 @@ msgstr "Оберіть продукти для замовлення"
 msgid "My Products & Services"
 msgstr "Мої продукти та послуги"
 
-#: modules/Order/html_client/mod_order_list.html.twig:18
-msgid "All of your orders are displayed here. Click on any order to get full information about it."
-msgstr "Тут знаходяться всі ваші замовлення. Натисніть на будь-яке замовлення, щоб отримати повну інформацію про нього."
+#: modules/Order/html_client/mod_order_list.html.twig:9
+#: modules/Order/html_client/mod_order_list.html.twig:19
+#: modules/Order/html_client/mod_order_manage.html.twig:11
+#: themes/huraga/html/partial_menu.html.twig:35
+msgid "Services"
+msgstr "Послуги"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:23
+#: modules/Order/html_client/mod_order_list.html.twig:20
+msgid "All of your orders are displayed here. Click on any service to get full information about it."
+msgstr ""
+
+#: modules/Order/html_client/mod_order_list.html.twig:30
+#: modules/Support/html_admin/mod_support_tickets.html.twig:40
+msgid "Order ID"
+msgstr "ID замовлення"
+
+#: modules/Order/html_client/mod_order_list.html.twig:61
+msgid "No orders yet"
+msgstr ""
+
+#: modules/Order/html_client/mod_order_manage.html.twig:26
 msgid "Service details"
 msgstr "Сервісна інформація"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:24
+#: modules/Order/html_client/mod_order_manage.html.twig:27
 msgid "All information about your service"
 msgstr "Інформація про ваші послуги"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:35
+#: modules/Order/html_client/mod_order_manage.html.twig:40
 msgid "Product name"
 msgstr "Назва продукту"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:46
+#: modules/Order/html_client/mod_order_manage.html.twig:51
 msgid "Billing cycle"
 msgstr "Платіжний цикл"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:59
+#: modules/Order/html_client/mod_order_manage.html.twig:64
 msgid "Order created"
 msgstr "Замовлення створено"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:64
+#: modules/Order/html_client/mod_order_manage.html.twig:69
 msgid "Activated at"
 msgstr "Активований о"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:70
+#: modules/Order/html_client/mod_order_manage.html.twig:75
 msgid "Renewal date"
 msgstr "Дата поновлення"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:98
+#: modules/Order/html_client/mod_order_manage.html.twig:102
 msgid "Renew now"
 msgstr "Оновити зараз"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:102
+#: modules/Order/html_client/mod_order_manage.html.twig:105
 msgid "Request Upgrade"
 msgstr "Запросити оновлення"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:105
+#: modules/Order/html_client/mod_order_manage.html.twig:107
+#: modules/Order/html_client/mod_order_manage.html.twig:224
 msgid "Open ticket"
 msgstr "Відкрити запит"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:108
-msgid "Request Cancellation"
-msgstr "Запит на скасування"
+#: modules/Order/html_client/mod_order_manage.html.twig:109
+msgid "Request cancellation"
+msgstr ""
 
-#: modules/Order/html_client/mod_order_manage.html.twig:115
-msgid "Back to services"
-msgstr "Повернутися до послуг"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:172
-#: modules/Support/html_client/mod_support_tickets.html.twig:86
-msgid "Submit new support ticket"
-msgstr "Надіслати новий запит в службу підтримки"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:212
+#: modules/Order/html_client/mod_order_manage.html.twig:168
 msgid "Submit cancellation request"
 msgstr "Надіслати запит на скасування"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:227
-msgid "I would like to cancel"
-msgstr "Я хотів би скасувати"
+#: modules/Order/html_client/mod_order_manage.html.twig:191
+#: modules/Order/html_client/mod_order_manage.html.twig:262
+msgid "Request"
+msgstr "Запит"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:250
+#: modules/Order/html_client/mod_order_manage.html.twig:202
+msgid "Submit new support ticket"
+msgstr "Надіслати новий запит в службу підтримки"
+
+#: modules/Order/html_client/mod_order_manage.html.twig:235
 msgid "Submit upgrade request"
 msgstr "Надіслати запит на оновлення"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:259
-#: modules/Order/html_client/mod_order_manage.html.twig:280
-msgid "I would like to upgrade"
-msgstr "Я хотів би покращити"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:271
+#: modules/Order/html_client/mod_order_manage.html.twig:253
 msgid "Upgrade to"
 msgstr "Оновити до"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:290
-msgid "Request"
-msgstr "Запит"
+#: modules/Order/html_client/mod_order_manage.html.twig:258
+msgid "I would like to upgrade"
+msgstr "Я хотів би покращити"
+
+#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
+msgid "Select Product"
+msgstr "Виберіть продукт"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:5
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:22
@@ -6681,206 +6704,238 @@ msgstr "Додатки та додаткові функції"
 msgid "Setup:"
 msgstr "Установка:"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:4
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:6
 msgid "Cart"
 msgstr "Кошик"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:41
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:44
 msgid "Remove item"
 msgstr "Вилучити елемент"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:92
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:95
 msgid "setup"
 msgstr "установка"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:110
-msgid "Have coupon code?"
-msgstr "Маєте купон на знижку?"
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:113
+msgid "Have a coupon code?"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:118
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:121
 msgid "Enter code"
 msgstr "Введіть код"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:120
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:123
 msgid "Remove"
 msgstr "Видалити"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:122
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:125
 msgid "Apply"
 msgstr "Застосувати"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:143
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:138
 msgid "Subtotal:"
 msgstr "Підсумок:"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:147
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:142
 msgid "Discount:"
 msgstr "Знижка:"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:178
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:157
+msgid "Total:"
+msgstr "Всього:"
+
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:173
 msgid "Pay by"
 msgstr "Оплатити через"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:187
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:182
 msgid "Total amount will be deducted from account balance"
 msgstr "Загальна сума буде зрахована з балансу рахунку"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:189
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:184
 msgid "Checkout"
 msgstr "Перевірити"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:205
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:201
 msgid "Promo code was removed"
 msgstr "Промо-код видалено"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:211
 msgid "Are you sure you want to remove this item from cart?"
 msgstr "Ви впевнені, що хочете видалити цей продукт з кошика?"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:219
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:215
 msgid "Item was removed from cart"
 msgstr "Товар був видалений з кошика"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:5
+#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
 msgid "Items"
 msgstr "Предмети"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:5
-msgid "Login or Register"
-msgstr "Увійдіть або зареєструйтесь"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:11
+msgid "Login or Sign up"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:18
-#: modules/Page/html_client/mod_page_login.html.twig:30
-#: modules/Page/html_client/mod_page_password-reset.html.twig:32
-msgid "Your email address"
-msgstr "Ваша електронна адреса"
-
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:18
-#: modules/Page/html_client/mod_page_password-reset.html.twig:32
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
 msgid "You must fill in your email."
 msgstr "Ви повинні підтвердити свою електронну пошту."
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
 msgid "You must fill in your password."
 msgstr "Необхідно заповнити пароль."
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:32
-#: modules/Page/html_client/mod_page_login.html.twig:3
-#: modules/Page/html_client/mod_page_login.html.twig:42
-msgid "Log in"
-msgstr "Увійти"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:47
+#: modules/Page/html_client/mod_page_login.html.twig:36
+msgid "Create account"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:34
-msgid "Or register"
-msgstr "Або зареєструйтесь"
-
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
-#: modules/Page/html_client/mod_page_signup.html.twig:80
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:112
 msgid "You are"
 msgstr "Ви є"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:221
-#: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
-#: themes/huraga/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:229
-msgid "Register"
-msgstr "Реєстрація"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:134
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
+msgid "Confirm password"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:224
-msgid "Or Login"
-msgstr "Або увійдіть в систему"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:218
+msgid "Phone Code"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:70
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
+#: modules/Page/html_client/mod_page_signup.html.twig:170
+msgid "Already a user?"
+msgstr ""
+
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:46
 msgid "Payment"
 msgstr "Оплата"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:82
-msgid "Powered by FOSSBilling"
-msgstr "За підтримки FOSSBilling"
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:60
+msgid "Powered by"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:103
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:127
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:87
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:113
 msgid "You logged in successfully"
 msgstr "Ви успішно увійшли"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:143
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:131
 msgid "Product was added to shopping cart"
 msgstr "Продукт додано до кошика"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:155
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:143
 msgid "Promo code was applied for your order"
 msgstr "Промокод був застосований до вашого замовлення"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:4
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:6
 msgid "Product Configuration"
 msgstr "Конфігурація продукту"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:26
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:30
 msgid "FREE"
 msgstr "БЕЗКОШТОВНО"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:48
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:53
 msgid "Next"
 msgstr "Наступний"
 
 #: modules/Page/html_client/mod_page_about-us.html.twig:3
-#: modules/Page/html_client/mod_page_about-us.html.twig:16
+#: modules/Page/html_client/mod_page_about-us.html.twig:19
 msgid "About us"
 msgstr "Про нас"
 
-#: modules/Page/html_client/mod_page_about-us.html.twig:27
-#: modules/Page/html_client/mod_page_privacy-policy.html.twig:28
-#: modules/Page/html_client/mod_page_tos.html.twig:27
-msgid "Back to Homepage"
-msgstr "Повернутися на головну сторінку"
+#: modules/Page/html_client/mod_page_about-us.html.twig:9
+#: modules/System/html_admin/mod_system_settings.html.twig:43
+msgid "About"
+msgstr "Про"
 
-#: modules/Page/html_client/mod_page_login.html.twig:53
-#: modules/Page/html_client/mod_page_password-reset.html.twig:47
-#: modules/Page/html_client/mod_page_signup.html.twig:18
-msgid "Signup"
-msgstr "Зареєструватися"
+#: modules/Page/html_client/mod_page_login.html.twig:20
+msgid "Login to your account"
+msgstr ""
 
-#: modules/Page/html_client/mod_page_login.html.twig:57
+#: modules/Page/html_client/mod_page_login.html.twig:24
+#: modules/Page/html_client/mod_page_password-reset.html.twig:25
+#: modules/Staff/html_admin/mod_staff_login.html.twig:23
+#: modules/Staff/html_admin/mod_staff_login.html.twig:48
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
+msgid "Enter your email address"
+msgstr "Введіть свою електронну пошту"
+
+#: modules/Page/html_client/mod_page_login.html.twig:28
+#: modules/Staff/html_admin/mod_staff_login.html.twig:29
+#: modules/Staff/html_admin/mod_staff_login.html.twig:66
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
+msgid "Enter your password"
+msgstr "Введіть свій пароль"
+
+#: modules/Page/html_client/mod_page_login.html.twig:40
+#: modules/Page/html_client/mod_page_signup.html.twig:173
 msgid "Forgot password?"
 msgstr "Забули пароль?"
 
 #: modules/Page/html_client/mod_page_password-reset.html.twig:3
-#: modules/Page/html_client/mod_page_password-reset.html.twig:21
-#: modules/Page/html_client/mod_page_password-reset.html.twig:38
+#: modules/Page/html_client/mod_page_password-reset.html.twig:28
 msgid "Reset password"
 msgstr "Скинути пароль"
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:34
-msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
-msgstr "Введіть свою електронну пошту, щоб скинути пароль. Ви отримаєте новий пароль після підтвердження посилання."
+#: modules/Page/html_client/mod_page_password-reset.html.twig:20
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:3
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:16
+msgid "Reset your password"
+msgstr "Скинути пароль"
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:62
+#: modules/Page/html_client/mod_page_password-reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:18
 msgid "A password reset confirmation email will be sent to you if we found an account with that email address."
 msgstr "Вам буде надіслано електронний лист із підтвердженням зміни пароля, якщо ми знайдемо обліковий запис із цією електронною адресою."
 
+#: modules/Page/html_client/mod_page_password-reset.html.twig:26
+msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
+msgstr "Введіть свою електронну пошту, щоб скинути пароль. Ви отримаєте новий пароль після підтвердження посилання."
+
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:3
-#: modules/Page/html_client/mod_page_privacy-policy.html.twig:17
+#: modules/Page/html_client/mod_page_privacy-policy.html.twig:19
 msgid "Privacy Policy"
 msgstr "Політика конфіденційності"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:5
-#: modules/Page/html_client/mod_page_signup.html.twig:202
-msgid "Sign up"
-msgstr "Зареєструватися"
+#: modules/Page/html_client/mod_page_privacy-policy.html.twig:9
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:13
+msgid "Privacy"
+msgstr "Конфіденційність"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:26
-msgid "Account has been created"
-msgstr "Обліковий запис створено"
+#: modules/Page/html_client/mod_page_signup.html.twig:22
+msgid "Create a new account"
+msgstr ""
 
-#: modules/Page/html_client/mod_page_signup.html.twig:26
-msgid "Please check your mailbox and confirm email address"
-msgstr "Будь ласка, перевірте свою поштову скриньку для підтвердження адреси електронної пошти"
+#: modules/Page/html_client/mod_page_signup.html.twig:66
+msgid "Male"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:67
+msgid "Female"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:68
+msgid "Non-binary"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:69
+msgid "Other"
+msgstr ""
 
 #: modules/Page/html_client/mod_page_tos.html.twig:3
-#: modules/Page/html_client/mod_page_tos.html.twig:16
+#: modules/Page/html_client/mod_page_tos.html.twig:19
 msgid "Terms and Conditions"
 msgstr "Умови надання послуг"
+
+#: modules/Page/html_client/mod_page_tos.html.twig:9
+msgid "Terms"
+msgstr ""
 
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:5
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:21
@@ -6912,6 +6967,7 @@ msgstr "Налаштуйте платні послуги технічної пі
 #: modules/Support/html_admin/mod_support_tickets.html.twig:70
 #: modules/Support/html_admin/mod_support_tickets.html.twig:210
 #: modules/Support/html_admin/mod_support_tickets.html.twig:313
+#: modules/Support/html_client/mod_support_tickets.html.twig:85
 msgid "Helpdesk"
 msgstr "Helpdesk"
 
@@ -7329,7 +7385,7 @@ msgid "Add new field"
 msgstr "Додати нове поле"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:26
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:19
 msgid "Reset API key"
 msgstr "Скинути ключ API"
 
@@ -7345,9 +7401,13 @@ msgstr "Зміна параметрів генерації ключа API не �
 msgid "API key updated"
 msgstr "Ключ API оновлено"
 
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:9
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:7
 msgid "API key details"
 msgstr "Деталі ключа API"
+
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
+msgid "API key"
+msgstr "Ключ API"
 
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:2
 msgid "Stock control settings"
@@ -7410,7 +7470,7 @@ msgstr "Новий реєстратор доменних імен"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:42
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:289
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:12
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:15
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Nameservers"
@@ -7433,7 +7493,7 @@ msgid "Registration"
 msgstr "Реєстрація"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:60
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:14
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:19
 msgid "Transfer"
 msgstr "Transfer"
 
@@ -7489,7 +7549,6 @@ msgstr "Ціна продовження"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:137
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:55
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:76
 msgid "Transfer price"
 msgstr "Ціна трансферу"
 
@@ -7565,8 +7624,8 @@ msgstr "Сервера імен оновлені"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:296
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:18
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:114
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:71
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:39
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:82
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:50
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:117
@@ -7576,8 +7635,8 @@ msgstr "Nameserver 1"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:302
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:22
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:120
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:77
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:42
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:87
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:54
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
@@ -7587,8 +7646,8 @@ msgstr "Nameserver 2"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:308
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:26
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:126
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:83
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:94
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:58
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
@@ -7598,8 +7657,8 @@ msgstr "Nameserver 3"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:314
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:132
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:89
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:48
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:99
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
@@ -7611,17 +7670,16 @@ msgid "Update nameservers"
 msgstr "Оновити nameservers"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:2
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:19
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:26
 msgid "Domain details"
 msgstr "Деталі домену"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:8
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:23
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:16
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:172
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:16
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:10
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:22
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:15
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:30
 msgid "Domain"
 msgstr "Домен"
 
@@ -7642,7 +7700,6 @@ msgid "Registration/Renewal years"
 msgstr "Реєстрація/роки подовження"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:66
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:32
 msgid "Expires at"
 msgstr "Термін дії закінчився о"
 
@@ -7651,12 +7708,12 @@ msgid "Get EPP"
 msgstr "Отримати EPP"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:85
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:44
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:52
 msgid "Unlock"
 msgstr "Розблокувати"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:91
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:45
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:56
 msgid "Lock"
 msgstr "Заблокувати"
 
@@ -7681,7 +7738,7 @@ msgid "Transfer code (EPP)"
 msgstr "Код перенесення (EPP)"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:164
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:106
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:114
 msgid "Update domain contact details"
 msgstr "Оновити контактні дані домену"
 
@@ -7690,7 +7747,7 @@ msgid "Domain contact details updated"
 msgstr "Доменні контактні дані оновлено"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:234
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:190
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:187
 msgid "Phone number"
 msgstr "Телефон"
 
@@ -7717,6 +7774,10 @@ msgstr "Код трансферу домену: "
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:4
 msgid "Domain action"
 msgstr "Дія домену"
+
+#: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
+msgid "Register"
+msgstr "Реєстрація"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:12
 msgid " Transfer"
@@ -7752,7 +7813,6 @@ msgstr "Код передачі доменного імені"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:19
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:19
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:7
 msgid "Domain management"
 msgstr "Керування доменом"
 
@@ -7776,63 +7836,63 @@ msgstr "Керування доменами верхнього рівня"
 msgid "Top level domain settings updated."
 msgstr "Налаштування доменів верхнього рівня оновлено."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:10
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:11
 msgid "Protection"
 msgstr "Захист"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:11
-msgid "Privacy"
-msgstr "Конфіденційність"
-
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:13
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:17
 msgid "Whois"
 msgstr "Хто є хто"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:40
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:33
+msgid "Expires on"
+msgstr ""
+
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:47
 msgid "Domain Protection"
 msgstr "Захист домену"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:41
-msgid "Domain locking is a security enhancement to prevent unauthorized transfers of your domain to another registrar or web host by \"locking\" your domain name servers."
-msgstr "Блокування домену - це підвищення безпеки для запобігання несанкціонованим переведенням вашого домену до іншого реєстру або веб-хостингу за допомогою блокування серверів доменних імен."
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:48
+msgid "Domain locking is a security feature which acts to prevent your domain name from being transferred without first unlocking it. When this is enabled, a domain cannot be transferred even with the transfer code."
+msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:51
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:63
 msgid "Domain Privacy Settings"
 msgstr "Налаштування приватності домену"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:53
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:64
 msgid "If you would like to hide domain contact information which is shown on WHOIS you can enable privacy protection. Once domain privacy protection is enabled no one will know who registered this service. And once you decide to disable privacy protection, information that is listed above on \"Update Domain Contact Details\" section will be seen on domain WHOIS again."
 msgstr "Якщо ви хочете приховати контактну інформацію, яка відображається на WHOIS, ви можете увімкнути захист конфіденційності. Після включення захисту приватності домену ніхто не дізнається, хто зареєстрував цей сервіс. І як тільки ви вирішите вимкнути захист конфіденційності, інформація, що знаходиться вище в розділі \"Оновити деталі контакту\" на домені, буде доступна знову на WHOIS."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:56
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:66
 msgid "Disable Privacy protection"
 msgstr "Вимкнути захист приватності"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:57
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:67
 msgid "Enable Privacy protection"
 msgstr "Увімкнути захист приватності"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:64
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:73
 msgid "Update Nameservers"
 msgstr "Оновити nameservers"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:66
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:74
 msgid "If you would like to host this domain with another company you can update nameservers."
 msgstr "Якщо ви хочете розмістити цей домен з іншою компанією, ви можете оновити сервер імен."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:108
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:115
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
 msgstr "Доменні контактні дані будуть відображені після того, як хтось перевірить результат WHOIS (який є публічним) вашого сервісу. Це оновить технічні, комерційні та адміністративні контакти цього сервісу. Ви можете увімкнути захист конфіденційності домену, якщо ви хочете приховати вашу публічну інформацію WHOIS."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:209
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:200
 msgid "Domain Secret"
 msgstr "Секретний ключ домену"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:210
-msgid "All domain names (except a .EU, .UK domain name) have a Domain (Transfer) Secret Key/Authorization Code (EPP Code) associated with them. This would be required if you want to transfer service."
-msgstr "Всі доменні імена (крім доменних імен у зонах .EU, .UK) мають власний секретний ключ/авторизаційний (EPP) код. Це буде необхідно, якщо ви хочете передати послугу."
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:201
+msgid "Most domain names (except a few top-level domains like .EU and .UK) have a Domain Secret Key/Authorization Code (EPP Code) associated with them. This code is typically required when transferring the domain to a new registrar."
+msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:213
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:203
 msgid "Get EPP code"
 msgstr "Отримати код EPP"
 
@@ -7840,34 +7900,37 @@ msgstr "Отримати код EPP"
 msgid "Register a new domain"
 msgstr "Зареєструвати новий домен"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:20
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:23
 msgid "Enter new domain name to register"
 msgstr "Введіть нове ім'я домену для реєстрації"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:27
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:70
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:43
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:31
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:85
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:56
 msgid "Check"
 msgstr "Перевірити"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:36
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:44
 msgid "I want to use my nameservers"
 msgstr "Я хочу використовувати власні nameservers"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:73
 msgid "Transfer a new domain"
 msgstr "Перенести новий домен"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:64
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:78
 msgid "Enter your domain name to transfer"
 msgstr "Введіть домен для трансферу"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:77
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
+msgid "Transfer price is"
+msgstr ""
+
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:91
 msgid "Enter domain transfer code"
 msgstr "Введіть код трансферу домену"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:170
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:119
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:189
 msgid " Year/s @ "
 msgstr " Рік/с @ "
 
@@ -7926,8 +7989,8 @@ msgstr "Завантажити новий файл для цього замов�
 msgid "Use this function to update existing order file. Client will be able to download new file from client area"
 msgstr "Використовуйте цю функцію для оновлення наявного файлу замовлення. Клієнт зможе завантажувати новий файл з клієнтського кабінету"
 
-#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:6
-#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:9
+#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:4
+#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:7
 msgid "Download"
 msgstr "Завантажити"
 
@@ -7945,7 +8008,7 @@ msgstr "Сервер"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:14
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:26
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:49
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:57
 msgid "Hosting plan"
 msgstr "Тарифний план хостингу"
 
@@ -8023,14 +8086,14 @@ msgstr "Унікальне ім'я для ідентифікації цього 
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:36
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:66
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:58
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:67
 msgid "Disk quota"
 msgstr "Дискова квота"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:99
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:62
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:54
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:62
 msgid "Bandwidth"
 msgstr "Пропускна спроможність"
 
@@ -8191,7 +8254,7 @@ msgid "Server Name"
 msgstr "Ім'я серверу"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:30
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:29
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:37
 msgid "Server IP"
 msgstr "IP-адреса сервера"
 
@@ -8202,14 +8265,14 @@ msgstr "IP-адреса облікового запису"
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:38
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:157
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:26
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:11
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:39
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:132
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:18
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:47
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:141
 msgid "Username"
 msgstr "Ім'я користувача"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:63
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:55
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:63
 msgid "per month"
 msgstr "На місяць"
 
@@ -8218,7 +8281,7 @@ msgid "Jump to control panel"
 msgstr "Перейти до панелі керування"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:85
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:71
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:79
 msgid "Reseller control panel"
 msgstr "Панель керування посередника"
 
@@ -8255,7 +8318,7 @@ msgid "Account password changed"
 msgstr "Пароль облікового запису змінено"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:127
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:88
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:97
 msgid "Password Confirm"
 msgstr "Підтвердження паролю"
 
@@ -8268,8 +8331,8 @@ msgid "Account IP changed"
 msgstr "IP облікового запису змінено"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:153
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:127
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:141
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:136
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:150
 msgid "Change username"
 msgstr "Змінити ім'я користувача"
 
@@ -8278,8 +8341,8 @@ msgid "Account username changed"
 msgstr "Обліковий запис користувача змінено"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:168
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:105
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:119
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:114
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:128
 msgid "Change domain"
 msgstr "Змінити домен"
 
@@ -8336,46 +8399,57 @@ msgstr "Префікс для створених користувачів (ос�
 msgid "Update server"
 msgstr "Оновити сервер"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:6
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:4
 msgid "Manage hosting account"
 msgstr "Керування обліковим записом"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:34
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:42
 msgid "Server Hostname"
 msgstr "Ім'я хост-сервера"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:67
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:75
 msgid "Manage domain"
 msgstr "Керувати доменом"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:69
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:77
 msgid "Jump to cPanel"
 msgstr "Перейти до cPanel"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:77
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:86
 msgid "Change your FTP/cPanel/SSH password."
 msgstr "Змінити ваш FTP/cPanel/SSH пароль."
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:110
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:119
 msgid "New domain"
 msgstr "Новий домен"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:10
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:7
 msgid "Domain configuration"
 msgstr "Конфігурація домену"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:12
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:13
 msgid "I will use my existing domain and update nameservers"
 msgstr "Я буду використовувати свій існуючий домен і оновлю сервери імен"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:16
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:20
 msgid "I want to register a new domain"
 msgstr "Я хочу зареєструвати новий домен"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:25
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:36
-msgid "mydomain"
-msgstr "Мій домен"
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:31
+msgid "Your existing domain"
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:47
+msgid "Your new domain"
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:129
+msgid " year @ "
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:131
+msgid " years @ "
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:3
 msgid "License settings"
@@ -8435,7 +8509,7 @@ msgid "for more information."
 msgstr "Для додаткової інформації."
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:10
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:13
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:11
 msgid "Key"
 msgstr "Ключ"
 
@@ -8487,51 +8561,51 @@ msgstr "Перевірка валідності версії"
 msgid "Valid versions (one per line)"
 msgstr "Припустимі версії (по одній в рядку)"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:9
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:7
 msgid "License details"
 msgstr "Деталі ліцензії"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:22
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:20
 msgid "Valid IPs"
 msgstr "Допустимі IP-адреси"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:28
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:26
 msgid "All ips"
 msgstr "Всі IP-адреси"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:37
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:35
 msgid "Valid Domains"
 msgstr "Допустимі домени"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:43
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:41
 msgid "All hosts"
 msgstr "Усі хости"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:52
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:50
 msgid "Valid Versions"
 msgstr "Допустимі версії"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:58
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:56
 msgid "All versions"
 msgstr "Всі версії"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:67
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:65
 msgid "Valid Install paths"
 msgstr "Допустимі шляхи для встановлення"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:73
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:71
 msgid "All paths"
 msgstr "Усі шляхи"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:82
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:80
 msgid "Reset license"
 msgstr "Скинути ліцензію"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:83
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:81
 msgid "You can reset your license parameters if you have changed your server"
 msgstr "Ви можете скинути параметри ліцензії, якщо ви змінили свій сервер"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:98
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:94
 msgid "License was reset"
 msgstr "Ліцензію було скинуто"
 
@@ -8673,19 +8747,6 @@ msgstr "Створити групу"
 msgid "Create main administrator account"
 msgstr "Створити обліковий запис головного адміністратора"
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:23
-#: modules/Staff/html_admin/mod_staff_login.html.twig:48
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
-msgid "Enter your email address"
-msgstr "Введіть свою електронну пошту"
-
-#: modules/Staff/html_admin/mod_staff_login.html.twig:29
-#: modules/Staff/html_admin/mod_staff_login.html.twig:66
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
-msgid "Enter your password"
-msgstr "Введіть свій пароль"
-
 #: modules/Staff/html_admin/mod_staff_login.html.twig:33
 msgid "Create administrator account"
 msgstr "Створіть обліковий запис адміністратора"
@@ -8697,10 +8758,6 @@ msgstr "Увійдіть у свій обліковий запис"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:57
 msgid "Forgot your password?"
 msgstr "Забули свій пароль?"
-
-#: modules/Staff/html_admin/mod_staff_login.html.twig:70
-msgid "Sign in"
-msgstr "Увійти"
 
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:5
 msgid "Staff members login history"
@@ -8775,13 +8832,6 @@ msgstr "Пароль співробітника змінено"
 msgid "Repeat same password"
 msgstr "Повторіть ваш пароль"
 
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:3
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:16
-msgid "Reset your password"
-msgstr "Скинути пароль"
-
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:17
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
 msgstr "Введіть адресу вашої електронної пошти. Ви отримаєте посилання для підтвердження, якщо ваш обліковий запис існує."
@@ -8822,6 +8872,10 @@ msgstr "Граватар"
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:31
 msgid "Profile updated"
 msgstr "Профіль оновлено"
+
+#: modules/Staff/html_admin/mod_staff_profile.html.twig:60
+msgid "Password Changed"
+msgstr "Пароль змінено"
 
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:90
 msgid "External application can control every aspect of FOSSBilling using this API key."
@@ -8938,17 +8992,17 @@ msgstr "Категорію створено"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:31
 #: modules/Support/html_admin/mod_support_ticket.html.twig:36
+#: modules/Support/html_client/mod_support_ticket.html.twig:24
 msgid "Ticket"
 msgstr "Звернення"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:44
 #: modules/Support/html_admin/mod_support_ticket.html.twig:54
-#: modules/Support/html_client/mod_support_ticket.html.twig:30
 msgid "Ticket ID"
 msgstr "ID звернення"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:52
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:35
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:27
 msgid "Author"
 msgstr "Автор"
 
@@ -8984,15 +9038,16 @@ msgstr "Показати/приховати повідомлення"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:194
 #: modules/Support/html_admin/mod_support_ticket.html.twig:316
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:106
-#: modules/Support/html_client/mod_support_ticket.html.twig:153
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:88
+#: modules/Support/html_client/mod_support_ticket.html.twig:139
+#: modules/Support/html_client/mod_support_ticket.html.twig:140
 msgid "Post"
 msgstr "Опублікувати"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:204
 #: modules/Support/html_admin/mod_support_ticket.html.twig:326
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
-#: modules/Support/html_client/mod_support_ticket.html.twig:22
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:51
+#: modules/Support/html_client/mod_support_ticket.html.twig:32
 msgid "Close ticket"
 msgstr "Закрити звернення"
 
@@ -9111,10 +9166,6 @@ msgstr ""
 msgid "Client ID"
 msgstr "Ідентифікатор клієнта"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:40
-msgid "Order ID"
-msgstr "ID замовлення"
-
 #: modules/Support/html_admin/mod_support_tickets.html.twig:46
 msgid "Ticket Subject"
 msgstr ""
@@ -9164,101 +9215,89 @@ msgid "Create New Helpdesk"
 msgstr ""
 
 #: modules/Support/html_client/mod_support_contact_us.html.twig:5
-#: modules/Support/html_client/mod_support_contact_us.html.twig:8
-#: modules/Support/html_client/mod_support_contact_us.html.twig:17
+#: modules/Support/html_client/mod_support_contact_us.html.twig:9
+#: modules/Support/html_client/mod_support_contact_us.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:9
 msgid "Contact us"
 msgstr "Зв'язатися з нами"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:19
-#: modules/Support/html_client/mod_support_ticket.html.twig:18
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:18
 msgid "Ticket information"
 msgstr "Інформація про звернення"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
-#: modules/Support/html_client/mod_support_ticket.html.twig:47
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:44
+#: modules/Support/html_client/mod_support_ticket.html.twig:54
 msgid "Time opened"
 msgstr "Час відкриття"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:111
-#: modules/Support/html_client/mod_support_ticket.html.twig:159
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:91
+#: modules/Support/html_client/mod_support_ticket.html.twig:128
 msgid "Ticket was closed and cannot be reopened."
 msgstr "Тікет був закритий, і його не можна повторно відкрити."
 
 #: modules/Support/html_client/mod_support_kb_article.html.twig:23
-msgid "Article Views"
+msgid "views"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:28
-#: modules/Support/html_client/mod_support_kb_category.html.twig:27
-msgid "Back to List"
+#: modules/Support/html_client/mod_support_kb_article.html.twig:32
+msgid "Back to all knowledge base articles"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:42
-msgid "Similar Articles"
-msgstr ""
+#: modules/Support/html_client/mod_support_kb_article.html.twig:34
+msgid "Similar articles"
+msgstr "Схожі статті"
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:57
-msgid "Knowledge Base Categories"
-msgstr ""
-
-#: modules/Support/html_client/mod_support_kb_index.html.twig:6
-msgid "Knowledge base"
-msgstr "База знань"
-
-#: modules/Support/html_client/mod_support_kb_index.html.twig:21
+#: modules/Support/html_client/mod_support_kb_index.html.twig:32
 msgid "Please try to read related topics in knowledge base before contacting support."
 msgstr "Будь ласка, спробуйте прочитати відповідні теми в базі знань перед тим, як звернутися до служби підтримки."
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:26
+#: modules/Support/html_client/mod_support_kb_index.html.twig:38
 msgid "What are you looking for?"
 msgstr "Що ви шукаєте?"
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:27
-#: themes/admin_default/html/partial_search.html.twig:15
-msgid "Search"
-msgstr "Пошук"
+#: modules/Support/html_client/mod_support_kb_index.html.twig:63
+msgid "No results found for"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:53
-msgid "Try using other keyword. No matches found for keyword:"
-msgstr "Спробуйте використати інше ключове слово. Немає збігів для ключового слова:"
-
-#: modules/Support/html_client/mod_support_ticket.html.twig:9
-#: modules/Support/html_client/mod_support_tickets.html.twig:5
-#: modules/Support/html_client/mod_support_tickets.html.twig:6
-#: modules/Support/html_client/mod_support_tickets.html.twig:9
-#: modules/Support/html_client/mod_support_tickets.html.twig:16
-msgid "Support tickets"
-msgstr "Звернення"
-
-#: modules/Support/html_client/mod_support_ticket.html.twig:53
+#: modules/Support/html_client/mod_support_ticket.html.twig:60
 msgid "Related to"
 msgstr "Пов'язане з"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:54
+#: modules/Support/html_client/mod_support_ticket.html.twig:62
 msgid "Service #"
 msgstr "Послуга #"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:67
-msgid "Last tickets"
-msgstr "Останні звернення"
+#: modules/Support/html_client/mod_support_ticket.html.twig:86
+msgid "Operator"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:71
-msgid "Back to tickets list"
-msgstr "Повернутися до списку звернень"
+#: modules/Support/html_client/mod_support_ticket.html.twig:90
+msgid "You"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:83
-#: modules/Support/html_client/mod_support_tickets.html.twig:32
-msgid "Submitted"
-msgstr "Надіслано"
+#: modules/Support/html_client/mod_support_ticket.html.twig:101
+msgid "Quote reply"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:17
+#: modules/Support/html_client/mod_support_ticket.html.twig:130
+msgid "This ticket was closed, but you can still reopen it by replying."
+msgstr ""
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:19
 msgid "Need an answer? We are here to help!"
 msgstr "Потрібна відповідь? Ми тут, щоб допомогти!"
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:20
-msgid "Submit new ticket"
-msgstr "Відправити запит"
+#: modules/Support/html_client/mod_support_tickets.html.twig:36
+msgid "Submitted"
+msgstr "Надіслано"
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:63
+msgid "No support tickets"
+msgstr ""
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:76
+msgid "Open new ticket"
+msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:5
 #: modules/System/html_admin/mod_system_settings.html.twig:21
@@ -9276,10 +9315,6 @@ msgstr "Країни"
 #: modules/System/html_admin/mod_system_settings.html.twig:40
 msgid "Cache"
 msgstr "Кеш"
-
-#: modules/System/html_admin/mod_system_settings.html.twig:43
-msgid "About"
-msgstr "Про"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:46
 #: modules/System/html_admin/mod_system_settings.html.twig:539
@@ -9769,77 +9804,45 @@ msgstr "Щомісяця"
 msgid "Enter search text..."
 msgstr "Введіть пошуковий запит..."
 
+#: themes/admin_default/html/partial_search.html.twig:15
+msgid "Search"
+msgstr "Пошук"
+
 #: themes/admin_default/html/partial_search.html.twig:20
 msgid "Search settings"
 msgstr "Налаштування пошуку"
 
-#: themes/huraga/html/error.html.twig:13
-msgid "Whoops! This is not the web page you are looking for."
-msgstr "Ой! Це не сторінка, яку ви шукаєте."
+#: themes/huraga/html/error.html.twig:23
+msgid "Whoops! Unable to find the page you are looking for"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:105
-msgid "Order services"
-msgstr "Замовлення послуг"
+#: themes/huraga/html/error.html.twig:26
+msgid "Go back to home"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:121
+#: themes/huraga/html/layout_default.html.twig:122
 msgid "Sign out"
 msgstr "Вийти"
 
-#: themes/huraga/html/layout_default.html.twig:150
-msgid "User profile"
-msgstr "Профіль користувача"
-
-#: themes/huraga/html/layout_default.html.twig:165
-msgid "profile"
-msgstr "профіль"
-
-#: themes/huraga/html/layout_default.html.twig:166
-msgid "sign out"
-msgstr "вийти"
-
-#: themes/huraga/html/layout_default.html.twig:175
-msgid "Account balance"
-msgstr "Баланс рахунку"
-
-#: themes/huraga/html/layout_default.html.twig:225
-msgid "You are logged out"
-msgstr "Ви вийшли з системи"
-
-#: themes/huraga/html/layout_default.html.twig:242
-msgid "Products and services"
-msgstr "Продукти та послуги"
-
-#: themes/huraga/html/layout_default.html.twig:260
-msgid "Latest news and announcements"
-msgstr "Новини та оголошення"
-
-#: themes/huraga/html/layout_default.html.twig:277
-msgid "Browse our KB for Answers and FAQ"
-msgstr ""
-
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Payment Information"
 msgstr "Платіжна інформація"
 
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Account Number"
 msgstr "Номер рахунку"
 
-#: themes/huraga/html/layout_default.html.twig:354
-msgid "Powered by the FOSSBilling Community"
-msgstr "За підтримки спільноти FOSSBilling"
+#: themes/huraga/html/layout_default.html.twig:227
+msgid "FOSSBilling Community"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:359
+#: themes/huraga/html/layout_default.html.twig:239
 msgid "Top"
 msgstr "Вгору"
 
-#: themes/huraga/html/partial_menu.html.twig:23
-msgid "Services"
-msgstr "Послуги"
-
-#: themes/huraga/html/partial_menu.html.twig:41
-msgid "Payment History"
-msgstr ""
+#: themes/huraga/html/partial_menu.html.twig:87
+msgid "Account balance"
+msgstr "Баланс рахунку"
 
 #: themes/huraga/html/partial_pricing.html.twig:8
 #: themes/huraga/html/partial_pricing.html.twig:20
