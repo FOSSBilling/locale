@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-11-21 16:34-0800\n"
-"PO-Revision-Date: 2023-11-22 23:39\n"
+"POT-Creation-Date: 2023-11-24 17:04-0800\n"
+"PO-Revision-Date: 2023-11-25 23:36\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -378,7 +378,7 @@ msgid "Password must include at least one uppercase letter."
 msgstr "密碼至少需包含 1 個大寫字母。"
 
 #: library/FOSSBilling/Validate.php:107
-#: modules/Client/html_client/mod_client_profile.html.twig:78
+#: modules/Client/html_client/mod_client_profile.html.twig:70
 msgid "Birthdate"
 msgstr "出生日期"
 
@@ -1034,7 +1034,7 @@ msgstr "寄件者電子郵件地址不能為空"
 msgid "Email template :code was not found"
 msgstr "找不到電子郵件範本 :code"
 
-#: modules/Email/Service.php:674
+#: modules/Email/Service.php:678
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr ""
 
@@ -1218,18 +1218,20 @@ msgstr ""
 #: modules/Invoice/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_manage.html.twig:35
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
-#: modules/Index/html_client/mod_index_dashboard.html.twig:106
+#: modules/Index/html_client/mod_index_dashboard.html.twig:73
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:185
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:19
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:6
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:8
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:11
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:22
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
 #: modules/Order/html_admin/mod_order_manage.html.twig:52
 #: themes/admin_default/html/mod_index_dashboard.html.twig:214
 #: themes/admin_default/html/mod_index_dashboard.html.twig:261
 #: themes/admin_default/html/mod_index_dashboard.html.twig:444
 #: themes/admin_default/html/mod_index_dashboard.html.twig:548
-#: themes/huraga/html/partial_menu.html.twig:29
+#: themes/huraga/html/partial_menu.html.twig:44
 msgid "Invoices"
 msgstr "收據"
 
@@ -1418,15 +1420,15 @@ msgstr ""
 msgid "Mass mailer"
 msgstr ""
 
-#: modules/Massmailer/Service.php:115
+#: modules/Massmailer/Service.php:114
 msgid " "
 msgstr ""
 
-#: modules/Massmailer/Service.php:162
+#: modules/Massmailer/Service.php:161
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "出於安全因素禁止使用（已啟用展示模式）"
 
-#: modules/Massmailer/Service.php:198
+#: modules/Massmailer/Service.php:197
 msgid "Mass mail message not found"
 msgstr ""
 
@@ -1440,7 +1442,7 @@ msgid "News item not found"
 msgstr "找不到消息項目"
 
 #: modules/News/Controller/Admin.php:34
-#: themes/huraga/html/layout_default.html.twig:263
+#: modules/Index/html_client/mod_index_dashboard.html.twig:240
 msgid "Announcements"
 msgstr "公告"
 
@@ -1476,14 +1478,11 @@ msgstr ""
 #: modules/Client/html_admin/mod_client_manage.html.twig:32
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:60
-#: modules/Index/html_client/mod_index_dashboard.html.twig:131
+#: modules/Index/html_client/mod_index_dashboard.html.twig:97
 #: modules/Order/html_admin/mod_order_index.html.twig:7
 #: modules/Order/html_admin/mod_order_index.html.twig:159
 #: modules/Order/html_admin/mod_order_manage.html.twig:17
 #: modules/Order/html_admin/mod_order_new.html.twig:17
-#: modules/Order/html_client/mod_order_list.html.twig:9
-#: modules/Order/html_client/mod_order_list.html.twig:17
-#: modules/Order/html_client/mod_order_manage.html.twig:11
 #: themes/admin_default/html/mod_index_dashboard.html.twig:196
 #: themes/admin_default/html/mod_index_dashboard.html.twig:435
 #: themes/admin_default/html/mod_index_dashboard.html.twig:547
@@ -2101,7 +2100,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_settings.html.twig:21
 #: modules/Support/html_admin/mod_support_ticket.html.twig:17
 #: modules/Support/html_admin/mod_support_tickets.html.twig:17
-#: themes/huraga/html/partial_menu.html.twig:17
+#: themes/huraga/html/partial_menu.html.twig:26
 msgid "Support"
 msgstr "支援服務"
 
@@ -2135,13 +2134,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:19
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:23
 #: modules/Support/html_admin/mod_support_settings.html.twig:104
-#: modules/Support/html_client/mod_support_kb_article.html.twig:8
-#: modules/Support/html_client/mod_support_kb_category.html.twig:7
 #: modules/Support/html_client/mod_support_kb_index.html.twig:3
-#: modules/Support/html_client/mod_support_kb_index.html.twig:20
-#: themes/huraga/html/layout_default.html.twig:274
-#: themes/huraga/html/layout_default.html.twig:280
-#: themes/huraga/html/partial_menu.html.twig:47
 msgid "Knowledge Base"
 msgstr ""
 
@@ -2236,7 +2229,7 @@ msgstr "設定"
 #: modules/Email/html_admin/mod_email_template.html.twig:128
 #: modules/Formbuilder/html_admin/mod_formbuilder_manage.html.twig:88
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:157
-#: modules/Index/html_client/mod_index_dashboard.html.twig:86
+#: modules/Index/html_client/mod_index_dashboard.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:127
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:347
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:370
@@ -2272,8 +2265,8 @@ msgstr "設定"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:241
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:62
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:107
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:97
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:199
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:105
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:193
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
@@ -2381,12 +2374,12 @@ msgstr "使用者"
 #: modules/Embed/html_client/mod_embed_contact.html.twig:57
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:115
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
-#: modules/Order/html_client/mod_order_manage.html.twig:193
+#: modules/Order/html_client/mod_order_manage.html.twig:219
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:49
 #: modules/Support/html_admin/mod_support_tickets.html.twig:325
 #: modules/Support/html_admin/mod_support_tickets.html.twig:359
-#: modules/Support/html_client/mod_support_contact_us.html.twig:46
-#: modules/Support/html_client/mod_support_tickets.html.twig:107
+#: modules/Support/html_client/mod_support_contact_us.html.twig:39
+#: modules/Support/html_client/mod_support_tickets.html.twig:93
 msgid "Message"
 msgstr "訊息"
 
@@ -2408,17 +2401,17 @@ msgstr "IP"
 #: modules/Client/html_admin/mod_client_manage.html.twig:295
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
 #: modules/Client/html_admin/mod_client_settings.html.twig:81
-#: modules/Client/html_client/mod_client_profile.html.twig:163
+#: modules/Client/html_client/mod_client_profile.html.twig:135
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:30
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:87
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:482
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:39
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:120
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
-#: modules/Page/html_client/mod_page_signup.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:177
+#: modules/Page/html_client/mod_page_signup.html.twig:100
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:155
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:157
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:25
 msgid "Country"
 msgstr "國家"
@@ -2430,7 +2423,7 @@ msgstr "國家"
 #: modules/Client/html_admin/mod_client_manage.html.twig:736
 #: modules/Client/html_admin/mod_client_manage.html.twig:769
 #: modules/Client/html_admin/mod_client_manage.html.twig:815
-#: modules/Client/html_client/mod_client_balance.html.twig:26
+#: modules/Client/html_client/mod_client_balance.html.twig:33
 #: modules/Email/html_admin/mod_email_history.html.twig:34
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:674
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:170
@@ -2484,13 +2477,13 @@ msgstr "日期"
 #: modules/Product/html_admin/mod_product_promos.html.twig:97
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:101
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:21
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:34
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:89
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:223
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:74
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:120
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:91
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:96
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:92
 #: modules/Staff/html_admin/mod_staff_index.html.twig:57
 #: modules/Staff/html_admin/mod_staff_index.html.twig:150
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:54
@@ -2525,7 +2518,7 @@ msgstr "你確定？"
 #: modules/Client/html_admin/mod_client_manage.html.twig:750
 #: modules/Client/html_admin/mod_client_manage.html.twig:791
 #: modules/Client/html_admin/mod_client_manage.html.twig:838
-#: modules/Client/html_client/mod_client_balance.html.twig:40
+#: modules/Client/html_client/mod_client_balance.html.twig:47
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:105
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:62
@@ -2535,16 +2528,13 @@ msgstr "你確定？"
 #: modules/Extension/html_admin/mod_extension_index.html.twig:109
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:72
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:131
-#: modules/Index/html_client/mod_index_dashboard.html.twig:67
-#: modules/Index/html_client/mod_index_dashboard.html.twig:197
-#: modules/Index/html_client/mod_index_dashboard.html.twig:221
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:272
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:89
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:220
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:54
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:91
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:70
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:102
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:81
 #: modules/News/html_admin/mod_news_index.html.twig:80
 #: modules/Notification/html_admin/mod_notification_index.html.twig:55
@@ -2552,7 +2542,6 @@ msgstr "你確定？"
 #: modules/Order/html_admin/mod_order_manage.html.twig:557
 #: modules/Order/html_admin/mod_order_manage.html.twig:613
 #: modules/Order/html_admin/mod_order_manage.html.twig:668
-#: modules/Order/html_client/mod_order_list.html.twig:48
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:89
 #: modules/Product/html_admin/mod_product_addons.html.twig:75
 #: modules/Product/html_admin/mod_product_index.html.twig:88
@@ -2577,8 +2566,6 @@ msgstr "你確定？"
 #: modules/Support/html_admin/mod_support_settings.html.twig:173
 #: modules/Support/html_admin/mod_support_ticket.html.twig:254
 #: modules/Support/html_admin/mod_support_tickets.html.twig:277
-#: modules/Support/html_client/mod_support_ticket.html.twig:99
-#: modules/Support/html_client/mod_support_tickets.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:84
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:151
 #: themes/admin_default/html/mod_index_dashboard.html.twig:345
@@ -2610,10 +2597,10 @@ msgstr "編輯客戶群組"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:525
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:613
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:38
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:34
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:69
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:187
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:213
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:48
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:81
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:197
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:152
 #: modules/News/html_admin/mod_news_index.html.twig:35
 #: modules/News/html_admin/mod_news_index.html.twig:97
 #: modules/News/html_admin/mod_news_post.html.twig:34
@@ -2667,7 +2654,7 @@ msgstr "篩選客戶"
 #: modules/Client/html_admin/mod_client_manage.html.twig:810
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:87
-#: modules/Index/html_client/mod_index_dashboard.html.twig:92
+#: modules/Index/html_client/mod_index_dashboard.html.twig:59
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
@@ -2688,12 +2675,13 @@ msgstr "ID"
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:15
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:210
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:100
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:142
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:115
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:168
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:107
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:151
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:64
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:109
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:32
 #: modules/Order/html_admin/mod_order_index.html.twig:184
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:29
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
@@ -2709,7 +2697,7 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:185
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:233
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:276
-#: modules/Support/html_client/mod_support_contact_us.html.twig:25
+#: modules/Support/html_client/mod_support_contact_us.html.twig:27
 #: modules/System/html_admin/mod_system_settings.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
@@ -2731,15 +2719,17 @@ msgstr "公司名稱"
 #: modules/Email/html_admin/mod_email_template.html.twig:19
 #: modules/Email/html_client/mod_email_email.html.twig:3
 #: modules/Embed/html_client/mod_embed_contact.html.twig:47
-#: modules/Index/html_client/mod_index_dashboard.html.twig:94
+#: modules/Index/html_client/mod_index_dashboard.html.twig:61
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:413
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:120
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:135
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:80
 #: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
+#: modules/Page/html_client/mod_page_login.html.twig:23
+#: modules/Page/html_client/mod_page_password-reset.html.twig:24
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:180
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:127
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:133
 #: modules/Staff/html_admin/mod_staff_index.html.twig:31
 #: modules/Staff/html_admin/mod_staff_index.html.twig:96
 #: modules/Staff/html_admin/mod_staff_login.html.twig:21
@@ -2754,9 +2744,10 @@ msgstr "公司名稱"
 #: modules/Support/html_admin/mod_support_settings.html.twig:137
 #: modules/Support/html_admin/mod_support_tickets.html.twig:347
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
-#: modules/Support/html_client/mod_support_contact_us.html.twig:32
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
+#: modules/Support/html_client/mod_support_contact_us.html.twig:31
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
 #: modules/System/html_admin/mod_system_settings.html.twig:63
+#: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
 msgstr "電子郵件"
 
@@ -2783,7 +2774,6 @@ msgstr "群組"
 #: modules/Client/html_admin/mod_client_manage.html.twig:814
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:45
 #: modules/Email/html_admin/mod_email_settings.html.twig:194
-#: modules/Index/html_client/mod_index_dashboard.html.twig:50
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:214
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:68
@@ -2796,6 +2786,7 @@ msgstr "群組"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:81
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:41
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:167
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:92
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:45
 #: modules/News/html_admin/mod_news_index.html.twig:103
 #: modules/News/html_admin/mod_news_post.html.twig:65
@@ -2805,7 +2796,7 @@ msgstr "群組"
 #: modules/Order/html_admin/mod_order_manage.html.twig:520
 #: modules/Order/html_admin/mod_order_manage.html.twig:572
 #: modules/Order/html_admin/mod_order_manage.html.twig:630
-#: modules/Order/html_client/mod_order_list.html.twig:28
+#: modules/Order/html_client/mod_order_list.html.twig:34
 #: modules/Order/html_client/mod_order_manage.html.twig:139
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:33
 #: modules/Product/html_admin/mod_product_addons.html.twig:47
@@ -2829,10 +2820,9 @@ msgstr "群組"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:219
 #: modules/Support/html_admin/mod_support_tickets.html.twig:64
 #: modules/Support/html_admin/mod_support_tickets.html.twig:209
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:45
-#: modules/Support/html_client/mod_support_ticket.html.twig:40
-#: modules/Support/html_client/mod_support_ticket.html.twig:82
-#: modules/Support/html_client/mod_support_tickets.html.twig:31
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:37
+#: modules/Support/html_client/mod_support_ticket.html.twig:47
+#: modules/Support/html_client/mod_support_tickets.html.twig:35
 msgid "Status"
 msgstr "狀態"
 
@@ -2846,7 +2836,7 @@ msgstr "全部"
 #: modules/Client/html_admin/mod_client_manage.html.twig:168
 #: modules/Client/html_admin/mod_client_settings.html.twig:108
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:138
-#: modules/Index/html_client/mod_index_dashboard.html.twig:143
+#: modules/Index/html_client/mod_index_dashboard.html.twig:109
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:122
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:136
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:70
@@ -2888,7 +2878,6 @@ msgstr "已取消"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:74
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:62
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:27
 msgid "Registration date"
 msgstr "註冊日期"
 
@@ -2906,30 +2895,31 @@ msgstr "篩選"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:114
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:83
 #: modules/Order/html_admin/mod_order_index.html.twig:89
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:23
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:85
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:83
 #: modules/Support/html_admin/mod_support_tickets.html.twig:106
 msgid "Reset"
 msgstr "重設"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:162
+#: modules/Client/html_client/mod_client_balance.html.twig:53
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:110
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:136
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:160
-#: modules/Index/html_client/mod_index_dashboard.html.twig:115
-#: modules/Index/html_client/mod_index_dashboard.html.twig:141
-#: modules/Index/html_client/mod_index_dashboard.html.twig:165
+#: modules/Index/html_client/mod_index_dashboard.html.twig:81
+#: modules/Index/html_client/mod_index_dashboard.html.twig:107
+#: modules/Index/html_client/mod_index_dashboard.html.twig:130
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:172
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:92
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:586
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:615
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:142
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:37
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:72
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:189
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:232
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:215
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:260
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:51
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:199
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:154
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:190
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -2960,14 +2950,15 @@ msgstr "新增群組"
 #: modules/Client/html_admin/mod_client_settings.html.twig:76
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:383
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:445
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:97
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:147
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:112
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:173
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:74
-#: modules/Page/html_client/mod_page_signup.html.twig:60
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:104
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:156
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:61
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:113
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
+#: modules/Page/html_client/mod_page_signup.html.twig:49
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:186
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:134
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:138
 msgid "Company"
 msgstr "公司"
 
@@ -2980,7 +2971,7 @@ msgstr "匯出客戶資料"
 #: modules/Client/html_admin/mod_client_manage.html.twig:282
 #: modules/Client/html_admin/mod_client_settings.html.twig:84
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:192
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:141
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:145
 msgid "Address Line 1"
 msgstr "地址欄1"
 
@@ -2988,17 +2979,18 @@ msgstr "地址欄1"
 #: modules/Client/html_admin/mod_client_manage.html.twig:288
 #: modules/Client/html_admin/mod_client_settings.html.twig:85
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:198
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:148
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:150
 msgid "Address Line 2"
 msgstr "地址欄2"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:355
 #: modules/Client/html_admin/mod_client_manage.html.twig:308
 #: modules/Client/html_admin/mod_client_settings.html.twig:82
-#: modules/Client/html_client/mod_client_profile.html.twig:155
+#: modules/Client/html_client/mod_client_profile.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
-#: modules/Page/html_client/mod_page_signup.html.twig:115
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:166
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:169
+#: modules/Page/html_client/mod_page_signup.html.twig:92
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
 msgid "City"
@@ -3007,12 +2999,13 @@ msgstr "城市"
 #: modules/Client/html_admin/mod_client_index.html.twig:361
 #: modules/Client/html_admin/mod_client_manage.html.twig:301
 #: modules/Client/html_admin/mod_client_settings.html.twig:83
-#: modules/Client/html_client/mod_client_profile.html.twig:176
+#: modules/Client/html_client/mod_client_profile.html.twig:147
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:126
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:172
-#: modules/Page/html_client/mod_page_signup.html.twig:140
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:192
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
+#: modules/Page/html_client/mod_page_signup.html.twig:112
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
 msgid "State"
@@ -3028,10 +3021,10 @@ msgstr "郵遞區號"
 #: modules/Client/html_admin/mod_client_settings.html.twig:87
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:488
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:115
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:169
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:130
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:195
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:122
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:76
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:131
 #: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
@@ -3040,8 +3033,8 @@ msgstr "電話"
 #: modules/Client/html_admin/mod_client_index.html.twig:391
 #: modules/Client/html_admin/mod_client_manage.html.twig:98
 #: modules/Client/html_admin/mod_client_manage.html.twig:346
-#: modules/Client/html_client/mod_client_profile.html.twig:34
-#: modules/Client/html_client/mod_client_profile.html.twig:272
+#: modules/Client/html_client/mod_client_profile.html.twig:33
+#: modules/Client/html_client/mod_client_profile.html.twig:215
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
@@ -3053,17 +3046,17 @@ msgstr "貨幣"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:397
 #: modules/Client/html_admin/mod_client_manage.html.twig:405
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:23
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:108
-#: modules/Page/html_client/mod_page_login.html.twig:35
-#: modules/Page/html_client/mod_page_login.html.twig:37
-#: modules/Page/html_client/mod_page_signup.html.twig:184
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:33
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:37
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:128
+#: modules/Page/html_client/mod_page_login.html.twig:27
+#: modules/Page/html_client/mod_page_signup.html.twig:152
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:121
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:33
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:9
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:44
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:82
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:12
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:52
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:91
 #: modules/Staff/html_admin/mod_staff_index.html.twig:103
 #: modules/Staff/html_admin/mod_staff_login.html.twig:27
 #: modules/Staff/html_admin/mod_staff_login.html.twig:54
@@ -3107,16 +3100,16 @@ msgid "Clients logins history"
 msgstr "客戶登入歷程記錄"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:26
-#: modules/Client/html_client/mod_client_profile.html.twig:5
+#: modules/Client/html_client/mod_client_profile.html.twig:6
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:78
-#: modules/Index/html_client/mod_index_dashboard.html.twig:83
+#: modules/Index/html_client/mod_index_dashboard.html.twig:51
+#: modules/Index/html_client/mod_index_dashboard.html.twig:210
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:5
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:37
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
 #: themes/admin_default/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:111
-#: themes/huraga/html/layout_default.html.twig:222
+#: themes/huraga/html/layout_default.html.twig:120
 msgid "Profile"
 msgstr "個人資料"
 
@@ -3134,7 +3127,7 @@ msgstr "編輯"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:38
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:150
-#: modules/Index/html_client/mod_index_dashboard.html.twig:155
+#: modules/Index/html_client/mod_index_dashboard.html.twig:121
 #: modules/Support/html_admin/mod_support_ticket.html.twig:20
 #: modules/Support/html_admin/mod_support_tickets.html.twig:19
 #: modules/Support/html_admin/mod_support_tickets.html.twig:177
@@ -3155,9 +3148,8 @@ msgstr "登入"
 #: modules/Client/html_admin/mod_client_manage.html.twig:47
 #: modules/Email/html_client/mod_email_email.html.twig:6
 #: modules/Email/html_client/mod_email_index.html.twig:3
-#: modules/Email/html_client/mod_email_index.html.twig:4
-#: modules/Email/html_client/mod_email_index.html.twig:14
-#: themes/huraga/html/partial_menu.html.twig:35
+#: modules/Email/html_client/mod_email_index.html.twig:5
+#: modules/Email/html_client/mod_email_index.html.twig:17
 msgid "Emails"
 msgstr "電子郵件"
 
@@ -3179,7 +3171,7 @@ msgstr "資金餘額"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:340
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:34
 #: modules/Order/html_admin/mod_order_manage.html.twig:367
-#: modules/Order/html_client/mod_order_manage.html.twig:278
+#: modules/Order/html_client/mod_order_manage.html.twig:257
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 #: modules/Support/html_admin/mod_support_tickets.html.twig:390
 #: modules/System/html_admin/mod_system_settings.html.twig:224
@@ -3187,6 +3179,7 @@ msgid "Notes"
 msgstr "備註"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
+#: modules/Client/html_client/mod_client_profile.html.twig:31
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:10
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:88
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:96
@@ -3194,20 +3187,22 @@ msgid "API Key"
 msgstr "API 金鑰"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:125
-#: modules/Client/html_client/mod_client_profile.html.twig:139
+#: modules/Client/html_client/mod_client_profile.html.twig:121
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:401
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:463
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:110
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:162
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:117
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:171
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:72
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:125
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:188
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
-#: modules/Page/html_client/mod_page_signup.html.twig:95
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:144
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
+#: modules/Page/html_client/mod_page_signup.html.twig:76
 #: modules/System/html_admin/mod_system_settings.html.twig:75
 msgid "Address"
 msgstr "地址"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:132
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:37
 msgid "Registered on"
 msgstr "註冊時間"
 
@@ -3224,8 +3219,8 @@ msgstr "登入客戶專區"
 #: modules/Email/html_admin/mod_email_details.html.twig:64
 #: modules/Email/html_admin/mod_email_settings.html.twig:113
 #: modules/Email/html_admin/mod_email_settings.html.twig:115
-#: modules/Email/html_client/mod_email_email.html.twig:36
-#: modules/Email/html_client/mod_email_index.html.twig:45
+#: modules/Email/html_client/mod_email_email.html.twig:26
+#: modules/Email/html_client/mod_email_index.html.twig:63
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:713
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
@@ -3414,8 +3409,8 @@ msgid "Company details"
 msgstr "公司詳細資料"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:269
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:152
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:161
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:117
 msgid "Company number"
 msgstr "公司編號"
 
@@ -3428,7 +3423,7 @@ msgid "Address and contact details"
 msgstr "地址和聯絡資訊"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:330
-#: modules/Client/html_client/mod_client_profile.html.twig:193
+#: modules/Client/html_client/mod_client_profile.html.twig:155
 msgid "Passport number"
 msgstr "護照號碼"
 
@@ -3454,14 +3449,14 @@ msgid "Signed up time"
 msgstr "註冊時間"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:397
-#: modules/Client/html_client/mod_client_profile.html.twig:214
+#: modules/Client/html_client/mod_client_profile.html.twig:169
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:53
 msgid "Update profile"
 msgstr "更新帳號"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:401
 #: modules/Client/html_admin/mod_client_manage.html.twig:419
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:97
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:106
 msgid "Change password"
 msgstr "修改密碼"
 
@@ -3470,8 +3465,7 @@ msgid "Password changed"
 msgstr "密碼已更改"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:412
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:116
-#: modules/Page/html_client/mod_page_signup.html.twig:192
+#: modules/Page/html_client/mod_page_signup.html.twig:158
 msgid "Password confirm"
 msgstr "密碼確認"
 
@@ -3500,7 +3494,7 @@ msgstr "客戶訂單"
 #: modules/Client/html_admin/mod_client_manage.html.twig:656
 #: modules/Client/html_admin/mod_client_manage.html.twig:697
 #: modules/Client/html_admin/mod_client_manage.html.twig:813
-#: modules/Client/html_client/mod_client_balance.html.twig:27
+#: modules/Client/html_client/mod_client_balance.html.twig:34
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:204
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:672
@@ -3524,13 +3518,11 @@ msgstr "金額"
 #: modules/Order/html_admin/mod_order_manage.html.twig:336
 #: modules/Order/html_admin/mod_order_new.html.twig:54
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:153
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:49
 msgid "Period"
 msgstr "期間"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:507
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:129
-#: modules/Index/html_client/mod_index_dashboard.html.twig:134
 #: modules/Order/html_admin/mod_order_index.html.twig:166
 msgid "New order"
 msgstr "新增訂單"
@@ -3557,15 +3549,12 @@ msgstr "客戶支援服務單"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:593
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:44
-#: modules/Index/html_client/mod_index_dashboard.html.twig:49
 #: modules/Order/html_admin/mod_order_manage.html.twig:628
-#: modules/Order/html_client/mod_order_manage.html.twig:179
-#: modules/Order/html_client/mod_order_manage.html.twig:218
-#: modules/Order/html_client/mod_order_manage.html.twig:264
-#: modules/Support/html_client/mod_support_ticket.html.twig:35
-#: modules/Support/html_client/mod_support_ticket.html.twig:81
-#: modules/Support/html_client/mod_support_tickets.html.twig:30
-#: modules/Support/html_client/mod_support_tickets.html.twig:93
+#: modules/Order/html_client/mod_order_manage.html.twig:178
+#: modules/Order/html_client/mod_order_manage.html.twig:211
+#: modules/Order/html_client/mod_order_manage.html.twig:245
+#: modules/Support/html_client/mod_support_ticket.html.twig:42
+#: modules/Support/html_client/mod_support_tickets.html.twig:34
 msgid "Help desk"
 msgstr "服務台"
 
@@ -3576,14 +3565,13 @@ msgstr "服務台"
 #: modules/Email/html_admin/mod_email_settings.html.twig:165
 #: modules/Email/html_admin/mod_email_settings.html.twig:191
 #: modules/Embed/html_client/mod_embed_contact.html.twig:52
-#: modules/Index/html_client/mod_index_dashboard.html.twig:48
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:51
 #: modules/Order/html_admin/mod_order_manage.html.twig:629
-#: modules/Order/html_client/mod_order_manage.html.twig:186
-#: modules/Order/html_client/mod_order_manage.html.twig:225
-#: modules/Order/html_client/mod_order_manage.html.twig:257
+#: modules/Order/html_client/mod_order_manage.html.twig:182
+#: modules/Order/html_client/mod_order_manage.html.twig:215
+#: modules/Order/html_client/mod_order_manage.html.twig:249
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:48
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:123
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:98
@@ -3592,11 +3580,10 @@ msgstr "服務台"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:208
 #: modules/Support/html_admin/mod_support_tickets.html.twig:319
 #: modules/Support/html_admin/mod_support_tickets.html.twig:353
-#: modules/Support/html_client/mod_support_contact_us.html.twig:39
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:30
-#: modules/Support/html_client/mod_support_ticket.html.twig:80
-#: modules/Support/html_client/mod_support_tickets.html.twig:29
-#: modules/Support/html_client/mod_support_tickets.html.twig:100
+#: modules/Support/html_client/mod_support_contact_us.html.twig:35
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
+#: modules/Support/html_client/mod_support_tickets.html.twig:33
+#: modules/Support/html_client/mod_support_tickets.html.twig:89
 msgid "Subject"
 msgstr "主旨"
 
@@ -3610,7 +3597,7 @@ msgstr "客戶付款記錄"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:657
 #: modules/Client/html_admin/mod_client_manage.html.twig:705
-#: modules/Client/html_client/mod_client_balance.html.twig:25
+#: modules/Client/html_client/mod_client_balance.html.twig:32
 #: modules/Extension/html_admin/mod_extension_index.html.twig:42
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:174
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:75
@@ -3653,6 +3640,8 @@ msgstr "電子郵件主旨"
 #: modules/Email/html_admin/mod_email_details.html.twig:37
 #: modules/Email/html_admin/mod_email_history.html.twig:31
 #: modules/Email/html_admin/mod_email_settings.html.twig:192
+#: modules/Email/html_client/mod_email_email.html.twig:19
+#: modules/Email/html_client/mod_email_index.html.twig:53
 msgid "To"
 msgstr "到"
 
@@ -3712,22 +3701,25 @@ msgid "Required fields"
 msgstr "必填欄位"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:75
-#: modules/Client/html_client/mod_client_profile.html.twig:70
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:63
-#: modules/Page/html_client/mod_page_signup.html.twig:49
+#: modules/Client/html_client/mod_client_profile.html.twig:58
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:78
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:82
+#: modules/Page/html_client/mod_page_signup.html.twig:35
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:174
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:120
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:126
 msgid "Last Name"
 msgstr "姓"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:77
-#: modules/Client/html_client/mod_client_profile.html.twig:86
+#: modules/Client/html_client/mod_client_profile.html.twig:75
+#: modules/Page/html_client/mod_page_signup.html.twig:64
 msgid "Gender"
 msgstr "性別"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:78
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:84
-#: modules/Page/html_client/mod_page_signup.html.twig:70
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:102
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:104
+#: modules/Page/html_client/mod_page_signup.html.twig:57
 msgid "Birthday"
 msgstr "生日"
 
@@ -3750,22 +3742,18 @@ msgstr "欄位標題"
 
 #: modules/Client/html_client/mod_client_balance.html.twig:5
 #: modules/Client/html_client/mod_client_balance.html.twig:6
-#: modules/Client/html_client/mod_client_balance.html.twig:17
-msgid "Payment history"
-msgstr "付款記錄"
-
 #: modules/Client/html_client/mod_client_balance.html.twig:18
-msgid "Here you can track what you have been charged for and add more funds to your account"
-msgstr "在這裡您可以追蹤被收取的費用並向您的帳戶增加更多資金"
+#: themes/huraga/html/partial_menu.html.twig:62
+msgid "Wallet"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_balance.html.twig:46
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:162
-msgid "Total:"
-msgstr "總計："
+#: modules/Client/html_client/mod_client_balance.html.twig:19
+msgid "Here you can manage and track your account balance"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_balance.html.twig:61
-msgid "Add funds!"
-msgstr "增加資金!"
+#: modules/Client/html_client/mod_client_balance.html.twig:24
+msgid "Add fund"
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:3
 msgid "Profile details"
@@ -3775,211 +3763,199 @@ msgstr "個人詳細資料"
 msgid "User profile settings"
 msgstr "使用者設定"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:24
+#: modules/Client/html_client/mod_client_profile.html.twig:13
+msgid "You must verify your email address before you may access our services."
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:17
 msgid "Verification email has been resent"
 msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:24
+#: modules/Client/html_client/mod_client_profile.html.twig:17
 msgid "Resend verification email"
 msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:31
+#: modules/Client/html_client/mod_client_profile.html.twig:27
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:33
 #: modules/Order/html_admin/mod_order_manage.html.twig:38
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:6
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:9
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:7
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:8
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:16
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:9
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:24
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:6
 msgid "Details"
 msgstr "詳細資料"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:32
-#: modules/Client/html_client/mod_client_profile.html.twig:221
-#: modules/Client/html_client/mod_client_profile.html.twig:245
+#: modules/Client/html_client/mod_client_profile.html.twig:29
+#: modules/Client/html_client/mod_client_profile.html.twig:173
+#: modules/Client/html_client/mod_client_profile.html.twig:192
+#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:17
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:81
 msgid "Change Password"
 msgstr "更改密碼"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:33
-#: modules/Client/html_client/mod_client_profile.html.twig:251
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:13
-msgid "API key"
-msgstr "API 金鑰"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:41
+#: modules/Client/html_client/mod_client_profile.html.twig:38
 msgid "Update details"
 msgstr "更新詳細資料"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:42
+#: modules/Client/html_client/mod_client_profile.html.twig:39
 msgid "Keep your personal data up to date."
 msgstr "使您的個人資料保持最新狀態。"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "Please register with"
-msgstr "請註冊"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "at "
-msgstr "在 "
-
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "to change your profile image. Gravatar image updates may not appear immediately."
-msgstr "以更改您的個人資料圖片。Gravatar 圖片更新可能不會立即出現。"
+#: modules/Client/html_client/mod_client_profile.html.twig:49
+msgid "To change your avatar visit"
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:54
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:16
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:46
-#: modules/Page/html_client/mod_page_login.html.twig:28
-#: modules/Page/html_client/mod_page_password-reset.html.twig:30
-#: modules/Page/html_client/mod_page_signup.html.twig:31
-msgid "Email Address"
-msgstr "電子郵件地址"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:62
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:54
-#: modules/Page/html_client/mod_page_signup.html.twig:39
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:67
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:71
+#: modules/Page/html_client/mod_page_signup.html.twig:28
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:168
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:113
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:121
 msgid "First Name"
 msgstr "名字"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:99
+#: modules/Client/html_client/mod_client_profile.html.twig:64
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:29
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:57
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:61
+#: modules/Page/html_client/mod_page_signup.html.twig:42
+msgid "Email Address"
+msgstr "電子郵件地址"
+
+#: modules/Client/html_client/mod_client_profile.html.twig:95
 msgid "Company Name"
 msgstr "公司名稱"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:107
+#: modules/Client/html_client/mod_client_profile.html.twig:101
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:389
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:451
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:157
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:183
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:166
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:121
 msgid "Company VAT"
 msgstr "公司營業稅"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:115
+#: modules/Client/html_client/mod_client_profile.html.twig:105
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:395
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:457
 msgid "Company Number"
 msgstr "公司編號"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:123
+#: modules/Client/html_client/mod_client_profile.html.twig:111
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:228
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:183
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:182
 msgid "Phone Country Code"
 msgstr "電話國家代碼"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:131
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:193
-#: modules/Page/html_client/mod_page_signup.html.twig:161
+#: modules/Client/html_client/mod_client_profile.html.twig:115
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:214
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:220
+#: modules/Page/html_client/mod_page_signup.html.twig:128
 msgid "Phone Number"
 msgstr "電話號碼"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:147
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
-#: modules/Page/html_client/mod_page_signup.html.twig:105
+#: modules/Client/html_client/mod_client_profile.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:155
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:158
+#: modules/Page/html_client/mod_page_signup.html.twig:84
 msgid "Address 2"
 msgstr "地址2"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:166
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:160
-#: modules/Page/html_client/mod_page_signup.html.twig:128
+#: modules/Client/html_client/mod_client_profile.html.twig:137
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:180
+#: modules/Page/html_client/mod_page_signup.html.twig:102
 msgid "-- Select country --"
 msgstr "-- 選擇國家 --"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:185
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:183
-#: modules/Page/html_client/mod_page_signup.html.twig:151
+#: modules/Client/html_client/mod_client_profile.html.twig:151
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:203
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:206
+#: modules/Page/html_client/mod_page_signup.html.twig:120
 msgid "Zip/Postal Code"
 msgstr "郵編/郵政編碼"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:222
+#: modules/Client/html_client/mod_client_profile.html.twig:174
 msgid "Please enter new password two times in order avoid mistypes"
 msgstr "請輸入兩次新密碼以免輸入錯誤"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:224
-#: modules/Staff/html_admin/mod_staff_profile.html.twig:60
-msgid "Password Changed"
-msgstr ""
-
-#: modules/Client/html_client/mod_client_profile.html.twig:227
+#: modules/Client/html_client/mod_client_profile.html.twig:178
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:63
 msgid "Current Password"
 msgstr "目前密碼"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:233
+#: modules/Client/html_client/mod_client_profile.html.twig:183
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:69
 msgid "New Password"
 msgstr "新密碼"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:239
+#: modules/Client/html_client/mod_client_profile.html.twig:188
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:75
 msgid "Confirm Password"
 msgstr "確認密碼"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:252
+#: modules/Client/html_client/mod_client_profile.html.twig:197
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:89
 msgid "API key allows integration with external applications. You will need this key for authentication."
 msgstr "API 金鑰允許與外部應用程式整合，您將需要此金鑰進行身份驗證。"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:258
-msgid "Warning! Resetting the key will break existing applications using it!"
-msgstr "警告！重設金鑰將讓使用舊金鑰的應用程式失效！"
+#: modules/Client/html_client/mod_client_profile.html.twig:203
+msgid "Warning!"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:261
+#: modules/Client/html_client/mod_client_profile.html.twig:203
+msgid "Resetting the key will break existing applications using it!"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:207
 msgid "Your API key"
 msgstr "您的 API 金鑰"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:266
-msgid "Reset key"
-msgstr "重設金鑰"
+#: modules/Client/html_client/mod_client_profile.html.twig:211
+msgid "Generate a new key"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:273
+#: modules/Client/html_client/mod_client_profile.html.twig:216
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and can not be changed."
 msgstr "您的個人貨幣是在您的第一個訂單後所設定的。設定貨幣後，您的所有個人帳務處理都將以該貨幣進行管理，並且無法更改。"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:276
+#: modules/Client/html_client/mod_client_profile.html.twig:218
 msgid "Your profile currency is"
 msgstr "您的個人貨幣是"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:277
-msgid "Create new client profile if you want to manage your money in other currency"
-msgstr "如果您想以其他貨幣進行管理，請建立新的帳戶"
+#: modules/Client/html_client/mod_client_profile.html.twig:219
+msgid "Create new client profile if you want to manage your money in other currency."
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:222
+msgid "You do not yet have a currency associated with your profile. You can select the correct one when making your first order."
+msgstr ""
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:3
 msgid "Set new Password"
 msgstr ""
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:20
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:43
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:32
 msgid "Set new password"
 msgstr ""
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:31
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:25
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:26
 msgid "New password"
 msgstr "新密碼"
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:36
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:38
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:30
 msgid "Repeat new password"
 msgstr ""
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:54
-msgid "Sign Up"
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:34
+#: modules/Page/html_client/mod_page_password-reset.html.twig:30
+msgid "Back to login"
 msgstr ""
-
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:58
-#: modules/Page/html_client/mod_page_login.html.twig:20
-#: modules/Page/html_client/mod_page_password-reset.html.twig:48
-#: modules/Page/html_client/mod_page_signup.html.twig:212
-#: modules/Staff/html_admin/mod_staff_login.html.twig:3
-#: themes/admin_default/html/error.html.twig:14
-#: themes/huraga/html/layout_default.html.twig:113
-#: themes/huraga/html/layout_default.html.twig:228
-msgid "Login"
-msgstr "登入"
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
@@ -4173,8 +4149,9 @@ msgid "Slug"
 msgstr "別名"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:69
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:86
-#: modules/Support/html_client/mod_support_tickets.html.twig:50
+#: modules/Email/html_client/mod_email_index.html.twig:57
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:97
+#: modules/Support/html_client/mod_support_tickets.html.twig:52
 msgid "View"
 msgstr "查看"
 
@@ -4243,52 +4220,52 @@ msgstr "客戶區域"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
 #: themes/admin_default/html/layout_default.html.twig:148
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
-#: themes/huraga/html/layout_default.html.twig:100
-#: themes/huraga/html/layout_default.html.twig:200
-#: themes/huraga/html/partial_menu.html.twig:5
+#: themes/huraga/html/layout_default.html.twig:88
+#: themes/huraga/html/layout_default.html.twig:153
+#: themes/huraga/html/partial_menu.html.twig:8
 msgid "Dashboard"
 msgstr "控制台"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
 #: modules/Index/html_client/mod_index_dashboard.html.twig:10
-#: themes/huraga/html/layout_default.html.twig:198
+#: themes/huraga/html/layout_default.html.twig:150
 msgid "Home"
 msgstr "首頁"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:36
-#: modules/Index/html_client/mod_index_dashboard.html.twig:41
 msgid "Tickets waiting your reply"
 msgstr "等待回覆的服務單"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:42
-#: modules/Index/html_client/mod_index_dashboard.html.twig:47
-#: modules/Support/html_client/mod_support_tickets.html.twig:28
+#: modules/Support/html_client/mod_support_tickets.html.twig:32
 msgid "Id"
 msgstr "ID"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:46
-#: modules/Index/html_client/mod_index_dashboard.html.twig:51
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:80
 msgid "Last Updated"
 msgstr ""
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:47
-#: modules/Index/html_client/mod_index_dashboard.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:706
-#: modules/Support/html_client/mod_support_tickets.html.twig:33
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:52
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:85
+#: modules/Order/html_client/mod_order_list.html.twig:35
+#: modules/Order/html_client/mod_order_manage.html.twig:140
+#: modules/Support/html_client/mod_support_tickets.html.twig:37
 msgid "Actions"
 msgstr "動作"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:57
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:212
-#: modules/Index/html_client/mod_index_dashboard.html.twig:62
-#: modules/Index/html_client/mod_index_dashboard.html.twig:217
+#: modules/Index/html_client/mod_index_dashboard.html.twig:37
+#: modules/Index/html_client/mod_index_dashboard.html.twig:156
+#: modules/Index/html_client/mod_index_dashboard.html.twig:188
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:113
 #: modules/Order/html_admin/mod_order_manage.html.twig:135
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:81
 #: modules/Support/html_admin/mod_support_tickets.html.twig:245
-#: modules/Support/html_client/mod_support_ticket.html.twig:95
-#: modules/Support/html_client/mod_support_tickets.html.twig:48
+#: modules/Support/html_client/mod_support_tickets.html.twig:49
 #: themes/admin_default/html/mod_index_dashboard.html.twig:335
 #: themes/admin_default/html/mod_index_dashboard.html.twig:498
 #: themes/admin_default/html/mod_index_dashboard.html.twig:525
@@ -4296,85 +4273,86 @@ msgid "ago"
 msgstr "前"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:58
-#: modules/Index/html_client/mod_index_dashboard.html.twig:63
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:88
-#: modules/Support/html_client/mod_support_ticket.html.twig:133
-#: modules/Support/html_client/mod_support_tickets.html.twig:50
+#: modules/Index/html_client/mod_index_dashboard.html.twig:39
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:69
+#: modules/Support/html_client/mod_support_ticket.html.twig:29
+#: modules/Support/html_client/mod_support_tickets.html.twig:54
 msgid "Reply"
 msgstr "回覆"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:91
-#: modules/Index/html_client/mod_index_dashboard.html.twig:96
+#: modules/Index/html_client/mod_index_dashboard.html.twig:63
 msgid "Balance"
 msgstr "餘額"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:104
-#: modules/Index/html_client/mod_index_dashboard.html.twig:109
+#: modules/Index/html_client/mod_index_dashboard.html.twig:76
 msgid "All Invoices"
 msgstr "所有收據"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:112
-#: modules/Index/html_client/mod_index_dashboard.html.twig:117
+#: modules/Index/html_client/mod_index_dashboard.html.twig:83
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:144
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:210
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:24
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:64
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:38
 msgid "Paid"
 msgstr "已付款"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:114
-#: modules/Index/html_client/mod_index_dashboard.html.twig:119
+#: modules/Index/html_client/mod_index_dashboard.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:130
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:214
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:23
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:29
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:34
 msgid "Unpaid"
 msgstr "未付款"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:130
-#: modules/Index/html_client/mod_index_dashboard.html.twig:135
+#: modules/Index/html_client/mod_index_dashboard.html.twig:102
 msgid "All orders"
 msgstr "所有訂單"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:140
-#: modules/Index/html_client/mod_index_dashboard.html.twig:145
+#: modules/Index/html_client/mod_index_dashboard.html.twig:111
 msgid "Expiring"
 msgstr "即將到期"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:153
-#: modules/Index/html_client/mod_index_dashboard.html.twig:158
+#: modules/Index/html_client/mod_index_dashboard.html.twig:124
+#: modules/Support/html_client/mod_support_tickets.html.twig:22
 msgid "New ticket"
 msgstr "新增服務單"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:154
-#: modules/Index/html_client/mod_index_dashboard.html.twig:159
+#: modules/Index/html_client/mod_index_dashboard.html.twig:125
 msgid "All tickets"
 msgstr "所有服務單"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:162
-#: modules/Index/html_client/mod_index_dashboard.html.twig:167
+#: modules/Index/html_client/mod_index_dashboard.html.twig:132
 msgid "Open"
 msgstr "開啟"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:164
-#: modules/Index/html_client/mod_index_dashboard.html.twig:169
+#: modules/Index/html_client/mod_index_dashboard.html.twig:134
 msgid "On Hold"
 msgstr "擱置中"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:176
-#: modules/Index/html_client/mod_index_dashboard.html.twig:181
+#: modules/Index/html_client/mod_index_dashboard.html.twig:144
 msgid "Recent orders"
 msgstr "近期訂單"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:204
-#: modules/Index/html_client/mod_index_dashboard.html.twig:209
 msgid "Recent emails"
 msgstr "最近的電子郵件"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:32
 #: modules/Email/html_admin/mod_email_history.html.twig:32
+#: modules/Email/html_client/mod_email_email.html.twig:18
+#: modules/Email/html_client/mod_email_index.html.twig:52
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:44
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:28
 msgid "From"
@@ -4389,8 +4367,8 @@ msgid "Email resent"
 msgstr ""
 
 #: modules/Email/html_admin/mod_email_details.html.twig:55
-#: modules/Email/html_client/mod_email_email.html.twig:35
-#: modules/Email/html_client/mod_email_index.html.twig:44
+#: modules/Email/html_client/mod_email_email.html.twig:23
+#: modules/Email/html_client/mod_email_index.html.twig:60
 msgid "Resend"
 msgstr "重新發送"
 
@@ -4680,30 +4658,11 @@ msgstr "電子郵件範本範例"
 msgid "Email template playground. Use this tool to try rendering email templates."
 msgstr ""
 
-#: modules/Email/html_client/mod_email_email.html.twig:19
-msgid "Back to emails list"
-msgstr "回到電子郵件列表"
-
-#: modules/Email/html_client/mod_email_email.html.twig:27
-#: modules/Email/html_client/mod_email_index.html.twig:36
-msgid "From:"
-msgstr "從："
-
-#: modules/Email/html_client/mod_email_email.html.twig:28
-#: modules/Email/html_client/mod_email_index.html.twig:37
-msgid "To:"
-msgstr "到："
-
-#: modules/Email/html_client/mod_email_email.html.twig:29
-#: modules/Email/html_client/mod_email_index.html.twig:38
-msgid "Created at:"
-msgstr "建立於："
-
-#: modules/Email/html_client/mod_email_index.html.twig:15
-msgid "Here you can find all the emails we sent you. Please click on email topic in left column and it will be displayed in right side."
+#: modules/Email/html_client/mod_email_index.html.twig:19
+msgid "Here you can find all the emails we've sent you."
 msgstr ""
 
-#: modules/Email/html_client/mod_email_index.html.twig:19
+#: modules/Email/html_client/mod_email_index.html.twig:26
 msgid "There are no emails to display"
 msgstr "沒有電子郵件可供顯示"
 
@@ -4716,7 +4675,7 @@ msgid "Enter the words above"
 msgstr "请输入信息"
 
 #: modules/Embed/html_client/mod_embed_contact.html.twig:102
-#: modules/Support/html_client/mod_support_contact_us.html.twig:56
+#: modules/Support/html_client/mod_support_contact_us.html.twig:46
 msgid "Send"
 msgstr "發送"
 
@@ -5008,6 +4967,96 @@ msgstr "複選框"
 msgid "Textarea"
 msgstr "內文區域"
 
+#: modules/Index/html_client/mod_index_dashboard.html.twig:100
+msgid "New orders"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:166
+msgid "No recent orders"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:176
+#: modules/Support/html_client/mod_support_ticket.html.twig:13
+#: modules/Support/html_client/mod_support_tickets.html.twig:5
+#: modules/Support/html_client/mod_support_tickets.html.twig:6
+#: modules/Support/html_client/mod_support_tickets.html.twig:9
+#: modules/Support/html_client/mod_support_tickets.html.twig:18
+msgid "Support tickets"
+msgstr "支援服務單"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:198
+msgid "No recent support tickets"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:212
+msgid "You are logged out"
+msgstr "您已登出"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:214
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:43
+#: modules/Page/html_client/mod_page_login.html.twig:3
+#: modules/Page/html_client/mod_page_login.html.twig:30
+#: modules/Staff/html_admin/mod_staff_login.html.twig:3
+#: modules/Staff/html_admin/mod_staff_login.html.twig:70
+#: themes/admin_default/html/error.html.twig:14
+#: themes/huraga/html/layout_default.html.twig:101
+msgid "Login"
+msgstr "登入"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:242
+#: modules/Page/html_client/mod_page_signup.html.twig:5
+#: modules/Page/html_client/mod_page_signup.html.twig:165
+#: themes/huraga/html/layout_default.html.twig:127
+msgid "Sign up"
+msgstr "註冊"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:223
+#: modules/Index/html_client/mod_index_dashboard.html.twig:227
+#: modules/Order/html_admin/mod_order_manage.html.twig:75
+#: modules/Order/html_client/mod_order_index.html.twig:5
+#: modules/Order/html_client/mod_order_index.html.twig:12
+#: modules/Order/html_client/mod_order_manage.html.twig:35
+#: modules/Order/html_client/mod_order_product.html.twig:5
+#: themes/admin_default/html/partial_menu_top.html.twig:3
+#: themes/huraga/html/layout_default.html.twig:94
+#: themes/huraga/html/partial_menu.html.twig:17
+msgid "Order"
+msgstr "訂單"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:225
+msgid "Products and services"
+msgstr "產品及服務"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:236
+#: modules/News/html_admin/mod_news_index.html.twig:7
+#: modules/News/html_admin/mod_news_post.html.twig:19
+#: modules/News/html_client/mod_news_index.html.twig:3
+#: modules/News/html_client/mod_news_index.html.twig:7
+#: modules/News/html_client/mod_news_post.html.twig:8
+#: themes/huraga/html/partial_menu.html.twig:71
+msgid "News"
+msgstr "消息"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:238
+msgid "Latest news and announcements"
+msgstr "最新消息和公告"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:250
+#: modules/Index/html_client/mod_index_dashboard.html.twig:254
+#: modules/Support/html_client/mod_support_kb_article.html.twig:8
+#: modules/Support/html_client/mod_support_kb_category.html.twig:7
+#: modules/Support/html_client/mod_support_kb_index.html.twig:10
+#: modules/Support/html_client/mod_support_kb_index.html.twig:14
+#: modules/Support/html_client/mod_support_kb_index.html.twig:31
+#: themes/huraga/html/partial_menu.html.twig:80
+msgid "Knowledge base"
+msgstr "知識庫"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:252
+msgid "Browse our KB for answers and FAQ"
+msgstr "瀏覽我們的知識庫以取得常見問題及答案"
+
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:28
 msgid "Payment gateway configuration"
 msgstr "付款閘道設置"
@@ -5129,6 +5178,7 @@ msgstr "編號"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:62
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -5188,9 +5238,10 @@ msgstr "進行準備作業"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:28
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:165
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:52
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:73
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:7
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:57
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:74
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:18
 #: themes/admin_default/html/partial_menu_top.html.twig:7
 msgid "Invoice"
 msgstr "應收付憑單"
@@ -5198,6 +5249,8 @@ msgstr "應收付憑單"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:36
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:31
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:31
+#: modules/Order/html_client/mod_order_manage.html.twig:154
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:5
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:34
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
 msgid "Manage"
@@ -5261,16 +5314,14 @@ msgid "This should be the transaction ID you use to reconcile your bank statemen
 msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:263
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:270
 #: modules/Order/html_admin/mod_order_manage.html.twig:248
 msgid "Cancel"
 msgstr "取消"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:175
-#: modules/Order/html_client/mod_order_manage.html.twig:204
-#: modules/Order/html_client/mod_order_manage.html.twig:242
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:201
-#: modules/Support/html_client/mod_support_tickets.html.twig:114
+#: modules/Support/html_client/mod_support_tickets.html.twig:98
 msgid "Submit"
 msgstr "送出"
 
@@ -5279,7 +5330,7 @@ msgid "Refund"
 msgstr "退款"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:196
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:56
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:62
 msgid "PDF"
 msgstr "PDF"
 
@@ -5341,7 +5392,7 @@ msgstr "姓氏"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:494
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:222
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:176
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:175
 msgid "Zip"
 msgstr "郵遞區號"
 
@@ -5350,13 +5401,13 @@ msgid "Invoice items"
 msgstr "收據項目"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:526
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:188
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:214
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:198
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:153
 #: modules/Order/html_admin/mod_order_manage.html.twig:324
 #: modules/Order/html_admin/mod_order_manage.html.twig:457
-#: modules/Order/html_client/mod_order_list.html.twig:26
+#: modules/Order/html_client/mod_order_list.html.twig:32
 #: modules/Order/html_client/mod_order_manage.html.twig:136
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:14
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:17
 #: themes/admin_default/html/partial_pricing.html.twig:25
 #: themes/huraga/html/partial_pricing.html.twig:54
 msgid "Price"
@@ -5371,7 +5422,7 @@ msgid "Approve"
 msgstr "批准"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:710
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:59
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:63
 msgid "Print"
 msgstr "列印"
 
@@ -5394,7 +5445,7 @@ msgid "Auto invoice approval"
 msgstr "自動批准收據"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:62
-msgid "Proforma Invoicing / Sequential Invoice Numbering"
+msgid "Invoicing / Sequential Invoice Numbering"
 msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:64
@@ -5406,7 +5457,7 @@ msgid "Set 0 to keep invoices forever."
 msgstr "設為 0 以永久保留收據。"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:71
-msgid "Proforma invoice prefix/series"
+msgid "Invoice prefix/series"
 msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:77
@@ -5608,8 +5659,8 @@ msgid "Transaction status on payment gateway"
 msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:90
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:130
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:155
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:137
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:96
 #: modules/Notification/html_admin/mod_notification_index.html.twig:78
 #: modules/Order/html_admin/mod_order_manage.html.twig:573
 #: modules/Support/html_admin/mod_support_ticket.html.twig:195
@@ -5720,19 +5771,19 @@ msgid "n/a"
 msgstr "不適用"
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:3
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:15
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
 msgid "Processing payment ..."
 msgstr "正在處理付款 ..."
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:17
 msgid "Thank you for your patience."
 msgstr "感謝您的耐心等待。"
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:23
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:24
 msgid "Redirecting to payment gateway.."
 msgstr "重新導向至付款頁面"
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:29
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:30
 msgid "Please click here to continue if this page does not redirect automatically in 5 seconds"
 msgstr "如果此頁面未在 5 秒內自動重新導向，請點擊此處繼續"
 
@@ -5741,158 +5792,138 @@ msgstr "如果此頁面未在 5 秒內自動重新導向，請點擊此處繼續
 msgid "Invoice management"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:20
-msgid "List of invoices"
-msgstr "收據清單"
-
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:21
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:24
 msgid "All of your invoices can be found here. You can choose to see either paid or unpaid invoices by clicking corresponding button."
 msgstr "您的所有收據都可以在這裡找到。您可以透過點擊對應的按鈕來選擇查看已付款或未付款的收據。"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:70
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:73
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:86
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:49
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:82
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:76
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:31
 msgid "Invoice Date"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:36
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:80
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:93
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:50
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:39
 msgid "Due Date"
 msgstr "到期日期"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:49
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:64
 msgid "Pay"
 msgstr "付款"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:71
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:83
 msgid "Paid Date"
 msgstr ""
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:7
-msgid "Proforma invoice"
-msgstr ""
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:52
-msgid "Receipt"
-msgstr "收據"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:25
 msgid "Payment methods"
 msgstr "付款方式"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:26
-msgid "Please choose payment type and pay for your chosen products."
-msgstr "請選擇付款方式並為您選擇的產品付款。"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:315
-msgid "Pay with"
-msgstr "支付方式"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:53
-msgid "You can print this invoice or export it to PDF file by clicking on corresponding button."
-msgstr "您可以點擊對應的按鈕列印此單據或將其導出為 PDF 檔案。"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:71
-msgid "Invoice Number"
+msgid "Please choose a payment type and pay for your chosen products."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:87
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:100
-msgid "Invoice Status"
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:58
+msgid "You can print this invoice or export it to a PDF file by clicking on the corresponding button."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:105
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:120
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:157
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:112
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:68
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:152
 msgid "VAT"
 msgstr "營業稅"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:125
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:132
 msgid "Account"
 msgstr "帳戶"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:139
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:165
-msgid "Billing & Delivery address"
-msgstr "帳單 & 配送地址"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:186
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:212
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:196
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:151
 msgid "#"
 msgstr "#"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:227
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:254
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:185
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "折扣"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:258
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:265
 msgid "Pay now with a one-time payment"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:259
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:266
 msgid "Pay now and create a subscription"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:260
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:267
 msgid "Pay now"
 msgstr "立即付款"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:295
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:301
 msgid "The invoice you are paying and your chosen payment gateway both support subscription payments. What type of payment would you like to continue with?"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:298
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:304
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:309
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:310
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:315
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:302
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:308
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it. Optionally, you may choose a different payment gateway if you wish to pay using a subscription."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:321
+msgid "Pay with"
+msgstr "支付方式"
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:29
 msgid "Invoice number"
 msgstr "發票號碼"
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:140
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:47
+msgid "Invoice Status"
+msgstr ""
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 #: modules/System/html_admin/mod_system_settings.html.twig:113
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Bank Name"
 msgstr "銀行名稱"
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:145
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:95
 #: modules/System/html_admin/mod_system_settings.html.twig:119
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "BIC / SWIFT Code"
 msgstr "BIC / SWIFT 代碼"
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:150
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:92
 msgid "Bank Account"
 msgstr ""
 
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:106
+msgid "Billing & Delivery address"
+msgstr "帳單 & 配送地址"
+
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:3
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:4
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:10
 msgid "Thank you"
 msgstr "謝謝"
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:12
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
 msgid "Your payment is being processed right now. It can take up 5 minutes to complete."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
 msgid "Payment for invoice received"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:16
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr ""
 
@@ -6011,16 +6042,6 @@ msgstr ""
 msgid "Message was sent."
 msgstr ""
 
-#: modules/News/html_admin/mod_news_index.html.twig:7
-#: modules/News/html_admin/mod_news_post.html.twig:19
-#: modules/News/html_client/mod_news_index.html.twig:3
-#: modules/News/html_client/mod_news_index.html.twig:6
-#: modules/News/html_client/mod_news_post.html.twig:8
-#: themes/huraga/html/layout_default.html.twig:257
-#: themes/huraga/html/partial_menu.html.twig:53
-msgid "News"
-msgstr "消息"
-
 #: modules/News/html_admin/mod_news_index.html.twig:12
 msgid "News and announcements"
 msgstr "消息和公告"
@@ -6064,26 +6085,29 @@ msgstr ""
 msgid "Last update"
 msgstr "最後更新"
 
-#: modules/News/html_client/mod_news_index.html.twig:14
+#: modules/News/html_client/mod_news_index.html.twig:16
 msgid "News & Announcements"
 msgstr "消息 & 公告"
 
-#: modules/News/html_client/mod_news_index.html.twig:15
+#: modules/News/html_client/mod_news_index.html.twig:17
 msgid "Track our latest information."
 msgstr "追蹤我們的最新消息。"
 
-#: modules/News/html_client/mod_news_index.html.twig:32
-msgid "Read more ..."
-msgstr "閱讀更多..."
+#: modules/News/html_client/mod_news_index.html.twig:36
+msgid "Continue reading"
+msgstr ""
 
-#: modules/News/html_client/mod_news_post.html.twig:34
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:72
-msgid "by "
-msgstr "由 "
+#: modules/News/html_client/mod_news_index.html.twig:44
+msgid "No news or announcements"
+msgstr ""
+
+#: modules/News/html_client/mod_news_post.html.twig:33
+msgid "by"
+msgstr ""
 
 #: modules/News/html_client/mod_news_post.html.twig:43
-msgid "Back to list"
-msgstr "返回目錄"
+msgid "Back to the list"
+msgstr ""
 
 #: modules/Notification/html_admin/mod_notification_index.html.twig:5
 msgid "Notifications center"
@@ -6113,7 +6137,7 @@ msgstr "篩選訂單"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:41
 #: modules/Order/html_admin/mod_order_index.html.twig:295
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:13
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
 #: themes/admin_default/html/partial_menu_top.html.twig:15
 msgid "Product"
 msgstr "產品"
@@ -6160,7 +6184,7 @@ msgid "Service management"
 msgstr "服務管理"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:56
-#: modules/Order/html_client/mod_order_manage.html.twig:127
+#: modules/Order/html_client/mod_order_manage.html.twig:126
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:20
 #: modules/Product/html_admin/mod_product_addons.html.twig:5
 #: modules/Product/html_admin/mod_product_addons.html.twig:19
@@ -6173,20 +6197,8 @@ msgstr "附加元件"
 msgid "History"
 msgstr "歷史"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:75
-#: modules/Order/html_client/mod_order_index.html.twig:5
-#: modules/Order/html_client/mod_order_manage.html.twig:30
-#: modules/Order/html_client/mod_order_product.html.twig:5
-#: themes/admin_default/html/partial_menu_top.html.twig:3
-#: themes/huraga/html/layout_default.html.twig:105
-#: themes/huraga/html/layout_default.html.twig:239
-#: themes/huraga/html/layout_default.html.twig:245
-#: themes/huraga/html/partial_menu.html.twig:11
-msgid "Order"
-msgstr "訂單"
-
 #: modules/Order/html_admin/mod_order_manage.html.twig:87
-#: modules/Order/html_client/mod_order_manage.html.twig:40
+#: modules/Order/html_client/mod_order_manage.html.twig:45
 msgid "Payment amount"
 msgstr "付款金額"
 
@@ -6199,12 +6211,12 @@ msgid "Payment amount after discount"
 msgstr "折扣後的付款金額"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:101
-#: modules/Order/html_client/mod_order_manage.html.twig:52
+#: modules/Order/html_client/mod_order_manage.html.twig:57
 msgid "Order status"
 msgstr "訂單狀態"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:120
-#: modules/Order/html_client/mod_order_manage.html.twig:77
+#: modules/Order/html_client/mod_order_manage.html.twig:82
 msgid "Order notes"
 msgstr "訂單備註"
 
@@ -6233,7 +6245,7 @@ msgid "Order promo code"
 msgstr "訂單促銷代碼"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:156
-#: modules/Order/html_client/mod_order_manage.html.twig:84
+#: modules/Order/html_client/mod_order_manage.html.twig:89
 msgid "Active support tickets"
 msgstr "活動技術支援單"
 
@@ -6297,7 +6309,7 @@ msgid "Changes status without performing action"
 msgstr ""
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:330
-#: modules/Order/html_client/mod_order_manage.html.twig:232
+#: modules/Order/html_client/mod_order_manage.html.twig:186
 msgid "Reason"
 msgstr "原因"
 
@@ -6314,12 +6326,12 @@ msgid "Please be cautious and make sure you know what you are doing when editing
 msgstr ""
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:450
-#: modules/Order/html_client/mod_order_manage.html.twig:128
+#: modules/Order/html_client/mod_order_manage.html.twig:127
 msgid "Addons you have ordered with this service"
 msgstr ""
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:455
-#: modules/Order/html_client/mod_order_list.html.twig:25
+#: modules/Order/html_client/mod_order_list.html.twig:31
 #: modules/Order/html_client/mod_order_manage.html.twig:135
 msgid "Product/Service"
 msgstr "產品/服務"
@@ -6330,7 +6342,7 @@ msgid "Billing Cycle"
 msgstr "結算週期"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:458
-#: modules/Order/html_client/mod_order_list.html.twig:27
+#: modules/Order/html_client/mod_order_list.html.twig:33
 #: modules/Order/html_client/mod_order_manage.html.twig:138
 msgid "Next due date"
 msgstr "下個到期日"
@@ -6432,14 +6444,12 @@ msgstr ""
 msgid "Suspension reasons"
 msgstr "暫停原因"
 
-#: modules/Order/html_client/mod_order_index.html.twig:18
-#: modules/Order/html_client/mod_order_product.html.twig:18
-#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:5
-msgid "Select Product"
-msgstr "選擇產品"
+#: modules/Order/html_client/mod_order_index.html.twig:23
+msgid "Order Product"
+msgstr ""
 
-#: modules/Order/html_client/mod_order_index.html.twig:19
-#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Order/html_client/mod_order_index.html.twig:24
+#: modules/Order/html_client/mod_order_product.html.twig:20
 msgid "Choose products we offer for selling"
 msgstr ""
 
@@ -6447,87 +6457,100 @@ msgstr ""
 msgid "My Products & Services"
 msgstr "我的產品與服務"
 
-#: modules/Order/html_client/mod_order_list.html.twig:18
-msgid "All of your orders are displayed here. Click on any order to get full information about it."
-msgstr "您的所有訂單都顯示在這裡。點擊任何訂單以取得詳細資訊。"
+#: modules/Order/html_client/mod_order_list.html.twig:9
+#: modules/Order/html_client/mod_order_list.html.twig:19
+#: modules/Order/html_client/mod_order_manage.html.twig:11
+#: themes/huraga/html/partial_menu.html.twig:35
+msgid "Services"
+msgstr "服務"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:23
+#: modules/Order/html_client/mod_order_list.html.twig:20
+msgid "All of your orders are displayed here. Click on any service to get full information about it."
+msgstr ""
+
+#: modules/Order/html_client/mod_order_list.html.twig:30
+#: modules/Support/html_admin/mod_support_tickets.html.twig:40
+msgid "Order ID"
+msgstr "訂單編號"
+
+#: modules/Order/html_client/mod_order_list.html.twig:61
+msgid "No orders yet"
+msgstr ""
+
+#: modules/Order/html_client/mod_order_manage.html.twig:26
 msgid "Service details"
 msgstr "服務內容"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:24
+#: modules/Order/html_client/mod_order_manage.html.twig:27
 msgid "All information about your service"
 msgstr ""
 
-#: modules/Order/html_client/mod_order_manage.html.twig:35
+#: modules/Order/html_client/mod_order_manage.html.twig:40
 msgid "Product name"
 msgstr "商品名稱"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:46
+#: modules/Order/html_client/mod_order_manage.html.twig:51
 msgid "Billing cycle"
 msgstr "計費週期"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:59
+#: modules/Order/html_client/mod_order_manage.html.twig:64
 msgid "Order created"
 msgstr "訂單已建立"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:64
+#: modules/Order/html_client/mod_order_manage.html.twig:69
 msgid "Activated at"
 msgstr ""
 
-#: modules/Order/html_client/mod_order_manage.html.twig:70
+#: modules/Order/html_client/mod_order_manage.html.twig:75
 msgid "Renewal date"
 msgstr "更新日期"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:98
+#: modules/Order/html_client/mod_order_manage.html.twig:102
 msgid "Renew now"
 msgstr "立即續訂"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:102
+#: modules/Order/html_client/mod_order_manage.html.twig:105
 msgid "Request Upgrade"
 msgstr ""
 
-#: modules/Order/html_client/mod_order_manage.html.twig:105
+#: modules/Order/html_client/mod_order_manage.html.twig:107
+#: modules/Order/html_client/mod_order_manage.html.twig:224
 msgid "Open ticket"
 msgstr "開啟服務單"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:108
-msgid "Request Cancellation"
-msgstr "要求取消"
+#: modules/Order/html_client/mod_order_manage.html.twig:109
+msgid "Request cancellation"
+msgstr ""
 
-#: modules/Order/html_client/mod_order_manage.html.twig:115
-msgid "Back to services"
-msgstr "返回服務"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:172
-#: modules/Support/html_client/mod_support_tickets.html.twig:86
-msgid "Submit new support ticket"
-msgstr "提出新支援服務單"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:212
+#: modules/Order/html_client/mod_order_manage.html.twig:168
 msgid "Submit cancellation request"
 msgstr ""
 
-#: modules/Order/html_client/mod_order_manage.html.twig:227
-msgid "I would like to cancel"
-msgstr ""
+#: modules/Order/html_client/mod_order_manage.html.twig:191
+#: modules/Order/html_client/mod_order_manage.html.twig:262
+msgid "Request"
+msgstr "請求"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:250
+#: modules/Order/html_client/mod_order_manage.html.twig:202
+msgid "Submit new support ticket"
+msgstr "提出新支援服務單"
+
+#: modules/Order/html_client/mod_order_manage.html.twig:235
 msgid "Submit upgrade request"
 msgstr ""
 
-#: modules/Order/html_client/mod_order_manage.html.twig:259
-#: modules/Order/html_client/mod_order_manage.html.twig:280
-msgid "I would like to upgrade"
-msgstr ""
-
-#: modules/Order/html_client/mod_order_manage.html.twig:271
+#: modules/Order/html_client/mod_order_manage.html.twig:253
 msgid "Upgrade to"
 msgstr ""
 
-#: modules/Order/html_client/mod_order_manage.html.twig:290
-msgid "Request"
-msgstr "請求"
+#: modules/Order/html_client/mod_order_manage.html.twig:258
+msgid "I would like to upgrade"
+msgstr ""
+
+#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
+msgid "Select Product"
+msgstr "選擇產品"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:5
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:22
@@ -6669,206 +6692,238 @@ msgstr ""
 msgid "Setup:"
 msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:4
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:6
 msgid "Cart"
 msgstr "購物車"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:41
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:44
 msgid "Remove item"
 msgstr "移除項目"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:92
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:95
 msgid "setup"
 msgstr "設定"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:110
-msgid "Have coupon code?"
-msgstr "有優惠券代碼嗎？"
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:113
+msgid "Have a coupon code?"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:118
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:121
 msgid "Enter code"
 msgstr "輸入代碼"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:120
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:123
 msgid "Remove"
 msgstr "移除"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:122
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:125
 msgid "Apply"
 msgstr "套用"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:143
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:138
 msgid "Subtotal:"
 msgstr "小計："
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:147
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:142
 msgid "Discount:"
 msgstr "折扣:"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:178
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:157
+msgid "Total:"
+msgstr "總計："
+
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:173
 msgid "Pay by"
 msgstr "付款方式"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:187
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:182
 msgid "Total amount will be deducted from account balance"
 msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:189
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:184
 msgid "Checkout"
 msgstr "結帳"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:205
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:201
 msgid "Promo code was removed"
 msgstr "促銷代碼已刪除"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:211
 msgid "Are you sure you want to remove this item from cart?"
 msgstr "您確定要從購物車移除此商品嗎？"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:219
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:215
 msgid "Item was removed from cart"
 msgstr "已將商品從購物車移除"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:5
+#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
 msgid "Items"
 msgstr "項目"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:5
-msgid "Login or Register"
-msgstr "登入或註冊"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:11
+msgid "Login or Sign up"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:18
-#: modules/Page/html_client/mod_page_login.html.twig:30
-#: modules/Page/html_client/mod_page_password-reset.html.twig:32
-msgid "Your email address"
-msgstr "您的電子郵件地址"
-
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:18
-#: modules/Page/html_client/mod_page_password-reset.html.twig:32
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
 msgid "You must fill in your email."
 msgstr "您必須填寫您的電子郵件地址。"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
 msgid "You must fill in your password."
 msgstr "您必須填寫您的密碼。"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:32
-#: modules/Page/html_client/mod_page_login.html.twig:3
-#: modules/Page/html_client/mod_page_login.html.twig:42
-msgid "Log in"
-msgstr "登入"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:47
+#: modules/Page/html_client/mod_page_login.html.twig:36
+msgid "Create account"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:34
-msgid "Or register"
-msgstr "或註冊"
-
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
-#: modules/Page/html_client/mod_page_signup.html.twig:80
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:112
 msgid "You are"
 msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:221
-#: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
-#: themes/huraga/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:229
-msgid "Register"
-msgstr "註冊"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:134
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
+msgid "Confirm password"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:224
-msgid "Or Login"
-msgstr "或登入"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:218
+msgid "Phone Code"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:70
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
+#: modules/Page/html_client/mod_page_signup.html.twig:170
+msgid "Already a user?"
+msgstr ""
+
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:46
 msgid "Payment"
 msgstr "付款"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:82
-msgid "Powered by FOSSBilling"
-msgstr "由 FOSSBilling 提供支持"
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:60
+msgid "Powered by"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:103
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:127
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:87
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:113
 msgid "You logged in successfully"
 msgstr "您已成功登入"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:143
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:131
 msgid "Product was added to shopping cart"
 msgstr "產品已加入到購物車"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:155
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:143
 msgid "Promo code was applied for your order"
 msgstr "促銷代碼已使用於您的訂單"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:4
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:6
 msgid "Product Configuration"
 msgstr "產品設置"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:26
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:30
 msgid "FREE"
 msgstr "免費"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:48
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:53
 msgid "Next"
 msgstr "下一個"
 
 #: modules/Page/html_client/mod_page_about-us.html.twig:3
-#: modules/Page/html_client/mod_page_about-us.html.twig:16
+#: modules/Page/html_client/mod_page_about-us.html.twig:19
 msgid "About us"
 msgstr "關於我們"
 
-#: modules/Page/html_client/mod_page_about-us.html.twig:27
-#: modules/Page/html_client/mod_page_privacy-policy.html.twig:28
-#: modules/Page/html_client/mod_page_tos.html.twig:27
-msgid "Back to Homepage"
-msgstr "回到首頁"
+#: modules/Page/html_client/mod_page_about-us.html.twig:9
+#: modules/System/html_admin/mod_system_settings.html.twig:43
+msgid "About"
+msgstr "關於"
 
-#: modules/Page/html_client/mod_page_login.html.twig:53
-#: modules/Page/html_client/mod_page_password-reset.html.twig:47
-#: modules/Page/html_client/mod_page_signup.html.twig:18
-msgid "Signup"
-msgstr "註冊"
+#: modules/Page/html_client/mod_page_login.html.twig:20
+msgid "Login to your account"
+msgstr ""
 
-#: modules/Page/html_client/mod_page_login.html.twig:57
+#: modules/Page/html_client/mod_page_login.html.twig:24
+#: modules/Page/html_client/mod_page_password-reset.html.twig:25
+#: modules/Staff/html_admin/mod_staff_login.html.twig:23
+#: modules/Staff/html_admin/mod_staff_login.html.twig:48
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
+msgid "Enter your email address"
+msgstr "輸入電子郵件地址"
+
+#: modules/Page/html_client/mod_page_login.html.twig:28
+#: modules/Staff/html_admin/mod_staff_login.html.twig:29
+#: modules/Staff/html_admin/mod_staff_login.html.twig:66
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
+msgid "Enter your password"
+msgstr "輸入你的密碼"
+
+#: modules/Page/html_client/mod_page_login.html.twig:40
+#: modules/Page/html_client/mod_page_signup.html.twig:173
 msgid "Forgot password?"
 msgstr "忘記密碼？"
 
 #: modules/Page/html_client/mod_page_password-reset.html.twig:3
-#: modules/Page/html_client/mod_page_password-reset.html.twig:21
-#: modules/Page/html_client/mod_page_password-reset.html.twig:38
+#: modules/Page/html_client/mod_page_password-reset.html.twig:28
 msgid "Reset password"
 msgstr "重設密碼"
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:34
-msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
+#: modules/Page/html_client/mod_page_password-reset.html.twig:20
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:3
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:16
+msgid "Reset your password"
 msgstr ""
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:62
+#: modules/Page/html_client/mod_page_password-reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:18
 msgid "A password reset confirmation email will be sent to you if we found an account with that email address."
 msgstr ""
 
+#: modules/Page/html_client/mod_page_password-reset.html.twig:26
+msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
+msgstr ""
+
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:3
-#: modules/Page/html_client/mod_page_privacy-policy.html.twig:17
+#: modules/Page/html_client/mod_page_privacy-policy.html.twig:19
 msgid "Privacy Policy"
 msgstr "隱私權政策"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:5
-#: modules/Page/html_client/mod_page_signup.html.twig:202
-msgid "Sign up"
-msgstr "註冊"
+#: modules/Page/html_client/mod_page_privacy-policy.html.twig:9
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:13
+msgid "Privacy"
+msgstr "隱私權"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:26
-msgid "Account has been created"
+#: modules/Page/html_client/mod_page_signup.html.twig:22
+msgid "Create a new account"
 msgstr ""
 
-#: modules/Page/html_client/mod_page_signup.html.twig:26
-msgid "Please check your mailbox and confirm email address"
-msgstr "請檢查您的收件匣並確認電子郵件地址"
+#: modules/Page/html_client/mod_page_signup.html.twig:66
+msgid "Male"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:67
+msgid "Female"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:68
+msgid "Non-binary"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:69
+msgid "Other"
+msgstr ""
 
 #: modules/Page/html_client/mod_page_tos.html.twig:3
-#: modules/Page/html_client/mod_page_tos.html.twig:16
+#: modules/Page/html_client/mod_page_tos.html.twig:19
 msgid "Terms and Conditions"
 msgstr "服務條款"
+
+#: modules/Page/html_client/mod_page_tos.html.twig:9
+msgid "Terms"
+msgstr ""
 
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:5
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:21
@@ -6900,6 +6955,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_tickets.html.twig:70
 #: modules/Support/html_admin/mod_support_tickets.html.twig:210
 #: modules/Support/html_admin/mod_support_tickets.html.twig:313
+#: modules/Support/html_client/mod_support_tickets.html.twig:85
 msgid "Helpdesk"
 msgstr "線上客服"
 
@@ -7317,7 +7373,7 @@ msgid "Add new field"
 msgstr "添加新欄位"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:26
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:19
 msgid "Reset API key"
 msgstr ""
 
@@ -7333,9 +7389,13 @@ msgstr ""
 msgid "API key updated"
 msgstr ""
 
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:9
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:7
 msgid "API key details"
 msgstr ""
+
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
+msgid "API key"
+msgstr "API 金鑰"
 
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:2
 msgid "Stock control settings"
@@ -7398,7 +7458,7 @@ msgstr "新增網域註冊商"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:42
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:289
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:12
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:15
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Nameservers"
@@ -7421,7 +7481,7 @@ msgid "Registration"
 msgstr "註冊"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:60
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:14
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:19
 msgid "Transfer"
 msgstr "轉移"
 
@@ -7477,7 +7537,6 @@ msgstr "續約價格"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:137
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:55
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:76
 msgid "Transfer price"
 msgstr "轉移價格"
 
@@ -7553,8 +7612,8 @@ msgstr "名稱伺服器已更新"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:296
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:18
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:114
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:71
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:39
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:82
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:50
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:117
@@ -7564,8 +7623,8 @@ msgstr "名稱伺服器 1"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:302
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:22
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:120
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:77
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:42
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:87
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:54
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
@@ -7575,8 +7634,8 @@ msgstr "名稱伺服器 2"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:308
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:26
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:126
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:83
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:94
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:58
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
@@ -7586,8 +7645,8 @@ msgstr "名稱伺服器 3"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:314
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:132
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:89
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:48
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:99
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
@@ -7599,17 +7658,16 @@ msgid "Update nameservers"
 msgstr "更新名稱伺服器"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:2
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:19
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:26
 msgid "Domain details"
 msgstr "網域詳細資料"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:8
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:23
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:16
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:172
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:16
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:10
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:22
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:15
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:30
 msgid "Domain"
 msgstr "網域"
 
@@ -7630,7 +7688,6 @@ msgid "Registration/Renewal years"
 msgstr "註冊/更新年份"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:66
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:32
 msgid "Expires at"
 msgstr "到期於"
 
@@ -7639,12 +7696,12 @@ msgid "Get EPP"
 msgstr "取得 EPP"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:85
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:44
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:52
 msgid "Unlock"
 msgstr "解鎖"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:91
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:45
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:56
 msgid "Lock"
 msgstr "鎖定"
 
@@ -7669,7 +7726,7 @@ msgid "Transfer code (EPP)"
 msgstr "轉移碼 (EPP)"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:164
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:106
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:114
 msgid "Update domain contact details"
 msgstr "更新網域聯絡資訊"
 
@@ -7678,7 +7735,7 @@ msgid "Domain contact details updated"
 msgstr "已更新網域聯絡資訊"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:234
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:190
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:187
 msgid "Phone number"
 msgstr "電話號碼"
 
@@ -7705,6 +7762,10 @@ msgstr "網域轉移代碼為: "
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:4
 msgid "Domain action"
 msgstr ""
+
+#: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
+msgid "Register"
+msgstr "註冊"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:12
 msgid " Transfer"
@@ -7740,7 +7801,6 @@ msgstr "網域轉移代碼"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:19
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:19
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:7
 msgid "Domain management"
 msgstr "網域管理"
 
@@ -7764,63 +7824,63 @@ msgstr "頂級域名管理"
 msgid "Top level domain settings updated."
 msgstr "頂級域名設定已更新"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:10
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:11
 msgid "Protection"
 msgstr "保護"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:11
-msgid "Privacy"
-msgstr "隱私權"
-
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:13
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:17
 msgid "Whois"
 msgstr "Whois"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:40
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:33
+msgid "Expires on"
+msgstr ""
+
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:47
 msgid "Domain Protection"
 msgstr "網域保護"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:41
-msgid "Domain locking is a security enhancement to prevent unauthorized transfers of your domain to another registrar or web host by \"locking\" your domain name servers."
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:48
+msgid "Domain locking is a security feature which acts to prevent your domain name from being transferred without first unlocking it. When this is enabled, a domain cannot be transferred even with the transfer code."
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:51
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:63
 msgid "Domain Privacy Settings"
 msgstr "網域隱私保護設定"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:53
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:64
 msgid "If you would like to hide domain contact information which is shown on WHOIS you can enable privacy protection. Once domain privacy protection is enabled no one will know who registered this service. And once you decide to disable privacy protection, information that is listed above on \"Update Domain Contact Details\" section will be seen on domain WHOIS again."
 msgstr "如果您想隱藏顯示在 WHOIS 上的網域聯絡資訊，您可以啟用隱私保護服務。一旦啟用網域隱私保護服務，就沒有人知道誰註冊了這個網域。一旦您決定停用隱私保護服務，上方\"更新網域聯絡資訊\"中列出的資訊將再次出現在網域 WHOIS 上。"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:56
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:66
 msgid "Disable Privacy protection"
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:57
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:67
 msgid "Enable Privacy protection"
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:64
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:73
 msgid "Update Nameservers"
 msgstr "更新名稱伺服器"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:66
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:74
 msgid "If you would like to host this domain with another company you can update nameservers."
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:108
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:115
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:209
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:200
 msgid "Domain Secret"
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:210
-msgid "All domain names (except a .EU, .UK domain name) have a Domain (Transfer) Secret Key/Authorization Code (EPP Code) associated with them. This would be required if you want to transfer service."
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:201
+msgid "Most domain names (except a few top-level domains like .EU and .UK) have a Domain Secret Key/Authorization Code (EPP Code) associated with them. This code is typically required when transferring the domain to a new registrar."
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:213
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:203
 msgid "Get EPP code"
 msgstr "取得 EPP 代碼"
 
@@ -7828,34 +7888,37 @@ msgstr "取得 EPP 代碼"
 msgid "Register a new domain"
 msgstr "註冊一個新的網域"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:20
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:23
 msgid "Enter new domain name to register"
 msgstr "輸入新的網域名稱進行註冊"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:27
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:70
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:43
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:31
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:85
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:56
 msgid "Check"
 msgstr "檢查"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:36
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:44
 msgid "I want to use my nameservers"
 msgstr "我想使用自己的名稱伺服器"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:73
 msgid "Transfer a new domain"
 msgstr "轉移一個新的網域"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:64
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:78
 msgid "Enter your domain name to transfer"
 msgstr "輸入您要轉移的網域名稱"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:77
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
+msgid "Transfer price is"
+msgstr ""
+
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:91
 msgid "Enter domain transfer code"
 msgstr "輸入網域轉移代碼"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:170
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:119
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:189
 msgid " Year/s @ "
 msgstr ""
 
@@ -7914,8 +7977,8 @@ msgstr ""
 msgid "Use this function to update existing order file. Client will be able to download new file from client area"
 msgstr ""
 
-#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:6
-#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:9
+#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:4
+#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:7
 msgid "Download"
 msgstr "下載"
 
@@ -7933,7 +7996,7 @@ msgstr "伺服器"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:14
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:26
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:49
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:57
 msgid "Hosting plan"
 msgstr "主機方案"
 
@@ -8011,14 +8074,14 @@ msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:36
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:66
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:58
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:67
 msgid "Disk quota"
 msgstr "磁碟配額"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:99
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:62
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:54
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:62
 msgid "Bandwidth"
 msgstr "流量"
 
@@ -8179,7 +8242,7 @@ msgid "Server Name"
 msgstr "伺服器名稱"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:30
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:29
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:37
 msgid "Server IP"
 msgstr "伺服端 IP"
 
@@ -8190,14 +8253,14 @@ msgstr "帳戶 IP"
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:38
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:157
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:26
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:11
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:39
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:132
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:18
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:47
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:141
 msgid "Username"
 msgstr "使用者名稱"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:63
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:55
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:63
 msgid "per month"
 msgstr "每月"
 
@@ -8206,7 +8269,7 @@ msgid "Jump to control panel"
 msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:85
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:71
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:79
 msgid "Reseller control panel"
 msgstr ""
 
@@ -8243,7 +8306,7 @@ msgid "Account password changed"
 msgstr "帳戶密碼已更改"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:127
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:88
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:97
 msgid "Password Confirm"
 msgstr "確認密碼"
 
@@ -8256,8 +8319,8 @@ msgid "Account IP changed"
 msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:153
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:127
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:141
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:136
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:150
 msgid "Change username"
 msgstr "更改使用者名稱"
 
@@ -8266,8 +8329,8 @@ msgid "Account username changed"
 msgstr "帳戶使用者名稱已更改"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:168
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:105
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:119
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:114
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:128
 msgid "Change domain"
 msgstr "變更網域"
 
@@ -8324,45 +8387,56 @@ msgstr ""
 msgid "Update server"
 msgstr "更新伺服器"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:6
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:4
 msgid "Manage hosting account"
 msgstr "管理主機帳戶"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:34
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:42
 msgid "Server Hostname"
 msgstr "伺服器主機名稱"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:67
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:75
 msgid "Manage domain"
 msgstr "網域管理"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:69
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:77
 msgid "Jump to cPanel"
 msgstr "轉跳到 cPanel"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:77
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:86
 msgid "Change your FTP/cPanel/SSH password."
 msgstr "更改您的 FTP/cPanel/SSH 密碼。"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:110
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:119
 msgid "New domain"
 msgstr "新網域名稱"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:10
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:7
 msgid "Domain configuration"
 msgstr "網域設置"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:12
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:13
 msgid "I will use my existing domain and update nameservers"
 msgstr "我要使用現有的網域並更新名稱伺服器"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:16
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:20
 msgid "I want to register a new domain"
 msgstr "我想註冊一個新的網域"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:25
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:36
-msgid "mydomain"
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:31
+msgid "Your existing domain"
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:47
+msgid "Your new domain"
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:129
+msgid " year @ "
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:131
+msgid " years @ "
 msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:3
@@ -8423,7 +8497,7 @@ msgid "for more information."
 msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:10
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:13
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:11
 msgid "Key"
 msgstr "密鑰"
 
@@ -8475,51 +8549,51 @@ msgstr ""
 msgid "Valid versions (one per line)"
 msgstr ""
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:9
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:7
 msgid "License details"
 msgstr "許可證詳細信息"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:22
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:20
 msgid "Valid IPs"
 msgstr ""
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:28
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:26
 msgid "All ips"
 msgstr ""
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:37
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:35
 msgid "Valid Domains"
 msgstr "有效網域"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:43
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:41
 msgid "All hosts"
 msgstr "所有主機"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:52
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:50
 msgid "Valid Versions"
 msgstr "有效版本"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:58
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:56
 msgid "All versions"
 msgstr "所有版本"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:67
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:65
 msgid "Valid Install paths"
 msgstr "有效的安裝路徑"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:73
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:71
 msgid "All paths"
 msgstr "所有路徑"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:82
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:80
 msgid "Reset license"
 msgstr "重設授權"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:83
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:81
 msgid "You can reset your license parameters if you have changed your server"
 msgstr ""
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:98
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:94
 msgid "License was reset"
 msgstr ""
 
@@ -8661,19 +8735,6 @@ msgstr "創建組"
 msgid "Create main administrator account"
 msgstr "建立主要管理員帳戶"
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:23
-#: modules/Staff/html_admin/mod_staff_login.html.twig:48
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
-msgid "Enter your email address"
-msgstr "輸入電子郵件地址"
-
-#: modules/Staff/html_admin/mod_staff_login.html.twig:29
-#: modules/Staff/html_admin/mod_staff_login.html.twig:66
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
-msgid "Enter your password"
-msgstr "輸入你的密碼"
-
 #: modules/Staff/html_admin/mod_staff_login.html.twig:33
 msgid "Create administrator account"
 msgstr "建立管理員帳戶"
@@ -8685,10 +8746,6 @@ msgstr "登入您的帳戶"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:57
 msgid "Forgot your password?"
 msgstr ""
-
-#: modules/Staff/html_admin/mod_staff_login.html.twig:70
-msgid "Sign in"
-msgstr "登入"
 
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:5
 msgid "Staff members login history"
@@ -8763,13 +8820,6 @@ msgstr "員工密碼已更改"
 msgid "Repeat same password"
 msgstr "重複輸入密碼"
 
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:3
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:16
-msgid "Reset your password"
-msgstr ""
-
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:17
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
 msgstr ""
@@ -8810,6 +8860,10 @@ msgstr "Gravatar"
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:31
 msgid "Profile updated"
 msgstr "已更新個人資料"
+
+#: modules/Staff/html_admin/mod_staff_profile.html.twig:60
+msgid "Password Changed"
+msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:90
 msgid "External application can control every aspect of FOSSBilling using this API key."
@@ -8926,17 +8980,17 @@ msgstr "已新增分類"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:31
 #: modules/Support/html_admin/mod_support_ticket.html.twig:36
+#: modules/Support/html_client/mod_support_ticket.html.twig:24
 msgid "Ticket"
 msgstr "服務單"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:44
 #: modules/Support/html_admin/mod_support_ticket.html.twig:54
-#: modules/Support/html_client/mod_support_ticket.html.twig:30
 msgid "Ticket ID"
 msgstr "支援單ID"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:52
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:35
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:27
 msgid "Author"
 msgstr "作者"
 
@@ -8972,15 +9026,16 @@ msgstr "顯示/隱藏訊息"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:194
 #: modules/Support/html_admin/mod_support_ticket.html.twig:316
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:106
-#: modules/Support/html_client/mod_support_ticket.html.twig:153
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:88
+#: modules/Support/html_client/mod_support_ticket.html.twig:139
+#: modules/Support/html_client/mod_support_ticket.html.twig:140
 msgid "Post"
 msgstr "文章"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:204
 #: modules/Support/html_admin/mod_support_ticket.html.twig:326
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
-#: modules/Support/html_client/mod_support_ticket.html.twig:22
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:51
+#: modules/Support/html_client/mod_support_ticket.html.twig:32
 msgid "Close ticket"
 msgstr "關閉任務單"
 
@@ -9099,10 +9154,6 @@ msgstr ""
 msgid "Client ID"
 msgstr "客戶 ID"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:40
-msgid "Order ID"
-msgstr "訂單編號"
-
 #: modules/Support/html_admin/mod_support_tickets.html.twig:46
 msgid "Ticket Subject"
 msgstr ""
@@ -9152,101 +9203,89 @@ msgid "Create New Helpdesk"
 msgstr ""
 
 #: modules/Support/html_client/mod_support_contact_us.html.twig:5
-#: modules/Support/html_client/mod_support_contact_us.html.twig:8
-#: modules/Support/html_client/mod_support_contact_us.html.twig:17
+#: modules/Support/html_client/mod_support_contact_us.html.twig:9
+#: modules/Support/html_client/mod_support_contact_us.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:9
 msgid "Contact us"
 msgstr "聯絡我們"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:19
-#: modules/Support/html_client/mod_support_ticket.html.twig:18
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:18
 msgid "Ticket information"
 msgstr "服務單資訊"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
-#: modules/Support/html_client/mod_support_ticket.html.twig:47
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:44
+#: modules/Support/html_client/mod_support_ticket.html.twig:54
 msgid "Time opened"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:111
-#: modules/Support/html_client/mod_support_ticket.html.twig:159
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:91
+#: modules/Support/html_client/mod_support_ticket.html.twig:128
 msgid "Ticket was closed and cannot be reopened."
 msgstr "服務單已關閉且無法重新打開。"
 
 #: modules/Support/html_client/mod_support_kb_article.html.twig:23
-msgid "Article Views"
+msgid "views"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:28
-#: modules/Support/html_client/mod_support_kb_category.html.twig:27
-msgid "Back to List"
+#: modules/Support/html_client/mod_support_kb_article.html.twig:32
+msgid "Back to all knowledge base articles"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:42
-msgid "Similar Articles"
-msgstr ""
+#: modules/Support/html_client/mod_support_kb_article.html.twig:34
+msgid "Similar articles"
+msgstr "類似文章"
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:57
-msgid "Knowledge Base Categories"
-msgstr ""
-
-#: modules/Support/html_client/mod_support_kb_index.html.twig:6
-msgid "Knowledge base"
-msgstr "知識庫"
-
-#: modules/Support/html_client/mod_support_kb_index.html.twig:21
+#: modules/Support/html_client/mod_support_kb_index.html.twig:32
 msgid "Please try to read related topics in knowledge base before contacting support."
 msgstr "在聯繫支援服務之前，請先嘗試閱讀知識庫中的相關主題。"
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:26
+#: modules/Support/html_client/mod_support_kb_index.html.twig:38
 msgid "What are you looking for?"
 msgstr "你想尋找什麼？"
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:27
-#: themes/admin_default/html/partial_search.html.twig:15
-msgid "Search"
-msgstr "搜尋"
-
-#: modules/Support/html_client/mod_support_kb_index.html.twig:53
-msgid "Try using other keyword. No matches found for keyword:"
+#: modules/Support/html_client/mod_support_kb_index.html.twig:63
+msgid "No results found for"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:9
-#: modules/Support/html_client/mod_support_tickets.html.twig:5
-#: modules/Support/html_client/mod_support_tickets.html.twig:6
-#: modules/Support/html_client/mod_support_tickets.html.twig:9
-#: modules/Support/html_client/mod_support_tickets.html.twig:16
-msgid "Support tickets"
-msgstr "支援服務單"
-
-#: modules/Support/html_client/mod_support_ticket.html.twig:53
+#: modules/Support/html_client/mod_support_ticket.html.twig:60
 msgid "Related to"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:54
+#: modules/Support/html_client/mod_support_ticket.html.twig:62
 msgid "Service #"
 msgstr "服務 #"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:67
-msgid "Last tickets"
-msgstr "最後一張服務單"
+#: modules/Support/html_client/mod_support_ticket.html.twig:86
+msgid "Operator"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:71
-msgid "Back to tickets list"
-msgstr "回到服務單列表"
+#: modules/Support/html_client/mod_support_ticket.html.twig:90
+msgid "You"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:83
-#: modules/Support/html_client/mod_support_tickets.html.twig:32
-msgid "Submitted"
-msgstr "已送出"
+#: modules/Support/html_client/mod_support_ticket.html.twig:101
+msgid "Quote reply"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:17
+#: modules/Support/html_client/mod_support_ticket.html.twig:130
+msgid "This ticket was closed, but you can still reopen it by replying."
+msgstr ""
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:19
 msgid "Need an answer? We are here to help!"
 msgstr "需要解答嗎? 我們隨時為您提供幫助!"
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:20
-msgid "Submit new ticket"
-msgstr "提出新服務單"
+#: modules/Support/html_client/mod_support_tickets.html.twig:36
+msgid "Submitted"
+msgstr "已送出"
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:63
+msgid "No support tickets"
+msgstr ""
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:76
+msgid "Open new ticket"
+msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:5
 #: modules/System/html_admin/mod_system_settings.html.twig:21
@@ -9264,10 +9303,6 @@ msgstr "國家"
 #: modules/System/html_admin/mod_system_settings.html.twig:40
 msgid "Cache"
 msgstr "快取"
-
-#: modules/System/html_admin/mod_system_settings.html.twig:43
-msgid "About"
-msgstr "關於"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:46
 #: modules/System/html_admin/mod_system_settings.html.twig:539
@@ -9757,77 +9792,45 @@ msgstr "每月"
 msgid "Enter search text..."
 msgstr "輸入搜尋文字..."
 
+#: themes/admin_default/html/partial_search.html.twig:15
+msgid "Search"
+msgstr "搜尋"
+
 #: themes/admin_default/html/partial_search.html.twig:20
 msgid "Search settings"
 msgstr "搜尋設定"
 
-#: themes/huraga/html/error.html.twig:13
-msgid "Whoops! This is not the web page you are looking for."
-msgstr "哎呀！這不是你要查找的頁面。"
+#: themes/huraga/html/error.html.twig:23
+msgid "Whoops! Unable to find the page you are looking for"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:105
-msgid "Order services"
-msgstr "訂購服務"
+#: themes/huraga/html/error.html.twig:26
+msgid "Go back to home"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:121
+#: themes/huraga/html/layout_default.html.twig:122
 msgid "Sign out"
 msgstr "登出"
 
-#: themes/huraga/html/layout_default.html.twig:150
-msgid "User profile"
-msgstr "個人檔案"
-
-#: themes/huraga/html/layout_default.html.twig:165
-msgid "profile"
-msgstr "個人資料"
-
-#: themes/huraga/html/layout_default.html.twig:166
-msgid "sign out"
-msgstr "登出"
-
-#: themes/huraga/html/layout_default.html.twig:175
-msgid "Account balance"
-msgstr "帳戶餘額"
-
-#: themes/huraga/html/layout_default.html.twig:225
-msgid "You are logged out"
-msgstr "您已登出"
-
-#: themes/huraga/html/layout_default.html.twig:242
-msgid "Products and services"
-msgstr "產品及服務"
-
-#: themes/huraga/html/layout_default.html.twig:260
-msgid "Latest news and announcements"
-msgstr "最新消息和公告"
-
-#: themes/huraga/html/layout_default.html.twig:277
-msgid "Browse our KB for Answers and FAQ"
-msgstr ""
-
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Payment Information"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Account Number"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:354
-msgid "Powered by the FOSSBilling Community"
-msgstr "由 FOSSBilling 社群提供支持"
+#: themes/huraga/html/layout_default.html.twig:227
+msgid "FOSSBilling Community"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:359
+#: themes/huraga/html/layout_default.html.twig:239
 msgid "Top"
 msgstr "頂部"
 
-#: themes/huraga/html/partial_menu.html.twig:23
-msgid "Services"
-msgstr "服務"
-
-#: themes/huraga/html/partial_menu.html.twig:41
-msgid "Payment History"
-msgstr ""
+#: themes/huraga/html/partial_menu.html.twig:87
+msgid "Account balance"
+msgstr "帳戶餘額"
 
 #: themes/huraga/html/partial_pricing.html.twig:8
 #: themes/huraga/html/partial_pricing.html.twig:20
