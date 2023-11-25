@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-11-21 16:34-0800\n"
-"PO-Revision-Date: 2023-11-22 23:39\n"
+"POT-Creation-Date: 2023-11-24 17:04-0800\n"
+"PO-Revision-Date: 2023-11-25 23:35\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Romanian\n"
 "MIME-Version: 1.0\n"
@@ -386,7 +386,7 @@ msgid "Password must include at least one uppercase letter."
 msgstr "Parola trebuie să conțină cel puțin o literă mare."
 
 #: library/FOSSBilling/Validate.php:107
-#: modules/Client/html_client/mod_client_profile.html.twig:78
+#: modules/Client/html_client/mod_client_profile.html.twig:70
 msgid "Birthdate"
 msgstr "Data nașterii"
 
@@ -1042,7 +1042,7 @@ msgstr "Câmpul \"de la adresa de e-mail\" nu poate fi gol"
 msgid "Email template :code was not found"
 msgstr "Șablonul de email :code nu a putut fi găsit"
 
-#: modules/Email/Service.php:674
+#: modules/Email/Service.php:678
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr "Mesaj de eroare trunchiat din cauza lungimii, verificați jurnalul de erori pentru mesajul complet: "
 
@@ -1226,18 +1226,20 @@ msgstr "Metoda de plată nu a fost găsită. Lipsește parametrul gateway_id"
 #: modules/Invoice/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_manage.html.twig:35
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
-#: modules/Index/html_client/mod_index_dashboard.html.twig:106
+#: modules/Index/html_client/mod_index_dashboard.html.twig:73
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:185
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:19
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:6
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:8
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:11
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:22
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
 #: modules/Order/html_admin/mod_order_manage.html.twig:52
 #: themes/admin_default/html/mod_index_dashboard.html.twig:214
 #: themes/admin_default/html/mod_index_dashboard.html.twig:261
 #: themes/admin_default/html/mod_index_dashboard.html.twig:444
 #: themes/admin_default/html/mod_index_dashboard.html.twig:548
-#: themes/huraga/html/partial_menu.html.twig:29
+#: themes/huraga/html/partial_menu.html.twig:44
 msgid "Invoices"
 msgstr "Facturi"
 
@@ -1426,15 +1428,15 @@ msgstr "Adaugă conținut înainte de a trimite mesajul"
 msgid "Mass mailer"
 msgstr "Mailer în masă"
 
-#: modules/Massmailer/Service.php:115
+#: modules/Massmailer/Service.php:114
 msgid " "
 msgstr ""
 
-#: modules/Massmailer/Service.php:162
+#: modules/Massmailer/Service.php:161
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "Dezactivat din motive de securitate (modul Demo este activat)"
 
-#: modules/Massmailer/Service.php:198
+#: modules/Massmailer/Service.php:197
 msgid "Mass mail message not found"
 msgstr ""
 
@@ -1448,7 +1450,7 @@ msgid "News item not found"
 msgstr "Ştirea nu a fost găsită"
 
 #: modules/News/Controller/Admin.php:34
-#: themes/huraga/html/layout_default.html.twig:263
+#: modules/Index/html_client/mod_index_dashboard.html.twig:240
 msgid "Announcements"
 msgstr "Anunțuri"
 
@@ -1484,14 +1486,11 @@ msgstr "Numai comenzile de configurare în așteptare și eșuate pot fi șterse
 #: modules/Client/html_admin/mod_client_manage.html.twig:32
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:60
-#: modules/Index/html_client/mod_index_dashboard.html.twig:131
+#: modules/Index/html_client/mod_index_dashboard.html.twig:97
 #: modules/Order/html_admin/mod_order_index.html.twig:7
 #: modules/Order/html_admin/mod_order_index.html.twig:159
 #: modules/Order/html_admin/mod_order_manage.html.twig:17
 #: modules/Order/html_admin/mod_order_new.html.twig:17
-#: modules/Order/html_client/mod_order_list.html.twig:9
-#: modules/Order/html_client/mod_order_list.html.twig:17
-#: modules/Order/html_client/mod_order_manage.html.twig:11
 #: themes/admin_default/html/mod_index_dashboard.html.twig:196
 #: themes/admin_default/html/mod_index_dashboard.html.twig:435
 #: themes/admin_default/html/mod_index_dashboard.html.twig:547
@@ -2109,7 +2108,7 @@ msgstr "Categoria bibliotecii de cunoștințe nu a fost găsită"
 #: modules/Support/html_admin/mod_support_settings.html.twig:21
 #: modules/Support/html_admin/mod_support_ticket.html.twig:17
 #: modules/Support/html_admin/mod_support_tickets.html.twig:17
-#: themes/huraga/html/partial_menu.html.twig:17
+#: themes/huraga/html/partial_menu.html.twig:26
 msgid "Support"
 msgstr "Suport"
 
@@ -2143,13 +2142,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:19
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:23
 #: modules/Support/html_admin/mod_support_settings.html.twig:104
-#: modules/Support/html_client/mod_support_kb_article.html.twig:8
-#: modules/Support/html_client/mod_support_kb_category.html.twig:7
 #: modules/Support/html_client/mod_support_kb_index.html.twig:3
-#: modules/Support/html_client/mod_support_kb_index.html.twig:20
-#: themes/huraga/html/layout_default.html.twig:274
-#: themes/huraga/html/layout_default.html.twig:280
-#: themes/huraga/html/partial_menu.html.twig:47
 msgid "Knowledge Base"
 msgstr ""
 
@@ -2244,7 +2237,7 @@ msgstr "Setări"
 #: modules/Email/html_admin/mod_email_template.html.twig:128
 #: modules/Formbuilder/html_admin/mod_formbuilder_manage.html.twig:88
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:157
-#: modules/Index/html_client/mod_index_dashboard.html.twig:86
+#: modules/Index/html_client/mod_index_dashboard.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:127
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:347
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:370
@@ -2280,8 +2273,8 @@ msgstr "Setări"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:241
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:62
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:107
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:97
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:199
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:105
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:193
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
@@ -2389,12 +2382,12 @@ msgstr "Utilizator"
 #: modules/Embed/html_client/mod_embed_contact.html.twig:57
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:115
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
-#: modules/Order/html_client/mod_order_manage.html.twig:193
+#: modules/Order/html_client/mod_order_manage.html.twig:219
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:49
 #: modules/Support/html_admin/mod_support_tickets.html.twig:325
 #: modules/Support/html_admin/mod_support_tickets.html.twig:359
-#: modules/Support/html_client/mod_support_contact_us.html.twig:46
-#: modules/Support/html_client/mod_support_tickets.html.twig:107
+#: modules/Support/html_client/mod_support_contact_us.html.twig:39
+#: modules/Support/html_client/mod_support_tickets.html.twig:93
 msgid "Message"
 msgstr "Mesaj"
 
@@ -2416,17 +2409,17 @@ msgstr "IP"
 #: modules/Client/html_admin/mod_client_manage.html.twig:295
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
 #: modules/Client/html_admin/mod_client_settings.html.twig:81
-#: modules/Client/html_client/mod_client_profile.html.twig:163
+#: modules/Client/html_client/mod_client_profile.html.twig:135
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:30
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:87
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:482
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:39
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:120
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
-#: modules/Page/html_client/mod_page_signup.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:177
+#: modules/Page/html_client/mod_page_signup.html.twig:100
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:155
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:157
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:25
 msgid "Country"
 msgstr "Țara"
@@ -2438,7 +2431,7 @@ msgstr "Țara"
 #: modules/Client/html_admin/mod_client_manage.html.twig:736
 #: modules/Client/html_admin/mod_client_manage.html.twig:769
 #: modules/Client/html_admin/mod_client_manage.html.twig:815
-#: modules/Client/html_client/mod_client_balance.html.twig:26
+#: modules/Client/html_client/mod_client_balance.html.twig:33
 #: modules/Email/html_admin/mod_email_history.html.twig:34
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:674
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:170
@@ -2492,13 +2485,13 @@ msgstr "Data"
 #: modules/Product/html_admin/mod_product_promos.html.twig:97
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:101
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:21
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:34
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:89
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:223
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:74
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:120
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:91
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:96
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:92
 #: modules/Staff/html_admin/mod_staff_index.html.twig:57
 #: modules/Staff/html_admin/mod_staff_index.html.twig:150
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:54
@@ -2533,7 +2526,7 @@ msgstr "Sunteți sigur?"
 #: modules/Client/html_admin/mod_client_manage.html.twig:750
 #: modules/Client/html_admin/mod_client_manage.html.twig:791
 #: modules/Client/html_admin/mod_client_manage.html.twig:838
-#: modules/Client/html_client/mod_client_balance.html.twig:40
+#: modules/Client/html_client/mod_client_balance.html.twig:47
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:105
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:62
@@ -2543,16 +2536,13 @@ msgstr "Sunteți sigur?"
 #: modules/Extension/html_admin/mod_extension_index.html.twig:109
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:72
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:131
-#: modules/Index/html_client/mod_index_dashboard.html.twig:67
-#: modules/Index/html_client/mod_index_dashboard.html.twig:197
-#: modules/Index/html_client/mod_index_dashboard.html.twig:221
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:272
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:89
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:220
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:54
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:91
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:70
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:102
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:81
 #: modules/News/html_admin/mod_news_index.html.twig:80
 #: modules/Notification/html_admin/mod_notification_index.html.twig:55
@@ -2560,7 +2550,6 @@ msgstr "Sunteți sigur?"
 #: modules/Order/html_admin/mod_order_manage.html.twig:557
 #: modules/Order/html_admin/mod_order_manage.html.twig:613
 #: modules/Order/html_admin/mod_order_manage.html.twig:668
-#: modules/Order/html_client/mod_order_list.html.twig:48
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:89
 #: modules/Product/html_admin/mod_product_addons.html.twig:75
 #: modules/Product/html_admin/mod_product_index.html.twig:88
@@ -2585,8 +2574,6 @@ msgstr "Sunteți sigur?"
 #: modules/Support/html_admin/mod_support_settings.html.twig:173
 #: modules/Support/html_admin/mod_support_ticket.html.twig:254
 #: modules/Support/html_admin/mod_support_tickets.html.twig:277
-#: modules/Support/html_client/mod_support_ticket.html.twig:99
-#: modules/Support/html_client/mod_support_tickets.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:84
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:151
 #: themes/admin_default/html/mod_index_dashboard.html.twig:345
@@ -2618,10 +2605,10 @@ msgstr "Modificați grupul de clienți"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:525
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:613
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:38
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:34
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:69
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:187
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:213
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:48
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:81
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:197
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:152
 #: modules/News/html_admin/mod_news_index.html.twig:35
 #: modules/News/html_admin/mod_news_index.html.twig:97
 #: modules/News/html_admin/mod_news_post.html.twig:34
@@ -2675,7 +2662,7 @@ msgstr "Filtrați clienții"
 #: modules/Client/html_admin/mod_client_manage.html.twig:810
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:87
-#: modules/Index/html_client/mod_index_dashboard.html.twig:92
+#: modules/Index/html_client/mod_index_dashboard.html.twig:59
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
@@ -2696,12 +2683,13 @@ msgstr "ID"
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:15
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:210
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:100
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:142
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:115
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:168
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:107
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:151
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:64
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:109
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:32
 #: modules/Order/html_admin/mod_order_index.html.twig:184
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:29
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
@@ -2717,7 +2705,7 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:185
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:233
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:276
-#: modules/Support/html_client/mod_support_contact_us.html.twig:25
+#: modules/Support/html_client/mod_support_contact_us.html.twig:27
 #: modules/System/html_admin/mod_system_settings.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
@@ -2739,15 +2727,17 @@ msgstr "Denumirea companiei"
 #: modules/Email/html_admin/mod_email_template.html.twig:19
 #: modules/Email/html_client/mod_email_email.html.twig:3
 #: modules/Embed/html_client/mod_embed_contact.html.twig:47
-#: modules/Index/html_client/mod_index_dashboard.html.twig:94
+#: modules/Index/html_client/mod_index_dashboard.html.twig:61
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:413
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:120
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:135
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:80
 #: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
+#: modules/Page/html_client/mod_page_login.html.twig:23
+#: modules/Page/html_client/mod_page_password-reset.html.twig:24
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:180
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:127
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:133
 #: modules/Staff/html_admin/mod_staff_index.html.twig:31
 #: modules/Staff/html_admin/mod_staff_index.html.twig:96
 #: modules/Staff/html_admin/mod_staff_login.html.twig:21
@@ -2762,9 +2752,10 @@ msgstr "Denumirea companiei"
 #: modules/Support/html_admin/mod_support_settings.html.twig:137
 #: modules/Support/html_admin/mod_support_tickets.html.twig:347
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
-#: modules/Support/html_client/mod_support_contact_us.html.twig:32
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
+#: modules/Support/html_client/mod_support_contact_us.html.twig:31
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
 #: modules/System/html_admin/mod_system_settings.html.twig:63
+#: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
 msgstr "E-mail"
 
@@ -2791,7 +2782,6 @@ msgstr "Grup"
 #: modules/Client/html_admin/mod_client_manage.html.twig:814
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:45
 #: modules/Email/html_admin/mod_email_settings.html.twig:194
-#: modules/Index/html_client/mod_index_dashboard.html.twig:50
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:214
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:68
@@ -2804,6 +2794,7 @@ msgstr "Grup"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:81
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:41
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:167
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:92
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:45
 #: modules/News/html_admin/mod_news_index.html.twig:103
 #: modules/News/html_admin/mod_news_post.html.twig:65
@@ -2813,7 +2804,7 @@ msgstr "Grup"
 #: modules/Order/html_admin/mod_order_manage.html.twig:520
 #: modules/Order/html_admin/mod_order_manage.html.twig:572
 #: modules/Order/html_admin/mod_order_manage.html.twig:630
-#: modules/Order/html_client/mod_order_list.html.twig:28
+#: modules/Order/html_client/mod_order_list.html.twig:34
 #: modules/Order/html_client/mod_order_manage.html.twig:139
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:33
 #: modules/Product/html_admin/mod_product_addons.html.twig:47
@@ -2837,10 +2828,9 @@ msgstr "Grup"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:219
 #: modules/Support/html_admin/mod_support_tickets.html.twig:64
 #: modules/Support/html_admin/mod_support_tickets.html.twig:209
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:45
-#: modules/Support/html_client/mod_support_ticket.html.twig:40
-#: modules/Support/html_client/mod_support_ticket.html.twig:82
-#: modules/Support/html_client/mod_support_tickets.html.twig:31
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:37
+#: modules/Support/html_client/mod_support_ticket.html.twig:47
+#: modules/Support/html_client/mod_support_tickets.html.twig:35
 msgid "Status"
 msgstr "Stare"
 
@@ -2854,7 +2844,7 @@ msgstr "Tot"
 #: modules/Client/html_admin/mod_client_manage.html.twig:168
 #: modules/Client/html_admin/mod_client_settings.html.twig:108
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:138
-#: modules/Index/html_client/mod_index_dashboard.html.twig:143
+#: modules/Index/html_client/mod_index_dashboard.html.twig:109
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:122
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:136
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:70
@@ -2896,7 +2886,6 @@ msgstr "Anulat"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:74
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:62
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:27
 msgid "Registration date"
 msgstr "Data înregistrării"
 
@@ -2914,30 +2903,31 @@ msgstr "Filtru"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:114
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:83
 #: modules/Order/html_admin/mod_order_index.html.twig:89
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:23
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:85
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:83
 #: modules/Support/html_admin/mod_support_tickets.html.twig:106
 msgid "Reset"
 msgstr "Resetați"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:162
+#: modules/Client/html_client/mod_client_balance.html.twig:53
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:110
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:136
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:160
-#: modules/Index/html_client/mod_index_dashboard.html.twig:115
-#: modules/Index/html_client/mod_index_dashboard.html.twig:141
-#: modules/Index/html_client/mod_index_dashboard.html.twig:165
+#: modules/Index/html_client/mod_index_dashboard.html.twig:81
+#: modules/Index/html_client/mod_index_dashboard.html.twig:107
+#: modules/Index/html_client/mod_index_dashboard.html.twig:130
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:172
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:92
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:586
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:615
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:142
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:37
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:72
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:189
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:232
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:215
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:260
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:51
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:199
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:154
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:190
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -2968,14 +2958,15 @@ msgstr "Grup nou"
 #: modules/Client/html_admin/mod_client_settings.html.twig:76
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:383
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:445
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:97
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:147
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:112
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:173
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:74
-#: modules/Page/html_client/mod_page_signup.html.twig:60
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:104
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:156
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:61
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:113
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
+#: modules/Page/html_client/mod_page_signup.html.twig:49
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:186
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:134
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:138
 msgid "Company"
 msgstr "Companie"
 
@@ -2988,7 +2979,7 @@ msgstr "Exportă clienții"
 #: modules/Client/html_admin/mod_client_manage.html.twig:282
 #: modules/Client/html_admin/mod_client_settings.html.twig:84
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:192
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:141
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:145
 msgid "Address Line 1"
 msgstr "Adresă rândul 1"
 
@@ -2996,17 +2987,18 @@ msgstr "Adresă rândul 1"
 #: modules/Client/html_admin/mod_client_manage.html.twig:288
 #: modules/Client/html_admin/mod_client_settings.html.twig:85
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:198
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:148
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:150
 msgid "Address Line 2"
 msgstr "Adresă rândul 2"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:355
 #: modules/Client/html_admin/mod_client_manage.html.twig:308
 #: modules/Client/html_admin/mod_client_settings.html.twig:82
-#: modules/Client/html_client/mod_client_profile.html.twig:155
+#: modules/Client/html_client/mod_client_profile.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
-#: modules/Page/html_client/mod_page_signup.html.twig:115
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:166
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:169
+#: modules/Page/html_client/mod_page_signup.html.twig:92
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
 msgid "City"
@@ -3015,12 +3007,13 @@ msgstr "Oraș"
 #: modules/Client/html_admin/mod_client_index.html.twig:361
 #: modules/Client/html_admin/mod_client_manage.html.twig:301
 #: modules/Client/html_admin/mod_client_settings.html.twig:83
-#: modules/Client/html_client/mod_client_profile.html.twig:176
+#: modules/Client/html_client/mod_client_profile.html.twig:147
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:126
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:172
-#: modules/Page/html_client/mod_page_signup.html.twig:140
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:192
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
+#: modules/Page/html_client/mod_page_signup.html.twig:112
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
 msgid "State"
@@ -3036,10 +3029,10 @@ msgstr "Cod poștal"
 #: modules/Client/html_admin/mod_client_settings.html.twig:87
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:488
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:115
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:169
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:130
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:195
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:122
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:76
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:131
 #: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
@@ -3048,8 +3041,8 @@ msgstr "Telefon"
 #: modules/Client/html_admin/mod_client_index.html.twig:391
 #: modules/Client/html_admin/mod_client_manage.html.twig:98
 #: modules/Client/html_admin/mod_client_manage.html.twig:346
-#: modules/Client/html_client/mod_client_profile.html.twig:34
-#: modules/Client/html_client/mod_client_profile.html.twig:272
+#: modules/Client/html_client/mod_client_profile.html.twig:33
+#: modules/Client/html_client/mod_client_profile.html.twig:215
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
@@ -3061,17 +3054,17 @@ msgstr "Monedă"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:397
 #: modules/Client/html_admin/mod_client_manage.html.twig:405
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:23
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:108
-#: modules/Page/html_client/mod_page_login.html.twig:35
-#: modules/Page/html_client/mod_page_login.html.twig:37
-#: modules/Page/html_client/mod_page_signup.html.twig:184
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:33
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:37
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:128
+#: modules/Page/html_client/mod_page_login.html.twig:27
+#: modules/Page/html_client/mod_page_signup.html.twig:152
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:121
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:33
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:9
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:44
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:82
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:12
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:52
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:91
 #: modules/Staff/html_admin/mod_staff_index.html.twig:103
 #: modules/Staff/html_admin/mod_staff_login.html.twig:27
 #: modules/Staff/html_admin/mod_staff_login.html.twig:54
@@ -3115,16 +3108,16 @@ msgid "Clients logins history"
 msgstr "Istoricul utilizatorilor conectați"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:26
-#: modules/Client/html_client/mod_client_profile.html.twig:5
+#: modules/Client/html_client/mod_client_profile.html.twig:6
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:78
-#: modules/Index/html_client/mod_index_dashboard.html.twig:83
+#: modules/Index/html_client/mod_index_dashboard.html.twig:51
+#: modules/Index/html_client/mod_index_dashboard.html.twig:210
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:5
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:37
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
 #: themes/admin_default/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:111
-#: themes/huraga/html/layout_default.html.twig:222
+#: themes/huraga/html/layout_default.html.twig:120
 msgid "Profile"
 msgstr "Profil"
 
@@ -3142,7 +3135,7 @@ msgstr "Modificați"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:38
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:150
-#: modules/Index/html_client/mod_index_dashboard.html.twig:155
+#: modules/Index/html_client/mod_index_dashboard.html.twig:121
 #: modules/Support/html_admin/mod_support_ticket.html.twig:20
 #: modules/Support/html_admin/mod_support_tickets.html.twig:19
 #: modules/Support/html_admin/mod_support_tickets.html.twig:177
@@ -3163,9 +3156,8 @@ msgstr "Autentificări"
 #: modules/Client/html_admin/mod_client_manage.html.twig:47
 #: modules/Email/html_client/mod_email_email.html.twig:6
 #: modules/Email/html_client/mod_email_index.html.twig:3
-#: modules/Email/html_client/mod_email_index.html.twig:4
-#: modules/Email/html_client/mod_email_index.html.twig:14
-#: themes/huraga/html/partial_menu.html.twig:35
+#: modules/Email/html_client/mod_email_index.html.twig:5
+#: modules/Email/html_client/mod_email_index.html.twig:17
 msgid "Emails"
 msgstr "E-mail-uri"
 
@@ -3187,7 +3179,7 @@ msgstr "Balanța fondurilor"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:340
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:34
 #: modules/Order/html_admin/mod_order_manage.html.twig:367
-#: modules/Order/html_client/mod_order_manage.html.twig:278
+#: modules/Order/html_client/mod_order_manage.html.twig:257
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 #: modules/Support/html_admin/mod_support_tickets.html.twig:390
 #: modules/System/html_admin/mod_system_settings.html.twig:224
@@ -3195,6 +3187,7 @@ msgid "Notes"
 msgstr "Notițe"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
+#: modules/Client/html_client/mod_client_profile.html.twig:31
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:10
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:88
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:96
@@ -3202,20 +3195,22 @@ msgid "API Key"
 msgstr "Cheie API"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:125
-#: modules/Client/html_client/mod_client_profile.html.twig:139
+#: modules/Client/html_client/mod_client_profile.html.twig:121
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:401
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:463
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:110
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:162
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:117
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:171
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:72
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:125
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:188
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
-#: modules/Page/html_client/mod_page_signup.html.twig:95
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:144
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
+#: modules/Page/html_client/mod_page_signup.html.twig:76
 #: modules/System/html_admin/mod_system_settings.html.twig:75
 msgid "Address"
 msgstr "Adresă"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:132
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:37
 msgid "Registered on"
 msgstr "Înregistrat pe"
 
@@ -3232,8 +3227,8 @@ msgstr "Autentificare în zona client"
 #: modules/Email/html_admin/mod_email_details.html.twig:64
 #: modules/Email/html_admin/mod_email_settings.html.twig:113
 #: modules/Email/html_admin/mod_email_settings.html.twig:115
-#: modules/Email/html_client/mod_email_email.html.twig:36
-#: modules/Email/html_client/mod_email_index.html.twig:45
+#: modules/Email/html_client/mod_email_email.html.twig:26
+#: modules/Email/html_client/mod_email_index.html.twig:63
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:713
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
@@ -3422,8 +3417,8 @@ msgid "Company details"
 msgstr "Detaliile companiei"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:269
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:152
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:161
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:117
 msgid "Company number"
 msgstr "Numărul companiei"
 
@@ -3436,7 +3431,7 @@ msgid "Address and contact details"
 msgstr "Adresa și datele de contact"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:330
-#: modules/Client/html_client/mod_client_profile.html.twig:193
+#: modules/Client/html_client/mod_client_profile.html.twig:155
 msgid "Passport number"
 msgstr "Numărul pașaportului"
 
@@ -3462,14 +3457,14 @@ msgid "Signed up time"
 msgstr "Timp de înregistrare"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:397
-#: modules/Client/html_client/mod_client_profile.html.twig:214
+#: modules/Client/html_client/mod_client_profile.html.twig:169
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:53
 msgid "Update profile"
 msgstr "Actualizați profilul"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:401
 #: modules/Client/html_admin/mod_client_manage.html.twig:419
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:97
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:106
 msgid "Change password"
 msgstr "Schimbați parola"
 
@@ -3478,8 +3473,7 @@ msgid "Password changed"
 msgstr "Parolă schimbată"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:412
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:116
-#: modules/Page/html_client/mod_page_signup.html.twig:192
+#: modules/Page/html_client/mod_page_signup.html.twig:158
 msgid "Password confirm"
 msgstr "Confirmați parola"
 
@@ -3508,7 +3502,7 @@ msgstr "Comenzile clientului"
 #: modules/Client/html_admin/mod_client_manage.html.twig:656
 #: modules/Client/html_admin/mod_client_manage.html.twig:697
 #: modules/Client/html_admin/mod_client_manage.html.twig:813
-#: modules/Client/html_client/mod_client_balance.html.twig:27
+#: modules/Client/html_client/mod_client_balance.html.twig:34
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:204
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:672
@@ -3532,13 +3526,11 @@ msgstr "Cantitate"
 #: modules/Order/html_admin/mod_order_manage.html.twig:336
 #: modules/Order/html_admin/mod_order_new.html.twig:54
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:153
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:49
 msgid "Period"
 msgstr "Perioadă"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:507
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:129
-#: modules/Index/html_client/mod_index_dashboard.html.twig:134
 #: modules/Order/html_admin/mod_order_index.html.twig:166
 msgid "New order"
 msgstr "Comandă nouă"
@@ -3565,15 +3557,12 @@ msgstr "Tichete de suport clienți"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:593
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:44
-#: modules/Index/html_client/mod_index_dashboard.html.twig:49
 #: modules/Order/html_admin/mod_order_manage.html.twig:628
-#: modules/Order/html_client/mod_order_manage.html.twig:179
-#: modules/Order/html_client/mod_order_manage.html.twig:218
-#: modules/Order/html_client/mod_order_manage.html.twig:264
-#: modules/Support/html_client/mod_support_ticket.html.twig:35
-#: modules/Support/html_client/mod_support_ticket.html.twig:81
-#: modules/Support/html_client/mod_support_tickets.html.twig:30
-#: modules/Support/html_client/mod_support_tickets.html.twig:93
+#: modules/Order/html_client/mod_order_manage.html.twig:178
+#: modules/Order/html_client/mod_order_manage.html.twig:211
+#: modules/Order/html_client/mod_order_manage.html.twig:245
+#: modules/Support/html_client/mod_support_ticket.html.twig:42
+#: modules/Support/html_client/mod_support_tickets.html.twig:34
 msgid "Help desk"
 msgstr "Centru de asistenţă"
 
@@ -3584,14 +3573,13 @@ msgstr "Centru de asistenţă"
 #: modules/Email/html_admin/mod_email_settings.html.twig:165
 #: modules/Email/html_admin/mod_email_settings.html.twig:191
 #: modules/Embed/html_client/mod_embed_contact.html.twig:52
-#: modules/Index/html_client/mod_index_dashboard.html.twig:48
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:51
 #: modules/Order/html_admin/mod_order_manage.html.twig:629
-#: modules/Order/html_client/mod_order_manage.html.twig:186
-#: modules/Order/html_client/mod_order_manage.html.twig:225
-#: modules/Order/html_client/mod_order_manage.html.twig:257
+#: modules/Order/html_client/mod_order_manage.html.twig:182
+#: modules/Order/html_client/mod_order_manage.html.twig:215
+#: modules/Order/html_client/mod_order_manage.html.twig:249
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:48
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:123
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:98
@@ -3600,11 +3588,10 @@ msgstr "Centru de asistenţă"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:208
 #: modules/Support/html_admin/mod_support_tickets.html.twig:319
 #: modules/Support/html_admin/mod_support_tickets.html.twig:353
-#: modules/Support/html_client/mod_support_contact_us.html.twig:39
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:30
-#: modules/Support/html_client/mod_support_ticket.html.twig:80
-#: modules/Support/html_client/mod_support_tickets.html.twig:29
-#: modules/Support/html_client/mod_support_tickets.html.twig:100
+#: modules/Support/html_client/mod_support_contact_us.html.twig:35
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
+#: modules/Support/html_client/mod_support_tickets.html.twig:33
+#: modules/Support/html_client/mod_support_tickets.html.twig:89
 msgid "Subject"
 msgstr "Subiect"
 
@@ -3618,7 +3605,7 @@ msgstr "Istoric plăți client"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:657
 #: modules/Client/html_admin/mod_client_manage.html.twig:705
-#: modules/Client/html_client/mod_client_balance.html.twig:25
+#: modules/Client/html_client/mod_client_balance.html.twig:32
 #: modules/Extension/html_admin/mod_extension_index.html.twig:42
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:174
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:75
@@ -3661,6 +3648,8 @@ msgstr "Subiect e-mail"
 #: modules/Email/html_admin/mod_email_details.html.twig:37
 #: modules/Email/html_admin/mod_email_history.html.twig:31
 #: modules/Email/html_admin/mod_email_settings.html.twig:192
+#: modules/Email/html_client/mod_email_email.html.twig:19
+#: modules/Email/html_client/mod_email_index.html.twig:53
 msgid "To"
 msgstr "Către"
 
@@ -3720,22 +3709,25 @@ msgid "Required fields"
 msgstr "Câmpuri obligatorii"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:75
-#: modules/Client/html_client/mod_client_profile.html.twig:70
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:63
-#: modules/Page/html_client/mod_page_signup.html.twig:49
+#: modules/Client/html_client/mod_client_profile.html.twig:58
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:78
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:82
+#: modules/Page/html_client/mod_page_signup.html.twig:35
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:174
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:120
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:126
 msgid "Last Name"
 msgstr "Prenume"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:77
-#: modules/Client/html_client/mod_client_profile.html.twig:86
+#: modules/Client/html_client/mod_client_profile.html.twig:75
+#: modules/Page/html_client/mod_page_signup.html.twig:64
 msgid "Gender"
 msgstr "Gen"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:78
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:84
-#: modules/Page/html_client/mod_page_signup.html.twig:70
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:102
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:104
+#: modules/Page/html_client/mod_page_signup.html.twig:57
 msgid "Birthday"
 msgstr "Data nașterii"
 
@@ -3758,22 +3750,18 @@ msgstr "Titlu câmp"
 
 #: modules/Client/html_client/mod_client_balance.html.twig:5
 #: modules/Client/html_client/mod_client_balance.html.twig:6
-#: modules/Client/html_client/mod_client_balance.html.twig:17
-msgid "Payment history"
-msgstr "Istoric tranzacții"
-
 #: modules/Client/html_client/mod_client_balance.html.twig:18
-msgid "Here you can track what you have been charged for and add more funds to your account"
-msgstr "Aici puteți urmări pentru ce ați fost debitat și pentru adăuga mai multe fonduri în contul dumneavoastră"
+#: themes/huraga/html/partial_menu.html.twig:62
+msgid "Wallet"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_balance.html.twig:46
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:162
-msgid "Total:"
-msgstr "Total:"
+#: modules/Client/html_client/mod_client_balance.html.twig:19
+msgid "Here you can manage and track your account balance"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_balance.html.twig:61
-msgid "Add funds!"
-msgstr "Adaugă fonduri!"
+#: modules/Client/html_client/mod_client_balance.html.twig:24
+msgid "Add fund"
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:3
 msgid "Profile details"
@@ -3783,211 +3771,199 @@ msgstr "Detaliile profilului"
 msgid "User profile settings"
 msgstr "Setări profil utilizator"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:24
+#: modules/Client/html_client/mod_client_profile.html.twig:13
+msgid "You must verify your email address before you may access our services."
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:17
 msgid "Verification email has been resent"
 msgstr "E-mailul de verificare a fost trimis"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:24
+#: modules/Client/html_client/mod_client_profile.html.twig:17
 msgid "Resend verification email"
 msgstr "Retrimite e-mailul de verificare"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:31
+#: modules/Client/html_client/mod_client_profile.html.twig:27
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:33
 #: modules/Order/html_admin/mod_order_manage.html.twig:38
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:6
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:9
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:7
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:8
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:16
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:9
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:24
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:6
 msgid "Details"
 msgstr "Detalii"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:32
-#: modules/Client/html_client/mod_client_profile.html.twig:221
-#: modules/Client/html_client/mod_client_profile.html.twig:245
+#: modules/Client/html_client/mod_client_profile.html.twig:29
+#: modules/Client/html_client/mod_client_profile.html.twig:173
+#: modules/Client/html_client/mod_client_profile.html.twig:192
+#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:17
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:81
 msgid "Change Password"
 msgstr "Schimbați parola"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:33
-#: modules/Client/html_client/mod_client_profile.html.twig:251
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:13
-msgid "API key"
-msgstr "Cheie API"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:41
+#: modules/Client/html_client/mod_client_profile.html.twig:38
 msgid "Update details"
 msgstr "Actualizați detaliile"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:42
+#: modules/Client/html_client/mod_client_profile.html.twig:39
 msgid "Keep your personal data up to date."
 msgstr "Păstrați datele dumneavoastră personale la zi."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "Please register with"
-msgstr "Vă rugăm să vă înregistrați cu"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "at "
-msgstr "la "
-
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "to change your profile image. Gravatar image updates may not appear immediately."
-msgstr "pentru a schimba imaginea de profil. Actualizările imaginii Gravatar nu sunt imediate."
+#: modules/Client/html_client/mod_client_profile.html.twig:49
+msgid "To change your avatar visit"
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:54
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:16
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:46
-#: modules/Page/html_client/mod_page_login.html.twig:28
-#: modules/Page/html_client/mod_page_password-reset.html.twig:30
-#: modules/Page/html_client/mod_page_signup.html.twig:31
-msgid "Email Address"
-msgstr "Adresă de Email"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:62
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:54
-#: modules/Page/html_client/mod_page_signup.html.twig:39
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:67
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:71
+#: modules/Page/html_client/mod_page_signup.html.twig:28
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:168
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:113
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:121
 msgid "First Name"
 msgstr "Prenume"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:99
+#: modules/Client/html_client/mod_client_profile.html.twig:64
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:29
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:57
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:61
+#: modules/Page/html_client/mod_page_signup.html.twig:42
+msgid "Email Address"
+msgstr "Adresă de Email"
+
+#: modules/Client/html_client/mod_client_profile.html.twig:95
 msgid "Company Name"
 msgstr "Denumirea companiei"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:107
+#: modules/Client/html_client/mod_client_profile.html.twig:101
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:389
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:451
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:157
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:183
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:166
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:121
 msgid "Company VAT"
 msgstr "TVA-ul companiei"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:115
+#: modules/Client/html_client/mod_client_profile.html.twig:105
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:395
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:457
 msgid "Company Number"
 msgstr "Numărul companiei"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:123
+#: modules/Client/html_client/mod_client_profile.html.twig:111
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:228
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:183
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:182
 msgid "Phone Country Code"
 msgstr "Codul țării de telefon"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:131
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:193
-#: modules/Page/html_client/mod_page_signup.html.twig:161
+#: modules/Client/html_client/mod_client_profile.html.twig:115
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:214
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:220
+#: modules/Page/html_client/mod_page_signup.html.twig:128
 msgid "Phone Number"
 msgstr "Număr de telefon"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:147
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
-#: modules/Page/html_client/mod_page_signup.html.twig:105
+#: modules/Client/html_client/mod_client_profile.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:155
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:158
+#: modules/Page/html_client/mod_page_signup.html.twig:84
 msgid "Address 2"
 msgstr "Adresă 2"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:166
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:160
-#: modules/Page/html_client/mod_page_signup.html.twig:128
+#: modules/Client/html_client/mod_client_profile.html.twig:137
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:180
+#: modules/Page/html_client/mod_page_signup.html.twig:102
 msgid "-- Select country --"
 msgstr "Selectați țara"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:185
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:183
-#: modules/Page/html_client/mod_page_signup.html.twig:151
+#: modules/Client/html_client/mod_client_profile.html.twig:151
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:203
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:206
+#: modules/Page/html_client/mod_page_signup.html.twig:120
 msgid "Zip/Postal Code"
 msgstr "Zip/Cod poștal"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:222
+#: modules/Client/html_client/mod_client_profile.html.twig:174
 msgid "Please enter new password two times in order avoid mistypes"
 msgstr "Vă rugăm să introduceţi parola nouă de două ori pentru a evita greşelile"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:224
-#: modules/Staff/html_admin/mod_staff_profile.html.twig:60
-msgid "Password Changed"
-msgstr "Parolă schimbată"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:227
+#: modules/Client/html_client/mod_client_profile.html.twig:178
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:63
 msgid "Current Password"
 msgstr "Parolă actuală"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:233
+#: modules/Client/html_client/mod_client_profile.html.twig:183
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:69
 msgid "New Password"
 msgstr "Parolă nouă"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:239
+#: modules/Client/html_client/mod_client_profile.html.twig:188
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:75
 msgid "Confirm Password"
 msgstr "Confirmă parola"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:252
+#: modules/Client/html_client/mod_client_profile.html.twig:197
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:89
 msgid "API key allows integration with external applications. You will need this key for authentication."
 msgstr "Cheia API vă permite integrarea cu aplicațiile externe. Veți avea nevoie de această cheie pentru autentificare."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:258
-msgid "Warning! Resetting the key will break existing applications using it!"
-msgstr "Atenție! Resetarea cheii va strica aplicațiile care o folosesc!"
+#: modules/Client/html_client/mod_client_profile.html.twig:203
+msgid "Warning!"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:261
+#: modules/Client/html_client/mod_client_profile.html.twig:203
+msgid "Resetting the key will break existing applications using it!"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:207
 msgid "Your API key"
 msgstr "Cheia dvs. API"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:266
-msgid "Reset key"
-msgstr "Resetați cheia"
+#: modules/Client/html_client/mod_client_profile.html.twig:211
+msgid "Generate a new key"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:273
+#: modules/Client/html_client/mod_client_profile.html.twig:216
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and can not be changed."
 msgstr "Moneda profilului dumneavoastră este definită de prima comandă. Odată ce moneda a fost setată, contabilitatea contului va fi gestionată în această monedă și nu poate fi schimbată."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:276
+#: modules/Client/html_client/mod_client_profile.html.twig:218
 msgid "Your profile currency is"
 msgstr "Moneda profilului dumneavoastră este"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:277
-msgid "Create new client profile if you want to manage your money in other currency"
-msgstr "Creați un nou profil de client dacă doriți să vă gestionați banii în altă monedă"
+#: modules/Client/html_client/mod_client_profile.html.twig:219
+msgid "Create new client profile if you want to manage your money in other currency."
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:222
+msgid "You do not yet have a currency associated with your profile. You can select the correct one when making your first order."
+msgstr ""
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:3
 msgid "Set new Password"
 msgstr "Setați parola nouă"
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:20
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:43
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:32
 msgid "Set new password"
 msgstr "Setați parola nouă"
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:31
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:25
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:26
 msgid "New password"
 msgstr "Parolă nouă"
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:36
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:38
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:30
 msgid "Repeat new password"
 msgstr "Repetați noua parolă"
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:54
-msgid "Sign Up"
-msgstr "Înregistrare"
-
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:58
-#: modules/Page/html_client/mod_page_login.html.twig:20
-#: modules/Page/html_client/mod_page_password-reset.html.twig:48
-#: modules/Page/html_client/mod_page_signup.html.twig:212
-#: modules/Staff/html_admin/mod_staff_login.html.twig:3
-#: themes/admin_default/html/error.html.twig:14
-#: themes/huraga/html/layout_default.html.twig:113
-#: themes/huraga/html/layout_default.html.twig:228
-msgid "Login"
-msgstr "Autentificare"
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:34
+#: modules/Page/html_client/mod_page_password-reset.html.twig:30
+msgid "Back to login"
+msgstr ""
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
@@ -4181,8 +4157,9 @@ msgid "Slug"
 msgstr "Slug (titlu url)"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:69
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:86
-#: modules/Support/html_client/mod_support_tickets.html.twig:50
+#: modules/Email/html_client/mod_email_index.html.twig:57
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:97
+#: modules/Support/html_client/mod_support_tickets.html.twig:52
 msgid "View"
 msgstr "Vizualizați"
 
@@ -4251,52 +4228,52 @@ msgstr "Zona clientului"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
 #: themes/admin_default/html/layout_default.html.twig:148
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
-#: themes/huraga/html/layout_default.html.twig:100
-#: themes/huraga/html/layout_default.html.twig:200
-#: themes/huraga/html/partial_menu.html.twig:5
+#: themes/huraga/html/layout_default.html.twig:88
+#: themes/huraga/html/layout_default.html.twig:153
+#: themes/huraga/html/partial_menu.html.twig:8
 msgid "Dashboard"
 msgstr "Panou de control"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
 #: modules/Index/html_client/mod_index_dashboard.html.twig:10
-#: themes/huraga/html/layout_default.html.twig:198
+#: themes/huraga/html/layout_default.html.twig:150
 msgid "Home"
 msgstr "Acasă"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:36
-#: modules/Index/html_client/mod_index_dashboard.html.twig:41
 msgid "Tickets waiting your reply"
 msgstr "Tichete în așteptarea unui răspuns"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:42
-#: modules/Index/html_client/mod_index_dashboard.html.twig:47
-#: modules/Support/html_client/mod_support_tickets.html.twig:28
+#: modules/Support/html_client/mod_support_tickets.html.twig:32
 msgid "Id"
 msgstr "Id"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:46
-#: modules/Index/html_client/mod_index_dashboard.html.twig:51
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:80
 msgid "Last Updated"
 msgstr "Ultima actualizare"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:47
-#: modules/Index/html_client/mod_index_dashboard.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:706
-#: modules/Support/html_client/mod_support_tickets.html.twig:33
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:52
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:85
+#: modules/Order/html_client/mod_order_list.html.twig:35
+#: modules/Order/html_client/mod_order_manage.html.twig:140
+#: modules/Support/html_client/mod_support_tickets.html.twig:37
 msgid "Actions"
 msgstr "Acțiuni"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:57
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:212
-#: modules/Index/html_client/mod_index_dashboard.html.twig:62
-#: modules/Index/html_client/mod_index_dashboard.html.twig:217
+#: modules/Index/html_client/mod_index_dashboard.html.twig:37
+#: modules/Index/html_client/mod_index_dashboard.html.twig:156
+#: modules/Index/html_client/mod_index_dashboard.html.twig:188
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:113
 #: modules/Order/html_admin/mod_order_manage.html.twig:135
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:81
 #: modules/Support/html_admin/mod_support_tickets.html.twig:245
-#: modules/Support/html_client/mod_support_ticket.html.twig:95
-#: modules/Support/html_client/mod_support_tickets.html.twig:48
+#: modules/Support/html_client/mod_support_tickets.html.twig:49
 #: themes/admin_default/html/mod_index_dashboard.html.twig:335
 #: themes/admin_default/html/mod_index_dashboard.html.twig:498
 #: themes/admin_default/html/mod_index_dashboard.html.twig:525
@@ -4304,85 +4281,86 @@ msgid "ago"
 msgstr "în urmă"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:58
-#: modules/Index/html_client/mod_index_dashboard.html.twig:63
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:88
-#: modules/Support/html_client/mod_support_ticket.html.twig:133
-#: modules/Support/html_client/mod_support_tickets.html.twig:50
+#: modules/Index/html_client/mod_index_dashboard.html.twig:39
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:69
+#: modules/Support/html_client/mod_support_ticket.html.twig:29
+#: modules/Support/html_client/mod_support_tickets.html.twig:54
 msgid "Reply"
 msgstr "Răspundeți"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:91
-#: modules/Index/html_client/mod_index_dashboard.html.twig:96
+#: modules/Index/html_client/mod_index_dashboard.html.twig:63
 msgid "Balance"
 msgstr "Sold"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:104
-#: modules/Index/html_client/mod_index_dashboard.html.twig:109
+#: modules/Index/html_client/mod_index_dashboard.html.twig:76
 msgid "All Invoices"
 msgstr "Toate facturile"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:112
-#: modules/Index/html_client/mod_index_dashboard.html.twig:117
+#: modules/Index/html_client/mod_index_dashboard.html.twig:83
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:144
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:210
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:24
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:64
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:38
 msgid "Paid"
 msgstr "Plătite"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:114
-#: modules/Index/html_client/mod_index_dashboard.html.twig:119
+#: modules/Index/html_client/mod_index_dashboard.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:130
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:214
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:23
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:29
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:34
 msgid "Unpaid"
 msgstr "Neplătite"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:130
-#: modules/Index/html_client/mod_index_dashboard.html.twig:135
+#: modules/Index/html_client/mod_index_dashboard.html.twig:102
 msgid "All orders"
 msgstr "Toate comenzile"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:140
-#: modules/Index/html_client/mod_index_dashboard.html.twig:145
+#: modules/Index/html_client/mod_index_dashboard.html.twig:111
 msgid "Expiring"
 msgstr "Încheiate"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:153
-#: modules/Index/html_client/mod_index_dashboard.html.twig:158
+#: modules/Index/html_client/mod_index_dashboard.html.twig:124
+#: modules/Support/html_client/mod_support_tickets.html.twig:22
 msgid "New ticket"
 msgstr "Tichet nou"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:154
-#: modules/Index/html_client/mod_index_dashboard.html.twig:159
+#: modules/Index/html_client/mod_index_dashboard.html.twig:125
 msgid "All tickets"
 msgstr "Toate tichetele"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:162
-#: modules/Index/html_client/mod_index_dashboard.html.twig:167
+#: modules/Index/html_client/mod_index_dashboard.html.twig:132
 msgid "Open"
 msgstr "Deschise"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:164
-#: modules/Index/html_client/mod_index_dashboard.html.twig:169
+#: modules/Index/html_client/mod_index_dashboard.html.twig:134
 msgid "On Hold"
 msgstr "În așteptare"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:176
-#: modules/Index/html_client/mod_index_dashboard.html.twig:181
+#: modules/Index/html_client/mod_index_dashboard.html.twig:144
 msgid "Recent orders"
 msgstr "Comenzi recente"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:204
-#: modules/Index/html_client/mod_index_dashboard.html.twig:209
 msgid "Recent emails"
 msgstr "E-mail-uri recente"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:32
 #: modules/Email/html_admin/mod_email_history.html.twig:32
+#: modules/Email/html_client/mod_email_email.html.twig:18
+#: modules/Email/html_client/mod_email_index.html.twig:52
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:44
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:28
 msgid "From"
@@ -4397,8 +4375,8 @@ msgid "Email resent"
 msgstr "E-mail-ul a fost retrimis"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:55
-#: modules/Email/html_client/mod_email_email.html.twig:35
-#: modules/Email/html_client/mod_email_index.html.twig:44
+#: modules/Email/html_client/mod_email_email.html.twig:23
+#: modules/Email/html_client/mod_email_index.html.twig:60
 msgid "Resend"
 msgstr "Retrimite"
 
@@ -4688,30 +4666,11 @@ msgstr "Exemple șabloane de email"
 msgid "Email template playground. Use this tool to try rendering email templates."
 msgstr "E-mail șablon de joacă. Utilizați această unealtă pentru a încerca redarea șabloanelor de e-mail."
 
-#: modules/Email/html_client/mod_email_email.html.twig:19
-msgid "Back to emails list"
-msgstr "Înapoi la lista e-mail-urilor"
-
-#: modules/Email/html_client/mod_email_email.html.twig:27
-#: modules/Email/html_client/mod_email_index.html.twig:36
-msgid "From:"
-msgstr "De la:"
-
-#: modules/Email/html_client/mod_email_email.html.twig:28
-#: modules/Email/html_client/mod_email_index.html.twig:37
-msgid "To:"
-msgstr "Către:"
-
-#: modules/Email/html_client/mod_email_email.html.twig:29
-#: modules/Email/html_client/mod_email_index.html.twig:38
-msgid "Created at:"
-msgstr "Creat la:"
-
-#: modules/Email/html_client/mod_email_index.html.twig:15
-msgid "Here you can find all the emails we sent you. Please click on email topic in left column and it will be displayed in right side."
-msgstr "Aici puteţi găsi toate e-mailurile pe care vi le-am trimis. Vă rugăm să faceţi clic pe subiectul de e-mail din coloana stângă şi va fi afişat în partea dreaptă."
-
 #: modules/Email/html_client/mod_email_index.html.twig:19
+msgid "Here you can find all the emails we've sent you."
+msgstr ""
+
+#: modules/Email/html_client/mod_email_index.html.twig:26
 msgid "There are no emails to display"
 msgstr "Nu există niciun e-mail de afișat"
 
@@ -4724,7 +4683,7 @@ msgid "Enter the words above"
 msgstr "Introduceți cuvintele de mai sus"
 
 #: modules/Embed/html_client/mod_embed_contact.html.twig:102
-#: modules/Support/html_client/mod_support_contact_us.html.twig:56
+#: modules/Support/html_client/mod_support_contact_us.html.twig:46
 msgid "Send"
 msgstr "Trimite"
 
@@ -5019,6 +4978,96 @@ msgstr "Căsuţă de validare"
 msgid "Textarea"
 msgstr "Zonă pentru text"
 
+#: modules/Index/html_client/mod_index_dashboard.html.twig:100
+msgid "New orders"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:166
+msgid "No recent orders"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:176
+#: modules/Support/html_client/mod_support_ticket.html.twig:13
+#: modules/Support/html_client/mod_support_tickets.html.twig:5
+#: modules/Support/html_client/mod_support_tickets.html.twig:6
+#: modules/Support/html_client/mod_support_tickets.html.twig:9
+#: modules/Support/html_client/mod_support_tickets.html.twig:18
+msgid "Support tickets"
+msgstr "Tichete de asistență"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:198
+msgid "No recent support tickets"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:212
+msgid "You are logged out"
+msgstr "V-ați deconectat"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:214
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:43
+#: modules/Page/html_client/mod_page_login.html.twig:3
+#: modules/Page/html_client/mod_page_login.html.twig:30
+#: modules/Staff/html_admin/mod_staff_login.html.twig:3
+#: modules/Staff/html_admin/mod_staff_login.html.twig:70
+#: themes/admin_default/html/error.html.twig:14
+#: themes/huraga/html/layout_default.html.twig:101
+msgid "Login"
+msgstr "Autentificare"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:242
+#: modules/Page/html_client/mod_page_signup.html.twig:5
+#: modules/Page/html_client/mod_page_signup.html.twig:165
+#: themes/huraga/html/layout_default.html.twig:127
+msgid "Sign up"
+msgstr "Înregistrare"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:223
+#: modules/Index/html_client/mod_index_dashboard.html.twig:227
+#: modules/Order/html_admin/mod_order_manage.html.twig:75
+#: modules/Order/html_client/mod_order_index.html.twig:5
+#: modules/Order/html_client/mod_order_index.html.twig:12
+#: modules/Order/html_client/mod_order_manage.html.twig:35
+#: modules/Order/html_client/mod_order_product.html.twig:5
+#: themes/admin_default/html/partial_menu_top.html.twig:3
+#: themes/huraga/html/layout_default.html.twig:94
+#: themes/huraga/html/partial_menu.html.twig:17
+msgid "Order"
+msgstr "Comandă"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:225
+msgid "Products and services"
+msgstr "Produse si servicii"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:236
+#: modules/News/html_admin/mod_news_index.html.twig:7
+#: modules/News/html_admin/mod_news_post.html.twig:19
+#: modules/News/html_client/mod_news_index.html.twig:3
+#: modules/News/html_client/mod_news_index.html.twig:7
+#: modules/News/html_client/mod_news_post.html.twig:8
+#: themes/huraga/html/partial_menu.html.twig:71
+msgid "News"
+msgstr "Noutăți"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:238
+msgid "Latest news and announcements"
+msgstr "Ultimele știri și anunțuri"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:250
+#: modules/Index/html_client/mod_index_dashboard.html.twig:254
+#: modules/Support/html_client/mod_support_kb_article.html.twig:8
+#: modules/Support/html_client/mod_support_kb_category.html.twig:7
+#: modules/Support/html_client/mod_support_kb_index.html.twig:10
+#: modules/Support/html_client/mod_support_kb_index.html.twig:14
+#: modules/Support/html_client/mod_support_kb_index.html.twig:31
+#: themes/huraga/html/partial_menu.html.twig:80
+msgid "Knowledge base"
+msgstr "Biblioteca de cunoștințe"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:252
+msgid "Browse our KB for answers and FAQ"
+msgstr "Cătați în KB pentru răspunsuri și FAQ"
+
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:28
 msgid "Payment gateway configuration"
 msgstr "Configurație pentru modalitățile de plată"
@@ -5140,6 +5189,7 @@ msgstr "Număr"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:62
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -5199,9 +5249,10 @@ msgstr "Pregătire"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:28
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:165
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:52
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:73
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:7
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:57
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:74
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:18
 #: themes/admin_default/html/partial_menu_top.html.twig:7
 msgid "Invoice"
 msgstr "Factură"
@@ -5209,6 +5260,8 @@ msgstr "Factură"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:36
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:31
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:31
+#: modules/Order/html_client/mod_order_manage.html.twig:154
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:5
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:34
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
 msgid "Manage"
@@ -5272,16 +5325,14 @@ msgid "This should be the transaction ID you use to reconcile your bank statemen
 msgstr "Acesta ar trebui să fie ID-ul tranzacției pe care îl utilizați pentru a reconcilia extrasul dvs. bancar."
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:263
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:270
 #: modules/Order/html_admin/mod_order_manage.html.twig:248
 msgid "Cancel"
 msgstr "Anulează"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:175
-#: modules/Order/html_client/mod_order_manage.html.twig:204
-#: modules/Order/html_client/mod_order_manage.html.twig:242
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:201
-#: modules/Support/html_client/mod_support_tickets.html.twig:114
+#: modules/Support/html_client/mod_support_tickets.html.twig:98
 msgid "Submit"
 msgstr "Trimiteți"
 
@@ -5290,7 +5341,7 @@ msgid "Refund"
 msgstr "Rambursați"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:196
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:56
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:62
 msgid "PDF"
 msgstr "PDF"
 
@@ -5352,7 +5403,7 @@ msgstr "Nume"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:494
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:222
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:176
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:175
 msgid "Zip"
 msgstr "Cod poștal"
 
@@ -5361,13 +5412,13 @@ msgid "Invoice items"
 msgstr "Articolele facturii"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:526
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:188
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:214
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:198
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:153
 #: modules/Order/html_admin/mod_order_manage.html.twig:324
 #: modules/Order/html_admin/mod_order_manage.html.twig:457
-#: modules/Order/html_client/mod_order_list.html.twig:26
+#: modules/Order/html_client/mod_order_list.html.twig:32
 #: modules/Order/html_client/mod_order_manage.html.twig:136
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:14
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:17
 #: themes/admin_default/html/partial_pricing.html.twig:25
 #: themes/huraga/html/partial_pricing.html.twig:54
 msgid "Price"
@@ -5382,7 +5433,7 @@ msgid "Approve"
 msgstr "Aprobați"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:710
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:59
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:63
 msgid "Print"
 msgstr "Printați"
 
@@ -5405,8 +5456,8 @@ msgid "Auto invoice approval"
 msgstr "Aprobare automată factură"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:62
-msgid "Proforma Invoicing / Sequential Invoice Numbering"
-msgstr "Facturare proformă / Numerotarea secvențială a facturii"
+msgid "Invoicing / Sequential Invoice Numbering"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:64
 msgid "Remove unpaid invoices after days"
@@ -5417,8 +5468,8 @@ msgid "Set 0 to keep invoices forever."
 msgstr "Setați 0 pentru a păstra facturile pentru totdeauna."
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:71
-msgid "Proforma invoice prefix/series"
-msgstr "Prefix/serie factură proformă"
+msgid "Invoice prefix/series"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:77
 msgid "Paid invoice prefix/series"
@@ -5619,8 +5670,8 @@ msgid "Transaction status on payment gateway"
 msgstr "Statusul tranzacției în gateway-ul de plată"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:90
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:130
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:155
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:137
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:96
 #: modules/Notification/html_admin/mod_notification_index.html.twig:78
 #: modules/Order/html_admin/mod_order_manage.html.twig:573
 #: modules/Support/html_admin/mod_support_ticket.html.twig:195
@@ -5731,19 +5782,19 @@ msgid "n/a"
 msgstr "n/a"
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:3
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:15
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
 msgid "Processing payment ..."
 msgstr "Se procesează plata..."
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:17
 msgid "Thank you for your patience."
 msgstr "Vă mulțumim pentru răbdare."
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:23
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:24
 msgid "Redirecting to payment gateway.."
 msgstr "Redirecționare către gateway-ul de plată.."
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:29
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:30
 msgid "Please click here to continue if this page does not redirect automatically in 5 seconds"
 msgstr "Faceți clic aici pentru a continua dacă această pagină nu se redirecționează automat în 5 secunde"
 
@@ -5752,158 +5803,138 @@ msgstr "Faceți clic aici pentru a continua dacă această pagină nu se redirec
 msgid "Invoice management"
 msgstr "Gestionare factură"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:20
-msgid "List of invoices"
-msgstr "Lista facturilor"
-
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:21
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:24
 msgid "All of your invoices can be found here. You can choose to see either paid or unpaid invoices by clicking corresponding button."
 msgstr "Toate facturile dumneavoastră pot fi găsite aici. Puteți alege să vedeți facturile plătite sau neplătite făcând clic pe butonul corespunzător."
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:70
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:73
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:86
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:49
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:82
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:76
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:31
 msgid "Invoice Date"
 msgstr "Data facturii"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:36
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:80
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:93
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:50
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:39
 msgid "Due Date"
 msgstr "Data scadenţei"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:49
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:64
 msgid "Pay"
 msgstr "Plătește"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:71
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:83
 msgid "Paid Date"
 msgstr "Data plății"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:7
-msgid "Proforma invoice"
-msgstr "Factură proformă"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:52
-msgid "Receipt"
-msgstr "Chitanță"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:25
 msgid "Payment methods"
 msgstr "Metode de plată"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:26
-msgid "Please choose payment type and pay for your chosen products."
-msgstr "Vă rugăm să alegeți tipul de plată și să plătiți pentru produsele dvs."
+msgid "Please choose a payment type and pay for your chosen products."
+msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:315
-msgid "Pay with"
-msgstr "Plăteşte cu"
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:58
+msgid "You can print this invoice or export it to a PDF file by clicking on the corresponding button."
+msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:53
-msgid "You can print this invoice or export it to PDF file by clicking on corresponding button."
-msgstr "Puteți să imprimați această factură sau să o exportați în fișierul PDF făcând clic pe butonul corespunzător."
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:71
-msgid "Invoice Number"
-msgstr "Număr factură"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:87
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:100
-msgid "Invoice Status"
-msgstr "Status Factură"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:105
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:120
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:157
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:112
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:68
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:152
 msgid "VAT"
 msgstr "TVA"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:125
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:132
 msgid "Account"
 msgstr "Cont"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:139
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:165
-msgid "Billing & Delivery address"
-msgstr "Adresă de facturare și livrare"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:186
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:212
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:196
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:151
 msgid "#"
 msgstr "#"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:227
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:254
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:185
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "Reducere"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:258
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:265
 msgid "Pay now with a one-time payment"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:259
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:266
 msgid "Pay now and create a subscription"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:260
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:267
 msgid "Pay now"
 msgstr "Plătiți acum"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:295
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:301
 msgid "The invoice you are paying and your chosen payment gateway both support subscription payments. What type of payment would you like to continue with?"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:298
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:304
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:309
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:310
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:315
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:302
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:308
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it. Optionally, you may choose a different payment gateway if you wish to pay using a subscription."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:321
+msgid "Pay with"
+msgstr "Plăteşte cu"
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:29
 msgid "Invoice number"
 msgstr "Număr factură"
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:140
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:47
+msgid "Invoice Status"
+msgstr "Status Factură"
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 #: modules/System/html_admin/mod_system_settings.html.twig:113
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Bank Name"
 msgstr "Numele băncii"
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:145
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:95
 #: modules/System/html_admin/mod_system_settings.html.twig:119
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "BIC / SWIFT Code"
 msgstr "Cod SWIFT / BIC"
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:150
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:92
 msgid "Bank Account"
 msgstr "Cont bancar"
 
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:106
+msgid "Billing & Delivery address"
+msgstr "Adresă de facturare și livrare"
+
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:3
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:4
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:10
 msgid "Thank you"
 msgstr "Mulţumim"
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:12
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
 msgid "Your payment is being processed right now. It can take up 5 minutes to complete."
 msgstr "Plata dvs. este procesată acum. Finalizarea acesteia poate dura până la 5 minute."
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
 msgid "Payment for invoice received"
 msgstr "Plata pentru factură primită"
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:16
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr "Veți fi redirecționat automat către pagina facturii după 5 minute."
 
@@ -6022,16 +6053,6 @@ msgstr "Mesajul a fost adăugat la coada de aşteptare a e-mailului şi va fi tr
 msgid "Message was sent."
 msgstr "Mesajul a fost trimis."
 
-#: modules/News/html_admin/mod_news_index.html.twig:7
-#: modules/News/html_admin/mod_news_post.html.twig:19
-#: modules/News/html_client/mod_news_index.html.twig:3
-#: modules/News/html_client/mod_news_index.html.twig:6
-#: modules/News/html_client/mod_news_post.html.twig:8
-#: themes/huraga/html/layout_default.html.twig:257
-#: themes/huraga/html/partial_menu.html.twig:53
-msgid "News"
-msgstr "Noutăți"
-
 #: modules/News/html_admin/mod_news_index.html.twig:12
 msgid "News and announcements"
 msgstr "Noutăți și anunțuri"
@@ -6075,26 +6096,29 @@ msgstr "Postare creată"
 msgid "Last update"
 msgstr "Ultima actualizare"
 
-#: modules/News/html_client/mod_news_index.html.twig:14
+#: modules/News/html_client/mod_news_index.html.twig:16
 msgid "News & Announcements"
 msgstr "Noutăți și anunțuri"
 
-#: modules/News/html_client/mod_news_index.html.twig:15
+#: modules/News/html_client/mod_news_index.html.twig:17
 msgid "Track our latest information."
 msgstr "Urmăriți ultimele noastre informații."
 
-#: modules/News/html_client/mod_news_index.html.twig:32
-msgid "Read more ..."
-msgstr "Citiți mai mult..."
+#: modules/News/html_client/mod_news_index.html.twig:36
+msgid "Continue reading"
+msgstr ""
 
-#: modules/News/html_client/mod_news_post.html.twig:34
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:72
-msgid "by "
-msgstr "de "
+#: modules/News/html_client/mod_news_index.html.twig:44
+msgid "No news or announcements"
+msgstr ""
+
+#: modules/News/html_client/mod_news_post.html.twig:33
+msgid "by"
+msgstr ""
 
 #: modules/News/html_client/mod_news_post.html.twig:43
-msgid "Back to list"
-msgstr "Înapoi la listă"
+msgid "Back to the list"
+msgstr ""
 
 #: modules/Notification/html_admin/mod_notification_index.html.twig:5
 msgid "Notifications center"
@@ -6124,7 +6148,7 @@ msgstr "Filtrare comenzi"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:41
 #: modules/Order/html_admin/mod_order_index.html.twig:295
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:13
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
 #: themes/admin_default/html/partial_menu_top.html.twig:15
 msgid "Product"
 msgstr "Produs"
@@ -6171,7 +6195,7 @@ msgid "Service management"
 msgstr "Gestionarea serviciilor"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:56
-#: modules/Order/html_client/mod_order_manage.html.twig:127
+#: modules/Order/html_client/mod_order_manage.html.twig:126
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:20
 #: modules/Product/html_admin/mod_product_addons.html.twig:5
 #: modules/Product/html_admin/mod_product_addons.html.twig:19
@@ -6184,20 +6208,8 @@ msgstr "Suplimente"
 msgid "History"
 msgstr "Istoric"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:75
-#: modules/Order/html_client/mod_order_index.html.twig:5
-#: modules/Order/html_client/mod_order_manage.html.twig:30
-#: modules/Order/html_client/mod_order_product.html.twig:5
-#: themes/admin_default/html/partial_menu_top.html.twig:3
-#: themes/huraga/html/layout_default.html.twig:105
-#: themes/huraga/html/layout_default.html.twig:239
-#: themes/huraga/html/layout_default.html.twig:245
-#: themes/huraga/html/partial_menu.html.twig:11
-msgid "Order"
-msgstr "Comandă"
-
 #: modules/Order/html_admin/mod_order_manage.html.twig:87
-#: modules/Order/html_client/mod_order_manage.html.twig:40
+#: modules/Order/html_client/mod_order_manage.html.twig:45
 msgid "Payment amount"
 msgstr "Suma de plată"
 
@@ -6210,12 +6222,12 @@ msgid "Payment amount after discount"
 msgstr "Sumă de plată după reducere"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:101
-#: modules/Order/html_client/mod_order_manage.html.twig:52
+#: modules/Order/html_client/mod_order_manage.html.twig:57
 msgid "Order status"
 msgstr "Starea comenzii"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:120
-#: modules/Order/html_client/mod_order_manage.html.twig:77
+#: modules/Order/html_client/mod_order_manage.html.twig:82
 msgid "Order notes"
 msgstr "Notițe comandă"
 
@@ -6244,7 +6256,7 @@ msgid "Order promo code"
 msgstr "Cod promoțional comandă"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:156
-#: modules/Order/html_client/mod_order_manage.html.twig:84
+#: modules/Order/html_client/mod_order_manage.html.twig:89
 msgid "Active support tickets"
 msgstr "Tichete de asistență active"
 
@@ -6308,7 +6320,7 @@ msgid "Changes status without performing action"
 msgstr "Schimbă statusul fără a efectua o acțiune"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:330
-#: modules/Order/html_client/mod_order_manage.html.twig:232
+#: modules/Order/html_client/mod_order_manage.html.twig:186
 msgid "Reason"
 msgstr "Motiv"
 
@@ -6325,12 +6337,12 @@ msgid "Please be cautious and make sure you know what you are doing when editing
 msgstr "Vă rugăm să fiți precauți și să vă asigurați că știți ce faceți atunci când editați configurația ordinului! FOSSBilling se bazează pe acești parametri și este posibil să obții rezultate neașteptate dacă le schimbi."
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:450
-#: modules/Order/html_client/mod_order_manage.html.twig:128
+#: modules/Order/html_client/mod_order_manage.html.twig:127
 msgid "Addons you have ordered with this service"
 msgstr "Suplimente pe care le-ați comandat cu acest serviciu"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:455
-#: modules/Order/html_client/mod_order_list.html.twig:25
+#: modules/Order/html_client/mod_order_list.html.twig:31
 #: modules/Order/html_client/mod_order_manage.html.twig:135
 msgid "Product/Service"
 msgstr "Produs/Serviciu"
@@ -6341,7 +6353,7 @@ msgid "Billing Cycle"
 msgstr "Ciclu facturare"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:458
-#: modules/Order/html_client/mod_order_list.html.twig:27
+#: modules/Order/html_client/mod_order_list.html.twig:33
 #: modules/Order/html_client/mod_order_manage.html.twig:138
 msgid "Next due date"
 msgstr "Următoarea dată scadentă"
@@ -6443,14 +6455,12 @@ msgstr "zile după suspendarea comenzii cu motiv"
 msgid "Suspension reasons"
 msgstr "Motivele suspendării"
 
-#: modules/Order/html_client/mod_order_index.html.twig:18
-#: modules/Order/html_client/mod_order_product.html.twig:18
-#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:5
-msgid "Select Product"
-msgstr "Selectează produs"
+#: modules/Order/html_client/mod_order_index.html.twig:23
+msgid "Order Product"
+msgstr ""
 
-#: modules/Order/html_client/mod_order_index.html.twig:19
-#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Order/html_client/mod_order_index.html.twig:24
+#: modules/Order/html_client/mod_order_product.html.twig:20
 msgid "Choose products we offer for selling"
 msgstr "Alege produsele pe care le oferim pentru vânzare"
 
@@ -6458,87 +6468,100 @@ msgstr "Alege produsele pe care le oferim pentru vânzare"
 msgid "My Products & Services"
 msgstr "Produsele și serviciile mele"
 
-#: modules/Order/html_client/mod_order_list.html.twig:18
-msgid "All of your orders are displayed here. Click on any order to get full information about it."
-msgstr "Toate comenzile dvs. sunt afișate aici. Faceți clic pe orice comandă pentru a obține informații complete despre aceasta."
+#: modules/Order/html_client/mod_order_list.html.twig:9
+#: modules/Order/html_client/mod_order_list.html.twig:19
+#: modules/Order/html_client/mod_order_manage.html.twig:11
+#: themes/huraga/html/partial_menu.html.twig:35
+msgid "Services"
+msgstr "Servicii"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:23
+#: modules/Order/html_client/mod_order_list.html.twig:20
+msgid "All of your orders are displayed here. Click on any service to get full information about it."
+msgstr ""
+
+#: modules/Order/html_client/mod_order_list.html.twig:30
+#: modules/Support/html_admin/mod_support_tickets.html.twig:40
+msgid "Order ID"
+msgstr "ID-ul comenzii"
+
+#: modules/Order/html_client/mod_order_list.html.twig:61
+msgid "No orders yet"
+msgstr ""
+
+#: modules/Order/html_client/mod_order_manage.html.twig:26
 msgid "Service details"
 msgstr "Detaliile serviciului"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:24
+#: modules/Order/html_client/mod_order_manage.html.twig:27
 msgid "All information about your service"
 msgstr "Toate informațiile despre serviciul dumneavoastră"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:35
+#: modules/Order/html_client/mod_order_manage.html.twig:40
 msgid "Product name"
 msgstr "Denumire produs"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:46
+#: modules/Order/html_client/mod_order_manage.html.twig:51
 msgid "Billing cycle"
 msgstr "Ciclu de facturare"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:59
+#: modules/Order/html_client/mod_order_manage.html.twig:64
 msgid "Order created"
 msgstr "Comandă creată"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:64
+#: modules/Order/html_client/mod_order_manage.html.twig:69
 msgid "Activated at"
 msgstr "Activat la"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:70
+#: modules/Order/html_client/mod_order_manage.html.twig:75
 msgid "Renewal date"
 msgstr "Dată reînnoire"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:98
+#: modules/Order/html_client/mod_order_manage.html.twig:102
 msgid "Renew now"
 msgstr "Reînnoiește acum"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:102
+#: modules/Order/html_client/mod_order_manage.html.twig:105
 msgid "Request Upgrade"
 msgstr "Solicită upgrade"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:105
+#: modules/Order/html_client/mod_order_manage.html.twig:107
+#: modules/Order/html_client/mod_order_manage.html.twig:224
 msgid "Open ticket"
 msgstr "Deschide tichet"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:108
-msgid "Request Cancellation"
-msgstr "Solicită anularea comenzii"
+#: modules/Order/html_client/mod_order_manage.html.twig:109
+msgid "Request cancellation"
+msgstr ""
 
-#: modules/Order/html_client/mod_order_manage.html.twig:115
-msgid "Back to services"
-msgstr "Înapoi la servicii"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:172
-#: modules/Support/html_client/mod_support_tickets.html.twig:86
-msgid "Submit new support ticket"
-msgstr "Trimite un nou tichet de suport"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:212
+#: modules/Order/html_client/mod_order_manage.html.twig:168
 msgid "Submit cancellation request"
 msgstr "Trimite cererea de anulare"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:227
-msgid "I would like to cancel"
-msgstr "Aş dori să anulez"
+#: modules/Order/html_client/mod_order_manage.html.twig:191
+#: modules/Order/html_client/mod_order_manage.html.twig:262
+msgid "Request"
+msgstr "Cerere"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:250
+#: modules/Order/html_client/mod_order_manage.html.twig:202
+msgid "Submit new support ticket"
+msgstr "Trimite un nou tichet de suport"
+
+#: modules/Order/html_client/mod_order_manage.html.twig:235
 msgid "Submit upgrade request"
 msgstr "Trimite cererea de upgrade"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:259
-#: modules/Order/html_client/mod_order_manage.html.twig:280
-msgid "I would like to upgrade"
-msgstr "Aș dori să fac upgrade"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:271
+#: modules/Order/html_client/mod_order_manage.html.twig:253
 msgid "Upgrade to"
 msgstr "Actualizaţi la"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:290
-msgid "Request"
-msgstr "Cerere"
+#: modules/Order/html_client/mod_order_manage.html.twig:258
+msgid "I would like to upgrade"
+msgstr "Aș dori să fac upgrade"
+
+#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
+msgid "Select Product"
+msgstr "Selectează produs"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:5
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:22
@@ -6680,206 +6703,238 @@ msgstr "Suplimente și bonusuri"
 msgid "Setup:"
 msgstr "Instalare:"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:4
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:6
 msgid "Cart"
 msgstr "Coș de cumpărături"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:41
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:44
 msgid "Remove item"
 msgstr "Elimină elementul"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:92
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:95
 msgid "setup"
 msgstr "instalare"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:110
-msgid "Have coupon code?"
-msgstr "Aveți un cupon?"
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:113
+msgid "Have a coupon code?"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:118
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:121
 msgid "Enter code"
 msgstr "Introduceți codul"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:120
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:123
 msgid "Remove"
 msgstr "Șterge"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:122
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:125
 msgid "Apply"
 msgstr "Aplică"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:143
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:138
 msgid "Subtotal:"
 msgstr "Subtotal:"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:147
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:142
 msgid "Discount:"
 msgstr "Reducere:"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:178
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:157
+msgid "Total:"
+msgstr "Total:"
+
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:173
 msgid "Pay by"
 msgstr "A se plăti până la"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:187
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:182
 msgid "Total amount will be deducted from account balance"
 msgstr "Suma totală va fi dedusă din soldul contului"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:189
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:184
 msgid "Checkout"
 msgstr "Finalizare comandă"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:205
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:201
 msgid "Promo code was removed"
 msgstr "Codul promoţional a fost eliminat"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:211
 msgid "Are you sure you want to remove this item from cart?"
 msgstr "Sunteţi sigur că doriţi să ştergeţi acest articol din coş?"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:219
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:215
 msgid "Item was removed from cart"
 msgstr "Articolul a fost eliminat din coș"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:5
+#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
 msgid "Items"
 msgstr "Articole"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:5
-msgid "Login or Register"
-msgstr "Autentificare sau Înregistrare"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:11
+msgid "Login or Sign up"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:18
-#: modules/Page/html_client/mod_page_login.html.twig:30
-#: modules/Page/html_client/mod_page_password-reset.html.twig:32
-msgid "Your email address"
-msgstr "Adresa dvs. de e-mail"
-
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:18
-#: modules/Page/html_client/mod_page_password-reset.html.twig:32
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
 msgid "You must fill in your email."
 msgstr "Trebuie să completați adresa de e-mail."
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
 msgid "You must fill in your password."
 msgstr "Trebuie să completați parola."
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:32
-#: modules/Page/html_client/mod_page_login.html.twig:3
-#: modules/Page/html_client/mod_page_login.html.twig:42
-msgid "Log in"
-msgstr "Autentificare"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:47
+#: modules/Page/html_client/mod_page_login.html.twig:36
+msgid "Create account"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:34
-msgid "Or register"
-msgstr "sau Înregistrare"
-
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
-#: modules/Page/html_client/mod_page_signup.html.twig:80
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:112
 msgid "You are"
 msgstr "Tu ești"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:221
-#: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
-#: themes/huraga/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:229
-msgid "Register"
-msgstr "Înregistrare"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:134
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
+msgid "Confirm password"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:224
-msgid "Or Login"
-msgstr "Sau autentifică-te"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:218
+msgid "Phone Code"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:70
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
+#: modules/Page/html_client/mod_page_signup.html.twig:170
+msgid "Already a user?"
+msgstr ""
+
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:46
 msgid "Payment"
 msgstr "Plată"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:82
-msgid "Powered by FOSSBilling"
-msgstr "Oferit de FOSSBilling"
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:60
+msgid "Powered by"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:103
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:127
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:87
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:113
 msgid "You logged in successfully"
 msgstr "V-ați autentificat cu succes"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:143
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:131
 msgid "Product was added to shopping cart"
 msgstr "Produsul a fost adăugat în coşul de cumpărături"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:155
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:143
 msgid "Promo code was applied for your order"
 msgstr "Codul promoțional a fost aplicat pentru comanda dumneavoastră"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:4
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:6
 msgid "Product Configuration"
 msgstr "Configurare produs"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:26
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:30
 msgid "FREE"
 msgstr "GRATIS"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:48
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:53
 msgid "Next"
 msgstr "Următorul"
 
 #: modules/Page/html_client/mod_page_about-us.html.twig:3
-#: modules/Page/html_client/mod_page_about-us.html.twig:16
+#: modules/Page/html_client/mod_page_about-us.html.twig:19
 msgid "About us"
 msgstr "Despre noi"
 
-#: modules/Page/html_client/mod_page_about-us.html.twig:27
-#: modules/Page/html_client/mod_page_privacy-policy.html.twig:28
-#: modules/Page/html_client/mod_page_tos.html.twig:27
-msgid "Back to Homepage"
-msgstr "Înapoi la pagina principală"
+#: modules/Page/html_client/mod_page_about-us.html.twig:9
+#: modules/System/html_admin/mod_system_settings.html.twig:43
+msgid "About"
+msgstr "Despre"
 
-#: modules/Page/html_client/mod_page_login.html.twig:53
-#: modules/Page/html_client/mod_page_password-reset.html.twig:47
-#: modules/Page/html_client/mod_page_signup.html.twig:18
-msgid "Signup"
-msgstr "Înregistrare"
+#: modules/Page/html_client/mod_page_login.html.twig:20
+msgid "Login to your account"
+msgstr ""
 
-#: modules/Page/html_client/mod_page_login.html.twig:57
+#: modules/Page/html_client/mod_page_login.html.twig:24
+#: modules/Page/html_client/mod_page_password-reset.html.twig:25
+#: modules/Staff/html_admin/mod_staff_login.html.twig:23
+#: modules/Staff/html_admin/mod_staff_login.html.twig:48
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
+msgid "Enter your email address"
+msgstr "Introduceţi adresa de e-mail"
+
+#: modules/Page/html_client/mod_page_login.html.twig:28
+#: modules/Staff/html_admin/mod_staff_login.html.twig:29
+#: modules/Staff/html_admin/mod_staff_login.html.twig:66
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
+msgid "Enter your password"
+msgstr "Introduceţi parola"
+
+#: modules/Page/html_client/mod_page_login.html.twig:40
+#: modules/Page/html_client/mod_page_signup.html.twig:173
 msgid "Forgot password?"
 msgstr "Ai uitat parola?"
 
 #: modules/Page/html_client/mod_page_password-reset.html.twig:3
-#: modules/Page/html_client/mod_page_password-reset.html.twig:21
-#: modules/Page/html_client/mod_page_password-reset.html.twig:38
+#: modules/Page/html_client/mod_page_password-reset.html.twig:28
 msgid "Reset password"
 msgstr "Resetează parola"
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:34
-msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
-msgstr "Introduceți adresa de e-mail pentru a reseta parola. Veți primi o nouă parolă după ce link-ul de resetare este confirmat."
+#: modules/Page/html_client/mod_page_password-reset.html.twig:20
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:3
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:16
+msgid "Reset your password"
+msgstr "Resetează-ți parola"
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:62
+#: modules/Page/html_client/mod_page_password-reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:18
 msgid "A password reset confirmation email will be sent to you if we found an account with that email address."
 msgstr "Un e-mail de confirmare pentru resetarea parolei vă va fi trimis dacă am găsit un cont cu acea adresă de e-mail."
 
+#: modules/Page/html_client/mod_page_password-reset.html.twig:26
+msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
+msgstr "Introduceți adresa de e-mail pentru a reseta parola. Veți primi o nouă parolă după ce link-ul de resetare este confirmat."
+
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:3
-#: modules/Page/html_client/mod_page_privacy-policy.html.twig:17
+#: modules/Page/html_client/mod_page_privacy-policy.html.twig:19
 msgid "Privacy Policy"
 msgstr "Politică de confidențialitate"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:5
-#: modules/Page/html_client/mod_page_signup.html.twig:202
-msgid "Sign up"
-msgstr "Înregistrare"
+#: modules/Page/html_client/mod_page_privacy-policy.html.twig:9
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:13
+msgid "Privacy"
+msgstr "Confidențialitate"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:26
-msgid "Account has been created"
-msgstr "Contul a fost creat"
+#: modules/Page/html_client/mod_page_signup.html.twig:22
+msgid "Create a new account"
+msgstr ""
 
-#: modules/Page/html_client/mod_page_signup.html.twig:26
-msgid "Please check your mailbox and confirm email address"
-msgstr "Vă rugăm să verificați căsuța poștală și să confirmați adresa de e-mail"
+#: modules/Page/html_client/mod_page_signup.html.twig:66
+msgid "Male"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:67
+msgid "Female"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:68
+msgid "Non-binary"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:69
+msgid "Other"
+msgstr ""
 
 #: modules/Page/html_client/mod_page_tos.html.twig:3
-#: modules/Page/html_client/mod_page_tos.html.twig:16
+#: modules/Page/html_client/mod_page_tos.html.twig:19
 msgid "Terms and Conditions"
 msgstr "Termeni și condiții"
+
+#: modules/Page/html_client/mod_page_tos.html.twig:9
+msgid "Terms"
+msgstr ""
 
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:5
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:21
@@ -6911,6 +6966,7 @@ msgstr "Setează suport plătit pentru birouri de asistență"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:70
 #: modules/Support/html_admin/mod_support_tickets.html.twig:210
 #: modules/Support/html_admin/mod_support_tickets.html.twig:313
+#: modules/Support/html_client/mod_support_tickets.html.twig:85
 msgid "Helpdesk"
 msgstr "Birou de asistență"
 
@@ -7328,7 +7384,7 @@ msgid "Add new field"
 msgstr "Adaugă câmp nou"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:26
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:19
 msgid "Reset API key"
 msgstr "Resetează cheia API"
 
@@ -7344,9 +7400,13 @@ msgstr "Schimbarea opțiunilor de generare a cheilor API nu va regenera automat 
 msgid "API key updated"
 msgstr "Cheie API actualizată"
 
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:9
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:7
 msgid "API key details"
 msgstr "Detalii cheie API"
+
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
+msgid "API key"
+msgstr "Cheie API"
 
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:2
 msgid "Stock control settings"
@@ -7409,7 +7469,7 @@ msgstr "Registrator domeniu nou"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:42
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:289
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:12
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:15
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Nameservers"
@@ -7432,7 +7492,7 @@ msgid "Registration"
 msgstr "Înregistrare"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:60
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:14
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:19
 msgid "Transfer"
 msgstr "Transfer"
 
@@ -7488,7 +7548,6 @@ msgstr "Preț reînnoire"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:137
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:55
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:76
 msgid "Transfer price"
 msgstr "Preț transfer"
 
@@ -7564,8 +7623,8 @@ msgstr "Nameservere actualizate"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:296
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:18
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:114
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:71
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:39
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:82
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:50
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:117
@@ -7575,8 +7634,8 @@ msgstr "Nameserver 1"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:302
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:22
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:120
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:77
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:42
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:87
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:54
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
@@ -7586,8 +7645,8 @@ msgstr "Nameserver 2"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:308
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:26
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:126
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:83
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:94
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:58
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
@@ -7597,8 +7656,8 @@ msgstr "Nameserver 3"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:314
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:132
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:89
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:48
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:99
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
@@ -7610,17 +7669,16 @@ msgid "Update nameservers"
 msgstr "Actualizează nameserverele"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:2
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:19
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:26
 msgid "Domain details"
 msgstr "Detaliile domeniului"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:8
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:23
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:16
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:172
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:16
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:10
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:22
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:15
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:30
 msgid "Domain"
 msgstr "Domeniu"
 
@@ -7641,7 +7699,6 @@ msgid "Registration/Renewal years"
 msgstr "Anii de înregistrare/reînnoire"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:66
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:32
 msgid "Expires at"
 msgstr "Expiră la"
 
@@ -7650,12 +7707,12 @@ msgid "Get EPP"
 msgstr "Preia EPP"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:85
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:44
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:52
 msgid "Unlock"
 msgstr "Deblocare"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:91
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:45
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:56
 msgid "Lock"
 msgstr "Blocare"
 
@@ -7680,7 +7737,7 @@ msgid "Transfer code (EPP)"
 msgstr "Codul de transfer (EPP)"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:164
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:106
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:114
 msgid "Update domain contact details"
 msgstr "Actualizați detaliile de contact ale domeniului"
 
@@ -7689,7 +7746,7 @@ msgid "Domain contact details updated"
 msgstr "Detalii de contact domeniu actualizate"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:234
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:190
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:187
 msgid "Phone number"
 msgstr "Număr de telefon"
 
@@ -7716,6 +7773,10 @@ msgstr "Codul de transfer domeniu este: "
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:4
 msgid "Domain action"
 msgstr "Acțiune domeniu"
+
+#: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
+msgid "Register"
+msgstr "Înregistrare"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:12
 msgid " Transfer"
@@ -7751,7 +7812,6 @@ msgstr "Cod de transfer domeniu"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:19
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:19
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:7
 msgid "Domain management"
 msgstr "Administrare domeniu"
 
@@ -7775,63 +7835,63 @@ msgstr "Administrare extensie de domeniu"
 msgid "Top level domain settings updated."
 msgstr "Extensie de domeniu actualizat."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:10
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:11
 msgid "Protection"
 msgstr "Protecție"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:11
-msgid "Privacy"
-msgstr "Confidențialitate"
-
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:13
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:17
 msgid "Whois"
 msgstr "WHOIS"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:40
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:33
+msgid "Expires on"
+msgstr ""
+
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:47
 msgid "Domain Protection"
 msgstr "Protecție domeniu"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:41
-msgid "Domain locking is a security enhancement to prevent unauthorized transfers of your domain to another registrar or web host by \"locking\" your domain name servers."
-msgstr "Blocarea domeniului este o îmbunătățire a securității pentru a preveni transferurile neautorizate de domeniu către un alt registrar sau gazdă web prin \"blocarea\" serverelor de nume de domeniu."
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:48
+msgid "Domain locking is a security feature which acts to prevent your domain name from being transferred without first unlocking it. When this is enabled, a domain cannot be transferred even with the transfer code."
+msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:51
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:63
 msgid "Domain Privacy Settings"
 msgstr "Setări de confidenţialitate domeniu"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:53
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:64
 msgid "If you would like to hide domain contact information which is shown on WHOIS you can enable privacy protection. Once domain privacy protection is enabled no one will know who registered this service. And once you decide to disable privacy protection, information that is listed above on \"Update Domain Contact Details\" section will be seen on domain WHOIS again."
 msgstr "Dacă doriți să ascundeți informațiile de contact ale domeniului care sunt afișate în WHOIS, puteți activa protecția confidențialității. Odată ce protecția confidențialității domeniului este activată, nimeni nu va ști cine a înregistrat acest serviciu. Și odată ce decizi să dezactivezi protecția confidențialității, informații care sunt listate mai sus pe secțiunea \"Actualizare Contacte domeniu\" va fi vizualizată pe domeniul WHOIS din nou."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:56
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:66
 msgid "Disable Privacy protection"
 msgstr "Dezactivați protecția confidențialității"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:57
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:67
 msgid "Enable Privacy protection"
 msgstr "Activați protecția confidențialității"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:64
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:73
 msgid "Update Nameservers"
 msgstr "Actualizează nameservere"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:66
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:74
 msgid "If you would like to host this domain with another company you can update nameservers."
 msgstr "Dacă doriți să găzduiți acest domeniu cu o altă companie, puteți actualiza nameserverele."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:108
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:115
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
 msgstr "Datele de contact ale domeniului vor fi afișate odată ce cineva va verifica rezultatele WHOIS (care este public) ale serviciului dvs. Aceasta va actualiza contactele tehnice, de facturare și de administrare pentru acest serviciu. Puteți activa protecția confidențialității domeniului dacă doriți să vă ascundeți informațiile publice WHOIS."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:209
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:200
 msgid "Domain Secret"
 msgstr "Domeniu secret"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:210
-msgid "All domain names (except a .EU, .UK domain name) have a Domain (Transfer) Secret Key/Authorization Code (EPP Code) associated with them. This would be required if you want to transfer service."
-msgstr "Toate numele de domenii (cu excepţia unui nume .EU, .UK de domeniu) au o Cheie Secretă/Cod de Autorizare Secret (Codul EPP) asociat cu ele. Acest lucru ar fi necesar dacă doriți să transferați serviciul."
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:201
+msgid "Most domain names (except a few top-level domains like .EU and .UK) have a Domain Secret Key/Authorization Code (EPP Code) associated with them. This code is typically required when transferring the domain to a new registrar."
+msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:213
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:203
 msgid "Get EPP code"
 msgstr "Preia codul EPP"
 
@@ -7839,34 +7899,37 @@ msgstr "Preia codul EPP"
 msgid "Register a new domain"
 msgstr "Înregistrați un domeniu nou"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:20
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:23
 msgid "Enter new domain name to register"
 msgstr "Introduceți un nou nume de domeniu pentru a-l înregistra"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:27
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:70
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:43
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:31
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:85
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:56
 msgid "Check"
 msgstr "Verifică"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:36
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:44
 msgid "I want to use my nameservers"
 msgstr "Vreau să folosesc nameserverele mele"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:73
 msgid "Transfer a new domain"
 msgstr "Transferă un domeniu nou"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:64
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:78
 msgid "Enter your domain name to transfer"
 msgstr "Introduceți numele domeniului pentru transfer"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:77
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
+msgid "Transfer price is"
+msgstr ""
+
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:91
 msgid "Enter domain transfer code"
 msgstr "Introduceți codul de transfer domeniu"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:170
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:119
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:189
 msgid " Year/s @ "
 msgstr " An/i @ "
 
@@ -7925,8 +7988,8 @@ msgstr "Încarcă un fișier nou pentru această comandă"
 msgid "Use this function to update existing order file. Client will be able to download new file from client area"
 msgstr "Utilizaţi această funcţie pentru a actualiza fişierul existent al comenzii. Clientul va putea descărca fişierul nou din zona de clienți"
 
-#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:6
-#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:9
+#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:4
+#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:7
 msgid "Download"
 msgstr "Descarcă"
 
@@ -7944,7 +8007,7 @@ msgstr "Server"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:14
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:26
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:49
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:57
 msgid "Hosting plan"
 msgstr "Plan de găzduire"
 
@@ -8022,14 +8085,14 @@ msgstr "Nume unic pentru a identifica acest plan de găzduire"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:36
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:66
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:58
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:67
 msgid "Disk quota"
 msgstr "Cotă de disc"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:99
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:62
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:54
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:62
 msgid "Bandwidth"
 msgstr "Lăţimea de bandă"
 
@@ -8190,7 +8253,7 @@ msgid "Server Name"
 msgstr "Nume server"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:30
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:29
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:37
 msgid "Server IP"
 msgstr "IP server"
 
@@ -8201,14 +8264,14 @@ msgstr "IP cont"
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:38
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:157
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:26
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:11
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:39
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:132
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:18
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:47
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:141
 msgid "Username"
 msgstr "Nume de utilizator"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:63
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:55
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:63
 msgid "per month"
 msgstr "pe lună"
 
@@ -8217,7 +8280,7 @@ msgid "Jump to control panel"
 msgstr "Sari la panoul de control"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:85
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:71
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:79
 msgid "Reseller control panel"
 msgstr "Panou de control reseller"
 
@@ -8254,7 +8317,7 @@ msgid "Account password changed"
 msgstr "Parola contului a fost modificată"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:127
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:88
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:97
 msgid "Password Confirm"
 msgstr "Confirmare parolă"
 
@@ -8267,8 +8330,8 @@ msgid "Account IP changed"
 msgstr "IP-ul contului schimbat"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:153
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:127
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:141
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:136
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:150
 msgid "Change username"
 msgstr "Schimbă numele utilizatorului"
 
@@ -8277,8 +8340,8 @@ msgid "Account username changed"
 msgstr "Numele de utilizator al contului a fost schimbat"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:168
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:105
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:119
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:114
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:128
 msgid "Change domain"
 msgstr "Schimbă domeniul"
 
@@ -8335,46 +8398,57 @@ msgstr "Prefix pentru utilizatorii creați (în special pentru baza de date)"
 msgid "Update server"
 msgstr "Actualizează serverul"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:6
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:4
 msgid "Manage hosting account"
 msgstr "Gestionează contul de găzduire"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:34
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:42
 msgid "Server Hostname"
 msgstr "Hostname server"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:67
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:75
 msgid "Manage domain"
 msgstr "Gestionează domeniul"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:69
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:77
 msgid "Jump to cPanel"
 msgstr "Sari la cPanel"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:77
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:86
 msgid "Change your FTP/cPanel/SSH password."
 msgstr "Schimbă parola FTP/cPanel/SSH."
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:110
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:119
 msgid "New domain"
 msgstr "Domeniu nou"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:10
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:7
 msgid "Domain configuration"
 msgstr "Configurație domeniu"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:12
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:13
 msgid "I will use my existing domain and update nameservers"
 msgstr "Voi folosi domeniul meu existent și voi actualiza nameserverele"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:16
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:20
 msgid "I want to register a new domain"
 msgstr "Vreau să înregistrez un domeniu nou"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:25
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:36
-msgid "mydomain"
-msgstr "mydomain"
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:31
+msgid "Your existing domain"
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:47
+msgid "Your new domain"
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:129
+msgid " year @ "
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:131
+msgid " years @ "
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:3
 msgid "License settings"
@@ -8434,7 +8508,7 @@ msgid "for more information."
 msgstr "pentru mai multe informații."
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:10
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:13
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:11
 msgid "Key"
 msgstr "Cheie"
 
@@ -8486,51 +8560,51 @@ msgstr "Validează versiunea"
 msgid "Valid versions (one per line)"
 msgstr "Versiuni valide (una pe linie)"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:9
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:7
 msgid "License details"
 msgstr "Detalii licență"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:22
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:20
 msgid "Valid IPs"
 msgstr "IP-uri valide"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:28
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:26
 msgid "All ips"
 msgstr "Toate IP-urile"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:37
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:35
 msgid "Valid Domains"
 msgstr "Domenii valide"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:43
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:41
 msgid "All hosts"
 msgstr "Toate gazdele"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:52
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:50
 msgid "Valid Versions"
 msgstr "Versiuni valide"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:58
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:56
 msgid "All versions"
 msgstr "Toate versiunile"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:67
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:65
 msgid "Valid Install paths"
 msgstr "Căi de instalare valide"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:73
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:71
 msgid "All paths"
 msgstr "Toate căile"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:82
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:80
 msgid "Reset license"
 msgstr "Resetează licența"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:83
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:81
 msgid "You can reset your license parameters if you have changed your server"
 msgstr "Puteți reseta parametrii de licență dacă v-ați schimbat serverul"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:98
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:94
 msgid "License was reset"
 msgstr "Licența a fost resetată"
 
@@ -8672,19 +8746,6 @@ msgstr "Creează grup"
 msgid "Create main administrator account"
 msgstr "Creare cont administrator principal"
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:23
-#: modules/Staff/html_admin/mod_staff_login.html.twig:48
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
-msgid "Enter your email address"
-msgstr "Introduceţi adresa de e-mail"
-
-#: modules/Staff/html_admin/mod_staff_login.html.twig:29
-#: modules/Staff/html_admin/mod_staff_login.html.twig:66
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
-msgid "Enter your password"
-msgstr "Introduceţi parola"
-
 #: modules/Staff/html_admin/mod_staff_login.html.twig:33
 msgid "Create administrator account"
 msgstr "Creați un cont de administrator"
@@ -8696,10 +8757,6 @@ msgstr "Autentifică-te în contul tău"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:57
 msgid "Forgot your password?"
 msgstr "Ai uitat parola?"
-
-#: modules/Staff/html_admin/mod_staff_login.html.twig:70
-msgid "Sign in"
-msgstr "Autentificare"
 
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:5
 msgid "Staff members login history"
@@ -8774,13 +8831,6 @@ msgstr "Parola de membru al personalului schimbată"
 msgid "Repeat same password"
 msgstr "Repetă aceeași parolă"
 
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:3
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:16
-msgid "Reset your password"
-msgstr "Resetează-ți parola"
-
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:17
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
 msgstr "Introduceți adresa dvs. de e-mail. Veți primi un link de confirmare dacă există contul dvs."
@@ -8821,6 +8871,10 @@ msgstr "Gravatar"
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:31
 msgid "Profile updated"
 msgstr "Profil actualizat"
+
+#: modules/Staff/html_admin/mod_staff_profile.html.twig:60
+msgid "Password Changed"
+msgstr "Parolă schimbată"
 
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:90
 msgid "External application can control every aspect of FOSSBilling using this API key."
@@ -8937,17 +8991,17 @@ msgstr "Categorie creată"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:31
 #: modules/Support/html_admin/mod_support_ticket.html.twig:36
+#: modules/Support/html_client/mod_support_ticket.html.twig:24
 msgid "Ticket"
 msgstr "Tichet"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:44
 #: modules/Support/html_admin/mod_support_ticket.html.twig:54
-#: modules/Support/html_client/mod_support_ticket.html.twig:30
 msgid "Ticket ID"
 msgstr "ID-ul tichetului"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:52
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:35
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:27
 msgid "Author"
 msgstr "Autor"
 
@@ -8983,15 +9037,16 @@ msgstr "Afișați/Ascundeți mesajele"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:194
 #: modules/Support/html_admin/mod_support_ticket.html.twig:316
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:106
-#: modules/Support/html_client/mod_support_ticket.html.twig:153
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:88
+#: modules/Support/html_client/mod_support_ticket.html.twig:139
+#: modules/Support/html_client/mod_support_ticket.html.twig:140
 msgid "Post"
 msgstr "Publicați"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:204
 #: modules/Support/html_admin/mod_support_ticket.html.twig:326
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
-#: modules/Support/html_client/mod_support_ticket.html.twig:22
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:51
+#: modules/Support/html_client/mod_support_ticket.html.twig:32
 msgid "Close ticket"
 msgstr "Închideți tichetul"
 
@@ -9110,10 +9165,6 @@ msgstr ""
 msgid "Client ID"
 msgstr "ID-ul clientului"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:40
-msgid "Order ID"
-msgstr "ID-ul comenzii"
-
 #: modules/Support/html_admin/mod_support_tickets.html.twig:46
 msgid "Ticket Subject"
 msgstr ""
@@ -9163,101 +9214,89 @@ msgid "Create New Helpdesk"
 msgstr ""
 
 #: modules/Support/html_client/mod_support_contact_us.html.twig:5
-#: modules/Support/html_client/mod_support_contact_us.html.twig:8
-#: modules/Support/html_client/mod_support_contact_us.html.twig:17
+#: modules/Support/html_client/mod_support_contact_us.html.twig:9
+#: modules/Support/html_client/mod_support_contact_us.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:9
 msgid "Contact us"
 msgstr "Contactează-ne"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:19
-#: modules/Support/html_client/mod_support_ticket.html.twig:18
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:18
 msgid "Ticket information"
 msgstr "Informații tichet"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
-#: modules/Support/html_client/mod_support_ticket.html.twig:47
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:44
+#: modules/Support/html_client/mod_support_ticket.html.twig:54
 msgid "Time opened"
 msgstr "Oră deschidere"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:111
-#: modules/Support/html_client/mod_support_ticket.html.twig:159
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:91
+#: modules/Support/html_client/mod_support_ticket.html.twig:128
 msgid "Ticket was closed and cannot be reopened."
 msgstr "Tichetul a fost închis și nu poate fi redeschis."
 
 #: modules/Support/html_client/mod_support_kb_article.html.twig:23
-msgid "Article Views"
+msgid "views"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:28
-#: modules/Support/html_client/mod_support_kb_category.html.twig:27
-msgid "Back to List"
+#: modules/Support/html_client/mod_support_kb_article.html.twig:32
+msgid "Back to all knowledge base articles"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:42
-msgid "Similar Articles"
-msgstr ""
+#: modules/Support/html_client/mod_support_kb_article.html.twig:34
+msgid "Similar articles"
+msgstr "Articole similare"
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:57
-msgid "Knowledge Base Categories"
-msgstr ""
-
-#: modules/Support/html_client/mod_support_kb_index.html.twig:6
-msgid "Knowledge base"
-msgstr "Biblioteca de cunoștințe"
-
-#: modules/Support/html_client/mod_support_kb_index.html.twig:21
+#: modules/Support/html_client/mod_support_kb_index.html.twig:32
 msgid "Please try to read related topics in knowledge base before contacting support."
 msgstr "Vă rugăm să încercați să citiți subiecte legate de bază de cunoștințe înainte de a contacta asistența."
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:26
+#: modules/Support/html_client/mod_support_kb_index.html.twig:38
 msgid "What are you looking for?"
 msgstr "Ce anume căutați?"
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:27
-#: themes/admin_default/html/partial_search.html.twig:15
-msgid "Search"
-msgstr "Caută"
+#: modules/Support/html_client/mod_support_kb_index.html.twig:63
+msgid "No results found for"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:53
-msgid "Try using other keyword. No matches found for keyword:"
-msgstr "Încercați să folosiți alt cuvânt cheie. Nu au fost găsite potriviri pentru cuvântul cheie:"
-
-#: modules/Support/html_client/mod_support_ticket.html.twig:9
-#: modules/Support/html_client/mod_support_tickets.html.twig:5
-#: modules/Support/html_client/mod_support_tickets.html.twig:6
-#: modules/Support/html_client/mod_support_tickets.html.twig:9
-#: modules/Support/html_client/mod_support_tickets.html.twig:16
-msgid "Support tickets"
-msgstr "Tichete de asistență"
-
-#: modules/Support/html_client/mod_support_ticket.html.twig:53
+#: modules/Support/html_client/mod_support_ticket.html.twig:60
 msgid "Related to"
 msgstr "În legătură cu"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:54
+#: modules/Support/html_client/mod_support_ticket.html.twig:62
 msgid "Service #"
 msgstr "Serviciu #"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:67
-msgid "Last tickets"
-msgstr "Ultimele tichete"
+#: modules/Support/html_client/mod_support_ticket.html.twig:86
+msgid "Operator"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:71
-msgid "Back to tickets list"
-msgstr "Înapoi la lista de tichete"
+#: modules/Support/html_client/mod_support_ticket.html.twig:90
+msgid "You"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:83
-#: modules/Support/html_client/mod_support_tickets.html.twig:32
-msgid "Submitted"
-msgstr "Trimis"
+#: modules/Support/html_client/mod_support_ticket.html.twig:101
+msgid "Quote reply"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:17
+#: modules/Support/html_client/mod_support_ticket.html.twig:130
+msgid "This ticket was closed, but you can still reopen it by replying."
+msgstr ""
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:19
 msgid "Need an answer? We are here to help!"
 msgstr "Aveți nevoie de un răspuns? Suntem aici pentru a vă ajuta!"
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:20
-msgid "Submit new ticket"
-msgstr "Trimiteți un tichet nou"
+#: modules/Support/html_client/mod_support_tickets.html.twig:36
+msgid "Submitted"
+msgstr "Trimis"
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:63
+msgid "No support tickets"
+msgstr ""
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:76
+msgid "Open new ticket"
+msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:5
 #: modules/System/html_admin/mod_system_settings.html.twig:21
@@ -9275,10 +9314,6 @@ msgstr "Țări"
 #: modules/System/html_admin/mod_system_settings.html.twig:40
 msgid "Cache"
 msgstr "Cache"
-
-#: modules/System/html_admin/mod_system_settings.html.twig:43
-msgid "About"
-msgstr "Despre"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:46
 #: modules/System/html_admin/mod_system_settings.html.twig:539
@@ -9768,77 +9803,45 @@ msgstr "Lunar"
 msgid "Enter search text..."
 msgstr "Introduceţi textul de căutare..."
 
+#: themes/admin_default/html/partial_search.html.twig:15
+msgid "Search"
+msgstr "Caută"
+
 #: themes/admin_default/html/partial_search.html.twig:20
 msgid "Search settings"
 msgstr "Căutați setări"
 
-#: themes/huraga/html/error.html.twig:13
-msgid "Whoops! This is not the web page you are looking for."
-msgstr "Oops! Aceasta nu este pagina pe care o căutați."
+#: themes/huraga/html/error.html.twig:23
+msgid "Whoops! Unable to find the page you are looking for"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:105
-msgid "Order services"
-msgstr "Comandă servicii"
+#: themes/huraga/html/error.html.twig:26
+msgid "Go back to home"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:121
+#: themes/huraga/html/layout_default.html.twig:122
 msgid "Sign out"
 msgstr "Deconectați-vă"
 
-#: themes/huraga/html/layout_default.html.twig:150
-msgid "User profile"
-msgstr "Profilul utilizatorului"
-
-#: themes/huraga/html/layout_default.html.twig:165
-msgid "profile"
-msgstr "profil"
-
-#: themes/huraga/html/layout_default.html.twig:166
-msgid "sign out"
-msgstr "deconectați-vă"
-
-#: themes/huraga/html/layout_default.html.twig:175
-msgid "Account balance"
-msgstr "Soldul contului"
-
-#: themes/huraga/html/layout_default.html.twig:225
-msgid "You are logged out"
-msgstr "V-ați deconectat"
-
-#: themes/huraga/html/layout_default.html.twig:242
-msgid "Products and services"
-msgstr "Produse si servicii"
-
-#: themes/huraga/html/layout_default.html.twig:260
-msgid "Latest news and announcements"
-msgstr "Ultimele știri și anunțuri"
-
-#: themes/huraga/html/layout_default.html.twig:277
-msgid "Browse our KB for Answers and FAQ"
-msgstr ""
-
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Payment Information"
 msgstr "Informații de plată"
 
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Account Number"
 msgstr "Număr cont"
 
-#: themes/huraga/html/layout_default.html.twig:354
-msgid "Powered by the FOSSBilling Community"
-msgstr "Oferit de comunitatea FOSSBilling"
+#: themes/huraga/html/layout_default.html.twig:227
+msgid "FOSSBilling Community"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:359
+#: themes/huraga/html/layout_default.html.twig:239
 msgid "Top"
 msgstr "Sus"
 
-#: themes/huraga/html/partial_menu.html.twig:23
-msgid "Services"
-msgstr "Servicii"
-
-#: themes/huraga/html/partial_menu.html.twig:41
-msgid "Payment History"
-msgstr ""
+#: themes/huraga/html/partial_menu.html.twig:87
+msgid "Account balance"
+msgstr "Soldul contului"
 
 #: themes/huraga/html/partial_pricing.html.twig:8
 #: themes/huraga/html/partial_pricing.html.twig:20
