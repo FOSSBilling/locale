@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-11-21 16:34-0800\n"
-"PO-Revision-Date: 2023-11-22 23:39\n"
+"POT-Creation-Date: 2023-11-24 17:04-0800\n"
+"PO-Revision-Date: 2023-11-25 23:35\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Arabic\n"
 "MIME-Version: 1.0\n"
@@ -398,7 +398,7 @@ msgid "Password must include at least one uppercase letter."
 msgstr "يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل."
 
 #: library/FOSSBilling/Validate.php:107
-#: modules/Client/html_client/mod_client_profile.html.twig:78
+#: modules/Client/html_client/mod_client_profile.html.twig:70
 msgid "Birthdate"
 msgstr "تاريخ الميلاد"
 
@@ -1054,7 +1054,7 @@ msgstr "لا يمكن ان يكون البريد الالكتروني فارغا
 msgid "Email template :code was not found"
 msgstr "قالب البريد الإلكتروني غير موجود"
 
-#: modules/Email/Service.php:674
+#: modules/Email/Service.php:678
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr ""
 
@@ -1238,18 +1238,20 @@ msgstr "لم يتم العثور على طريقة الدفع. بوابة gatewa
 #: modules/Invoice/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_manage.html.twig:35
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
-#: modules/Index/html_client/mod_index_dashboard.html.twig:106
+#: modules/Index/html_client/mod_index_dashboard.html.twig:73
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:185
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:19
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:6
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:8
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:11
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:22
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
 #: modules/Order/html_admin/mod_order_manage.html.twig:52
 #: themes/admin_default/html/mod_index_dashboard.html.twig:214
 #: themes/admin_default/html/mod_index_dashboard.html.twig:261
 #: themes/admin_default/html/mod_index_dashboard.html.twig:444
 #: themes/admin_default/html/mod_index_dashboard.html.twig:548
-#: themes/huraga/html/partial_menu.html.twig:29
+#: themes/huraga/html/partial_menu.html.twig:44
 msgid "Invoices"
 msgstr "الفواتير"
 
@@ -1438,15 +1440,15 @@ msgstr "إضافة بعض المحتوى قبل إرسال الرسالة"
 msgid "Mass mailer"
 msgstr "ساعي البريد الشامل"
 
-#: modules/Massmailer/Service.php:115
+#: modules/Massmailer/Service.php:114
 msgid " "
 msgstr ""
 
-#: modules/Massmailer/Service.php:162
+#: modules/Massmailer/Service.php:161
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "معطل لأسباب أمنية (تمكين الوضع التجريبي)"
 
-#: modules/Massmailer/Service.php:198
+#: modules/Massmailer/Service.php:197
 msgid "Mass mail message not found"
 msgstr ""
 
@@ -1460,7 +1462,7 @@ msgid "News item not found"
 msgstr "لم يتم العثور على عنصر الأخبار"
 
 #: modules/News/Controller/Admin.php:34
-#: themes/huraga/html/layout_default.html.twig:263
+#: modules/Index/html_client/mod_index_dashboard.html.twig:240
 msgid "Announcements"
 msgstr "الإعلانات"
 
@@ -1496,14 +1498,11 @@ msgstr "يمكن حذف طلبات الإعداد المعلقة والفاشل�
 #: modules/Client/html_admin/mod_client_manage.html.twig:32
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:60
-#: modules/Index/html_client/mod_index_dashboard.html.twig:131
+#: modules/Index/html_client/mod_index_dashboard.html.twig:97
 #: modules/Order/html_admin/mod_order_index.html.twig:7
 #: modules/Order/html_admin/mod_order_index.html.twig:159
 #: modules/Order/html_admin/mod_order_manage.html.twig:17
 #: modules/Order/html_admin/mod_order_new.html.twig:17
-#: modules/Order/html_client/mod_order_list.html.twig:9
-#: modules/Order/html_client/mod_order_list.html.twig:17
-#: modules/Order/html_client/mod_order_manage.html.twig:11
 #: themes/admin_default/html/mod_index_dashboard.html.twig:196
 #: themes/admin_default/html/mod_index_dashboard.html.twig:435
 #: themes/admin_default/html/mod_index_dashboard.html.twig:547
@@ -2121,7 +2120,7 @@ msgstr "لم يتم العثور على فئة قاعدة المعرفة"
 #: modules/Support/html_admin/mod_support_settings.html.twig:21
 #: modules/Support/html_admin/mod_support_ticket.html.twig:17
 #: modules/Support/html_admin/mod_support_tickets.html.twig:17
-#: themes/huraga/html/partial_menu.html.twig:17
+#: themes/huraga/html/partial_menu.html.twig:26
 msgid "Support"
 msgstr "دعم"
 
@@ -2155,13 +2154,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:19
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:23
 #: modules/Support/html_admin/mod_support_settings.html.twig:104
-#: modules/Support/html_client/mod_support_kb_article.html.twig:8
-#: modules/Support/html_client/mod_support_kb_category.html.twig:7
 #: modules/Support/html_client/mod_support_kb_index.html.twig:3
-#: modules/Support/html_client/mod_support_kb_index.html.twig:20
-#: themes/huraga/html/layout_default.html.twig:274
-#: themes/huraga/html/layout_default.html.twig:280
-#: themes/huraga/html/partial_menu.html.twig:47
 msgid "Knowledge Base"
 msgstr ""
 
@@ -2256,7 +2249,7 @@ msgstr "الإعدادات"
 #: modules/Email/html_admin/mod_email_template.html.twig:128
 #: modules/Formbuilder/html_admin/mod_formbuilder_manage.html.twig:88
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:157
-#: modules/Index/html_client/mod_index_dashboard.html.twig:86
+#: modules/Index/html_client/mod_index_dashboard.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:127
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:347
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:370
@@ -2292,8 +2285,8 @@ msgstr "الإعدادات"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:241
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:62
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:107
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:97
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:199
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:105
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:193
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
@@ -2401,12 +2394,12 @@ msgstr "المستخدم"
 #: modules/Embed/html_client/mod_embed_contact.html.twig:57
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:115
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
-#: modules/Order/html_client/mod_order_manage.html.twig:193
+#: modules/Order/html_client/mod_order_manage.html.twig:219
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:49
 #: modules/Support/html_admin/mod_support_tickets.html.twig:325
 #: modules/Support/html_admin/mod_support_tickets.html.twig:359
-#: modules/Support/html_client/mod_support_contact_us.html.twig:46
-#: modules/Support/html_client/mod_support_tickets.html.twig:107
+#: modules/Support/html_client/mod_support_contact_us.html.twig:39
+#: modules/Support/html_client/mod_support_tickets.html.twig:93
 msgid "Message"
 msgstr "رسالة"
 
@@ -2428,17 +2421,17 @@ msgstr "IP"
 #: modules/Client/html_admin/mod_client_manage.html.twig:295
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
 #: modules/Client/html_admin/mod_client_settings.html.twig:81
-#: modules/Client/html_client/mod_client_profile.html.twig:163
+#: modules/Client/html_client/mod_client_profile.html.twig:135
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:30
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:87
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:482
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:39
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:120
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
-#: modules/Page/html_client/mod_page_signup.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:177
+#: modules/Page/html_client/mod_page_signup.html.twig:100
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:155
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:157
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:25
 msgid "Country"
 msgstr "البلد/الدولة"
@@ -2450,7 +2443,7 @@ msgstr "البلد/الدولة"
 #: modules/Client/html_admin/mod_client_manage.html.twig:736
 #: modules/Client/html_admin/mod_client_manage.html.twig:769
 #: modules/Client/html_admin/mod_client_manage.html.twig:815
-#: modules/Client/html_client/mod_client_balance.html.twig:26
+#: modules/Client/html_client/mod_client_balance.html.twig:33
 #: modules/Email/html_admin/mod_email_history.html.twig:34
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:674
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:170
@@ -2504,13 +2497,13 @@ msgstr "التاريخ"
 #: modules/Product/html_admin/mod_product_promos.html.twig:97
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:101
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:21
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:34
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:89
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:223
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:74
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:120
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:91
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:96
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:92
 #: modules/Staff/html_admin/mod_staff_index.html.twig:57
 #: modules/Staff/html_admin/mod_staff_index.html.twig:150
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:54
@@ -2545,7 +2538,7 @@ msgstr "هل أنت متأكد؟"
 #: modules/Client/html_admin/mod_client_manage.html.twig:750
 #: modules/Client/html_admin/mod_client_manage.html.twig:791
 #: modules/Client/html_admin/mod_client_manage.html.twig:838
-#: modules/Client/html_client/mod_client_balance.html.twig:40
+#: modules/Client/html_client/mod_client_balance.html.twig:47
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:105
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:62
@@ -2555,16 +2548,13 @@ msgstr "هل أنت متأكد؟"
 #: modules/Extension/html_admin/mod_extension_index.html.twig:109
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:72
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:131
-#: modules/Index/html_client/mod_index_dashboard.html.twig:67
-#: modules/Index/html_client/mod_index_dashboard.html.twig:197
-#: modules/Index/html_client/mod_index_dashboard.html.twig:221
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:272
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:89
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:220
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:54
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:91
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:70
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:102
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:81
 #: modules/News/html_admin/mod_news_index.html.twig:80
 #: modules/Notification/html_admin/mod_notification_index.html.twig:55
@@ -2572,7 +2562,6 @@ msgstr "هل أنت متأكد؟"
 #: modules/Order/html_admin/mod_order_manage.html.twig:557
 #: modules/Order/html_admin/mod_order_manage.html.twig:613
 #: modules/Order/html_admin/mod_order_manage.html.twig:668
-#: modules/Order/html_client/mod_order_list.html.twig:48
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:89
 #: modules/Product/html_admin/mod_product_addons.html.twig:75
 #: modules/Product/html_admin/mod_product_index.html.twig:88
@@ -2597,8 +2586,6 @@ msgstr "هل أنت متأكد؟"
 #: modules/Support/html_admin/mod_support_settings.html.twig:173
 #: modules/Support/html_admin/mod_support_ticket.html.twig:254
 #: modules/Support/html_admin/mod_support_tickets.html.twig:277
-#: modules/Support/html_client/mod_support_ticket.html.twig:99
-#: modules/Support/html_client/mod_support_tickets.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:84
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:151
 #: themes/admin_default/html/mod_index_dashboard.html.twig:345
@@ -2630,10 +2617,10 @@ msgstr "تحرير مجموعة العملاء"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:525
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:613
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:38
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:34
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:69
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:187
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:213
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:48
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:81
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:197
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:152
 #: modules/News/html_admin/mod_news_index.html.twig:35
 #: modules/News/html_admin/mod_news_index.html.twig:97
 #: modules/News/html_admin/mod_news_post.html.twig:34
@@ -2687,7 +2674,7 @@ msgstr "مرشح العملاء"
 #: modules/Client/html_admin/mod_client_manage.html.twig:810
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:87
-#: modules/Index/html_client/mod_index_dashboard.html.twig:92
+#: modules/Index/html_client/mod_index_dashboard.html.twig:59
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
@@ -2708,12 +2695,13 @@ msgstr "ID"
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:15
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:210
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:100
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:142
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:115
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:168
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:107
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:151
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:64
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:109
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:32
 #: modules/Order/html_admin/mod_order_index.html.twig:184
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:29
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
@@ -2729,7 +2717,7 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:185
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:233
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:276
-#: modules/Support/html_client/mod_support_contact_us.html.twig:25
+#: modules/Support/html_client/mod_support_contact_us.html.twig:27
 #: modules/System/html_admin/mod_system_settings.html.twig:57
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
@@ -2751,15 +2739,17 @@ msgstr "اسم الشركة"
 #: modules/Email/html_admin/mod_email_template.html.twig:19
 #: modules/Email/html_client/mod_email_email.html.twig:3
 #: modules/Embed/html_client/mod_embed_contact.html.twig:47
-#: modules/Index/html_client/mod_index_dashboard.html.twig:94
+#: modules/Index/html_client/mod_index_dashboard.html.twig:61
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:413
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:120
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:135
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:80
 #: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
+#: modules/Page/html_client/mod_page_login.html.twig:23
+#: modules/Page/html_client/mod_page_password-reset.html.twig:24
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:180
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:127
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:133
 #: modules/Staff/html_admin/mod_staff_index.html.twig:31
 #: modules/Staff/html_admin/mod_staff_index.html.twig:96
 #: modules/Staff/html_admin/mod_staff_login.html.twig:21
@@ -2774,9 +2764,10 @@ msgstr "اسم الشركة"
 #: modules/Support/html_admin/mod_support_settings.html.twig:137
 #: modules/Support/html_admin/mod_support_tickets.html.twig:347
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
-#: modules/Support/html_client/mod_support_contact_us.html.twig:32
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
+#: modules/Support/html_client/mod_support_contact_us.html.twig:31
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
 #: modules/System/html_admin/mod_system_settings.html.twig:63
+#: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
 msgstr "البريد الإلكتروني "
 
@@ -2803,7 +2794,6 @@ msgstr "مجموعة"
 #: modules/Client/html_admin/mod_client_manage.html.twig:814
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:45
 #: modules/Email/html_admin/mod_email_settings.html.twig:194
-#: modules/Index/html_client/mod_index_dashboard.html.twig:50
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:214
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:68
@@ -2816,6 +2806,7 @@ msgstr "مجموعة"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:81
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:41
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:167
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:92
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:45
 #: modules/News/html_admin/mod_news_index.html.twig:103
 #: modules/News/html_admin/mod_news_post.html.twig:65
@@ -2825,7 +2816,7 @@ msgstr "مجموعة"
 #: modules/Order/html_admin/mod_order_manage.html.twig:520
 #: modules/Order/html_admin/mod_order_manage.html.twig:572
 #: modules/Order/html_admin/mod_order_manage.html.twig:630
-#: modules/Order/html_client/mod_order_list.html.twig:28
+#: modules/Order/html_client/mod_order_list.html.twig:34
 #: modules/Order/html_client/mod_order_manage.html.twig:139
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:33
 #: modules/Product/html_admin/mod_product_addons.html.twig:47
@@ -2849,10 +2840,9 @@ msgstr "مجموعة"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:219
 #: modules/Support/html_admin/mod_support_tickets.html.twig:64
 #: modules/Support/html_admin/mod_support_tickets.html.twig:209
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:45
-#: modules/Support/html_client/mod_support_ticket.html.twig:40
-#: modules/Support/html_client/mod_support_ticket.html.twig:82
-#: modules/Support/html_client/mod_support_tickets.html.twig:31
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:37
+#: modules/Support/html_client/mod_support_ticket.html.twig:47
+#: modules/Support/html_client/mod_support_tickets.html.twig:35
 msgid "Status"
 msgstr "الحالة"
 
@@ -2866,7 +2856,7 @@ msgstr "الكل"
 #: modules/Client/html_admin/mod_client_manage.html.twig:168
 #: modules/Client/html_admin/mod_client_settings.html.twig:108
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:138
-#: modules/Index/html_client/mod_index_dashboard.html.twig:143
+#: modules/Index/html_client/mod_index_dashboard.html.twig:109
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:122
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:136
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:70
@@ -2908,7 +2898,6 @@ msgstr "ملغي"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:74
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:62
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:27
 msgid "Registration date"
 msgstr "تاريخ التسجيل"
 
@@ -2926,30 +2915,31 @@ msgstr "تصفية"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:114
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:83
 #: modules/Order/html_admin/mod_order_index.html.twig:89
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:23
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:85
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:83
 #: modules/Support/html_admin/mod_support_tickets.html.twig:106
 msgid "Reset"
 msgstr "إعادة تعيين"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:162
+#: modules/Client/html_client/mod_client_balance.html.twig:53
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:110
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:136
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:160
-#: modules/Index/html_client/mod_index_dashboard.html.twig:115
-#: modules/Index/html_client/mod_index_dashboard.html.twig:141
-#: modules/Index/html_client/mod_index_dashboard.html.twig:165
+#: modules/Index/html_client/mod_index_dashboard.html.twig:81
+#: modules/Index/html_client/mod_index_dashboard.html.twig:107
+#: modules/Index/html_client/mod_index_dashboard.html.twig:130
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:172
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:92
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:586
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:615
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:142
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:37
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:72
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:189
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:232
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:215
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:260
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:51
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:199
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:154
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:190
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -2980,14 +2970,15 @@ msgstr "مجموعة جديدة"
 #: modules/Client/html_admin/mod_client_settings.html.twig:76
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:383
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:445
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:97
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:147
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:112
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:173
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:74
-#: modules/Page/html_client/mod_page_signup.html.twig:60
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:104
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:156
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:61
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:113
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
+#: modules/Page/html_client/mod_page_signup.html.twig:49
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:186
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:134
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:138
 msgid "Company"
 msgstr "الشركة"
 
@@ -3000,7 +2991,7 @@ msgstr "تصدير العملاء"
 #: modules/Client/html_admin/mod_client_manage.html.twig:282
 #: modules/Client/html_admin/mod_client_settings.html.twig:84
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:192
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:141
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:145
 msgid "Address Line 1"
 msgstr "السطر 1 للعنوان"
 
@@ -3008,17 +2999,18 @@ msgstr "السطر 1 للعنوان"
 #: modules/Client/html_admin/mod_client_manage.html.twig:288
 #: modules/Client/html_admin/mod_client_settings.html.twig:85
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:198
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:148
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:150
 msgid "Address Line 2"
 msgstr "السطر 2 للعنوان"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:355
 #: modules/Client/html_admin/mod_client_manage.html.twig:308
 #: modules/Client/html_admin/mod_client_settings.html.twig:82
-#: modules/Client/html_client/mod_client_profile.html.twig:155
+#: modules/Client/html_client/mod_client_profile.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
-#: modules/Page/html_client/mod_page_signup.html.twig:115
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:166
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:169
+#: modules/Page/html_client/mod_page_signup.html.twig:92
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
 msgid "City"
@@ -3027,12 +3019,13 @@ msgstr "المدينة"
 #: modules/Client/html_admin/mod_client_index.html.twig:361
 #: modules/Client/html_admin/mod_client_manage.html.twig:301
 #: modules/Client/html_admin/mod_client_settings.html.twig:83
-#: modules/Client/html_client/mod_client_profile.html.twig:176
+#: modules/Client/html_client/mod_client_profile.html.twig:147
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:126
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:172
-#: modules/Page/html_client/mod_page_signup.html.twig:140
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:192
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
+#: modules/Page/html_client/mod_page_signup.html.twig:112
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
 msgid "State"
@@ -3048,10 +3041,10 @@ msgstr "الرمز البريدي"
 #: modules/Client/html_admin/mod_client_settings.html.twig:87
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:488
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:115
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:169
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:130
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:195
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:122
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:76
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:131
 #: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
@@ -3060,8 +3053,8 @@ msgstr "الهاتف"
 #: modules/Client/html_admin/mod_client_index.html.twig:391
 #: modules/Client/html_admin/mod_client_manage.html.twig:98
 #: modules/Client/html_admin/mod_client_manage.html.twig:346
-#: modules/Client/html_client/mod_client_profile.html.twig:34
-#: modules/Client/html_client/mod_client_profile.html.twig:272
+#: modules/Client/html_client/mod_client_profile.html.twig:33
+#: modules/Client/html_client/mod_client_profile.html.twig:215
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
@@ -3073,17 +3066,17 @@ msgstr "العملة"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:397
 #: modules/Client/html_admin/mod_client_manage.html.twig:405
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:23
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:108
-#: modules/Page/html_client/mod_page_login.html.twig:35
-#: modules/Page/html_client/mod_page_login.html.twig:37
-#: modules/Page/html_client/mod_page_signup.html.twig:184
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:33
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:37
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:128
+#: modules/Page/html_client/mod_page_login.html.twig:27
+#: modules/Page/html_client/mod_page_signup.html.twig:152
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:121
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:33
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:9
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:44
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:82
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:12
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:52
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:91
 #: modules/Staff/html_admin/mod_staff_index.html.twig:103
 #: modules/Staff/html_admin/mod_staff_login.html.twig:27
 #: modules/Staff/html_admin/mod_staff_login.html.twig:54
@@ -3127,16 +3120,16 @@ msgid "Clients logins history"
 msgstr "سجل دخول العملاء"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:26
-#: modules/Client/html_client/mod_client_profile.html.twig:5
+#: modules/Client/html_client/mod_client_profile.html.twig:6
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:78
-#: modules/Index/html_client/mod_index_dashboard.html.twig:83
+#: modules/Index/html_client/mod_index_dashboard.html.twig:51
+#: modules/Index/html_client/mod_index_dashboard.html.twig:210
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:5
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:37
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
 #: themes/admin_default/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:111
-#: themes/huraga/html/layout_default.html.twig:222
+#: themes/huraga/html/layout_default.html.twig:120
 msgid "Profile"
 msgstr "الملف الشخصي"
 
@@ -3154,7 +3147,7 @@ msgstr "تعديل"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:38
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:150
-#: modules/Index/html_client/mod_index_dashboard.html.twig:155
+#: modules/Index/html_client/mod_index_dashboard.html.twig:121
 #: modules/Support/html_admin/mod_support_ticket.html.twig:20
 #: modules/Support/html_admin/mod_support_tickets.html.twig:19
 #: modules/Support/html_admin/mod_support_tickets.html.twig:177
@@ -3175,9 +3168,8 @@ msgstr "تسجيل الدخول"
 #: modules/Client/html_admin/mod_client_manage.html.twig:47
 #: modules/Email/html_client/mod_email_email.html.twig:6
 #: modules/Email/html_client/mod_email_index.html.twig:3
-#: modules/Email/html_client/mod_email_index.html.twig:4
-#: modules/Email/html_client/mod_email_index.html.twig:14
-#: themes/huraga/html/partial_menu.html.twig:35
+#: modules/Email/html_client/mod_email_index.html.twig:5
+#: modules/Email/html_client/mod_email_index.html.twig:17
 msgid "Emails"
 msgstr "البريد الإلكتروني "
 
@@ -3199,7 +3191,7 @@ msgstr "الرصيد"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:340
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:34
 #: modules/Order/html_admin/mod_order_manage.html.twig:367
-#: modules/Order/html_client/mod_order_manage.html.twig:278
+#: modules/Order/html_client/mod_order_manage.html.twig:257
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 #: modules/Support/html_admin/mod_support_tickets.html.twig:390
 #: modules/System/html_admin/mod_system_settings.html.twig:224
@@ -3207,6 +3199,7 @@ msgid "Notes"
 msgstr "ملاحظات"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
+#: modules/Client/html_client/mod_client_profile.html.twig:31
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:10
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:88
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:96
@@ -3214,20 +3207,22 @@ msgid "API Key"
 msgstr "API Key"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:125
-#: modules/Client/html_client/mod_client_profile.html.twig:139
+#: modules/Client/html_client/mod_client_profile.html.twig:121
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:401
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:463
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:110
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:162
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:117
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:171
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:72
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:125
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:188
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
-#: modules/Page/html_client/mod_page_signup.html.twig:95
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:144
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
+#: modules/Page/html_client/mod_page_signup.html.twig:76
 #: modules/System/html_admin/mod_system_settings.html.twig:75
 msgid "Address"
 msgstr "العنوان"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:132
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:37
 msgid "Registered on"
 msgstr "مسجلة في"
 
@@ -3244,8 +3239,8 @@ msgstr "دخول إلى منطقة العميل"
 #: modules/Email/html_admin/mod_email_details.html.twig:64
 #: modules/Email/html_admin/mod_email_settings.html.twig:113
 #: modules/Email/html_admin/mod_email_settings.html.twig:115
-#: modules/Email/html_client/mod_email_email.html.twig:36
-#: modules/Email/html_client/mod_email_index.html.twig:45
+#: modules/Email/html_client/mod_email_email.html.twig:26
+#: modules/Email/html_client/mod_email_index.html.twig:63
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:713
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
@@ -3434,8 +3429,8 @@ msgid "Company details"
 msgstr "تفاصيل الشركة"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:269
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:152
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:161
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:117
 msgid "Company number"
 msgstr "رقم الشركة"
 
@@ -3448,7 +3443,7 @@ msgid "Address and contact details"
 msgstr "العنوان وتفاصيل جهة الاتصال"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:330
-#: modules/Client/html_client/mod_client_profile.html.twig:193
+#: modules/Client/html_client/mod_client_profile.html.twig:155
 msgid "Passport number"
 msgstr "رقم جواز السفر"
 
@@ -3474,14 +3469,14 @@ msgid "Signed up time"
 msgstr "وقت التسجيل"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:397
-#: modules/Client/html_client/mod_client_profile.html.twig:214
+#: modules/Client/html_client/mod_client_profile.html.twig:169
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:53
 msgid "Update profile"
 msgstr "تحديث الملف الشخصي"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:401
 #: modules/Client/html_admin/mod_client_manage.html.twig:419
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:97
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:106
 msgid "Change password"
 msgstr "تغيير كلمة المرور"
 
@@ -3490,8 +3485,7 @@ msgid "Password changed"
 msgstr "غُيّرت كلمة المرور."
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:412
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:116
-#: modules/Page/html_client/mod_page_signup.html.twig:192
+#: modules/Page/html_client/mod_page_signup.html.twig:158
 msgid "Password confirm"
 msgstr "تأكيد كلمة المرور"
 
@@ -3520,7 +3514,7 @@ msgstr "طلبات العميل"
 #: modules/Client/html_admin/mod_client_manage.html.twig:656
 #: modules/Client/html_admin/mod_client_manage.html.twig:697
 #: modules/Client/html_admin/mod_client_manage.html.twig:813
-#: modules/Client/html_client/mod_client_balance.html.twig:27
+#: modules/Client/html_client/mod_client_balance.html.twig:34
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:204
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:672
@@ -3544,13 +3538,11 @@ msgstr "المبلغ"
 #: modules/Order/html_admin/mod_order_manage.html.twig:336
 #: modules/Order/html_admin/mod_order_new.html.twig:54
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:153
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:49
 msgid "Period"
 msgstr "الفتره"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:507
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:129
-#: modules/Index/html_client/mod_index_dashboard.html.twig:134
 #: modules/Order/html_admin/mod_order_index.html.twig:166
 msgid "New order"
 msgstr "طلب جديد"
@@ -3577,15 +3569,12 @@ msgstr "تذاكر دعم العميل"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:593
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:44
-#: modules/Index/html_client/mod_index_dashboard.html.twig:49
 #: modules/Order/html_admin/mod_order_manage.html.twig:628
-#: modules/Order/html_client/mod_order_manage.html.twig:179
-#: modules/Order/html_client/mod_order_manage.html.twig:218
-#: modules/Order/html_client/mod_order_manage.html.twig:264
-#: modules/Support/html_client/mod_support_ticket.html.twig:35
-#: modules/Support/html_client/mod_support_ticket.html.twig:81
-#: modules/Support/html_client/mod_support_tickets.html.twig:30
-#: modules/Support/html_client/mod_support_tickets.html.twig:93
+#: modules/Order/html_client/mod_order_manage.html.twig:178
+#: modules/Order/html_client/mod_order_manage.html.twig:211
+#: modules/Order/html_client/mod_order_manage.html.twig:245
+#: modules/Support/html_client/mod_support_ticket.html.twig:42
+#: modules/Support/html_client/mod_support_tickets.html.twig:34
 msgid "Help desk"
 msgstr "مركز المساعدة"
 
@@ -3596,14 +3585,13 @@ msgstr "مركز المساعدة"
 #: modules/Email/html_admin/mod_email_settings.html.twig:165
 #: modules/Email/html_admin/mod_email_settings.html.twig:191
 #: modules/Embed/html_client/mod_embed_contact.html.twig:52
-#: modules/Index/html_client/mod_index_dashboard.html.twig:48
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:51
 #: modules/Order/html_admin/mod_order_manage.html.twig:629
-#: modules/Order/html_client/mod_order_manage.html.twig:186
-#: modules/Order/html_client/mod_order_manage.html.twig:225
-#: modules/Order/html_client/mod_order_manage.html.twig:257
+#: modules/Order/html_client/mod_order_manage.html.twig:182
+#: modules/Order/html_client/mod_order_manage.html.twig:215
+#: modules/Order/html_client/mod_order_manage.html.twig:249
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:48
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:123
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:98
@@ -3612,11 +3600,10 @@ msgstr "مركز المساعدة"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:208
 #: modules/Support/html_admin/mod_support_tickets.html.twig:319
 #: modules/Support/html_admin/mod_support_tickets.html.twig:353
-#: modules/Support/html_client/mod_support_contact_us.html.twig:39
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:30
-#: modules/Support/html_client/mod_support_ticket.html.twig:80
-#: modules/Support/html_client/mod_support_tickets.html.twig:29
-#: modules/Support/html_client/mod_support_tickets.html.twig:100
+#: modules/Support/html_client/mod_support_contact_us.html.twig:35
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
+#: modules/Support/html_client/mod_support_tickets.html.twig:33
+#: modules/Support/html_client/mod_support_tickets.html.twig:89
 msgid "Subject"
 msgstr "الموضوع"
 
@@ -3630,7 +3617,7 @@ msgstr "سجل مدفوعات العميل"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:657
 #: modules/Client/html_admin/mod_client_manage.html.twig:705
-#: modules/Client/html_client/mod_client_balance.html.twig:25
+#: modules/Client/html_client/mod_client_balance.html.twig:32
 #: modules/Extension/html_admin/mod_extension_index.html.twig:42
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:174
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:75
@@ -3673,6 +3660,8 @@ msgstr "موضوع البريد الإلكتروني"
 #: modules/Email/html_admin/mod_email_details.html.twig:37
 #: modules/Email/html_admin/mod_email_history.html.twig:31
 #: modules/Email/html_admin/mod_email_settings.html.twig:192
+#: modules/Email/html_client/mod_email_email.html.twig:19
+#: modules/Email/html_client/mod_email_index.html.twig:53
 msgid "To"
 msgstr "إلى"
 
@@ -3732,22 +3721,25 @@ msgid "Required fields"
 msgstr "مطلوب"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:75
-#: modules/Client/html_client/mod_client_profile.html.twig:70
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:63
-#: modules/Page/html_client/mod_page_signup.html.twig:49
+#: modules/Client/html_client/mod_client_profile.html.twig:58
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:78
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:82
+#: modules/Page/html_client/mod_page_signup.html.twig:35
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:174
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:120
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:126
 msgid "Last Name"
 msgstr "الاسم الأخير"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:77
-#: modules/Client/html_client/mod_client_profile.html.twig:86
+#: modules/Client/html_client/mod_client_profile.html.twig:75
+#: modules/Page/html_client/mod_page_signup.html.twig:64
 msgid "Gender"
 msgstr "الجنس"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:78
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:84
-#: modules/Page/html_client/mod_page_signup.html.twig:70
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:102
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:104
+#: modules/Page/html_client/mod_page_signup.html.twig:57
 msgid "Birthday"
 msgstr "تاريخ الميلاد"
 
@@ -3770,22 +3762,18 @@ msgstr "عنوان الحقل"
 
 #: modules/Client/html_client/mod_client_balance.html.twig:5
 #: modules/Client/html_client/mod_client_balance.html.twig:6
-#: modules/Client/html_client/mod_client_balance.html.twig:17
-msgid "Payment history"
-msgstr "سجل الدفعات"
-
 #: modules/Client/html_client/mod_client_balance.html.twig:18
-msgid "Here you can track what you have been charged for and add more funds to your account"
-msgstr "هنا يمكنك تتبع ما تم تحميله و إضافة المزيد من الأموال إلى حسابك"
+#: themes/huraga/html/partial_menu.html.twig:62
+msgid "Wallet"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_balance.html.twig:46
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:162
-msgid "Total:"
-msgstr "الإجمالي:"
+#: modules/Client/html_client/mod_client_balance.html.twig:19
+msgid "Here you can manage and track your account balance"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_balance.html.twig:61
-msgid "Add funds!"
-msgstr "إضافة أموال!"
+#: modules/Client/html_client/mod_client_balance.html.twig:24
+msgid "Add fund"
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:3
 msgid "Profile details"
@@ -3795,211 +3783,199 @@ msgstr "تفاصيل الملف الشخصي"
 msgid "User profile settings"
 msgstr "إعدادات الملف الشخصي"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:24
+#: modules/Client/html_client/mod_client_profile.html.twig:13
+msgid "You must verify your email address before you may access our services."
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:17
 msgid "Verification email has been resent"
 msgstr "التحقق من البريد الإلكتروني تم إرسالها"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:24
+#: modules/Client/html_client/mod_client_profile.html.twig:17
 msgid "Resend verification email"
 msgstr "إعادة الارسال"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:31
+#: modules/Client/html_client/mod_client_profile.html.twig:27
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:33
 #: modules/Order/html_admin/mod_order_manage.html.twig:38
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:6
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:9
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:7
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:8
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:16
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:9
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:24
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:6
 msgid "Details"
 msgstr "التفاصيل"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:32
-#: modules/Client/html_client/mod_client_profile.html.twig:221
-#: modules/Client/html_client/mod_client_profile.html.twig:245
+#: modules/Client/html_client/mod_client_profile.html.twig:29
+#: modules/Client/html_client/mod_client_profile.html.twig:173
+#: modules/Client/html_client/mod_client_profile.html.twig:192
+#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:17
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:81
 msgid "Change Password"
 msgstr "تغيير كلمة المرور"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:33
-#: modules/Client/html_client/mod_client_profile.html.twig:251
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:13
-msgid "API key"
-msgstr "مفتاح API"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:41
+#: modules/Client/html_client/mod_client_profile.html.twig:38
 msgid "Update details"
 msgstr "تحديث التفاصيل"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:42
+#: modules/Client/html_client/mod_client_profile.html.twig:39
 msgid "Keep your personal data up to date."
 msgstr "حافظ على تحديث بياناتك الشخصية."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "Please register with"
-msgstr "يرجى التسجيل بواسطة"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "at "
-msgstr "في "
-
-#: modules/Client/html_client/mod_client_profile.html.twig:50
-msgid "to change your profile image. Gravatar image updates may not appear immediately."
-msgstr "لتغيير صورة الملف الشخصي الخاص بك. قد لا تظهر تحديثات صورة Gravatar فورا."
+#: modules/Client/html_client/mod_client_profile.html.twig:49
+msgid "To change your avatar visit"
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:54
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:16
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:46
-#: modules/Page/html_client/mod_page_login.html.twig:28
-#: modules/Page/html_client/mod_page_password-reset.html.twig:30
-#: modules/Page/html_client/mod_page_signup.html.twig:31
-msgid "Email Address"
-msgstr "عنوان البريد الإلكتروني"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:62
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:54
-#: modules/Page/html_client/mod_page_signup.html.twig:39
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:67
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:71
+#: modules/Page/html_client/mod_page_signup.html.twig:28
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:168
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:113
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:121
 msgid "First Name"
 msgstr "الإسم الأول"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:99
+#: modules/Client/html_client/mod_client_profile.html.twig:64
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:29
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:57
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:61
+#: modules/Page/html_client/mod_page_signup.html.twig:42
+msgid "Email Address"
+msgstr "عنوان البريد الإلكتروني"
+
+#: modules/Client/html_client/mod_client_profile.html.twig:95
 msgid "Company Name"
 msgstr "إسم الشركة"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:107
+#: modules/Client/html_client/mod_client_profile.html.twig:101
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:389
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:451
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:157
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:183
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:166
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:121
 msgid "Company VAT"
 msgstr "الرقم الضريبي للشركة"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:115
+#: modules/Client/html_client/mod_client_profile.html.twig:105
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:395
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:457
 msgid "Company Number"
 msgstr "الرقم التعريفي للشركة"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:123
+#: modules/Client/html_client/mod_client_profile.html.twig:111
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:228
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:183
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:182
 msgid "Phone Country Code"
 msgstr "رمز بلد الهاتف"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:131
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:193
-#: modules/Page/html_client/mod_page_signup.html.twig:161
+#: modules/Client/html_client/mod_client_profile.html.twig:115
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:214
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:220
+#: modules/Page/html_client/mod_page_signup.html.twig:128
 msgid "Phone Number"
 msgstr "رقم الهاتف"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:147
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
-#: modules/Page/html_client/mod_page_signup.html.twig:105
+#: modules/Client/html_client/mod_client_profile.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:155
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:158
+#: modules/Page/html_client/mod_page_signup.html.twig:84
 msgid "Address 2"
 msgstr "العنوان 2"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:166
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:160
-#: modules/Page/html_client/mod_page_signup.html.twig:128
+#: modules/Client/html_client/mod_client_profile.html.twig:137
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:180
+#: modules/Page/html_client/mod_page_signup.html.twig:102
 msgid "-- Select country --"
 msgstr "-- حدد الدولة --"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:185
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:183
-#: modules/Page/html_client/mod_page_signup.html.twig:151
+#: modules/Client/html_client/mod_client_profile.html.twig:151
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:203
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:206
+#: modules/Page/html_client/mod_page_signup.html.twig:120
 msgid "Zip/Postal Code"
 msgstr "الرمز البريدي"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:222
+#: modules/Client/html_client/mod_client_profile.html.twig:174
 msgid "Please enter new password two times in order avoid mistypes"
 msgstr "الرجاء إدخال كلمة مرور جديدة مرتين لتجنب الأخطاء"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:224
-#: modules/Staff/html_admin/mod_staff_profile.html.twig:60
-msgid "Password Changed"
-msgstr "غُيّرت كلمة المرور."
-
-#: modules/Client/html_client/mod_client_profile.html.twig:227
+#: modules/Client/html_client/mod_client_profile.html.twig:178
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:63
 msgid "Current Password"
 msgstr "كلمة السر الحالية"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:233
+#: modules/Client/html_client/mod_client_profile.html.twig:183
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:69
 msgid "New Password"
 msgstr "كلمة المرور الجديدة"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:239
+#: modules/Client/html_client/mod_client_profile.html.twig:188
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:75
 msgid "Confirm Password"
 msgstr "تأكيد كلمة المرور"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:252
+#: modules/Client/html_client/mod_client_profile.html.twig:197
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:89
 msgid "API key allows integration with external applications. You will need this key for authentication."
 msgstr "مفتاح API يسمح بالتكامل مع التطبيقات الخارجية. ستحتاج إلى هذا المفتاح للمصادقة."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:258
-msgid "Warning! Resetting the key will break existing applications using it!"
-msgstr "تحذير! إعادة تعيين المفتاح ستكسر التطبيقات الموجودة باستخدامها!"
+#: modules/Client/html_client/mod_client_profile.html.twig:203
+msgid "Warning!"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:261
+#: modules/Client/html_client/mod_client_profile.html.twig:203
+msgid "Resetting the key will break existing applications using it!"
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:207
 msgid "Your API key"
 msgstr "مفتاح API الخاص بك"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:266
-msgid "Reset key"
-msgstr "إعادة تعيين مفتاح"
+#: modules/Client/html_client/mod_client_profile.html.twig:211
+msgid "Generate a new key"
+msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:273
+#: modules/Client/html_client/mod_client_profile.html.twig:216
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and can not be changed."
 msgstr "يتم تعريف العملة الشخصية الخاصة بك بعد طلبك الأول. بمجرد تعيين العملة الخاصة بك، سيتم إدارة جميع حسابات ملفك الشخصي بتلك العملة ولا يمكن تغييرها."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:276
+#: modules/Client/html_client/mod_client_profile.html.twig:218
 msgid "Your profile currency is"
 msgstr "عملة ملفك الشخصي هي"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:277
-msgid "Create new client profile if you want to manage your money in other currency"
-msgstr "إنشاء ملف تعريف عميل جديد إذا كنت ترغب في إدارة أموالك بعملة أخرى"
+#: modules/Client/html_client/mod_client_profile.html.twig:219
+msgid "Create new client profile if you want to manage your money in other currency."
+msgstr ""
+
+#: modules/Client/html_client/mod_client_profile.html.twig:222
+msgid "You do not yet have a currency associated with your profile. You can select the correct one when making your first order."
+msgstr ""
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:3
 msgid "Set new Password"
 msgstr ""
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:20
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:43
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:32
 msgid "Set new password"
 msgstr ""
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:31
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:25
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:26
 msgid "New password"
 msgstr "كلمة المرور الجديدة"
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:36
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:38
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:29
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:30
 msgid "Repeat new password"
 msgstr ""
 
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:54
-msgid "Sign Up"
+#: modules/Client/html_client/mod_client_set_new_password.html.twig:34
+#: modules/Page/html_client/mod_page_password-reset.html.twig:30
+msgid "Back to login"
 msgstr ""
-
-#: modules/Client/html_client/mod_client_set_new_password.html.twig:58
-#: modules/Page/html_client/mod_page_login.html.twig:20
-#: modules/Page/html_client/mod_page_password-reset.html.twig:48
-#: modules/Page/html_client/mod_page_signup.html.twig:212
-#: modules/Staff/html_admin/mod_staff_login.html.twig:3
-#: themes/admin_default/html/error.html.twig:14
-#: themes/huraga/html/layout_default.html.twig:113
-#: themes/huraga/html/layout_default.html.twig:228
-msgid "Login"
-msgstr "تسجيل الدخول"
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
@@ -4193,8 +4169,9 @@ msgid "Slug"
 msgstr "Slug"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:69
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:86
-#: modules/Support/html_client/mod_support_tickets.html.twig:50
+#: modules/Email/html_client/mod_email_index.html.twig:57
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:97
+#: modules/Support/html_client/mod_support_tickets.html.twig:52
 msgid "View"
 msgstr "عرض"
 
@@ -4263,52 +4240,52 @@ msgstr "منطقة العميل"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
 #: themes/admin_default/html/layout_default.html.twig:148
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
-#: themes/huraga/html/layout_default.html.twig:100
-#: themes/huraga/html/layout_default.html.twig:200
-#: themes/huraga/html/partial_menu.html.twig:5
+#: themes/huraga/html/layout_default.html.twig:88
+#: themes/huraga/html/layout_default.html.twig:153
+#: themes/huraga/html/partial_menu.html.twig:8
 msgid "Dashboard"
 msgstr "لوحة القيادة"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
 #: modules/Index/html_client/mod_index_dashboard.html.twig:10
-#: themes/huraga/html/layout_default.html.twig:198
+#: themes/huraga/html/layout_default.html.twig:150
 msgid "Home"
 msgstr "الرئيسية"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:36
-#: modules/Index/html_client/mod_index_dashboard.html.twig:41
 msgid "Tickets waiting your reply"
 msgstr "التذاكر في انتظار ردك"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:42
-#: modules/Index/html_client/mod_index_dashboard.html.twig:47
-#: modules/Support/html_client/mod_support_tickets.html.twig:28
+#: modules/Support/html_client/mod_support_tickets.html.twig:32
 msgid "Id"
 msgstr "المعرف"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:46
-#: modules/Index/html_client/mod_index_dashboard.html.twig:51
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:80
 msgid "Last Updated"
 msgstr "آخر عمليّة تحديث"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:47
-#: modules/Index/html_client/mod_index_dashboard.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:706
-#: modules/Support/html_client/mod_support_tickets.html.twig:33
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:52
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:85
+#: modules/Order/html_client/mod_order_list.html.twig:35
+#: modules/Order/html_client/mod_order_manage.html.twig:140
+#: modules/Support/html_client/mod_support_tickets.html.twig:37
 msgid "Actions"
 msgstr "الإجراءات"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:57
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:212
-#: modules/Index/html_client/mod_index_dashboard.html.twig:62
-#: modules/Index/html_client/mod_index_dashboard.html.twig:217
+#: modules/Index/html_client/mod_index_dashboard.html.twig:37
+#: modules/Index/html_client/mod_index_dashboard.html.twig:156
+#: modules/Index/html_client/mod_index_dashboard.html.twig:188
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:113
 #: modules/Order/html_admin/mod_order_manage.html.twig:135
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:81
 #: modules/Support/html_admin/mod_support_tickets.html.twig:245
-#: modules/Support/html_client/mod_support_ticket.html.twig:95
-#: modules/Support/html_client/mod_support_tickets.html.twig:48
+#: modules/Support/html_client/mod_support_tickets.html.twig:49
 #: themes/admin_default/html/mod_index_dashboard.html.twig:335
 #: themes/admin_default/html/mod_index_dashboard.html.twig:498
 #: themes/admin_default/html/mod_index_dashboard.html.twig:525
@@ -4316,85 +4293,86 @@ msgid "ago"
 msgstr "منذ"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:58
-#: modules/Index/html_client/mod_index_dashboard.html.twig:63
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:88
-#: modules/Support/html_client/mod_support_ticket.html.twig:133
-#: modules/Support/html_client/mod_support_tickets.html.twig:50
+#: modules/Index/html_client/mod_index_dashboard.html.twig:39
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:69
+#: modules/Support/html_client/mod_support_ticket.html.twig:29
+#: modules/Support/html_client/mod_support_tickets.html.twig:54
 msgid "Reply"
 msgstr "رد"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:91
-#: modules/Index/html_client/mod_index_dashboard.html.twig:96
+#: modules/Index/html_client/mod_index_dashboard.html.twig:63
 msgid "Balance"
 msgstr "الرصيد"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:104
-#: modules/Index/html_client/mod_index_dashboard.html.twig:109
+#: modules/Index/html_client/mod_index_dashboard.html.twig:76
 msgid "All Invoices"
 msgstr "كافة الفواتير"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:112
-#: modules/Index/html_client/mod_index_dashboard.html.twig:117
+#: modules/Index/html_client/mod_index_dashboard.html.twig:83
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:144
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:210
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:24
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:64
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:38
 msgid "Paid"
 msgstr "مدفوع"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:114
-#: modules/Index/html_client/mod_index_dashboard.html.twig:119
+#: modules/Index/html_client/mod_index_dashboard.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:130
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:214
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:23
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:29
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:34
 msgid "Unpaid"
 msgstr "غير مدفوع"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:130
-#: modules/Index/html_client/mod_index_dashboard.html.twig:135
+#: modules/Index/html_client/mod_index_dashboard.html.twig:102
 msgid "All orders"
 msgstr "جميع الطلبات"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:140
-#: modules/Index/html_client/mod_index_dashboard.html.twig:145
+#: modules/Index/html_client/mod_index_dashboard.html.twig:111
 msgid "Expiring"
 msgstr "سينتهي قريبا"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:153
-#: modules/Index/html_client/mod_index_dashboard.html.twig:158
+#: modules/Index/html_client/mod_index_dashboard.html.twig:124
+#: modules/Support/html_client/mod_support_tickets.html.twig:22
 msgid "New ticket"
 msgstr "تذكرة جديدة"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:154
-#: modules/Index/html_client/mod_index_dashboard.html.twig:159
+#: modules/Index/html_client/mod_index_dashboard.html.twig:125
 msgid "All tickets"
 msgstr "كافة التذاكر"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:162
-#: modules/Index/html_client/mod_index_dashboard.html.twig:167
+#: modules/Index/html_client/mod_index_dashboard.html.twig:132
 msgid "Open"
 msgstr "فتح"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:164
-#: modules/Index/html_client/mod_index_dashboard.html.twig:169
+#: modules/Index/html_client/mod_index_dashboard.html.twig:134
 msgid "On Hold"
 msgstr "معلقة"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:176
-#: modules/Index/html_client/mod_index_dashboard.html.twig:181
+#: modules/Index/html_client/mod_index_dashboard.html.twig:144
 msgid "Recent orders"
 msgstr "الطلبات الحديثة"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:204
-#: modules/Index/html_client/mod_index_dashboard.html.twig:209
 msgid "Recent emails"
 msgstr "رسائل البريد الإلكتروني الأخيرة"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:32
 #: modules/Email/html_admin/mod_email_history.html.twig:32
+#: modules/Email/html_client/mod_email_email.html.twig:18
+#: modules/Email/html_client/mod_email_index.html.twig:52
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:44
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:28
 msgid "From"
@@ -4409,8 +4387,8 @@ msgid "Email resent"
 msgstr "تمّت إعادة إرسال البريد"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:55
-#: modules/Email/html_client/mod_email_email.html.twig:35
-#: modules/Email/html_client/mod_email_index.html.twig:44
+#: modules/Email/html_client/mod_email_email.html.twig:23
+#: modules/Email/html_client/mod_email_index.html.twig:60
 msgid "Resend"
 msgstr "إعادة إرسال"
 
@@ -4700,30 +4678,11 @@ msgstr "أمثلة على قوالب البريد الإلكتروني"
 msgid "Email template playground. Use this tool to try rendering email templates."
 msgstr "تشغيل قالب البريد الإلكتروني. استخدم هذه الأداة لمحاولة تقديم قوالب البريد الإلكتروني."
 
-#: modules/Email/html_client/mod_email_email.html.twig:19
-msgid "Back to emails list"
-msgstr "العودة إلى قائمة رسائل البريد الإلكتروني"
-
-#: modules/Email/html_client/mod_email_email.html.twig:27
-#: modules/Email/html_client/mod_email_index.html.twig:36
-msgid "From:"
-msgstr "من:"
-
-#: modules/Email/html_client/mod_email_email.html.twig:28
-#: modules/Email/html_client/mod_email_index.html.twig:37
-msgid "To:"
-msgstr "إلى:"
-
-#: modules/Email/html_client/mod_email_email.html.twig:29
-#: modules/Email/html_client/mod_email_index.html.twig:38
-msgid "Created at:"
-msgstr "أنشئ في:"
-
-#: modules/Email/html_client/mod_email_index.html.twig:15
-msgid "Here you can find all the emails we sent you. Please click on email topic in left column and it will be displayed in right side."
-msgstr "هنا يمكنك العثور على جميع رسائل البريد الإلكتروني التي أرسلناها. الرجاء النقر على موضوع البريد الإلكتروني في العمود الأيسر وسيتم عرضه في الجانب الأيمن."
-
 #: modules/Email/html_client/mod_email_index.html.twig:19
+msgid "Here you can find all the emails we've sent you."
+msgstr ""
+
+#: modules/Email/html_client/mod_email_index.html.twig:26
 msgid "There are no emails to display"
 msgstr "لا توجد مهام للعرض"
 
@@ -4736,7 +4695,7 @@ msgid "Enter the words above"
 msgstr "أدخل الكلمات أعلاه"
 
 #: modules/Embed/html_client/mod_embed_contact.html.twig:102
-#: modules/Support/html_client/mod_support_contact_us.html.twig:56
+#: modules/Support/html_client/mod_support_contact_us.html.twig:46
 msgid "Send"
 msgstr "إرسال"
 
@@ -5030,6 +4989,96 @@ msgstr "مربع اختيار"
 msgid "Textarea"
 msgstr "مساحة نصية"
 
+#: modules/Index/html_client/mod_index_dashboard.html.twig:100
+msgid "New orders"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:166
+msgid "No recent orders"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:176
+#: modules/Support/html_client/mod_support_ticket.html.twig:13
+#: modules/Support/html_client/mod_support_tickets.html.twig:5
+#: modules/Support/html_client/mod_support_tickets.html.twig:6
+#: modules/Support/html_client/mod_support_tickets.html.twig:9
+#: modules/Support/html_client/mod_support_tickets.html.twig:18
+msgid "Support tickets"
+msgstr "تذاكر الدعم"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:198
+msgid "No recent support tickets"
+msgstr ""
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:212
+msgid "You are logged out"
+msgstr "لقد سجلت خروجك."
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:214
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:43
+#: modules/Page/html_client/mod_page_login.html.twig:3
+#: modules/Page/html_client/mod_page_login.html.twig:30
+#: modules/Staff/html_admin/mod_staff_login.html.twig:3
+#: modules/Staff/html_admin/mod_staff_login.html.twig:70
+#: themes/admin_default/html/error.html.twig:14
+#: themes/huraga/html/layout_default.html.twig:101
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:242
+#: modules/Page/html_client/mod_page_signup.html.twig:5
+#: modules/Page/html_client/mod_page_signup.html.twig:165
+#: themes/huraga/html/layout_default.html.twig:127
+msgid "Sign up"
+msgstr "إنشاء حساب"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:223
+#: modules/Index/html_client/mod_index_dashboard.html.twig:227
+#: modules/Order/html_admin/mod_order_manage.html.twig:75
+#: modules/Order/html_client/mod_order_index.html.twig:5
+#: modules/Order/html_client/mod_order_index.html.twig:12
+#: modules/Order/html_client/mod_order_manage.html.twig:35
+#: modules/Order/html_client/mod_order_product.html.twig:5
+#: themes/admin_default/html/partial_menu_top.html.twig:3
+#: themes/huraga/html/layout_default.html.twig:94
+#: themes/huraga/html/partial_menu.html.twig:17
+msgid "Order"
+msgstr "الطلب"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:225
+msgid "Products and services"
+msgstr "المنتجات و الخدمات"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:236
+#: modules/News/html_admin/mod_news_index.html.twig:7
+#: modules/News/html_admin/mod_news_post.html.twig:19
+#: modules/News/html_client/mod_news_index.html.twig:3
+#: modules/News/html_client/mod_news_index.html.twig:7
+#: modules/News/html_client/mod_news_post.html.twig:8
+#: themes/huraga/html/partial_menu.html.twig:71
+msgid "News"
+msgstr "الأخبَار"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:238
+msgid "Latest news and announcements"
+msgstr "أحدث الأخبار والإعلانات"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:250
+#: modules/Index/html_client/mod_index_dashboard.html.twig:254
+#: modules/Support/html_client/mod_support_kb_article.html.twig:8
+#: modules/Support/html_client/mod_support_kb_category.html.twig:7
+#: modules/Support/html_client/mod_support_kb_index.html.twig:10
+#: modules/Support/html_client/mod_support_kb_index.html.twig:14
+#: modules/Support/html_client/mod_support_kb_index.html.twig:31
+#: themes/huraga/html/partial_menu.html.twig:80
+msgid "Knowledge base"
+msgstr "قاعدة المعرفة"
+
+#: modules/Index/html_client/mod_index_dashboard.html.twig:252
+msgid "Browse our KB for answers and FAQ"
+msgstr "تصفح KB لدينا للإجابات و الأسئلة الشائعة"
+
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:28
 msgid "Payment gateway configuration"
 msgstr "تكوين بوابة الدفع"
@@ -5151,6 +5200,7 @@ msgstr "رقم"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:62
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -5210,9 +5260,10 @@ msgstr "الإعداد"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:28
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:165
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:52
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:73
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:7
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:57
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:74
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:18
 #: themes/admin_default/html/partial_menu_top.html.twig:7
 msgid "Invoice"
 msgstr "الفاتورة"
@@ -5220,6 +5271,8 @@ msgstr "الفاتورة"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:36
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:31
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:31
+#: modules/Order/html_client/mod_order_manage.html.twig:154
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:5
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:34
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
 msgid "Manage"
@@ -5283,16 +5336,14 @@ msgid "This should be the transaction ID you use to reconcile your bank statemen
 msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:263
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:270
 #: modules/Order/html_admin/mod_order_manage.html.twig:248
 msgid "Cancel"
 msgstr "إلغاء"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:175
-#: modules/Order/html_client/mod_order_manage.html.twig:204
-#: modules/Order/html_client/mod_order_manage.html.twig:242
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:201
-#: modules/Support/html_client/mod_support_tickets.html.twig:114
+#: modules/Support/html_client/mod_support_tickets.html.twig:98
 msgid "Submit"
 msgstr "إرسال"
 
@@ -5301,7 +5352,7 @@ msgid "Refund"
 msgstr "إسترداد"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:196
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:56
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:62
 msgid "PDF"
 msgstr "ملف PDF"
 
@@ -5363,7 +5414,7 @@ msgstr "الاسم الاخير"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:494
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:222
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:176
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:175
 msgid "Zip"
 msgstr "الرمز البريدي"
 
@@ -5372,13 +5423,13 @@ msgid "Invoice items"
 msgstr "عناصر الفاتورة"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:526
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:188
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:214
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:198
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:153
 #: modules/Order/html_admin/mod_order_manage.html.twig:324
 #: modules/Order/html_admin/mod_order_manage.html.twig:457
-#: modules/Order/html_client/mod_order_list.html.twig:26
+#: modules/Order/html_client/mod_order_list.html.twig:32
 #: modules/Order/html_client/mod_order_manage.html.twig:136
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:14
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:17
 #: themes/admin_default/html/partial_pricing.html.twig:25
 #: themes/huraga/html/partial_pricing.html.twig:54
 msgid "Price"
@@ -5393,7 +5444,7 @@ msgid "Approve"
 msgstr "مقبولة"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:710
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:59
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:63
 msgid "Print"
 msgstr "طباعة"
 
@@ -5416,8 +5467,8 @@ msgid "Auto invoice approval"
 msgstr "الموافقة التلقائية على الفاتورة"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:62
-msgid "Proforma Invoicing / Sequential Invoice Numbering"
-msgstr "فاتورة / تسلسل رقم الفاتورة"
+msgid "Invoicing / Sequential Invoice Numbering"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:64
 msgid "Remove unpaid invoices after days"
@@ -5428,8 +5479,8 @@ msgid "Set 0 to keep invoices forever."
 msgstr "تعيين 0 للإبقاء على الفواتير إلى الأبد."
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:71
-msgid "Proforma invoice prefix/series"
-msgstr "بادئة/سلسلة فاتورة بروفورما"
+msgid "Invoice prefix/series"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:77
 msgid "Paid invoice prefix/series"
@@ -5630,8 +5681,8 @@ msgid "Transaction status on payment gateway"
 msgstr "حالة المعاملة على بوابة الدفع"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:90
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:130
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:155
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:137
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:96
 #: modules/Notification/html_admin/mod_notification_index.html.twig:78
 #: modules/Order/html_admin/mod_order_manage.html.twig:573
 #: modules/Support/html_admin/mod_support_ticket.html.twig:195
@@ -5742,19 +5793,19 @@ msgid "n/a"
 msgstr "غير متاح"
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:3
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:15
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
 msgid "Processing payment ..."
 msgstr "يتم معالجة الدفع"
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:17
 msgid "Thank you for your patience."
 msgstr "شكراً لك على صبرك!"
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:23
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:24
 msgid "Redirecting to payment gateway.."
 msgstr "إعادة التوجيه إلى بوابة الدفع..."
 
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:29
+#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:30
 msgid "Please click here to continue if this page does not redirect automatically in 5 seconds"
 msgstr "الرجاء النقر هنا للمتابعة إذا لم يتم إعادة توجيه هذه الصفحة تلقائياً خلال 5 ثوان"
 
@@ -5763,158 +5814,138 @@ msgstr "الرجاء النقر هنا للمتابعة إذا لم يتم إع�
 msgid "Invoice management"
 msgstr "إدارة الفواتير"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:20
-msgid "List of invoices"
-msgstr "قائمة الفواتير"
-
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:21
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:24
 msgid "All of your invoices can be found here. You can choose to see either paid or unpaid invoices by clicking corresponding button."
 msgstr "يمكن العثور على جميع الفواتير الخاصة بك هنا. يمكنك اختيار رؤية الفواتير المدفوعة أو غير المدفوعة بالنقر على الزر المقابل."
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:70
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:73
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:86
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:49
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:82
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:76
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:31
 msgid "Invoice Date"
 msgstr "تاريخ الفاتورة"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:36
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:80
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:93
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:50
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:39
 msgid "Due Date"
 msgstr "تاريخ الاستحقاق"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:49
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:64
 msgid "Pay"
 msgstr "دفع"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:71
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:83
 msgid "Paid Date"
 msgstr "تاريخ الدفع"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:7
-msgid "Proforma invoice"
-msgstr "الفاتورة الأولية"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:52
-msgid "Receipt"
-msgstr "إيصال الدفع"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:25
 msgid "Payment methods"
 msgstr "طرق الدفع"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:26
-msgid "Please choose payment type and pay for your chosen products."
-msgstr "الرجاء اختيار نوع الدفع ودفع للمنتجات التي اخترتها."
+msgid "Please choose a payment type and pay for your chosen products."
+msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:35
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:315
-msgid "Pay with"
-msgstr "ادفع من خلال"
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:58
+msgid "You can print this invoice or export it to a PDF file by clicking on the corresponding button."
+msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:53
-msgid "You can print this invoice or export it to PDF file by clicking on corresponding button."
-msgstr "يمكنك طباعة هذه الفاتورة أو تصديرها إلى ملف PDF بالنقر على الزر المقابل."
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:71
-msgid "Invoice Number"
-msgstr "رقمْ الفاتورة"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:87
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:100
-msgid "Invoice Status"
-msgstr "حالة الفاتورة"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:105
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:120
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:157
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:112
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:68
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:152
 msgid "VAT"
 msgstr "الضريبة"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:125
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:132
 msgid "Account"
 msgstr "الحساب"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:139
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:165
-msgid "Billing & Delivery address"
-msgstr "عنوان الفاتورة والتوصيل"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:186
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:212
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:196
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:151
 msgid "#"
 msgstr "#"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:227
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:254
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:185
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "الخصم"
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:258
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:265
 msgid "Pay now with a one-time payment"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:259
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:266
 msgid "Pay now and create a subscription"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:260
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:267
 msgid "Pay now"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:295
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:301
 msgid "The invoice you are paying and your chosen payment gateway both support subscription payments. What type of payment would you like to continue with?"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:298
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:304
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:309
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:310
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:315
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:302
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:308
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it. Optionally, you may choose a different payment gateway if you wish to pay using a subscription."
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:321
+msgid "Pay with"
+msgstr "ادفع من خلال"
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:29
 msgid "Invoice number"
 msgstr "رقم الفاتورة:"
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:140
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:47
+msgid "Invoice Status"
+msgstr "حالة الفاتورة"
+
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 #: modules/System/html_admin/mod_system_settings.html.twig:113
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Bank Name"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:145
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:95
 #: modules/System/html_admin/mod_system_settings.html.twig:119
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "BIC / SWIFT Code"
 msgstr ""
 
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:150
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:92
 msgid "Bank Account"
 msgstr ""
 
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:106
+msgid "Billing & Delivery address"
+msgstr "عنوان الفاتورة والتوصيل"
+
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:3
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:4
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:10
 msgid "Thank you"
 msgstr "شكرا لك"
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:12
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
 msgid "Your payment is being processed right now. It can take up 5 minutes to complete."
 msgstr "تتم معالجة الدفع الخاص بك الآن. يمكن أن يستغرق اكتماله 5 دقائق."
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
 msgid "Payment for invoice received"
 msgstr "تم استلام الدفع مقابل الفاتورة"
 
-#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:16
+#: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr "سيتم إعادة توجيهك تلقائياً إلى صفحة الفاتورة بعد 5 دقائق."
 
@@ -6033,16 +6064,6 @@ msgstr "تمت إضافة الرسالة إلى قائمة انتظار البر
 msgid "Message was sent."
 msgstr "تم إرسال الرسالة"
 
-#: modules/News/html_admin/mod_news_index.html.twig:7
-#: modules/News/html_admin/mod_news_post.html.twig:19
-#: modules/News/html_client/mod_news_index.html.twig:3
-#: modules/News/html_client/mod_news_index.html.twig:6
-#: modules/News/html_client/mod_news_post.html.twig:8
-#: themes/huraga/html/layout_default.html.twig:257
-#: themes/huraga/html/partial_menu.html.twig:53
-msgid "News"
-msgstr "الأخبَار"
-
 #: modules/News/html_admin/mod_news_index.html.twig:12
 msgid "News and announcements"
 msgstr "الأخبار والإعلانات"
@@ -6086,26 +6107,29 @@ msgstr "تم إنشاء المنشور."
 msgid "Last update"
 msgstr "آخر تحديث:"
 
-#: modules/News/html_client/mod_news_index.html.twig:14
+#: modules/News/html_client/mod_news_index.html.twig:16
 msgid "News & Announcements"
 msgstr "الأخبار والإعلانات"
 
-#: modules/News/html_client/mod_news_index.html.twig:15
+#: modules/News/html_client/mod_news_index.html.twig:17
 msgid "Track our latest information."
 msgstr "تتبع أحدث المعلومات لدينا."
 
-#: modules/News/html_client/mod_news_index.html.twig:32
-msgid "Read more ..."
-msgstr "قراءة المزيد ... "
+#: modules/News/html_client/mod_news_index.html.twig:36
+msgid "Continue reading"
+msgstr ""
 
-#: modules/News/html_client/mod_news_post.html.twig:34
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:72
-msgid "by "
-msgstr "بواسطة "
+#: modules/News/html_client/mod_news_index.html.twig:44
+msgid "No news or announcements"
+msgstr ""
+
+#: modules/News/html_client/mod_news_post.html.twig:33
+msgid "by"
+msgstr ""
 
 #: modules/News/html_client/mod_news_post.html.twig:43
-msgid "Back to list"
-msgstr "العودة إلى القائمة"
+msgid "Back to the list"
+msgstr ""
 
 #: modules/Notification/html_admin/mod_notification_index.html.twig:5
 msgid "Notifications center"
@@ -6135,7 +6159,7 @@ msgstr "تصفية الطلبات"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:41
 #: modules/Order/html_admin/mod_order_index.html.twig:295
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:13
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
 #: themes/admin_default/html/partial_menu_top.html.twig:15
 msgid "Product"
 msgstr "المنتج"
@@ -6182,7 +6206,7 @@ msgid "Service management"
 msgstr "إدارة الخدمات"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:56
-#: modules/Order/html_client/mod_order_manage.html.twig:127
+#: modules/Order/html_client/mod_order_manage.html.twig:126
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:20
 #: modules/Product/html_admin/mod_product_addons.html.twig:5
 #: modules/Product/html_admin/mod_product_addons.html.twig:19
@@ -6195,20 +6219,8 @@ msgstr "الإضافات"
 msgid "History"
 msgstr "السجل"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:75
-#: modules/Order/html_client/mod_order_index.html.twig:5
-#: modules/Order/html_client/mod_order_manage.html.twig:30
-#: modules/Order/html_client/mod_order_product.html.twig:5
-#: themes/admin_default/html/partial_menu_top.html.twig:3
-#: themes/huraga/html/layout_default.html.twig:105
-#: themes/huraga/html/layout_default.html.twig:239
-#: themes/huraga/html/layout_default.html.twig:245
-#: themes/huraga/html/partial_menu.html.twig:11
-msgid "Order"
-msgstr "الطلب"
-
 #: modules/Order/html_admin/mod_order_manage.html.twig:87
-#: modules/Order/html_client/mod_order_manage.html.twig:40
+#: modules/Order/html_client/mod_order_manage.html.twig:45
 msgid "Payment amount"
 msgstr "قيمة الشراء:"
 
@@ -6221,12 +6233,12 @@ msgid "Payment amount after discount"
 msgstr "مبلغ الدفع بعد الخصم"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:101
-#: modules/Order/html_client/mod_order_manage.html.twig:52
+#: modules/Order/html_client/mod_order_manage.html.twig:57
 msgid "Order status"
 msgstr "حالة الطلب"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:120
-#: modules/Order/html_client/mod_order_manage.html.twig:77
+#: modules/Order/html_client/mod_order_manage.html.twig:82
 msgid "Order notes"
 msgstr "ملاحظات الطلب"
 
@@ -6255,7 +6267,7 @@ msgid "Order promo code"
 msgstr "رمز الطلب الترويجي"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:156
-#: modules/Order/html_client/mod_order_manage.html.twig:84
+#: modules/Order/html_client/mod_order_manage.html.twig:89
 msgid "Active support tickets"
 msgstr "تذاكر الدعم النشطة"
 
@@ -6319,7 +6331,7 @@ msgid "Changes status without performing action"
 msgstr "تغيير الوضع دون القيام بعمل"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:330
-#: modules/Order/html_client/mod_order_manage.html.twig:232
+#: modules/Order/html_client/mod_order_manage.html.twig:186
 msgid "Reason"
 msgstr "السبب"
 
@@ -6336,12 +6348,12 @@ msgid "Please be cautious and make sure you know what you are doing when editing
 msgstr "يرجى توخي الحذر والتأكد من معرفة ما تفعله عند تعديل تكوين الطلب! تعتمد البرمجيات الحرة والمفتوحة المصدر على هذه المعلمات وقد تحصل على نتائج غير متوقعة إذا قمت بتغيير بعضها."
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:450
-#: modules/Order/html_client/mod_order_manage.html.twig:128
+#: modules/Order/html_client/mod_order_manage.html.twig:127
 msgid "Addons you have ordered with this service"
 msgstr "الإضافات التي طلبتها مع هذه الخدمة"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:455
-#: modules/Order/html_client/mod_order_list.html.twig:25
+#: modules/Order/html_client/mod_order_list.html.twig:31
 #: modules/Order/html_client/mod_order_manage.html.twig:135
 msgid "Product/Service"
 msgstr "المنتج / الخدمة"
@@ -6352,7 +6364,7 @@ msgid "Billing Cycle"
 msgstr "دورة الفوترة"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:458
-#: modules/Order/html_client/mod_order_list.html.twig:27
+#: modules/Order/html_client/mod_order_list.html.twig:33
 #: modules/Order/html_client/mod_order_manage.html.twig:138
 msgid "Next due date"
 msgstr "تاريخ الاستحقاق التالي"
@@ -6454,14 +6466,12 @@ msgstr "أيام بعد تعليق الطلب بسبب"
 msgid "Suspension reasons"
 msgstr "سبب التعليق"
 
-#: modules/Order/html_client/mod_order_index.html.twig:18
-#: modules/Order/html_client/mod_order_product.html.twig:18
-#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:5
-msgid "Select Product"
-msgstr "حدد منتج"
+#: modules/Order/html_client/mod_order_index.html.twig:23
+msgid "Order Product"
+msgstr ""
 
-#: modules/Order/html_client/mod_order_index.html.twig:19
-#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Order/html_client/mod_order_index.html.twig:24
+#: modules/Order/html_client/mod_order_product.html.twig:20
 msgid "Choose products we offer for selling"
 msgstr "اختر المنتجات التي نقدمها للبيع"
 
@@ -6469,87 +6479,100 @@ msgstr "اختر المنتجات التي نقدمها للبيع"
 msgid "My Products & Services"
 msgstr "المنتجات و الخدمات"
 
-#: modules/Order/html_client/mod_order_list.html.twig:18
-msgid "All of your orders are displayed here. Click on any order to get full information about it."
-msgstr "يتم عرض جميع طلباتك هنا. انقر فوق أي طلب للحصول على معلومات كاملة عنها."
+#: modules/Order/html_client/mod_order_list.html.twig:9
+#: modules/Order/html_client/mod_order_list.html.twig:19
+#: modules/Order/html_client/mod_order_manage.html.twig:11
+#: themes/huraga/html/partial_menu.html.twig:35
+msgid "Services"
+msgstr "الخدمات"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:23
+#: modules/Order/html_client/mod_order_list.html.twig:20
+msgid "All of your orders are displayed here. Click on any service to get full information about it."
+msgstr ""
+
+#: modules/Order/html_client/mod_order_list.html.twig:30
+#: modules/Support/html_admin/mod_support_tickets.html.twig:40
+msgid "Order ID"
+msgstr "معرف الطلب"
+
+#: modules/Order/html_client/mod_order_list.html.twig:61
+msgid "No orders yet"
+msgstr ""
+
+#: modules/Order/html_client/mod_order_manage.html.twig:26
 msgid "Service details"
 msgstr "تفاصيل الخدمة"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:24
+#: modules/Order/html_client/mod_order_manage.html.twig:27
 msgid "All information about your service"
 msgstr "احصل على معلومات عن السيرفر الخاص بك."
 
-#: modules/Order/html_client/mod_order_manage.html.twig:35
+#: modules/Order/html_client/mod_order_manage.html.twig:40
 msgid "Product name"
 msgstr "اسم المنتج"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:46
+#: modules/Order/html_client/mod_order_manage.html.twig:51
 msgid "Billing cycle"
 msgstr "دورة الفوترة"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:59
+#: modules/Order/html_client/mod_order_manage.html.twig:64
 msgid "Order created"
 msgstr "تم إنشاء الطلب"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:64
+#: modules/Order/html_client/mod_order_manage.html.twig:69
 msgid "Activated at"
 msgstr "مفعل في"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:70
+#: modules/Order/html_client/mod_order_manage.html.twig:75
 msgid "Renewal date"
 msgstr "تاريخ التجديد"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:98
+#: modules/Order/html_client/mod_order_manage.html.twig:102
 msgid "Renew now"
 msgstr "جدد الآن"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:102
+#: modules/Order/html_client/mod_order_manage.html.twig:105
 msgid "Request Upgrade"
 msgstr "طلب الترقية"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:105
+#: modules/Order/html_client/mod_order_manage.html.twig:107
+#: modules/Order/html_client/mod_order_manage.html.twig:224
 msgid "Open ticket"
 msgstr "تذكرة جديدة"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:108
-msgid "Request Cancellation"
-msgstr "إلغاء الطلب"
+#: modules/Order/html_client/mod_order_manage.html.twig:109
+msgid "Request cancellation"
+msgstr ""
 
-#: modules/Order/html_client/mod_order_manage.html.twig:115
-msgid "Back to services"
-msgstr "العودة إلى الخدمات"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:172
-#: modules/Support/html_client/mod_support_tickets.html.twig:86
-msgid "Submit new support ticket"
-msgstr "تقديم تذكرة دعم"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:212
+#: modules/Order/html_client/mod_order_manage.html.twig:168
 msgid "Submit cancellation request"
 msgstr "تقديم طلب إلغاء"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:227
-msgid "I would like to cancel"
-msgstr "أود أن أُلغي"
+#: modules/Order/html_client/mod_order_manage.html.twig:191
+#: modules/Order/html_client/mod_order_manage.html.twig:262
+msgid "Request"
+msgstr "تقدیم طلب"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:250
+#: modules/Order/html_client/mod_order_manage.html.twig:202
+msgid "Submit new support ticket"
+msgstr "تقديم تذكرة دعم"
+
+#: modules/Order/html_client/mod_order_manage.html.twig:235
 msgid "Submit upgrade request"
 msgstr "إرسال طلب الترقية"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:259
-#: modules/Order/html_client/mod_order_manage.html.twig:280
-msgid "I would like to upgrade"
-msgstr "أرغب في الترقية"
-
-#: modules/Order/html_client/mod_order_manage.html.twig:271
+#: modules/Order/html_client/mod_order_manage.html.twig:253
 msgid "Upgrade to"
 msgstr "الترقية ل"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:290
-msgid "Request"
-msgstr "تقدیم طلب"
+#: modules/Order/html_client/mod_order_manage.html.twig:258
+msgid "I would like to upgrade"
+msgstr "أرغب في الترقية"
+
+#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
+msgid "Select Product"
+msgstr "حدد منتج"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:5
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:22
@@ -6691,207 +6714,238 @@ msgstr "Addons & extras"
 msgid "Setup:"
 msgstr "إعداد"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:4
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:6
 msgid "Cart"
 msgstr "السله"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:41
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:44
 msgid "Remove item"
 msgstr "إزالة العنصر"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:92
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:95
 msgid "setup"
 msgstr "إعداد"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:110
-msgid "Have coupon code?"
-msgstr "هل لديك رمز ترويجي؟"
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:113
+msgid "Have a coupon code?"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:118
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:121
 msgid "Enter code"
 msgstr "أدخل الرمز"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:120
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:123
 msgid "Remove"
 msgstr "إزالة"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:122
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:125
 msgid "Apply"
 msgstr "تطبيق"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:143
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:138
 msgid "Subtotal:"
 msgstr "الإجمالي الفرعي:"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:147
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:142
 msgid "Discount:"
 msgstr "الخصم:"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:178
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:157
+msgid "Total:"
+msgstr "الإجمالي:"
+
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:173
 msgid "Pay by"
 msgstr "الدفع بواسطة"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:187
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:182
 msgid "Total amount will be deducted from account balance"
 msgstr "المبلغ الإجمالي سيتم خصمه من رصيد الحساب"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:189
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:184
 msgid "Checkout"
 msgstr "إتمام الشراء"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:205
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:201
 msgid "Promo code was removed"
 msgstr "تم إزالة الرمز الترويجي"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:211
 msgid "Are you sure you want to remove this item from cart?"
 msgstr "هل أنت متأكد أنك تريد إزالة العنصر من عربة التسوق؟"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:219
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:215
 msgid "Item was removed from cart"
 msgstr "تم حذف الصنف من السلة"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:5
+#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
 msgid "Items"
 msgstr "العناصر"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:5
-msgid "Login or Register"
-msgstr "تسجيل الدخول أو التسجيل"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:11
+msgid "Login or Sign up"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:18
-#: modules/Page/html_client/mod_page_login.html.twig:30
-#: modules/Page/html_client/mod_page_password-reset.html.twig:32
-msgid "Your email address"
-msgstr "بريدك الإلكتروني"
-
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:18
-#: modules/Page/html_client/mod_page_password-reset.html.twig:32
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
 msgid "You must fill in your email."
 msgstr "يجب عليك ملء بريدك الإلكتروني."
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
 msgid "You must fill in your password."
 msgstr "يجب عليك ملء كلمة المرور الخاصة بك."
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:32
-#: modules/Page/html_client/mod_page_login.html.twig:3
-#: modules/Page/html_client/mod_page_login.html.twig:42
-msgid "Log in"
-msgstr "تسجيل الدخول"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:47
+#: modules/Page/html_client/mod_page_login.html.twig:36
+msgid "Create account"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:34
-msgid "Or register"
-msgstr "أو التسجيل"
-
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
-#: modules/Page/html_client/mod_page_signup.html.twig:80
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:112
 msgid "You are"
 msgstr "أنت:"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:221
-#: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
-#: themes/huraga/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:229
-msgid "Register"
-msgstr "التسجيل"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:134
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
+msgid "Confirm password"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:224
-msgid "Or Login"
-msgstr "أو تسجيل الدخول"
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:215
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:218
+msgid "Phone Code"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:70
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
+#: modules/Page/html_client/mod_page_signup.html.twig:170
+msgid "Already a user?"
+msgstr ""
+
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:46
 msgid "Payment"
 msgstr "الدفع"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:82
-msgid "Powered by FOSSBilling"
-msgstr "مدعوم من FOSSBilling\n"
-"ترجمة خالد العمري من برمجلي"
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:60
+msgid "Powered by"
+msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:103
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:127
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:87
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:113
 msgid "You logged in successfully"
 msgstr "تم تسجيل الدخول بنجاح."
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:143
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:131
 msgid "Product was added to shopping cart"
 msgstr "تمت إضافة المنتج إلى سلة التسوق"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:155
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:143
 msgid "Promo code was applied for your order"
 msgstr "تم تطبيق الرمز الترويجي لطلبك"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:4
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:6
 msgid "Product Configuration"
 msgstr "إعدادات المنتج"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:26
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:30
 msgid "FREE"
 msgstr "مجانا"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:48
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:53
 msgid "Next"
 msgstr "التالي"
 
 #: modules/Page/html_client/mod_page_about-us.html.twig:3
-#: modules/Page/html_client/mod_page_about-us.html.twig:16
+#: modules/Page/html_client/mod_page_about-us.html.twig:19
 msgid "About us"
 msgstr "من نحن"
 
-#: modules/Page/html_client/mod_page_about-us.html.twig:27
-#: modules/Page/html_client/mod_page_privacy-policy.html.twig:28
-#: modules/Page/html_client/mod_page_tos.html.twig:27
-msgid "Back to Homepage"
-msgstr "الرجوع للصفحة الرئيسية"
+#: modules/Page/html_client/mod_page_about-us.html.twig:9
+#: modules/System/html_admin/mod_system_settings.html.twig:43
+msgid "About"
+msgstr "حول"
 
-#: modules/Page/html_client/mod_page_login.html.twig:53
-#: modules/Page/html_client/mod_page_password-reset.html.twig:47
-#: modules/Page/html_client/mod_page_signup.html.twig:18
-msgid "Signup"
-msgstr "فتح حساب"
+#: modules/Page/html_client/mod_page_login.html.twig:20
+msgid "Login to your account"
+msgstr ""
 
-#: modules/Page/html_client/mod_page_login.html.twig:57
+#: modules/Page/html_client/mod_page_login.html.twig:24
+#: modules/Page/html_client/mod_page_password-reset.html.twig:25
+#: modules/Staff/html_admin/mod_staff_login.html.twig:23
+#: modules/Staff/html_admin/mod_staff_login.html.twig:48
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
+msgid "Enter your email address"
+msgstr "أدخل عنوان البريد الإلكتروني الخاص بك"
+
+#: modules/Page/html_client/mod_page_login.html.twig:28
+#: modules/Staff/html_admin/mod_staff_login.html.twig:29
+#: modules/Staff/html_admin/mod_staff_login.html.twig:66
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
+msgid "Enter your password"
+msgstr "قم بإدخال كلمة السر"
+
+#: modules/Page/html_client/mod_page_login.html.twig:40
+#: modules/Page/html_client/mod_page_signup.html.twig:173
 msgid "Forgot password?"
 msgstr "نسيت كلمة المرور؟"
 
 #: modules/Page/html_client/mod_page_password-reset.html.twig:3
-#: modules/Page/html_client/mod_page_password-reset.html.twig:21
-#: modules/Page/html_client/mod_page_password-reset.html.twig:38
+#: modules/Page/html_client/mod_page_password-reset.html.twig:28
 msgid "Reset password"
 msgstr "إعادة تعيين كلمة المرور"
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:34
-msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
-msgstr "أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور. سوف تتلقى كلمة مرور جديدة بعد تأكيد إعادة تعيين الرابط."
+#: modules/Page/html_client/mod_page_password-reset.html.twig:20
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
+#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:3
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:16
+msgid "Reset your password"
+msgstr "إعادة تعيين كلمة المرور الخاصة بك"
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:62
+#: modules/Page/html_client/mod_page_password-reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:18
 msgid "A password reset confirmation email will be sent to you if we found an account with that email address."
 msgstr "سيتم إرسال بريد إلكتروني لتأكيد إعادة تعيين كلمة المرور إليك إذا وجدنا حسابا بهذا البريد الإلكتروني."
 
+#: modules/Page/html_client/mod_page_password-reset.html.twig:26
+msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
+msgstr "أدخل بريدك الإلكتروني لإعادة تعيين كلمة المرور. سوف تتلقى كلمة مرور جديدة بعد تأكيد إعادة تعيين الرابط."
+
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:3
-#: modules/Page/html_client/mod_page_privacy-policy.html.twig:17
+#: modules/Page/html_client/mod_page_privacy-policy.html.twig:19
 msgid "Privacy Policy"
 msgstr "سياسة الخصوصية"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:5
-#: modules/Page/html_client/mod_page_signup.html.twig:202
-msgid "Sign up"
-msgstr "إنشاء حساب"
+#: modules/Page/html_client/mod_page_privacy-policy.html.twig:9
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:13
+msgid "Privacy"
+msgstr "الخصوصية"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:26
-msgid "Account has been created"
-msgstr "تم إنشاء الحساب."
+#: modules/Page/html_client/mod_page_signup.html.twig:22
+msgid "Create a new account"
+msgstr ""
 
-#: modules/Page/html_client/mod_page_signup.html.twig:26
-msgid "Please check your mailbox and confirm email address"
-msgstr "الرجاء التحقق من صندوق البريد الخاص بك وتأكيد عنوان البريد الإلكتروني"
+#: modules/Page/html_client/mod_page_signup.html.twig:66
+msgid "Male"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:67
+msgid "Female"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:68
+msgid "Non-binary"
+msgstr ""
+
+#: modules/Page/html_client/mod_page_signup.html.twig:69
+msgid "Other"
+msgstr ""
 
 #: modules/Page/html_client/mod_page_tos.html.twig:3
-#: modules/Page/html_client/mod_page_tos.html.twig:16
+#: modules/Page/html_client/mod_page_tos.html.twig:19
 msgid "Terms and Conditions"
 msgstr "الشروط والاحكام"
+
+#: modules/Page/html_client/mod_page_tos.html.twig:9
+msgid "Terms"
+msgstr ""
 
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:5
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:21
@@ -6923,6 +6977,7 @@ msgstr "تعيين الدعم المدفوع لمكاتب المساعدة"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:70
 #: modules/Support/html_admin/mod_support_tickets.html.twig:210
 #: modules/Support/html_admin/mod_support_tickets.html.twig:313
+#: modules/Support/html_client/mod_support_tickets.html.twig:85
 msgid "Helpdesk"
 msgstr "مركز المساعدة"
 
@@ -7340,7 +7395,7 @@ msgid "Add new field"
 msgstr "إضافة حقل جديد"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:26
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:19
 msgid "Reset API key"
 msgstr "اعادة تعيين مفتاح API"
 
@@ -7356,9 +7411,13 @@ msgstr "تغيير خيارات إنشاء مفاتيح API لن يؤدي تلق
 msgid "API key updated"
 msgstr "تم تحديث مفتاح API"
 
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:9
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:7
 msgid "API key details"
 msgstr "تفاصيل مفتاح API"
+
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
+msgid "API key"
+msgstr "مفتاح API"
 
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:2
 msgid "Stock control settings"
@@ -7421,7 +7480,7 @@ msgstr "مسجل نطاق جديد"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:42
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:289
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:12
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:15
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Nameservers"
@@ -7444,7 +7503,7 @@ msgid "Registration"
 msgstr "Registration"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:60
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:14
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:19
 msgid "Transfer"
 msgstr "نقل"
 
@@ -7500,7 +7559,6 @@ msgstr "سعر التجديد"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:137
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:55
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:76
 msgid "Transfer price"
 msgstr "سعر النقل"
 
@@ -7576,8 +7634,8 @@ msgstr "تم تحديث قائمة الأسماء"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:296
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:18
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:114
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:71
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:39
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:82
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:50
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:117
@@ -7587,8 +7645,8 @@ msgstr "نيم سيرفر 1 ( NameServer )"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:302
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:22
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:120
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:77
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:42
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:87
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:54
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
@@ -7598,8 +7656,8 @@ msgstr "نيم سيرفر 2 ( NameServer )"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:308
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:26
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:126
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:83
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:94
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:58
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
@@ -7609,8 +7667,8 @@ msgstr "نيم سيرفر 3 ( NameServer )"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:314
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:132
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:89
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:48
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:99
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
@@ -7622,17 +7680,16 @@ msgid "Update nameservers"
 msgstr "تحديث اسماء السيرفرات"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:2
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:19
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:26
 msgid "Domain details"
 msgstr "تفاصيل النطاق"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:8
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:23
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:16
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:172
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:16
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:10
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:22
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:15
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:30
 msgid "Domain"
 msgstr "النطاق"
 
@@ -7653,7 +7710,6 @@ msgid "Registration/Renewal years"
 msgstr "سنوات التسجيل/التجديد"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:66
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:32
 msgid "Expires at"
 msgstr "تنتهي في"
 
@@ -7662,12 +7718,12 @@ msgid "Get EPP"
 msgstr "Get EPP"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:85
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:44
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:52
 msgid "Unlock"
 msgstr "فتح القفل"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:91
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:45
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:56
 msgid "Lock"
 msgstr "قفل"
 
@@ -7692,7 +7748,7 @@ msgid "Transfer code (EPP)"
 msgstr "رمز التحويل (EPP)"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:164
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:106
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:114
 msgid "Update domain contact details"
 msgstr "تحديث تفاصيل جهة الاتصال بالمجال"
 
@@ -7701,7 +7757,7 @@ msgid "Domain contact details updated"
 msgstr "تم تحديث تفاصيل جهة الاتصال بالمجال"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:234
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:190
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:187
 msgid "Phone number"
 msgstr "رقم الجوال"
 
@@ -7728,6 +7784,10 @@ msgstr "رمز نقل المجال هو: "
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:4
 msgid "Domain action"
 msgstr "إجراء النطاق"
+
+#: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
+msgid "Register"
+msgstr "التسجيل"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:12
 msgid " Transfer"
@@ -7763,7 +7823,6 @@ msgstr "رمز نقل المجال هو"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_registrar.html.twig:19
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:19
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:7
 msgid "Domain management"
 msgstr "إدارة النطاق"
 
@@ -7787,63 +7846,63 @@ msgstr "إدارة النطاق على أعلى مستوى"
 msgid "Top level domain settings updated."
 msgstr "تم تحديث إعدادات النطاق في أعلى مستوى."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:10
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:11
 msgid "Protection"
 msgstr "الحماية"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:11
-msgid "Privacy"
-msgstr "الخصوصية"
-
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:13
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:17
 msgid "Whois"
 msgstr "Whois"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:40
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:33
+msgid "Expires on"
+msgstr ""
+
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:47
 msgid "Domain Protection"
 msgstr "حماية النطاق"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:41
-msgid "Domain locking is a security enhancement to prevent unauthorized transfers of your domain to another registrar or web host by \"locking\" your domain name servers."
-msgstr "قفل النطاق هو تعزيز أمني لمنع عمليات النقل غير المصرح بها للنطاق الخاص بك إلى مسجل آخر أو مضيف ويب عن طريق \"قفل\" خوادم اسم النطاق الخاص بك."
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:48
+msgid "Domain locking is a security feature which acts to prevent your domain name from being transferred without first unlocking it. When this is enabled, a domain cannot be transferred even with the transfer code."
+msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:51
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:63
 msgid "Domain Privacy Settings"
 msgstr "إعدادات خصوصية النطاق"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:53
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:64
 msgid "If you would like to hide domain contact information which is shown on WHOIS you can enable privacy protection. Once domain privacy protection is enabled no one will know who registered this service. And once you decide to disable privacy protection, information that is listed above on \"Update Domain Contact Details\" section will be seen on domain WHOIS again."
 msgstr "إذا كنت ترغب في إخفاء معلومات الاتصال بالمجال التي تظهر على WHOIS يمكنك تمكين حماية الخصوصية. بمجرد تمكين حماية خصوصية المجال لن يعرف أحد من قام بتسجيل هذه الخدمة. وبمجرد أن تقرر تعطيل حماية الخصوصية، سيتم عرض المعلومات المدرجة أعلاه في قسم \"تحديث تفاصيل جهة الاتصال\" على الموقع WHOIS مرة أخرى."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:56
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:66
 msgid "Disable Privacy protection"
 msgstr "تعطيل حماية الخصوصية"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:57
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:67
 msgid "Enable Privacy protection"
 msgstr "تمكين حماية الخصوصية"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:64
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:73
 msgid "Update Nameservers"
 msgstr "تحديث اسماء السيرفرات"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:66
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:74
 msgid "If you would like to host this domain with another company you can update nameservers."
 msgstr "إذا كنت ترغب في استضافة هذا النطاق مع شركة أخرى يمكنك تحديث اسماء النطاقات ."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:108
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:115
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
 msgstr "سيتم عرض تفاصيل الاتصال بالنطاقات بمجرد أن يقوم شخص ما بالتحقق من إخراج WHOIS (وهو عام) من خدمتك. سيؤدي هذا إلى تحديث جهات الاتصال الفني والفواتير والمدير لهذه الخدمة. يمكنك تمكين حماية خصوصية المجال إذا كنت ترغب في إخفاء معلومات WHOIS العامة الخاصة بك."
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:209
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:200
 msgid "Domain Secret"
 msgstr "سرية النطاق"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:210
-msgid "All domain names (except a .EU, .UK domain name) have a Domain (Transfer) Secret Key/Authorization Code (EPP Code) associated with them. This would be required if you want to transfer service."
-msgstr "جميع أسماء النطاقات (باستثناء اسم نطاق .EU و .UK اسم النطاق) لها نطاق (نقل) مفتاح/رمز ترخيص سري (EPP Code) مرتبط بها. هذا مطلوب إذا كنت ترغب في نقل الخدمة."
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:201
+msgid "Most domain names (except a few top-level domains like .EU and .UK) have a Domain Secret Key/Authorization Code (EPP Code) associated with them. This code is typically required when transferring the domain to a new registrar."
+msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:213
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:203
 msgid "Get EPP code"
 msgstr "Get EPP code"
 
@@ -7851,34 +7910,37 @@ msgstr "Get EPP code"
 msgid "Register a new domain"
 msgstr "تسجيل نطاق جديد"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:20
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:23
 msgid "Enter new domain name to register"
 msgstr "أدخل اسم نطاق جديد للتسجيل"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:27
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:70
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:43
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:31
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:85
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:56
 msgid "Check"
 msgstr "تحقق"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:36
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:44
 msgid "I want to use my nameservers"
 msgstr "استخدام اسماء سيرفرات مخصصة"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:73
 msgid "Transfer a new domain"
 msgstr "نقل نطاق جديد"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:64
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:78
 msgid "Enter your domain name to transfer"
 msgstr "أدخل اسم نطاق جديد للتسجيل"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:77
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
+msgid "Transfer price is"
+msgstr ""
+
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:91
 msgid "Enter domain transfer code"
 msgstr "أدخل رمز نقل النطاق"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:170
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:119
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:189
 msgid " Year/s @ "
 msgstr " سنة/سنوات @ "
 
@@ -7937,8 +7999,8 @@ msgstr "تحميل ملف جديد لهذا الطلب"
 msgid "Use this function to update existing order file. Client will be able to download new file from client area"
 msgstr "استخدم هذه الوظيفة لتحديث ملف الطلب الحالي. سيكون العميل قادرا على تنزيل ملف جديد من منطقة العميل"
 
-#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:6
-#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:9
+#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:4
+#: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:7
 msgid "Download"
 msgstr "تحميل"
 
@@ -7956,7 +8018,7 @@ msgstr "الخادم"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:14
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:26
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:49
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:57
 msgid "Hosting plan"
 msgstr "خطة الاستضافة"
 
@@ -8034,14 +8096,14 @@ msgstr "إسم فريد لتحديد خطة الاستضافة هذه"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:36
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:66
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:58
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:67
 msgid "Disk quota"
 msgstr "سعة القرص"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:99
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:62
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:54
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:62
 msgid "Bandwidth"
 msgstr "الباندويث"
 
@@ -8202,7 +8264,7 @@ msgid "Server Name"
 msgstr "اسم السيرفر"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:30
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:29
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:37
 msgid "Server IP"
 msgstr "IP السيرفر"
 
@@ -8213,14 +8275,14 @@ msgstr "حساب IP"
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:38
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:157
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:26
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:11
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:39
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:132
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:18
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:47
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:141
 msgid "Username"
 msgstr "إسم المستخدم"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:63
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:55
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:63
 msgid "per month"
 msgstr "في الشهر"
 
@@ -8229,7 +8291,7 @@ msgid "Jump to control panel"
 msgstr "الانتقال إلى لوحة التحكم"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:85
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:71
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:79
 msgid "Reseller control panel"
 msgstr "لوحة تحكم الموزع"
 
@@ -8266,7 +8328,7 @@ msgid "Account password changed"
 msgstr "تم تغيير كلمة مرور الحساب"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:127
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:88
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:97
 msgid "Password Confirm"
 msgstr "تأكيد كلمة المرور"
 
@@ -8279,8 +8341,8 @@ msgid "Account IP changed"
 msgstr "تم تغيير IP الحساب"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:153
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:127
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:141
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:136
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:150
 msgid "Change username"
 msgstr "تغيير اسم المستخدم"
 
@@ -8289,8 +8351,8 @@ msgid "Account username changed"
 msgstr "تم تغيير اسم المستخدم"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:168
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:105
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:119
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:114
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:128
 msgid "Change domain"
 msgstr "تغيير النطاق"
 
@@ -8347,46 +8409,57 @@ msgstr "بادئة للمستخدمين الذين تم إنشاؤهم (خاصة
 msgid "Update server"
 msgstr "تحديث السيرفر"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:6
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:4
 msgid "Manage hosting account"
 msgstr "إدارة حساب الاستضافة"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:34
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:42
 msgid "Server Hostname"
 msgstr "اسم مضيف السيرفر"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:67
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:75
 msgid "Manage domain"
 msgstr "إدارة النطاق"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:69
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:77
 msgid "Jump to cPanel"
 msgstr "الانتقال إلى لوحة التحكم"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:77
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:86
 msgid "Change your FTP/cPanel/SSH password."
 msgstr "تغيير كلمة المرور FTP/cPanel/SSH الخاصة بك."
 
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:110
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:119
 msgid "New domain"
 msgstr "نطاق جديد"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:10
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:7
 msgid "Domain configuration"
 msgstr "تكوين النطاق"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:12
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:13
 msgid "I will use my existing domain and update nameservers"
 msgstr "سوف أستخدم نطاقي الحالي و تحديث سيرفرات الأسماء"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:16
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:20
 msgid "I want to register a new domain"
 msgstr "أريد تسجيل نطاق جديد"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:25
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:36
-msgid "mydomain"
-msgstr "نطاقي"
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:31
+msgid "Your existing domain"
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:47
+msgid "Your new domain"
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:129
+msgid " year @ "
+msgstr ""
+
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:131
+msgid " years @ "
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:3
 msgid "License settings"
@@ -8446,7 +8519,7 @@ msgid "for more information."
 msgstr "للمزيد من المعلومات."
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:10
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:13
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:11
 msgid "Key"
 msgstr "المفتاح"
 
@@ -8498,51 +8571,51 @@ msgstr "التحقق من صحة الإصدار"
 msgid "Valid versions (one per line)"
 msgstr "إصدارات صالحة (واحد لكل سطر)"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:9
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:7
 msgid "License details"
 msgstr "تفاصيل الرخصة"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:22
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:20
 msgid "Valid IPs"
 msgstr "Valid IPs"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:28
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:26
 msgid "All ips"
 msgstr "جميع الips"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:37
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:35
 msgid "Valid Domains"
 msgstr "النطاقات الصالحة"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:43
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:41
 msgid "All hosts"
 msgstr "جميع المضيفين"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:52
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:50
 msgid "Valid Versions"
 msgstr "إصدارات صالحة"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:58
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:56
 msgid "All versions"
 msgstr "كافة الاصدارات"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:67
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:65
 msgid "Valid Install paths"
 msgstr "مسارات تثبيت صالحة"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:73
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:71
 msgid "All paths"
 msgstr "جميع المسارات"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:82
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:80
 msgid "Reset license"
 msgstr "إعادة تعيين الترخيص"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:83
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:81
 msgid "You can reset your license parameters if you have changed your server"
 msgstr "يمكنك إعادة تعيين معلمات الترخيص الخاصة بك إذا قمت بتغيير الخادم الخاص بك"
 
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:98
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:94
 msgid "License was reset"
 msgstr "تم إعادة تعيين الترخيص"
 
@@ -8684,19 +8757,6 @@ msgstr "إنشاء مجموعة"
 msgid "Create main administrator account"
 msgstr "إنشاء حساب مسؤول رئيسي"
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:23
-#: modules/Staff/html_admin/mod_staff_login.html.twig:48
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
-msgid "Enter your email address"
-msgstr "أدخل عنوان البريد الإلكتروني الخاص بك"
-
-#: modules/Staff/html_admin/mod_staff_login.html.twig:29
-#: modules/Staff/html_admin/mod_staff_login.html.twig:66
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
-msgid "Enter your password"
-msgstr "قم بإدخال كلمة السر"
-
 #: modules/Staff/html_admin/mod_staff_login.html.twig:33
 msgid "Create administrator account"
 msgstr "إنشاء حساب مسؤول رئيسي"
@@ -8708,10 +8768,6 @@ msgstr "سجل الدخول الى حسابك"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:57
 msgid "Forgot your password?"
 msgstr "نسيت كلمة المرور؟"
-
-#: modules/Staff/html_admin/mod_staff_login.html.twig:70
-msgid "Sign in"
-msgstr "تسجيل الدخول"
 
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:5
 msgid "Staff members login history"
@@ -8786,13 +8842,6 @@ msgstr "تم تغيير كلمة مرور الموظف"
 msgid "Repeat same password"
 msgstr "كرر نفس كلمة المرور"
 
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:3
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:16
-msgid "Reset your password"
-msgstr "إعادة تعيين كلمة المرور الخاصة بك"
-
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:17
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
 msgstr "أدخل عنوان بريدك الإلكتروني. سوف تتلقى رابط تأكيد إذا كان حسابك موجودا."
@@ -8833,6 +8882,10 @@ msgstr "جرافاتار ( Gravatar )"
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:31
 msgid "Profile updated"
 msgstr "تم تحديث الملف الشخصي"
+
+#: modules/Staff/html_admin/mod_staff_profile.html.twig:60
+msgid "Password Changed"
+msgstr "غُيّرت كلمة المرور."
 
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:90
 msgid "External application can control every aspect of FOSSBilling using this API key."
@@ -8949,17 +9002,17 @@ msgstr "تم انشاء القسم"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:31
 #: modules/Support/html_admin/mod_support_ticket.html.twig:36
+#: modules/Support/html_client/mod_support_ticket.html.twig:24
 msgid "Ticket"
 msgstr "تذكرة"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:44
 #: modules/Support/html_admin/mod_support_ticket.html.twig:54
-#: modules/Support/html_client/mod_support_ticket.html.twig:30
 msgid "Ticket ID"
 msgstr "رقم التذكرة"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:52
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:35
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:27
 msgid "Author"
 msgstr "المالك"
 
@@ -8995,15 +9048,16 @@ msgstr "إظهار/إخفاء الرسائل"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:194
 #: modules/Support/html_admin/mod_support_ticket.html.twig:316
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:106
-#: modules/Support/html_client/mod_support_ticket.html.twig:153
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:88
+#: modules/Support/html_client/mod_support_ticket.html.twig:139
+#: modules/Support/html_client/mod_support_ticket.html.twig:140
 msgid "Post"
 msgstr "نشر"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:204
 #: modules/Support/html_admin/mod_support_ticket.html.twig:326
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
-#: modules/Support/html_client/mod_support_ticket.html.twig:22
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:51
+#: modules/Support/html_client/mod_support_ticket.html.twig:32
 msgid "Close ticket"
 msgstr "إغلاق التذكرة"
 
@@ -9122,10 +9176,6 @@ msgstr ""
 msgid "Client ID"
 msgstr "معرف العميل"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:40
-msgid "Order ID"
-msgstr "معرف الطلب"
-
 #: modules/Support/html_admin/mod_support_tickets.html.twig:46
 msgid "Ticket Subject"
 msgstr ""
@@ -9175,101 +9225,89 @@ msgid "Create New Helpdesk"
 msgstr ""
 
 #: modules/Support/html_client/mod_support_contact_us.html.twig:5
-#: modules/Support/html_client/mod_support_contact_us.html.twig:8
-#: modules/Support/html_client/mod_support_contact_us.html.twig:17
+#: modules/Support/html_client/mod_support_contact_us.html.twig:9
+#: modules/Support/html_client/mod_support_contact_us.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:9
 msgid "Contact us"
 msgstr "اتصل بنا"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:19
-#: modules/Support/html_client/mod_support_ticket.html.twig:18
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:18
 msgid "Ticket information"
 msgstr "معلومات التذكرة"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
-#: modules/Support/html_client/mod_support_ticket.html.twig:47
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:44
+#: modules/Support/html_client/mod_support_ticket.html.twig:54
 msgid "Time opened"
 msgstr "وقت الفتح"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:111
-#: modules/Support/html_client/mod_support_ticket.html.twig:159
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:91
+#: modules/Support/html_client/mod_support_ticket.html.twig:128
 msgid "Ticket was closed and cannot be reopened."
 msgstr "تم إغلاق التذكرة ولا يمكن إعادة فتحها."
 
 #: modules/Support/html_client/mod_support_kb_article.html.twig:23
-msgid "Article Views"
+msgid "views"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:28
-#: modules/Support/html_client/mod_support_kb_category.html.twig:27
-msgid "Back to List"
+#: modules/Support/html_client/mod_support_kb_article.html.twig:32
+msgid "Back to all knowledge base articles"
 msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:42
-msgid "Similar Articles"
-msgstr ""
+#: modules/Support/html_client/mod_support_kb_article.html.twig:34
+msgid "Similar articles"
+msgstr "مقالات مماثلة"
 
-#: modules/Support/html_client/mod_support_kb_article.html.twig:57
-msgid "Knowledge Base Categories"
-msgstr ""
-
-#: modules/Support/html_client/mod_support_kb_index.html.twig:6
-msgid "Knowledge base"
-msgstr "قاعدة المعرفة"
-
-#: modules/Support/html_client/mod_support_kb_index.html.twig:21
+#: modules/Support/html_client/mod_support_kb_index.html.twig:32
 msgid "Please try to read related topics in knowledge base before contacting support."
 msgstr "يرجى محاولة قراءة المواضيع ذات الصلة في قاعدة المعارف قبل الاتصال بالدعم."
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:26
+#: modules/Support/html_client/mod_support_kb_index.html.twig:38
 msgid "What are you looking for?"
 msgstr "ما الذي تبحث عنه؟"
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:27
-#: themes/admin_default/html/partial_search.html.twig:15
-msgid "Search"
-msgstr "البحث"
+#: modules/Support/html_client/mod_support_kb_index.html.twig:63
+msgid "No results found for"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:53
-msgid "Try using other keyword. No matches found for keyword:"
-msgstr "حاول استخدام الكلمة المفتاحية الأخرى. لا توجد مطابقات للكلمة المفتاحية:"
-
-#: modules/Support/html_client/mod_support_ticket.html.twig:9
-#: modules/Support/html_client/mod_support_tickets.html.twig:5
-#: modules/Support/html_client/mod_support_tickets.html.twig:6
-#: modules/Support/html_client/mod_support_tickets.html.twig:9
-#: modules/Support/html_client/mod_support_tickets.html.twig:16
-msgid "Support tickets"
-msgstr "تذاكر الدعم"
-
-#: modules/Support/html_client/mod_support_ticket.html.twig:53
+#: modules/Support/html_client/mod_support_ticket.html.twig:60
 msgid "Related to"
 msgstr "المتعلقة بـ"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:54
+#: modules/Support/html_client/mod_support_ticket.html.twig:62
 msgid "Service #"
 msgstr "خدمة #"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:67
-msgid "Last tickets"
-msgstr "التذاكر الأخيرة"
+#: modules/Support/html_client/mod_support_ticket.html.twig:86
+msgid "Operator"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:71
-msgid "Back to tickets list"
-msgstr "العودة إلى قائمة التذاكر"
+#: modules/Support/html_client/mod_support_ticket.html.twig:90
+msgid "You"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:83
-#: modules/Support/html_client/mod_support_tickets.html.twig:32
-msgid "Submitted"
-msgstr "تم التسليم"
+#: modules/Support/html_client/mod_support_ticket.html.twig:101
+msgid "Quote reply"
+msgstr ""
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:17
+#: modules/Support/html_client/mod_support_ticket.html.twig:130
+msgid "This ticket was closed, but you can still reopen it by replying."
+msgstr ""
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:19
 msgid "Need an answer? We are here to help!"
 msgstr "هل تحتاج إلى إجابة؟ نحن هنا للمساعدة!"
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:20
-msgid "Submit new ticket"
-msgstr "إرسال تذكرة جديدة"
+#: modules/Support/html_client/mod_support_tickets.html.twig:36
+msgid "Submitted"
+msgstr "تم التسليم"
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:63
+msgid "No support tickets"
+msgstr ""
+
+#: modules/Support/html_client/mod_support_tickets.html.twig:76
+msgid "Open new ticket"
+msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:5
 #: modules/System/html_admin/mod_system_settings.html.twig:21
@@ -9287,10 +9325,6 @@ msgstr "الدول"
 #: modules/System/html_admin/mod_system_settings.html.twig:40
 msgid "Cache"
 msgstr "ذاكرة التخزين المؤقت"
-
-#: modules/System/html_admin/mod_system_settings.html.twig:43
-msgid "About"
-msgstr "حول"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:46
 #: modules/System/html_admin/mod_system_settings.html.twig:539
@@ -9780,77 +9814,45 @@ msgstr "شهرياً"
 msgid "Enter search text..."
 msgstr "أدخل نص البحث"
 
+#: themes/admin_default/html/partial_search.html.twig:15
+msgid "Search"
+msgstr "البحث"
+
 #: themes/admin_default/html/partial_search.html.twig:20
 msgid "Search settings"
 msgstr "إعدادات البحث"
 
-#: themes/huraga/html/error.html.twig:13
-msgid "Whoops! This is not the web page you are looking for."
-msgstr "عفوا! هذه ليست الصفحة التي تريدها."
+#: themes/huraga/html/error.html.twig:23
+msgid "Whoops! Unable to find the page you are looking for"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:105
-msgid "Order services"
-msgstr "طلب الخدمة"
+#: themes/huraga/html/error.html.twig:26
+msgid "Go back to home"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:121
+#: themes/huraga/html/layout_default.html.twig:122
 msgid "Sign out"
 msgstr "تسجيل الخروج"
 
-#: themes/huraga/html/layout_default.html.twig:150
-msgid "User profile"
-msgstr "ملف المستخدم"
-
-#: themes/huraga/html/layout_default.html.twig:165
-msgid "profile"
-msgstr "الملف الشخصي"
-
-#: themes/huraga/html/layout_default.html.twig:166
-msgid "sign out"
-msgstr "تسجيل الخروج"
-
-#: themes/huraga/html/layout_default.html.twig:175
-msgid "Account balance"
-msgstr "رصيد الحساب"
-
-#: themes/huraga/html/layout_default.html.twig:225
-msgid "You are logged out"
-msgstr "لقد سجلت خروجك."
-
-#: themes/huraga/html/layout_default.html.twig:242
-msgid "Products and services"
-msgstr "المنتجات و الخدمات"
-
-#: themes/huraga/html/layout_default.html.twig:260
-msgid "Latest news and announcements"
-msgstr "أحدث الأخبار والإعلانات"
-
-#: themes/huraga/html/layout_default.html.twig:277
-msgid "Browse our KB for Answers and FAQ"
-msgstr ""
-
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Payment Information"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:301
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Account Number"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:354
-msgid "Powered by the FOSSBilling Community"
-msgstr "مدعوم من مجتمع FOSSBilling"
+#: themes/huraga/html/layout_default.html.twig:227
+msgid "FOSSBilling Community"
+msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:359
+#: themes/huraga/html/layout_default.html.twig:239
 msgid "Top"
 msgstr "أعلى"
 
-#: themes/huraga/html/partial_menu.html.twig:23
-msgid "Services"
-msgstr "الخدمات"
-
-#: themes/huraga/html/partial_menu.html.twig:41
-msgid "Payment History"
-msgstr ""
+#: themes/huraga/html/partial_menu.html.twig:87
+msgid "Account balance"
+msgstr "رصيد الحساب"
 
 #: themes/huraga/html/partial_pricing.html.twig:8
 #: themes/huraga/html/partial_pricing.html.twig:20
