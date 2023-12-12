@@ -45,7 +45,7 @@ return [
     'ru_RU' => 'Русский',
     'sk_SK' => 'Slovenčina',
     'sl_SI' => 'Slovenščina',
-    'sr_RS' => 'Српски',
+    'sr_RS' => 'Srpski',
     'sv_SE' => 'Svenska',
     'th_TH' => 'ภาษาไทย',
     'tr_TR' => 'Türkçe',

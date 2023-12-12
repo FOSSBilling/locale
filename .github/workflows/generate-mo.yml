@@ -29,6 +29,17 @@ jobs:
       - name: Add .mo files to git
         run: git add .
 
+      - name: (Workaround) Rename the Serbian Folder Name
+        run: |
+          if [ -d ./srp ]; then
+            # Ensure the correctly named folder is removed
+            if [ -d ./sr_RS ]; then
+              rm -rf ./sr_RS
+            fi
+            # Now rename the folder within git
+            git mv ./srp ./sr_RS
+          fi
+
       - name: Commit and push .mo files
         uses: actions-js/push@v1.4
         with:
