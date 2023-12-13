@@ -1,0 +1,26 @@
+name: Delete l10n_main Branch
+
+# Crowdin doesn't do a good job of auto-cleaning it's branches, so we will delete it via an hourly cronjob
+on:
+  schedule:
+    - cron: '0 * * * *'  # Run every hour
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Delete Branch
+      run: |
+        git fetch origin
+        exists=$(git ls-remote --heads origin l10n_main)
+        if [[ -z ${exists} ]]; then
+          echo "Branch does not exist"
+          exit 0
+        else
+          echo "Branch does exist"
+          git push origin --delete l10n_main
+        fi
