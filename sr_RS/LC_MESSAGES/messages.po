@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2023-11-28 16:56-0800\n"
-"PO-Revision-Date: 2023-12-12 22:08\n"
+"PO-Revision-Date: 2023-12-18 22:41\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Serbian\n"
 "MIME-Version: 1.0\n"
@@ -428,7 +428,7 @@ msgstr "Nepoznati period je izabran za cenu"
 
 #: library/Payment/Adapter/ClientBalance.php:59
 msgid "Not enough in balance"
-msgstr "Nedovoljan saldo"
+msgstr "Nemate dovoljno kredita na Vašem nalogu"
 
 #: library/Payment/Adapter/ClientBalance.php:64
 #: library/Payment/Adapter/ClientBalance.php:93
@@ -1292,7 +1292,7 @@ msgstr "Morate imati najmanje jednu aktivnu porudžbinu da biste mogli da dodate
 
 #: modules/Invoice/Service.php:1090
 msgid "Amount must be at least :min_amount"
-msgstr ""
+msgstr "Iznos mora biti najmanje :min_amount"
 
 #: modules/Invoice/Service.php:1094
 msgid "Amount cannot exceed :max_amount"
@@ -1381,7 +1381,7 @@ msgstr "Broj fakture:id nije pronađen"
 
 #: modules/Invoice/ServiceTransaction.php:500
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
-msgstr ""
+msgstr "Obaveštenje o trenutnom plaćanju (IPN) nije prošao prolaz :id validaciju"
 
 #: modules/Invoice/ServiceTransaction.php:511
 msgid "Payment gateway :id method getTransaction should return Payment_Transaction object"
@@ -1511,7 +1511,7 @@ msgstr "Parametar ID grupe nedostaje za porudžbinu dodatnog proizvoda"
 
 #: modules/Order/Service.php:526
 msgid "Parent order :group_id was not found"
-msgstr ""
+msgstr "Roditeljski nalog :group_id nije pronađen"
 
 #: modules/Order/Service.php:676
 msgid "Only pending setup or failed orders can be activated"
@@ -1680,7 +1680,7 @@ msgstr "Config mora biti niz"
 #: modules/Servicelicense/Api/Admin.php:85
 #: modules/Servicelicense/Api/Client.php:51
 msgid "Order is not activated"
-msgstr ""
+msgstr "Narudžbina nije aktivirana"
 
 #: modules/Servicecustom/Service.php:265
 msgid "Plugin class file :file was not found"
@@ -1722,11 +1722,11 @@ msgstr "Registrator nije dostupan za instalaciju."
 
 #: modules/Servicedomain/Api/Admin.php:360
 msgid "Registrar is used by :count: domains"
-msgstr ""
+msgstr "Registrator koristi :count: domene"
 
 #: modules/Servicedomain/Api/Admin.php:446
 msgid "Domain order is not activated"
-msgstr ""
+msgstr "Narudžbina domena nije aktivirana"
 
 #: modules/Servicedomain/Api/Guest.php:90
 msgid "Domain :domain is invalid"
@@ -1849,7 +1849,7 @@ msgstr "Hosting server koristi se od :count: hosting usluge"
 
 #: modules/Servicehosting/Api/Admin.php:347
 msgid "Hosting plan is used by :count: service hostings"
-msgstr ""
+msgstr "Hosting plan koristi :count: uslugu hostinga"
 
 #: modules/Servicehosting/Api/Guest.php:36
 msgid "Product type"
@@ -3928,7 +3928,7 @@ msgstr "Genirišite novi ključ"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:216
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and can not be changed."
-msgstr "Vaša valuta profila je definirana nakon Vaše prve narudžbe. Jednom kada je valuta podešena, sva Vaša profile accounting će se voditi u toj valuti i ne može se izmeniti."
+msgstr "Valuta vašeg profila je definisana nakon vaše prve porudžbine. Jednom kada je vaša valuta podešena, svim računima vašeg profila će se upravljati u toj valuti i ne može se menjati."
 
 #: modules/Client/html_client/mod_client_profile.html.twig:218
 msgid "Your profile currency is"
@@ -4526,7 +4526,7 @@ msgstr "Zapišite poslate emailove u bazu podataka"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:279
 msgid "Email transport"
-msgstr ""
+msgstr "E-mail transport"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:283
 msgid "SendMail"
@@ -4645,7 +4645,7 @@ msgstr "Lista promenljivih korišćenih u ovom emailu"
 
 #: modules/Email/html_admin/mod_email_template.html.twig:137
 msgid "These values will change when real email is sent. You can pass these variables to admin or guest API to get additional information from database."
-msgstr "Ove vrednosti ć́e se promeniti kada se pošalje pravi email. Možete proslediti ove promenljive API-ju administratora ili gosta da biste dobili dodatne informacije iz baze podataka."
+msgstr "Ove vrednosti će se promeniti kada se pošalje pravi e-mail. Možete proslediti ove promenljive API-ju administratora ili gosta da biste dobili dodatne informacije iz baze podataka."
 
 #: modules/Email/html_admin/mod_email_template.html.twig:143
 msgid "Variable"
@@ -4698,7 +4698,7 @@ msgstr "Saznajte više o ekstenzijama"
 
 #: modules/Extension/html_admin/mod_extension_index.html.twig:22
 msgid "Hooks"
-msgstr ""
+msgstr "Hooks"
 
 #: modules/Extension/html_admin/mod_extension_index.html.twig:33
 msgid "Activate or deactivate extensions"
@@ -4728,7 +4728,7 @@ msgstr "FOSSBilling daje programerima sve moguć́nosti za prilagođavanje, inte
 
 #: modules/Extension/html_admin/mod_extension_index.html.twig:171
 msgid "Hook"
-msgstr ""
+msgstr "Hook"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:3
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:11
@@ -5164,7 +5164,7 @@ msgstr "Za programere. Pročitati"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:103
 msgid "to learn how to create your own payment gateway and share it with community"
-msgstr ""
+msgstr "da naučite kako da napravite sopstveni platni prolaz i podelite ga sa zajednicom"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:112
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:122
@@ -5656,7 +5656,7 @@ msgstr "Transakcioni detalji"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:49
 msgid "If you are sure that this transaction is valid you can update transaction details in &quot;Manage&quot; tab and try processing transaction again"
-msgstr ""
+msgstr "Ako ste sigurni da je ova transakcija važeća, možete ažurirati detalje transakcije u &quot;Upravljaj&quot; karticu i pokušajte ponovo da obradite transakciju"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:59
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:29
@@ -5691,11 +5691,11 @@ msgstr "Proces"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:131
 msgid "Transaction updated"
-msgstr ""
+msgstr "Transakcija je ažurirana"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:133
 msgid "Transaction payment information"
-msgstr ""
+msgstr "Informacije o plaćanim transakcija"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:135
 msgid "Invoice ID"
@@ -5703,7 +5703,7 @@ msgstr "Broj računa"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:153
 msgid "Transaction processing information"
-msgstr ""
+msgstr "Informacije o obradi transakcija"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:161
 msgid "Validate IPN"
@@ -5711,7 +5711,7 @@ msgstr "Potvrdite IPN"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:174
 msgid "Transaction information on payment gateway"
-msgstr ""
+msgstr "Informacije o transakciji na prolazu za plaćanje"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:176
 msgid "Transaction type"
@@ -5731,7 +5731,7 @@ msgstr "Napomena o ovoj transakciji"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:204
 msgid "Transaction note updated."
-msgstr ""
+msgstr "Obaveštenje o transakciji je ažurirano."
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:221
 msgid "GET"
@@ -5763,11 +5763,11 @@ msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:13
 msgid "Filter transactions"
-msgstr ""
+msgstr "Filtrirajte transakcije"
 
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:23
 msgid "ID on payment gateway"
-msgstr ""
+msgstr "ID na prolazu za plaćanje"
 
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:100
 msgid "Processed"
@@ -5781,7 +5781,7 @@ msgstr "Greška"
 
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:186
 msgid "n/a"
-msgstr ""
+msgstr "n/a"
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:3
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
@@ -5930,7 +5930,7 @@ msgstr "Hvala vam"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
 msgid "Your payment is being processed right now. It can take up 5 minutes to complete."
-msgstr ""
+msgstr "Vaša uplata se trenutno obrađuje. Može potrajati do 5 minuta da se završi."
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
 msgid "Payment for invoice received"
@@ -5938,7 +5938,7 @@ msgstr "Primljena uplata za račun"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
 msgid "You will be automatically redirected to invoice page after 5 minutes."
-msgstr ""
+msgstr "Bićete automatski preusmereni na stranicu sa računom nakon 5 minuta."
 
 #: modules/Invoice/pdf_template/default-pdf.twig:32
 #: modules/Invoice/pdf_template/default-pdf.twig:44
@@ -5983,7 +5983,7 @@ msgstr "Naslov poruke"
 
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:113
 msgid "Mass Mail Settings"
-msgstr ""
+msgstr "Podešavanja masovnog e-maila"
 
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:123
 msgid "Client to send test email"
@@ -5999,7 +5999,7 @@ msgstr "Pošaljite E-mail Poruku"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:41
 msgid "From name"
-msgstr ""
+msgstr "Od ime"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:45
 msgid "From email"
@@ -6029,7 +6029,7 @@ msgstr "Primaoci"
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:144
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:158
 msgid "Click on the update and preview button"
-msgstr ""
+msgstr "Kliknite na ažuriranje i pregled na dugme"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:162
 msgid "Message recipients"
@@ -6037,7 +6037,7 @@ msgstr ""
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:178
 msgid "Update and preview"
-msgstr ""
+msgstr "Ažurirajte i pregledajte"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:179
 msgid "Send test message"
@@ -6586,31 +6586,31 @@ msgstr ""
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:49
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:77
 msgid "Configure how your popup window will look like"
-msgstr ""
+msgstr "Konfigurišite kako će izgledati vaš iskačuči popup prozor"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:54
 msgid "Theme color"
-msgstr ""
+msgstr "Boja teme"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:57
 msgid "Green"
-msgstr ""
+msgstr "Zelena"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:58
 msgid "Red"
-msgstr ""
+msgstr "Crvena"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:59
 msgid "Blue"
-msgstr ""
+msgstr "Plava"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:60
 msgid "Dark"
-msgstr ""
+msgstr "Crna"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:94
 msgid "Border radius"
-msgstr ""
+msgstr "Granični radijus"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:109
 msgid "Color"
@@ -6618,15 +6618,15 @@ msgstr "Boja"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:116
 msgid "Opacity"
-msgstr ""
+msgstr "Neprozirnost"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:128
 msgid "Loader (while content of popup is being loaded)"
-msgstr ""
+msgstr "Učitavanje (dok se sadržaj iskačućeg prozora učitava)"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:151
 msgid "Close (ESC key by default)"
-msgstr ""
+msgstr "Zatvori (podrazumevano ESC taster)"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:155
 msgid "Click on background closes popup"
@@ -6683,7 +6683,7 @@ msgstr "Kopirajte ovaj kod na svoju web lokaciju"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:270
 msgid "Try your popup"
-msgstr ""
+msgstr "Isprobajte svoj iskačući popup prozor"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:343
 msgid "Class name should start with dot (.) or hashtag (#) for ID"
@@ -6966,7 +6966,7 @@ msgstr "Postavi plaćenu podršku za helpdesk"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:313
 #: modules/Support/html_client/mod_support_tickets.html.twig:85
 msgid "Helpdesk"
-msgstr ""
+msgstr "Šalter za informacije"
 
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:29
 msgid "Edit product addon"
@@ -7120,7 +7120,7 @@ msgstr "Nije potrebna dodatna podešavanja za ovaj prozvod"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:223
 msgid "Choose which addons you would like to offer with"
-msgstr ""
+msgstr "Izaberite koje dodatke želite da ponudite sa"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:256
 msgid "Create new addon"
@@ -7132,11 +7132,11 @@ msgstr "Odaberite na koje usluge klijent može da se nadogradi"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:271
 msgid "Product Upgrades"
-msgstr ""
+msgstr "Nadogradnje Proizvoda"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:303
 msgid "Product Links"
-msgstr ""
+msgstr "Linkovi Proizvoda"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:305
 msgid "Order Page (via ID)"
@@ -7607,7 +7607,7 @@ msgstr ""
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:264
 msgid "Domain registrar installed"
-msgstr ""
+msgstr "Registar domena je instaliran"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:290
 msgid "Setup default nameservers that will be used for new domain registrations if client have not provided his own nameservers in order form"
@@ -7716,11 +7716,11 @@ msgstr "Zaključaj"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:97
 msgid "Disable privacy"
-msgstr ""
+msgstr "Onemogući privatnost"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:103
 msgid "Enable privacy"
-msgstr ""
+msgstr "Omogući privatnost"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:143
 msgid "Domain data"
@@ -7875,15 +7875,15 @@ msgstr "Ažurirajte name servere"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:74
 msgid "If you would like to host this domain with another company you can update nameservers."
-msgstr ""
+msgstr "Ako želite da hostujete ovaj domen kod druge firme, možete ažurirati name servere."
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:115
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
-msgstr ""
+msgstr "Kontakt podaci o domenu će biti prikazani kada neko proveri WHOIS izlaz (koji je javan) vaše usluge. Ovo će ažurirati tehničke kontakte, kontakte za račun i administratore za ovu uslugu. Možete omogućiti zaštitu privatnosti domena ako želite da sakrijete svoje javne WHOIS informacije."
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:200
 msgid "Domain Secret"
-msgstr ""
+msgstr "Tajni Domen"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:201
 msgid "Most domain names (except a few top-level domains like .EU and .UK) have a Domain Secret Key/Authorization Code (EPP Code) associated with them. This code is typically required when transferring the domain to a new registrar."
@@ -7937,7 +7937,7 @@ msgstr "Fajls"
 
 #: modules/Servicedownloadable/html_admin/mod_servicedownloadable_config.html.twig:9
 msgid "Keep Orders Updated"
-msgstr ""
+msgstr "Održavajte porudžbine ažuriranim"
 
 #: modules/Servicedownloadable/html_admin/mod_servicedownloadable_config.html.twig:23
 msgid "Save config"
@@ -7968,7 +7968,7 @@ msgstr "Informacije o fajlu"
 
 #: modules/Servicedownloadable/html_admin/mod_servicedownloadable_manage.html.twig:7
 msgid "Filename"
-msgstr ""
+msgstr "Naziv fajla"
 
 #: modules/Servicedownloadable/html_admin/mod_servicedownloadable_manage.html.twig:11
 msgid "Location"
@@ -7984,7 +7984,7 @@ msgstr ""
 
 #: modules/Servicedownloadable/html_admin/mod_servicedownloadable_manage.html.twig:23
 msgid "Use this function to update existing order file. Client will be able to download new file from client area"
-msgstr ""
+msgstr "Koristite ovu funkciju za ažuriranje postojeće datoteke porudžbine. Klijent će moći da preuzme novu datoteku sa klijentskog područja"
 
 #: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:4
 #: modules/Servicedownloadable/html_client/mod_servicedownloadable_manage.html.twig:7
@@ -8167,7 +8167,7 @@ msgstr "Jedinstveno ime za identifikaciju ovog servera"
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:147
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:37
 msgid "Hostname"
-msgstr ""
+msgstr "Hostname"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:149
 msgid "server1.yourserverdomain.com"
@@ -8344,7 +8344,7 @@ msgstr "Promenite domen"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:169
 msgid "Account domain changed"
-msgstr ""
+msgstr "Domen naloga je promenjen"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:2
 msgid "Import existing"
@@ -8401,7 +8401,7 @@ msgstr "Upravljajte hosting nalogom"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:42
 msgid "Server Hostname"
-msgstr ""
+msgstr "Server Hostname"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:75
 msgid "Manage domain"
@@ -8461,7 +8461,7 @@ msgstr "Podešavanja licence"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:4
 msgid "License settings updated"
-msgstr ""
+msgstr "Podešavanja licence su ažurirana"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:25
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:51
@@ -8474,19 +8474,19 @@ msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:51
 msgid "Validate Version"
-msgstr ""
+msgstr "Potvrdi Verziju"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:64
 msgid "Validate Path"
-msgstr ""
+msgstr "Potvrdi Putanju"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:81
 msgid "License plugins"
-msgstr ""
+msgstr "Licencni dodaci"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:82
 msgid "FOSSBilling gives you ability to provide your own license generation script. Follow the instructions bellow to install new license plugin"
-msgstr ""
+msgstr "FOSSBilling vam daje mogućnost da obezbedite sopstvenu skriptu za generisanje licence. Pratite uputstva u nastavku da biste instalirali novu licencu"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:84
 msgid "License plugin is PHP class \"License_PluginName\" with one method"
@@ -8567,27 +8567,27 @@ msgstr ""
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:7
 msgid "License details"
-msgstr ""
+msgstr "Detalji licence"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:20
 msgid "Valid IPs"
-msgstr ""
+msgstr "Validne IP adrese"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:26
 msgid "All ips"
-msgstr ""
+msgstr "Sve IP adrese"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:35
 msgid "Valid Domains"
-msgstr ""
+msgstr "Validni Domeni"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:41
 msgid "All hosts"
-msgstr ""
+msgstr "Svi hosts"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:50
 msgid "Valid Versions"
-msgstr ""
+msgstr "Validne Verzije"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:56
 msgid "All versions"
@@ -8595,11 +8595,11 @@ msgstr "Sve verzije"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:65
 msgid "Valid Install paths"
-msgstr ""
+msgstr "Važeće putanje za instalaciju"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:71
 msgid "All paths"
-msgstr ""
+msgstr "Sve putanje"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:80
 msgid "Reset license"
@@ -8611,25 +8611,25 @@ msgstr "Možete resetovati parametre licence ako ste promenili server"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:94
 msgid "License was reset"
-msgstr ""
+msgstr "Licenca je resetovana"
 
 #: modules/Servicemembership/html_admin/mod_servicemembership_config.html.twig:2
 msgid "Membership settings"
-msgstr ""
+msgstr "Podešavanja članstva"
 
 #: modules/Servicemembership/html_admin/mod_servicemembership_config.html.twig:3
 msgid "Membership service does not have any configuration options"
-msgstr ""
+msgstr "Usluga članstva nema nikakve opcije za konfiguraciju"
 
 #: modules/Servicemembership/html_admin/mod_servicemembership_manage.html.twig:2
 msgid "Membership details"
-msgstr ""
+msgstr "Detalji o članstvu"
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:5
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:21
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:28
 msgid "SpamChecker settings"
-msgstr ""
+msgstr "SpamChecker podešavanja"
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:38
 msgid "Enable IP blocking"
@@ -8941,7 +8941,7 @@ msgstr "Nova Kategorija"
 
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:24
 msgid "Helpdesk -"
-msgstr ""
+msgstr "Šalter za informacije -"
 
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:34
 msgid "Helpdesk name will be visible for clients when submitting a new ticket."
@@ -9076,7 +9076,7 @@ msgstr "Podešavanja podrške"
 
 #: modules/Support/html_admin/mod_support_settings.html.twig:32
 msgid "Helpdesks"
-msgstr ""
+msgstr "Šalter za informacije"
 
 #: modules/Support/html_admin/mod_support_settings.html.twig:39
 msgid "Configuration Updated"
@@ -9846,7 +9846,7 @@ msgstr "Vrh"
 
 #: themes/huraga/html/partial_menu.html.twig:87
 msgid "Account balance"
-msgstr "Stanje pripejd kredita"
+msgstr "Trenutni saldo"
 
 #: themes/huraga/html/partial_pricing.html.twig:8
 #: themes/huraga/html/partial_pricing.html.twig:20
