@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-11-28 16:56-0800\n"
-"PO-Revision-Date: 2023-12-15 22:16\n"
+"POT-Creation-Date: 2023-12-19 09:25-0800\n"
+"PO-Revision-Date: 2023-12-19 22:41\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
@@ -31,27 +31,27 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Схоже, ви намагаєтеся використовувати FOSSBilling без увімкненого розширення php intl. FOSSBilling включає полізаповнення для intl розширення, проте він не підтримує :locale. Будь ласка, увімкніть розширення intl."
 
-#: di.php:374 di.php:448
+#: di.php:378 di.php:452
 msgid "Client is not logged in"
 msgstr "Клієнт не зареєстрований"
 
-#: di.php:414 di.php:486
+#: di.php:418 di.php:490
 msgid "Admin is not logged in"
 msgstr ""
 
-#: di.php:523
+#: di.php:530
 msgid "Unrecognized Handler type: "
 msgstr ""
 
-#: di.php:533
+#: di.php:540
 msgid "Please check your mailbox and confirm email address."
 msgstr "Будь ласка, перевірте свою поштову скриньку для підтвердження адреси електронної пошти."
 
-#: index.php:66 library/Box/App.php:416 library/Box/AppClient.php:68
+#: index.php:68 library/Box/App.php:416 library/Box/AppClient.php:69
 msgid "Page :url not found"
 msgstr "Сторінка :url не знайдена"
 
-#: index.php:73
+#: index.php:75
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "Помилка HTTP :err_code при спробі завантажити :url"
 
@@ -87,11 +87,11 @@ msgstr ":type API виклик :method не існує в модулі :module"
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "Система проходить технічне обслуговування. Будь ласка, спробуйте ще раз пізніше"
 
-#: library/Box/AppAdmin.php:34 modules/Extension/Service.php:742
+#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:742
 msgid "You do not have permission to access the :mod: module"
 msgstr ""
 
-#: library/Box/AppClient.php:86
+#: library/Box/AppClient.php:87
 msgid "Page not found"
 msgstr "Сторінка не знайдена"
 
@@ -464,11 +464,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Перенаправлення на PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:302
-#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1356
+#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1349
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Оплата рахунку :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1358
+#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1351
 msgid "Payment for invoice :serie:id"
 msgstr "Оплата рахунку :serie:id"
 
@@ -854,9 +854,9 @@ msgstr "Така скринька вже використовується."
 msgid "Can not change email. It is already registered."
 msgstr "Неможливо змінити адресу електронної пошти. Вона вже зареєстрована."
 
-#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:228
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
 #: modules/Profile/Api/Admin.php:110 modules/Profile/Api/Client.php:113
-#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:104
+#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:107
 msgid "Passwords do not match"
 msgstr "Паролі не збігаються"
 
@@ -884,7 +884,7 @@ msgstr "Така поштова адреса вже використовуєть
 msgid "Please check your login details."
 msgstr "Будь ласка, перевірте свої дані для входу."
 
-#: modules/Client/Api/Guest.php:233 modules/Client/Api/Guest.php:237
+#: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
 #: modules/Client/Service.php:702
 msgid "The link has expired or you have already reset your password."
 msgstr "Посилання застаріло, або ви вже змінили пароль."
@@ -969,6 +969,11 @@ msgstr "Поле :field не може бути порожнім"
 #: modules/Cookieconsent/Controller/Admin.php:33
 msgid "Cookie consent"
 msgstr "Згода на кукі"
+
+#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:756
+#: modules/Staff/Service.php:196
+msgid "You do not have permission to perform this action"
+msgstr ""
 
 #: modules/Currency/Api/Admin.php:106
 msgid "Currency already registered"
@@ -1128,10 +1133,6 @@ msgstr ""
 msgid "Allows the staff member to edit settings for this module."
 msgstr ""
 
-#: modules/Extension/Service.php:756 modules/Staff/Service.php:196
-msgid "You do not have permission to perform this action"
-msgstr ""
-
 #: modules/Formbuilder/Api/Admin.php:36
 msgid "Form style was not found in predefined list"
 msgstr "У попередньо визначеному списку не знайдено стиль форми"
@@ -1161,27 +1162,27 @@ msgstr "Тип форми не був переданий"
 msgid "Field type not supported"
 msgstr "Тип файлу не підтримується"
 
-#: modules/Formbuilder/Service.php:139
+#: modules/Formbuilder/Service.php:140
 msgid "Field name can not start with number."
 msgstr "Назва поля не може починатися з цифри."
 
-#: modules/Formbuilder/Service.php:143
+#: modules/Formbuilder/Service.php:144
 msgid "Field name can not be empty. Please make sure it is not empty and does not contain special characters."
 msgstr "Ім'я поля не може бути пустим. Будь ласка, переконайтеся, що воно не порожнє і не містить спеціальних символів."
 
-#: modules/Formbuilder/Service.php:160
+#: modules/Formbuilder/Service.php:161
 msgid "Unfortunately field with this name exists in this form already. Form must have different field names."
 msgstr "На жаль, поле з такою назвою вже існує у даній формі. Форма має містити різні назви."
 
-#: modules/Formbuilder/Service.php:171
+#: modules/Formbuilder/Service.php:172
 msgid " values must be unique"
 msgstr " Значення повинні бути унікальними"
 
-#: modules/Formbuilder/Service.php:174
+#: modules/Formbuilder/Service.php:175
 msgid " labels must be unique"
 msgstr " Мітка має бути унікальною"
 
-#: modules/Formbuilder/Service.php:182
+#: modules/Formbuilder/Service.php:183
 msgid "Textarea size options must be integer values"
 msgstr "Параметри розміру текстової області повинні бути цілими значеннями"
 
@@ -1274,43 +1275,43 @@ msgstr "Ставки податків"
 msgid "Payment gateways"
 msgstr "Платіжні шлюзи"
 
-#: modules/Invoice/Service.php:417
+#: modules/Invoice/Service.php:418
 msgid "Unable to determine the next invoice number"
 msgstr "Не вдалося визначити наступний номер рахунку"
 
-#: modules/Invoice/Service.php:631
+#: modules/Invoice/Service.php:632
 msgid "Can not refund invoice with negative amount"
 msgstr "Неможливо відшкодувати рахунок-фактуру з від’ємною сумою"
 
-#: modules/Invoice/Service.php:846
+#: modules/Invoice/Service.php:847
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "Рахунок пов'язаний з замовленням #:id. Спочатку, будь ласка, скасуйте замовлення."
 
-#: modules/Invoice/Service.php:913
+#: modules/Invoice/Service.php:914
 msgid "Invoices are not generated for 0 amount orders"
 msgstr "Рахунки не створюються з нульовою кількістю замовлень"
 
-#: modules/Invoice/Service.php:1081
+#: modules/Invoice/Service.php:1074
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "Ви повинні мати принаймні одне активне замовлення, перш ніж ви зможете додати кошти, тому ви не можете продовжити зараз!"
 
-#: modules/Invoice/Service.php:1090
+#: modules/Invoice/Service.php:1083
 msgid "Amount must be at least :min_amount"
 msgstr "Сума повинна бути не менше :min_amount"
 
-#: modules/Invoice/Service.php:1094
+#: modules/Invoice/Service.php:1087
 msgid "Amount cannot exceed :max_amount"
 msgstr "Сума не може перевищувати :max_amount"
 
-#: modules/Invoice/Service.php:1121 modules/Invoice/Service.php:1189
+#: modules/Invoice/Service.php:1114 modules/Invoice/Service.php:1182
 msgid "Invoice not found"
 msgstr "Рахунок не знайдено"
 
-#: modules/Invoice/Service.php:1126
+#: modules/Invoice/Service.php:1119
 msgid "Payment method not found"
 msgstr "Спосіб оплати не знайдено"
 
-#: modules/Invoice/Service.php:1130
+#: modules/Invoice/Service.php:1123
 msgid "Payment method not enabled"
 msgstr "Спосіб оплати не активовано"
 
@@ -1724,11 +1725,7 @@ msgstr "Tld вже зареєстрований"
 msgid "Registrar is not available for installation."
 msgstr "Реєстрація недоступна для встановлення."
 
-#: modules/Servicedomain/Api/Admin.php:360
-msgid "Registrar is used by :count: domains"
-msgstr "Реєстратор використовує :count: доменів"
-
-#: modules/Servicedomain/Api/Admin.php:446
+#: modules/Servicedomain/Api/Admin.php:436
 msgid "Domain order is not activated"
 msgstr "Замовлення домену не активовано"
 
@@ -1826,9 +1823,9 @@ msgstr "Реєстратор :adapter не знайдено"
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr "Реєстраційний адаптер :adapter повинен розширити Registrar_AdapterAbstract"
 
-#: modules/Servicedomain/Service.php:1028
-msgid "Can not remove registrar which has domains"
-msgstr "Не можна видалити реєстратора, який має домен"
+#: modules/Servicedomain/Service.php:1030
+msgid "Registrar is used by :count: domains"
+msgstr "Реєстратор використовує :count: доменів"
 
 #: modules/Servicedownloadable/Api/Admin.php:35
 msgid "File was not uploaded"
@@ -1931,35 +1928,35 @@ msgstr "Плагін ліцензії не має методу генерува�
 msgid "Maximum number of iterations reached while generating license key"
 msgstr "Досягнута максимальна кількість ітерацій при генерації ліцензійного ключа"
 
-#: modules/Spamchecker/Service.php:62
+#: modules/Spamchecker/Service.php:63
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
 msgstr "Вашу IP-адресу (:ip) заблоковано. Будь ласка, зверніться в нашу підтримку для зняття блоку."
 
-#: modules/Spamchecker/Service.php:83
+#: modules/Spamchecker/Service.php:84
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
 msgstr "Щоб використовувати reCAPTCHA, ви повинні отримати ключ API <a href='https://www.google.com/recaptcha/admin/create'>тут</a>"
 
-#: modules/Spamchecker/Service.php:87
+#: modules/Spamchecker/Service.php:88
 msgid "You have to complete the CAPTCHA to continue"
 msgstr "Ви повинні пройти CAPTCHA для продовження"
 
-#: modules/Spamchecker/Service.php:101 modules/Spamchecker/Service.php:104
+#: modules/Spamchecker/Service.php:102 modules/Spamchecker/Service.php:105
 msgid "reCAPTCHA verification failed."
 msgstr "Помилка перевірки reCAPTCHA."
 
-#: modules/Spamchecker/Service.php:150
+#: modules/Spamchecker/Service.php:151
 msgid "Your username is blacklisted in the Stop Forum Spam database"
 msgstr "Ваше ім'я користувача знаходиться в чорному списку в базі даних Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:153
+#: modules/Spamchecker/Service.php:154
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
 msgstr "Ваша e-mail адреса знаходиться в чорному списку в базі даних Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:156
+#: modules/Spamchecker/Service.php:157
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "Ваша IP адреса знаходиться в чорному списку в базі даних Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:189
+#: modules/Spamchecker/Service.php:190
 msgid "Disposable email addresses are not allowed"
 msgstr ""
 
@@ -1971,13 +1968,13 @@ msgstr "Обліковий запис адміністратора вже існ
 msgid "You are not allowed to login to admin area from :ip address"
 msgstr "Вхід в панель адміністратора не дозволено з :ip адреси"
 
-#: modules/Staff/Api/Guest.php:91 modules/Staff/Api/Guest.php:136
-#: modules/Staff/Controller/Admin.php:121
+#: modules/Staff/Api/Guest.php:94 modules/Staff/Api/Guest.php:139
+#: modules/Staff/Controller/Admin.php:118
 msgid "Password reset has been disabled"
 msgstr "Відновлення пароля було вимкнуто"
 
-#: modules/Staff/Api/Guest.php:109 modules/Staff/Api/Guest.php:113
-#: modules/Staff/Controller/Admin.php:127 modules/Staff/Controller/Admin.php:130
+#: modules/Staff/Api/Guest.php:112 modules/Staff/Api/Guest.php:116
+#: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
 msgid "The link have expired or you have already confirmed password reset."
 msgstr "Термін дії посилання закінчився або ви вже підтвердили скидання пароля."
 
@@ -2233,6 +2230,7 @@ msgstr "Налаштування"
 #: modules/Client/html_admin/mod_client_settings.html.twig:94
 #: modules/Client/html_admin/mod_client_settings.html.twig:120
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:33
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:81
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:80
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:193
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:65
@@ -2282,7 +2280,7 @@ msgstr "Налаштування"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:129
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:130
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:94
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:169
@@ -2365,11 +2363,11 @@ msgstr "Тема \":name\" не налаштовується"
 msgid "Theme \":name\" does not exist"
 msgstr "Тема \":name\" не існує"
 
-#: modules/Theme/Service.php:318
+#: modules/Theme/Service.php:319
 msgid "Theme was not found in path :path"
 msgstr "Тему не знайдено за шляхом :path"
 
-#: modules/Theme/Service.php:335
+#: modules/Theme/Service.php:336
 msgid "Unable to decode theme manifest file :file"
 msgstr "Не вдалося декодувати файл маніфесту теми :file"
 
@@ -2736,7 +2734,7 @@ msgstr "Назва компанії"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:80
-#: modules/Invoice/pdf_template/default-pdf.twig:97
+#: modules/Invoice/pdf_template/default-pdf.twig:98
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
 #: modules/Page/html_client/mod_page_login.html.twig:23
 #: modules/Page/html_client/mod_page_password-reset.html.twig:24
@@ -2932,6 +2930,8 @@ msgstr "Скинути"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:154
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:190
+#: modules/Invoice/pdf_template/default-pdf.twig:58
+#: modules/Invoice/pdf_template/default-pdf.twig:87
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -2966,6 +2966,7 @@ msgstr "Нова група"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:156
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:61
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:113
+#: modules/Invoice/pdf_template/default-pdf.twig:28
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
 #: modules/Page/html_client/mod_page_signup.html.twig:49
@@ -3037,7 +3038,9 @@ msgstr "Поштовий індекс"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:131
-#: modules/Invoice/pdf_template/default-pdf.twig:97
+#: modules/Invoice/pdf_template/default-pdf.twig:33
+#: modules/Invoice/pdf_template/default-pdf.twig:45
+#: modules/Invoice/pdf_template/default-pdf.twig:98
 #: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
 msgstr "Телефон"
@@ -3192,6 +3195,7 @@ msgstr "Примітки"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
 #: modules/Client/html_client/mod_client_profile.html.twig:31
+#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:10
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:88
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:96
@@ -3677,6 +3681,7 @@ msgstr "Налаштування клієнта"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:28
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:34
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:125
@@ -3803,7 +3808,6 @@ msgstr "Деталі"
 #: modules/Client/html_client/mod_client_profile.html.twig:29
 #: modules/Client/html_client/mod_client_profile.html.twig:173
 #: modules/Client/html_client/mod_client_profile.html.twig:192
-#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:17
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:81
 msgid "Change Password"
@@ -3993,39 +3997,43 @@ msgstr "Додати нотатку або завдання"
 msgid "Cron settings"
 msgstr "Налаштування Cron"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:30
-msgid "Setup scheduled tasks to be executed once a day"
-msgstr "Заплановані завдання буде виконано раз на добу"
-
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:34
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:33
 msgid "Scheduled tasks must be enabled immediately after installation. Cron is responsible for sending your clients reminder about payments, domain renewal notices and many more."
 msgstr "Заплановані завдання мають бути ввімкнені відразу після встановлення. Cron відповідає за надсилання нагадувань клієнтам про платежі, оновлення доменів та багато іншого."
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:41
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:40
 msgid "Timezone"
 msgstr "Часовий пояс"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:45
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:44
 msgid "Time on server"
 msgstr "Час на сервері"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:49
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:48
 msgid "Last time scheduled tasks were executed"
 msgstr "Заплановані завдання були виконані"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:55
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:54
 msgid "Scheduled tasks were never executed"
 msgstr "Заплановані завдання не були виконані"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:60
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:59
 msgid "Unix crontab setup"
 msgstr "Налаштування crontab"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:72
+msgid "Enable the cron API endpoint for guests"
+msgstr ""
+
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:80
+msgid "If enabled, this URL can be used to execute the cronjob:"
+msgstr ""
+
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:86
 msgid "Cron executed"
 msgstr "Завдання виконано"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:71
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:90
 msgid "Execute now"
 msgstr "Виконати зараз"
 
@@ -5193,6 +5201,7 @@ msgstr "Номер"
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
+#: modules/Invoice/pdf_template/default-pdf.twig:40
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -5860,6 +5869,7 @@ msgstr "#"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:185
+#: modules/Invoice/pdf_template/default-pdf.twig:82
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "Знижка"
@@ -5895,6 +5905,7 @@ msgid "Pay with"
 msgstr "Сплатити за допомогою"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:29
+#: modules/Invoice/pdf_template/default-pdf.twig:22
 msgid "Invoice number"
 msgstr "№ Рахунку"
 
@@ -5909,7 +5920,7 @@ msgid "Bank Name"
 msgstr "Назва банку"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 #: modules/System/html_admin/mod_system_settings.html.twig:119
 #: themes/huraga/html/layout_default.html.twig:173
 msgid "BIC / SWIFT Code"
@@ -5941,34 +5952,57 @@ msgstr "Отримано платіж за рахунком"
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr "Ви будете автоматично перенаправлені на сторінку рахунків через 5 хвилин."
 
-#: modules/Invoice/pdf_template/default-pdf.twig:32
-#: modules/Invoice/pdf_template/default-pdf.twig:44
-msgid "Tel"
-msgstr "Телефон"
+#: modules/Invoice/pdf_template/default-pdf.twig:23
+msgid "Invoice date"
+msgstr "Дата рахунку"
+
+#: modules/Invoice/pdf_template/default-pdf.twig:24
+msgid "Due date"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:25
+msgid "Invoice status"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:56
+#: modules/Order/html_admin/mod_order_index.html.twig:41
+#: modules/Order/html_admin/mod_order_index.html.twig:295
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
+#: themes/admin_default/html/partial_menu_top.html.twig:15
+msgid "Product"
+msgstr "Продукт"
+
+#: modules/Invoice/pdf_template/default-pdf.twig:57
+msgid "Quantity & Price"
+msgstr ""
 
 #: modules/Invoice/pdf_template/default-pdf.twig:95
+msgid "Payment details"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Account Owner"
 msgstr "Власник облікового Запису"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Bank"
 msgstr "Банк"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Account number"
 msgstr "Номер рахунку"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
+#: modules/Invoice/pdf_template/default-pdf.twig:99
 msgid "VAT ID"
 msgstr "Ідентифікаційний номер платника ПДВ"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
-msgid "Company Reg. No"
-msgstr "Реєстраційний номер компанії"
+#: modules/Invoice/pdf_template/default-pdf.twig:99
+msgid "Company Registration #:"
+msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
-msgid "Web"
-msgstr "Веб"
+#: modules/Invoice/pdf_template/default-pdf.twig:99
+msgid "Website"
+msgstr ""
 
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:15
 msgid "Messages"
@@ -6148,13 +6182,6 @@ msgstr "Додати примітку"
 #: modules/Order/html_admin/mod_order_index.html.twig:13
 msgid "Filter orders"
 msgstr "Фільтр замовлень"
-
-#: modules/Order/html_admin/mod_order_index.html.twig:41
-#: modules/Order/html_admin/mod_order_index.html.twig:295
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
-#: themes/admin_default/html/partial_menu_top.html.twig:15
-msgid "Product"
-msgstr "Продукт"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:53
 #: modules/Order/html_admin/mod_order_manage.html.twig:318
@@ -6698,11 +6725,11 @@ msgstr "Додати \" + selector + \" клас до елементів, які
 msgid "Add \" + selector + \" ID to your element which must call popup. For example: "
 msgstr "Додати \" + селектор + \" ID до Вашого елементу, який повинен викликати спливаюче вікно. Наприклад: "
 
-#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:5
+#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:4
 msgid "Addons & extras"
 msgstr "Додатки та додаткові функції"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:35
+#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:34
 msgid "Setup:"
 msgstr "Установка:"
 
@@ -7616,6 +7643,7 @@ msgstr "Встановити типові сервера імен, які буд
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:292
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:111
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:76
 msgid "Nameservers updated"
 msgstr "Сервера імен оновлені"
 
@@ -7634,7 +7662,7 @@ msgstr "Nameserver 1"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:22
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:120
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:87
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:54
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:53
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
@@ -7645,7 +7673,7 @@ msgstr "Nameserver 2"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:26
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:126
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:94
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:58
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:56
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
@@ -7656,7 +7684,7 @@ msgstr "Nameserver 3"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:132
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:99
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
@@ -7882,6 +7910,10 @@ msgstr "Якщо ви хочете розмістити цей домен з і�
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
 msgstr "Доменні контактні дані будуть відображені після того, як хтось перевірить результат WHOIS (який є публічним) вашого сервісу. Це оновить технічні, комерційні та адміністративні контакти цього сервісу. Ви можете увімкнути захист конфіденційності домену, якщо ви хочете приховати вашу публічну інформацію WHOIS."
 
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:117
+msgid "Contact details updated"
+msgstr ""
+
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:200
 msgid "Domain Secret"
 msgstr "Секретний ключ домену"
@@ -7894,41 +7926,41 @@ msgstr ""
 msgid "Get EPP code"
 msgstr "Отримати код EPP"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:18
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:21
 msgid "Register a new domain"
 msgstr "Зареєструвати новий домен"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:23
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:26
 msgid "Enter new domain name to register"
 msgstr "Введіть нове ім'я домену для реєстрації"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:31
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:85
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:56
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:33
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:83
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:52
 msgid "Check"
 msgstr "Перевірити"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:44
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
 msgid "I want to use my nameservers"
 msgstr "Я хочу використовувати власні nameservers"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:73
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:71
 msgid "Transfer a new domain"
 msgstr "Перенести новий домен"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:78
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:76
 msgid "Enter your domain name to transfer"
 msgstr "Введіть домен для трансферу"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:87
 msgid "Transfer price is"
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:91
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
 msgid "Enter domain transfer code"
 msgstr "Введіть код трансферу домену"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:189
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:190
 msgid " Year/s @ "
 msgstr " Рік/с @ "
 
@@ -8428,31 +8460,31 @@ msgstr "Новий домен"
 msgid "Username changed"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:7
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:8
 msgid "Domain configuration"
 msgstr "Конфігурація домену"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:13
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:12
 msgid "I will use my existing domain and update nameservers"
 msgstr "Я буду використовувати свій існуючий домен і оновлю сервери імен"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:20
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:17
 msgid "I want to register a new domain"
 msgstr "Я хочу зареєструвати новий домен"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:31
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:28
 msgid "Your existing domain"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:47
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:44
 msgid "Your new domain"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:129
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:125
 msgid " year @ "
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:131
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:127
 msgid " years @ "
 msgstr ""
 
@@ -8692,7 +8724,11 @@ msgstr ""
 msgid "If enabled, email addresses will be checked against a database of disposable email domains."
 msgstr ""
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:118
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:117
+msgid "This database is updated daily and provided free of charge by the FakeFilter project under the BSD 3-Clause License."
+msgstr ""
+
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:119
 msgid "Check for temporary / disposable email addresses."
 msgstr ""
 

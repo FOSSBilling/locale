@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-11-28 16:56-0800\n"
-"PO-Revision-Date: 2023-11-29 23:35\n"
+"POT-Creation-Date: 2023-12-19 09:25-0800\n"
+"PO-Revision-Date: 2023-12-19 22:40\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Lithuanian\n"
 "MIME-Version: 1.0\n"
@@ -31,27 +31,27 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Atrodo, kad bandote naudoti FOSSBilling neįjungę php intl plėtinio. FOSSBilling apima polyfill intl plėtiniui, tačiau nepalaiko :locale. Prašome įjungti intl plėtinį."
 
-#: di.php:374 di.php:448
+#: di.php:378 di.php:452
 msgid "Client is not logged in"
 msgstr ""
 
-#: di.php:414 di.php:486
+#: di.php:418 di.php:490
 msgid "Admin is not logged in"
 msgstr ""
 
-#: di.php:523
+#: di.php:530
 msgid "Unrecognized Handler type: "
 msgstr ""
 
-#: di.php:533
+#: di.php:540
 msgid "Please check your mailbox and confirm email address."
 msgstr "Patikrinkite savo el. pašto dėžutę ir patvirtinkite el. pašto adresą."
 
-#: index.php:66 library/Box/App.php:416 library/Box/AppClient.php:68
+#: index.php:68 library/Box/App.php:416 library/Box/AppClient.php:69
 msgid "Page :url not found"
 msgstr "Puslapis :url nerastas"
 
-#: index.php:73
+#: index.php:75
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "Bandant įkelti :url įvyko :err_code HTTP klaida"
 
@@ -87,11 +87,11 @@ msgstr ":type API kvietimas :method neegzistuoja modulyje :module"
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr ""
 
-#: library/Box/AppAdmin.php:34 modules/Extension/Service.php:742
+#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:742
 msgid "You do not have permission to access the :mod: module"
 msgstr ""
 
-#: library/Box/AppClient.php:86
+#: library/Box/AppClient.php:87
 msgid "Page not found"
 msgstr "Puslapis nerastas"
 
@@ -464,11 +464,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Peradresuojama į PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:302
-#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1356
+#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1349
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Apmokėjimas už sąskaitą faktūrą :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1358
+#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1351
 msgid "Payment for invoice :serie:id"
 msgstr "Apmokėjimas už sąskaitą faktūrą :serie:id"
 
@@ -854,9 +854,9 @@ msgstr "El. paštas jau užregistruotas."
 msgid "Can not change email. It is already registered."
 msgstr "Negalima pakeisti el. pašto. Jis jau užregistruotas."
 
-#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:228
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
 #: modules/Profile/Api/Admin.php:110 modules/Profile/Api/Client.php:113
-#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:104
+#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:107
 msgid "Passwords do not match"
 msgstr "Slaptažodžiai nesutampa"
 
@@ -884,7 +884,7 @@ msgstr "El. paštas jau užregistruotas. Galbūt norite prisijungti, o ne užsir
 msgid "Please check your login details."
 msgstr "Patikrinkite prisijungimo duomenis."
 
-#: modules/Client/Api/Guest.php:233 modules/Client/Api/Guest.php:237
+#: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
 #: modules/Client/Service.php:702
 msgid "The link has expired or you have already reset your password."
 msgstr ""
@@ -969,6 +969,11 @@ msgstr "Teksto laukas :field negali būti tuščias"
 #: modules/Cookieconsent/Controller/Admin.php:33
 msgid "Cookie consent"
 msgstr "Leidimas naudoti slapukus"
+
+#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:756
+#: modules/Staff/Service.php:196
+msgid "You do not have permission to perform this action"
+msgstr ""
 
 #: modules/Currency/Api/Admin.php:106
 msgid "Currency already registered"
@@ -1128,10 +1133,6 @@ msgstr ""
 msgid "Allows the staff member to edit settings for this module."
 msgstr ""
 
-#: modules/Extension/Service.php:756 modules/Staff/Service.php:196
-msgid "You do not have permission to perform this action"
-msgstr ""
-
 #: modules/Formbuilder/Api/Admin.php:36
 msgid "Form style was not found in predefined list"
 msgstr "Formos stilius iš anksto nustatytame sąraše nerastas"
@@ -1161,27 +1162,27 @@ msgstr "Formos tipas nebuvo perduotas"
 msgid "Field type not supported"
 msgstr "Lauko tipas nepalaikomas"
 
-#: modules/Formbuilder/Service.php:139
+#: modules/Formbuilder/Service.php:140
 msgid "Field name can not start with number."
 msgstr "Lauko pavadinimas negali prasidėti skaičiumi."
 
-#: modules/Formbuilder/Service.php:143
+#: modules/Formbuilder/Service.php:144
 msgid "Field name can not be empty. Please make sure it is not empty and does not contain special characters."
 msgstr "Lauko pavadinimas negali būti tuščias. Įsitikinkite, kad jis nėra tuščias ir jame nėra specialiųjų simbolių."
 
-#: modules/Formbuilder/Service.php:160
+#: modules/Formbuilder/Service.php:161
 msgid "Unfortunately field with this name exists in this form already. Form must have different field names."
 msgstr "Deja, laukas tokiu pavadinimu šioje formoje jau yra. Forma turi turėti skirtingus laukų pavadinimus."
 
-#: modules/Formbuilder/Service.php:171
+#: modules/Formbuilder/Service.php:172
 msgid " values must be unique"
 msgstr " vertės turi būti unikalios"
 
-#: modules/Formbuilder/Service.php:174
+#: modules/Formbuilder/Service.php:175
 msgid " labels must be unique"
 msgstr " etiketės turi būti unikalios"
 
-#: modules/Formbuilder/Service.php:182
+#: modules/Formbuilder/Service.php:183
 msgid "Textarea size options must be integer values"
 msgstr "Teksto srities dydžio parinktys turi būti sveikųjų skaičių reikšmės"
 
@@ -1274,43 +1275,43 @@ msgstr "Mokesčių taisyklės"
 msgid "Payment gateways"
 msgstr "Mokėjimo vartai"
 
-#: modules/Invoice/Service.php:417
+#: modules/Invoice/Service.php:418
 msgid "Unable to determine the next invoice number"
 msgstr ""
 
-#: modules/Invoice/Service.php:631
+#: modules/Invoice/Service.php:632
 msgid "Can not refund invoice with negative amount"
 msgstr "Negalima grąžinti sąskaitos faktūros su neigiama suma"
 
-#: modules/Invoice/Service.php:846
+#: modules/Invoice/Service.php:847
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "Sąskaita faktūra susijusi su užsakymu #:id. Pirmiausia atšaukite užsakymą."
 
-#: modules/Invoice/Service.php:913
+#: modules/Invoice/Service.php:914
 msgid "Invoices are not generated for 0 amount orders"
 msgstr "0 sumos užsakymams sąskaitos faktūros negeneruojamos"
 
-#: modules/Invoice/Service.php:1081
+#: modules/Invoice/Service.php:1074
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "Turite turėti bent vieną aktyvų užsakymą, kad galėtumėte pridėti lėšų, todėl šiuo metu negalėsite tęsti!"
 
-#: modules/Invoice/Service.php:1090
+#: modules/Invoice/Service.php:1083
 msgid "Amount must be at least :min_amount"
 msgstr "Suma turi būti bent :min_amount"
 
-#: modules/Invoice/Service.php:1094
+#: modules/Invoice/Service.php:1087
 msgid "Amount cannot exceed :max_amount"
 msgstr "Suma negali viršyti :max_amount"
 
-#: modules/Invoice/Service.php:1121 modules/Invoice/Service.php:1189
+#: modules/Invoice/Service.php:1114 modules/Invoice/Service.php:1182
 msgid "Invoice not found"
 msgstr "Sąskaita faktūra nerasta"
 
-#: modules/Invoice/Service.php:1126
+#: modules/Invoice/Service.php:1119
 msgid "Payment method not found"
 msgstr "Mokėjimo būdas nerastas"
 
-#: modules/Invoice/Service.php:1130
+#: modules/Invoice/Service.php:1123
 msgid "Payment method not enabled"
 msgstr "Mokėjimo būdas neįjungtas"
 
@@ -1724,11 +1725,7 @@ msgstr "Tld jau registruotas"
 msgid "Registrar is not available for installation."
 msgstr "Registras nėra prieinamas įdiegimui."
 
-#: modules/Servicedomain/Api/Admin.php:360
-msgid "Registrar is used by :count: domains"
-msgstr ""
-
-#: modules/Servicedomain/Api/Admin.php:446
+#: modules/Servicedomain/Api/Admin.php:436
 msgid "Domain order is not activated"
 msgstr "Domeno užsakymas nesuaktyvintas"
 
@@ -1826,9 +1823,9 @@ msgstr "Registro :adapter nerastas"
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr "Registro adapteris :adapter turėtų išplėsti Registrar_AdapterAbstract"
 
-#: modules/Servicedomain/Service.php:1028
-msgid "Can not remove registrar which has domains"
-msgstr "Negalima pašalinti registro, kuris turi domenų"
+#: modules/Servicedomain/Service.php:1030
+msgid "Registrar is used by :count: domains"
+msgstr ""
 
 #: modules/Servicedownloadable/Api/Admin.php:35
 msgid "File was not uploaded"
@@ -1931,35 +1928,35 @@ msgstr "Licencijos papildinys neturi generavimo metodo"
 msgid "Maximum number of iterations reached while generating license key"
 msgstr "Pasiektas maksimalus iteracijų skaičius generuojant licencijos raktą"
 
-#: modules/Spamchecker/Service.php:62
+#: modules/Spamchecker/Service.php:63
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
 msgstr "Jūsų IP adresas (:ip) užblokuotas. Norėdami panaikinti blokavimą, susisiekite su mūsų pagalbos komanda."
 
-#: modules/Spamchecker/Service.php:83
+#: modules/Spamchecker/Service.php:84
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
 msgstr "Jei norite naudoti reCAPTCHA, turite gauti API raktą <a href='https://www.google.com/recaptcha/admin/create'>čia</a>"
 
-#: modules/Spamchecker/Service.php:87
+#: modules/Spamchecker/Service.php:88
 msgid "You have to complete the CAPTCHA to continue"
 msgstr "Norėdami tęsti, turite užpildyti CAPTCHA"
 
-#: modules/Spamchecker/Service.php:101 modules/Spamchecker/Service.php:104
+#: modules/Spamchecker/Service.php:102 modules/Spamchecker/Service.php:105
 msgid "reCAPTCHA verification failed."
 msgstr "reCAPTCHA patvirtinimas nepavyko."
 
-#: modules/Spamchecker/Service.php:150
+#: modules/Spamchecker/Service.php:151
 msgid "Your username is blacklisted in the Stop Forum Spam database"
 msgstr "Jūsų vartotojo vardas įtrauktas į juodąjį sąrašą Stop Forum Spam duomenų bazėje"
 
-#: modules/Spamchecker/Service.php:153
+#: modules/Spamchecker/Service.php:154
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
 msgstr "Jūsų el. paštas įtrauktas į juodąjį sąrašą Stop Forum Spam duomenų bazėje"
 
-#: modules/Spamchecker/Service.php:156
+#: modules/Spamchecker/Service.php:157
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "Jūsų IP adresas įtrauktas į juodąjį sąrašą Stop Forum Spam duomenų bazėje"
 
-#: modules/Spamchecker/Service.php:189
+#: modules/Spamchecker/Service.php:190
 msgid "Disposable email addresses are not allowed"
 msgstr ""
 
@@ -1971,13 +1968,13 @@ msgstr "Administratoriaus paskyra jau egzistuoja"
 msgid "You are not allowed to login to admin area from :ip address"
 msgstr "Jums neleidžiama prisijungti prie administravimo skydelio iš :ip adreso"
 
-#: modules/Staff/Api/Guest.php:91 modules/Staff/Api/Guest.php:136
-#: modules/Staff/Controller/Admin.php:121
+#: modules/Staff/Api/Guest.php:94 modules/Staff/Api/Guest.php:139
+#: modules/Staff/Controller/Admin.php:118
 msgid "Password reset has been disabled"
 msgstr "Slaptažodžio atstatymas buvo išjungtas"
 
-#: modules/Staff/Api/Guest.php:109 modules/Staff/Api/Guest.php:113
-#: modules/Staff/Controller/Admin.php:127 modules/Staff/Controller/Admin.php:130
+#: modules/Staff/Api/Guest.php:112 modules/Staff/Api/Guest.php:116
+#: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
 msgid "The link have expired or you have already confirmed password reset."
 msgstr "Nuorodos galiojimo laikas baigėsi arba jūs jau patvirtinote slaptažodį."
 
@@ -2233,6 +2230,7 @@ msgstr "Nustatymai"
 #: modules/Client/html_admin/mod_client_settings.html.twig:94
 #: modules/Client/html_admin/mod_client_settings.html.twig:120
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:33
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:81
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:80
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:193
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:65
@@ -2282,7 +2280,7 @@ msgstr "Nustatymai"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:129
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:130
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:94
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:169
@@ -2365,11 +2363,11 @@ msgstr "Temos \":name\" negalima konfigūruoti"
 msgid "Theme \":name\" does not exist"
 msgstr "Tema \":name\" neegzistuoja"
 
-#: modules/Theme/Service.php:318
+#: modules/Theme/Service.php:319
 msgid "Theme was not found in path :path"
 msgstr "Temos kelyje :path nerasta"
 
-#: modules/Theme/Service.php:335
+#: modules/Theme/Service.php:336
 msgid "Unable to decode theme manifest file :file"
 msgstr "Nepavyko iššifruoti temos aprašo failo :file"
 
@@ -2736,7 +2734,7 @@ msgstr "Įmonės pavadinimas"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:80
-#: modules/Invoice/pdf_template/default-pdf.twig:97
+#: modules/Invoice/pdf_template/default-pdf.twig:98
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
 #: modules/Page/html_client/mod_page_login.html.twig:23
 #: modules/Page/html_client/mod_page_password-reset.html.twig:24
@@ -2932,6 +2930,8 @@ msgstr "Atstatyti"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:154
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:190
+#: modules/Invoice/pdf_template/default-pdf.twig:58
+#: modules/Invoice/pdf_template/default-pdf.twig:87
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -2966,6 +2966,7 @@ msgstr "Nauja grupė"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:156
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:61
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:113
+#: modules/Invoice/pdf_template/default-pdf.twig:28
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
 #: modules/Page/html_client/mod_page_signup.html.twig:49
@@ -3037,7 +3038,9 @@ msgstr "Pašto kodas"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:131
-#: modules/Invoice/pdf_template/default-pdf.twig:97
+#: modules/Invoice/pdf_template/default-pdf.twig:33
+#: modules/Invoice/pdf_template/default-pdf.twig:45
+#: modules/Invoice/pdf_template/default-pdf.twig:98
 #: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
 msgstr "Telefonas"
@@ -3192,6 +3195,7 @@ msgstr "Pastabos"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
 #: modules/Client/html_client/mod_client_profile.html.twig:31
+#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:10
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:88
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:96
@@ -3677,6 +3681,7 @@ msgstr "Kliento nustatymai"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:28
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:34
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:125
@@ -3803,7 +3808,6 @@ msgstr "Išsamesnė informacija"
 #: modules/Client/html_client/mod_client_profile.html.twig:29
 #: modules/Client/html_client/mod_client_profile.html.twig:173
 #: modules/Client/html_client/mod_client_profile.html.twig:192
-#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:17
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:81
 msgid "Change Password"
@@ -3993,39 +3997,43 @@ msgstr "Pridėti pastabą arba užduotį"
 msgid "Cron settings"
 msgstr "Cron nustatymai"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:30
-msgid "Setup scheduled tasks to be executed once a day"
-msgstr "Nustatykite suplanuotas užduotis, kurios bus vykdomos kartą per dieną"
-
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:34
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:33
 msgid "Scheduled tasks must be enabled immediately after installation. Cron is responsible for sending your clients reminder about payments, domain renewal notices and many more."
 msgstr "Suplanuotos užduotys turi būti įjungtos iškart po įdiegimo. Cron yra atsakinga už priminimų siuntimą klientams apie mokėjimus, domeno atnaujinimo pranešimus ir daug daugiau."
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:41
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:40
 msgid "Timezone"
 msgstr "Laiko zona"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:45
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:44
 msgid "Time on server"
 msgstr "Serverio laikas"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:49
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:48
 msgid "Last time scheduled tasks were executed"
 msgstr "Paskutinį kartą buvo įvykdytos numatytos užduotys"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:55
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:54
 msgid "Scheduled tasks were never executed"
 msgstr "Suplanuotos užduotys niekada nebuvo įvykdytos"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:60
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:59
 msgid "Unix crontab setup"
 msgstr "Unix crontab sąranka"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:72
+msgid "Enable the cron API endpoint for guests"
+msgstr ""
+
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:80
+msgid "If enabled, this URL can be used to execute the cronjob:"
+msgstr ""
+
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:86
 msgid "Cron executed"
 msgstr ""
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:71
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:90
 msgid "Execute now"
 msgstr "Vykdyti dabar"
 
@@ -5196,6 +5204,7 @@ msgstr "Skaičius"
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
+#: modules/Invoice/pdf_template/default-pdf.twig:40
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -5863,6 +5872,7 @@ msgstr "#"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:185
+#: modules/Invoice/pdf_template/default-pdf.twig:82
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "Nuolaida"
@@ -5898,6 +5908,7 @@ msgid "Pay with"
 msgstr "Mokėti su"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:29
+#: modules/Invoice/pdf_template/default-pdf.twig:22
 msgid "Invoice number"
 msgstr "Sąskaitos faktūros numeris"
 
@@ -5912,7 +5923,7 @@ msgid "Bank Name"
 msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 #: modules/System/html_admin/mod_system_settings.html.twig:119
 #: themes/huraga/html/layout_default.html.twig:173
 msgid "BIC / SWIFT Code"
@@ -5944,33 +5955,56 @@ msgstr "Apmokėjimas už gautą sąskaitą faktūrą gautas"
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr "Po 5 minučių būsite automatiškai nukreipti į sąskaitos faktūros puslapį."
 
-#: modules/Invoice/pdf_template/default-pdf.twig:32
-#: modules/Invoice/pdf_template/default-pdf.twig:44
-msgid "Tel"
+#: modules/Invoice/pdf_template/default-pdf.twig:23
+msgid "Invoice date"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:24
+msgid "Due date"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:25
+msgid "Invoice status"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:56
+#: modules/Order/html_admin/mod_order_index.html.twig:41
+#: modules/Order/html_admin/mod_order_index.html.twig:295
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
+#: themes/admin_default/html/partial_menu_top.html.twig:15
+msgid "Product"
+msgstr "Paslauga"
+
+#: modules/Invoice/pdf_template/default-pdf.twig:57
+msgid "Quantity & Price"
 msgstr ""
 
 #: modules/Invoice/pdf_template/default-pdf.twig:95
+msgid "Payment details"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Account Owner"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Bank"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Account number"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
+#: modules/Invoice/pdf_template/default-pdf.twig:99
 msgid "VAT ID"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
-msgid "Company Reg. No"
+#: modules/Invoice/pdf_template/default-pdf.twig:99
+msgid "Company Registration #:"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
-msgid "Web"
+#: modules/Invoice/pdf_template/default-pdf.twig:99
+msgid "Website"
 msgstr ""
 
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:15
@@ -6151,13 +6185,6 @@ msgstr "Pridėti pastabą"
 #: modules/Order/html_admin/mod_order_index.html.twig:13
 msgid "Filter orders"
 msgstr "Filtruoti užsakymus"
-
-#: modules/Order/html_admin/mod_order_index.html.twig:41
-#: modules/Order/html_admin/mod_order_index.html.twig:295
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
-#: themes/admin_default/html/partial_menu_top.html.twig:15
-msgid "Product"
-msgstr "Paslauga"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:53
 #: modules/Order/html_admin/mod_order_manage.html.twig:318
@@ -6701,11 +6728,11 @@ msgstr "Pridėkite \" + selektorius + \" klasę prie savo elementų, kurie turi 
 msgid "Add \" + selector + \" ID to your element which must call popup. For example: "
 msgstr "Pridėkite \" + selektorius + \" ID prie elemento, kuris turi iškviesti iššokantįjį langą. Pavyzdžiui: "
 
-#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:5
+#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:4
 msgid "Addons & extras"
 msgstr "Priedai & pridėtys"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:35
+#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:34
 msgid "Setup:"
 msgstr "Sąranka:"
 
@@ -7619,6 +7646,7 @@ msgstr "Nustatykite numatytuosius vardų serverius, kurie bus naudojami naujoms 
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:292
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:111
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:76
 msgid "Nameservers updated"
 msgstr "Vardų serveriai atnaujinti"
 
@@ -7637,7 +7665,7 @@ msgstr "Vardinis serveris 1"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:22
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:120
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:87
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:54
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:53
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
@@ -7648,7 +7676,7 @@ msgstr "Vardinis serveris 2"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:26
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:126
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:94
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:58
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:56
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
@@ -7659,7 +7687,7 @@ msgstr "Vardinis serveris 3"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:132
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:99
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
@@ -7885,6 +7913,10 @@ msgstr "Jei norėtumėte talpinti šį domeną pas kitą paslaugų tiekėją, ga
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
 msgstr "Domeno kontaktinė informacija bus rodoma, kai kas nors patikrins jūsų paslaugos WHOIS išvestį (kuri yra vieša). Bus atnaujinti šios paslaugos techniniai, atsiskaitymo ir administratoriaus kontaktai. Galite įjungti domeno privatumo apsaugą, jei norite paslėpti viešąją WHOIS informaciją."
 
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:117
+msgid "Contact details updated"
+msgstr ""
+
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:200
 msgid "Domain Secret"
 msgstr "Domeno paslapties kodas"
@@ -7897,41 +7929,41 @@ msgstr ""
 msgid "Get EPP code"
 msgstr "Gauti EPP kodą"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:18
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:21
 msgid "Register a new domain"
 msgstr "Užregistruoti naują domeną"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:23
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:26
 msgid "Enter new domain name to register"
 msgstr "Norint užregistruoti, įveskite naują domeno pavadinimą"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:31
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:85
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:56
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:33
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:83
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:52
 msgid "Check"
 msgstr "Tikrinti"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:44
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
 msgid "I want to use my nameservers"
 msgstr "Noriu naudoti savo vardinius serverius"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:73
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:71
 msgid "Transfer a new domain"
 msgstr "Perkelti naują domeną"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:78
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:76
 msgid "Enter your domain name to transfer"
 msgstr "Įveskite domeno pavadinimą, kurį norite perkelti"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:87
 msgid "Transfer price is"
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:91
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
 msgid "Enter domain transfer code"
 msgstr "Įveskite domeno perkėlimo kodą"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:189
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:190
 msgid " Year/s @ "
 msgstr " Metai @ "
 
@@ -8431,31 +8463,31 @@ msgstr "Naujas domenas"
 msgid "Username changed"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:7
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:8
 msgid "Domain configuration"
 msgstr "Domeno konfigūracija"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:13
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:12
 msgid "I will use my existing domain and update nameservers"
 msgstr "Naudosiu savo domeną ir atnaujinsiu vardinius serverius"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:20
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:17
 msgid "I want to register a new domain"
 msgstr "Noriu užregistruoti naują domeną"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:31
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:28
 msgid "Your existing domain"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:47
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:44
 msgid "Your new domain"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:129
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:125
 msgid " year @ "
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:131
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:127
 msgid " years @ "
 msgstr ""
 
@@ -8695,7 +8727,11 @@ msgstr ""
 msgid "If enabled, email addresses will be checked against a database of disposable email domains."
 msgstr ""
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:118
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:117
+msgid "This database is updated daily and provided free of charge by the FakeFilter project under the BSD 3-Clause License."
+msgstr ""
+
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:119
 msgid "Check for temporary / disposable email addresses."
 msgstr ""
 

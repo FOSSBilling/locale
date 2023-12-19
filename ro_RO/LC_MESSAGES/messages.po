@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-11-28 16:56-0800\n"
-"PO-Revision-Date: 2023-12-05 06:09\n"
+"POT-Creation-Date: 2023-12-19 09:25-0800\n"
+"PO-Revision-Date: 2023-12-19 22:40\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Romanian\n"
 "MIME-Version: 1.0\n"
@@ -31,27 +31,27 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Se pare că încercați să utilizați FOSSBilling fără ca extensia php intl să fie activată. FOSSBilling include un polyfill pentru extensia intl, dar nu acceptă :locale. Vă rugăm să activați extensia intl."
 
-#: di.php:374 di.php:448
+#: di.php:378 di.php:452
 msgid "Client is not logged in"
 msgstr "Clientul nu este conectat"
 
-#: di.php:414 di.php:486
+#: di.php:418 di.php:490
 msgid "Admin is not logged in"
 msgstr "Adminul nu este conectat"
 
-#: di.php:523
+#: di.php:530
 msgid "Unrecognized Handler type: "
 msgstr "Tip de Handler nerecunoscut: "
 
-#: di.php:533
+#: di.php:540
 msgid "Please check your mailbox and confirm email address."
 msgstr "Vă rugăm să verificați căsuța poștală și să confirmați adresa de e-mail."
 
-#: index.php:66 library/Box/App.php:416 library/Box/AppClient.php:68
+#: index.php:68 library/Box/App.php:416 library/Box/AppClient.php:69
 msgid "Page :url not found"
 msgstr "Pagina :url nu a fost găsită"
 
-#: index.php:73
+#: index.php:75
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "Eroarea HTTP :err_code a apărut în timpul încercării de a încărca :url"
 
@@ -87,11 +87,11 @@ msgstr ":type apel API :method nu există în modulul :module"
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "Sistemul este în mentenanță. Vă rugăm să încercați mai târziu"
 
-#: library/Box/AppAdmin.php:34 modules/Extension/Service.php:742
+#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:742
 msgid "You do not have permission to access the :mod: module"
 msgstr ""
 
-#: library/Box/AppClient.php:86
+#: library/Box/AppClient.php:87
 msgid "Page not found"
 msgstr "Pagina nu a fost găsită"
 
@@ -460,11 +460,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Redirecţionare către PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:302
-#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1356
+#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1349
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Plata pentru factura :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1358
+#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1351
 msgid "Payment for invoice :serie:id"
 msgstr "Plata pentru factura :serie:id"
 
@@ -850,9 +850,9 @@ msgstr "E-mailul este deja înregistrat."
 msgid "Can not change email. It is already registered."
 msgstr "Nu se poate schimba adresa de e-mail. Aceasta este deja înregistrată."
 
-#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:228
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
 #: modules/Profile/Api/Admin.php:110 modules/Profile/Api/Client.php:113
-#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:104
+#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:107
 msgid "Passwords do not match"
 msgstr "Parolele nu coincid"
 
@@ -880,7 +880,7 @@ msgstr "E-mail-ul este deja înregistrat. Poate doriți să vă autentificați �
 msgid "Please check your login details."
 msgstr "Vă rugăm să verificați detaliile de autentificare."
 
-#: modules/Client/Api/Guest.php:233 modules/Client/Api/Guest.php:237
+#: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
 #: modules/Client/Service.php:702
 msgid "The link has expired or you have already reset your password."
 msgstr "Link-ul a expirat sau ați confirmat deja resetarea parolei."
@@ -965,6 +965,11 @@ msgstr "Câmpul :field nu poate fi gol"
 #: modules/Cookieconsent/Controller/Admin.php:33
 msgid "Cookie consent"
 msgstr "Consimțământ cookie"
+
+#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:756
+#: modules/Staff/Service.php:196
+msgid "You do not have permission to perform this action"
+msgstr "Nu aveți permisiunea de a efectua această acțiune"
 
 #: modules/Currency/Api/Admin.php:106
 msgid "Currency already registered"
@@ -1124,10 +1129,6 @@ msgstr "Gestionează setările"
 msgid "Allows the staff member to edit settings for this module."
 msgstr "Permite membrilor personalului să editeze setările pentru acest modul."
 
-#: modules/Extension/Service.php:756 modules/Staff/Service.php:196
-msgid "You do not have permission to perform this action"
-msgstr "Nu aveți permisiunea de a efectua această acțiune"
-
 #: modules/Formbuilder/Api/Admin.php:36
 msgid "Form style was not found in predefined list"
 msgstr "Stilul formularului nu a fost găsit în lista predefinită"
@@ -1157,27 +1158,27 @@ msgstr "Tipul formularului nu a fost trecut"
 msgid "Field type not supported"
 msgstr "Tipul câmpului nu este suportat"
 
-#: modules/Formbuilder/Service.php:139
+#: modules/Formbuilder/Service.php:140
 msgid "Field name can not start with number."
 msgstr "Numele câmpului nu poate începe cu număr."
 
-#: modules/Formbuilder/Service.php:143
+#: modules/Formbuilder/Service.php:144
 msgid "Field name can not be empty. Please make sure it is not empty and does not contain special characters."
 msgstr "Câmpul cu nume nu poate fi gol. Asigurați-vă că nu este gol și nu conține caractere speciale."
 
-#: modules/Formbuilder/Service.php:160
+#: modules/Formbuilder/Service.php:161
 msgid "Unfortunately field with this name exists in this form already. Form must have different field names."
 msgstr "Din păcate, câmpul cu acest nume există deja în acest formular. Formularul trebuie să aibă câmpuri cu nume diferite."
 
-#: modules/Formbuilder/Service.php:171
+#: modules/Formbuilder/Service.php:172
 msgid " values must be unique"
 msgstr " valorile trebuie să fie unice"
 
-#: modules/Formbuilder/Service.php:174
+#: modules/Formbuilder/Service.php:175
 msgid " labels must be unique"
 msgstr " etichetele trebuie să fie unice"
 
-#: modules/Formbuilder/Service.php:182
+#: modules/Formbuilder/Service.php:183
 msgid "Textarea size options must be integer values"
 msgstr "Opțiunile pentru dimensiunea zonei text trebuie să fie valori întregi"
 
@@ -1270,43 +1271,43 @@ msgstr "Reguli de taxare"
 msgid "Payment gateways"
 msgstr "Modalități de plată"
 
-#: modules/Invoice/Service.php:417
+#: modules/Invoice/Service.php:418
 msgid "Unable to determine the next invoice number"
 msgstr "Nu s-a putut determina următorul număr al facturii"
 
-#: modules/Invoice/Service.php:631
+#: modules/Invoice/Service.php:632
 msgid "Can not refund invoice with negative amount"
 msgstr "Nu se poate restitui factura cu valoare negativă"
 
-#: modules/Invoice/Service.php:846
+#: modules/Invoice/Service.php:847
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "Factura este legată de comanda #:id. Vă rugăm să anulați mai întâi comanda."
 
-#: modules/Invoice/Service.php:913
+#: modules/Invoice/Service.php:914
 msgid "Invoices are not generated for 0 amount orders"
 msgstr "Facturile nu sunt generate pentru 0 comenzi"
 
-#: modules/Invoice/Service.php:1081
+#: modules/Invoice/Service.php:1074
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "Trebuie să aveți cel puțin o comandă activă înainte de a putea adăuga fonduri, astfel încât nu puteți continua în momentul actual!"
 
-#: modules/Invoice/Service.php:1090
+#: modules/Invoice/Service.php:1083
 msgid "Amount must be at least :min_amount"
 msgstr "Suma trebuie să fie cel puțin :min_amount"
 
-#: modules/Invoice/Service.php:1094
+#: modules/Invoice/Service.php:1087
 msgid "Amount cannot exceed :max_amount"
 msgstr "Suma nu poate depăși :max_amount"
 
-#: modules/Invoice/Service.php:1121 modules/Invoice/Service.php:1189
+#: modules/Invoice/Service.php:1114 modules/Invoice/Service.php:1182
 msgid "Invoice not found"
 msgstr "Factura nu a fost găsită"
 
-#: modules/Invoice/Service.php:1126
+#: modules/Invoice/Service.php:1119
 msgid "Payment method not found"
 msgstr "Metoda de plată nu a fost găsită"
 
-#: modules/Invoice/Service.php:1130
+#: modules/Invoice/Service.php:1123
 msgid "Payment method not enabled"
 msgstr "Metoda de plată nu este activată"
 
@@ -1720,11 +1721,7 @@ msgstr "Extensie deja înregistrată"
 msgid "Registrar is not available for installation."
 msgstr "Registrarul nu este valabil pentru instalare."
 
-#: modules/Servicedomain/Api/Admin.php:360
-msgid "Registrar is used by :count: domains"
-msgstr "Registrarul este utilizat de :count: domenii"
-
-#: modules/Servicedomain/Api/Admin.php:446
+#: modules/Servicedomain/Api/Admin.php:436
 msgid "Domain order is not activated"
 msgstr "Comanda domeniului nu este activată"
 
@@ -1822,9 +1819,9 @@ msgstr "Registrarul :adapter nu a fost găsit"
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr "Adaptorul de registrare :adapter ar trebui să extindă Registrar_AdapterAbstract"
 
-#: modules/Servicedomain/Service.php:1028
-msgid "Can not remove registrar which has domains"
-msgstr "Nu se poate elimina registratorul care are domenii"
+#: modules/Servicedomain/Service.php:1030
+msgid "Registrar is used by :count: domains"
+msgstr "Registrarul este utilizat de :count: domenii"
 
 #: modules/Servicedownloadable/Api/Admin.php:35
 msgid "File was not uploaded"
@@ -1927,35 +1924,35 @@ msgstr "Plugin-ul cu licență nu are metodă de generare"
 msgid "Maximum number of iterations reached while generating license key"
 msgstr "S-a atins numărul maxim de iterații în timp ce se generează cheia licenței"
 
-#: modules/Spamchecker/Service.php:62
+#: modules/Spamchecker/Service.php:63
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
 msgstr "Adresa ta IP (:ip) este blocată. Te rugăm să contactezi suportul nostru pentru a ridica restricția."
 
-#: modules/Spamchecker/Service.php:83
+#: modules/Spamchecker/Service.php:84
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
 msgstr "Pentru a utiliza reCAPTCHA trebuie să obțineți o cheie API de <a href='https://www.google.com/recaptcha/admin/create'>aici</a>"
 
-#: modules/Spamchecker/Service.php:87
+#: modules/Spamchecker/Service.php:88
 msgid "You have to complete the CAPTCHA to continue"
 msgstr "Trebuie să completați CAPTCHA pentru a continua"
 
-#: modules/Spamchecker/Service.php:101 modules/Spamchecker/Service.php:104
+#: modules/Spamchecker/Service.php:102 modules/Spamchecker/Service.php:105
 msgid "reCAPTCHA verification failed."
 msgstr "Verificarea reCAPTCHA a eșuat."
 
-#: modules/Spamchecker/Service.php:150
+#: modules/Spamchecker/Service.php:151
 msgid "Your username is blacklisted in the Stop Forum Spam database"
 msgstr "Numele de utilizator ales este pe lista neagră în baza de date Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:153
+#: modules/Spamchecker/Service.php:154
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
 msgstr "E-mail-ul ales este pe lista neagră în baza de date a Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:156
+#: modules/Spamchecker/Service.php:157
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "Adresa dumneavoastră IP este pe lista neagră în baza de date a Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:189
+#: modules/Spamchecker/Service.php:190
 msgid "Disposable email addresses are not allowed"
 msgstr ""
 
@@ -1967,13 +1964,13 @@ msgstr "Contul de administrator există deja"
 msgid "You are not allowed to login to admin area from :ip address"
 msgstr "Nu aveţi permisiunea de a vă autentifica în zona de administrare de la adresa :ip"
 
-#: modules/Staff/Api/Guest.php:91 modules/Staff/Api/Guest.php:136
-#: modules/Staff/Controller/Admin.php:121
+#: modules/Staff/Api/Guest.php:94 modules/Staff/Api/Guest.php:139
+#: modules/Staff/Controller/Admin.php:118
 msgid "Password reset has been disabled"
 msgstr "Resetarea parolei a fost dezactivată"
 
-#: modules/Staff/Api/Guest.php:109 modules/Staff/Api/Guest.php:113
-#: modules/Staff/Controller/Admin.php:127 modules/Staff/Controller/Admin.php:130
+#: modules/Staff/Api/Guest.php:112 modules/Staff/Api/Guest.php:116
+#: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
 msgid "The link have expired or you have already confirmed password reset."
 msgstr "Link-ul a expirat sau ați confirmat deja resetarea parolei."
 
@@ -2229,6 +2226,7 @@ msgstr "Setări"
 #: modules/Client/html_admin/mod_client_settings.html.twig:94
 #: modules/Client/html_admin/mod_client_settings.html.twig:120
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:33
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:81
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:80
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:193
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:65
@@ -2278,7 +2276,7 @@ msgstr "Setări"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:129
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:130
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:94
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:169
@@ -2361,11 +2359,11 @@ msgstr "Tema \":name\" nu este configurabilă"
 msgid "Theme \":name\" does not exist"
 msgstr "Tema \":name\" nu există"
 
-#: modules/Theme/Service.php:318
+#: modules/Theme/Service.php:319
 msgid "Theme was not found in path :path"
 msgstr "Tema nu a fost găsită pe calea :path"
 
-#: modules/Theme/Service.php:335
+#: modules/Theme/Service.php:336
 msgid "Unable to decode theme manifest file :file"
 msgstr "Imposibil de decodat fișierul manifest al temei :file"
 
@@ -2732,7 +2730,7 @@ msgstr "Denumirea companiei"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:80
-#: modules/Invoice/pdf_template/default-pdf.twig:97
+#: modules/Invoice/pdf_template/default-pdf.twig:98
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
 #: modules/Page/html_client/mod_page_login.html.twig:23
 #: modules/Page/html_client/mod_page_password-reset.html.twig:24
@@ -2928,6 +2926,8 @@ msgstr "Resetați"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:154
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:190
+#: modules/Invoice/pdf_template/default-pdf.twig:58
+#: modules/Invoice/pdf_template/default-pdf.twig:87
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -2962,6 +2962,7 @@ msgstr "Grup nou"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:156
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:61
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:113
+#: modules/Invoice/pdf_template/default-pdf.twig:28
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
 #: modules/Page/html_client/mod_page_signup.html.twig:49
@@ -3033,7 +3034,9 @@ msgstr "Cod poștal"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:131
-#: modules/Invoice/pdf_template/default-pdf.twig:97
+#: modules/Invoice/pdf_template/default-pdf.twig:33
+#: modules/Invoice/pdf_template/default-pdf.twig:45
+#: modules/Invoice/pdf_template/default-pdf.twig:98
 #: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
 msgstr "Telefon"
@@ -3188,6 +3191,7 @@ msgstr "Notițe"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
 #: modules/Client/html_client/mod_client_profile.html.twig:31
+#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:10
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:88
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:96
@@ -3673,6 +3677,7 @@ msgstr "Setările clientului"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:28
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:34
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:125
@@ -3799,7 +3804,6 @@ msgstr "Detalii"
 #: modules/Client/html_client/mod_client_profile.html.twig:29
 #: modules/Client/html_client/mod_client_profile.html.twig:173
 #: modules/Client/html_client/mod_client_profile.html.twig:192
-#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:17
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:81
 msgid "Change Password"
@@ -3989,39 +3993,43 @@ msgstr "Adaugă notă sau o sarcină de a face"
 msgid "Cron settings"
 msgstr "Setări cron"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:30
-msgid "Setup scheduled tasks to be executed once a day"
-msgstr "Configurare sarcini programate de executat o dată pe zi"
-
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:34
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:33
 msgid "Scheduled tasks must be enabled immediately after installation. Cron is responsible for sending your clients reminder about payments, domain renewal notices and many more."
 msgstr "Sarcinile programate trebuie să fie activate imediat după instalare. Cron este responsabil pentru trimiterea de reamintiri clienților despre plăți, notificări de reînnoire a domeniului și multe altele."
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:41
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:40
 msgid "Timezone"
 msgstr "Fus orar"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:45
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:44
 msgid "Time on server"
 msgstr "Timp pe server"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:49
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:48
 msgid "Last time scheduled tasks were executed"
 msgstr "Ultima dată când sarcinile programate au fost executate"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:55
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:54
 msgid "Scheduled tasks were never executed"
 msgstr "Sarcinile programate nu au fost executate niciodată"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:60
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:59
 msgid "Unix crontab setup"
 msgstr "Unix crontab setup"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:72
+msgid "Enable the cron API endpoint for guests"
+msgstr ""
+
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:80
+msgid "If enabled, this URL can be used to execute the cronjob:"
+msgstr ""
+
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:86
 msgid "Cron executed"
 msgstr "Cron executat"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:71
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:90
 msgid "Execute now"
 msgstr "Executați acum"
 
@@ -5192,6 +5200,7 @@ msgstr "Număr"
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
+#: modules/Invoice/pdf_template/default-pdf.twig:40
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -5859,6 +5868,7 @@ msgstr "#"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:185
+#: modules/Invoice/pdf_template/default-pdf.twig:82
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "Reducere"
@@ -5894,6 +5904,7 @@ msgid "Pay with"
 msgstr "Plăteşte cu"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:29
+#: modules/Invoice/pdf_template/default-pdf.twig:22
 msgid "Invoice number"
 msgstr "Număr factură"
 
@@ -5908,7 +5919,7 @@ msgid "Bank Name"
 msgstr "Numele băncii"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 #: modules/System/html_admin/mod_system_settings.html.twig:119
 #: themes/huraga/html/layout_default.html.twig:173
 msgid "BIC / SWIFT Code"
@@ -5940,34 +5951,57 @@ msgstr "Plata pentru factură primită"
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr "Veți fi redirecționat automat către pagina facturii după 5 minute."
 
-#: modules/Invoice/pdf_template/default-pdf.twig:32
-#: modules/Invoice/pdf_template/default-pdf.twig:44
-msgid "Tel"
-msgstr "Telefon"
+#: modules/Invoice/pdf_template/default-pdf.twig:23
+msgid "Invoice date"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:24
+msgid "Due date"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:25
+msgid "Invoice status"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:56
+#: modules/Order/html_admin/mod_order_index.html.twig:41
+#: modules/Order/html_admin/mod_order_index.html.twig:295
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
+#: themes/admin_default/html/partial_menu_top.html.twig:15
+msgid "Product"
+msgstr "Produs"
+
+#: modules/Invoice/pdf_template/default-pdf.twig:57
+msgid "Quantity & Price"
+msgstr ""
 
 #: modules/Invoice/pdf_template/default-pdf.twig:95
+msgid "Payment details"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Account Owner"
 msgstr "Proprietar cont"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Bank"
 msgstr "Bancă"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Account number"
 msgstr "Număr cont"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
+#: modules/Invoice/pdf_template/default-pdf.twig:99
 msgid "VAT ID"
 msgstr "Cod TVA"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
-msgid "Company Reg. No"
-msgstr "Număr înregistrare companie"
+#: modules/Invoice/pdf_template/default-pdf.twig:99
+msgid "Company Registration #:"
+msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
-msgid "Web"
-msgstr "Web"
+#: modules/Invoice/pdf_template/default-pdf.twig:99
+msgid "Website"
+msgstr ""
 
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:15
 msgid "Messages"
@@ -6147,13 +6181,6 @@ msgstr "Adaugă notiță"
 #: modules/Order/html_admin/mod_order_index.html.twig:13
 msgid "Filter orders"
 msgstr "Filtrare comenzi"
-
-#: modules/Order/html_admin/mod_order_index.html.twig:41
-#: modules/Order/html_admin/mod_order_index.html.twig:295
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
-#: themes/admin_default/html/partial_menu_top.html.twig:15
-msgid "Product"
-msgstr "Produs"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:53
 #: modules/Order/html_admin/mod_order_manage.html.twig:318
@@ -6697,11 +6724,11 @@ msgstr "Adăugaţi clasa \" + selector + \" la elementele care trebuie să apele
 msgid "Add \" + selector + \" ID to your element which must call popup. For example: "
 msgstr "Adăugaţi \"+ selector + \" ID elementului care trebuie să apeleze popup. De exemplu: "
 
-#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:5
+#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:4
 msgid "Addons & extras"
 msgstr "Suplimente și bonusuri"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:35
+#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:34
 msgid "Setup:"
 msgstr "Instalare:"
 
@@ -7615,6 +7642,7 @@ msgstr "Setează nameserverele implicite ce vor fi folosite pentru un domeniu no
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:292
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:111
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:76
 msgid "Nameservers updated"
 msgstr "Nameservere actualizate"
 
@@ -7633,7 +7661,7 @@ msgstr "Nameserver 1"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:22
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:120
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:87
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:54
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:53
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
@@ -7644,7 +7672,7 @@ msgstr "Nameserver 2"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:26
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:126
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:94
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:58
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:56
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
@@ -7655,7 +7683,7 @@ msgstr "Nameserver 3"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:132
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:99
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
@@ -7881,6 +7909,10 @@ msgstr "Dacă doriți să găzduiți acest domeniu cu o altă companie, puteți 
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
 msgstr "Datele de contact ale domeniului vor fi afișate odată ce cineva va verifica rezultatele WHOIS (care este public) ale serviciului dvs. Aceasta va actualiza contactele tehnice, de facturare și de administrare pentru acest serviciu. Puteți activa protecția confidențialității domeniului dacă doriți să vă ascundeți informațiile publice WHOIS."
 
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:117
+msgid "Contact details updated"
+msgstr ""
+
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:200
 msgid "Domain Secret"
 msgstr "Domeniu secret"
@@ -7893,41 +7925,41 @@ msgstr ""
 msgid "Get EPP code"
 msgstr "Preia codul EPP"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:18
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:21
 msgid "Register a new domain"
 msgstr "Înregistrați un domeniu nou"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:23
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:26
 msgid "Enter new domain name to register"
 msgstr "Introduceți un nou nume de domeniu pentru a-l înregistra"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:31
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:85
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:56
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:33
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:83
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:52
 msgid "Check"
 msgstr "Verifică"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:44
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
 msgid "I want to use my nameservers"
 msgstr "Vreau să folosesc nameserverele mele"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:73
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:71
 msgid "Transfer a new domain"
 msgstr "Transferă un domeniu nou"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:78
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:76
 msgid "Enter your domain name to transfer"
 msgstr "Introduceți numele domeniului pentru transfer"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:87
 msgid "Transfer price is"
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:91
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
 msgid "Enter domain transfer code"
 msgstr "Introduceți codul de transfer domeniu"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:189
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:190
 msgid " Year/s @ "
 msgstr " An/i @ "
 
@@ -8427,31 +8459,31 @@ msgstr "Domeniu nou"
 msgid "Username changed"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:7
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:8
 msgid "Domain configuration"
 msgstr "Configurație domeniu"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:13
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:12
 msgid "I will use my existing domain and update nameservers"
 msgstr "Voi folosi domeniul meu existent și voi actualiza nameserverele"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:20
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:17
 msgid "I want to register a new domain"
 msgstr "Vreau să înregistrez un domeniu nou"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:31
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:28
 msgid "Your existing domain"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:47
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:44
 msgid "Your new domain"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:129
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:125
 msgid " year @ "
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:131
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:127
 msgid " years @ "
 msgstr ""
 
@@ -8691,7 +8723,11 @@ msgstr ""
 msgid "If enabled, email addresses will be checked against a database of disposable email domains."
 msgstr ""
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:118
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:117
+msgid "This database is updated daily and provided free of charge by the FakeFilter project under the BSD 3-Clause License."
+msgstr ""
+
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:119
 msgid "Check for temporary / disposable email addresses."
 msgstr ""
 
