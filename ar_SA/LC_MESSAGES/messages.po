@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-11-28 16:56-0800\n"
-"PO-Revision-Date: 2023-11-29 23:35\n"
+"POT-Creation-Date: 2023-12-19 09:25-0800\n"
+"PO-Revision-Date: 2023-12-19 22:40\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Arabic\n"
 "MIME-Version: 1.0\n"
@@ -31,27 +31,27 @@ msgstr ""
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "يبدو أنك تحاول استخدام FOSSBilling دون تمكين امتداد php intl. يتضمن FOSSBilling بوليملئ لتمديد النتل، ولكنه لا يدعم :locale. الرجاء تمكين تمديد intl."
 
-#: di.php:374 di.php:448
+#: di.php:378 di.php:452
 msgid "Client is not logged in"
 msgstr ""
 
-#: di.php:414 di.php:486
+#: di.php:418 di.php:490
 msgid "Admin is not logged in"
 msgstr ""
 
-#: di.php:523
+#: di.php:530
 msgid "Unrecognized Handler type: "
 msgstr ""
 
-#: di.php:533
+#: di.php:540
 msgid "Please check your mailbox and confirm email address."
 msgstr ""
 
-#: index.php:66 library/Box/App.php:416 library/Box/AppClient.php:68
+#: index.php:68 library/Box/App.php:416 library/Box/AppClient.php:69
 msgid "Page :url not found"
 msgstr "لم يتم العثور على الصفحة :url"
 
-#: index.php:73
+#: index.php:75
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "حدث خطأ HTTP :err_code أثناء محاولة تحميل :url"
 
@@ -87,11 +87,11 @@ msgstr ":type  التواصل لواجهة برمجة التطبيقات API م�
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "الخادم تحت الصيانة. الرجاء المحاولة مرة أخرى لاحقاً"
 
-#: library/Box/AppAdmin.php:34 modules/Extension/Service.php:742
+#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:742
 msgid "You do not have permission to access the :mod: module"
 msgstr ""
 
-#: library/Box/AppClient.php:86
+#: library/Box/AppClient.php:87
 msgid "Page not found"
 msgstr "الصفحة غير موجودة"
 
@@ -472,11 +472,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "إعادة التوجيه إلى PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:302
-#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1356
+#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1349
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "الدفع مقابل الفاتورة :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1358
+#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1351
 msgid "Payment for invoice :serie:id"
 msgstr "الدفع مقابل الفاتورة :serie:id"
 
@@ -862,9 +862,9 @@ msgstr "البريد الإلكتروني مسجل مسبقاً."
 msgid "Can not change email. It is already registered."
 msgstr "لا يمكن تغيير البريد الإلكتروني. إنه مسجل من قبل."
 
-#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:228
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
 #: modules/Profile/Api/Admin.php:110 modules/Profile/Api/Client.php:113
-#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:104
+#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:107
 msgid "Passwords do not match"
 msgstr "كلمتان السر غير متطابقتين"
 
@@ -892,7 +892,7 @@ msgstr "البريد الإلكتروني مسجل فعلًا. قد ترغب ف�
 msgid "Please check your login details."
 msgstr "الرجاء التحقق من تفاصيل تسجيل الدخول الخاصة بك."
 
-#: modules/Client/Api/Guest.php:233 modules/Client/Api/Guest.php:237
+#: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
 #: modules/Client/Service.php:702
 msgid "The link has expired or you have already reset your password."
 msgstr ""
@@ -977,6 +977,11 @@ msgstr "لا يمكن ترك هذا الحقل فارغاً"
 #: modules/Cookieconsent/Controller/Admin.php:33
 msgid "Cookie consent"
 msgstr "موافقة ملفات تعريف الارتباط"
+
+#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:756
+#: modules/Staff/Service.php:196
+msgid "You do not have permission to perform this action"
+msgstr ""
 
 #: modules/Currency/Api/Admin.php:106
 msgid "Currency already registered"
@@ -1136,10 +1141,6 @@ msgstr ""
 msgid "Allows the staff member to edit settings for this module."
 msgstr ""
 
-#: modules/Extension/Service.php:756 modules/Staff/Service.php:196
-msgid "You do not have permission to perform this action"
-msgstr ""
-
 #: modules/Formbuilder/Api/Admin.php:36
 msgid "Form style was not found in predefined list"
 msgstr "لم يتم العثور على نمط النموذج في قائمة محددة مسبقاً"
@@ -1169,27 +1170,27 @@ msgstr "لم يتم تمرير نوع النموذج"
 msgid "Field type not supported"
 msgstr "نوع الحقل غير مدعوم"
 
-#: modules/Formbuilder/Service.php:139
+#: modules/Formbuilder/Service.php:140
 msgid "Field name can not start with number."
 msgstr "اسم الحقل لا يمكن أن يبدأ برقم."
 
-#: modules/Formbuilder/Service.php:143
+#: modules/Formbuilder/Service.php:144
 msgid "Field name can not be empty. Please make sure it is not empty and does not contain special characters."
 msgstr "لا يمكن أن يكون اسم الحقل فارغاً. الرجاء التأكد من أنه غير فارغ ولا يحتوي على أحرف خاصة."
 
-#: modules/Formbuilder/Service.php:160
+#: modules/Formbuilder/Service.php:161
 msgid "Unfortunately field with this name exists in this form already. Form must have different field names."
 msgstr "للأسف الحقل الذي يحمل هذا الاسم موجود فعلًا في هذا النموذج. النموذج يجب أن يحتوي على أسماء حقل مختلفة."
 
-#: modules/Formbuilder/Service.php:171
+#: modules/Formbuilder/Service.php:172
 msgid " values must be unique"
 msgstr " يجب أن تكون القيم فريدة"
 
-#: modules/Formbuilder/Service.php:174
+#: modules/Formbuilder/Service.php:175
 msgid " labels must be unique"
 msgstr " التسمية يجب أن تكون فريدة من نوعها"
 
-#: modules/Formbuilder/Service.php:182
+#: modules/Formbuilder/Service.php:183
 msgid "Textarea size options must be integer values"
 msgstr "يجب أن تكون خيارات حجم النص قيم صحيحة"
 
@@ -1282,43 +1283,43 @@ msgstr "القاعدة الضريبية"
 msgid "Payment gateways"
 msgstr "بوابات الدفع"
 
-#: modules/Invoice/Service.php:417
+#: modules/Invoice/Service.php:418
 msgid "Unable to determine the next invoice number"
 msgstr "غير قادر على تحديد رقم الفاتورة التالي"
 
-#: modules/Invoice/Service.php:631
+#: modules/Invoice/Service.php:632
 msgid "Can not refund invoice with negative amount"
 msgstr "لا يمكن استرداد الفاتورة بالمبلغ السالب"
 
-#: modules/Invoice/Service.php:846
+#: modules/Invoice/Service.php:847
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "الفاتورة مرتبطة بالطلب #:id. الرجاء إلغاء الطلب أولاً."
 
-#: modules/Invoice/Service.php:913
+#: modules/Invoice/Service.php:914
 msgid "Invoices are not generated for 0 amount orders"
 msgstr "الفواتير لم يتم إنشاؤها لـ 0 من طلبات الكميات"
 
-#: modules/Invoice/Service.php:1081
+#: modules/Invoice/Service.php:1074
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "يجب أن يكون لديك طلب نشط واحد على الأقل قبل أن تتمكن من إضافة الأموال حتى لا يمكنك المضي قدما في الوقت الحالي!"
 
-#: modules/Invoice/Service.php:1090
+#: modules/Invoice/Service.php:1083
 msgid "Amount must be at least :min_amount"
 msgstr "يجب أن يكون المبلغ على الأقل :min_amount"
 
-#: modules/Invoice/Service.php:1094
+#: modules/Invoice/Service.php:1087
 msgid "Amount cannot exceed :max_amount"
 msgstr "المبلغ لا يمكن أن يتجاوز :max_amount"
 
-#: modules/Invoice/Service.php:1121 modules/Invoice/Service.php:1189
+#: modules/Invoice/Service.php:1114 modules/Invoice/Service.php:1182
 msgid "Invoice not found"
 msgstr "لم يتم العثور على الفاتورة"
 
-#: modules/Invoice/Service.php:1126
+#: modules/Invoice/Service.php:1119
 msgid "Payment method not found"
 msgstr "لم يتم العثور على طريقة الدفع"
 
-#: modules/Invoice/Service.php:1130
+#: modules/Invoice/Service.php:1123
 msgid "Payment method not enabled"
 msgstr "طريقة الدفع غير مفعلة"
 
@@ -1732,11 +1733,7 @@ msgstr "البريد الإلكتروني مسجل مسبقاً"
 msgid "Registrar is not available for installation."
 msgstr "بوابة الدفع غير متوفرة للتثبيت."
 
-#: modules/Servicedomain/Api/Admin.php:360
-msgid "Registrar is used by :count: domains"
-msgstr "يتم استخدام المسجل من قبل نطاقات :count"
-
-#: modules/Servicedomain/Api/Admin.php:446
+#: modules/Servicedomain/Api/Admin.php:436
 msgid "Domain order is not activated"
 msgstr "لم يتم تنشيط طلب النطاق"
 
@@ -1834,9 +1831,9 @@ msgstr "لم يتم العثور على المسجل :adapter"
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr "محول المسجل :adapter يجب أن يمد المسجل_AdapterAbstract"
 
-#: modules/Servicedomain/Service.php:1028
-msgid "Can not remove registrar which has domains"
-msgstr "لا يمكن إزالة المسجل الذي يحتوي على نطاقات"
+#: modules/Servicedomain/Service.php:1030
+msgid "Registrar is used by :count: domains"
+msgstr "يتم استخدام المسجل من قبل نطاقات :count"
 
 #: modules/Servicedownloadable/Api/Admin.php:35
 msgid "File was not uploaded"
@@ -1939,35 +1936,35 @@ msgstr "ملحق الترخيص ليس لديه طريقة إنشاء"
 msgid "Maximum number of iterations reached while generating license key"
 msgstr "تم الوصول إلى الحد الأقصى لعدد التكرار أثناء إنشاء مفتاح API"
 
-#: modules/Spamchecker/Service.php:62
+#: modules/Spamchecker/Service.php:63
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
 msgstr "عنوان IP الخاص بك (:ip) محظور. الرجاء الاتصال بالدعم لرفع الكتلة الخاصة بك."
 
-#: modules/Spamchecker/Service.php:83
+#: modules/Spamchecker/Service.php:84
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
 msgstr "لاستخدام reCAPTCHA يجب أن تحصل على مفتاح API من <a href='https://www.google.com/recaptcha/admin/create'>هنا</a>"
 
-#: modules/Spamchecker/Service.php:87
+#: modules/Spamchecker/Service.php:88
 msgid "You have to complete the CAPTCHA to continue"
 msgstr "يجب عليك إكمال كلمة التحقق للمتابعة"
 
-#: modules/Spamchecker/Service.php:101 modules/Spamchecker/Service.php:104
+#: modules/Spamchecker/Service.php:102 modules/Spamchecker/Service.php:105
 msgid "reCAPTCHA verification failed."
 msgstr "فشل التحقق من reCAPTCHA."
 
-#: modules/Spamchecker/Service.php:150
+#: modules/Spamchecker/Service.php:151
 msgid "Your username is blacklisted in the Stop Forum Spam database"
 msgstr "اسم المستخدم الخاص بك مدرجة سوداء في قاعدة بيانات \"إيقاف المنتدى المزعج\""
 
-#: modules/Spamchecker/Service.php:153
+#: modules/Spamchecker/Service.php:154
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
 msgstr "اسم المستخدم الخاص بك مدرجة سوداء في قاعدة بيانات \"إيقاف المنتدى المزعج\""
 
-#: modules/Spamchecker/Service.php:156
+#: modules/Spamchecker/Service.php:157
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "اسم المستخدم الخاص بك مدرجة سوداء في قاعدة بيانات \"إيقاف المنتدى المزعج\""
 
-#: modules/Spamchecker/Service.php:189
+#: modules/Spamchecker/Service.php:190
 msgid "Disposable email addresses are not allowed"
 msgstr ""
 
@@ -1979,13 +1976,13 @@ msgstr "حساب المسؤول موجود بالفعل"
 msgid "You are not allowed to login to admin area from :ip address"
 msgstr "غير مسموح لك بتسجيل الدخول إلى منطقة المشرف من عنوان :ip"
 
-#: modules/Staff/Api/Guest.php:91 modules/Staff/Api/Guest.php:136
-#: modules/Staff/Controller/Admin.php:121
+#: modules/Staff/Api/Guest.php:94 modules/Staff/Api/Guest.php:139
+#: modules/Staff/Controller/Admin.php:118
 msgid "Password reset has been disabled"
 msgstr "تم تعطيل إعادة تعيين كلمة المرور"
 
-#: modules/Staff/Api/Guest.php:109 modules/Staff/Api/Guest.php:113
-#: modules/Staff/Controller/Admin.php:127 modules/Staff/Controller/Admin.php:130
+#: modules/Staff/Api/Guest.php:112 modules/Staff/Api/Guest.php:116
+#: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
 msgid "The link have expired or you have already confirmed password reset."
 msgstr "انتهت صَلاحِيَة الرابط أو قمت بتأكيد إعادة تعيين كلمة المرور من قبل."
 
@@ -2241,6 +2238,7 @@ msgstr "الإعدادات"
 #: modules/Client/html_admin/mod_client_settings.html.twig:94
 #: modules/Client/html_admin/mod_client_settings.html.twig:120
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:33
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:81
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:80
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:193
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:65
@@ -2290,7 +2288,7 @@ msgstr "الإعدادات"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:129
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:130
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:94
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:169
@@ -2373,11 +2371,11 @@ msgstr "السمة \":name\" غير قابلة للتكوين"
 msgid "Theme \":name\" does not exist"
 msgstr "السمة \":name\" غير موجودة"
 
-#: modules/Theme/Service.php:318
+#: modules/Theme/Service.php:319
 msgid "Theme was not found in path :path"
 msgstr "لم يتم العثور على السمة في المسار :path"
 
-#: modules/Theme/Service.php:335
+#: modules/Theme/Service.php:336
 msgid "Unable to decode theme manifest file :file"
 msgstr "غير قادر على فك تشفير ملف بيان السمة :file"
 
@@ -2744,7 +2742,7 @@ msgstr "اسم الشركة"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:80
-#: modules/Invoice/pdf_template/default-pdf.twig:97
+#: modules/Invoice/pdf_template/default-pdf.twig:98
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
 #: modules/Page/html_client/mod_page_login.html.twig:23
 #: modules/Page/html_client/mod_page_password-reset.html.twig:24
@@ -2940,6 +2938,8 @@ msgstr "إعادة تعيين"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:154
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:190
+#: modules/Invoice/pdf_template/default-pdf.twig:58
+#: modules/Invoice/pdf_template/default-pdf.twig:87
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -2974,6 +2974,7 @@ msgstr "مجموعة جديدة"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:156
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:61
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:113
+#: modules/Invoice/pdf_template/default-pdf.twig:28
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
 #: modules/Page/html_client/mod_page_signup.html.twig:49
@@ -3045,7 +3046,9 @@ msgstr "الرمز البريدي"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:131
-#: modules/Invoice/pdf_template/default-pdf.twig:97
+#: modules/Invoice/pdf_template/default-pdf.twig:33
+#: modules/Invoice/pdf_template/default-pdf.twig:45
+#: modules/Invoice/pdf_template/default-pdf.twig:98
 #: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
 msgstr "الهاتف"
@@ -3200,6 +3203,7 @@ msgstr "ملاحظات"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
 #: modules/Client/html_client/mod_client_profile.html.twig:31
+#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:10
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:88
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:96
@@ -3685,6 +3689,7 @@ msgstr "إعدادات العميل"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:28
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:34
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:125
@@ -3811,7 +3816,6 @@ msgstr "التفاصيل"
 #: modules/Client/html_client/mod_client_profile.html.twig:29
 #: modules/Client/html_client/mod_client_profile.html.twig:173
 #: modules/Client/html_client/mod_client_profile.html.twig:192
-#: modules/Client/html_client/mod_client_profile.html.twig:196
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:17
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:81
 msgid "Change Password"
@@ -4001,39 +4005,43 @@ msgstr "إضافة ملاحظة"
 msgid "Cron settings"
 msgstr "إعدادات Cron"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:30
-msgid "Setup scheduled tasks to be executed once a day"
-msgstr "إعداد المهام المجدولة التي سيتم تنفيذها مرة في اليوم"
-
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:34
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:33
 msgid "Scheduled tasks must be enabled immediately after installation. Cron is responsible for sending your clients reminder about payments, domain renewal notices and many more."
 msgstr "يجب تمكين المهام المجدولة مباشرة بعد التثبيت. كرون مسؤول عن إرسال تذكير عملائك بالدفع، وإشعارات تجديد النطاق والكثير غيرها."
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:41
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:40
 msgid "Timezone"
 msgstr "المنطقة الزمنية"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:45
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:44
 msgid "Time on server"
 msgstr "الوقت على الخادم"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:49
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:48
 msgid "Last time scheduled tasks were executed"
 msgstr "آخر مرة تم تنفيذ المهام المجدولة"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:55
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:54
 msgid "Scheduled tasks were never executed"
 msgstr "المهام المجدولة لم يتم تنفيذها مطلقاً"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:60
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:59
 msgid "Unix crontab setup"
 msgstr "Unix crontab setup"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:72
+msgid "Enable the cron API endpoint for guests"
+msgstr ""
+
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:80
+msgid "If enabled, this URL can be used to execute the cronjob:"
+msgstr ""
+
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:86
 msgid "Cron executed"
 msgstr "تم تنفيذ Cron"
 
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:71
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:90
 msgid "Execute now"
 msgstr "تنفيذ الآن"
 
@@ -5203,6 +5211,7 @@ msgstr "رقم"
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
+#: modules/Invoice/pdf_template/default-pdf.twig:40
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -5870,6 +5879,7 @@ msgstr "#"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:185
+#: modules/Invoice/pdf_template/default-pdf.twig:82
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "الخصم"
@@ -5905,6 +5915,7 @@ msgid "Pay with"
 msgstr "ادفع من خلال"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:29
+#: modules/Invoice/pdf_template/default-pdf.twig:22
 msgid "Invoice number"
 msgstr "رقم الفاتورة:"
 
@@ -5919,7 +5930,7 @@ msgid "Bank Name"
 msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 #: modules/System/html_admin/mod_system_settings.html.twig:119
 #: themes/huraga/html/layout_default.html.twig:173
 msgid "BIC / SWIFT Code"
@@ -5951,33 +5962,56 @@ msgstr "تم استلام الدفع مقابل الفاتورة"
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr "سيتم إعادة توجيهك تلقائياً إلى صفحة الفاتورة بعد 5 دقائق."
 
-#: modules/Invoice/pdf_template/default-pdf.twig:32
-#: modules/Invoice/pdf_template/default-pdf.twig:44
-msgid "Tel"
+#: modules/Invoice/pdf_template/default-pdf.twig:23
+msgid "Invoice date"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:24
+msgid "Due date"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:25
+msgid "Invoice status"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:56
+#: modules/Order/html_admin/mod_order_index.html.twig:41
+#: modules/Order/html_admin/mod_order_index.html.twig:295
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
+#: themes/admin_default/html/partial_menu_top.html.twig:15
+msgid "Product"
+msgstr "المنتج"
+
+#: modules/Invoice/pdf_template/default-pdf.twig:57
+msgid "Quantity & Price"
 msgstr ""
 
 #: modules/Invoice/pdf_template/default-pdf.twig:95
+msgid "Payment details"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Account Owner"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Bank"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:96
 msgid "Account number"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
+#: modules/Invoice/pdf_template/default-pdf.twig:99
 msgid "VAT ID"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
-msgid "Company Reg. No"
+#: modules/Invoice/pdf_template/default-pdf.twig:99
+msgid "Company Registration #:"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:98
-msgid "Web"
+#: modules/Invoice/pdf_template/default-pdf.twig:99
+msgid "Website"
 msgstr ""
 
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:15
@@ -6158,13 +6192,6 @@ msgstr "اضف ملاحظة"
 #: modules/Order/html_admin/mod_order_index.html.twig:13
 msgid "Filter orders"
 msgstr "تصفية الطلبات"
-
-#: modules/Order/html_admin/mod_order_index.html.twig:41
-#: modules/Order/html_admin/mod_order_index.html.twig:295
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
-#: themes/admin_default/html/partial_menu_top.html.twig:15
-msgid "Product"
-msgstr "المنتج"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:53
 #: modules/Order/html_admin/mod_order_manage.html.twig:318
@@ -6708,11 +6735,11 @@ msgstr "إضافة فئة زر الطلب إلى العناصر الخاصة ب�
 msgid "Add \" + selector + \" ID to your element which must call popup. For example: "
 msgstr "إضافة فئة زر الطلب إلى العناصر الخاصة بك التي يجب أن تتصل بالنافذات. على سبيل المثال: "
 
-#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:5
+#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:4
 msgid "Addons & extras"
 msgstr "Addons & extras"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:35
+#: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:34
 msgid "Setup:"
 msgstr "إعداد"
 
@@ -7626,6 +7653,7 @@ msgstr "إعداد خدمة أسماء افتراضية التي سيتم است
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:292
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:111
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:76
 msgid "Nameservers updated"
 msgstr "تم تحديث قائمة الأسماء"
 
@@ -7644,7 +7672,7 @@ msgstr "نيم سيرفر 1 ( NameServer )"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:22
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:120
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:87
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:54
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:53
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
@@ -7655,7 +7683,7 @@ msgstr "نيم سيرفر 2 ( NameServer )"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:26
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:126
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:94
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:58
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:56
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
@@ -7666,7 +7694,7 @@ msgstr "نيم سيرفر 3 ( NameServer )"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:132
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:99
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:62
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
@@ -7892,6 +7920,10 @@ msgstr "إذا كنت ترغب في استضافة هذا النطاق مع شر
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
 msgstr "سيتم عرض تفاصيل الاتصال بالنطاقات بمجرد أن يقوم شخص ما بالتحقق من إخراج WHOIS (وهو عام) من خدمتك. سيؤدي هذا إلى تحديث جهات الاتصال الفني والفواتير والمدير لهذه الخدمة. يمكنك تمكين حماية خصوصية المجال إذا كنت ترغب في إخفاء معلومات WHOIS العامة الخاصة بك."
 
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:117
+msgid "Contact details updated"
+msgstr ""
+
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:200
 msgid "Domain Secret"
 msgstr "سرية النطاق"
@@ -7904,41 +7936,41 @@ msgstr ""
 msgid "Get EPP code"
 msgstr "Get EPP code"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:18
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:21
 msgid "Register a new domain"
 msgstr "تسجيل نطاق جديد"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:23
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:26
 msgid "Enter new domain name to register"
 msgstr "أدخل اسم نطاق جديد للتسجيل"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:31
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:85
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:56
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:33
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:83
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:52
 msgid "Check"
 msgstr "تحقق"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:44
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
 msgid "I want to use my nameservers"
 msgstr "استخدام اسماء سيرفرات مخصصة"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:73
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:71
 msgid "Transfer a new domain"
 msgstr "نقل نطاق جديد"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:78
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:76
 msgid "Enter your domain name to transfer"
 msgstr "أدخل اسم نطاق جديد للتسجيل"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:87
 msgid "Transfer price is"
 msgstr ""
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:91
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:89
 msgid "Enter domain transfer code"
 msgstr "أدخل رمز نقل النطاق"
 
-#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:189
+#: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:190
 msgid " Year/s @ "
 msgstr " سنة/سنوات @ "
 
@@ -8438,31 +8470,31 @@ msgstr "نطاق جديد"
 msgid "Username changed"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:7
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:8
 msgid "Domain configuration"
 msgstr "تكوين النطاق"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:13
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:12
 msgid "I will use my existing domain and update nameservers"
 msgstr "سوف أستخدم نطاقي الحالي و تحديث سيرفرات الأسماء"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:20
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:17
 msgid "I want to register a new domain"
 msgstr "أريد تسجيل نطاق جديد"
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:31
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:28
 msgid "Your existing domain"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:47
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:44
 msgid "Your new domain"
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:129
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:125
 msgid " year @ "
 msgstr ""
 
-#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:131
+#: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:127
 msgid " years @ "
 msgstr ""
 
@@ -8702,7 +8734,11 @@ msgstr ""
 msgid "If enabled, email addresses will be checked against a database of disposable email domains."
 msgstr ""
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:118
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:117
+msgid "This database is updated daily and provided free of charge by the FakeFilter project under the BSD 3-Clause License."
+msgstr ""
+
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:119
 msgid "Check for temporary / disposable email addresses."
 msgstr ""
 
