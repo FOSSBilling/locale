@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-12-19 09:25-0800\n"
-"PO-Revision-Date: 2023-12-27 22:44\n"
+"POT-Creation-Date: 2023-12-28 22:22-0800\n"
+"PO-Revision-Date: 2023-12-29 22:37\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
@@ -27,31 +27,31 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: es_ES\n"
 
-#: di.php:330
+#: di.php:326
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Parece que está intentando usar FOSSBilling sin la extensión intl habilitada para php. FOSSBilling incluye un polyfill para la extensión intl, sin embargo no es compatible con :locale. Por favor habilite la extensión intl."
 
-#: di.php:378 di.php:452
+#: di.php:374 di.php:448
 msgid "Client is not logged in"
 msgstr "El cliente no está conectado"
 
-#: di.php:418 di.php:490
+#: di.php:414 di.php:486
 msgid "Admin is not logged in"
 msgstr "El administrador no está conectado"
 
-#: di.php:530
+#: di.php:526
 msgid "Unrecognized Handler type: "
 msgstr "Tipo de controlador no reconocido: "
 
-#: di.php:540
+#: di.php:536
 msgid "Please check your mailbox and confirm email address."
 msgstr "Por favor, compruebe su buzón y confirme la dirección de correo electrónico."
 
-#: index.php:68 library/Box/App.php:416 library/Box/AppClient.php:69
+#: index.php:70 library/Box/App.php:416 library/Box/AppClient.php:69
 msgid "Page :url not found"
 msgstr "Página: Url no encontrada"
 
-#: index.php:75
+#: index.php:77
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "Error HTTP :err_code ha ocurrido mientras se cargaba :url"
 
@@ -310,38 +310,38 @@ msgstr "No se pudo enviar el correo a través de :transport con la excepción :e
 msgid "SMTP host or port is not configured"
 msgstr "El nombre de host SMTP no está configurado"
 
-#: library/FOSSBilling/Tools.php:77 library/FOSSBilling/Tools.php:254
+#: library/FOSSBilling/Tools.php:79 library/FOSSBilling/Tools.php:256
 msgid "Service class :class was not found in :path"
 msgstr "Clase de servicio: la clase no se encontró en :path"
 
-#: library/FOSSBilling/Tools.php:299
+#: library/FOSSBilling/Tools.php:301
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Correo electrónico"
 
-#: library/FOSSBilling/Tools.php:300 library/FOSSBilling/Validate.php:108
+#: library/FOSSBilling/Tools.php:302 library/FOSSBilling/Validate.php:108
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: no es válido"
 
-#: library/FOSSBilling/Update.php:116
+#: library/FOSSBilling/Update.php:142
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Error al descargar la información de la última versión. Se encuentran disponibles más detalles en el registro de errores."
 
-#: library/FOSSBilling/Update.php:170 modules/System/Api/Admin.php:184
+#: library/FOSSBilling/Update.php:200 modules/System/Api/Admin.php:191
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Tienes la última versión de FOSSBilling. No necesitas actualizar."
 
-#: library/FOSSBilling/Update.php:192
+#: library/FOSSBilling/Update.php:222
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Error al descargar el archivo de actualización. Hay más detalles disponibles en el registro de errores."
 
-#: library/FOSSBilling/Update.php:205 modules/Extension/Service.php:475
+#: library/FOSSBilling/Update.php:235 modules/Extension/Service.php:475
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "No se pudo extraer el archivo, por favor, compruebe los permisos de archivo y carpeta. Hay más detalles disponibles en el registro de errores."
 
-#: library/FOSSBilling/Update.php:223
+#: library/FOSSBilling/Update.php:253
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "No se puede borrar la caché y/o eliminar la carpeta de instalación. Hay más detalles disponibles en el registro de errores."
 
@@ -484,10 +484,6 @@ msgstr "No se ha establecido la URL de notificación IPN para la pasarela de pag
 msgid "IPN redirect URL for payment gateway was not set"
 msgstr "No se ha establecido la URL de notificación IPN para la pasarela de pago"
 
-#: library/Payment/AdapterAbstract.php:90
-msgid "Payment adapter class did not implement configuration options method"
-msgstr "La clase de adaptador de pago no implementó el método de opciones de configuración"
-
 #: library/Registrar/Adapter/Email.php:23
 #: library/Registrar/Adapter/Internetbs.php:18
 #: library/Registrar/Adapter/Internetbs.php:25
@@ -558,7 +554,7 @@ msgstr "Los dominios premium no pueden ser registrados."
 
 #: library/Registrar/Adapter/Namecheap.php:247
 msgid "update nameservers"
-msgstr "actualizando nameservers"
+msgstr "actualizar nombres de servidor"
 
 #: library/Registrar/Adapter/Namecheap.php:344
 msgid "retrieve domain details"
@@ -612,10 +608,6 @@ msgstr "Se requiere información de pasaporte de contacto válida al registrar e
 #: library/Registrar/Adapter/Resellerclub.php:970
 msgid "Contact not found"
 msgstr "No se encontró el contacto"
-
-#: library/Registrar/AdapterAbstract.php:36
-msgid "Domain registrar class did not implement configuration options method"
-msgstr "La clase de registrador de dominio no implementó el método de opciones de configuración"
 
 #: library/Server/Manager/CWP.php:20 library/Server/Manager/CWP.php:24
 #: library/Server/Manager/CWP.php:28 library/Server/Manager/Directadmin.php:16
@@ -877,7 +869,7 @@ msgid "Please check your login details."
 msgstr "Por favor, compruebe sus datos de acceso."
 
 #: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
-#: modules/Client/Service.php:702
+#: modules/Client/Service.php:703
 msgid "The link has expired or you have already reset your password."
 msgstr "El enlace ha vencido o ya ha restablecido su contraseña."
 
@@ -950,11 +942,11 @@ msgstr "Cliente no encontrado"
 msgid "Can not remove group with clients"
 msgstr "No se puede eliminar el grupo con los clientes"
 
-#: modules/Client/Service.php:632 modules/Profile/Service.php:125
+#: modules/Client/Service.php:633 modules/Profile/Service.php:125
 msgid "Email can not be changed"
 msgstr "El correo electrónico no se puede cambiar"
 
-#: modules/Client/Service.php:646 modules/Client/Service.php:662
+#: modules/Client/Service.php:647 modules/Client/Service.php:663
 msgid "Field :field cannot be empty"
 msgstr "El campo :field no puede estar vacío"
 
@@ -1817,7 +1809,7 @@ msgstr ""
 
 #: modules/Servicedomain/Service.php:1030
 msgid "Registrar is used by :count: domains"
-msgstr ""
+msgstr "Registrador usado por :count: dominios"
 
 #: modules/Servicedownloadable/Api/Admin.php:35
 msgid "File was not uploaded"
@@ -2315,7 +2307,9 @@ msgid "Allows the staff member to invalidate the FOSSBilling cache from within t
 msgstr "Permite al miembro del personal invalidar la caché FOSSBilling desde la configuración del sistema."
 
 #: modules/System/Service.php:52
-#: modules/System/html_admin/mod_system_update.html.twig:39
+#: modules/System/html_admin/mod_system_update.html.twig:11
+#: modules/System/html_admin/mod_system_update.html.twig:45
+#: modules/System/html_admin/mod_system_update.html.twig:54
 msgid "Update FOSSBilling"
 msgstr "Actualizar FOSSBilling"
 
@@ -2726,7 +2720,7 @@ msgstr "Nombre de la empresa"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:80
-#: modules/Invoice/pdf_template/default-pdf.twig:98
+#: modules/Invoice/pdf_template/default-pdf.twig:109
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
 #: modules/Page/html_client/mod_page_login.html.twig:23
 #: modules/Page/html_client/mod_page_password-reset.html.twig:24
@@ -2922,8 +2916,8 @@ msgstr "Reiniciar"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:154
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:190
-#: modules/Invoice/pdf_template/default-pdf.twig:58
-#: modules/Invoice/pdf_template/default-pdf.twig:87
+#: modules/Invoice/pdf_template/default-pdf.twig:66
+#: modules/Invoice/pdf_template/default-pdf.twig:95
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -2958,7 +2952,7 @@ msgstr "Nuevo grupo"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:156
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:61
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:113
-#: modules/Invoice/pdf_template/default-pdf.twig:28
+#: modules/Invoice/pdf_template/default-pdf.twig:36
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
 #: modules/Page/html_client/mod_page_signup.html.twig:49
@@ -3030,9 +3024,9 @@ msgstr "Código postal"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:131
-#: modules/Invoice/pdf_template/default-pdf.twig:33
-#: modules/Invoice/pdf_template/default-pdf.twig:45
-#: modules/Invoice/pdf_template/default-pdf.twig:98
+#: modules/Invoice/pdf_template/default-pdf.twig:41
+#: modules/Invoice/pdf_template/default-pdf.twig:53
+#: modules/Invoice/pdf_template/default-pdf.twig:110
 #: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
 msgstr "Teléfono"
@@ -4080,7 +4074,7 @@ msgstr "Administrar divisas"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:51
 msgid "Default currency is the one you manage all your prices in admin area. If your client in client area chooses other than default currency, prices will be recalculated according to conversion rate. You can have only one default currency. You can not add same currency once again. Changing default currency is not recommended when active orders are available. Nothing is recalculated on default currency change. Your income is calculated in default currency. Changing default currency after you have paid invoices will distort income statistics. Currency rates are taken from European Central Bank and currencylayer."
-msgstr ""
+msgstr "La moneda predeterminada es la que usan todos tus precios en el área de administración. Si tu cliente en el área de cliente, elige otra moneda que no sea la moneda por defecto, los precios serán recalculados de acuerdo al valor de la divisa. Solo puedes tener una moneda predeterminada. No puedes añadir la misma moneda otra vez. No se recomienda cambiar la moneda predeterminada cuando estén disponibles los pedidos activos. No se recalcula nada al cambiar de moneda predeterminada. Tus ingresos se calculan en la moneda predeterminada. Cambiar la moneda por defecto después de haber pagado facturas, estropeará las estadísticas de ingresos. Los valores de divisas se toman del Banco Central Europeo."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:57
 msgid "ISO code"
@@ -5036,7 +5030,7 @@ msgstr "Registrarse"
 #: themes/huraga/html/layout_default.html.twig:90
 #: themes/huraga/html/partial_menu.html.twig:17
 msgid "Order"
-msgstr "Orden"
+msgstr "Pedidos"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:225
 msgid "Products and services"
@@ -5180,7 +5174,7 @@ msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:13
 msgid "Filter invoices"
-msgstr ""
+msgstr "Filtrar facturas"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:23
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:58
@@ -5193,7 +5187,7 @@ msgstr "Número"
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
-#: modules/Invoice/pdf_template/default-pdf.twig:40
+#: modules/Invoice/pdf_template/default-pdf.twig:48
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -5244,7 +5238,7 @@ msgstr "Pagado a"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:284
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:288
 msgid "Export Invoices"
-msgstr "Esportar Facturas"
+msgstr "Exportar facturas"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:316
 msgid "Prepare"
@@ -5470,7 +5464,7 @@ msgstr "Eliminar facturas pendientes de pago después de días"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:67
 msgid "Set 0 to keep invoices forever."
-msgstr ""
+msgstr "Selecciona 0 para dejar las facturas para siempre."
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:71
 msgid "Invoice prefix/series"
@@ -5502,7 +5496,7 @@ msgstr "A4"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:105
 msgid "Allow access to invoices without authentication"
-msgstr ""
+msgstr "Permitir acceso a facturas sin identificarse"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:120
 msgid "Refunds settings"
@@ -5514,7 +5508,7 @@ msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:126
 msgid "Negative invoice. Generate refund invoice continuing paid invoices numbering"
-msgstr ""
+msgstr "Facturas en negativo. Generar abono continuando la numeración de facturas pagadas"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:130
 msgid "Credit note. Generate credit note with unique numbering"
@@ -5839,7 +5833,7 @@ msgstr "Métodos de Pago"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:26
 msgid "Please choose a payment type and pay for your chosen products."
-msgstr ""
+msgstr "Por favor, elige una forma de pago y paga por los productos que has elegido."
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:58
 msgid "You can print this invoice or export it to a PDF file by clicking on the corresponding button."
@@ -5862,7 +5856,7 @@ msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:185
-#: modules/Invoice/pdf_template/default-pdf.twig:82
+#: modules/Invoice/pdf_template/default-pdf.twig:90
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "Descuento"
@@ -5898,7 +5892,7 @@ msgid "Pay with"
 msgstr "Pagar con"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:29
-#: modules/Invoice/pdf_template/default-pdf.twig:22
+#: modules/Invoice/pdf_template/default-pdf.twig:30
 msgid "Invoice number"
 msgstr "Nº de Pre-orden"
 
@@ -5913,7 +5907,7 @@ msgid "Bank Name"
 msgstr "Nombre del banco"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
-#: modules/Invoice/pdf_template/default-pdf.twig:96
+#: modules/Invoice/pdf_template/default-pdf.twig:104
 #: modules/System/html_admin/mod_system_settings.html.twig:119
 #: themes/huraga/html/layout_default.html.twig:173
 msgid "BIC / SWIFT Code"
@@ -5945,19 +5939,19 @@ msgstr ""
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:23
+#: modules/Invoice/pdf_template/default-pdf.twig:31
 msgid "Invoice date"
 msgstr "Fecha de la factura"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:24
+#: modules/Invoice/pdf_template/default-pdf.twig:32
 msgid "Due date"
 msgstr "Fecha límite"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:25
+#: modules/Invoice/pdf_template/default-pdf.twig:33
 msgid "Invoice status"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:56
+#: modules/Invoice/pdf_template/default-pdf.twig:64
 #: modules/Order/html_admin/mod_order_index.html.twig:41
 #: modules/Order/html_admin/mod_order_index.html.twig:295
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
@@ -5965,35 +5959,35 @@ msgstr ""
 msgid "Product"
 msgstr "Producto"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:57
+#: modules/Invoice/pdf_template/default-pdf.twig:65
 msgid "Quantity & Price"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:103
 msgid "Payment details"
 msgstr "Detalles del pago"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:96
+#: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Account Owner"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:96
+#: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Bank"
 msgstr "Banco"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:96
+#: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Account number"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:99
+#: modules/Invoice/pdf_template/default-pdf.twig:111
 msgid "VAT ID"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:99
+#: modules/Invoice/pdf_template/default-pdf.twig:112
 msgid "Company Registration #:"
 msgstr ""
 
-#: modules/Invoice/pdf_template/default-pdf.twig:99
+#: modules/Invoice/pdf_template/default-pdf.twig:113
 msgid "Website"
 msgstr ""
 
@@ -6085,11 +6079,11 @@ msgstr "El mensaje ha sido enviado."
 
 #: modules/News/html_admin/mod_news_index.html.twig:12
 msgid "News and announcements"
-msgstr ""
+msgstr "Noticias y anuncios"
 
 #: modules/News/html_admin/mod_news_index.html.twig:19
 msgid "New announcement"
-msgstr ""
+msgstr "Nuevo anuncio"
 
 #: modules/News/html_admin/mod_news_index.html.twig:107
 #: modules/News/html_admin/mod_news_post.html.twig:69
@@ -6112,7 +6106,7 @@ msgstr "Imagen"
 
 #: modules/News/html_admin/mod_news_post.html.twig:49
 msgid "https://www.yourdomain.com/image.jpg"
-msgstr ""
+msgstr "https://www.tudominio.com/imagen.jpg"
 
 #: modules/News/html_admin/mod_news_post.html.twig:53
 msgid "Meta description"
@@ -6120,7 +6114,7 @@ msgstr "Meta descripción"
 
 #: modules/News/html_admin/mod_news_post.html.twig:78
 msgid "Post created"
-msgstr ""
+msgstr "Publicación creada"
 
 #: modules/News/html_admin/mod_news_post.html.twig:104
 msgid "Last update"
@@ -6132,7 +6126,7 @@ msgstr "Noticias y Anuncios"
 
 #: modules/News/html_client/mod_news_index.html.twig:17
 msgid "Track our latest information."
-msgstr "Siga nuestra información más reciente."
+msgstr "Sigue nuestra información más reciente."
 
 #: modules/News/html_client/mod_news_index.html.twig:36
 msgid "Continue reading"
@@ -6140,7 +6134,7 @@ msgstr "Seguir leyendo"
 
 #: modules/News/html_client/mod_news_index.html.twig:44
 msgid "No news or announcements"
-msgstr ""
+msgstr "No hay noticias ni anuncios"
 
 #: modules/News/html_client/mod_news_post.html.twig:33
 msgid "by"
@@ -6383,7 +6377,7 @@ msgstr ""
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:511
 msgid "Order invoices"
-msgstr ""
+msgstr "Facturas de Pedido"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:566
 msgid "Order status history"
@@ -6480,16 +6474,16 @@ msgstr ""
 
 #: modules/Order/html_client/mod_order_index.html.twig:23
 msgid "Order Product"
-msgstr ""
+msgstr "Pedido de producto"
 
 #: modules/Order/html_client/mod_order_index.html.twig:24
-#: modules/Order/html_client/mod_order_product.html.twig:20
+#: modules/Order/html_client/mod_order_product.html.twig:19
 msgid "Choose products we offer for selling"
-msgstr ""
+msgstr "Elegir productos que ofrecemos para vender"
 
 #: modules/Order/html_client/mod_order_list.html.twig:5
 msgid "My Products & Services"
-msgstr ""
+msgstr "Mis Productos y Servicios"
 
 #: modules/Order/html_client/mod_order_list.html.twig:9
 #: modules/Order/html_client/mod_order_list.html.twig:19
@@ -6581,7 +6575,7 @@ msgstr "Actualizar a"
 msgid "I would like to upgrade"
 msgstr ""
 
-#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Order/html_client/mod_order_product.html.twig:18
 #: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
 msgid "Select Product"
 msgstr "Seleccionar Producto"
@@ -6834,28 +6828,28 @@ msgstr ""
 msgid "Payment"
 msgstr "Pago"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:45
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:44
 msgid "Powered by"
 msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:110
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:129
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:109
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:128
 msgid "You logged in successfully"
 msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:6
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:8
 msgid "Product Configuration"
 msgstr "Configuración del producto"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:14
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:16
 msgid "Product was added to shopping cart"
 msgstr ""
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:32
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:34
 msgid "FREE"
 msgstr "GRATIS"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:55
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:57
 msgid "Next"
 msgstr "Siguiente"
 
@@ -7149,7 +7143,7 @@ msgstr ""
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:267
 msgid "Choose which products can client upgrade to"
-msgstr ""
+msgstr "Elija qué productos puede actualizar el cliente"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:271
 msgid "Product Upgrades"
@@ -7247,7 +7241,7 @@ msgstr ""
 #: modules/Product/html_admin/mod_product_promo.html.twig:136
 #: modules/Product/html_admin/mod_product_promos.html.twig:227
 msgid "Applicable Products (Select None to Apply to All)"
-msgstr ""
+msgstr "Productos a los que aplicar (Selecciona Ninguno para Aplicar a Todos)"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:150
 #: modules/Product/html_admin/mod_product_promos.html.twig:240
@@ -7466,11 +7460,11 @@ msgstr "Cantidad"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_config.html.twig:2
 msgid "Domains management"
-msgstr ""
+msgstr "Gestión de dominios"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:12
 msgid "Top level domains"
-msgstr ""
+msgstr "Dominios de nivel superior"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:19
 msgid "New top level domain"
@@ -7492,7 +7486,7 @@ msgstr ""
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Nameservers"
-msgstr "Servidores de nombres"
+msgstr "Nombres de servidores"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:50
 msgid "Manage TLDs"
@@ -7615,7 +7609,7 @@ msgstr ""
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:245
 msgid "Click on install button. Now you will be able to create top level domains with new domain registrar"
-msgstr ""
+msgstr "Haz clic en el botón instalar. Ahora podrás crear dominios de nivel superior con el nuevo registrador de dominios"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:246
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
@@ -7632,13 +7626,13 @@ msgstr ""
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:290
 msgid "Setup default nameservers that will be used for new domain registrations if client have not provided his own nameservers in order form"
-msgstr ""
+msgstr "Configurar nombres de servidores que se usarán por defecto para nuevos registros de dominio, si el cliente no ha proporcionado sus propios nombres de servidores en el formulario de pedido"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:292
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:111
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:76
 msgid "Nameservers updated"
-msgstr ""
+msgstr "Nombres de servidores actualizados"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:296
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:18
@@ -7686,7 +7680,7 @@ msgstr ""
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:320
 msgid "Update nameservers"
-msgstr ""
+msgstr "Actualizar nombres de servidores"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:2
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:26
@@ -7893,11 +7887,11 @@ msgstr ""
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:73
 msgid "Update Nameservers"
-msgstr ""
+msgstr "Actualizar Nombres de servidores"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:74
 msgid "If you would like to host this domain with another company you can update nameservers."
-msgstr ""
+msgstr "Si quieres alojar este dominio con otra empresa, puedes actualizar los nombres de servidores."
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:115
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
@@ -7913,7 +7907,7 @@ msgstr ""
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:201
 msgid "Most domain names (except a few top-level domains like .EU and .UK) have a Domain Secret Key/Authorization Code (EPP Code) associated with them. This code is typically required when transferring the domain to a new registrar."
-msgstr ""
+msgstr "La mayoría de nombres de dominio (excepto algunos dominios de nivel superior como .EU y .UK) tienen un Código de Autorización Secreto (código EPP) asociados a ellos. Este código se suele solicitar cuando se transfiere un dominio a un nuevo registrador."
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:203
 msgid "Get EPP code"
@@ -7935,7 +7929,7 @@ msgstr "Comprobar"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:45
 msgid "I want to use my nameservers"
-msgstr ""
+msgstr "Quiero utilizar mis nombres de servidores"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:71
 msgid "Transfer a new domain"
@@ -8122,7 +8116,7 @@ msgstr "Ancho de Banda"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:48
 msgid "Max Addon domains"
-msgstr ""
+msgstr "Máximos dominios adicionales"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:54
 msgid "Max FTP accounts"
@@ -8138,11 +8132,11 @@ msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:72
 msgid "Max Subdomains"
-msgstr ""
+msgstr "Máximos Subdominios"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:78
 msgid "Max Parked Domains"
-msgstr ""
+msgstr "Máximo de dominios"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:84
 msgid "Server manager specific parameters"
@@ -8179,7 +8173,7 @@ msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:97
 msgid "Addon domains"
-msgstr ""
+msgstr "Dominios adicionales"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:98
 msgid "Disk space"
@@ -8459,7 +8453,7 @@ msgstr "Configuración del dominio"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:12
 msgid "I will use my existing domain and update nameservers"
-msgstr ""
+msgstr "Usaré un dominio propio y actualizaré los nombres de servidores"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:17
 msgid "I want to register a new domain"
@@ -8605,7 +8599,7 @@ msgstr ""
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:35
 msgid "Valid Domains"
-msgstr ""
+msgstr "Dominios Válidos"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:41
 msgid "All hosts"
@@ -8715,7 +8709,7 @@ msgstr ""
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:116
 msgid "If enabled, email addresses will be checked against a database of disposable email domains."
-msgstr ""
+msgstr "Si está habilitado, se comprobarán las direcciones de correo electrónico en una base de datos de dominios de correo electrónico no deseados."
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:117
 msgid "This database is updated daily and provided free of charge by the FakeFilter project under the BSD 3-Clause License."
@@ -8945,7 +8939,7 @@ msgstr ""
 
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:34
 msgid "Canned category"
-msgstr ""
+msgstr "Categoría predefinida"
 
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:5
 msgid "Canned Response"
@@ -8967,7 +8961,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:46
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:46
 msgid "New Category"
-msgstr ""
+msgstr "Nueva Categoría"
 
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:24
 msgid "Helpdesk -"
@@ -9000,7 +8994,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:90
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:63
 msgid "Go Back"
-msgstr ""
+msgstr "Volver"
 
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:25
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:28
@@ -9022,7 +9016,7 @@ msgstr ""
 
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:184
 msgid "Category created"
-msgstr ""
+msgstr "Categoría creada"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:31
 #: modules/Support/html_admin/mod_support_ticket.html.twig:36
@@ -9516,32 +9510,44 @@ msgstr ""
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:14
-msgid "Automatic Update"
-msgstr ""
-
 #: modules/System/html_admin/mod_system_update.html.twig:15
-msgid "The automatic updater is a one-click tool for updating FOSSBilling. PHP must be able to write to the directory where FOSSBilling is installed."
+msgid "Update release notes"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:19
+#: modules/System/html_admin/mod_system_update.html.twig:18
 msgid "This update is considered to be a major update, you should check the release notes for any breaking changes."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:25
+#: modules/System/html_admin/mod_system_update.html.twig:24
 msgid "This update is considered to be a minor update, there are low chances of incompatibilities."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:43
-msgid "Manual Update"
-msgstr "Actualización manual"
-
-#: modules/System/html_admin/mod_system_update.html.twig:44
-msgid "If the auto updater is unable to function in your current installation environment, a manual update is available as an alternative solution."
+#: modules/System/html_admin/mod_system_update.html.twig:30
+msgid "There is no update available"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:57
+#: modules/System/html_admin/mod_system_update.html.twig:31
+msgid "You appear to be running the latest version of FOSSBilling, so no action is needed at the moment. If you think this is a mistake, you may use the button below to check again."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:63
+msgid "Check for Updates"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:69
 msgid "Apply Patches & Update Configuration"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:72
+msgid "Applying patches and updating the configuration should be performed automatically, you don't need to use that button unless you are experiencing issues."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:73
+msgid "Last update check:"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:74
+msgid "Next update check:"
 msgstr ""
 
 #: modules/System/html_client/mod_system_maintenance.html.twig:4
