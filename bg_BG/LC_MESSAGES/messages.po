@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-12-19 09:25-0800\n"
-"PO-Revision-Date: 2023-12-27 22:44\n"
+"POT-Creation-Date: 2023-12-28 22:22-0800\n"
+"PO-Revision-Date: 2023-12-29 22:37\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Bulgarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.1\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
@@ -27,31 +27,31 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: bg_BG\n"
 
-#: di.php:330
+#: di.php:326
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Изглежда, че се опитвате да използвате FOSSBilling без включено разширение php intl. FOSSBilling включва полифил за разширението intl, но то не поддържа :locale. Моля, включете разширението intl."
 
-#: di.php:378 di.php:452
+#: di.php:374 di.php:448
 msgid "Client is not logged in"
 msgstr "Клиентът не е влязъл в системата"
 
-#: di.php:418 di.php:490
+#: di.php:414 di.php:486
 msgid "Admin is not logged in"
 msgstr "Админа не е влязъл в системата"
 
-#: di.php:530
+#: di.php:526
 msgid "Unrecognized Handler type: "
 msgstr "Неразпознат Handler type: "
 
-#: di.php:540
+#: di.php:536
 msgid "Please check your mailbox and confirm email address."
 msgstr "Моля, проверете пощенската си кутия и потвърдете имейл адреса си."
 
-#: index.php:68 library/Box/App.php:416 library/Box/AppClient.php:69
+#: index.php:70 library/Box/App.php:416 library/Box/AppClient.php:69
 msgid "Page :url not found"
 msgstr "Страницата :url не е открита"
 
-#: index.php:75
+#: index.php:77
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "HTTP Грешка :err_code се получи докато опитах да заредя :url"
 
@@ -310,38 +310,38 @@ msgstr "Неуспешно изпращане на имейл чрез :transpor
 msgid "SMTP host or port is not configured"
 msgstr "SMTP хостът или портът не са конфигурирани"
 
-#: library/FOSSBilling/Tools.php:77 library/FOSSBilling/Tools.php:254
+#: library/FOSSBilling/Tools.php:79 library/FOSSBilling/Tools.php:256
 msgid "Service class :class was not found in :path"
 msgstr "Клас на обслужване :клас не е намерен в :път"
 
-#: library/FOSSBilling/Tools.php:299
+#: library/FOSSBilling/Tools.php:301
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Електронна поща"
 
-#: library/FOSSBilling/Tools.php:300 library/FOSSBilling/Validate.php:108
+#: library/FOSSBilling/Tools.php:302 library/FOSSBilling/Validate.php:108
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: е невалиден"
 
-#: library/FOSSBilling/Update.php:116
+#: library/FOSSBilling/Update.php:142
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Не успях да изтегля архива с актуализациите. Допълнителна информация е налична в дневника/логът за грешки."
 
-#: library/FOSSBilling/Update.php:170 modules/System/Api/Admin.php:184
+#: library/FOSSBilling/Update.php:200 modules/System/Api/Admin.php:191
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Вие притежавате най-новата версия на FOSSBilling. Не е необходимо да актуализирате."
 
-#: library/FOSSBilling/Update.php:192
+#: library/FOSSBilling/Update.php:222
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Не успях да изтегля архива с актуализациите. Допълнителна информация е налична в дневника/логът за грешки."
 
-#: library/FOSSBilling/Update.php:205 modules/Extension/Service.php:475
+#: library/FOSSBilling/Update.php:235 modules/Extension/Service.php:475
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Неуспешно извличане на файла, моля, проверете разрешенията на файловете и папките. Допълнителна информация е налична в дневника/логът за грешки."
 
-#: library/FOSSBilling/Update.php:223
+#: library/FOSSBilling/Update.php:253
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "Не успях да изчистя кеша и/или да премахна папката за инсталиране. Допълнителна информация е налична в лога/дневника за грешки."
 
@@ -485,10 +485,6 @@ msgstr "URL адресът за уведомление от IPN за плате�
 msgid "IPN redirect URL for payment gateway was not set"
 msgstr "IPN пренасочващият URL адрес за платежния метод не е настроен"
 
-#: library/Payment/AdapterAbstract.php:90
-msgid "Payment adapter class did not implement configuration options method"
-msgstr "Класът на адаптера за плащане не приложи метода за конфигурационни опции"
-
 #: library/Registrar/Adapter/Email.php:23
 #: library/Registrar/Adapter/Internetbs.php:18
 #: library/Registrar/Adapter/Internetbs.php:25
@@ -613,10 +609,6 @@ msgstr "При регистрацията на RU домейн се изискв
 #: library/Registrar/Adapter/Resellerclub.php:970
 msgid "Contact not found"
 msgstr "Контактът не е намерен"
-
-#: library/Registrar/AdapterAbstract.php:36
-msgid "Domain registrar class did not implement configuration options method"
-msgstr "Класът на домейн адаптера не приложи метода за конфигурационни опции"
 
 #: library/Server/Manager/CWP.php:20 library/Server/Manager/CWP.php:24
 #: library/Server/Manager/CWP.php:28 library/Server/Manager/Directadmin.php:16
@@ -878,7 +870,7 @@ msgid "Please check your login details."
 msgstr "Моля проверете данните си за вписване."
 
 #: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
-#: modules/Client/Service.php:702
+#: modules/Client/Service.php:703
 msgid "The link has expired or you have already reset your password."
 msgstr "Срокът на връзката е изтекъл или вече сте променили паролата си."
 
@@ -951,11 +943,11 @@ msgstr "Клиентът не е намерен"
 msgid "Can not remove group with clients"
 msgstr "Не можете да премахнете група с клиенти"
 
-#: modules/Client/Service.php:632 modules/Profile/Service.php:125
+#: modules/Client/Service.php:633 modules/Profile/Service.php:125
 msgid "Email can not be changed"
 msgstr "Имейла не може да бъде променен"
 
-#: modules/Client/Service.php:646 modules/Client/Service.php:662
+#: modules/Client/Service.php:647 modules/Client/Service.php:663
 msgid "Field :field cannot be empty"
 msgstr "Полето :field не може да бъде празно"
 
@@ -2316,7 +2308,9 @@ msgid "Allows the staff member to invalidate the FOSSBilling cache from within t
 msgstr "Позволява на модератора стафф потребителя да анулира кеша на FOSSBilling от системните настройки."
 
 #: modules/System/Service.php:52
-#: modules/System/html_admin/mod_system_update.html.twig:39
+#: modules/System/html_admin/mod_system_update.html.twig:11
+#: modules/System/html_admin/mod_system_update.html.twig:45
+#: modules/System/html_admin/mod_system_update.html.twig:54
 msgid "Update FOSSBilling"
 msgstr "Актуализиране на FOSSBilling"
 
@@ -2727,7 +2721,7 @@ msgstr "Име на фирмата"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:80
-#: modules/Invoice/pdf_template/default-pdf.twig:98
+#: modules/Invoice/pdf_template/default-pdf.twig:109
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
 #: modules/Page/html_client/mod_page_login.html.twig:23
 #: modules/Page/html_client/mod_page_password-reset.html.twig:24
@@ -2923,8 +2917,8 @@ msgstr "Анулиране"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:154
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:190
-#: modules/Invoice/pdf_template/default-pdf.twig:58
-#: modules/Invoice/pdf_template/default-pdf.twig:87
+#: modules/Invoice/pdf_template/default-pdf.twig:66
+#: modules/Invoice/pdf_template/default-pdf.twig:95
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -2959,7 +2953,7 @@ msgstr "Нова група"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:156
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:61
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:113
-#: modules/Invoice/pdf_template/default-pdf.twig:28
+#: modules/Invoice/pdf_template/default-pdf.twig:36
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
 #: modules/Page/html_client/mod_page_signup.html.twig:49
@@ -3031,9 +3025,9 @@ msgstr "Пощенски код"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:131
-#: modules/Invoice/pdf_template/default-pdf.twig:33
-#: modules/Invoice/pdf_template/default-pdf.twig:45
-#: modules/Invoice/pdf_template/default-pdf.twig:98
+#: modules/Invoice/pdf_template/default-pdf.twig:41
+#: modules/Invoice/pdf_template/default-pdf.twig:53
+#: modules/Invoice/pdf_template/default-pdf.twig:110
 #: modules/System/html_admin/mod_system_settings.html.twig:69
 msgid "Phone"
 msgstr "Телефонен номер"
@@ -5197,7 +5191,7 @@ msgstr "Номер"
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
-#: modules/Invoice/pdf_template/default-pdf.twig:40
+#: modules/Invoice/pdf_template/default-pdf.twig:48
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -5865,7 +5859,7 @@ msgstr "#"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:185
-#: modules/Invoice/pdf_template/default-pdf.twig:82
+#: modules/Invoice/pdf_template/default-pdf.twig:90
 #: modules/Product/html_admin/mod_product_promos.html.twig:48
 msgid "Discount"
 msgstr "Намаление"
@@ -5901,7 +5895,7 @@ msgid "Pay with"
 msgstr "Плати с"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:29
-#: modules/Invoice/pdf_template/default-pdf.twig:22
+#: modules/Invoice/pdf_template/default-pdf.twig:30
 msgid "Invoice number"
 msgstr "Номер на фактурата"
 
@@ -5916,7 +5910,7 @@ msgid "Bank Name"
 msgstr "Име на банката"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
-#: modules/Invoice/pdf_template/default-pdf.twig:96
+#: modules/Invoice/pdf_template/default-pdf.twig:104
 #: modules/System/html_admin/mod_system_settings.html.twig:119
 #: themes/huraga/html/layout_default.html.twig:173
 msgid "BIC / SWIFT Code"
@@ -5948,19 +5942,19 @@ msgstr "Плащането за фактурата бе получено"
 msgid "You will be automatically redirected to invoice page after 5 minutes."
 msgstr "Ще бъдете автоматично пренасочени към страницата с фактурата след 5 минути."
 
-#: modules/Invoice/pdf_template/default-pdf.twig:23
+#: modules/Invoice/pdf_template/default-pdf.twig:31
 msgid "Invoice date"
 msgstr "Дата на фактурата"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:24
+#: modules/Invoice/pdf_template/default-pdf.twig:32
 msgid "Due date"
 msgstr "Краен срок"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:25
+#: modules/Invoice/pdf_template/default-pdf.twig:33
 msgid "Invoice status"
 msgstr "Статус на фактурата"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:56
+#: modules/Invoice/pdf_template/default-pdf.twig:64
 #: modules/Order/html_admin/mod_order_index.html.twig:41
 #: modules/Order/html_admin/mod_order_index.html.twig:295
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
@@ -5968,35 +5962,35 @@ msgstr "Статус на фактурата"
 msgid "Product"
 msgstr "Продукт"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:57
+#: modules/Invoice/pdf_template/default-pdf.twig:65
 msgid "Quantity & Price"
 msgstr "Количество & Цена"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:103
 msgid "Payment details"
 msgstr "Детайли за плащането"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:96
+#: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Account Owner"
 msgstr "Собственик на профила"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:96
+#: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Bank"
 msgstr "Банка"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:96
+#: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Account number"
 msgstr "Номер на сметка"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:99
+#: modules/Invoice/pdf_template/default-pdf.twig:111
 msgid "VAT ID"
 msgstr "Номер по ДДС"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:99
+#: modules/Invoice/pdf_template/default-pdf.twig:112
 msgid "Company Registration #:"
 msgstr "Регистрация на фирмата #:"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:99
+#: modules/Invoice/pdf_template/default-pdf.twig:113
 msgid "Website"
 msgstr "Уебсайт"
 
@@ -6486,7 +6480,7 @@ msgid "Order Product"
 msgstr "Поръчайте продукт"
 
 #: modules/Order/html_client/mod_order_index.html.twig:24
-#: modules/Order/html_client/mod_order_product.html.twig:20
+#: modules/Order/html_client/mod_order_product.html.twig:19
 msgid "Choose products we offer for selling"
 msgstr "Изберете продукти, които предлагаме за продажба"
 
@@ -6584,7 +6578,7 @@ msgstr "Надграждане до"
 msgid "I would like to upgrade"
 msgstr "Бих искал да надстроя"
 
-#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Order/html_client/mod_order_product.html.twig:18
 #: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
 msgid "Select Product"
 msgstr "Избери продукта"
@@ -6837,28 +6831,28 @@ msgstr "Вече имате профил?"
 msgid "Payment"
 msgstr "Плащане"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:45
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:44
 msgid "Powered by"
 msgstr "Осъществено от"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:110
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:129
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:109
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:128
 msgid "You logged in successfully"
 msgstr "Успешно сте влезли в системата"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:6
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:8
 msgid "Product Configuration"
 msgstr "Конфигурация на продукта"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:14
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:16
 msgid "Product was added to shopping cart"
 msgstr "Продуктът бе добавен в пазарската кошница"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:32
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:34
 msgid "FREE"
 msgstr "БЕЗПЛАТНО"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:55
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:57
 msgid "Next"
 msgstr "Следващ"
 
@@ -9519,33 +9513,45 @@ msgstr "Последна приложима промяна в поведение
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
 msgstr "Последната приложима промяна в поведението представлява най-новата версия на FOSSBilling, която е променила отчитането на грешки, което се отнася и за настоящата версия. Възможно е да е имало и по-скорошни промени от изброените."
 
-#: modules/System/html_admin/mod_system_update.html.twig:14
-msgid "Automatic Update"
-msgstr "Автоматична актуализация"
-
 #: modules/System/html_admin/mod_system_update.html.twig:15
-msgid "The automatic updater is a one-click tool for updating FOSSBilling. PHP must be able to write to the directory where FOSSBilling is installed."
-msgstr "Автоматичното актуализиране е инструмент за актуализиране на FOSSBilling с едно кликване. PHP трябва да може да записва данни в директорията, в която е инсталиран FOSSBilling."
+msgid "Update release notes"
+msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:19
+#: modules/System/html_admin/mod_system_update.html.twig:18
 msgid "This update is considered to be a major update, you should check the release notes for any breaking changes."
 msgstr "Тази актуализация се счита за основна актуализация и трябва да проверите официалния ни сайт със информация за последните актуализации и версии на софтуера за да знаете дали има грешки или как трябва да свалите версията на софтуера."
 
-#: modules/System/html_admin/mod_system_update.html.twig:25
+#: modules/System/html_admin/mod_system_update.html.twig:24
 msgid "This update is considered to be a minor update, there are low chances of incompatibilities."
 msgstr "Тази актуализация се счита за незначителна и вероятността за несъвместимости е малка."
 
-#: modules/System/html_admin/mod_system_update.html.twig:43
-msgid "Manual Update"
-msgstr "Ръчно актуализиране"
+#: modules/System/html_admin/mod_system_update.html.twig:30
+msgid "There is no update available"
+msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:44
-msgid "If the auto updater is unable to function in your current installation environment, a manual update is available as an alternative solution."
-msgstr "Ако автоматичното обновяване не може да функционира в текущата среда на инсталация, като алтернативно решение е налично ръчно обновяване на софтуера."
+#: modules/System/html_admin/mod_system_update.html.twig:31
+msgid "You appear to be running the latest version of FOSSBilling, so no action is needed at the moment. If you think this is a mistake, you may use the button below to check again."
+msgstr ""
 
-#: modules/System/html_admin/mod_system_update.html.twig:57
+#: modules/System/html_admin/mod_system_update.html.twig:63
+msgid "Check for Updates"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:69
 msgid "Apply Patches & Update Configuration"
 msgstr "Прилагане на пачовете, промените и актуализиране на конфигурацията"
+
+#: modules/System/html_admin/mod_system_update.html.twig:72
+msgid "Applying patches and updating the configuration should be performed automatically, you don't need to use that button unless you are experiencing issues."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:73
+msgid "Last update check:"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:74
+msgid "Next update check:"
+msgstr ""
 
 #: modules/System/html_client/mod_system_maintenance.html.twig:4
 #: modules/System/html_client/mod_system_maintenance.html.twig:17
