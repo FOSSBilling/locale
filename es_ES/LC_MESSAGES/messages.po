@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2023-12-28 22:22-0800\n"
-"PO-Revision-Date: 2024-01-01 22:36\n"
+"POT-Creation-Date: 2024-01-02 16:09-0800\n"
+"PO-Revision-Date: 2024-01-04 22:39\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -47,11 +47,11 @@ msgstr "Tipo de controlador no reconocido: "
 msgid "Please check your mailbox and confirm email address."
 msgstr "Por favor, compruebe su buzón y confirme la dirección de correo electrónico."
 
-#: index.php:70 library/Box/App.php:416 library/Box/AppClient.php:69
+#: index.php:78 library/Box/App.php:416 library/Box/AppClient.php:69
 msgid "Page :url not found"
 msgstr "Página: Url no encontrada"
 
-#: index.php:77
+#: index.php:85
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "Error HTTP :err_code ha ocurrido mientras se cargaba :url"
 
@@ -3540,7 +3540,7 @@ msgstr "Publicado el"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:524
 msgid "Paid on"
-msgstr "Pagado el"
+msgstr "Pagada el"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:577
 msgid "New invoice"
@@ -3906,7 +3906,7 @@ msgstr "La llave API permite la integración con aplicaciones externas. Necesita
 
 #: modules/Client/html_client/mod_client_profile.html.twig:203
 msgid "Warning!"
-msgstr "Advertencia!"
+msgstr "¡Atención!"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:203
 msgid "Resetting the key will break existing applications using it!"
@@ -4983,7 +4983,7 @@ msgstr "Nuevos pedidos"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:166
 msgid "No recent orders"
-msgstr ""
+msgstr "Sin pedidos recientes"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:176
 #: modules/Support/html_client/mod_support_ticket.html.twig:13
@@ -4996,7 +4996,7 @@ msgstr "Tickets de soporte"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:198
 msgid "No recent support tickets"
-msgstr ""
+msgstr "No hay Tickets de soporte recientes"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:212
 msgid "You are logged out"
@@ -5376,7 +5376,7 @@ msgstr "Método de pago"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:290
 msgid "Due at"
-msgstr ""
+msgstr "Vence el"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:357
 msgid "Text before invoice items table"
@@ -5806,14 +5806,14 @@ msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:24
 msgid "All of your invoices can be found here. You can choose to see either paid or unpaid invoices by clicking corresponding button."
-msgstr "Todas sus facturas se pueden encontrar aquí. Puede elegir ver las facturas pagadas o impagas haciendo clic en el botón correspondiente."
+msgstr "Aquí están todas tus facturas. Puedes elegir ver las facturas pagadas o pendientes de pago haciendo clic en la pestaña correspondiente."
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:49
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:82
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:31
 msgid "Invoice Date"
-msgstr ""
+msgstr "Fecha de Factura"
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:50
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:84
@@ -5827,7 +5827,7 @@ msgstr "Pagar"
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:83
 msgid "Paid Date"
-msgstr ""
+msgstr "Fecha de Pago"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:25
 msgid "Payment methods"
@@ -5854,7 +5854,7 @@ msgstr "Cuenta"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:196
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:151
 msgid "#"
-msgstr ""
+msgstr "nº"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:185
@@ -5930,7 +5930,7 @@ msgid "Thank you"
 msgstr "Gracias"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
-msgid "Your payment is being processed right now. It can take up 5 minutes to complete."
+msgid "Your payment has been submitted and will be processed shortly. It may take a little bit of time for your invoice to be marked as paid."
 msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
@@ -5938,7 +5938,7 @@ msgid "Payment for invoice received"
 msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
-msgid "You will be automatically redirected to invoice page after 5 minutes."
+msgid "You will be automatically redirected to the invoice page after 1 minute."
 msgstr ""
 
 #: modules/Invoice/pdf_template/default-pdf.twig:31
@@ -6189,7 +6189,7 @@ msgstr ""
 #: modules/Order/html_admin/mod_order_index.html.twig:262
 #: modules/Order/html_admin/mod_order_index.html.twig:266
 msgid "Export Orders"
-msgstr ""
+msgstr "Exportar pedidos"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:300
 #: themes/huraga/html/partial_pricing.html.twig:78
@@ -6460,11 +6460,11 @@ msgstr ""
 
 #: modules/Order/html_admin/mod_order_settings.html.twig:75
 msgid "Cancel Suspended Orders"
-msgstr ""
+msgstr "Cancelar Pedidos Suspendidos"
 
 #: modules/Order/html_admin/mod_order_settings.html.twig:76
 msgid "Do Not Cancel Suspended Orders"
-msgstr ""
+msgstr "No Cancelar Pedidos Suspendidos"
 
 #: modules/Order/html_admin/mod_order_settings.html.twig:79
 msgid "days after order suspension with reason"
@@ -6496,7 +6496,7 @@ msgstr "Servicios"
 
 #: modules/Order/html_client/mod_order_list.html.twig:20
 msgid "All of your orders are displayed here. Click on any service to get full information about it."
-msgstr ""
+msgstr "Todos tus pedidos están aquí. Haz clic en cualquier servicio para obtener información completa sobre él."
 
 #: modules/Order/html_client/mod_order_list.html.twig:30
 #: modules/Support/html_admin/mod_support_tickets.html.twig:40
@@ -6505,7 +6505,7 @@ msgstr "ID del pedido"
 
 #: modules/Order/html_client/mod_order_list.html.twig:61
 msgid "No orders yet"
-msgstr ""
+msgstr "No se ha realizado ningún pedido"
 
 #: modules/Order/html_client/mod_order_manage.html.twig:26
 msgid "Service details"
@@ -6983,7 +6983,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_tickets.html.twig:313
 #: modules/Support/html_client/mod_support_tickets.html.twig:85
 msgid "Helpdesk"
-msgstr ""
+msgstr "Departamento"
 
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:29
 msgid "Edit product addon"
@@ -7074,7 +7074,7 @@ msgstr ""
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:28
 msgid "General settings"
-msgstr "Ajustes generales"
+msgstr "Configuración general"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:31
 msgid "Configuration"
@@ -7959,7 +7959,7 @@ msgstr "Archivo"
 
 #: modules/Servicedownloadable/html_admin/mod_servicedownloadable_config.html.twig:9
 msgid "Keep Orders Updated"
-msgstr ""
+msgstr "Mantener Pedidos Actualizados"
 
 #: modules/Servicedownloadable/html_admin/mod_servicedownloadable_config.html.twig:23
 msgid "Save config"
@@ -8967,7 +8967,7 @@ msgstr "Nueva Categoría"
 
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:24
 msgid "Helpdesk -"
-msgstr ""
+msgstr "Departamento -"
 
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:34
 msgid "Helpdesk name will be visible for clients when submitting a new ticket."
@@ -9234,7 +9234,7 @@ msgstr "Juan Pérez"
 
 #: modules/Support/html_admin/mod_support_tickets.html.twig:349
 msgid "user@domail.com"
-msgstr ""
+msgstr "usuario@dominio.com"
 
 #: modules/Support/html_admin/mod_support_tickets.html.twig:355
 msgid "Email Subject"
@@ -9295,7 +9295,7 @@ msgstr ""
 
 #: modules/Support/html_client/mod_support_ticket.html.twig:62
 msgid "Service #"
-msgstr ""
+msgstr "Servicio nº"
 
 #: modules/Support/html_client/mod_support_ticket.html.twig:86
 msgid "Operator"
@@ -9303,7 +9303,7 @@ msgstr ""
 
 #: modules/Support/html_client/mod_support_ticket.html.twig:90
 msgid "You"
-msgstr ""
+msgstr "Tú"
 
 #: modules/Support/html_client/mod_support_ticket.html.twig:101
 msgid "Quote reply"
@@ -9315,7 +9315,7 @@ msgstr ""
 
 #: modules/Support/html_client/mod_support_tickets.html.twig:19
 msgid "Need an answer? We are here to help!"
-msgstr ""
+msgstr "¿Necesitas respuesta? ¡Estamos aquí para ayudar!"
 
 #: modules/Support/html_client/mod_support_tickets.html.twig:36
 msgid "Submitted"
@@ -9323,7 +9323,7 @@ msgstr "Enviado"
 
 #: modules/Support/html_client/mod_support_tickets.html.twig:63
 msgid "No support tickets"
-msgstr ""
+msgstr "No hay tickets de soporte"
 
 #: modules/Support/html_client/mod_support_tickets.html.twig:76
 msgid "Open new ticket"
@@ -9700,7 +9700,7 @@ msgstr "facturas"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:112
 msgid "unpaid"
-msgstr "no pagado"
+msgstr "no pagada"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:133
 msgid "tickets"
@@ -9708,7 +9708,7 @@ msgstr "tickets"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:134
 msgid "waiting for staff reply"
-msgstr "esperando respuesta del personal"
+msgstr "a la espera de respuesta"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:144
 msgid "Statistics"
@@ -9798,7 +9798,7 @@ msgstr "Ticket de soporte"
 
 #: themes/admin_default/html/partial_menu_top.html.twig:23
 msgid "Staff member"
-msgstr "Miembro del Staff"
+msgstr "Miembro del personal"
 
 #: themes/admin_default/html/partial_menu_top.html.twig:27
 msgid "Announcement"
