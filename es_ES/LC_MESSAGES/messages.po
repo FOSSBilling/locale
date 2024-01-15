@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-01-02 16:09-0800\n"
-"PO-Revision-Date: 2024-01-04 22:39\n"
+"POT-Creation-Date: 2024-01-08 18:02-0800\n"
+"PO-Revision-Date: 2024-01-15 05:48\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -27,27 +27,27 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: es_ES\n"
 
-#: di.php:326
+#: di.php:319
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Parece que está intentando usar FOSSBilling sin la extensión intl habilitada para php. FOSSBilling incluye un polyfill para la extensión intl, sin embargo no es compatible con :locale. Por favor habilite la extensión intl."
 
-#: di.php:374 di.php:448
+#: di.php:367 di.php:441
 msgid "Client is not logged in"
 msgstr "El cliente no está conectado"
 
-#: di.php:414 di.php:486
+#: di.php:407 di.php:479
 msgid "Admin is not logged in"
 msgstr "El administrador no está conectado"
 
-#: di.php:526
+#: di.php:519
 msgid "Unrecognized Handler type: "
 msgstr "Tipo de controlador no reconocido: "
 
-#: di.php:536
+#: di.php:529
 msgid "Please check your mailbox and confirm email address."
 msgstr "Por favor, compruebe su buzón y confirme la dirección de correo electrónico."
 
-#: index.php:78 library/Box/App.php:416 library/Box/AppClient.php:69
+#: index.php:78 library/Box/App.php:419 library/Box/AppClient.php:70
 msgid "Page :url not found"
 msgstr "Página: Url no encontrada"
 
@@ -63,7 +63,7 @@ msgstr "El objeto Mod no está configurado para el servicio"
 msgid "Method :method must contain underscore"
 msgstr "Método: el método debe contener guiones bajos"
 
-#: library/Api/Handler.php:55 library/Box/Mod.php:53
+#: library/Api/Handler.php:55 library/Box/Mod.php:52
 msgid "Invalid module name"
 msgstr "Nombre del módulo no válido"
 
@@ -75,11 +75,11 @@ msgstr "FOSSBilling module :mod no está instalado/activado"
 msgid "You do not have access to :mod module"
 msgstr "No tiene acceso a este módulo"
 
-#: library/Api/Handler.php:90
+#: library/Api/Handler.php:91
 msgid "Api class must be instance of Api_Abstract"
 msgstr "La clase Api debe ser una instancia de Api_Abstract"
 
-#: library/Api/Handler.php:106
+#: library/Api/Handler.php:107
 msgid ":type API call :method does not exist in module :module"
 msgstr ":type API call :method no existe en el módulo :module"
 
@@ -91,27 +91,27 @@ msgstr "El sistema está en mantenimiento. Vuelva a intentarlo más tarde"
 msgid "You do not have permission to access the :mod: module"
 msgstr "Para acceder al módulo :mod: necesitas tener permiso"
 
-#: library/Box/AppClient.php:87
+#: library/Box/AppClient.php:89
 msgid "Page not found"
 msgstr "Página no encontrada"
 
-#: library/Box/Crypt.php:20
+#: library/Box/Crypt.php:19
 msgid "The PHP openssl extension must be enabled on your server"
 msgstr "La extensión de PHP openssl debe estar habilitada en su servidor"
 
-#: library/Box/Log.php:72
+#: library/Box/Log.php:69
 msgid "Missing log message"
 msgstr "Mensaje de registro faltante"
 
-#: library/Box/Log.php:87 library/Box/Log.php:106
+#: library/Box/Log.php:86 library/Box/Log.php:101
 msgid "Bad log priority"
 msgstr "Prioridad de registro incorrecto"
 
-#: library/Box/Mod.php:72
+#: library/Box/Mod.php:71
 msgid "Module :mod manifest file is missing"
 msgstr "Module :falta el archivo de manifiesto mod"
 
-#: library/Box/Mod.php:77
+#: library/Box/Mod.php:76
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr "El archivo de manifiesto del :mod es inválido. Verifica la sintaxis y los permisos del archivo."
 
@@ -119,28 +119,28 @@ msgstr "El archivo de manifiesto del :mod es inválido. Verifica la sintaxis y l
 msgid "Module :mod does not have service class"
 msgstr "Module :mod no tiene clase de servicio"
 
-#: library/Box/Mod.php:136
+#: library/Box/Mod.php:137
 msgid "Module :mod Client controller class was not found"
 msgstr "Module :mod No se encontró la clase de controlador de cliente"
 
-#: library/Box/Mod.php:206
+#: library/Box/Mod.php:212
 msgid "Core module can not be updated"
 msgstr "El módulo principal no se puede actualizar"
 
-#: library/Box/Pagination.php:44 library/Box/Pagination.php:76
+#: library/Box/Pagination.php:44 library/Box/Pagination.php:77
 msgid "Invalid page number"
 msgstr "Número de página no válido"
 
-#: library/Box/Pagination.php:47 library/Box/Pagination.php:79
+#: library/Box/Pagination.php:47 library/Box/Pagination.php:80
 #: modules/Client/Service.php:183
 msgid "Invalid per page number"
 msgstr "Número de página por válido"
 
-#: library/Box/Period.php:44
+#: library/Box/Period.php:43
 msgid "Invalid period code. Period definition must be 2 chars length"
 msgstr "Código de período no válido. La definición del período debe tener una longitud de 2 caracteres"
 
-#: library/Box/Period.php:53
+#: library/Box/Period.php:52
 msgid "Period Error. Unit :unit is not defined"
 msgstr "Error de período. Unidad: la unidad no está definida"
 
@@ -181,146 +181,146 @@ msgstr "Cada 2 años"
 msgid "Every 3 years"
 msgstr "Cada 3 años"
 
-#: library/Box/Period.php:123
+#: library/Box/Period.php:124
 msgid "Every :number day"
 msgid_plural "Every :number days"
 msgstr[0] "Cada :number día(s)"
 msgstr[1] ""
 
-#: library/Box/Period.php:124
+#: library/Box/Period.php:125
 msgid "Every :number week"
 msgid_plural "Every :number weeks"
 msgstr[0] "Cada :number semana(s"
 msgstr[1] "Cada :number semanas"
 
-#: library/Box/Period.php:125
+#: library/Box/Period.php:126
 msgid "Every :number month"
 msgid_plural "Every :number months"
 msgstr[0] "Cada :número de mes(es)"
 msgstr[1] "Cada :número mes(es)"
 
-#: library/Box/Period.php:126
+#: library/Box/Period.php:127
 msgid "Every :number year"
 msgid_plural "Every :number years"
 msgstr[0] "Cada :número año(s)"
 msgstr[1] "Cada :number años"
 
-#: library/Box/Period.php:127 library/Box/Period.php:169
+#: library/Box/Period.php:128 library/Box/Period.php:170
 msgid "Unit not defined"
 msgstr "Unidad no definida"
 
-#: library/Box/Period.php:152
+#: library/Box/Period.php:153
 msgid "Unable to get the number of months for :unit"
 msgstr "No se ha podido obtener el número de meses para :unit"
 
-#: library/Box/Translate.php:54
+#: library/Box/Translate.php:55
 msgid "Unable to setup FOSSBilling translation functionality, locale was undefined."
 msgstr "No se pudo configurar la funcionalidad de traducción de FOSSBilling, la configuración regional no estaba definida."
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "second"
 msgstr "segundo"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "minute"
 msgstr "minuto"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "hour"
 msgstr "hora"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "day"
 msgstr "día"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "week"
 msgstr "semana"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "month"
 msgstr "mes"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "year"
 msgstr "año"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "decade"
 msgstr "década"
 
-#: library/Box/TwigLoader.php:24 library/Box/TwigLoader.php:28
-#: library/Box/TwigLoader.php:32
+#: library/Box/TwigLoader.php:23 library/Box/TwigLoader.php:27
+#: library/Box/TwigLoader.php:31
 msgid "Missing :missing: param for Box_TwigLoader"
 msgstr "Falta el parámetro :missing: para Box_TwigLoader"
 
-#: library/FOSSBilling/CentralAlerts.php:112
+#: library/FOSSBilling/CentralAlerts.php:119
 msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
 msgstr "No se pueden obtener alertas del Sistema Central de Alertas. Vea el registro de errores para más información."
 
-#: library/FOSSBilling/CentralAlerts.php:120
+#: library/FOSSBilling/CentralAlerts.php:127
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "Respuesta no válida del Sistema de Alertas- FOSSBilling ."
 
-#: library/FOSSBilling/ExtensionManager.php:55
+#: library/FOSSBilling/ExtensionManager.php:57
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "No se pueden obtener los detalles de la extensión desde el directorio de extensiones de FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:76
+#: library/FOSSBilling/ExtensionManager.php:79
 msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
 msgstr "No se pueden obtener las versiones de la extensión desde el directorio de extensiones de FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:98
+#: library/FOSSBilling/ExtensionManager.php:102
 msgid "Unable to fetch the latest release of the extension."
 msgstr "No se puede obtener la última versión de la extensión."
 
-#: library/FOSSBilling/ExtensionManager.php:170
+#: library/FOSSBilling/ExtensionManager.php:175
 msgid "Unable to connect to the FOSSBilling extension directory."
 msgstr "No se puede conectar al directorio de extensiones de FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:178
+#: library/FOSSBilling/ExtensionManager.php:183
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr "Respuesta inválida del directorio de extensiones de FOSSBilling."
 
-#: library/FOSSBilling/Mail.php:139
+#: library/FOSSBilling/Mail.php:131
 msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
 msgstr "La prioridad proporcionada (:priority) no es válida. Por favor, proporcione un entero entre 1 y 5 o utilice las constantes symfony predefinidas."
 
-#: library/FOSSBilling/Mail.php:156
+#: library/FOSSBilling/Mail.php:148
 msgid "FOSSBilling requires the proc_open PHP function to be enabled when using the sendmail transport"
 msgstr "FOSSBilling requiere que la función proc_open de PHP esté habilitada al utilizar el transporte de sendmail"
 
-#: library/FOSSBilling/Mail.php:164
+#: library/FOSSBilling/Mail.php:158
 msgid "A Sendgrid API key is required to send emails via Sendgrid"
 msgstr "Se necesita una clave API de Sendgrid para enviar correos electrónicos a través de Sendgrid"
 
-#: library/FOSSBilling/Mail.php:170
+#: library/FOSSBilling/Mail.php:165
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
 msgstr "No se puede enviar el correo electrónico: el método de transporte 'Personalizado' fue seleccionado sin un DSN personalizado"
 
-#: library/FOSSBilling/Mail.php:175
+#: library/FOSSBilling/Mail.php:171
 msgid "Unknown mail transport: :transport"
 msgstr "Transporte de correo desconocido: :transport"
 
-#: library/FOSSBilling/Mail.php:183
+#: library/FOSSBilling/Mail.php:179
 msgid "Failed to send email via :transport with the exception :e"
 msgstr "No se pudo enviar el correo a través de :transport con la excepción :e"
 
-#: library/FOSSBilling/Mail.php:199
+#: library/FOSSBilling/Mail.php:195
 msgid "SMTP host or port is not configured"
 msgstr "El nombre de host SMTP o el puerto no está configurado"
 
-#: library/FOSSBilling/Tools.php:79 library/FOSSBilling/Tools.php:256
+#: library/FOSSBilling/Tools.php:74 library/FOSSBilling/Tools.php:266
 msgid "Service class :class was not found in :path"
 msgstr "Clase de servicio: la clase no se encontró en :path"
 
-#: library/FOSSBilling/Tools.php:301
+#: library/FOSSBilling/Tools.php:312
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Correo electrónico"
 
-#: library/FOSSBilling/Tools.php:302 library/FOSSBilling/Validate.php:108
+#: library/FOSSBilling/Tools.php:314 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: no es válido"
@@ -329,11 +329,11 @@ msgstr ":friendlyName: no es válido"
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Error al descargar la información de la última versión. Se encuentran disponibles más detalles en el registro de errores."
 
-#: library/FOSSBilling/Update.php:200 modules/System/Api/Admin.php:191
+#: library/FOSSBilling/Update.php:198 modules/System/Api/Admin.php:192
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Tienes la última versión de FOSSBilling. No necesitas actualizar."
 
-#: library/FOSSBilling/Update.php:222
+#: library/FOSSBilling/Update.php:221
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Error al descargar el archivo de actualización. Hay más detalles disponibles en el registro de errores."
 
@@ -341,64 +341,64 @@ msgstr "Error al descargar el archivo de actualización. Hay más detalles dispo
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "No se pudo extraer el archivo, por favor, compruebe los permisos de archivo y carpeta. Hay más detalles disponibles en el registro de errores."
 
-#: library/FOSSBilling/Update.php:253
+#: library/FOSSBilling/Update.php:254
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "No se puede borrar la caché y/o eliminar la carpeta de instalación. Hay más detalles disponibles en el registro de errores."
 
-#: library/FOSSBilling/UpdatePatcher.php:46
+#: library/FOSSBilling/UpdatePatcher.php:44
 msgid "Unable to load existing configuration"
 msgstr "No se puede cargar la condición existente"
 
-#: library/FOSSBilling/UpdatePatcher.php:53
+#: library/FOSSBilling/UpdatePatcher.php:51
 msgid "Unable to create backup of configuration file"
 msgstr "No se puede crear la copia de seguridad del archivo de configuración"
 
-#: library/FOSSBilling/UpdatePatcher.php:108
+#: library/FOSSBilling/UpdatePatcher.php:107
 msgid "Error when writing updated configuration file."
 msgstr "Error al escribir el archivo de configuración actualizado."
 
-#: library/FOSSBilling/UpdatePatcher.php:169
+#: library/FOSSBilling/UpdatePatcher.php:164
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr "Se produjo un error al aplicar los parches de la base de datos. Consulte el registro de errores para obtener información sobre el error, corríjalo y luego realice el método de parcheo de respaldo para completar la actualización."
 
-#: library/FOSSBilling/Validate.php:51
+#: library/FOSSBilling/Validate.php:49
 msgid "Minimum password length is 8 characters."
 msgstr "La longitud mínima de la contraseña es de 8 caracteres."
 
-#: library/FOSSBilling/Validate.php:55
+#: library/FOSSBilling/Validate.php:53
 msgid "Maximum password length is 256 characters."
 msgstr "La longitud máxima de la contraseña es de 256 caracteres."
 
-#: library/FOSSBilling/Validate.php:59
+#: library/FOSSBilling/Validate.php:57
 msgid "Password must include at least one number."
 msgstr "La contraseña debe incluir al menos un número."
 
-#: library/FOSSBilling/Validate.php:63
+#: library/FOSSBilling/Validate.php:61
 msgid "Password must include at least one lowercase letter."
 msgstr "La contraseña debe incluir al menos una letra en minúscula."
 
-#: library/FOSSBilling/Validate.php:67
+#: library/FOSSBilling/Validate.php:65
 msgid "Password must include at least one uppercase letter."
 msgstr "La contraseña debe tener al menos una letra mayúscula."
 
-#: library/FOSSBilling/Validate.php:107
+#: library/FOSSBilling/Validate.php:104
 #: modules/Client/html_client/mod_client_profile.html.twig:70
 msgid "Birthdate"
 msgstr "Fecha de nacimiento"
 
-#: library/FOSSBilling/i18n.php:141
+#: library/FOSSBilling/i18n.php:143
 msgid "Unable to enable / disable the locale as it is not present in the locale folder."
 msgstr "No se puede habilitar/deshabilitar la configuración regional porque no está presente en la carpeta de configuración regional."
 
-#: library/Model/ProductDomainTable.php:217
+#: library/Model/ProductDomainTable.php:216
 msgid "Could not determine domain price. Domain action is missing"
 msgstr "No se pudo determinar el precio del dominio. Falta la acción de dominio"
 
-#: library/Model/ProductDomainTable.php:234
+#: library/Model/ProductDomainTable.php:233
 msgid "Unknown TLD. Could not determine registration price"
 msgstr "TLD desconocido. No se pudo determinar el precio de registro"
 
-#: library/Model/ProductDomainTable.php:255
+#: library/Model/ProductDomainTable.php:254
 msgid "Domain product can not be removed."
 msgstr "El producto de dominio no se puede eliminar."
 
@@ -406,19 +406,19 @@ msgstr "El producto de dominio no se puede eliminar."
 msgid "Unknown period selected "
 msgstr "Período desconocido seleccionado "
 
-#: library/Model/ProductTable.php:73
+#: library/Model/ProductTable.php:74
 msgid "Product pricing could not be determined. "
 msgstr "El precio del producto no se pudo determinar. "
 
-#: library/Model/ProductTable.php:105
+#: library/Model/ProductTable.php:104
 msgid "Unknown period selected for setup price"
 msgstr "Período desconocido seleccionado para el precio de configuración"
 
-#: library/Model/ProductTable.php:129
+#: library/Model/ProductTable.php:126
 msgid "Product :id payment type is recurrent, but period was not selected"
 msgstr "Producto :id tipo de pago es recurrente, pero el período no fue seleccionado"
 
-#: library/Model/ProductTable.php:141
+#: library/Model/ProductTable.php:138
 msgid "Unknown Period selected for price"
 msgstr "Período desconocido seleccionado para el precio"
 
@@ -427,81 +427,81 @@ msgid "Not enough in balance"
 msgstr "Saldo insuficiente"
 
 #: library/Payment/Adapter/ClientBalance.php:64
-#: library/Payment/Adapter/ClientBalance.php:93
-#: library/Payment/Adapter/ClientBalance.php:127
+#: library/Payment/Adapter/ClientBalance.php:94
+#: library/Payment/Adapter/ClientBalance.php:129
 msgid "It is forbidden to pay a deposit invoice with this gateway"
 msgstr "No se permite pagar la factura con esta pasarela de pagos"
 
-#: library/Payment/Adapter/ClientBalance.php:83
+#: library/Payment/Adapter/ClientBalance.php:84
 #: library/Payment/Adapter/PayPalEmail.php:75
 msgid "IPN is invalid"
 msgstr "IPN es inválido"
 
-#: library/Payment/Adapter/ClientBalance.php:121
+#: library/Payment/Adapter/ClientBalance.php:123
 msgid "ClientBalance gateway is not enabled"
 msgstr "Gateway ClientBalance no está activado"
 
-#: library/Payment/Adapter/PayPalEmail.php:31
+#: library/Payment/Adapter/PayPalEmail.php:30
 #: library/Payment/Adapter/Stripe.php:33 library/Payment/Adapter/Stripe.php:36
 #: library/Payment/Adapter/Stripe.php:42 library/Payment/Adapter/Stripe.php:45
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
 msgstr "La pasarela de pago \":pay_gateway\" no está completamente configurada. Por favor, configure el :missing"
 
-#: library/Payment/Adapter/PayPalEmail.php:123
+#: library/Payment/Adapter/PayPalEmail.php:121
 msgid "Cannot process duplicate IPN"
 msgstr "No se puede procesar IPN duplicado"
 
-#: library/Payment/Adapter/PayPalEmail.php:262
+#: library/Payment/Adapter/PayPalEmail.php:266
 msgid "Redirecting to PayPal.com"
 msgstr "Redirigiendo a PayPal.com"
 
-#: library/Payment/Adapter/PayPalEmail.php:302
-#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1349
+#: library/Payment/Adapter/PayPalEmail.php:306
+#: library/Payment/Adapter/Stripe.php:112 modules/Invoice/Service.php:1349
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Pago de factura :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1351
+#: library/Payment/Adapter/Stripe.php:114 modules/Invoice/Service.php:1351
 msgid "Payment for invoice :serie:id"
 msgstr "Pago por factura :serie:id"
 
-#: library/Payment/Adapter/Stripe.php:183
+#: library/Payment/Adapter/Stripe.php:187
 msgid "There was an error when processing the transaction"
 msgstr "Ha habido un error al procesar la transacción"
 
-#: library/Payment/AdapterAbstract.php:52
+#: library/Payment/AdapterAbstract.php:51
 msgid "Return URL for payment gateway was not set"
 msgstr "No se ha establecido la URL de retorno de la pasarela de pago"
 
-#: library/Payment/AdapterAbstract.php:59
+#: library/Payment/AdapterAbstract.php:58
 msgid "Cancel URL for payment gateway was not set"
 msgstr "Cancelar URL para la pasarela de pago no fue establecida"
 
-#: library/Payment/AdapterAbstract.php:67
+#: library/Payment/AdapterAbstract.php:66
 msgid "IPN Notification URL for payment gateway was not set"
 msgstr "No se ha establecido la URL de notificación IPN para la pasarela de pago"
 
-#: library/Payment/AdapterAbstract.php:77
+#: library/Payment/AdapterAbstract.php:76
 msgid "IPN redirect URL for payment gateway was not set"
 msgstr "No se ha establecido la URL de notificación IPN para la pasarela de pago"
 
 #: library/Registrar/Adapter/Email.php:23
 #: library/Registrar/Adapter/Internetbs.php:18
 #: library/Registrar/Adapter/Internetbs.php:25
-#: library/Registrar/Adapter/Namecheap.php:29
-#: library/Registrar/Adapter/Namecheap.php:35
-#: library/Registrar/Adapter/Namecheap.php:47
+#: library/Registrar/Adapter/Namecheap.php:30
+#: library/Registrar/Adapter/Namecheap.php:36
+#: library/Registrar/Adapter/Namecheap.php:48
 #: library/Registrar/Adapter/Netearthone.php:11
 #: library/Registrar/Adapter/Netearthone.php:18
 #: library/Registrar/Adapter/Resellbiz.php:11
 #: library/Registrar/Adapter/Resellbiz.php:18
-#: library/Registrar/Adapter/Resellerclub.php:40
-#: library/Registrar/Adapter/Resellerclub.php:47
+#: library/Registrar/Adapter/Resellerclub.php:41
+#: library/Registrar/Adapter/Resellerclub.php:48
 #: library/Registrar/Adapter/Resellerid.php:11
 #: library/Registrar/Adapter/Resellerid.php:18
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
 msgstr "El registrador del dominio \":domain_registrar no está completamente configurado. Por favor, configure el :missing"
 
-#: library/Registrar/Adapter/Email.php:67 library/Registrar/Adapter/Email.php:72
+#: library/Registrar/Adapter/Email.php:69 library/Registrar/Adapter/Email.php:74
 msgid "Email registrar is unable to :action:"
 msgstr "El registrador de correo electrónico no puede :action:"
 
@@ -510,213 +510,213 @@ msgid "checking domain transferability"
 msgstr "comprobando la transferibilidad del dominio"
 
 #: library/Registrar/Adapter/Internetbs.php:76
-#: library/Registrar/Adapter/Internetbs.php:176
-#: library/Registrar/Adapter/Namecheap.php:428
-#: library/Registrar/Adapter/Namecheap.php:567 library/Server/Manager/CWP.php:245
-#: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
-#: library/Server/Manager/Directadmin.php:334
+#: library/Registrar/Adapter/Internetbs.php:175
+#: library/Registrar/Adapter/Namecheap.php:451
+#: library/Registrar/Adapter/Namecheap.php:591 library/Server/Manager/CWP.php:255
+#: library/Server/Manager/CWP.php:260 library/Server/Manager/CWP.php:265
 #: library/Server/Manager/Directadmin.php:339
 #: library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Hestia.php:335 library/Server/Manager/Hestia.php:343
-#: library/Server/Manager/Hestia.php:378 library/Server/Manager/Plesk.php:58
+#: library/Server/Manager/Directadmin.php:349
+#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:347
+#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:59
 #: library/Server/Manager/Plesk.php:205 library/Server/Manager/Plesk.php:232
 msgid ":type: does not support :action:"
 msgstr ":type: no admite :action:"
 
-#: library/Registrar/Adapter/Internetbs.php:169
+#: library/Registrar/Adapter/Internetbs.php:167
 msgid "get domain details"
 msgstr "obtener detalles del dominio"
 
-#: library/Registrar/Adapter/Internetbs.php:170
-#: library/Registrar/Adapter/Namecheap.php:171
-#: library/Registrar/Adapter/Namecheap.php:177
-#: library/Registrar/Adapter/Namecheap.php:248
-#: library/Registrar/Adapter/Namecheap.php:345
-#: library/Registrar/Adapter/Namecheap.php:590
-#: library/Registrar/Adapter/Namecheap.php:653
-#: library/Registrar/Adapter/Namecheap.php:677
-#: library/Registrar/Adapter/Namecheap.php:705
-#: library/Registrar/Adapter/Resellerclub.php:399
-#: library/Registrar/Adapter/Resellerclub.php:705
-#: library/Registrar/Adapter/Resellerclub.php:711
-#: library/Registrar/Adapter/Resellerclub.php:717
+#: library/Registrar/Adapter/Internetbs.php:169
+#: library/Registrar/Adapter/Namecheap.php:179
+#: library/Registrar/Adapter/Namecheap.php:186
+#: library/Registrar/Adapter/Namecheap.php:264
+#: library/Registrar/Adapter/Namecheap.php:369
+#: library/Registrar/Adapter/Namecheap.php:616
+#: library/Registrar/Adapter/Namecheap.php:683
+#: library/Registrar/Adapter/Namecheap.php:710
+#: library/Registrar/Adapter/Namecheap.php:742
+#: library/Registrar/Adapter/Resellerclub.php:412
+#: library/Registrar/Adapter/Resellerclub.php:733
+#: library/Registrar/Adapter/Resellerclub.php:740
+#: library/Registrar/Adapter/Resellerclub.php:747
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr "Error al :action: con el registrador :type:, revisa los registros de errores para obtener más detalles"
 
-#: library/Registrar/Adapter/Internetbs.php:176
-#: library/Registrar/Adapter/Namecheap.php:567
+#: library/Registrar/Adapter/Internetbs.php:175
+#: library/Registrar/Adapter/Namecheap.php:591
 msgid "deleting domains"
 msgstr "eliminando dominios"
 
-#: library/Registrar/Adapter/Namecheap.php:117
+#: library/Registrar/Adapter/Namecheap.php:120
 msgid "Premium domains cannot be registered."
 msgstr "Los dominios premium no pueden ser registrados."
 
-#: library/Registrar/Adapter/Namecheap.php:247
+#: library/Registrar/Adapter/Namecheap.php:262
 msgid "update nameservers"
 msgstr "actualizar nombres de servidor"
 
-#: library/Registrar/Adapter/Namecheap.php:344
+#: library/Registrar/Adapter/Namecheap.php:367
 msgid "retrieve domain details"
 msgstr "recuperando detalles del dominio"
 
-#: library/Registrar/Adapter/Namecheap.php:428
+#: library/Registrar/Adapter/Namecheap.php:451
 msgid "retrieving the transfer code"
 msgstr "obteniendo el código de transferencia"
 
-#: library/Registrar/Adapter/Namecheap.php:589
+#: library/Registrar/Adapter/Namecheap.php:614
 msgid "retrieve privacy information"
 msgstr "obteniendo la información de privacidad"
 
-#: library/Registrar/Adapter/Namecheap.php:652
+#: library/Registrar/Adapter/Namecheap.php:681
 msgid "get the domain lock status"
 msgstr "obtener el estado de bloqueo del dominio"
 
-#: library/Registrar/Adapter/Namecheap.php:676
-#: library/Registrar/Adapter/Namecheap.php:704
+#: library/Registrar/Adapter/Namecheap.php:708
+#: library/Registrar/Adapter/Namecheap.php:740
 msgid "set the domain lock status"
 msgstr "establecer el estado de bloqueo del dominio"
 
-#: library/Registrar/Adapter/Resellerclub.php:335
+#: library/Registrar/Adapter/Resellerclub.php:343
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
 msgstr "Para registrar un nombre de dominio .AU es obligatorio indicar un número de empresa válido"
 
-#: library/Registrar/Adapter/Resellerclub.php:398
+#: library/Registrar/Adapter/Resellerclub.php:410
 msgid "get the transfer code"
 msgstr "obteniendo el código de transferencia"
 
-#: library/Registrar/Adapter/Resellerclub.php:592
+#: library/Registrar/Adapter/Resellerclub.php:612
 msgid "You are already registered as reseller"
 msgstr "Ya está registrado como revendedor"
 
-#: library/Registrar/Adapter/Resellerclub.php:835
+#: library/Registrar/Adapter/Resellerclub.php:872
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr "Para registrar un nombre de dominio ES, es necesario disponer de datos de contacto válidos"
 
-#: library/Registrar/Adapter/Resellerclub.php:855
+#: library/Registrar/Adapter/Resellerclub.php:891
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr "Para registrar un nombre de dominio ASIA es necesario disponer de un pasaporte válido"
 
-#: library/Registrar/Adapter/Resellerclub.php:879
+#: library/Registrar/Adapter/Resellerclub.php:915
 msgid "Valid contact birthdate is required while registering RU domain name"
 msgstr "Para registrar un nombre de dominio RU se requiere una fecha de nacimiento válida"
 
-#: library/Registrar/Adapter/Resellerclub.php:883
+#: library/Registrar/Adapter/Resellerclub.php:919
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr "Se requiere información de pasaporte de contacto válida al registrar el nombre de dominio RU"
 
-#: library/Registrar/Adapter/Resellerclub.php:970
+#: library/Registrar/Adapter/Resellerclub.php:1006
 msgid "Contact not found"
 msgstr "No se encontró el contacto"
 
-#: library/Server/Manager/CWP.php:20 library/Server/Manager/CWP.php:24
-#: library/Server/Manager/CWP.php:28 library/Server/Manager/Directadmin.php:16
-#: library/Server/Manager/Directadmin.php:20
-#: library/Server/Manager/Directadmin.php:24 library/Server/Manager/Whm.php:22
-#: library/Server/Manager/Whm.php:26 library/Server/Manager/Whm.php:30
+#: library/Server/Manager/CWP.php:21 library/Server/Manager/CWP.php:25
+#: library/Server/Manager/CWP.php:29 library/Server/Manager/Directadmin.php:15
+#: library/Server/Manager/Directadmin.php:19
+#: library/Server/Manager/Directadmin.php:23 library/Server/Manager/Whm.php:24
+#: library/Server/Manager/Whm.php:28 library/Server/Manager/Whm.php:32
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "El administrador del servidor \":server_manager\" no está completamente configurado. Por favor configure :missing"
 
-#: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:433
-#: library/Server/Manager/Hestia.php:102 library/Server/Manager/Hestia.php:141
-#: library/Server/Manager/Plesk.php:50
+#: library/Server/Manager/CWP.php:89 library/Server/Manager/Directadmin.php:443
+#: library/Server/Manager/Hestia.php:101 library/Server/Manager/Hestia.php:140
+#: library/Server/Manager/Plesk.php:51
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
 msgstr "No se pudo conectar al servidor :type:. Por favor verifique sus credenciales y configuración"
 
-#: library/Server/Manager/CWP.php:143 library/Server/Manager/Plesk.php:89
+#: library/Server/Manager/CWP.php:147 library/Server/Manager/Plesk.php:90
 msgid "create account"
 msgstr "Crear cuenta"
 
-#: library/Server/Manager/CWP.php:144 library/Server/Manager/CWP.php:161
-#: library/Server/Manager/CWP.php:178 library/Server/Manager/CWP.php:198
-#: library/Server/Manager/CWP.php:218 library/Server/Manager/CWP.php:236
-#: library/Server/Manager/Directadmin.php:444
-#: library/Server/Manager/Hestia.php:199 library/Server/Manager/Hestia.php:213
-#: library/Server/Manager/Hestia.php:240 library/Server/Manager/Hestia.php:265
-#: library/Server/Manager/Hestia.php:294 library/Server/Manager/Hestia.php:324
-#: library/Server/Manager/Hestia.php:367 library/Server/Manager/Plesk.php:90
-#: library/Server/Manager/Whm.php:421 library/Server/Manager/Whm.php:426
-#: library/Server/Manager/Whm.php:431 library/Server/Manager/Whm.php:436
-#: library/Server/Manager/Whm.php:441
+#: library/Server/Manager/CWP.php:149 library/Server/Manager/CWP.php:167
+#: library/Server/Manager/CWP.php:185 library/Server/Manager/CWP.php:206
+#: library/Server/Manager/CWP.php:227 library/Server/Manager/CWP.php:246
+#: library/Server/Manager/Directadmin.php:455
+#: library/Server/Manager/Hestia.php:197 library/Server/Manager/Hestia.php:213
+#: library/Server/Manager/Hestia.php:241 library/Server/Manager/Hestia.php:267
+#: library/Server/Manager/Hestia.php:297 library/Server/Manager/Hestia.php:328
+#: library/Server/Manager/Hestia.php:372 library/Server/Manager/Plesk.php:92
+#: library/Server/Manager/Whm.php:456 library/Server/Manager/Whm.php:462
+#: library/Server/Manager/Whm.php:468 library/Server/Manager/Whm.php:474
+#: library/Server/Manager/Whm.php:480
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr "Error en :action: en el :type: servidor, verifique los registros de errores para obtener más detalles"
 
-#: library/Server/Manager/CWP.php:160 library/Server/Manager/Hestia.php:239
+#: library/Server/Manager/CWP.php:165 library/Server/Manager/Hestia.php:239
 msgid "suspend account"
 msgstr "Cuenta suspendida"
 
-#: library/Server/Manager/CWP.php:177 library/Server/Manager/Hestia.php:264
+#: library/Server/Manager/CWP.php:183 library/Server/Manager/Hestia.php:265
 msgid "unsuspend account"
 msgstr "Cuenta reactivada"
 
-#: library/Server/Manager/CWP.php:197 library/Server/Manager/Hestia.php:293
+#: library/Server/Manager/CWP.php:204 library/Server/Manager/Hestia.php:295
 msgid "cancel account"
 msgstr "Cancelar cuenta"
 
-#: library/Server/Manager/CWP.php:217 library/Server/Manager/Hestia.php:323
+#: library/Server/Manager/CWP.php:225 library/Server/Manager/Hestia.php:326
 msgid "change account package"
 msgstr "cambiar paquete de cuentas"
 
-#: library/Server/Manager/CWP.php:235 library/Server/Manager/Hestia.php:366
+#: library/Server/Manager/CWP.php:244 library/Server/Manager/Hestia.php:370
 msgid "change account password"
 msgstr "cambiar contraseña de la cuenta"
 
-#: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:334
-#: library/Server/Manager/Hestia.php:335 library/Server/Manager/Plesk.php:205
+#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Plesk.php:205
 msgid "username changes"
 msgstr "cambios de nombre de usuario"
 
-#: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Hestia.php:343
+#: library/Server/Manager/CWP.php:260 library/Server/Manager/Directadmin.php:344
+#: library/Server/Manager/Hestia.php:347
 msgid "changing the account domain"
 msgstr "cambiar el dominio de la cuenta"
 
-#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Hestia.php:378 library/Server/Manager/Plesk.php:232
+#: library/Server/Manager/CWP.php:265 library/Server/Manager/Directadmin.php:349
+#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:232
 msgid "changing the account IP"
 msgstr "cambiando la IP de la cuenta"
 
-#: library/Server/Manager/Directadmin.php:100
+#: library/Server/Manager/Directadmin.php:102
 msgid "There are no available IPs on this server."
 msgstr "No hay IPs disponibles en este servidor."
 
-#: library/Server/Manager/Directadmin.php:201
+#: library/Server/Manager/Directadmin.php:202
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
 msgstr "No se puede asignar NINGUNA ip al Reseller. Asegúrese de tener ips libres, sin asignar."
 
-#: library/Server/Manager/Directadmin.php:205
+#: library/Server/Manager/Directadmin.php:206
 msgid "Error creating user"
 msgstr "Error creando usuario"
 
-#: library/Server/Manager/Directadmin.php:231
+#: library/Server/Manager/Directadmin.php:232
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Error DirectAdmin del Administrador del Servidor: \"La cuenta no está suspendida\""
 
-#: library/Server/Manager/Directadmin.php:427 library/Server/Manager/Whm.php:410
+#: library/Server/Manager/Directadmin.php:436 library/Server/Manager/Whm.php:444
 msgid "HttpClientException: :error"
 msgstr "Excepción HttpClientException: :error"
 
-#: library/Server/Manager/Directadmin.php:437
+#: library/Server/Manager/Directadmin.php:447
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Error DirectAdmin del Administrador del Servidor: \"No se puede ejecutar su solicitud porque no existe en su nivel de autorización\""
 
-#: library/Server/Manager/Hestia.php:198
+#: library/Server/Manager/Hestia.php:195
 msgid "create user"
 msgstr "crear usuario"
 
-#: library/Server/Manager/Hestia.php:209
+#: library/Server/Manager/Hestia.php:207
 msgid "delete domain"
 msgstr "eliminar dominio"
 
-#: library/Server/Manager/Hestia.php:209 library/Server/Manager/Hestia.php:212
+#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:211
 msgid "create domain"
 msgstr "crear dominio"
 
-#: library/Server/Manager/Hestia.php:210
+#: library/Server/Manager/Hestia.php:209
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
 msgstr "Error al :action1: con el servidor :type:, para obtener más detalles, revise los registros de errores"
 
-#: library/Server/Manager/Plesk.php:58
+#: library/Server/Manager/Plesk.php:59
 msgid "account synchronization"
 msgstr "sincronización de cuenta"
 
@@ -1035,7 +1035,7 @@ msgstr "La dirección de correo electrónico del remitente no puede estar vacía
 msgid "Email template :code was not found"
 msgstr "Plantilla de correo electrónico: no se encontró el código"
 
-#: modules/Email/Service.php:678
+#: modules/Email/Service.php:677
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr "Mensaje de error recortado debido a su longitud, por favor, compruebe el registro de errores para el mensaje completo: "
 
@@ -1228,6 +1228,7 @@ msgstr "Método de pago no encontrado. Falta el parámetro gateway_id"
 #: themes/admin_default/html/mod_index_dashboard.html.twig:261
 #: themes/admin_default/html/mod_index_dashboard.html.twig:444
 #: themes/admin_default/html/mod_index_dashboard.html.twig:548
+#: themes/huraga/html/mobile_menu.html.twig:41
 #: themes/huraga/html/partial_menu.html.twig:44
 msgid "Invoices"
 msgstr "Facturas"
@@ -1715,7 +1716,7 @@ msgstr "El orden de dominio no está activado"
 
 #: modules/Servicedomain/Api/Guest.php:90
 msgid "Domain :domain is invalid"
-msgstr "Dominio :domain no es válido"
+msgstr "Nombre de dominio no válido"
 
 #: modules/Servicedomain/Api/Guest.php:95
 msgid "Domain availability could not be determined. TLD is not active."
@@ -1757,7 +1758,7 @@ msgstr "Los datos del pedido deben contener: campo de configuración de campo"
 #: modules/Servicedomain/Service.php:66 modules/Servicedomain/Service.php:84
 #: modules/Servicedomain/Service.php:116 modules/Servicedomain/Service.php:552
 msgid "Domain name :domain is invalid"
-msgstr "Nombre de dominio :domain no es válido"
+msgstr "Nombre de dominio no válido"
 
 #: modules/Servicedomain/Service.php:100
 msgid ":domain can not be transferred!"
@@ -1940,7 +1941,7 @@ msgstr "Tu nombre de usuario está en la lista negra en la base de datos Stop Fo
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "Tu nombre de usuario está en la lista negra en la base de datos Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:190
+#: modules/Spamchecker/Service.php:191
 msgid "Disposable email addresses are not allowed"
 msgstr "No se permiten direcciones de correo electrónico desechables"
 
@@ -2093,6 +2094,7 @@ msgstr "Categoría de base de conocimientos no encontrada"
 #: modules/Support/html_admin/mod_support_settings.html.twig:21
 #: modules/Support/html_admin/mod_support_ticket.html.twig:17
 #: modules/Support/html_admin/mod_support_tickets.html.twig:17
+#: themes/huraga/html/mobile_menu.html.twig:23
 #: themes/huraga/html/partial_menu.html.twig:26
 msgid "Support"
 msgstr "Soporte"
@@ -2743,6 +2745,7 @@ msgstr "Nombre de la empresa"
 #: modules/Support/html_client/mod_support_contact_us.html.twig:31
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
 #: modules/System/html_admin/mod_system_settings.html.twig:63
+#: themes/huraga/html/mobile_menu.html.twig:50
 #: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
 msgstr "Correo"
@@ -3111,6 +3114,7 @@ msgstr "Historial de ingresos de los clientes"
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
 #: themes/admin_default/html/layout_default.html.twig:123
 #: themes/huraga/html/layout_default.html.twig:116
+#: themes/huraga/html/mobile_menu.html.twig:110
 msgid "Profile"
 msgstr "Perfil"
 
@@ -3222,7 +3226,7 @@ msgstr "Ingresar al área de clientes"
 #: modules/Email/html_admin/mod_email_settings.html.twig:113
 #: modules/Email/html_admin/mod_email_settings.html.twig:115
 #: modules/Email/html_client/mod_email_email.html.twig:26
-#: modules/Email/html_client/mod_email_index.html.twig:63
+#: modules/Email/html_client/mod_email_index.html.twig:62
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:713
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
@@ -3469,6 +3473,7 @@ msgstr "Contraseña cambiada"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:412
 #: modules/Page/html_client/mod_page_signup.html.twig:158
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:94
 msgid "Password confirm"
 msgstr "Confirmar password"
 
@@ -3644,7 +3649,7 @@ msgstr "Asunto del correo"
 #: modules/Email/html_admin/mod_email_history.html.twig:31
 #: modules/Email/html_admin/mod_email_settings.html.twig:192
 #: modules/Email/html_client/mod_email_email.html.twig:19
-#: modules/Email/html_client/mod_email_index.html.twig:53
+#: modules/Email/html_client/mod_email_index.html.twig:52
 msgid "To"
 msgstr "Hasta"
 
@@ -3747,13 +3752,14 @@ msgstr "Título del campo"
 #: modules/Client/html_client/mod_client_balance.html.twig:5
 #: modules/Client/html_client/mod_client_balance.html.twig:6
 #: modules/Client/html_client/mod_client_balance.html.twig:18
+#: themes/huraga/html/mobile_menu.html.twig:59
 #: themes/huraga/html/partial_menu.html.twig:62
 msgid "Wallet"
 msgstr "Cartera"
 
 #: modules/Client/html_client/mod_client_balance.html.twig:19
-msgid "Here you can manage and track your account balance"
-msgstr "Aquí puede administrar y rastrear el saldo de su cuenta"
+msgid "Here you can manage and track your account balance."
+msgstr ""
 
 #: modules/Client/html_client/mod_client_balance.html.twig:24
 msgid "Add fund"
@@ -4156,7 +4162,7 @@ msgid "Slug"
 msgstr "Slug"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:69
-#: modules/Email/html_client/mod_email_index.html.twig:57
+#: modules/Email/html_client/mod_email_index.html.twig:56
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:97
 #: modules/Support/html_client/mod_support_tickets.html.twig:52
 msgid "View"
@@ -4228,14 +4234,15 @@ msgstr "Área de Clientes"
 #: themes/admin_default/html/layout_default.html.twig:148
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
 #: themes/huraga/html/layout_default.html.twig:84
-#: themes/huraga/html/layout_default.html.twig:149
+#: themes/huraga/html/layout_default.html.twig:153
+#: themes/huraga/html/mobile_menu.html.twig:5
 #: themes/huraga/html/partial_menu.html.twig:8
 msgid "Dashboard"
 msgstr "Escritorio"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
 #: modules/Index/html_client/mod_index_dashboard.html.twig:10
-#: themes/huraga/html/layout_default.html.twig:146
+#: themes/huraga/html/layout_default.html.twig:150
 msgid "Home"
 msgstr "Inicio"
 
@@ -4359,7 +4366,7 @@ msgstr "Correos electrónicos recientes"
 #: modules/Email/html_admin/mod_email_details.html.twig:32
 #: modules/Email/html_admin/mod_email_history.html.twig:32
 #: modules/Email/html_client/mod_email_email.html.twig:18
-#: modules/Email/html_client/mod_email_index.html.twig:52
+#: modules/Email/html_client/mod_email_index.html.twig:51
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:44
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:28
 msgid "From"
@@ -4375,7 +4382,7 @@ msgstr "Email reenviado"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:55
 #: modules/Email/html_client/mod_email_email.html.twig:23
-#: modules/Email/html_client/mod_email_index.html.twig:60
+#: modules/Email/html_client/mod_email_index.html.twig:59
 msgid "Resend"
 msgstr "Reenviar"
 
@@ -4665,13 +4672,13 @@ msgstr "Ejemplos de plantillas de email"
 msgid "Email template playground. Use this tool to try rendering email templates."
 msgstr "Plantilla de correo electrónico. Utilice esta herramienta para intentar procesar plantillas de correo electrónico."
 
-#: modules/Email/html_client/mod_email_index.html.twig:19
+#: modules/Email/html_client/mod_email_index.html.twig:18
 msgid "Here you can find all the emails we've sent you."
 msgstr "Aquí puede ver todos los correos electrónicos que le hemos enviado."
 
-#: modules/Email/html_client/mod_email_index.html.twig:26
+#: modules/Email/html_client/mod_email_index.html.twig:25
 msgid "There are no emails to display"
-msgstr "No hay imágenes para mostrar"
+msgstr "No hay correos electrónicos que mostrar"
 
 #: modules/Embed/html_client/mod_embed_contact.html.twig:79
 msgid "Incorrect please try again"
@@ -5010,6 +5017,7 @@ msgstr "Has salido de sesión"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:70
 #: themes/admin_default/html/error.html.twig:14
 #: themes/huraga/html/layout_default.html.twig:97
+#: themes/huraga/html/mobile_menu.html.twig:119
 msgid "Login"
 msgstr "Entrar"
 
@@ -5018,6 +5026,7 @@ msgstr "Entrar"
 #: modules/Page/html_client/mod_page_signup.html.twig:5
 #: modules/Page/html_client/mod_page_signup.html.twig:165
 #: themes/huraga/html/layout_default.html.twig:123
+#: themes/huraga/html/mobile_menu.html.twig:123
 msgid "Sign up"
 msgstr "Registrarse"
 
@@ -5028,9 +5037,11 @@ msgstr "Registrarse"
 #: modules/Order/html_client/mod_order_index.html.twig:12
 #: modules/Order/html_client/mod_order_manage.html.twig:35
 #: modules/Order/html_client/mod_order_product.html.twig:5
+#: modules/Order/html_client/mod_order_product.html.twig:12
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:4
 #: themes/admin_default/html/partial_menu_top.html.twig:3
 #: themes/huraga/html/layout_default.html.twig:90
+#: themes/huraga/html/mobile_menu.html.twig:14
 #: themes/huraga/html/partial_menu.html.twig:17
 msgid "Order"
 msgstr "Pedidos"
@@ -5045,6 +5056,7 @@ msgstr "Productos y servicios"
 #: modules/News/html_client/mod_news_index.html.twig:3
 #: modules/News/html_client/mod_news_index.html.twig:7
 #: modules/News/html_client/mod_news_post.html.twig:8
+#: themes/huraga/html/mobile_menu.html.twig:68
 #: themes/huraga/html/partial_menu.html.twig:71
 msgid "News"
 msgstr "Noticias"
@@ -5060,6 +5072,7 @@ msgstr "Últimas noticias y anuncios"
 #: modules/Support/html_client/mod_support_kb_index.html.twig:10
 #: modules/Support/html_client/mod_support_kb_index.html.twig:14
 #: modules/Support/html_client/mod_support_kb_index.html.twig:31
+#: themes/huraga/html/mobile_menu.html.twig:77
 #: themes/huraga/html/partial_menu.html.twig:80
 msgid "Knowledge base"
 msgstr "Base de conocimiento"
@@ -5104,7 +5117,7 @@ msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:19
 msgid "New payment gateway"
-msgstr ""
+msgstr "Nueva pasarela de pago"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:27
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:38
@@ -5121,7 +5134,7 @@ msgstr "Copiar"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:94
 msgid "Adding new payment gateway"
-msgstr ""
+msgstr "Añadiendo nueva pasarela de pago"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:95
 msgid "Although FOSSBilling ships with most popular payment gateways, you can install other gateways."
@@ -5173,7 +5186,7 @@ msgstr "Instalar"
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:134
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:275
 msgid "All payment gateways installed"
-msgstr ""
+msgstr "Todas las pasarelas de pago instaladas"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:13
 msgid "Filter invoices"
@@ -5486,7 +5499,7 @@ msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:92
 msgid "Document format"
-msgstr ""
+msgstr "Formato del documento"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:96
 msgid "Letter"
@@ -5502,7 +5515,7 @@ msgstr "Permitir acceso a facturas sin identificarse"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:120
 msgid "Refunds settings"
-msgstr ""
+msgstr "Ajustes de reembolsos"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:122
 msgid "Refunds logic"
@@ -5522,7 +5535,7 @@ msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:140
 msgid "Add funds settings"
-msgstr ""
+msgstr "Añadir ajustes de reembolsos"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:142
 msgid "Minimum amount for add funds invoice"
@@ -5780,7 +5793,7 @@ msgstr "Error"
 
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:186
 msgid "n/a"
-msgstr ""
+msgstr "n/a"
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:3
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
@@ -5900,24 +5913,24 @@ msgstr "Nº de Pre-orden"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:47
 msgid "Invoice Status"
-msgstr ""
+msgstr "Estado de la Factura"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 #: modules/System/html_admin/mod_system_settings.html.twig:113
-#: themes/huraga/html/layout_default.html.twig:173
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Bank Name"
 msgstr "Nombre del banco"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 #: modules/System/html_admin/mod_system_settings.html.twig:119
-#: themes/huraga/html/layout_default.html.twig:173
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "BIC / SWIFT Code"
-msgstr ""
+msgstr "Código BIC/SWIFT"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:92
 msgid "Bank Account"
-msgstr ""
+msgstr "Cuenta Bancaria"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:106
 msgid "Billing & Delivery address"
@@ -5963,7 +5976,7 @@ msgstr "Producto"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:65
 msgid "Quantity & Price"
-msgstr ""
+msgstr "Cantidad y Precio"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:103
 msgid "Payment details"
@@ -5971,7 +5984,7 @@ msgstr "Detalles del pago"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Account Owner"
-msgstr ""
+msgstr "Propietario de la Cuenta"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Bank"
@@ -6252,11 +6265,11 @@ msgstr "Información adicional"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:130
 msgid "Order Date"
-msgstr ""
+msgstr "Fecha del pedido"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:134
 msgid "Activation Date"
-msgstr ""
+msgstr "Fecha de activación"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:138
 msgid "Renewal Date"
@@ -6345,7 +6358,7 @@ msgstr "Razón"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:342
 msgid "Date Expires"
-msgstr ""
+msgstr "Fecha de expiración"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:422
 msgid "Order config management"
@@ -6405,7 +6418,7 @@ msgstr "Activar pedido"
 
 #: modules/Order/html_admin/mod_order_new.html.twig:73
 msgid "Place new order"
-msgstr ""
+msgstr "Crear un nuevo pedido"
 
 #: modules/Order/html_admin/mod_order_new.html.twig:93
 msgid "Selected price is 0.00"
@@ -6456,7 +6469,7 @@ msgstr ""
 
 #: modules/Order/html_admin/mod_order_settings.html.twig:71
 msgid "Auto Cancellation"
-msgstr ""
+msgstr "Auto Cancelación"
 
 #: modules/Order/html_admin/mod_order_settings.html.twig:75
 msgid "Cancel Suspended Orders"
@@ -6475,11 +6488,12 @@ msgid "Suspension reasons"
 msgstr "Razones de suspensión"
 
 #: modules/Order/html_client/mod_order_index.html.twig:23
+#: modules/Order/html_client/mod_order_product.html.twig:23
 msgid "Order Product"
 msgstr "Pedido de producto"
 
 #: modules/Order/html_client/mod_order_index.html.twig:24
-#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Order/html_client/mod_order_product.html.twig:24
 msgid "Choose products we offer for selling"
 msgstr "Elegir productos que ofrecemos para vender"
 
@@ -6490,6 +6504,7 @@ msgstr "Mis Productos y Servicios"
 #: modules/Order/html_client/mod_order_list.html.twig:9
 #: modules/Order/html_client/mod_order_list.html.twig:19
 #: modules/Order/html_client/mod_order_manage.html.twig:11
+#: themes/huraga/html/mobile_menu.html.twig:32
 #: themes/huraga/html/partial_menu.html.twig:35
 msgid "Services"
 msgstr "Servicios"
@@ -6576,11 +6591,6 @@ msgstr "Actualizar a"
 #: modules/Order/html_client/mod_order_manage.html.twig:258
 msgid "I would like to upgrade"
 msgstr ""
-
-#: modules/Order/html_client/mod_order_product.html.twig:18
-#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
-msgid "Select Product"
-msgstr "Seleccionar Producto"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:5
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:22
@@ -6716,7 +6726,7 @@ msgstr ""
 
 #: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:4
 msgid "Addons & extras"
-msgstr ""
+msgstr "Addons y extras"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:34
 msgid "Setup:"
@@ -6787,6 +6797,10 @@ msgid "Item was removed from cart"
 msgstr ""
 
 #: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
+msgid "Select Product"
+msgstr "Seleccionar Producto"
+
+#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
 msgid "Items"
 msgstr "Artículos"
 
@@ -6822,7 +6836,7 @@ msgid "Phone Code"
 msgstr ""
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
-#: modules/Page/html_client/mod_page_signup.html.twig:170
+#: modules/Page/html_client/mod_page_signup.html.twig:171
 msgid "Already a user?"
 msgstr "¿Ya estás registrado?"
 
@@ -6885,8 +6899,8 @@ msgstr "Ingrese su dirección de correo electrónico"
 msgid "Enter your password"
 msgstr "Introduzca su contraseña"
 
-#: modules/Page/html_client/mod_page_login.html.twig:40
-#: modules/Page/html_client/mod_page_signup.html.twig:173
+#: modules/Page/html_client/mod_page_login.html.twig:41
+#: modules/Page/html_client/mod_page_signup.html.twig:175
 msgid "Forgot password?"
 msgstr "¿Olvidó su contraseña?"
 
@@ -6910,7 +6924,7 @@ msgstr "Se le enviará un correo electrónico de confirmación de restablecimien
 
 #: modules/Page/html_client/mod_page_password-reset.html.twig:26
 msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
-msgstr "Ingresa tu correo electrónico para restablecer su contraseña. Recibirá una nueva contraseña después de que se confirme el enlace de restablecimiento."
+msgstr "Introduce tu correo electrónico para restablecer la contraseña. Recibirás una nueva contraseña después de que el enlace de restablecimiento sea confirmado."
 
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:3
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:19
@@ -6940,7 +6954,7 @@ msgstr "No binario"
 
 #: modules/Page/html_client/mod_page_signup.html.twig:69
 msgid "Other"
-msgstr ""
+msgstr "Otro"
 
 #: modules/Page/html_client/mod_page_tos.html.twig:3
 #: modules/Page/html_client/mod_page_tos.html.twig:19
@@ -7032,7 +7046,7 @@ msgstr "Icono"
 
 #: modules/Product/html_admin/mod_product_addons.html.twig:33
 msgid "New addon"
-msgstr ""
+msgstr "Nuevo addon"
 
 #: modules/Product/html_admin/mod_product_category.html.twig:22
 #: modules/Product/html_admin/mod_product_index.html.twig:23
@@ -7141,7 +7155,7 @@ msgstr ""
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:256
 msgid "Create new addon"
-msgstr ""
+msgstr "Crear un nuevo addon"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:267
 msgid "Choose which products can client upgrade to"
@@ -7213,7 +7227,7 @@ msgstr ""
 #: modules/Product/html_admin/mod_product_promo.html.twig:79
 #: modules/Product/html_admin/mod_product_promos.html.twig:168
 msgid "Free Setup"
-msgstr ""
+msgstr "Configuración Gratis"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:92
 #: modules/Product/html_admin/mod_product_promos.html.twig:181
@@ -7309,7 +7323,7 @@ msgstr ""
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:21
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:28
 msgid "SEO settings"
-msgstr ""
+msgstr "Configuración de SEO"
 
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:53
 msgid "FOSSBilling will automatically ping every enabled search engine every 24 hours. Cron jobs must be working for this to work."
@@ -7367,12 +7381,12 @@ msgstr ""
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:45
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:72
 msgid "Uppercase"
-msgstr ""
+msgstr "Mayúsculas"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:46
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:73
 msgid "Lowercase"
-msgstr ""
+msgstr "Minúsculas"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:47
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:74
@@ -7432,11 +7446,11 @@ msgstr ""
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:14
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:43
 msgid "Plugin"
-msgstr ""
+msgstr "Plugin"
 
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:8
 msgid "Plugin name"
-msgstr ""
+msgstr "Nombre del plugin"
 
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:32
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:107
@@ -7816,7 +7830,7 @@ msgstr "Años"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:30
 msgid "Transfer domain"
-msgstr ""
+msgstr "Transferir dominio"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:33
 msgid "Domain name to transfer"
@@ -7881,11 +7895,11 @@ msgstr ""
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:66
 msgid "Disable Privacy protection"
-msgstr ""
+msgstr "Desactivar protección de privacidad"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:67
 msgid "Enable Privacy protection"
-msgstr ""
+msgstr "Activar protección de privacidad"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:73
 msgid "Update Nameservers"
@@ -8107,7 +8121,7 @@ msgstr ""
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:66
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:67
 msgid "Disk quota"
-msgstr ""
+msgstr "Cuota de disco"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:99
@@ -8122,15 +8136,15 @@ msgstr "Máximos dominios adicionales"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:54
 msgid "Max FTP accounts"
-msgstr ""
+msgstr "Máximo de cuentas FTP"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:60
 msgid "Max SQL Databases"
-msgstr ""
+msgstr "Máximo de bases de datos SQL"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:66
 msgid "Max Email Accounts"
-msgstr ""
+msgstr "Máximo de cuentas de correo"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:72
 msgid "Max Subdomains"
@@ -8146,7 +8160,7 @@ msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:96
 msgid "Update hosting plan"
-msgstr ""
+msgstr "Actualizar plan de alojamiento"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:100
 msgid "Hosting plan additional parameters"
@@ -8193,7 +8207,7 @@ msgstr "Nombre del host"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:149
 msgid "server1.yourserverdomain.com"
-msgstr ""
+msgstr "servidor1.tudominio.com"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:155
 msgid "Primary IP address of the server used to connect to it like: 123.123.123.123"
@@ -8202,7 +8216,7 @@ msgstr ""
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:159
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:49
 msgid "Assigned IP Addresses"
-msgstr ""
+msgstr "Dirección IP asignada"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:161
 msgid "List the IP Addresses assigned to the server (One per line)"
@@ -8232,7 +8246,7 @@ msgstr "ns4.tudominio.com"
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:217
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:84
 msgid "Connection port"
-msgstr ""
+msgstr "Puerto de conexión"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:219
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:86
@@ -8258,7 +8272,7 @@ msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
 msgid "Disk quota (MB)"
-msgstr ""
+msgstr "Cuota de disco (MB)"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
 msgid "Bandwidth (MB)"
@@ -8336,7 +8350,6 @@ msgid "Account password changed"
 msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:127
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:94
 msgid "Password Confirm"
 msgstr "Confirmar contraseña"
 
@@ -8434,7 +8447,7 @@ msgid "Login to control panel"
 msgstr ""
 
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:83
-msgid "Change your FTP/cPanel/SSH password."
+msgid "Change your control panel/FTP/SSH password"
 msgstr ""
 
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:112
@@ -8447,7 +8460,7 @@ msgstr "Nuevo dominio"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:134
 msgid "Username changed"
-msgstr ""
+msgstr "Nombre de usuario cambiado"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:8
 msgid "Domain configuration"
@@ -8459,7 +8472,7 @@ msgstr "Usaré un dominio propio y actualizaré los nombres de servidores"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:17
 msgid "I want to register a new domain"
-msgstr ""
+msgstr "Quiero registrar un nuevo dominio"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:28
 msgid "Your existing domain"
@@ -8467,7 +8480,7 @@ msgstr ""
 
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:44
 msgid "Your new domain"
-msgstr ""
+msgstr "Tu nuevo dominio"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:125
 msgid " year @ "
@@ -8593,7 +8606,7 @@ msgstr "Detalles de la licencia"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:20
 msgid "Valid IPs"
-msgstr ""
+msgstr "IPs válidas"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:26
 msgid "All ips"
@@ -8655,7 +8668,7 @@ msgstr ""
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:38
 msgid "Enable IP blocking"
-msgstr ""
+msgstr "Activar bloqueo de IP"
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:45
 msgid "Blocked IPs are not allowed to login, register or open public ticket. (One IP per line)"
@@ -8683,7 +8696,7 @@ msgstr "versión reCAPTCHA"
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:75
 msgid "v2"
-msgstr ""
+msgstr "v2"
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:85
 msgid "reCAPTCHA Public key"
@@ -8836,7 +8849,7 @@ msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:116
 msgid "Permissions updated"
-msgstr ""
+msgstr "Permisos actualizados"
 
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:130
 msgid "Module access"
@@ -8864,7 +8877,7 @@ msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:17
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
-msgstr ""
+msgstr "Introduce tu dirección de correo electrónico. Recibirás un enlace de confirmación si tu cuenta existe."
 
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:36
 msgid "Send me the link"
@@ -9024,7 +9037,7 @@ msgstr "Categoría creada"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:36
 #: modules/Support/html_client/mod_support_ticket.html.twig:24
 msgid "Ticket"
-msgstr ""
+msgstr "Ticket"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:44
 #: modules/Support/html_admin/mod_support_ticket.html.twig:54
@@ -9863,25 +9876,27 @@ msgid "Go back to home"
 msgstr "Volver al Inicio"
 
 #: themes/huraga/html/layout_default.html.twig:118
+#: themes/huraga/html/mobile_menu.html.twig:112
 msgid "Sign out"
 msgstr "Cerrar sesión"
 
-#: themes/huraga/html/layout_default.html.twig:173
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Payment Information"
 msgstr "Información de pago"
 
-#: themes/huraga/html/layout_default.html.twig:173
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Account Number"
 msgstr "Número de cuenta"
 
-#: themes/huraga/html/layout_default.html.twig:223
+#: themes/huraga/html/layout_default.html.twig:227
 msgid "FOSSBilling Community"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:235
+#: themes/huraga/html/layout_default.html.twig:239
 msgid "Top"
 msgstr "Arriba"
 
+#: themes/huraga/html/mobile_menu.html.twig:84
 #: themes/huraga/html/partial_menu.html.twig:87
 msgid "Account balance"
 msgstr "Saldo de la cuenta"

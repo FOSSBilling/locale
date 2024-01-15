@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-01-02 16:09-0800\n"
-"PO-Revision-Date: 2024-01-04 22:39\n"
+"POT-Creation-Date: 2024-01-08 18:02-0800\n"
+"PO-Revision-Date: 2024-01-15 05:49\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Vietnamese\n"
 "MIME-Version: 1.0\n"
@@ -27,27 +27,27 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: vi_VN\n"
 
-#: di.php:326
+#: di.php:319
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr ""
 
-#: di.php:374 di.php:448
+#: di.php:367 di.php:441
 msgid "Client is not logged in"
 msgstr ""
 
-#: di.php:414 di.php:486
+#: di.php:407 di.php:479
 msgid "Admin is not logged in"
-msgstr ""
+msgstr "Quản trị viên chưa đăng nhập"
 
-#: di.php:526
+#: di.php:519
 msgid "Unrecognized Handler type: "
 msgstr ""
 
-#: di.php:536
+#: di.php:529
 msgid "Please check your mailbox and confirm email address."
 msgstr "Vui lòng kiểm tra hộp thư của bạn và xác nhận địa chỉ email đó."
 
-#: index.php:78 library/Box/App.php:416 library/Box/AppClient.php:69
+#: index.php:78 library/Box/App.php:419 library/Box/AppClient.php:70
 msgid "Page :url not found"
 msgstr "Trang :url không tồn tại"
 
@@ -63,7 +63,7 @@ msgstr "Đối tượng mô-đun không được thiết lập cho dịch vụ"
 msgid "Method :method must contain underscore"
 msgstr "Phương thức :method phải chứa ký tự gạch dưới"
 
-#: library/Api/Handler.php:55 library/Box/Mod.php:53
+#: library/Api/Handler.php:55 library/Box/Mod.php:52
 msgid "Invalid module name"
 msgstr "Tên mô-đun không hợp lệ"
 
@@ -75,43 +75,43 @@ msgstr "Mô-đun FOSSBilling :mod chưa được cài đặt/kích hoạt"
 msgid "You do not have access to :mod module"
 msgstr "Bạn không có quyền truy cập vào mô-đun :mod"
 
-#: library/Api/Handler.php:90
+#: library/Api/Handler.php:91
 msgid "Api class must be instance of Api_Abstract"
 msgstr "Class Api phải là thực thể của Api_Abstract"
 
-#: library/Api/Handler.php:106
+#: library/Api/Handler.php:107
 msgid ":type API call :method does not exist in module :module"
 msgstr "Lời gọi :type API :method không tồn tại trong mô-đun :module"
 
 #: library/Box/App.php:381
 msgid "The system is undergoing maintenance. Please try again later"
-msgstr ""
+msgstr "Hệ thống đang được bảo trì. Xin vui lòng thử lại sau"
 
 #: library/Box/AppAdmin.php:35 modules/Extension/Service.php:742
 msgid "You do not have permission to access the :mod: module"
 msgstr ""
 
-#: library/Box/AppClient.php:87
+#: library/Box/AppClient.php:89
 msgid "Page not found"
 msgstr "Trang không tồn tại"
 
-#: library/Box/Crypt.php:20
+#: library/Box/Crypt.php:19
 msgid "The PHP openssl extension must be enabled on your server"
 msgstr ""
 
-#: library/Box/Log.php:72
+#: library/Box/Log.php:69
 msgid "Missing log message"
 msgstr "Nội dung nhật ký bị mất"
 
-#: library/Box/Log.php:87 library/Box/Log.php:106
+#: library/Box/Log.php:86 library/Box/Log.php:101
 msgid "Bad log priority"
 msgstr "Độ quan trọng nhật ký xấu"
 
-#: library/Box/Mod.php:72
+#: library/Box/Mod.php:71
 msgid "Module :mod manifest file is missing"
 msgstr "Tệp tin mô-đun manifest :mod bị thiếu"
 
-#: library/Box/Mod.php:77
+#: library/Box/Mod.php:76
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr ""
 
@@ -119,28 +119,28 @@ msgstr ""
 msgid "Module :mod does not have service class"
 msgstr "Mô-đun :mod không có service class"
 
-#: library/Box/Mod.php:136
+#: library/Box/Mod.php:137
 msgid "Module :mod Client controller class was not found"
 msgstr "Module :mod Client controller class không tồn tại"
 
-#: library/Box/Mod.php:206
+#: library/Box/Mod.php:212
 msgid "Core module can not be updated"
 msgstr "Mô-đun lõi không thể cập nhật được"
 
-#: library/Box/Pagination.php:44 library/Box/Pagination.php:76
+#: library/Box/Pagination.php:44 library/Box/Pagination.php:77
 msgid "Invalid page number"
-msgstr ""
+msgstr "Số trang không hợp lệ"
 
-#: library/Box/Pagination.php:47 library/Box/Pagination.php:79
+#: library/Box/Pagination.php:47 library/Box/Pagination.php:80
 #: modules/Client/Service.php:183
 msgid "Invalid per page number"
-msgstr ""
+msgstr "Số lượng mỗi trang không hợp lệ"
 
-#: library/Box/Period.php:44
+#: library/Box/Period.php:43
 msgid "Invalid period code. Period definition must be 2 chars length"
 msgstr "Mã giai đoạn không hợp lệ. Định nghĩa giai đoạn phải dài 2 ký tự"
 
-#: library/Box/Period.php:53
+#: library/Box/Period.php:52
 msgid "Period Error. Unit :unit is not defined"
 msgstr "Lỗi giai đoạn. Đơn vị :unit không được định nghĩa"
 
@@ -181,155 +181,155 @@ msgstr "Mỗi 2 năm"
 msgid "Every 3 years"
 msgstr "Mỗi 3 năm"
 
-#: library/Box/Period.php:123
+#: library/Box/Period.php:124
 msgid "Every :number day"
 msgid_plural "Every :number days"
 msgstr[0] ":number ngày 1 lần"
 
-#: library/Box/Period.php:124
+#: library/Box/Period.php:125
 msgid "Every :number week"
 msgid_plural "Every :number weeks"
 msgstr[0] ":number tuần 1 lần"
 
-#: library/Box/Period.php:125
+#: library/Box/Period.php:126
 msgid "Every :number month"
 msgid_plural "Every :number months"
 msgstr[0] ":number tháng 1 lần"
 
-#: library/Box/Period.php:126
+#: library/Box/Period.php:127
 msgid "Every :number year"
 msgid_plural "Every :number years"
 msgstr[0] ":number năm 1 lần"
 
-#: library/Box/Period.php:127 library/Box/Period.php:169
+#: library/Box/Period.php:128 library/Box/Period.php:170
 msgid "Unit not defined"
 msgstr "Đơn vị chưa được định nghĩa"
 
-#: library/Box/Period.php:152
+#: library/Box/Period.php:153
 msgid "Unable to get the number of months for :unit"
 msgstr ""
 
-#: library/Box/Translate.php:54
+#: library/Box/Translate.php:55
 msgid "Unable to setup FOSSBilling translation functionality, locale was undefined."
 msgstr ""
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "second"
 msgstr "giây"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "minute"
 msgstr "phút"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "hour"
 msgstr "giờ"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "day"
 msgstr "ngày"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "week"
 msgstr "tuần"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "month"
 msgstr "tháng"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "year"
 msgstr "năm"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:252
 msgid "decade"
 msgstr "thập kỷ"
 
-#: library/Box/TwigLoader.php:24 library/Box/TwigLoader.php:28
-#: library/Box/TwigLoader.php:32
+#: library/Box/TwigLoader.php:23 library/Box/TwigLoader.php:27
+#: library/Box/TwigLoader.php:31
 msgid "Missing :missing: param for Box_TwigLoader"
 msgstr ""
 
-#: library/FOSSBilling/CentralAlerts.php:112
+#: library/FOSSBilling/CentralAlerts.php:119
 msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
 msgstr ""
 
-#: library/FOSSBilling/CentralAlerts.php:120
+#: library/FOSSBilling/CentralAlerts.php:127
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:55
+#: library/FOSSBilling/ExtensionManager.php:57
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:76
+#: library/FOSSBilling/ExtensionManager.php:79
 msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:98
+#: library/FOSSBilling/ExtensionManager.php:102
 msgid "Unable to fetch the latest release of the extension."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:170
+#: library/FOSSBilling/ExtensionManager.php:175
 msgid "Unable to connect to the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/ExtensionManager.php:178
+#: library/FOSSBilling/ExtensionManager.php:183
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:139
+#: library/FOSSBilling/Mail.php:131
 msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:156
+#: library/FOSSBilling/Mail.php:148
 msgid "FOSSBilling requires the proc_open PHP function to be enabled when using the sendmail transport"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:164
+#: library/FOSSBilling/Mail.php:158
 msgid "A Sendgrid API key is required to send emails via Sendgrid"
-msgstr ""
+msgstr "Cần API key của Sendgrid để gửi email thông qua Sendgrid"
 
-#: library/FOSSBilling/Mail.php:170
+#: library/FOSSBilling/Mail.php:165
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:175
+#: library/FOSSBilling/Mail.php:171
 msgid "Unknown mail transport: :transport"
 msgstr "Không xác định mail transport :transport"
 
-#: library/FOSSBilling/Mail.php:183
+#: library/FOSSBilling/Mail.php:179
 msgid "Failed to send email via :transport with the exception :e"
 msgstr ""
 
-#: library/FOSSBilling/Mail.php:199
+#: library/FOSSBilling/Mail.php:195
 msgid "SMTP host or port is not configured"
 msgstr ""
 
-#: library/FOSSBilling/Tools.php:79 library/FOSSBilling/Tools.php:256
+#: library/FOSSBilling/Tools.php:74 library/FOSSBilling/Tools.php:266
 msgid "Service class :class was not found in :path"
 msgstr "Service class :class không tồn tại trong :path"
 
-#: library/FOSSBilling/Tools.php:301
+#: library/FOSSBilling/Tools.php:312
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Địa chỉ email"
 
-#: library/FOSSBilling/Tools.php:302 library/FOSSBilling/Validate.php:108
+#: library/FOSSBilling/Tools.php:314 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
-msgstr ""
+msgstr ":friendlyName: không hợp lệ"
 
 #: library/FOSSBilling/Update.php:142
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr ""
 
-#: library/FOSSBilling/Update.php:200 modules/System/Api/Admin.php:191
+#: library/FOSSBilling/Update.php:198 modules/System/Api/Admin.php:192
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Bạn đang dùng bản mới nhất của FOSSBilling. Bạn không cần cập nhật."
 
-#: library/FOSSBilling/Update.php:222
+#: library/FOSSBilling/Update.php:221
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr ""
 
@@ -337,64 +337,64 @@ msgstr ""
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr ""
 
-#: library/FOSSBilling/Update.php:253
+#: library/FOSSBilling/Update.php:254
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr ""
 
-#: library/FOSSBilling/UpdatePatcher.php:46
+#: library/FOSSBilling/UpdatePatcher.php:44
 msgid "Unable to load existing configuration"
 msgstr ""
 
-#: library/FOSSBilling/UpdatePatcher.php:53
+#: library/FOSSBilling/UpdatePatcher.php:51
 msgid "Unable to create backup of configuration file"
-msgstr ""
+msgstr "Không thể tạo backup của file cấu hình"
 
-#: library/FOSSBilling/UpdatePatcher.php:108
+#: library/FOSSBilling/UpdatePatcher.php:107
 msgid "Error when writing updated configuration file."
 msgstr "Lỗi khi ghi vào tệp cấu hình cập nhật."
 
-#: library/FOSSBilling/UpdatePatcher.php:169
+#: library/FOSSBilling/UpdatePatcher.php:164
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr ""
 
-#: library/FOSSBilling/Validate.php:51
+#: library/FOSSBilling/Validate.php:49
 msgid "Minimum password length is 8 characters."
 msgstr "Độ dài mật khẩu tối thiểu là 8 ký tự."
 
-#: library/FOSSBilling/Validate.php:55
+#: library/FOSSBilling/Validate.php:53
 msgid "Maximum password length is 256 characters."
 msgstr "Độ dài mật khẩu tối đa là 256 ký tự."
 
-#: library/FOSSBilling/Validate.php:59
+#: library/FOSSBilling/Validate.php:57
 msgid "Password must include at least one number."
 msgstr "Mật khẩu phải bao gồm ít nhất một con số."
 
-#: library/FOSSBilling/Validate.php:63
+#: library/FOSSBilling/Validate.php:61
 msgid "Password must include at least one lowercase letter."
 msgstr "Mật khẩu phải bao gồm ít nhất một chữ cái viết thường."
 
-#: library/FOSSBilling/Validate.php:67
+#: library/FOSSBilling/Validate.php:65
 msgid "Password must include at least one uppercase letter."
 msgstr "Mật khẩu phải bao gồm ít nhất một chữ cái viết hoa."
 
-#: library/FOSSBilling/Validate.php:107
+#: library/FOSSBilling/Validate.php:104
 #: modules/Client/html_client/mod_client_profile.html.twig:70
 msgid "Birthdate"
-msgstr ""
+msgstr "Ngày sinh"
 
-#: library/FOSSBilling/i18n.php:141
+#: library/FOSSBilling/i18n.php:143
 msgid "Unable to enable / disable the locale as it is not present in the locale folder."
 msgstr ""
 
-#: library/Model/ProductDomainTable.php:217
+#: library/Model/ProductDomainTable.php:216
 msgid "Could not determine domain price. Domain action is missing"
 msgstr "Không thể xác định giá tên miền. Chức năng tên miền bị thiếu"
 
-#: library/Model/ProductDomainTable.php:234
+#: library/Model/ProductDomainTable.php:233
 msgid "Unknown TLD. Could not determine registration price"
 msgstr "Chưa nhận dạng TLD. Không thể xác định giá đăng ký tên miền"
 
-#: library/Model/ProductDomainTable.php:255
+#: library/Model/ProductDomainTable.php:254
 msgid "Domain product can not be removed."
 msgstr "Sản phẩm tên miền không thể bị xóa bỏ."
 
@@ -402,19 +402,19 @@ msgstr "Sản phẩm tên miền không thể bị xóa bỏ."
 msgid "Unknown period selected "
 msgstr "Giai đoạn không xác định được chọn "
 
-#: library/Model/ProductTable.php:73
+#: library/Model/ProductTable.php:74
 msgid "Product pricing could not be determined. "
 msgstr "Giá sản phẩm không thể xác định được. "
 
-#: library/Model/ProductTable.php:105
+#: library/Model/ProductTable.php:104
 msgid "Unknown period selected for setup price"
-msgstr ""
+msgstr "Khoảng thời hạn không xác định đã được chọn cho phần giá thiết lập"
 
-#: library/Model/ProductTable.php:129
+#: library/Model/ProductTable.php:126
 msgid "Product :id payment type is recurrent, but period was not selected"
 msgstr "Kiểu thanh toán sản phẩm :id là định kỳ nhưng giai đoạn lại chưa được chọn"
 
-#: library/Model/ProductTable.php:141
+#: library/Model/ProductTable.php:138
 msgid "Unknown Period selected for price"
 msgstr "Giai đoạn không xác định được chọn cho giá tiền"
 
@@ -423,298 +423,298 @@ msgid "Not enough in balance"
 msgstr "Không đủ số dư"
 
 #: library/Payment/Adapter/ClientBalance.php:64
-#: library/Payment/Adapter/ClientBalance.php:93
-#: library/Payment/Adapter/ClientBalance.php:127
+#: library/Payment/Adapter/ClientBalance.php:94
+#: library/Payment/Adapter/ClientBalance.php:129
 msgid "It is forbidden to pay a deposit invoice with this gateway"
-msgstr ""
+msgstr "Chi trả cho hoá đơn đặt cọc bị cấm với cổng thanh toán này"
 
-#: library/Payment/Adapter/ClientBalance.php:83
+#: library/Payment/Adapter/ClientBalance.php:84
 #: library/Payment/Adapter/PayPalEmail.php:75
 msgid "IPN is invalid"
-msgstr ""
+msgstr "IPN không hợp lệ"
 
-#: library/Payment/Adapter/ClientBalance.php:121
+#: library/Payment/Adapter/ClientBalance.php:123
 msgid "ClientBalance gateway is not enabled"
 msgstr "Cổng thanh toán ClientBalance không được bật"
 
-#: library/Payment/Adapter/PayPalEmail.php:31
+#: library/Payment/Adapter/PayPalEmail.php:30
 #: library/Payment/Adapter/Stripe.php:33 library/Payment/Adapter/Stripe.php:36
 #: library/Payment/Adapter/Stripe.php:42 library/Payment/Adapter/Stripe.php:45
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
-msgstr ""
+msgstr "Cổng thành toán \":pay_gatement\" chưa được thiết lập hoàn chỉnh. Xin hảy thiết lập :missing"
 
-#: library/Payment/Adapter/PayPalEmail.php:123
+#: library/Payment/Adapter/PayPalEmail.php:121
 msgid "Cannot process duplicate IPN"
-msgstr ""
+msgstr "Không thể xử lý bản sao của IPN"
 
-#: library/Payment/Adapter/PayPalEmail.php:262
+#: library/Payment/Adapter/PayPalEmail.php:266
 msgid "Redirecting to PayPal.com"
 msgstr "Đang chuyển hướng tới Paypal.com"
 
-#: library/Payment/Adapter/PayPalEmail.php:302
-#: library/Payment/Adapter/Stripe.php:111 modules/Invoice/Service.php:1349
+#: library/Payment/Adapter/PayPalEmail.php:306
+#: library/Payment/Adapter/Stripe.php:112 modules/Invoice/Service.php:1349
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Thanh toán cho hóa đơn :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1351
+#: library/Payment/Adapter/Stripe.php:114 modules/Invoice/Service.php:1351
 msgid "Payment for invoice :serie:id"
 msgstr "Thanh toán cho hóa đơn :serie:id"
 
-#: library/Payment/Adapter/Stripe.php:183
+#: library/Payment/Adapter/Stripe.php:187
 msgid "There was an error when processing the transaction"
-msgstr ""
+msgstr "Lỗi xảy ra trong quá trình giao dịch"
 
-#: library/Payment/AdapterAbstract.php:52
+#: library/Payment/AdapterAbstract.php:51
 msgid "Return URL for payment gateway was not set"
 msgstr "URL trả về cho công thanh toán chưa được thiết lập"
 
-#: library/Payment/AdapterAbstract.php:59
+#: library/Payment/AdapterAbstract.php:58
 msgid "Cancel URL for payment gateway was not set"
 msgstr "URL hủy bỏ cho cổng thanh toán chưa được thiết lập"
 
-#: library/Payment/AdapterAbstract.php:67
+#: library/Payment/AdapterAbstract.php:66
 msgid "IPN Notification URL for payment gateway was not set"
 msgstr "URL thông báo IPN cho cổng thanh toán chưa được thiết lập"
 
-#: library/Payment/AdapterAbstract.php:77
+#: library/Payment/AdapterAbstract.php:76
 msgid "IPN redirect URL for payment gateway was not set"
 msgstr "URL chuyển hướng cho cổng thanh toán chưa được thiết lập"
 
 #: library/Registrar/Adapter/Email.php:23
 #: library/Registrar/Adapter/Internetbs.php:18
 #: library/Registrar/Adapter/Internetbs.php:25
-#: library/Registrar/Adapter/Namecheap.php:29
-#: library/Registrar/Adapter/Namecheap.php:35
-#: library/Registrar/Adapter/Namecheap.php:47
+#: library/Registrar/Adapter/Namecheap.php:30
+#: library/Registrar/Adapter/Namecheap.php:36
+#: library/Registrar/Adapter/Namecheap.php:48
 #: library/Registrar/Adapter/Netearthone.php:11
 #: library/Registrar/Adapter/Netearthone.php:18
 #: library/Registrar/Adapter/Resellbiz.php:11
 #: library/Registrar/Adapter/Resellbiz.php:18
-#: library/Registrar/Adapter/Resellerclub.php:40
-#: library/Registrar/Adapter/Resellerclub.php:47
+#: library/Registrar/Adapter/Resellerclub.php:41
+#: library/Registrar/Adapter/Resellerclub.php:48
 #: library/Registrar/Adapter/Resellerid.php:11
 #: library/Registrar/Adapter/Resellerid.php:18
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Registrar/Adapter/Email.php:67 library/Registrar/Adapter/Email.php:72
+#: library/Registrar/Adapter/Email.php:69 library/Registrar/Adapter/Email.php:74
 msgid "Email registrar is unable to :action:"
 msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:76
 msgid "checking domain transferability"
-msgstr ""
+msgstr "đang kiểm tra khả năng chuyển nhượng của tên miền này"
 
 #: library/Registrar/Adapter/Internetbs.php:76
-#: library/Registrar/Adapter/Internetbs.php:176
-#: library/Registrar/Adapter/Namecheap.php:428
-#: library/Registrar/Adapter/Namecheap.php:567 library/Server/Manager/CWP.php:245
-#: library/Server/Manager/CWP.php:250 library/Server/Manager/CWP.php:255
-#: library/Server/Manager/Directadmin.php:334
+#: library/Registrar/Adapter/Internetbs.php:175
+#: library/Registrar/Adapter/Namecheap.php:451
+#: library/Registrar/Adapter/Namecheap.php:591 library/Server/Manager/CWP.php:255
+#: library/Server/Manager/CWP.php:260 library/Server/Manager/CWP.php:265
 #: library/Server/Manager/Directadmin.php:339
 #: library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Hestia.php:335 library/Server/Manager/Hestia.php:343
-#: library/Server/Manager/Hestia.php:378 library/Server/Manager/Plesk.php:58
+#: library/Server/Manager/Directadmin.php:349
+#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:347
+#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:59
 #: library/Server/Manager/Plesk.php:205 library/Server/Manager/Plesk.php:232
 msgid ":type: does not support :action:"
-msgstr ""
+msgstr ":type: không hỗ trợ :action:"
+
+#: library/Registrar/Adapter/Internetbs.php:167
+msgid "get domain details"
+msgstr "lấy thông tin tên miền"
 
 #: library/Registrar/Adapter/Internetbs.php:169
-msgid "get domain details"
-msgstr ""
-
-#: library/Registrar/Adapter/Internetbs.php:170
-#: library/Registrar/Adapter/Namecheap.php:171
-#: library/Registrar/Adapter/Namecheap.php:177
-#: library/Registrar/Adapter/Namecheap.php:248
-#: library/Registrar/Adapter/Namecheap.php:345
-#: library/Registrar/Adapter/Namecheap.php:590
-#: library/Registrar/Adapter/Namecheap.php:653
-#: library/Registrar/Adapter/Namecheap.php:677
-#: library/Registrar/Adapter/Namecheap.php:705
-#: library/Registrar/Adapter/Resellerclub.php:399
-#: library/Registrar/Adapter/Resellerclub.php:705
-#: library/Registrar/Adapter/Resellerclub.php:711
-#: library/Registrar/Adapter/Resellerclub.php:717
+#: library/Registrar/Adapter/Namecheap.php:179
+#: library/Registrar/Adapter/Namecheap.php:186
+#: library/Registrar/Adapter/Namecheap.php:264
+#: library/Registrar/Adapter/Namecheap.php:369
+#: library/Registrar/Adapter/Namecheap.php:616
+#: library/Registrar/Adapter/Namecheap.php:683
+#: library/Registrar/Adapter/Namecheap.php:710
+#: library/Registrar/Adapter/Namecheap.php:742
+#: library/Registrar/Adapter/Resellerclub.php:412
+#: library/Registrar/Adapter/Resellerclub.php:733
+#: library/Registrar/Adapter/Resellerclub.php:740
+#: library/Registrar/Adapter/Resellerclub.php:747
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr ""
 
-#: library/Registrar/Adapter/Internetbs.php:176
-#: library/Registrar/Adapter/Namecheap.php:567
+#: library/Registrar/Adapter/Internetbs.php:175
+#: library/Registrar/Adapter/Namecheap.php:591
 msgid "deleting domains"
-msgstr ""
+msgstr "xoá tên miền"
 
-#: library/Registrar/Adapter/Namecheap.php:117
+#: library/Registrar/Adapter/Namecheap.php:120
 msgid "Premium domains cannot be registered."
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:247
+#: library/Registrar/Adapter/Namecheap.php:262
 msgid "update nameservers"
-msgstr ""
+msgstr "cập nhật nameservers"
 
-#: library/Registrar/Adapter/Namecheap.php:344
+#: library/Registrar/Adapter/Namecheap.php:367
 msgid "retrieve domain details"
-msgstr ""
+msgstr "lấy thông tin tên miền"
 
-#: library/Registrar/Adapter/Namecheap.php:428
+#: library/Registrar/Adapter/Namecheap.php:451
 msgid "retrieving the transfer code"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:589
+#: library/Registrar/Adapter/Namecheap.php:614
 msgid "retrieve privacy information"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:652
+#: library/Registrar/Adapter/Namecheap.php:681
 msgid "get the domain lock status"
 msgstr ""
 
-#: library/Registrar/Adapter/Namecheap.php:676
-#: library/Registrar/Adapter/Namecheap.php:704
+#: library/Registrar/Adapter/Namecheap.php:708
+#: library/Registrar/Adapter/Namecheap.php:740
 msgid "set the domain lock status"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:335
+#: library/Registrar/Adapter/Resellerclub.php:343
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:398
+#: library/Registrar/Adapter/Resellerclub.php:410
 msgid "get the transfer code"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:592
+#: library/Registrar/Adapter/Resellerclub.php:612
 msgid "You are already registered as reseller"
 msgstr "Bạn đã đăng ký như với vai trò đại lý"
 
-#: library/Registrar/Adapter/Resellerclub.php:835
+#: library/Registrar/Adapter/Resellerclub.php:872
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:855
+#: library/Registrar/Adapter/Resellerclub.php:891
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:879
+#: library/Registrar/Adapter/Resellerclub.php:915
 msgid "Valid contact birthdate is required while registering RU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:883
+#: library/Registrar/Adapter/Resellerclub.php:919
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr ""
 
-#: library/Registrar/Adapter/Resellerclub.php:970
+#: library/Registrar/Adapter/Resellerclub.php:1006
 msgid "Contact not found"
 msgstr "Không tìm thấy liên hệ"
 
-#: library/Server/Manager/CWP.php:20 library/Server/Manager/CWP.php:24
-#: library/Server/Manager/CWP.php:28 library/Server/Manager/Directadmin.php:16
-#: library/Server/Manager/Directadmin.php:20
-#: library/Server/Manager/Directadmin.php:24 library/Server/Manager/Whm.php:22
-#: library/Server/Manager/Whm.php:26 library/Server/Manager/Whm.php:30
+#: library/Server/Manager/CWP.php:21 library/Server/Manager/CWP.php:25
+#: library/Server/Manager/CWP.php:29 library/Server/Manager/Directadmin.php:15
+#: library/Server/Manager/Directadmin.php:19
+#: library/Server/Manager/Directadmin.php:23 library/Server/Manager/Whm.php:24
+#: library/Server/Manager/Whm.php:28 library/Server/Manager/Whm.php:32
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:86 library/Server/Manager/Directadmin.php:433
-#: library/Server/Manager/Hestia.php:102 library/Server/Manager/Hestia.php:141
-#: library/Server/Manager/Plesk.php:50
+#: library/Server/Manager/CWP.php:89 library/Server/Manager/Directadmin.php:443
+#: library/Server/Manager/Hestia.php:101 library/Server/Manager/Hestia.php:140
+#: library/Server/Manager/Plesk.php:51
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:143 library/Server/Manager/Plesk.php:89
+#: library/Server/Manager/CWP.php:147 library/Server/Manager/Plesk.php:90
 msgid "create account"
-msgstr ""
+msgstr "tạo tài khoản"
 
-#: library/Server/Manager/CWP.php:144 library/Server/Manager/CWP.php:161
-#: library/Server/Manager/CWP.php:178 library/Server/Manager/CWP.php:198
-#: library/Server/Manager/CWP.php:218 library/Server/Manager/CWP.php:236
-#: library/Server/Manager/Directadmin.php:444
-#: library/Server/Manager/Hestia.php:199 library/Server/Manager/Hestia.php:213
-#: library/Server/Manager/Hestia.php:240 library/Server/Manager/Hestia.php:265
-#: library/Server/Manager/Hestia.php:294 library/Server/Manager/Hestia.php:324
-#: library/Server/Manager/Hestia.php:367 library/Server/Manager/Plesk.php:90
-#: library/Server/Manager/Whm.php:421 library/Server/Manager/Whm.php:426
-#: library/Server/Manager/Whm.php:431 library/Server/Manager/Whm.php:436
-#: library/Server/Manager/Whm.php:441
+#: library/Server/Manager/CWP.php:149 library/Server/Manager/CWP.php:167
+#: library/Server/Manager/CWP.php:185 library/Server/Manager/CWP.php:206
+#: library/Server/Manager/CWP.php:227 library/Server/Manager/CWP.php:246
+#: library/Server/Manager/Directadmin.php:455
+#: library/Server/Manager/Hestia.php:197 library/Server/Manager/Hestia.php:213
+#: library/Server/Manager/Hestia.php:241 library/Server/Manager/Hestia.php:267
+#: library/Server/Manager/Hestia.php:297 library/Server/Manager/Hestia.php:328
+#: library/Server/Manager/Hestia.php:372 library/Server/Manager/Plesk.php:92
+#: library/Server/Manager/Whm.php:456 library/Server/Manager/Whm.php:462
+#: library/Server/Manager/Whm.php:468 library/Server/Manager/Whm.php:474
+#: library/Server/Manager/Whm.php:480
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:160 library/Server/Manager/Hestia.php:239
+#: library/Server/Manager/CWP.php:165 library/Server/Manager/Hestia.php:239
 msgid "suspend account"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:177 library/Server/Manager/Hestia.php:264
+#: library/Server/Manager/CWP.php:183 library/Server/Manager/Hestia.php:265
 msgid "unsuspend account"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:197 library/Server/Manager/Hestia.php:293
+#: library/Server/Manager/CWP.php:204 library/Server/Manager/Hestia.php:295
 msgid "cancel account"
-msgstr ""
+msgstr "huỷ tài khoản"
 
-#: library/Server/Manager/CWP.php:217 library/Server/Manager/Hestia.php:323
+#: library/Server/Manager/CWP.php:225 library/Server/Manager/Hestia.php:326
 msgid "change account package"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:235 library/Server/Manager/Hestia.php:366
+#: library/Server/Manager/CWP.php:244 library/Server/Manager/Hestia.php:370
 msgid "change account password"
-msgstr ""
+msgstr "đổi mật khẩu của tài khoản"
 
-#: library/Server/Manager/CWP.php:245 library/Server/Manager/Directadmin.php:334
-#: library/Server/Manager/Hestia.php:335 library/Server/Manager/Plesk.php:205
+#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
+#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Plesk.php:205
 msgid "username changes"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:250 library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Hestia.php:343
+#: library/Server/Manager/CWP.php:260 library/Server/Manager/Directadmin.php:344
+#: library/Server/Manager/Hestia.php:347
 msgid "changing the account domain"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Hestia.php:378 library/Server/Manager/Plesk.php:232
+#: library/Server/Manager/CWP.php:265 library/Server/Manager/Directadmin.php:349
+#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:232
 msgid "changing the account IP"
-msgstr ""
+msgstr "thay đổi IP tài khoản"
 
-#: library/Server/Manager/Directadmin.php:100
+#: library/Server/Manager/Directadmin.php:102
 msgid "There are no available IPs on this server."
-msgstr ""
+msgstr "Không còn IP trống trên máy chủ này."
 
-#: library/Server/Manager/Directadmin.php:201
+#: library/Server/Manager/Directadmin.php:202
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
 msgstr "Không thể gán bất kỳ ip đại lý nào. Chắc chắc bạn phải còn ip tự do và chưa được sử dụng."
 
-#: library/Server/Manager/Directadmin.php:205
+#: library/Server/Manager/Directadmin.php:206
 msgid "Error creating user"
-msgstr ""
+msgstr "Lỗi tạo user"
 
-#: library/Server/Manager/Directadmin.php:231
+#: library/Server/Manager/Directadmin.php:232
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Lỗi bộ quản lý máy chủ \"DirectAdmin\": \"Tài khoản không bị khóa\""
 
-#: library/Server/Manager/Directadmin.php:427 library/Server/Manager/Whm.php:410
+#: library/Server/Manager/Directadmin.php:436 library/Server/Manager/Whm.php:444
 msgid "HttpClientException: :error"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:437
+#: library/Server/Manager/Directadmin.php:447
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Lỗi bộ quản lý máy chủ \"DirectAdmin\": \"Yêu cầu của bạn không thể thực hiện được vì nó không thuộc cấp độ thẩm quyền của bạn\""
 
-#: library/Server/Manager/Hestia.php:198
+#: library/Server/Manager/Hestia.php:195
 msgid "create user"
-msgstr ""
+msgstr "tạo user"
+
+#: library/Server/Manager/Hestia.php:207
+msgid "delete domain"
+msgstr "xoá tên miền"
+
+#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:211
+msgid "create domain"
+msgstr "tạo tên miền"
 
 #: library/Server/Manager/Hestia.php:209
-msgid "delete domain"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:209 library/Server/Manager/Hestia.php:212
-msgid "create domain"
-msgstr ""
-
-#: library/Server/Manager/Hestia.php:210
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
 msgstr ""
 
-#: library/Server/Manager/Plesk.php:58
+#: library/Server/Manager/Plesk.php:59
 msgid "account synchronization"
-msgstr ""
+msgstr "đồng bộ hoá tài khoản"
 
 #: library/Server/Manager/Plesk.php:175
 msgid "Can't modify client"
@@ -730,7 +730,7 @@ msgstr "Lịch sử sự kiện"
 
 #: modules/Activity/Service.php:34
 msgid "Delete activity"
-msgstr ""
+msgstr "Xoá hoạt động"
 
 #: modules/Activity/Service.php:35
 msgid "Allows the staff member to delete recorded activity."
@@ -808,7 +808,7 @@ msgstr "Bạn đã sử dụng mã giảm giá này. Vui lòng xóa mã giảm g
 
 #: modules/Cart/Service.php:492
 msgid "Can not checkout an empty cart"
-msgstr ""
+msgstr "Không thể thanh toán giỏ hàng trống"
 
 #: modules/Cart/Service.php:504
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -953,7 +953,7 @@ msgstr "Thỏa thuận cookie"
 #: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:756
 #: modules/Staff/Service.php:196
 msgid "You do not have permission to perform this action"
-msgstr ""
+msgstr "Bạn không có quyền thực hiện hành động này"
 
 #: modules/Currency/Api/Admin.php:106
 msgid "Currency already registered"
@@ -1031,7 +1031,7 @@ msgstr "Trường Từ địa chỉ email không thể rỗng"
 msgid "Email template :code was not found"
 msgstr "Mẫu email :code không tồn tại"
 
-#: modules/Email/Service.php:678
+#: modules/Email/Service.php:677
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr ""
 
@@ -1107,7 +1107,7 @@ msgstr "Không thể cài đặt mô-đun. Nó cần phiên bản tối thiểu 
 
 #: modules/Extension/Service.php:717
 msgid "Manage settings"
-msgstr ""
+msgstr "Quản lý cài đặt"
 
 #: modules/Extension/Service.php:718
 msgid "Allows the staff member to edit settings for this module."
@@ -1224,6 +1224,7 @@ msgstr "Phương thức thanh toán không tồn tại. Tham số gateway_id b�
 #: themes/admin_default/html/mod_index_dashboard.html.twig:261
 #: themes/admin_default/html/mod_index_dashboard.html.twig:444
 #: themes/admin_default/html/mod_index_dashboard.html.twig:548
+#: themes/huraga/html/mobile_menu.html.twig:41
 #: themes/huraga/html/partial_menu.html.twig:44
 msgid "Invoices"
 msgstr "Hóa đơn"
@@ -1540,11 +1541,11 @@ msgstr "Sai ID hoặc slug của sản phẩm"
 
 #: modules/Product/Controller/Admin.php:42
 msgid "Products & Services"
-msgstr ""
+msgstr "Sản phẩm và dịch vụ"
 
 #: modules/Product/Controller/Admin.php:49
 msgid "Product Addons"
-msgstr ""
+msgstr "Dịch vụ bổ sung"
 
 #: modules/Product/Controller/Admin.php:56
 #: modules/Product/html_admin/mod_product_promo.html.twig:3
@@ -1568,11 +1569,11 @@ msgstr "Không thể xóa danh mục đã có sản phẩm"
 
 #: modules/Product/Service.php:885
 msgid "This promotion code already exists."
-msgstr ""
+msgstr "Mã khuyến mại này đã tồn tại."
 
 #: modules/Profile/Api/Admin.php:116 modules/Profile/Api/Client.php:119
 msgid "Current password incorrect"
-msgstr ""
+msgstr "Mật khẩu hiện tại không đúng"
 
 #: modules/Profile/Service.php:145
 msgid "Invalid birthdate value"
@@ -1592,7 +1593,7 @@ msgstr "Chuyển hướng không tồn tại"
 
 #: modules/Serviceapikey/Service.php:54
 msgid "Order does not exist."
-msgstr ""
+msgstr "Đơn hàng không tồn tại."
 
 #: modules/Serviceapikey/Service.php:116 modules/Serviceapikey/Service.php:135
 msgid "You must provide an API key to check it's validity."
@@ -1602,7 +1603,7 @@ msgstr ""
 #: modules/Serviceapikey/Service.php:190 modules/Serviceapikey/Service.php:201
 #: modules/Serviceapikey/Service.php:231 modules/Serviceapikey/Service.php:344
 msgid "API key does not exist"
-msgstr ""
+msgstr "API key không tồn tại"
 
 #: modules/Serviceapikey/Service.php:180
 msgid "You must provide either the API key or API key order ID in order to reset it."
@@ -1711,7 +1712,7 @@ msgstr "Đơn đặt tên miền chưa được kích hoạt"
 
 #: modules/Servicedomain/Api/Guest.php:90
 msgid "Domain :domain is invalid"
-msgstr ""
+msgstr "Tên miền :domain không hợp lệ"
 
 #: modules/Servicedomain/Api/Guest.php:95
 msgid "Domain availability could not be determined. TLD is not active."
@@ -1781,7 +1782,7 @@ msgstr "Nameserver 2 là bắt buộc"
 
 #: modules/Servicedomain/Service.php:524 modules/Servicedomain/Service.php:545
 msgid "Domain name is invalid"
-msgstr ""
+msgstr "Tên miền không hợpl ệ"
 
 #: modules/Servicedomain/Service.php:528
 msgid "Domain can not be transferred"
@@ -1834,7 +1835,7 @@ msgstr ""
 
 #: modules/Servicehosting/Api/Guest.php:36
 msgid "Product type"
-msgstr ""
+msgstr "Loại sản phẩm"
 
 #: modules/Servicehosting/Controller/Admin.php:34
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
@@ -1858,7 +1859,7 @@ msgstr "Sản phẩm lưu trữ web chưa được cấu hình xong. Hãy cấu 
 
 #: modules/Servicehosting/Service.php:53
 msgid "Domain name is invalid."
-msgstr ""
+msgstr "Tên miền không hợp lệ."
 
 #: modules/Servicehosting/Service.php:56
 msgid "Domain extension is invalid."
@@ -1936,7 +1937,7 @@ msgstr "Email của bạn đã xuất hiện trong danh sách đen của cơ s�
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "Địa chỉ IP của bạn đã bị liệt kê trong danh sách đen của cơ sở dữ liệu Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:190
+#: modules/Spamchecker/Service.php:191
 msgid "Disposable email addresses are not allowed"
 msgstr ""
 
@@ -1969,7 +1970,7 @@ msgstr ""
 #: modules/Staff/Service.php:35 modules/Staff/Service.php:40
 #: modules/Staff/Service.php:45
 msgid "administrator"
-msgstr ""
+msgstr "quản trị viên"
 
 #: modules/Staff/Service.php:35 modules/Staff/Service.php:50
 msgid "Allows the staff member to create and edit :type: accounts."
@@ -1977,7 +1978,7 @@ msgstr ""
 
 #: modules/Staff/Service.php:39
 msgid "Delete administrators"
-msgstr ""
+msgstr "Xóa quản trị viên"
 
 #: modules/Staff/Service.php:40 modules/Staff/Service.php:55
 msgid "Allows the staff member to delete :type: accounts."
@@ -1998,7 +1999,7 @@ msgstr ""
 #: modules/Staff/Service.php:50 modules/Staff/Service.php:55
 #: modules/Staff/Service.php:60
 msgid "staff"
-msgstr ""
+msgstr "nhân viên"
 
 #: modules/Staff/Service.php:54
 msgid "Delete staff members"
@@ -2089,6 +2090,7 @@ msgstr "Nhóm kiến thức không tồn tại"
 #: modules/Support/html_admin/mod_support_settings.html.twig:21
 #: modules/Support/html_admin/mod_support_ticket.html.twig:17
 #: modules/Support/html_admin/mod_support_tickets.html.twig:17
+#: themes/huraga/html/mobile_menu.html.twig:23
 #: themes/huraga/html/partial_menu.html.twig:26
 msgid "Support"
 msgstr "Hỗ trợ"
@@ -2161,7 +2163,7 @@ msgstr "Không thể xóa nhóm đã có bài viết"
 
 #: modules/System/Controller/Admin.php:33
 msgid "System"
-msgstr ""
+msgstr "Hệ thống"
 
 #: modules/System/Controller/Admin.php:40
 #: modules/Client/html_admin/mod_client_settings.html.twig:19
@@ -2279,7 +2281,7 @@ msgstr "Cập nhật"
 
 #: modules/System/Service.php:37
 msgid "Manage company details"
-msgstr ""
+msgstr "Quản lý thông tin công ty"
 
 #: modules/System/Service.php:38
 msgid "Allows the staff member to update company details as set under the system module."
@@ -2739,6 +2741,7 @@ msgstr "Tên công ty"
 #: modules/Support/html_client/mod_support_contact_us.html.twig:31
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
 #: modules/System/html_admin/mod_system_settings.html.twig:63
+#: themes/huraga/html/mobile_menu.html.twig:50
 #: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
 msgstr "Email"
@@ -3107,6 +3110,7 @@ msgstr "Lịch sử đăng nhập"
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
 #: themes/admin_default/html/layout_default.html.twig:123
 #: themes/huraga/html/layout_default.html.twig:116
+#: themes/huraga/html/mobile_menu.html.twig:110
 msgid "Profile"
 msgstr "Hồ sơ"
 
@@ -3218,7 +3222,7 @@ msgstr "Đăng nhập vào vùng khách hàng"
 #: modules/Email/html_admin/mod_email_settings.html.twig:113
 #: modules/Email/html_admin/mod_email_settings.html.twig:115
 #: modules/Email/html_client/mod_email_email.html.twig:26
-#: modules/Email/html_client/mod_email_index.html.twig:63
+#: modules/Email/html_client/mod_email_index.html.twig:62
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:713
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
@@ -3465,6 +3469,7 @@ msgstr "Mật khẩu đã được thay đổi"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:412
 #: modules/Page/html_client/mod_page_signup.html.twig:158
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:94
 msgid "Password confirm"
 msgstr "Xác nhận mật khẩu"
 
@@ -3640,7 +3645,7 @@ msgstr "Tiêu đề email"
 #: modules/Email/html_admin/mod_email_history.html.twig:31
 #: modules/Email/html_admin/mod_email_settings.html.twig:192
 #: modules/Email/html_client/mod_email_email.html.twig:19
-#: modules/Email/html_client/mod_email_index.html.twig:53
+#: modules/Email/html_client/mod_email_index.html.twig:52
 msgid "To"
 msgstr "Đến"
 
@@ -3743,12 +3748,13 @@ msgstr "Tiêu đề trường"
 #: modules/Client/html_client/mod_client_balance.html.twig:5
 #: modules/Client/html_client/mod_client_balance.html.twig:6
 #: modules/Client/html_client/mod_client_balance.html.twig:18
+#: themes/huraga/html/mobile_menu.html.twig:59
 #: themes/huraga/html/partial_menu.html.twig:62
 msgid "Wallet"
-msgstr ""
+msgstr "Ví tiền"
 
 #: modules/Client/html_client/mod_client_balance.html.twig:19
-msgid "Here you can manage and track your account balance"
+msgid "Here you can manage and track your account balance."
 msgstr ""
 
 #: modules/Client/html_client/mod_client_balance.html.twig:24
@@ -3773,7 +3779,7 @@ msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:17
 msgid "Resend verification email"
-msgstr ""
+msgstr "Gửi lại email xác thực"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:27
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:33
@@ -3902,7 +3908,7 @@ msgstr "Khóa API cho phép tích hợp với ứng dụng bên ngoài. Bạn c�
 
 #: modules/Client/html_client/mod_client_profile.html.twig:203
 msgid "Warning!"
-msgstr ""
+msgstr "Cảnh báo!"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:203
 msgid "Resetting the key will break existing applications using it!"
@@ -3934,12 +3940,12 @@ msgstr ""
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:3
 msgid "Set new Password"
-msgstr ""
+msgstr "Đặt mật khẩu mới"
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:20
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:32
 msgid "Set new password"
-msgstr ""
+msgstr "Đặt mật khẩu mới"
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:25
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:26
@@ -3949,12 +3955,12 @@ msgstr "Mật khẩu mới"
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:29
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:30
 msgid "Repeat new password"
-msgstr ""
+msgstr "Nhập lại mật khẩu mới"
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:34
 #: modules/Page/html_client/mod_page_password-reset.html.twig:30
 msgid "Back to login"
-msgstr ""
+msgstr "Quay lại đăng nhập"
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
@@ -4082,7 +4088,7 @@ msgstr "Giá mẫu"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:84
 msgid "Are you sure you want to delete?"
-msgstr ""
+msgstr "Bạn có chắc là muốn xoá không?"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:95
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:67
@@ -4152,7 +4158,7 @@ msgid "Slug"
 msgstr "Slug"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:69
-#: modules/Email/html_client/mod_email_index.html.twig:57
+#: modules/Email/html_client/mod_email_index.html.twig:56
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:97
 #: modules/Support/html_client/mod_support_tickets.html.twig:52
 msgid "View"
@@ -4224,14 +4230,15 @@ msgstr "Vùng khách hàng"
 #: themes/admin_default/html/layout_default.html.twig:148
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
 #: themes/huraga/html/layout_default.html.twig:84
-#: themes/huraga/html/layout_default.html.twig:149
+#: themes/huraga/html/layout_default.html.twig:153
+#: themes/huraga/html/mobile_menu.html.twig:5
 #: themes/huraga/html/partial_menu.html.twig:8
 msgid "Dashboard"
 msgstr "Bảng điều khiển"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
 #: modules/Index/html_client/mod_index_dashboard.html.twig:10
-#: themes/huraga/html/layout_default.html.twig:146
+#: themes/huraga/html/layout_default.html.twig:150
 msgid "Home"
 msgstr "Trang chủ"
 
@@ -4247,7 +4254,7 @@ msgstr "Id"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:46
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:80
 msgid "Last Updated"
-msgstr ""
+msgstr "Lần cập nhật trước"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:47
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:706
@@ -4355,7 +4362,7 @@ msgstr "Email gần đây"
 #: modules/Email/html_admin/mod_email_details.html.twig:32
 #: modules/Email/html_admin/mod_email_history.html.twig:32
 #: modules/Email/html_client/mod_email_email.html.twig:18
-#: modules/Email/html_client/mod_email_index.html.twig:52
+#: modules/Email/html_client/mod_email_index.html.twig:51
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:44
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:28
 msgid "From"
@@ -4371,7 +4378,7 @@ msgstr "Đã gửi lại email"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:55
 #: modules/Email/html_client/mod_email_email.html.twig:23
-#: modules/Email/html_client/mod_email_index.html.twig:60
+#: modules/Email/html_client/mod_email_index.html.twig:59
 msgid "Resend"
 msgstr "Gửi lại"
 
@@ -4426,7 +4433,7 @@ msgstr "Đã bật"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:111
 msgid "Are you sure you want to delete this template?"
-msgstr ""
+msgstr "Bạn có chắc muốn xóa bỏ mẫu này?"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:124
 msgid "The list is empty. Depending on modules enabled email templates will be inserted after first event occurrence."
@@ -4488,7 +4495,7 @@ msgstr "Đã cập nhật lúc"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:233
 msgid "The list is empty."
-msgstr ""
+msgstr "Danh sách rỗng."
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:242
 msgid "Email settings updated"
@@ -4556,7 +4563,7 @@ msgstr "Mật khẩu SMTP"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:329
 msgid "SendGrid API Key"
-msgstr ""
+msgstr "SendGrid API Key"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:338
 msgid "Custom DSN"
@@ -4572,7 +4579,7 @@ msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:342
 msgid "Example"
-msgstr ""
+msgstr "Ví dụ"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:355
 msgid "Send a test email to yourself"
@@ -4661,11 +4668,11 @@ msgstr "Ví dụ biểu mẫu email"
 msgid "Email template playground. Use this tool to try rendering email templates."
 msgstr "Mô phỏng biểu mẫu email. Công cụ này sẽ hoạt động thử nghiệm việc thực hiện các biểu mẫu email."
 
-#: modules/Email/html_client/mod_email_index.html.twig:19
+#: modules/Email/html_client/mod_email_index.html.twig:18
 msgid "Here you can find all the emails we've sent you."
-msgstr ""
+msgstr "Tại đây bạn có thể xem những email chúng tôi đã gửi đến bạn."
 
-#: modules/Email/html_client/mod_email_index.html.twig:26
+#: modules/Email/html_client/mod_email_index.html.twig:25
 msgid "There are no emails to display"
 msgstr "Không có email để hiển thị"
 
@@ -4727,11 +4734,11 @@ msgstr "Hook"
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:3
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:11
 msgid "Manage translations"
-msgstr ""
+msgstr "Quản lý chuyển ngữ"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:18
 msgid "New translations"
-msgstr ""
+msgstr "Bản dịch mới"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:26
 msgid "Enabled translations"
@@ -4745,11 +4752,11 @@ msgstr "Ngôn ngữ"
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:32
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:89
 msgid "Completion"
-msgstr ""
+msgstr "Hoàn thành"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:34
 msgid "Disable"
-msgstr ""
+msgstr "Tắt"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:83
 msgid "Disabled translations"
@@ -4757,7 +4764,7 @@ msgstr ""
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:91
 msgid "Enable"
-msgstr ""
+msgstr "Kích hoạt"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:141
 msgid "List of translations on the Extension Directory"
@@ -4777,11 +4784,11 @@ msgstr ""
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:148
 msgid "Follow the instructions on the FOSSBilling documentation to install the new language's translation files."
-msgstr ""
+msgstr "Làm theo hướng dẫn trên phần tài liệu của FOSSBiling để thiết lập files của ngôn ngữ mới."
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:148
 msgid "Installing a new language"
-msgstr ""
+msgstr "Cài đặt ngôn ngữ mới"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:152
 msgid "Changing default language"
@@ -4789,11 +4796,11 @@ msgstr "Thay đổi ngôn ngữ mặc định"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:153
 msgid "Instructions for changing the default language can be found on the FOSSBilling documentation."
-msgstr ""
+msgstr "Hướng dẫn thay đổi ngôn ngữ mặc định có thể được tìm thấy tại phần tài liệu của FOSSBilling."
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:153
 msgid "Changing the default language"
-msgstr ""
+msgstr "Thay đổi ngôn ngữ mặc định"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:6
 msgid "Edit field"
@@ -4972,11 +4979,11 @@ msgstr "Vùng văn bản"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:100
 msgid "New orders"
-msgstr ""
+msgstr "Đơn hàng mới"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:166
 msgid "No recent orders"
-msgstr ""
+msgstr "Không có đơn hàng gần đây"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:176
 #: modules/Support/html_client/mod_support_ticket.html.twig:13
@@ -5003,6 +5010,7 @@ msgstr "Bạn đã đăng xuất"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:70
 #: themes/admin_default/html/error.html.twig:14
 #: themes/huraga/html/layout_default.html.twig:97
+#: themes/huraga/html/mobile_menu.html.twig:119
 msgid "Login"
 msgstr "Đăng nhập"
 
@@ -5011,6 +5019,7 @@ msgstr "Đăng nhập"
 #: modules/Page/html_client/mod_page_signup.html.twig:5
 #: modules/Page/html_client/mod_page_signup.html.twig:165
 #: themes/huraga/html/layout_default.html.twig:123
+#: themes/huraga/html/mobile_menu.html.twig:123
 msgid "Sign up"
 msgstr "Đăng ký"
 
@@ -5021,9 +5030,11 @@ msgstr "Đăng ký"
 #: modules/Order/html_client/mod_order_index.html.twig:12
 #: modules/Order/html_client/mod_order_manage.html.twig:35
 #: modules/Order/html_client/mod_order_product.html.twig:5
+#: modules/Order/html_client/mod_order_product.html.twig:12
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:4
 #: themes/admin_default/html/partial_menu_top.html.twig:3
 #: themes/huraga/html/layout_default.html.twig:90
+#: themes/huraga/html/mobile_menu.html.twig:14
 #: themes/huraga/html/partial_menu.html.twig:17
 msgid "Order"
 msgstr "Đặt hàng"
@@ -5038,6 +5049,7 @@ msgstr "Sản phẩm và dịch vụ"
 #: modules/News/html_client/mod_news_index.html.twig:3
 #: modules/News/html_client/mod_news_index.html.twig:7
 #: modules/News/html_client/mod_news_post.html.twig:8
+#: themes/huraga/html/mobile_menu.html.twig:68
 #: themes/huraga/html/partial_menu.html.twig:71
 msgid "News"
 msgstr "Tin tức"
@@ -5053,6 +5065,7 @@ msgstr "Tin mới và thông báo"
 #: modules/Support/html_client/mod_support_kb_index.html.twig:10
 #: modules/Support/html_client/mod_support_kb_index.html.twig:14
 #: modules/Support/html_client/mod_support_kb_index.html.twig:31
+#: themes/huraga/html/mobile_menu.html.twig:77
 #: themes/huraga/html/partial_menu.html.twig:80
 msgid "Knowledge base"
 msgstr "Hướng dẫn"
@@ -5275,15 +5288,15 @@ msgstr "Thông tin công ty"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:100
 msgid "Date Created"
-msgstr ""
+msgstr "Ngày Tạo"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:104
 msgid "Date Due"
-msgstr ""
+msgstr "Ngày Đáo Hạn"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:108
 msgid "Date Paid"
-msgstr ""
+msgstr "Ngày Thanh Toán"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:112
 msgid "Last Reminded"
@@ -5487,7 +5500,7 @@ msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:100
 msgid "A4"
-msgstr ""
+msgstr "A4"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:105
 msgid "Allow access to invoices without authentication"
@@ -5806,7 +5819,7 @@ msgstr "Tất cả hóa đơn có thể được tìm thấy tại đây. Bạn 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:31
 msgid "Invoice Date"
-msgstr ""
+msgstr "Ngày Xuất Hoá Đơn"
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:50
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:84
@@ -5820,7 +5833,7 @@ msgstr "Thanh toán"
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:83
 msgid "Paid Date"
-msgstr ""
+msgstr "Ngày Thanh Toán"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:25
 msgid "Payment methods"
@@ -5897,14 +5910,14 @@ msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 #: modules/System/html_admin/mod_system_settings.html.twig:113
-#: themes/huraga/html/layout_default.html.twig:173
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Bank Name"
-msgstr ""
+msgstr "Tên Ngân Hàng"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 #: modules/System/html_admin/mod_system_settings.html.twig:119
-#: themes/huraga/html/layout_default.html.twig:173
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "BIC / SWIFT Code"
 msgstr ""
 
@@ -5956,27 +5969,27 @@ msgstr "Sản phẩm"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:65
 msgid "Quantity & Price"
-msgstr ""
+msgstr "Số Lượng & Giá Cả"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:103
 msgid "Payment details"
-msgstr ""
+msgstr "Thông tin thanh toán"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Account Owner"
-msgstr ""
+msgstr "Chủ Tài Khoản"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Bank"
-msgstr ""
+msgstr "Ngân hàng"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Account number"
-msgstr ""
+msgstr "Số tài khoản"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:111
 msgid "VAT ID"
-msgstr ""
+msgstr "Mã số VAT"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:112
 msgid "Company Registration #:"
@@ -5984,7 +5997,7 @@ msgstr ""
 
 #: modules/Invoice/pdf_template/default-pdf.twig:113
 msgid "Website"
-msgstr ""
+msgstr "Website"
 
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:15
 msgid "Messages"
@@ -6041,7 +6054,7 @@ msgstr "Nội dung email"
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:126
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:207
 msgid "Recipients"
-msgstr ""
+msgstr "Người nhận"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:144
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:158
@@ -6050,7 +6063,7 @@ msgstr ""
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:162
 msgid "Message recipients"
-msgstr ""
+msgstr "Người nhận tin nhắn"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:178
 msgid "Update and preview"
@@ -6125,19 +6138,19 @@ msgstr "Theo dõi tin mới nhất từ chúng tôi."
 
 #: modules/News/html_client/mod_news_index.html.twig:36
 msgid "Continue reading"
-msgstr ""
+msgstr "Tiếp tục đọc"
 
 #: modules/News/html_client/mod_news_index.html.twig:44
 msgid "No news or announcements"
-msgstr ""
+msgstr "Không có thông tin hay thông báo nào"
 
 #: modules/News/html_client/mod_news_post.html.twig:33
 msgid "by"
-msgstr ""
+msgstr "bởi"
 
 #: modules/News/html_client/mod_news_post.html.twig:43
 msgid "Back to the list"
-msgstr ""
+msgstr "Quay trở lại danh sách"
 
 #: modules/Notification/html_admin/mod_notification_index.html.twig:5
 msgid "Notifications center"
@@ -6192,7 +6205,7 @@ msgstr "Tiếp tục"
 #: modules/Order/html_admin/mod_order_manage.html.twig:33
 #: modules/Order/html_admin/mod_order_manage.html.twig:302
 msgid "Order Management"
-msgstr ""
+msgstr "Quản Lý Đơn Hàng"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:41
 msgid "Edit order"
@@ -6245,15 +6258,15 @@ msgstr "Ghi chú đơn hàng"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:130
 msgid "Order Date"
-msgstr ""
+msgstr "Ngày Đặt Hàng"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:134
 msgid "Activation Date"
-msgstr ""
+msgstr "Ngày Kích Hoạt"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:138
 msgid "Renewal Date"
-msgstr ""
+msgstr "Ngày Gia Hạn"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:139
 msgid "day(s)"
@@ -6468,11 +6481,12 @@ msgid "Suspension reasons"
 msgstr "Lý do tạm ngưng"
 
 #: modules/Order/html_client/mod_order_index.html.twig:23
+#: modules/Order/html_client/mod_order_product.html.twig:23
 msgid "Order Product"
 msgstr ""
 
 #: modules/Order/html_client/mod_order_index.html.twig:24
-#: modules/Order/html_client/mod_order_product.html.twig:19
+#: modules/Order/html_client/mod_order_product.html.twig:24
 msgid "Choose products we offer for selling"
 msgstr "Chọn sản phẩm chúng tôi chào bán"
 
@@ -6483,6 +6497,7 @@ msgstr "Sản phẩm và dịch vụ của tôi"
 #: modules/Order/html_client/mod_order_list.html.twig:9
 #: modules/Order/html_client/mod_order_list.html.twig:19
 #: modules/Order/html_client/mod_order_manage.html.twig:11
+#: themes/huraga/html/mobile_menu.html.twig:32
 #: themes/huraga/html/partial_menu.html.twig:35
 msgid "Services"
 msgstr "Dịch vụ"
@@ -6570,11 +6585,6 @@ msgstr "Nâng cấp lên"
 msgid "I would like to upgrade"
 msgstr "Tôi muốn nâng cấp"
 
-#: modules/Order/html_client/mod_order_product.html.twig:18
-#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
-msgid "Select Product"
-msgstr "Chọn sản phẩm"
-
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:5
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:22
 msgid "Order Button settings"
@@ -6628,7 +6638,7 @@ msgstr "Màu sắc"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:116
 msgid "Opacity"
-msgstr "Độ mờ đục"
+msgstr "Độ trong suốt"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:128
 msgid "Loader (while content of popup is being loaded)"
@@ -6780,6 +6790,10 @@ msgid "Item was removed from cart"
 msgstr "Sản phẩm đã được bỏ khỏi giỏ hàng"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
+msgid "Select Product"
+msgstr "Chọn sản phẩm"
+
+#: modules/Orderbutton/html_client/mod_orderbutton_choose_product.html.twig:6
 msgid "Items"
 msgstr "Mục"
 
@@ -6815,7 +6829,7 @@ msgid "Phone Code"
 msgstr ""
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
-#: modules/Page/html_client/mod_page_signup.html.twig:170
+#: modules/Page/html_client/mod_page_signup.html.twig:171
 msgid "Already a user?"
 msgstr ""
 
@@ -6878,8 +6892,8 @@ msgstr "Nhập địa chỉ email của bạn"
 msgid "Enter your password"
 msgstr "Nhập mật khẩu của bạn"
 
-#: modules/Page/html_client/mod_page_login.html.twig:40
-#: modules/Page/html_client/mod_page_signup.html.twig:173
+#: modules/Page/html_client/mod_page_login.html.twig:41
+#: modules/Page/html_client/mod_page_signup.html.twig:175
 msgid "Forgot password?"
 msgstr "Quên mật khẩu?"
 
@@ -7932,7 +7946,7 @@ msgstr "Chuyển tiếp 1 tên miền mới"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:76
 msgid "Enter your domain name to transfer"
-msgstr "Nhập tên miền cần chuyển tiếp"
+msgstr "Nhập tên miền cần chuyển nhượng"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:87
 msgid "Transfer price is"
@@ -8055,7 +8069,7 @@ msgstr "Năm"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:75
 msgid "Free domain transfer"
-msgstr "Chuyển tiếp tên miền miễn phí"
+msgstr "Chuyển nhượng tên miền miễn phí"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:94
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:91
@@ -8329,7 +8343,6 @@ msgid "Account password changed"
 msgstr "Mật khẩu tài khoản đã được thay đổi"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:127
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:94
 msgid "Password Confirm"
 msgstr "Xác nhận mật khẩu"
 
@@ -8427,8 +8440,8 @@ msgid "Login to control panel"
 msgstr ""
 
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:83
-msgid "Change your FTP/cPanel/SSH password."
-msgstr "Thay đổi mật khẩu FTP/cPanel/SSH của bạn."
+msgid "Change your control panel/FTP/SSH password"
+msgstr ""
 
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:112
 msgid "Domain name changed"
@@ -9856,25 +9869,27 @@ msgid "Go back to home"
 msgstr ""
 
 #: themes/huraga/html/layout_default.html.twig:118
+#: themes/huraga/html/mobile_menu.html.twig:112
 msgid "Sign out"
 msgstr "Đăng xuất"
 
-#: themes/huraga/html/layout_default.html.twig:173
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Payment Information"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:173
+#: themes/huraga/html/layout_default.html.twig:177
 msgid "Account Number"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:223
+#: themes/huraga/html/layout_default.html.twig:227
 msgid "FOSSBilling Community"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:235
+#: themes/huraga/html/layout_default.html.twig:239
 msgid "Top"
 msgstr "Đầu trang"
 
+#: themes/huraga/html/mobile_menu.html.twig:84
 #: themes/huraga/html/partial_menu.html.twig:87
 msgid "Account balance"
 msgstr "Số dư tài khoản"
