@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-01-08 18:02-0800\n"
-"PO-Revision-Date: 2024-01-15 05:48\n"
+"POT-Creation-Date: 2024-01-17 02:28-0800\n"
+"PO-Revision-Date: 2024-01-18 06:09\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Catalan\n"
 "MIME-Version: 1.0\n"
@@ -27,31 +27,31 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: ca_ES\n"
 
-#: di.php:319
+#: di.php:317
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Sembla que esteu intentant utilitzar FOSSBilling sense l'extensió php intl activada. FOSSBilling inclou un polyfill per a l'extensió intl, però no és compatible amb :locale. Si us plau, activeu l'extensió intl."
 
-#: di.php:367 di.php:441
+#: di.php:365 di.php:439
 msgid "Client is not logged in"
 msgstr "El client no ha iniciat sessió"
 
-#: di.php:407 di.php:479
+#: di.php:405 di.php:477
 msgid "Admin is not logged in"
 msgstr "L'administrador no ha iniciat sessió"
 
-#: di.php:519
+#: di.php:517
 msgid "Unrecognized Handler type: "
 msgstr "Tipus de \"handler\" gestor no reconegut: "
 
-#: di.php:529
+#: di.php:527
 msgid "Please check your mailbox and confirm email address."
 msgstr "Si us plau, comproveu la vostra bústia de correu i confirmeu l'adreça de correu electrònic."
 
-#: index.php:78 library/Box/App.php:419 library/Box/AppClient.php:70
+#: index.php:80 library/Box/App.php:419 library/Box/AppClient.php:70
 msgid "Page :url not found"
 msgstr "No s'ha trobat l'URL de la pàgina"
 
-#: index.php:85
+#: index.php:87
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "S'ha produït un error HTTP :err_code en intentar carregar :url"
 
@@ -63,7 +63,7 @@ msgstr "L'objecte de modificació no està definit per al servei"
 msgid "Method :method must contain underscore"
 msgstr "El mètode :method ha de contenir guió baix"
 
-#: library/Api/Handler.php:55 library/Box/Mod.php:52
+#: library/Api/Handler.php:55 library/Box/Mod.php:56
 msgid "Invalid module name"
 msgstr "Nom del mòdul no vàlid"
 
@@ -87,7 +87,7 @@ msgstr ":type API call :method no existeix al mòdul :module"
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "El sistema està en manteniment. Siusplau, intenta-ho més tard"
 
-#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:742
+#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:743
 msgid "You do not have permission to access the :mod: module"
 msgstr "No teniu permís per accedir al mòdul :mod"
 
@@ -95,7 +95,7 @@ msgstr "No teniu permís per accedir al mòdul :mod"
 msgid "Page not found"
 msgstr "Pàgina no trobada"
 
-#: library/Box/Crypt.php:19
+#: library/Box/Crypt.php:23
 msgid "The PHP openssl extension must be enabled on your server"
 msgstr "L'extensió PHP openssl ha d'estar habilitada al vostre servidor"
 
@@ -107,23 +107,23 @@ msgstr "Falta el missatge de registre"
 msgid "Bad log priority"
 msgstr "Mala prioritat de registre"
 
-#: library/Box/Mod.php:71
+#: library/Box/Mod.php:75
 msgid "Module :mod manifest file is missing"
 msgstr "Falta el fitxer de manifest del mòdul:mod"
 
-#: library/Box/Mod.php:76
+#: library/Box/Mod.php:80
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr "El fitxer de manifest del mòdul:mod no és vàlid. Comproveu la sintaxi i els permisos dels fitxers."
 
-#: library/Box/Mod.php:118
+#: library/Box/Mod.php:122
 msgid "Module :mod does not have service class"
 msgstr "El mòdul :mod no té classe de servei"
 
-#: library/Box/Mod.php:137
+#: library/Box/Mod.php:141
 msgid "Module :mod Client controller class was not found"
 msgstr "Mòdul :mod No s'ha trobat la classe del controlador del client"
 
-#: library/Box/Mod.php:212
+#: library/Box/Mod.php:216
 msgid "Core module can not be updated"
 msgstr "El mòdul bàsic no es pot actualitzar"
 
@@ -262,6 +262,18 @@ msgstr "No es poden recuperar les alertes del sistema central d'alertes. Consult
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "Resposta no vàlida del sistema d'alertes central de FOSSBilling."
 
+#: library/FOSSBilling/Config.php:90
+msgid "Unable to create backup of configuration file."
+msgstr ""
+
+#: library/FOSSBilling/Config.php:96
+msgid "Error when writing updated configuration file."
+msgstr "Error en escriure el fitxer de configuració actualitzat."
+
+#: library/FOSSBilling/Config.php:145
+msgid "Too many iterations performed while formatting the config file"
+msgstr ""
+
 #: library/FOSSBilling/ExtensionManager.php:57
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "No s'han pogut obtenir els detalls de l'extensió del directori d'extensions de FOSSBilling."
@@ -310,54 +322,46 @@ msgstr "No s'ha pogut enviar el correu electrònic mitjançant :transport amb l'
 msgid "SMTP host or port is not configured"
 msgstr "L'amfitrió o el port SMTP no està configurat"
 
-#: library/FOSSBilling/Tools.php:74 library/FOSSBilling/Tools.php:266
+#: library/FOSSBilling/Tools.php:76 library/FOSSBilling/Tools.php:268
 msgid "Service class :class was not found in :path"
 msgstr "Classe de servei :class no s'ha trobat a :path"
 
-#: library/FOSSBilling/Tools.php:312
+#: library/FOSSBilling/Tools.php:314
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Adreça de correu electrònic"
 
-#: library/FOSSBilling/Tools.php:314 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:316 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: no és vàlid"
 
-#: library/FOSSBilling/Update.php:142
+#: library/FOSSBilling/Update.php:143
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "No s'ha pogut baixar la informació de la darrera versió. Hi ha més detalls disponibles al registre d'errors."
 
-#: library/FOSSBilling/Update.php:198 modules/System/Api/Admin.php:192
+#: library/FOSSBilling/Update.php:209 modules/System/Api/Admin.php:192
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Tens la darrera versió de FOSSBilling. No cal actualitzar."
 
-#: library/FOSSBilling/Update.php:221
+#: library/FOSSBilling/Update.php:233
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "No s'ha pogut baixar l'arxiu d'actualització. Hi ha més detalls disponibles al registre d'errors."
 
-#: library/FOSSBilling/Update.php:235 modules/Extension/Service.php:475
+#: library/FOSSBilling/Update.php:247 modules/Extension/Service.php:476
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "No s'ha pogut extreure el fitxer, comproveu els permisos de fitxers i carpetes. Hi ha més detalls disponibles al registre d'errors."
 
-#: library/FOSSBilling/Update.php:254
+#: library/FOSSBilling/Update.php:266
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "No es pot esborrar la memòria cau i/o eliminar la carpeta d'instal·lació. Hi ha més detalls disponibles al registre d'errors."
 
-#: library/FOSSBilling/UpdatePatcher.php:44
+#: library/FOSSBilling/UpdatePatcher.php:49
 msgid "Unable to load existing configuration"
 msgstr "No es pot carregar la configuració existent"
 
-#: library/FOSSBilling/UpdatePatcher.php:51
-msgid "Unable to create backup of configuration file"
-msgstr "No es pot crear una còpia de seguretat del fitxer de configuració"
-
-#: library/FOSSBilling/UpdatePatcher.php:107
-msgid "Error when writing updated configuration file."
-msgstr "Error en escriure el fitxer de configuració actualitzat."
-
-#: library/FOSSBilling/UpdatePatcher.php:164
+#: library/FOSSBilling/UpdatePatcher.php:154
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr "S'ha produït un error en aplicar les correccions de la base de dades. Si us plau, comprova el registre d'errors per informació sobre l'error, corregeix-lo i després realitza el mètode de correcció de còpia de seguretat per completar l'actualització."
 
@@ -386,7 +390,7 @@ msgstr "La contrasenya ha d'incloure almenys una lletra majúscula."
 msgid "Birthdate"
 msgstr "Data de naixement"
 
-#: library/FOSSBilling/i18n.php:143
+#: library/FOSSBilling/i18n.php:142
 msgid "Unable to enable / disable the locale as it is not present in the locale folder."
 msgstr "No es pot activar/desactivar la configuració regional perquè no és present a la carpeta de configuració regional."
 
@@ -512,14 +516,15 @@ msgstr "Comprovació de la transferència del domini"
 #: library/Registrar/Adapter/Internetbs.php:76
 #: library/Registrar/Adapter/Internetbs.php:175
 #: library/Registrar/Adapter/Namecheap.php:451
-#: library/Registrar/Adapter/Namecheap.php:591 library/Server/Manager/CWP.php:255
-#: library/Server/Manager/CWP.php:260 library/Server/Manager/CWP.php:265
-#: library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Directadmin.php:349
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:347
-#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:59
-#: library/Server/Manager/Plesk.php:205 library/Server/Manager/Plesk.php:232
+#: library/Registrar/Adapter/Namecheap.php:591 library/Server/Manager/CWP.php:344
+#: library/Server/Manager/CWP.php:357 library/Server/Manager/CWP.php:370
+#: library/Server/Manager/Directadmin.php:132
+#: library/Server/Manager/Directadmin.php:146
+#: library/Server/Manager/Directadmin.php:208
+#: library/Server/Manager/Directadmin.php:437
+#: library/Server/Manager/Hestia.php:295 library/Server/Manager/Hestia.php:305
+#: library/Server/Manager/Hestia.php:340 library/Server/Manager/Plesk.php:101
+#: library/Server/Manager/Plesk.php:314 library/Server/Manager/Plesk.php:360
 msgid ":type: does not support :action:"
 msgstr ":type: no admet :action:"
 
@@ -609,118 +614,122 @@ msgstr "Es requereix informació de contacte vàlida del passaport per registrar
 msgid "Contact not found"
 msgstr "No s'ha trobat el contacte"
 
-#: library/Server/Manager/CWP.php:21 library/Server/Manager/CWP.php:25
-#: library/Server/Manager/CWP.php:29 library/Server/Manager/Directadmin.php:15
-#: library/Server/Manager/Directadmin.php:19
-#: library/Server/Manager/Directadmin.php:23 library/Server/Manager/Whm.php:24
-#: library/Server/Manager/Whm.php:28 library/Server/Manager/Whm.php:32
+#: library/Server/Manager/CWP.php:52 library/Server/Manager/CWP.php:56
+#: library/Server/Manager/CWP.php:60 library/Server/Manager/Directadmin.php:66
+#: library/Server/Manager/Directadmin.php:71
+#: library/Server/Manager/Directadmin.php:76 library/Server/Manager/Whm.php:63
+#: library/Server/Manager/Whm.php:67 library/Server/Manager/Whm.php:71
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "El gestor del servidor \":server_manager\" no està completament configurat. Si us plau, configureu el :missing"
 
-#: library/Server/Manager/CWP.php:89 library/Server/Manager/Directadmin.php:443
-#: library/Server/Manager/Hestia.php:101 library/Server/Manager/Hestia.php:140
-#: library/Server/Manager/Plesk.php:51
+#: library/Server/Manager/CWP.php:115 library/Server/Manager/Directadmin.php:651
+#: library/Server/Manager/Hestia.php:110 library/Server/Manager/Hestia.php:377
+#: library/Server/Manager/Plesk.php:86
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
 msgstr "No s'ha pogut connectar al servidor :type:. Verifiqueu les vostres credencials i la configuració"
 
-#: library/Server/Manager/CWP.php:147 library/Server/Manager/Plesk.php:90
+#: library/Server/Manager/CWP.php:184 library/Server/Manager/Plesk.php:144
 msgid "create account"
 msgstr "crear compte"
 
-#: library/Server/Manager/CWP.php:149 library/Server/Manager/CWP.php:167
-#: library/Server/Manager/CWP.php:185 library/Server/Manager/CWP.php:206
-#: library/Server/Manager/CWP.php:227 library/Server/Manager/CWP.php:246
-#: library/Server/Manager/Directadmin.php:455
-#: library/Server/Manager/Hestia.php:197 library/Server/Manager/Hestia.php:213
-#: library/Server/Manager/Hestia.php:241 library/Server/Manager/Hestia.php:267
-#: library/Server/Manager/Hestia.php:297 library/Server/Manager/Hestia.php:328
-#: library/Server/Manager/Hestia.php:372 library/Server/Manager/Plesk.php:92
-#: library/Server/Manager/Whm.php:456 library/Server/Manager/Whm.php:462
-#: library/Server/Manager/Whm.php:468 library/Server/Manager/Whm.php:474
-#: library/Server/Manager/Whm.php:480
+#: library/Server/Manager/CWP.php:186 library/Server/Manager/CWP.php:213
+#: library/Server/Manager/CWP.php:240 library/Server/Manager/CWP.php:270
+#: library/Server/Manager/CWP.php:299 library/Server/Manager/CWP.php:328
+#: library/Server/Manager/Directadmin.php:667
+#: library/Server/Manager/Hestia.php:163 library/Server/Manager/Hestia.php:180
+#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:231
+#: library/Server/Manager/Hestia.php:256 library/Server/Manager/Hestia.php:282
+#: library/Server/Manager/Hestia.php:327 library/Server/Manager/Plesk.php:146
+#: library/Server/Manager/Whm.php:578 library/Server/Manager/Whm.php:585
+#: library/Server/Manager/Whm.php:592 library/Server/Manager/Whm.php:599
+#: library/Server/Manager/Whm.php:606
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr "No s'ha pogut :action: al servidor :type:, comproveu els registres d'errors per obtenir més detalls"
 
-#: library/Server/Manager/CWP.php:165 library/Server/Manager/Hestia.php:239
+#: library/Server/Manager/CWP.php:211 library/Server/Manager/Hestia.php:205
 msgid "suspend account"
 msgstr "suspendre el compte"
 
-#: library/Server/Manager/CWP.php:183 library/Server/Manager/Hestia.php:265
+#: library/Server/Manager/CWP.php:238 library/Server/Manager/Hestia.php:229
 msgid "unsuspend account"
 msgstr "anul·lar la suspensió del compte"
 
-#: library/Server/Manager/CWP.php:204 library/Server/Manager/Hestia.php:295
+#: library/Server/Manager/CWP.php:268 library/Server/Manager/Hestia.php:254
 msgid "cancel account"
 msgstr "cancel·lar el compte"
 
-#: library/Server/Manager/CWP.php:225 library/Server/Manager/Hestia.php:326
+#: library/Server/Manager/CWP.php:297 library/Server/Manager/Hestia.php:280
 msgid "change account package"
 msgstr "canviar el paquet del compte"
 
-#: library/Server/Manager/CWP.php:244 library/Server/Manager/Hestia.php:370
+#: library/Server/Manager/CWP.php:326 library/Server/Manager/Hestia.php:325
 msgid "change account password"
 msgstr "canviar la contrasenya del compte"
 
-#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Plesk.php:205
+#: library/Server/Manager/CWP.php:344 library/Server/Manager/Directadmin.php:208
+#: library/Server/Manager/Hestia.php:295 library/Server/Manager/Plesk.php:314
 msgid "username changes"
 msgstr "canvis de nom d'usuari"
 
-#: library/Server/Manager/CWP.php:260 library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Hestia.php:347
+#: library/Server/Manager/CWP.php:357 library/Server/Manager/Directadmin.php:132
+#: library/Server/Manager/Hestia.php:305
 msgid "changing the account domain"
 msgstr "canviant el domini del compte"
 
-#: library/Server/Manager/CWP.php:265 library/Server/Manager/Directadmin.php:349
-#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:232
+#: library/Server/Manager/CWP.php:370 library/Server/Manager/Directadmin.php:146
+#: library/Server/Manager/Hestia.php:340 library/Server/Manager/Plesk.php:360
 msgid "changing the account IP"
 msgstr "canviant la IP del compte"
 
-#: library/Server/Manager/Directadmin.php:102
+#: library/Server/Manager/Directadmin.php:226
 msgid "There are no available IPs on this server."
 msgstr "No hi ha IP disponibles en aquest servidor."
 
-#: library/Server/Manager/Directadmin.php:202
+#: library/Server/Manager/Directadmin.php:342
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
 msgstr "No es pot assignar cap IP al distribuïdor. Assegureu-vos de tenir ips gratuïts i no assignats."
 
-#: library/Server/Manager/Directadmin.php:206
+#: library/Server/Manager/Directadmin.php:346
 msgid "Error creating user"
 msgstr "S'ha produït un error en crear l'usuari"
 
-#: library/Server/Manager/Directadmin.php:232
+#: library/Server/Manager/Directadmin.php:437
+msgid "synchronizing the account"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:482
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Error de DirectAdmin del gestor del servidor: \"El compte no està suspès\""
 
-#: library/Server/Manager/Directadmin.php:436 library/Server/Manager/Whm.php:444
+#: library/Server/Manager/Directadmin.php:643 library/Server/Manager/Whm.php:561
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
-#: library/Server/Manager/Directadmin.php:447
+#: library/Server/Manager/Directadmin.php:656
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Error de DirectAdmin del gestor del servidor: \"La sol·licitud que heu fet no es pot executar perquè no existeix al vostre nivell d'autoritat\""
 
-#: library/Server/Manager/Hestia.php:195
+#: library/Server/Manager/Hestia.php:161
 msgid "create user"
 msgstr "crear usuari"
 
-#: library/Server/Manager/Hestia.php:207
+#: library/Server/Manager/Hestia.php:174
 msgid "delete domain"
 msgstr "esborra el domini"
 
-#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:211
+#: library/Server/Manager/Hestia.php:174 library/Server/Manager/Hestia.php:178
 msgid "create domain"
 msgstr "crear domini"
 
-#: library/Server/Manager/Hestia.php:209
+#: library/Server/Manager/Hestia.php:176
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
 msgstr "Ha fallat :action1: al :type: després de fallar :action2: , comprova els registres d'errors per a més detalls"
 
-#: library/Server/Manager/Plesk.php:59
+#: library/Server/Manager/Plesk.php:101
 msgid "account synchronization"
 msgstr "sincronització de comptes"
 
-#: library/Server/Manager/Plesk.php:175
+#: library/Server/Manager/Plesk.php:255
 msgid "Can't modify client"
 msgstr "No es pot modificar el client"
 
@@ -740,25 +749,25 @@ msgstr "Esborra l'activitat"
 msgid "Allows the staff member to delete recorded activity."
 msgstr "Permet al membre del personal eliminar l'activitat registrada."
 
-#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:253
+#: modules/Api/Controller/Client.php:50 modules/Api/Controller/Client.php:255
 msgid "Unknown API call :call"
 msgstr "Crida a l'API desconeguda :call"
 
-#: modules/Api/Controller/Client.php:130
+#: modules/Api/Controller/Client.php:132
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Petició invàlida. Assegureu-vos que l'origen de la sol·licitud sigui :from"
 
-#: modules/Api/Controller/Client.php:141
+#: modules/Api/Controller/Client.php:143
 msgid "Unauthorized IP"
 msgstr "IP no autoritzada"
 
-#: modules/Api/Controller/Client.php:195 modules/Api/Controller/Client.php:199
-#: modules/Api/Controller/Client.php:203 modules/Api/Controller/Client.php:217
-#: modules/Api/Controller/Client.php:226 modules/Api/Controller/Client.php:240
+#: modules/Api/Controller/Client.php:197 modules/Api/Controller/Client.php:201
+#: modules/Api/Controller/Client.php:205 modules/Api/Controller/Client.php:219
+#: modules/Api/Controller/Client.php:228 modules/Api/Controller/Client.php:242
 msgid "Authentication Failed"
 msgstr "L'autenticació ha fallat"
 
-#: modules/Api/Controller/Client.php:332
+#: modules/Api/Controller/Client.php:334
 msgid "CSRF token invalid"
 msgstr "El testimoni CSRF no és vàlid"
 
@@ -954,7 +963,7 @@ msgstr "Camp: el camp no pot estar buit"
 msgid "Cookie consent"
 msgstr "Consentiment de cookies"
 
-#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:756
+#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:757
 #: modules/Staff/Service.php:196
 msgid "You do not have permission to perform this action"
 msgstr "No teniu autorització per executar aquesta acció"
@@ -1004,7 +1013,7 @@ msgstr "Pàgines personalitzades"
 
 #: modules/Email/Api/Admin.php:114 modules/Email/Api/Admin.php:137
 #: modules/Email/Api/Client.php:66 modules/Email/Api/Client.php:88
-#: modules/Email/Api/Client.php:110 modules/Email/Service.php:496
+#: modules/Email/Api/Client.php:110 modules/Email/Service.php:495
 msgid "Email not found"
 msgstr "No s'ha trobat el correu electrònic"
 
@@ -1023,15 +1032,15 @@ msgstr "El receptor no està definit. Definiu el paràmetre to o to_client o to_
 msgid "Email history"
 msgstr "Historial de correu electrònic"
 
-#: modules/Email/Service.php:146
+#: modules/Email/Service.php:145
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "El receptor no està definit. Definiu el paràmetre to o to_client o to_staff o to_admin"
 
-#: modules/Email/Service.php:205
+#: modules/Email/Service.php:204
 msgid "From email address can not be empty"
 msgstr "De l'adreça de correu electrònic no pot estar buida"
 
-#: modules/Email/Service.php:481
+#: modules/Email/Service.php:480
 msgid "Email template :code was not found"
 msgstr "No s'ha trobat la plantilla de correu electrònic:codi"
 
@@ -1043,7 +1052,7 @@ msgstr "El missatge d'error s'ha truncat a causa de l'amplada, si us plau, compr
 msgid "Embed and integrate"
 msgstr "Incrustar i integrar"
 
-#: modules/Extension/Api/Admin.php:295
+#: modules/Extension/Api/Admin.php:296
 msgid "Extension not found"
 msgstr "No s'ha trobat l'extensió"
 
@@ -1061,59 +1070,59 @@ msgstr "Extensions"
 msgid "Languages"
 msgstr "Idiomes"
 
-#: modules/Extension/Service.php:37
+#: modules/Extension/Service.php:38
 msgid "Manage extensions"
 msgstr "Gestiona les extensions"
 
-#: modules/Extension/Service.php:38
+#: modules/Extension/Service.php:39
 msgid "Allows the staff member to install, update, or remove extensions."
 msgstr "Permet al membre del personal instal·lar, actualitzar o eliminar extensions."
 
-#: modules/Extension/Service.php:336
+#: modules/Extension/Service.php:337
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "Visiteu el directori d'extensions per obtenir més informació sobre com actualitzar aquesta extensió."
 
-#: modules/Extension/Service.php:389
+#: modules/Extension/Service.php:390
 msgid "FOSSBilling core modules can not be managed"
 msgstr "Els mòduls bàsics de FOSSBilling no es poden gestionar"
 
-#: modules/Extension/Service.php:438
+#: modules/Extension/Service.php:439
 msgid "Coudn't find a valid download URL for the extension."
 msgstr "No s'ha pogut trobar un URL de baixada vàlid per a l'extensió."
 
-#: modules/Extension/Service.php:442
+#: modules/Extension/Service.php:443
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
 msgstr "Aquesta extensió no és compatible amb la vostra versió de FOSSBilling. Actualitzeu FOSSBilling a la darrera versió i torneu-ho a provar."
 
-#: modules/Extension/Service.php:458
+#: modules/Extension/Service.php:459
 msgid "Failed to download the extension with error :code"
 msgstr "No s'ha pogut baixar l'extensió amb error :code"
 
-#: modules/Extension/Service.php:499
+#: modules/Extension/Service.php:500
 msgid "Extension :id seems to be already installed."
 msgstr "Extensió: id sembla que ja està instal·lada."
 
-#: modules/Extension/Service.php:502
+#: modules/Extension/Service.php:503
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "No s'ha pogut moure l'extensió a la seva destinació final. Comproveu els permisos de la carpeta de destinació. (:destinació)"
 
-#: modules/Extension/Service.php:505
+#: modules/Extension/Service.php:506
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "El tipus d'extensió (:type) no es pot instal·lar automàticament."
 
-#: modules/Extension/Service.php:538
+#: modules/Extension/Service.php:539
 msgid "FOSSBilling core modules can not be installed or removed"
 msgstr "Els mòduls bàsics de FOSSBilling no es poden instal·lar ni eliminar"
 
-#: modules/Extension/Service.php:543
+#: modules/Extension/Service.php:544
 msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr "El mòdul no es pot instal·lar. Requereix com a mínim la versió :min de FOSSBilling. Estàs utilitzant :v"
 
-#: modules/Extension/Service.php:717
+#: modules/Extension/Service.php:718
 msgid "Manage settings"
 msgstr "Gestiona la configuració"
 
-#: modules/Extension/Service.php:718
+#: modules/Extension/Service.php:719
 msgid "Allows the staff member to edit settings for this module."
 msgstr "Permet al membre del personal editar la configuració d'aquest mòdul."
 
@@ -1666,7 +1675,7 @@ msgstr "La configuració ha de ser una matriu"
 #: modules/Servicecustom/Service.php:248 modules/Servicedomain/Api/Client.php:127
 #: modules/Servicedownloadable/Api/Admin.php:64
 #: modules/Servicedownloadable/Api/Client.php:38
-#: modules/Servicehosting/Api/Admin.php:425
+#: modules/Servicehosting/Api/Admin.php:427
 #: modules/Servicehosting/Api/Client.php:93
 #: modules/Servicelicense/Api/Admin.php:85
 #: modules/Servicelicense/Api/Client.php:51
@@ -1682,9 +1691,9 @@ msgid "Plugin :plugin does not support action :action"
 msgstr "Plugin :plugin no admet action :action"
 
 #: modules/Servicecustom/Service.php:295 modules/Servicedomain/Service.php:252
-#: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:95
-#: modules/Servicehosting/Service.php:140 modules/Servicehosting/Service.php:158
-#: modules/Servicehosting/Service.php:177 modules/Servicehosting/Service.php:196
+#: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:103
+#: modules/Servicehosting/Service.php:161 modules/Servicehosting/Service.php:179
+#: modules/Servicehosting/Service.php:198 modules/Servicehosting/Service.php:217
 msgid "Order :id has no active service"
 msgstr "Order :id no té cap servei actiu"
 
@@ -1830,11 +1839,11 @@ msgstr "El fitxer no es pot descarregar en aquest moment. Poseu-vos en contacte 
 msgid "plan_id is missing"
 msgstr "falta plan_id"
 
-#: modules/Servicehosting/Api/Admin.php:235
+#: modules/Servicehosting/Api/Admin.php:236
 msgid "Hosting server is used by :count: service hostings"
 msgstr "Servidor d'allotjament utilitzat per :count: serveis de hosting"
 
-#: modules/Servicehosting/Api/Admin.php:347
+#: modules/Servicehosting/Api/Admin.php:349
 msgid "Hosting plan is used by :count: service hostings"
 msgstr "Pla d'allotjament utilitzat per :count: serveis de hostings"
 
@@ -1850,55 +1859,55 @@ msgstr "Tipus de Producte"
 msgid "Hosting plans and servers"
 msgstr "Plans d'allotjament i servidors"
 
-#: modules/Servicehosting/Service.php:35
+#: modules/Servicehosting/Service.php:37
 msgid ":hosting for :domain"
 msgstr ":hosting per a :domain"
 
-#: modules/Servicehosting/Service.php:47
+#: modules/Servicehosting/Service.php:49
 msgid "Hosting product is not configured completely. Configure server for hosting product."
 msgstr "El producte d'allotjament no està configurat completament. Configura el servidor per al producte d'allotjament."
 
-#: modules/Servicehosting/Service.php:50
+#: modules/Servicehosting/Service.php:52
 msgid "Hosting product is not configured completely. Configure hosting plan for hosting product."
 msgstr "El producte d'allotjament no està configurat completament. Configura el pla d'allotjament per al producte d'allotjament."
 
-#: modules/Servicehosting/Service.php:53
+#: modules/Servicehosting/Service.php:55
 msgid "Domain name is invalid."
 msgstr "El nom de domini no és vàlid."
 
-#: modules/Servicehosting/Service.php:56
+#: modules/Servicehosting/Service.php:58
 msgid "Domain extension is invalid."
 msgstr "L'extensió de domini no és vàlida."
 
-#: modules/Servicehosting/Service.php:256
+#: modules/Servicehosting/Service.php:292
 msgid "Account username is missing or is invalid"
 msgstr "Falta el nom d'usuari del compte o no és vàlid"
 
-#: modules/Servicehosting/Service.php:278
+#: modules/Servicehosting/Service.php:314
 msgid "Account ip is missing or is invalid"
 msgstr "Falta l'IP del compte o no és vàlida"
 
-#: modules/Servicehosting/Service.php:302
+#: modules/Servicehosting/Service.php:338
 msgid "Domain sld or tld is missing"
 msgstr "Falta el domini sld o tld"
 
-#: modules/Servicehosting/Service.php:328
+#: modules/Servicehosting/Service.php:364
 msgid "Account password is missing or is invalid"
 msgstr "Falta la contrasenya del compte o no és vàlida"
 
-#: modules/Servicehosting/Service.php:726
+#: modules/Servicehosting/Service.php:771
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Gestor de servidor no vàlid. El servidor no s'ha configurat correctament."
 
-#: modules/Servicehosting/Service.php:746
+#: modules/Servicehosting/Service.php:791
 msgid "Server manager :adapter is invalid"
 msgstr "Gestor del servidor: l'adaptador no és vàlid"
 
-#: modules/Servicehosting/Service.php:786
+#: modules/Servicehosting/Service.php:838
 msgid "Can not remove hosting plan which has active accounts"
 msgstr "No es pot eliminar el pla d'allotjament que té comptes actius"
 
-#: modules/Servicehosting/Service.php:997
+#: modules/Servicehosting/Service.php:1051
 msgid "Could not find main domain product"
 msgstr "No s'ha pogut trobar el producte del domini principal"
 
@@ -2279,60 +2288,69 @@ msgstr "Configuració"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:137
 #: modules/Support/html_admin/mod_support_settings.html.twig:115
 #: modules/Support/html_admin/mod_support_ticket.html.twig:163
+#: modules/System/html_admin/mod_system_settings.html.twig:614
 #: modules/System/html_admin/mod_system_update.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr "Actualitza"
 
-#: modules/System/Service.php:37
+#: modules/System/Service.php:38
 msgid "Manage company details"
 msgstr "Gestiona els detalls de la companyia"
 
-#: modules/System/Service.php:38
+#: modules/System/Service.php:39
 msgid "Allows the staff member to update company details as set under the system module."
 msgstr ""
 
-#: modules/System/Service.php:42
+#: modules/System/Service.php:43
 msgid "Manage company legal"
 msgstr ""
 
-#: modules/System/Service.php:43
+#: modules/System/Service.php:44
 msgid "Allows the staff member to update company legal as set under the system module."
 msgstr ""
 
-#: modules/System/Service.php:47
-#: modules/System/html_admin/mod_system_settings.html.twig:505
+#: modules/System/Service.php:48
+#: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "Invalidate cache"
 msgstr "Invalida la memòria cau"
 
-#: modules/System/Service.php:48
+#: modules/System/Service.php:49
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
 msgstr ""
 
-#: modules/System/Service.php:52
+#: modules/System/Service.php:53
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:45
 #: modules/System/html_admin/mod_system_update.html.twig:54
 msgid "Update FOSSBilling"
 msgstr "Actualitza FOSSBilling"
 
-#: modules/System/Service.php:53
+#: modules/System/Service.php:54
 msgid "Allows the staff member to update FOSSBilling."
 msgstr ""
 
-#: modules/System/Service.php:65
+#: modules/System/Service.php:58
+msgid "Manage the network interface"
+msgstr ""
+
+#: modules/System/Service.php:59
+msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
+msgstr ""
+
+#: modules/System/Service.php:71
 msgid "Parameter key is missing"
 msgstr "Falta la clau de paràmetre"
 
-#: modules/System/Service.php:134
+#: modules/System/Service.php:140
 msgid "Invalid parameter name, received: param_"
 msgstr "Nom del paràmetre no vàlid, rebut: param_"
 
-#: modules/System/Service.php:538
+#: modules/System/Service.php:539
 msgid "Parameter :param does not exist"
 msgstr "El paràmetre :param no existeix"
 
-#: modules/System/Service.php:1398
+#: modules/System/Service.php:1399
 msgid "Country :code phone code is not registered"
 msgstr "País:codi codi de telèfon no està registrat"
 
@@ -2650,20 +2668,11 @@ msgstr "Filtre clients"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:18
 #: modules/Client/html_admin/mod_client_manage.html.twig:63
-#: modules/Client/html_admin/mod_client_manage.html.twig:810
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:87
 #: modules/Index/html_client/mod_index_dashboard.html.twig:59
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
-#: modules/Order/html_admin/mod_order_index.html.twig:17
-#: modules/Support/html_admin/mod_support_ticket.html.twig:216
-msgid "ID"
-msgstr "ID"
+#: modules/Support/html_admin/mod_support_tickets.html.twig:34
+msgid "Client ID"
+msgstr "ID de Client"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:24
 #: modules/Client/html_admin/mod_client_index.html.twig:209
@@ -2683,7 +2692,7 @@ msgstr "ID"
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:29
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:31
 #: modules/Staff/html_admin/mod_staff_group.html.twig:37
 #: modules/Staff/html_admin/mod_staff_index.html.twig:30
@@ -2697,7 +2706,7 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:233
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:276
 #: modules/Support/html_client/mod_support_contact_us.html.twig:27
-#: modules/System/html_admin/mod_system_settings.html.twig:57
+#: modules/System/html_admin/mod_system_settings.html.twig:62
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
 msgid "Name"
@@ -2745,7 +2754,7 @@ msgstr "Empresa"
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:31
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
-#: modules/System/html_admin/mod_system_settings.html.twig:63
+#: modules/System/html_admin/mod_system_settings.html.twig:68
 #: themes/huraga/html/mobile_menu.html.twig:50
 #: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
@@ -3031,7 +3040,7 @@ msgstr "Codi postal"
 #: modules/Invoice/pdf_template/default-pdf.twig:41
 #: modules/Invoice/pdf_template/default-pdf.twig:53
 #: modules/Invoice/pdf_template/default-pdf.twig:110
-#: modules/System/html_admin/mod_system_settings.html.twig:69
+#: modules/System/html_admin/mod_system_settings.html.twig:74
 msgid "Phone"
 msgstr "Telèfon"
 
@@ -3180,7 +3189,7 @@ msgstr "Saldo del fons"
 #: modules/Order/html_client/mod_order_manage.html.twig:257
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 #: modules/Support/html_admin/mod_support_tickets.html.twig:390
-#: modules/System/html_admin/mod_system_settings.html.twig:224
+#: modules/System/html_admin/mod_system_settings.html.twig:229
 msgid "Notes"
 msgstr "Nota"
 
@@ -3204,7 +3213,7 @@ msgstr "Clau API"
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:144
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
 #: modules/Page/html_client/mod_page_signup.html.twig:76
-#: modules/System/html_admin/mod_system_settings.html.twig:75
+#: modules/System/html_admin/mod_system_settings.html.twig:80
 msgid "Address"
 msgstr "Adreça"
 
@@ -3315,10 +3324,10 @@ msgstr "Correu aprovat"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:37
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:79
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:169
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:227
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:233
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:59
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:94
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:100
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:29
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:42
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:55
@@ -3331,10 +3340,10 @@ msgstr "Correu aprovat"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:157
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:70
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:41
-#: modules/System/html_admin/mod_system_settings.html.twig:135
-#: modules/System/html_admin/mod_system_settings.html.twig:148
-#: modules/System/html_admin/mod_system_settings.html.twig:166
-#: modules/System/html_admin/mod_system_settings.html.twig:187
+#: modules/System/html_admin/mod_system_settings.html.twig:140
+#: modules/System/html_admin/mod_system_settings.html.twig:153
+#: modules/System/html_admin/mod_system_settings.html.twig:171
+#: modules/System/html_admin/mod_system_settings.html.twig:192
 #: themes/admin_default/html/macro_functions.html.twig:3
 msgid "Yes"
 msgstr "Si"
@@ -3382,10 +3391,10 @@ msgstr "Si"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:41
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:83
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:173
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:231
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:237
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:63
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:98
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:104
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:33
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:46
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:59
@@ -3398,10 +3407,10 @@ msgstr "Si"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:163
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:74
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:45
-#: modules/System/html_admin/mod_system_settings.html.twig:139
-#: modules/System/html_admin/mod_system_settings.html.twig:152
-#: modules/System/html_admin/mod_system_settings.html.twig:172
-#: modules/System/html_admin/mod_system_settings.html.twig:193
+#: modules/System/html_admin/mod_system_settings.html.twig:144
+#: modules/System/html_admin/mod_system_settings.html.twig:157
+#: modules/System/html_admin/mod_system_settings.html.twig:177
+#: modules/System/html_admin/mod_system_settings.html.twig:198
 #: themes/admin_default/html/macro_functions.html.twig:5
 msgid "No"
 msgstr "No"
@@ -3411,7 +3420,7 @@ msgid "Date of birth"
 msgstr "Data de naixement"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:262
-#: modules/System/html_admin/mod_system_settings.html.twig:31
+#: modules/System/html_admin/mod_system_settings.html.twig:33
 msgid "Company details"
 msgstr "Dades institucionals"
 
@@ -3657,6 +3666,19 @@ msgstr "A"
 #: modules/Client/html_admin/mod_client_manage.html.twig:802
 msgid "Transactions received"
 msgstr "Transaccions rebudes"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:810
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
+#: modules/Order/html_admin/mod_order_index.html.twig:17
+#: modules/Support/html_admin/mod_support_ticket.html.twig:216
+msgid "ID"
+msgstr "ID"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:812
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:5
@@ -5552,9 +5574,9 @@ msgid "Maximum amount for add funds invoice"
 msgstr "Import màxim per a la factura d'afegir fons"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:156
-#: modules/System/html_admin/mod_system_settings.html.twig:206
-#: modules/System/html_admin/mod_system_settings.html.twig:229
-#: modules/System/html_admin/mod_system_settings.html.twig:494
+#: modules/System/html_admin/mod_system_settings.html.twig:211
+#: modules/System/html_admin/mod_system_settings.html.twig:234
+#: modules/System/html_admin/mod_system_settings.html.twig:499
 msgid "Update settings"
 msgstr "Actualitza la configuració"
 
@@ -5917,14 +5939,14 @@ msgid "Invoice Status"
 msgstr "Estat de la factura"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
-#: modules/System/html_admin/mod_system_settings.html.twig:113
+#: modules/System/html_admin/mod_system_settings.html.twig:118
 #: themes/huraga/html/layout_default.html.twig:177
 msgid "Bank Name"
 msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
-#: modules/System/html_admin/mod_system_settings.html.twig:119
+#: modules/System/html_admin/mod_system_settings.html.twig:124
 #: themes/huraga/html/layout_default.html.twig:177
 msgid "BIC / SWIFT Code"
 msgstr ""
@@ -6876,7 +6898,7 @@ msgid "About us"
 msgstr "Sobre nosaltres"
 
 #: modules/Page/html_client/mod_page_about-us.html.twig:9
-#: modules/System/html_admin/mod_system_settings.html.twig:43
+#: modules/System/html_admin/mod_system_settings.html.twig:45
 msgid "About"
 msgstr "Quant a"
 
@@ -7501,7 +7523,7 @@ msgstr "Nou registrador de dominis"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:15
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:121
 msgid "Nameservers"
 msgstr "Servidors de noms"
 
@@ -7658,7 +7680,7 @@ msgstr "Servidors de noms actualitzats"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:50
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:117
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
 msgid "Nameserver 1"
 msgstr "Servidor de noms 1"
 
@@ -7669,7 +7691,7 @@ msgstr "Servidor de noms 1"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:53
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
 msgid "Nameserver 2"
 msgstr "Servidor de noms 2"
 
@@ -7680,7 +7702,7 @@ msgstr "Servidor de noms 2"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:56
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
 msgid "Nameserver 3"
 msgstr "Servidor de noms 3"
 
@@ -7691,7 +7713,7 @@ msgstr "Servidor de noms 3"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:141
 msgid "Nameserver 4"
 msgstr "Servidor de noms 4"
 
@@ -8114,7 +8136,7 @@ msgid "Hosting plan updated"
 msgstr "Pla d'allotjament actualitzat"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:32
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:250
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:256
 msgid "Unique name to identify this hosting plan"
 msgstr "Nom únic per identificar aquest pla d'allotjament"
 
@@ -8184,7 +8206,7 @@ msgid "Test connection"
 msgstr "Prova de connexió"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:64
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:167
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:173
 msgid "Server connected"
 msgstr "Servidor connectat"
 
@@ -8256,30 +8278,40 @@ msgstr "Port personalitzat. Utilitzeu el blanc per utilitzar el valor predetermi
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:223
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:90
-msgid "Use Secure connection"
-msgstr "Utilitzeu la connexió segura"
+msgid "Password length"
+msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:235
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:225
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:92
+msgid "Length of generated passwords when creating user accounts. Defaults to 10"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:229
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:96
+msgid "Use secure connection"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:241
 msgid "Add server"
 msgstr "Afegeix servidor"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:242
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
 msgid "Adding new hosting plan"
 msgstr "Afegeix un nou pla d'allotjament"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:243
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:249
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters in next step. In this step provide basic hosting plan information."
 msgstr "Depenent del gestor del servidor utilitzat per configurar el compte d'allotjament, és possible que necessiteu proporcionar paràmetres addicionals al pas següent. En aquest pas proporcioneu informació bàsica del pla d'allotjament."
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
 msgid "Disk quota (MB)"
 msgstr "Quota de disc (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
 msgid "Bandwidth (MB)"
 msgstr "Ample de banda (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:272
 msgid "Create hosting plan"
 msgstr "Crear un pla d'allotjament"
 
@@ -8411,23 +8443,23 @@ msgstr "Servidor actualitzat"
 msgid "Primary IP address of the server used to connect to it like: 127.0.0.1"
 msgstr "Adreça IP principal del servidor utilitzat per connectar-s'hi com: 127.0.0.1"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:103
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
 msgid "Update and test connection"
 msgstr "Actualitzar i provar la connexió"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:105
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:111
 msgid "Optional configuration"
 msgstr "Configuració opcional"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:107
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:113
 msgid "Users prefix"
 msgstr "Prefix d'usuaris"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Prefix for created users (especially for database)"
 msgstr "Prefix per als usuaris creats (especialment per a la base de dades)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:142
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:148
 msgid "Update server"
 msgstr "Servidor d'actualització"
 
@@ -8772,7 +8804,7 @@ msgstr "Nou membre del personal"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:204
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
-#: modules/System/html_admin/mod_system_settings.html.twig:199
+#: modules/System/html_admin/mod_system_settings.html.twig:204
 msgid "Signature"
 msgstr "Signatura"
 
@@ -9206,10 +9238,6 @@ msgstr ""
 msgid "Filter Support Tickets"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:34
-msgid "Client ID"
-msgstr "ID de Client"
-
 #: modules/Support/html_admin/mod_support_tickets.html.twig:46
 msgid "Ticket Subject"
 msgstr ""
@@ -9348,182 +9376,221 @@ msgstr ""
 msgid "System settings"
 msgstr "Ajustos del sistema"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:34
+#: modules/System/html_admin/mod_system_settings.html.twig:36
 msgid "Company legal"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:37
+#: modules/System/html_admin/mod_system_settings.html.twig:39
 msgid "Countries"
 msgstr "Països"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:40
+#: modules/System/html_admin/mod_system_settings.html.twig:42
 msgid "Cache"
 msgstr "Memòria cau"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:46
-#: modules/System/html_admin/mod_system_settings.html.twig:539
+#: modules/System/html_admin/mod_system_settings.html.twig:48
+#: modules/System/html_admin/mod_system_settings.html.twig:544
 msgid "Error reporting"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:53
-#: modules/System/html_admin/mod_system_settings.html.twig:212
+#: modules/System/html_admin/mod_system_settings.html.twig:51
+#: modules/System/html_admin/mod_system_settings.html.twig:575
+msgid "Network interface"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:58
+#: modules/System/html_admin/mod_system_settings.html.twig:217
 msgid "Company updated"
 msgstr "Empresa actualitzada"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:77
+#: modules/System/html_admin/mod_system_settings.html.twig:82
 msgid "Address line 1"
 msgstr "Adreça Línia 1"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:78
+#: modules/System/html_admin/mod_system_settings.html.twig:83
 msgid "Address line 2"
 msgstr "Adreça línia 2"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:79
+#: modules/System/html_admin/mod_system_settings.html.twig:84
 msgid "Address line 3"
 msgstr "Línia d'adreça 3"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:83
+#: modules/System/html_admin/mod_system_settings.html.twig:88
 msgid "Logo URL"
 msgstr "URL del logotip"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:89
+#: modules/System/html_admin/mod_system_settings.html.twig:94
 msgid "Logo URL (dark mode)"
 msgstr "URL del logotip (mode fosc)"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:95
+#: modules/System/html_admin/mod_system_settings.html.twig:100
 msgid "Favicon"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:101
+#: modules/System/html_admin/mod_system_settings.html.twig:106
 msgid "Company number, chamber of commerce number"
 msgstr "Número d'empresa, número de cambra de comerç"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:107
+#: modules/System/html_admin/mod_system_settings.html.twig:112
 msgid "VAT number"
 msgstr "Número d'IVA"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:125
+#: modules/System/html_admin/mod_system_settings.html.twig:130
 msgid "Bank Account number"
 msgstr "Número de compte bancari"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:131
+#: modules/System/html_admin/mod_system_settings.html.twig:136
 msgid "Display bank account information on documents?"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:144
+#: modules/System/html_admin/mod_system_settings.html.twig:149
 msgid "Display bank account information on the bottom of every page?"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:158
+#: modules/System/html_admin/mod_system_settings.html.twig:163
 msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:160
+#: modules/System/html_admin/mod_system_settings.html.twig:165
 msgid "Enabling this functionality may effect modules that depend on it."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:179
+#: modules/System/html_admin/mod_system_settings.html.twig:184
 msgid "Hide some company information in the guest API"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:181
+#: modules/System/html_admin/mod_system_settings.html.twig:186
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:216
+#: modules/System/html_admin/mod_system_settings.html.twig:221
 msgid "Company terms of service, legal regulation"
 msgstr "Condicions de servei de l'empresa, regulació legal"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:220
+#: modules/System/html_admin/mod_system_settings.html.twig:225
 msgid "Company privacy policy"
 msgstr "Política de privadesa de l'empresa"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:235
+#: modules/System/html_admin/mod_system_settings.html.twig:240
 msgid "Countries updated"
 msgstr "Països actualitzats"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:487
+#: modules/System/html_admin/mod_system_settings.html.twig:492
 msgid "List of countries"
 msgstr "Llista de països"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:501
+#: modules/System/html_admin/mod_system_settings.html.twig:506
 msgid "Cache control"
 msgstr "Control de la memòria cau"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:503
+#: modules/System/html_admin/mod_system_settings.html.twig:508
 msgid "Cache directory is cleared"
 msgstr "S'ha esborrat el directori de la memòria cau"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:513
+#: modules/System/html_admin/mod_system_settings.html.twig:518
 msgid "About FOSSBilling"
 msgstr "Sobre FOSSBilling"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:518
+#: modules/System/html_admin/mod_system_settings.html.twig:523
 msgid "FOSSBilling version"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:522
+#: modules/System/html_admin/mod_system_settings.html.twig:527
 msgid "PHP version"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:526
+#: modules/System/html_admin/mod_system_settings.html.twig:531
 msgid "Instance ID"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:530
+#: modules/System/html_admin/mod_system_settings.html.twig:535
 msgid "License"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:545
+#: modules/System/html_admin/mod_system_settings.html.twig:550
 msgid "Error reporting is enabled."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:546
+#: modules/System/html_admin/mod_system_settings.html.twig:551
 msgid "This FOSSBilling instance is automatically sending errors which allows us to more easily improve the software and keep it stable. Thanks!"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:547
+#: modules/System/html_admin/mod_system_settings.html.twig:552
 msgid "Error reporting is now disabled."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:547
+#: modules/System/html_admin/mod_system_settings.html.twig:552
 msgid "Disable error reporting"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:551
+#: modules/System/html_admin/mod_system_settings.html.twig:556
 msgid "Error reporting is disabled."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:552
+#: modules/System/html_admin/mod_system_settings.html.twig:557
 msgid "Please consider enabling error reporting. Doing so allows us to provide you with better technical support and helps us to proactively improve FOSSBilling."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:553
+#: modules/System/html_admin/mod_system_settings.html.twig:558
 msgid "Error reporting is now enabled."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:553
+#: modules/System/html_admin/mod_system_settings.html.twig:558
 msgid "Enable error reporting"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:556
+#: modules/System/html_admin/mod_system_settings.html.twig:561
 msgid "FOSSBilling optionally includes automated error reporting to help aid the project's development and stability. To find the most up-to-date information about it, you should review the links and information below."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:558
+#: modules/System/html_admin/mod_system_settings.html.twig:563
 msgid "Learn more about error reporting"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:560
+#: modules/System/html_admin/mod_system_settings.html.twig:565
 msgid "Error reporting changelog"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:561
+#: modules/System/html_admin/mod_system_settings.html.twig:566
 msgid "Last applicable behavior change change: "
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:564
+#: modules/System/html_admin/mod_system_settings.html.twig:569
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:580
+#: modules/System/html_admin/mod_system_settings.html.twig:632
+msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:582
+#: modules/System/html_admin/mod_system_settings.html.twig:635
+msgid "The currently selected network interface does not appear to be able to reach the internet!"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:588
+msgid "If your server has multiple network interfaces, you may select the default one for FOSSBilling to use when making requests here."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:592
+msgid "Select the default network interface:"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:594
+msgid "None (Default PHP Behavior)"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:604
+msgid "Enter a custom interface to use:"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:611
+msgid "If the dropdown menu doesn't have the appropriate network interface, please enter the IP address or name (e.g., eth0) of the correct one above."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:630
+msgid "Network interface updated."
 msgstr ""
 
 #: modules/System/html_admin/mod_system_update.html.twig:15

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-01-08 18:02-0800\n"
-"PO-Revision-Date: 2024-01-15 05:48\n"
+"POT-Creation-Date: 2024-01-17 02:28-0800\n"
+"PO-Revision-Date: 2024-01-18 06:09\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Romanian\n"
 "MIME-Version: 1.0\n"
@@ -27,31 +27,31 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: ro_RO\n"
 
-#: di.php:319
+#: di.php:317
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Se pare că încercați să utilizați FOSSBilling fără ca extensia php intl să fie activată. FOSSBilling include un polyfill pentru extensia intl, dar nu acceptă :locale. Vă rugăm să activați extensia intl."
 
-#: di.php:367 di.php:441
+#: di.php:365 di.php:439
 msgid "Client is not logged in"
 msgstr "Clientul nu este conectat"
 
-#: di.php:407 di.php:479
+#: di.php:405 di.php:477
 msgid "Admin is not logged in"
 msgstr "Adminul nu este conectat"
 
-#: di.php:519
+#: di.php:517
 msgid "Unrecognized Handler type: "
 msgstr "Tip de Handler nerecunoscut: "
 
-#: di.php:529
+#: di.php:527
 msgid "Please check your mailbox and confirm email address."
 msgstr "Vă rugăm să verificați căsuța poștală și să confirmați adresa de e-mail."
 
-#: index.php:78 library/Box/App.php:419 library/Box/AppClient.php:70
+#: index.php:80 library/Box/App.php:419 library/Box/AppClient.php:70
 msgid "Page :url not found"
 msgstr "Pagina :url nu a fost găsită"
 
-#: index.php:85
+#: index.php:87
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "Eroarea HTTP :err_code a apărut în timpul încercării de a încărca :url"
 
@@ -63,7 +63,7 @@ msgstr "Obiectul mod nu este setat pentru serviciu"
 msgid "Method :method must contain underscore"
 msgstr "Metoda :method trebuie să conțină subliniere"
 
-#: library/Api/Handler.php:55 library/Box/Mod.php:52
+#: library/Api/Handler.php:55 library/Box/Mod.php:56
 msgid "Invalid module name"
 msgstr "Numele modulului este incorect"
 
@@ -87,7 +87,7 @@ msgstr ":type apel API :method nu există în modulul :module"
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "Sistemul este în mentenanță. Vă rugăm să încercați mai târziu"
 
-#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:742
+#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:743
 msgid "You do not have permission to access the :mod: module"
 msgstr "Nu ai permisiunea de a accesa modulul :mod"
 
@@ -95,7 +95,7 @@ msgstr "Nu ai permisiunea de a accesa modulul :mod"
 msgid "Page not found"
 msgstr "Pagina nu a fost găsită"
 
-#: library/Box/Crypt.php:19
+#: library/Box/Crypt.php:23
 msgid "The PHP openssl extension must be enabled on your server"
 msgstr "Extensia PHP openssl trebuie să fie activată pe serverul dumneavoastră"
 
@@ -107,23 +107,23 @@ msgstr "Mesaj jurnal lipsă."
 msgid "Bad log priority"
 msgstr "Prioritate jurnal greșită"
 
-#: library/Box/Mod.php:71
+#: library/Box/Mod.php:75
 msgid "Module :mod manifest file is missing"
 msgstr "Fișierul manifest al modulului :mod este inexistent"
 
-#: library/Box/Mod.php:76
+#: library/Box/Mod.php:80
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr "Fișierul manifest al modulului :mod nu este valid. Verificați sintaxa fișierului și permisiunile."
 
-#: library/Box/Mod.php:118
+#: library/Box/Mod.php:122
 msgid "Module :mod does not have service class"
 msgstr "Modulul :mod nu are clasa de servicii"
 
-#: library/Box/Mod.php:137
+#: library/Box/Mod.php:141
 msgid "Module :mod Client controller class was not found"
 msgstr "Clasa controller de client modul :mod nu a fost găsită"
 
-#: library/Box/Mod.php:212
+#: library/Box/Mod.php:216
 msgid "Core module can not be updated"
 msgstr "Modulul principal nu poate fi actualizat"
 
@@ -266,6 +266,18 @@ msgstr "Imposibil de preluat alertele de la Sistemul Central de Alerte. Vezi jur
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "Răspuns invalid de la Sistemul de Alerte Centrale FOSSBilling."
 
+#: library/FOSSBilling/Config.php:90
+msgid "Unable to create backup of configuration file."
+msgstr ""
+
+#: library/FOSSBilling/Config.php:96
+msgid "Error when writing updated configuration file."
+msgstr "Eroare la scrierea fișierului de configurare actualizat."
+
+#: library/FOSSBilling/Config.php:145
+msgid "Too many iterations performed while formatting the config file"
+msgstr ""
+
 #: library/FOSSBilling/ExtensionManager.php:57
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "Imposibil de preluat detaliile extensiei din directorul FOSSBilling."
@@ -314,54 +326,46 @@ msgstr "Nu s-a putut trimite e-mail prin :transport cu excepția :e"
 msgid "SMTP host or port is not configured"
 msgstr "Gazda sau portul SMTP nu este configurat"
 
-#: library/FOSSBilling/Tools.php:74 library/FOSSBilling/Tools.php:266
+#: library/FOSSBilling/Tools.php:76 library/FOSSBilling/Tools.php:268
 msgid "Service class :class was not found in :path"
 msgstr "Clasa de serviciu :class nu a fost găsită în :path"
 
-#: library/FOSSBilling/Tools.php:312
+#: library/FOSSBilling/Tools.php:314
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Adresa de e-mail"
 
-#: library/FOSSBilling/Tools.php:314 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:316 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: este incorect"
 
-#: library/FOSSBilling/Update.php:142
+#: library/FOSSBilling/Update.php:143
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Descărcarea celei mai recente versiuni a eșuat. Mai multe detalii sunt disponibile în jurnalul de erori."
 
-#: library/FOSSBilling/Update.php:198 modules/System/Api/Admin.php:192
+#: library/FOSSBilling/Update.php:209 modules/System/Api/Admin.php:192
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Aveți cea mai recentă versiune de FOSSBilling. Nu trebuie să actualizați."
 
-#: library/FOSSBilling/Update.php:221
+#: library/FOSSBilling/Update.php:233
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Descărcarea arhivei de actualizare a eșuat. Mai multe detalii sunt disponibile în jurnalul de erori."
 
-#: library/FOSSBilling/Update.php:235 modules/Extension/Service.php:475
+#: library/FOSSBilling/Update.php:247 modules/Extension/Service.php:476
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Nu s-a putut extrage fișierul, vă rugăm să verificați permisiunile fișierului și folderului. Detaliile suplimentare sunt disponibile în jurnalul de erori."
 
-#: library/FOSSBilling/Update.php:254
+#: library/FOSSBilling/Update.php:266
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "Nu se poate șterge memoria cache și/sau elimina folderul de instalare. Detalii suplimentare sunt disponibile în jurnalul de erori."
 
-#: library/FOSSBilling/UpdatePatcher.php:44
+#: library/FOSSBilling/UpdatePatcher.php:49
 msgid "Unable to load existing configuration"
 msgstr "Imposibil de încărcat configurația existentă"
 
-#: library/FOSSBilling/UpdatePatcher.php:51
-msgid "Unable to create backup of configuration file"
-msgstr "Imposibil de creat o copie de rezervă a fișierului de configurare"
-
-#: library/FOSSBilling/UpdatePatcher.php:107
-msgid "Error when writing updated configuration file."
-msgstr "Eroare la scrierea fișierului de configurare actualizat."
-
-#: library/FOSSBilling/UpdatePatcher.php:164
+#: library/FOSSBilling/UpdatePatcher.php:154
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr "A apărut o eroare la aplicarea patch-urilor pentru baza de date. Vă rugăm să verificaţi jurnalul de erori pentru informaţii despre eroare, corectați-o şi apoi folosiți metoda de aplicare patch de rezervă pentru a finaliza actualizarea."
 
@@ -390,7 +394,7 @@ msgstr "Parola trebuie să conțină cel puțin o literă mare."
 msgid "Birthdate"
 msgstr "Data nașterii"
 
-#: library/FOSSBilling/i18n.php:143
+#: library/FOSSBilling/i18n.php:142
 msgid "Unable to enable / disable the locale as it is not present in the locale folder."
 msgstr "Imposibil de activat/dezactivat localizarea deoarece nu este prezent în folderul local."
 
@@ -516,14 +520,15 @@ msgstr "se verifică transferabilitatea domeniului"
 #: library/Registrar/Adapter/Internetbs.php:76
 #: library/Registrar/Adapter/Internetbs.php:175
 #: library/Registrar/Adapter/Namecheap.php:451
-#: library/Registrar/Adapter/Namecheap.php:591 library/Server/Manager/CWP.php:255
-#: library/Server/Manager/CWP.php:260 library/Server/Manager/CWP.php:265
-#: library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Directadmin.php:349
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:347
-#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:59
-#: library/Server/Manager/Plesk.php:205 library/Server/Manager/Plesk.php:232
+#: library/Registrar/Adapter/Namecheap.php:591 library/Server/Manager/CWP.php:344
+#: library/Server/Manager/CWP.php:357 library/Server/Manager/CWP.php:370
+#: library/Server/Manager/Directadmin.php:132
+#: library/Server/Manager/Directadmin.php:146
+#: library/Server/Manager/Directadmin.php:208
+#: library/Server/Manager/Directadmin.php:437
+#: library/Server/Manager/Hestia.php:295 library/Server/Manager/Hestia.php:305
+#: library/Server/Manager/Hestia.php:340 library/Server/Manager/Plesk.php:101
+#: library/Server/Manager/Plesk.php:314 library/Server/Manager/Plesk.php:360
 msgid ":type: does not support :action:"
 msgstr ":type: nu suportă :action:"
 
@@ -613,118 +618,122 @@ msgstr "Informațiile valide ale pașaportului sunt necesare în timpul înregis
 msgid "Contact not found"
 msgstr "Contactul nu a fost găsit"
 
-#: library/Server/Manager/CWP.php:21 library/Server/Manager/CWP.php:25
-#: library/Server/Manager/CWP.php:29 library/Server/Manager/Directadmin.php:15
-#: library/Server/Manager/Directadmin.php:19
-#: library/Server/Manager/Directadmin.php:23 library/Server/Manager/Whm.php:24
-#: library/Server/Manager/Whm.php:28 library/Server/Manager/Whm.php:32
+#: library/Server/Manager/CWP.php:52 library/Server/Manager/CWP.php:56
+#: library/Server/Manager/CWP.php:60 library/Server/Manager/Directadmin.php:66
+#: library/Server/Manager/Directadmin.php:71
+#: library/Server/Manager/Directadmin.php:76 library/Server/Manager/Whm.php:63
+#: library/Server/Manager/Whm.php:67 library/Server/Manager/Whm.php:71
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "Managerul de server \":server_manager\" nu este complet configurat. Vă rugăm să configurați :missing"
 
-#: library/Server/Manager/CWP.php:89 library/Server/Manager/Directadmin.php:443
-#: library/Server/Manager/Hestia.php:101 library/Server/Manager/Hestia.php:140
-#: library/Server/Manager/Plesk.php:51
+#: library/Server/Manager/CWP.php:115 library/Server/Manager/Directadmin.php:651
+#: library/Server/Manager/Hestia.php:110 library/Server/Manager/Hestia.php:377
+#: library/Server/Manager/Plesk.php:86
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
 msgstr "Conectarea la serverul :type: a eșuat. Vă rugăm să verificați acreditările și configurația"
 
-#: library/Server/Manager/CWP.php:147 library/Server/Manager/Plesk.php:90
+#: library/Server/Manager/CWP.php:184 library/Server/Manager/Plesk.php:144
 msgid "create account"
 msgstr "creează cont"
 
-#: library/Server/Manager/CWP.php:149 library/Server/Manager/CWP.php:167
-#: library/Server/Manager/CWP.php:185 library/Server/Manager/CWP.php:206
-#: library/Server/Manager/CWP.php:227 library/Server/Manager/CWP.php:246
-#: library/Server/Manager/Directadmin.php:455
-#: library/Server/Manager/Hestia.php:197 library/Server/Manager/Hestia.php:213
-#: library/Server/Manager/Hestia.php:241 library/Server/Manager/Hestia.php:267
-#: library/Server/Manager/Hestia.php:297 library/Server/Manager/Hestia.php:328
-#: library/Server/Manager/Hestia.php:372 library/Server/Manager/Plesk.php:92
-#: library/Server/Manager/Whm.php:456 library/Server/Manager/Whm.php:462
-#: library/Server/Manager/Whm.php:468 library/Server/Manager/Whm.php:474
-#: library/Server/Manager/Whm.php:480
+#: library/Server/Manager/CWP.php:186 library/Server/Manager/CWP.php:213
+#: library/Server/Manager/CWP.php:240 library/Server/Manager/CWP.php:270
+#: library/Server/Manager/CWP.php:299 library/Server/Manager/CWP.php:328
+#: library/Server/Manager/Directadmin.php:667
+#: library/Server/Manager/Hestia.php:163 library/Server/Manager/Hestia.php:180
+#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:231
+#: library/Server/Manager/Hestia.php:256 library/Server/Manager/Hestia.php:282
+#: library/Server/Manager/Hestia.php:327 library/Server/Manager/Plesk.php:146
+#: library/Server/Manager/Whm.php:578 library/Server/Manager/Whm.php:585
+#: library/Server/Manager/Whm.php:592 library/Server/Manager/Whm.php:599
+#: library/Server/Manager/Whm.php:606
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr "Eșuare la :action: pe serverul :type: , verificați jurnalele de erori pentru detalii suplimentare"
 
-#: library/Server/Manager/CWP.php:165 library/Server/Manager/Hestia.php:239
+#: library/Server/Manager/CWP.php:211 library/Server/Manager/Hestia.php:205
 msgid "suspend account"
 msgstr "suspendă contul"
 
-#: library/Server/Manager/CWP.php:183 library/Server/Manager/Hestia.php:265
+#: library/Server/Manager/CWP.php:238 library/Server/Manager/Hestia.php:229
 msgid "unsuspend account"
 msgstr "anulează suspendarea contului"
 
-#: library/Server/Manager/CWP.php:204 library/Server/Manager/Hestia.php:295
+#: library/Server/Manager/CWP.php:268 library/Server/Manager/Hestia.php:254
 msgid "cancel account"
 msgstr "anulează contul"
 
-#: library/Server/Manager/CWP.php:225 library/Server/Manager/Hestia.php:326
+#: library/Server/Manager/CWP.php:297 library/Server/Manager/Hestia.php:280
 msgid "change account package"
 msgstr "schimbă pachetul contului"
 
-#: library/Server/Manager/CWP.php:244 library/Server/Manager/Hestia.php:370
+#: library/Server/Manager/CWP.php:326 library/Server/Manager/Hestia.php:325
 msgid "change account password"
 msgstr "schimbă parola contului"
 
-#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Plesk.php:205
+#: library/Server/Manager/CWP.php:344 library/Server/Manager/Directadmin.php:208
+#: library/Server/Manager/Hestia.php:295 library/Server/Manager/Plesk.php:314
 msgid "username changes"
 msgstr "modificări nume utilizator"
 
-#: library/Server/Manager/CWP.php:260 library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Hestia.php:347
+#: library/Server/Manager/CWP.php:357 library/Server/Manager/Directadmin.php:132
+#: library/Server/Manager/Hestia.php:305
 msgid "changing the account domain"
 msgstr "modificarea domeniului contului"
 
-#: library/Server/Manager/CWP.php:265 library/Server/Manager/Directadmin.php:349
-#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:232
+#: library/Server/Manager/CWP.php:370 library/Server/Manager/Directadmin.php:146
+#: library/Server/Manager/Hestia.php:340 library/Server/Manager/Plesk.php:360
 msgid "changing the account IP"
 msgstr "modificarea IP-ului contului"
 
-#: library/Server/Manager/Directadmin.php:102
+#: library/Server/Manager/Directadmin.php:226
 msgid "There are no available IPs on this server."
 msgstr "Nu există nicio adresă IP disponibilă pe acest server."
 
-#: library/Server/Manager/Directadmin.php:202
+#: library/Server/Manager/Directadmin.php:342
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
 msgstr "Imposibil de atribuit distribuitorului vreun IP. Asigurați-vă că aveți IP-uri gratuite neatribuite."
 
-#: library/Server/Manager/Directadmin.php:206
+#: library/Server/Manager/Directadmin.php:346
 msgid "Error creating user"
 msgstr "Eroare la crearea utilizatorului"
 
-#: library/Server/Manager/Directadmin.php:232
+#: library/Server/Manager/Directadmin.php:437
+msgid "synchronizing the account"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:482
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Eroare DirectAdmin a serverului: \"Contul nu este suspendat\""
 
-#: library/Server/Manager/Directadmin.php:436 library/Server/Manager/Whm.php:444
+#: library/Server/Manager/Directadmin.php:643 library/Server/Manager/Whm.php:561
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
-#: library/Server/Manager/Directadmin.php:447
+#: library/Server/Manager/Directadmin.php:656
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Eroare DirectAdmin Manager Server: \"Solicitarea pe care ați făcut-o nu poate fi executată deoarece nu există în nivelul de autoritate\""
 
-#: library/Server/Manager/Hestia.php:195
+#: library/Server/Manager/Hestia.php:161
 msgid "create user"
 msgstr "creează utilizator"
 
-#: library/Server/Manager/Hestia.php:207
+#: library/Server/Manager/Hestia.php:174
 msgid "delete domain"
 msgstr "şterge domeniul"
 
-#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:211
+#: library/Server/Manager/Hestia.php:174 library/Server/Manager/Hestia.php:178
 msgid "create domain"
 msgstr "creează domeniu"
 
-#: library/Server/Manager/Hestia.php:209
+#: library/Server/Manager/Hestia.php:176
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
 msgstr "Nu a reușit la :action1: pe serverul :type: după ce a eșuat la :action2:, verificați jurnalele de erori pentru detalii suplimentare"
 
-#: library/Server/Manager/Plesk.php:59
+#: library/Server/Manager/Plesk.php:101
 msgid "account synchronization"
 msgstr "sincronizarea contului"
 
-#: library/Server/Manager/Plesk.php:175
+#: library/Server/Manager/Plesk.php:255
 msgid "Can't modify client"
 msgstr "Nu se poate modifica clientul"
 
@@ -744,25 +753,25 @@ msgstr "Șterge activitatea"
 msgid "Allows the staff member to delete recorded activity."
 msgstr "Permite membrilor staff-ului să șteargă activitatea înregistrată."
 
-#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:253
+#: modules/Api/Controller/Client.php:50 modules/Api/Controller/Client.php:255
 msgid "Unknown API call :call"
 msgstr "Apel API necunoscut :call"
 
-#: modules/Api/Controller/Client.php:130
+#: modules/Api/Controller/Client.php:132
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Cerere incorectă. Asigurați-vă că solicitarea provine de la :from"
 
-#: modules/Api/Controller/Client.php:141
+#: modules/Api/Controller/Client.php:143
 msgid "Unauthorized IP"
 msgstr "IP neautorizat"
 
-#: modules/Api/Controller/Client.php:195 modules/Api/Controller/Client.php:199
-#: modules/Api/Controller/Client.php:203 modules/Api/Controller/Client.php:217
-#: modules/Api/Controller/Client.php:226 modules/Api/Controller/Client.php:240
+#: modules/Api/Controller/Client.php:197 modules/Api/Controller/Client.php:201
+#: modules/Api/Controller/Client.php:205 modules/Api/Controller/Client.php:219
+#: modules/Api/Controller/Client.php:228 modules/Api/Controller/Client.php:242
 msgid "Authentication Failed"
 msgstr "Autentificare nereușită"
 
-#: modules/Api/Controller/Client.php:332
+#: modules/Api/Controller/Client.php:334
 msgid "CSRF token invalid"
 msgstr "Token-ul CSRF este invalid "
 
@@ -958,7 +967,7 @@ msgstr "Câmpul :field nu poate fi gol"
 msgid "Cookie consent"
 msgstr "Consimțământ cookie"
 
-#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:756
+#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:757
 #: modules/Staff/Service.php:196
 msgid "You do not have permission to perform this action"
 msgstr "Nu aveți permisiunea de a efectua această acțiune"
@@ -1008,7 +1017,7 @@ msgstr "Pagini personalizate"
 
 #: modules/Email/Api/Admin.php:114 modules/Email/Api/Admin.php:137
 #: modules/Email/Api/Client.php:66 modules/Email/Api/Client.php:88
-#: modules/Email/Api/Client.php:110 modules/Email/Service.php:496
+#: modules/Email/Api/Client.php:110 modules/Email/Service.php:495
 msgid "Email not found"
 msgstr "Adresa de e-mail nu a putut fi găsită"
 
@@ -1027,15 +1036,15 @@ msgstr "Destinatarul nu este definit. Definește la sau to_client sau la paramet
 msgid "Email history"
 msgstr "Istoricul e-mail-urilor"
 
-#: modules/Email/Service.php:146
+#: modules/Email/Service.php:145
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "Destinatarul nu este definit. Definește parametrul to, to_client sau to_staff ori to_admin"
 
-#: modules/Email/Service.php:205
+#: modules/Email/Service.php:204
 msgid "From email address can not be empty"
 msgstr "Câmpul \"de la adresa de e-mail\" nu poate fi gol"
 
-#: modules/Email/Service.php:481
+#: modules/Email/Service.php:480
 msgid "Email template :code was not found"
 msgstr "Șablonul de email :code nu a putut fi găsit"
 
@@ -1047,7 +1056,7 @@ msgstr "Mesaj de eroare trunchiat din cauza lungimii, verificați jurnalul de er
 msgid "Embed and integrate"
 msgstr "Încorporează și integrează"
 
-#: modules/Extension/Api/Admin.php:295
+#: modules/Extension/Api/Admin.php:296
 msgid "Extension not found"
 msgstr "Extensia nu a fost găsită"
 
@@ -1065,59 +1074,59 @@ msgstr "Extensii"
 msgid "Languages"
 msgstr "Limbi"
 
-#: modules/Extension/Service.php:37
+#: modules/Extension/Service.php:38
 msgid "Manage extensions"
 msgstr "Gestionează extensiile"
 
-#: modules/Extension/Service.php:38
+#: modules/Extension/Service.php:39
 msgid "Allows the staff member to install, update, or remove extensions."
 msgstr "Permite membrilor personalului să instaleze, să actualizeze sau să elimine extensii."
 
-#: modules/Extension/Service.php:336
+#: modules/Extension/Service.php:337
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "Vizitați magazinul de extensii pentru mai multe informații despre actualizarea acestei extensii."
 
-#: modules/Extension/Service.php:389
+#: modules/Extension/Service.php:390
 msgid "FOSSBilling core modules can not be managed"
 msgstr "Modulele de bază FOSSBilling nu pot fi gestionate"
 
-#: modules/Extension/Service.php:438
+#: modules/Extension/Service.php:439
 msgid "Coudn't find a valid download URL for the extension."
 msgstr "Nu s-a găsit un URL de descărcare valid pentru extensie."
 
-#: modules/Extension/Service.php:442
+#: modules/Extension/Service.php:443
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
 msgstr "Această extensie nu este compatibilă cu versiunea ta de FOSSBilling. Te rugăm să actualizezi FOSSBilling la ultima versiune și să încerci din nou."
 
-#: modules/Extension/Service.php:458
+#: modules/Extension/Service.php:459
 msgid "Failed to download the extension with error :code"
 msgstr "Nu s-a reușit descărcarea extensiei cu eroarea :code"
 
-#: modules/Extension/Service.php:499
+#: modules/Extension/Service.php:500
 msgid "Extension :id seems to be already installed."
 msgstr "Extensia :id pare să fie deja instalată."
 
-#: modules/Extension/Service.php:502
+#: modules/Extension/Service.php:503
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "Nu s-a reușit mutarea extensiei în destinația finală. Vă rugăm să verificați permisiunile pentru dosarul de destinație. (:destination)"
 
-#: modules/Extension/Service.php:505
+#: modules/Extension/Service.php:506
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "Tipul extensiei (:type) nu poate fi instalat automat."
 
-#: modules/Extension/Service.php:538
+#: modules/Extension/Service.php:539
 msgid "FOSSBilling core modules can not be installed or removed"
 msgstr "Modulele de bază FOSSBilling nu pot fi instalate sau eliminate"
 
-#: modules/Extension/Service.php:543
+#: modules/Extension/Service.php:544
 msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr "Modulul nu poate fi instalat. Este nevoie de cel puțin :min versiunea FOSSBilling. Utilizați :v"
 
-#: modules/Extension/Service.php:717
+#: modules/Extension/Service.php:718
 msgid "Manage settings"
 msgstr "Gestionează setările"
 
-#: modules/Extension/Service.php:718
+#: modules/Extension/Service.php:719
 msgid "Allows the staff member to edit settings for this module."
 msgstr "Permite membrilor personalului să editeze setările pentru acest modul."
 
@@ -1669,7 +1678,7 @@ msgstr "Configurația trebuie să fie o matrice"
 #: modules/Servicecustom/Service.php:248 modules/Servicedomain/Api/Client.php:127
 #: modules/Servicedownloadable/Api/Admin.php:64
 #: modules/Servicedownloadable/Api/Client.php:38
-#: modules/Servicehosting/Api/Admin.php:425
+#: modules/Servicehosting/Api/Admin.php:427
 #: modules/Servicehosting/Api/Client.php:93
 #: modules/Servicelicense/Api/Admin.php:85
 #: modules/Servicelicense/Api/Client.php:51
@@ -1685,9 +1694,9 @@ msgid "Plugin :plugin does not support action :action"
 msgstr "Plugin-ul :plugin nu suportă acțiunea :action"
 
 #: modules/Servicecustom/Service.php:295 modules/Servicedomain/Service.php:252
-#: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:95
-#: modules/Servicehosting/Service.php:140 modules/Servicehosting/Service.php:158
-#: modules/Servicehosting/Service.php:177 modules/Servicehosting/Service.php:196
+#: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:103
+#: modules/Servicehosting/Service.php:161 modules/Servicehosting/Service.php:179
+#: modules/Servicehosting/Service.php:198 modules/Servicehosting/Service.php:217
 msgid "Order :id has no active service"
 msgstr "Comanda :id nu are un serviciu activ"
 
@@ -1833,11 +1842,11 @@ msgstr "Fișierul nu poate fi descărcat momentan. Vă rugăm să contactați as
 msgid "plan_id is missing"
 msgstr "plan_id lipsește"
 
-#: modules/Servicehosting/Api/Admin.php:235
+#: modules/Servicehosting/Api/Admin.php:236
 msgid "Hosting server is used by :count: service hostings"
 msgstr "Serverul de găzduire este utilizat de :count: servicii de găzduire"
 
-#: modules/Servicehosting/Api/Admin.php:347
+#: modules/Servicehosting/Api/Admin.php:349
 msgid "Hosting plan is used by :count: service hostings"
 msgstr "Planul de găzduire este utilizat de :count: servicii de găzduire"
 
@@ -1853,55 +1862,55 @@ msgstr "Tipul de produs"
 msgid "Hosting plans and servers"
 msgstr "Planuri de găzduire și servere"
 
-#: modules/Servicehosting/Service.php:35
+#: modules/Servicehosting/Service.php:37
 msgid ":hosting for :domain"
 msgstr ":hosting pentru :domain"
 
-#: modules/Servicehosting/Service.php:47
+#: modules/Servicehosting/Service.php:49
 msgid "Hosting product is not configured completely. Configure server for hosting product."
 msgstr "Produsul de tip găzduire nu este configurat complet. Configurează serverul pentru produs de tip găzduire."
 
-#: modules/Servicehosting/Service.php:50
+#: modules/Servicehosting/Service.php:52
 msgid "Hosting product is not configured completely. Configure hosting plan for hosting product."
 msgstr "Produsul de tip găzduire nu este configurat complet. Configurează planul de găzduire pentru produs de tip găzduire."
 
-#: modules/Servicehosting/Service.php:53
+#: modules/Servicehosting/Service.php:55
 msgid "Domain name is invalid."
 msgstr "Numele domeniului este invalid."
 
-#: modules/Servicehosting/Service.php:56
+#: modules/Servicehosting/Service.php:58
 msgid "Domain extension is invalid."
 msgstr "Extensia domeniului este invalidă."
 
-#: modules/Servicehosting/Service.php:256
+#: modules/Servicehosting/Service.php:292
 msgid "Account username is missing or is invalid"
 msgstr "Numele de utilizator lipsește sau este nevalid"
 
-#: modules/Servicehosting/Service.php:278
+#: modules/Servicehosting/Service.php:314
 msgid "Account ip is missing or is invalid"
 msgstr "IP-ul contului lipsește sau este invalid"
 
-#: modules/Servicehosting/Service.php:302
+#: modules/Servicehosting/Service.php:338
 msgid "Domain sld or tld is missing"
 msgstr "Domeniul sld sau tld lipsește"
 
-#: modules/Servicehosting/Service.php:328
+#: modules/Servicehosting/Service.php:364
 msgid "Account password is missing or is invalid"
 msgstr "Parola contului lipsește sau este incorectă"
 
-#: modules/Servicehosting/Service.php:726
+#: modules/Servicehosting/Service.php:771
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Manager de server incorect. Serverul nu a fost configurat corespunzător."
 
-#: modules/Servicehosting/Service.php:746
+#: modules/Servicehosting/Service.php:791
 msgid "Server manager :adapter is invalid"
 msgstr "Managerul serverului :adapter este invalid"
 
-#: modules/Servicehosting/Service.php:786
+#: modules/Servicehosting/Service.php:838
 msgid "Can not remove hosting plan which has active accounts"
 msgstr "Nu se poate elimina planul de găzduire ce are conturi active"
 
-#: modules/Servicehosting/Service.php:997
+#: modules/Servicehosting/Service.php:1051
 msgid "Could not find main domain product"
 msgstr "Nu s-a putut găsi domeniul principal"
 
@@ -2282,60 +2291,69 @@ msgstr "Setări"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:137
 #: modules/Support/html_admin/mod_support_settings.html.twig:115
 #: modules/Support/html_admin/mod_support_ticket.html.twig:163
+#: modules/System/html_admin/mod_system_settings.html.twig:614
 #: modules/System/html_admin/mod_system_update.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr "Actualizați"
 
-#: modules/System/Service.php:37
+#: modules/System/Service.php:38
 msgid "Manage company details"
 msgstr "Administrează detalii companie"
 
-#: modules/System/Service.php:38
+#: modules/System/Service.php:39
 msgid "Allows the staff member to update company details as set under the system module."
 msgstr "Permite membrilor personalului să actualizeze detaliile companiei așa cum sunt setate în modulul de sistem."
 
-#: modules/System/Service.php:42
+#: modules/System/Service.php:43
 msgid "Manage company legal"
 msgstr "Gestionați compania legală"
 
-#: modules/System/Service.php:43
+#: modules/System/Service.php:44
 msgid "Allows the staff member to update company legal as set under the system module."
 msgstr "Permite membrilor personalului să actualizeze detaliile companiei așa cum sunt setate în modulul de sistem."
 
-#: modules/System/Service.php:47
-#: modules/System/html_admin/mod_system_settings.html.twig:505
+#: modules/System/Service.php:48
+#: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "Invalidate cache"
 msgstr "Invalidați memoria cache"
 
-#: modules/System/Service.php:48
+#: modules/System/Service.php:49
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
 msgstr "Permite membrilor personalului sa invalideze memoria cache a FOSSBilling din setările sistemului."
 
-#: modules/System/Service.php:52
+#: modules/System/Service.php:53
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:45
 #: modules/System/html_admin/mod_system_update.html.twig:54
 msgid "Update FOSSBilling"
 msgstr "Actualizați FOSSBilling"
 
-#: modules/System/Service.php:53
+#: modules/System/Service.php:54
 msgid "Allows the staff member to update FOSSBilling."
 msgstr "Permite membrilor personalului să actualizeze FOSSBilling."
 
-#: modules/System/Service.php:65
+#: modules/System/Service.php:58
+msgid "Manage the network interface"
+msgstr ""
+
+#: modules/System/Service.php:59
+msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
+msgstr ""
+
+#: modules/System/Service.php:71
 msgid "Parameter key is missing"
 msgstr "Cheia parametrului lipsește"
 
-#: modules/System/Service.php:134
+#: modules/System/Service.php:140
 msgid "Invalid parameter name, received: param_"
 msgstr "Nume de parametru incorect, received: param_"
 
-#: modules/System/Service.php:538
+#: modules/System/Service.php:539
 msgid "Parameter :param does not exist"
 msgstr "Parametrul :param nu există"
 
-#: modules/System/Service.php:1398
+#: modules/System/Service.php:1399
 msgid "Country :code phone code is not registered"
 msgstr "Codul de telefon al țării :code nu este înregistrat"
 
@@ -2653,20 +2671,11 @@ msgstr "Filtrați clienții"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:18
 #: modules/Client/html_admin/mod_client_manage.html.twig:63
-#: modules/Client/html_admin/mod_client_manage.html.twig:810
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:87
 #: modules/Index/html_client/mod_index_dashboard.html.twig:59
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
-#: modules/Order/html_admin/mod_order_index.html.twig:17
-#: modules/Support/html_admin/mod_support_ticket.html.twig:216
-msgid "ID"
-msgstr "ID"
+#: modules/Support/html_admin/mod_support_tickets.html.twig:34
+msgid "Client ID"
+msgstr "ID-ul clientului"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:24
 #: modules/Client/html_admin/mod_client_index.html.twig:209
@@ -2686,7 +2695,7 @@ msgstr "ID"
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:29
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:31
 #: modules/Staff/html_admin/mod_staff_group.html.twig:37
 #: modules/Staff/html_admin/mod_staff_index.html.twig:30
@@ -2700,7 +2709,7 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:233
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:276
 #: modules/Support/html_client/mod_support_contact_us.html.twig:27
-#: modules/System/html_admin/mod_system_settings.html.twig:57
+#: modules/System/html_admin/mod_system_settings.html.twig:62
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
 msgid "Name"
@@ -2748,7 +2757,7 @@ msgstr "Denumirea companiei"
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:31
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
-#: modules/System/html_admin/mod_system_settings.html.twig:63
+#: modules/System/html_admin/mod_system_settings.html.twig:68
 #: themes/huraga/html/mobile_menu.html.twig:50
 #: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
@@ -3034,7 +3043,7 @@ msgstr "Cod poștal"
 #: modules/Invoice/pdf_template/default-pdf.twig:41
 #: modules/Invoice/pdf_template/default-pdf.twig:53
 #: modules/Invoice/pdf_template/default-pdf.twig:110
-#: modules/System/html_admin/mod_system_settings.html.twig:69
+#: modules/System/html_admin/mod_system_settings.html.twig:74
 msgid "Phone"
 msgstr "Telefon"
 
@@ -3183,7 +3192,7 @@ msgstr "Balanța fondurilor"
 #: modules/Order/html_client/mod_order_manage.html.twig:257
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 #: modules/Support/html_admin/mod_support_tickets.html.twig:390
-#: modules/System/html_admin/mod_system_settings.html.twig:224
+#: modules/System/html_admin/mod_system_settings.html.twig:229
 msgid "Notes"
 msgstr "Notițe"
 
@@ -3207,7 +3216,7 @@ msgstr "Cheie API"
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:144
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
 #: modules/Page/html_client/mod_page_signup.html.twig:76
-#: modules/System/html_admin/mod_system_settings.html.twig:75
+#: modules/System/html_admin/mod_system_settings.html.twig:80
 msgid "Address"
 msgstr "Adresă"
 
@@ -3318,10 +3327,10 @@ msgstr "E-mail aprobat"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:37
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:79
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:169
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:227
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:233
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:59
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:94
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:100
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:29
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:42
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:55
@@ -3334,10 +3343,10 @@ msgstr "E-mail aprobat"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:157
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:70
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:41
-#: modules/System/html_admin/mod_system_settings.html.twig:135
-#: modules/System/html_admin/mod_system_settings.html.twig:148
-#: modules/System/html_admin/mod_system_settings.html.twig:166
-#: modules/System/html_admin/mod_system_settings.html.twig:187
+#: modules/System/html_admin/mod_system_settings.html.twig:140
+#: modules/System/html_admin/mod_system_settings.html.twig:153
+#: modules/System/html_admin/mod_system_settings.html.twig:171
+#: modules/System/html_admin/mod_system_settings.html.twig:192
 #: themes/admin_default/html/macro_functions.html.twig:3
 msgid "Yes"
 msgstr "Da"
@@ -3385,10 +3394,10 @@ msgstr "Da"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:41
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:83
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:173
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:231
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:237
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:63
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:98
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:104
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:33
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:46
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:59
@@ -3401,10 +3410,10 @@ msgstr "Da"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:163
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:74
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:45
-#: modules/System/html_admin/mod_system_settings.html.twig:139
-#: modules/System/html_admin/mod_system_settings.html.twig:152
-#: modules/System/html_admin/mod_system_settings.html.twig:172
-#: modules/System/html_admin/mod_system_settings.html.twig:193
+#: modules/System/html_admin/mod_system_settings.html.twig:144
+#: modules/System/html_admin/mod_system_settings.html.twig:157
+#: modules/System/html_admin/mod_system_settings.html.twig:177
+#: modules/System/html_admin/mod_system_settings.html.twig:198
 #: themes/admin_default/html/macro_functions.html.twig:5
 msgid "No"
 msgstr "Nu"
@@ -3414,7 +3423,7 @@ msgid "Date of birth"
 msgstr "Data nașterii"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:262
-#: modules/System/html_admin/mod_system_settings.html.twig:31
+#: modules/System/html_admin/mod_system_settings.html.twig:33
 msgid "Company details"
 msgstr "Detaliile companiei"
 
@@ -3660,6 +3669,19 @@ msgstr "Către"
 #: modules/Client/html_admin/mod_client_manage.html.twig:802
 msgid "Transactions received"
 msgstr "Tranzacții primite"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:810
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
+#: modules/Order/html_admin/mod_order_index.html.twig:17
+#: modules/Support/html_admin/mod_support_ticket.html.twig:216
+msgid "ID"
+msgstr "ID"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:812
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:5
@@ -5555,9 +5577,9 @@ msgid "Maximum amount for add funds invoice"
 msgstr "Suma maximă pentru facturarea fondurilor adăugate"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:156
-#: modules/System/html_admin/mod_system_settings.html.twig:206
-#: modules/System/html_admin/mod_system_settings.html.twig:229
-#: modules/System/html_admin/mod_system_settings.html.twig:494
+#: modules/System/html_admin/mod_system_settings.html.twig:211
+#: modules/System/html_admin/mod_system_settings.html.twig:234
+#: modules/System/html_admin/mod_system_settings.html.twig:499
 msgid "Update settings"
 msgstr "Actualizați setările"
 
@@ -5920,14 +5942,14 @@ msgid "Invoice Status"
 msgstr "Status Factură"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
-#: modules/System/html_admin/mod_system_settings.html.twig:113
+#: modules/System/html_admin/mod_system_settings.html.twig:118
 #: themes/huraga/html/layout_default.html.twig:177
 msgid "Bank Name"
 msgstr "Numele băncii"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
-#: modules/System/html_admin/mod_system_settings.html.twig:119
+#: modules/System/html_admin/mod_system_settings.html.twig:124
 #: themes/huraga/html/layout_default.html.twig:177
 msgid "BIC / SWIFT Code"
 msgstr "Cod SWIFT / BIC"
@@ -6879,7 +6901,7 @@ msgid "About us"
 msgstr "Despre noi"
 
 #: modules/Page/html_client/mod_page_about-us.html.twig:9
-#: modules/System/html_admin/mod_system_settings.html.twig:43
+#: modules/System/html_admin/mod_system_settings.html.twig:45
 msgid "About"
 msgstr "Despre"
 
@@ -7504,7 +7526,7 @@ msgstr "Registrator domeniu nou"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:15
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:121
 msgid "Nameservers"
 msgstr "Nameservere"
 
@@ -7661,7 +7683,7 @@ msgstr "Nameservere actualizate"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:50
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:117
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
 msgid "Nameserver 1"
 msgstr "Nameserver 1"
 
@@ -7672,7 +7694,7 @@ msgstr "Nameserver 1"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:53
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
 msgid "Nameserver 2"
 msgstr "Nameserver 2"
 
@@ -7683,7 +7705,7 @@ msgstr "Nameserver 2"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:56
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
 msgid "Nameserver 3"
 msgstr "Nameserver 3"
 
@@ -7694,7 +7716,7 @@ msgstr "Nameserver 3"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:141
 msgid "Nameserver 4"
 msgstr "Nameserver 4"
 
@@ -8117,7 +8139,7 @@ msgid "Hosting plan updated"
 msgstr "Plan de găzduire actualizat"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:32
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:250
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:256
 msgid "Unique name to identify this hosting plan"
 msgstr "Nume unic pentru a identifica acest plan de găzduire"
 
@@ -8187,7 +8209,7 @@ msgid "Test connection"
 msgstr "Testează conexiunea"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:64
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:167
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:173
 msgid "Server connected"
 msgstr "Server conectat"
 
@@ -8259,30 +8281,40 @@ msgstr "Port personalizat. Lăsați gol pentru a utiliza setările implicite. Fo
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:223
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:90
-msgid "Use Secure connection"
-msgstr "Folosește conexiune securizată"
+msgid "Password length"
+msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:235
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:225
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:92
+msgid "Length of generated passwords when creating user accounts. Defaults to 10"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:229
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:96
+msgid "Use secure connection"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:241
 msgid "Add server"
 msgstr "Adaugă server"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:242
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
 msgid "Adding new hosting plan"
 msgstr "Adăugarea unui nou plan de găzduire"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:243
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:249
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters in next step. In this step provide basic hosting plan information."
 msgstr "În funcţie de managerul de server folosit pentru a configura contul de găzduire, este posibil să aveţi nevoie de parametri suplimentari în pasul următor. În această etapă se furnizează informații de bază despre planul de găzduire."
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
 msgid "Disk quota (MB)"
 msgstr "Cota de disc (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
 msgid "Bandwidth (MB)"
 msgstr "Lăţimea benzii (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:272
 msgid "Create hosting plan"
 msgstr "Crează planul de găzduire"
 
@@ -8414,23 +8446,23 @@ msgstr "Server actualizat"
 msgid "Primary IP address of the server used to connect to it like: 127.0.0.1"
 msgstr "Adresa IP principală a serverului folosit pentru a se conecta la el cum ar fi: 127.0.0.1"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:103
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
 msgid "Update and test connection"
 msgstr "Actualizează și testează conexiunea"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:105
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:111
 msgid "Optional configuration"
 msgstr "Configurație opțională"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:107
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:113
 msgid "Users prefix"
 msgstr "Prefix utilizatori"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Prefix for created users (especially for database)"
 msgstr "Prefix pentru utilizatorii creați (în special pentru baza de date)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:142
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:148
 msgid "Update server"
 msgstr "Actualizează serverul"
 
@@ -8775,7 +8807,7 @@ msgstr "Membru nou staff"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:204
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
-#: modules/System/html_admin/mod_system_settings.html.twig:199
+#: modules/System/html_admin/mod_system_settings.html.twig:204
 msgid "Signature"
 msgstr "Semnătură"
 
@@ -9209,10 +9241,6 @@ msgstr "Tichete de suport"
 msgid "Filter Support Tickets"
 msgstr "Filtrează tichetele de suport"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:34
-msgid "Client ID"
-msgstr "ID-ul clientului"
-
 #: modules/Support/html_admin/mod_support_tickets.html.twig:46
 msgid "Ticket Subject"
 msgstr "Subiect tichet"
@@ -9351,183 +9379,222 @@ msgstr "Deschide un nou tichet"
 msgid "System settings"
 msgstr "Setări de sistem"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:34
+#: modules/System/html_admin/mod_system_settings.html.twig:36
 msgid "Company legal"
 msgstr "Societate Legală"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:37
+#: modules/System/html_admin/mod_system_settings.html.twig:39
 msgid "Countries"
 msgstr "Țări"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:40
+#: modules/System/html_admin/mod_system_settings.html.twig:42
 msgid "Cache"
 msgstr "Cache"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:46
-#: modules/System/html_admin/mod_system_settings.html.twig:539
+#: modules/System/html_admin/mod_system_settings.html.twig:48
+#: modules/System/html_admin/mod_system_settings.html.twig:544
 msgid "Error reporting"
 msgstr "Raportare erori"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:53
-#: modules/System/html_admin/mod_system_settings.html.twig:212
+#: modules/System/html_admin/mod_system_settings.html.twig:51
+#: modules/System/html_admin/mod_system_settings.html.twig:575
+msgid "Network interface"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:58
+#: modules/System/html_admin/mod_system_settings.html.twig:217
 msgid "Company updated"
 msgstr "Companie actualizată"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:77
+#: modules/System/html_admin/mod_system_settings.html.twig:82
 msgid "Address line 1"
 msgstr "Linie adresă 1"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:78
+#: modules/System/html_admin/mod_system_settings.html.twig:83
 msgid "Address line 2"
 msgstr "Linie adresă 2"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:79
+#: modules/System/html_admin/mod_system_settings.html.twig:84
 msgid "Address line 3"
 msgstr "Linie adresă 3"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:83
+#: modules/System/html_admin/mod_system_settings.html.twig:88
 msgid "Logo URL"
 msgstr "URL Logo"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:89
+#: modules/System/html_admin/mod_system_settings.html.twig:94
 msgid "Logo URL (dark mode)"
 msgstr "URL Logo (mod întunecat)"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:95
+#: modules/System/html_admin/mod_system_settings.html.twig:100
 msgid "Favicon"
 msgstr "Favicon"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:101
+#: modules/System/html_admin/mod_system_settings.html.twig:106
 msgid "Company number, chamber of commerce number"
 msgstr "Numărul companiei, numărul camerei de comerț"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:107
+#: modules/System/html_admin/mod_system_settings.html.twig:112
 msgid "VAT number"
 msgstr "Cod TVA"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:125
+#: modules/System/html_admin/mod_system_settings.html.twig:130
 msgid "Bank Account number"
 msgstr "Număr de cont bancar"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:131
+#: modules/System/html_admin/mod_system_settings.html.twig:136
 msgid "Display bank account information on documents?"
 msgstr "Afișați informațiile contului bancar pe documente?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:144
+#: modules/System/html_admin/mod_system_settings.html.twig:149
 msgid "Display bank account information on the bottom of every page?"
 msgstr "Afișați informațiile contului bancar în partea de jos a fiecărei pagini?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:158
+#: modules/System/html_admin/mod_system_settings.html.twig:163
 msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr "Nu permiteți vizitatorilor API să preia versiunea FOSSBilling"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:160
+#: modules/System/html_admin/mod_system_settings.html.twig:165
 msgid "Enabling this functionality may effect modules that depend on it."
 msgstr "Activarea acestei funcționalități poate afecta module care depind de ea."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:179
+#: modules/System/html_admin/mod_system_settings.html.twig:184
 msgid "Hide some company information in the guest API"
 msgstr "Ascunde unele informații despre companie în API-ul vizitatorilor"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:181
+#: modules/System/html_admin/mod_system_settings.html.twig:186
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
 msgstr "Activarea acestui lucru va ascunde unele informații din obiectivul API al \"companiei\", cum ar fi adresa, numărul de telefon, e-mailul, codul de TVA și multe altele."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:216
+#: modules/System/html_admin/mod_system_settings.html.twig:221
 msgid "Company terms of service, legal regulation"
 msgstr "Condiții de serviciu ale societăților, reglementare juridică"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:220
+#: modules/System/html_admin/mod_system_settings.html.twig:225
 msgid "Company privacy policy"
 msgstr "Politica de confidențialitate a companiei"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:235
+#: modules/System/html_admin/mod_system_settings.html.twig:240
 msgid "Countries updated"
 msgstr "Țările au fost actualizate"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:487
+#: modules/System/html_admin/mod_system_settings.html.twig:492
 msgid "List of countries"
 msgstr "Lista țărilor"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:501
+#: modules/System/html_admin/mod_system_settings.html.twig:506
 msgid "Cache control"
 msgstr "Control Cache"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:503
+#: modules/System/html_admin/mod_system_settings.html.twig:508
 msgid "Cache directory is cleared"
 msgstr "Directorul cache este golit"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:513
+#: modules/System/html_admin/mod_system_settings.html.twig:518
 msgid "About FOSSBilling"
 msgstr "Despre FOSSBilling"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:518
+#: modules/System/html_admin/mod_system_settings.html.twig:523
 msgid "FOSSBilling version"
 msgstr "Versiune FOSSBilling"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:522
+#: modules/System/html_admin/mod_system_settings.html.twig:527
 msgid "PHP version"
 msgstr "Versiune PHP"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:526
+#: modules/System/html_admin/mod_system_settings.html.twig:531
 msgid "Instance ID"
 msgstr "ID Instanță"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:530
+#: modules/System/html_admin/mod_system_settings.html.twig:535
 msgid "License"
 msgstr "Licență"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:545
+#: modules/System/html_admin/mod_system_settings.html.twig:550
 msgid "Error reporting is enabled."
 msgstr "Raportarea erorilor este activată."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:546
+#: modules/System/html_admin/mod_system_settings.html.twig:551
 msgid "This FOSSBilling instance is automatically sending errors which allows us to more easily improve the software and keep it stable. Thanks!"
 msgstr "Aceasta instanta FOSSBilling trimite automat erori care ne permite sa îmbunătățim mai ușor software-ul si sa îl menținem stabil. Mulțumim!"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:547
+#: modules/System/html_admin/mod_system_settings.html.twig:552
 msgid "Error reporting is now disabled."
 msgstr "Raportarea erorilor este acum dezactivată."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:547
+#: modules/System/html_admin/mod_system_settings.html.twig:552
 msgid "Disable error reporting"
 msgstr "Dezactivați raportarea erorilor"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:551
+#: modules/System/html_admin/mod_system_settings.html.twig:556
 msgid "Error reporting is disabled."
 msgstr "Raportarea erorilor este dezactivată."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:552
+#: modules/System/html_admin/mod_system_settings.html.twig:557
 msgid "Please consider enabling error reporting. Doing so allows us to provide you with better technical support and helps us to proactively improve FOSSBilling."
 msgstr "Vă rugăm să luați în considerare activarea raportării erorilor. Făcând astfel, ne permite să vă oferim asistență tehnică mai bună și ne ajută să îmbunătățim în mod proactiv FOSSBilling."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:553
+#: modules/System/html_admin/mod_system_settings.html.twig:558
 msgid "Error reporting is now enabled."
 msgstr "Raportarea erorilor este acum activată."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:553
+#: modules/System/html_admin/mod_system_settings.html.twig:558
 msgid "Enable error reporting"
 msgstr "Activați raportarea erorilor"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:556
+#: modules/System/html_admin/mod_system_settings.html.twig:561
 msgid "FOSSBilling optionally includes automated error reporting to help aid the project's development and stability. To find the most up-to-date information about it, you should review the links and information below."
 msgstr "FOSSBilling include opțional raportarea erorilor automate pentru a ajuta la dezvoltarea și stabilitatea proiectului. Pentru a găsi cele mai recente informații despre aceasta, ar trebui să revizuiești linkurile și informațiile de mai jos."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:558
+#: modules/System/html_admin/mod_system_settings.html.twig:563
 msgid "Learn more about error reporting"
 msgstr "Aflați mai multe despre raportarea erorilor"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:560
+#: modules/System/html_admin/mod_system_settings.html.twig:565
 msgid "Error reporting changelog"
 msgstr "Eroare la raportarea modificărilor"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:561
+#: modules/System/html_admin/mod_system_settings.html.twig:566
 msgid "Last applicable behavior change change: "
 msgstr "Ultima schimbare de comportament aplicată: "
 
-#: modules/System/html_admin/mod_system_settings.html.twig:564
+#: modules/System/html_admin/mod_system_settings.html.twig:569
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
 msgstr "Ultima modificare comportamentală aplicabilă reprezintă cea mai recentă versiune FOSSBilling care a modificat raportarea erorilor care se aplică și la această versiune curentă. Este posibil să fi avut loc modificări mai recente decât ceea ce este enumerat."
+
+#: modules/System/html_admin/mod_system_settings.html.twig:580
+#: modules/System/html_admin/mod_system_settings.html.twig:632
+msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:582
+#: modules/System/html_admin/mod_system_settings.html.twig:635
+msgid "The currently selected network interface does not appear to be able to reach the internet!"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:588
+msgid "If your server has multiple network interfaces, you may select the default one for FOSSBilling to use when making requests here."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:592
+msgid "Select the default network interface:"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:594
+msgid "None (Default PHP Behavior)"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:604
+msgid "Enter a custom interface to use:"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:611
+msgid "If the dropdown menu doesn't have the appropriate network interface, please enter the IP address or name (e.g., eth0) of the correct one above."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:630
+msgid "Network interface updated."
+msgstr ""
 
 #: modules/System/html_admin/mod_system_update.html.twig:15
 msgid "Update release notes"
