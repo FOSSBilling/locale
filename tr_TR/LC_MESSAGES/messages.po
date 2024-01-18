@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-01-08 18:02-0800\n"
-"PO-Revision-Date: 2024-01-15 05:48\n"
+"POT-Creation-Date: 2024-01-17 02:28-0800\n"
+"PO-Revision-Date: 2024-01-18 06:10\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
@@ -27,31 +27,31 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: tr_TR\n"
 
-#: di.php:319
+#: di.php:317
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Görünüşe göre \"php intl\" eklentisi etkin olmadan FOSSBilling'i kullanmaya çalışıyorsunuz. FOSSBilling, \"intl\" eklentisi için bir çoklu doldurma içerir, ancak :locale'i desteklemez. Lütfen \"intl\" eklentisini etkinleştirin."
 
-#: di.php:367 di.php:441
+#: di.php:365 di.php:439
 msgid "Client is not logged in"
 msgstr "Müşteri oturum açmadı"
 
-#: di.php:407 di.php:479
+#: di.php:405 di.php:477
 msgid "Admin is not logged in"
 msgstr "Yönetici oturum açmadı"
 
-#: di.php:519
+#: di.php:517
 msgid "Unrecognized Handler type: "
 msgstr "Tanınmayan İşleyici türü: "
 
-#: di.php:529
+#: di.php:527
 msgid "Please check your mailbox and confirm email address."
 msgstr "Lütfen posta kutunuzu kontrol edin ve e-posta adresinizi doğrulayın."
 
-#: index.php:78 library/Box/App.php:419 library/Box/AppClient.php:70
+#: index.php:80 library/Box/App.php:419 library/Box/AppClient.php:70
 msgid "Page :url not found"
 msgstr "Ulaşmaya çalıştığınız :url sayfası bulunamadı"
 
-#: index.php:85
+#: index.php:87
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr ":url adresi yüklenmeye çalışılırken \"HTTP Hata Kodu :err_code\" oluştu"
 
@@ -63,7 +63,7 @@ msgstr "Mod nesnesi hizmet için ayarlanmamış"
 msgid "Method :method must contain underscore"
 msgstr "Metot :method alt çizgi içermelidir"
 
-#: library/Api/Handler.php:55 library/Box/Mod.php:52
+#: library/Api/Handler.php:55 library/Box/Mod.php:56
 msgid "Invalid module name"
 msgstr "Geçersiz modül adı"
 
@@ -87,7 +87,7 @@ msgstr ":type API call :method, :module modülünde mevcut değil"
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "Sistem bakıma alınmıştır. Lütfen daha sonra tekrar deneyin"
 
-#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:742
+#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:743
 msgid "You do not have permission to access the :mod: module"
 msgstr ":mod: modülüne erişim izniniz yok"
 
@@ -95,7 +95,7 @@ msgstr ":mod: modülüne erişim izniniz yok"
 msgid "Page not found"
 msgstr "Sayfa bulunamadı"
 
-#: library/Box/Crypt.php:19
+#: library/Box/Crypt.php:23
 msgid "The PHP openssl extension must be enabled on your server"
 msgstr "PHP openssl uzantısı sunucunuzda etkinleştirilmelidir"
 
@@ -107,23 +107,23 @@ msgstr "Eksik günlük mesajı"
 msgid "Bad log priority"
 msgstr "Hatalı günlük önceliği"
 
-#: library/Box/Mod.php:71
+#: library/Box/Mod.php:75
 msgid "Module :mod manifest file is missing"
 msgstr ":mod modülü manifest dosyası eksik"
 
-#: library/Box/Mod.php:76
+#: library/Box/Mod.php:80
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr ":mod modülü bildirim (manifest) dosyası geçersiz. Dosya söz dizimini (syntax) ve izinleri kontrol edin."
 
-#: library/Box/Mod.php:118
+#: library/Box/Mod.php:122
 msgid "Module :mod does not have service class"
 msgstr ":mod modülü hizmet sınıfına sahip değil"
 
-#: library/Box/Mod.php:137
+#: library/Box/Mod.php:141
 msgid "Module :mod Client controller class was not found"
 msgstr ":mod modülü Müşteri kontrolcüsü (Client Controller) sınıfı bulunamadı"
 
-#: library/Box/Mod.php:212
+#: library/Box/Mod.php:216
 msgid "Core module can not be updated"
 msgstr "Çekirdek modül güncellenemiyor"
 
@@ -262,6 +262,18 @@ msgstr "Merkezi Uyarı Sisteminden uyarılar alınamıyor. Daha fazla bilgi içi
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "FOSSBilling Merkezi Uyarı Sisteminden geçersiz yanıt."
 
+#: library/FOSSBilling/Config.php:90
+msgid "Unable to create backup of configuration file."
+msgstr ""
+
+#: library/FOSSBilling/Config.php:96
+msgid "Error when writing updated configuration file."
+msgstr "Güncellenen yapılandırma dosyası işlenirken bir hata oluştu."
+
+#: library/FOSSBilling/Config.php:145
+msgid "Too many iterations performed while formatting the config file"
+msgstr ""
+
 #: library/FOSSBilling/ExtensionManager.php:57
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "FOSSBilling eklenti kataloğundan eklenti detayları alınamadı."
@@ -310,54 +322,46 @@ msgstr ":e istisnası dışında :transport aracılığıyla e-posta gönderilem
 msgid "SMTP host or port is not configured"
 msgstr "SMTP sunucu veya bağlantı noktası yapılandırılmamış"
 
-#: library/FOSSBilling/Tools.php:74 library/FOSSBilling/Tools.php:266
+#: library/FOSSBilling/Tools.php:76 library/FOSSBilling/Tools.php:268
 msgid "Service class :class was not found in :path"
 msgstr "Hizmet sınıfı :class :path içinde bulunamadı"
 
-#: library/FOSSBilling/Tools.php:312
+#: library/FOSSBilling/Tools.php:314
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "E-posta Adresi"
 
-#: library/FOSSBilling/Tools.php:314 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:316 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: geçersiz"
 
-#: library/FOSSBilling/Update.php:142
+#: library/FOSSBilling/Update.php:143
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "En son sürüm bilgileri indirilemedi. Daha fazla ayrıntı hata günlüğünde mevcuttur."
 
-#: library/FOSSBilling/Update.php:198 modules/System/Api/Admin.php:192
+#: library/FOSSBilling/Update.php:209 modules/System/Api/Admin.php:192
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "En güncel FOSSBilling sürümüne sahipsiniz. Güncellemenize gerek yok."
 
-#: library/FOSSBilling/Update.php:221
+#: library/FOSSBilling/Update.php:233
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Güncelleme arşivi indirilemedi. Daha fazla ayrıntı hata günlüğünde mevcuttur."
 
-#: library/FOSSBilling/Update.php:235 modules/Extension/Service.php:475
+#: library/FOSSBilling/Update.php:247 modules/Extension/Service.php:476
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Dosya çıkarılamadı, lütfen dosya ve klasör izinlerini kontrol edin. Daha fazla ayrıntı hata günlüğünde mevcuttur."
 
-#: library/FOSSBilling/Update.php:254
+#: library/FOSSBilling/Update.php:266
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "Önbellek temizlenemiyor ve/veya yükleme klasörü kaldırılamıyor. Daha fazla ayrıntı hata günlüğünde mevcuttur."
 
-#: library/FOSSBilling/UpdatePatcher.php:44
+#: library/FOSSBilling/UpdatePatcher.php:49
 msgid "Unable to load existing configuration"
 msgstr "Mevcut yapılandırma yüklenemiyor"
 
-#: library/FOSSBilling/UpdatePatcher.php:51
-msgid "Unable to create backup of configuration file"
-msgstr "Yapılandırma dosyasının yedeği oluşturulamıyor"
-
-#: library/FOSSBilling/UpdatePatcher.php:107
-msgid "Error when writing updated configuration file."
-msgstr "Güncellenen yapılandırma dosyası işlenirken bir hata oluştu."
-
-#: library/FOSSBilling/UpdatePatcher.php:164
+#: library/FOSSBilling/UpdatePatcher.php:154
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr "Veritabanı yamaları uygulanırken bir hata oluştu. Lütfen hatayla ilgili bilgi için hata günlüğünü kontrol edin, düzeltin ve ardından güncellemeyi tamamlamak için yedek yama yöntemini uygulayın."
 
@@ -386,7 +390,7 @@ msgstr "Şifrenizde en az bir büyük harf olmalıdır."
 msgid "Birthdate"
 msgstr "Doğum Tarihi"
 
-#: library/FOSSBilling/i18n.php:143
+#: library/FOSSBilling/i18n.php:142
 msgid "Unable to enable / disable the locale as it is not present in the locale folder."
 msgstr "Dil dosyası olması gereken klasörde olmadığından, etkinleştirilemiyor / devre dışı bırakılamıyor."
 
@@ -512,14 +516,15 @@ msgstr "alan adının transfer edilebilirliği kontrol ediliyor"
 #: library/Registrar/Adapter/Internetbs.php:76
 #: library/Registrar/Adapter/Internetbs.php:175
 #: library/Registrar/Adapter/Namecheap.php:451
-#: library/Registrar/Adapter/Namecheap.php:591 library/Server/Manager/CWP.php:255
-#: library/Server/Manager/CWP.php:260 library/Server/Manager/CWP.php:265
-#: library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Directadmin.php:349
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:347
-#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:59
-#: library/Server/Manager/Plesk.php:205 library/Server/Manager/Plesk.php:232
+#: library/Registrar/Adapter/Namecheap.php:591 library/Server/Manager/CWP.php:344
+#: library/Server/Manager/CWP.php:357 library/Server/Manager/CWP.php:370
+#: library/Server/Manager/Directadmin.php:132
+#: library/Server/Manager/Directadmin.php:146
+#: library/Server/Manager/Directadmin.php:208
+#: library/Server/Manager/Directadmin.php:437
+#: library/Server/Manager/Hestia.php:295 library/Server/Manager/Hestia.php:305
+#: library/Server/Manager/Hestia.php:340 library/Server/Manager/Plesk.php:101
+#: library/Server/Manager/Plesk.php:314 library/Server/Manager/Plesk.php:360
 msgid ":type: does not support :action:"
 msgstr ":type: :action: 'ı desteklemiyor"
 
@@ -609,118 +614,122 @@ msgstr "RU uzantılı alan adı kaydı yapılırken geçerli bir pasaport bilgis
 msgid "Contact not found"
 msgstr "Kişi bulunamadı"
 
-#: library/Server/Manager/CWP.php:21 library/Server/Manager/CWP.php:25
-#: library/Server/Manager/CWP.php:29 library/Server/Manager/Directadmin.php:15
-#: library/Server/Manager/Directadmin.php:19
-#: library/Server/Manager/Directadmin.php:23 library/Server/Manager/Whm.php:24
-#: library/Server/Manager/Whm.php:28 library/Server/Manager/Whm.php:32
+#: library/Server/Manager/CWP.php:52 library/Server/Manager/CWP.php:56
+#: library/Server/Manager/CWP.php:60 library/Server/Manager/Directadmin.php:66
+#: library/Server/Manager/Directadmin.php:71
+#: library/Server/Manager/Directadmin.php:76 library/Server/Manager/Whm.php:63
+#: library/Server/Manager/Whm.php:67 library/Server/Manager/Whm.php:71
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "\":server_manager\" sunucu yöneticisi tam olarak yapılandırılmamış. Lütfen :missing değerini yapılandırın"
 
-#: library/Server/Manager/CWP.php:89 library/Server/Manager/Directadmin.php:443
-#: library/Server/Manager/Hestia.php:101 library/Server/Manager/Hestia.php:140
-#: library/Server/Manager/Plesk.php:51
+#: library/Server/Manager/CWP.php:115 library/Server/Manager/Directadmin.php:651
+#: library/Server/Manager/Hestia.php:110 library/Server/Manager/Hestia.php:377
+#: library/Server/Manager/Plesk.php:86
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
 msgstr ":type: sunucusuna bağlanılamadı. Lütfen kimlik bilgilerinizi ve yapılandırmanızı kontrol edin"
 
-#: library/Server/Manager/CWP.php:147 library/Server/Manager/Plesk.php:90
+#: library/Server/Manager/CWP.php:184 library/Server/Manager/Plesk.php:144
 msgid "create account"
 msgstr "hesap oluştur"
 
-#: library/Server/Manager/CWP.php:149 library/Server/Manager/CWP.php:167
-#: library/Server/Manager/CWP.php:185 library/Server/Manager/CWP.php:206
-#: library/Server/Manager/CWP.php:227 library/Server/Manager/CWP.php:246
-#: library/Server/Manager/Directadmin.php:455
-#: library/Server/Manager/Hestia.php:197 library/Server/Manager/Hestia.php:213
-#: library/Server/Manager/Hestia.php:241 library/Server/Manager/Hestia.php:267
-#: library/Server/Manager/Hestia.php:297 library/Server/Manager/Hestia.php:328
-#: library/Server/Manager/Hestia.php:372 library/Server/Manager/Plesk.php:92
-#: library/Server/Manager/Whm.php:456 library/Server/Manager/Whm.php:462
-#: library/Server/Manager/Whm.php:468 library/Server/Manager/Whm.php:474
-#: library/Server/Manager/Whm.php:480
+#: library/Server/Manager/CWP.php:186 library/Server/Manager/CWP.php:213
+#: library/Server/Manager/CWP.php:240 library/Server/Manager/CWP.php:270
+#: library/Server/Manager/CWP.php:299 library/Server/Manager/CWP.php:328
+#: library/Server/Manager/Directadmin.php:667
+#: library/Server/Manager/Hestia.php:163 library/Server/Manager/Hestia.php:180
+#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:231
+#: library/Server/Manager/Hestia.php:256 library/Server/Manager/Hestia.php:282
+#: library/Server/Manager/Hestia.php:327 library/Server/Manager/Plesk.php:146
+#: library/Server/Manager/Whm.php:578 library/Server/Manager/Whm.php:585
+#: library/Server/Manager/Whm.php:592 library/Server/Manager/Whm.php:599
+#: library/Server/Manager/Whm.php:606
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr ":type: sunucusunda :action: işlemi başarısız oldu, daha fazla ayrıntı için hata günlüklerini kontrol edin"
 
-#: library/Server/Manager/CWP.php:165 library/Server/Manager/Hestia.php:239
+#: library/Server/Manager/CWP.php:211 library/Server/Manager/Hestia.php:205
 msgid "suspend account"
 msgstr "hesabı askıya al"
 
-#: library/Server/Manager/CWP.php:183 library/Server/Manager/Hestia.php:265
+#: library/Server/Manager/CWP.php:238 library/Server/Manager/Hestia.php:229
 msgid "unsuspend account"
 msgstr "hesabın askıya alınmasını kaldır"
 
-#: library/Server/Manager/CWP.php:204 library/Server/Manager/Hestia.php:295
+#: library/Server/Manager/CWP.php:268 library/Server/Manager/Hestia.php:254
 msgid "cancel account"
 msgstr "hesabı iptal et"
 
-#: library/Server/Manager/CWP.php:225 library/Server/Manager/Hestia.php:326
+#: library/Server/Manager/CWP.php:297 library/Server/Manager/Hestia.php:280
 msgid "change account package"
 msgstr "hesap paketini değiştir"
 
-#: library/Server/Manager/CWP.php:244 library/Server/Manager/Hestia.php:370
+#: library/Server/Manager/CWP.php:326 library/Server/Manager/Hestia.php:325
 msgid "change account password"
 msgstr "hesap şifresini değiştir"
 
-#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Plesk.php:205
+#: library/Server/Manager/CWP.php:344 library/Server/Manager/Directadmin.php:208
+#: library/Server/Manager/Hestia.php:295 library/Server/Manager/Plesk.php:314
 msgid "username changes"
 msgstr "kullanıcı adı değişiklikleri"
 
-#: library/Server/Manager/CWP.php:260 library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Hestia.php:347
+#: library/Server/Manager/CWP.php:357 library/Server/Manager/Directadmin.php:132
+#: library/Server/Manager/Hestia.php:305
 msgid "changing the account domain"
 msgstr "hesap alan adı değiştiriliyor"
 
-#: library/Server/Manager/CWP.php:265 library/Server/Manager/Directadmin.php:349
-#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:232
+#: library/Server/Manager/CWP.php:370 library/Server/Manager/Directadmin.php:146
+#: library/Server/Manager/Hestia.php:340 library/Server/Manager/Plesk.php:360
 msgid "changing the account IP"
 msgstr "hesap IP adresi değiştiriliyor"
 
-#: library/Server/Manager/Directadmin.php:102
+#: library/Server/Manager/Directadmin.php:226
 msgid "There are no available IPs on this server."
 msgstr "Bu sunucuda kullanılabilir IP yok."
 
-#: library/Server/Manager/Directadmin.php:202
+#: library/Server/Manager/Directadmin.php:342
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
 msgstr "Bayiye ANY IP atanamıyor. Boşta, atanmamış IP'lere sahip olduğunuzdan emin olun."
 
-#: library/Server/Manager/Directadmin.php:206
+#: library/Server/Manager/Directadmin.php:346
 msgid "Error creating user"
 msgstr "Kullanıcı oluşturulurken hata oluştu"
 
-#: library/Server/Manager/Directadmin.php:232
+#: library/Server/Manager/Directadmin.php:437
+msgid "synchronizing the account"
+msgstr ""
+
+#: library/Server/Manager/Directadmin.php:482
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Sunucu Yöneticisi DirectAdmin Hatası: \"Hesap askıya alınmadı\""
 
-#: library/Server/Manager/Directadmin.php:436 library/Server/Manager/Whm.php:444
+#: library/Server/Manager/Directadmin.php:643 library/Server/Manager/Whm.php:561
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
-#: library/Server/Manager/Directadmin.php:447
+#: library/Server/Manager/Directadmin.php:656
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Sunucu Yöneticisi DirectAdmin Hatası: \"Yapmış olduğunuz istek, yetki seviyenizde bulunmadığından çalıştırılamıyor\""
 
-#: library/Server/Manager/Hestia.php:195
+#: library/Server/Manager/Hestia.php:161
 msgid "create user"
 msgstr "kullanıcı oluştur"
 
-#: library/Server/Manager/Hestia.php:207
+#: library/Server/Manager/Hestia.php:174
 msgid "delete domain"
 msgstr "alan adı sil"
 
-#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:211
+#: library/Server/Manager/Hestia.php:174 library/Server/Manager/Hestia.php:178
 msgid "create domain"
 msgstr "alan adı oluştur"
 
-#: library/Server/Manager/Hestia.php:209
+#: library/Server/Manager/Hestia.php:176
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
 msgstr ":type: sunucusunda :action2: başarısız olduktan sonra :action1: başarısız oldu, daha fazla ayrıntı için hata günlüklerini kontrol edin"
 
-#: library/Server/Manager/Plesk.php:59
+#: library/Server/Manager/Plesk.php:101
 msgid "account synchronization"
 msgstr "hesap eşitleme"
 
-#: library/Server/Manager/Plesk.php:175
+#: library/Server/Manager/Plesk.php:255
 msgid "Can't modify client"
 msgstr "Müşteri değiştirilemiyor"
 
@@ -740,25 +749,25 @@ msgstr "Aktiviteyi sil"
 msgid "Allows the staff member to delete recorded activity."
 msgstr "Personelin kayıtlı etkinliği silmesine izin verir."
 
-#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:253
+#: modules/Api/Controller/Client.php:50 modules/Api/Controller/Client.php:255
 msgid "Unknown API call :call"
 msgstr "Bilinmeyen API çağrısı :call"
 
-#: modules/Api/Controller/Client.php:130
+#: modules/Api/Controller/Client.php:132
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Geçersiz istek. İstek kaynağının :from olduğundan emin olun"
 
-#: modules/Api/Controller/Client.php:141
+#: modules/Api/Controller/Client.php:143
 msgid "Unauthorized IP"
 msgstr "Yetkisiz IP"
 
-#: modules/Api/Controller/Client.php:195 modules/Api/Controller/Client.php:199
-#: modules/Api/Controller/Client.php:203 modules/Api/Controller/Client.php:217
-#: modules/Api/Controller/Client.php:226 modules/Api/Controller/Client.php:240
+#: modules/Api/Controller/Client.php:197 modules/Api/Controller/Client.php:201
+#: modules/Api/Controller/Client.php:205 modules/Api/Controller/Client.php:219
+#: modules/Api/Controller/Client.php:228 modules/Api/Controller/Client.php:242
 msgid "Authentication Failed"
 msgstr "Kimlik doğrulama başarısız"
 
-#: modules/Api/Controller/Client.php:332
+#: modules/Api/Controller/Client.php:334
 msgid "CSRF token invalid"
 msgstr "CSRF token geçersiz"
 
@@ -954,7 +963,7 @@ msgstr ":field alanı boş olamaz"
 msgid "Cookie consent"
 msgstr "Çerez onayı"
 
-#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:756
+#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:757
 #: modules/Staff/Service.php:196
 msgid "You do not have permission to perform this action"
 msgstr "Bu işlemi gerçekleştirmek için izniniz yok"
@@ -1004,7 +1013,7 @@ msgstr "Özel Sayfalar"
 
 #: modules/Email/Api/Admin.php:114 modules/Email/Api/Admin.php:137
 #: modules/Email/Api/Client.php:66 modules/Email/Api/Client.php:88
-#: modules/Email/Api/Client.php:110 modules/Email/Service.php:496
+#: modules/Email/Api/Client.php:110 modules/Email/Service.php:495
 msgid "Email not found"
 msgstr "E-posta bulunamadı"
 
@@ -1023,15 +1032,15 @@ msgstr "Alıcı tanımlı değil. \"to\" veya \"to_client\" veya \"to_staff\" pa
 msgid "Email history"
 msgstr "E-Posta Geçmişi"
 
-#: modules/Email/Service.php:146
+#: modules/Email/Service.php:145
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "Alıcı tanımlı değil. \"to\" veya \"to_client\" veya \"to_staff\" veya \"to_admin\" parametresini tanımlayın"
 
-#: modules/Email/Service.php:205
+#: modules/Email/Service.php:204
 msgid "From email address can not be empty"
 msgstr "Gönderen e-posta adresi boş bırakılamaz"
 
-#: modules/Email/Service.php:481
+#: modules/Email/Service.php:480
 msgid "Email template :code was not found"
 msgstr ":code adlı e-posta şablonu bulunamadı"
 
@@ -1043,7 +1052,7 @@ msgstr "Hata mesajı uzunluk nedeniyle kesildi. Lütfen mesajın tamamı için h
 msgid "Embed and integrate"
 msgstr "Yerleştirin ve entegre edin"
 
-#: modules/Extension/Api/Admin.php:295
+#: modules/Extension/Api/Admin.php:296
 msgid "Extension not found"
 msgstr "Eklenti bulunamadı"
 
@@ -1061,59 +1070,59 @@ msgstr "Eklentiler"
 msgid "Languages"
 msgstr "Diller"
 
-#: modules/Extension/Service.php:37
+#: modules/Extension/Service.php:38
 msgid "Manage extensions"
 msgstr "Eklentileri yönet"
 
-#: modules/Extension/Service.php:38
+#: modules/Extension/Service.php:39
 msgid "Allows the staff member to install, update, or remove extensions."
 msgstr "Personelin eklentileri yüklemesine, güncellemesine veya kaldırmasına izin verir."
 
-#: modules/Extension/Service.php:336
+#: modules/Extension/Service.php:337
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "Bu eklentiyi güncelleme hakkında daha fazla bilgi için eklenti kataloğunu ziyaret edin."
 
-#: modules/Extension/Service.php:389
+#: modules/Extension/Service.php:390
 msgid "FOSSBilling core modules can not be managed"
 msgstr "FOSSBilling çekirdek modülleri yönetilemez"
 
-#: modules/Extension/Service.php:438
+#: modules/Extension/Service.php:439
 msgid "Coudn't find a valid download URL for the extension."
 msgstr "Eklenti için geçerli bir indirme URL'si bulunamadı."
 
-#: modules/Extension/Service.php:442
+#: modules/Extension/Service.php:443
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
 msgstr "Bu eklenti, FOSSBilling sürümünüzle uyumlu değil. Lütfen FOSSBilling'i en son sürüme güncelleyin ve tekrar deneyin."
 
-#: modules/Extension/Service.php:458
+#: modules/Extension/Service.php:459
 msgid "Failed to download the extension with error :code"
 msgstr "Eklenti indirilemedi. Hata Kodu: :code"
 
-#: modules/Extension/Service.php:499
+#: modules/Extension/Service.php:500
 msgid "Extension :id seems to be already installed."
 msgstr ":id eklentisi zaten kurulu görünüyor."
 
-#: modules/Extension/Service.php:502
+#: modules/Extension/Service.php:503
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "Eklenti, son hedefine taşınamadı. Lütfen hedef klasör izinlerini kontrol edin. (:destination)"
 
-#: modules/Extension/Service.php:505
+#: modules/Extension/Service.php:506
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "Eklenti türü (:type) otomatik olarak yüklenemez."
 
-#: modules/Extension/Service.php:538
+#: modules/Extension/Service.php:539
 msgid "FOSSBilling core modules can not be installed or removed"
 msgstr "FOSSBilling çekirdek modülleri kurulamaz veya kaldırılamaz"
 
-#: modules/Extension/Service.php:543
+#: modules/Extension/Service.php:544
 msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr "Modül yüklenemez. FOSSBilling'in en az :min sürümünü gerektirir. Mevcut versiyon :v"
 
-#: modules/Extension/Service.php:717
+#: modules/Extension/Service.php:718
 msgid "Manage settings"
 msgstr "Ayarları yönet"
 
-#: modules/Extension/Service.php:718
+#: modules/Extension/Service.php:719
 msgid "Allows the staff member to edit settings for this module."
 msgstr "Personelin bu modülün ayarlarını düzenlemesine izin verir."
 
@@ -1665,7 +1674,7 @@ msgstr "Yapılandırma bir dizi olmalıdır"
 #: modules/Servicecustom/Service.php:248 modules/Servicedomain/Api/Client.php:127
 #: modules/Servicedownloadable/Api/Admin.php:64
 #: modules/Servicedownloadable/Api/Client.php:38
-#: modules/Servicehosting/Api/Admin.php:425
+#: modules/Servicehosting/Api/Admin.php:427
 #: modules/Servicehosting/Api/Client.php:93
 #: modules/Servicelicense/Api/Admin.php:85
 #: modules/Servicelicense/Api/Client.php:51
@@ -1681,9 +1690,9 @@ msgid "Plugin :plugin does not support action :action"
 msgstr ":plugin eklentisi, :action eylemini desteklemiyor"
 
 #: modules/Servicecustom/Service.php:295 modules/Servicedomain/Service.php:252
-#: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:95
-#: modules/Servicehosting/Service.php:140 modules/Servicehosting/Service.php:158
-#: modules/Servicehosting/Service.php:177 modules/Servicehosting/Service.php:196
+#: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:103
+#: modules/Servicehosting/Service.php:161 modules/Servicehosting/Service.php:179
+#: modules/Servicehosting/Service.php:198 modules/Servicehosting/Service.php:217
 msgid "Order :id has no active service"
 msgstr ":id siparişinin etkin hizmeti yok"
 
@@ -1829,11 +1838,11 @@ msgstr "Dosya şu anda indirilemiyor. Lütfen destek ile iletişime geçin"
 msgid "plan_id is missing"
 msgstr "plan_id eksik"
 
-#: modules/Servicehosting/Api/Admin.php:235
+#: modules/Servicehosting/Api/Admin.php:236
 msgid "Hosting server is used by :count: service hostings"
 msgstr "Hosting sunucusu :count: adet hosting hizmeti tarafından kullanılıyor"
 
-#: modules/Servicehosting/Api/Admin.php:347
+#: modules/Servicehosting/Api/Admin.php:349
 msgid "Hosting plan is used by :count: service hostings"
 msgstr "Hosting planı :count: adet hosting hizmeti tarafından kullanılıyor"
 
@@ -1849,55 +1858,55 @@ msgstr "Ürün Türü"
 msgid "Hosting plans and servers"
 msgstr "Hosting Planları ve Sunucular"
 
-#: modules/Servicehosting/Service.php:35
+#: modules/Servicehosting/Service.php:37
 msgid ":hosting for :domain"
 msgstr ":domain alan adı için :hosting"
 
-#: modules/Servicehosting/Service.php:47
+#: modules/Servicehosting/Service.php:49
 msgid "Hosting product is not configured completely. Configure server for hosting product."
 msgstr "Hosting ürünü tam olarak yapılandırılmamış. Hosting ürünü için sunucuyu yapılandırın."
 
-#: modules/Servicehosting/Service.php:50
+#: modules/Servicehosting/Service.php:52
 msgid "Hosting product is not configured completely. Configure hosting plan for hosting product."
 msgstr "Hosting ürünü tam olarak yapılandırılmamış. Hosting ürünü için Hosting Planını yapılandırın."
 
-#: modules/Servicehosting/Service.php:53
+#: modules/Servicehosting/Service.php:55
 msgid "Domain name is invalid."
 msgstr "Alan Adı geçerli değil."
 
-#: modules/Servicehosting/Service.php:56
+#: modules/Servicehosting/Service.php:58
 msgid "Domain extension is invalid."
 msgstr "Alan Adı uzantısı geçerli değil."
 
-#: modules/Servicehosting/Service.php:256
+#: modules/Servicehosting/Service.php:292
 msgid "Account username is missing or is invalid"
 msgstr "Hesap kullanıcı adı eksik yada geçersiz"
 
-#: modules/Servicehosting/Service.php:278
+#: modules/Servicehosting/Service.php:314
 msgid "Account ip is missing or is invalid"
 msgstr "Hesap IP adresi eksik yada geçersiz"
 
-#: modules/Servicehosting/Service.php:302
+#: modules/Servicehosting/Service.php:338
 msgid "Domain sld or tld is missing"
 msgstr "Alan Adı için SLD yada TLD eksik"
 
-#: modules/Servicehosting/Service.php:328
+#: modules/Servicehosting/Service.php:364
 msgid "Account password is missing or is invalid"
 msgstr "Hesap şifresi eksik yada geçersiz"
 
-#: modules/Servicehosting/Service.php:726
+#: modules/Servicehosting/Service.php:771
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Geçersiz sunucu yöneticisi. Sunucu düzgün yapılandırılmadı."
 
-#: modules/Servicehosting/Service.php:746
+#: modules/Servicehosting/Service.php:791
 msgid "Server manager :adapter is invalid"
 msgstr "Sunucu yöneticisi :adapter geçersiz"
 
-#: modules/Servicehosting/Service.php:786
+#: modules/Servicehosting/Service.php:838
 msgid "Can not remove hosting plan which has active accounts"
 msgstr "Aktif hesapları olan hosting planı kaldırılamaz"
 
-#: modules/Servicehosting/Service.php:997
+#: modules/Servicehosting/Service.php:1051
 msgid "Could not find main domain product"
 msgstr "Ana alan adı ürünü bulunamadı"
 
@@ -2278,60 +2287,69 @@ msgstr "Ayarlar"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:137
 #: modules/Support/html_admin/mod_support_settings.html.twig:115
 #: modules/Support/html_admin/mod_support_ticket.html.twig:163
+#: modules/System/html_admin/mod_system_settings.html.twig:614
 #: modules/System/html_admin/mod_system_update.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr "Güncelle"
 
-#: modules/System/Service.php:37
+#: modules/System/Service.php:38
 msgid "Manage company details"
 msgstr "Şirket detaylarını yönet"
 
-#: modules/System/Service.php:38
+#: modules/System/Service.php:39
 msgid "Allows the staff member to update company details as set under the system module."
 msgstr "Personelin, sistem modülü altından ayarlanan şirket ayrıntılarını güncellemesine izin verir."
 
-#: modules/System/Service.php:42
+#: modules/System/Service.php:43
 msgid "Manage company legal"
 msgstr "Şirketin yasal mevzuatını yönetin"
 
-#: modules/System/Service.php:43
+#: modules/System/Service.php:44
 msgid "Allows the staff member to update company legal as set under the system module."
 msgstr "Personelin, sistem modülü altından belirlenen şirket mevzuatını güncellemesine izin verir."
 
-#: modules/System/Service.php:47
-#: modules/System/html_admin/mod_system_settings.html.twig:505
+#: modules/System/Service.php:48
+#: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "Invalidate cache"
 msgstr "Önbelleği Temizle"
 
-#: modules/System/Service.php:48
+#: modules/System/Service.php:49
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
 msgstr "Personelin, FOSSBilling önbelleğini sistem ayarlarından temizlemesine izin verir."
 
-#: modules/System/Service.php:52
+#: modules/System/Service.php:53
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:45
 #: modules/System/html_admin/mod_system_update.html.twig:54
 msgid "Update FOSSBilling"
 msgstr "FOSSBilling'i Güncelle"
 
-#: modules/System/Service.php:53
+#: modules/System/Service.php:54
 msgid "Allows the staff member to update FOSSBilling."
 msgstr "Personelin, FOSSBilling'i güncellemesine izin verir."
 
-#: modules/System/Service.php:65
+#: modules/System/Service.php:58
+msgid "Manage the network interface"
+msgstr ""
+
+#: modules/System/Service.php:59
+msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
+msgstr ""
+
+#: modules/System/Service.php:71
 msgid "Parameter key is missing"
 msgstr "Parametre anahtarı eksik"
 
-#: modules/System/Service.php:134
+#: modules/System/Service.php:140
 msgid "Invalid parameter name, received: param_"
 msgstr "Geçersiz parametre adı, alınan: param_"
 
-#: modules/System/Service.php:538
+#: modules/System/Service.php:539
 msgid "Parameter :param does not exist"
 msgstr "Parametre :param mevcut değil"
 
-#: modules/System/Service.php:1398
+#: modules/System/Service.php:1399
 msgid "Country :code phone code is not registered"
 msgstr "Ülke :code telefon kodu kayıtlı değil"
 
@@ -2649,20 +2667,11 @@ msgstr "Müşterileri filtrele"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:18
 #: modules/Client/html_admin/mod_client_manage.html.twig:63
-#: modules/Client/html_admin/mod_client_manage.html.twig:810
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:87
 #: modules/Index/html_client/mod_index_dashboard.html.twig:59
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
-#: modules/Order/html_admin/mod_order_index.html.twig:17
-#: modules/Support/html_admin/mod_support_ticket.html.twig:216
-msgid "ID"
-msgstr "ID"
+#: modules/Support/html_admin/mod_support_tickets.html.twig:34
+msgid "Client ID"
+msgstr "Müşteri ID"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:24
 #: modules/Client/html_admin/mod_client_index.html.twig:209
@@ -2682,7 +2691,7 @@ msgstr "ID"
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:29
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:31
 #: modules/Staff/html_admin/mod_staff_group.html.twig:37
 #: modules/Staff/html_admin/mod_staff_index.html.twig:30
@@ -2696,7 +2705,7 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:233
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:276
 #: modules/Support/html_client/mod_support_contact_us.html.twig:27
-#: modules/System/html_admin/mod_system_settings.html.twig:57
+#: modules/System/html_admin/mod_system_settings.html.twig:62
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
 msgid "Name"
@@ -2744,7 +2753,7 @@ msgstr "Şirket ismi"
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:31
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
-#: modules/System/html_admin/mod_system_settings.html.twig:63
+#: modules/System/html_admin/mod_system_settings.html.twig:68
 #: themes/huraga/html/mobile_menu.html.twig:50
 #: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
@@ -3030,7 +3039,7 @@ msgstr "Posta kodu"
 #: modules/Invoice/pdf_template/default-pdf.twig:41
 #: modules/Invoice/pdf_template/default-pdf.twig:53
 #: modules/Invoice/pdf_template/default-pdf.twig:110
-#: modules/System/html_admin/mod_system_settings.html.twig:69
+#: modules/System/html_admin/mod_system_settings.html.twig:74
 msgid "Phone"
 msgstr "Telefon"
 
@@ -3179,7 +3188,7 @@ msgstr "Fon Bakiyesi"
 #: modules/Order/html_client/mod_order_manage.html.twig:257
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 #: modules/Support/html_admin/mod_support_tickets.html.twig:390
-#: modules/System/html_admin/mod_system_settings.html.twig:224
+#: modules/System/html_admin/mod_system_settings.html.twig:229
 msgid "Notes"
 msgstr "Notlar"
 
@@ -3203,7 +3212,7 @@ msgstr "API anahtarı"
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:144
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
 #: modules/Page/html_client/mod_page_signup.html.twig:76
-#: modules/System/html_admin/mod_system_settings.html.twig:75
+#: modules/System/html_admin/mod_system_settings.html.twig:80
 msgid "Address"
 msgstr "Adres"
 
@@ -3314,10 +3323,10 @@ msgstr "E-posta onaylandı"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:37
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:79
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:169
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:227
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:233
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:59
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:94
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:100
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:29
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:42
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:55
@@ -3330,10 +3339,10 @@ msgstr "E-posta onaylandı"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:157
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:70
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:41
-#: modules/System/html_admin/mod_system_settings.html.twig:135
-#: modules/System/html_admin/mod_system_settings.html.twig:148
-#: modules/System/html_admin/mod_system_settings.html.twig:166
-#: modules/System/html_admin/mod_system_settings.html.twig:187
+#: modules/System/html_admin/mod_system_settings.html.twig:140
+#: modules/System/html_admin/mod_system_settings.html.twig:153
+#: modules/System/html_admin/mod_system_settings.html.twig:171
+#: modules/System/html_admin/mod_system_settings.html.twig:192
 #: themes/admin_default/html/macro_functions.html.twig:3
 msgid "Yes"
 msgstr "Evet"
@@ -3381,10 +3390,10 @@ msgstr "Evet"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:41
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:83
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:173
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:231
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:237
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:63
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:98
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:104
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:33
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:46
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:59
@@ -3397,10 +3406,10 @@ msgstr "Evet"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:163
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:74
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:45
-#: modules/System/html_admin/mod_system_settings.html.twig:139
-#: modules/System/html_admin/mod_system_settings.html.twig:152
-#: modules/System/html_admin/mod_system_settings.html.twig:172
-#: modules/System/html_admin/mod_system_settings.html.twig:193
+#: modules/System/html_admin/mod_system_settings.html.twig:144
+#: modules/System/html_admin/mod_system_settings.html.twig:157
+#: modules/System/html_admin/mod_system_settings.html.twig:177
+#: modules/System/html_admin/mod_system_settings.html.twig:198
 #: themes/admin_default/html/macro_functions.html.twig:5
 msgid "No"
 msgstr "Hayır"
@@ -3410,7 +3419,7 @@ msgid "Date of birth"
 msgstr "Doğum tarihi"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:262
-#: modules/System/html_admin/mod_system_settings.html.twig:31
+#: modules/System/html_admin/mod_system_settings.html.twig:33
 msgid "Company details"
 msgstr "Şirket detayları"
 
@@ -3656,6 +3665,19 @@ msgstr "Alıcı"
 #: modules/Client/html_admin/mod_client_manage.html.twig:802
 msgid "Transactions received"
 msgstr "Alınan işlemler"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:810
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
+#: modules/Order/html_admin/mod_order_index.html.twig:17
+#: modules/Support/html_admin/mod_support_ticket.html.twig:216
+msgid "ID"
+msgstr "ID"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:812
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:5
@@ -5548,9 +5570,9 @@ msgid "Maximum amount for add funds invoice"
 msgstr "Maksimum Tutar"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:156
-#: modules/System/html_admin/mod_system_settings.html.twig:206
-#: modules/System/html_admin/mod_system_settings.html.twig:229
-#: modules/System/html_admin/mod_system_settings.html.twig:494
+#: modules/System/html_admin/mod_system_settings.html.twig:211
+#: modules/System/html_admin/mod_system_settings.html.twig:234
+#: modules/System/html_admin/mod_system_settings.html.twig:499
 msgid "Update settings"
 msgstr "Ayarları Güncelle"
 
@@ -5913,14 +5935,14 @@ msgid "Invoice Status"
 msgstr "Fatura Durumu"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
-#: modules/System/html_admin/mod_system_settings.html.twig:113
+#: modules/System/html_admin/mod_system_settings.html.twig:118
 #: themes/huraga/html/layout_default.html.twig:177
 msgid "Bank Name"
 msgstr "Banka Adı"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
-#: modules/System/html_admin/mod_system_settings.html.twig:119
+#: modules/System/html_admin/mod_system_settings.html.twig:124
 #: themes/huraga/html/layout_default.html.twig:177
 msgid "BIC / SWIFT Code"
 msgstr "BIC / SWIFT Kodu"
@@ -6872,7 +6894,7 @@ msgid "About us"
 msgstr "Hakkımızda"
 
 #: modules/Page/html_client/mod_page_about-us.html.twig:9
-#: modules/System/html_admin/mod_system_settings.html.twig:43
+#: modules/System/html_admin/mod_system_settings.html.twig:45
 msgid "About"
 msgstr "Hakkında"
 
@@ -7497,7 +7519,7 @@ msgstr "Yeni Kayıt Operatörü"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:15
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:121
 msgid "Nameservers"
 msgstr "İsim Sunucuları (NS)"
 
@@ -7654,7 +7676,7 @@ msgstr "İsim sunucuları güncellendi"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:50
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:117
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
 msgid "Nameserver 1"
 msgstr "İsim Sunucusu #1"
 
@@ -7665,7 +7687,7 @@ msgstr "İsim Sunucusu #1"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:53
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
 msgid "Nameserver 2"
 msgstr "İsim Sunucusu #2"
 
@@ -7676,7 +7698,7 @@ msgstr "İsim Sunucusu #2"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:56
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
 msgid "Nameserver 3"
 msgstr "İsim Sunucusu #3"
 
@@ -7687,7 +7709,7 @@ msgstr "İsim Sunucusu #3"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:141
 msgid "Nameserver 4"
 msgstr "İsim Sunucusu #4"
 
@@ -8110,7 +8132,7 @@ msgid "Hosting plan updated"
 msgstr "Hosting planı güncellendi"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:32
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:250
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:256
 msgid "Unique name to identify this hosting plan"
 msgstr "Bu hosting planını tanımlayan benzersiz ad"
 
@@ -8180,7 +8202,7 @@ msgid "Test connection"
 msgstr "Bağlantıyı test et"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:64
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:167
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:173
 msgid "Server connected"
 msgstr "Sunucuya bağlantı sağlandı"
 
@@ -8252,30 +8274,40 @@ msgstr "Özel bağlantı noktası. Varsayılanı kullanmak için boş bırakın.
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:223
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:90
-msgid "Use Secure connection"
-msgstr "Güvenli Bağlantı Kullan"
+msgid "Password length"
+msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:235
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:225
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:92
+msgid "Length of generated passwords when creating user accounts. Defaults to 10"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:229
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:96
+msgid "Use secure connection"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:241
 msgid "Add server"
 msgstr "Sunucu Ekle"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:242
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
 msgid "Adding new hosting plan"
 msgstr "Yeni Hosting Planı Ekle"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:243
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:249
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters in next step. In this step provide basic hosting plan information."
 msgstr "Hosting hesabını ayarlamak için kullanılan sunucu türüne bağlı olarak, bir sonraki adımda ek parametreler sağlamanız gerekebilir. Bu adımda temel hosting planı bilgilerini sağlayın."
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
 msgid "Disk quota (MB)"
 msgstr "Disk Kotası (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
 msgid "Bandwidth (MB)"
 msgstr "Bant Genişliği (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:272
 msgid "Create hosting plan"
 msgstr "Hosting Planı Oluştur"
 
@@ -8407,23 +8439,23 @@ msgstr "Sunucu güncellendi"
 msgid "Primary IP address of the server used to connect to it like: 127.0.0.1"
 msgstr "Sunucuya ait Primary IP adresi. Örneğin: 127.0.0.1"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:103
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
 msgid "Update and test connection"
 msgstr "Güncelle ve Bağlantıyı Test Et"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:105
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:111
 msgid "Optional configuration"
 msgstr "Opsiyonel Yapılandırma"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:107
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:113
 msgid "Users prefix"
 msgstr "Kullanıcı Ön Eki"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Prefix for created users (especially for database)"
 msgstr "Oluşturulan kullanıcılar için ön ek (özellikle veritabanı için)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:142
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:148
 msgid "Update server"
 msgstr "Sunucuyu Güncelle"
 
@@ -8768,7 +8800,7 @@ msgstr "Yeni Personel"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:204
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
-#: modules/System/html_admin/mod_system_settings.html.twig:199
+#: modules/System/html_admin/mod_system_settings.html.twig:204
 msgid "Signature"
 msgstr "İmza"
 
@@ -9202,10 +9234,6 @@ msgstr "Destek Talepleri"
 msgid "Filter Support Tickets"
 msgstr "Destek Taleplerini Filtrele"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:34
-msgid "Client ID"
-msgstr "Müşteri ID"
-
 #: modules/Support/html_admin/mod_support_tickets.html.twig:46
 msgid "Ticket Subject"
 msgstr "Talep Konusu"
@@ -9344,183 +9372,222 @@ msgstr "Yeni bir destek talebi oluştur"
 msgid "System settings"
 msgstr "Sistem Ayarları"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:34
+#: modules/System/html_admin/mod_system_settings.html.twig:36
 msgid "Company legal"
 msgstr "Yasal Bilgilendirmeler"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:37
+#: modules/System/html_admin/mod_system_settings.html.twig:39
 msgid "Countries"
 msgstr "Ülkeler"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:40
+#: modules/System/html_admin/mod_system_settings.html.twig:42
 msgid "Cache"
 msgstr "Önbellek"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:46
-#: modules/System/html_admin/mod_system_settings.html.twig:539
+#: modules/System/html_admin/mod_system_settings.html.twig:48
+#: modules/System/html_admin/mod_system_settings.html.twig:544
 msgid "Error reporting"
 msgstr "Hata raporlama"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:53
-#: modules/System/html_admin/mod_system_settings.html.twig:212
+#: modules/System/html_admin/mod_system_settings.html.twig:51
+#: modules/System/html_admin/mod_system_settings.html.twig:575
+msgid "Network interface"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:58
+#: modules/System/html_admin/mod_system_settings.html.twig:217
 msgid "Company updated"
 msgstr "Şirket bilgileri güncellendi"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:77
+#: modules/System/html_admin/mod_system_settings.html.twig:82
 msgid "Address line 1"
 msgstr "Adres satırı 1"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:78
+#: modules/System/html_admin/mod_system_settings.html.twig:83
 msgid "Address line 2"
 msgstr "Adres satırı 2"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:79
+#: modules/System/html_admin/mod_system_settings.html.twig:84
 msgid "Address line 3"
 msgstr "Adres satırı 3"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:83
+#: modules/System/html_admin/mod_system_settings.html.twig:88
 msgid "Logo URL"
 msgstr "Logo URL"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:89
+#: modules/System/html_admin/mod_system_settings.html.twig:94
 msgid "Logo URL (dark mode)"
 msgstr "Logo URL (koyu mod)"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:95
+#: modules/System/html_admin/mod_system_settings.html.twig:100
 msgid "Favicon"
 msgstr "Favicon"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:101
+#: modules/System/html_admin/mod_system_settings.html.twig:106
 msgid "Company number, chamber of commerce number"
 msgstr "Firma Numarası, Ticaret Odası Numarası"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:107
+#: modules/System/html_admin/mod_system_settings.html.twig:112
 msgid "VAT number"
 msgstr "Vergi No"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:125
+#: modules/System/html_admin/mod_system_settings.html.twig:130
 msgid "Bank Account number"
 msgstr "Banka Hesap Numarası"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:131
+#: modules/System/html_admin/mod_system_settings.html.twig:136
 msgid "Display bank account information on documents?"
 msgstr "Dokümanlarda banka hesap bilgileri görüntülensin mi?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:144
+#: modules/System/html_admin/mod_system_settings.html.twig:149
 msgid "Display bank account information on the bottom of every page?"
 msgstr "Banka hesap bilgileri her sayfanın altında gösterilsin mi?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:158
+#: modules/System/html_admin/mod_system_settings.html.twig:163
 msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr "Konuk API'nin FOSBilling sürümünü almasına izin verme"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:160
+#: modules/System/html_admin/mod_system_settings.html.twig:165
 msgid "Enabling this functionality may effect modules that depend on it."
 msgstr "Bu fonksiyonun etkinleştirilmesi, ona bağlı olan modülleri etkileyebilir."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:179
+#: modules/System/html_admin/mod_system_settings.html.twig:184
 msgid "Hide some company information in the guest API"
 msgstr "Konuk API'sinde bazı şirket bilgilerini gizleyin"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:181
+#: modules/System/html_admin/mod_system_settings.html.twig:186
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
 msgstr "Bunu etkinleştirmek, \"şirket\" konuk API uç noktasından adres, telefon numarası, e-posta, KDV numarası ve daha fazlası gibi bazı bilgileri gizleyecektir."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:216
+#: modules/System/html_admin/mod_system_settings.html.twig:221
 msgid "Company terms of service, legal regulation"
 msgstr "Firma hizmet şartları, yasal düzenleme"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:220
+#: modules/System/html_admin/mod_system_settings.html.twig:225
 msgid "Company privacy policy"
 msgstr "Firma gizlilik politikası"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:235
+#: modules/System/html_admin/mod_system_settings.html.twig:240
 msgid "Countries updated"
 msgstr "Ülke bilgileri güncellendi"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:487
+#: modules/System/html_admin/mod_system_settings.html.twig:492
 msgid "List of countries"
 msgstr "Ülkeler Listesi"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:501
+#: modules/System/html_admin/mod_system_settings.html.twig:506
 msgid "Cache control"
 msgstr "Önbellek Kontrolü"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:503
+#: modules/System/html_admin/mod_system_settings.html.twig:508
 msgid "Cache directory is cleared"
 msgstr "Önbellek dizini temizlendi"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:513
+#: modules/System/html_admin/mod_system_settings.html.twig:518
 msgid "About FOSSBilling"
 msgstr "FOSSBilling Hakkında"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:518
+#: modules/System/html_admin/mod_system_settings.html.twig:523
 msgid "FOSSBilling version"
 msgstr "FOSSBilling versiyonu"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:522
+#: modules/System/html_admin/mod_system_settings.html.twig:527
 msgid "PHP version"
 msgstr "PHP sürümü"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:526
+#: modules/System/html_admin/mod_system_settings.html.twig:531
 msgid "Instance ID"
 msgstr "Instance ID"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:530
+#: modules/System/html_admin/mod_system_settings.html.twig:535
 msgid "License"
 msgstr "Lisans"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:545
+#: modules/System/html_admin/mod_system_settings.html.twig:550
 msgid "Error reporting is enabled."
 msgstr "Hata raporlama etkinleştirildi."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:546
+#: modules/System/html_admin/mod_system_settings.html.twig:551
 msgid "This FOSSBilling instance is automatically sending errors which allows us to more easily improve the software and keep it stable. Thanks!"
 msgstr "Oluşan hataları otomatik olarak göndererek yazılımı daha kolay geliştirmemize ve kararlı tutmamıza yardımcı oluyorsunuz. Teşekkürler!"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:547
+#: modules/System/html_admin/mod_system_settings.html.twig:552
 msgid "Error reporting is now disabled."
 msgstr "Hata raporlama devre dışı bırakıldı."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:547
+#: modules/System/html_admin/mod_system_settings.html.twig:552
 msgid "Disable error reporting"
 msgstr "Hata raporlamayı devre dışı bırak"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:551
+#: modules/System/html_admin/mod_system_settings.html.twig:556
 msgid "Error reporting is disabled."
 msgstr "Hata raporlama devre dışı bırakıldı."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:552
+#: modules/System/html_admin/mod_system_settings.html.twig:557
 msgid "Please consider enabling error reporting. Doing so allows us to provide you with better technical support and helps us to proactively improve FOSSBilling."
 msgstr "Lütfen hata raporlamayı etkinleştirmeyi düşünün. Bunu yapmak size daha iyi teknik destek sunmamızı sağlar ve FOSSBilling'i proaktif olarak geliştirmemize yardımcı olur."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:553
+#: modules/System/html_admin/mod_system_settings.html.twig:558
 msgid "Error reporting is now enabled."
 msgstr "Hata raporlama etkinleştirildi."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:553
+#: modules/System/html_admin/mod_system_settings.html.twig:558
 msgid "Enable error reporting"
 msgstr "Hata raporlamayı etkinleştir"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:556
+#: modules/System/html_admin/mod_system_settings.html.twig:561
 msgid "FOSSBilling optionally includes automated error reporting to help aid the project's development and stability. To find the most up-to-date information about it, you should review the links and information below."
 msgstr "FOSBilling isteğe bağlı olarak projenin gelişimine ve istikrarına yardımcı olmak için otomatik hata raporlamayı içerir. Konuyla ilgili en güncel bilgilere ulaşmak için aşağıdaki bağlantıları ve bilgileri inceleyebilirsiniz."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:558
+#: modules/System/html_admin/mod_system_settings.html.twig:563
 msgid "Learn more about error reporting"
 msgstr "Hata raporlama hakkında daha fazla bilgi edinin"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:560
+#: modules/System/html_admin/mod_system_settings.html.twig:565
 msgid "Error reporting changelog"
 msgstr "Hata raporlama değişim/güncelleme kayıtları"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:561
+#: modules/System/html_admin/mod_system_settings.html.twig:566
 msgid "Last applicable behavior change change: "
 msgstr "Uygulanabilir son davranış değişikliği: "
 
-#: modules/System/html_admin/mod_system_settings.html.twig:564
+#: modules/System/html_admin/mod_system_settings.html.twig:569
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
 msgstr "Uygulanabilir son davranış değişikliği, bu güncel sürüm için de geçerli olan hata raporlamasını değiştiren en son FOSBilling sürümünü temsil eder. Listelenenden daha yeni değişiklikler olmuş olabilir."
+
+#: modules/System/html_admin/mod_system_settings.html.twig:580
+#: modules/System/html_admin/mod_system_settings.html.twig:632
+msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:582
+#: modules/System/html_admin/mod_system_settings.html.twig:635
+msgid "The currently selected network interface does not appear to be able to reach the internet!"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:588
+msgid "If your server has multiple network interfaces, you may select the default one for FOSSBilling to use when making requests here."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:592
+msgid "Select the default network interface:"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:594
+msgid "None (Default PHP Behavior)"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:604
+msgid "Enter a custom interface to use:"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:611
+msgid "If the dropdown menu doesn't have the appropriate network interface, please enter the IP address or name (e.g., eth0) of the correct one above."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:630
+msgid "Network interface updated."
+msgstr ""
 
 #: modules/System/html_admin/mod_system_update.html.twig:15
 msgid "Update release notes"
