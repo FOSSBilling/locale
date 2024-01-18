@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-01-08 18:02-0800\n"
-"PO-Revision-Date: 2024-01-15 05:49\n"
+"POT-Creation-Date: 2024-01-17 02:28-0800\n"
+"PO-Revision-Date: 2024-01-18 06:10\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Serbian\n"
 "MIME-Version: 1.0\n"
@@ -27,31 +27,31 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: srp\n"
 
-#: di.php:319
+#: di.php:317
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Izgleda da pokušavate da koristite FOSSBilling bez php intl omogućenog dodatka. FOSSBilling uključuje polyfill za intl dodatak, ipak ne podržava :locale. Molimo omogućite intl dodatak."
 
-#: di.php:367 di.php:441
+#: di.php:365 di.php:439
 msgid "Client is not logged in"
 msgstr "Klijent nije prijavljen"
 
-#: di.php:407 di.php:479
+#: di.php:405 di.php:477
 msgid "Admin is not logged in"
 msgstr "Admin nije prijavljen"
 
-#: di.php:519
+#: di.php:517
 msgid "Unrecognized Handler type: "
 msgstr "Nepoznati tip rukovaoca: "
 
-#: di.php:529
+#: di.php:527
 msgid "Please check your mailbox and confirm email address."
 msgstr "Molimo proverite Vaš mail i potvrdite email adresu."
 
-#: index.php:78 library/Box/App.php:419 library/Box/AppClient.php:70
+#: index.php:80 library/Box/App.php:419 library/Box/AppClient.php:70
 msgid "Page :url not found"
 msgstr "Stranica :url nije pronađena"
 
-#: index.php:85
+#: index.php:87
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "HTTP greška :err_code se desila prilikom pokušaja da se učita :url"
 
@@ -63,7 +63,7 @@ msgstr "Mod object nije podešen za servis"
 msgid "Method :method must contain underscore"
 msgstr "Metoda :method mora da sadrži donju liniju"
 
-#: library/Api/Handler.php:55 library/Box/Mod.php:52
+#: library/Api/Handler.php:55 library/Box/Mod.php:56
 msgid "Invalid module name"
 msgstr "Nevažeći naziv modula"
 
@@ -87,7 +87,7 @@ msgstr ":type Api call :method ne postoji u modul u :module"
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "Sistem se održava. Molimo pokušajte kasnije"
 
-#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:742
+#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:743
 msgid "You do not have permission to access the :mod: module"
 msgstr "Nemate dozvolu za pristup :mod: modulu"
 
@@ -95,7 +95,7 @@ msgstr "Nemate dozvolu za pristup :mod: modulu"
 msgid "Page not found"
 msgstr "Stranica nije pronađena"
 
-#: library/Box/Crypt.php:19
+#: library/Box/Crypt.php:23
 msgid "The PHP openssl extension must be enabled on your server"
 msgstr "PHP openssl dodatak mora biti omogućena na serveru"
 
@@ -107,23 +107,23 @@ msgstr "Fali log poruka"
 msgid "Bad log priority"
 msgstr "Loš log prioritet"
 
-#: library/Box/Mod.php:71
+#: library/Box/Mod.php:75
 msgid "Module :mod manifest file is missing"
 msgstr "Modul :mod manifest fajl nedostaje"
 
-#: library/Box/Mod.php:76
+#: library/Box/Mod.php:80
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr "Modul :mod manifest fajl je nevažeći. Provjerite syntax fajla i dozvole."
 
-#: library/Box/Mod.php:118
+#: library/Box/Mod.php:122
 msgid "Module :mod does not have service class"
 msgstr "Modul :mod nema servisu klasu"
 
-#: library/Box/Mod.php:137
+#: library/Box/Mod.php:141
 msgid "Module :mod Client controller class was not found"
 msgstr "Modul :mod Client controller class nije pronađen"
 
-#: library/Box/Mod.php:212
+#: library/Box/Mod.php:216
 msgid "Core module can not be updated"
 msgstr "Core modul ne može bit ažuriran"
 
@@ -266,6 +266,18 @@ msgstr "Nije moguće dohvatiti obavještenja iz Centralnog sistema obaveštenja.
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "Nevažeći odgovor iz FOSSBilling sistema za centralna obaveštenja."
 
+#: library/FOSSBilling/Config.php:90
+msgid "Unable to create backup of configuration file."
+msgstr "Nije moguće napraviti rezervnu kopiju konfiguracione datoteke."
+
+#: library/FOSSBilling/Config.php:96
+msgid "Error when writing updated configuration file."
+msgstr "Greška pri pisanju ažurirane konfiguracione datoteke."
+
+#: library/FOSSBilling/Config.php:145
+msgid "Too many iterations performed while formatting the config file"
+msgstr "Izvršeno je previše iteracija tokom formatiranja konfiguracione datoteke"
+
 #: library/FOSSBilling/ExtensionManager.php:57
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "Nije moguće dohvatiti detalje dodataka iz FOSSBilling direktorijuma dodataka."
@@ -314,54 +326,46 @@ msgstr "Neuspešno slanje emaila preko :transport sa izuzetkom :e"
 msgid "SMTP host or port is not configured"
 msgstr "SMTP host ili port nije konfigurisan"
 
-#: library/FOSSBilling/Tools.php:74 library/FOSSBilling/Tools.php:266
+#: library/FOSSBilling/Tools.php:76 library/FOSSBilling/Tools.php:268
 msgid "Service class :class was not found in :path"
 msgstr "Servisna klasa :class nije pronađena u :path"
 
-#: library/FOSSBilling/Tools.php:312
+#: library/FOSSBilling/Tools.php:314
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Email adresa"
 
-#: library/FOSSBilling/Tools.php:314 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:316 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: je nevažeći"
 
-#: library/FOSSBilling/Update.php:142
+#: library/FOSSBilling/Update.php:143
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Nije uspjelo preuzimanje informacije o poslednjoj verziji. Daljnji detalji su dostupni u error log."
 
-#: library/FOSSBilling/Update.php:198 modules/System/Api/Admin.php:192
+#: library/FOSSBilling/Update.php:209 modules/System/Api/Admin.php:192
 msgid "You have latest version of FOSSBilling. You do not need to update."
 msgstr "Imate poslednju verziju FOSSBilling. Ne morate je ažuririrati."
 
-#: library/FOSSBilling/Update.php:221
+#: library/FOSSBilling/Update.php:233
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Nije uspjelo preuzimanje ažurirane arhive. Daljnji detalji su dostupni u error log."
 
-#: library/FOSSBilling/Update.php:235 modules/Extension/Service.php:475
+#: library/FOSSBilling/Update.php:247 modules/Extension/Service.php:476
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Neuspešno izdvajanje fajla, molimo proverite dozvole fajla i foldera. Daljnji detalji su dostupni u error log."
 
-#: library/FOSSBilling/Update.php:254
+#: library/FOSSBilling/Update.php:266
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "Nemoguće obrisati cache i/ili ukloniti instalacioni folder. Daljnji detalji su dostupni u error log."
 
-#: library/FOSSBilling/UpdatePatcher.php:44
+#: library/FOSSBilling/UpdatePatcher.php:49
 msgid "Unable to load existing configuration"
 msgstr "Nije moguće učitati postojeću konfiguraciju"
 
-#: library/FOSSBilling/UpdatePatcher.php:51
-msgid "Unable to create backup of configuration file"
-msgstr "Nije moguće napraviti rezervnu kopiju konfiguracione datoteke"
-
-#: library/FOSSBilling/UpdatePatcher.php:107
-msgid "Error when writing updated configuration file."
-msgstr "Greška pri pisanju ažurirane konfiguracione datoteke."
-
-#: library/FOSSBilling/UpdatePatcher.php:164
+#: library/FOSSBilling/UpdatePatcher.php:154
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr "Došlo je do greške pri primeni zakrpa baze podataka. Proverite evidenciju grešaka za informacije o grešci, ispravite je, a zatim izvršite metod rezervne kopije zakrpa da biste dovršili ažuriranje."
 
@@ -390,7 +394,7 @@ msgstr "Lozinka mora da sadrži najmanje jedno veliko slovo."
 msgid "Birthdate"
 msgstr "Datum rođenja"
 
-#: library/FOSSBilling/i18n.php:143
+#: library/FOSSBilling/i18n.php:142
 msgid "Unable to enable / disable the locale as it is not present in the locale folder."
 msgstr "Nije moguće omogućiti/onemogućiti lokalizaciju jer nije prisutan u folderu lokalizacije."
 
@@ -516,14 +520,15 @@ msgstr "provera prenosivosti domena"
 #: library/Registrar/Adapter/Internetbs.php:76
 #: library/Registrar/Adapter/Internetbs.php:175
 #: library/Registrar/Adapter/Namecheap.php:451
-#: library/Registrar/Adapter/Namecheap.php:591 library/Server/Manager/CWP.php:255
-#: library/Server/Manager/CWP.php:260 library/Server/Manager/CWP.php:265
-#: library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Directadmin.php:349
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Hestia.php:347
-#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:59
-#: library/Server/Manager/Plesk.php:205 library/Server/Manager/Plesk.php:232
+#: library/Registrar/Adapter/Namecheap.php:591 library/Server/Manager/CWP.php:344
+#: library/Server/Manager/CWP.php:357 library/Server/Manager/CWP.php:370
+#: library/Server/Manager/Directadmin.php:132
+#: library/Server/Manager/Directadmin.php:146
+#: library/Server/Manager/Directadmin.php:208
+#: library/Server/Manager/Directadmin.php:437
+#: library/Server/Manager/Hestia.php:295 library/Server/Manager/Hestia.php:305
+#: library/Server/Manager/Hestia.php:340 library/Server/Manager/Plesk.php:101
+#: library/Server/Manager/Plesk.php:314 library/Server/Manager/Plesk.php:360
 msgid ":type: does not support :action:"
 msgstr ":type: ne podržava :action:"
 
@@ -613,118 +618,122 @@ msgstr "Važeće informacije o kontakt pasošu su potrebne prilikom registracije
 msgid "Contact not found"
 msgstr "Kontakt nije pronađen"
 
-#: library/Server/Manager/CWP.php:21 library/Server/Manager/CWP.php:25
-#: library/Server/Manager/CWP.php:29 library/Server/Manager/Directadmin.php:15
-#: library/Server/Manager/Directadmin.php:19
-#: library/Server/Manager/Directadmin.php:23 library/Server/Manager/Whm.php:24
-#: library/Server/Manager/Whm.php:28 library/Server/Manager/Whm.php:32
+#: library/Server/Manager/CWP.php:52 library/Server/Manager/CWP.php:56
+#: library/Server/Manager/CWP.php:60 library/Server/Manager/Directadmin.php:66
+#: library/Server/Manager/Directadmin.php:71
+#: library/Server/Manager/Directadmin.php:76 library/Server/Manager/Whm.php:63
+#: library/Server/Manager/Whm.php:67 library/Server/Manager/Whm.php:71
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "Menadžer servera \":server_manager\" nije u potpunosti konfigurisan. Molimo konfigurišite :missing"
 
-#: library/Server/Manager/CWP.php:89 library/Server/Manager/Directadmin.php:443
-#: library/Server/Manager/Hestia.php:101 library/Server/Manager/Hestia.php:140
-#: library/Server/Manager/Plesk.php:51
+#: library/Server/Manager/CWP.php:115 library/Server/Manager/Directadmin.php:651
+#: library/Server/Manager/Hestia.php:110 library/Server/Manager/Hestia.php:377
+#: library/Server/Manager/Plesk.php:86
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
 msgstr "Povezivanje sa :type: serverom nije uspelo. Proverite svoje akreditive i konfiguraciju"
 
-#: library/Server/Manager/CWP.php:147 library/Server/Manager/Plesk.php:90
+#: library/Server/Manager/CWP.php:184 library/Server/Manager/Plesk.php:144
 msgid "create account"
 msgstr "kreiraj nalog"
 
-#: library/Server/Manager/CWP.php:149 library/Server/Manager/CWP.php:167
-#: library/Server/Manager/CWP.php:185 library/Server/Manager/CWP.php:206
-#: library/Server/Manager/CWP.php:227 library/Server/Manager/CWP.php:246
-#: library/Server/Manager/Directadmin.php:455
-#: library/Server/Manager/Hestia.php:197 library/Server/Manager/Hestia.php:213
-#: library/Server/Manager/Hestia.php:241 library/Server/Manager/Hestia.php:267
-#: library/Server/Manager/Hestia.php:297 library/Server/Manager/Hestia.php:328
-#: library/Server/Manager/Hestia.php:372 library/Server/Manager/Plesk.php:92
-#: library/Server/Manager/Whm.php:456 library/Server/Manager/Whm.php:462
-#: library/Server/Manager/Whm.php:468 library/Server/Manager/Whm.php:474
-#: library/Server/Manager/Whm.php:480
+#: library/Server/Manager/CWP.php:186 library/Server/Manager/CWP.php:213
+#: library/Server/Manager/CWP.php:240 library/Server/Manager/CWP.php:270
+#: library/Server/Manager/CWP.php:299 library/Server/Manager/CWP.php:328
+#: library/Server/Manager/Directadmin.php:667
+#: library/Server/Manager/Hestia.php:163 library/Server/Manager/Hestia.php:180
+#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:231
+#: library/Server/Manager/Hestia.php:256 library/Server/Manager/Hestia.php:282
+#: library/Server/Manager/Hestia.php:327 library/Server/Manager/Plesk.php:146
+#: library/Server/Manager/Whm.php:578 library/Server/Manager/Whm.php:585
+#: library/Server/Manager/Whm.php:592 library/Server/Manager/Whm.php:599
+#: library/Server/Manager/Whm.php:606
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr ":action: na :type: serveru nije uspelo, proverite evidenciju grešaka za dodatne detalje"
 
-#: library/Server/Manager/CWP.php:165 library/Server/Manager/Hestia.php:239
+#: library/Server/Manager/CWP.php:211 library/Server/Manager/Hestia.php:205
 msgid "suspend account"
 msgstr "suspendovati nalog"
 
-#: library/Server/Manager/CWP.php:183 library/Server/Manager/Hestia.php:265
+#: library/Server/Manager/CWP.php:238 library/Server/Manager/Hestia.php:229
 msgid "unsuspend account"
 msgstr "poništiti suspenziju naloga"
 
-#: library/Server/Manager/CWP.php:204 library/Server/Manager/Hestia.php:295
+#: library/Server/Manager/CWP.php:268 library/Server/Manager/Hestia.php:254
 msgid "cancel account"
 msgstr "otkaži nalog"
 
-#: library/Server/Manager/CWP.php:225 library/Server/Manager/Hestia.php:326
+#: library/Server/Manager/CWP.php:297 library/Server/Manager/Hestia.php:280
 msgid "change account package"
 msgstr "promenite paket naloga"
 
-#: library/Server/Manager/CWP.php:244 library/Server/Manager/Hestia.php:370
+#: library/Server/Manager/CWP.php:326 library/Server/Manager/Hestia.php:325
 msgid "change account password"
 msgstr "promenite lozinku naloga"
 
-#: library/Server/Manager/CWP.php:255 library/Server/Manager/Directadmin.php:339
-#: library/Server/Manager/Hestia.php:339 library/Server/Manager/Plesk.php:205
+#: library/Server/Manager/CWP.php:344 library/Server/Manager/Directadmin.php:208
+#: library/Server/Manager/Hestia.php:295 library/Server/Manager/Plesk.php:314
 msgid "username changes"
 msgstr "promene korisničkog imena"
 
-#: library/Server/Manager/CWP.php:260 library/Server/Manager/Directadmin.php:344
-#: library/Server/Manager/Hestia.php:347
+#: library/Server/Manager/CWP.php:357 library/Server/Manager/Directadmin.php:132
+#: library/Server/Manager/Hestia.php:305
 msgid "changing the account domain"
 msgstr "promena domena naloga"
 
-#: library/Server/Manager/CWP.php:265 library/Server/Manager/Directadmin.php:349
-#: library/Server/Manager/Hestia.php:383 library/Server/Manager/Plesk.php:232
+#: library/Server/Manager/CWP.php:370 library/Server/Manager/Directadmin.php:146
+#: library/Server/Manager/Hestia.php:340 library/Server/Manager/Plesk.php:360
 msgid "changing the account IP"
 msgstr "promena IP naloga"
 
-#: library/Server/Manager/Directadmin.php:102
+#: library/Server/Manager/Directadmin.php:226
 msgid "There are no available IPs on this server."
 msgstr "Nema dostupnih IP adresa na ovom serveru."
 
-#: library/Server/Manager/Directadmin.php:202
+#: library/Server/Manager/Directadmin.php:342
 msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
 msgstr "Nije moguće dodeliti prodavcu BILO KOJI IP. Uverite se da imate besplatne, nedodeljene IP adrese."
 
-#: library/Server/Manager/Directadmin.php:206
+#: library/Server/Manager/Directadmin.php:346
 msgid "Error creating user"
 msgstr "Greška pri kreiranju korisnika"
 
-#: library/Server/Manager/Directadmin.php:232
+#: library/Server/Manager/Directadmin.php:437
+msgid "synchronizing the account"
+msgstr "sinhronizovanje naloga"
+
+#: library/Server/Manager/Directadmin.php:482
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Greška DirectAdmin menadžera servera: \"Nalog nije suspendovan\""
 
-#: library/Server/Manager/Directadmin.php:436 library/Server/Manager/Whm.php:444
+#: library/Server/Manager/Directadmin.php:643 library/Server/Manager/Whm.php:561
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
-#: library/Server/Manager/Directadmin.php:447
+#: library/Server/Manager/Directadmin.php:656
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Greška DirectAdmin menadžera servera: \"Zahtev koji ste postavili ne može da se izvrši jer ne postoji na vašem nivou ovlašćenja\""
 
-#: library/Server/Manager/Hestia.php:195
+#: library/Server/Manager/Hestia.php:161
 msgid "create user"
 msgstr "kreiraj korisnika"
 
-#: library/Server/Manager/Hestia.php:207
+#: library/Server/Manager/Hestia.php:174
 msgid "delete domain"
 msgstr "obriši domen"
 
-#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:211
+#: library/Server/Manager/Hestia.php:174 library/Server/Manager/Hestia.php:178
 msgid "create domain"
 msgstr "napravi domen"
 
-#: library/Server/Manager/Hestia.php:209
+#: library/Server/Manager/Hestia.php:176
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
 msgstr "Neuspešno :action1: na :type: serveru nakon što nije uspelo :action2:, proverite evidenciju grešaka za dodatne detalje"
 
-#: library/Server/Manager/Plesk.php:59
+#: library/Server/Manager/Plesk.php:101
 msgid "account synchronization"
 msgstr "sinhronizacija naloga"
 
-#: library/Server/Manager/Plesk.php:175
+#: library/Server/Manager/Plesk.php:255
 msgid "Can't modify client"
 msgstr "Nije moguće izmeniti klijenta"
 
@@ -744,25 +753,25 @@ msgstr "Obrišite aktivnost"
 msgid "Allows the staff member to delete recorded activity."
 msgstr "Dozvolite da osoblje obrišu aktivnost zapisa."
 
-#: modules/Api/Controller/Client.php:48 modules/Api/Controller/Client.php:253
+#: modules/Api/Controller/Client.php:50 modules/Api/Controller/Client.php:255
 msgid "Unknown API call :call"
 msgstr "Nepoznati API poziv :call"
 
-#: modules/Api/Controller/Client.php:130
+#: modules/Api/Controller/Client.php:132
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Nevažeći Upit. Uverite se da je poreklo zahteva :from"
 
-#: modules/Api/Controller/Client.php:141
+#: modules/Api/Controller/Client.php:143
 msgid "Unauthorized IP"
 msgstr "Neovlašćena IP"
 
-#: modules/Api/Controller/Client.php:195 modules/Api/Controller/Client.php:199
-#: modules/Api/Controller/Client.php:203 modules/Api/Controller/Client.php:217
-#: modules/Api/Controller/Client.php:226 modules/Api/Controller/Client.php:240
+#: modules/Api/Controller/Client.php:197 modules/Api/Controller/Client.php:201
+#: modules/Api/Controller/Client.php:205 modules/Api/Controller/Client.php:219
+#: modules/Api/Controller/Client.php:228 modules/Api/Controller/Client.php:242
 msgid "Authentication Failed"
 msgstr "Autentifikacija nije uspela"
 
-#: modules/Api/Controller/Client.php:332
+#: modules/Api/Controller/Client.php:334
 msgid "CSRF token invalid"
 msgstr "CSRF token je nevažeći"
 
@@ -958,7 +967,7 @@ msgstr "Polje :field ne može biti prazno"
 msgid "Cookie consent"
 msgstr "Saglasnost za kolačić́e"
 
-#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:756
+#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:757
 #: modules/Staff/Service.php:196
 msgid "You do not have permission to perform this action"
 msgstr "Nemate dozvolu da izvršite ovu radnju"
@@ -1008,7 +1017,7 @@ msgstr "Prilagođene stranice"
 
 #: modules/Email/Api/Admin.php:114 modules/Email/Api/Admin.php:137
 #: modules/Email/Api/Client.php:66 modules/Email/Api/Client.php:88
-#: modules/Email/Api/Client.php:110 modules/Email/Service.php:496
+#: modules/Email/Api/Client.php:110 modules/Email/Service.php:495
 msgid "Email not found"
 msgstr "E-mail nije pronađen"
 
@@ -1027,15 +1036,15 @@ msgstr "Primalac nije definisan. Definišite parametar to ili to_client ili to_s
 msgid "Email history"
 msgstr "E-mail Istorija"
 
-#: modules/Email/Service.php:146
+#: modules/Email/Service.php:145
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "Primalac nije definisan. Definišite parametar to ili to_client ili to_staff ili to_admin"
 
-#: modules/Email/Service.php:205
+#: modules/Email/Service.php:204
 msgid "From email address can not be empty"
 msgstr "Polje za adresu e-pošte ne može biti prazno"
 
-#: modules/Email/Service.php:481
+#: modules/Email/Service.php:480
 msgid "Email template :code was not found"
 msgstr "Šablon e-pošte :code nije pronađen"
 
@@ -1047,7 +1056,7 @@ msgstr "Poruka o grešci je skraćena zbog dužine, molimo vas da proverite dne
 msgid "Embed and integrate"
 msgstr "Ugradite i integrišite"
 
-#: modules/Extension/Api/Admin.php:295
+#: modules/Extension/Api/Admin.php:296
 msgid "Extension not found"
 msgstr "Ekstenzija nije pronađena"
 
@@ -1065,59 +1074,59 @@ msgstr "Dodaci"
 msgid "Languages"
 msgstr "Jezici"
 
-#: modules/Extension/Service.php:37
+#: modules/Extension/Service.php:38
 msgid "Manage extensions"
 msgstr "Upravljajte ekstenzijama"
 
-#: modules/Extension/Service.php:38
+#: modules/Extension/Service.php:39
 msgid "Allows the staff member to install, update, or remove extensions."
 msgstr "Dozvoljava članu osoblja da instalira, ažurira ili ukloni ekstenzije."
 
-#: modules/Extension/Service.php:336
+#: modules/Extension/Service.php:337
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "Posetite direktorijum ekstenzija za više informacija o ažuriranju ove ekstenzije."
 
-#: modules/Extension/Service.php:389
+#: modules/Extension/Service.php:390
 msgid "FOSSBilling core modules can not be managed"
 msgstr "Ne može se upravljati osnovnim modulima FOSSBillinga"
 
-#: modules/Extension/Service.php:438
+#: modules/Extension/Service.php:439
 msgid "Coudn't find a valid download URL for the extension."
 msgstr "Nije moguće pronaći važeći URL za preuzimanje za proširenje."
 
-#: modules/Extension/Service.php:442
+#: modules/Extension/Service.php:443
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
 msgstr "Ovo proširenje nije kompatibilno sa vašom verzijom FOSSBilling-a. Ažurirajte FOSSBilling na najnoviju verziju i pokušajte ponovo."
 
-#: modules/Extension/Service.php:458
+#: modules/Extension/Service.php:459
 msgid "Failed to download the extension with error :code"
 msgstr "Preuzimanje ekstenzije sa greškom :code nije uspelo"
 
-#: modules/Extension/Service.php:499
+#: modules/Extension/Service.php:500
 msgid "Extension :id seems to be already installed."
 msgstr "Izgleda da je proširenje :id već instalirano."
 
-#: modules/Extension/Service.php:502
+#: modules/Extension/Service.php:503
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "Premeštanje proširenja na krajnje odredište nije uspelo. Proverite dozvole za odredišni folder. (:destination)"
 
-#: modules/Extension/Service.php:505
+#: modules/Extension/Service.php:506
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "Tip ekstenzije (:type) se ne može automatski instalirati."
 
-#: modules/Extension/Service.php:538
+#: modules/Extension/Service.php:539
 msgid "FOSSBilling core modules can not be installed or removed"
 msgstr "FOSSBilling core moduli se ne mogu instalirati ili ukloniti"
 
-#: modules/Extension/Service.php:543
+#: modules/Extension/Service.php:544
 msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr "Modul se ne može instalirati. Zahteva najmanje :min verziju FOSSBilling-a. Koristite :v"
 
-#: modules/Extension/Service.php:717
+#: modules/Extension/Service.php:718
 msgid "Manage settings"
 msgstr "Upravljajte podešavanjima"
 
-#: modules/Extension/Service.php:718
+#: modules/Extension/Service.php:719
 msgid "Allows the staff member to edit settings for this module."
 msgstr "Dozvoljava članu osoblja da uređuje podešavanja za ovaj modul."
 
@@ -1669,7 +1678,7 @@ msgstr "Config mora biti niz"
 #: modules/Servicecustom/Service.php:248 modules/Servicedomain/Api/Client.php:127
 #: modules/Servicedownloadable/Api/Admin.php:64
 #: modules/Servicedownloadable/Api/Client.php:38
-#: modules/Servicehosting/Api/Admin.php:425
+#: modules/Servicehosting/Api/Admin.php:427
 #: modules/Servicehosting/Api/Client.php:93
 #: modules/Servicelicense/Api/Admin.php:85
 #: modules/Servicelicense/Api/Client.php:51
@@ -1685,9 +1694,9 @@ msgid "Plugin :plugin does not support action :action"
 msgstr "Dodatak :plugin ne podržava akciju :action"
 
 #: modules/Servicecustom/Service.php:295 modules/Servicedomain/Service.php:252
-#: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:95
-#: modules/Servicehosting/Service.php:140 modules/Servicehosting/Service.php:158
-#: modules/Servicehosting/Service.php:177 modules/Servicehosting/Service.php:196
+#: modules/Servicedomain/Service.php:291 modules/Servicehosting/Service.php:103
+#: modules/Servicehosting/Service.php:161 modules/Servicehosting/Service.php:179
+#: modules/Servicehosting/Service.php:198 modules/Servicehosting/Service.php:217
 msgid "Order :id has no active service"
 msgstr ":id porudžbine nema aktivnu uslugu"
 
@@ -1833,11 +1842,11 @@ msgstr "Datoteka se trenutno ne može preuzeti. Molimo kontaktirajte podršku"
 msgid "plan_id is missing"
 msgstr "plan_id nedostaje"
 
-#: modules/Servicehosting/Api/Admin.php:235
+#: modules/Servicehosting/Api/Admin.php:236
 msgid "Hosting server is used by :count: service hostings"
 msgstr "Hosting server koristi se od :count: hosting usluge"
 
-#: modules/Servicehosting/Api/Admin.php:347
+#: modules/Servicehosting/Api/Admin.php:349
 msgid "Hosting plan is used by :count: service hostings"
 msgstr "Hosting plan koristi :count: uslugu hostinga"
 
@@ -1853,55 +1862,55 @@ msgstr "Vrsta proizvoda"
 msgid "Hosting plans and servers"
 msgstr "Hosting paketi i serveri"
 
-#: modules/Servicehosting/Service.php:35
+#: modules/Servicehosting/Service.php:37
 msgid ":hosting for :domain"
 msgstr ":hosting za :domain"
 
-#: modules/Servicehosting/Service.php:47
+#: modules/Servicehosting/Service.php:49
 msgid "Hosting product is not configured completely. Configure server for hosting product."
 msgstr "Hosting proizvod nije u potpunosti konfigurisan. Konfigurišite server za hosting proizvoda."
 
-#: modules/Servicehosting/Service.php:50
+#: modules/Servicehosting/Service.php:52
 msgid "Hosting product is not configured completely. Configure hosting plan for hosting product."
 msgstr "Hosting proizvod nije u potpunosti konfigurisan. Konfigurišite hosting plan za hosting proizvod."
 
-#: modules/Servicehosting/Service.php:53
+#: modules/Servicehosting/Service.php:55
 msgid "Domain name is invalid."
 msgstr "Ime domena je nevažeće."
 
-#: modules/Servicehosting/Service.php:56
+#: modules/Servicehosting/Service.php:58
 msgid "Domain extension is invalid."
 msgstr "Ekstenzija domena je nevažeća."
 
-#: modules/Servicehosting/Service.php:256
+#: modules/Servicehosting/Service.php:292
 msgid "Account username is missing or is invalid"
 msgstr "Korisničko ime naloga nedostaje ili je nevažeće"
 
-#: modules/Servicehosting/Service.php:278
+#: modules/Servicehosting/Service.php:314
 msgid "Account ip is missing or is invalid"
 msgstr "Ip adresa naloga nedostaje ili je nevažeća"
 
-#: modules/Servicehosting/Service.php:302
+#: modules/Servicehosting/Service.php:338
 msgid "Domain sld or tld is missing"
 msgstr "Domen sld ili tld nedostaje"
 
-#: modules/Servicehosting/Service.php:328
+#: modules/Servicehosting/Service.php:364
 msgid "Account password is missing or is invalid"
 msgstr "Lozinka naloga nedostaje ili je nevažeća"
 
-#: modules/Servicehosting/Service.php:726
+#: modules/Servicehosting/Service.php:771
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Nevažeći menadžer servera. Server nije pravilno konfigurisan."
 
-#: modules/Servicehosting/Service.php:746
+#: modules/Servicehosting/Service.php:791
 msgid "Server manager :adapter is invalid"
 msgstr "Server manager :adapter je nevažeći"
 
-#: modules/Servicehosting/Service.php:786
+#: modules/Servicehosting/Service.php:838
 msgid "Can not remove hosting plan which has active accounts"
 msgstr "Ne mogu ukloniti hosting plan koji ima aktivne naloge"
 
-#: modules/Servicehosting/Service.php:997
+#: modules/Servicehosting/Service.php:1051
 msgid "Could not find main domain product"
 msgstr "Nije moguće pronaći proizvod glavnog domena"
 
@@ -2282,60 +2291,69 @@ msgstr "Podešavanja"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:137
 #: modules/Support/html_admin/mod_support_settings.html.twig:115
 #: modules/Support/html_admin/mod_support_ticket.html.twig:163
+#: modules/System/html_admin/mod_system_settings.html.twig:614
 #: modules/System/html_admin/mod_system_update.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr "Ažuriraj"
 
-#: modules/System/Service.php:37
+#: modules/System/Service.php:38
 msgid "Manage company details"
 msgstr "Upravljajte detaljima firme"
 
-#: modules/System/Service.php:38
+#: modules/System/Service.php:39
 msgid "Allows the staff member to update company details as set under the system module."
 msgstr "Dozvoljava članu osoblja da ažurira podatke o kompaniji kako je postavljeno u sistemskom modulu."
 
-#: modules/System/Service.php:42
+#: modules/System/Service.php:43
 msgid "Manage company legal"
 msgstr "Upravljajte zakonskim regulativama kompanije"
 
-#: modules/System/Service.php:43
+#: modules/System/Service.php:44
 msgid "Allows the staff member to update company legal as set under the system module."
 msgstr "Dozvoljava članu osoblja da ažurira zakonsku regulativu kompanije kako je postavljeno u sistemskom modulu."
 
-#: modules/System/Service.php:47
-#: modules/System/html_admin/mod_system_settings.html.twig:505
+#: modules/System/Service.php:48
+#: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "Invalidate cache"
 msgstr "Obrišite keš memoriju"
 
-#: modules/System/Service.php:48
+#: modules/System/Service.php:49
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
 msgstr "Dozvoljava članu osoblja da poništi keš FOSSBilling iz sistemskih postavki."
 
-#: modules/System/Service.php:52
+#: modules/System/Service.php:53
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:45
 #: modules/System/html_admin/mod_system_update.html.twig:54
 msgid "Update FOSSBilling"
 msgstr "Ažurirajte FOSSBilling"
 
-#: modules/System/Service.php:53
+#: modules/System/Service.php:54
 msgid "Allows the staff member to update FOSSBilling."
 msgstr "Dozvoljava članu osoblja da ažurira FOSSBilling."
 
-#: modules/System/Service.php:65
+#: modules/System/Service.php:58
+msgid "Manage the network interface"
+msgstr "Upravljajte mrežnim interfejsom"
+
+#: modules/System/Service.php:59
+msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
+msgstr "Dozvoljava članu osoblja da preuzme listu svih IP adresa lokalnog interfejsa i postavi podrazumevani mrežni interfejs za korišćenje FOSSBilling-a."
+
+#: modules/System/Service.php:71
 msgid "Parameter key is missing"
 msgstr "Nedostaje ključ parametra"
 
-#: modules/System/Service.php:134
+#: modules/System/Service.php:140
 msgid "Invalid parameter name, received: param_"
 msgstr "Nevažeći naziv parametra, received: param_"
 
-#: modules/System/Service.php:538
+#: modules/System/Service.php:539
 msgid "Parameter :param does not exist"
 msgstr "Parametar :param ne postoji"
 
-#: modules/System/Service.php:1398
+#: modules/System/Service.php:1399
 msgid "Country :code phone code is not registered"
 msgstr "Država: :code telefonski kod nije registrovan"
 
@@ -2653,20 +2671,11 @@ msgstr "Filtrirajte klijente"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:18
 #: modules/Client/html_admin/mod_client_manage.html.twig:63
-#: modules/Client/html_admin/mod_client_manage.html.twig:810
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:87
 #: modules/Index/html_client/mod_index_dashboard.html.twig:59
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
-#: modules/Order/html_admin/mod_order_index.html.twig:17
-#: modules/Support/html_admin/mod_support_ticket.html.twig:216
-msgid "ID"
-msgstr "ID"
+#: modules/Support/html_admin/mod_support_tickets.html.twig:34
+msgid "Client ID"
+msgstr "ID klijenta"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:24
 #: modules/Client/html_admin/mod_client_index.html.twig:209
@@ -2686,7 +2695,7 @@ msgstr "ID"
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:29
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:31
 #: modules/Staff/html_admin/mod_staff_group.html.twig:37
 #: modules/Staff/html_admin/mod_staff_index.html.twig:30
@@ -2700,7 +2709,7 @@ msgstr "ID"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:233
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:276
 #: modules/Support/html_client/mod_support_contact_us.html.twig:27
-#: modules/System/html_admin/mod_system_settings.html.twig:57
+#: modules/System/html_admin/mod_system_settings.html.twig:62
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
 msgid "Name"
@@ -2748,7 +2757,7 @@ msgstr "Ime firme"
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:31
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
-#: modules/System/html_admin/mod_system_settings.html.twig:63
+#: modules/System/html_admin/mod_system_settings.html.twig:68
 #: themes/huraga/html/mobile_menu.html.twig:50
 #: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
@@ -3034,7 +3043,7 @@ msgstr "Poštanski broj"
 #: modules/Invoice/pdf_template/default-pdf.twig:41
 #: modules/Invoice/pdf_template/default-pdf.twig:53
 #: modules/Invoice/pdf_template/default-pdf.twig:110
-#: modules/System/html_admin/mod_system_settings.html.twig:69
+#: modules/System/html_admin/mod_system_settings.html.twig:74
 msgid "Phone"
 msgstr "Telefon"
 
@@ -3183,7 +3192,7 @@ msgstr "Stanje kredita"
 #: modules/Order/html_client/mod_order_manage.html.twig:257
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 #: modules/Support/html_admin/mod_support_tickets.html.twig:390
-#: modules/System/html_admin/mod_system_settings.html.twig:224
+#: modules/System/html_admin/mod_system_settings.html.twig:229
 msgid "Notes"
 msgstr "Napomene"
 
@@ -3207,7 +3216,7 @@ msgstr "API ključ"
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:144
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
 #: modules/Page/html_client/mod_page_signup.html.twig:76
-#: modules/System/html_admin/mod_system_settings.html.twig:75
+#: modules/System/html_admin/mod_system_settings.html.twig:80
 msgid "Address"
 msgstr "Adresa"
 
@@ -3318,10 +3327,10 @@ msgstr "Email je odobren"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:37
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:79
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:169
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:227
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:233
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:59
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:94
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:100
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:29
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:42
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:55
@@ -3334,10 +3343,10 @@ msgstr "Email je odobren"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:157
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:70
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:41
-#: modules/System/html_admin/mod_system_settings.html.twig:135
-#: modules/System/html_admin/mod_system_settings.html.twig:148
-#: modules/System/html_admin/mod_system_settings.html.twig:166
-#: modules/System/html_admin/mod_system_settings.html.twig:187
+#: modules/System/html_admin/mod_system_settings.html.twig:140
+#: modules/System/html_admin/mod_system_settings.html.twig:153
+#: modules/System/html_admin/mod_system_settings.html.twig:171
+#: modules/System/html_admin/mod_system_settings.html.twig:192
 #: themes/admin_default/html/macro_functions.html.twig:3
 msgid "Yes"
 msgstr "Da"
@@ -3385,10 +3394,10 @@ msgstr "Da"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:41
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:83
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:173
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:231
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:237
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:63
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:98
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:104
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:33
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:46
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:59
@@ -3401,10 +3410,10 @@ msgstr "Da"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:163
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:74
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:45
-#: modules/System/html_admin/mod_system_settings.html.twig:139
-#: modules/System/html_admin/mod_system_settings.html.twig:152
-#: modules/System/html_admin/mod_system_settings.html.twig:172
-#: modules/System/html_admin/mod_system_settings.html.twig:193
+#: modules/System/html_admin/mod_system_settings.html.twig:144
+#: modules/System/html_admin/mod_system_settings.html.twig:157
+#: modules/System/html_admin/mod_system_settings.html.twig:177
+#: modules/System/html_admin/mod_system_settings.html.twig:198
 #: themes/admin_default/html/macro_functions.html.twig:5
 msgid "No"
 msgstr "Ne"
@@ -3414,7 +3423,7 @@ msgid "Date of birth"
 msgstr "Datum rođenja"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:262
-#: modules/System/html_admin/mod_system_settings.html.twig:31
+#: modules/System/html_admin/mod_system_settings.html.twig:33
 msgid "Company details"
 msgstr "Podaci o firmi"
 
@@ -3660,6 +3669,19 @@ msgstr "Do"
 #: modules/Client/html_admin/mod_client_manage.html.twig:802
 msgid "Transactions received"
 msgstr "Primljene transakcije"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:810
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:669
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:55
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:17
+#: modules/Order/html_admin/mod_order_index.html.twig:17
+#: modules/Support/html_admin/mod_support_ticket.html.twig:216
+msgid "ID"
+msgstr "ID"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:812
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:5
@@ -5555,9 +5577,9 @@ msgid "Maximum amount for add funds invoice"
 msgstr "Maksimalni depozit za fakturu za kredit dodavanje"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:156
-#: modules/System/html_admin/mod_system_settings.html.twig:206
-#: modules/System/html_admin/mod_system_settings.html.twig:229
-#: modules/System/html_admin/mod_system_settings.html.twig:494
+#: modules/System/html_admin/mod_system_settings.html.twig:211
+#: modules/System/html_admin/mod_system_settings.html.twig:234
+#: modules/System/html_admin/mod_system_settings.html.twig:499
 msgid "Update settings"
 msgstr "Ažuriraj Podešavanja"
 
@@ -5920,14 +5942,14 @@ msgid "Invoice Status"
 msgstr "Status računa"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
-#: modules/System/html_admin/mod_system_settings.html.twig:113
+#: modules/System/html_admin/mod_system_settings.html.twig:118
 #: themes/huraga/html/layout_default.html.twig:177
 msgid "Bank Name"
 msgstr "Naziv Banke"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
-#: modules/System/html_admin/mod_system_settings.html.twig:119
+#: modules/System/html_admin/mod_system_settings.html.twig:124
 #: themes/huraga/html/layout_default.html.twig:177
 msgid "BIC / SWIFT Code"
 msgstr "BIC / SWIFT Kod"
@@ -6879,7 +6901,7 @@ msgid "About us"
 msgstr "O nama"
 
 #: modules/Page/html_client/mod_page_about-us.html.twig:9
-#: modules/System/html_admin/mod_system_settings.html.twig:43
+#: modules/System/html_admin/mod_system_settings.html.twig:45
 msgid "About"
 msgstr "O"
 
@@ -7504,7 +7526,7 @@ msgstr "Novi registar domena"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:15
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:121
 msgid "Nameservers"
 msgstr "Name serveri"
 
@@ -7661,7 +7683,7 @@ msgstr "Nameserveri su ažurirani"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:50
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:117
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
 msgid "Nameserver 1"
 msgstr "Nameserver 1"
 
@@ -7672,7 +7694,7 @@ msgstr "Nameserver 1"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:53
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
 msgid "Nameserver 2"
 msgstr "Nameserver 2"
 
@@ -7683,7 +7705,7 @@ msgstr "Nameserver 2"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:56
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
 msgid "Nameserver 3"
 msgstr "Nameserver 3"
 
@@ -7694,7 +7716,7 @@ msgstr "Nameserver 3"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:141
 msgid "Nameserver 4"
 msgstr "Nameserver 4"
 
@@ -8117,7 +8139,7 @@ msgid "Hosting plan updated"
 msgstr "Hosting plan ažuriran"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:32
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:250
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:256
 msgid "Unique name to identify this hosting plan"
 msgstr "Jedinstveno ime za identifikaciju ovog hosting paketa"
 
@@ -8187,7 +8209,7 @@ msgid "Test connection"
 msgstr "Testirajte vezu"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:64
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:167
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:173
 msgid "Server connected"
 msgstr "Server je povezan"
 
@@ -8259,30 +8281,40 @@ msgstr "Prilagođeni port. Koristite prazno da biste koristili podrazumevano. Ko
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:223
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:90
-msgid "Use Secure connection"
+msgid "Password length"
+msgstr "Dužina lozinke"
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:225
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:92
+msgid "Length of generated passwords when creating user accounts. Defaults to 10"
+msgstr "Dužina generisanih lozinki prilikom kreiranja korisničkih naloga. Podrazumevano je 10"
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:229
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:96
+msgid "Use secure connection"
 msgstr "Koristite bezbednu vezu"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:235
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:241
 msgid "Add server"
 msgstr "Dodaj server"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:242
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
 msgid "Adding new hosting plan"
 msgstr "Dodavanje novog hosting paketa"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:243
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:249
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters in next step. In this step provide basic hosting plan information."
 msgstr "U zavisnosti od menadžera servera koji se koristi za podešavanje hosting naloga, možda ćete morati da unesete dodatne parametre u sledećem koraku. U ovom koraku pružite osnovne informacije o hosting paketu."
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
 msgid "Disk quota (MB)"
 msgstr "Kvota diska (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
 msgid "Bandwidth (MB)"
 msgstr "Propusni opseg (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:272
 msgid "Create hosting plan"
 msgstr "Kreirajte hosting paket"
 
@@ -8414,23 +8446,23 @@ msgstr "Server je ažuriran"
 msgid "Primary IP address of the server used to connect to it like: 127.0.0.1"
 msgstr "Primarna IP adresa servera koji se koristi za povezivanje sa njim kao što je: 127.0.0.1"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:103
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
 msgid "Update and test connection"
 msgstr "Ažurirajte i testirajte vezu"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:105
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:111
 msgid "Optional configuration"
 msgstr "Opciona konfiguracija"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:107
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:113
 msgid "Users prefix"
 msgstr "Prefiks korisnika"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:115
 msgid "Prefix for created users (especially for database)"
 msgstr "Prefiks za kreirane korisnike (posebno za bazu podataka)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:142
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:148
 msgid "Update server"
 msgstr "Ažuriraj server"
 
@@ -8775,7 +8807,7 @@ msgstr "Novi član osoblja"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:204
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
-#: modules/System/html_admin/mod_system_settings.html.twig:199
+#: modules/System/html_admin/mod_system_settings.html.twig:204
 msgid "Signature"
 msgstr "Potpis"
 
@@ -9209,10 +9241,6 @@ msgstr "Tiketi za podršku"
 msgid "Filter Support Tickets"
 msgstr "Filtriraj tikete za podršku"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:34
-msgid "Client ID"
-msgstr "ID klijenta"
-
 #: modules/Support/html_admin/mod_support_tickets.html.twig:46
 msgid "Ticket Subject"
 msgstr "Naslov tiketa"
@@ -9351,183 +9379,222 @@ msgstr "Otvorite novi tiket"
 msgid "System settings"
 msgstr "Podešavanja sistema"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:34
+#: modules/System/html_admin/mod_system_settings.html.twig:36
 msgid "Company legal"
 msgstr "Pravna kompanija"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:37
+#: modules/System/html_admin/mod_system_settings.html.twig:39
 msgid "Countries"
 msgstr "Zemlje"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:40
+#: modules/System/html_admin/mod_system_settings.html.twig:42
 msgid "Cache"
 msgstr "Keš"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:46
-#: modules/System/html_admin/mod_system_settings.html.twig:539
+#: modules/System/html_admin/mod_system_settings.html.twig:48
+#: modules/System/html_admin/mod_system_settings.html.twig:544
 msgid "Error reporting"
 msgstr "Prijavljivanje grešaka"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:53
-#: modules/System/html_admin/mod_system_settings.html.twig:212
+#: modules/System/html_admin/mod_system_settings.html.twig:51
+#: modules/System/html_admin/mod_system_settings.html.twig:575
+msgid "Network interface"
+msgstr "Mrežni interfejs"
+
+#: modules/System/html_admin/mod_system_settings.html.twig:58
+#: modules/System/html_admin/mod_system_settings.html.twig:217
 msgid "Company updated"
 msgstr "Kompanija ažurirana"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:77
+#: modules/System/html_admin/mod_system_settings.html.twig:82
 msgid "Address line 1"
 msgstr "Adresa 1"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:78
+#: modules/System/html_admin/mod_system_settings.html.twig:83
 msgid "Address line 2"
 msgstr "Adresa 2"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:79
+#: modules/System/html_admin/mod_system_settings.html.twig:84
 msgid "Address line 3"
 msgstr "Adresa 3"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:83
+#: modules/System/html_admin/mod_system_settings.html.twig:88
 msgid "Logo URL"
 msgstr "URL adresa logo-a"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:89
+#: modules/System/html_admin/mod_system_settings.html.twig:94
 msgid "Logo URL (dark mode)"
 msgstr "URL adresa logo-a (tamni način)"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:95
+#: modules/System/html_admin/mod_system_settings.html.twig:100
 msgid "Favicon"
 msgstr "Favicon"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:101
+#: modules/System/html_admin/mod_system_settings.html.twig:106
 msgid "Company number, chamber of commerce number"
 msgstr "Mb firme, broj privredne komore"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:107
+#: modules/System/html_admin/mod_system_settings.html.twig:112
 msgid "VAT number"
 msgstr "PIB broj"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:125
+#: modules/System/html_admin/mod_system_settings.html.twig:130
 msgid "Bank Account number"
 msgstr "Broj bankovnog računa"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:131
+#: modules/System/html_admin/mod_system_settings.html.twig:136
 msgid "Display bank account information on documents?"
 msgstr "Prikaži informacije bankovnog računa na dokumentima?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:144
+#: modules/System/html_admin/mod_system_settings.html.twig:149
 msgid "Display bank account information on the bottom of every page?"
 msgstr "Prikaži informacije bankovnog računa na dnu svake stranice?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:158
+#: modules/System/html_admin/mod_system_settings.html.twig:163
 msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr "Dozvolite gostujuć́em API-ju da preuzme verziju FOSSBilling-a"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:160
+#: modules/System/html_admin/mod_system_settings.html.twig:165
 msgid "Enabling this functionality may effect modules that depend on it."
 msgstr "Omogucćavanje ove funkcije može uticati na module koji zavise od nje."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:179
+#: modules/System/html_admin/mod_system_settings.html.twig:184
 msgid "Hide some company information in the guest API"
 msgstr "Sakrijte neke informacije o kompaniji u API-ju za goste"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:181
+#: modules/System/html_admin/mod_system_settings.html.twig:186
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
 msgstr "Ako ovo omogućite, sakrićete neke informacije iz krajnje tačke API-ja za goste \"firme\", kao što su adresa, broj telefona, e-pošta, PDV broj i još mnogo toga."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:216
+#: modules/System/html_admin/mod_system_settings.html.twig:221
 msgid "Company terms of service, legal regulation"
 msgstr "Uslovi poslovanja firme, zakonska regulativa"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:220
+#: modules/System/html_admin/mod_system_settings.html.twig:225
 msgid "Company privacy policy"
 msgstr "Politika privatnosti kompanije"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:235
+#: modules/System/html_admin/mod_system_settings.html.twig:240
 msgid "Countries updated"
 msgstr "Zemlje su ažurirane"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:487
+#: modules/System/html_admin/mod_system_settings.html.twig:492
 msgid "List of countries"
 msgstr "Spisak zemalja"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:501
+#: modules/System/html_admin/mod_system_settings.html.twig:506
 msgid "Cache control"
 msgstr "Kontrola keša"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:503
+#: modules/System/html_admin/mod_system_settings.html.twig:508
 msgid "Cache directory is cleared"
 msgstr "Keš direktorijum je obrisan"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:513
+#: modules/System/html_admin/mod_system_settings.html.twig:518
 msgid "About FOSSBilling"
 msgstr "O FOSSBilling"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:518
+#: modules/System/html_admin/mod_system_settings.html.twig:523
 msgid "FOSSBilling version"
 msgstr "FOSSBilling vezija"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:522
+#: modules/System/html_admin/mod_system_settings.html.twig:527
 msgid "PHP version"
 msgstr "PHP verzija"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:526
+#: modules/System/html_admin/mod_system_settings.html.twig:531
 msgid "Instance ID"
 msgstr "ID instance"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:530
+#: modules/System/html_admin/mod_system_settings.html.twig:535
 msgid "License"
 msgstr "Licenca"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:545
+#: modules/System/html_admin/mod_system_settings.html.twig:550
 msgid "Error reporting is enabled."
 msgstr "Izveštaj o greškama omogućen."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:546
+#: modules/System/html_admin/mod_system_settings.html.twig:551
 msgid "This FOSSBilling instance is automatically sending errors which allows us to more easily improve the software and keep it stable. Thanks!"
 msgstr "Ova FOSSBilling instanca automatski šalje greške koje nam omogućavaju da lakše poboljšamo softver i održavamo stabilnim. Hvala!"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:547
+#: modules/System/html_admin/mod_system_settings.html.twig:552
 msgid "Error reporting is now disabled."
 msgstr "Izveštavanje o greškama je onemogućena."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:547
+#: modules/System/html_admin/mod_system_settings.html.twig:552
 msgid "Disable error reporting"
 msgstr "Onemogući izveštavanje o greškama"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:551
+#: modules/System/html_admin/mod_system_settings.html.twig:556
 msgid "Error reporting is disabled."
 msgstr "Izveštavanje o greškama je onemogućen."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:552
+#: modules/System/html_admin/mod_system_settings.html.twig:557
 msgid "Please consider enabling error reporting. Doing so allows us to provide you with better technical support and helps us to proactively improve FOSSBilling."
 msgstr "Molimo imajte u vidu da omogućite izveštaj o greškama. Sa time omogućavate da Vam pružimo bolju tehničku podršku i da nam pomognete da proaktivno poboljšamo FOSSBilling."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:553
+#: modules/System/html_admin/mod_system_settings.html.twig:558
 msgid "Error reporting is now enabled."
 msgstr "Izveštavanje o greškama je omogućena."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:553
+#: modules/System/html_admin/mod_system_settings.html.twig:558
 msgid "Enable error reporting"
 msgstr "Omogući izveštavanje o greškama"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:556
+#: modules/System/html_admin/mod_system_settings.html.twig:561
 msgid "FOSSBilling optionally includes automated error reporting to help aid the project's development and stability. To find the most up-to-date information about it, you should review the links and information below."
 msgstr "FOSSBilling opciono uključuje automatizovano izveštavanje o greškama kako bi se pomogao razvoj i stabilnost projekta. Da biste pronašli najažurnije informacije o tome, trebalo bi da pregledate linkove i informacije u nastavku."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:558
+#: modules/System/html_admin/mod_system_settings.html.twig:563
 msgid "Learn more about error reporting"
 msgstr "Saznajte više o izveštavanju o greškama"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:560
+#: modules/System/html_admin/mod_system_settings.html.twig:565
 msgid "Error reporting changelog"
 msgstr "Greška pri prijavljivanju dnevnika promena"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:561
+#: modules/System/html_admin/mod_system_settings.html.twig:566
 msgid "Last applicable behavior change change: "
 msgstr "Poslednja primenjiva promena ponašanja: "
 
-#: modules/System/html_admin/mod_system_settings.html.twig:564
+#: modules/System/html_admin/mod_system_settings.html.twig:569
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
 msgstr "Poslednja primenjiva promena ponašanja predstavlja najnoviju verziju FOSSBilling-a koja je promenila izveštavanje o greškama što se takođe odnosi na ovu trenutnu verziju. Možda je bilo novijih promena od onih koje su navedene."
+
+#: modules/System/html_admin/mod_system_settings.html.twig:580
+#: modules/System/html_admin/mod_system_settings.html.twig:632
+msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
+msgstr "Sa trenutnim podešavanjima, vaša FOSSBilling instanca će imati spoljnu IP adresu od: "
+
+#: modules/System/html_admin/mod_system_settings.html.twig:582
+#: modules/System/html_admin/mod_system_settings.html.twig:635
+msgid "The currently selected network interface does not appear to be able to reach the internet!"
+msgstr "Čini se da trenutno izabrani mrežni interfejs ne može da pristupi Internetu!"
+
+#: modules/System/html_admin/mod_system_settings.html.twig:588
+msgid "If your server has multiple network interfaces, you may select the default one for FOSSBilling to use when making requests here."
+msgstr "Ako vaš server ima više mrežnih interfejsa, možete izabrati podrazumevani za FOSSBilling koji će se koristiti prilikom postavljanja zahteva ovde."
+
+#: modules/System/html_admin/mod_system_settings.html.twig:592
+msgid "Select the default network interface:"
+msgstr "Izaberite podrazumevani mrežni interfejs:"
+
+#: modules/System/html_admin/mod_system_settings.html.twig:594
+msgid "None (Default PHP Behavior)"
+msgstr "Ništa (Podrazumevano PHP Ponašanje)"
+
+#: modules/System/html_admin/mod_system_settings.html.twig:604
+msgid "Enter a custom interface to use:"
+msgstr "Unesite prilagođeni interfejs koji ćete koristiti:"
+
+#: modules/System/html_admin/mod_system_settings.html.twig:611
+msgid "If the dropdown menu doesn't have the appropriate network interface, please enter the IP address or name (e.g., eth0) of the correct one above."
+msgstr "Ako padajući meni nema odgovarajući mrežni interfejs, unesite IP adresu ili ime (npr. eth0) iznad ispravnog."
+
+#: modules/System/html_admin/mod_system_settings.html.twig:630
+msgid "Network interface updated."
+msgstr "Mrežni interfejs je ažuriran."
 
 #: modules/System/html_admin/mod_system_update.html.twig:15
 msgid "Update release notes"
