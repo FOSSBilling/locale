@@ -3,7 +3,7 @@ name: Delete l10n_main Branch
 # Crowdin doesn't do a good job of auto-cleaning it's branches, so we will delete it via an hourly cronjob
 on:
   schedule:
-    - cron: '0 * * * *'  # Run every hour
+    - cron: '0 */6 * * *'  # Run every 6 hours
 
 jobs:
   delete:
