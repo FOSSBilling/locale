@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-01-17 02:28-0800\n"
-"PO-Revision-Date: 2024-01-18 06:09\n"
+"POT-Creation-Date: 2024-01-19 22:32-0800\n"
+"PO-Revision-Date: 2024-01-21 06:26\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Arabic\n"
 "MIME-Version: 1.0\n"
@@ -338,17 +338,17 @@ msgstr "أخفق إرسال البريد الإلكتروني عبر :transport 
 msgid "SMTP host or port is not configured"
 msgstr "مضيف أو منفذ SMTP لم يتم إعداده"
 
-#: library/FOSSBilling/Tools.php:76 library/FOSSBilling/Tools.php:268
+#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:267
 msgid "Service class :class was not found in :path"
 msgstr "فئة الخدمة :class لم يتم العثور عليها في :path"
 
-#: library/FOSSBilling/Tools.php:314
+#: library/FOSSBilling/Tools.php:313
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "عنوان البريد الإلكتروني"
 
-#: library/FOSSBilling/Tools.php:316 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:315 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: غير صالح"
@@ -864,7 +864,7 @@ msgid "Can not change email. It is already registered."
 msgstr "لا يمكن تغيير البريد الإلكتروني. إنه مسجل من قبل."
 
 #: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
-#: modules/Profile/Api/Admin.php:110 modules/Profile/Api/Client.php:113
+#: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:113
 #: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:107
 msgid "Passwords do not match"
 msgstr "كلمتان السر غير متطابقتين"
@@ -1195,15 +1195,19 @@ msgstr " التسمية يجب أن تكون فريدة من نوعها"
 msgid "Textarea size options must be integer values"
 msgstr "يجب أن تكون خيارات حجم النص قيم صحيحة"
 
-#: modules/Invoice/Api/Admin.php:245 modules/Invoice/Api/Client.php:113
+#: modules/Invoice/Api/Admin.php:73
+msgid "You must set the payment gateway in the invoice manage tab before marking it as paid."
+msgstr ""
+
+#: modules/Invoice/Api/Admin.php:253 modules/Invoice/Api/Client.php:113
 msgid "Order :id is free. No need to generate invoice."
 msgstr "الطلب :id مجاني. لا حاجة إلى إنشاء الفاتورة."
 
-#: modules/Invoice/Api/Admin.php:736
+#: modules/Invoice/Api/Admin.php:744
 msgid "Client currency must match subscription currency. Check if clients currency is defined."
 msgstr "يجب أن تتطابق عملة العميل مع عملة الاشتراك. تحقق من تعريف عملة العملاء."
 
-#: modules/Invoice/Api/Admin.php:795
+#: modules/Invoice/Api/Admin.php:803
 msgid "Subscription not found"
 msgstr "لم يتم العثور على الاشتراك"
 
@@ -1600,7 +1604,7 @@ msgstr "لا يمكن إزالة فئة المنتج مع المنتجات"
 msgid "This promotion code already exists."
 msgstr "رمز الترويج هذا موجود بالفعل."
 
-#: modules/Profile/Api/Admin.php:116 modules/Profile/Api/Client.php:119
+#: modules/Profile/Api/Admin.php:117 modules/Profile/Api/Client.php:119
 msgid "Current password incorrect"
 msgstr "كلمة المرور الحالية غير صحيحة"
 
@@ -2309,63 +2313,63 @@ msgstr "الإعدادات"
 msgid "Update"
 msgstr "تحديث"
 
-#: modules/System/Service.php:38
+#: modules/System/Service.php:37
 msgid "Manage company details"
 msgstr "إدارة تفاصيل الشركة"
 
-#: modules/System/Service.php:39
+#: modules/System/Service.php:38
 msgid "Allows the staff member to update company details as set under the system module."
 msgstr "السماح للموظف بتحديث تفاصيل الشركة على النحو المحدد في وحدة النظام."
 
-#: modules/System/Service.php:43
+#: modules/System/Service.php:42
 msgid "Manage company legal"
 msgstr "إدارة تفاصيل الشركة"
 
-#: modules/System/Service.php:44
+#: modules/System/Service.php:43
 msgid "Allows the staff member to update company legal as set under the system module."
 msgstr "السماح للموظف بتحديث تفاصيل الشركة على النحو المحدد في وحدة النظام."
 
-#: modules/System/Service.php:48
+#: modules/System/Service.php:47
 #: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "Invalidate cache"
 msgstr "إبطال التخزين المؤقت"
 
-#: modules/System/Service.php:49
+#: modules/System/Service.php:48
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
 msgstr "السماح للموظف بإبطال ذاكرة التخزين المؤقت للبرمجيات الحرة والمفتوحة المصدر من داخل إعدادات النظام."
 
-#: modules/System/Service.php:53
+#: modules/System/Service.php:52
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:45
 #: modules/System/html_admin/mod_system_update.html.twig:54
 msgid "Update FOSSBilling"
 msgstr "تحديث FOSSBilling"
 
-#: modules/System/Service.php:54
+#: modules/System/Service.php:53
 msgid "Allows the staff member to update FOSSBilling."
 msgstr "السماح للموظف بتحديث FOSSBilling."
 
-#: modules/System/Service.php:58
+#: modules/System/Service.php:57
 msgid "Manage the network interface"
 msgstr ""
 
-#: modules/System/Service.php:59
+#: modules/System/Service.php:58
 msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
 msgstr ""
 
-#: modules/System/Service.php:71
+#: modules/System/Service.php:70
 msgid "Parameter key is missing"
 msgstr "البارمتر مفقود"
 
-#: modules/System/Service.php:140
+#: modules/System/Service.php:139
 msgid "Invalid parameter name, received: param_"
 msgstr "اسم المعلمة غير صالح، مستلم: param_"
 
-#: modules/System/Service.php:539
+#: modules/System/Service.php:538
 msgid "Parameter :param does not exist"
 msgstr "نوع المعلمة غير موجود"
 
-#: modules/System/Service.php:1399
+#: modules/System/Service.php:1398
 msgid "Country :code phone code is not registered"
 msgstr "رمز الهاتف الخاص بالبلد :code غير مسجل"
 
