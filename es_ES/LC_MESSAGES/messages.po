@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-01-17 02:28-0800\n"
-"PO-Revision-Date: 2024-01-18 06:09\n"
+"POT-Creation-Date: 2024-01-19 22:32-0800\n"
+"PO-Revision-Date: 2024-01-21 06:26\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -322,17 +322,17 @@ msgstr "No se pudo enviar el correo a través de :transport con la excepción :e
 msgid "SMTP host or port is not configured"
 msgstr "El nombre de host SMTP o el puerto no está configurado"
 
-#: library/FOSSBilling/Tools.php:76 library/FOSSBilling/Tools.php:268
+#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:267
 msgid "Service class :class was not found in :path"
 msgstr "Clase de servicio: la clase no se encontró en :path"
 
-#: library/FOSSBilling/Tools.php:314
+#: library/FOSSBilling/Tools.php:313
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Correo electrónico"
 
-#: library/FOSSBilling/Tools.php:316 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:315 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: no es válido"
@@ -848,7 +848,7 @@ msgid "Can not change email. It is already registered."
 msgstr "No se puede cambiar el correo electrónico. Ya está registrado."
 
 #: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
-#: modules/Profile/Api/Admin.php:110 modules/Profile/Api/Client.php:113
+#: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:113
 #: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:107
 msgid "Passwords do not match"
 msgstr "Las contraseñas no coinciden"
@@ -1179,15 +1179,19 @@ msgstr " las etiquetas deben ser únicas"
 msgid "Textarea size options must be integer values"
 msgstr "Las opciones de tamaño del área de texto deben ser valores enteros"
 
-#: modules/Invoice/Api/Admin.php:245 modules/Invoice/Api/Client.php:113
+#: modules/Invoice/Api/Admin.php:73
+msgid "You must set the payment gateway in the invoice manage tab before marking it as paid."
+msgstr ""
+
+#: modules/Invoice/Api/Admin.php:253 modules/Invoice/Api/Client.php:113
 msgid "Order :id is free. No need to generate invoice."
 msgstr "Orden :id es gratis. No es necesario generar factura."
 
-#: modules/Invoice/Api/Admin.php:736
+#: modules/Invoice/Api/Admin.php:744
 msgid "Client currency must match subscription currency. Check if clients currency is defined."
 msgstr "La moneda del cliente debe coincidir con la moneda de suscripción. Compruebe si la moneda de los clientes está definida."
 
-#: modules/Invoice/Api/Admin.php:795
+#: modules/Invoice/Api/Admin.php:803
 msgid "Subscription not found"
 msgstr "Suscripción no encontrada"
 
@@ -1584,7 +1588,7 @@ msgstr "No se puede eliminar la categoría de producto con productos"
 msgid "This promotion code already exists."
 msgstr "Este código de promoción ya existe."
 
-#: modules/Profile/Api/Admin.php:116 modules/Profile/Api/Client.php:119
+#: modules/Profile/Api/Admin.php:117 modules/Profile/Api/Client.php:119
 msgid "Current password incorrect"
 msgstr "La contraseña actual es incorrecta"
 
@@ -2293,63 +2297,63 @@ msgstr "Ajustes"
 msgid "Update"
 msgstr "Actualizar"
 
-#: modules/System/Service.php:38
+#: modules/System/Service.php:37
 msgid "Manage company details"
 msgstr "Administrar datos de la empresa"
 
-#: modules/System/Service.php:39
+#: modules/System/Service.php:38
 msgid "Allows the staff member to update company details as set under the system module."
 msgstr "Permite al miembro del personal actualizar los detalles de la empresa según lo establecido en el módulo del sistema."
 
-#: modules/System/Service.php:43
+#: modules/System/Service.php:42
 msgid "Manage company legal"
 msgstr "Administrar datos legales de la empresa"
 
-#: modules/System/Service.php:44
+#: modules/System/Service.php:43
 msgid "Allows the staff member to update company legal as set under the system module."
 msgstr "Permite al miembro del personal actualizar la empresa legal según lo establecido en el módulo del sistema."
 
-#: modules/System/Service.php:48
+#: modules/System/Service.php:47
 #: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "Invalidate cache"
 msgstr "Borrar la caché"
 
-#: modules/System/Service.php:49
+#: modules/System/Service.php:48
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
 msgstr "Permite al miembro del personal invalidar la caché FOSSBilling desde la configuración del sistema."
 
-#: modules/System/Service.php:53
+#: modules/System/Service.php:52
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:45
 #: modules/System/html_admin/mod_system_update.html.twig:54
 msgid "Update FOSSBilling"
 msgstr "Actualizar FOSSBilling"
 
-#: modules/System/Service.php:54
+#: modules/System/Service.php:53
 msgid "Allows the staff member to update FOSSBilling."
 msgstr "Permite al miembro del personal actualizar FOSSBilling."
 
-#: modules/System/Service.php:58
+#: modules/System/Service.php:57
 msgid "Manage the network interface"
 msgstr ""
 
-#: modules/System/Service.php:59
+#: modules/System/Service.php:58
 msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
 msgstr ""
 
-#: modules/System/Service.php:71
+#: modules/System/Service.php:70
 msgid "Parameter key is missing"
 msgstr "Falta la clave de parámetro"
 
-#: modules/System/Service.php:140
+#: modules/System/Service.php:139
 msgid "Invalid parameter name, received: param_"
 msgstr "Nombre de parámetro no válido, recibido: param_"
 
-#: modules/System/Service.php:539
+#: modules/System/Service.php:538
 msgid "Parameter :param does not exist"
 msgstr "Parámetro :param no existe"
 
-#: modules/System/Service.php:1399
+#: modules/System/Service.php:1398
 msgid "Country :code phone code is not registered"
 msgstr "País: el código del teléfono no está registrado"
 
