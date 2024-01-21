@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-01-17 02:28-0800\n"
-"PO-Revision-Date: 2024-01-19 06:13\n"
+"POT-Creation-Date: 2024-01-19 22:32-0800\n"
+"PO-Revision-Date: 2024-01-21 06:26\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -330,17 +330,17 @@ msgstr "Не удалось отправить электронное письм
 msgid "SMTP host or port is not configured"
 msgstr "SMTP хост или порт не настроен"
 
-#: library/FOSSBilling/Tools.php:76 library/FOSSBilling/Tools.php:268
+#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:267
 msgid "Service class :class was not found in :path"
 msgstr "Сервис класса :class не найден в :path"
 
-#: library/FOSSBilling/Tools.php:314
+#: library/FOSSBilling/Tools.php:313
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Почтовый адрес"
 
-#: library/FOSSBilling/Tools.php:316 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:315 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: является недопустимым"
@@ -856,7 +856,7 @@ msgid "Can not change email. It is already registered."
 msgstr "Невозможно изменить адрес электронной почты. Он уже зарегистрирован."
 
 #: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
-#: modules/Profile/Api/Admin.php:110 modules/Profile/Api/Client.php:113
+#: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:113
 #: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:107
 msgid "Passwords do not match"
 msgstr "Пароли не совпадают"
@@ -1187,15 +1187,19 @@ msgstr " ярлык должен быть уникальным"
 msgid "Textarea size options must be integer values"
 msgstr "Параметры размера текста должны быть целым числом"
 
-#: modules/Invoice/Api/Admin.php:245 modules/Invoice/Api/Client.php:113
+#: modules/Invoice/Api/Admin.php:73
+msgid "You must set the payment gateway in the invoice manage tab before marking it as paid."
+msgstr ""
+
+#: modules/Invoice/Api/Admin.php:253 modules/Invoice/Api/Client.php:113
 msgid "Order :id is free. No need to generate invoice."
 msgstr "Заказ :id является бесплатным. Не нужно генерировать счет."
 
-#: modules/Invoice/Api/Admin.php:736
+#: modules/Invoice/Api/Admin.php:744
 msgid "Client currency must match subscription currency. Check if clients currency is defined."
 msgstr "Валюта клиента должна совпадать с валютой подписки. Убедитесь, что валюта клиента определена."
 
-#: modules/Invoice/Api/Admin.php:795
+#: modules/Invoice/Api/Admin.php:803
 msgid "Subscription not found"
 msgstr "Подписка не найдена"
 
@@ -1592,7 +1596,7 @@ msgstr "Невозможно удалить категорию товара с �
 msgid "This promotion code already exists."
 msgstr "Этот промо-код уже существует."
 
-#: modules/Profile/Api/Admin.php:116 modules/Profile/Api/Client.php:119
+#: modules/Profile/Api/Admin.php:117 modules/Profile/Api/Client.php:119
 msgid "Current password incorrect"
 msgstr "Неверный пароль"
 
@@ -2301,63 +2305,63 @@ msgstr "Настройки"
 msgid "Update"
 msgstr "Обновления"
 
-#: modules/System/Service.php:38
+#: modules/System/Service.php:37
 msgid "Manage company details"
 msgstr "Управлять информацией о компании"
 
-#: modules/System/Service.php:39
+#: modules/System/Service.php:38
 msgid "Allows the staff member to update company details as set under the system module."
 msgstr "Позволяет сотруднику обновить данные компании, как установлено в системном модуле."
 
-#: modules/System/Service.php:43
+#: modules/System/Service.php:42
 msgid "Manage company legal"
 msgstr "Управление юридическими лицами компании"
 
-#: modules/System/Service.php:44
+#: modules/System/Service.php:43
 msgid "Allows the staff member to update company legal as set under the system module."
 msgstr "Позволяет сотруднику обновить данные компании, как установлено в системном модуле."
 
-#: modules/System/Service.php:48
+#: modules/System/Service.php:47
 #: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "Invalidate cache"
 msgstr "Аннулировать кэш"
 
-#: modules/System/Service.php:49
+#: modules/System/Service.php:48
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
 msgstr "Позволяет сотруднику аннулировать кэш FOSSBilling из системных настроек."
 
-#: modules/System/Service.php:53
+#: modules/System/Service.php:52
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:45
 #: modules/System/html_admin/mod_system_update.html.twig:54
 msgid "Update FOSSBilling"
 msgstr "Обновить FOSSBilling"
 
-#: modules/System/Service.php:54
+#: modules/System/Service.php:53
 msgid "Allows the staff member to update FOSSBilling."
 msgstr "Позволяет сотруднику обновить FOSSBilling."
 
-#: modules/System/Service.php:58
+#: modules/System/Service.php:57
 msgid "Manage the network interface"
 msgstr "Управление сетевым интерфейсом"
 
-#: modules/System/Service.php:59
+#: modules/System/Service.php:58
 msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
 msgstr "Позволяет сотруднику получить список всех локальных IP адресов интерфейса и установить сетевой интерфейс по умолчанию для использования FOSSBilling по умолчанию."
 
-#: modules/System/Service.php:71
+#: modules/System/Service.php:70
 msgid "Parameter key is missing"
 msgstr "Отсутствует шаблон параметра"
 
-#: modules/System/Service.php:140
+#: modules/System/Service.php:139
 msgid "Invalid parameter name, received: param_"
 msgstr "Получено неверное имя параметра: param_"
 
-#: modules/System/Service.php:539
+#: modules/System/Service.php:538
 msgid "Parameter :param does not exist"
 msgstr "Параметр :param не существует"
 
-#: modules/System/Service.php:1399
+#: modules/System/Service.php:1398
 msgid "Country :code phone code is not registered"
 msgstr "Код страны :code телефона не зарегистрирован"
 
