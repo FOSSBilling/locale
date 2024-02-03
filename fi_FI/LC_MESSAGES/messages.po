@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-01-19 22:32-0800\n"
-"PO-Revision-Date: 2024-01-21 06:26\n"
+"POT-Creation-Date: 2024-02-02 12:21-0800\n"
+"PO-Revision-Date: 2024-02-03 01:16\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Finnish\n"
 "MIME-Version: 1.0\n"
@@ -361,7 +361,7 @@ msgstr "Välimuistin tyhjentäminen ja/tai asennuskansion poistaminen ei onnistu
 msgid "Unable to load existing configuration"
 msgstr "Olemassa olevaa kokoonpanoa ei voida ladata"
 
-#: library/FOSSBilling/UpdatePatcher.php:154
+#: library/FOSSBilling/UpdatePatcher.php:155
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr "Tietokantakorjausten soveltamisessa tapahtui virhe. Tarkista virhelokista tiedot virheestä, korjaa se ja suorita sitten varmuuskopiointikorjausmenetelmä päivityksen loppuun saattamiseksi."
 
@@ -460,11 +460,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Uudelleenohjataan PayPal.com:iin"
 
 #: library/Payment/Adapter/PayPalEmail.php:306
-#: library/Payment/Adapter/Stripe.php:112 modules/Invoice/Service.php:1349
+#: library/Payment/Adapter/Stripe.php:112 modules/Invoice/Service.php:1350
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Maksu laskusta :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:114 modules/Invoice/Service.php:1351
+#: library/Payment/Adapter/Stripe.php:114 modules/Invoice/Service.php:1352
 msgid "Payment for invoice :serie:id"
 msgstr "Maksu laskusta :serie:id"
 
@@ -521,9 +521,9 @@ msgstr "verkkotunnuksen siirrettävyyden tarkistaminen"
 #: library/Server/Manager/Directadmin.php:132
 #: library/Server/Manager/Directadmin.php:146
 #: library/Server/Manager/Directadmin.php:208
-#: library/Server/Manager/Directadmin.php:437
-#: library/Server/Manager/Hestia.php:295 library/Server/Manager/Hestia.php:305
-#: library/Server/Manager/Hestia.php:340 library/Server/Manager/Plesk.php:101
+#: library/Server/Manager/Directadmin.php:439
+#: library/Server/Manager/Hestia.php:296 library/Server/Manager/Hestia.php:306
+#: library/Server/Manager/Hestia.php:341 library/Server/Manager/Plesk.php:101
 #: library/Server/Manager/Plesk.php:314 library/Server/Manager/Plesk.php:360
 msgid ":type: does not support :action:"
 msgstr ":type: ei tue :action:"
@@ -622,8 +622,8 @@ msgstr "Yhteyshenkilöä ei löydy"
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "\":server_manager\" -palvelinhallinta ei ole täysin määritetty. Määritä :missing"
 
-#: library/Server/Manager/CWP.php:115 library/Server/Manager/Directadmin.php:651
-#: library/Server/Manager/Hestia.php:110 library/Server/Manager/Hestia.php:377
+#: library/Server/Manager/CWP.php:115 library/Server/Manager/Directadmin.php:653
+#: library/Server/Manager/Hestia.php:111 library/Server/Manager/Hestia.php:378
 #: library/Server/Manager/Plesk.php:86
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
 msgstr "Yhteyden muodostaminen :type: -palvelimeen epäonnistui. Tarkista valtakirjasi ja asetuksesi"
@@ -635,49 +635,49 @@ msgstr "luo tili"
 #: library/Server/Manager/CWP.php:186 library/Server/Manager/CWP.php:213
 #: library/Server/Manager/CWP.php:240 library/Server/Manager/CWP.php:270
 #: library/Server/Manager/CWP.php:299 library/Server/Manager/CWP.php:328
-#: library/Server/Manager/Directadmin.php:667
-#: library/Server/Manager/Hestia.php:163 library/Server/Manager/Hestia.php:180
-#: library/Server/Manager/Hestia.php:207 library/Server/Manager/Hestia.php:231
-#: library/Server/Manager/Hestia.php:256 library/Server/Manager/Hestia.php:282
-#: library/Server/Manager/Hestia.php:327 library/Server/Manager/Plesk.php:146
+#: library/Server/Manager/Directadmin.php:669
+#: library/Server/Manager/Hestia.php:164 library/Server/Manager/Hestia.php:181
+#: library/Server/Manager/Hestia.php:208 library/Server/Manager/Hestia.php:232
+#: library/Server/Manager/Hestia.php:257 library/Server/Manager/Hestia.php:283
+#: library/Server/Manager/Hestia.php:328 library/Server/Manager/Plesk.php:146
 #: library/Server/Manager/Whm.php:578 library/Server/Manager/Whm.php:585
 #: library/Server/Manager/Whm.php:592 library/Server/Manager/Whm.php:599
 #: library/Server/Manager/Whm.php:606
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr "Epäonnistunut :action: :type: palvelimella, tarkista tarkemmat tiedot virhelokeista"
 
-#: library/Server/Manager/CWP.php:211 library/Server/Manager/Hestia.php:205
+#: library/Server/Manager/CWP.php:211 library/Server/Manager/Hestia.php:206
 msgid "suspend account"
 msgstr "keskeytä tili"
 
-#: library/Server/Manager/CWP.php:238 library/Server/Manager/Hestia.php:229
+#: library/Server/Manager/CWP.php:238 library/Server/Manager/Hestia.php:230
 msgid "unsuspend account"
 msgstr "peruuta tilin keskeytys"
 
-#: library/Server/Manager/CWP.php:268 library/Server/Manager/Hestia.php:254
+#: library/Server/Manager/CWP.php:268 library/Server/Manager/Hestia.php:255
 msgid "cancel account"
 msgstr "peruuta tili"
 
-#: library/Server/Manager/CWP.php:297 library/Server/Manager/Hestia.php:280
+#: library/Server/Manager/CWP.php:297 library/Server/Manager/Hestia.php:281
 msgid "change account package"
 msgstr "vaihda tilipaketti"
 
-#: library/Server/Manager/CWP.php:326 library/Server/Manager/Hestia.php:325
+#: library/Server/Manager/CWP.php:326 library/Server/Manager/Hestia.php:326
 msgid "change account password"
 msgstr "vaihda tilin salasana"
 
 #: library/Server/Manager/CWP.php:344 library/Server/Manager/Directadmin.php:208
-#: library/Server/Manager/Hestia.php:295 library/Server/Manager/Plesk.php:314
+#: library/Server/Manager/Hestia.php:296 library/Server/Manager/Plesk.php:314
 msgid "username changes"
 msgstr "käyttäjätunnuksen muutokset"
 
 #: library/Server/Manager/CWP.php:357 library/Server/Manager/Directadmin.php:132
-#: library/Server/Manager/Hestia.php:305
+#: library/Server/Manager/Hestia.php:306
 msgid "changing the account domain"
 msgstr "tilin verkkotunnuksen muuttaminen"
 
 #: library/Server/Manager/CWP.php:370 library/Server/Manager/Directadmin.php:146
-#: library/Server/Manager/Hestia.php:340 library/Server/Manager/Plesk.php:360
+#: library/Server/Manager/Hestia.php:341 library/Server/Manager/Plesk.php:360
 msgid "changing the account IP"
 msgstr "tilin IP-osoitteen muuttaminen"
 
@@ -693,35 +693,35 @@ msgstr "Jälleenmyyjälle ei pystytä osoittamaan MITÄÄN ips:ää. Varmista, e
 msgid "Error creating user"
 msgstr "Virhe käyttäjän luomisessa"
 
-#: library/Server/Manager/Directadmin.php:437
+#: library/Server/Manager/Directadmin.php:439
 msgid "synchronizing the account"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:482
+#: library/Server/Manager/Directadmin.php:484
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Server Manager DirectAdmin -virhe: \"Tiliä ei ole keskeytetty\""
 
-#: library/Server/Manager/Directadmin.php:643 library/Server/Manager/Whm.php:561
+#: library/Server/Manager/Directadmin.php:645 library/Server/Manager/Whm.php:561
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
-#: library/Server/Manager/Directadmin.php:656
+#: library/Server/Manager/Directadmin.php:658
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Server Manager DirectAdmin -virhe: \"Tekemääsi pyyntöä ei voida suorittaa, koska sitä ei ole olemassa valtuustasollasi\""
 
-#: library/Server/Manager/Hestia.php:161
+#: library/Server/Manager/Hestia.php:162
 msgid "create user"
 msgstr "luo käyttäjä"
 
-#: library/Server/Manager/Hestia.php:174
+#: library/Server/Manager/Hestia.php:175
 msgid "delete domain"
 msgstr "poista verkkotunnus"
 
-#: library/Server/Manager/Hestia.php:174 library/Server/Manager/Hestia.php:178
+#: library/Server/Manager/Hestia.php:175 library/Server/Manager/Hestia.php:179
 msgid "create domain"
 msgstr "luo verkkotunnus"
 
-#: library/Server/Manager/Hestia.php:176
+#: library/Server/Manager/Hestia.php:177
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
 msgstr "Epäonnistui :action1: :type: palvelimella sen jälkeen, kun :action2: epäonnistui, tarkista tarkemmat tiedot virhelokeista"
 
@@ -749,7 +749,7 @@ msgstr "Poista aktiviteetti"
 msgid "Allows the staff member to delete recorded activity."
 msgstr "Sallii henkilöstön jäsenen poistaa kirjattuja toimintoja."
 
-#: modules/Api/Controller/Client.php:50 modules/Api/Controller/Client.php:255
+#: modules/Api/Controller/Client.php:50 modules/Api/Controller/Client.php:256
 msgid "Unknown API call :call"
 msgstr "Tuntematon API-kutsu :call"
 
@@ -761,13 +761,13 @@ msgstr "Virheellinen pyyntö. Varmista, että pyynnön alkuperä on :from"
 msgid "Unauthorized IP"
 msgstr "Luvaton IP-osoite"
 
-#: modules/Api/Controller/Client.php:197 modules/Api/Controller/Client.php:201
-#: modules/Api/Controller/Client.php:205 modules/Api/Controller/Client.php:219
-#: modules/Api/Controller/Client.php:228 modules/Api/Controller/Client.php:242
+#: modules/Api/Controller/Client.php:198 modules/Api/Controller/Client.php:202
+#: modules/Api/Controller/Client.php:206 modules/Api/Controller/Client.php:220
+#: modules/Api/Controller/Client.php:229 modules/Api/Controller/Client.php:243
 msgid "Authentication Failed"
 msgstr "Autentikointi epäonnistui"
 
-#: modules/Api/Controller/Client.php:334
+#: modules/Api/Controller/Client.php:335
 msgid "CSRF token invalid"
 msgstr "CSRF-tunniste on virheellinen"
 
@@ -779,11 +779,11 @@ msgid "Currency not found"
 msgstr "Valuuttaa ei löydy"
 
 #: modules/Cart/Api/Guest.php:96 modules/Cart/Api/Guest.php:104
-#: modules/Cart/Service.php:436
+#: modules/Cart/Service.php:447
 msgid "Promo code is expired or does not exist"
 msgstr "Kampanjakoodi on vanhentunut tai sitä ei ole olemassa"
 
-#: modules/Cart/Api/Guest.php:100 modules/Cart/Service.php:440
+#: modules/Cart/Api/Guest.php:100 modules/Cart/Service.php:451
 msgid "Promo can not be applied to your account"
 msgstr "Kampanjaa ei voi soveltaa tilillesi"
 
@@ -795,47 +795,47 @@ msgstr "Lisätuotteita ei voida lisätä erikseen."
 msgid "One or more of your selected addons are invalid for the associated product."
 msgstr "Yksi tai useampi valitsemistasi lisäosista ei kelpaa kyseiseen tuotteeseen."
 
-#: modules/Cart/Service.php:91
+#: modules/Cart/Service.php:102
 msgid "Selected billing period is invalid"
 msgstr "Valittu laskutusjakso on virheellinen"
 
-#: modules/Cart/Service.php:98
+#: modules/Cart/Service.php:109
 msgid "This item is currently out of stock"
 msgstr "Tämä tuote on tällä hetkellä loppu varastosta"
 
-#: modules/Cart/Service.php:131
+#: modules/Cart/Service.php:142
 msgid "Selected billing period is invalid for the selected addon"
 msgstr "Valittu laskutusjakso ei ole voimassa valitun lisäosan osalta"
 
-#: modules/Cart/Service.php:225 modules/Product/Api/Guest.php:82
+#: modules/Cart/Service.php:236 modules/Product/Api/Guest.php:82
 msgid "Product not found"
 msgstr "Tuotetta ei löydy"
 
-#: modules/Cart/Service.php:287
+#: modules/Cart/Service.php:298
 msgid "Add products to cart before applying promo code"
 msgstr "Lisää tuotteet ostoskoriin ennen tarjouskoodin käyttöä"
 
-#: modules/Cart/Service.php:432
+#: modules/Cart/Service.php:443
 msgid "You have already used this promo code. Please remove promo code and checkout again."
 msgstr "Olet jo käyttänyt tämän tarjouskoodin. Poista tarjouskoodi ja mene uudelleen kassalle."
 
-#: modules/Cart/Service.php:492
+#: modules/Cart/Service.php:503
 msgid "Can not checkout an empty cart"
 msgstr "Tyhjää ostoskoria ei voi viedä kassalle"
 
-#: modules/Cart/Service.php:504
+#: modules/Cart/Service.php:515
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
 msgstr "Valittu valuutta :selected ei vastaa profiilisi valuuttaa :code. Vaihda ostoskorin valuutta jatkaaksesi."
 
-#: modules/Cart/Service.php:520
+#: modules/Cart/Service.php:531
 msgid "Unable to complete order. One or more of the selected products are invalid."
 msgstr "Tilausta ei pystytä suorittamaan loppuun. Yksi tai useampi valituista tuotteista on virheellinen."
 
-#: modules/Cart/Service.php:593
+#: modules/Cart/Service.php:604
 msgid "Discount: :product"
 msgstr "Alennus: :product"
 
-#: modules/Cart/Service.php:605
+#: modules/Cart/Service.php:616
 msgid ":product setup"
 msgstr ":product asennus"
 
@@ -847,7 +847,7 @@ msgstr "Sähköposti on jo rekisteröity."
 msgid "Can not change email. It is already registered."
 msgstr "Sähköpostia ei voi muuttaa. Se on jo rekisteröity."
 
-#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:224
+#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:227
 #: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:113
 #: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:107
 msgid "Passwords do not match"
@@ -877,7 +877,7 @@ msgstr "Sähköposti on jo rekisteröity. Voit halutessasi kirjautua sisään re
 msgid "Please check your login details."
 msgstr "Ole hyvä ja tarkista kirjautumistietosi."
 
-#: modules/Client/Api/Guest.php:229 modules/Client/Api/Guest.php:233
+#: modules/Client/Api/Guest.php:232 modules/Client/Api/Guest.php:236
 #: modules/Client/Service.php:703
 msgid "The link has expired or you have already reset your password."
 msgstr "Linkki on vanhentunut tai olet jo palauttanut salasanasi."
@@ -2057,7 +2057,7 @@ msgid "Can not remove group which has staff members"
 msgstr "Ryhmää, jossa on henkilökunnan jäseniä, ei voi poistaa"
 
 #: modules/Support/Api/Admin.php:838 modules/Support/Api/Admin.php:912
-#: modules/Support/Service.php:1641
+#: modules/Support/Service.php:1651
 msgid "Article not found"
 msgstr "Artikkelia ei löytynyt"
 
@@ -2069,7 +2069,7 @@ msgstr "Artikkelikategoriaa ei löytynyt"
 msgid "Category not found"
 msgstr "Kategoriaa ei löytynyt"
 
-#: modules/Support/Api/Client.php:124 modules/Support/Service.php:247
+#: modules/Support/Api/Client.php:124 modules/Support/Service.php:250
 msgid "Ticket not found"
 msgstr "Tukipyyntöä ei löydy"
 
@@ -2121,6 +2121,7 @@ msgstr "Asiakkaiden tukipyynnöt"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:22
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:19
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:88
+#: modules/Support/html_admin/mod_support_settings.html.twig:115
 msgid "Public Tickets"
 msgstr "Julkiset tukipyynnöt"
 
@@ -2146,35 +2147,39 @@ msgstr "Valmiit vastaukset"
 msgid "Knowledge Base"
 msgstr "Tietopankki"
 
-#: modules/Support/Service.php:651
+#: modules/Support/Service.php:654
 msgid "Can not remove helpdesk which has tickets"
 msgstr "Tukipalvelu, jolla on tukipyyntöjä, ei voi poistaa"
 
-#: modules/Support/Service.php:874
+#: modules/Support/Service.php:812
+msgid "We currently aren't accepting support tickets from unregistered users. Please use another contact method."
+msgstr ""
+
+#: modules/Support/Service.php:884
 msgid "Order ID does not exist"
 msgstr "Tilaustunnusta ei ole olemassa"
 
-#: modules/Support/Service.php:884
+#: modules/Support/Service.php:894
 msgid "You must provide both an order ID and a new product ID in order to request an upgrade."
 msgstr "Sinun on annettava sekä tilaustunnus että uuden tuotteen tunnus, jotta voit pyytää päivitystä."
 
-#: modules/Support/Service.php:892
+#: modules/Support/Service.php:902
 msgid "Sorry, but \":product\" is not allowed to be upgraded to \":upgrade\""
 msgstr "Anteeksi, mutta \":product\" ei saa päivittää muotoon \":upgrade\""
 
-#: modules/Support/Service.php:898
+#: modules/Support/Service.php:908
 msgid "We have already received this request."
 msgstr "Olemme jo vastaanottaneet tämän pyynnön."
 
-#: modules/Support/Service.php:973
+#: modules/Support/Service.php:983
 msgid "Identity is invalid"
 msgstr "Henkilöllisyys on virheellinen"
 
-#: modules/Support/Service.php:1002
+#: modules/Support/Service.php:1012
 msgid "Public ticket not found"
 msgstr "Julkista tukipyyntöä ei löytynyt"
 
-#: modules/Support/Service.php:1738
+#: modules/Support/Service.php:1748
 msgid "Can not remove category which has articles"
 msgstr "Ei voi poistaa kategoriaa, jossa on artikkeleita"
 
@@ -2289,7 +2294,7 @@ msgstr "Asetukset"
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:92
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:65
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:137
-#: modules/Support/html_admin/mod_support_settings.html.twig:115
+#: modules/Support/html_admin/mod_support_settings.html.twig:126
 #: modules/Support/html_admin/mod_support_ticket.html.twig:163
 #: modules/System/html_admin/mod_system_settings.html.twig:614
 #: modules/System/html_admin/mod_system_update.html.twig:5
@@ -2516,7 +2521,7 @@ msgstr "Päivämäärä"
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:165
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:100
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:199
-#: modules/Support/html_admin/mod_support_settings.html.twig:160
+#: modules/Support/html_admin/mod_support_settings.html.twig:171
 #: modules/Support/html_admin/mod_support_ticket.html.twig:106
 #: modules/Support/html_admin/mod_support_ticket.html.twig:116
 #: modules/Support/html_admin/mod_support_ticket.html.twig:179
@@ -2583,7 +2588,7 @@ msgstr "Oletko varma?"
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:99
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:175
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:139
-#: modules/Support/html_admin/mod_support_settings.html.twig:173
+#: modules/Support/html_admin/mod_support_settings.html.twig:184
 #: modules/Support/html_admin/mod_support_ticket.html.twig:254
 #: modules/Support/html_admin/mod_support_tickets.html.twig:277
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:84
@@ -2654,7 +2659,7 @@ msgstr "Muokkaa asiakasryhmää"
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:58
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:119
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:187
-#: modules/Support/html_admin/mod_support_settings.html.twig:136
+#: modules/Support/html_admin/mod_support_settings.html.twig:147
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:12
 msgid "Title"
 msgstr "Otsikko"
@@ -2752,7 +2757,7 @@ msgstr "Yrityksen nimi"
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:47
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:56
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:99
-#: modules/Support/html_admin/mod_support_settings.html.twig:137
+#: modules/Support/html_admin/mod_support_settings.html.twig:148
 #: modules/Support/html_admin/mod_support_tickets.html.twig:347
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:31
@@ -3139,7 +3144,7 @@ msgstr "Profiili"
 #: modules/Product/html_admin/mod_product_manage.html.twig:78
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:98
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:246
-#: modules/Support/html_admin/mod_support_settings.html.twig:153
+#: modules/Support/html_admin/mod_support_settings.html.twig:164
 msgid "Edit"
 msgstr "Muokkaa"
 
@@ -3249,8 +3254,8 @@ msgstr "Kirjaudu asiakasalueelle"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:254
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:93
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:105
-#: modules/Support/html_admin/mod_support_settings.html.twig:161
-#: modules/Support/html_admin/mod_support_settings.html.twig:164
+#: modules/Support/html_admin/mod_support_settings.html.twig:172
+#: modules/Support/html_admin/mod_support_settings.html.twig:175
 #: modules/Support/html_admin/mod_support_ticket.html.twig:121
 msgid "Delete"
 msgstr "Poista"
@@ -7526,7 +7531,7 @@ msgstr "Uusi verkkotunnusrekisterinpitäjä"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:15
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:121
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:122
 msgid "Nameservers"
 msgstr "Nimipalvelimet"
 
@@ -7683,7 +7688,7 @@ msgstr "Nimipalvelimet päivitetty"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:50
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:123
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:124
 msgid "Nameserver 1"
 msgstr "Nimipalvelin 1"
 
@@ -7694,7 +7699,7 @@ msgstr "Nimipalvelin 1"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:53
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:129
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:130
 msgid "Nameserver 2"
 msgstr "Nimipalvelin 2"
 
@@ -7705,7 +7710,7 @@ msgstr "Nimipalvelin 2"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:56
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:135
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:136
 msgid "Nameserver 3"
 msgstr "Nimipalvelin 3"
 
@@ -7716,7 +7721,7 @@ msgstr "Nimipalvelin 3"
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:141
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:142
 msgid "Nameserver 4"
 msgstr "Nimipalvelin 4"
 
@@ -8209,7 +8214,7 @@ msgid "Test connection"
 msgstr "Testaa yhteys"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:64
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:173
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:174
 msgid "Server connected"
 msgstr "Palvelin yhdistetty"
 
@@ -8462,7 +8467,11 @@ msgstr "Käyttäjien etuliite"
 msgid "Prefix for created users (especially for database)"
 msgstr "Etuliite luoduille käyttäjille (erityisesti tietokannalle)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:148
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:116
+msgid "Some server managers may ignore this option due to limitations / requirements for usernames imposed by the control panel."
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:149
 msgid "Update server"
 msgstr "Päivitä palvelin"
 
@@ -9201,11 +9210,15 @@ msgstr "Jos asetettu, aika tunnissa (tunteissa), jonka käyttäjän on odotettav
 msgid "Enable Knowledge Base"
 msgstr "Ota tietopankki käyttöön"
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:127
+#: modules/Support/html_admin/mod_support_settings.html.twig:117
+msgid "Disable Public Tickets"
+msgstr ""
+
+#: modules/Support/html_admin/mod_support_settings.html.twig:138
 msgid "New Helpdesk"
 msgstr "Uusi tukipalvelu"
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:138
+#: modules/Support/html_admin/mod_support_settings.html.twig:149
 msgid "Close Tickets After"
 msgstr "Sulje tukipyynnöt jälkeen"
 
