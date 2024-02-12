@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-02-02 12:21-0800\n"
-"PO-Revision-Date: 2024-02-03 01:16\n"
+"POT-Creation-Date: 2024-02-11 12:54-0800\n"
+"PO-Revision-Date: 2024-02-12 01:47\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Vietnamese\n"
 "MIME-Version: 1.0\n"
@@ -27,23 +27,23 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: vi_VN\n"
 
-#: di.php:317
+#: di.php:315
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr ""
 
-#: di.php:365 di.php:439
+#: di.php:363 di.php:437
 msgid "Client is not logged in"
 msgstr ""
 
-#: di.php:405 di.php:477
+#: di.php:403 di.php:475
 msgid "Admin is not logged in"
 msgstr "Quản trị viên chưa đăng nhập"
 
-#: di.php:517
+#: di.php:515
 msgid "Unrecognized Handler type: "
 msgstr ""
 
-#: di.php:527
+#: di.php:525
 msgid "Please check your mailbox and confirm email address."
 msgstr "Vui lòng kiểm tra hộp thư của bạn và xác nhận địa chỉ email đó."
 
@@ -266,7 +266,7 @@ msgstr "Không thể tạo backup của file cấu hình."
 msgid "Error when writing updated configuration file."
 msgstr "Lỗi khi ghi vào tệp cấu hình cập nhật."
 
-#: library/FOSSBilling/Config.php:145
+#: library/FOSSBilling/Config.php:146
 msgid "Too many iterations performed while formatting the config file"
 msgstr ""
 
@@ -318,17 +318,21 @@ msgstr ""
 msgid "SMTP host or port is not configured"
 msgstr ""
 
-#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:267
+#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:277
 msgid "Service class :class was not found in :path"
 msgstr "Service class :class không tồn tại trong :path"
 
-#: library/FOSSBilling/Tools.php:313
+#: library/FOSSBilling/Tools.php:177
+msgid "We were unable to generate a password with the required parameters"
+msgstr ""
+
+#: library/FOSSBilling/Tools.php:323
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Địa chỉ email"
 
-#: library/FOSSBilling/Tools.php:315 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:325 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: không hợp lệ"
@@ -737,11 +741,11 @@ msgstr "Hoạt động"
 msgid "Event history"
 msgstr "Lịch sử sự kiện"
 
-#: modules/Activity/Service.php:34
+#: modules/Activity/Service.php:35
 msgid "Delete activity"
 msgstr "Xoá hoạt động"
 
-#: modules/Activity/Service.php:35
+#: modules/Activity/Service.php:36
 msgid "Allows the staff member to delete recorded activity."
 msgstr ""
 
@@ -2184,6 +2188,7 @@ msgid "System"
 msgstr "Hệ thống"
 
 #: modules/System/Controller/Admin.php:40
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:19
 #: modules/Client/html_admin/mod_client_settings.html.twig:19
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:19
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:19
@@ -2223,6 +2228,7 @@ msgid "Settings"
 msgstr "Thiết lập"
 
 #: modules/System/Controller/Admin.php:47
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:43
 #: modules/Client/html_admin/mod_client_group.html.twig:48
 #: modules/Client/html_admin/mod_client_manage.html.twig:277
 #: modules/Client/html_admin/mod_client_manage.html.twig:335
@@ -2594,6 +2600,35 @@ msgstr "Bạn chắc chưa?"
 #: themes/admin_default/html/mod_index_dashboard.html.twig:529
 msgid "The list is empty"
 msgstr "Danh sách rỗng"
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:5
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:21
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:29
+msgid "Activity settings"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:32
+#: modules/Client/html_admin/mod_client_settings.html.twig:28
+#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
+#: modules/Seo/html_admin/mod_seo_settings.html.twig:34
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
+#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
+msgid "Configuration updated"
+msgstr "Cấu hình đã được cập nhật"
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:36
+msgid "Activity log retention"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:39
+msgid "Number of days"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:41
+msgid "FOSSBilling will automatically remove activity logs that are older than the configured number of days. Set to 0 to disable this behavior"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_group.html.twig:17
 msgid "Client groups"
@@ -3696,16 +3731,6 @@ msgstr "Cổng"
 #: modules/Client/html_admin/mod_client_settings.html.twig:21
 msgid "Client settings"
 msgstr "Thiết lập khách hàng"
-
-#: modules/Client/html_admin/mod_client_settings.html.twig:28
-#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:34
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
-#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
-msgid "Configuration updated"
-msgstr "Cấu hình đã được cập nhật"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:33
 #: modules/Support/html_admin/mod_support_settings.html.twig:29
@@ -9642,16 +9667,16 @@ msgstr ""
 msgid "Next update check:"
 msgstr ""
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:4
-#: modules/System/html_client/mod_system_maintenance.html.twig:17
+#: modules/System/html_client/mod_system_maintenance.html.twig:3
+#: modules/System/html_client/mod_system_maintenance.html.twig:24
 msgid "System undergoing maintenance"
 msgstr "Bảo trì hệ thống"
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:18
-msgid "Our systems are undergoing a maintenance. We'll be back soon."
-msgstr "Hệ thống của chúng tôi đang được bảo trì. Vui lòng quay lại sau."
+#: modules/System/html_client/mod_system_maintenance.html.twig:25
+msgid "Our systems are undergoing maintenance. We'll be back soon."
+msgstr ""
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:20
+#: modules/System/html_client/mod_system_maintenance.html.twig:27
 msgid "While we're away, you can still reach us over other channels."
 msgstr "Trong khi chúng tôi vắng mặt, bạn vẫn có thể liên hệ qua các kênh khác."
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-02-02 12:21-0800\n"
-"PO-Revision-Date: 2024-02-03 01:16\n"
+"POT-Creation-Date: 2024-02-11 12:54-0800\n"
+"PO-Revision-Date: 2024-02-12 01:47\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Catalan\n"
 "MIME-Version: 1.0\n"
@@ -27,23 +27,23 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: ca_ES\n"
 
-#: di.php:317
+#: di.php:315
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Sembla que esteu intentant utilitzar FOSSBilling sense l'extensió php intl activada. FOSSBilling inclou un polyfill per a l'extensió intl, però no és compatible amb :locale. Si us plau, activeu l'extensió intl."
 
-#: di.php:365 di.php:439
+#: di.php:363 di.php:437
 msgid "Client is not logged in"
 msgstr "El client no ha iniciat sessió"
 
-#: di.php:405 di.php:477
+#: di.php:403 di.php:475
 msgid "Admin is not logged in"
 msgstr "L'administrador no ha iniciat sessió"
 
-#: di.php:517
+#: di.php:515
 msgid "Unrecognized Handler type: "
 msgstr "Tipus de \"handler\" gestor no reconegut: "
 
-#: di.php:527
+#: di.php:525
 msgid "Please check your mailbox and confirm email address."
 msgstr "Si us plau, comproveu la vostra bústia de correu i confirmeu l'adreça de correu electrònic."
 
@@ -270,7 +270,7 @@ msgstr ""
 msgid "Error when writing updated configuration file."
 msgstr "Error en escriure el fitxer de configuració actualitzat."
 
-#: library/FOSSBilling/Config.php:145
+#: library/FOSSBilling/Config.php:146
 msgid "Too many iterations performed while formatting the config file"
 msgstr ""
 
@@ -322,17 +322,21 @@ msgstr "No s'ha pogut enviar el correu electrònic mitjançant :transport amb l'
 msgid "SMTP host or port is not configured"
 msgstr "L'amfitrió o el port SMTP no està configurat"
 
-#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:267
+#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:277
 msgid "Service class :class was not found in :path"
 msgstr "Classe de servei :class no s'ha trobat a :path"
 
-#: library/FOSSBilling/Tools.php:313
+#: library/FOSSBilling/Tools.php:177
+msgid "We were unable to generate a password with the required parameters"
+msgstr ""
+
+#: library/FOSSBilling/Tools.php:323
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Adreça de correu electrònic"
 
-#: library/FOSSBilling/Tools.php:315 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:325 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: no és vàlid"
@@ -741,11 +745,11 @@ msgstr "Activitat"
 msgid "Event history"
 msgstr "Historial d'esdeveniments"
 
-#: modules/Activity/Service.php:34
+#: modules/Activity/Service.php:35
 msgid "Delete activity"
 msgstr "Esborra l'activitat"
 
-#: modules/Activity/Service.php:35
+#: modules/Activity/Service.php:36
 msgid "Allows the staff member to delete recorded activity."
 msgstr "Permet al membre del personal eliminar l'activitat registrada."
 
@@ -2189,6 +2193,7 @@ msgid "System"
 msgstr "Sistema"
 
 #: modules/System/Controller/Admin.php:40
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:19
 #: modules/Client/html_admin/mod_client_settings.html.twig:19
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:19
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:19
@@ -2228,6 +2233,7 @@ msgid "Settings"
 msgstr "Configuració"
 
 #: modules/System/Controller/Admin.php:47
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:43
 #: modules/Client/html_admin/mod_client_group.html.twig:48
 #: modules/Client/html_admin/mod_client_manage.html.twig:277
 #: modules/Client/html_admin/mod_client_manage.html.twig:335
@@ -2599,6 +2605,35 @@ msgstr "N'esteu segur?"
 #: themes/admin_default/html/mod_index_dashboard.html.twig:529
 msgid "The list is empty"
 msgstr "La llista està buida"
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:5
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:21
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:29
+msgid "Activity settings"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:32
+#: modules/Client/html_admin/mod_client_settings.html.twig:28
+#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
+#: modules/Seo/html_admin/mod_seo_settings.html.twig:34
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
+#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
+msgid "Configuration updated"
+msgstr "Configuració actualitzada"
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:36
+msgid "Activity log retention"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:39
+msgid "Number of days"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:41
+msgid "FOSSBilling will automatically remove activity logs that are older than the configured number of days. Set to 0 to disable this behavior"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_group.html.twig:17
 msgid "Client groups"
@@ -3701,16 +3736,6 @@ msgstr "Passarel·la"
 #: modules/Client/html_admin/mod_client_settings.html.twig:21
 msgid "Client settings"
 msgstr "Configuració del client"
-
-#: modules/Client/html_admin/mod_client_settings.html.twig:28
-#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:34
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
-#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
-msgid "Configuration updated"
-msgstr "Configuració actualitzada"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:33
 #: modules/Support/html_admin/mod_support_settings.html.twig:29
@@ -9650,16 +9675,16 @@ msgstr ""
 msgid "Next update check:"
 msgstr ""
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:4
-#: modules/System/html_client/mod_system_maintenance.html.twig:17
+#: modules/System/html_client/mod_system_maintenance.html.twig:3
+#: modules/System/html_client/mod_system_maintenance.html.twig:24
 msgid "System undergoing maintenance"
 msgstr "Sistema en manteniment"
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:18
-msgid "Our systems are undergoing a maintenance. We'll be back soon."
-msgstr "Els nostres sistemes estan sotmesos a un manteniment. Tornarem aviat."
+#: modules/System/html_client/mod_system_maintenance.html.twig:25
+msgid "Our systems are undergoing maintenance. We'll be back soon."
+msgstr ""
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:20
+#: modules/System/html_client/mod_system_maintenance.html.twig:27
 msgid "While we're away, you can still reach us over other channels."
 msgstr "Mentre estem fora, encara ens podeu contactar per altres canals."
 
