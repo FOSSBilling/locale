@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-02-02 12:21-0800\n"
-"PO-Revision-Date: 2024-02-05 01:15\n"
+"POT-Creation-Date: 2024-02-11 12:54-0800\n"
+"PO-Revision-Date: 2024-02-12 01:47\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -27,23 +27,23 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: pt_BR\n"
 
-#: di.php:317
+#: di.php:315
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Parece que você está tentando usar o FOSSBilling sem a extensão php intl habilitada. O FOSSBilling inclui um polyfill para a extensão intl, mas não suporta :locale. Por favor, habilite a extensão intl."
 
-#: di.php:365 di.php:439
+#: di.php:363 di.php:437
 msgid "Client is not logged in"
 msgstr "Cliente não está logado"
 
-#: di.php:405 di.php:477
+#: di.php:403 di.php:475
 msgid "Admin is not logged in"
 msgstr "O administrador não está logado"
 
-#: di.php:517
+#: di.php:515
 msgid "Unrecognized Handler type: "
 msgstr "Tipo de manipulador desconhecido: "
 
-#: di.php:527
+#: di.php:525
 msgid "Please check your mailbox and confirm email address."
 msgstr "Por favor, verifique seu e-mail e confirme seu endereço de e-mail."
 
@@ -270,7 +270,7 @@ msgstr "Não foi possível criar o backup do arquivo de configuração."
 msgid "Error when writing updated configuration file."
 msgstr "Erro ao escrever o arquivo de configuração atualizado."
 
-#: library/FOSSBilling/Config.php:145
+#: library/FOSSBilling/Config.php:146
 msgid "Too many iterations performed while formatting the config file"
 msgstr "Muitas iterações realizadas durante a formatação do arquivo de configuração"
 
@@ -322,17 +322,21 @@ msgstr "Falha ao enviar o e-mail via :transport com a exceção :e"
 msgid "SMTP host or port is not configured"
 msgstr "O host SMTP ou a porta não está configurado"
 
-#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:267
+#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:277
 msgid "Service class :class was not found in :path"
 msgstr "Classe de serviço :class não foi encontrada em :path"
 
-#: library/FOSSBilling/Tools.php:313
+#: library/FOSSBilling/Tools.php:177
+msgid "We were unable to generate a password with the required parameters"
+msgstr ""
+
+#: library/FOSSBilling/Tools.php:323
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "E-mail"
 
-#: library/FOSSBilling/Tools.php:315 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:325 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: é inválido"
@@ -741,11 +745,11 @@ msgstr "Atividade"
 msgid "Event history"
 msgstr "Histórico de eventos"
 
-#: modules/Activity/Service.php:34
+#: modules/Activity/Service.php:35
 msgid "Delete activity"
 msgstr "Excluir atividade"
 
-#: modules/Activity/Service.php:35
+#: modules/Activity/Service.php:36
 msgid "Allows the staff member to delete recorded activity."
 msgstr "Permitir que o membro da equipe exclua a atividade registrada."
 
@@ -2188,6 +2192,7 @@ msgid "System"
 msgstr "Sistema"
 
 #: modules/System/Controller/Admin.php:40
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:19
 #: modules/Client/html_admin/mod_client_settings.html.twig:19
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:19
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:19
@@ -2227,6 +2232,7 @@ msgid "Settings"
 msgstr "Configurações"
 
 #: modules/System/Controller/Admin.php:47
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:43
 #: modules/Client/html_admin/mod_client_group.html.twig:48
 #: modules/Client/html_admin/mod_client_manage.html.twig:277
 #: modules/Client/html_admin/mod_client_manage.html.twig:335
@@ -2598,6 +2604,35 @@ msgstr "Você tem certeza?"
 #: themes/admin_default/html/mod_index_dashboard.html.twig:529
 msgid "The list is empty"
 msgstr "A lista está vazia"
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:5
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:21
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:29
+msgid "Activity settings"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:32
+#: modules/Client/html_admin/mod_client_settings.html.twig:28
+#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
+#: modules/Seo/html_admin/mod_seo_settings.html.twig:34
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
+#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
+msgid "Configuration updated"
+msgstr "Configuração atualizada"
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:36
+msgid "Activity log retention"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:39
+msgid "Number of days"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:41
+msgid "FOSSBilling will automatically remove activity logs that are older than the configured number of days. Set to 0 to disable this behavior"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_group.html.twig:17
 msgid "Client groups"
@@ -3700,16 +3735,6 @@ msgstr "Método"
 #: modules/Client/html_admin/mod_client_settings.html.twig:21
 msgid "Client settings"
 msgstr "Configurações do cliente"
-
-#: modules/Client/html_admin/mod_client_settings.html.twig:28
-#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:34
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
-#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
-msgid "Configuration updated"
-msgstr "Configuração atualizada"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:33
 #: modules/Support/html_admin/mod_support_settings.html.twig:29
@@ -9649,16 +9674,16 @@ msgstr "Última verificação de atualização:"
 msgid "Next update check:"
 msgstr "Próxima verificação de atualização:"
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:4
-#: modules/System/html_client/mod_system_maintenance.html.twig:17
+#: modules/System/html_client/mod_system_maintenance.html.twig:3
+#: modules/System/html_client/mod_system_maintenance.html.twig:24
 msgid "System undergoing maintenance"
 msgstr "O sistema está sob manutenção"
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:18
-msgid "Our systems are undergoing a maintenance. We'll be back soon."
-msgstr "Nosso sistema está passando por uma manutenção. Voltaremos em breve."
+#: modules/System/html_client/mod_system_maintenance.html.twig:25
+msgid "Our systems are undergoing maintenance. We'll be back soon."
+msgstr ""
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:20
+#: modules/System/html_client/mod_system_maintenance.html.twig:27
 msgid "While we're away, you can still reach us over other channels."
 msgstr "Enquanto estivermos fora, você ainda pode nos contactar sobre outros canais."
 
