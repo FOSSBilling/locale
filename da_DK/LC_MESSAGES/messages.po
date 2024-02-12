@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-02-02 12:21-0800\n"
-"PO-Revision-Date: 2024-02-07 01:25\n"
+"POT-Creation-Date: 2024-02-11 12:54-0800\n"
+"PO-Revision-Date: 2024-02-12 01:47\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Danish\n"
 "MIME-Version: 1.0\n"
@@ -27,23 +27,23 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: da_DK\n"
 
-#: di.php:317
+#: di.php:315
 msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
 msgstr "Det ser ud til at du forsøger at bruge FOSSBilling uden php intl udvidelse aktiveret. FOSSFakturering indeholder en polyfill til intolydelsen, men den understøtter ikke :locale. Aktiver venligst intolydelsen."
 
-#: di.php:365 di.php:439
+#: di.php:363 di.php:437
 msgid "Client is not logged in"
 msgstr "Kunden er ikke logget ind"
 
-#: di.php:405 di.php:477
+#: di.php:403 di.php:475
 msgid "Admin is not logged in"
 msgstr "Administratoren er ikke logget ind"
 
-#: di.php:517
+#: di.php:515
 msgid "Unrecognized Handler type: "
 msgstr "Ukendt håndteringstype: "
 
-#: di.php:527
+#: di.php:525
 msgid "Please check your mailbox and confirm email address."
 msgstr "Tjek venligst din postkasse og bekræft e-mailadresse."
 
@@ -270,7 +270,7 @@ msgstr "Kan ikke oprette sikkerhedskopi af konfigurationsfil."
 msgid "Error when writing updated configuration file."
 msgstr "Fejl ved skrivning af opdateret konfigurationsfil."
 
-#: library/FOSSBilling/Config.php:145
+#: library/FOSSBilling/Config.php:146
 msgid "Too many iterations performed while formatting the config file"
 msgstr "For mange iterationer udført under formatering af config filen"
 
@@ -322,17 +322,21 @@ msgstr "Mislykkedes at sende e-mail via :transport med undtagelsen :e"
 msgid "SMTP host or port is not configured"
 msgstr "SMTP vært eller port er ikke konfigureret"
 
-#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:267
+#: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:277
 msgid "Service class :class was not found in :path"
 msgstr "Tjenesteklassen :class blev ikke fundet i :path"
 
-#: library/FOSSBilling/Tools.php:313
+#: library/FOSSBilling/Tools.php:177
+msgid "We were unable to generate a password with the required parameters"
+msgstr ""
+
+#: library/FOSSBilling/Tools.php:323
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "E-mailadresse"
 
-#: library/FOSSBilling/Tools.php:315 library/FOSSBilling/Validate.php:106
+#: library/FOSSBilling/Tools.php:325 library/FOSSBilling/Validate.php:106
 #: modules/Servicehosting/Api/Guest.php:38
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: er ugyldigt"
@@ -741,11 +745,11 @@ msgstr "Aktivitet"
 msgid "Event history"
 msgstr "Begivenhed historie"
 
-#: modules/Activity/Service.php:34
+#: modules/Activity/Service.php:35
 msgid "Delete activity"
 msgstr "Slet Aktivitet"
 
-#: modules/Activity/Service.php:35
+#: modules/Activity/Service.php:36
 msgid "Allows the staff member to delete recorded activity."
 msgstr "Tillader den ansatte at slette registrerede aktivitet."
 
@@ -961,12 +965,12 @@ msgstr ""
 
 #: modules/Cookieconsent/Controller/Admin.php:33
 msgid "Cookie consent"
-msgstr ""
+msgstr "Samtykke til Cookie"
 
 #: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:757
 #: modules/Staff/Service.php:196
 msgid "You do not have permission to perform this action"
-msgstr ""
+msgstr "Du har ikke tilladelse til at udføre denne handling"
 
 #: modules/Currency/Api/Admin.php:106
 msgid "Currency already registered"
@@ -974,7 +978,7 @@ msgstr "Valuta findes allerede"
 
 #: modules/Currency/Api/Admin.php:110
 msgid "Currency code is invalid"
-msgstr ""
+msgstr "Valutakurs er ugyldig"
 
 #: modules/Currency/Service.php:66
 msgid "Currency conversion rate can not be zero"
@@ -990,19 +994,19 @@ msgstr "Kan ikke fjerne standard valuta"
 
 #: modules/Currency/Service.php:455
 msgid "Currency format must include {{price}} tag"
-msgstr ""
+msgstr "Valuta format skal indeholde {{price}} tag"
 
 #: modules/Currency/Service.php:483
 msgid "Currency rate is invalid"
-msgstr ""
+msgstr "Valutakurs er ugyldig"
 
 #: modules/Currency/Service.php:548
 msgid "Failed to get currency rates for :currency from the European Central Bank API"
-msgstr ""
+msgstr "Kunne ikke hente valutakurser for :currency fra Den Europæiske Centralbank API"
 
 #: modules/Currency/Service.php:564
 msgid "<b>Currencylayer threw an error:</b><br />:errorInfo"
-msgstr ""
+msgstr "<b>Valutalag kastede en fejl:</b><br />"
 
 #: modules/Custompages/Controller/Admin.php:33
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
@@ -1030,7 +1034,7 @@ msgstr "Modtageren er ikke defineret. Definer parameteren to eller to_client ell
 #: modules/Email/html_admin/mod_email_history.html.twig:5
 #: modules/Email/html_admin/mod_email_history.html.twig:21
 msgid "Email history"
-msgstr ""
+msgstr "Email historik"
 
 #: modules/Email/Service.php:145
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
@@ -1046,11 +1050,11 @@ msgstr "E-mail-skabelon :code blev ikke fundet"
 
 #: modules/Email/Service.php:677
 msgid "Error message truncated due to length, please check the error log for the complete message: "
-msgstr ""
+msgstr "Fejlmeddelelsen afkortet på grund af længde, tjek venligst fejlloggen for den komplette meddelelse: "
 
 #: modules/Embed/Controller/Admin.php:33
 msgid "Embed and integrate"
-msgstr ""
+msgstr "Integrer og integrer"
 
 #: modules/Extension/Api/Admin.php:296
 msgid "Extension not found"
@@ -1072,7 +1076,7 @@ msgstr "Sprog"
 
 #: modules/Extension/Service.php:38
 msgid "Manage extensions"
-msgstr ""
+msgstr "Administrer udvidelser"
 
 #: modules/Extension/Service.php:39
 msgid "Allows the staff member to install, update, or remove extensions."
@@ -2188,6 +2192,7 @@ msgid "System"
 msgstr ""
 
 #: modules/System/Controller/Admin.php:40
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:19
 #: modules/Client/html_admin/mod_client_settings.html.twig:19
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:19
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:19
@@ -2227,6 +2232,7 @@ msgid "Settings"
 msgstr "Indstillinger"
 
 #: modules/System/Controller/Admin.php:47
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:43
 #: modules/Client/html_admin/mod_client_group.html.twig:48
 #: modules/Client/html_admin/mod_client_manage.html.twig:277
 #: modules/Client/html_admin/mod_client_manage.html.twig:335
@@ -2598,6 +2604,35 @@ msgstr "Er du sikker?"
 #: themes/admin_default/html/mod_index_dashboard.html.twig:529
 msgid "The list is empty"
 msgstr "Listen er tom"
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:5
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:21
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:29
+msgid "Activity settings"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:32
+#: modules/Client/html_admin/mod_client_settings.html.twig:28
+#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
+#: modules/Seo/html_admin/mod_seo_settings.html.twig:34
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
+#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
+msgid "Configuration updated"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:36
+msgid "Activity log retention"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:39
+msgid "Number of days"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:41
+msgid "FOSSBilling will automatically remove activity logs that are older than the configured number of days. Set to 0 to disable this behavior"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_group.html.twig:17
 msgid "Client groups"
@@ -3700,16 +3735,6 @@ msgstr "Gateway"
 #: modules/Client/html_admin/mod_client_settings.html.twig:21
 msgid "Client settings"
 msgstr "Kunde indstillinger"
-
-#: modules/Client/html_admin/mod_client_settings.html.twig:28
-#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:34
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
-#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
-msgid "Configuration updated"
-msgstr ""
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:33
 #: modules/Support/html_admin/mod_support_settings.html.twig:29
@@ -9646,16 +9671,16 @@ msgstr ""
 msgid "Next update check:"
 msgstr ""
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:4
-#: modules/System/html_client/mod_system_maintenance.html.twig:17
+#: modules/System/html_client/mod_system_maintenance.html.twig:3
+#: modules/System/html_client/mod_system_maintenance.html.twig:24
 msgid "System undergoing maintenance"
 msgstr ""
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:18
-msgid "Our systems are undergoing a maintenance. We'll be back soon."
+#: modules/System/html_client/mod_system_maintenance.html.twig:25
+msgid "Our systems are undergoing maintenance. We'll be back soon."
 msgstr ""
 
-#: modules/System/html_client/mod_system_maintenance.html.twig:20
+#: modules/System/html_client/mod_system_maintenance.html.twig:27
 msgid "While we're away, you can still reach us over other channels."
 msgstr ""
 
