@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-02-18 16:29-0800\n"
-"PO-Revision-Date: 2024-02-19 02:16\n"
+"POT-Creation-Date: 2024-02-27 03:07-0800\n"
+"PO-Revision-Date: 2024-02-27 11:11\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -11,6 +11,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-SearchPathExcluded-1: *.html\n"
@@ -28,8 +29,8 @@ msgstr ""
 "Language: fr_FR\n"
 
 #: di.php:315
-msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
-msgstr "Il semble que vous essayez d'utiliser FOSSBilling sans l'extension PHP intl activée. FOSSBilling inclut un émulateur pour l'extension intl, cependant il ne supporte pas :locale. Veuillez activer l'extension intl."
+msgid "It appears you are trying to use FOSSBilling without the PHP intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
+msgstr ""
 
 #: di.php:363 di.php:437
 msgid "Client is not logged in"
@@ -44,8 +45,8 @@ msgid "Unrecognized Handler type: "
 msgstr "Type de gestionnaire non reconnu : "
 
 #: di.php:525
-msgid "Please check your mailbox and confirm email address."
-msgstr "Veuillez vérifier votre boîte mail et confirmer votre adresse e-mail."
+msgid "Please check your mailbox and confirm your email address."
+msgstr ""
 
 #: index.php:80 library/Box/App.php:419 library/Box/AppClient.php:70
 msgid "Page :url not found"
@@ -63,7 +64,7 @@ msgstr "Mod object n'est pas mis en service"
 msgid "Method :method must contain underscore"
 msgstr "Méthode :method doit contenir un tiret du bas"
 
-#: library/Api/Handler.php:55 library/Box/Mod.php:56
+#: library/Api/Handler.php:55 library/Box/Mod.php:57
 msgid "Invalid module name"
 msgstr "Le nom du module est invalide"
 
@@ -72,12 +73,12 @@ msgid "FOSSBilling module :mod is not installed/activated"
 msgstr "Le module FOSSBilling :mod n'est pas installé/activé"
 
 #: library/Api/Handler.php:75
-msgid "You do not have access to :mod module"
-msgstr "Vous n'avez pas accès au module :mod"
+msgid "You do not have access to the :mod module"
+msgstr ""
 
 #: library/Api/Handler.php:91
-msgid "Api class must be instance of Api_Abstract"
-msgstr "Api class doit être une instance de Api_Abstract"
+msgid "Api class must be an instance of Api_Abstract"
+msgstr ""
 
 #: library/Api/Handler.php:107
 msgid ":type API call :method does not exist in module :module"
@@ -96,8 +97,8 @@ msgid "Page not found"
 msgstr "La page n'existe pas"
 
 #: library/Box/Crypt.php:23
-msgid "The PHP openssl extension must be enabled on your server"
-msgstr "L'extension PHP OpenSSL doit être activée sur votre serveur"
+msgid "The PHP OpenSSL extension must be enabled on your server"
+msgstr ""
 
 #: library/Box/Log.php:69
 msgid "Missing log message"
@@ -107,25 +108,25 @@ msgstr "Message de log manquant"
 msgid "Bad log priority"
 msgstr "Mauvaise priorité d'enregistrement"
 
-#: library/Box/Mod.php:75
+#: library/Box/Mod.php:76
 msgid "Module :mod manifest file is missing"
 msgstr "Module :mod fichier manifest manquant"
 
-#: library/Box/Mod.php:80
+#: library/Box/Mod.php:81
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr "Le fichier manifeste du module :mod n'est pas valide. Vérifiez la syntaxe et les permissions du fichier."
 
-#: library/Box/Mod.php:122
+#: library/Box/Mod.php:125
 msgid "Module :mod does not have service class"
 msgstr "Module :mod n'a pas de classe de service"
 
-#: library/Box/Mod.php:141
+#: library/Box/Mod.php:144
 msgid "Module :mod Client controller class was not found"
 msgstr "Module :mod La classe du contrôleur client n'a pas été trouvée"
 
-#: library/Box/Mod.php:216
-msgid "Core module can not be updated"
-msgstr "Impossible de mettre à jour le module de base"
+#: library/Box/Mod.php:219
+msgid "Core modules cannot be updated"
+msgstr ""
 
 #: library/Box/Pagination.php:44 library/Box/Pagination.php:77
 msgid "Invalid page number"
@@ -214,8 +215,8 @@ msgid "Unable to get the number of months for :unit"
 msgstr "Impossible d'obtenir le nombre de mois pour :unit"
 
 #: library/Box/Translate.php:55
-msgid "Unable to setup FOSSBilling translation functionality, locale was undefined."
-msgstr "Impossible de configurer la fonctionnalité de traduction de FOSSBilling, lieu n'a pas été définie."
+msgid "Unable to set up FOSSBilling translation functionality, locale was undefined."
+msgstr ""
 
 #: library/Box/TwigExtensions.php:252
 msgid "second"
@@ -255,36 +256,36 @@ msgid "Missing :missing: param for Box_TwigLoader"
 msgstr "Paramètre :missing: manquant pour Box_TwigLoader"
 
 #: library/FOSSBilling/CentralAlerts.php:119
-msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
-msgstr "Impossible de récupérer les alertes à partir du système d'alertes centrales. Consultez le journal des erreurs pour plus d'informations."
+msgid "Unable to fetch alerts from Central Alerts System. See the error log for more information."
+msgstr ""
 
 #: library/FOSSBilling/CentralAlerts.php:127
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "Réponse invalide du système d'alerte central de FOSSBilling."
 
 #: library/FOSSBilling/Config.php:90
-msgid "Unable to create backup of configuration file."
-msgstr "Impossible de créer une sauvegarde du fichier de configuration."
+msgid "An error occurred when creating a backup of the configuration file."
+msgstr ""
 
 #: library/FOSSBilling/Config.php:96
-msgid "Error when writing updated configuration file."
-msgstr "Erreur lors de l'écriture du fichier de configuration mis à jour."
+msgid "An error occurred when writing the updated configuration file."
+msgstr ""
 
 #: library/FOSSBilling/Config.php:146
-msgid "Too many iterations performed while formatting the config file"
-msgstr "Trop d'étapes effectuées lors du formatage du fichier de configuration"
+msgid "Too many iterations were performed while formatting the config file"
+msgstr ""
 
 #: library/FOSSBilling/ExtensionManager.php:57
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "Impossible de récupérer les détails de l'extension depuis le répertoire d'extension FOSSBilling."
 
 #: library/FOSSBilling/ExtensionManager.php:79
-msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
-msgstr "Impossible de récupérer les versions de l'extension depuis le répertoire d'extension FOSSBilling."
+msgid "An error occurred when fetching the extensions releases"
+msgstr ""
 
 #: library/FOSSBilling/ExtensionManager.php:102
-msgid "Unable to fetch the latest release of the extension."
-msgstr "Impossible de récupérer la dernière version de l'extension."
+msgid "Unable to fetch the latest extension release."
+msgstr ""
 
 #: library/FOSSBilling/ExtensionManager.php:175
 msgid "Unable to connect to the FOSSBilling extension directory."
@@ -303,8 +304,8 @@ msgid "FOSSBilling requires the proc_open PHP function to be enabled when using 
 msgstr "FOSSBilling requiert que la fonction PHP proc_open soit activée lors de l'utilisation du transport sendmail"
 
 #: library/FOSSBilling/Mail.php:158
-msgid "A Sendgrid API key is required to send emails via Sendgrid"
-msgstr "Une clé API Sendgrid est nécessaire pour envoyer des emails via Sendgrid"
+msgid "A SendGrid API key is required to send emails via SendGrid"
+msgstr ""
 
 #: library/FOSSBilling/Mail.php:165
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
@@ -346,14 +347,14 @@ msgid "Failed to download the latest version information. Further details are av
 msgstr "Impossible de télécharger les dernières informations de version. Des détails supplémentaires sont disponibles dans le journal des erreurs."
 
 #: library/FOSSBilling/Update.php:209 modules/System/Api/Admin.php:192
-msgid "You have latest version of FOSSBilling. You do not need to update."
-msgstr "Vous avez la dernière version de FOSSBilling. Vous n'avez pas besoin de mettre à jour."
+msgid "You have the latest version of FOSSBilling. You do not need to update."
+msgstr ""
 
 #: library/FOSSBilling/Update.php:233
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Impossible de télécharger l'archive de mise à jour. Des détails supplémentaires sont disponibles dans le journal des erreurs."
 
-#: library/FOSSBilling/Update.php:247 modules/Extension/Service.php:476
+#: library/FOSSBilling/Update.php:247 modules/Extension/Service.php:477
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Impossible d'extraire le fichier, veuillez vérifier les permissions du fichier et du dossier. Des détails supplémentaires sont disponibles dans le journal des erreurs."
 
@@ -407,8 +408,8 @@ msgid "Unknown TLD. Could not determine registration price"
 msgstr "TLD inconnu. Impossible de déterminer le prix d'enregistrement"
 
 #: library/Model/ProductDomainTable.php:254
-msgid "Domain product can not be removed."
-msgstr "Le produit de domaine ne peut pas être supprimé."
+msgid "Domain product cannot be removed."
+msgstr ""
 
 #: library/Model/ProductTable.php:61
 msgid "Unknown period selected "
@@ -431,14 +432,14 @@ msgid "Unknown Period selected for price"
 msgstr "La période sélectionnée est inconnue pour ce prix"
 
 #: library/Payment/Adapter/ClientBalance.php:59
-msgid "Not enough in balance"
-msgstr "Solde insuffisant"
+msgid "Your account balance is insufficient to cover this invoice."
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:64
 #: library/Payment/Adapter/ClientBalance.php:94
 #: library/Payment/Adapter/ClientBalance.php:129
-msgid "It is forbidden to pay a deposit invoice with this gateway"
-msgstr "Vous ne pouvez pas régler un acompte avec cette méthode de paiement"
+msgid "You may not pay a deposit invoice with this payment gateway."
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:84
 #: library/Payment/Adapter/PayPalEmail.php:75
@@ -477,20 +478,20 @@ msgid "There was an error when processing the transaction"
 msgstr "Attention : une erreur s’est produite pendant le déroulement de l’opération"
 
 #: library/Payment/AdapterAbstract.php:51
-msgid "Return URL for payment gateway was not set"
-msgstr "L'URL de retour pour la passerelle de paiement n'a pas été définie"
+msgid "Return URL for the payment gateway was not set"
+msgstr ""
 
 #: library/Payment/AdapterAbstract.php:58
-msgid "Cancel URL for payment gateway was not set"
-msgstr "L'URL d'annulation pour la passerelle de paiement n'a pas été définie"
+msgid "Cancel URL for the payment gateway was not set"
+msgstr ""
 
 #: library/Payment/AdapterAbstract.php:66
-msgid "IPN Notification URL for payment gateway was not set"
-msgstr "L'URL de retour pour la passerelle de paiement n'a pas été définie"
+msgid "IPN Notification URL for the payment gateway was not set"
+msgstr ""
 
 #: library/Payment/AdapterAbstract.php:76
-msgid "IPN redirect URL for payment gateway was not set"
-msgstr "L'URL de retour pour la passerelle de paiement n'a pas été définie"
+msgid "IPN redirect URL for the payment gateway was not set"
+msgstr ""
 
 #: library/Registrar/Adapter/Email.php:23
 #: library/Registrar/Adapter/Internetbs.php:18
@@ -510,8 +511,8 @@ msgid "The \":domain_registrar\" domain registrar is not fully configured. Pleas
 msgstr "Le bureau d'enregistrement du domaine \":domain_registrar\" n'est pas entièrement configuré. Veuillez configurer le :missing"
 
 #: library/Registrar/Adapter/Email.php:69 library/Registrar/Adapter/Email.php:74
-msgid "Email registrar is unable to :action:"
-msgstr "Le bureau d’enregistrement d’e-mail est incapable de :action:"
+msgid ":type: registrar is unable to :action:"
+msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:76
 msgid "checking domain transferability"
@@ -545,10 +546,10 @@ msgstr "récupérer les détails du domaine"
 #: library/Registrar/Adapter/Namecheap.php:683
 #: library/Registrar/Adapter/Namecheap.php:710
 #: library/Registrar/Adapter/Namecheap.php:742
-#: library/Registrar/Adapter/Resellerclub.php:395
-#: library/Registrar/Adapter/Resellerclub.php:717
-#: library/Registrar/Adapter/Resellerclub.php:724
-#: library/Registrar/Adapter/Resellerclub.php:731
+#: library/Registrar/Adapter/Resellerclub.php:396
+#: library/Registrar/Adapter/Resellerclub.php:721
+#: library/Registrar/Adapter/Resellerclub.php:728
+#: library/Registrar/Adapter/Resellerclub.php:735
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr "Impossible de :action: avec le bureau d’enregistrement :type:, vérifiez les journaux d’erreurs pour plus de détails"
 
@@ -586,35 +587,35 @@ msgstr "obtenir le status de verrouillage du domaine"
 msgid "set the domain lock status"
 msgstr "définit le status de verrouillage du domaine"
 
-#: library/Registrar/Adapter/Resellerclub.php:326
+#: library/Registrar/Adapter/Resellerclub.php:327
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
 msgstr "Un numéro de contact de société valide est nécessaire pour l'enregistrement d'un nom de domaine .AU"
 
-#: library/Registrar/Adapter/Resellerclub.php:393
+#: library/Registrar/Adapter/Resellerclub.php:394
 msgid "get the transfer code"
 msgstr "obtenir le code du transfert"
 
-#: library/Registrar/Adapter/Resellerclub.php:593
+#: library/Registrar/Adapter/Resellerclub.php:596
 msgid "You are already registered as reseller"
 msgstr "Vous êtes déjà enregistré en tant que revendeur"
 
-#: library/Registrar/Adapter/Resellerclub.php:855
+#: library/Registrar/Adapter/Resellerclub.php:860
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr "Des informations valides sur le passeport de contact sont requises lors de l'enregistrement du nom de domaine ES"
 
-#: library/Registrar/Adapter/Resellerclub.php:874
+#: library/Registrar/Adapter/Resellerclub.php:879
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr "Des informations de passeport de contact valides sont requises lors de l'enregistrement d'un nom de domaine ASIA"
 
-#: library/Registrar/Adapter/Resellerclub.php:898
+#: library/Registrar/Adapter/Resellerclub.php:903
 msgid "Valid contact birthdate is required while registering RU domain name"
 msgstr "Une date de naissance valide est requise lors de l'enregistrement d'un nom de domaine RU"
 
-#: library/Registrar/Adapter/Resellerclub.php:902
+#: library/Registrar/Adapter/Resellerclub.php:907
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr "Des informations valides sur le passeport sont requises lors de l'enregistrement d'un nom de domaine RU"
 
-#: library/Registrar/Adapter/Resellerclub.php:989
+#: library/Registrar/Adapter/Resellerclub.php:994
 msgid "Contact not found"
 msgstr "Contact introuvable"
 
@@ -690,8 +691,8 @@ msgid "There are no available IPs on this server."
 msgstr "Il n'y a aucunes IP valides sur ce serveur."
 
 #: library/Server/Manager/Directadmin.php:342
-msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
-msgstr "Impossible d'attribuer AUCUNE adresse IP au revendeur. Assurez-vous d’avoir des adresses IP disponibles et non attribuées."
+msgid "Unable to assign the Reseller ANY IPs. Make sure to have free, unassigned IPs."
+msgstr ""
 
 #: library/Server/Manager/Directadmin.php:346
 msgid "Error creating user"
@@ -784,20 +785,20 @@ msgstr "Devise introuvable"
 
 #: modules/Cart/Api/Guest.php:96 modules/Cart/Api/Guest.php:104
 #: modules/Cart/Service.php:447
-msgid "Promo code is expired or does not exist"
-msgstr "Le code promo a expiré ou n'existe pas"
+msgid "The promo code has expired or does not exist"
+msgstr ""
 
 #: modules/Cart/Api/Guest.php:100 modules/Cart/Service.php:451
-msgid "Promo can not be applied to your account"
-msgstr "Cette promotion ne peut pas être appliquée pour votre compte"
+msgid "Promo code cannot be applied to your account"
+msgstr ""
 
 #: modules/Cart/Api/Guest.php:161
 msgid "Addon products cannot be added separately."
 msgstr "Les produits Addon ne peuvent pas être ajoutés séparément."
 
 #: modules/Cart/Api/Guest.php:175
-msgid "One or more of your selected addons are invalid for the associated product."
-msgstr "Un ou plusieurs de vos modules complémentaires sélectionnés ne sont pas valides pour le produit associé."
+msgid "One or more of your selected add-ons are invalid for the associated product."
+msgstr ""
 
 #: modules/Cart/Service.php:102
 msgid "Selected billing period is invalid"
@@ -808,24 +809,24 @@ msgid "This item is currently out of stock"
 msgstr "Cet article est actuellement en rupture de stock"
 
 #: modules/Cart/Service.php:142
-msgid "Selected billing period is invalid for the selected addon"
-msgstr "La période de facturation sélectionnée n'est pas valide pour l'extension sélectionnée"
+msgid "Selected billing period is invalid for the selected add-on"
+msgstr ""
 
 #: modules/Cart/Service.php:236 modules/Product/Api/Guest.php:82
 msgid "Product not found"
 msgstr "Le produit est introuvable"
 
 #: modules/Cart/Service.php:298
-msgid "Add products to cart before applying promo code"
-msgstr "Ajoutez des produits à votre panier avant d'appliquer un code promotionnel"
+msgid "Add products to your cart before applying promo code"
+msgstr ""
 
 #: modules/Cart/Service.php:443
-msgid "You have already used this promo code. Please remove promo code and checkout again."
-msgstr "Vous avez déjà utilisé ce code promotionnel. Veuillez le supprimer, et effectuer à nouveau votre commande."
+msgid "You have already used this promo code. Please remove the promo code and checkout again."
+msgstr ""
 
 #: modules/Cart/Service.php:503
-msgid "Can not checkout an empty cart"
-msgstr "Impossible de commander un panier vide"
+msgid "Cannot checkout an empty cart"
+msgstr ""
 
 #: modules/Cart/Service.php:515
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -843,13 +844,10 @@ msgstr "Réduction: :product"
 msgid ":product setup"
 msgstr "Configuration de :product"
 
-#: modules/Client/Api/Admin.php:149
-msgid "Email is already registered."
-msgstr "L'adresse e-mail est déjà enregistrée."
-
-#: modules/Client/Api/Admin.php:239 modules/Profile/Service.php:133
-msgid "Can not change email. It is already registered."
-msgstr "Impossible de modifier votre adresse mail, celle-ci est déjà utilisée."
+#: modules/Client/Api/Admin.php:149 modules/Client/Api/Admin.php:239
+#: modules/Client/Api/Guest.php:84 modules/Profile/Service.php:133
+msgid "This email address is already registered."
+msgstr ""
 
 #: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:227
 #: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:113
@@ -872,10 +870,6 @@ msgstr "Les nouvelles inscriptions sont temporairement désactivées"
 #: modules/Client/Api/Guest.php:71
 msgid "Passwords do not match."
 msgstr "Les mots de passe renseignés ne correspondent pas."
-
-#: modules/Client/Api/Guest.php:84
-msgid "Email is already registered. You may want to login instead of registering."
-msgstr "L'adresse e-mail est déjà enregistrée. Vous pouvez vous connecter au lieu de vous inscrire."
 
 #: modules/Client/Api/Guest.php:130
 msgid "Please check your login details."
@@ -924,16 +918,16 @@ msgid "The password you chose when creating your account."
 msgstr "Le mot de passe choisi lors de la création de votre compte."
 
 #: modules/Client/Service.php:225
-msgid "Currency can not be changed. Client already have invoices issued."
-msgstr "La devise ne peut pas être modifiée. Le client a déjà des factures émises."
+msgid "Currency cannot be changed. Client already has invoices issued."
+msgstr ""
 
 #: modules/Client/Service.php:230
-msgid "Currency can not be changed. Client already have orders."
-msgstr "La devise ne peut être modifiée. Le client a déjà des commandes."
+msgid "Currency cannot be changed. Client already has orders."
+msgstr ""
 
 #: modules/Client/Service.php:239
-msgid "Define clients currency before adding funds."
-msgstr "Définissez la devise des clients avant d'ajouter des fonds."
+msgid "You must define the client's currency before adding funds."
+msgstr ""
 
 #: modules/Client/Service.php:243 modules/Client/ServiceBalance.php:125
 msgid "Funds amount is invalid"
@@ -952,12 +946,12 @@ msgid "Client not found"
 msgstr "Client introuvable"
 
 #: modules/Client/Service.php:472
-msgid "Can not remove group with clients"
-msgstr "Impossible de supprimer un groupe avec des clients"
+msgid "Cannot remove groups with clients"
+msgstr ""
 
 #: modules/Client/Service.php:633 modules/Profile/Service.php:125
-msgid "Email can not be changed"
-msgstr "L'adresse mail ne peut pas être modifiée"
+msgid "Email address cannot be changed"
+msgstr ""
 
 #: modules/Client/Service.php:647 modules/Client/Service.php:663
 msgid "Field :field cannot be empty"
@@ -981,16 +975,16 @@ msgid "Currency code is invalid"
 msgstr "Le code de la devise n'est pas valide"
 
 #: modules/Currency/Service.php:66
-msgid "Currency conversion rate can not be zero"
-msgstr "Le taux de conversion de la devise ne peut pas être nul"
+msgid "Currency conversion rate cannot be zero"
+msgstr ""
 
 #: modules/Currency/Service.php:132
 msgid "Currency code not provided"
 msgstr "Le code de la devise n'est pas défini"
 
 #: modules/Currency/Service.php:330
-msgid "Can not remove default currency"
-msgstr "Impossible de supprimer la devise par défaut"
+msgid "Cannot remove default currency"
+msgstr ""
 
 #: modules/Currency/Service.php:455
 msgid "Currency format must include {{price}} tag"
@@ -1041,8 +1035,8 @@ msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin p
 msgstr "Le récepteur n'est pas défini. Définissez à ou à_client ou au paramètre to_staff ou to_admin"
 
 #: modules/Email/Service.php:204
-msgid "From email address can not be empty"
-msgstr "L'adresse e-mail de l'expéditeur ne peut pas être vide"
+msgid "The \"from\" email address cannot be empty"
+msgstr ""
 
 #: modules/Email/Service.php:480
 msgid "Email template :code was not found"
@@ -1082,45 +1076,45 @@ msgstr "Gérer les extensions"
 msgid "Allows the staff member to install, update, or remove extensions."
 msgstr "Autorise les membres du staff à installer, mettre à jour ou supprimer des extensions."
 
-#: modules/Extension/Service.php:337
+#: modules/Extension/Service.php:339
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "Visitez le répertoire des extensions pour plus d'informations sur la mise à jour de cette extension."
 
-#: modules/Extension/Service.php:390
-msgid "FOSSBilling core modules can not be managed"
-msgstr "Les modules du noyau FOSSBilling ne peuvent pas être gérés"
+#: modules/Extension/Service.php:391
+msgid "FOSSBilling core modules cannot be managed"
+msgstr ""
 
-#: modules/Extension/Service.php:439
+#: modules/Extension/Service.php:440
 msgid "Coudn't find a valid download URL for the extension."
 msgstr "Impossible de trouver une URL de téléchargement valide pour l'extension."
 
-#: modules/Extension/Service.php:443
+#: modules/Extension/Service.php:444
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
 msgstr "Cette extension n'est pas compatible avec votre version de FOSSBilling. Veuillez mettre à jour FOSSBilling vers la dernière version et réessayer."
 
-#: modules/Extension/Service.php:459
+#: modules/Extension/Service.php:460
 msgid "Failed to download the extension with error :code"
 msgstr "Impossible de télécharger l'extension avec l'erreur :code"
 
-#: modules/Extension/Service.php:500
+#: modules/Extension/Service.php:501
 msgid "Extension :id seems to be already installed."
 msgstr "L'extension :id semble être déjà installée."
 
-#: modules/Extension/Service.php:503
+#: modules/Extension/Service.php:504
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "Échec du déplacement de l'extension vers sa destination finale. Veuillez vérifier les autorisations pour le dossier de destination. (:destination)"
 
-#: modules/Extension/Service.php:506
+#: modules/Extension/Service.php:507
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "Le type d'extension (:type) ne peut pas être installé automatiquement."
 
-#: modules/Extension/Service.php:539
-msgid "FOSSBilling core modules can not be installed or removed"
-msgstr "Les modules du noyau FOSSBilling ne peuvent pas être installés ou supprimés"
+#: modules/Extension/Service.php:540
+msgid "FOSSBilling core modules cannot be installed or removed"
+msgstr ""
 
-#: modules/Extension/Service.php:544
-msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
-msgstr "Module ne peut pas être installé. Il nécessite au moins :min version de FOSSBilling. Vous utilisez :v"
+#: modules/Extension/Service.php:545
+msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
+msgstr ""
 
 #: modules/Extension/Service.php:718
 msgid "Manage settings"
@@ -1160,12 +1154,12 @@ msgid "Field type not supported"
 msgstr "Le type de champ n'est pas supporté"
 
 #: modules/Formbuilder/Service.php:140
-msgid "Field name can not start with number."
-msgstr "Le nom du champ ne peut pas commencer par un nombre."
+msgid "Field name cannot start with number."
+msgstr ""
 
 #: modules/Formbuilder/Service.php:144
-msgid "Field name can not be empty. Please make sure it is not empty and does not contain special characters."
-msgstr "Le nom du champ ne peut pas être vide. Veuillez vous assurer qu'il n'est pas vide et ne contient pas de caractères spéciaux."
+msgid "Field name cannot be empty. Please make sure it is not empty and does not contain special characters."
+msgstr ""
 
 #: modules/Formbuilder/Service.php:161
 msgid "Unfortunately field with this name exists in this form already. Form must have different field names."
@@ -1206,8 +1200,8 @@ msgid "Invoice was not found"
 msgstr "Facture introuvable"
 
 #: modules/Invoice/Api/Client.php:82 modules/Invoice/Api/Guest.php:62
-msgid "Paid Invoice can not be modified"
-msgstr "Facture payée ne peut pas être modifiée"
+msgid "Paid Invoice cannot be modified"
+msgstr ""
 
 #: modules/Invoice/Api/Client.php:110 modules/Order/Api/Client.php:121
 #: modules/Servicedomain/Api/Client.php:122
@@ -1282,8 +1276,8 @@ msgid "Unable to determine the next invoice number"
 msgstr "Impossible de déterminer le prochain numéro de facture"
 
 #: modules/Invoice/Service.php:632
-msgid "Can not refund invoice with negative amount"
-msgstr "Impossible de rembourser une facture avec un montant négatif"
+msgid "Cannot refund invoice with negative amount"
+msgstr ""
 
 #: modules/Invoice/Service.php:847
 msgid "Invoice is related to order #:id. Please cancel order first."
@@ -1347,12 +1341,12 @@ msgid "Payment gateway :adapter was not found"
 msgstr "Passerelle de paiement : l'adaptateur n'a pas été trouvé"
 
 #: modules/Invoice/ServiceTransaction.php:82
-msgid "Transaction invoice id is missing"
-msgstr "L'id de la facture de la transaction est manquant"
+msgid "Transaction invoice ID is missing"
+msgstr ""
 
 #: modules/Invoice/ServiceTransaction.php:86
-msgid "Payment gateway id is missing"
-msgstr "L'identifiant de passerelle de paiement est manquant"
+msgid "Payment gateway ID is missing"
+msgstr ""
 
 #: modules/Invoice/ServiceTransaction.php:347
 msgid "Transaction :id not found."
@@ -1365,8 +1359,8 @@ msgstr "Impossible de déterminer l'origine de la transaction. La passerelle de 
 
 #: modules/Invoice/ServiceTransaction.php:356
 #: modules/Invoice/ServiceTransaction.php:476
-msgid "Can not handle transaction received from unknown payment gateway: :id"
-msgstr "Impossible de gérer la transaction reçue d'une passerelle de paiement inconnue : :id"
+msgid "Cannot handle transaction received from unknown payment gateway: :id"
+msgstr ""
 
 #: modules/Invoice/ServiceTransaction.php:362
 #: modules/Invoice/ServiceTransaction.php:506
@@ -1395,8 +1389,8 @@ msgid "Payment gateway :id method getTransaction should return Payment_Transacti
 msgstr "La passerelle de paiement :id méthode getTransaction devrait retourner l'objet Payment_Transaction"
 
 #: modules/Invoice/ServiceTransaction.php:599
-msgid "Can not create subscription. Subscription id from payment gateway was not received"
-msgstr "Impossible de créer l'abonnement. L'id d'abonnement de la passerelle de paiement n'a pas été reçu"
+msgid "Cannot create subscription. Subscription ID from payment gateway was not received"
+msgstr ""
 
 #: modules/Invoice/ServiceTransaction.php:634
 msgid "Subscription #:id was not found. Could not unsubscribe"
@@ -1419,12 +1413,12 @@ msgid "Client currency do not match invoice currency"
 msgstr "La devise du client ne correspond pas à la devise de la facture"
 
 #: modules/Invoice/ServiceTransaction.php:678
-msgid "Can not add negative amount to client balance for debit transaction"
-msgstr "Impossible d'ajouter un montant négatif au solde du client pour la transaction de débit"
+msgid "Cannot add negative amount to client balance for debit transaction"
+msgstr ""
 
 #: modules/Massmailer/Api/Admin.php:73
-msgid "Message from name can not be empty"
-msgstr "Le nom du message ne peut pas être vide"
+msgid "Message from name cannot be empty"
+msgstr ""
 
 #: modules/Massmailer/Api/Admin.php:155 modules/Massmailer/Api/Admin.php:176
 msgid "Add some content before sending message"
@@ -1537,8 +1531,8 @@ msgid "Only active orders can be suspended"
 msgstr "Seules les commandes actives peuvent être suspendues"
 
 #: modules/Order/Service.php:1030
-msgid "Can not cancel "
-msgstr "Impossible d'annuler "
+msgid "Cannot cancel "
+msgstr ""
 
 #: modules/Product/Api/Admin.php:96
 msgid "You have already created domain product."
@@ -1581,12 +1575,12 @@ msgid "Pricing type is required"
 msgstr "Le type de tarification est requis"
 
 #: modules/Product/Service.php:422
-msgid "Can not remove product which has active orders."
-msgstr "Impossible de supprimer un produit ayant des commandes actives."
+msgid "Cannot remove product which has active orders."
+msgstr ""
 
 #: modules/Product/Service.php:481
-msgid "Can not remove product category with products"
-msgstr "Impossible de supprimer une catégorie avec des produits actifs"
+msgid "Cannot remove product category with products"
+msgstr ""
 
 #: modules/Product/Service.php:885
 msgid "This promotion code already exists."
@@ -1651,8 +1645,8 @@ msgstr "Option majuscule inconnue ':case:'. Le générateur d'API n'accepte que 
 #: modules/Servicedomain/Api/Client.php:116
 #: modules/Servicedownloadable/Api/Client.php:27
 #: modules/Servicehosting/Api/Client.php:82
-msgid "Order id is required"
-msgstr "ID de commande manquant"
+msgid "Order ID is required"
+msgstr ""
 
 #: modules/Servicecustom/Api/Admin.php:45 modules/Servicecustom/Api/Client.php:27
 msgid "API call is missing arguments"
@@ -1720,8 +1714,8 @@ msgid "TLD is used by :count: domains"
 msgstr "Le TLD est utilisé par :count: domaines"
 
 #: modules/Servicedomain/Api/Admin.php:243
-msgid "Tld already registered"
-msgstr "Le Tld est déjà enregistré"
+msgid "TLD already registered"
+msgstr ""
 
 #: modules/Servicedomain/Api/Admin.php:333
 msgid "Registrar is not available for installation."
@@ -1748,8 +1742,8 @@ msgid "TLD is not active."
 msgstr "Le TLD n'est pas actif."
 
 #: modules/Servicedomain/Api/Guest.php:124
-msgid "Domain can not be transferred."
-msgstr "Le domaine ne peut pas être transféré."
+msgid "Domain cannot be transferred."
+msgstr ""
 
 #: modules/Servicedomain/Controller/Admin.php:34
 msgid "Domain registration"
@@ -1777,8 +1771,8 @@ msgid "TLD is invalid"
 msgstr ""
 
 #: modules/Servicedomain/Service.php:97
-msgid ":domain can not be transferred!"
-msgstr ":domain ne peut pas être transféré !"
+msgid ":domain cannot be transferred!"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:126
 msgid ":tld can be registered for at least :years years"
@@ -1805,12 +1799,12 @@ msgid "Domain name is invalid"
 msgstr "Le nom de domaine est invalide"
 
 #: modules/Servicedomain/Service.php:521
-msgid "Domain can not be transferred"
-msgstr "Le domaine ne peut pas être transféré"
+msgid "Domain cannot be transferred"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:549
-msgid "Domain can not be registered"
-msgstr "Le domaine ne peut être enregistré"
+msgid "Domain cannot be registered"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:941
 msgid "Domain registrar :adapter was not found"
@@ -1838,8 +1832,8 @@ msgid "Error uploading file"
 msgstr "Erreur lors du téléversement du fichier"
 
 #: modules/Servicedownloadable/Service.php:281
-msgid "File can not be downloaded at the moment. Please contact support"
-msgstr "Le fichier ne peut pas être téléchargé pour le moment. Veuillez contacter le support"
+msgid "File cannot be downloaded at the moment. Please contact support"
+msgstr ""
 
 #: modules/Servicehosting/Api/Admin.php:26
 msgid "plan_id is missing"
@@ -1890,12 +1884,12 @@ msgid "Account username is missing or is invalid"
 msgstr "Le nom d'utilisateur est manquant ou est invalide"
 
 #: modules/Servicehosting/Service.php:314
-msgid "Account ip is missing or is invalid"
-msgstr "L'IP du compte est manquante où est invalide"
+msgid "Account IP address is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:338
-msgid "Domain sld or tld is missing"
-msgstr "Le domaine de premier ou second niveau est manquant"
+msgid "Domain SLD or TLD is missing"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:364
 msgid "Account password is missing or is invalid"
@@ -1910,8 +1904,8 @@ msgid "Server manager :adapter is invalid"
 msgstr "Le gestionnaire de serveur :adapter est invalide"
 
 #: modules/Servicehosting/Service.php:838
-msgid "Can not remove hosting plan which has active accounts"
-msgstr "Impossible de supprimer le plan d'hébergement, ayant des comptes actifs"
+msgid "Cannot remove hosting plan which has active accounts"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:1051
 msgid "Could not find main domain product"
@@ -2044,20 +2038,20 @@ msgid "Check your login details"
 msgstr "Vérifiez vos informations de connexion"
 
 #: modules/Staff/Service.php:508
-msgid "This administrator account is protected and can not be removed"
-msgstr "Ce compte administrateur est protégé et ne peut pas être supprimé"
+msgid "This administrator account is protected and cannot be removed"
+msgstr ""
 
 #: modules/Staff/Service.php:579
 msgid "Staff member with email :email is already registered"
 msgstr "Un membre de l'équipe avec l'email :email est déjà enregistré"
 
 #: modules/Staff/Service.php:671
-msgid "Administrators group can not be removed"
-msgstr "Le groupe d'administrateurs ne peut pas être supprimé"
+msgid "Administrators group cannot be removed"
+msgstr ""
 
 #: modules/Staff/Service.php:679
-msgid "Can not remove group which has staff members"
-msgstr "Impossible de supprimer le groupe qui contient des membres de l'équipe"
+msgid "Cannot remove group which has staff members"
+msgstr ""
 
 #: modules/Support/Api/Admin.php:838 modules/Support/Api/Admin.php:912
 #: modules/Support/Service.php:1651
@@ -2077,8 +2071,8 @@ msgid "Ticket not found"
 msgstr "Ticket introuvable"
 
 #: modules/Support/Api/Client.php:128
-msgid "Ticket can not be reopened."
-msgstr "Le ticket ne peut pas être rouvert."
+msgid "Ticket cannot be reopened."
+msgstr ""
 
 #: modules/Support/Api/Guest.php:35
 msgid "Please enter your message"
@@ -2151,8 +2145,8 @@ msgid "Knowledge Base"
 msgstr "Base de connaissances"
 
 #: modules/Support/Service.php:654
-msgid "Can not remove helpdesk which has tickets"
-msgstr "Impossible de supprimer une catégorie d'assistance contenant des tickets"
+msgid "Cannot remove helpdesk which has tickets"
+msgstr ""
 
 #: modules/Support/Service.php:812
 msgid "We currently aren't accepting support tickets from unregistered users. Please use another contact method."
@@ -2183,8 +2177,8 @@ msgid "Public ticket not found"
 msgstr "Ticket public introuvable"
 
 #: modules/Support/Service.php:1748
-msgid "Can not remove category which has articles"
-msgstr "Impossible de supprimer la catégorie qui a des articles"
+msgid "Cannot remove category which has articles"
+msgstr ""
 
 #: modules/System/Controller/Admin.php:33
 msgid "System"
@@ -2368,8 +2362,8 @@ msgid "Country :code phone code is not registered"
 msgstr "Le code du pays :code n'est pas enregistré"
 
 #: modules/Theme/Controller/Admin.php:61
-msgid "Theme \":name\" assets folder is not writable. Files can not be uploaded and settings can not be saved. Set folder permissions to 777"
-msgstr "Le dossier d'assets du thème \":name\" n'est pas accessible en écriture. Les fichiers ne peuvent pas être téléchargés et les paramètres ne peuvent pas être enregistrés. Définissez les autorisations du dossier sur 777"
+msgid "Theme \":name\" assets folder is not writable. Files cannot be uploaded and settings cannot be saved. Set folder permissions to 755"
+msgstr ""
 
 #: modules/Theme/Controller/Admin.php:97
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
@@ -3982,8 +3976,8 @@ msgid "Generate a new key"
 msgstr "Générer une nouvelle clé"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:216
-msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and can not be changed."
-msgstr "La devise de votre profil est définie après votre première commande. Une fois que votre devise est définie, tous les comptes de votre profil seront gérés dans cette devise et ne peuvent pas être changés."
+msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and cannot be changed."
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:218
 msgid "Your profile currency is"
@@ -4134,8 +4128,8 @@ msgid "Manage currencies"
 msgstr "Gérer les devises"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:51
-msgid "Default currency is the one you manage all your prices in admin area. If your client in client area chooses other than default currency, prices will be recalculated according to conversion rate. You can have only one default currency. You can not add same currency once again. Changing default currency is not recommended when active orders are available. Nothing is recalculated on default currency change. Your income is calculated in default currency. Changing default currency after you have paid invoices will distort income statistics. Currency rates are taken from European Central Bank and currencylayer."
-msgstr "La devise par défaut est celle dans laquelle vous gérez tous vos prix dans la zone d'administration. Si votre client dans l'espace client choisit une devise autre que la devise par défaut, les prix seront recalculés en fonction du taux de conversion. Vous ne pouvez avoir qu'une seule devise par défaut. Vous ne pouvez pas ajouter à nouveau la même devise. Il n'est pas recommandé de changer la devise par défaut lorsque des commandes actives sont disponibles. Rien n'est recalculé lors du changement de devise par défaut. Vos revenus sont calculés dans la devise par défaut. Changer la devise par défaut après avoir payé vos factures faussera les statistiques de revenus. Les taux de change sont tirés de la Banque centrale européenne et du gestionnaire de devises."
+msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. You can have only one default currency. You cannot add multiple instances of the same currency. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics. Currency rates are taken from the European Central Bank and currencylayer."
+msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:57
 msgid "ISO code"
@@ -4866,8 +4860,8 @@ msgid "Edit field"
 msgstr "Modifier le champ"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:18
-msgid "Please keep in mind that field name can not start with number. Special characters will be replaced with underscores ( _ )"
-msgstr "Veuillez garder à l'esprit que le nom du champ ne peut pas commencer par un nombre. Les caractères spéciaux seront remplacés par des traits de soulignement ( _ )"
+msgid "Please keep in mind that field name cannot start with a number. Special characters will be replaced with underscores ( _ )"
+msgstr ""
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:22
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:33
@@ -5858,8 +5852,8 @@ msgid "Thank you for your patience."
 msgstr "Merci pour votre patience."
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:24
-msgid "Redirecting to payment gateway.."
-msgstr "Redirection vers la passerelle de paiement.."
+msgid "Redirecting to payment gateway..."
+msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:30
 msgid "Please click here to continue if this page does not redirect automatically in 5 seconds"
@@ -5997,16 +5991,16 @@ msgid "Thank you"
 msgstr "Merci"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
-msgid "Your payment has been submitted and will be processed shortly. It may take a little bit of time for your invoice to be marked as paid."
-msgstr "Votre paiement a été soumis et sera traité sous peu. Cela peut prendre un peu de temps pour que votre facture soit marquée comme payée."
+msgid "Your payment has been submitted and will be processed shortly. It may take some time for your invoice to be marked as paid."
+msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
 msgid "Payment for invoice received"
 msgstr "Paiement pour la facture reçu"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
-msgid "You will be automatically redirected to the invoice page after 1 minute."
-msgstr "Vous serez automatiquement redirigé vers la page de la facture après 1 minute."
+msgid "You will be automatically redirected back to the invoice after 1 minute."
+msgstr ""
 
 #: modules/Invoice/pdf_template/default-pdf.twig:31
 msgid "Invoice date"
@@ -6726,12 +6720,12 @@ msgid "Order Button code"
 msgstr "Code du bouton de commande"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:192
-msgid "Clicking on html element with classname or ID"
-msgstr "Cliquer sur l'élément html avec le nom de classe ou l'ID"
+msgid "Clicking on an HTML element with the classname or ID"
+msgstr ""
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:198
-msgid "will open popup window for"
-msgstr "ouvrira la fenêtre popup pour"
+msgid "will open a popup window for"
+msgstr ""
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
 msgid "symbols"
@@ -7400,8 +7394,8 @@ msgid "API key settings updated"
 msgstr "Paramètres de la clé API mis à jour"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:7
-msgid "Here you can configured the length of the API keys that will be generated. We recommend making this no less than 16 at a minimum. When in doubt, leave this at 32."
-msgstr "Ici, vous pouvez configurer la longueur des clés API qui seront générées. Nous vous recommandons d’en faire au moins 16 au minimum. En cas de doute, laissez-le à 32."
+msgid "Here you can configure the length of the API keys that will be generated. We recommend making this no less than 16 at a minimum. When in doubt, leave this at 32."
+msgstr ""
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:8
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:37
@@ -8108,8 +8102,8 @@ msgid "Free domain registration"
 msgstr "Enregistrement de domaine gratuit"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:46
-msgid "Select free tlds"
-msgstr "Sélectionner les tlds gratuits"
+msgid "Select free TLDs"
+msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:60
 msgid "Select free periods"
@@ -8677,8 +8671,8 @@ msgid "Valid IPs"
 msgstr "IP valides"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:26
-msgid "All ips"
-msgstr "Toutes les IP"
+msgid "All IPs"
+msgstr ""
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:35
 msgid "Valid Domains"
@@ -8697,8 +8691,8 @@ msgid "All versions"
 msgstr "Toutes les versions"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:65
-msgid "Valid Install paths"
-msgstr "Chemins d'installation valides"
+msgid "Valid Installation Paths"
+msgstr ""
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:71
 msgid "All paths"
@@ -8888,8 +8882,8 @@ msgid "INFORMATION"
 msgstr "INFORMATION"
 
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:31
-msgid "This staff member is used by FOSSBilling to perform system tasks and can not be removed."
-msgstr "Ce membre du personnel est utilisé par FOSSBilling pour effectuer des tâches système et ne peut pas être supprimé."
+msgid "This staff member is used by FOSSBilling to perform system tasks and cannot be removed."
+msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:40
 msgid "Permissions"
@@ -9491,8 +9485,8 @@ msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr "Interdire l'API invité pour récupérer la version FOSSBilling"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:165
-msgid "Enabling this functionality may effect modules that depend on it."
-msgstr "L'activation de cette fonctionnalité peut affecter les modules qui en dépendent."
+msgid "Enabling this functionality may affect modules that depend on it."
+msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:184
 msgid "Hide some company information in the guest API"
@@ -9591,8 +9585,8 @@ msgid "Error reporting changelog"
 msgstr "Erreur lors du signalement des modifications"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:566
-msgid "Last applicable behavior change change: "
-msgstr "Dernier changement de comportement applicable : "
+msgid "Last applicable behavior change: "
+msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:569
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
@@ -9737,8 +9731,8 @@ msgstr "Thèmes du panel admin"
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:21
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:30
-msgid "Wysiwyg settings"
-msgstr "Paramètres wysiwyg"
+msgid "WYSIWYG settings"
+msgstr ""
 
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:34
 msgid "Default editor"
@@ -9790,8 +9784,9 @@ msgid "Search:"
 msgstr "Recherche:"
 
 #: themes/admin_default/html/macro_functions.html.twig:131
-msgid "Enter search text.."
-msgstr "Entrez le texte à rechercher.."
+#: themes/admin_default/html/partial_search.html.twig:14
+msgid "Enter search text..."
+msgstr "Entrez le texte à rechercher..."
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:26
 msgid "Danger!"
@@ -9897,8 +9892,8 @@ msgid "View on the extension directory"
 msgstr "Voir sur le répertoire des extensions"
 
 #: themes/admin_default/html/partial_extensions.html.twig:49
-msgid "View extension readme"
-msgstr "Voir le readme de l'extension"
+msgid "View extension README"
+msgstr ""
 
 #: themes/admin_default/html/partial_extensions.html.twig:63
 msgid "Install extension"
@@ -9961,10 +9956,6 @@ msgstr "Hebdomadaire"
 #: themes/admin_default/html/partial_pricing.html.twig:73
 msgid "Monthly"
 msgstr "Mensuel"
-
-#: themes/admin_default/html/partial_search.html.twig:14
-msgid "Enter search text..."
-msgstr "Entrez le texte à rechercher..."
 
 #: themes/admin_default/html/partial_search.html.twig:15
 msgid "Search"
