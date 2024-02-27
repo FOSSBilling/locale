@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-02-18 16:29-0800\n"
-"PO-Revision-Date: 2024-02-19 02:17\n"
+"POT-Creation-Date: 2024-02-27 03:07-0800\n"
+"PO-Revision-Date: 2024-02-27 11:12\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -11,6 +11,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-SearchPathExcluded-1: *.html\n"
@@ -28,8 +29,8 @@ msgstr ""
 "Language: zh_CN\n"
 
 #: di.php:315
-msgid "It appears you are trying to use FOSSBilling without the php intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
-msgstr "您似乎正在尝试使用 FOSSBilling 而不启用 php intl 扩展。 FOSSBilling包含一个用于intl扩展的聚合物，但它不支持 :locale。请启用 intl 扩展。"
+msgid "It appears you are trying to use FOSSBilling without the PHP intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
+msgstr ""
 
 #: di.php:363 di.php:437
 msgid "Client is not logged in"
@@ -44,7 +45,7 @@ msgid "Unrecognized Handler type: "
 msgstr ""
 
 #: di.php:525
-msgid "Please check your mailbox and confirm email address."
+msgid "Please check your mailbox and confirm your email address."
 msgstr ""
 
 #: index.php:80 library/Box/App.php:419 library/Box/AppClient.php:70
@@ -63,7 +64,7 @@ msgstr "模块对象未为服务设置"
 msgid "Method :method must contain underscore"
 msgstr "方法：方法中必须包含下划线"
 
-#: library/Api/Handler.php:55 library/Box/Mod.php:56
+#: library/Api/Handler.php:55 library/Box/Mod.php:57
 msgid "Invalid module name"
 msgstr "无效的模块名称"
 
@@ -72,12 +73,12 @@ msgid "FOSSBilling module :mod is not installed/activated"
 msgstr "FOSSBilling 模块 :mod 未安装/激活"
 
 #: library/Api/Handler.php:75
-msgid "You do not have access to :mod module"
-msgstr "您无权访问 :mod 模块"
+msgid "You do not have access to the :mod module"
+msgstr ""
 
 #: library/Api/Handler.php:91
-msgid "Api class must be instance of Api_Abstract"
-msgstr "Api类必须是 Api_Abstract 的实例"
+msgid "Api class must be an instance of Api_Abstract"
+msgstr ""
 
 #: library/Api/Handler.php:107
 msgid ":type API call :method does not exist in module :module"
@@ -96,8 +97,8 @@ msgid "Page not found"
 msgstr "未找到页面"
 
 #: library/Box/Crypt.php:23
-msgid "The PHP openssl extension must be enabled on your server"
-msgstr "必须在您的服务器上启用 PHP OpenSSL 扩展"
+msgid "The PHP OpenSSL extension must be enabled on your server"
+msgstr ""
 
 #: library/Box/Log.php:69
 msgid "Missing log message"
@@ -107,25 +108,25 @@ msgstr "缺少日志消息"
 msgid "Bad log priority"
 msgstr "错误的日志优先级"
 
-#: library/Box/Mod.php:75
+#: library/Box/Mod.php:76
 msgid "Module :mod manifest file is missing"
 msgstr "模块 :mod manifest 文件丢失"
 
-#: library/Box/Mod.php:80
+#: library/Box/Mod.php:81
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr "模块 :mod manifest 文件无效。请检查文件的语法和权限。"
 
-#: library/Box/Mod.php:122
+#: library/Box/Mod.php:125
 msgid "Module :mod does not have service class"
 msgstr "模块 :mod 没有服务类"
 
-#: library/Box/Mod.php:141
+#: library/Box/Mod.php:144
 msgid "Module :mod Client controller class was not found"
 msgstr "模块 :mod Client 控制器类未找到"
 
-#: library/Box/Mod.php:216
-msgid "Core module can not be updated"
-msgstr "核心模块无法更新"
+#: library/Box/Mod.php:219
+msgid "Core modules cannot be updated"
+msgstr ""
 
 #: library/Box/Pagination.php:44 library/Box/Pagination.php:77
 msgid "Invalid page number"
@@ -210,7 +211,7 @@ msgid "Unable to get the number of months for :unit"
 msgstr "无法获取 :unit 的月数"
 
 #: library/Box/Translate.php:55
-msgid "Unable to setup FOSSBilling translation functionality, locale was undefined."
+msgid "Unable to set up FOSSBilling translation functionality, locale was undefined."
 msgstr ""
 
 #: library/Box/TwigExtensions.php:252
@@ -251,23 +252,23 @@ msgid "Missing :missing: param for Box_TwigLoader"
 msgstr "Box_TwigLoader缺少参数 :missing:"
 
 #: library/FOSSBilling/CentralAlerts.php:119
-msgid "Unable to fetch alerts from Central Alerts System. See error log for more information."
-msgstr "无法从警报中心系统获取警报。详情请查看错误日志。"
+msgid "Unable to fetch alerts from Central Alerts System. See the error log for more information."
+msgstr ""
 
 #: library/FOSSBilling/CentralAlerts.php:127
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "FOSSBilling 中央警报系统的响应无效。"
 
 #: library/FOSSBilling/Config.php:90
-msgid "Unable to create backup of configuration file."
+msgid "An error occurred when creating a backup of the configuration file."
 msgstr ""
 
 #: library/FOSSBilling/Config.php:96
-msgid "Error when writing updated configuration file."
-msgstr "写入更新的配置文件时出错。"
+msgid "An error occurred when writing the updated configuration file."
+msgstr ""
 
 #: library/FOSSBilling/Config.php:146
-msgid "Too many iterations performed while formatting the config file"
+msgid "Too many iterations were performed while formatting the config file"
 msgstr ""
 
 #: library/FOSSBilling/ExtensionManager.php:57
@@ -275,12 +276,12 @@ msgid "Unable to fetch the extension details from the FOSSBilling extension dire
 msgstr "无法从 FOSSBilling 扩展目录获取扩展详细信息。"
 
 #: library/FOSSBilling/ExtensionManager.php:79
-msgid "Unable to fetch the releases of the extension from the FOSSBilling extension directory."
-msgstr "无法从 FOSSBilling 扩展目录获取扩展详细信息。"
+msgid "An error occurred when fetching the extensions releases"
+msgstr ""
 
 #: library/FOSSBilling/ExtensionManager.php:102
-msgid "Unable to fetch the latest release of the extension."
-msgstr "无法获取扩展的最新版本。"
+msgid "Unable to fetch the latest extension release."
+msgstr ""
 
 #: library/FOSSBilling/ExtensionManager.php:175
 msgid "Unable to connect to the FOSSBilling extension directory."
@@ -299,8 +300,8 @@ msgid "FOSSBilling requires the proc_open PHP function to be enabled when using 
 msgstr "FOSSBilling 需要在使用发送邮件传输时启用 proc_open PHP 函数"
 
 #: library/FOSSBilling/Mail.php:158
-msgid "A Sendgrid API key is required to send emails via Sendgrid"
-msgstr "通过Sendgrid发送邮件需要Sendgrid API的密钥"
+msgid "A SendGrid API key is required to send emails via SendGrid"
+msgstr ""
 
 #: library/FOSSBilling/Mail.php:165
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
@@ -342,14 +343,14 @@ msgid "Failed to download the latest version information. Further details are av
 msgstr "下载最新版本信息失败。在错误日志中可以获得更多信息。"
 
 #: library/FOSSBilling/Update.php:209 modules/System/Api/Admin.php:192
-msgid "You have latest version of FOSSBilling. You do not need to update."
-msgstr "您有最新版本的 FOSSBilling。您无需更新。"
+msgid "You have the latest version of FOSSBilling. You do not need to update."
+msgstr ""
 
 #: library/FOSSBilling/Update.php:233
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "无法下载更新归档。在错误日志中可获得更多详细信息。"
 
-#: library/FOSSBilling/Update.php:247 modules/Extension/Service.php:476
+#: library/FOSSBilling/Update.php:247 modules/Extension/Service.php:477
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "提取文件失败，请检查文件和文件夹权限。在错误日志中有更多详细信息。"
 
@@ -403,8 +404,8 @@ msgid "Unknown TLD. Could not determine registration price"
 msgstr "未知的 TLD。无法确定注册价格"
 
 #: library/Model/ProductDomainTable.php:254
-msgid "Domain product can not be removed."
-msgstr "域名产品不能被删除。"
+msgid "Domain product cannot be removed."
+msgstr ""
 
 #: library/Model/ProductTable.php:61
 msgid "Unknown period selected "
@@ -427,14 +428,14 @@ msgid "Unknown Period selected for price"
 msgstr "为设置价格选择的未知周期"
 
 #: library/Payment/Adapter/ClientBalance.php:59
-msgid "Not enough in balance"
-msgstr "余额不足"
+msgid "Your account balance is insufficient to cover this invoice."
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:64
 #: library/Payment/Adapter/ClientBalance.php:94
 #: library/Payment/Adapter/ClientBalance.php:129
-msgid "It is forbidden to pay a deposit invoice with this gateway"
-msgstr "禁止在此网关上支付发票"
+msgid "You may not pay a deposit invoice with this payment gateway."
+msgstr ""
 
 #: library/Payment/Adapter/ClientBalance.php:84
 #: library/Payment/Adapter/PayPalEmail.php:75
@@ -473,20 +474,20 @@ msgid "There was an error when processing the transaction"
 msgstr "处理交易时发生错误"
 
 #: library/Payment/AdapterAbstract.php:51
-msgid "Return URL for payment gateway was not set"
-msgstr "未设置支付网关的返回 URL"
+msgid "Return URL for the payment gateway was not set"
+msgstr ""
 
 #: library/Payment/AdapterAbstract.php:58
-msgid "Cancel URL for payment gateway was not set"
-msgstr "未设置取消支付的 URL"
+msgid "Cancel URL for the payment gateway was not set"
+msgstr ""
 
 #: library/Payment/AdapterAbstract.php:66
-msgid "IPN Notification URL for payment gateway was not set"
-msgstr "未设置支付网关的 IPN 通知 URL"
+msgid "IPN Notification URL for the payment gateway was not set"
+msgstr ""
 
 #: library/Payment/AdapterAbstract.php:76
-msgid "IPN redirect URL for payment gateway was not set"
-msgstr "未设置支付网关的 IPN 重定向 URL"
+msgid "IPN redirect URL for the payment gateway was not set"
+msgstr ""
 
 #: library/Registrar/Adapter/Email.php:23
 #: library/Registrar/Adapter/Internetbs.php:18
@@ -506,8 +507,8 @@ msgid "The \":domain_registrar\" domain registrar is not fully configured. Pleas
 msgstr "\":domain_registrar\"域名注册商未配置好。请配置 :missing"
 
 #: library/Registrar/Adapter/Email.php:69 library/Registrar/Adapter/Email.php:74
-msgid "Email registrar is unable to :action:"
-msgstr "注册商邮箱不能 :action:"
+msgid ":type: registrar is unable to :action:"
+msgstr ""
 
 #: library/Registrar/Adapter/Internetbs.php:76
 msgid "checking domain transferability"
@@ -541,10 +542,10 @@ msgstr ""
 #: library/Registrar/Adapter/Namecheap.php:683
 #: library/Registrar/Adapter/Namecheap.php:710
 #: library/Registrar/Adapter/Namecheap.php:742
-#: library/Registrar/Adapter/Resellerclub.php:395
-#: library/Registrar/Adapter/Resellerclub.php:717
-#: library/Registrar/Adapter/Resellerclub.php:724
-#: library/Registrar/Adapter/Resellerclub.php:731
+#: library/Registrar/Adapter/Resellerclub.php:396
+#: library/Registrar/Adapter/Resellerclub.php:721
+#: library/Registrar/Adapter/Resellerclub.php:728
+#: library/Registrar/Adapter/Resellerclub.php:735
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr "在 :type: 的 :action: 失败，请在错误日志中查看详情"
 
@@ -582,35 +583,35 @@ msgstr "获取域名锁定与否状态"
 msgid "set the domain lock status"
 msgstr "设定域名锁定状态"
 
-#: library/Registrar/Adapter/Resellerclub.php:326
+#: library/Registrar/Adapter/Resellerclub.php:327
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
 msgstr "注册 .AU 域名必须持有有效的公司注册号"
 
-#: library/Registrar/Adapter/Resellerclub.php:393
+#: library/Registrar/Adapter/Resellerclub.php:394
 msgid "get the transfer code"
 msgstr "获取域名转移密码"
 
-#: library/Registrar/Adapter/Resellerclub.php:593
+#: library/Registrar/Adapter/Resellerclub.php:596
 msgid "You are already registered as reseller"
 msgstr "您已经注册为代理商"
 
-#: library/Registrar/Adapter/Resellerclub.php:855
+#: library/Registrar/Adapter/Resellerclub.php:860
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr "注册ES域名时须有有效的联系人护照信息"
 
-#: library/Registrar/Adapter/Resellerclub.php:874
+#: library/Registrar/Adapter/Resellerclub.php:879
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr "注册ASIA域名时须有有效的联系人护照信息"
 
-#: library/Registrar/Adapter/Resellerclub.php:898
+#: library/Registrar/Adapter/Resellerclub.php:903
 msgid "Valid contact birthdate is required while registering RU domain name"
 msgstr "注册RU域名时须有联系人的出生日期"
 
-#: library/Registrar/Adapter/Resellerclub.php:902
+#: library/Registrar/Adapter/Resellerclub.php:907
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr "注册RU域名时须有有效的联系人护照信息"
 
-#: library/Registrar/Adapter/Resellerclub.php:989
+#: library/Registrar/Adapter/Resellerclub.php:994
 msgid "Contact not found"
 msgstr "未找到联系人"
 
@@ -686,8 +687,8 @@ msgid "There are no available IPs on this server."
 msgstr "此服务器上没有可用的 IP 地址。"
 
 #: library/Server/Manager/Directadmin.php:342
-msgid "Unable to assign the Reseller ANY ips. Make sure to have free, un-assigned ips."
-msgstr "无法为代理商分配IP地址。请确保有空闲的未分配IP地址。"
+msgid "Unable to assign the Reseller ANY IPs. Make sure to have free, unassigned IPs."
+msgstr ""
 
 #: library/Server/Manager/Directadmin.php:346
 msgid "Error creating user"
@@ -780,20 +781,20 @@ msgstr "未找到该币种"
 
 #: modules/Cart/Api/Guest.php:96 modules/Cart/Api/Guest.php:104
 #: modules/Cart/Service.php:447
-msgid "Promo code is expired or does not exist"
-msgstr "优惠码已过期或不存在"
+msgid "The promo code has expired or does not exist"
+msgstr ""
 
 #: modules/Cart/Api/Guest.php:100 modules/Cart/Service.php:451
-msgid "Promo can not be applied to your account"
-msgstr "您的账号不能享受此优惠"
+msgid "Promo code cannot be applied to your account"
+msgstr ""
 
 #: modules/Cart/Api/Guest.php:161
 msgid "Addon products cannot be added separately."
 msgstr "附加组件产品不能单独添加。"
 
 #: modules/Cart/Api/Guest.php:175
-msgid "One or more of your selected addons are invalid for the associated product."
-msgstr "您所选的一个或多个附加组件对产品无效。"
+msgid "One or more of your selected add-ons are invalid for the associated product."
+msgstr ""
 
 #: modules/Cart/Service.php:102
 msgid "Selected billing period is invalid"
@@ -804,24 +805,24 @@ msgid "This item is currently out of stock"
 msgstr "该产品目前缺货"
 
 #: modules/Cart/Service.php:142
-msgid "Selected billing period is invalid for the selected addon"
-msgstr "选定的附加组件的计费周期无效"
+msgid "Selected billing period is invalid for the selected add-on"
+msgstr ""
 
 #: modules/Cart/Service.php:236 modules/Product/Api/Guest.php:82
 msgid "Product not found"
 msgstr "未找到产品"
 
 #: modules/Cart/Service.php:298
-msgid "Add products to cart before applying promo code"
-msgstr "请将产品加到购物车后再使用优惠码"
+msgid "Add products to your cart before applying promo code"
+msgstr ""
 
 #: modules/Cart/Service.php:443
-msgid "You have already used this promo code. Please remove promo code and checkout again."
-msgstr "您已经使用了此优惠码。请删除优惠码后重新结账。"
+msgid "You have already used this promo code. Please remove the promo code and checkout again."
+msgstr ""
 
 #: modules/Cart/Service.php:503
-msgid "Can not checkout an empty cart"
-msgstr "购物车空的，无法结帐"
+msgid "Cannot checkout an empty cart"
+msgstr ""
 
 #: modules/Cart/Service.php:515
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -839,13 +840,10 @@ msgstr "折扣：产品"
 msgid ":product setup"
 msgstr ":产品 设置"
 
-#: modules/Client/Api/Admin.php:149
-msgid "Email is already registered."
-msgstr "该邮箱已注册。"
-
-#: modules/Client/Api/Admin.php:239 modules/Profile/Service.php:133
-msgid "Can not change email. It is already registered."
-msgstr "修改邮箱失败，因为已经注册。"
+#: modules/Client/Api/Admin.php:149 modules/Client/Api/Admin.php:239
+#: modules/Client/Api/Guest.php:84 modules/Profile/Service.php:133
+msgid "This email address is already registered."
+msgstr ""
 
 #: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:227
 #: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:113
@@ -868,10 +866,6 @@ msgstr "暂停注册"
 #: modules/Client/Api/Guest.php:71
 msgid "Passwords do not match."
 msgstr "密码不一致。"
-
-#: modules/Client/Api/Guest.php:84
-msgid "Email is already registered. You may want to login instead of registering."
-msgstr "邮箱已注册。您可以尝试直接登录。"
 
 #: modules/Client/Api/Guest.php:130
 msgid "Please check your login details."
@@ -920,16 +914,16 @@ msgid "The password you chose when creating your account."
 msgstr "在创建账号时选定的密码。"
 
 #: modules/Client/Service.php:225
-msgid "Currency can not be changed. Client already have invoices issued."
-msgstr "无法更换币种，因为已经出账单了。"
+msgid "Currency cannot be changed. Client already has invoices issued."
+msgstr ""
 
 #: modules/Client/Service.php:230
-msgid "Currency can not be changed. Client already have orders."
-msgstr "无法更换币种，因为用户已经提交订单了。"
+msgid "Currency cannot be changed. Client already has orders."
+msgstr ""
 
 #: modules/Client/Service.php:239
-msgid "Define clients currency before adding funds."
-msgstr "为用户充值前设置币种。"
+msgid "You must define the client's currency before adding funds."
+msgstr ""
 
 #: modules/Client/Service.php:243 modules/Client/ServiceBalance.php:125
 msgid "Funds amount is invalid"
@@ -948,12 +942,12 @@ msgid "Client not found"
 msgstr "找不到用户"
 
 #: modules/Client/Service.php:472
-msgid "Can not remove group with clients"
-msgstr "无法移除用户组"
+msgid "Cannot remove groups with clients"
+msgstr ""
 
 #: modules/Client/Service.php:633 modules/Profile/Service.php:125
-msgid "Email can not be changed"
-msgstr "无法修改邮箱"
+msgid "Email address cannot be changed"
+msgstr ""
 
 #: modules/Client/Service.php:647 modules/Client/Service.php:663
 msgid "Field :field cannot be empty"
@@ -977,16 +971,16 @@ msgid "Currency code is invalid"
 msgstr "货币代码无效"
 
 #: modules/Currency/Service.php:66
-msgid "Currency conversion rate can not be zero"
-msgstr "汇率不能为零"
+msgid "Currency conversion rate cannot be zero"
+msgstr ""
 
 #: modules/Currency/Service.php:132
 msgid "Currency code not provided"
 msgstr "货币代码未写明"
 
 #: modules/Currency/Service.php:330
-msgid "Can not remove default currency"
-msgstr "不能删除默认币种"
+msgid "Cannot remove default currency"
+msgstr ""
 
 #: modules/Currency/Service.php:455
 msgid "Currency format must include {{price}} tag"
@@ -1037,8 +1031,8 @@ msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin p
 msgstr "未指定收件人。可设置用户、员工或管理员作为参数"
 
 #: modules/Email/Service.php:204
-msgid "From email address can not be empty"
-msgstr "发件人邮箱不能为空"
+msgid "The \"from\" email address cannot be empty"
+msgstr ""
 
 #: modules/Email/Service.php:480
 msgid "Email template :code was not found"
@@ -1078,45 +1072,45 @@ msgstr ""
 msgid "Allows the staff member to install, update, or remove extensions."
 msgstr ""
 
-#: modules/Extension/Service.php:337
+#: modules/Extension/Service.php:339
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "请访问扩展目录以了解更多关于更新扩展的信息。"
 
-#: modules/Extension/Service.php:390
-msgid "FOSSBilling core modules can not be managed"
-msgstr "FOSSBilling 核心模块无法管理"
+#: modules/Extension/Service.php:391
+msgid "FOSSBilling core modules cannot be managed"
+msgstr ""
 
-#: modules/Extension/Service.php:439
+#: modules/Extension/Service.php:440
 msgid "Coudn't find a valid download URL for the extension."
 msgstr ""
 
-#: modules/Extension/Service.php:443
+#: modules/Extension/Service.php:444
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
 msgstr ""
 
-#: modules/Extension/Service.php:459
+#: modules/Extension/Service.php:460
 msgid "Failed to download the extension with error :code"
 msgstr "下载扩展时出现错误 :code"
 
-#: modules/Extension/Service.php:500
+#: modules/Extension/Service.php:501
 msgid "Extension :id seems to be already installed."
 msgstr "扩展 :id 似乎已经安装。"
 
-#: modules/Extension/Service.php:503
+#: modules/Extension/Service.php:504
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "无法移动扩展。请检查目标目录的权限。(:destination)"
 
-#: modules/Extension/Service.php:506
+#: modules/Extension/Service.php:507
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "不能自动安装扩展类型 (:type) 。"
 
-#: modules/Extension/Service.php:539
-msgid "FOSSBilling core modules can not be installed or removed"
-msgstr "FOSSBilling 核心模块无法安装或删除"
+#: modules/Extension/Service.php:540
+msgid "FOSSBilling core modules cannot be installed or removed"
+msgstr ""
 
-#: modules/Extension/Service.php:544
-msgid "Module can not be installed. It requires at least :min version of FOSSBilling. You are using :v"
-msgstr "无法安装模块。它至少需要 :min 版本的 FOSSBilling。您正在使用 :v"
+#: modules/Extension/Service.php:545
+msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
+msgstr ""
 
 #: modules/Extension/Service.php:718
 msgid "Manage settings"
@@ -1156,12 +1150,12 @@ msgid "Field type not supported"
 msgstr "不支持的字段类型"
 
 #: modules/Formbuilder/Service.php:140
-msgid "Field name can not start with number."
-msgstr "字段名称不能以数字开头。"
+msgid "Field name cannot start with number."
+msgstr ""
 
 #: modules/Formbuilder/Service.php:144
-msgid "Field name can not be empty. Please make sure it is not empty and does not contain special characters."
-msgstr "字段名不能为空。请确保它不是空的，并且不包含特殊字符。"
+msgid "Field name cannot be empty. Please make sure it is not empty and does not contain special characters."
+msgstr ""
 
 #: modules/Formbuilder/Service.php:161
 msgid "Unfortunately field with this name exists in this form already. Form must have different field names."
@@ -1202,8 +1196,8 @@ msgid "Invoice was not found"
 msgstr "未找到账单"
 
 #: modules/Invoice/Api/Client.php:82 modules/Invoice/Api/Guest.php:62
-msgid "Paid Invoice can not be modified"
-msgstr "不能修改已支付的账单"
+msgid "Paid Invoice cannot be modified"
+msgstr ""
 
 #: modules/Invoice/Api/Client.php:110 modules/Order/Api/Client.php:121
 #: modules/Servicedomain/Api/Client.php:122
@@ -1278,8 +1272,8 @@ msgid "Unable to determine the next invoice number"
 msgstr "无法确定下一个发票编号"
 
 #: modules/Invoice/Service.php:632
-msgid "Can not refund invoice with negative amount"
-msgstr "无法为负数金额的账单退款"
+msgid "Cannot refund invoice with negative amount"
+msgstr ""
 
 #: modules/Invoice/Service.php:847
 msgid "Invoice is related to order #:id. Please cancel order first."
@@ -1343,12 +1337,12 @@ msgid "Payment gateway :adapter was not found"
 msgstr "未找到支付网关 :adapter"
 
 #: modules/Invoice/ServiceTransaction.php:82
-msgid "Transaction invoice id is missing"
-msgstr "缺少交易编号 id"
+msgid "Transaction invoice ID is missing"
+msgstr ""
 
 #: modules/Invoice/ServiceTransaction.php:86
-msgid "Payment gateway id is missing"
-msgstr "缺少支付网关的 id"
+msgid "Payment gateway ID is missing"
+msgstr ""
 
 #: modules/Invoice/ServiceTransaction.php:347
 msgid "Transaction :id not found."
@@ -1361,8 +1355,8 @@ msgstr "无法确定交易的来源。交易支付网关未知。"
 
 #: modules/Invoice/ServiceTransaction.php:356
 #: modules/Invoice/ServiceTransaction.php:476
-msgid "Can not handle transaction received from unknown payment gateway: :id"
-msgstr "无法处理从未知支付网关收到的交易：:id"
+msgid "Cannot handle transaction received from unknown payment gateway: :id"
+msgstr ""
 
 #: modules/Invoice/ServiceTransaction.php:362
 #: modules/Invoice/ServiceTransaction.php:506
@@ -1391,8 +1385,8 @@ msgid "Payment gateway :id method getTransaction should return Payment_Transacti
 msgstr "支付网关 :id method getTransaction 应该返回 Payment_Transaction 对象"
 
 #: modules/Invoice/ServiceTransaction.php:599
-msgid "Can not create subscription. Subscription id from payment gateway was not received"
-msgstr "无法创建订阅。未接收到付款网关的订阅 id"
+msgid "Cannot create subscription. Subscription ID from payment gateway was not received"
+msgstr ""
 
 #: modules/Invoice/ServiceTransaction.php:634
 msgid "Subscription #:id was not found. Could not unsubscribe"
@@ -1415,12 +1409,12 @@ msgid "Client currency do not match invoice currency"
 msgstr "用户的币种与账单的不匹配"
 
 #: modules/Invoice/ServiceTransaction.php:678
-msgid "Can not add negative amount to client balance for debit transaction"
-msgstr "不能为借记交易添加负数到用户的余额"
+msgid "Cannot add negative amount to client balance for debit transaction"
+msgstr ""
 
 #: modules/Massmailer/Api/Admin.php:73
-msgid "Message from name can not be empty"
-msgstr "发信人不能留空"
+msgid "Message from name cannot be empty"
+msgstr ""
 
 #: modules/Massmailer/Api/Admin.php:155 modules/Massmailer/Api/Admin.php:176
 msgid "Add some content before sending message"
@@ -1533,8 +1527,8 @@ msgid "Only active orders can be suspended"
 msgstr "只能暂停有效的订单"
 
 #: modules/Order/Service.php:1030
-msgid "Can not cancel "
-msgstr "无法取消 "
+msgid "Cannot cancel "
+msgstr ""
 
 #: modules/Product/Api/Admin.php:96
 msgid "You have already created domain product."
@@ -1577,12 +1571,12 @@ msgid "Pricing type is required"
 msgstr "价格类型是必需的"
 
 #: modules/Product/Service.php:422
-msgid "Can not remove product which has active orders."
-msgstr "无法删除有有效订单的产品。"
+msgid "Cannot remove product which has active orders."
+msgstr ""
 
 #: modules/Product/Service.php:481
-msgid "Can not remove product category with products"
-msgstr "无法删除有产品的分类"
+msgid "Cannot remove product category with products"
+msgstr ""
 
 #: modules/Product/Service.php:885
 msgid "This promotion code already exists."
@@ -1647,8 +1641,8 @@ msgstr "未知的选项 ':case:' 。API 生成器接受 小写、大写 或 大�
 #: modules/Servicedomain/Api/Client.php:116
 #: modules/Servicedownloadable/Api/Client.php:27
 #: modules/Servicehosting/Api/Client.php:82
-msgid "Order id is required"
-msgstr "订单 id 是必需的"
+msgid "Order ID is required"
+msgstr ""
 
 #: modules/Servicecustom/Api/Admin.php:45 modules/Servicecustom/Api/Client.php:27
 msgid "API call is missing arguments"
@@ -1716,8 +1710,8 @@ msgid "TLD is used by :count: domains"
 msgstr "顶级域名后缀被 :count: 个域名所使用"
 
 #: modules/Servicedomain/Api/Admin.php:243
-msgid "Tld already registered"
-msgstr "域名后缀已注册"
+msgid "TLD already registered"
+msgstr ""
 
 #: modules/Servicedomain/Api/Admin.php:333
 msgid "Registrar is not available for installation."
@@ -1744,8 +1738,8 @@ msgid "TLD is not active."
 msgstr "域名后缀未启用"
 
 #: modules/Servicedomain/Api/Guest.php:124
-msgid "Domain can not be transferred."
-msgstr "域名不能转移。"
+msgid "Domain cannot be transferred."
+msgstr ""
 
 #: modules/Servicedomain/Controller/Admin.php:34
 msgid "Domain registration"
@@ -1773,8 +1767,8 @@ msgid "TLD is invalid"
 msgstr ""
 
 #: modules/Servicedomain/Service.php:97
-msgid ":domain can not be transferred!"
-msgstr ":domain 无法转移！"
+msgid ":domain cannot be transferred!"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:126
 msgid ":tld can be registered for at least :years years"
@@ -1801,12 +1795,12 @@ msgid "Domain name is invalid"
 msgstr "域名无效"
 
 #: modules/Servicedomain/Service.php:521
-msgid "Domain can not be transferred"
-msgstr "域名不能转移"
+msgid "Domain cannot be transferred"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:549
-msgid "Domain can not be registered"
-msgstr "域名不能注册"
+msgid "Domain cannot be registered"
+msgstr ""
 
 #: modules/Servicedomain/Service.php:941
 msgid "Domain registrar :adapter was not found"
@@ -1834,8 +1828,8 @@ msgid "Error uploading file"
 msgstr "上传文件出错"
 
 #: modules/Servicedownloadable/Service.php:281
-msgid "File can not be downloaded at the moment. Please contact support"
-msgstr "文件目前无法下载。请联系客服。"
+msgid "File cannot be downloaded at the moment. Please contact support"
+msgstr ""
 
 #: modules/Servicehosting/Api/Admin.php:26
 msgid "plan_id is missing"
@@ -1886,12 +1880,12 @@ msgid "Account username is missing or is invalid"
 msgstr "账号的用户名缺失或无效"
 
 #: modules/Servicehosting/Service.php:314
-msgid "Account ip is missing or is invalid"
-msgstr "账号的IP地址缺失或无效"
+msgid "Account IP address is missing or is invalid"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:338
-msgid "Domain sld or tld is missing"
-msgstr "域名的后缀或次级后缀缺失"
+msgid "Domain SLD or TLD is missing"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:364
 msgid "Account password is missing or is invalid"
@@ -1906,8 +1900,8 @@ msgid "Server manager :adapter is invalid"
 msgstr "服务器管理器 :adapter 无效"
 
 #: modules/Servicehosting/Service.php:838
-msgid "Can not remove hosting plan which has active accounts"
-msgstr "无法删除有有效账户的虚拟主机套餐"
+msgid "Cannot remove hosting plan which has active accounts"
+msgstr ""
 
 #: modules/Servicehosting/Service.php:1051
 msgid "Could not find main domain product"
@@ -2040,20 +2034,20 @@ msgid "Check your login details"
 msgstr "请检查您的登录信息"
 
 #: modules/Staff/Service.php:508
-msgid "This administrator account is protected and can not be removed"
-msgstr "此管理员账号保留使用，不能删除"
+msgid "This administrator account is protected and cannot be removed"
+msgstr ""
 
 #: modules/Staff/Service.php:579
 msgid "Staff member with email :email is already registered"
 msgstr "员工的邮箱 :email 已注册"
 
 #: modules/Staff/Service.php:671
-msgid "Administrators group can not be removed"
-msgstr "无法删除管理员群组"
+msgid "Administrators group cannot be removed"
+msgstr ""
 
 #: modules/Staff/Service.php:679
-msgid "Can not remove group which has staff members"
-msgstr "无法删除拥有员工的群组"
+msgid "Cannot remove group which has staff members"
+msgstr ""
 
 #: modules/Support/Api/Admin.php:838 modules/Support/Api/Admin.php:912
 #: modules/Support/Service.php:1651
@@ -2073,8 +2067,8 @@ msgid "Ticket not found"
 msgstr "工单未找到"
 
 #: modules/Support/Api/Client.php:128
-msgid "Ticket can not be reopened."
-msgstr "不能重新打开工单。"
+msgid "Ticket cannot be reopened."
+msgstr ""
 
 #: modules/Support/Api/Guest.php:35
 msgid "Please enter your message"
@@ -2147,8 +2141,8 @@ msgid "Knowledge Base"
 msgstr ""
 
 #: modules/Support/Service.php:654
-msgid "Can not remove helpdesk which has tickets"
-msgstr "无法删除有工单的服务台"
+msgid "Cannot remove helpdesk which has tickets"
+msgstr ""
 
 #: modules/Support/Service.php:812
 msgid "We currently aren't accepting support tickets from unregistered users. Please use another contact method."
@@ -2179,8 +2173,8 @@ msgid "Public ticket not found"
 msgstr "未找到工单"
 
 #: modules/Support/Service.php:1748
-msgid "Can not remove category which has articles"
-msgstr "删除分类前请确保该分类的文章数为零"
+msgid "Cannot remove category which has articles"
+msgstr ""
 
 #: modules/System/Controller/Admin.php:33
 msgid "System"
@@ -2364,8 +2358,8 @@ msgid "Country :code phone code is not registered"
 msgstr "国家电话区号 :code 未注册"
 
 #: modules/Theme/Controller/Admin.php:61
-msgid "Theme \":name\" assets folder is not writable. Files can not be uploaded and settings can not be saved. Set folder permissions to 777"
-msgstr "主题 “:name” 的 assets 目录不可写入。无法上传和保存文件。请尝试将目录权限设为777"
+msgid "Theme \":name\" assets folder is not writable. Files cannot be uploaded and settings cannot be saved. Set folder permissions to 755"
+msgstr ""
 
 #: modules/Theme/Controller/Admin.php:97
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
@@ -3978,8 +3972,8 @@ msgid "Generate a new key"
 msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:216
-msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and can not be changed."
-msgstr "您的用户货币将会在第一次交易后被锁定，在用户货币被锁定后，所有账户资金管理都会使用您的用户货币，用户货币不能被更改。"
+msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and cannot be changed."
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:218
 msgid "Your profile currency is"
@@ -4130,8 +4124,8 @@ msgid "Manage currencies"
 msgstr "管理币种"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:51
-msgid "Default currency is the one you manage all your prices in admin area. If your client in client area chooses other than default currency, prices will be recalculated according to conversion rate. You can have only one default currency. You can not add same currency once again. Changing default currency is not recommended when active orders are available. Nothing is recalculated on default currency change. Your income is calculated in default currency. Changing default currency after you have paid invoices will distort income statistics. Currency rates are taken from European Central Bank and currencylayer."
-msgstr "默认币种是您在管理者区域用来设置所有价格的货币。若客户在客户区选择其他货币，为客户显示的价格会通过实时汇率换算。您只能有一个默认币种，并且不能再加入同样的币种。当有订单时，不建议您更换默认币种。在默认币种更换后不会重新计算价格。您的收入会用默认币种计算。"
+msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. You can have only one default currency. You cannot add multiple instances of the same currency. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics. Currency rates are taken from the European Central Bank and currencylayer."
+msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:57
 msgid "ISO code"
@@ -4862,8 +4856,8 @@ msgid "Edit field"
 msgstr "编辑输入栏"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:18
-msgid "Please keep in mind that field name can not start with number. Special characters will be replaced with underscores ( _ )"
-msgstr "请记住，字段名称不能以数字开头。特殊字符将被下划线 ( _ ) 替换。"
+msgid "Please keep in mind that field name cannot start with a number. Special characters will be replaced with underscores ( _ )"
+msgstr ""
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:22
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:33
@@ -5855,8 +5849,8 @@ msgid "Thank you for your patience."
 msgstr "感谢您的耐心等待。"
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:24
-msgid "Redirecting to payment gateway.."
-msgstr "将重新定向到支付网关..."
+msgid "Redirecting to payment gateway..."
+msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:30
 msgid "Please click here to continue if this page does not redirect automatically in 5 seconds"
@@ -5993,7 +5987,7 @@ msgid "Thank you"
 msgstr "谢谢"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
-msgid "Your payment has been submitted and will be processed shortly. It may take a little bit of time for your invoice to be marked as paid."
+msgid "Your payment has been submitted and will be processed shortly. It may take some time for your invoice to be marked as paid."
 msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
@@ -6001,7 +5995,7 @@ msgid "Payment for invoice received"
 msgstr "已收到付款"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
-msgid "You will be automatically redirected to the invoice page after 1 minute."
+msgid "You will be automatically redirected back to the invoice after 1 minute."
 msgstr ""
 
 #: modules/Invoice/pdf_template/default-pdf.twig:31
@@ -6722,12 +6716,12 @@ msgid "Order Button code"
 msgstr "订单按钮代码"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:192
-msgid "Clicking on html element with classname or ID"
-msgstr "点击带有类名或ID的 html 元素"
+msgid "Clicking on an HTML element with the classname or ID"
+msgstr ""
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:198
-msgid "will open popup window for"
-msgstr "将打开弹出窗口"
+msgid "will open a popup window for"
+msgstr ""
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
 msgid "symbols"
@@ -7396,8 +7390,8 @@ msgid "API key settings updated"
 msgstr "API 密钥设置已更新"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:7
-msgid "Here you can configured the length of the API keys that will be generated. We recommend making this no less than 16 at a minimum. When in doubt, leave this at 32."
-msgstr "您可以在这里设置生成的 API 密钥的长度。 我们建议至少16个，32个更好。"
+msgid "Here you can configure the length of the API keys that will be generated. We recommend making this no less than 16 at a minimum. When in doubt, leave this at 32."
+msgstr ""
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:8
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:37
@@ -8104,8 +8098,8 @@ msgid "Free domain registration"
 msgstr "免费域名注册"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:46
-msgid "Select free tlds"
-msgstr "选择免费的顶级域名"
+msgid "Select free TLDs"
+msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:60
 msgid "Select free periods"
@@ -8673,8 +8667,8 @@ msgid "Valid IPs"
 msgstr "有效的IP"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:26
-msgid "All ips"
-msgstr "所有IP"
+msgid "All IPs"
+msgstr ""
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:35
 msgid "Valid Domains"
@@ -8693,8 +8687,8 @@ msgid "All versions"
 msgstr "所有版本"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:65
-msgid "Valid Install paths"
-msgstr "有效的安装路径"
+msgid "Valid Installation Paths"
+msgstr ""
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:71
 msgid "All paths"
@@ -8884,8 +8878,8 @@ msgid "INFORMATION"
 msgstr "信息"
 
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:31
-msgid "This staff member is used by FOSSBilling to perform system tasks and can not be removed."
-msgstr "这个员工账号是 FOSSBilling 用来执行系统任务的，不能删除。"
+msgid "This staff member is used by FOSSBilling to perform system tasks and cannot be removed."
+msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:40
 msgid "Permissions"
@@ -9487,8 +9481,8 @@ msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr "禁止访客API获取FOSSBilling版本"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:165
-msgid "Enabling this functionality may effect modules that depend on it."
-msgstr "启用此功能可能会影响依赖它的模块。"
+msgid "Enabling this functionality may affect modules that depend on it."
+msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:184
 msgid "Hide some company information in the guest API"
@@ -9587,7 +9581,7 @@ msgid "Error reporting changelog"
 msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:566
-msgid "Last applicable behavior change change: "
+msgid "Last applicable behavior change: "
 msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:569
@@ -9733,8 +9727,8 @@ msgstr "管理中心主题"
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:21
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:30
-msgid "Wysiwyg settings"
-msgstr "Wysiwyg 设置"
+msgid "WYSIWYG settings"
+msgstr ""
 
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:34
 msgid "Default editor"
@@ -9786,8 +9780,9 @@ msgid "Search:"
 msgstr "搜索:"
 
 #: themes/admin_default/html/macro_functions.html.twig:131
-msgid "Enter search text.."
-msgstr "输入搜索文本……"
+#: themes/admin_default/html/partial_search.html.twig:14
+msgid "Enter search text..."
+msgstr "输入搜索内容……"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:26
 msgid "Danger!"
@@ -9893,7 +9888,7 @@ msgid "View on the extension directory"
 msgstr "查看扩展目录"
 
 #: themes/admin_default/html/partial_extensions.html.twig:49
-msgid "View extension readme"
+msgid "View extension README"
 msgstr ""
 
 #: themes/admin_default/html/partial_extensions.html.twig:63
@@ -9957,10 +9952,6 @@ msgstr "每周"
 #: themes/admin_default/html/partial_pricing.html.twig:73
 msgid "Monthly"
 msgstr "每月"
-
-#: themes/admin_default/html/partial_search.html.twig:14
-msgid "Enter search text..."
-msgstr "输入搜索内容……"
 
 #: themes/admin_default/html/partial_search.html.twig:15
 msgid "Search"
