@@ -106,8 +106,8 @@ jobs:
               completion_percentage=0
             fi
 
-            completeBars=$(($completion_percentage / 10))
-            incompleteBars=$((10 - $completeBars))
+            completeBars=$((($completion_percentage * 15) / 100))
+            incompleteBars=$((15 - $completeBars))
             bar=""
             for ((i = 0; i < completeBars; i++)); do
               bar+="▰"
