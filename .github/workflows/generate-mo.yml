@@ -81,6 +81,13 @@ jobs:
           # Create an associative array to store completion percentages
           declare -A completion_array
 
+          # Create the progress bar function
+          progress_bar () {
+            completeBars = $(($1 / 10))
+            incompleteBars = $((10 - $completeBars))
+            return $(printf '▰%.0s' {1..$completeBars}'▱%.0s' {1..$completeBars})
+          }
+
           for po_file in $(find . -name "*.po"); do
             dirname=$(dirname "$po_file")
             translation=$(dirname "$dirname")
@@ -106,17 +113,19 @@ jobs:
               completion_percentage=0
             fi
 
+            bar=progress_bar $completion_percentage
+
             # If the translation is less than 25% complete, delete it entirely. Otherwise, just remove the source file to make things cleaner
             if [ "$completion_percentage" -lt 25 ] && [ "$dirname" != "./en_US/LC_MESSAGES" ]; then
               rm -rf "$translation"
 
               translation=${translation#./}
               completion_array["$translation"]=$completion_percentage
-              echo " - \`$translation\` was skipped for only being $completion_percentage% translated" >>translations.md
+              echo " - \`$translation\`: $bar $completion_percentage% (Skipped)" >>translations.md
             else
               if [ "$dirname" != "./en_US/LC_MESSAGES" ]; then
                 translation=${translation#./}
-                echo " - \`$translation\` is $completion_percentage% translated" >>translations.md
+                echo " - \`$translation\`: $bar $completion_percentage%" >>translations.md
                 completion_array["$translation"]=$completion_percentage
               fi
               rm -f "$dirname/messages.po"
