@@ -82,9 +82,9 @@ jobs:
           declare -A completion_array
 
           # Create the progress bar function
-          progress_bar () {
-            completeBars = $(($1 / 10))
-            incompleteBars = $((10 - $completeBars))
+          progress_bar() {
+            completeBars=$(($1 / 10))
+            incompleteBars=$((10 - $completeBars))
             return $(printf '▰%.0s' {1..$completeBars}'▱%.0s' {1..$completeBars})
           }
 
