@@ -81,13 +81,6 @@ jobs:
           # Create an associative array to store completion percentages
           declare -A completion_array
 
-          # Create the progress bar function
-          progress_bar() {
-            completeBars=$(($1 / 10))
-            incompleteBars=$((10 - $completeBars))
-            return $(printf '▰%.0s' {1..$completeBars}'▱%.0s' {1..$completeBars})
-          }
-
           for po_file in $(find . -name "*.po"); do
             dirname=$(dirname "$po_file")
             translation=$(dirname "$dirname")
@@ -113,7 +106,9 @@ jobs:
               completion_percentage=0
             fi
 
-            bar=progress_bar $completion_percentage
+            completeBars=$(($completion_percentage / 10))
+            incompleteBars=$((10 - $completeBars))
+            bar=$(printf '▰%.0s' {1..$completeBars}'▱%.0s' {1..$completeBars})
 
             # If the translation is less than 25% complete, delete it entirely. Otherwise, just remove the source file to make things cleaner
             if [ "$completion_percentage" -lt 25 ] && [ "$dirname" != "./en_US/LC_MESSAGES" ]; then
