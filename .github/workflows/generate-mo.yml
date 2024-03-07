@@ -108,6 +108,7 @@ jobs:
 
             completeBars=$(($completion_percentage / 10))
             incompleteBars=$((10 - $completeBars))
+            echo "Complete bars: $completeBars. Incomplete: $incompleteBars"
             filled=$(printf '▰%.0s' {0..$completeBars})
             unfilled=$(printf '▱%.0s' {0..$incompleteBars})
             bar="$filled$unfilled"
