@@ -106,8 +106,8 @@ jobs:
               completion_percentage=0
             fi
 
-            completeBars=$((($completion_percentage * 15) / 100))
-            incompleteBars=$((15 - $completeBars))
+            completeBars=$(($completion_percentage / 10))
+            incompleteBars=$((10 - $completeBars))
             bar=""
             for ((i = 0; i < completeBars; i++)); do
               bar+="▰"
@@ -122,11 +122,11 @@ jobs:
 
               translation=${translation#./}
               completion_array["$translation"]=$completion_percentage
-              echo " - \`$translation\`: $bar $completion_percentage% (Skipped)" >>translations.md
+              echo " - \`$translation\`: $bar $completion_percentage% translated (excluded, too incomplete)" >>translations.md
             else
               if [ "$dirname" != "./en_US/LC_MESSAGES" ]; then
                 translation=${translation#./}
-                echo " - \`$translation\`: $bar $completion_percentage%" >>translations.md
+                echo " - \`$translation\`: $bar $completion_percentage% translated" >>translations.md
                 completion_array["$translation"]=$completion_percentage
               fi
               rm -f "$dirname/messages.po"
