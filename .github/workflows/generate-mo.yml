@@ -108,10 +108,13 @@ jobs:
 
             completeBars=$(($completion_percentage / 10))
             incompleteBars=$((10 - $completeBars))
-            echo "Complete bars: $completeBars. Incomplete: $incompleteBars"
-            filled=$(printf '▰%.0s' {0..$completeBars})
-            unfilled=$(printf '▱%.0s' {0..$incompleteBars})
-            bar="$filled$unfilled"
+            bar=""
+            for ((i = 0; i < completeBars; i++)); do
+              bar+="▰"
+            done
+            for ((i = 0; i < incompleteBars; i++)); do
+              bar+="▱"
+            done
             
             # If the translation is less than 25% complete, delete it entirely. Otherwise, just remove the source file to make things cleaner
             if [ "$completion_percentage" -lt 25 ] && [ "$dirname" != "./en_US/LC_MESSAGES" ]; then
