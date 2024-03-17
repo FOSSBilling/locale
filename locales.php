@@ -22,6 +22,7 @@ return [
     'de_DE' => 'Deutsch',
     'el_GR' => 'Ελληνικά',
     'en_US' => 'English',
+    'en_AU' => 'English (Australian)',
     'et_EE' => 'Eesti',
     'es_ES' => 'Español',
     'fi_FI' => 'Suomi',
