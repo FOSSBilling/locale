@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-03-07 13:06-0800\n"
-"PO-Revision-Date: 2024-03-16 20:09\n"
+"PO-Revision-Date: 2024-03-19 02:11\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Indonesian\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +42,8 @@ msgstr "Admin belum login"
 
 #: di.php:515
 msgid "Unrecognized Handler type: "
-msgstr ""
+msgstr "Handler Tidak dikenali\n"
+" type: "
 
 #: di.php:525
 msgid "Please check your mailbox and confirm your email address."
@@ -326,7 +327,7 @@ msgstr "Class service :class tak ada di :path"
 
 #: library/FOSSBilling/Tools.php:177
 msgid "We were unable to generate a password with the required parameters"
-msgstr ""
+msgstr "Kami tidak dapat membuat kata sandi dengan parameter yang diperlukan"
 
 #: library/FOSSBilling/Tools.php:323
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
@@ -345,7 +346,7 @@ msgstr "Gagal mengunduh informasi versi terbaru. Informasi lebih lanjut tersedia
 
 #: library/FOSSBilling/Update.php:209 modules/System/Api/Admin.php:192
 msgid "You have the latest version of FOSSBilling. You do not need to update."
-msgstr ""
+msgstr "Anda memiliki FOSSBilling versi terbaru. Anda tidak perlu memperbarui."
 
 #: library/FOSSBilling/Update.php:233
 msgid "Failed to download the update archive. Further details are available in the error log."
@@ -365,7 +366,7 @@ msgstr "Tidak dapat memuat konfigurasi yang sudah ada"
 
 #: library/FOSSBilling/UpdatePatcher.php:155
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
-msgstr ""
+msgstr "Terjadi kesalahan saat menerapkan patch basis data. Silakan periksa log kesalahan untuk informasi tentang kesalahan tersebut, perbaiki, lalu lakukan metode patching cadangan untuk menyelesaikan pembaruan."
 
 #: library/FOSSBilling/Validate.php:130
 msgid "Minimum password length is 8 characters."
@@ -394,7 +395,7 @@ msgstr "Tanggal lahir"
 
 #: library/FOSSBilling/i18n.php:149
 msgid "Unable to enable / disable the locale as it is not present in the locale folder."
-msgstr ""
+msgstr "Tidak dapat mengaktifkan/menonaktifkan lokal karena tidak ada di folder lokal."
 
 #: library/Model/ProductDomainTable.php:216
 msgid "Could not determine domain price. Domain action is missing"
@@ -436,7 +437,7 @@ msgstr "Saldo Anda tidak cukup untuk membayar tagihan ini."
 #: library/Payment/Adapter/ClientBalance.php:94
 #: library/Payment/Adapter/ClientBalance.php:129
 msgid "You may not pay a deposit invoice with this payment gateway."
-msgstr ""
+msgstr "Anda tidak boleh membayar faktur deposit dengan gateway pembayaran ini."
 
 #: library/Payment/Adapter/ClientBalance.php:84
 #: library/Payment/Adapter/PayPalEmail.php:75
@@ -484,11 +485,11 @@ msgstr "URL pengembalian untuk gateway pembayaran tidak disetel"
 
 #: library/Payment/AdapterAbstract.php:66
 msgid "IPN Notification URL for the payment gateway was not set"
-msgstr ""
+msgstr "URL Pemberitahuan IPN untuk gateway pembayaran tidak disetel"
 
 #: library/Payment/AdapterAbstract.php:76
 msgid "IPN redirect URL for the payment gateway was not set"
-msgstr ""
+msgstr "URL Pemberitahuan IPN untuk gateway pembayaran tidak disetel"
 
 #: library/Registrar/Adapter/Email.php:23
 #: library/Registrar/Adapter/Internetbs.php:18
@@ -505,15 +506,15 @@ msgstr ""
 #: library/Registrar/Adapter/Resellerid.php:11
 #: library/Registrar/Adapter/Resellerid.php:18
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
-msgstr ""
+msgstr "Pendaftar domain \":domain_registrar\" belum sepenuhnya dikonfigurasi. Silakan konfigurasikan :missing"
 
 #: library/Registrar/Adapter/Email.php:69 library/Registrar/Adapter/Email.php:74
 msgid ":type: registrar is unable to :action:"
-msgstr ""
+msgstr ":type: registrar tidak dapat :action:"
 
 #: library/Registrar/Adapter/Internetbs.php:76
 msgid "checking domain transferability"
-msgstr ""
+msgstr "memeriksa transferabilitas domain"
 
 #: library/Registrar/Adapter/Internetbs.php:76
 #: library/Registrar/Adapter/Internetbs.php:175
@@ -528,7 +529,7 @@ msgstr ""
 #: library/Server/Manager/Hestia.php:341 library/Server/Manager/Plesk.php:101
 #: library/Server/Manager/Plesk.php:314 library/Server/Manager/Plesk.php:360
 msgid ":type: does not support :action:"
-msgstr ""
+msgstr ":type: tidak mendukung :action:"
 
 #: library/Registrar/Adapter/Internetbs.php:167
 msgid "get domain details"
@@ -548,16 +549,16 @@ msgstr "dapatkan detail domain"
 #: library/Registrar/Adapter/Resellerclub.php:728
 #: library/Registrar/Adapter/Resellerclub.php:735
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
-msgstr ""
+msgstr "Gagal :action: dengan registrar :type:, periksa log kesalahan untuk detail lebih lanjut"
 
 #: library/Registrar/Adapter/Internetbs.php:175
 #: library/Registrar/Adapter/Namecheap.php:591
 msgid "deleting domains"
-msgstr ""
+msgstr "menghapus domain"
 
 #: library/Registrar/Adapter/Namecheap.php:120
 msgid "Premium domains cannot be registered."
-msgstr ""
+msgstr "Domain tidak dapat didaftarkan."
 
 #: library/Registrar/Adapter/Namecheap.php:262
 msgid "update nameservers"
@@ -586,7 +587,7 @@ msgstr "mengatur status domain lock"
 
 #: library/Registrar/Adapter/Resellerclub.php:327
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
-msgstr ""
+msgstr "Nomor kontak perusahaan yang valid wajib diisi untuk mendaftarkan nama domain .AU"
 
 #: library/Registrar/Adapter/Resellerclub.php:394
 msgid "get the transfer code"
@@ -598,11 +599,11 @@ msgstr "Anda telah terdaftar sebagai reseller"
 
 #: library/Registrar/Adapter/Resellerclub.php:860
 msgid "Valid contact passport information is required while registering ES domain name"
-msgstr ""
+msgstr "Informasi paspor kontak yang valid diperlukan saat mendaftarkan nama domain ES"
 
 #: library/Registrar/Adapter/Resellerclub.php:879
 msgid "Valid contact passport information is required while registering ASIA domain name"
-msgstr ""
+msgstr "Informasi paspor kontak yang valid diperlukan saat mendaftarkan nama domain ES"
 
 #: library/Registrar/Adapter/Resellerclub.php:903
 msgid "Valid contact birthdate is required while registering RU domain name"
@@ -725,7 +726,7 @@ msgstr "tambah domain"
 
 #: library/Server/Manager/Hestia.php:177
 msgid "Failed to :action1: on the :type: server after failed to :action2:, check the error logs for further details"
-msgstr ""
+msgstr "Gagal :action1: di server :type: setelah gagal :action2:, periksa log kesalahan untuk detail lebih lanjut"
 
 #: library/Server/Manager/Plesk.php:101
 msgid "account synchronization"
@@ -823,7 +824,7 @@ msgstr "Anda sudah menggunakan kode promo ini. Silakan hapus kode promo dan chec
 
 #: modules/Cart/Service.php:503
 msgid "Cannot checkout an empty cart"
-msgstr ""
+msgstr "Tidak dapat melakukan pembayaran pada keranjang yang kosong"
 
 #: modules/Cart/Service.php:515
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -831,7 +832,7 @@ msgstr "Mata uang yang dipilih :dipilih tidak cocok dengan mata uang profil Anda
 
 #: modules/Cart/Service.php:531
 msgid "Unable to complete order. One or more of the selected products are invalid."
-msgstr ""
+msgstr "Tidak dapat menyelesaikan pesanan. Satu atau lebih produk yang dipilih tidak valid."
 
 #: modules/Cart/Service.php:606
 msgid "Discount: :product"
@@ -844,7 +845,7 @@ msgstr ":product setup"
 #: modules/Client/Api/Admin.php:149 modules/Client/Api/Admin.php:239
 #: modules/Client/Api/Guest.php:84 modules/Profile/Service.php:133
 msgid "This email address is already registered."
-msgstr ""
+msgstr "Alamat email ini sudah terdaftar."
 
 #: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:227
 #: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:113
@@ -858,7 +859,7 @@ msgstr "Acara/Kegiatan tidak ditemukan"
 
 #: modules/Client/Api/Admin.php:567
 msgid "Group has clients assigned. Please reassign them first."
-msgstr ""
+msgstr "Grup memiliki klien yang ditugaskan. Silakan tugaskan mereka terlebih dahulu."
 
 #: modules/Client/Api/Guest.php:59
 msgid "New registrations are temporary disabled"
@@ -870,12 +871,12 @@ msgstr "Sandi tidak cocok."
 
 #: modules/Client/Api/Guest.php:130
 msgid "Please check your login details."
-msgstr ""
+msgstr "Silakan periksa detail login Anda."
 
 #: modules/Client/Api/Guest.php:232 modules/Client/Api/Guest.php:236
 #: modules/Client/Service.php:703
 msgid "The link has expired or you have already reset your password."
-msgstr ""
+msgstr "Tautan telah kedaluwarsa atau Anda telah menyetel ulang kata sandi."
 
 #: modules/Client/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_index.html.twig:7
@@ -985,19 +986,19 @@ msgstr "Tidak dapat menghapus mata uang bawaan"
 
 #: modules/Currency/Service.php:455
 msgid "Currency format must include {{price}} tag"
-msgstr ""
+msgstr "Format mata uang harus menyertakan tag {{price}}"
 
 #: modules/Currency/Service.php:483
 msgid "Currency rate is invalid"
-msgstr ""
+msgstr "Nilai mata uang tidak valid"
 
 #: modules/Currency/Service.php:548
 msgid "Failed to get currency rates for :currency from the European Central Bank API"
-msgstr ""
+msgstr "Gagal mendapatkan nilai mata uang untuk :currency dari API Bank Sentral Eropa"
 
 #: modules/Currency/Service.php:564
 msgid "<b>Currencylayer threw an error:</b><br />:errorInfo"
-msgstr ""
+msgstr "<b>Lapisan Mata uang menimbulkan kesalahan:</b><br />:errorInfo"
 
 #: modules/Custompages/Controller/Admin.php:33
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
@@ -1018,7 +1019,7 @@ msgstr "Template email tidak ditemukan"
 
 #: modules/Email/Api/Admin.php:385
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
-msgstr ""
+msgstr "Penerima tidak ditentukan. Tentukan parameter to_client atau to_staff"
 
 #: modules/Email/Controller/Admin.php:34
 #: modules/Email/html_admin/mod_email_details.html.twig:17
@@ -1029,23 +1030,23 @@ msgstr "Histori email"
 
 #: modules/Email/Service.php:145
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
-msgstr ""
+msgstr "Penerima tidak ditentukan. Tentukan parameter ke atau to_client atau to_staff atau to_admin"
 
 #: modules/Email/Service.php:204
 msgid "The \"from\" email address cannot be empty"
-msgstr ""
+msgstr "Alamat email \"dari\" tidak boleh kosong"
 
 #: modules/Email/Service.php:480
 msgid "Email template :code was not found"
-msgstr ""
+msgstr "Templat email :kode tidak ditemukan"
 
 #: modules/Email/Service.php:677
 msgid "Error message truncated due to length, please check the error log for the complete message: "
-msgstr ""
+msgstr "Pesan kesalahan terpotong karena terlalu panjang, silakan periksa log kesalahan untuk pesan message: "
 
 #: modules/Embed/Controller/Admin.php:33
 msgid "Embed and integrate"
-msgstr ""
+msgstr "Sematkan dan integrasikan"
 
 #: modules/Extension/Api/Admin.php:296
 msgid "Extension not found"
@@ -1053,7 +1054,7 @@ msgstr "Ekstensi tidak ditemukan"
 
 #: modules/Extension/Api/Guest.php:59
 msgid "Parameter ext is missing"
-msgstr ""
+msgstr "Parameter ext tidak ada"
 
 #: modules/Extension/Controller/Admin.php:33
 #: modules/Extension/html_admin/mod_extension_index.html.twig:5
@@ -1071,11 +1072,11 @@ msgstr "Kelola ekstensi"
 
 #: modules/Extension/Service.php:39
 msgid "Allows the staff member to install, update, or remove extensions."
-msgstr ""
+msgstr "Mengizinkan anggota staf memasang, memperbarui, atau menghapus ekstensi."
 
 #: modules/Extension/Service.php:339
 msgid "Visit the extension directory for more information on updating this extension."
-msgstr ""
+msgstr "Kunjungi direktori ekstensi untuk informasi lebih lanjut tentang memperbarui ekstensi ini."
 
 #: modules/Extension/Service.php:391
 msgid "FOSSBilling core modules cannot be managed"
@@ -1087,31 +1088,31 @@ msgstr "Tidak dapat menemukan URL unduhan yang valid untuk ekstensi tersebut."
 
 #: modules/Extension/Service.php:444
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
-msgstr ""
+msgstr "Ekstensi ini tidak kompatibel dengan versi FOSSBilling Anda. Harap perbarui FOSSBilling ke versi terbaru dan coba lagi."
 
 #: modules/Extension/Service.php:460
 msgid "Failed to download the extension with error :code"
-msgstr ""
+msgstr "Gagal mengunduh ekstensi dengan kesalahan :code"
 
 #: modules/Extension/Service.php:501
 msgid "Extension :id seems to be already installed."
-msgstr ""
+msgstr "Ekstensi :id sepertinya sudah diinstal."
 
 #: modules/Extension/Service.php:504
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
-msgstr ""
+msgstr "Gagal memindahkan ekstensi ke tujuan akhirnya. Silakan periksa izin untuk folder tujuan. (:destination)"
 
 #: modules/Extension/Service.php:507
 msgid "Extension type (:type) cannot be automatically installed."
-msgstr ""
+msgstr "Jenis ekstensi (:type) tidak dapat diinstal secara otomatis."
 
 #: modules/Extension/Service.php:540
 msgid "FOSSBilling core modules cannot be installed or removed"
-msgstr ""
+msgstr "Modul inti FOSSBilling tidak dapat dipasang atau dilepas"
 
 #: modules/Extension/Service.php:545
 msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
-msgstr ""
+msgstr "Modul tidak dapat dipasang. Ini membutuhkan setidaknya :min versi FOSSBilling. Anda menggunakan :v"
 
 #: modules/Extension/Service.php:718
 msgid "Manage settings"
@@ -1119,7 +1120,7 @@ msgstr "Kelola Pengaturan"
 
 #: modules/Extension/Service.php:719
 msgid "Allows the staff member to edit settings for this module."
-msgstr ""
+msgstr "Mengizinkan anggota staf mengedit pengaturan untuk modul ini."
 
 #: modules/Formbuilder/Api/Admin.php:36
 msgid "Form style was not found in predefined list"
@@ -1318,7 +1319,7 @@ msgstr ""
 
 #: modules/Invoice/ServiceInvoiceItem.php:218
 msgid "Add funds to account"
-msgstr ""
+msgstr "Tambahkan dana ke akun"
 
 #: modules/Invoice/ServiceInvoiceItem.php:333
 msgid "Promotional Code: :code - :value Discount"
@@ -1696,7 +1697,7 @@ msgstr ""
 #: modules/Servicedomain/Api/Admin.php:270 modules/Servicedomain/Api/Guest.php:67
 #: modules/Servicedomain/Service.php:92 modules/Servicedomain/Service.php:121
 msgid "TLD not found"
-msgstr ""
+msgstr "TLD tidak ditemukan"
 
 #: modules/Servicedomain/Api/Admin.php:189
 msgid "ID not found"
@@ -1704,35 +1705,35 @@ msgstr "ID tidak ditemukan"
 
 #: modules/Servicedomain/Api/Admin.php:218
 msgid "TLD is used by :count: domains"
-msgstr ""
+msgstr "TLD digunakan oleh :count: domain"
 
 #: modules/Servicedomain/Api/Admin.php:243
 msgid "TLD already registered"
-msgstr ""
+msgstr "TLD sudah terdaftar"
 
 #: modules/Servicedomain/Api/Admin.php:333
 msgid "Registrar is not available for installation."
-msgstr ""
+msgstr "Pendaftar tidak tersedia untuk instalasi."
 
 #: modules/Servicedomain/Api/Admin.php:436
 msgid "Domain order is not activated"
-msgstr ""
+msgstr "Pesanan domain tidak diaktifkan"
 
 #: modules/Servicedomain/Api/Guest.php:90
 msgid "Domain :domain is invalid"
-msgstr ""
+msgstr "Domain :domain tidak valid"
 
 #: modules/Servicedomain/Api/Guest.php:95
 msgid "Domain availability could not be determined. TLD is not active."
-msgstr ""
+msgstr "Ketersediaan domain tidak dapat ditentukan. TLD tidak aktif."
 
 #: modules/Servicedomain/Api/Guest.php:99
 msgid "Domain is not available."
-msgstr ""
+msgstr "Domain tidak tersedia."
 
 #: modules/Servicedomain/Api/Guest.php:121
 msgid "TLD is not active."
-msgstr ""
+msgstr "TLD tidak aktif."
 
 #: modules/Servicedomain/Api/Guest.php:124
 msgid "Domain cannot be transferred."
@@ -2106,7 +2107,7 @@ msgstr ""
 #: modules/Support/Controller/Admin.php:40
 #: modules/Support/html_admin/mod_support_ticket.html.twig:45
 msgid "Client Tickets"
-msgstr ""
+msgstr "Klien Tiket"
 
 #: modules/Support/Controller/Admin.php:47
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:22
@@ -2114,11 +2115,11 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:88
 #: modules/Support/html_admin/mod_support_settings.html.twig:115
 msgid "Public Tickets"
-msgstr ""
+msgstr "Publik Tiket"
 
 #: modules/Support/Controller/Admin.php:54
 msgid "Advanced Ticket Search"
-msgstr ""
+msgstr "Pencarian Tiket Tingkat Lanjut"
 
 #: modules/Support/Controller/Admin.php:61
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:22
@@ -2126,7 +2127,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:19
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:28
 msgid "Canned Responses"
-msgstr ""
+msgstr "Tanggapan Terekam"
 
 #: modules/Support/Controller/Admin.php:74
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:22
@@ -2136,11 +2137,11 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_settings.html.twig:104
 #: modules/Support/html_client/mod_support_kb_index.html.twig:3
 msgid "Knowledge Base"
-msgstr ""
+msgstr "Dasar pengetahuan"
 
 #: modules/Support/Service.php:654
 msgid "Cannot remove helpdesk which has tickets"
-msgstr ""
+msgstr "Tidak dapat menghapus helpdesk yang memiliki tiket"
 
 #: modules/Support/Service.php:812
 msgid "We currently aren't accepting support tickets from unregistered users. Please use another contact method."
