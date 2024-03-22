@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-03-07 13:06-0800\n"
-"PO-Revision-Date: 2024-03-07 21:08\n"
+"POT-Creation-Date: 2024-03-21 20:22-0700\n"
+"PO-Revision-Date: 2024-03-22 03:28\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Arabic\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr "نوع المعالج غير معروف: "
 msgid "Please check your mailbox and confirm your email address."
 msgstr ""
 
-#: index.php:80 library/Box/App.php:419 library/Box/AppClient.php:70
+#: index.php:80 library/Box/App.php:337 library/Box/AppClient.php:70
 msgid "Page :url not found"
 msgstr "لم يتم العثور على الصفحة :url"
 
@@ -60,31 +60,31 @@ msgstr "حدث خطأ HTTP :err_code أثناء محاولة تحميل :url"
 msgid "Mod object is not set for the service"
 msgstr "لم يتم تعيين كائن مودي للخدمة"
 
-#: library/Api/Handler.php:42
+#: library/Api/Handler.php:41
 msgid "Method :method must contain underscore"
 msgstr "الطريقة :method يجب أن تحتوي على سطر"
 
-#: library/Api/Handler.php:55 library/Box/Mod.php:57
+#: library/Api/Handler.php:54 library/Box/Mod.php:57
 msgid "Invalid module name"
 msgstr "اسم الوحدة غير صالح"
 
-#: library/Api/Handler.php:67
+#: library/Api/Handler.php:60
 msgid "FOSSBilling module :mod is not installed/activated"
 msgstr "وحدة FOSSBilling :mod غير مثبتة/مفعلة"
 
-#: library/Api/Handler.php:75
+#: library/Api/Handler.php:68
 msgid "You do not have access to the :mod module"
 msgstr ""
 
-#: library/Api/Handler.php:91
+#: library/Api/Handler.php:84
 msgid "Api class must be an instance of Api_Abstract"
 msgstr ""
 
-#: library/Api/Handler.php:107
+#: library/Api/Handler.php:100
 msgid ":type API call :method does not exist in module :module"
 msgstr ":type  التواصل لواجهة برمجة التطبيقات API من الدالة  :method غير موجودة في الوحدة :module"
 
-#: library/Box/App.php:381
+#: library/Box/App.php:299
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "الخادم تحت الصيانة. الرجاء المحاولة مرة أخرى لاحقاً"
 
@@ -338,6 +338,10 @@ msgstr "أخفق إرسال البريد الإلكتروني عبر :transport 
 #: library/FOSSBilling/Mail.php:195
 msgid "SMTP host or port is not configured"
 msgstr "مضيف أو منفذ SMTP لم يتم إعداده"
+
+#: library/FOSSBilling/PasswordManager.php:35
+msgid "Invalid password hash provided"
+msgstr ""
 
 #: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:277
 msgid "Service class :class was not found in :path"
@@ -792,10 +796,10 @@ msgstr "فشلت المصادقة"
 msgid "CSRF token invalid"
 msgstr "رمز CSRF غير صالح"
 
-#: modules/Cart/Api/Guest.php:57 modules/Currency/Api/Admin.php:67
-#: modules/Currency/Api/Admin.php:238 modules/Currency/Api/Guest.php:47
-#: modules/Currency/Service.php:334 modules/Currency/Service.php:465
-#: modules/Currency/Service.php:576
+#: modules/Cart/Api/Guest.php:57 modules/Currency/Api/Admin.php:68
+#: modules/Currency/Api/Admin.php:208 modules/Currency/Api/Guest.php:47
+#: modules/Currency/Service.php:337 modules/Currency/Service.php:427
+#: modules/Currency/Service.php:673
 msgid "Currency not found"
 msgstr "لم يتم العثور على العملة"
 
@@ -982,41 +986,53 @@ msgstr "موافقة ملفات تعريف الارتباط"
 msgid "You do not have permission to perform this action"
 msgstr "لا يوجد لديك صلاحيات كافية لتفيذ هذا الإجراء"
 
-#: modules/Currency/Api/Admin.php:106
+#: modules/Currency/Api/Admin.php:107
 msgid "Currency already registered"
 msgstr "العملة مسجلة بالفعل"
 
-#: modules/Currency/Api/Admin.php:110
+#: modules/Currency/Api/Admin.php:111
 msgid "Currency code is invalid"
 msgstr "رمز العملة غير صالح"
 
-#: modules/Currency/Service.php:66
+#: modules/Currency/Service.php:69
 msgid "Currency conversion rate cannot be zero"
 msgstr ""
 
-#: modules/Currency/Service.php:132
+#: modules/Currency/Service.php:135
 msgid "Currency code not provided"
 msgstr "رمز العملة غير متوفر"
 
-#: modules/Currency/Service.php:330
+#: modules/Currency/Service.php:333
 msgid "Cannot remove default currency"
 msgstr ""
 
-#: modules/Currency/Service.php:455
+#: modules/Currency/Service.php:417
 msgid "Currency format must include {{price}} tag"
 msgstr "تنسيق العملة يجب أن يتضمن علامة {{price}}"
 
-#: modules/Currency/Service.php:483
+#: modules/Currency/Service.php:445
 msgid "Currency rate is invalid"
 msgstr "رمز العملة غير صالح"
 
-#: modules/Currency/Service.php:548
-msgid "Failed to get currency rates for :currency from the European Central Bank API"
-msgstr "فشل في الحصول على أسعار العملة لـ :currency من API للبنك المركزي الأوروبي"
+#: modules/Currency/Service.php:505
+msgid "You must configure your API key to use Currency Data API as an exchange rate data source."
+msgstr ""
 
-#: modules/Currency/Service.php:564
-msgid "<b>Currencylayer threw an error:</b><br />:errorInfo"
-msgstr "<b>قام طبقة العملة برمي خطأ:</b><br />:errorInfo"
+#: modules/Currency/Service.php:510
+msgid "You must configure your API key to use currencylayer as an exchange rate data source."
+msgstr ""
+
+#: modules/Currency/Service.php:554
+msgid "There was an error when fetching currency rates from ExchangeRate-API. See the error log for details."
+msgstr ""
+
+#: modules/Currency/Service.php:607
+msgid "There was an error when fetching currency rates from Currency Data API. See the error log for details."
+msgstr ""
+
+#: modules/Currency/Service.php:640
+msgid "There was an error when fetching currency rates from currencylayer. See the error log for details."
+msgstr ""
 
 #: modules/Custompages/Controller/Admin.php:33
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
@@ -2201,8 +2217,7 @@ msgstr "النظام"
 #: modules/Client/html_admin/mod_client_settings.html.twig:19
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:19
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:19
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:19
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:40
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:21
 #: modules/Email/html_admin/mod_email_settings.html.twig:16
 #: modules/Email/html_admin/mod_email_template.html.twig:16
 #: modules/Extension/html_admin/mod_extension_index.html.twig:99
@@ -2247,7 +2262,7 @@ msgstr "الإعدادات"
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:33
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:81
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:80
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:193
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:259
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:65
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:81
 #: modules/Email/html_admin/mod_email_template.html.twig:93
@@ -2555,7 +2570,7 @@ msgstr "هل أنت متأكد؟"
 #: modules/Client/html_admin/mod_client_manage.html.twig:791
 #: modules/Client/html_admin/mod_client_manage.html.twig:838
 #: modules/Client/html_client/mod_client_balance.html.twig:47
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:105
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:116
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:62
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:192
@@ -2652,8 +2667,8 @@ msgstr "تحرير مجموعة العملاء"
 #: modules/Client/html_admin/mod_client_index.html.twig:449
 #: modules/Client/html_admin/mod_client_manage.html.twig:453
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:36
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:58
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:133
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:69
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:147
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:52
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:113
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:34
@@ -3177,7 +3192,7 @@ msgid "Profile"
 msgstr "الملف الشخصي"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:29
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:75
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:86
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:75
 #: modules/Email/html_admin/mod_email_settings.html.twig:103
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:80
@@ -3275,8 +3290,8 @@ msgid "Login to client area"
 msgstr "دخول إلى منطقة العميل"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:153
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:85
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:86
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:96
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:97
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:82
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:85
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:87
@@ -3561,7 +3576,7 @@ msgstr "طلبات العميل"
 #: modules/Client/html_admin/mod_client_manage.html.twig:697
 #: modules/Client/html_admin/mod_client_manage.html.twig:813
 #: modules/Client/html_client/mod_client_balance.html.twig:34
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:204
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:270
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:672
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:50
@@ -4095,8 +4110,8 @@ msgid "Currency management"
 msgstr "إدارة العملة"
 
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:22
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:7
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:21
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:9
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:23
 msgid "Currency settings"
 msgstr "إعدادات العملة"
 
@@ -4109,13 +4124,13 @@ msgid "Edit currency information"
 msgstr "تعديل معلومات العملة"
 
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:42
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:59
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:139
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:70
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:153
 msgid "Conversion rate"
 msgstr "نسبة التحويل"
 
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:48
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:145
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:159
 msgid "Format"
 msgstr "التنسيق"
 
@@ -4123,39 +4138,51 @@ msgstr "التنسيق"
 msgid "Price format"
 msgstr "تنسيق الأسعار"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:29
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:31
 msgid "Currencies"
 msgstr "العملات"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:36
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:38
 msgid "Add new currency"
 msgstr "إضافة عملة جديدة"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:43
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:42
+msgid "Integrations / Automation"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:45
 msgid "Converter"
 msgstr "محول"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:50
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:52
 msgid "Manage currencies"
 msgstr "إدارة العملات"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:51
-msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. You can have only one default currency. You cannot add multiple instances of the same currency. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics. Currency rates are taken from the European Central Bank and currencylayer."
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:53
+msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics."
 msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:57
+msgid "FOSSBilling is configured to automatically sync currency exchange rates."
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:61
+msgid "FOSSBilling is not configured to automatically sync currency exchange rates."
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:68
 msgid "ISO code"
 msgstr "رمز ISO"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:60
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:71
 msgid "Example price"
 msgstr "مثال على السعر"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:84
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:95
 msgid "Are you sure you want to delete?"
 msgstr "هل ترغب حقا بالحذف؟"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:95
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:106
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:67
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:75
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:134
@@ -4163,11 +4190,15 @@ msgstr "هل ترغب حقا بالحذف؟"
 msgid "Set as default"
 msgstr "تعيين كإفتراضي"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:117
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:128
 msgid "Update Rates"
 msgstr "تحديث المعدل"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:127
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:131
+msgid "Currency exchange rates By ExchangeRate-API."
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:141
 #: modules/Email/html_admin/mod_email_settings.html.twig:77
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:33
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:90
@@ -4179,33 +4210,141 @@ msgstr "تحديث المعدل"
 msgid "Code"
 msgstr "الكود"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:152
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:166
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:62
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:188
 msgid "Add"
 msgstr "إضافة"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:158
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:172
 msgid "Successfully updated settings"
 msgstr "تم تحديث الإعدادات بنجاح"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:161
-msgid "Adjust settings for currency rate updater"
-msgstr "ضبط الإعدادات لتحديث سعر العملة"
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:176
+msgid "Available exchange rate data providers"
+msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:177
-msgid "Currencylayer API key"
-msgstr "مفتاح API للعملة"
+msgid "FOSSBilling provides integration with various currency exchange rate data providers, allowing you to choose whichever one best suits your needs. By default, FOSSBilling will use the ExchangeRate-API \"Open Access Endpoint\" which does not require any configuration."
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:181
+msgid "Provider"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:182
+msgid "Authentication Required"
+msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:183
-msgid "Enable CRON jobs"
-msgstr "تمكين وظائف CRON"
+msgid "Update Frequency"
+msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:188
-msgid "If you enable this, conversion rates will be automatically updated whenever the CRON job fires up. This should only be used if you have a paid subscription for Currencylayer, as otherwise you will quickly hit your rate limit."
-msgstr "إذا قمت بتمكين هذا، سيتم تحديث أسعار التحويل تلقائيًا كلما اشتعلت وظيفة CRON. يجب أن يستخدم هذا فقط إذا كان لديك اشتراك مدفوع للعملة ، وإلا ستصل بسرعة إلى الحد الأقصى للمعدل الخاص بك."
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:184
+msgid "Supported Currencies"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:185
+msgid "Pricing"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:190
+msgid "ExchangeRate-API (Open Access Endpoint)"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:192
+msgid "1D"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:193
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:200
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:207
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:214
+msgid "Supported currencies"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:194
+#: themes/admin_default/html/partial_pricing.html.twig:7
+msgid "Free"
+msgstr "مجاناً"
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:199
+msgid "1D / 1H / 5M"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:201
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:208
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:215
+msgid "Free / paid"
+msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:206
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:213
+msgid "1D / 1H / 10M / 1M"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:219
+msgid "When using ExchangeRate-API, their API informs FOSSBilling when the next update will occur which makes it more efficient for automated exchange rate syncing."
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:221
+msgid "To the best of our knowledge, \"Currency Data API\" and \"currencylayer\" are both owned by APILayer and provide the same data, but through a different API."
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:223
+msgid "Currency exchange rate data provider"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:233
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
+msgid "API key"
+msgstr "مفتاح API"
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:238
+msgid "Leave this blank to use the ExchangeRate-API \"Open Access Endpoint\"."
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:242
+msgid "Automatic sync rate"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:245
+msgid "Auto"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:246
+msgid "Never"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:247
+msgid "Daily"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:248
+msgid "Hourly"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:249
+msgid "Every 10 minutes"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:250
+msgid "Every 5 minutes"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:251
+msgid "Every minute"
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:253
+msgid "\"Auto\" is only available for ExchangeRate-API and when used will cause API requests to be made only when new data is made available, preventing excess requests."
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:254
+msgid "Exchange rate syncing runs via the cronjob and as such is limited by the frequency of your cron schedule (typically 5 minutes)."
+msgstr ""
+
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:272
 msgid "Result"
 msgstr "النتيجة"
 
@@ -5082,9 +5221,9 @@ msgid "Login"
 msgstr "تسجيل الدخول"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:215
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:242
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:251
 #: modules/Page/html_client/mod_page_signup.html.twig:5
-#: modules/Page/html_client/mod_page_signup.html.twig:165
+#: modules/Page/html_client/mod_page_signup.html.twig:175
 #: themes/huraga/html/layout_default.html.twig:123
 #: themes/huraga/html/mobile_menu.html.twig:123
 msgid "Sign up"
@@ -6844,15 +6983,33 @@ msgstr "الدفع بواسطة"
 msgid "Total amount will be deducted from account balance"
 msgstr "المبلغ الإجمالي سيتم خصمه من رصيد الحساب"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:185
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:190
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:200
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:261
+#: modules/Page/html_client/mod_page_signup.html.twig:169
+#: modules/Page/html_client/mod_page_signup.html.twig:181
+msgid "terms of service"
+msgstr ""
+
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:190
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:200
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:261
+#: modules/Page/html_client/mod_page_signup.html.twig:169
+#: modules/Page/html_client/mod_page_signup.html.twig:181
+msgid "privacy policy"
+msgstr ""
+
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:194
 msgid "Checkout"
 msgstr "إتمام الشراء"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:204
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:217
 msgid "Are you sure you want to remove this item from cart?"
 msgstr "هل أنت متأكد أنك تريد إزالة العنصر من عربة التسوق؟"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:208
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:221
 msgid "Item was removed from cart"
 msgstr "تم حذف الصنف من السلة"
 
@@ -6895,8 +7052,8 @@ msgstr "تأكيد كلمة المرور"
 msgid "Phone Code"
 msgstr "رمز الهاتف"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
-#: modules/Page/html_client/mod_page_signup.html.twig:171
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:255
+#: modules/Page/html_client/mod_page_signup.html.twig:188
 msgid "Already a user?"
 msgstr "هل انت مسجل مسبقاً ؟"
 
@@ -6960,7 +7117,7 @@ msgid "Enter your password"
 msgstr "قم بإدخال كلمة السر"
 
 #: modules/Page/html_client/mod_page_login.html.twig:41
-#: modules/Page/html_client/mod_page_signup.html.twig:175
+#: modules/Page/html_client/mod_page_signup.html.twig:192
 msgid "Forgot password?"
 msgstr "نسيت كلمة المرور؟"
 
@@ -7492,10 +7649,6 @@ msgstr "تم تحديث مفتاح API"
 #: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:7
 msgid "API key details"
 msgstr "تفاصيل مفتاح API"
-
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
-msgid "API key"
-msgstr "مفتاح API"
 
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:2
 msgid "Stock control settings"
@@ -9926,10 +10079,6 @@ msgstr "الإعلانات"
 #: themes/admin_default/html/partial_pricing.html.twig:3
 msgid "Payment type"
 msgstr "نوع الدفع"
-
-#: themes/admin_default/html/partial_pricing.html.twig:7
-msgid "Free"
-msgstr "مجاناً"
 
 #: themes/admin_default/html/partial_pricing.html.twig:11
 #: themes/admin_default/html/partial_pricing.html.twig:31
