@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-03-21 20:22-0700\n"
-"PO-Revision-Date: 2024-03-24 03:26\n"
+"PO-Revision-Date: 2024-03-26 03:28\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Serbian\n"
 "MIME-Version: 1.0\n"
@@ -1000,7 +1000,7 @@ msgstr "Format valute mora da sadrži oznaku {{price}}"
 
 #: modules/Currency/Service.php:445
 msgid "Currency rate is invalid"
-msgstr "Kurs valute je nevažeći"
+msgstr "Kurs valute je nevažeći"
 
 #: modules/Currency/Service.php:505
 msgid "You must configure your API key to use Currency Data API as an exchange rate data source."
@@ -1012,7 +1012,7 @@ msgstr "Morate da konfigurišete svoj API ključ da biste koristili currencylaye
 
 #: modules/Currency/Service.php:554
 msgid "There was an error when fetching currency rates from ExchangeRate-API. See the error log for details."
-msgstr "Došlo je do greške pri preuzimanju kurseva valuta iz Kurs-API-ja. Pogledajte dnevnik grešaka za detalje."
+msgstr "Došlo je do greške pri preuzimanju kurseva valuta iz ExchangeRate-API-ja. Pogledajte dnevnik grešaka za detalje."
 
 #: modules/Currency/Service.php:607
 msgid "There was an error when fetching currency rates from Currency Data API. See the error log for details."
@@ -4184,7 +4184,7 @@ msgstr "Ažurirajte Stope"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:131
 msgid "Currency exchange rates By ExchangeRate-API."
-msgstr "Kursevi valuta preko Kurs-API."
+msgstr "Kursevi valuta preko ExchangeRate-API."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:141
 #: modules/Email/html_admin/mod_email_settings.html.twig:77
@@ -4214,7 +4214,7 @@ msgstr "Dostupni provajderi podataka o kursu"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:177
 msgid "FOSSBilling provides integration with various currency exchange rate data providers, allowing you to choose whichever one best suits your needs. By default, FOSSBilling will use the ExchangeRate-API \"Open Access Endpoint\" which does not require any configuration."
-msgstr "FOSSBilling omogućava integraciju sa različitim provajderima podataka o kursu valuta, omogućavajući vam da izaberete onaj koji najbolje odgovara vašim potrebama. Podrazumevano, FOSSBilling će koristiti Kurs-API \"Open Access Endpoint\" koji ne zahteva nikakvu konfiguraciju."
+msgstr "FOSSBilling omogućava integraciju sa različitim provajderima podataka o kursu valuta, omogućavajući vam da izaberete onaj koji najbolje odgovara vašim potrebama. Podrazumevano, FOSSBilling će koristiti ExchangeRate-API \"Open Access Endpoint\" koji ne zahteva nikakvu konfiguraciju."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:181
 msgid "Provider"
@@ -4238,7 +4238,7 @@ msgstr "Cene"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:190
 msgid "ExchangeRate-API (Open Access Endpoint)"
-msgstr "Kurs-API (Open Access Endpoint)"
+msgstr "ExchangeRate-API (Open Access Endpoint)"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:192
 msgid "1D"
@@ -4273,11 +4273,11 @@ msgstr "1D / 1H / 10M / 1M"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:219
 msgid "When using ExchangeRate-API, their API informs FOSSBilling when the next update will occur which makes it more efficient for automated exchange rate syncing."
-msgstr "Kada se koristi Kurs-API, njihov API obaveštava FOSSBilling kada će doći do sledećeg ažuriranja, što ga čini efikasnijim za automatsku sinhronizaciju kursa."
+msgstr "Kada se koristi ExchangeRate-API, njihov API obaveštava FOSSBilling kada će doći do sledećeg ažuriranja, što ga čini efikasnijim za automatsku sinhronizaciju kursa."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:221
 msgid "To the best of our knowledge, \"Currency Data API\" and \"currencylayer\" are both owned by APILayer and provide the same data, but through a different API."
-msgstr "Koliko nam je poznato, \"API za podatke o valuti“ i \"currencylayer\" su u vlasništvu APILayer-a i pružaju iste podatke, ali preko drugog API-ja."
+msgstr "Koliko nam je poznato, \"Currency Data API“ i \"currencylayer\" su u vlasništvu APILayer-a i pružaju iste podatke, ali preko drugog API-ja."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:223
 msgid "Currency exchange rate data provider"
@@ -4290,11 +4290,11 @@ msgstr "API ključ"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:238
 msgid "Leave this blank to use the ExchangeRate-API \"Open Access Endpoint\"."
-msgstr "Ostavite ovo prazno da biste koristili Kurs-API \"Open Access Endpoint\"."
+msgstr "Ostavite ovo prazno da biste koristili ExchangeRate-API \"Open Access Endpoint\"."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:242
 msgid "Automatic sync rate"
-msgstr "Automatska sinhronizacije kursa"
+msgstr "Automatska sinhronizacija kursa"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:245
 msgid "Auto"
@@ -4326,7 +4326,7 @@ msgstr "Svaki minut"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:253
 msgid "\"Auto\" is only available for ExchangeRate-API and when used will cause API requests to be made only when new data is made available, preventing excess requests."
-msgstr "\"Automatski\" je dostupno samo za Kurs-API i kada se koristi, dovešće do toga da se zahtevi za API upućuju samo kada novi podaci budu dostupni, sprečavajući višak zahteva."
+msgstr "\"Automatski\" je dostupno samo za ExchangeRate-API i kada se koristi, dovešće do toga da se zahtevi za API upućuju samo kada novi podaci budu dostupni, sprečavajući višak zahteva."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:254
 msgid "Exchange rate syncing runs via the cronjob and as such is limited by the frequency of your cron schedule (typically 5 minutes)."
@@ -10076,7 +10076,7 @@ msgstr "Jednokratno"
 
 #: themes/admin_default/html/partial_pricing.html.twig:15
 msgid "Recurrent"
-msgstr "Obnavljajuće"
+msgstr "Obavljajuće"
 
 #: themes/admin_default/html/partial_pricing.html.twig:24
 #: themes/admin_default/html/partial_pricing.html.twig:49
