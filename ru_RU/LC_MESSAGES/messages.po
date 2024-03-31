@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-03-21 20:22-0700\n"
-"PO-Revision-Date: 2024-03-22 03:28\n"
+"POT-Creation-Date: 2024-03-30 16:34-0700\n"
+"PO-Revision-Date: 2024-03-31 03:36\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -88,7 +88,7 @@ msgstr ":type API вызов :method не существует в модуле :
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "Система проходит техническое обслуживание. Пожалуйста, повторите попытку позже"
 
-#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:743
+#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:745
 msgid "You do not have permission to access the :mod: module"
 msgstr "У вас недостаточно прав для доступа к модулю"
 
@@ -370,7 +370,7 @@ msgstr "Не удалось загрузить архив обновлений. 
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Не удалось извлечь файл, пожалуйста, проверьте права доступа к файлам и папкам. Дальнейшие детали доступны в журнале ошибок."
 
-#: library/FOSSBilling/Update.php:266
+#: library/FOSSBilling/Update.php:275
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "Не удается очистить кэш и/или удалить папку установки. Дальнейшие детали доступны в журнале ошибок."
 
@@ -538,7 +538,7 @@ msgstr "проверка возможности передачи домена"
 #: library/Server/Manager/Directadmin.php:132
 #: library/Server/Manager/Directadmin.php:146
 #: library/Server/Manager/Directadmin.php:208
-#: library/Server/Manager/Directadmin.php:439
+#: library/Server/Manager/Directadmin.php:457
 #: library/Server/Manager/Hestia.php:296 library/Server/Manager/Hestia.php:306
 #: library/Server/Manager/Hestia.php:341 library/Server/Manager/Plesk.php:101
 #: library/Server/Manager/Plesk.php:314 library/Server/Manager/Plesk.php:360
@@ -639,7 +639,7 @@ msgstr "Контакт не найден"
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "Менеджер сервера \":server_manager\" не полностью настроен. Пожалуйста, настройте: :missing"
 
-#: library/Server/Manager/CWP.php:115 library/Server/Manager/Directadmin.php:653
+#: library/Server/Manager/CWP.php:115 library/Server/Manager/Directadmin.php:677
 #: library/Server/Manager/Hestia.php:111 library/Server/Manager/Hestia.php:378
 #: library/Server/Manager/Plesk.php:86
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
@@ -652,7 +652,7 @@ msgstr "создать аккаунт"
 #: library/Server/Manager/CWP.php:186 library/Server/Manager/CWP.php:213
 #: library/Server/Manager/CWP.php:240 library/Server/Manager/CWP.php:270
 #: library/Server/Manager/CWP.php:299 library/Server/Manager/CWP.php:328
-#: library/Server/Manager/Directadmin.php:669
+#: library/Server/Manager/Directadmin.php:693
 #: library/Server/Manager/Hestia.php:164 library/Server/Manager/Hestia.php:181
 #: library/Server/Manager/Hestia.php:208 library/Server/Manager/Hestia.php:232
 #: library/Server/Manager/Hestia.php:257 library/Server/Manager/Hestia.php:283
@@ -710,19 +710,19 @@ msgstr ""
 msgid "Error creating user"
 msgstr "Ошибка при создании пользователя"
 
-#: library/Server/Manager/Directadmin.php:439
+#: library/Server/Manager/Directadmin.php:457
 msgid "synchronizing the account"
 msgstr "синхронизация учетной записи"
 
-#: library/Server/Manager/Directadmin.php:484
+#: library/Server/Manager/Directadmin.php:502
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Ошибка менеджера DirectAdmin: \"Аккаунт не заблокирован\""
 
-#: library/Server/Manager/Directadmin.php:645 library/Server/Manager/Whm.php:561
+#: library/Server/Manager/Directadmin.php:669 library/Server/Manager/Whm.php:561
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
-#: library/Server/Manager/Directadmin.php:658
+#: library/Server/Manager/Directadmin.php:682
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Ошибка Менеджера сервера DirectAdmin: \"Ваш запрос не может быть выполнен, так как он не существует на вашем уровне власти\""
 
@@ -789,9 +789,9 @@ msgid "CSRF token invalid"
 msgstr "Недопустимый CSRF токен"
 
 #: modules/Cart/Api/Guest.php:57 modules/Currency/Api/Admin.php:68
-#: modules/Currency/Api/Admin.php:208 modules/Currency/Api/Guest.php:47
-#: modules/Currency/Service.php:337 modules/Currency/Service.php:427
-#: modules/Currency/Service.php:673
+#: modules/Currency/Api/Admin.php:199 modules/Currency/Api/Guest.php:47
+#: modules/Currency/Service.php:337 modules/Currency/Service.php:403
+#: modules/Currency/Service.php:650
 msgid "Currency not found"
 msgstr "Валюта не найдена"
 
@@ -973,7 +973,7 @@ msgstr "Поле :field не может быть пустым"
 msgid "Cookie consent"
 msgstr "Согласие на использование куки"
 
-#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:757
+#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:759
 #: modules/Staff/Service.php:196
 msgid "You do not have permission to perform this action"
 msgstr "У вас нет прав для выполнения этого действия"
@@ -998,31 +998,31 @@ msgstr "Не задан код валюты"
 msgid "Cannot remove default currency"
 msgstr ""
 
-#: modules/Currency/Service.php:417
+#: modules/Currency/Service.php:393
 msgid "Currency format must include {{price}} tag"
 msgstr ""
 
-#: modules/Currency/Service.php:445
+#: modules/Currency/Service.php:421
 msgid "Currency rate is invalid"
 msgstr "Курс валюты недействителен"
 
-#: modules/Currency/Service.php:505
+#: modules/Currency/Service.php:482
 msgid "You must configure your API key to use Currency Data API as an exchange rate data source."
 msgstr ""
 
-#: modules/Currency/Service.php:510
+#: modules/Currency/Service.php:487
 msgid "You must configure your API key to use currencylayer as an exchange rate data source."
 msgstr ""
 
-#: modules/Currency/Service.php:554
+#: modules/Currency/Service.php:531
 msgid "There was an error when fetching currency rates from ExchangeRate-API. See the error log for details."
 msgstr ""
 
-#: modules/Currency/Service.php:607
+#: modules/Currency/Service.php:584
 msgid "There was an error when fetching currency rates from Currency Data API. See the error log for details."
 msgstr ""
 
-#: modules/Currency/Service.php:640
+#: modules/Currency/Service.php:617
 msgid "There was an error when fetching currency rates from currencylayer. See the error log for details."
 msgstr ""
 
@@ -1140,11 +1140,11 @@ msgstr ""
 msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr ""
 
-#: modules/Extension/Service.php:718
+#: modules/Extension/Service.php:720
 msgid "Manage settings"
 msgstr "Управление настройками"
 
-#: modules/Extension/Service.php:719
+#: modules/Extension/Service.php:721
 msgid "Allows the staff member to edit settings for this module."
 msgstr "Позволяет сотруднику редактировать настройки этого модуля."
 
@@ -1479,23 +1479,23 @@ msgstr "Новости"
 msgid "Notification message was not found"
 msgstr "Сообщение уведомления не найдено"
 
-#: modules/Order/Api/Admin.php:166
+#: modules/Order/Api/Admin.php:167
 msgid "Only suspended orders can be unsuspended"
 msgstr "Только приостановленные заказы могут быть разблокированы"
 
-#: modules/Order/Api/Admin.php:198
+#: modules/Order/Api/Admin.php:199
 msgid "Only canceled orders can be uncanceled"
 msgstr "Можно только отмененные заказы удаляются"
 
-#: modules/Order/Api/Admin.php:257
+#: modules/Order/Api/Admin.php:259
 msgid "Order config not passed"
 msgstr "Настройка заказа не пройдена"
 
-#: modules/Order/Api/Admin.php:346
+#: modules/Order/Api/Admin.php:348
 msgid "Automatically issue renewal invoices"
 msgstr "Автоматически выставлять счета на продление"
 
-#: modules/Order/Api/Admin.php:347
+#: modules/Order/Api/Admin.php:349
 msgid "Issue invoices manually"
 msgstr "Счета для задач вручную"
 
@@ -1518,39 +1518,39 @@ msgstr "Только отложенные и неудачные заказы н�
 msgid "Orders"
 msgstr "Заказы"
 
-#: modules/Order/Service.php:498
+#: modules/Order/Service.php:504
 msgid "Currency could not be determined for order"
 msgstr "Валюта не может быть определена для заказа"
 
-#: modules/Order/Service.php:514
+#: modules/Order/Service.php:520
 msgid "Product :id is out of stock."
 msgstr "Продукта нет в наличии."
 
-#: modules/Order/Service.php:520
+#: modules/Order/Service.php:526
 msgid "Group ID parameter is missing for addon product order"
 msgstr "Отсутствует параметр ID группы для заказа товаров аддона"
 
-#: modules/Order/Service.php:526
+#: modules/Order/Service.php:532
 msgid "Parent order :group_id was not found"
 msgstr "Родительский порядок :group_id не найден"
 
-#: modules/Order/Service.php:676
+#: modules/Order/Service.php:682
 msgid "Only pending setup or failed orders can be activated"
 msgstr "Только ожидающие установки или неисправные заказы могут быть активированы"
 
-#: modules/Order/Service.php:704
+#: modules/Order/Service.php:710
 msgid "Error creating "
 msgstr "Ошибка создания эпика "
 
-#: modules/Order/Service.php:773
+#: modules/Order/Service.php:779
 msgid "Service "
 msgstr "Услуги "
 
-#: modules/Order/Service.php:978
+#: modules/Order/Service.php:984
 msgid "Only active orders can be suspended"
 msgstr "Только приостановленные заказы могут быть разблокированы"
 
-#: modules/Order/Service.php:1030
+#: modules/Order/Service.php:1036
 msgid "Cannot cancel "
 msgstr ""
 
@@ -1919,15 +1919,15 @@ msgstr "Пароль учетной записи отсутствует или �
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Неверный серверный менеджер. Сервер был настроен некорректно."
 
-#: modules/Servicehosting/Service.php:791
+#: modules/Servicehosting/Service.php:793
 msgid "Server manager :adapter is invalid"
 msgstr "Менеджер серверов :adapter недействителен"
 
-#: modules/Servicehosting/Service.php:838
+#: modules/Servicehosting/Service.php:840
 msgid "Cannot remove hosting plan which has active accounts"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:1051
+#: modules/Servicehosting/Service.php:1053
 msgid "Could not find main domain product"
 msgstr "Не удалось найти основной продукт домена"
 
@@ -2160,7 +2160,6 @@ msgstr "Шаблоны ответов"
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:19
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:23
 #: modules/Support/html_admin/mod_support_settings.html.twig:104
-#: modules/Support/html_client/mod_support_kb_index.html.twig:3
 msgid "Knowledge Base"
 msgstr "База знаний"
 
@@ -2209,7 +2208,7 @@ msgstr "Система"
 #: modules/Client/html_admin/mod_client_settings.html.twig:19
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:19
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:19
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:21
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:20
 #: modules/Email/html_admin/mod_email_settings.html.twig:16
 #: modules/Email/html_admin/mod_email_template.html.twig:16
 #: modules/Extension/html_admin/mod_extension_index.html.twig:99
@@ -2254,7 +2253,7 @@ msgstr "Настройки"
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:33
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:81
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:80
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:259
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:258
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:65
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:81
 #: modules/Email/html_admin/mod_email_template.html.twig:93
@@ -2275,8 +2274,8 @@ msgstr "Настройки"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:214
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:143
 #: modules/News/html_admin/mod_news_post.html.twig:140
-#: modules/Order/html_admin/mod_order_manage.html.twig:374
-#: modules/Order/html_admin/mod_order_manage.html.twig:443
+#: modules/Order/html_admin/mod_order_manage.html.twig:395
+#: modules/Order/html_admin/mod_order_manage.html.twig:464
 #: modules/Order/html_admin/mod_order_settings.html.twig:92
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:66
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:173
@@ -2472,7 +2471,7 @@ msgstr "Страна"
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:170
 #: modules/News/html_admin/mod_news_index.html.twig:37
 #: modules/Notification/html_admin/mod_notification_index.html.twig:35
-#: modules/Order/html_admin/mod_order_manage.html.twig:571
+#: modules/Order/html_admin/mod_order_manage.html.twig:592
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:26
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:101
 msgid "Date"
@@ -2511,9 +2510,9 @@ msgstr "Дата"
 #: modules/Order/html_admin/mod_order_manage.html.twig:186
 #: modules/Order/html_admin/mod_order_manage.html.twig:255
 #: modules/Order/html_admin/mod_order_manage.html.twig:265
-#: modules/Order/html_admin/mod_order_manage.html.twig:275
-#: modules/Order/html_admin/mod_order_manage.html.twig:286
-#: modules/Order/html_admin/mod_order_manage.html.twig:604
+#: modules/Order/html_admin/mod_order_manage.html.twig:283
+#: modules/Order/html_admin/mod_order_manage.html.twig:303
+#: modules/Order/html_admin/mod_order_manage.html.twig:625
 #: modules/Product/html_admin/mod_product_addons.html.twig:66
 #: modules/Product/html_admin/mod_product_index.html.twig:79
 #: modules/Product/html_admin/mod_product_index.html.twig:158
@@ -2562,7 +2561,7 @@ msgstr "Ты уверен(а)?"
 #: modules/Client/html_admin/mod_client_manage.html.twig:791
 #: modules/Client/html_admin/mod_client_manage.html.twig:838
 #: modules/Client/html_client/mod_client_balance.html.twig:47
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:116
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:115
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:62
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:192
@@ -2582,9 +2581,9 @@ msgstr "Ты уверен(а)?"
 #: modules/News/html_admin/mod_news_index.html.twig:80
 #: modules/Notification/html_admin/mod_notification_index.html.twig:55
 #: modules/Order/html_admin/mod_order_index.html.twig:249
-#: modules/Order/html_admin/mod_order_manage.html.twig:557
-#: modules/Order/html_admin/mod_order_manage.html.twig:613
-#: modules/Order/html_admin/mod_order_manage.html.twig:668
+#: modules/Order/html_admin/mod_order_manage.html.twig:578
+#: modules/Order/html_admin/mod_order_manage.html.twig:634
+#: modules/Order/html_admin/mod_order_manage.html.twig:689
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:89
 #: modules/Product/html_admin/mod_product_addons.html.twig:75
 #: modules/Product/html_admin/mod_product_index.html.twig:88
@@ -2659,8 +2658,8 @@ msgstr "Редактировать группу клиентов"
 #: modules/Client/html_admin/mod_client_index.html.twig:449
 #: modules/Client/html_admin/mod_client_manage.html.twig:453
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:36
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:69
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:147
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:68
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:146
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:52
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:113
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:34
@@ -2679,7 +2678,7 @@ msgstr "Редактировать группу клиентов"
 #: modules/Order/html_admin/mod_order_index.html.twig:23
 #: modules/Order/html_admin/mod_order_index.html.twig:185
 #: modules/Order/html_admin/mod_order_manage.html.twig:83
-#: modules/Order/html_admin/mod_order_manage.html.twig:306
+#: modules/Order/html_admin/mod_order_manage.html.twig:327
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:69
 #: modules/Product/html_admin/mod_product_addons.html.twig:45
 #: modules/Product/html_admin/mod_product_addons.html.twig:123
@@ -2856,10 +2855,10 @@ msgstr "Группа"
 #: modules/News/html_admin/mod_news_post.html.twig:65
 #: modules/Order/html_admin/mod_order_index.html.twig:29
 #: modules/Order/html_admin/mod_order_index.html.twig:188
-#: modules/Order/html_admin/mod_order_manage.html.twig:459
-#: modules/Order/html_admin/mod_order_manage.html.twig:520
-#: modules/Order/html_admin/mod_order_manage.html.twig:572
-#: modules/Order/html_admin/mod_order_manage.html.twig:630
+#: modules/Order/html_admin/mod_order_manage.html.twig:480
+#: modules/Order/html_admin/mod_order_manage.html.twig:541
+#: modules/Order/html_admin/mod_order_manage.html.twig:593
+#: modules/Order/html_admin/mod_order_manage.html.twig:651
 #: modules/Order/html_client/mod_order_list.html.twig:34
 #: modules/Order/html_client/mod_order_manage.html.twig:139
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:33
@@ -3184,7 +3183,7 @@ msgid "Profile"
 msgstr "Профиль"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:29
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:86
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:85
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:75
 #: modules/Email/html_admin/mod_email_settings.html.twig:103
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:80
@@ -3240,7 +3239,7 @@ msgstr "Остаток средств"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:117
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:340
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:34
-#: modules/Order/html_admin/mod_order_manage.html.twig:367
+#: modules/Order/html_admin/mod_order_manage.html.twig:388
 #: modules/Order/html_client/mod_order_manage.html.twig:257
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
 #: modules/Support/html_admin/mod_support_tickets.html.twig:390
@@ -3282,8 +3281,8 @@ msgid "Login to client area"
 msgstr "Войдите в клиентский кабинет"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:153
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:95
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:96
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:97
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:82
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:85
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:87
@@ -3296,7 +3295,8 @@ msgstr "Войдите в клиентский кабинет"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:713
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:124
-#: modules/Order/html_admin/mod_order_manage.html.twig:280
+#: modules/Order/html_admin/mod_order_manage.html.twig:277
+#: modules/Order/html_admin/mod_order_manage.html.twig:314
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:106
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:254
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:93
@@ -3568,7 +3568,7 @@ msgstr "Клиентские заказы"
 #: modules/Client/html_admin/mod_client_manage.html.twig:697
 #: modules/Client/html_admin/mod_client_manage.html.twig:813
 #: modules/Client/html_client/mod_client_balance.html.twig:34
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:270
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:269
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:672
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:50
@@ -3579,7 +3579,7 @@ msgstr "Клиентские заказы"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:141
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:169
 #: modules/Order/html_admin/mod_order_index.html.twig:187
-#: modules/Order/html_admin/mod_order_manage.html.twig:517
+#: modules/Order/html_admin/mod_order_manage.html.twig:538
 msgid "Amount"
 msgstr "Сумма"
 
@@ -3588,7 +3588,7 @@ msgstr "Сумма"
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:145
 #: modules/Order/html_admin/mod_order_index.html.twig:47
 #: modules/Order/html_admin/mod_order_index.html.twig:186
-#: modules/Order/html_admin/mod_order_manage.html.twig:336
+#: modules/Order/html_admin/mod_order_manage.html.twig:357
 #: modules/Order/html_admin/mod_order_new.html.twig:54
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:153
 msgid "Period"
@@ -3596,6 +3596,7 @@ msgstr "Период"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:507
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:129
+#: modules/Index/html_client/mod_index_dashboard.html.twig:100
 #: modules/Order/html_admin/mod_order_index.html.twig:166
 msgid "New order"
 msgstr "Новый заказ"
@@ -3622,7 +3623,7 @@ msgstr "Обращения в службу поддержки клиентов"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:593
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:44
-#: modules/Order/html_admin/mod_order_manage.html.twig:628
+#: modules/Order/html_admin/mod_order_manage.html.twig:649
 #: modules/Order/html_client/mod_order_manage.html.twig:178
 #: modules/Order/html_client/mod_order_manage.html.twig:211
 #: modules/Order/html_client/mod_order_manage.html.twig:245
@@ -3641,7 +3642,7 @@ msgstr "Справочная служба"
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:51
-#: modules/Order/html_admin/mod_order_manage.html.twig:629
+#: modules/Order/html_admin/mod_order_manage.html.twig:650
 #: modules/Order/html_client/mod_order_manage.html.twig:182
 #: modules/Order/html_client/mod_order_manage.html.twig:215
 #: modules/Order/html_client/mod_order_manage.html.twig:249
@@ -4102,8 +4103,8 @@ msgid "Currency management"
 msgstr "Управление валютой"
 
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:22
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:9
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:23
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:8
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:22
 msgid "Currency settings"
 msgstr "Настройки валюты"
 
@@ -4116,13 +4117,13 @@ msgid "Edit currency information"
 msgstr "Редактировать информацию о валюте"
 
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:42
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:70
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:153
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:69
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:152
 msgid "Conversion rate"
 msgstr "Коэффициент конверсии"
 
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:48
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:159
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:158
 msgid "Format"
 msgstr "Формат"
 
@@ -4130,51 +4131,51 @@ msgstr "Формат"
 msgid "Price format"
 msgstr "Формат цены"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:31
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:30
 msgid "Currencies"
 msgstr "Валюты"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:38
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:37
 msgid "Add new currency"
 msgstr "Добавить новую валюту"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:42
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:41
 msgid "Integrations / Automation"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:45
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:44
 msgid "Converter"
 msgstr "Конвертер"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:52
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:51
 msgid "Manage currencies"
 msgstr "Управление валютами"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:53
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:52
 msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:57
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:56
 msgid "FOSSBilling is configured to automatically sync currency exchange rates."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:61
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:60
 msgid "FOSSBilling is not configured to automatically sync currency exchange rates."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:68
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:67
 msgid "ISO code"
 msgstr "Код ISO"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:71
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:70
 msgid "Example price"
 msgstr "Примерная цена"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:95
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:94
 msgid "Are you sure you want to delete?"
 msgstr "Вы уверены, что хотите удалить?"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:106
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:105
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:67
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:75
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:134
@@ -4182,15 +4183,15 @@ msgstr "Вы уверены, что хотите удалить?"
 msgid "Set as default"
 msgstr "Установить по умолчанию"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:128
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:127
 msgid "Update Rates"
 msgstr "Частота обновления"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:131
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:130
 msgid "Currency exchange rates By ExchangeRate-API."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:141
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:140
 #: modules/Email/html_admin/mod_email_settings.html.twig:77
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:33
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:90
@@ -4202,141 +4203,141 @@ msgstr ""
 msgid "Code"
 msgstr "Код"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:166
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:165
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:62
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:188
 msgid "Add"
 msgstr "Добавить"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:172
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:171
 msgid "Successfully updated settings"
 msgstr "Успешно обновленные настройки"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:176
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:175
 msgid "Available exchange rate data providers"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:177
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:176
 msgid "FOSSBilling provides integration with various currency exchange rate data providers, allowing you to choose whichever one best suits your needs. By default, FOSSBilling will use the ExchangeRate-API \"Open Access Endpoint\" which does not require any configuration."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:181
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:180
 msgid "Provider"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:182
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:181
 msgid "Authentication Required"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:183
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:182
 msgid "Update Frequency"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:184
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:183
 msgid "Supported Currencies"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:185
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:184
 msgid "Pricing"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:190
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:189
 msgid "ExchangeRate-API (Open Access Endpoint)"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:192
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:191
 msgid "1D"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:193
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:200
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:207
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:214
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:192
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:199
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:206
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:213
 msgid "Supported currencies"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:194
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:193
 #: themes/admin_default/html/partial_pricing.html.twig:7
 msgid "Free"
 msgstr "Бесплатно"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:199
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:198
 msgid "1D / 1H / 5M"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:201
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:208
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:215
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:200
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:207
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:214
 msgid "Free / paid"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:206
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:213
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:205
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:212
 msgid "1D / 1H / 10M / 1M"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:219
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:218
 msgid "When using ExchangeRate-API, their API informs FOSSBilling when the next update will occur which makes it more efficient for automated exchange rate syncing."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:221
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:220
 msgid "To the best of our knowledge, \"Currency Data API\" and \"currencylayer\" are both owned by APILayer and provide the same data, but through a different API."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:223
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:222
 msgid "Currency exchange rate data provider"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:233
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:232
 #: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
 msgid "API key"
 msgstr "Ключ API"
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:238
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:237
 msgid "Leave this blank to use the ExchangeRate-API \"Open Access Endpoint\"."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:242
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:241
 msgid "Automatic sync rate"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:245
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:244
 msgid "Auto"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:246
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:245
 msgid "Never"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:247
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:246
 msgid "Daily"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:248
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:247
 msgid "Hourly"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:249
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:248
 msgid "Every 10 minutes"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:250
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:249
 msgid "Every 5 minutes"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:251
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:250
 msgid "Every minute"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:253
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:252
 msgid "\"Auto\" is only available for ExchangeRate-API and when used will cause API requests to be made only when new data is made available, preventing excess requests."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:254
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:253
 msgid "Exchange rate syncing runs via the cronjob and as such is limited by the frequency of your cron schedule (typically 5 minutes)."
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:272
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:271
 msgid "Result"
 msgstr "Результат"
 
@@ -5176,10 +5177,6 @@ msgstr "Check box"
 msgid "Textarea"
 msgstr "Текстовое поле"
 
-#: modules/Index/html_client/mod_index_dashboard.html.twig:100
-msgid "New orders"
-msgstr "Новые заказы"
-
 #: modules/Index/html_client/mod_index_dashboard.html.twig:166
 msgid "No recent orders"
 msgstr "Нет недавних заказов"
@@ -5262,8 +5259,6 @@ msgstr "Последние новости"
 #: modules/Support/html_client/mod_support_kb_article.html.twig:8
 #: modules/Support/html_client/mod_support_kb_category.html.twig:7
 #: modules/Support/html_client/mod_support_kb_index.html.twig:10
-#: modules/Support/html_client/mod_support_kb_index.html.twig:14
-#: modules/Support/html_client/mod_support_kb_index.html.twig:31
 #: themes/huraga/html/mobile_menu.html.twig:77
 #: themes/huraga/html/partial_menu.html.twig:80
 msgid "Knowledge base"
@@ -5433,13 +5428,13 @@ msgid "New Invoice"
 msgstr "Когда вам выставляют новый счет"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:212
-#: modules/Order/html_admin/mod_order_manage.html.twig:518
+#: modules/Order/html_admin/mod_order_manage.html.twig:539
 msgid "Issued at"
 msgstr "Выпущенный в"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:213
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:315
-#: modules/Order/html_admin/mod_order_manage.html.twig:519
+#: modules/Order/html_admin/mod_order_manage.html.twig:540
 msgid "Paid at"
 msgstr "Оплачено в"
 
@@ -5533,6 +5528,7 @@ msgstr "Это должен быть идентификатор транзакц
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:270
 #: modules/Order/html_admin/mod_order_manage.html.twig:248
+#: modules/Order/html_admin/mod_order_manage.html.twig:313
 msgid "Cancel"
 msgstr "Отмена"
 
@@ -5620,8 +5616,8 @@ msgstr "Позиции счета"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:526
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:198
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:153
-#: modules/Order/html_admin/mod_order_manage.html.twig:324
-#: modules/Order/html_admin/mod_order_manage.html.twig:457
+#: modules/Order/html_admin/mod_order_manage.html.twig:345
+#: modules/Order/html_admin/mod_order_manage.html.twig:478
 #: modules/Order/html_client/mod_order_list.html.twig:32
 #: modules/Order/html_client/mod_order_manage.html.twig:136
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:17
@@ -5879,7 +5875,7 @@ msgstr "Статус транзакции на платежном шлюзе"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:137
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:96
 #: modules/Notification/html_admin/mod_notification_index.html.twig:78
-#: modules/Order/html_admin/mod_order_manage.html.twig:573
+#: modules/Order/html_admin/mod_order_manage.html.twig:594
 #: modules/Support/html_admin/mod_support_ticket.html.twig:195
 msgid "Note"
 msgstr "Заметка"
@@ -6378,7 +6374,7 @@ msgid "Filter orders"
 msgstr "Отфильтровать заказы"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:53
-#: modules/Order/html_admin/mod_order_manage.html.twig:318
+#: modules/Order/html_admin/mod_order_manage.html.twig:339
 #: modules/Order/html_admin/mod_order_new.html.twig:34
 msgid "Invoice option"
 msgstr "Настройки накладной"
@@ -6402,7 +6398,7 @@ msgid "Continue"
 msgstr "Продолжить"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:33
-#: modules/Order/html_admin/mod_order_manage.html.twig:302
+#: modules/Order/html_admin/mod_order_manage.html.twig:323
 msgid "Order Management"
 msgstr "Управление заказами"
 
@@ -6535,62 +6531,74 @@ msgstr "Заказ отменен"
 msgid "Unsuspend"
 msgstr "Возобновлено"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:291
+#: modules/Order/html_admin/mod_order_manage.html.twig:288
 msgid "Issue invoice"
 msgstr "Выставить счёт"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:312
+#: modules/Order/html_admin/mod_order_manage.html.twig:305
+msgid "Are you sure you want to delete the selected item?"
+msgstr ""
+
+#: modules/Order/html_admin/mod_order_manage.html.twig:308
+msgid "Force the deletion of the item"
+msgstr ""
+
+#: modules/Order/html_admin/mod_order_manage.html.twig:310
+msgid "Selecting this will force the item to be removed from the database even if errors occur."
+msgstr ""
+
+#: modules/Order/html_admin/mod_order_manage.html.twig:333
 msgid "Changes status without performing action"
 msgstr "Изменить статус без выполнения действия"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:330
+#: modules/Order/html_admin/mod_order_manage.html.twig:351
 #: modules/Order/html_client/mod_order_manage.html.twig:186
 msgid "Reason"
 msgstr "Причина"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:342
+#: modules/Order/html_admin/mod_order_manage.html.twig:363
 msgid "Date Expires"
 msgstr "Дата окончания"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:422
+#: modules/Order/html_admin/mod_order_manage.html.twig:443
 msgid "Order config management"
 msgstr "Управление настройками заказов"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:423
+#: modules/Order/html_admin/mod_order_manage.html.twig:444
 msgid "Please be cautious and make sure you know what you are doing when editing order config! FOSSBilling relies on these parameters and you might get unexpected results if you change some of them."
 msgstr "Пожалуйста, будьте осторожны и убедитесь, что вы знаете, что делаете при редактировании заказа настройки! FOSSBilling опирается на эти параметры, и вы можете получить неожиданные результаты, если измените некоторые из них."
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:450
+#: modules/Order/html_admin/mod_order_manage.html.twig:471
 #: modules/Order/html_client/mod_order_manage.html.twig:127
 msgid "Addons you have ordered with this service"
 msgstr "Дополнения, которые вы заказали с этой службой"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:455
+#: modules/Order/html_admin/mod_order_manage.html.twig:476
 #: modules/Order/html_client/mod_order_list.html.twig:31
 #: modules/Order/html_client/mod_order_manage.html.twig:135
 msgid "Product/Service"
 msgstr "Продукт / Услуга"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:456
+#: modules/Order/html_admin/mod_order_manage.html.twig:477
 #: modules/Order/html_client/mod_order_manage.html.twig:137
 msgid "Billing Cycle"
 msgstr "Периодичность оплаты"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:458
+#: modules/Order/html_admin/mod_order_manage.html.twig:479
 #: modules/Order/html_client/mod_order_list.html.twig:33
 #: modules/Order/html_client/mod_order_manage.html.twig:138
 msgid "Next due date"
 msgstr "Следующая дата оплаты"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:511
+#: modules/Order/html_admin/mod_order_manage.html.twig:532
 msgid "Order invoices"
 msgstr "Счёт заказа"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:566
+#: modules/Order/html_admin/mod_order_manage.html.twig:587
 msgid "Order status history"
 msgstr "История статуса заказа"
 
-#: modules/Order/html_admin/mod_order_manage.html.twig:622
+#: modules/Order/html_admin/mod_order_manage.html.twig:643
 msgid "Support tickets regarding this order"
 msgstr "Поддержка заявок на этот заказ"
 
@@ -9502,15 +9510,24 @@ msgstr "Назад ко всем статьям базы знаний"
 msgid "Similar articles"
 msgstr "Похожие статьи"
 
+#: modules/Support/html_client/mod_support_kb_index.html.twig:3
+msgid "Knowledge Base Categories"
+msgstr "Категории базы знаний"
+
+#: modules/Support/html_client/mod_support_kb_index.html.twig:14
+#: modules/Support/html_client/mod_support_kb_index.html.twig:31
+msgid "Knowledge base categories"
+msgstr "Категории базы знаний"
+
 #: modules/Support/html_client/mod_support_kb_index.html.twig:32
-msgid "Please try to read related topics in knowledge base before contacting support."
-msgstr "Пожалуйста, перед тем как обращаться в службу поддержки, попробуйте прочитать соответствующие темы."
+msgid "Below you can find a list of our knowledge base categories and their content."
+msgstr ""
 
 #: modules/Support/html_client/mod_support_kb_index.html.twig:38
 msgid "What are you looking for?"
 msgstr "Что ищете?"
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:63
+#: modules/Support/html_client/mod_support_kb_index.html.twig:64
 msgid "No results found for"
 msgstr "Нет результатов по запросу"
 
