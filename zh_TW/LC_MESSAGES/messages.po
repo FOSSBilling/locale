@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-03-30 16:34-0700\n"
-"PO-Revision-Date: 2024-03-31 03:36\n"
+"PO-Revision-Date: 2024-04-02 03:38\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -321,7 +321,7 @@ msgstr "未設定 SMTP 主機名稱或通訊埠"
 
 #: library/FOSSBilling/PasswordManager.php:35
 msgid "Invalid password hash provided"
-msgstr ""
+msgstr "提供的密碼雜湊無效"
 
 #: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:277
 msgid "Service class :class was not found in :path"
@@ -360,7 +360,7 @@ msgstr "取得檔案失敗，請檢查檔案和資料夾權限。錯誤日誌中
 
 #: library/FOSSBilling/Update.php:275
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
-msgstr ""
+msgstr "無法清除快取 或/和 刪除安裝資料夾。錯誤日誌中提供了更多詳細資訊。"
 
 #: library/FOSSBilling/UpdatePatcher.php:49
 msgid "Unable to load existing configuration"
@@ -458,7 +458,7 @@ msgstr ""
 
 #: library/Payment/Adapter/PayPalEmail.php:121
 msgid "Cannot process duplicate IPN"
-msgstr ""
+msgstr "無法處理重複的 IPN"
 
 #: library/Payment/Adapter/PayPalEmail.php:266
 msgid "Redirecting to PayPal.com"
@@ -826,7 +826,7 @@ msgstr ""
 
 #: modules/Cart/Service.php:503
 msgid "Cannot checkout an empty cart"
-msgstr ""
+msgstr "無法結帳空的購物車。"
 
 #: modules/Cart/Service.php:515
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -861,7 +861,7 @@ msgstr "找不到事件"
 
 #: modules/Client/Api/Admin.php:567
 msgid "Group has clients assigned. Please reassign them first."
-msgstr ""
+msgstr "該群組仍有客戶。請先重新分配它們至其他群組。"
 
 #: modules/Client/Api/Guest.php:59
 msgid "New registrations are temporary disabled"
@@ -919,7 +919,7 @@ msgstr "您在建立帳戶時選擇的密碼。"
 
 #: modules/Client/Service.php:225
 msgid "Currency cannot be changed. Client already has invoices issued."
-msgstr "貨幣不能更改。客戶已開立收據。"
+msgstr "貨幣不能更改。客戶已開立發票。"
 
 #: modules/Client/Service.php:230
 msgid "Currency cannot be changed. Client already has orders."
@@ -931,11 +931,11 @@ msgstr ""
 
 #: modules/Client/Service.php:243 modules/Client/ServiceBalance.php:125
 msgid "Funds amount is invalid"
-msgstr ""
+msgstr "新增的金額無效"
 
 #: modules/Client/Service.php:247 modules/Client/ServiceBalance.php:129
 msgid "Funds description is invalid"
-msgstr ""
+msgstr "新增的金額說明無效"
 
 #: modules/Client/Service.php:415
 msgid "Client ID or email is required"
@@ -1068,7 +1068,7 @@ msgstr "找不到擴充套件"
 
 #: modules/Extension/Api/Guest.php:59
 msgid "Parameter ext is missing"
-msgstr ""
+msgstr "缺少參數 ext"
 
 #: modules/Extension/Controller/Admin.php:33
 #: modules/Extension/html_admin/mod_extension_index.html.twig:5
@@ -1213,7 +1213,7 @@ msgstr "找不到收據"
 
 #: modules/Invoice/Api/Client.php:82 modules/Invoice/Api/Guest.php:62
 msgid "Paid Invoice cannot be modified"
-msgstr "已付款收據不可修改"
+msgstr "已付款發票不可修改"
 
 #: modules/Invoice/Api/Client.php:110 modules/Order/Api/Client.php:121
 #: modules/Servicedomain/Api/Client.php:122
@@ -1285,11 +1285,11 @@ msgstr "付款閘道"
 
 #: modules/Invoice/Service.php:419
 msgid "Unable to determine the next invoice number"
-msgstr "無法確定下一個收據號碼"
+msgstr "無法確定下一個發票號碼"
 
 #: modules/Invoice/Service.php:633
 msgid "Cannot refund invoice with negative amount"
-msgstr "無法退還負金額的收據"
+msgstr "無法退還負金額的發票"
 
 #: modules/Invoice/Service.php:848
 msgid "Invoice is related to order #:id. Please cancel order first."
@@ -1544,7 +1544,7 @@ msgstr ""
 
 #: modules/Product/Api/Admin.php:96
 msgid "You have already created domain product."
-msgstr ""
+msgstr "您已經建立了網域產品。"
 
 #: modules/Product/Api/Admin.php:102
 msgid "Product type :type is not registered"
@@ -1580,7 +1580,7 @@ msgstr "產品促銷"
 
 #: modules/Product/Service.php:207
 msgid "Pricing type is required"
-msgstr ""
+msgstr "價格類型為必填項目"
 
 #: modules/Product/Service.php:422
 msgid "Cannot remove product which has active orders."
@@ -1731,11 +1731,11 @@ msgstr ""
 
 #: modules/Servicedomain/Api/Admin.php:436
 msgid "Domain order is not activated"
-msgstr ""
+msgstr "網域訂單未啟用"
 
 #: modules/Servicedomain/Api/Guest.php:90
 msgid "Domain :domain is invalid"
-msgstr ""
+msgstr "網域 :domain 無效"
 
 #: modules/Servicedomain/Api/Guest.php:95
 msgid "Domain availability could not be determined. TLD is not active."
@@ -1747,11 +1747,11 @@ msgstr ""
 
 #: modules/Servicedomain/Api/Guest.php:121
 msgid "TLD is not active."
-msgstr ""
+msgstr "TLD 未啟用。"
 
 #: modules/Servicedomain/Api/Guest.php:124
 msgid "Domain cannot be transferred."
-msgstr ""
+msgstr "網域無法轉移。"
 
 #: modules/Servicedomain/Controller/Admin.php:34
 msgid "Domain registration"
@@ -1767,7 +1767,7 @@ msgstr "網域 :domain 轉移"
 
 #: modules/Servicedomain/Service.php:56
 msgid "Invalid domain action."
-msgstr ""
+msgstr "網域操作無效。"
 
 #: modules/Servicedomain/Service.php:69 modules/Servicedomain/Service.php:87
 #: modules/Servicedomain/Service.php:116 modules/Servicedomain/Service.php:545
@@ -1776,7 +1776,7 @@ msgstr ""
 
 #: modules/Servicedomain/Service.php:73
 msgid "TLD is invalid"
-msgstr ""
+msgstr "TLD 無效"
 
 #: modules/Servicedomain/Service.php:97
 msgid ":domain cannot be transferred!"
@@ -1881,11 +1881,11 @@ msgstr ""
 
 #: modules/Servicehosting/Service.php:55
 msgid "Domain name is invalid."
-msgstr ""
+msgstr "網域名稱無效"
 
 #: modules/Servicehosting/Service.php:58
 msgid "Domain extension is invalid."
-msgstr ""
+msgstr "網域後綴無效。"
 
 #: modules/Servicehosting/Service.php:292
 msgid "Account username is missing or is invalid"
@@ -1897,11 +1897,11 @@ msgstr ""
 
 #: modules/Servicehosting/Service.php:338
 msgid "Domain SLD or TLD is missing"
-msgstr ""
+msgstr "網域 SLD 或 TLD 遺失。"
 
 #: modules/Servicehosting/Service.php:364
 msgid "Account password is missing or is invalid"
-msgstr ""
+msgstr "帳戶密碼遺失或無效"
 
 #: modules/Servicehosting/Service.php:771
 msgid "Invalid server manager. Server was not configured properly."
@@ -4021,7 +4021,7 @@ msgstr ""
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:34
 #: modules/Page/html_client/mod_page_password-reset.html.twig:30
 msgid "Back to login"
-msgstr ""
+msgstr "返回登入"
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
@@ -4141,7 +4141,7 @@ msgstr "管理貨幣"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:52
 msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics."
-msgstr ""
+msgstr "預設貨幣是您設定產品價格時所使用的貨幣。如果您的客戶選擇不同的貨幣，價格將根據兌換率重新計算。下單後更改預設貨幣可能會出現意外問題。預設貨幣更改時不會重新計算任何內容。您的收入以預設貨幣計算。付款後更改預設貨幣會改變收入統計。"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:56
 msgid "FOSSBilling is configured to automatically sync currency exchange rates."
@@ -4211,23 +4211,23 @@ msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:180
 msgid "Provider"
-msgstr ""
+msgstr "提供者"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:181
 msgid "Authentication Required"
-msgstr ""
+msgstr "需要身份驗證"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:182
 msgid "Update Frequency"
-msgstr ""
+msgstr "更新頻率"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:183
 msgid "Supported Currencies"
-msgstr ""
+msgstr "支援的貨幣"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:184
 msgid "Pricing"
-msgstr ""
+msgstr "價格"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:189
 msgid "ExchangeRate-API (Open Access Endpoint)"
@@ -4257,7 +4257,7 @@ msgstr ""
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:207
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:214
 msgid "Free / paid"
-msgstr ""
+msgstr "免費 / 付費"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:205
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:212
@@ -4291,31 +4291,31 @@ msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:244
 msgid "Auto"
-msgstr ""
+msgstr "自動"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:245
 msgid "Never"
-msgstr ""
+msgstr "永不"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:246
 msgid "Daily"
-msgstr ""
+msgstr "每日"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:247
 msgid "Hourly"
-msgstr ""
+msgstr "每小時"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:248
 msgid "Every 10 minutes"
-msgstr ""
+msgstr "每10分鐘一次"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:249
 msgid "Every 5 minutes"
-msgstr ""
+msgstr "每5分鐘一次"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:250
 msgid "Every minute"
-msgstr ""
+msgstr "每分鐘一次"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:252
 msgid "\"Auto\" is only available for ExchangeRate-API and when used will cause API requests to be made only when new data is made available, preventing excess requests."
@@ -4439,7 +4439,7 @@ msgstr "ID"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:46
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:80
 msgid "Last Updated"
-msgstr ""
+msgstr "最後更新"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:47
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:706
@@ -4559,7 +4559,7 @@ msgstr "發送"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:51
 msgid "Email resent"
-msgstr ""
+msgstr "已重新發送電子郵件"
 
 #: modules/Email/html_admin/mod_email_details.html.twig:55
 #: modules/Email/html_client/mod_email_email.html.twig:23
@@ -4660,7 +4660,7 @@ msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:193
 msgid "To (Email)"
-msgstr ""
+msgstr "發送至 (Email)"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:195
 msgid "Tries"
@@ -4985,7 +4985,7 @@ msgstr "有關更改預設語言的說明，請參閱 FOSSBilling 文件。"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:153
 msgid "Changing the default language"
-msgstr ""
+msgstr "更改預設語言"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:6
 msgid "Edit field"
@@ -5426,7 +5426,7 @@ msgstr "付款日期"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:284
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:288
 msgid "Export Invoices"
-msgstr "匯出收據"
+msgstr "匯出發票"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:316
 msgid "Prepare"
@@ -5467,11 +5467,11 @@ msgstr "公司基本資料"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:100
 msgid "Date Created"
-msgstr ""
+msgstr "建立日期"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:104
 msgid "Date Due"
-msgstr ""
+msgstr "截止日期"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:108
 msgid "Date Paid"
@@ -5479,7 +5479,7 @@ msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:112
 msgid "Last Reminded"
-msgstr ""
+msgstr "最後提醒"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:129
 #: modules/Product/html_admin/mod_product_manage.html.twig:323
@@ -5992,7 +5992,7 @@ msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:24
 msgid "All of your invoices can be found here. You can choose to see either paid or unpaid invoices by clicking corresponding button."
-msgstr "您的所有收據都可以在這裡找到。您可以透過點擊對應的按鈕來選擇查看已付款或未付款的收據。"
+msgstr "您的所有發票都可以在這裡找到。您可以透過點擊對應的按鈕來選擇查看已付款或未付款的發票。"
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:49
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:82
@@ -6025,7 +6025,7 @@ msgstr "請選擇付款方式並為您選擇的產品付款。"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:58
 msgid "You can print this invoice or export it to a PDF file by clicking on the corresponding button."
-msgstr "您可以點擊對應的按鈕列印此收據或將其匯出為 PDF 檔案。"
+msgstr "您可以點擊對應的按鈕列印此發票或將其匯出為 PDF 檔案。"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:112
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:68
@@ -6205,7 +6205,7 @@ msgstr ""
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:11
 msgid "Send Email Message"
-msgstr ""
+msgstr "傳送電子郵件訊息"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:41
 msgid "From name"
@@ -6217,29 +6217,29 @@ msgstr ""
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:60
 msgid "Recipients filter"
-msgstr ""
+msgstr "收件者過濾器"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:65
 msgid "Client status and group"
-msgstr ""
+msgstr "客戶狀態和群組"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:87
 msgid "Has order"
-msgstr ""
+msgstr "有訂單"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:109
 msgid "Email content"
-msgstr ""
+msgstr "電子郵件內容"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:126
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:207
 msgid "Recipients"
-msgstr ""
+msgstr "收件者"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:144
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:158
 msgid "Click on the update and preview button"
-msgstr ""
+msgstr "點擊更新和預覽按鈕"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:162
 msgid "Message recipients"
@@ -6247,7 +6247,7 @@ msgstr ""
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:178
 msgid "Update and preview"
-msgstr ""
+msgstr "更新並預覽"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:179
 msgid "Send test message"
@@ -6330,7 +6330,7 @@ msgstr ""
 
 #: modules/News/html_client/mod_news_post.html.twig:43
 msgid "Back to the list"
-msgstr ""
+msgstr "返回列表"
 
 #: modules/Notification/html_admin/mod_notification_index.html.twig:5
 msgid "Notifications center"
@@ -6518,7 +6518,7 @@ msgstr ""
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:288
 msgid "Issue invoice"
-msgstr ""
+msgstr "開立發票"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:305
 msgid "Are you sure you want to delete the selected item?"
@@ -6577,7 +6577,7 @@ msgstr "下個到期日"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:532
 msgid "Order invoices"
-msgstr "訂單收據"
+msgstr "訂單發票"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:587
 msgid "Order status history"
@@ -7184,7 +7184,7 @@ msgstr ""
 
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:51
 msgid "Error message"
-msgstr ""
+msgstr "錯誤訊息"
 
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:58
 msgid "Set paid support for helpdesks"
@@ -7709,7 +7709,7 @@ msgstr "管理 TLDs"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:51
 msgid "Setup domain pricing and allowed operations. Assign specific domain registrars for each Top Level Domain (TLD)"
-msgstr ""
+msgstr "設定網域價格和允許的操作。為每個頂級域名 (TLD) 分配指定的網域註冊商"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:57
 msgid "TLD"
@@ -9576,12 +9576,12 @@ msgstr "快取"
 #: modules/System/html_admin/mod_system_settings.html.twig:48
 #: modules/System/html_admin/mod_system_settings.html.twig:544
 msgid "Error reporting"
-msgstr ""
+msgstr "錯誤報告"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:51
 #: modules/System/html_admin/mod_system_settings.html.twig:575
 msgid "Network interface"
-msgstr ""
+msgstr "網路介面"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:58
 #: modules/System/html_admin/mod_system_settings.html.twig:217
@@ -9614,11 +9614,11 @@ msgstr "網站圖標"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:106
 msgid "Company number, chamber of commerce number"
-msgstr ""
+msgstr "統一編號"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:112
 msgid "VAT number"
-msgstr "統一編號"
+msgstr "增值稅識別號碼"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:130
 msgid "Bank Account number"
@@ -9638,15 +9638,15 @@ msgstr "禁止訪客 API 取得 FOSSBilling 版本"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:165
 msgid "Enabling this functionality may affect modules that depend on it."
-msgstr ""
+msgstr "啟用此功能可能會影響依賴它的模組。"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:184
 msgid "Hide some company information in the guest API"
-msgstr ""
+msgstr "在訪客 API 中隱藏一些公司資訊"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:186
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
-msgstr ""
+msgstr "啟用此功能將隱藏 \"公司\" 訪客 API 端的一些資訊，例如地址、電話號碼、電子信箱、增值稅號等。"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:221
 msgid "Company terms of service, legal regulation"
@@ -9670,7 +9670,7 @@ msgstr "快取控制"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:508
 msgid "Cache directory is cleared"
-msgstr ""
+msgstr "快取目錄已清除"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:518
 msgid "About FOSSBilling"
@@ -9694,7 +9694,7 @@ msgstr "授權"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:550
 msgid "Error reporting is enabled."
-msgstr ""
+msgstr "錯誤報告已啟用。"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:551
 msgid "This FOSSBilling instance is automatically sending errors which allows us to more easily improve the software and keep it stable. Thanks!"
@@ -9702,27 +9702,27 @@ msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:552
 msgid "Error reporting is now disabled."
-msgstr ""
+msgstr "錯誤報告現已停用。"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:552
 msgid "Disable error reporting"
-msgstr ""
+msgstr "停用錯誤報告"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:556
 msgid "Error reporting is disabled."
-msgstr ""
+msgstr "錯誤報告已停用。"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:557
 msgid "Please consider enabling error reporting. Doing so allows us to provide you with better technical support and helps us to proactively improve FOSSBilling."
-msgstr ""
+msgstr "請考慮啟用錯誤報告。這樣做可以讓我們為您提供更好的技術支援，並幫助我們主動改進 FOSSBilling。"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:558
 msgid "Error reporting is now enabled."
-msgstr ""
+msgstr "錯誤報告現已啟用。"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:558
 msgid "Enable error reporting"
-msgstr ""
+msgstr "啟用錯誤報告"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:561
 msgid "FOSSBilling optionally includes automated error reporting to help aid the project's development and stability. To find the most up-to-date information about it, you should review the links and information below."
@@ -9760,7 +9760,7 @@ msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:592
 msgid "Select the default network interface:"
-msgstr ""
+msgstr "選擇預設的網路介面"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:594
 msgid "None (Default PHP Behavior)"
@@ -9896,7 +9896,7 @@ msgstr "糟糕... 您剛發現了一個錯誤頁面"
 
 #: themes/admin_default/html/error.html.twig:20
 msgid "Back to Dashboard"
-msgstr "返回用戶中心"
+msgstr "回到控制台"
 
 #: themes/admin_default/html/layout_default.html.twig:79
 #: themes/admin_default/html/layout_default.html.twig:183
@@ -10082,7 +10082,7 @@ msgstr "一次性"
 
 #: themes/admin_default/html/partial_pricing.html.twig:15
 msgid "Recurrent"
-msgstr "復發"
+msgstr "循環"
 
 #: themes/admin_default/html/partial_pricing.html.twig:24
 #: themes/admin_default/html/partial_pricing.html.twig:49
