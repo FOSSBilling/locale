@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-03-30 16:34-0700\n"
-"PO-Revision-Date: 2024-03-31 03:36\n"
+"PO-Revision-Date: 2024-04-03 03:36\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -30,23 +30,23 @@ msgstr ""
 
 #: di.php:315
 msgid "It appears you are trying to use FOSSBilling without the PHP intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
-msgstr ""
+msgstr "你的 FOSSBilling 运行环境并未开启 PHP intl 扩展，为保障系统稳定运行，请在你的 PHP 配置文件中开启 intl 扩展。"
 
 #: di.php:363 di.php:437
 msgid "Client is not logged in"
-msgstr ""
+msgstr "客户未登录"
 
 #: di.php:403 di.php:475
 msgid "Admin is not logged in"
-msgstr ""
+msgstr "管理员未登录"
 
 #: di.php:515
 msgid "Unrecognized Handler type: "
-msgstr ""
+msgstr "未知的处理类型： "
 
 #: di.php:525
 msgid "Please check your mailbox and confirm your email address."
-msgstr ""
+msgstr "请先完成邮箱地址验证，我们已经向您的邮箱发送了验证邮件。"
 
 #: index.php:80 library/Box/App.php:337 library/Box/AppClient.php:70
 msgid "Page :url not found"
@@ -74,11 +74,11 @@ msgstr "FOSSBilling 模块 :mod 未安装/激活"
 
 #: library/Api/Handler.php:68
 msgid "You do not have access to the :mod module"
-msgstr ""
+msgstr "您没有权限访问 :mod 模块"
 
 #: library/Api/Handler.php:84
 msgid "Api class must be an instance of Api_Abstract"
-msgstr ""
+msgstr "Api 类必须是 Api_Abstract 的实现（implements Api_Abstract）"
 
 #: library/Api/Handler.php:100
 msgid ":type API call :method does not exist in module :module"
@@ -90,7 +90,7 @@ msgstr "系统正在维护，请稍后再试"
 
 #: library/Box/AppAdmin.php:35 modules/Extension/Service.php:745
 msgid "You do not have permission to access the :mod: module"
-msgstr ""
+msgstr "你没有权限访问 :mod: 模块"
 
 #: library/Box/AppClient.php:89
 msgid "Page not found"
@@ -98,7 +98,7 @@ msgstr "未找到页面"
 
 #: library/Box/Crypt.php:23
 msgid "The PHP OpenSSL extension must be enabled on your server"
-msgstr ""
+msgstr "请在你的PHP配置文件中开启 OpenSSL 扩展"
 
 #: library/Box/Log.php:69
 msgid "Missing log message"
@@ -126,7 +126,7 @@ msgstr "模块 :mod Client 控制器类未找到"
 
 #: library/Box/Mod.php:219
 msgid "Core modules cannot be updated"
-msgstr ""
+msgstr "无法更新核心模块"
 
 #: library/Box/Pagination.php:44 library/Box/Pagination.php:77
 msgid "Invalid page number"
@@ -212,7 +212,7 @@ msgstr "无法获取 :unit 的月数"
 
 #: library/Box/Translate.php:55
 msgid "Unable to set up FOSSBilling translation functionality, locale was undefined."
-msgstr ""
+msgstr "无法启用 FOSSBilling 翻译功能，语言环境未设置。"
 
 #: library/Box/TwigExtensions.php:252
 msgid "second"
@@ -253,7 +253,7 @@ msgstr "Box_TwigLoader缺少参数 :missing:"
 
 #: library/FOSSBilling/CentralAlerts.php:119
 msgid "Unable to fetch alerts from Central Alerts System. See the error log for more information."
-msgstr ""
+msgstr "无法从消息中心获取警告信息，请查看错误日志获取详细信息。"
 
 #: library/FOSSBilling/CentralAlerts.php:127
 msgid "Invalid response from the FOSSBilling Central Alerts System."
@@ -261,11 +261,11 @@ msgstr "FOSSBilling 中央警报系统的响应无效。"
 
 #: library/FOSSBilling/Config.php:90
 msgid "An error occurred when creating a backup of the configuration file."
-msgstr ""
+msgstr "备份配置文件时出现错误。"
 
 #: library/FOSSBilling/Config.php:96
 msgid "An error occurred when writing the updated configuration file."
-msgstr ""
+msgstr "更新配置文件时出现错误。"
 
 #: library/FOSSBilling/Config.php:146
 msgid "Too many iterations were performed while formatting the config file"
@@ -277,11 +277,11 @@ msgstr "无法从 FOSSBilling 扩展目录获取扩展详细信息。"
 
 #: library/FOSSBilling/ExtensionManager.php:79
 msgid "An error occurred when fetching the extensions releases"
-msgstr ""
+msgstr "更新扩展时出现错误。"
 
 #: library/FOSSBilling/ExtensionManager.php:102
 msgid "Unable to fetch the latest extension release."
-msgstr ""
+msgstr "无法更新扩展。"
 
 #: library/FOSSBilling/ExtensionManager.php:175
 msgid "Unable to connect to the FOSSBilling extension directory."
@@ -301,7 +301,7 @@ msgstr "FOSSBilling 需要在使用发送邮件传输时启用 proc_open PHP 函
 
 #: library/FOSSBilling/Mail.php:158
 msgid "A SendGrid API key is required to send emails via SendGrid"
-msgstr ""
+msgstr "请先配置 SendGrid API Key 之后再发送邮件。"
 
 #: library/FOSSBilling/Mail.php:165
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
@@ -321,7 +321,7 @@ msgstr "SMTP 主机或端口未配置"
 
 #: library/FOSSBilling/PasswordManager.php:35
 msgid "Invalid password hash provided"
-msgstr ""
+msgstr "提供的密码哈希值无效。"
 
 #: library/FOSSBilling/Tools.php:75 library/FOSSBilling/Tools.php:277
 msgid "Service class :class was not found in :path"
@@ -329,7 +329,7 @@ msgstr "在 :path 中找不到服务类 :class。"
 
 #: library/FOSSBilling/Tools.php:177
 msgid "We were unable to generate a password with the required parameters"
-msgstr ""
+msgstr "无法生成符合您要求的密码。"
 
 #: library/FOSSBilling/Tools.php:323
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
@@ -348,7 +348,7 @@ msgstr "下载最新版本信息失败。在错误日志中可以获得更多信
 
 #: library/FOSSBilling/Update.php:209 modules/System/Api/Admin.php:192
 msgid "You have the latest version of FOSSBilling. You do not need to update."
-msgstr ""
+msgstr "您的 FOSSBilling 系统版本已经是最新的，无需更新。"
 
 #: library/FOSSBilling/Update.php:233
 msgid "Failed to download the update archive. Further details are available in the error log."
@@ -9362,7 +9362,7 @@ msgstr ""
 
 #: modules/Support/html_admin/mod_support_settings.html.twig:95
 msgid "Wait Time (in hours)"
-msgstr ""
+msgstr "等待时长（小时）"
 
 #: modules/Support/html_admin/mod_support_settings.html.twig:98
 msgid "If set, the time in hour(s) the user must wait between consequent ticket submission."
