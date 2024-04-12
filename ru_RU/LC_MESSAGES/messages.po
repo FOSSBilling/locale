@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-04-09 15:27-0700\n"
-"PO-Revision-Date: 2024-04-10 03:48\n"
+"POT-Creation-Date: 2024-04-11 14:24-0700\n"
+"PO-Revision-Date: 2024-04-12 03:52\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -354,23 +354,31 @@ msgstr "Почтовый адрес"
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: является недопустимым"
 
-#: library/FOSSBilling/Update.php:143
+#: library/FOSSBilling/Update.php:148
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Не удалось загрузить последнюю информацию о версииБолее подробная информация доступна в журнале ошибок."
 
-#: library/FOSSBilling/Update.php:209 modules/System/Api/Admin.php:192
+#: library/FOSSBilling/Update.php:213 modules/System/Api/Admin.php:192
 msgid "You have the latest version of FOSSBilling. You do not need to update."
 msgstr ""
 
-#: library/FOSSBilling/Update.php:233
+#: library/FOSSBilling/Update.php:225
+msgid "FOSSBilling :version: requires at least PHP :min_php:, but you are running :current_php:."
+msgstr ""
+
+#: library/FOSSBilling/Update.php:240
+msgid "The download URL for this release was not specified as a trusted one. Update canceled for security reasons."
+msgstr ""
+
+#: library/FOSSBilling/Update.php:261
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Не удалось загрузить архив обновлений. Более подробная информация доступна в журнале ошибок."
 
-#: library/FOSSBilling/Update.php:247 modules/Extension/Service.php:477
+#: library/FOSSBilling/Update.php:275 modules/Extension/Service.php:477
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Не удалось извлечь файл, пожалуйста, проверьте права доступа к файлам и папкам. Дальнейшие детали доступны в журнале ошибок."
 
-#: library/FOSSBilling/Update.php:275
+#: library/FOSSBilling/Update.php:303
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "Не удается очистить кэш и/или удалить папку установки. Дальнейшие детали доступны в журнале ошибок."
 
@@ -403,7 +411,7 @@ msgid "Password must include at least one uppercase letter."
 msgstr "Пароль должен содержать хотя бы одну строчную букву."
 
 #: library/FOSSBilling/Validate.php:185
-#: modules/Client/html_client/mod_client_profile.html.twig:70
+#: modules/Client/html_client/mod_client_profile.html.twig:71
 msgid "Birthdate"
 msgstr "Дата рождения"
 
@@ -2346,8 +2354,8 @@ msgstr "Позволяет сотруднику аннулировать кэш 
 
 #: modules/System/Service.php:52
 #: modules/System/html_admin/mod_system_update.html.twig:11
-#: modules/System/html_admin/mod_system_update.html.twig:45
-#: modules/System/html_admin/mod_system_update.html.twig:54
+#: modules/System/html_admin/mod_system_update.html.twig:50
+#: modules/System/html_admin/mod_system_update.html.twig:59
 msgid "Update FOSSBilling"
 msgstr "Обновить FOSSBilling"
 
@@ -2443,7 +2451,7 @@ msgstr "IP"
 #: modules/Client/html_admin/mod_client_manage.html.twig:295
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
 #: modules/Client/html_admin/mod_client_settings.html.twig:81
-#: modules/Client/html_client/mod_client_profile.html.twig:135
+#: modules/Client/html_client/mod_client_profile.html.twig:136
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:30
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:87
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:482
@@ -2451,7 +2459,7 @@ msgstr "IP"
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:120
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:177
-#: modules/Page/html_client/mod_page_signup.html.twig:100
+#: modules/Page/html_client/mod_page_signup.html.twig:107
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:157
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:25
@@ -2788,8 +2796,8 @@ msgstr "Название компании"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:80
 #: modules/Invoice/pdf_template/default-pdf.twig:109
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
-#: modules/Page/html_client/mod_page_login.html.twig:23
-#: modules/Page/html_client/mod_page_password-reset.html.twig:24
+#: modules/Page/html_client/mod_page_login.html.twig:30
+#: modules/Page/html_client/mod_page_password-reset.html.twig:30
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:180
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:133
 #: modules/Staff/html_admin/mod_staff_index.html.twig:31
@@ -3028,7 +3036,7 @@ msgstr "Новая группа"
 #: modules/Invoice/pdf_template/default-pdf.twig:36
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
-#: modules/Page/html_client/mod_page_signup.html.twig:49
+#: modules/Page/html_client/mod_page_signup.html.twig:56
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:186
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:138
 msgid "Company"
@@ -3058,11 +3066,11 @@ msgstr "Адресная строка 2"
 #: modules/Client/html_admin/mod_client_index.html.twig:355
 #: modules/Client/html_admin/mod_client_manage.html.twig:308
 #: modules/Client/html_admin/mod_client_settings.html.twig:82
-#: modules/Client/html_client/mod_client_profile.html.twig:131
+#: modules/Client/html_client/mod_client_profile.html.twig:132
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:166
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:169
-#: modules/Page/html_client/mod_page_signup.html.twig:92
+#: modules/Page/html_client/mod_page_signup.html.twig:99
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
 msgid "City"
@@ -3071,13 +3079,13 @@ msgstr "Город"
 #: modules/Client/html_admin/mod_client_index.html.twig:361
 #: modules/Client/html_admin/mod_client_manage.html.twig:301
 #: modules/Client/html_admin/mod_client_settings.html.twig:83
-#: modules/Client/html_client/mod_client_profile.html.twig:147
+#: modules/Client/html_client/mod_client_profile.html.twig:148
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:126
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:192
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
-#: modules/Page/html_client/mod_page_signup.html.twig:112
+#: modules/Page/html_client/mod_page_signup.html.twig:119
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
 msgid "State"
@@ -3107,8 +3115,8 @@ msgstr "Телефон"
 #: modules/Client/html_admin/mod_client_index.html.twig:391
 #: modules/Client/html_admin/mod_client_manage.html.twig:98
 #: modules/Client/html_admin/mod_client_manage.html.twig:346
-#: modules/Client/html_client/mod_client_profile.html.twig:33
-#: modules/Client/html_client/mod_client_profile.html.twig:215
+#: modules/Client/html_client/mod_client_profile.html.twig:34
+#: modules/Client/html_client/mod_client_profile.html.twig:216
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
@@ -3124,8 +3132,8 @@ msgstr "Валюта"
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:37
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:125
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:128
-#: modules/Page/html_client/mod_page_login.html.twig:27
-#: modules/Page/html_client/mod_page_signup.html.twig:152
+#: modules/Page/html_client/mod_page_login.html.twig:34
+#: modules/Page/html_client/mod_page_signup.html.twig:159
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:121
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:33
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:12
@@ -3183,7 +3191,7 @@ msgstr "История входов клиентов в систему"
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
 #: themes/admin_default/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:116
+#: themes/huraga/html/layout_default.html.twig:121
 #: themes/huraga/html/mobile_menu.html.twig:110
 msgid "Profile"
 msgstr "Профиль"
@@ -3254,8 +3262,8 @@ msgid "Notes"
 msgstr "Примечания"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
-#: modules/Client/html_client/mod_client_profile.html.twig:31
-#: modules/Client/html_client/mod_client_profile.html.twig:196
+#: modules/Client/html_client/mod_client_profile.html.twig:32
+#: modules/Client/html_client/mod_client_profile.html.twig:197
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:10
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:88
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:96
@@ -3263,7 +3271,7 @@ msgid "API Key"
 msgstr "Ключ API"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:125
-#: modules/Client/html_client/mod_client_profile.html.twig:121
+#: modules/Client/html_client/mod_client_profile.html.twig:122
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:401
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:463
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:117
@@ -3272,7 +3280,7 @@ msgstr "Ключ API"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:125
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:144
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
-#: modules/Page/html_client/mod_page_signup.html.twig:76
+#: modules/Page/html_client/mod_page_signup.html.twig:83
 #: modules/System/html_admin/mod_system_settings.html.twig:80
 msgid "Address"
 msgstr "Адрес"
@@ -3500,7 +3508,7 @@ msgid "Address and contact details"
 msgstr "Адрес и контактные данные"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:330
-#: modules/Client/html_client/mod_client_profile.html.twig:155
+#: modules/Client/html_client/mod_client_profile.html.twig:156
 msgid "Passport number"
 msgstr "Номер паспорта"
 
@@ -3526,7 +3534,7 @@ msgid "Signed up time"
 msgstr "Время регистрации"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:397
-#: modules/Client/html_client/mod_client_profile.html.twig:169
+#: modules/Client/html_client/mod_client_profile.html.twig:170
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:53
 msgid "Update profile"
 msgstr "Обновить профиль"
@@ -3543,7 +3551,7 @@ msgid "Password changed"
 msgstr "Пароль изменен"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:412
-#: modules/Page/html_client/mod_page_signup.html.twig:158
+#: modules/Page/html_client/mod_page_signup.html.twig:165
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:94
 msgid "Password confirm"
 msgstr "Подтверждение пароля"
@@ -3785,25 +3793,25 @@ msgid "Required fields"
 msgstr "Обязательные поля"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:75
-#: modules/Client/html_client/mod_client_profile.html.twig:58
+#: modules/Client/html_client/mod_client_profile.html.twig:59
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:78
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:82
-#: modules/Page/html_client/mod_page_signup.html.twig:35
+#: modules/Page/html_client/mod_page_signup.html.twig:42
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:174
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:126
 msgid "Last Name"
 msgstr "Фамилия"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:77
-#: modules/Client/html_client/mod_client_profile.html.twig:75
-#: modules/Page/html_client/mod_page_signup.html.twig:64
+#: modules/Client/html_client/mod_client_profile.html.twig:76
+#: modules/Page/html_client/mod_page_signup.html.twig:71
 msgid "Gender"
 msgstr "Пол"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:78
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:102
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:104
-#: modules/Page/html_client/mod_page_signup.html.twig:57
+#: modules/Page/html_client/mod_page_signup.html.twig:64
 msgid "Birthday"
 msgstr "День рождения"
 
@@ -3848,19 +3856,19 @@ msgstr "Детали профиля"
 msgid "User profile settings"
 msgstr "Настройки профиля пользователя"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:13
+#: modules/Client/html_client/mod_client_profile.html.twig:14
 msgid "You must verify your email address before you may access our services."
 msgstr "Вы должны подтвердить свой адрес электронной почты, прежде чем вы сможете получить доступ к нашим услугам."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:17
+#: modules/Client/html_client/mod_client_profile.html.twig:18
 msgid "Verification email has been resent"
 msgstr "Эл. письмо для подтверждения было отправлено повторно"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:17
+#: modules/Client/html_client/mod_client_profile.html.twig:18
 msgid "Resend verification email"
 msgstr "Отправить еще письмо"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:27
+#: modules/Client/html_client/mod_client_profile.html.twig:28
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:33
 #: modules/Order/html_admin/mod_order_manage.html.twig:38
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:6
@@ -3872,49 +3880,49 @@ msgstr "Отправить еще письмо"
 msgid "Details"
 msgstr "Подробности"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:29
-#: modules/Client/html_client/mod_client_profile.html.twig:173
-#: modules/Client/html_client/mod_client_profile.html.twig:192
+#: modules/Client/html_client/mod_client_profile.html.twig:30
+#: modules/Client/html_client/mod_client_profile.html.twig:174
+#: modules/Client/html_client/mod_client_profile.html.twig:193
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:17
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:81
 msgid "Change Password"
 msgstr "Поменять пароль"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:38
+#: modules/Client/html_client/mod_client_profile.html.twig:39
 msgid "Update details"
 msgstr "Обновите сведения"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:39
+#: modules/Client/html_client/mod_client_profile.html.twig:40
 msgid "Keep your personal data up to date."
 msgstr "Поддерживайте ваши персональные данные в актуальном состоянии."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:49
+#: modules/Client/html_client/mod_client_profile.html.twig:50
 msgid "To change your avatar visit"
 msgstr "Изменить свой аватар"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:54
+#: modules/Client/html_client/mod_client_profile.html.twig:55
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:67
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:71
-#: modules/Page/html_client/mod_page_signup.html.twig:28
+#: modules/Page/html_client/mod_page_signup.html.twig:35
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:168
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:121
 msgid "First Name"
 msgstr "Имя"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:64
+#: modules/Client/html_client/mod_client_profile.html.twig:65
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:29
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:57
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:61
-#: modules/Page/html_client/mod_page_signup.html.twig:42
+#: modules/Page/html_client/mod_page_signup.html.twig:49
 msgid "Email Address"
 msgstr "Email адрес"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:95
+#: modules/Client/html_client/mod_client_profile.html.twig:96
 msgid "Company Name"
 msgstr "Название компании"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:101
+#: modules/Client/html_client/mod_client_profile.html.twig:102
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:389
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:451
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:166
@@ -3922,98 +3930,98 @@ msgstr "Название компании"
 msgid "Company VAT"
 msgstr "НДС компании"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:105
+#: modules/Client/html_client/mod_client_profile.html.twig:106
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:395
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:457
 msgid "Company Number"
 msgstr "Номер компании"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:111
+#: modules/Client/html_client/mod_client_profile.html.twig:112
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:228
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:182
 msgid "Phone Country Code"
 msgstr "Телефонный код страны"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:115
+#: modules/Client/html_client/mod_client_profile.html.twig:116
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:214
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:220
-#: modules/Page/html_client/mod_page_signup.html.twig:128
+#: modules/Page/html_client/mod_page_signup.html.twig:135
 msgid "Phone Number"
 msgstr "Номер телефона"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:125
+#: modules/Client/html_client/mod_client_profile.html.twig:126
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:155
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:158
-#: modules/Page/html_client/mod_page_signup.html.twig:84
+#: modules/Page/html_client/mod_page_signup.html.twig:91
 msgid "Address 2"
 msgstr "Адрес 2"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:137
+#: modules/Client/html_client/mod_client_profile.html.twig:138
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:180
-#: modules/Page/html_client/mod_page_signup.html.twig:102
+#: modules/Page/html_client/mod_page_signup.html.twig:109
 msgid "-- Select country --"
 msgstr "-- Выберите страну --"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:151
+#: modules/Client/html_client/mod_client_profile.html.twig:152
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:203
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:206
-#: modules/Page/html_client/mod_page_signup.html.twig:120
+#: modules/Page/html_client/mod_page_signup.html.twig:127
 msgid "Zip/Postal Code"
 msgstr "Почтовый индекс"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:174
+#: modules/Client/html_client/mod_client_profile.html.twig:175
 msgid "Please enter new password two times in order avoid mistypes"
 msgstr "Пожалуйста, введите новый пароль два раза, чтобы избежать опечаток"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:178
+#: modules/Client/html_client/mod_client_profile.html.twig:179
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:63
 msgid "Current Password"
 msgstr "Текущий пароль"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:183
+#: modules/Client/html_client/mod_client_profile.html.twig:184
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:69
 msgid "New Password"
 msgstr "Новый пароль"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:188
+#: modules/Client/html_client/mod_client_profile.html.twig:189
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:75
 msgid "Confirm Password"
 msgstr "Подтверждение пароля"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:197
+#: modules/Client/html_client/mod_client_profile.html.twig:198
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:89
 msgid "API key allows integration with external applications. You will need this key for authentication."
 msgstr "Ключ API позволяет осуществлять интеграцию с внешними приложениями. Этот ключ вам понадобится для аутентификации."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:203
+#: modules/Client/html_client/mod_client_profile.html.twig:204
 msgid "Warning!"
 msgstr "Предупреждение!"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:203
+#: modules/Client/html_client/mod_client_profile.html.twig:204
 msgid "Resetting the key will break existing applications using it!"
 msgstr "Предупреждение! Сброс ключа приведет к сбою существующих приложений, использующих его!"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:207
+#: modules/Client/html_client/mod_client_profile.html.twig:208
 msgid "Your API key"
 msgstr "Ваш ключ API"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:211
+#: modules/Client/html_client/mod_client_profile.html.twig:212
 msgid "Generate a new key"
 msgstr "Сгенерировать новый ключ"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:216
+#: modules/Client/html_client/mod_client_profile.html.twig:217
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and cannot be changed."
 msgstr ""
 
-#: modules/Client/html_client/mod_client_profile.html.twig:218
+#: modules/Client/html_client/mod_client_profile.html.twig:219
 msgid "Your profile currency is"
 msgstr "Валюта вашего профиля составляет"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:219
+#: modules/Client/html_client/mod_client_profile.html.twig:220
 msgid "Create new client profile if you want to manage your money in other currency."
 msgstr "Создайте новый профиль клиента, если вы хотите управлять вашими деньгами в другой валюте."
 
-#: modules/Client/html_client/mod_client_profile.html.twig:222
+#: modules/Client/html_client/mod_client_profile.html.twig:223
 msgid "You do not yet have a currency associated with your profile. You can select the correct one when making your first order."
 msgstr "У вас пока нет валюты с вашим профилем. Вы можете выбрать правильную валюту при создании вашего первого заказа."
 
@@ -4037,7 +4045,7 @@ msgid "Repeat new password"
 msgstr "Повторите новый пароль"
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:34
-#: modules/Page/html_client/mod_page_password-reset.html.twig:30
+#: modules/Page/html_client/mod_page_password-reset.html.twig:36
 msgid "Back to login"
 msgstr "Назад к форме входа"
 
@@ -4432,8 +4440,8 @@ msgstr "Область клиента"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
 #: themes/admin_default/html/layout_default.html.twig:148
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
-#: themes/huraga/html/layout_default.html.twig:84
-#: themes/huraga/html/layout_default.html.twig:153
+#: themes/huraga/html/layout_default.html.twig:89
+#: themes/huraga/html/layout_default.html.twig:158
 #: themes/huraga/html/mobile_menu.html.twig:5
 #: themes/huraga/html/partial_menu.html.twig:8
 msgid "Dashboard"
@@ -4441,7 +4449,7 @@ msgstr "Главная"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
 #: modules/Index/html_client/mod_index_dashboard.html.twig:10
-#: themes/huraga/html/layout_default.html.twig:150
+#: themes/huraga/html/layout_default.html.twig:155
 msgid "Home"
 msgstr "Домой"
 
@@ -5210,12 +5218,12 @@ msgstr "Вы вышли из системы"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:214
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:43
-#: modules/Page/html_client/mod_page_login.html.twig:3
-#: modules/Page/html_client/mod_page_login.html.twig:30
+#: modules/Page/html_client/mod_page_login.html.twig:11
+#: modules/Page/html_client/mod_page_login.html.twig:37
 #: modules/Staff/html_admin/mod_staff_login.html.twig:3
 #: modules/Staff/html_admin/mod_staff_login.html.twig:70
 #: themes/admin_default/html/error.html.twig:14
-#: themes/huraga/html/layout_default.html.twig:97
+#: themes/huraga/html/layout_default.html.twig:102
 #: themes/huraga/html/mobile_menu.html.twig:119
 msgid "Login"
 msgstr "Вход в систему"
@@ -5223,8 +5231,8 @@ msgstr "Вход в систему"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:215
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:251
 #: modules/Page/html_client/mod_page_signup.html.twig:5
-#: modules/Page/html_client/mod_page_signup.html.twig:175
-#: themes/huraga/html/layout_default.html.twig:123
+#: modules/Page/html_client/mod_page_signup.html.twig:182
+#: themes/huraga/html/layout_default.html.twig:128
 #: themes/huraga/html/mobile_menu.html.twig:123
 msgid "Sign up"
 msgstr "Зарегистрироваться"
@@ -5239,7 +5247,7 @@ msgstr "Зарегистрироваться"
 #: modules/Order/html_client/mod_order_product.html.twig:12
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:4
 #: themes/admin_default/html/partial_menu_top.html.twig:3
-#: themes/huraga/html/layout_default.html.twig:90
+#: themes/huraga/html/layout_default.html.twig:95
 #: themes/huraga/html/mobile_menu.html.twig:14
 #: themes/huraga/html/partial_menu.html.twig:17
 msgid "Order"
@@ -6119,14 +6127,14 @@ msgstr "Статус счета"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 #: modules/System/html_admin/mod_system_settings.html.twig:118
-#: themes/huraga/html/layout_default.html.twig:177
+#: themes/huraga/html/layout_default.html.twig:182
 msgid "Bank Name"
 msgstr "Название банка"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 #: modules/System/html_admin/mod_system_settings.html.twig:124
-#: themes/huraga/html/layout_default.html.twig:177
+#: themes/huraga/html/layout_default.html.twig:182
 msgid "BIC / SWIFT Code"
 msgstr "BIC/SWIFT код"
 
@@ -7004,8 +7012,8 @@ msgstr "Общая сумма будет вычтена с баланса сче
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:200
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:261
-#: modules/Page/html_client/mod_page_signup.html.twig:169
-#: modules/Page/html_client/mod_page_signup.html.twig:181
+#: modules/Page/html_client/mod_page_signup.html.twig:176
+#: modules/Page/html_client/mod_page_signup.html.twig:188
 msgid "terms of service"
 msgstr ""
 
@@ -7013,8 +7021,8 @@ msgstr ""
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:200
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:261
-#: modules/Page/html_client/mod_page_signup.html.twig:169
-#: modules/Page/html_client/mod_page_signup.html.twig:181
+#: modules/Page/html_client/mod_page_signup.html.twig:176
+#: modules/Page/html_client/mod_page_signup.html.twig:188
 msgid "privacy policy"
 msgstr ""
 
@@ -7051,7 +7059,7 @@ msgid "You must fill in your password."
 msgstr "Укажите свой пароль."
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:47
-#: modules/Page/html_client/mod_page_login.html.twig:36
+#: modules/Page/html_client/mod_page_login.html.twig:43
 msgid "Create account"
 msgstr "Создать учетную запись"
 
@@ -7070,7 +7078,7 @@ msgid "Phone Code"
 msgstr "Телефонный код"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:255
-#: modules/Page/html_client/mod_page_signup.html.twig:188
+#: modules/Page/html_client/mod_page_signup.html.twig:195
 msgid "Already a user?"
 msgstr "Уже зарегистрированы?"
 
@@ -7113,19 +7121,19 @@ msgstr "О нас"
 msgid "About"
 msgstr "О нас"
 
-#: modules/Page/html_client/mod_page_login.html.twig:20
+#: modules/Page/html_client/mod_page_login.html.twig:27
 msgid "Login to your account"
 msgstr "Войти в свою учетную запись"
 
-#: modules/Page/html_client/mod_page_login.html.twig:24
-#: modules/Page/html_client/mod_page_password-reset.html.twig:25
+#: modules/Page/html_client/mod_page_login.html.twig:31
+#: modules/Page/html_client/mod_page_password-reset.html.twig:31
 #: modules/Staff/html_admin/mod_staff_login.html.twig:23
 #: modules/Staff/html_admin/mod_staff_login.html.twig:48
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
 msgid "Enter your email address"
 msgstr "Введите свою почту"
 
-#: modules/Page/html_client/mod_page_login.html.twig:28
+#: modules/Page/html_client/mod_page_login.html.twig:35
 #: modules/Staff/html_admin/mod_staff_login.html.twig:29
 #: modules/Staff/html_admin/mod_staff_login.html.twig:66
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
@@ -7133,17 +7141,17 @@ msgstr "Введите свою почту"
 msgid "Enter your password"
 msgstr "Введите свой пароль"
 
-#: modules/Page/html_client/mod_page_login.html.twig:41
-#: modules/Page/html_client/mod_page_signup.html.twig:192
+#: modules/Page/html_client/mod_page_login.html.twig:48
+#: modules/Page/html_client/mod_page_signup.html.twig:199
 msgid "Forgot password?"
 msgstr "Забыли пароль?"
 
 #: modules/Page/html_client/mod_page_password-reset.html.twig:3
-#: modules/Page/html_client/mod_page_password-reset.html.twig:28
+#: modules/Page/html_client/mod_page_password-reset.html.twig:34
 msgid "Reset password"
 msgstr "Сбросить пароль"
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:20
+#: modules/Page/html_client/mod_page_password-reset.html.twig:26
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:3
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:16
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:3
@@ -7151,12 +7159,12 @@ msgstr "Сбросить пароль"
 msgid "Reset your password"
 msgstr "Сбросить пароль"
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:21
+#: modules/Page/html_client/mod_page_password-reset.html.twig:27
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:18
 msgid "A password reset confirmation email will be sent to you if we found an account with that email address."
 msgstr "Вам будет отправлено письмо с подтверждением пароля, если мы нашли учетную запись с этим адресом."
 
-#: modules/Page/html_client/mod_page_password-reset.html.twig:26
+#: modules/Page/html_client/mod_page_password-reset.html.twig:32
 msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
 msgstr "Введите адрес электронной почты для сброса пароля. Вы получите новый пароль после подтверждения ссылки."
 
@@ -7170,23 +7178,23 @@ msgstr "Политика приватности"
 msgid "Privacy"
 msgstr "Конфиденциальность"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:22
+#: modules/Page/html_client/mod_page_signup.html.twig:29
 msgid "Create a new account"
 msgstr "Создать новую учетную запись"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:66
+#: modules/Page/html_client/mod_page_signup.html.twig:73
 msgid "Male"
 msgstr "Мужчина"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:67
+#: modules/Page/html_client/mod_page_signup.html.twig:74
 msgid "Female"
 msgstr "Женщина"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:68
+#: modules/Page/html_client/mod_page_signup.html.twig:75
 msgid "Non-binary"
 msgstr "Другое"
 
-#: modules/Page/html_client/mod_page_signup.html.twig:69
+#: modules/Page/html_client/mod_page_signup.html.twig:76
 msgid "Other"
 msgstr "Другие"
 
@@ -9809,43 +9817,48 @@ msgstr "Если выпадающее меню не имеет соответс�
 msgid "Network interface updated."
 msgstr "Сетевой интерфейс обновлен."
 
-#: modules/System/html_admin/mod_system_update.html.twig:15
+#: modules/System/html_admin/mod_system_update.html.twig:16
+#: modules/System/html_admin/mod_system_update.html.twig:18
 msgid "Update release notes"
 msgstr "Обновить примечания к выпуску"
 
-#: modules/System/html_admin/mod_system_update.html.twig:18
+#: modules/System/html_admin/mod_system_update.html.twig:19
+msgid "Required PHP version:"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_update.html.twig:23
 msgid "This update is considered to be a major update, you should check the release notes for any breaking changes."
 msgstr "Это обновление считается крупным обновлением, вы должны проверить примечания к выпуску на предмет любых неприятных изменений."
 
-#: modules/System/html_admin/mod_system_update.html.twig:24
+#: modules/System/html_admin/mod_system_update.html.twig:29
 msgid "This update is considered to be a minor update, there are low chances of incompatibilities."
 msgstr "Это обновление считается незначительным обновлением, есть низкие шансы на несовместимость."
 
-#: modules/System/html_admin/mod_system_update.html.twig:30
+#: modules/System/html_admin/mod_system_update.html.twig:35
 msgid "There is no update available"
 msgstr "Нет доступных обновлений"
 
-#: modules/System/html_admin/mod_system_update.html.twig:31
+#: modules/System/html_admin/mod_system_update.html.twig:36
 msgid "You appear to be running the latest version of FOSSBilling, so no action is needed at the moment. If you think this is a mistake, you may use the button below to check again."
 msgstr "Похоже, что вы используете последнюю версию FOSSBilling, поэтому в данный момент никаких действий не требуется. Если вы думаете, что это ошибка, вы можете воспользоваться кнопкой ниже, чтобы проверить снова."
 
-#: modules/System/html_admin/mod_system_update.html.twig:63
+#: modules/System/html_admin/mod_system_update.html.twig:68
 msgid "Check for Updates"
 msgstr "Проверить обновления"
 
-#: modules/System/html_admin/mod_system_update.html.twig:69
+#: modules/System/html_admin/mod_system_update.html.twig:74
 msgid "Apply Patches & Update Configuration"
 msgstr "Применить исправление и обновить конфигурацию"
 
-#: modules/System/html_admin/mod_system_update.html.twig:72
+#: modules/System/html_admin/mod_system_update.html.twig:77
 msgid "Applying patches and updating the configuration should be performed automatically, you don't need to use that button unless you are experiencing issues."
 msgstr "Применение патчей и обновление конфигурации должны выполняться автоматически, вам не нужно использовать эту кнопку, если только вы не испытываете проблем."
 
-#: modules/System/html_admin/mod_system_update.html.twig:73
+#: modules/System/html_admin/mod_system_update.html.twig:78
 msgid "Last update check:"
 msgstr "Проверить последнее обновление:"
 
-#: modules/System/html_admin/mod_system_update.html.twig:74
+#: modules/System/html_admin/mod_system_update.html.twig:79
 msgid "Next update check:"
 msgstr "Проверка следующего обновления:"
 
@@ -10162,24 +10175,24 @@ msgstr "Упс! Не удалось найти страницу, которую 
 msgid "Go back to home"
 msgstr "Назад на главную"
 
-#: themes/huraga/html/layout_default.html.twig:118
+#: themes/huraga/html/layout_default.html.twig:123
 #: themes/huraga/html/mobile_menu.html.twig:112
 msgid "Sign out"
 msgstr "Выйти"
 
-#: themes/huraga/html/layout_default.html.twig:177
+#: themes/huraga/html/layout_default.html.twig:182
 msgid "Payment Information"
 msgstr "Информация платежа"
 
-#: themes/huraga/html/layout_default.html.twig:177
+#: themes/huraga/html/layout_default.html.twig:182
 msgid "Account Number"
 msgstr "Номер аккаунта"
 
-#: themes/huraga/html/layout_default.html.twig:227
+#: themes/huraga/html/layout_default.html.twig:232
 msgid "FOSSBilling Community"
 msgstr "Сообщество FOSSBilling"
 
-#: themes/huraga/html/layout_default.html.twig:239
+#: themes/huraga/html/layout_default.html.twig:244
 msgid "Top"
 msgstr "Наверх"
 
