@@ -41,7 +41,7 @@ jobs:
           fi
 
       - name: Commit and push .mo files
-        uses: actions-js/push@v1.4
+        uses: actions-js/push@v1.5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           message: "Automated .mo file generation"
