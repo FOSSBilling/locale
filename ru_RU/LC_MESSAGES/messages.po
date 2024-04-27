@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-04-11 14:24-0700\n"
-"PO-Revision-Date: 2024-04-15 03:57\n"
+"PO-Revision-Date: 2024-04-27 21:06\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -34,15 +34,15 @@ msgstr ""
 
 #: di.php:363 di.php:437
 msgid "Client is not logged in"
-msgstr "Администратор не авторизован"
+msgstr "Клиент не авторизован"
 
 #: di.php:403 di.php:475
 msgid "Admin is not logged in"
-msgstr "Клиент не авторизован"
+msgstr "Администратор не авторизован"
 
 #: di.php:515
 msgid "Unrecognized Handler type: "
-msgstr "Тип обработчика: "
+msgstr "Неизвестный тип обработчика: "
 
 #: di.php:525
 msgid "Please check your mailbox and confirm your email address."
@@ -58,19 +58,19 @@ msgstr "Произошла ошибка HTTP :err_code при попытке з�
 
 #: library/Api/Abstract.php:59
 msgid "Mod object is not set for the service"
-msgstr "Мод објекат није подешен за услугу"
+msgstr "Объект Mod не установлен для сервиса"
 
 #: library/Api/Handler.php:41
 msgid "Method :method must contain underscore"
-msgstr "Метод :метод мора да садржи доњу црту"
+msgstr "Метод :method должен содержать символ подчеркивания"
 
 #: library/Api/Handler.php:54 library/Box/Mod.php:57
 msgid "Invalid module name"
-msgstr "Неважећи назив модула"
+msgstr "Недопустимое название модуля"
 
 #: library/Api/Handler.php:60
 msgid "FOSSBilling module :mod is not installed/activated"
-msgstr "ФОССБиллинг модул :mod није инсталиран/активиран"
+msgstr "Модуль FOSSBilling :mod не установлен/не активирован"
 
 #: library/Api/Handler.php:68
 msgid "You do not have access to the :mod module"
@@ -347,7 +347,7 @@ msgstr "Мы не смогли сгенерировать пароль с нео
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
-msgstr "Почтовый адрес"
+msgstr "Email-адрес"
 
 #: library/FOSSBilling/Tools.php:325 library/FOSSBilling/Validate.php:187
 #: modules/Servicehosting/Api/Guest.php:38
@@ -1142,7 +1142,7 @@ msgstr "Тип расширения (:type) не может быть автом�
 
 #: modules/Extension/Service.php:540
 msgid "FOSSBilling core modules cannot be installed or removed"
-msgstr ""
+msgstr "Основные модули FOSSBilling не могут быть установлены или удалены"
 
 #: modules/Extension/Service.php:545
 msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
@@ -1229,11 +1229,11 @@ msgstr "Подписка не найдена"
 #: modules/Invoice/Api/Client.php:165 modules/Invoice/Api/Guest.php:35
 #: modules/Invoice/Api/Guest.php:59
 msgid "Invoice was not found"
-msgstr "Кошелёк получателя не найден"
+msgstr "Счет-фактура не был найден"
 
 #: modules/Invoice/Api/Client.php:82 modules/Invoice/Api/Guest.php:62
 msgid "Paid Invoice cannot be modified"
-msgstr ""
+msgstr "Оплаченный счет-фактура не может быть изменен"
 
 #: modules/Invoice/Api/Client.php:110 modules/Order/Api/Client.php:121
 #: modules/Servicedomain/Api/Client.php:122
@@ -1249,7 +1249,7 @@ msgstr "Необходимо ввести числовое значение"
 
 #: modules/Invoice/Api/Guest.php:102
 msgid "Invoice hash not passed. Missing param hash"
-msgstr "Хэш счета не пройден. Отсутствует хэш параметра"
+msgstr "Не передан хэш счета. Отсутствует хэш параметра"
 
 #: modules/Invoice/Api/Guest.php:106
 msgid "Payment method not found. Missing param gateway_id"
@@ -1374,11 +1374,11 @@ msgstr "Платежный шлюз :adapter не найден"
 
 #: modules/Invoice/ServiceTransaction.php:82
 msgid "Transaction invoice ID is missing"
-msgstr ""
+msgstr "Отсутствует идентификатор счета-фактуры транзакции"
 
 #: modules/Invoice/ServiceTransaction.php:86
 msgid "Payment gateway ID is missing"
-msgstr ""
+msgstr "Идентификатор платежного шлюза отсутствует"
 
 #: modules/Invoice/ServiceTransaction.php:347
 msgid "Transaction :id not found."
@@ -1446,7 +1446,7 @@ msgstr "Валюта клиента не совпадает с валютой с
 
 #: modules/Invoice/ServiceTransaction.php:678
 msgid "Cannot add negative amount to client balance for debit transaction"
-msgstr ""
+msgstr "Невозможно добавить отрицательную сумму к балансу клиента для дебетовой транзакции"
 
 #: modules/Massmailer/Api/Admin.php:73
 msgid "Message from name cannot be empty"
@@ -1560,7 +1560,7 @@ msgstr "Только приостановленные заказы могут б
 
 #: modules/Order/Service.php:1042
 msgid "Cannot cancel "
-msgstr ""
+msgstr "Невозможно отменить "
 
 #: modules/Product/Api/Admin.php:96
 msgid "You have already created domain product."
@@ -1933,7 +1933,7 @@ msgstr "Менеджер серверов :adapter недействителен"
 
 #: modules/Servicehosting/Service.php:840
 msgid "Cannot remove hosting plan which has active accounts"
-msgstr ""
+msgstr "Не удается удалить тарифный план хостинга с активными учетными записями"
 
 #: modules/Servicehosting/Service.php:1053
 msgid "Could not find main domain product"
@@ -2067,7 +2067,7 @@ msgstr "Проверьте данные Вашего счета"
 
 #: modules/Staff/Service.php:508
 msgid "This administrator account is protected and cannot be removed"
-msgstr ""
+msgstr "Эта учетная запись администратора защищена и не может быть удалена"
 
 #: modules/Staff/Service.php:579
 msgid "Staff member with email :email is already registered"
@@ -2075,11 +2075,11 @@ msgstr "Пользователь с такой почтой уже зареги�
 
 #: modules/Staff/Service.php:671
 msgid "Administrators group cannot be removed"
-msgstr ""
+msgstr "Группа администраторов не может быть удалена"
 
 #: modules/Staff/Service.php:679
 msgid "Cannot remove group which has staff members"
-msgstr ""
+msgstr "Не удается удалить группу, в которой есть сотрудники"
 
 #: modules/Support/Api/Admin.php:838 modules/Support/Api/Admin.php:912
 #: modules/Support/Service.php:1651
@@ -2173,7 +2173,7 @@ msgstr "База знаний"
 
 #: modules/Support/Service.php:654
 msgid "Cannot remove helpdesk which has tickets"
-msgstr ""
+msgstr "Не удается удалить службу поддержки, в которой есть заявки"
 
 #: modules/Support/Service.php:812
 msgid "We currently aren't accepting support tickets from unregistered users. Please use another contact method."
@@ -4011,7 +4011,7 @@ msgstr "Сгенерировать новый ключ"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:217
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and cannot be changed."
-msgstr ""
+msgstr "Валюта вашего профиля будет определена после вашего первого заказа. Как только ваша валюта будет установлена, весь учет в вашем профиле будет вестись в этой валюте и не может быть изменен."
 
 #: modules/Client/html_client/mod_client_profile.html.twig:219
 msgid "Your profile currency is"
@@ -4023,7 +4023,7 @@ msgstr "Создайте новый профиль клиента, если вы
 
 #: modules/Client/html_client/mod_client_profile.html.twig:223
 msgid "You do not yet have a currency associated with your profile. You can select the correct one when making your first order."
-msgstr "У вас пока нет валюты с вашим профилем. Вы можете выбрать правильную валюту при создании вашего первого заказа."
+msgstr "В настоящее время у вас нет валюты, привязанной к вашему счету. Вы можете выбрать правильную валюту при оформлении вашего первого заказа."
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:3
 msgid "Set new Password"
@@ -4047,7 +4047,7 @@ msgstr "Повторите новый пароль"
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:34
 #: modules/Page/html_client/mod_page_password-reset.html.twig:36
 msgid "Back to login"
-msgstr "Назад к форме входа"
+msgstr "Вернуться к авторизации"
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
@@ -4155,7 +4155,7 @@ msgstr "Добавить новую валюту"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:41
 msgid "Integrations / Automation"
-msgstr ""
+msgstr "Интеграция / автоматизация"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:44
 msgid "Converter"
@@ -4167,11 +4167,11 @@ msgstr "Управление валютами"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:52
 msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics."
-msgstr ""
+msgstr "Валюта по умолчанию - это та, в которой вы определяете цены на продукты. Если ваш клиент выберет другую валюту, цены будут пересчитаны в соответствии с курсом конвертации. Изменение валюты по умолчанию после размещения заказов может привести к непредвиденным проблемам. При изменении валюты по умолчанию ничего не пересчитывается. Ваш доход рассчитывается в валюте по умолчанию. Изменение валюты по умолчанию после оплаты счетов приведет к искажению статистики доходов."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:56
 msgid "FOSSBilling is configured to automatically sync currency exchange rates."
-msgstr ""
+msgstr "Система FOSSBilling настроена на автоматическую синхронизацию курсов обмена валют."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:60
 msgid "FOSSBilling is not configured to automatically sync currency exchange rates."
@@ -4233,27 +4233,27 @@ msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:176
 msgid "FOSSBilling provides integration with various currency exchange rate data providers, allowing you to choose whichever one best suits your needs. By default, FOSSBilling will use the ExchangeRate-API \"Open Access Endpoint\" which does not require any configuration."
-msgstr ""
+msgstr "FOSSBilling обеспечивает интеграцию с различными поставщиками данных об обменных курсах валют, позволяя вам выбрать тот, который наилучшим образом соответствует вашим потребностям. По умолчанию FOSSBilling будет использовать \"конечную точку открытого доступа\" ExchangeRate-API, которая не требует какой-либо настройки."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:180
 msgid "Provider"
-msgstr ""
+msgstr "Провайдер"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:181
 msgid "Authentication Required"
-msgstr ""
+msgstr "Требуется аутентификация"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:182
 msgid "Update Frequency"
-msgstr ""
+msgstr "Частота обновления"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:183
 msgid "Supported Currencies"
-msgstr ""
+msgstr "Поддерживаемые валюты"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:184
 msgid "Pricing"
-msgstr ""
+msgstr "Цена"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:189
 msgid "ExchangeRate-API (Open Access Endpoint)"
@@ -4268,7 +4268,7 @@ msgstr ""
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:206
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:213
 msgid "Supported currencies"
-msgstr ""
+msgstr "Поддерживаемые валюты"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:193
 #: themes/admin_default/html/partial_pricing.html.twig:7
@@ -4283,7 +4283,7 @@ msgstr ""
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:207
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:214
 msgid "Free / paid"
-msgstr ""
+msgstr "Бесплатный / платный"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:205
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:212
@@ -5003,7 +5003,7 @@ msgstr "Следуйте инструкциям в документации FOSS
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:148
 msgid "Installing a new language"
-msgstr "Устанавливает язык"
+msgstr "Установка нового языка"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:152
 msgid "Changing default language"
@@ -5011,7 +5011,7 @@ msgstr "Изменение языка по умолчанию"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:153
 msgid "Instructions for changing the default language can be found on the FOSSBilling documentation."
-msgstr "Инструкции по изменению языка по умолчанию можно найти в документации FOSSBilling."
+msgstr "Инструкции по изменению языка по умолчанию вы можете найти в документации FOSSBilling."
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:153
 msgid "Changing the default language"
@@ -5206,7 +5206,7 @@ msgstr "Нет недавних заказов"
 #: modules/Support/html_client/mod_support_tickets.html.twig:9
 #: modules/Support/html_client/mod_support_tickets.html.twig:18
 msgid "Support tickets"
-msgstr "Поддержка билетов"
+msgstr "Поддержка"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:198
 msgid "No recent support tickets"
@@ -5226,7 +5226,7 @@ msgstr "Вы вышли из системы"
 #: themes/huraga/html/layout_default.html.twig:102
 #: themes/huraga/html/mobile_menu.html.twig:119
 msgid "Login"
-msgstr "Вход в систему"
+msgstr "Авторизация"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:215
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:251
@@ -5255,7 +5255,7 @@ msgstr "Заказ"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:225
 msgid "Products and services"
-msgstr "Товар или услуга"
+msgstr "Мои услуги"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:236
 #: modules/News/html_admin/mod_news_index.html.twig:7
@@ -5705,7 +5705,7 @@ msgstr "Следующий номер счета-фактуры"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:90
 msgid "Document settings"
-msgstr "Макет шаблона"
+msgstr "Настройки документа"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:92
 msgid "Document format"
@@ -6190,11 +6190,11 @@ msgstr "Количество и Цена"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:103
 msgid "Payment details"
-msgstr "Информация об оплате"
+msgstr "Платежные реквизиты"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Account Owner"
-msgstr "Владелец счета"
+msgstr "Владелец учетной записи"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 msgid "Bank"
@@ -6210,7 +6210,7 @@ msgstr "Номер плательщика НДС"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:112
 msgid "Company Registration #:"
-msgstr "Регистрации компании:"
+msgstr "Регистрация компании #:"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:113
 msgid "Website"
@@ -6428,11 +6428,11 @@ msgstr "Управление заказами"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:41
 msgid "Edit order"
-msgstr "Редактировать Заказ"
+msgstr "Редактировать заказ"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:44
 msgid "Edit order config"
-msgstr "Редактировать текущий файл настроек"
+msgstr "Редактировать конфигурацию заказа"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:48
 msgid "Service management"
@@ -6473,7 +6473,7 @@ msgstr "Статус заказа"
 #: modules/Order/html_admin/mod_order_manage.html.twig:120
 #: modules/Order/html_client/mod_order_manage.html.twig:82
 msgid "Order notes"
-msgstr "Поиск в заметках"
+msgstr "Примечания к заказу"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:130
 msgid "Order Date"
@@ -6516,12 +6516,12 @@ msgstr "Заказ обновлен"
 #: modules/Order/html_admin/mod_order_manage.html.twig:191
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:59
 msgid "Renew"
-msgstr "Обновить"
+msgstr "Возобновить"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:199
 #: modules/Order/html_admin/mod_order_manage.html.twig:212
 msgid "Reason of suspension"
-msgstr "Reason for suspension"
+msgstr "Причина приостановки"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:200
 #: modules/Order/html_admin/mod_order_manage.html.twig:209
@@ -6642,7 +6642,7 @@ msgstr "Заказ выполняется"
 
 #: modules/Order/html_admin/mod_order_new.html.twig:73
 msgid "Place new order"
-msgstr "Разместить новый заказ"
+msgstr "Оформить новый заказ"
 
 #: modules/Order/html_admin/mod_order_new.html.twig:93
 msgid "Selected price is 0.00"
@@ -6656,7 +6656,7 @@ msgstr "Товар отключен в конфигурации"
 #: modules/Order/html_admin/mod_order_settings.html.twig:21
 #: modules/Order/html_admin/mod_order_settings.html.twig:28
 msgid "Orders settings"
-msgstr "Устанавливает счетчик идентификатора заказа. Это полезно, если вы хотите, чтобы ваши заказы начинались с определенного номера. Это влияет только на заказы, которые будут созданы в будущем. Значение должно быть больше, чем текущий максимальный идентификатор заказа"
+msgstr "Настройки заказов"
 
 #: modules/Order/html_admin/mod_order_settings.html.twig:31
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:5
@@ -6785,7 +6785,7 @@ msgstr "Запросить обновление"
 #: modules/Order/html_client/mod_order_manage.html.twig:107
 #: modules/Order/html_client/mod_order_manage.html.twig:224
 msgid "Open ticket"
-msgstr "Открыть обращение"
+msgstr "Открыть тикет"
 
 #: modules/Order/html_client/mod_order_manage.html.twig:109
 msgid "Request cancellation"
@@ -6970,7 +6970,7 @@ msgstr "конфигурация"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:113
 msgid "Have a coupon code?"
-msgstr "У вас есть купон на скидки?"
+msgstr "У вас есть код купона?"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:116
 msgid "Promo code was applied for your order"
@@ -7061,7 +7061,7 @@ msgstr "Укажите свой пароль."
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:47
 #: modules/Page/html_client/mod_page_login.html.twig:43
 msgid "Create account"
-msgstr "Создать учетную запись"
+msgstr "Зарегистрироваться"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:112
 msgid "You are"
@@ -7123,7 +7123,7 @@ msgstr "О нас"
 
 #: modules/Page/html_client/mod_page_login.html.twig:27
 msgid "Login to your account"
-msgstr "Войти в свою учетную запись"
+msgstr "Вход в аккаунт"
 
 #: modules/Page/html_client/mod_page_login.html.twig:31
 #: modules/Page/html_client/mod_page_password-reset.html.twig:31
@@ -7171,7 +7171,7 @@ msgstr "Введите адрес электронной почты для сб�
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:3
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:19
 msgid "Privacy Policy"
-msgstr "Политика приватности"
+msgstr "Политика конфиденциальности"
 
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:9
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:13
@@ -7180,7 +7180,7 @@ msgstr "Конфиденциальность"
 
 #: modules/Page/html_client/mod_page_signup.html.twig:29
 msgid "Create a new account"
-msgstr "Создать новую учетную запись"
+msgstr "Создать новый аккаунт"
 
 #: modules/Page/html_client/mod_page_signup.html.twig:73
 msgid "Male"
@@ -9040,11 +9040,11 @@ msgstr "Создать группу"
 
 #: modules/Staff/html_admin/mod_staff_login.html.twig:17
 msgid "Create main administrator account"
-msgstr "Создать учетную запись администратора"
+msgstr "Создать аккаунт главного администратора"
 
 #: modules/Staff/html_admin/mod_staff_login.html.twig:33
 msgid "Create administrator account"
-msgstr "Создать учетную запись администратора"
+msgstr "Создать аккаунт администратора"
 
 #: modules/Staff/html_admin/mod_staff_login.html.twig:38
 msgid "Log into your account"
@@ -9447,7 +9447,7 @@ msgstr "Обратиться в службу поддержки"
 
 #: modules/Support/html_admin/mod_support_tickets.html.twig:5
 msgid "Support Tickets"
-msgstr "Заявки на поддержку"
+msgstr "Поддержка"
 
 #: modules/Support/html_admin/mod_support_tickets.html.twig:30
 msgid "Filter Support Tickets"
@@ -9589,11 +9589,11 @@ msgstr "Отправлено"
 
 #: modules/Support/html_client/mod_support_tickets.html.twig:63
 msgid "No support tickets"
-msgstr "Нет заявок на поддержку"
+msgstr "Нет обращений в службу поддержки"
 
 #: modules/Support/html_client/mod_support_tickets.html.twig:76
 msgid "Open new ticket"
-msgstr "Открыть новый тикет"
+msgstr "Создать новый тикет"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:5
 #: modules/System/html_admin/mod_system_settings.html.twig:21
@@ -10017,7 +10017,7 @@ msgstr "заказы"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:111
 msgid "invoices"
-msgstr "счет-фактуры"
+msgstr "счета-фактуры"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:112
 msgid "unpaid"

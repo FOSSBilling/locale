@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-04-11 14:24-0700\n"
-"PO-Revision-Date: 2024-04-23 21:01\n"
+"PO-Revision-Date: 2024-04-27 21:06\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
@@ -704,7 +704,7 @@ msgstr "Es sind keine IPs auf diesem Server verfügbar."
 
 #: library/Server/Manager/Directadmin.php:342
 msgid "Unable to assign the Reseller ANY IPs. Make sure to have free, unassigned IPs."
-msgstr ""
+msgstr "Dem Reseller können KEINE IPs zugewiesen werden. Stellen Sie sicher, dass Sie freie, nicht zugewiesene IPs haben."
 
 #: library/Server/Manager/Directadmin.php:346
 msgid "Error creating user"
@@ -1024,7 +1024,7 @@ msgstr "Beim Abrufen von Währungskursen von der Währungsdaten-API ist ein Fehl
 
 #: modules/Currency/Service.php:617
 msgid "There was an error when fetching currency rates from currencylayer. See the error log for details."
-msgstr ""
+msgstr "Beim Abrufen der Währungskurse von der Währungsplattform ist ein Fehler aufgetreten. Siehe das Fehlerprotokoll für Details."
 
 #: modules/Custompages/Controller/Admin.php:33
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
@@ -1098,7 +1098,7 @@ msgstr "Erweiterungen verwalten"
 
 #: modules/Extension/Service.php:39
 msgid "Allows the staff member to install, update, or remove extensions."
-msgstr ""
+msgstr "Ermöglicht es dem Mitarbeiter, Erweiterungen zu installieren, zu aktualisieren oder zu entfernen."
 
 #: modules/Extension/Service.php:339
 msgid "Visit the extension directory for more information on updating this extension."
@@ -1122,15 +1122,15 @@ msgstr "Download der Erweiterung fehlgeschlagen mit Fehler :code"
 
 #: modules/Extension/Service.php:501
 msgid "Extension :id seems to be already installed."
-msgstr ""
+msgstr "Die Erweiterung :id ist bereits installiert."
 
 #: modules/Extension/Service.php:504
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
-msgstr ""
+msgstr "Die Erweiterung konnte nicht an ihren endgültigen Zielort verschoben werden. Bitte überprüfen Sie die Berechtigungen für den Zielordner. (:destination)"
 
 #: modules/Extension/Service.php:507
 msgid "Extension type (:type) cannot be automatically installed."
-msgstr ""
+msgstr "Der Erweiterungstyp (:type) kann nicht automatisch installiert werden."
 
 #: modules/Extension/Service.php:540
 msgid "FOSSBilling core modules cannot be installed or removed"
@@ -1138,7 +1138,7 @@ msgstr "FOSSBilling Core Module können nicht installiert oder entfernt werden"
 
 #: modules/Extension/Service.php:545
 msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
-msgstr ""
+msgstr "Das Modul kann nicht installiert werden. Es benötigt mindestens die Version :min von FOSSBilling. Sie verwenden :v"
 
 #: modules/Extension/Service.php:720
 msgid "Manage settings"
@@ -1211,7 +1211,7 @@ msgstr "Bestellung :id ist kostenlos. Keine Rechnung muss generiert werden."
 
 #: modules/Invoice/Api/Admin.php:744
 msgid "Client currency must match subscription currency. Check if clients currency is defined."
-msgstr ""
+msgstr "Die Währung des Kunden muss mit der Währung des Abonnements übereinstimmen. Prüfen Sie, ob die Kundenwährung definiert ist."
 
 #: modules/Invoice/Api/Admin.php:803
 msgid "Subscription not found"
@@ -1241,7 +1241,7 @@ msgstr "Du musst numerische Werte eingeben"
 
 #: modules/Invoice/Api/Guest.php:102
 msgid "Invoice hash not passed. Missing param hash"
-msgstr ""
+msgstr "Rechnungs mit Hash wurde nicht übergeben. Fehlender param-Hash"
 
 #: modules/Invoice/Api/Guest.php:106
 msgid "Payment method not found. Missing param gateway_id"
@@ -1301,7 +1301,7 @@ msgstr "Die nächste Rechnungsnummer konnte nicht ermittelt werden"
 
 #: modules/Invoice/Service.php:633
 msgid "Cannot refund invoice with negative amount"
-msgstr ""
+msgstr "Rechnung mit negativem Betrag kann nicht erstattet werden"
 
 #: modules/Invoice/Service.php:848
 msgid "Invoice is related to order #:id. Please cancel order first."
@@ -1366,7 +1366,7 @@ msgstr "Zahlungs-Gateway :adapter wurde nicht gefunden"
 
 #: modules/Invoice/ServiceTransaction.php:82
 msgid "Transaction invoice ID is missing"
-msgstr ""
+msgstr "Die ID der Transaktion für die Rechnung fehlt"
 
 #: modules/Invoice/ServiceTransaction.php:86
 msgid "Payment gateway ID is missing"
@@ -1925,7 +1925,7 @@ msgstr "Servermanager :adapter ist ungültig"
 
 #: modules/Servicehosting/Service.php:840
 msgid "Cannot remove hosting plan which has active accounts"
-msgstr ""
+msgstr "Hostingpaket mit aktiven Accounts kann nicht entfernt werden"
 
 #: modules/Servicehosting/Service.php:1053
 msgid "Could not find main domain product"
@@ -1937,11 +1937,11 @@ msgstr "Lizenz-Plugin :plugin nicht gefunden"
 
 #: modules/Servicelicense/Service.php:122
 msgid "License plugin do not have generate method"
-msgstr ""
+msgstr "Lizenz-Plugin hat keine Erzeugungsmethode"
 
 #: modules/Servicelicense/Service.php:133
 msgid "Maximum number of iterations reached while generating license key"
-msgstr ""
+msgstr "Maximale Anzahl von Wiederholungen beim Erzeugen des Lizenzschlüssels erreicht"
 
 #: modules/Spamchecker/Service.php:63
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
@@ -1953,7 +1953,7 @@ msgstr "Um reCAPTCHA verwenden zu können, musst du einen API-Schlüssel von <a 
 
 #: modules/Spamchecker/Service.php:88
 msgid "You have to complete the CAPTCHA to continue"
-msgstr ""
+msgstr "Sie müssen das CAPTCHA bestätigen, um fortzufahren"
 
 #: modules/Spamchecker/Service.php:102 modules/Spamchecker/Service.php:105
 msgid "reCAPTCHA verification failed."
@@ -2024,7 +2024,7 @@ msgstr "Administratorpasswort zurücksetzen"
 
 #: modules/Staff/Service.php:45 modules/Staff/Service.php:60
 msgid "Allows the staff member to perform password resets on :type: accounts."
-msgstr ""
+msgstr "Ermöglicht es dem Mitarbeiter, das Passwort für :type: Konten zurückzusetzen."
 
 #: modules/Staff/Service.php:49
 msgid "Create and edit staff members"
@@ -4003,7 +4003,7 @@ msgstr "Neuen Schlüssel generieren"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:217
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and cannot be changed."
-msgstr ""
+msgstr "Ihre Währung wird nach Ihrer ersten Bestellung festgelegt. Sobald Ihre Währung festgelegt ist, werden alle Buchungen in Ihrem Profil in dieser Währung geführt und können nicht mehr geändert werden."
 
 #: modules/Client/html_client/mod_client_profile.html.twig:219
 msgid "Your profile currency is"
