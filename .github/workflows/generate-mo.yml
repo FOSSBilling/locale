@@ -68,7 +68,7 @@ jobs:
 
       - name: Calculate the Translation Tag (messages.pot hash)
         working-directory: translations
-        run: echo "TRANSLATION_TAG=$(md5sum messages.pot)" >> $GITHUB_ENV
+        run: echo "TRANSLATION_TAG=$(md5sum messages.pot | cut -d' ' -f1)" >> $GITHUB_ENV
 
       - name: Display structure of downloaded files
         run: ls -R
