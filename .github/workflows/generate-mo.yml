@@ -55,6 +55,7 @@ jobs:
             ./**/messages.po
             locales.php
             LICENSE.md
+            messages.pot
             readme.md
 
   release:
@@ -64,6 +65,10 @@ jobs:
     steps:
       - name: Download the artifact
         uses: actions/download-artifact@v4
+
+      - name: Calculate the Translation Tag (messages.pot hash)
+        working-directory: translations
+        run: echo "TRANSLATION_TAG=$(md5sum messages.pot)" >> $GITHUB_ENV
 
       - name: Display structure of downloaded files
         run: ls -R
@@ -77,6 +82,7 @@ jobs:
           now=$(date)
           echo "## FOSSBilling Translations" >>translations.md
           echo "Dated: $now" >>translations.md
+          echo "Translation Tag: $TRANSLATION_TAG" >>translations.md
 
           # Create an associative array to store completion percentages
           declare -A completion_array
@@ -159,8 +165,8 @@ jobs:
       - name: Release to GitHub
         uses: ncipollo/release-action@v1
         with:
-          name: Latest Translations
-          tag: latest
+          name: Translations (${{ env.TRANSLATION_TAG }})
+          tag: ${{ env.TRANSLATION_TAG }}
           commit: main
           bodyFile: translations/translations.md
           artifacts: translations/translations.zip
