@@ -82,7 +82,9 @@ jobs:
           now=$(date)
           echo "## FOSSBilling Translations" >>translations.md
           echo "Dated: $now" >>translations.md
-          echo "Translation Tag: $TRANSLATION_TAG" >>translations.md
+          echo "Translation Tag: [$TRANSLATION_TAG](https://github.com/FOSSBilling/locale/releases/tag/$TRANSLATION_TAG)" >>translations.md
+
+          rm -f messages.pot
 
           # Create an associative array to store completion percentages
           declare -A completion_array

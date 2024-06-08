@@ -14,6 +14,11 @@ To have a language added, please create a new issue in this repository or join o
 
 If we think think the language is relevant and will be used by a significant number of users, we will add it to Crowdin and you can start translating. A language will be considered relevant if there is an existing userbase that's using the language and willing to contribute to the translations in the long run.
 
+
+## Release Tags
+
+Translation releases are generated automatically and are tagged using the MD5 hash of the `messages.pot` file, allowing users to find and update to the most recent translations that match their FOSSBilling version.
+
 ## Maintenance
 
 ### Building the .MO files
