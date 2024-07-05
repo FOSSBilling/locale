@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-06-07 20:48-0700\n"
-"PO-Revision-Date: 2024-07-04 07:42\n"
+"PO-Revision-Date: 2024-07-05 07:53\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -451,7 +451,7 @@ msgstr "Uw accountsaldo is ontoereikend om deze factuur te voldoen."
 #: library/Payment/Adapter/ClientBalance.php:92
 #: library/Payment/Adapter/ClientBalance.php:127
 msgid "You may not pay a deposit invoice with this payment gateway."
-msgstr "U kunt geen factuur betalen via dit betaalplatform."
+msgstr "Er kunnen geen facturen betaald worden via dit betaalplatform."
 
 #: library/Payment/Adapter/ClientBalance.php:82
 #: library/Payment/Adapter/PayPalEmail.php:75
@@ -460,13 +460,13 @@ msgstr "IPN is ongeldig"
 
 #: library/Payment/Adapter/ClientBalance.php:121
 msgid "ClientBalance gateway is not enabled"
-msgstr "De ClientBalance gateway is niet ingeschakeld"
+msgstr "Het ClientBalance platform is niet ingeschakeld"
 
 #: library/Payment/Adapter/PayPalEmail.php:30
 #: library/Payment/Adapter/Stripe.php:34 library/Payment/Adapter/Stripe.php:37
 #: library/Payment/Adapter/Stripe.php:43 library/Payment/Adapter/Stripe.php:46
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
-msgstr "Het betaalportaal \":pay_gateway\" is niet volledig geconfigureerd. Configureer het veld \":missing\""
+msgstr "Het betaalplatform \":pay_gateway\" is niet volledig geconfigureerd. Configureer de parameter \":missing\""
 
 #: library/Payment/Adapter/PayPalEmail.php:121
 msgid "Cannot process duplicate IPN"
@@ -491,7 +491,7 @@ msgstr "Er is een fout opgetreden bij het verwerken van de transactie"
 
 #: library/Payment/AdapterAbstract.php:51
 msgid "Return URL for the payment gateway was not set"
-msgstr "Retour URL voor het betaalportaal is niet ingesteld"
+msgstr "Retour URL voor het betaalplatform is niet ingesteld"
 
 #: library/Payment/AdapterAbstract.php:58
 msgid "Cancel URL for the payment gateway was not set"
@@ -1040,7 +1040,7 @@ msgstr "E-mail template niet gevonden"
 
 #: modules/Email/Api/Admin.php:385
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
-msgstr "Ontvanger is niet gedefinieerd. Definieer naar of to_client of to_staff parameter"
+msgstr "Ontvanger is niet gedefinieerd. Definieer de parameter to_client of to_staff"
 
 #: modules/Email/Controller/Admin.php:34
 #: modules/Email/html_admin/mod_email_details.html.twig:17
@@ -1055,11 +1055,11 @@ msgstr "Ontvanger is niet gedefinieerd. Definieer naar of to_client of to_staff 
 
 #: modules/Email/Service.php:205
 msgid "The \"from\" email address cannot be empty"
-msgstr "Afzender e-mailadres kan niet leeg zijn"
+msgstr "Het e-mailadres van de afzender mag niet leeg zijn"
 
 #: modules/Email/Service.php:480
 msgid "Email template :code was not found"
-msgstr "E-mailsjabloon :code is niet gevonden"
+msgstr "E-mailsjabloon :code werd niet gevonden"
 
 #: modules/Email/Service.php:677
 msgid "Error message truncated due to length, please check the error log for the complete message: "
@@ -1101,11 +1101,11 @@ msgstr "Ga naar de extensie directory voor meer informatie over het bijwerken va
 
 #: modules/Extension/Service.php:395
 msgid "FOSSBilling core modules cannot be managed"
-msgstr "FOSSBilling core modules kunnen niet worden beheerd"
+msgstr "FOSSBilling kernmodules kunnen niet worden beheerd"
 
 #: modules/Extension/Service.php:444
 msgid "Coudn't find a valid download URL for the extension."
-msgstr "Er kan geen geldige download-URL voor de extensie gevonden worden."
+msgstr "Er werd geen geldige download-URL voor de extensie gevonden."
 
 #: modules/Extension/Service.php:448
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
@@ -1361,11 +1361,11 @@ msgstr "Betalingsgateway :adapter is niet gevonden"
 
 #: modules/Invoice/ServiceTransaction.php:82
 msgid "Transaction invoice ID is missing"
-msgstr "Transactie factuur ID ontbreekt"
+msgstr "Het factuur ID ontbreekt voor deze transactie"
 
 #: modules/Invoice/ServiceTransaction.php:86
 msgid "Payment gateway ID is missing"
-msgstr "Betalingsgateway id ontbreekt"
+msgstr "Betaalplatform ID ontbreekt"
 
 #: modules/Invoice/ServiceTransaction.php:347
 msgid "Transaction :id not found."
@@ -1374,12 +1374,12 @@ msgstr "Transactie :id niet gevonden."
 #: modules/Invoice/ServiceTransaction.php:351
 #: modules/Invoice/ServiceTransaction.php:476
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
-msgstr "Kon transactie oorsprong niet bepalen. Transactie betalingsgateway is onbekend."
+msgstr "Kon transactie oorsprong niet bepalen. Transactie betaalplatform is onbekend."
 
 #: modules/Invoice/ServiceTransaction.php:356
 #: modules/Invoice/ServiceTransaction.php:481
 msgid "Cannot handle transaction received from unknown payment gateway: :id"
-msgstr "Kan transactie ontvangen van een onbekende betalingsgateway: :id niet verwerken"
+msgstr "De ontvangen transactie van het onbekende betaalplatform: :id kan niet verwerkt worden"
 
 #: modules/Invoice/ServiceTransaction.php:362
 #: modules/Invoice/ServiceTransaction.php:511
