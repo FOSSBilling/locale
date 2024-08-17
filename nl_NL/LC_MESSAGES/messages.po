@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-06-07 20:48-0700\n"
-"PO-Revision-Date: 2024-07-05 07:53\n"
+"PO-Revision-Date: 2024-08-17 18:50\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -445,13 +445,13 @@ msgstr "Onbekende periode geselecteerd voor prijs"
 
 #: library/Payment/Adapter/ClientBalance.php:59
 msgid "Your account balance is insufficient to cover this invoice."
-msgstr "Uw accountsaldo is ontoereikend om deze factuur te voldoen."
+msgstr "Onvoldoende saldo op de account om deze factuur te dekken."
 
 #: library/Payment/Adapter/ClientBalance.php:64
 #: library/Payment/Adapter/ClientBalance.php:92
 #: library/Payment/Adapter/ClientBalance.php:127
 msgid "You may not pay a deposit invoice with this payment gateway."
-msgstr "Er kunnen geen facturen betaald worden via dit betaalplatform."
+msgstr "Het is niet toegestaan om een aanbetalingsfactuur te betalen via deze betaalmethode."
 
 #: library/Payment/Adapter/ClientBalance.php:82
 #: library/Payment/Adapter/PayPalEmail.php:75
@@ -600,7 +600,7 @@ msgstr "Een geldig contactvennootschap nummer is verplicht voor het registreren 
 
 #: library/Registrar/Adapter/Resellerclub.php:384
 msgid "get the transfer code"
-msgstr "verkrijg de transfercode"
+msgstr "verkrijg de verhuiscode"
 
 #: library/Registrar/Adapter/Resellerclub.php:583
 msgid "You are already registered as reseller"
@@ -719,7 +719,7 @@ msgstr "HttpClientException: :error"
 
 #: library/Server/Manager/Directadmin.php:682
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
-msgstr "Server manager DirectAdmin fout: \"Het verzoek dat u hebt gemaakt kan niet worden uitgevoerd omdat het niet in uw autoriteitslevel is\""
+msgstr "Server Manager DirectAdmin Fout: \"Het verzoek kan niet worden uitgevoerd omdat het buiten het toegestane autorisatieniveau valt.\""
 
 #: library/Server/Manager/Hestia.php:162
 msgid "create user"
@@ -825,11 +825,11 @@ msgstr "Product niet gevonden"
 
 #: modules/Cart/Service.php:298
 msgid "Add products to your cart before applying promo code"
-msgstr "Voeg producten toe aan winkelwagen voordat u de promotiecode toepast"
+msgstr "Voeg producten toe aan de winkelwagen voordat de promotiecode wordt toegepast"
 
 #: modules/Cart/Service.php:446
 msgid "You have already used this promo code. Please remove the promo code and checkout again."
-msgstr "U heeft deze promotiecode al gebruikt. Verwijder de promotiecode en probeer het opnieuw."
+msgstr "Deze promotiecode is al gebruikt. Verwijder de promotiecode en probeer opnieuw af te rekenen."
 
 #: modules/Cart/Service.php:506
 msgid "Cannot checkout an empty cart"
@@ -934,7 +934,7 @@ msgstr "Valuta kan niet worden gewijzigd. Klant heeft al bestellingen."
 
 #: modules/Client/Service.php:239
 msgid "You must define the client's currency before adding funds."
-msgstr "U moet de valuta van de klant definiëren voordat u bedragen kunt toevoegen."
+msgstr "De valuta van de klant moet worden gedefinieerd voordat er geld kan worden toegevoegd."
 
 #: modules/Client/Service.php:243 modules/Client/ServiceBalance.php:125
 msgid "Funds amount is invalid"
@@ -966,12 +966,12 @@ msgstr "Veld :field mag niet leeg zijn"
 
 #: modules/Cookieconsent/Controller/Admin.php:33
 msgid "Cookie consent"
-msgstr "Cookie goedkeuring"
+msgstr "Cookies accepteren"
 
 #: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:771
 #: modules/Staff/Service.php:196
 msgid "You do not have permission to perform this action"
-msgstr "U hebt geen rechten om deze actie uit te voeren"
+msgstr "Geen toestemming om deze actie uit te voeren"
 
 #: modules/Currency/Api/Admin.php:107
 msgid "Currency already registered"
@@ -1133,7 +1133,7 @@ msgstr "FOSSBilling core modules kunnen niet geïnstalleerd of verwijderd worden
 
 #: modules/Extension/Service.php:549
 msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
-msgstr "Module kan niet worden geïnstalleerd. Het vereist ten minste :min versie van FOSSBilling. U gebruikt :v"
+msgstr "Module kan niet worden geïnstalleerd. Het vereist minimaal :min versie van FOSSBilling. Huidige versie :v"
 
 #: modules/Extension/Service.php:732
 msgid "Manage settings"
@@ -1198,7 +1198,7 @@ msgstr "Tekstgrootte opties moeten integer zijn"
 
 #: modules/Invoice/Api/Admin.php:73
 msgid "You must set the payment gateway in the invoice manage tab before marking it as paid."
-msgstr "U moet de betalingsgateway instellen in het factuurbeheer tabblad voordat u deze als betaald markeert."
+msgstr "Stel de betalingsgateway in op het tabblad factuurbeheer voordat deze als betaald wordt gemarkeerd."
 
 #: modules/Invoice/Api/Admin.php:251 modules/Invoice/Api/Client.php:113
 msgid "Order :id is free. No need to generate invoice."
@@ -1232,11 +1232,11 @@ msgstr "Bestelling niet gevonden"
 
 #: modules/Invoice/Api/Client.php:138
 msgid "You need to enter numeric value"
-msgstr "U moet een numerieke waarde invoeren"
+msgstr "Voer een numerieke waarde in"
 
 #: modules/Invoice/Api/Guest.php:102
 msgid "Invoice hash not passed. Missing param hash"
-msgstr "Factuur hash niet doorgegeven. Ontbrekende parameter hash"
+msgstr "Factuur-hash niet doorgegeven. Ontbrekende parameter hash"
 
 #: modules/Invoice/Api/Guest.php:106
 msgid "Payment method not found. Missing param gateway_id"
@@ -1308,7 +1308,7 @@ msgstr "Facturen worden niet gegenereerd voor 0 orderbedragen"
 
 #: modules/Invoice/Service.php:1080
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
-msgstr "U moet ten minste één actieve bestelling hebben voordat u geld kunt toevoegen, zodat u op dit moment niet verder kunt gaan!"
+msgstr "Er moet minstens één actieve bestelling zijn voordat er geld kan worden toegevoegd, dus het is op dit moment niet mogelijk om verder te gaan!"
 
 #: modules/Invoice/Service.php:1089
 msgid "Amount must be at least :min_amount"
