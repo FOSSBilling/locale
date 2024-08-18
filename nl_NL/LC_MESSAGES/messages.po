@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-06-07 20:48-0700\n"
-"PO-Revision-Date: 2024-08-17 18:50\n"
+"PO-Revision-Date: 2024-08-18 18:48\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -30,11 +30,11 @@ msgstr ""
 
 #: di.php:310
 msgid "It appears you are trying to use FOSSBilling without the PHP intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
-msgstr "Het lijkt erop dat u FOSSBilling probeert te gebruiken zonder dat de php intl-extensie is ingeschakeld. FOSSBilling bevat een polyfone voor de intl-extensie, maar ondersteunt :locale niet. Schakel a.u.b. de intl-extensie in."
+msgstr "Het lijkt erop dat FOSSBilling wordt gebruikt zonder de php intl-extensie ingeschakeld. FOSSBilling heeft een polyfone voor de intl-extensie, maar ondersteunt :locale niet. Schakel alstublieft de intl-extensie in."
 
 #: di.php:358 di.php:432
 msgid "Client is not logged in"
-msgstr "Klant is niet aangemeld"
+msgstr "Klant is niet ingelogd"
 
 #: di.php:398 di.php:470
 msgid "Admin is not logged in"
@@ -46,7 +46,7 @@ msgstr "Niet-herkende handler type: "
 
 #: di.php:520
 msgid "Please check your mailbox and confirm your email address."
-msgstr "Controleer je mailbox en bevestig je e-mailadres."
+msgstr "Controleer de mailbox en bevestig het e-mailadres."
 
 #: index.php:80 library/Box/App.php:335 library/Box/AppClient.php:70
 msgid "Page :url not found"
@@ -74,7 +74,7 @@ msgstr "FOSSBilling module :mod is niet geïnstalleerd/geactiveerd"
 
 #: library/Api/Handler.php:68
 msgid "You do not have access to the :mod module"
-msgstr "U heeeft geen toegang tot de :mod module"
+msgstr "Toegang tot de :mod module is niet toegestaan"
 
 #: library/Api/Handler.php:84
 msgid "Api class must be an instance of Api_Abstract"
@@ -98,7 +98,7 @@ msgstr "Pagina niet gevonden"
 
 #: library/Box/Crypt.php:23
 msgid "The PHP OpenSSL extension must be enabled on your server"
-msgstr "De PHP OpenSSL extensie moet ingeschakeld zijn op uw server"
+msgstr "De PHP OpenSSL-extensie moet op de server ingeschakeld zijn"
 
 #: library/Box/Log.php:69
 msgid "Missing log message"
@@ -352,11 +352,11 @@ msgstr "Kan de nieuwste versie-informatie niet downloaden. Verdere details zijn 
 
 #: library/FOSSBilling/Update.php:213 modules/System/Api/Admin.php:192
 msgid "You have the latest version of FOSSBilling. You do not need to update."
-msgstr "U heeft de laatste versie van FOSSBilling. U hoeft deze niet bij te werken."
+msgstr "De nieuwste versie van FOSSBilling is aanwezig. Een update is niet nodig."
 
 #: library/FOSSBilling/Update.php:225
 msgid "FOSSBilling :version: requires at least PHP :min_php:, but you are running :current_php:."
-msgstr "FOSSBilling :version: vereist ten minste PHP :min_php:, maar u werkt met :current_php:."
+msgstr "FOSSBilling :version: vereist tenminste PHP :min_php:, maar er wordt gewerkt met :current_php:."
 
 #: library/FOSSBilling/Update.php:236
 msgid "The download URL for this release was not specified as a trusted one. Update canceled for security reasons."
@@ -460,13 +460,13 @@ msgstr "IPN is ongeldig"
 
 #: library/Payment/Adapter/ClientBalance.php:121
 msgid "ClientBalance gateway is not enabled"
-msgstr "Het ClientBalance platform is niet ingeschakeld"
+msgstr "De ClientBalance-gateway is niet ingeschakeld"
 
 #: library/Payment/Adapter/PayPalEmail.php:30
 #: library/Payment/Adapter/Stripe.php:34 library/Payment/Adapter/Stripe.php:37
 #: library/Payment/Adapter/Stripe.php:43 library/Payment/Adapter/Stripe.php:46
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
-msgstr "Het betaalplatform \":pay_gateway\" is niet volledig geconfigureerd. Configureer de parameter \":missing\""
+msgstr "De betalingsgateway \":pay_gateway\" is niet volledig geconfigureerd. Configureer alstublieft de \":missing\""
 
 #: library/Payment/Adapter/PayPalEmail.php:121
 msgid "Cannot process duplicate IPN"
@@ -491,7 +491,7 @@ msgstr "Er is een fout opgetreden bij het verwerken van de transactie"
 
 #: library/Payment/AdapterAbstract.php:51
 msgid "Return URL for the payment gateway was not set"
-msgstr "Retour URL voor het betaalplatform is niet ingesteld"
+msgstr "Retour URL voor de betalingsgateway is niet ingesteld"
 
 #: library/Payment/AdapterAbstract.php:58
 msgid "Cancel URL for the payment gateway was not set"
@@ -544,7 +544,7 @@ msgstr "domein gegevens ophalen"
 #: library/Registrar/Adapter/Resellerclub.php:715
 #: library/Registrar/Adapter/Resellerclub.php:722
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
-msgstr ":action: met :type: register is mislukt, controleer de foutlogs voor verdere details"
+msgstr "Mislukt om :action: met de :type: registrar. Controleer de foutlogboeken voor meer details"
 
 #: library/Registrar/Adapter/Internetbs.php:169
 #: library/Registrar/Adapter/Namecheap.php:568
@@ -571,7 +571,7 @@ msgstr "Premium domeinen kunnen niet worden geregistreerd."
 
 #: library/Registrar/Adapter/Namecheap.php:239
 msgid "update nameservers"
-msgstr "nameservers bijwerken"
+msgstr "naamservers bijwerken"
 
 #: library/Registrar/Adapter/Namecheap.php:344
 msgid "retrieve domain details"
@@ -587,12 +587,12 @@ msgstr "privacygegevens ophalen"
 
 #: library/Registrar/Adapter/Namecheap.php:658
 msgid "get the domain lock status"
-msgstr "de domeinvergrendelingsstatus ophalen"
+msgstr "controleer de domein lock status"
 
 #: library/Registrar/Adapter/Namecheap.php:685
 #: library/Registrar/Adapter/Namecheap.php:717
 msgid "set the domain lock status"
-msgstr "domein vergrendelingsstatus instellen"
+msgstr "domein lock instellen"
 
 #: library/Registrar/Adapter/Resellerclub.php:317
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
@@ -600,11 +600,11 @@ msgstr "Een geldig contactvennootschap nummer is verplicht voor het registreren 
 
 #: library/Registrar/Adapter/Resellerclub.php:384
 msgid "get the transfer code"
-msgstr "verkrijg de verhuiscode"
+msgstr "ontvang de verhuiscode"
 
 #: library/Registrar/Adapter/Resellerclub.php:583
 msgid "You are already registered as reseller"
-msgstr "U bent al geregistreerd als reseller"
+msgstr "Al geregistreerd als reseller"
 
 #: library/Registrar/Adapter/Resellerclub.php:846
 msgid "Valid contact passport information is required while registering ES domain name"
@@ -638,7 +638,7 @@ msgstr "De \":server_manager\" server manager is niet volledig geconfigureerd. C
 #: library/Server/Manager/Hestia.php:111 library/Server/Manager/Hestia.php:378
 #: library/Server/Manager/Plesk.php:86
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
-msgstr "Kan geen verbinding maken met de :type: server. Controleer uw inloggegevens en configuratie"
+msgstr "Kan geen verbinding maken met de :type: server. Controleer inloggegevens en configuratie"
 
 #: library/Server/Manager/CWP.php:184 library/Server/Manager/Plesk.php:144
 msgid "create account"
@@ -660,15 +660,15 @@ msgstr ":action: op de :type: server is mislukt, controleer de error logs voor v
 
 #: library/Server/Manager/CWP.php:211 library/Server/Manager/Hestia.php:206
 msgid "suspend account"
-msgstr "account opschorten"
+msgstr "account blokkeren"
 
 #: library/Server/Manager/CWP.php:238 library/Server/Manager/Hestia.php:230
 msgid "unsuspend account"
-msgstr "account vrijgeven"
+msgstr "account deblokkeren"
 
 #: library/Server/Manager/CWP.php:268 library/Server/Manager/Hestia.php:255
 msgid "cancel account"
-msgstr "account annuleren"
+msgstr "account verwijderen"
 
 #: library/Server/Manager/CWP.php:297 library/Server/Manager/Hestia.php:281
 msgid "change account package"
@@ -699,7 +699,7 @@ msgstr "Er zijn geen IP's beschikbaar op deze server."
 
 #: library/Server/Manager/Directadmin.php:342
 msgid "Unable to assign the Reseller ANY IPs. Make sure to have free, unassigned IPs."
-msgstr "Kan de Reseller ANY IP's niet toewijzen. Verzeker u zich ervan dat u vrije en niet toegewezen IP-adressen heeft."
+msgstr "Niet mogelijk om de reseller ANY IP's toe te wijzen. Zorg ervoor dat er vrije, niet-toegewezen IP's beschikbaar zijn."
 
 #: library/Server/Manager/Directadmin.php:346
 msgid "Error creating user"
@@ -711,7 +711,7 @@ msgstr "account wordt gesynchroniseerd"
 
 #: library/Server/Manager/Directadmin.php:502
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
-msgstr "Server Manager DirectAdmin fout: \"Account is niet geschorst\""
+msgstr "Server Manager DirectAdmin fout: \"Account is niet geblokkeerd\""
 
 #: library/Server/Manager/Directadmin.php:669 library/Server/Manager/Whm.php:561
 msgid "HttpClientException: :error"
@@ -751,7 +751,7 @@ msgstr "Activiteit"
 
 #: modules/Activity/Controller/Admin.php:40
 msgid "Event history"
-msgstr "Gebeurtenis geschiedenis"
+msgstr "Activiteitenlog"
 
 #: modules/Activity/Service.php:35
 msgid "Delete activity"
@@ -797,7 +797,7 @@ msgstr "Promotiecode is verlopen of bestaat niet"
 
 #: modules/Cart/Api/Guest.php:100 modules/Cart/Service.php:454
 msgid "Promo code cannot be applied to your account"
-msgstr "Promotiecode kan niet op uw account worden toegepast"
+msgstr "Promotiecode kan niet op het account worden toegepast"
 
 #: modules/Cart/Api/Guest.php:161
 msgid "Addon products cannot be added separately."
@@ -805,7 +805,7 @@ msgstr "Add-on producten kunnen niet afzonderlijk worden toegevoegd."
 
 #: modules/Cart/Api/Guest.php:175
 msgid "One or more of your selected add-ons are invalid for the associated product."
-msgstr "Één of meerdere van uw geselecteerde add-ons zijn ongeldig voor het bijbehorende product."
+msgstr "Een of meer van de geselecteerde add-ons zijn ongeldig voor het bijbehorende product."
 
 #: modules/Cart/Service.php:102
 msgid "Selected billing period is invalid"
@@ -837,7 +837,7 @@ msgstr "Kan geen lege winkelwagen afrekenen"
 
 #: modules/Cart/Service.php:518
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
-msgstr "Geselecteerde valuta :selected komt niet overeen met uw profiel valuta :code. Wijzig winkelwagen valuta om door te gaan."
+msgstr "Geselecteerde valuta :selected komt niet overeen met de valuta van het profiel. Wijzig de valuta van de winkelwagen om verder te gaan."
 
 #: modules/Cart/Service.php:534
 msgid "Unable to complete order. One or more of the selected products are invalid."
@@ -880,12 +880,12 @@ msgstr "Wachtwoorden komen niet overeen."
 
 #: modules/Client/Api/Guest.php:130
 msgid "Please check your login details."
-msgstr "Controleer uw inloggegevens."
+msgstr "Controleer de inloggegevens."
 
 #: modules/Client/Api/Guest.php:232 modules/Client/Api/Guest.php:236
 #: modules/Client/Service.php:698
 msgid "The link has expired or you have already reset your password."
-msgstr "De link is verlopen of u heeft uw wachtwoord al gereset."
+msgstr "De link is verlopen of het wachtwoord is al gereset."
 
 #: modules/Client/Controller/Admin.php:33
 #: modules/Client/html_admin/mod_client_index.html.twig:7
@@ -910,7 +910,7 @@ msgstr "Geavanceerd zoeken"
 
 #: modules/Client/Controller/Admin.php:56
 msgid "Client login history"
-msgstr "Klant login geschiedenis"
+msgstr "Klantinlogoverzicht"
 
 #: modules/Client/Controller/Client.php:48
 msgid "Email address was confirmed"
@@ -922,7 +922,7 @@ msgstr "Ongeldige e-mail bevestiging link"
 
 #: modules/Client/Service.php:71
 msgid "The password you chose when creating your account."
-msgstr "Het wachtwoord dat u heeft gekozen bij het aanmaken van uw account."
+msgstr "Het wachtwoord dat gekozen is bij het aanmaken van het account."
 
 #: modules/Client/Service.php:225
 msgid "Currency cannot be changed. Client already has invoices issued."
@@ -966,7 +966,7 @@ msgstr "Veld :field mag niet leeg zijn"
 
 #: modules/Cookieconsent/Controller/Admin.php:33
 msgid "Cookie consent"
-msgstr "Cookies accepteren"
+msgstr "Cookie goedkeuring"
 
 #: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:771
 #: modules/Staff/Service.php:196
@@ -1003,11 +1003,11 @@ msgstr "Wisselkoers is ongeldig"
 
 #: modules/Currency/Service.php:480
 msgid "You must configure your API key to use Currency Data API as an exchange rate data source."
-msgstr "U moet uw API-sleutel configureren om de valutagegevens API als wisselkoers gegevensbron te kunnen gebruiken."
+msgstr "De API-sleutel moet worden geconfigureerd om de Currency Data API te gebruiken als gegevensbron voor wisselkoersen."
 
 #: modules/Currency/Service.php:485
 msgid "You must configure your API key to use currencylayer as an exchange rate data source."
-msgstr "U moet uw API-sleutel configureren om currencylayer als wisselkoers gegevensbron te kunnen gebruiken."
+msgstr "De API-sleutel moet worden geconfigureerd om currencylayer als gegevensbron voor wisselkoersen te kunnen gebruiken."
 
 #: modules/Currency/Service.php:529
 msgid "There was an error when fetching currency rates from ExchangeRate-API. See the error log for details."
@@ -1109,7 +1109,7 @@ msgstr "Er werd geen geldige download-URL voor de extensie gevonden."
 
 #: modules/Extension/Service.php:448
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
-msgstr "Deze extensie is niet compatibel met uw versie van FOSSBilling. Update FOSSBilling naar de nieuwste versie en probeer het opnieuw."
+msgstr "Deze extensie is niet compatibel met de huidige versie van FOSSBilling. Werk FOSSBilling bij naar de nieuwste versie en probeer het opnieuw."
 
 #: modules/Extension/Service.php:464
 msgid "Failed to download the extension with error :code"
@@ -1186,7 +1186,7 @@ msgstr "Helaas bestaat het veld met deze naam al in dit formulier. Formulier moe
 
 #: modules/Formbuilder/Service.php:172
 msgid " values must be unique"
-msgstr " waarden moeten uniek zijn"
+msgstr " waardes moeten uniek zijn"
 
 #: modules/Formbuilder/Service.php:175
 msgid " labels must be unique"
@@ -1232,7 +1232,7 @@ msgstr "Bestelling niet gevonden"
 
 #: modules/Invoice/Api/Client.php:138
 msgid "You need to enter numeric value"
-msgstr "Voer een numerieke waarde in"
+msgstr "Voer een numerieke getal in"
 
 #: modules/Invoice/Api/Guest.php:102
 msgid "Invoice hash not passed. Missing param hash"
@@ -1365,7 +1365,7 @@ msgstr "Het factuur ID ontbreekt voor deze transactie"
 
 #: modules/Invoice/ServiceTransaction.php:86
 msgid "Payment gateway ID is missing"
-msgstr "Betaalplatform ID ontbreekt"
+msgstr "Betalingsgateway id ontbreekt"
 
 #: modules/Invoice/ServiceTransaction.php:347
 msgid "Transaction :id not found."
@@ -1374,12 +1374,12 @@ msgstr "Transactie :id niet gevonden."
 #: modules/Invoice/ServiceTransaction.php:351
 #: modules/Invoice/ServiceTransaction.php:476
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
-msgstr "Kon transactie oorsprong niet bepalen. Transactie betaalplatform is onbekend."
+msgstr "Kon transactie oorsprong niet bepalen. Transactie betalingsgateway is onbekend."
 
 #: modules/Invoice/ServiceTransaction.php:356
 #: modules/Invoice/ServiceTransaction.php:481
 msgid "Cannot handle transaction received from unknown payment gateway: :id"
-msgstr "De ontvangen transactie van het onbekende betaalplatform: :id kan niet verwerkt worden"
+msgstr "Kan transactie ontvangen van een onbekende betalingsgateway: :id niet verwerken"
 
 #: modules/Invoice/ServiceTransaction.php:362
 #: modules/Invoice/ServiceTransaction.php:511
@@ -1437,11 +1437,11 @@ msgstr "Kan geen negatief bedrag toevoegen aan het klantsaldo voor debettransact
 
 #: modules/Massmailer/Api/Admin.php:73
 msgid "Message from name cannot be empty"
-msgstr "Van naam mag niet leeg zijn"
+msgstr "De afzendernaam mag niet leeg zijn"
 
 #: modules/Massmailer/Api/Admin.php:155 modules/Massmailer/Api/Admin.php:176
 msgid "Add some content before sending message"
-msgstr "Voeg inhoud toe voor het verzenden van bericht"
+msgstr "Vul het bericht in voordat het wordt verstuurd"
 
 #: modules/Massmailer/Controller/Admin.php:34
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:5
@@ -1488,7 +1488,7 @@ msgstr "Orderconfiguratie niet doorgegeven"
 
 #: modules/Order/Api/Admin.php:348
 msgid "Automatically issue renewal invoices"
-msgstr "Automatisch hernieuwingsfacturen versturen"
+msgstr "Automatisch verlengingsfacturen sturen"
 
 #: modules/Order/Api/Admin.php:349
 msgid "Issue invoices manually"
@@ -1551,7 +1551,7 @@ msgstr "Kan niet annuleren "
 
 #: modules/Product/Api/Admin.php:96
 msgid "You have already created domain product."
-msgstr "U heeft al een domeinproduct aangemaakt."
+msgstr "Er is al een domeinproduct aangemaakt."
 
 #: modules/Product/Api/Admin.php:102
 msgid "Product type :type is not registered"
@@ -1611,11 +1611,11 @@ msgstr "Ongeldige geboortedatum"
 
 #: modules/Profile/Service.php:237
 msgid "Unable to invalidate sessions, nobody is logged in"
-msgstr "Kan sessies niet ongeldig maken, niemand is ingelogd"
+msgstr "Sessies kunnen niet worden afgesloten, omdat er niemand is ingelogd"
 
 #: modules/Profile/Service.php:256
 msgid "Unable to invalidate sessions, an invalid type was used"
-msgstr "Kan geen sessies ongeldig maken, er is een ongeldig type gebruikt"
+msgstr "Sessies kunnen niet worden afgesloten, omdat er een ongeldig type gebruikt is"
 
 #: modules/Redirect/Api/Admin.php:131
 msgid "Redirect not found"
@@ -1627,7 +1627,7 @@ msgstr "Bestelling bestaat niet."
 
 #: modules/Serviceapikey/Service.php:116 modules/Serviceapikey/Service.php:135
 msgid "You must provide an API key to check it's validity."
-msgstr "Je moet een API-sleutel invoeren om de geldigheid ervan te controleren."
+msgstr "Een API-sleutel is vereist om de geldigheid te controleren."
 
 #: modules/Serviceapikey/Service.php:121 modules/Serviceapikey/Service.php:140
 #: modules/Serviceapikey/Service.php:188 modules/Serviceapikey/Service.php:199
@@ -1637,15 +1637,15 @@ msgstr "API-sleutel bestaat niet"
 
 #: modules/Serviceapikey/Service.php:178
 msgid "You must provide either the API key or API key order ID in order to reset it."
-msgstr "U moet of de API-sleutel of de API-sleutel ID opgeven om deze te resetten."
+msgstr "De API-sleutel of de API-sleutel-ID moet worden opgegeven om deze te resetten."
 
 #: modules/Serviceapikey/Service.php:221
 msgid "You must provide the API key order ID in order to update it."
-msgstr "U moet de API-sleutel ID opgeven om deze te kunnen bijwerken."
+msgstr "De API-sleutel order-ID moet worden opgegeven om deze te kunnen bijwerken."
 
 #: modules/Serviceapikey/Service.php:233
 msgid "To change the API key, please use the reset function rather than updating it."
-msgstr "Om de API-sleutel te wijzigen dient u de reset functie te gebruiken in plaats van deze bij te werken."
+msgstr "Om de API-sleutel te wijzigen, gebruik de resetfunctie in plaats van deze bij te werken."
 
 #: modules/Serviceapikey/Service.php:296
 msgid "Maximum number of iterations reached while generating API key"
@@ -1669,7 +1669,7 @@ msgstr "API aanroep mist argumenten"
 
 #: modules/Servicecustom/Service.php:38
 msgid "You must fill in all required fields. "
-msgstr "U moet alle vereiste velden invullen. "
+msgstr "Alle verplichte velden moeten worden ingevuld. "
 
 #: modules/Servicecustom/Service.php:45
 msgid "Field "
@@ -1734,7 +1734,7 @@ msgstr "TLD is reeds geregistreerd"
 
 #: modules/Servicedomain/Api/Admin.php:333
 msgid "Registrar is not available for installation."
-msgstr "Registrator is niet beschikbaar voor installatie."
+msgstr "Registrar is niet beschikbaar voor installatie."
 
 #: modules/Servicedomain/Api/Admin.php:436
 msgid "Domain order is not activated"
@@ -1770,7 +1770,7 @@ msgstr "Domein :domain registratie"
 
 #: modules/Servicedomain/Service.php:41
 msgid "Domain :domain transfer"
-msgstr "Domein :domain transfer"
+msgstr "Domein :domain verhuizen"
 
 #: modules/Servicedomain/Service.php:58
 msgid "Invalid domain action."
@@ -1787,7 +1787,7 @@ msgstr "TLD is ongeldig"
 
 #: modules/Servicedomain/Service.php:99
 msgid ":domain cannot be transferred!"
-msgstr ":domein kan niet worden overgedragen!"
+msgstr ":domein kan niet worden verhuisd!"
 
 #: modules/Servicedomain/Service.php:128
 msgid ":tld can be registered for at least :years years"
@@ -1944,11 +1944,11 @@ msgstr "Uw IP adres (:ip) is geblokkeerd. Neem contact op met onze support om uw
 
 #: modules/Spamchecker/Service.php:84
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
-msgstr "Om reCAPTCHA te gebruiken, moet u een API-sleutel van <a href='https://www.google.com/recaptcha/admin/create'>hier</a> verkrijgen"
+msgstr "Om reCAPTCHA te gebruiken, moet een API-sleutel worden verkregen via <a href='https://www.google.com/recaptcha/admin/create'>hier</a>"
 
 #: modules/Spamchecker/Service.php:88
 msgid "You have to complete the CAPTCHA to continue"
-msgstr "U moet de CAPTCHA voltooien om verder te gaan"
+msgstr "De CAPTCHA moet worden voltooid om verder te gaan"
 
 #: modules/Spamchecker/Service.php:102 modules/Spamchecker/Service.php:105
 msgid "reCAPTCHA verification failed."
@@ -1956,15 +1956,15 @@ msgstr "reCAPTCHA verificatie is mislukt."
 
 #: modules/Spamchecker/Service.php:151
 msgid "Your username is blacklisted in the Stop Forum Spam database"
-msgstr "Je gebruikersnaam staat op de zwarte lijst in de Stop Forum Spam database"
+msgstr "De gebruikersnaam staat op de zwarte lijst in de Stop Forum Spam-database"
 
 #: modules/Spamchecker/Service.php:154
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
-msgstr "Je e-mail staat op de zwarte lijst in de Stop Forum Spam database"
+msgstr "Het e-mailadres staat op de zwarte lijst in de Stop Forum Spam-database"
 
 #: modules/Spamchecker/Service.php:157
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
-msgstr "Je IP-adres staat op de zwarte lijst in de Stop Forum Spam database"
+msgstr "Het IP-adres staat op de zwarte lijst in de Stop Forum Spam-database"
 
 #: modules/Spamchecker/Service.php:191
 msgid "Disposable email addresses are not allowed"
@@ -1976,7 +1976,7 @@ msgstr "Beheerdersaccount bestaat al"
 
 #: modules/Staff/Api/Guest.php:79
 msgid "You are not allowed to login to admin area from :ip address"
-msgstr "Je hebt geen toestemming om in te loggen in de admin omgeving vanaf :IP adres"
+msgstr "Inloggen in de admin vanaf het Ip-adres :ip is niet toegestaan"
 
 #: modules/Staff/Api/Guest.php:94 modules/Staff/Api/Guest.php:139
 #: modules/Staff/Controller/Admin.php:118
@@ -1986,7 +1986,7 @@ msgstr "Wachtwoord resetten is uitgeschakeld"
 #: modules/Staff/Api/Guest.php:112 modules/Staff/Api/Guest.php:116
 #: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
 msgid "The link have expired or you have already confirmed password reset."
-msgstr "De link is verlopen of u heeft al uw wachtwoord gereset."
+msgstr "De link is verlopen of het wachtwoordherstel is al bevestigd."
 
 #: modules/Staff/Controller/Admin.php:36
 msgid "Staff login history"
@@ -2050,7 +2050,7 @@ msgstr "Laat het personeelslid toe de personeelsgroepen te beheren."
 
 #: modules/Staff/Service.php:83
 msgid "Check your login details"
-msgstr "Controleer uw inloggegevens"
+msgstr "Controleer de inloggegevens"
 
 #: modules/Staff/Service.php:508
 msgid "This administrator account is protected and cannot be removed"
@@ -2066,7 +2066,7 @@ msgstr "Beheerdersgroep kan niet worden verwijderd"
 
 #: modules/Staff/Service.php:682
 msgid "Cannot remove group which has staff members"
-msgstr "Kan geen groep met personeelsleden verwijderen"
+msgstr "Kan geen groep met medewerkers verwijderen"
 
 #: modules/Support/Api/Admin.php:836 modules/Support/Api/Admin.php:910
 #: modules/Support/Service.php:1651
@@ -2091,7 +2091,7 @@ msgstr "Ticket kan niet worden heropend."
 
 #: modules/Support/Api/Guest.php:35
 msgid "Please enter your message"
-msgstr "Voer uw bericht in"
+msgstr "Voer het bericht in"
 
 #: modules/Support/Api/Guest.php:155
 msgid "Article item not found"
@@ -2103,7 +2103,7 @@ msgstr "Categorie ID of slug ontbreekt"
 
 #: modules/Support/Api/Guest.php:217
 msgid "Knowledge base category not found"
-msgstr "Kennisbank categorie niet gevonden"
+msgstr "Kennisbankcategorie niet gevonden"
 
 #: modules/Support/Controller/Admin.php:33
 #: modules/Order/html_admin/mod_order_manage.html.twig:63
@@ -2122,7 +2122,7 @@ msgstr "Kennisbank categorie niet gevonden"
 #: themes/huraga/html/mobile_menu.html.twig:23
 #: themes/huraga/html/partial_menu.html.twig:26
 msgid "Support"
-msgstr "Ondersteuning"
+msgstr "Helpdesk"
 
 #: modules/Support/Controller/Admin.php:40
 #: modules/Support/html_admin/mod_support_ticket.html.twig:45
@@ -2135,7 +2135,7 @@ msgstr "Klanten tickets"
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:88
 #: modules/Support/html_admin/mod_support_settings.html.twig:115
 msgid "Public Tickets"
-msgstr "Publieke Tickets"
+msgstr "Openbare Tickets"
 
 #: modules/Support/Controller/Admin.php:54
 msgid "Advanced Ticket Search"
@@ -2147,7 +2147,7 @@ msgstr "Geavanceerd zoeken"
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:19
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:28
 msgid "Canned Responses"
-msgstr "Voorgedefinieerde reacties"
+msgstr "Standaardantwoorden"
 
 #: modules/Support/Controller/Admin.php:74
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:22
@@ -2172,7 +2172,7 @@ msgstr "Order-ID bestaat niet"
 
 #: modules/Support/Service.php:895
 msgid "You must provide both an order ID and a new product ID in order to request an upgrade."
-msgstr "U moet zowel een order-ID als een nieuw product-ID opgeven om een upgrade aan te vragen."
+msgstr "Er moeten zowel een order-ID als een nieuw product-ID worden opgegeven om een upgrade aan te vragen."
 
 #: modules/Support/Service.php:903
 msgid "Sorry, but \":product\" is not allowed to be upgraded to \":upgrade\""
@@ -2337,18 +2337,18 @@ msgstr "Cache wissen"
 
 #: modules/System/Service.php:48
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
-msgstr "Laat het staflid toe om de FOSSBilling cache ongeldig te maken vanuit de systeeminstellingen."
+msgstr "Laat medwerkers toe om de FOSSBilling cache ongeldig te maken vanuit de systeeminstellingen."
 
 #: modules/System/Service.php:52
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:50
 #: modules/System/html_admin/mod_system_update.html.twig:59
 msgid "Update FOSSBilling"
-msgstr "FOSSBilling bijwerken"
+msgstr "FOSSBilling updaten"
 
 #: modules/System/Service.php:53
 msgid "Allows the staff member to update FOSSBilling."
-msgstr "Staat de medewerker toe om FOSSBilling bij te werken."
+msgstr "Toegestaan voor medewerker om FOSSBilling te updaten."
 
 #: modules/System/Service.php:57
 msgid "Manage the network interface"
@@ -2356,7 +2356,7 @@ msgstr "Netwerkinterface beheren"
 
 #: modules/System/Service.php:58
 msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
-msgstr "Hiermee kan het personeelslid een lijst ophalen van alle IP-adressen van de lokale interface en de standaard netwerkinterface instellen die FOSSBilling moet gebruiken."
+msgstr "Stelt de medewerker in staat om een lijst van alle lokale interface-IP-adressen op te halen en de standaardnetwerkinterface voor FOSSBilling in te stellen."
 
 #: modules/System/Service.php:70
 msgid "Parameter key is missing"
@@ -2542,7 +2542,7 @@ msgstr "Datum"
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:54
 #: themes/admin_default/html/partial_batch_delete.html.twig:36
 msgid "Are you sure?"
-msgstr "Weet je het zeker?"
+msgstr "Zijn de gegevens juist?"
 
 #: modules/Activity/html_admin/mod_activity_index.html.twig:77
 #: modules/Client/html_admin/mod_client_index.html.twig:271
@@ -2626,11 +2626,11 @@ msgstr "Activiteitinstellingen"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:125
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
 msgid "Configuration updated"
-msgstr "Configuratie bijgewerkt"
+msgstr "Configuratie opgeslagen"
 
 #: modules/Activity/html_admin/mod_activity_settings.html.twig:36
 msgid "Activity log retention"
-msgstr "Activiteit log retentie"
+msgstr "Activiteitenlogbehoud"
 
 #: modules/Activity/html_admin/mod_activity_settings.html.twig:39
 msgid "Number of days"
@@ -3829,7 +3829,7 @@ msgstr "Portemonnee"
 
 #: modules/Client/html_client/mod_client_balance.html.twig:19
 msgid "Here you can manage and track your account balance."
-msgstr "Hier kunt u uw rekeningsaldo beheren en bijhouden."
+msgstr "Hier kan het accountsaldo beheerd en gevolgd worden."
 
 #: modules/Client/html_client/mod_client_balance.html.twig:24
 msgid "Add fund"
@@ -3845,7 +3845,7 @@ msgstr "Gebruikersinstellingen"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:14
 msgid "You must verify your email address before you may access our services."
-msgstr "Voordat je toegang krijgt tot onze diensten moet je je e-mailadres verifiëren."
+msgstr "Het e-mailadres moet worden geverifieerd voordat toegang tot de diensten mogelijk is."
 
 #: modules/Client/html_client/mod_client_profile.html.twig:18
 msgid "Verification email has been resent"
@@ -3881,11 +3881,11 @@ msgstr "Gegevens updaten"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:40
 msgid "Keep your personal data up to date."
-msgstr "Houd je persoonlijke gegevens up-to-date."
+msgstr "Houd de persoonlijke gegevens up-to-date."
 
 #: modules/Client/html_client/mod_client_profile.html.twig:50
 msgid "To change your avatar visit"
-msgstr "Om je avatar te wijzigen bezoek"
+msgstr "Om de avatar te wijzigen, ga naar"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:55
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:67
@@ -3986,7 +3986,7 @@ msgstr "Waarschuwing!"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:204
 msgid "Resetting the key will break existing applications using it!"
-msgstr "Als u de sleutel opnieuw instelt, worden bestaande toepassingen die deze gebruiken, verbroken!"
+msgstr "Het resetten van de sleutel zal ervoor zorgen dat bestaande applicaties die deze gebruiken, niet meer werken!"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:208
 msgid "Your API key"
@@ -3998,7 +3998,7 @@ msgstr "Nieuwe sleutel genereren"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:217
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and cannot be changed."
-msgstr "Uw profielvaluta wordt gedefinieerd na uw eerste bestelling. Zodra uw valuta is ingesteld, wordt uw gehele boekhouding profiel in die valuta beheerd en kan deze niet meer worden gewijzigd."
+msgstr "De profielvaluta wordt gedefinieerd na de eerste bestelling. Zodra de valuta is ingesteld, wordt alle boekhouding van het profiel in die valuta beheerd en kan deze niet meer worden gewijzigd."
 
 #: modules/Client/html_client/mod_client_profile.html.twig:219
 msgid "Your profile currency is"
@@ -4006,11 +4006,11 @@ msgstr "Jouw voorkeursvaluta is"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:220
 msgid "Create new client profile if you want to manage your money in other currency."
-msgstr "Maak een nieuw klantprofiel aan als u uw geld in een andere valuta wilt beheren."
+msgstr "Een nieuw klantenprofiel aanmaken om geld in een andere valuta te beheren."
 
 #: modules/Client/html_client/mod_client_profile.html.twig:223
 msgid "You do not yet have a currency associated with your profile. You can select the correct one when making your first order."
-msgstr "Er is nog geen valuta aan uw profiel gekoppeld. Bij uw eerste bestelling kunt u de gewenste selecteren."
+msgstr "Er is nog geen valuta aan het profiel gekoppeld. De juiste valuta kan worden geselecteerd bij het plaatsen van de eerste bestelling."
 
 #: modules/Client/html_client/mod_client_set_new_password.html.twig:3
 msgid "Set new Password"
@@ -4046,7 +4046,7 @@ msgstr "Hier kan je een bericht opgeven dat aan de klant getoond zal worden. Het
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:22
 msgid "If there is a need to change the way notification looks or is being displayed, you can do it by editing"
-msgstr "Als er behoefte is aan het wijzigen van de manier waarop de melding eruitziet of wordt weergegeven, kunt u dit doen door te bewerken"
+msgstr "Als het nodig is om de weergave of het uiterlijk van de melding aan te passen, kan dit door het te bewerken"
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:27
 #: modules/Notification/html_admin/mod_notification_index.html.twig:80
@@ -4154,7 +4154,7 @@ msgstr "Valuta's beheren"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:52
 msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics."
-msgstr "De standaardvaluta is de valuta waarin je de productprijzen definieert. Als je klant een andere valuta kiest, worden de prijzen opnieuw berekend op basis van de wisselkoers. Het wijzigen van de standaardvaluta nadat bestellingen zijn geplaatst, kan onverwachte problemen veroorzaken. Er wordt niets herberekend bij standaardvaluta wijzigingen. Je inkomen wordt berekend in de standaardvaluta. Het wijzigen van de standaardvaluta nadat je facturen hebt betaald, zal de inkomensstatistieken vertekenen."
+msgstr "De standaardvaluta is de valuta waarin de productprijzen worden bepaald. Als een klant een andere valuta kiest, worden de prijzen herberekend op basis van de wisselkoers. Het wijzigen van de standaardvaluta nadat er bestellingen zijn geplaatst, kan onverwachte problemen veroorzaken. Bij een wijziging van de standaardvaluta worden er geen prijzen herberekend. Het inkomen wordt berekend in de standaardvaluta. Het wijzigen van de standaardvaluta na het betalen van facturen zal de inkomensstatistieken verstoren."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:56
 msgid "FOSSBilling is configured to automatically sync currency exchange rates."
@@ -4174,7 +4174,7 @@ msgstr "Voorbeeld prijs"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:94
 msgid "Are you sure you want to delete?"
-msgstr "Wilt u deze verwijderen?"
+msgstr "Zeker van het verwijderen?"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:105
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:67
@@ -4220,7 +4220,7 @@ msgstr "Beschikbare wisselkoersdata providers"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:176
 msgid "FOSSBilling provides integration with various currency exchange rate data providers, allowing you to choose whichever one best suits your needs. By default, FOSSBilling will use the ExchangeRate-API \"Open Access Endpoint\" which does not require any configuration."
-msgstr "FOSSBilling biedt de integratie met verschillende leveranciers van valuta-wisselkoersgegevens, zodat u kunt kiezen wat het beste bij uw behoeften past. Standaard gebruikt FOSSBilling de ExchangeRate-API \"Open Access Endpoint\" waarvoor geen configuratie nodig is."
+msgstr "FOSSBilling biedt integratie met verschillende aanbieders van wisselkoersdata, waardoor de meest geschikte gekozen kan worden. Standaard gebruikt FOSSBilling de \"Open Access Endpoint\" van ExchangeRate-API, waarvoor geen configuratie nodig is."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:180
 msgid "Provider"
@@ -4442,7 +4442,7 @@ msgstr "Thuis"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:36
 msgid "Tickets waiting your reply"
-msgstr "Tickets in afwachting van uw antwoord"
+msgstr "Tickets wachtend op een reactie"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:42
 #: modules/Support/html_client/mod_support_tickets.html.twig:32
@@ -4555,7 +4555,7 @@ msgstr "In de wacht"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:176
 #: modules/Index/html_client/mod_index_dashboard.html.twig:144
 msgid "Recent orders"
-msgstr "Uw recente bestellingen"
+msgstr "Recente bestellingen"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:204
 msgid "Recent emails"
@@ -4591,7 +4591,7 @@ msgstr "Informatie"
 
 #: modules/Email/html_admin/mod_email_history.html.twig:13
 msgid "Email logging is not enabled. If you want to log sent mails to database, enable it in"
-msgstr "E-mail logboekregistratie is niet ingeschakeld. Als u e-mails naar de database wilt loggen, schakelt u deze in"
+msgstr "E-maillogboekregistratie is niet ingeschakeld. Om e-mails in de database te loggen, moet deze functie worden ingeschakeld"
 
 #: modules/Email/html_admin/mod_email_history.html.twig:14
 msgid "email settings."
@@ -4635,7 +4635,7 @@ msgstr "Ingeschakeld"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:111
 msgid "Are you sure you want to delete this template?"
-msgstr "Weet u zeker dat u deze template wilt verwijderen?"
+msgstr "Zeker van het verwijderen van deze template?"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:124
 msgid "The list is empty. Depending on modules enabled email templates will be inserted after first event occurrence."
@@ -4669,7 +4669,7 @@ msgstr "Actie Code"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:186
 msgid "FOSSBilling queues emails to have them be sent via cron in the background. Here you may find the list of queued emails and how many times the system has tried to send them."
-msgstr "FOSSBilling zet e-mails in de wachtrij zodat ze via de cron op de achtergrond kunnen worden verzonden. Hier vindt u de lijst met e-mails die in de wachtrij staan ​​en kunt u zien hoe vaak het systeem heeft geprobeerd deze te verzenden."
+msgstr "FOSSBilling plaatst e-mails in de wachtrij om deze via cron op de achtergrond te verzenden. Hier is de lijst te vinden van e-mails in de wachtrij en hoe vaak het systeem heeft geprobeerd ze te verzenden."
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:187
 msgid "Emails that have been sent or that failed to be sent will not be listed here."
@@ -4709,7 +4709,7 @@ msgstr "E-mailopties configureren"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:246
 msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can configure your own SMTP server"
-msgstr "FOSSBilling stuurt standaard e-mails met behulp van <em>sendmail</em> maar u kunt ook uw eigen SMTP-server configureren"
+msgstr "FOSSBilling verzendt e-mails standaard via <em>sendmail</em>, of er kan een eigen SMTP-server worden geconfigureerd"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:252
 msgid "Send emails per cron run (0 = unlimited)"
@@ -4773,7 +4773,7 @@ msgstr "Aangepaste DSN"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:340
 msgid "If one of the available options don't quite meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
-msgstr "Als een van de beschikbare opties niet helemaal aan uw behoeften voldoet, kunt u een aangepaste DSN definiëren. Houd er rekening mee dat gebruikers namen, wachtwoorden en hostnamen met speciale tekens URL-gecodeerd moeten zijn."
+msgstr "Als geen van de beschikbare opties volledig aan de behoeften voldoet, kan een aangepaste DSN worden gedefinieerd. Let op dat gebruikersnamen, wachtwoorden en hostnamen met speciale tekens URL-gecodeerd moeten zijn."
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:341
 msgid "More information"
@@ -4785,7 +4785,7 @@ msgstr "Voorbeeld"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:355
 msgid "Send a test email to yourself"
-msgstr "Stuur een test e-mail naar uzelf"
+msgstr "Een test-e-mail versturen naar eigen e-mailadres"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:357
 msgid "Update email settings"
@@ -4822,7 +4822,7 @@ msgstr "E-mailtemplate beheren"
 
 #: modules/Email/html_admin/mod_email_template.html.twig:54
 msgid "Most email templates receives parameters from FOSSBilling. You can browse them on \"Variables\" tab. Copy variable name to email template and hit preview to see parsed content. Please note that values will be different when actual email is sent."
-msgstr "De meeste e-mailsjablonen ontvangen parameters van FOSSBilling. Je kunt ze doorzoeken op het tabblad \"Variables\". Kopieer variabele naam naar e-mail sjabloon en druk op voorvertoning om geparseerde inhoud te zien. Houd er rekening mee dat waarden verschillend zijn wanneer de werkelijke e-mail wordt verzonden."
+msgstr "De meeste e-mailsjablonen ontvangen parameters van FOSSBilling. Deze zijn te vinden op het tabblad \"Variabelen\". Kopieer de variabelenaam naar het e-mailsjabloon en klik op \"Voorbeeld\" om de geïnterpreteerde inhoud te zien. Houd er rekening mee dat de waarden verschillen wanneer de e-mail daadwerkelijk wordt verzonden."
 
 #: modules/Email/html_admin/mod_email_template.html.twig:62
 msgid "Email message"
@@ -4848,7 +4848,7 @@ msgstr "Lijst van variabelen die gebruikt worden in deze e-mail"
 
 #: modules/Email/html_admin/mod_email_template.html.twig:137
 msgid "These values will change when real email is sent. You can pass these variables to admin or guest API to get additional information from database."
-msgstr "Deze waarden zullen veranderen wanneer echte e-mail wordt verzonden. U kunt deze variabelen doorgeven aan beheerder of gast API voor aanvullende informatie uit de database."
+msgstr "Deze waarden veranderen wanneer de daadwerkelijke e-mail wordt verzonden. Deze variabelen kunnen worden doorgegeven aan de admin- of gast-API om extra informatie uit de database op te halen."
 
 #: modules/Email/html_admin/mod_email_template.html.twig:143
 msgid "Variable"
@@ -4860,7 +4860,7 @@ msgstr "Voorbeeldwaarde"
 
 #: modules/Email/html_admin/mod_email_template.html.twig:180
 msgid "This template has no known parameters, you may need to take an action to trigger its sending before they become known."
-msgstr "Dit sjabloon heeft geen actieve parameters, het kan zijn dat je een actie moet ondernemen om het te activeren voordat ze actief worden."
+msgstr "Dit sjabloon heeft geen bekende parameters. Mogelijk is een actie nodig om het verzenden te activeren voordat de parameters bekend worden."
 
 #: modules/Email/html_admin/mod_email_template.html.twig:190
 msgid "Email templates examples"
@@ -4872,7 +4872,7 @@ msgstr "E-mailsjabloon playground. Gebruik deze tool om te proberen e-mailsjablo
 
 #: modules/Email/html_client/mod_email_index.html.twig:18
 msgid "Here you can find all the emails we've sent you."
-msgstr "Hier vind je alle e-mails die we je hebben gestuurd."
+msgstr "Hier zijn alle e-mails te vinden die zijn verzonden."
 
 #: modules/Email/html_client/mod_email_index.html.twig:25
 msgid "There are no emails to display"
@@ -4927,7 +4927,7 @@ msgstr "FOSSBilling Uitbreiden"
 
 #: modules/Extension/html_admin/mod_extension_index.html.twig:131
 msgid "FOSSBilling gives developers all the capabilities to customize, integrate & extend the core system into your own website & applications."
-msgstr "FOSSBilling geeft ontwikkelaars alle mogelijkheden om het kernsysteem aan te passen, te integreren en uit te breiden naar uw eigen website & applicaties."
+msgstr "FOSSBilling biedt ontwikkelaars alle mogelijkheden om het kernsysteem aan te passen, te integreren en uit te breiden naar eigen websites en applicaties."
 
 #: modules/Extension/html_admin/mod_extension_index.html.twig:171
 msgid "Hook"
@@ -4974,7 +4974,7 @@ msgstr "Lijst van vertalingen in de extensie directory"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:143
 msgid "FOSSBilling in your language"
-msgstr "FOSSBilling in uw taal"
+msgstr "FOSSBilling in eigen taal"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:144
 msgid "Although FOSSBilling displays in U.S. English by default, it has the capability to be used in any language. Follow instructions bellow to install new language."
@@ -5203,7 +5203,7 @@ msgstr "Geen recente support tickets"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:212
 msgid "You are logged out"
-msgstr "Je bent uitgelogd"
+msgstr "Uitgelogd"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:214
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:43
@@ -5332,7 +5332,7 @@ msgstr "Nieuwe betalingsgateway toevoegen"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:95
 msgid "Although FOSSBilling ships with most popular payment gateways, you can install other gateways."
-msgstr "Hoewel FOSSBilling schepen met de meest populaire betalingsgateways kunt u andere gateways installeren."
+msgstr "Hoewel FOSSBilling wordt geleverd met de meest populaire betalingsgateways, kunnen er ook andere gateways worden geïnstalleerd."
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:96
 msgid "Follow these instructions to install new payment gateway."
@@ -5369,7 +5369,7 @@ msgstr "Voor ontwikkelaars. Lees"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:103
 msgid "to learn how to create your own payment gateway and share it with community"
-msgstr "leer hoe je je eigen betalingsgateway kunt maken en deze met de gemeenschap kunt delen"
+msgstr "om te leren hoe een eigen betalingsgateway te maken en deze te delen met de community"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:112
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:122
@@ -5510,7 +5510,7 @@ msgstr "Laatste herinnering"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:129
 #: modules/Product/html_admin/mod_product_manage.html.twig:323
 msgid "View as client"
-msgstr "Bekijken als klant"
+msgstr "Bekijk als klant"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:142
 msgid "Send reminder"
@@ -5534,7 +5534,7 @@ msgstr "Voeg de transactie-ID van de betaling toe om de factuur als betaald te m
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:169
 msgid "This should be the transaction ID you use to reconcile your bank statement."
-msgstr "Dit moet het transactie-ID zijn dat u gebruikt om uw bankafschrift af te stemmen."
+msgstr "Dit is de transactie-ID die moet overeenkomen op het bankafschrift."
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:270
@@ -5884,7 +5884,7 @@ msgstr "Transactie gegevens"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:49
 msgid "If you are sure that this transaction is valid you can update transaction details in &quot;Manage&quot; tab and try processing transaction again"
-msgstr "Als u er zeker van bent dat deze transactie geldig is, kunt u de transactiegegevens in &quot;Beheren&quot; tabblad en opnieuw proberen de transactie te verwerken"
+msgstr "Als deze transactie geldig is, kunnen de transactiedetails worden bijgewerkt in het tabblad &quot;Manage&quot; en kan de transactie opnieuw worden verwerkt"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:59
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:29
@@ -6035,7 +6035,7 @@ msgstr "Factuurbeheer"
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:24
 msgid "All of your invoices can be found here. You can choose to see either paid or unpaid invoices by clicking corresponding button."
-msgstr "Al uw facturen zijn hier te vinden. U kunt de betaalde of onbetaalde facturen bekijken door op de bijbehorende knop te klikken."
+msgstr "Alle facturen zijn hier te vinden. Er kan worden gekozen om betaalde of onbetaalde facturen te bekijken door op de bijbehorende knop te klikken."
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:49
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:82
@@ -6064,11 +6064,11 @@ msgstr "Betaalmethodes"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:26
 msgid "Please choose a payment type and pay for your chosen products."
-msgstr "Kies een betalingsmethode en betaal de door jou gekozen producten."
+msgstr "Kies een betaalmethode en betaal voor de geselecteerde producten."
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:58
 msgid "You can print this invoice or export it to a PDF file by clicking on the corresponding button."
-msgstr "U kunt deze factuur afdrukken of naar PDF-bestand exporteren door op de bijbehorende knop te klikken."
+msgstr "Deze factuur kan worden afgedrukt of geëxporteerd naar een PDF-bestand door op de bijbehorende knop te klikken."
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:112
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:68
@@ -6106,17 +6106,17 @@ msgstr "Nu betalen"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:301
 msgid "The invoice you are paying and your chosen payment gateway both support subscription payments. What type of payment would you like to continue with?"
-msgstr "De factuur die u betaalt en de door u gekozen betalingsgateway ondersteunen beide abonnementsbetalingen. Met welk type betaling wilt u doorgaan?"
+msgstr "De factuur die wordt betaald en de gekozen betalingsgateway ondersteunen beide abonnementbetalingen. Met welk type betaling zullen we verdergaan?"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:304
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:310
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:315
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it."
-msgstr "Als je tevreden bent met de geselecteerde betalingsgateway, gebruik dan de onderstaande knop om verder te gaan."
+msgstr "Als de geselecteerde betalingsgateway naar tevredenheid is, gebruik dan de knop hieronder om verder te gaan."
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:308
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it. Optionally, you may choose a different payment gateway if you wish to pay using a subscription."
-msgstr "Als je tevreden bent met de geselecteerde betalingsgateway, gebruik dan de knop hieronder om door te gaan. Je kunt optioneel een andere betalingsgateway kiezen als je wilt betalen met een abonnement."
+msgstr "Als de geselecteerde betalingsgateway naar tevredenheid is, gebruik dan de knop hieronder om verder te gaan. Optioneel kan een andere betalingsgateway worden gekozen voor betaling met een abonnement."
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:321
 msgid "Pay with"
@@ -6160,7 +6160,7 @@ msgstr "Bedankt"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
 msgid "Your payment has been submitted and will be processed shortly. It may take some time for your invoice to be marked as paid."
-msgstr "Je betaling is ingediend en zal binnenkort worden verwerkt. Het kan enige tijd duren voordat de factuur als betaald is gemarkeerd."
+msgstr "De betaling is ingediend en wordt binnenkort verwerkt. Het kan enige tijd duren voordat de factuur als betaald wordt gemarkeerd."
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
 msgid "Payment for invoice received"
@@ -6168,7 +6168,7 @@ msgstr "Betaling voor factuur ontvangen"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
 msgid "You will be automatically redirected back to the invoice after 1 minute."
-msgstr "Je wordt na 1 minuut automatisch doorverwezen naar de factuur."
+msgstr "Binnen 1 minuut keren we terug naar de factuur."
 
 #: modules/Invoice/pdf_template/default-pdf.twig:31
 msgid "Invoice date"
@@ -6567,7 +6567,7 @@ msgstr "Uitgegeven factuur"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:305
 msgid "Are you sure you want to delete the selected item?"
-msgstr "Weet je zeker dat je het geselecteerde item wil verwijderen?"
+msgstr "Zeker van het verwijderen van het geselecteerde item?"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:308
 msgid "Force the deletion of the item"
@@ -6575,7 +6575,7 @@ msgstr "Forceer het verwijderen van het item"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:310
 msgid "Selecting this will force the item to be removed from the database even if errors occur."
-msgstr "Als u dit selecteert, wordt het item gedwongen uit de database verwijderd, zelfs bij optredende fouten."
+msgstr "Bij het selecteren hiervan wordt het item uit de database verwijderd, zelfs als er fouten optreden."
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:333
 msgid "Changes status without performing action"
@@ -6596,12 +6596,12 @@ msgstr "Order configuratie beheer"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:444
 msgid "Please be cautious and make sure you know what you are doing when editing order config! FOSSBilling relies on these parameters and you might get unexpected results if you change some of them."
-msgstr "Wees voorzichtig en zorg ervoor dat u weet wat u doet met het bewerken van bestelling configuratie! FOSSBilling vertrouwt op deze parameters en u kunt onverwachte resultaten krijgen als u sommige van deze wijzigt."
+msgstr "Wees voorzichtig en zorg ervoor dat bekend is wat er gedaan wordt bij het bewerken van de bestelconfiguratie! FOSSBilling vertrouwt op deze parameters, en het wijzigen hiervan kan onverwachte resultaten opleveren."
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:471
 #: modules/Order/html_client/mod_order_manage.html.twig:127
 msgid "Addons you have ordered with this service"
-msgstr "Add-ons die je bij deze service hebt besteld"
+msgstr "Add-ons besteld bij deze service"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:476
 #: modules/Order/html_client/mod_order_list.html.twig:31
@@ -6731,7 +6731,7 @@ msgstr "Services"
 
 #: modules/Order/html_client/mod_order_list.html.twig:20
 msgid "All of your orders are displayed here. Click on any service to get full information about it."
-msgstr "Al uw bestellingen worden hier weergegeven. Klik op een dienst om er volledige informatie over te krijgen."
+msgstr "Alle bestellingen worden hier weergegeven. Klik op een service om volledige informatie te bekijken."
 
 #: modules/Order/html_client/mod_order_list.html.twig:30
 #: modules/Support/html_admin/mod_support_tickets.html.twig:40
@@ -6911,11 +6911,11 @@ msgstr "BELANGRIJK"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:214
 msgid "You need to add ID (if you want to use it for one html element) or class (if you want to use it for multiple elements) in order for it to work"
-msgstr "Je moet ID toevoegen (als je het wilt gebruiken voor één html-element) of klasse (als je het voor meerdere elementen wilt gebruiken) om het te laten werken"
+msgstr "Een ID moet worden toegevoegd (voor gebruik bij één HTML-element) of een class (voor gebruik bij meerdere elementen) om het te laten werken"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:216
 msgid "Add order-button class to your elements which must call popup. For example:"
-msgstr "Voeg een orderknop klasse toe aan je elementen die de pop-up moeten bellen. Bijvoorbeeld:"
+msgstr "Voeg de class `order-button` toe aan de elementen die een popup moeten oproepen. Bijvoorbeeld:"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:231
 msgid "Add data-product attribute to your element to open specific product. For example:"
@@ -6927,11 +6927,11 @@ msgstr "data-product attribuut waarde zal worden overschreven als het popup-prod
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:252
 msgid "Copy this code to your website"
-msgstr "Kopieer deze code naar je website"
+msgstr "Kopieer deze code naar de website"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:270
 msgid "Try your popup"
-msgstr "Test je pop-up"
+msgstr "Test de pop-up"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:343
 msgid "Class name should start with dot (.) or hashtag (#) for ID"
@@ -6939,7 +6939,7 @@ msgstr "Klasse naam moet beginnen met een punt (.) of hashtag (#) voor ID"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:348
 msgid "Add \" + selector + \" class to your elements which must call popup. For example: "
-msgstr "Voeg een orderknop klasse toe aan je elementen die de pop-up moeten bellen. Bijvoorbeeld: "
+msgstr "Voeg de klasse \" + selector + \" klasse toe aan de elementen die een pop-up moeten oproepen. Bijvoorbeeld: "
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:353
 msgid "Add \" + selector + \" ID to your element which must call popup. For example: "
@@ -6975,11 +6975,11 @@ msgstr "installatie"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:113
 msgid "Have a coupon code?"
-msgstr "Heb je een kortingscode?"
+msgstr "In bezit van kortingscode?"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:116
 msgid "Promo code was applied for your order"
-msgstr "Promotiecode is toegepast op je bestelling"
+msgstr "Promotiecode is toegepast op de bestelling"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:122
 msgid "Enter code"
@@ -7037,7 +7037,7 @@ msgstr "Naar de kassa"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:217
 msgid "Are you sure you want to remove this item from cart?"
-msgstr "Weet u zeker dat u dit artikel uit de winkelwagen wilt verwijderen?"
+msgstr "Zeker van het verwijderen van dit item uit de winkelwagen?"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:221
 msgid "Item was removed from cart"
@@ -7057,11 +7057,11 @@ msgstr "Log in of maak een account"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
 msgid "You must fill in your email."
-msgstr "Je moet je e-mailadres invullen."
+msgstr "E-mailadres moet worden ingevuld."
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
 msgid "You must fill in your password."
-msgstr "Je moet je wachtwoord invullen."
+msgstr "Wachtwoord moet worden ingevuld."
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:47
 #: modules/Page/html_client/mod_page_login.html.twig:43
@@ -7070,7 +7070,7 @@ msgstr "Account aanmaken"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:112
 msgid "You are"
-msgstr "U bent"
+msgstr "Bekend als"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:134
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
@@ -7085,7 +7085,7 @@ msgstr "Landcode"
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:255
 #: modules/Page/html_client/mod_page_signup.html.twig:195
 msgid "Already a user?"
-msgstr "Ben je al geregistreerd?"
+msgstr "Reeds een gebruiker?"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:31
 msgid "Payment"
@@ -7098,7 +7098,7 @@ msgstr "Powered by"
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:109
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:128
 msgid "You logged in successfully"
-msgstr "Je bent succesvol ingelogd"
+msgstr "Inloggen is succesvol voltooid"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:8
 msgid "Product Configuration"
@@ -7132,7 +7132,7 @@ msgstr "Over"
 
 #: modules/Page/html_client/mod_page_login.html.twig:27
 msgid "Login to your account"
-msgstr "Log in op je account"
+msgstr "Inloggen op het account"
 
 #: modules/Page/html_client/mod_page_login.html.twig:31
 #: modules/Page/html_client/mod_page_password-reset.html.twig:31
@@ -7140,7 +7140,7 @@ msgstr "Log in op je account"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:48
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
 msgid "Enter your email address"
-msgstr "Voer je e-mailadres in"
+msgstr "Voer een e-mailadres in"
 
 #: modules/Page/html_client/mod_page_login.html.twig:35
 #: modules/Staff/html_admin/mod_staff_login.html.twig:29
@@ -7148,7 +7148,7 @@ msgstr "Voer je e-mailadres in"
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
 msgid "Enter your password"
-msgstr "Voer je wachtwoord in"
+msgstr "Voer een wachtwoord in"
 
 #: modules/Page/html_client/mod_page_login.html.twig:48
 #: modules/Page/html_client/mod_page_signup.html.twig:199
@@ -7175,7 +7175,7 @@ msgstr "Een bevestigingsmail voor het opnieuw instellen van het wachtwoord zal w
 
 #: modules/Page/html_client/mod_page_password-reset.html.twig:32
 msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
-msgstr "Voer uw e-mailadres in om uw wachtwoord opnieuw in te stellen. U ontvangt een nieuw wachtwoord nadat de herstellink is bevestigd."
+msgstr "Voer een e-mailadres in om het wachtwoord opnieuw in te stellen. Er zal een nieuw wachtwoord worden ontvangen nadat de resetlink is bevestigd."
 
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:3
 #: modules/Page/html_client/mod_page_privacy-policy.html.twig:19
@@ -7402,7 +7402,7 @@ msgstr "Er is geen extra configuratie voor dit product vereist"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:223
 msgid "Choose which addons you would like to offer with"
-msgstr "Kies welke addons u wilt aanbieden"
+msgstr "Kies welke add-ons er bijgevoegd moeten worden met"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:256
 msgid "Create new addon"
@@ -7410,7 +7410,7 @@ msgstr "Nieuwe add-on maken"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:267
 msgid "Choose which products can client upgrade to"
-msgstr "Kies naar welke producten je kunt upgraden"
+msgstr "Kies welke producten de klant kan upgraden naar"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:271
 msgid "Product Upgrades"
@@ -7550,7 +7550,7 @@ msgstr "Maak een nieuwe promotiecode"
 
 #: modules/Product/html_admin/mod_product_promos.html.twig:118
 msgid "Create special offers for your clients by creating promo codes."
-msgstr "Creëer speciale aanbiedingen voor uw klanten door promotiecodes aan te maken."
+msgstr "Maak speciale aanbiedingen voor klanten door promotiecodes aan te maken."
 
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:5
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:20
@@ -7598,7 +7598,7 @@ msgstr "API-sleutel instellingen bijgewerkt"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:7
 msgid "Here you can configure the length of the API keys that will be generated. We recommend making this no less than 16 at a minimum. When in doubt, leave this at 32."
-msgstr "Hier kunt u de lengte configureren van de API-sleutels die worden gegenereerd. Wij raden 16 als minimum aan. Laat het bij twijfel op 32 staan."
+msgstr "Hier kan de lengte van de API-sleutels die gegenereerd zullen worden, worden geconfigureerd. Het wordt aanbevolen om deze minimaal op 16 in te stellen. Bij twijfel kan dit op 32 blijven staan."
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:8
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:37
@@ -7622,7 +7622,7 @@ msgstr "Interval splitsen"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:41
 msgid "Here you can configure what case you want the API keys to be generated with. \"Uppercase\" makes all letters uppercase, \"lowercase\" makes them all lowercase, and \"mixed\" does a combination of the two options."
-msgstr "Hier kun je instellen met welk geval de API-sleutels moeten worden gegenereerd. \"Hoofdletters\" maakt alle letters hoofdletter, \"kleine letters\" maken ze allemaal kleine letters en \"gemengd\" combineert de twee opties."
+msgstr "Hier kan worden ingesteld in welke hoofdlettervorm de API-sleutels gegenereerd moeten worden. \"Hoofdletters\" maakt alle letters hoofdletters, \"kleine letters\" maakt ze allemaal kleine letters, en \"gemengd\" is een combinatie van beide opties."
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:42
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:69
@@ -7651,7 +7651,7 @@ msgstr "Aangepaste parameters"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:56
 msgid "Here, you have the option to include custom parameters that can be requested from the API. This is particularly useful if you want to set specific limits for API keys. Your application can connect to the FOSSBilling API and retrieve the custom parameters you have defined for an API key."
-msgstr "Hier heb je de optie om aangepaste parameters toe te voegen die kunnen worden aangevraagd via de API. Dit is vooral handig als je specifieke limieten voor API-sleutels wilt instellen. Je applicatie kan verbinding maken met de FOSSBilling API en de aangepaste parameters ophalen die je hebt gedefinieerd voor een API-sleutel."
+msgstr "Hier heeft men de mogelijkheid om aangepaste parameters op te nemen die via de API opgevraagd kunnen worden. Dit is bijzonder nuttig als specifieke limieten voor API-sleutels ingesteld moeten worden. De applicatie kan verbinding maken met de FOSSBilling API en de aangepaste parameters ophalen die voor een API-sleutel zijn gedefinieerd."
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:57
 msgid "FOSSBilling will remove the \"custom_\" prefix from the value name when requesting them from the API. IE: custom_monthlyLimit will be named monthlyLimit when fetched through the API."
@@ -7674,7 +7674,7 @@ msgstr "API sleutel configuratie"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:32
 msgid "Changing the API key generation options will not automatically regenerate the API key. You must do so manually."
-msgstr "Het wijzigen van de API-sleutel opties zal de API-sleutel niet automatisch opnieuw genereren. U moet dit handmatig doen."
+msgstr "Het wijzigen van de opties voor de generatie van API-sleutels leidt niet automatisch tot het regenereren van de API-sleutel. Dit moet handmatig gedaan worden."
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:34
 msgid "API key updated"
@@ -7856,7 +7856,7 @@ msgstr "Volg de onderstaande instructies om een ​​nieuwe domein registrator 
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:242
 msgid "Check domain registrar you are looking for is available at"
-msgstr "Controleer of de domeinregistratie die u zoekt beschikbaar is bij"
+msgstr "Controleer of de domeinregistratie nog beschikbaar is"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:243
 msgid "Download domain registrar file and place to"
@@ -7868,7 +7868,7 @@ msgstr "Herlaad deze pagina om nieuw gedetecteerde domeinregistratie te zien"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:245
 msgid "Click on install button. Now you will be able to create top level domains with new domain registrar"
-msgstr "Klik op de installatieknop. Nu bent u in staat om topniveau domeinen aan te maken met nieuwe domeinregistrar"
+msgstr "Klik op de knop Installeren. Nu kan er top-level domeinen aangemaakt worden met de nieuwe domeinregistrar"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:246
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
@@ -7877,7 +7877,7 @@ msgstr "FOSSBilling documentatie"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:246
 msgid "to learn how to create your own domain registrar."
-msgstr "voor meer informatie over hoe je je eigen domein registrator kunt maken."
+msgstr "informatie hoe men een eigen domeinregistrar toe kan voegen."
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:264
 msgid "Domain registrar installed"
@@ -8126,7 +8126,7 @@ msgstr "Domein bescherming"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:48
 msgid "Domain locking is a security feature which acts to prevent your domain name from being transferred without first unlocking it. When this is enabled, a domain cannot be transferred even with the transfer code."
-msgstr "Domein vergrendeling is een beveiligingsfunctie die helpt om te voorkomen dat je domeinnaam wordt verhuisd zonder het eerst te ontgrendelen. Wanneer dit is ingeschakeld, kan een domein niet verhuist worden, zelfs niet met de verhuiscode."
+msgstr "Domeinvergrendeling is een beveiligingsfunctie die voorkomt dat de domeinnaam wordt overgedragen zonder deze eerst te ontgrendelen. Wanneer dit is ingeschakeld, kan een domein niet worden overgedragen, zelfs niet met de overdrachtscode."
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:63
 msgid "Domain Privacy Settings"
@@ -8134,7 +8134,7 @@ msgstr "Domein privacy instellingen"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:64
 msgid "If you would like to hide domain contact information which is shown on WHOIS you can enable privacy protection. Once domain privacy protection is enabled no one will know who registered this service. And once you decide to disable privacy protection, information that is listed above on \"Update Domain Contact Details\" section will be seen on domain WHOIS again."
-msgstr "Als u de domeincontactinformatie wilt verbergen die wordt weergegeven op WHOIS kunt u privacybescherming inschakelen. Zodra de domein privacy bescherming is ingeschakeld, weet niemand wie deze dienst heeft geregistreerd. En zodra u besluit om privacy bescherming uit te schakelen informatie die hierboven staat vermeld op \"Domein Contactgegevens bijwerken\" sectie wordt weer getoond op het domein WHOIS."
+msgstr "Als men de contactinformatie van het domein wil verbergen die op WHOIS wordt weergegeven, kan privacybescherming worden ingeschakeld. Zodra de privacybescherming voor het domein is ingeschakeld, zal niemand weten wie deze dienst heeft geregistreerd. En zodra men besluit de privacybescherming uit te schakelen, zal de informatie die hierboven in de sectie \"Domeincontactgegevens bijwerken\" is vermeld, weer zichtbaar zijn op de domein WHOIS."
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:66
 msgid "Disable Privacy protection"
@@ -8150,11 +8150,11 @@ msgstr "Naamservers bijwerken"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:74
 msgid "If you would like to host this domain with another company you can update nameservers."
-msgstr "Als u dit domein bij een ander bedrijf wilt hosten, kunt u de naamserver bijwerken."
+msgstr "Als deze domein bij een ander bedrijf moet worden gehost, kunnen de nameservers worden bijgewerkt."
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:115
 msgid "Domain contact details will be displayed once someone will check WHOIS output (which is public) of your service. This will update Technical, Billing and Admin contacts for this service. You can enable domain privacy protection if you want to hide your public WHOIS information."
-msgstr "Domein contactgegevens worden getoond zodra iemand de WHOIS output (welke openbaar is) van uw dienst zal controleren. Dit zal de technische, factuur- en beheerderscontacten voor deze service bijwerken. U kunt domein privacy bescherming inschakelen als u uw publieke WHOIS informatie wilt verbergen."
+msgstr "De contactgegevens van het domein worden weergegeven zodra iemand de WHOIS-uitvoer (die openbaar is) van de dienst controleert. Dit zal de technische, facturerings- en beheerderscontacten voor deze dienst bijwerken. Privacybescherming voor het domein kan worden ingeschakeld als men de openbare WHOIS-informatie wil verbergen."
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:117
 msgid "Contact details updated"
@@ -8196,7 +8196,7 @@ msgstr "Verhuis een nieuw domein"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:76
 msgid "Enter your domain name to transfer"
-msgstr "Geef je te verhuizen domein naam op"
+msgstr "Voer de domeinnaam in om over te dragen"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:87
 msgid "Transfer price is"
@@ -8411,7 +8411,7 @@ msgstr "Extra parameters van het hostingsplan"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:101
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters. List of parameters server managers requires you can find on extensions page."
-msgstr "Afhankelijk van de server manager die wordt gebruikt om een hostingaccount in te stellen kan je extra parameters nodig hebben. Lijst van parameters server managers vereist dat u kunt vinden op de extensie pagina."
+msgstr "Afhankelijk van de servermanager die gebruikt wordt om het hostingaccount in te stellen, kunnen aanvullende parameters vereist zijn. Een lijst van de vereiste parameters van servermanagers is te vinden op de extensiepagina."
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:43
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:204
@@ -8521,7 +8521,7 @@ msgstr "Nieuw hostingplan toevoegen"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:249
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters in next step. In this step provide basic hosting plan information."
-msgstr "Afhankelijk van de server manager die wordt gebruikt om een hostingaccount in te stellen, kan je in de volgende stap extra parameters nodig hebben. In deze stap geef je basisinformatie over een hostingsplan."
+msgstr "Afhankelijk van de servermanager die gebruikt is om het hostingaccount in te stellen, kunnen in de volgende stap aanvullende parameters vereist zijn. Geef in deze stap de basisinformatie over het hostingplan op."
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
 msgid "Disk quota (MB)"
@@ -8705,7 +8705,7 @@ msgstr "Log in op het controlepaneel"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:83
 msgid "Change your control panel/FTP/SSH password"
-msgstr "Wijzig uw besturingspaneel/FTP/SSH wachtwoord"
+msgstr "Wijzig het controlepaneel-/FTP-/SSH-wachtwoord"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:112
 msgid "Domain name changed"
@@ -8733,11 +8733,11 @@ msgstr "Ik wil een nieuw domein registreren"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:28
 msgid "Your existing domain"
-msgstr "Je bestaande domein"
+msgstr "Eigen domein"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:44
 msgid "Your new domain"
-msgstr "Je nieuwe domein"
+msgstr "Eigen nieuwe domein"
 
 #: modules/Servicehosting/html_client/mod_servicehosting_order_form.html.twig:125
 msgid " year @ "
@@ -8778,7 +8778,7 @@ msgstr "Licentie plugins"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:82
 msgid "FOSSBilling gives you ability to provide your own license generation script. Follow the instructions bellow to install new license plugin"
-msgstr "FOSSBilling geeft u de mogelijkheid om uw eigen licentie generatie script op te geven. Volg de instructies hieronder om de nieuwe licentie plugin te installeren"
+msgstr "FOSSBilling biedt de mogelijkheid om een eigen licentiegeneratiescript te leveren. Volg de onderstaande instructies om de nieuwe licentieplug-in te installeren"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:84
 msgid "License plugin is PHP class \"License_PluginName\" with one method"
@@ -8790,7 +8790,7 @@ msgstr "Kijk eens naar de standaard plug-in op"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:86
 msgid "Create your plugin and place it to"
-msgstr "Maak je eigen plug-in en plaats het op"
+msgstr "Maak een eigen plug-in en plaats deze in"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:87
 msgid "FOSSBilling will automatically detect new plugin"
@@ -8899,7 +8899,7 @@ msgstr "Licentie resetten"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:81
 msgid "You can reset your license parameters if you have changed your server"
-msgstr "U kunt uw licentieparameters opnieuw instellen als u uw server hebt gewijzigd"
+msgstr "Licentieparameters kunnen worden gereset als de server is gewijzigd"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:94
 msgid "License was reset"
@@ -9053,7 +9053,7 @@ msgstr "Maak beheerdersaccount aan"
 
 #: modules/Staff/html_admin/mod_staff_login.html.twig:38
 msgid "Log into your account"
-msgstr "Log in op je account"
+msgstr "Log in op account"
 
 #: modules/Staff/html_admin/mod_staff_login.html.twig:57
 msgid "Forgot your password?"
@@ -9134,7 +9134,7 @@ msgstr "Herhaal hetzelfde paswoord"
 
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:17
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
-msgstr "Vul je e-mailadres in. U ontvangt een bevestigingslink als uw account bestaat."
+msgstr "Voer een e-mailadres in. Er zal een bevestigingslink worden verzonden als het account bestaat."
 
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:36
 msgid "Send me the link"
@@ -9147,11 +9147,11 @@ msgstr "Breng mij terug naar het inlogscherm."
 
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:17
 msgid "Update your password"
-msgstr "Update je wachtwoord"
+msgstr "Wachtwoord aanpassen"
 
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:31
 msgid "Enter your secret code"
-msgstr "Voer je geheime code in"
+msgstr "Voer de geheime code in"
 
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:46
 msgid "Repeat Password"
@@ -9416,7 +9416,7 @@ msgstr "Kennisbank inschakelen"
 
 #: modules/Support/html_admin/mod_support_settings.html.twig:117
 msgid "Disable Public Tickets"
-msgstr "Publieke tickets uitschakelen"
+msgstr "Openbare tickets uitschakelen"
 
 #: modules/Support/html_admin/mod_support_settings.html.twig:138
 msgid "New Helpdesk"
@@ -9476,7 +9476,7 @@ msgstr "Nieuw klanten ticket"
 
 #: modules/Support/html_admin/mod_support_tickets.html.twig:192
 msgid "New Public Ticket"
-msgstr "Nieuw publieke ticket"
+msgstr "Nieuwe Openbare Ticket"
 
 #: modules/Support/html_admin/mod_support_tickets.html.twig:291
 msgid "Open Ticket for Existing Client"
@@ -9550,7 +9550,7 @@ msgstr "Kennisbank categorieën"
 
 #: modules/Support/html_client/mod_support_kb_index.html.twig:32
 msgid "Below you can find a list of our knowledge base categories and their content."
-msgstr "Hieronder vindt u een lijst van onze kennisbank categorieën en hun inhoud."
+msgstr "Hieronder is een lijst te vinden van onze kennisbankcategorieën en hun inhoud."
 
 #: modules/Support/html_client/mod_support_kb_index.html.twig:38
 msgid "What are you looking for?"
@@ -9582,7 +9582,7 @@ msgstr "Citaat antwoord"
 
 #: modules/Support/html_client/mod_support_ticket.html.twig:131
 msgid "This ticket was closed, but you can still reopen it by replying."
-msgstr "Deze ticket is gesloten, maar je kunt het heropenen door er op te antwoorden."
+msgstr "Dit ticket is gesloten, maar het kan nog steeds heropend worden door te antwoorden."
 
 #: modules/Support/html_client/mod_support_tickets.html.twig:19
 msgid "Need an answer? We are here to help!"
@@ -9791,7 +9791,7 @@ msgstr "De laatste toepasselijke gedragswijziging vertegenwoordigt de meest rece
 #: modules/System/html_admin/mod_system_settings.html.twig:580
 #: modules/System/html_admin/mod_system_settings.html.twig:632
 msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
-msgstr "Met de huidige instellingen zal je FOSSBilling instance een extern IP-adres hebben van: "
+msgstr "Met de huidige instellingen zal uw FOSSBilling-instantie een extern IP-adres hebben van: "
 
 #: modules/System/html_admin/mod_system_settings.html.twig:582
 #: modules/System/html_admin/mod_system_settings.html.twig:635
@@ -9800,7 +9800,7 @@ msgstr "De huidige geselecteerde netwerkinterface lijkt niet in staat te zijn om
 
 #: modules/System/html_admin/mod_system_settings.html.twig:588
 msgid "If your server has multiple network interfaces, you may select the default one for FOSSBilling to use when making requests here."
-msgstr "Als uw server meerdere netwerkinterfaces heeft, kunt u de standaardinterface selecteren die FOSSBilling moet gebruiken om hier verzoeken in te dienen."
+msgstr "Als de server meerdere netwerkinterfaces heeft, kan hier de standaardinterface voor FOSSBilling worden geselecteerd om verzoeken te doen."
 
 #: modules/System/html_admin/mod_system_settings.html.twig:592
 msgid "Select the default network interface:"
@@ -9833,7 +9833,7 @@ msgstr "Vereiste PHP versie:"
 
 #: modules/System/html_admin/mod_system_update.html.twig:23
 msgid "This update is considered to be a major update, you should check the release notes for any breaking changes."
-msgstr "Deze update wordt beschouwd als een belangrijke update, u moet de release notes controleren voor eventuele nieuwe wijzigingen."
+msgstr "Dit is een belangrijke update, dus controleer de release notes voor eventuele nieuwe wijzigingen."
 
 #: modules/System/html_admin/mod_system_update.html.twig:29
 msgid "This update is considered to be a minor update, there are low chances of incompatibilities."
@@ -9845,7 +9845,7 @@ msgstr "Er is geen update beschikbaar"
 
 #: modules/System/html_admin/mod_system_update.html.twig:36
 msgid "You appear to be running the latest version of FOSSBilling, so no action is needed at the moment. If you think this is a mistake, you may use the button below to check again."
-msgstr "Het lijkt erop dat je de laatste versie van FossBilling gebruikt, dus momenteel is er geen actie nodig. Als je denkt dat dit niet klopt dan kun je onderstaande knop gebruiken om het nog eens te controleren."
+msgstr "Het lijkt erop dat de nieuwste versie van FOSSBilling wordt uitgevoerd, dus op dit moment is er geen actie nodig. Indien onjuist, kan de onderstaande knop worden gebruikt om opnieuw te controleren."
 
 #: modules/System/html_admin/mod_system_update.html.twig:68
 msgid "Check for Updates"
@@ -9857,7 +9857,7 @@ msgstr "Pas patches toe en update de configuratie"
 
 #: modules/System/html_admin/mod_system_update.html.twig:77
 msgid "Applying patches and updating the configuration should be performed automatically, you don't need to use that button unless you are experiencing issues."
-msgstr "Het toepassen van patches en het bijwerken van de configuratie gebeurt normaliter automatisch, u hoeft de knop niet te gebruiken tenzij u problemen ondervindt."
+msgstr "Het toepassen van patches en het bijwerken van de configuratie moet automatisch gebeuren; het is niet nodig om die knop te gebruiken, tenzij er problemen optreden."
 
 #: modules/System/html_admin/mod_system_update.html.twig:78
 msgid "Last update check:"
@@ -9878,7 +9878,7 @@ msgstr "Onze systemen zijn in onderhoud. We zijn snel weer terug."
 
 #: modules/System/html_client/mod_system_maintenance.html.twig:27
 msgid "While we're away, you can still reach us over other channels."
-msgstr "Tijdens onze afwezigheid kunt u ons nog steeds bereiken via andere kanalen."
+msgstr "Terwijl men weg is, kan men ons nog steeds bereiken via andere kanalen."
 
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:18
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:3
@@ -9894,11 +9894,11 @@ msgstr "Instellingen voor"
 
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:43
 msgid "Switch to a predefined set of theme settings from the dropdown. Adjust each section and apply the changes once you're done."
-msgstr "Schakel over naar een vooraf gedefinieerde set thema instellingen vanuit de dropdown. Pas elke sectie aan en pas de wijzigingen toe zodra u klaar bent."
+msgstr "Schakel over naar een vooraf gedefinieerde set thema-instellingen in de dropdown. Werk de sectie bij en pas de wijzigingen toe na voltooiing."
 
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:45
 msgid "Your current preset"
-msgstr "Je huidige voorinstelling"
+msgstr "Eigen preset"
 
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:71
 msgid "Config for"
@@ -9941,7 +9941,7 @@ msgstr "Standaard editor"
 
 #: themes/admin_default/html/error.html.twig:10
 msgid "Oops... You just found an error page"
-msgstr "Oeps... U heeft zojuist een foutpagina gevonden"
+msgstr "Oeps... Er gaat iets mis"
 
 #: themes/admin_default/html/error.html.twig:20
 msgid "Back to Dashboard"
@@ -10088,7 +10088,7 @@ msgstr "Verwijder selectie"
 
 #: themes/admin_default/html/partial_batch_delete.html.twig:37
 msgid "Are you sure you want to delete the selected items?"
-msgstr "Weet je zeker dat je de geselecteerde items wil verwijderen?"
+msgstr "Is het zeker dat de geselecteerde items verwijderd moeten worden?"
 
 #: themes/admin_default/html/partial_batch_delete.html.twig:50
 msgid "No items selected"
@@ -10096,7 +10096,7 @@ msgstr "Geen items geselecteerd"
 
 #: themes/admin_default/html/partial_batch_delete.html.twig:51
 msgid "You need to select at least one item to delete"
-msgstr "U moet ten minste één item selecteren om te verwijderen"
+msgstr "Er moet minimaal één item worden geselecteerd om te verwijderen"
 
 #: themes/admin_default/html/partial_extensions.html.twig:47
 msgid "View on the extension directory"
@@ -10174,7 +10174,7 @@ msgstr "Zoekinstellingen"
 
 #: themes/huraga/html/error.html.twig:23
 msgid "Whoops! Unable to find the page you are looking for"
-msgstr "Oeps! Kan de pagina die u zoekt niet vinden"
+msgstr "Oeps! Pagina niet gevonden"
 
 #: themes/huraga/html/error.html.twig:26
 msgid "Go back to home"
