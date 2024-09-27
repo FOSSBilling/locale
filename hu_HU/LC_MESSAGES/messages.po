@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-06-07 20:48-0700\n"
-"PO-Revision-Date: 2024-06-08 14:08\n"
+"PO-Revision-Date: 2024-09-27 10:30\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,8 @@ msgstr ""
 
 #: di.php:310
 msgid "It appears you are trying to use FOSSBilling without the PHP intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
-msgstr ""
+msgstr "Úgy tűnik, hogy a FOSSBilling használatakor a PHP intl kiterjesztés nincs engedélyezve. A FOSSBilling tartalmaz egy polyfillt az intl kiterjesztéshez, azonban az nem támogatja a\n"
+". Kérlek, engedélyezd az intl kiterjesztést."
 
 #: di.php:358 di.php:432
 msgid "Client is not logged in"
@@ -46,7 +47,7 @@ msgstr "Felismeretlen kezelőtípus: "
 
 #: di.php:520
 msgid "Please check your mailbox and confirm your email address."
-msgstr ""
+msgstr "Kérjük, ellenőrizze postafiókját és erősítse meg e-mail címét."
 
 #: index.php:80 library/Box/App.php:335 library/Box/AppClient.php:70
 msgid "Page :url not found"
@@ -74,11 +75,11 @@ msgstr "FOSSBilling modul :mod nincs telepítve/aktiválva"
 
 #: library/Api/Handler.php:68
 msgid "You do not have access to the :mod module"
-msgstr ""
+msgstr "Nincs hozzáférése a :mod modulhoz"
 
 #: library/Api/Handler.php:84
 msgid "Api class must be an instance of Api_Abstract"
-msgstr ""
+msgstr "Az Api osztálynak az Api_Abstract példányának kell lennie"
 
 #: library/Api/Handler.php:100
 msgid ":type API call :method does not exist in module :module"
@@ -98,7 +99,7 @@ msgstr "Az oldal nem található"
 
 #: library/Box/Crypt.php:23
 msgid "The PHP OpenSSL extension must be enabled on your server"
-msgstr ""
+msgstr "A PHP openssl kiterjesztést engedélyezni kell a kiszolgálón"
 
 #: library/Box/Log.php:69
 msgid "Missing log message"
@@ -126,7 +127,7 @@ msgstr "A :mod ügyfélvezérlő osztály modul nem található"
 
 #: library/Box/Mod.php:219
 msgid "Core modules cannot be updated"
-msgstr ""
+msgstr "Az alapmodulok nem frissíthetők"
 
 #: library/Box/Pagination.php:44 library/Box/Pagination.php:77
 msgid "Invalid page number"
@@ -216,7 +217,7 @@ msgstr "Nem lehet lekérni a :unit hónapjainak számát"
 
 #: library/Box/Translate.php:55
 msgid "Unable to set up FOSSBilling translation functionality, locale was undefined."
-msgstr ""
+msgstr "Nem sikerült beállítani a FOSSBilling fordítási funkciót, a területi beállítás nem volt meghatározva."
 
 #: library/Box/TwigExtensions.php:251
 msgid "second"
@@ -257,7 +258,7 @@ msgstr "Hiányzó :hiányzik: param a Box_TwigLoader számára"
 
 #: library/FOSSBilling/CentralAlerts.php:119
 msgid "Unable to fetch alerts from Central Alerts System. See the error log for more information."
-msgstr ""
+msgstr "Nem lehet riasztásokat lekérni a központi riasztórendszerből. További információkért lásd a hibanaplót."
 
 #: library/FOSSBilling/CentralAlerts.php:127
 msgid "Invalid response from the FOSSBilling Central Alerts System."
@@ -265,15 +266,15 @@ msgstr "Érvénytelen válasz a FOSSBilling központi riasztási rendszerétől.
 
 #: library/FOSSBilling/Config.php:90
 msgid "An error occurred when creating a backup of the configuration file."
-msgstr ""
+msgstr "Hiba történt a konfigurációs fájl biztonsági mentésének létrehozásakor."
 
 #: library/FOSSBilling/Config.php:96
 msgid "An error occurred when writing the updated configuration file."
-msgstr ""
+msgstr "Hiba történt a frissített konfigurációs fájl írásakor."
 
 #: library/FOSSBilling/Config.php:145
 msgid "Too many iterations were performed while formatting the config file"
-msgstr ""
+msgstr "Túl sok iteráció történt a konfigurációs fájl formázása során"
 
 #: library/FOSSBilling/ExtensionManager.php:57
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
@@ -281,11 +282,11 @@ msgstr "Nem lehet lekérni a bővítmény részleteit a FOSSBilling bővítmény
 
 #: library/FOSSBilling/ExtensionManager.php:79
 msgid "An error occurred when fetching the extensions releases"
-msgstr ""
+msgstr "Hiba történt a kiterjesztések kiadásainak lekérésekor"
 
 #: library/FOSSBilling/ExtensionManager.php:102
 msgid "Unable to fetch the latest extension release."
-msgstr ""
+msgstr "Nem sikerült lekérni a legújabb kiterjesztés kiadását."
 
 #: library/FOSSBilling/ExtensionManager.php:175
 msgid "Unable to connect to the FOSSBilling extension directory."
@@ -305,7 +306,7 @@ msgstr "A FOSSBilling megköveteli a proc_open PHP funkció engedélyezését a 
 
 #: library/FOSSBilling/Mail.php:146
 msgid "A SendGrid API key is required to send emails via SendGrid"
-msgstr ""
+msgstr "A SendGrid API kulcs szükséges az e-mailek SendGrid-en keresztüli küldéséhez"
 
 #: library/FOSSBilling/Mail.php:153
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
@@ -325,7 +326,7 @@ msgstr "Az SMTP-állomás vagy -port nincs konfigurálva"
 
 #: library/FOSSBilling/PasswordManager.php:35
 msgid "Invalid password hash provided"
-msgstr ""
+msgstr "Érvénytelen jelszó hash került megadásra"
 
 #: library/FOSSBilling/Tools.php:59 library/FOSSBilling/Tools.php:252
 msgid "Service class :class was not found in :path"
@@ -352,15 +353,15 @@ msgstr "Nem sikerült letölteni a legújabb verzióinformációkat. További r�
 
 #: library/FOSSBilling/Update.php:213 modules/System/Api/Admin.php:192
 msgid "You have the latest version of FOSSBilling. You do not need to update."
-msgstr ""
+msgstr "A legújabb FOSSBilling verziót használod, nincs szükség frissítésre."
 
 #: library/FOSSBilling/Update.php:225
 msgid "FOSSBilling :version: requires at least PHP :min_php:, but you are running :current_php:."
-msgstr ""
+msgstr "A FOSSBilling :version: legalább PHP :min_php: verziót igényel, de te a :current_php: verziót futtatod:."
 
 #: library/FOSSBilling/Update.php:236
 msgid "The download URL for this release was not specified as a trusted one. Update canceled for security reasons."
-msgstr ""
+msgstr "A megadott letöltési URL nem volt megbízhatóként megjelölve. A frissítés biztonsági okokból törölve."
 
 #: library/FOSSBilling/Update.php:257
 msgid "Failed to download the update archive. Further details are available in the error log."
@@ -421,7 +422,7 @@ msgstr "Ismeretlen TLD. Nem sikerült meghatározni a regisztrációs árat"
 
 #: library/Model/ProductDomainTable.php:257
 msgid "Domain product cannot be removed."
-msgstr ""
+msgstr "A domain termék nem törölhető."
 
 #: library/Model/ProductTable.php:61
 msgid "Unknown period selected "
@@ -445,13 +446,13 @@ msgstr "Ismeretlen Az árhoz kiválasztott időszak"
 
 #: library/Payment/Adapter/ClientBalance.php:59
 msgid "Your account balance is insufficient to cover this invoice."
-msgstr ""
+msgstr "A fiók egyenlege nem elegendő a számla kifizetéséhez."
 
 #: library/Payment/Adapter/ClientBalance.php:64
 #: library/Payment/Adapter/ClientBalance.php:92
 #: library/Payment/Adapter/ClientBalance.php:127
 msgid "You may not pay a deposit invoice with this payment gateway."
-msgstr ""
+msgstr "Ezt az előlegszámlát nem fizetheted ki ezzel a fizetési átjáróval."
 
 #: library/Payment/Adapter/ClientBalance.php:82
 #: library/Payment/Adapter/PayPalEmail.php:75
@@ -491,19 +492,19 @@ msgstr "Hiba történt a tranzakció feldolgozása során"
 
 #: library/Payment/AdapterAbstract.php:51
 msgid "Return URL for the payment gateway was not set"
-msgstr ""
+msgstr "A fizetési átjáró visszatérési URL-je nem lett beállítva"
 
 #: library/Payment/AdapterAbstract.php:58
 msgid "Cancel URL for the payment gateway was not set"
-msgstr ""
+msgstr "A fizetési átjáró lemondási URL-je nem lett beállítva"
 
 #: library/Payment/AdapterAbstract.php:66
 msgid "IPN Notification URL for the payment gateway was not set"
-msgstr ""
+msgstr "A fizetési átjáró IPN értesítési URL-je nem lett beállítva"
 
 #: library/Payment/AdapterAbstract.php:76
 msgid "IPN redirect URL for the payment gateway was not set"
-msgstr ""
+msgstr "A fizetési átjáró IPN átirányítási URL-je nem lett beállítva"
 
 #: library/Registrar/Adapter/Email.php:23
 #: library/Registrar/Adapter/Internetbs.php:18
@@ -524,7 +525,7 @@ msgstr "Az \":d omain_registrar\" tartományregisztráló nincs teljesen konfigu
 
 #: library/Registrar/Adapter/Email.php:64 library/Registrar/Adapter/Email.php:69
 msgid ":type: registrar is unable to :action:"
-msgstr ""
+msgstr "Az :type: regisztrátor nem képes végrehajtani az alábbi műveletet: :action:"
 
 #: library/Registrar/Adapter/Internetbs.php:161
 msgid "get domain details"
@@ -699,7 +700,7 @@ msgstr "Ezen a kiszolgálón nincsenek elérhető IP-címek."
 
 #: library/Server/Manager/Directadmin.php:342
 msgid "Unable to assign the Reseller ANY IPs. Make sure to have free, unassigned IPs."
-msgstr ""
+msgstr "Nem lehet hozzárendelni IP-címeket a viszonteladóhoz. Győződj meg róla, hogy vannak szabad, nem hozzárendelt IP-címek."
 
 #: library/Server/Manager/Directadmin.php:346
 msgid "Error creating user"
@@ -793,11 +794,11 @@ msgstr "Pénznem nem található"
 #: modules/Cart/Api/Guest.php:96 modules/Cart/Api/Guest.php:104
 #: modules/Cart/Service.php:450
 msgid "The promo code has expired or does not exist"
-msgstr ""
+msgstr "A promóciós kód lejárt vagy nem létezik"
 
 #: modules/Cart/Api/Guest.php:100 modules/Cart/Service.php:454
 msgid "Promo code cannot be applied to your account"
-msgstr ""
+msgstr "A promóciós kód nem alkalmazható a fiókodra"
 
 #: modules/Cart/Api/Guest.php:161
 msgid "Addon products cannot be added separately."
@@ -805,7 +806,7 @@ msgstr "Az Addon termékek külön nem adhatók hozzá."
 
 #: modules/Cart/Api/Guest.php:175
 msgid "One or more of your selected add-ons are invalid for the associated product."
-msgstr ""
+msgstr "Az általad kiválasztott kiegészítők egyike vagy többje érvénytelen a kapcsolódó termékhez."
 
 #: modules/Cart/Service.php:102
 msgid "Selected billing period is invalid"
@@ -817,7 +818,7 @@ msgstr "Ez a termék jelenleg nincs raktáron"
 
 #: modules/Cart/Service.php:142
 msgid "Selected billing period is invalid for the selected add-on"
-msgstr ""
+msgstr "A kiválasztott számlázási időszak érvénytelen a kiválasztott kiegészítőhöz"
 
 #: modules/Cart/Service.php:236 modules/Product/Api/Guest.php:82
 msgid "Product not found"
@@ -825,15 +826,15 @@ msgstr "Nem talált termék"
 
 #: modules/Cart/Service.php:298
 msgid "Add products to your cart before applying promo code"
-msgstr ""
+msgstr "Először adj hozzá termékeket a kosaradhoz, mielőtt alkalmaznád a promóciós kódot"
 
 #: modules/Cart/Service.php:446
 msgid "You have already used this promo code. Please remove the promo code and checkout again."
-msgstr ""
+msgstr "Már felhasználta ezt a promóciós kódot. Kérjük, távolítsa el a promóciós kódot, és próbálkozzon újra a vásárlással."
 
 #: modules/Cart/Service.php:506
 msgid "Cannot checkout an empty cart"
-msgstr ""
+msgstr "Nem lehet üres kosarat fizetni"
 
 #: modules/Cart/Service.php:518
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -854,7 +855,7 @@ msgstr ":termék beállítása"
 #: modules/Client/Api/Admin.php:149 modules/Client/Api/Admin.php:239
 #: modules/Client/Api/Guest.php:84 modules/Profile/Service.php:133
 msgid "This email address is already registered."
-msgstr ""
+msgstr "Ez az e-mail cím már regisztrált."
 
 #: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:227
 #: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:113
@@ -926,15 +927,15 @@ msgstr "A fiók létrehozásakor választott jelszó."
 
 #: modules/Client/Service.php:225
 msgid "Currency cannot be changed. Client already has invoices issued."
-msgstr ""
+msgstr "A pénznemet nem lehet megváltoztatni. Az ügyfél már kiállított számlákkal rendelkezik."
 
 #: modules/Client/Service.php:230
 msgid "Currency cannot be changed. Client already has orders."
-msgstr ""
+msgstr "A pénznemet nem lehet megváltoztatni. Az ügyfél már rendelkezik megrendelésekkel."
 
 #: modules/Client/Service.php:239
 msgid "You must define the client's currency before adding funds."
-msgstr ""
+msgstr "A pénzeszközök hozzáadása előtt határozza meg az ügyfelek pénznemét."
 
 #: modules/Client/Service.php:243 modules/Client/ServiceBalance.php:125
 msgid "Funds amount is invalid"
@@ -954,11 +955,11 @@ msgstr "Ügyfél nem található"
 
 #: modules/Client/Service.php:467
 msgid "Cannot remove groups with clients"
-msgstr ""
+msgstr "Nem lehet eltávolítani a csoportot az ügyfelekkel"
 
 #: modules/Client/Service.php:628 modules/Profile/Service.php:125
 msgid "Email address cannot be changed"
-msgstr ""
+msgstr "Email nem módosítható"
 
 #: modules/Client/Service.php:642 modules/Client/Service.php:658
 msgid "Field :field cannot be empty"
@@ -983,7 +984,7 @@ msgstr "A pénznemkód érvénytelen"
 
 #: modules/Currency/Service.php:69
 msgid "Currency conversion rate cannot be zero"
-msgstr ""
+msgstr "A valuta átváltási árfolyam nem lehet nulla"
 
 #: modules/Currency/Service.php:135
 msgid "Currency code not provided"
@@ -991,7 +992,7 @@ msgstr "Nem megadott pénznemkód"
 
 #: modules/Currency/Service.php:331
 msgid "Cannot remove default currency"
-msgstr ""
+msgstr "Nem lehet eltávolítani az alapértelmezett pénznemet"
 
 #: modules/Currency/Service.php:391
 msgid "Currency format must include {{price}} tag"
@@ -1003,23 +1004,23 @@ msgstr "A valutaárfolyam érvénytelen"
 
 #: modules/Currency/Service.php:480
 msgid "You must configure your API key to use Currency Data API as an exchange rate data source."
-msgstr ""
+msgstr "Be kell állítanod az API kulcsodat, hogy a Currency Data API-t használd árfolyamadat-forrásként."
 
 #: modules/Currency/Service.php:485
 msgid "You must configure your API key to use currencylayer as an exchange rate data source."
-msgstr ""
+msgstr "Be kell állítanod az API kulcsodat, hogy a currencylayer-t árfolyamadat-forrásként használd."
 
 #: modules/Currency/Service.php:529
 msgid "There was an error when fetching currency rates from ExchangeRate-API. See the error log for details."
-msgstr ""
+msgstr "Hiba történt az árfolyamok lekérésekor az ExchangeRate-API-tól. Kérjük, nézd meg a hibalogot a részletekért."
 
 #: modules/Currency/Service.php:582
 msgid "There was an error when fetching currency rates from Currency Data API. See the error log for details."
-msgstr ""
+msgstr "Hiba történt az árfolyamok lekérésekor a Currency Data API-tól. Kérjük, nézd meg a hibalogot a részletekért."
 
 #: modules/Currency/Service.php:615
 msgid "There was an error when fetching currency rates from currencylayer. See the error log for details."
-msgstr ""
+msgstr "Hiba történt az árfolyamok lekérésekor a currencylayer-től. Kérjük, nézd meg a hibalogot a részletekért."
 
 #: modules/Custompages/Controller/Admin.php:33
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
@@ -1055,7 +1056,7 @@ msgstr "A vevő nincs meghatározva. A to vagy to_client vagy to_staff vagy to_a
 
 #: modules/Email/Service.php:205
 msgid "The \"from\" email address cannot be empty"
-msgstr ""
+msgstr "A küldő e-mail cím nem lehet üres"
 
 #: modules/Email/Service.php:480
 msgid "Email template :code was not found"
@@ -1101,7 +1102,7 @@ msgstr "A bővítmény frissítésével kapcsolatos további információkért k
 
 #: modules/Extension/Service.php:395
 msgid "FOSSBilling core modules cannot be managed"
-msgstr ""
+msgstr "A FOSSBilling alapmodulok nem kezelhetők"
 
 #: modules/Extension/Service.php:444
 msgid "Coudn't find a valid download URL for the extension."
@@ -1129,11 +1130,11 @@ msgstr "A bővítmény típusa (:type) nem telepíthető automatikusan."
 
 #: modules/Extension/Service.php:544
 msgid "FOSSBilling core modules cannot be installed or removed"
-msgstr ""
+msgstr "A FOSSBilling alapmodulok nem telepíthetők vagy távolíthatók el"
 
 #: modules/Extension/Service.php:549
 msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
-msgstr ""
+msgstr "A modul nem telepíthető. A FOSSBilling legalább :min verziója szükséges hozzá. Az általad használt verzió :v"
 
 #: modules/Extension/Service.php:732
 msgid "Manage settings"
@@ -1174,11 +1175,11 @@ msgstr "Nem támogatott mezőtípus"
 
 #: modules/Formbuilder/Service.php:140
 msgid "Field name cannot start with number."
-msgstr ""
+msgstr "A mező neve nem kezdődhet számmal."
 
 #: modules/Formbuilder/Service.php:144
 msgid "Field name cannot be empty. Please make sure it is not empty and does not contain special characters."
-msgstr ""
+msgstr "A mező neve nem lehet üres. Kérjük, győződj meg róla, hogy nem üres és nem tartalmaz speciális karaktereket."
 
 #: modules/Formbuilder/Service.php:161
 msgid "Unfortunately field with this name exists in this form already. Form must have different field names."
@@ -1220,7 +1221,7 @@ msgstr "A számla nem található"
 
 #: modules/Invoice/Api/Client.php:82 modules/Invoice/Api/Guest.php:62
 msgid "Paid Invoice cannot be modified"
-msgstr ""
+msgstr "A kifizetett számla nem módosítható"
 
 #: modules/Invoice/Api/Client.php:110 modules/Order/Api/Client.php:119
 #: modules/Servicedomain/Api/Client.php:122
@@ -1296,7 +1297,7 @@ msgstr "Nem lehet meghatározni a következő számlaszámot"
 
 #: modules/Invoice/Service.php:638
 msgid "Cannot refund invoice with negative amount"
-msgstr ""
+msgstr "Nem lehet negatív összegű számlát visszatéríteni"
 
 #: modules/Invoice/Service.php:853
 msgid "Invoice is related to order #:id. Please cancel order first."
@@ -1361,11 +1362,11 @@ msgstr "Fizetési átjáró :adapter nem található"
 
 #: modules/Invoice/ServiceTransaction.php:82
 msgid "Transaction invoice ID is missing"
-msgstr ""
+msgstr "A tranzakció számla azonosítója hiányzik"
 
 #: modules/Invoice/ServiceTransaction.php:86
 msgid "Payment gateway ID is missing"
-msgstr ""
+msgstr "A fizetési átjáró azonosítója hiányzik"
 
 #: modules/Invoice/ServiceTransaction.php:347
 msgid "Transaction :id not found."
@@ -1379,7 +1380,7 @@ msgstr "Nem sikerült meghatározni a tranzakció eredetét. A tranzakció fizet
 #: modules/Invoice/ServiceTransaction.php:356
 #: modules/Invoice/ServiceTransaction.php:481
 msgid "Cannot handle transaction received from unknown payment gateway: :id"
-msgstr ""
+msgstr "Nem tudja kezelni az ismeretlen fizetési átjárótól kapott tranzakciót: :id"
 
 #: modules/Invoice/ServiceTransaction.php:362
 #: modules/Invoice/ServiceTransaction.php:511
@@ -1409,7 +1410,7 @@ msgstr "Fizetési átjáró :id módszer getTransaction visszaadja a Payment_Tra
 
 #: modules/Invoice/ServiceTransaction.php:604
 msgid "Cannot create subscription. Subscription ID from payment gateway was not received"
-msgstr ""
+msgstr "Nem tud előfizetést létrehozni. Az előfizetési azonosító nem érkezett meg a fizetési átjárótól"
 
 #: modules/Invoice/ServiceTransaction.php:639
 msgid "Subscription #:id was not found. Could not unsubscribe"
@@ -1433,11 +1434,11 @@ msgstr "Az ügyfél pénzneme nem egyezik a számla pénznemével"
 
 #: modules/Invoice/ServiceTransaction.php:683
 msgid "Cannot add negative amount to client balance for debit transaction"
-msgstr ""
+msgstr "Nem lehet negatív összeget hozzáadni az ügyfél egyenlegéhez terhelési tranzakció esetén"
 
 #: modules/Massmailer/Api/Admin.php:73
 msgid "Message from name cannot be empty"
-msgstr ""
+msgstr "A névből származó üzenet nem lehet üres"
 
 #: modules/Massmailer/Api/Admin.php:155 modules/Massmailer/Api/Admin.php:176
 msgid "Add some content before sending message"
@@ -1547,7 +1548,7 @@ msgstr "Csak az aktív megrendelések függeszthetők fel"
 
 #: modules/Order/Service.php:1044
 msgid "Cannot cancel "
-msgstr ""
+msgstr "Nem lehet törölni "
 
 #: modules/Product/Api/Admin.php:96
 msgid "You have already created domain product."
@@ -1591,11 +1592,11 @@ msgstr "Az árképzés típusa szükséges"
 
 #: modules/Product/Service.php:436
 msgid "Cannot remove product which has active orders."
-msgstr ""
+msgstr "Nem lehet eltávolítani olyan terméket, amelyre aktív megrendelések vannak."
 
 #: modules/Product/Service.php:498
 msgid "Cannot remove product category with products"
-msgstr ""
+msgstr "Nem lehet eltávolítani a termékkategóriát a termékekkel"
 
 #: modules/Product/Service.php:928
 msgid "This promotion code already exists."
@@ -1661,7 +1662,7 @@ msgstr "Ismeretlen nagybetűs beállítás ':case:'. Az API-generátor csak \"al
 #: modules/Servicedownloadable/Api/Client.php:27
 #: modules/Servicehosting/Api/Client.php:82
 msgid "Order ID is required"
-msgstr ""
+msgstr "A rendelési azonosító szükséges"
 
 #: modules/Servicecustom/Api/Admin.php:45 modules/Servicecustom/Api/Client.php:27
 msgid "API call is missing arguments"
@@ -1730,7 +1731,7 @@ msgstr "A TLD-t a :count: domains használja"
 
 #: modules/Servicedomain/Api/Admin.php:243
 msgid "TLD already registered"
-msgstr ""
+msgstr "Tld már regisztrálva"
 
 #: modules/Servicedomain/Api/Admin.php:333
 msgid "Registrar is not available for installation."
@@ -1758,7 +1759,7 @@ msgstr "A TLD nem aktív."
 
 #: modules/Servicedomain/Api/Guest.php:124
 msgid "Domain cannot be transferred."
-msgstr ""
+msgstr "A domain nem ruházható át."
 
 #: modules/Servicedomain/Controller/Admin.php:34
 msgid "Domain registration"
@@ -1787,7 +1788,7 @@ msgstr "A TLD érvénytelen"
 
 #: modules/Servicedomain/Service.php:99
 msgid ":domain cannot be transferred!"
-msgstr ""
+msgstr ":domain nem átruházható!"
 
 #: modules/Servicedomain/Service.php:128
 msgid ":tld can be registered for at least :years years"
@@ -1815,11 +1816,11 @@ msgstr "A domain név érvénytelen"
 
 #: modules/Servicedomain/Service.php:531
 msgid "Domain cannot be transferred"
-msgstr ""
+msgstr "A domain nem ruházható át"
 
 #: modules/Servicedomain/Service.php:559
 msgid "Domain cannot be registered"
-msgstr ""
+msgstr "Domain nem regisztrálható"
 
 #: modules/Servicedomain/Service.php:958
 msgid "Domain registrar :adapter was not found"
@@ -1848,7 +1849,7 @@ msgstr "Hiba a fájl feltöltésében"
 
 #: modules/Servicedownloadable/Service.php:281
 msgid "File cannot be downloaded at the moment. Please contact support"
-msgstr ""
+msgstr "A fájl jelenleg nem tölthető le. Kérjük, lépjen kapcsolatba az ügyfélszolgálattal"
 
 #: modules/Servicehosting/Api/Admin.php:26
 msgid "plan_id is missing"
@@ -1900,11 +1901,11 @@ msgstr "A fiók felhasználóneve hiányzik vagy érvénytelen"
 
 #: modules/Servicehosting/Service.php:314
 msgid "Account IP address is missing or is invalid"
-msgstr ""
+msgstr "A fiók IP-címe hiányzik vagy érvénytelen"
 
 #: modules/Servicehosting/Service.php:338
 msgid "Domain SLD or TLD is missing"
-msgstr ""
+msgstr "Domain sld vagy tld hiányzik"
 
 #: modules/Servicehosting/Service.php:364
 msgid "Account password is missing or is invalid"
@@ -1920,7 +1921,7 @@ msgstr "Kiszolgálókezelő :adapter érvénytelen"
 
 #: modules/Servicehosting/Service.php:840
 msgid "Cannot remove hosting plan which has active accounts"
-msgstr ""
+msgstr "Nem lehet eltávolítani a tárhelyet, amely aktív fiókokkal rendelkezik"
 
 #: modules/Servicehosting/Service.php:1061
 msgid "Could not find main domain product"
@@ -2054,7 +2055,7 @@ msgstr "Ellenőrizze bejelentkezési adatait"
 
 #: modules/Staff/Service.php:508
 msgid "This administrator account is protected and cannot be removed"
-msgstr ""
+msgstr "Ez a rendszergazdai fiók védett, és nem távolítható el"
 
 #: modules/Staff/Service.php:579
 msgid "Staff member with email :email is already registered"
@@ -2062,11 +2063,11 @@ msgstr "Személyzeti tag e-mail címmel :email már regisztrálva van"
 
 #: modules/Staff/Service.php:674
 msgid "Administrators group cannot be removed"
-msgstr ""
+msgstr "A Rendszergazdák csoport nem távolítható el"
 
 #: modules/Staff/Service.php:682
 msgid "Cannot remove group which has staff members"
-msgstr ""
+msgstr "Nem lehet eltávolítani a személyzet tagjait tartalmazó csoportot"
 
 #: modules/Support/Api/Admin.php:836 modules/Support/Api/Admin.php:910
 #: modules/Support/Service.php:1651
@@ -2087,7 +2088,7 @@ msgstr "Jegy nem található"
 
 #: modules/Support/Api/Client.php:128
 msgid "Ticket cannot be reopened."
-msgstr ""
+msgstr "A jegyet nem lehet újra megnyitni."
 
 #: modules/Support/Api/Guest.php:35
 msgid "Please enter your message"
@@ -2160,7 +2161,7 @@ msgstr "Tudásbázis"
 
 #: modules/Support/Service.php:655
 msgid "Cannot remove helpdesk which has tickets"
-msgstr ""
+msgstr "Nem lehet eltávolítani a jegyekkel rendelkező helpdesket"
 
 #: modules/Support/Service.php:813
 msgid "We currently aren't accepting support tickets from unregistered users. Please use another contact method."
@@ -2192,7 +2193,7 @@ msgstr "Nyilvános jegy nem található"
 
 #: modules/Support/Service.php:1747
 msgid "Cannot remove category which has articles"
-msgstr ""
+msgstr "Nem lehet eltávolítani a cikkeket tartalmazó kategóriát"
 
 #: modules/System/Controller/Admin.php:33
 msgid "System"
@@ -2376,7 +2377,7 @@ msgstr "Ország :kód telefonkód nincs regisztrálva"
 
 #: modules/Theme/Controller/Admin.php:61
 msgid "Theme \":name\" assets folder is not writable. Files cannot be uploaded and settings cannot be saved. Set folder permissions to 755"
-msgstr ""
+msgstr "A téma \":name\" eszközmappa nem írható. A fájlokat nem lehet feltölteni és a beállításokat nem lehet elmenteni. Állítsa be a mappa engedélyeit 755-re"
 
 #: modules/Theme/Controller/Admin.php:97
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
@@ -3998,7 +3999,7 @@ msgstr "Új kulcs létrehozása"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:217
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and cannot be changed."
-msgstr ""
+msgstr "A profil pénzneme az első megrendelés után kerül meghatározásra. Amint beállította a pénznemet, az összes profil könyvelése ebben a pénznemben lesz kezelve, és nem változtatható meg."
 
 #: modules/Client/html_client/mod_client_profile.html.twig:219
 msgid "Your profile currency is"
@@ -4142,7 +4143,7 @@ msgstr "Új pénznem hozzáadása"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:41
 msgid "Integrations / Automation"
-msgstr ""
+msgstr "Integrációk / Automatizálás"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:44
 msgid "Converter"
@@ -4154,15 +4155,15 @@ msgstr "Valuták kezelése"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:52
 msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics."
-msgstr ""
+msgstr "A alapértelmezett valuta az, amelyben a termékek árát megadod. Ha az ügyfeled másik valutát választ, az árak a váltási árfolyam alapján újraszámításra kerülnek. Az alapértelmezett valuta megváltoztatása a megrendelések leadása után váratlan problémákat okozhat. Az alapértelmezett valuta megváltoztatásakor semmi sem kerül újraszámításra. A bevételed az alapértelmezett valutában kerül kiszámításra. Az alapértelmezett valuta megváltoztatása a kifizetett számlák után torzítja a bevételi statisztikákat."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:56
 msgid "FOSSBilling is configured to automatically sync currency exchange rates."
-msgstr ""
+msgstr "A FOSSBilling automatikusan van beállítva a valuták árfolyamának szinkronizálására."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:60
 msgid "FOSSBilling is not configured to automatically sync currency exchange rates."
-msgstr ""
+msgstr "A FOSSBilling nincs beállítva a valuták árfolyamának automatikus szinkronizálására."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:67
 msgid "ISO code"
@@ -4190,7 +4191,7 @@ msgstr "Frissítés árak"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:130
 msgid "Currency exchange rates By ExchangeRate-API."
-msgstr ""
+msgstr "Valuták árfolyamai az ExchangeRate-API segítségével."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:140
 #: modules/Email/html_admin/mod_email_settings.html.twig:77
@@ -4216,46 +4217,46 @@ msgstr "Sikeresen frissített beállítások"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:175
 msgid "Available exchange rate data providers"
-msgstr ""
+msgstr "Elérhető árfolyamadat-szolgáltatók"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:176
 msgid "FOSSBilling provides integration with various currency exchange rate data providers, allowing you to choose whichever one best suits your needs. By default, FOSSBilling will use the ExchangeRate-API \"Open Access Endpoint\" which does not require any configuration."
-msgstr ""
+msgstr "A FOSSBilling különböző valuták árfolyamadat-szolgáltatókkal való integrációt kínál, lehetővé téve, hogy a számodra legmegfelelőbbet válaszd. Alapértelmezés szerint a FOSSBilling az ExchangeRate-API \"Nyílt Hozzáférés Végpontját\" használja, amelyhez nincs szükség konfigurációra."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:180
 msgid "Provider"
-msgstr ""
+msgstr "Szolgáltató"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:181
 msgid "Authentication Required"
-msgstr ""
+msgstr "Hitelesítés szükséges"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:182
 msgid "Update Frequency"
-msgstr ""
+msgstr "Frissítési gyakoriság"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:183
 msgid "Supported Currencies"
-msgstr ""
+msgstr "Támogatott pénznemek"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:184
 msgid "Pricing"
-msgstr ""
+msgstr "Árazás"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:189
 msgid "ExchangeRate-API (Open Access Endpoint)"
-msgstr ""
+msgstr "ExchangeRate-API (Nyílt Hozzáférés Végpont)"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:191
 msgid "1D"
-msgstr ""
+msgstr "1 nap"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:192
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:199
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:206
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:213
 msgid "Supported currencies"
-msgstr ""
+msgstr "Támogatott pénznemek"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:193
 #: themes/admin_default/html/partial_pricing.html.twig:7
@@ -4264,30 +4265,30 @@ msgstr "Ingyen"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:198
 msgid "1D / 1H / 5M"
-msgstr ""
+msgstr "1"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:200
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:207
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:214
 msgid "Free / paid"
-msgstr ""
+msgstr "Ingyenes / fizetős"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:205
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:212
 msgid "1D / 1H / 10M / 1M"
-msgstr ""
+msgstr "1 nap / 1 óra / 10 perc / 1 perc"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:218
 msgid "When using ExchangeRate-API, their API informs FOSSBilling when the next update will occur which makes it more efficient for automated exchange rate syncing."
-msgstr ""
+msgstr "Az ExchangeRate-API használatakor az API értesíti a FOSSBillingot a következő frissítés időpontjáról, ami hatékonyabbá teszi az árfolyamok automatikus szinkronizálását."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:220
 msgid "To the best of our knowledge, \"Currency Data API\" and \"currencylayer\" are both owned by APILayer and provide the same data, but through a different API."
-msgstr ""
+msgstr "Tudomásunk szerint a \"Currency Data API\" és a \"currencylayer\" egyaránt az APILayer tulajdonában áll, és ugyanazt az adatot szolgáltatják, de különböző API-n keresztül."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:222
 msgid "Currency exchange rate data provider"
-msgstr ""
+msgstr "Elérhető árfolyamadat-szolgáltatók"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:232
 #: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
@@ -4296,47 +4297,47 @@ msgstr "API kulcs"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:237
 msgid "Leave this blank to use the ExchangeRate-API \"Open Access Endpoint\"."
-msgstr ""
+msgstr "Hagyd üresen ezt a mezőt, hogy az ExchangeRate-API \"Nyílt Hozzáférés Végpontját\" használd."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:241
 msgid "Automatic sync rate"
-msgstr ""
+msgstr "Automatikus árfolyam szinkronizálás"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:244
 msgid "Auto"
-msgstr ""
+msgstr "Automatikus"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:245
 msgid "Never"
-msgstr ""
+msgstr "Soha"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:246
 msgid "Daily"
-msgstr ""
+msgstr "Napi"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:247
 msgid "Hourly"
-msgstr ""
+msgstr "Óránként"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:248
 msgid "Every 10 minutes"
-msgstr ""
+msgstr "10 percenként"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:249
 msgid "Every 5 minutes"
-msgstr ""
+msgstr "5 percenként"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:250
 msgid "Every minute"
-msgstr ""
+msgstr "Percenként"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:252
 msgid "\"Auto\" is only available for ExchangeRate-API and when used will cause API requests to be made only when new data is made available, preventing excess requests."
-msgstr ""
+msgstr "Az \"Automatikus\" csak az ExchangeRate-API esetében érhető el, és használata esetén az API kérések csak akkor fognak megtörténni, amikor új adatok állnak rendelkezésre, ezzel megakadályozva a felesleges kéréseket."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:253
 msgid "Exchange rate syncing runs via the cronjob and as such is limited by the frequency of your cron schedule (typically 5 minutes)."
-msgstr ""
+msgstr "Az árfolyamok szinkronizálása cronjob segítségével történik, így az korlátozva van a cron ütemezésének gyakorisága által (tipikusan 5 perc)."
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:271
 msgid "Result"
@@ -5010,7 +5011,7 @@ msgstr "Mező szerkesztése"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:18
 msgid "Please keep in mind that field name cannot start with a number. Special characters will be replaced with underscores ( _ )"
-msgstr ""
+msgstr "Kérjük, tartsd észben, hogy a mező neve nem kezdődhet számmal. A speciális karaktereket aláhúzással (_) helyettesítjük"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:22
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:33
@@ -5675,11 +5676,11 @@ msgstr "Automatikus számlajóváhagyás"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:61
 msgid "Default invoice note"
-msgstr ""
+msgstr "Alapértelmezett számlafeljegyzés"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:64
 msgid "Supports markdown format."
-msgstr ""
+msgstr "Támogatja a markdown formátumot."
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:69
 msgid "Invoicing / Sequential Invoice Numbering"
@@ -5707,7 +5708,7 @@ msgstr "Következő fizetett számla száma"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:96
 msgid "Invoice number padding length"
-msgstr ""
+msgstr "Számlaszám kitöltési hosszúság"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:103
 msgid "Document settings"
@@ -6022,7 +6023,7 @@ msgstr "Köszönjük türelmét."
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:24
 msgid "Redirecting to payment gateway..."
-msgstr ""
+msgstr "Átirányítás a fizetési átjáróra..."
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:30
 msgid "Please click here to continue if this page does not redirect automatically in 5 seconds"
@@ -6160,7 +6161,7 @@ msgstr "Köszönöm"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:11
 msgid "Your payment has been submitted and will be processed shortly. It may take some time for your invoice to be marked as paid."
-msgstr ""
+msgstr "A befizetést elküldtük, és hamarosan feldolgozzuk. Eltarthat egy ideig, amíg a számlát kifizetettként jelöljük meg."
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
 msgid "Payment for invoice received"
@@ -6168,7 +6169,7 @@ msgstr "Beérkezett számla kifizetése"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
 msgid "You will be automatically redirected back to the invoice after 1 minute."
-msgstr ""
+msgstr "1 perc múlva automatikusan átirányítjuk a számlázási oldalra."
 
 #: modules/Invoice/pdf_template/default-pdf.twig:31
 msgid "Invoice date"
@@ -6415,7 +6416,7 @@ msgstr "Létrehozás dátuma"
 #: themes/admin_default/html/macro_functions.html.twig:109
 #: themes/huraga/html/macro_functions.html.twig:33
 msgid "Pending Setup"
-msgstr ""
+msgstr "Függőben lévő beállítás"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:262
 #: modules/Order/html_admin/mod_order_index.html.twig:266
@@ -6567,15 +6568,15 @@ msgstr "Számla kiállítása"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:305
 msgid "Are you sure you want to delete the selected item?"
-msgstr ""
+msgstr "Biztos benne, hogy törli a kijelölt elemeket?"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:308
 msgid "Force the deletion of the item"
-msgstr ""
+msgstr "Az elem törlésének kényszerítése"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:310
 msgid "Selecting this will force the item to be removed from the database even if errors occur."
-msgstr ""
+msgstr "Ennek a kiválasztása kötelezővé teszi az elem eltávolítását az adatbázisból, még akkor is, ha hibák lépnek fel."
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:333
 msgid "Changes status without performing action"
@@ -6894,11 +6895,11 @@ msgstr "Rendelés gomb kódja"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:192
 msgid "Clicking on an HTML element with the classname or ID"
-msgstr ""
+msgstr "Kattintás egy HTML elemre a class név vagy ID alapján"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:198
 msgid "will open a popup window for"
-msgstr ""
+msgstr "mmegnyitja a felugró ablakot"
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:204
 msgid "symbols"
@@ -6955,11 +6956,11 @@ msgstr "Beállít:"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:45
 msgid "Add to cart"
-msgstr ""
+msgstr "Kosárba"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_addons.html.twig:55
 msgid "Remove from cart"
-msgstr ""
+msgstr "Eltávolítás a kosárból"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:6
 msgid "Cart"
@@ -7020,7 +7021,7 @@ msgstr "A teljes összeg levonásra kerül a számlaegyenlegből"
 #: modules/Page/html_client/mod_page_signup.html.twig:176
 #: modules/Page/html_client/mod_page_signup.html.twig:188
 msgid "terms of service"
-msgstr ""
+msgstr "Felhasználási feltételek"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:190
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:200
@@ -7029,7 +7030,7 @@ msgstr ""
 #: modules/Page/html_client/mod_page_signup.html.twig:176
 #: modules/Page/html_client/mod_page_signup.html.twig:188
 msgid "privacy policy"
-msgstr ""
+msgstr "adatvédelmi irányelvek"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:194
 msgid "Checkout"
@@ -7110,11 +7111,11 @@ msgstr "A termék kosárba került"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:28
 msgid "Billing"
-msgstr ""
+msgstr "Számlázás"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:35
 msgid "One-time payment"
-msgstr ""
+msgstr "Egyszeri fizetés"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:74
 msgid "Next"
@@ -7598,7 +7599,7 @@ msgstr "API-kulcsbeállítások frissítve"
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:7
 msgid "Here you can configure the length of the API keys that will be generated. We recommend making this no less than 16 at a minimum. When in doubt, leave this at 32."
-msgstr ""
+msgstr "Itt konfigurálhatja a generálandó API-kulcsok hosszát. Javasoljuk, hogy ez legalább 16 legyen. Ha kétségei vannak, hagyja ezt 32-nél."
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:8
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:37
@@ -8298,7 +8299,7 @@ msgstr "Ingyenes domain regisztráció"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:46
 msgid "Select free TLDs"
-msgstr ""
+msgstr "Válaszd ki az ingyenes tld-ket"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:60
 msgid "Select free periods"
@@ -8867,7 +8868,7 @@ msgstr "Érvényes IP-címek"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:26
 msgid "All IPs"
-msgstr ""
+msgstr "Minden IP"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:35
 msgid "Valid Domains"
@@ -8887,7 +8888,7 @@ msgstr "Minden verzió"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:65
 msgid "Valid Installation Paths"
-msgstr ""
+msgstr "Érvényes telepítési útvonalak"
 
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:71
 msgid "All paths"
@@ -9078,7 +9079,7 @@ msgstr "INFORMÁCIÓK"
 
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:31
 msgid "This staff member is used by FOSSBilling to perform system tasks and cannot be removed."
-msgstr ""
+msgstr "Ezt a munkatársat a FOSSBilling rendszerfeladatok elvégzésére használja, és nem távolítható el."
 
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:40
 msgid "Permissions"
@@ -9541,16 +9542,16 @@ msgstr "Hasonló cikkek"
 
 #: modules/Support/html_client/mod_support_kb_index.html.twig:3
 msgid "Knowledge Base Categories"
-msgstr ""
+msgstr "Tudástár kategóriák"
 
 #: modules/Support/html_client/mod_support_kb_index.html.twig:14
 #: modules/Support/html_client/mod_support_kb_index.html.twig:31
 msgid "Knowledge base categories"
-msgstr ""
+msgstr "Tudástár kategóriák"
 
 #: modules/Support/html_client/mod_support_kb_index.html.twig:32
 msgid "Below you can find a list of our knowledge base categories and their content."
-msgstr ""
+msgstr "Az alábbiakban található a tudásbázisunk kategóriáinak listája és azok tartalma."
 
 #: modules/Support/html_client/mod_support_kb_index.html.twig:38
 msgid "What are you looking for?"
@@ -9558,7 +9559,7 @@ msgstr "Mit keresel?"
 
 #: modules/Support/html_client/mod_support_kb_index.html.twig:64
 msgid "No results found for:"
-msgstr ""
+msgstr "Nem található ilyen:"
 
 #: modules/Support/html_client/mod_support_ticket.html.twig:60
 msgid "Related to"
@@ -9682,7 +9683,7 @@ msgstr "A vendég API letiltása a FOSSBilling-verzió lekéréséhez"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:165
 msgid "Enabling this functionality may affect modules that depend on it."
-msgstr ""
+msgstr "A funkció engedélyezése hatással lehet a tőle függő modulokra."
 
 #: modules/System/html_admin/mod_system_settings.html.twig:184
 msgid "Hide some company information in the guest API"
@@ -9782,7 +9783,7 @@ msgstr "Hibajelentés változásnaplója"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:566
 msgid "Last applicable behavior change: "
-msgstr ""
+msgstr "Utolsó alkalmazható viselkedésváltozás: "
 
 #: modules/System/html_admin/mod_system_settings.html.twig:569
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
@@ -9829,7 +9830,7 @@ msgstr "Kibocsátási megjegyzések frissítése"
 
 #: modules/System/html_admin/mod_system_update.html.twig:19
 msgid "Required PHP version:"
-msgstr ""
+msgstr "Szükséges PHP verzió:"
 
 #: modules/System/html_admin/mod_system_update.html.twig:23
 msgid "This update is considered to be a major update, you should check the release notes for any breaking changes."
@@ -9933,7 +9934,7 @@ msgstr "Adminisztrációs terület témái"
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:21
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:30
 msgid "WYSIWYG settings"
-msgstr ""
+msgstr "WYSIWYG beállítások"
 
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:34
 msgid "Default editor"
@@ -9983,12 +9984,12 @@ msgstr "Hiba jelentése"
 #: themes/admin_default/html/macro_functions.html.twig:111
 #: themes/huraga/html/macro_functions.html.twig:35
 msgid "Failed Setup"
-msgstr ""
+msgstr "Sikertelen beállítás"
 
 #: themes/admin_default/html/macro_functions.html.twig:113
 #: themes/huraga/html/macro_functions.html.twig:37
 msgid "Failed Renewal"
-msgstr ""
+msgstr "Sikertelen megújítás"
 
 #: themes/admin_default/html/macro_functions.html.twig:154
 msgid "Search:"
@@ -10104,7 +10105,7 @@ msgstr "Tekintsd meg a kiterjesztés könyvtárát"
 
 #: themes/admin_default/html/partial_extensions.html.twig:49
 msgid "View extension README"
-msgstr ""
+msgstr "Olvasd el a README fájlt"
 
 #: themes/admin_default/html/partial_extensions.html.twig:63
 msgid "Install extension"
