@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2024-06-07 20:48-0700\n"
-"PO-Revision-Date: 2025-01-03 13:11\n"
+"PO-Revision-Date: 2025-01-04 13:07\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
@@ -479,11 +479,11 @@ msgstr "Redirecionar para PayPal.com"
 #: library/Payment/Adapter/PayPalEmail.php:305
 #: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1359
 msgid "Payment for invoice :serie:id [:title]"
-msgstr "Pagamento da fatura :serie:id [:title]"
+msgstr "Pagamento para a fatura proforma :serie:id [:title]"
 
 #: library/Payment/Adapter/Stripe.php:115 modules/Invoice/Service.php:1361
 msgid "Payment for invoice :serie:id"
-msgstr "Pagamento da fatura :serie:id"
+msgstr "Pagamento da fatura proforma :serie:id"
 
 #: library/Payment/Adapter/Stripe.php:188
 msgid "There was an error when processing the transaction"
@@ -1202,7 +1202,7 @@ msgstr ""
 
 #: modules/Invoice/Api/Admin.php:251 modules/Invoice/Api/Client.php:113
 msgid "Order :id is free. No need to generate invoice."
-msgstr "A identificação da encomenda é gratuita. Não é necessário gerar fatura."
+msgstr "A identificação da encomenda é gratuita. Não é necessário gerar fatura proforma."
 
 #: modules/Invoice/Api/Admin.php:742
 msgid "Client currency must match subscription currency. Check if clients currency is defined."
@@ -1216,7 +1216,7 @@ msgstr "Subscrição não encontrada"
 #: modules/Invoice/Api/Client.php:165 modules/Invoice/Api/Guest.php:35
 #: modules/Invoice/Api/Guest.php:59
 msgid "Invoice was not found"
-msgstr "A fatura não foi encontrada"
+msgstr "A fatura proforma não foi encontrada"
 
 #: modules/Invoice/Api/Client.php:82 modules/Invoice/Api/Guest.php:62
 msgid "Paid Invoice cannot be modified"
@@ -1236,7 +1236,7 @@ msgstr "É necessário introduzir um valor numérico"
 
 #: modules/Invoice/Api/Guest.php:102
 msgid "Invoice hash not passed. Missing param hash"
-msgstr "O hash da fatura não foi transmitido. Falta o parâmetro hash"
+msgstr "O hash da fatura proforma não foi transmitido. Falta o parâmetro hash"
 
 #: modules/Invoice/Api/Guest.php:106
 msgid "Payment method not found. Missing param gateway_id"
@@ -1292,7 +1292,7 @@ msgstr "Métodos de pagamento"
 
 #: modules/Invoice/Service.php:422
 msgid "Unable to determine the next invoice number"
-msgstr "Não é possível determinar o próximo número de fatura"
+msgstr "Não é possível determinar o próximo número de fatura proforma"
 
 #: modules/Invoice/Service.php:638
 msgid "Cannot refund invoice with negative amount"
@@ -1300,11 +1300,11 @@ msgstr ""
 
 #: modules/Invoice/Service.php:853
 msgid "Invoice is related to order #:id. Please cancel order first."
-msgstr "A fatura está relacionada com a encomenda #:id. Por favor, cancele a encomenda primeiro."
+msgstr "A fatura proforma está relacionada com a encomenda #:id. Por favor, cancele a encomenda primeiro."
 
 #: modules/Invoice/Service.php:920
 msgid "Invoices are not generated for 0 amount orders"
-msgstr "As facturas não são geradas para encomendas de montante 0"
+msgstr "As facturas proforma não são geradas para encomendas de montante 0"
 
 #: modules/Invoice/Service.php:1080
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
@@ -1320,7 +1320,7 @@ msgstr "O montante não pode exceder :max_amount"
 
 #: modules/Invoice/Service.php:1120 modules/Invoice/Service.php:1188
 msgid "Invoice not found"
-msgstr "Fatura não encontrada"
+msgstr "Fatura proforma não encontrada"
 
 #: modules/Invoice/Service.php:1125
 msgid "Payment method not found"
@@ -1336,7 +1336,7 @@ msgstr "Não foi possível ativar o item proforma. Ordem :id não encontrada"
 
 #: modules/Invoice/ServiceInvoiceItem.php:128
 msgid "Invoice item title is missing"
-msgstr "O título do item da fatura está em falta"
+msgstr "O título do item da fatura proforma está em falta"
 
 #: modules/Invoice/ServiceInvoiceItem.php:218
 msgid "Add funds to account"
@@ -1393,11 +1393,11 @@ msgstr "Transação desconhecida #:id type: :type"
 #: modules/Invoice/ServiceTransaction.php:490
 #: modules/Invoice/ServiceTransaction.php:656
 msgid "Transaction :id is not associated with an invoice."
-msgstr "A transação :id não está associada a uma fatura."
+msgstr "A transação :id não está associada a uma fatura proforma."
 
 #: modules/Invoice/ServiceTransaction.php:495
 msgid "Invoice #:id not found"
-msgstr "Fatura #:id não encontrado"
+msgstr "Fatura proforma #:id não encontrado"
 
 #: modules/Invoice/ServiceTransaction.php:505
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
@@ -1429,7 +1429,7 @@ msgstr "O estado da transação no gateway de pagamento é Pendente. Apenas as t
 
 #: modules/Invoice/ServiceTransaction.php:678
 msgid "Client currency do not match invoice currency"
-msgstr "A moeda do cliente não corresponde à moeda da fatura"
+msgstr "A moeda do cliente não corresponde à moeda da fatura proforma"
 
 #: modules/Invoice/ServiceTransaction.php:683
 msgid "Cannot add negative amount to client balance for debit transaction"
@@ -1488,11 +1488,11 @@ msgstr "Configuração da encomenda não aprovada"
 
 #: modules/Order/Api/Admin.php:348
 msgid "Automatically issue renewal invoices"
-msgstr "Emitir automaticamente facturas de renovação"
+msgstr "Emitir automaticamente facturas proforma de renovação"
 
 #: modules/Order/Api/Admin.php:349
 msgid "Issue invoices manually"
-msgstr "Emitir facturas manualmente"
+msgstr "Emitir facturas proforma manualmente"
 
 #: modules/Order/Api/Client.php:104
 msgid "Only pending and failed setup orders can be deleted."
@@ -1940,7 +1940,7 @@ msgstr "Número máximo de iterações atingido durante a geração da chave de 
 
 #: modules/Spamchecker/Service.php:63
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
-msgstr "O seu endereço IP (:ip) está bloqueado. Contacte o nosso apoio para levantar o seu bloqueio."
+msgstr "O seu endereço IP (: ip) está bloqueado. Contacte o nosso apoio para levantar o seu bloqueio."
 
 #: modules/Spamchecker/Service.php:84
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
@@ -5195,7 +5195,7 @@ msgstr ""
 #: modules/Support/html_client/mod_support_tickets.html.twig:9
 #: modules/Support/html_client/mod_support_tickets.html.twig:18
 msgid "Support tickets"
-msgstr "Bilhetes de apoio"
+msgstr "Pedidos de Suporte"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:198
 msgid "No recent support tickets"
@@ -5450,7 +5450,7 @@ msgstr "Pago em"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:284
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:288
 msgid "Export Invoices"
-msgstr "Facturas de exportação"
+msgstr "Facturas proforma de exportação"
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:316
 msgid "Prepare"
@@ -5889,7 +5889,7 @@ msgstr "Se tiver a certeza de que esta transação é válida, pode atualizar os
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:59
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:29
 msgid "Invoice Id"
-msgstr "Identificação da fatura"
+msgstr "Identificação da fatura proforma"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:73
 msgid "Transaction ID on payment gateway"
@@ -5927,7 +5927,7 @@ msgstr "Informações de pagamento da transação"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:135
 msgid "Invoice ID"
-msgstr "ID da fatura"
+msgstr "ID da fatura proforma"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:153
 msgid "Transaction processing information"
@@ -6031,18 +6031,18 @@ msgstr "Clique aqui para continuar se esta página não for redireccionada autom
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:3
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:4
 msgid "Invoice management"
-msgstr "Gestão de facturas"
+msgstr "Gestão de facturas proforma"
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:24
 msgid "All of your invoices can be found here. You can choose to see either paid or unpaid invoices by clicking corresponding button."
-msgstr "Todas as suas facturas podem ser consultadas aqui. Pode optar por ver as facturas pagas ou não pagas clicando no botão correspondente."
+msgstr "Todas as suas facturas proforma podem ser consultadas aqui. Pode optar por ver as facturas proforma pagas ou não pagas clicando no botão correspondente."
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:49
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:82
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:31
 msgid "Invoice Date"
-msgstr "Data da fatura"
+msgstr "Data da fatura proforma"
 
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:50
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:84
@@ -6125,11 +6125,11 @@ msgstr "Pagar com"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:29
 #: modules/Invoice/pdf_template/default-pdf.twig:30
 msgid "Invoice number"
-msgstr "Número da fatura"
+msgstr "Número da fatura proforma"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:47
 msgid "Invoice Status"
-msgstr "Estado da fatura"
+msgstr "Estado da fatura proforma"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 #: modules/System/html_admin/mod_system_settings.html.twig:118
@@ -6164,7 +6164,7 @@ msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:14
 msgid "Payment for invoice received"
-msgstr "Pagamento da fatura recebida"
+msgstr "Pagamento da fatura proforma recebida"
 
 #: modules/Invoice/html_client/mod_invoice_thankyou.html.twig:15
 msgid "You will be automatically redirected back to the invoice after 1 minute."
@@ -6405,7 +6405,7 @@ msgstr "Filtrar encomendas"
 #: modules/Order/html_admin/mod_order_manage.html.twig:339
 #: modules/Order/html_admin/mod_order_new.html.twig:34
 msgid "Invoice option"
-msgstr "Opção de faturação"
+msgstr "Opção de faturação proforma"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:59
 msgid "Creation date"
@@ -6563,7 +6563,7 @@ msgstr "Não suspender"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:288
 msgid "Issue invoice"
-msgstr "Emitir fatura"
+msgstr "Emitir fatura proforma"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:305
 msgid "Are you sure you want to delete the selected item?"
@@ -6622,7 +6622,7 @@ msgstr "Próxima data de vencimento"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:532
 msgid "Order invoices"
-msgstr "Encomendar facturas"
+msgstr "Encomendas"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:587
 msgid "Order status history"
@@ -6630,7 +6630,7 @@ msgstr "Histórico do estado da encomenda"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:643
 msgid "Support tickets regarding this order"
-msgstr "Bilhetes de apoio relativos a esta encomenda"
+msgstr "Pedidos de suporte sobre este pedido"
 
 #: modules/Order/html_admin/mod_order_new.html.twig:19
 #: modules/Order/html_admin/mod_order_new.html.twig:23
@@ -7220,7 +7220,7 @@ msgstr ""
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:21
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:28
 msgid "Paid support settings"
-msgstr "Definições de apoio pago"
+msgstr "Configurações de suporte pago"
 
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:34
 msgid "New helpdesk"
@@ -10022,7 +10022,7 @@ msgstr "encomendas"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:111
 msgid "invoices"
-msgstr "facturas"
+msgstr "facturas proforma"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:112
 msgid "unpaid"
@@ -10060,7 +10060,7 @@ msgstr "Mês passado"
 #: themes/admin_default/html/mod_index_dashboard.html.twig:426
 #: themes/admin_default/html/mod_index_dashboard.html.twig:546
 msgid "Income"
-msgstr "Rendimento"
+msgstr "Total de Vendas"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:318
 msgid "Latest orders"
@@ -10120,7 +10120,7 @@ msgstr ""
 
 #: themes/admin_default/html/partial_menu_top.html.twig:19
 msgid "Support ticket"
-msgstr "Ticket de Suporte"
+msgstr "Pedido de Suporte"
 
 #: themes/admin_default/html/partial_menu_top.html.twig:23
 msgid "Staff member"
