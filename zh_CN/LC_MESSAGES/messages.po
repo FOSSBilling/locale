@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2024-06-07 20:48-0700\n"
-"PO-Revision-Date: 2025-03-01 08:37\n"
+"POT-Creation-Date: 2025-04-28 14:49-0700\n"
+"PO-Revision-Date: 2025-04-28 21:57\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.3\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -28,35 +28,31 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: zh_CN\n"
 
-#: di.php:310
-msgid "It appears you are trying to use FOSSBilling without the PHP intl extension enabled. FOSSBilling includes a polyfill for the intl extension, however it does not support :locale. Please enable the intl extension."
-msgstr "你的 FOSSBilling 运行环境并未开启 PHP intl 扩展，为保障系统稳定运行，请在你的 PHP 配置文件中开启 intl 扩展。"
-
-#: di.php:358 di.php:432
+#: di.php:343 di.php:417
 msgid "Client is not logged in"
 msgstr "客户未登录"
 
-#: di.php:398 di.php:470
+#: di.php:383 di.php:455
 msgid "Admin is not logged in"
 msgstr "管理员未登录"
 
-#: di.php:510
+#: di.php:495
 msgid "Unrecognized Handler type: "
 msgstr "未知的处理类型： "
 
-#: di.php:520
+#: di.php:505
 msgid "Please check your mailbox and confirm your email address."
 msgstr "请先完成邮箱地址验证，我们已经向您的邮箱发送了验证邮件。"
 
-#: index.php:80 library/Box/App.php:335 library/Box/AppClient.php:70
+#: index.php:75 library/Box/App.php:335 library/Box/AppClient.php:70
 msgid "Page :url not found"
 msgstr "找不到 :url 页面"
 
-#: index.php:87
+#: index.php:82
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "HTTP 错误 :err_code 尝试加载 :url 时出错"
 
-#: library/Api/Abstract.php:59
+#: library/Api/Abstract.php:60
 msgid "Mod object is not set for the service"
 msgstr "模块对象未为服务设置"
 
@@ -64,7 +60,7 @@ msgstr "模块对象未为服务设置"
 msgid "Method :method must contain underscore"
 msgstr "方法：方法中必须包含下划线"
 
-#: library/Api/Handler.php:54 library/Box/Mod.php:57
+#: library/Api/Handler.php:54 library/Box/Mod.php:58
 msgid "Invalid module name"
 msgstr "无效的模块名称"
 
@@ -100,154 +96,154 @@ msgstr "未找到页面"
 msgid "The PHP OpenSSL extension must be enabled on your server"
 msgstr "请在你的PHP配置文件中开启 OpenSSL 扩展"
 
-#: library/Box/Log.php:69
+#: library/Box/Log.php:94
 msgid "Missing log message"
 msgstr "缺少日志消息"
 
-#: library/Box/Log.php:86 library/Box/Log.php:101
+#: library/Box/Log.php:110 library/Box/Log.php:125
 msgid "Bad log priority"
 msgstr "错误的日志优先级"
 
-#: library/Box/Mod.php:76
+#: library/Box/Mod.php:77
 msgid "Module :mod manifest file is missing"
 msgstr "模块 :mod manifest 文件丢失"
 
-#: library/Box/Mod.php:81
+#: library/Box/Mod.php:82
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr "模块 :mod manifest 文件无效。请检查文件的语法和权限。"
 
-#: library/Box/Mod.php:125
+#: library/Box/Mod.php:126
 msgid "Module :mod does not have service class"
 msgstr "模块 :mod 没有服务类"
 
-#: library/Box/Mod.php:144
+#: library/Box/Mod.php:145
 msgid "Module :mod Client controller class was not found"
 msgstr "模块 :mod Client 控制器类未找到"
 
-#: library/Box/Mod.php:219
+#: library/Box/Mod.php:220
 msgid "Core modules cannot be updated"
 msgstr "无法更新核心模块"
 
-#: library/Box/Pagination.php:44 library/Box/Pagination.php:77
+#: library/Box/Pagination.php:45 library/Box/Pagination.php:78
 msgid "Invalid page number"
 msgstr "无效的页码"
 
-#: library/Box/Pagination.php:47 library/Box/Pagination.php:80
+#: library/Box/Pagination.php:48 library/Box/Pagination.php:81
 #: modules/Client/Service.php:183
 msgid "Invalid per page number"
 msgstr "每页的无效个数"
 
-#: library/Box/Period.php:43
+#: library/Box/Period.php:44
 msgid "Invalid period code. Period definition must be 2 chars length"
 msgstr "无效的周期代码。周期定义必须是 2 个字符的长度"
 
-#: library/Box/Period.php:52
+#: library/Box/Period.php:53
 msgid "Period Error. Unit :unit is not defined"
 msgstr "周期错误。单位 :unit 未定义"
 
-#: library/Box/Period.php:63
+#: library/Box/Period.php:64
 msgid "Invalid period quantity :qty for unit :unit. Allowed range is from :from to :to"
 msgstr "单位 :unit 的周期量 :qty 无效，允许的范围是从 :from 到 :to"
 
-#: library/Box/Period.php:83
+#: library/Box/Period.php:84
 msgid "Every week"
 msgstr "每周"
 
-#: library/Box/Period.php:84
+#: library/Box/Period.php:85
 msgid "Every month"
 msgstr "每月"
 
-#: library/Box/Period.php:85
+#: library/Box/Period.php:86
 #: themes/admin_default/html/partial_pricing.html.twig:90
 msgid "Every 3 months"
 msgstr "每 3 个月"
 
-#: library/Box/Period.php:86
+#: library/Box/Period.php:87
 #: themes/admin_default/html/partial_pricing.html.twig:108
 msgid "Every 6 months"
 msgstr "每 6 个月"
 
-#: library/Box/Period.php:87
+#: library/Box/Period.php:88
 #: themes/admin_default/html/partial_pricing.html.twig:125
 msgid "Every year"
 msgstr "每年"
 
-#: library/Box/Period.php:88
+#: library/Box/Period.php:89
 #: themes/admin_default/html/partial_pricing.html.twig:142
 msgid "Every 2 years"
 msgstr "每 2 年"
 
-#: library/Box/Period.php:89
+#: library/Box/Period.php:90
 #: themes/admin_default/html/partial_pricing.html.twig:160
 msgid "Every 3 years"
 msgstr "每 3 年"
 
-#: library/Box/Period.php:124
+#: library/Box/Period.php:125
 msgid "Every :number day"
 msgid_plural "Every :number days"
 msgstr[0] "每 :number 天"
 
-#: library/Box/Period.php:125
+#: library/Box/Period.php:126
 msgid "Every :number week"
 msgid_plural "Every :number weeks"
 msgstr[0] "每 :number 周"
 
-#: library/Box/Period.php:126
+#: library/Box/Period.php:127
 msgid "Every :number month"
 msgid_plural "Every :number months"
 msgstr[0] "每 :number 月"
 
-#: library/Box/Period.php:127
+#: library/Box/Period.php:128
 msgid "Every :number year"
 msgid_plural "Every :number years"
 msgstr[0] "每 :number 年"
 
-#: library/Box/Period.php:128 library/Box/Period.php:164
+#: library/Box/Period.php:129 library/Box/Period.php:165
 msgid "Unit not defined"
 msgstr "未定义单位"
 
-#: library/Box/Period.php:149
+#: library/Box/Period.php:150
 msgid "Unable to get the number of months for :unit"
 msgstr "无法获取 :unit 的月数"
 
-#: library/Box/Translate.php:55
+#: library/Box/Translate.php:44
 msgid "Unable to set up FOSSBilling translation functionality, locale was undefined."
 msgstr "无法启用 FOSSBilling 翻译功能，语言环境未设置。"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:254
 msgid "second"
 msgstr "秒"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:254
 msgid "minute"
 msgstr "分钟"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:254
 msgid "hour"
 msgstr "小时"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:254
 msgid "day"
 msgstr "天"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:254
 msgid "week"
 msgstr "周"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:254
 msgid "month"
 msgstr "月"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:254
 msgid "year"
 msgstr "年"
 
-#: library/Box/TwigExtensions.php:251
+#: library/Box/TwigExtensions.php:254
 msgid "decade"
 msgstr "十年"
 
-#: library/Box/TwigLoader.php:23 library/Box/TwigLoader.php:27
-#: library/Box/TwigLoader.php:31
+#: library/Box/TwigLoader.php:24 library/Box/TwigLoader.php:28
+#: library/Box/TwigLoader.php:32
 msgid "Missing :missing: param for Box_TwigLoader"
 msgstr "Box_TwigLoader缺少参数 :missing:"
 
@@ -259,15 +255,15 @@ msgstr "无法从消息中心获取警告信息，请查看错误日志获取详
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "FOSSBilling 中央警报系统的响应无效。"
 
-#: library/FOSSBilling/Config.php:90
+#: library/FOSSBilling/Config.php:91
 msgid "An error occurred when creating a backup of the configuration file."
 msgstr "备份配置文件时出现错误。"
 
-#: library/FOSSBilling/Config.php:96
+#: library/FOSSBilling/Config.php:97
 msgid "An error occurred when writing the updated configuration file."
 msgstr "更新配置文件时出现错误。"
 
-#: library/FOSSBilling/Config.php:145
+#: library/FOSSBilling/Config.php:146
 msgid "Too many iterations were performed while formatting the config file"
 msgstr "在格式化配置文件时发生了过多的循环"
 
@@ -290,6 +286,10 @@ msgstr "无法连接到 FOSSBilling 扩展目录。"
 #: library/FOSSBilling/ExtensionManager.php:183
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr "FOSSBilling 扩展目录到响应无效。"
+
+#: library/FOSSBilling/GeoIP/Reader.php:188
+msgid "Got a "
+msgstr ""
 
 #: library/FOSSBilling/Mail.php:119
 msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
@@ -323,50 +323,54 @@ msgstr "SMTP 主机或端口未配置"
 msgid "Invalid password hash provided"
 msgstr "提供的密码哈希值无效。"
 
-#: library/FOSSBilling/Tools.php:59 library/FOSSBilling/Tools.php:252
+#: library/FOSSBilling/StandardsHelper.php:32
+msgid "Exact matches cannot be provided unless you provide an Alpha2 language code."
+msgstr ""
+
+#: library/FOSSBilling/Tools.php:60 library/FOSSBilling/Tools.php:253
 msgid "Service class :class was not found in :path"
 msgstr "在 :path 中找不到服务类 :class。"
 
-#: library/FOSSBilling/Tools.php:161
+#: library/FOSSBilling/Tools.php:162
 msgid "We were unable to generate a password with the required parameters"
 msgstr "无法生成符合您要求的密码。"
 
-#: library/FOSSBilling/Tools.php:301
+#: library/FOSSBilling/Tools.php:302
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "邮箱"
 
-#: library/FOSSBilling/Tools.php:303 library/FOSSBilling/Validate.php:187
-#: modules/Servicehosting/Api/Guest.php:38
+#: library/FOSSBilling/Tools.php:304 library/FOSSBilling/Validate.php:187
+#: modules/Servicehosting/Api/Guest.php:39
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: 无效"
 
-#: library/FOSSBilling/Update.php:148
+#: library/FOSSBilling/Update.php:147
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "下载最新版本信息失败。在错误日志中可以获得更多信息。"
 
-#: library/FOSSBilling/Update.php:213 modules/System/Api/Admin.php:192
+#: library/FOSSBilling/Update.php:212 modules/System/Api/Admin.php:192
 msgid "You have the latest version of FOSSBilling. You do not need to update."
 msgstr "您的 FOSSBilling 系统版本已经是最新的，无需更新。"
 
-#: library/FOSSBilling/Update.php:225
+#: library/FOSSBilling/Update.php:224
 msgid "FOSSBilling :version: requires at least PHP :min_php:, but you are running :current_php:."
 msgstr "FOSSBilling :version: 至少需要 PHP :min_php:，但你当前运行的是 :current_php:。"
 
-#: library/FOSSBilling/Update.php:236
+#: library/FOSSBilling/Update.php:235
 msgid "The download URL for this release was not specified as a trusted one. Update canceled for security reasons."
 msgstr "此版本的下载 URL 未被指定为可信的 URL。由于安全原因，更新已取消。"
 
-#: library/FOSSBilling/Update.php:257
+#: library/FOSSBilling/Update.php:256
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "无法下载更新归档。在错误日志中可获得更多详细信息。"
 
-#: library/FOSSBilling/Update.php:271 modules/Extension/Service.php:481
+#: library/FOSSBilling/Update.php:270 modules/Extension/Service.php:481
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "提取文件失败，请检查文件和文件夹权限。在错误日志中有更多详细信息。"
 
-#: library/FOSSBilling/Update.php:299
+#: library/FOSSBilling/Update.php:298
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "无法清除缓存或删除安装目录。通过错误日志可查看详情。"
 
@@ -374,7 +378,7 @@ msgstr "无法清除缓存或删除安装目录。通过错误日志可查看详
 msgid "Unable to load existing configuration"
 msgstr "无法加载配置"
 
-#: library/FOSSBilling/UpdatePatcher.php:153
+#: library/FOSSBilling/UpdatePatcher.php:158
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr "应用数据库补丁时出错。 请检查错误日志以获取错误信息，更正错误，然后执行备份补丁方法以完成更新。"
 
@@ -403,81 +407,81 @@ msgstr "密码必须至少包含 1 个大写字母。"
 msgid "Birthdate"
 msgstr "生日"
 
-#: library/FOSSBilling/i18n.php:149
+#: library/FOSSBilling/i18n.php:151
 msgid "Unable to enable / disable the locale as it is not present in the locale folder."
 msgstr "无法启用/禁用语言，因为它不在语言文件夹中。"
 
-#: library/Model/ProductDomainTable.php:219
+#: library/Model/ProductDomainTable.php:220
 msgid "Could not determine domain price. Domain action is missing"
 msgstr "无法得到域名价格。无法找到域名操作。"
 
-#: library/Model/ProductDomainTable.php:236
+#: library/Model/ProductDomainTable.php:237
 msgid "Unknown TLD. Could not determine registration price"
 msgstr "未知的 TLD。无法确定注册价格"
 
-#: library/Model/ProductDomainTable.php:257
+#: library/Model/ProductDomainTable.php:258
 msgid "Domain product cannot be removed."
 msgstr "域名产品无法被删除。"
 
-#: library/Model/ProductTable.php:61
+#: library/Model/ProductTable.php:62
 msgid "Unknown period selected "
 msgstr "选择的是未知周期 "
 
-#: library/Model/ProductTable.php:74
+#: library/Model/ProductTable.php:75
 msgid "Product pricing could not be determined. "
 msgstr "无法确定产品价格。 "
 
-#: library/Model/ProductTable.php:104
+#: library/Model/ProductTable.php:105
 msgid "Unknown period selected for setup price"
 msgstr "为设置价格选择的未知周期"
 
-#: library/Model/ProductTable.php:126
+#: library/Model/ProductTable.php:127
 msgid "Product :id payment type is recurrent, but period was not selected"
 msgstr "产品号 :id 的付款类型是自动续费，但周期没有被选择"
 
-#: library/Model/ProductTable.php:138
+#: library/Model/ProductTable.php:139
 msgid "Unknown Period selected for price"
 msgstr "为设置价格选择的未知周期"
 
-#: library/Payment/Adapter/ClientBalance.php:59
+#: library/Payment/Adapter/ClientBalance.php:60
 msgid "Your account balance is insufficient to cover this invoice."
 msgstr "您的帐户余额不足以支付此账单。"
 
-#: library/Payment/Adapter/ClientBalance.php:64
-#: library/Payment/Adapter/ClientBalance.php:92
-#: library/Payment/Adapter/ClientBalance.php:127
+#: library/Payment/Adapter/ClientBalance.php:65
+#: library/Payment/Adapter/ClientBalance.php:98
+#: library/Payment/Adapter/ClientBalance.php:133
 msgid "You may not pay a deposit invoice with this payment gateway."
 msgstr "您无法通过此支付网关支付定金发票。"
 
-#: library/Payment/Adapter/ClientBalance.php:82
-#: library/Payment/Adapter/PayPalEmail.php:75
+#: library/Payment/Adapter/ClientBalance.php:83
+#: library/Payment/Adapter/PayPalEmail.php:77
 msgid "IPN is invalid"
 msgstr "IPN无效"
 
-#: library/Payment/Adapter/ClientBalance.php:121
+#: library/Payment/Adapter/ClientBalance.php:127
 msgid "ClientBalance gateway is not enabled"
 msgstr "客户端余额网关未启用"
 
-#: library/Payment/Adapter/PayPalEmail.php:30
+#: library/Payment/Adapter/PayPalEmail.php:31
 #: library/Payment/Adapter/Stripe.php:34 library/Payment/Adapter/Stripe.php:37
 #: library/Payment/Adapter/Stripe.php:43 library/Payment/Adapter/Stripe.php:46
 msgid "The \":pay_gateway\" payment gateway is not fully configured. Please configure the :missing"
 msgstr "“:pay_gateway”支付网关未完全配置。请配置 :missing"
 
-#: library/Payment/Adapter/PayPalEmail.php:121
+#: library/Payment/Adapter/PayPalEmail.php:126
 msgid "Cannot process duplicate IPN"
 msgstr "无法处理重复 IPN"
 
-#: library/Payment/Adapter/PayPalEmail.php:265
+#: library/Payment/Adapter/PayPalEmail.php:270
 msgid "Redirecting to PayPal.com"
 msgstr "正在重定向到 PayPal.com"
 
-#: library/Payment/Adapter/PayPalEmail.php:305
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1359
+#: library/Payment/Adapter/PayPalEmail.php:310
+#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1362
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "发票 :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:115 modules/Invoice/Service.php:1361
+#: library/Payment/Adapter/Stripe.php:115 modules/Invoice/Service.php:1364
 msgid "Payment for invoice :serie:id"
 msgstr "发票 :serie:id"
 
@@ -501,7 +505,7 @@ msgstr "支付网关的通知 URL 未设置"
 msgid "IPN redirect URL for the payment gateway was not set"
 msgstr "支付网关的重定向 URL 未设置"
 
-#: library/Registrar/Adapter/Email.php:23
+#: library/Registrar/Adapter/Email.php:24
 #: library/Registrar/Adapter/Internetbs.php:18
 #: library/Registrar/Adapter/Internetbs.php:25
 #: library/Registrar/Adapter/Namecheap.php:30
@@ -511,14 +515,14 @@ msgstr "支付网关的重定向 URL 未设置"
 #: library/Registrar/Adapter/Netearthone.php:18
 #: library/Registrar/Adapter/Resellbiz.php:11
 #: library/Registrar/Adapter/Resellbiz.php:18
-#: library/Registrar/Adapter/Resellerclub.php:41
-#: library/Registrar/Adapter/Resellerclub.php:48
+#: library/Registrar/Adapter/Resellerclub.php:42
+#: library/Registrar/Adapter/Resellerclub.php:49
 #: library/Registrar/Adapter/Resellerid.php:11
 #: library/Registrar/Adapter/Resellerid.php:18
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
 msgstr "\":domain_registrar\"域名注册商未配置好。请配置 :missing"
 
-#: library/Registrar/Adapter/Email.php:64 library/Registrar/Adapter/Email.php:69
+#: library/Registrar/Adapter/Email.php:65 library/Registrar/Adapter/Email.php:70
 msgid ":type: registrar is unable to :action:"
 msgstr "注册商无法"
 
@@ -535,10 +539,10 @@ msgstr "获取域名详情"
 #: library/Registrar/Adapter/Namecheap.php:660
 #: library/Registrar/Adapter/Namecheap.php:687
 #: library/Registrar/Adapter/Namecheap.php:719
-#: library/Registrar/Adapter/Resellerclub.php:386
-#: library/Registrar/Adapter/Resellerclub.php:708
-#: library/Registrar/Adapter/Resellerclub.php:715
-#: library/Registrar/Adapter/Resellerclub.php:722
+#: library/Registrar/Adapter/Resellerclub.php:393
+#: library/Registrar/Adapter/Resellerclub.php:713
+#: library/Registrar/Adapter/Resellerclub.php:720
+#: library/Registrar/Adapter/Resellerclub.php:727
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr "在 :type: 的 :action: 失败，请在错误日志中查看详情"
 
@@ -549,15 +553,15 @@ msgstr "等待删除域名"
 
 #: library/Registrar/Adapter/Internetbs.php:169
 #: library/Registrar/Adapter/Namecheap.php:428
-#: library/Registrar/Adapter/Namecheap.php:568 library/Server/Manager/CWP.php:344
-#: library/Server/Manager/CWP.php:357 library/Server/Manager/CWP.php:370
-#: library/Server/Manager/Directadmin.php:132
-#: library/Server/Manager/Directadmin.php:146
-#: library/Server/Manager/Directadmin.php:208
-#: library/Server/Manager/Directadmin.php:457
+#: library/Registrar/Adapter/Namecheap.php:568 library/Server/Manager/CWP.php:345
+#: library/Server/Manager/CWP.php:358 library/Server/Manager/CWP.php:371
+#: library/Server/Manager/Directadmin.php:133
+#: library/Server/Manager/Directadmin.php:147
+#: library/Server/Manager/Directadmin.php:209
+#: library/Server/Manager/Directadmin.php:458
 #: library/Server/Manager/Hestia.php:296 library/Server/Manager/Hestia.php:306
 #: library/Server/Manager/Hestia.php:341 library/Server/Manager/Plesk.php:101
-#: library/Server/Manager/Plesk.php:314 library/Server/Manager/Plesk.php:360
+#: library/Server/Manager/Plesk.php:296 library/Server/Manager/Plesk.php:342
 msgid ":type: does not support :action:"
 msgstr ":type: 不支持 :action:"
 
@@ -590,130 +594,130 @@ msgstr "获取域名锁定与否状态"
 msgid "set the domain lock status"
 msgstr "设定域名锁定状态"
 
-#: library/Registrar/Adapter/Resellerclub.php:317
+#: library/Registrar/Adapter/Resellerclub.php:324
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
 msgstr "注册 .AU 域名必须持有有效的公司注册号"
 
-#: library/Registrar/Adapter/Resellerclub.php:384
+#: library/Registrar/Adapter/Resellerclub.php:391
 msgid "get the transfer code"
 msgstr "获取域名转移密码"
 
-#: library/Registrar/Adapter/Resellerclub.php:583
+#: library/Registrar/Adapter/Resellerclub.php:590
 msgid "You are already registered as reseller"
 msgstr "您已经注册为代理商"
 
-#: library/Registrar/Adapter/Resellerclub.php:846
+#: library/Registrar/Adapter/Resellerclub.php:851
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr "注册ES域名时须有有效的联系人护照信息"
 
-#: library/Registrar/Adapter/Resellerclub.php:865
+#: library/Registrar/Adapter/Resellerclub.php:870
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr "注册ASIA域名时须有有效的联系人护照信息"
 
-#: library/Registrar/Adapter/Resellerclub.php:889
+#: library/Registrar/Adapter/Resellerclub.php:894
 msgid "Valid contact birthdate is required while registering RU domain name"
 msgstr "注册RU域名时须有联系人的出生日期"
 
-#: library/Registrar/Adapter/Resellerclub.php:893
+#: library/Registrar/Adapter/Resellerclub.php:898
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr "注册RU域名时须有有效的联系人护照信息"
 
-#: library/Registrar/Adapter/Resellerclub.php:980
+#: library/Registrar/Adapter/Resellerclub.php:985
 msgid "Contact not found"
 msgstr "未找到联系人"
 
-#: library/Server/Manager/CWP.php:52 library/Server/Manager/CWP.php:56
-#: library/Server/Manager/CWP.php:60 library/Server/Manager/Directadmin.php:66
-#: library/Server/Manager/Directadmin.php:71
-#: library/Server/Manager/Directadmin.php:76 library/Server/Manager/Whm.php:63
+#: library/Server/Manager/CWP.php:53 library/Server/Manager/CWP.php:57
+#: library/Server/Manager/CWP.php:61 library/Server/Manager/Directadmin.php:67
+#: library/Server/Manager/Directadmin.php:72
+#: library/Server/Manager/Directadmin.php:77 library/Server/Manager/Whm.php:63
 #: library/Server/Manager/Whm.php:67 library/Server/Manager/Whm.php:71
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "\":server_manager\"服务器未配置好。请配置 :missing"
 
-#: library/Server/Manager/CWP.php:115 library/Server/Manager/Directadmin.php:677
+#: library/Server/Manager/CWP.php:116 library/Server/Manager/Directadmin.php:678
 #: library/Server/Manager/Hestia.php:111 library/Server/Manager/Hestia.php:378
 #: library/Server/Manager/Plesk.php:86
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
 msgstr ":type: 服务器连接失败。请正确填写连接信息和配置内容"
 
-#: library/Server/Manager/CWP.php:184 library/Server/Manager/Plesk.php:144
+#: library/Server/Manager/CWP.php:185 library/Server/Manager/Plesk.php:144
 msgid "create account"
 msgstr "创建账号"
 
-#: library/Server/Manager/CWP.php:186 library/Server/Manager/CWP.php:213
-#: library/Server/Manager/CWP.php:240 library/Server/Manager/CWP.php:270
-#: library/Server/Manager/CWP.php:299 library/Server/Manager/CWP.php:328
-#: library/Server/Manager/Directadmin.php:693
+#: library/Server/Manager/CWP.php:187 library/Server/Manager/CWP.php:214
+#: library/Server/Manager/CWP.php:241 library/Server/Manager/CWP.php:271
+#: library/Server/Manager/CWP.php:300 library/Server/Manager/CWP.php:329
+#: library/Server/Manager/Directadmin.php:694
 #: library/Server/Manager/Hestia.php:164 library/Server/Manager/Hestia.php:181
 #: library/Server/Manager/Hestia.php:208 library/Server/Manager/Hestia.php:232
 #: library/Server/Manager/Hestia.php:257 library/Server/Manager/Hestia.php:283
 #: library/Server/Manager/Hestia.php:328 library/Server/Manager/Plesk.php:146
-#: library/Server/Manager/Whm.php:578 library/Server/Manager/Whm.php:585
-#: library/Server/Manager/Whm.php:592 library/Server/Manager/Whm.php:599
-#: library/Server/Manager/Whm.php:606
+#: library/Server/Manager/Whm.php:627 library/Server/Manager/Whm.php:634
+#: library/Server/Manager/Whm.php:641 library/Server/Manager/Whm.php:648
+#: library/Server/Manager/Whm.php:655
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr "在 :type: 服务器的 :action: 失败，请在错误日志中查看详情"
 
-#: library/Server/Manager/CWP.php:211 library/Server/Manager/Hestia.php:206
+#: library/Server/Manager/CWP.php:212 library/Server/Manager/Hestia.php:206
 msgid "suspend account"
 msgstr "暂停账号"
 
-#: library/Server/Manager/CWP.php:238 library/Server/Manager/Hestia.php:230
+#: library/Server/Manager/CWP.php:239 library/Server/Manager/Hestia.php:230
 msgid "unsuspend account"
 msgstr "恢复账号"
 
-#: library/Server/Manager/CWP.php:268 library/Server/Manager/Hestia.php:255
+#: library/Server/Manager/CWP.php:269 library/Server/Manager/Hestia.php:255
 msgid "cancel account"
 msgstr "取消账号"
 
-#: library/Server/Manager/CWP.php:297 library/Server/Manager/Hestia.php:281
+#: library/Server/Manager/CWP.php:298 library/Server/Manager/Hestia.php:281
 msgid "change account package"
 msgstr "更换账号套餐"
 
-#: library/Server/Manager/CWP.php:326 library/Server/Manager/Hestia.php:326
+#: library/Server/Manager/CWP.php:327 library/Server/Manager/Hestia.php:326
 msgid "change account password"
 msgstr "修改账号密码"
 
-#: library/Server/Manager/CWP.php:344 library/Server/Manager/Directadmin.php:208
-#: library/Server/Manager/Hestia.php:296 library/Server/Manager/Plesk.php:314
+#: library/Server/Manager/CWP.php:345 library/Server/Manager/Directadmin.php:209
+#: library/Server/Manager/Hestia.php:296 library/Server/Manager/Plesk.php:296
 msgid "username changes"
 msgstr "用户名修改"
 
-#: library/Server/Manager/CWP.php:357 library/Server/Manager/Directadmin.php:132
+#: library/Server/Manager/CWP.php:358 library/Server/Manager/Directadmin.php:133
 #: library/Server/Manager/Hestia.php:306
 msgid "changing the account domain"
 msgstr "修改账号的域名"
 
-#: library/Server/Manager/CWP.php:370 library/Server/Manager/Directadmin.php:146
-#: library/Server/Manager/Hestia.php:341 library/Server/Manager/Plesk.php:360
+#: library/Server/Manager/CWP.php:371 library/Server/Manager/Directadmin.php:147
+#: library/Server/Manager/Hestia.php:341 library/Server/Manager/Plesk.php:342
 msgid "changing the account IP"
 msgstr "修改账号的IP地址"
 
-#: library/Server/Manager/Directadmin.php:226
+#: library/Server/Manager/Directadmin.php:227
 msgid "There are no available IPs on this server."
 msgstr "此服务器上没有可用的 IP 地址。"
 
-#: library/Server/Manager/Directadmin.php:342
+#: library/Server/Manager/Directadmin.php:343
 msgid "Unable to assign the Reseller ANY IPs. Make sure to have free, unassigned IPs."
 msgstr "无法为经销商分配任何 IP。请确保有空闲的、未分配的 IP。"
 
-#: library/Server/Manager/Directadmin.php:346
+#: library/Server/Manager/Directadmin.php:347
 msgid "Error creating user"
 msgstr "创建用户时出错"
 
-#: library/Server/Manager/Directadmin.php:457
+#: library/Server/Manager/Directadmin.php:458
 msgid "synchronizing the account"
 msgstr "同步账户"
 
-#: library/Server/Manager/Directadmin.php:502
+#: library/Server/Manager/Directadmin.php:503
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "服务器管理器 DirectAdmin 错误: \"暂停账号失败\""
 
-#: library/Server/Manager/Directadmin.php:669 library/Server/Manager/Whm.php:561
+#: library/Server/Manager/Directadmin.php:670 library/Server/Manager/Whm.php:610
 msgid "HttpClientException: :error"
 msgstr "HttpClientException：:error"
 
-#: library/Server/Manager/Directadmin.php:682
+#: library/Server/Manager/Directadmin.php:683
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "DirectAdmin 错误: \"The request you have made cannot be executed because it does not exist in your authority level\""
 
@@ -737,11 +741,11 @@ msgstr "在执行 :action2: 失败后在 :type: 服务器执行 :action1: 失败
 msgid "account synchronization"
 msgstr "账号同步"
 
-#: library/Server/Manager/Plesk.php:255
+#: library/Server/Manager/Plesk.php:243
 msgid "Can't modify client"
 msgstr "无法修改用户"
 
-#: modules/Activity/Controller/Admin.php:33
+#: modules/Activity/Controller/Admin.php:34
 msgid "Activity"
 msgstr "活动"
 
@@ -757,49 +761,49 @@ msgstr "删除活动"
 msgid "Allows the staff member to delete recorded activity."
 msgstr "允许工作人员删除记录的活动。"
 
-#: modules/Api/Controller/Client.php:50 modules/Api/Controller/Client.php:256
+#: modules/Api/Controller/Client.php:50 modules/Api/Controller/Client.php:260
 msgid "Unknown API call :call"
 msgstr "未知的 API 调用 :calls"
 
-#: modules/Api/Controller/Client.php:132
+#: modules/Api/Controller/Client.php:136
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "无效的请求。请确保请求来源是 :from"
 
-#: modules/Api/Controller/Client.php:143
+#: modules/Api/Controller/Client.php:147
 msgid "Unauthorized IP"
 msgstr "未授权的 IP"
 
-#: modules/Api/Controller/Client.php:198 modules/Api/Controller/Client.php:202
-#: modules/Api/Controller/Client.php:206 modules/Api/Controller/Client.php:220
-#: modules/Api/Controller/Client.php:229 modules/Api/Controller/Client.php:243
+#: modules/Api/Controller/Client.php:202 modules/Api/Controller/Client.php:206
+#: modules/Api/Controller/Client.php:210 modules/Api/Controller/Client.php:224
+#: modules/Api/Controller/Client.php:233 modules/Api/Controller/Client.php:247
 msgid "Authentication Failed"
 msgstr "验证失败"
 
-#: modules/Api/Controller/Client.php:335
+#: modules/Api/Controller/Client.php:339
 msgid "CSRF token invalid"
 msgstr "CSRF 令牌无效"
 
-#: modules/Cart/Api/Guest.php:57 modules/Currency/Api/Admin.php:68
+#: modules/Cart/Api/Guest.php:58 modules/Currency/Api/Admin.php:68
 #: modules/Currency/Api/Admin.php:199 modules/Currency/Api/Guest.php:47
-#: modules/Currency/Service.php:335 modules/Currency/Service.php:401
-#: modules/Currency/Service.php:648
+#: modules/Currency/Service.php:208 modules/Currency/Service.php:288
+#: modules/Currency/Service.php:540
 msgid "Currency not found"
 msgstr "未找到该币种"
 
-#: modules/Cart/Api/Guest.php:96 modules/Cart/Api/Guest.php:104
-#: modules/Cart/Service.php:450
+#: modules/Cart/Api/Guest.php:97 modules/Cart/Api/Guest.php:105
+#: modules/Cart/Service.php:456
 msgid "The promo code has expired or does not exist"
 msgstr "优惠码已过期或不存在"
 
-#: modules/Cart/Api/Guest.php:100 modules/Cart/Service.php:454
+#: modules/Cart/Api/Guest.php:101 modules/Cart/Service.php:460
 msgid "Promo code cannot be applied to your account"
 msgstr "促销代码不能应用到您的帐户"
 
-#: modules/Cart/Api/Guest.php:161
+#: modules/Cart/Api/Guest.php:162
 msgid "Addon products cannot be added separately."
 msgstr "附加组件产品不能单独添加。"
 
-#: modules/Cart/Api/Guest.php:175
+#: modules/Cart/Api/Guest.php:176
 msgid "One or more of your selected add-ons are invalid for the associated product."
 msgstr "您所选的一个或多个附加组件对产品无效。"
 
@@ -815,54 +819,54 @@ msgstr "该产品目前缺货"
 msgid "Selected billing period is invalid for the selected add-on"
 msgstr "选定的附加组件的计费周期无效"
 
-#: modules/Cart/Service.php:236 modules/Product/Api/Guest.php:82
+#: modules/Cart/Service.php:236 modules/Product/Api/Guest.php:83
 msgid "Product not found"
 msgstr "未找到产品"
 
-#: modules/Cart/Service.php:298
+#: modules/Cart/Service.php:304
 msgid "Add products to your cart before applying promo code"
 msgstr "请将产品加到购物车后再使用优惠码"
 
-#: modules/Cart/Service.php:446
+#: modules/Cart/Service.php:452
 msgid "You have already used this promo code. Please remove the promo code and checkout again."
 msgstr "你已经使用了这个促销代码 请删除促销代码并再次结账"
 
-#: modules/Cart/Service.php:506
+#: modules/Cart/Service.php:512
 msgid "Cannot checkout an empty cart"
 msgstr "无法结帐空购物车"
 
-#: modules/Cart/Service.php:518
+#: modules/Cart/Service.php:524
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
 msgstr "所选货币 :selected 与您的个人资料中的货币 :code 不匹配。请修改购物车的货币后继续。"
 
-#: modules/Cart/Service.php:534
+#: modules/Cart/Service.php:540
 msgid "Unable to complete order. One or more of the selected products are invalid."
 msgstr "无法完成订单。所选产品的一个或多个无效。"
 
-#: modules/Cart/Service.php:609
+#: modules/Cart/Service.php:615
 msgid "Discount: :product"
 msgstr "折扣：产品"
 
-#: modules/Cart/Service.php:621
+#: modules/Cart/Service.php:627
 msgid ":product setup"
 msgstr ":产品 设置"
 
-#: modules/Client/Api/Admin.php:149 modules/Client/Api/Admin.php:239
-#: modules/Client/Api/Guest.php:84 modules/Profile/Service.php:133
+#: modules/Client/Api/Admin.php:150 modules/Client/Api/Admin.php:240
+#: modules/Client/Api/Guest.php:84 modules/Profile/Service.php:134
 msgid "This email address is already registered."
 msgstr "此电子邮件地址已被注册。"
 
-#: modules/Client/Api/Admin.php:323 modules/Client/Api/Guest.php:227
-#: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:113
-#: modules/Staff/Api/Admin.php:123 modules/Staff/Api/Guest.php:107
+#: modules/Client/Api/Admin.php:324 modules/Client/Api/Guest.php:227
+#: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:114
+#: modules/Staff/Api/Admin.php:124 modules/Staff/Api/Guest.php:108
 msgid "Passwords do not match"
 msgstr "密码不一致"
 
-#: modules/Client/Api/Admin.php:483
+#: modules/Client/Api/Admin.php:484
 msgid "Event not found"
 msgstr "找不到事件"
 
-#: modules/Client/Api/Admin.php:567
+#: modules/Client/Api/Admin.php:568
 msgid "Group has clients assigned. Please reassign them first."
 msgstr "仍有客户所在该群组，请先将他们分配到其他群组"
 
@@ -879,11 +883,11 @@ msgid "Please check your login details."
 msgstr "请检查您的登录信息。"
 
 #: modules/Client/Api/Guest.php:232 modules/Client/Api/Guest.php:236
-#: modules/Client/Service.php:698
+#: modules/Client/Service.php:695
 msgid "The link has expired or you have already reset your password."
 msgstr "链接已过期或您已经完成密码重置。"
 
-#: modules/Client/Controller/Admin.php:33
+#: modules/Client/Controller/Admin.php:34
 #: modules/Client/html_admin/mod_client_index.html.twig:7
 #: modules/Client/html_admin/mod_client_index.html.twig:175
 #: modules/Client/html_admin/mod_client_manage.html.twig:17
@@ -905,10 +909,11 @@ msgid "Advanced search"
 msgstr "高级搜索"
 
 #: modules/Client/Controller/Admin.php:56
+#: modules/Client/html_admin/mod_client_login_history.html.twig:12
 msgid "Client login history"
 msgstr "用户登录记录"
 
-#: modules/Client/Controller/Client.php:48
+#: modules/Client/Controller/Client.php:49
 msgid "Email address was confirmed"
 msgstr "邮箱地址已确认"
 
@@ -932,11 +937,11 @@ msgstr "无法更换币种，因为用户已经提交订单了。"
 msgid "You must define the client's currency before adding funds."
 msgstr "充值前必须设置币种。"
 
-#: modules/Client/Service.php:243 modules/Client/ServiceBalance.php:125
+#: modules/Client/Service.php:243 modules/Client/ServiceBalance.php:126
 msgid "Funds amount is invalid"
 msgstr "充值金额无效"
 
-#: modules/Client/Service.php:247 modules/Client/ServiceBalance.php:129
+#: modules/Client/Service.php:247 modules/Client/ServiceBalance.php:130
 msgid "Funds description is invalid"
 msgstr "充值的描述无效。"
 
@@ -952,20 +957,21 @@ msgstr "找不到用户"
 msgid "Cannot remove groups with clients"
 msgstr "无法移除用户组"
 
-#: modules/Client/Service.php:628 modules/Profile/Service.php:125
+#: modules/Client/Service.php:625 modules/Profile/Service.php:126
 msgid "Email address cannot be changed"
 msgstr "无法修改邮箱"
 
-#: modules/Client/Service.php:642 modules/Client/Service.php:658
+#: modules/Client/Service.php:639 modules/Client/Service.php:655
 msgid "Field :field cannot be empty"
 msgstr ":field 此字段不能为空"
 
-#: modules/Cookieconsent/Controller/Admin.php:33
+#: modules/Cookieconsent/Controller/Admin.php:34
 msgid "Cookie consent"
 msgstr "Cookie 政策"
 
 #: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:771
-#: modules/Staff/Service.php:196
+#: modules/Invoice/Service.php:1468 modules/Invoice/Service.php:1473
+#: modules/Staff/Service.php:197
 msgid "You do not have permission to perform this action"
 msgstr "您没有权限执行此操作"
 
@@ -973,72 +979,72 @@ msgstr "您没有权限执行此操作"
 msgid "Currency already registered"
 msgstr "币种已设置"
 
-#: modules/Currency/Api/Admin.php:111
+#: modules/Currency/Api/Admin.php:111 modules/Currency/Service.php:190
 msgid "Currency code is invalid"
 msgstr "货币代码无效"
 
-#: modules/Currency/Service.php:69
-msgid "Currency conversion rate cannot be zero"
-msgstr "汇率不能为零"
-
-#: modules/Currency/Service.php:135
+#: modules/Currency/Api/Guest.php:59 modules/Currency/Service.php:136
 msgid "Currency code not provided"
 msgstr "货币代码未写明"
 
-#: modules/Currency/Service.php:331
+#: modules/Currency/Service.php:70
+msgid "Currency conversion rate cannot be zero"
+msgstr "汇率不能为零"
+
+#: modules/Currency/Service.php:204
 msgid "Cannot remove default currency"
 msgstr "不能删除默认币种"
 
-#: modules/Currency/Service.php:391
+#: modules/Currency/Service.php:278
 msgid "Currency format must include {{price}} tag"
 msgstr "货币格式必须包含 {{price}} 标签"
 
-#: modules/Currency/Service.php:419
+#: modules/Currency/Service.php:306
 msgid "Currency rate is invalid"
 msgstr "汇率无效"
 
-#: modules/Currency/Service.php:480
+#: modules/Currency/Service.php:372
 msgid "You must configure your API key to use Currency Data API as an exchange rate data source."
 msgstr "您必须配置您的 API 密钥才能使用 Currency Data API。"
 
-#: modules/Currency/Service.php:485
+#: modules/Currency/Service.php:377
 msgid "You must configure your API key to use currencylayer as an exchange rate data source."
 msgstr "您必须配置您的 API 密钥才能使用 Currencylayer API。"
 
-#: modules/Currency/Service.php:529
+#: modules/Currency/Service.php:421
 msgid "There was an error when fetching currency rates from ExchangeRate-API. See the error log for details."
 msgstr "从 Exchange-Rate-API 获取货币汇率时发生错误。详情请参阅错误日志。"
 
-#: modules/Currency/Service.php:582
+#: modules/Currency/Service.php:474
 msgid "There was an error when fetching currency rates from Currency Data API. See the error log for details."
 msgstr "从 Currency Data API 获取货币汇率时发生错误。请查看错误日志以获取详细信息。"
 
-#: modules/Currency/Service.php:615
+#: modules/Currency/Service.php:507
 msgid "There was an error when fetching currency rates from currencylayer. See the error log for details."
 msgstr "从 Currencylayer 获取货币汇率时发生错误。请查看错误日志以获取详细信息。"
 
-#: modules/Custompages/Controller/Admin.php:33
+#: modules/Custompages/Controller/Admin.php:34
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:11
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:19
 msgid "Custom Pages"
 msgstr "自定义的页面"
 
-#: modules/Email/Api/Admin.php:114 modules/Email/Api/Admin.php:137
-#: modules/Email/Api/Client.php:66 modules/Email/Api/Client.php:88
-#: modules/Email/Api/Client.php:110 modules/Email/Service.php:495
+#: modules/Email/Api/Admin.php:115 modules/Email/Api/Admin.php:138
+#: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:89
+#: modules/Email/Api/Client.php:111 modules/Email/Service.php:495
 msgid "Email not found"
 msgstr "未找到邮箱"
 
-#: modules/Email/Api/Admin.php:209
+#: modules/Email/Api/Admin.php:210
 msgid "Email template not found"
 msgstr "找不到电子邮件模板"
 
-#: modules/Email/Api/Admin.php:385
+#: modules/Email/Api/Admin.php:386
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "未指定收件人。可设置用户或员工作为参数"
 
-#: modules/Email/Controller/Admin.php:34
+#: modules/Email/Controller/Admin.php:35
 #: modules/Email/html_admin/mod_email_details.html.twig:17
 #: modules/Email/html_admin/mod_email_history.html.twig:5
 #: modules/Email/html_admin/mod_email_history.html.twig:21
@@ -1061,19 +1067,19 @@ msgstr "找不到邮件模板 :code"
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr "由于长度过长错误消息被截断，请检查错误日志以获取完整消息： "
 
-#: modules/Embed/Controller/Admin.php:33
+#: modules/Embed/Controller/Admin.php:34
 msgid "Embed and integrate"
 msgstr "插入和整合"
 
-#: modules/Extension/Api/Admin.php:294
+#: modules/Extension/Api/Admin.php:295
 msgid "Extension not found"
 msgstr "找不到扩展"
 
-#: modules/Extension/Api/Guest.php:59
+#: modules/Extension/Api/Guest.php:60
 msgid "Parameter ext is missing"
 msgstr "缺少参数 ext"
 
-#: modules/Extension/Controller/Admin.php:33
+#: modules/Extension/Controller/Admin.php:34
 #: modules/Extension/html_admin/mod_extension_index.html.twig:5
 #: modules/Extension/html_admin/mod_extension_index.html.twig:13
 msgid "Extensions"
@@ -1139,32 +1145,32 @@ msgstr "管理设置"
 msgid "Allows the staff member to edit settings for this module."
 msgstr "允许工作人员编辑此模块的设置。"
 
-#: modules/Formbuilder/Api/Admin.php:36
+#: modules/Formbuilder/Api/Admin.php:37
 msgid "Form style was not found in predefined list"
 msgstr "在预设定的列表中找不到表单样式"
 
-#: modules/Formbuilder/Api/Admin.php:73
+#: modules/Formbuilder/Api/Admin.php:74
 msgid "Form field type is invalid"
 msgstr "表单字段类型无效"
 
-#: modules/Formbuilder/Api/Admin.php:76 modules/Formbuilder/Api/Admin.php:231
+#: modules/Formbuilder/Api/Admin.php:77 modules/Formbuilder/Api/Admin.php:232
 msgid "This input type must have unique values"
 msgstr "输入类型必须有唯一的值"
 
-#: modules/Formbuilder/Api/Admin.php:79 modules/Formbuilder/Api/Admin.php:257
-#: modules/Formbuilder/Api/Admin.php:276
+#: modules/Formbuilder/Api/Admin.php:80 modules/Formbuilder/Api/Admin.php:258
+#: modules/Formbuilder/Api/Admin.php:277
 msgid "Form id was not passed"
 msgstr "表单 id 未通过"
 
-#: modules/Formbuilder/Api/Admin.php:260 modules/Formbuilder/Api/Admin.php:279
+#: modules/Formbuilder/Api/Admin.php:261 modules/Formbuilder/Api/Admin.php:280
 msgid "Form name was not passed"
 msgstr "表单名称未通过"
 
-#: modules/Formbuilder/Api/Admin.php:283
+#: modules/Formbuilder/Api/Admin.php:284
 msgid "Form type was not passed"
 msgstr "表单类型未通过"
 
-#: modules/Formbuilder/Api/Admin.php:287
+#: modules/Formbuilder/Api/Admin.php:288
 msgid "Field type not supported"
 msgstr "不支持的字段类型"
 
@@ -1196,7 +1202,7 @@ msgstr "文本区的大小选项值必须是整数"
 msgid "You must set the payment gateway in the invoice manage tab before marking it as paid."
 msgstr "您必须在发票管理选项卡中设置支付网关，然后将其标记为已支付。"
 
-#: modules/Invoice/Api/Admin.php:251 modules/Invoice/Api/Client.php:113
+#: modules/Invoice/Api/Admin.php:251 modules/Invoice/Api/Client.php:114
 msgid "Order :id is free. No need to generate invoice."
 msgstr "订单 :id 是免费的。无需生成账单。"
 
@@ -1208,37 +1214,37 @@ msgstr "用户的币种必须与订阅付款的相同。请检查用户是否已
 msgid "Subscription not found"
 msgstr "没有找到订阅付款"
 
-#: modules/Invoice/Api/Client.php:55 modules/Invoice/Api/Client.php:79
-#: modules/Invoice/Api/Client.php:165 modules/Invoice/Api/Guest.php:35
-#: modules/Invoice/Api/Guest.php:59
+#: modules/Invoice/Api/Client.php:56 modules/Invoice/Api/Client.php:80
+#: modules/Invoice/Api/Client.php:166 modules/Invoice/Api/Guest.php:36
+#: modules/Invoice/Api/Guest.php:60
 msgid "Invoice was not found"
 msgstr "未找到账单"
 
-#: modules/Invoice/Api/Client.php:82 modules/Invoice/Api/Guest.php:62
+#: modules/Invoice/Api/Client.php:83 modules/Invoice/Api/Guest.php:63
 msgid "Paid Invoice cannot be modified"
 msgstr "不能修改已支付的账单"
 
-#: modules/Invoice/Api/Client.php:110 modules/Order/Api/Client.php:119
-#: modules/Servicedomain/Api/Client.php:122
-#: modules/Servicedownloadable/Api/Client.php:32
+#: modules/Invoice/Api/Client.php:111 modules/Order/Api/Client.php:120
+#: modules/Servicedomain/Api/Client.php:123
+#: modules/Servicedownloadable/Api/Client.php:33
 #: modules/Servicehosting/Api/Client.php:87
-#: modules/Servicelicense/Api/Client.php:45
+#: modules/Servicelicense/Api/Client.php:46
 msgid "Order not found"
 msgstr "没有找到订单"
 
-#: modules/Invoice/Api/Client.php:138
+#: modules/Invoice/Api/Client.php:139
 msgid "You need to enter numeric value"
 msgstr "请输入数字"
 
-#: modules/Invoice/Api/Guest.php:102
+#: modules/Invoice/Api/Guest.php:103
 msgid "Invoice hash not passed. Missing param hash"
 msgstr "账单哈希未通过。缺少哈希参数"
 
-#: modules/Invoice/Api/Guest.php:106
+#: modules/Invoice/Api/Guest.php:107
 msgid "Payment method not found. Missing param gateway_id"
 msgstr "找不到付款方式。缺少参数 gateway id"
 
-#: modules/Invoice/Controller/Admin.php:33
+#: modules/Invoice/Controller/Admin.php:34
 #: modules/Client/html_admin/mod_client_manage.html.twig:35
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
 #: modules/Index/html_client/mod_index_dashboard.html.twig:73
@@ -1247,7 +1253,7 @@ msgstr "找不到付款方式。缺少参数 gateway id"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:19
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:6
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:8
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:22
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:18
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
 #: modules/Order/html_admin/mod_order_manage.html.twig:52
 #: themes/admin_default/html/mod_index_dashboard.html.twig:214
@@ -1286,63 +1292,63 @@ msgstr "税率"
 msgid "Payment gateways"
 msgstr "支付网关"
 
-#: modules/Invoice/Service.php:422
+#: modules/Invoice/Service.php:425
 msgid "Unable to determine the next invoice number"
 msgstr "无法确定下一个发票编号"
 
-#: modules/Invoice/Service.php:638
+#: modules/Invoice/Service.php:641
 msgid "Cannot refund invoice with negative amount"
 msgstr "无法退还负金额的账单"
 
-#: modules/Invoice/Service.php:853
+#: modules/Invoice/Service.php:856
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "账单与订单 #:id 有关。请先取消订单。"
 
-#: modules/Invoice/Service.php:920
+#: modules/Invoice/Service.php:923
 msgid "Invoices are not generated for 0 amount orders"
 msgstr "不能为金额为零的订单创建账单"
 
-#: modules/Invoice/Service.php:1080
+#: modules/Invoice/Service.php:1083
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "充值前，您名下必须有一个有效的订单。"
 
-#: modules/Invoice/Service.php:1089
+#: modules/Invoice/Service.php:1092
 msgid "Amount must be at least :min_amount"
 msgstr "充值金额最低 :min_amount 始"
 
-#: modules/Invoice/Service.php:1093
+#: modules/Invoice/Service.php:1096
 msgid "Amount cannot exceed :max_amount"
 msgstr "充值金额最高为 :max_amount"
 
-#: modules/Invoice/Service.php:1120 modules/Invoice/Service.php:1188
+#: modules/Invoice/Service.php:1123 modules/Invoice/Service.php:1191
 msgid "Invoice not found"
 msgstr "找不到账单"
 
-#: modules/Invoice/Service.php:1125
+#: modules/Invoice/Service.php:1128
 msgid "Payment method not found"
 msgstr "找不到付款方式"
 
-#: modules/Invoice/Service.php:1129
+#: modules/Invoice/Service.php:1132
 msgid "Payment method not enabled"
 msgstr "付款方式未启用"
 
-#: modules/Invoice/ServiceInvoiceItem.php:61
+#: modules/Invoice/ServiceInvoiceItem.php:62
 msgid "Could not activate proforma item. Order :id not found"
 msgstr "无法激活相关项。找不到 :id 订单"
 
-#: modules/Invoice/ServiceInvoiceItem.php:128
+#: modules/Invoice/ServiceInvoiceItem.php:129
 msgid "Invoice item title is missing"
 msgstr "缺少账单项目名称"
 
-#: modules/Invoice/ServiceInvoiceItem.php:218
+#: modules/Invoice/ServiceInvoiceItem.php:219
 msgid "Add funds to account"
 msgstr "充值"
 
-#: modules/Invoice/ServiceInvoiceItem.php:333
+#: modules/Invoice/ServiceInvoiceItem.php:334
 msgid "Promotional Code: :code - :value Discount"
 msgstr "优惠码：:code - :value 折扣"
 
-#: modules/Invoice/ServiceInvoiceItem.php:336
+#: modules/Invoice/ServiceInvoiceItem.php:337
 msgid "Promotional Code: :code - :value%"
 msgstr "优惠码：:code - :value%"
 
@@ -1355,79 +1361,79 @@ msgstr "支付网关不可用。"
 msgid "Payment gateway :adapter was not found"
 msgstr "未找到支付网关 :adapter"
 
-#: modules/Invoice/ServiceTransaction.php:82
+#: modules/Invoice/ServiceTransaction.php:83
 msgid "Transaction invoice ID is missing"
 msgstr "缺少交易编号 id"
 
-#: modules/Invoice/ServiceTransaction.php:86
+#: modules/Invoice/ServiceTransaction.php:87
 msgid "Payment gateway ID is missing"
 msgstr "缺少支付网关的 id"
 
-#: modules/Invoice/ServiceTransaction.php:347
+#: modules/Invoice/ServiceTransaction.php:348
 msgid "Transaction :id not found."
 msgstr "未找到交易 :id。"
 
-#: modules/Invoice/ServiceTransaction.php:351
-#: modules/Invoice/ServiceTransaction.php:476
+#: modules/Invoice/ServiceTransaction.php:352
+#: modules/Invoice/ServiceTransaction.php:477
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
 msgstr "无法确定交易的来源。交易支付网关未知。"
 
-#: modules/Invoice/ServiceTransaction.php:356
-#: modules/Invoice/ServiceTransaction.php:481
+#: modules/Invoice/ServiceTransaction.php:357
+#: modules/Invoice/ServiceTransaction.php:482
 msgid "Cannot handle transaction received from unknown payment gateway: :id"
 msgstr "无法处理从未知支付网关收到的交易：:id"
 
-#: modules/Invoice/ServiceTransaction.php:362
-#: modules/Invoice/ServiceTransaction.php:511
+#: modules/Invoice/ServiceTransaction.php:363
+#: modules/Invoice/ServiceTransaction.php:512
 msgid "Payment adapter :adapter does not support action :action"
 msgstr "支付适配器 :adapter 不支持操作 :action"
 
-#: modules/Invoice/ServiceTransaction.php:396
+#: modules/Invoice/ServiceTransaction.php:397
 msgid "Unknown transaction #:id type: :type"
 msgstr "未知交易编号 #:id 类型: :type"
 
-#: modules/Invoice/ServiceTransaction.php:490
-#: modules/Invoice/ServiceTransaction.php:656
+#: modules/Invoice/ServiceTransaction.php:491
+#: modules/Invoice/ServiceTransaction.php:657
 msgid "Transaction :id is not associated with an invoice."
 msgstr "交易编号 :id 没有与之相关联的账单。"
 
-#: modules/Invoice/ServiceTransaction.php:495
+#: modules/Invoice/ServiceTransaction.php:496
 msgid "Invoice #:id not found"
 msgstr "未找到账单号 #:id"
 
-#: modules/Invoice/ServiceTransaction.php:505
+#: modules/Invoice/ServiceTransaction.php:506
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
 msgstr "即时支付通知 (IPN) 没有通过网关 :id 验证"
 
-#: modules/Invoice/ServiceTransaction.php:516
+#: modules/Invoice/ServiceTransaction.php:517
 msgid "Payment gateway :id method getTransaction should return Payment_Transaction object"
 msgstr "支付网关 :id method getTransaction 应该返回 Payment_Transaction 对象"
 
-#: modules/Invoice/ServiceTransaction.php:604
+#: modules/Invoice/ServiceTransaction.php:605
 msgid "Cannot create subscription. Subscription ID from payment gateway was not received"
 msgstr "无法创建订阅。未接收到付款网关的订阅 id"
 
-#: modules/Invoice/ServiceTransaction.php:639
+#: modules/Invoice/ServiceTransaction.php:640
 msgid "Subscription #:id was not found. Could not unsubscribe"
 msgstr "未找到订阅号 #:id 。无法取消订阅"
 
-#: modules/Invoice/ServiceTransaction.php:652
+#: modules/Invoice/ServiceTransaction.php:653
 msgid "Only approved transaction can be processed"
 msgstr "只能处理已批准的交易"
 
-#: modules/Invoice/ServiceTransaction.php:663
+#: modules/Invoice/ServiceTransaction.php:664
 msgid "Transaction currency :code do not match required currency :required"
 msgstr "交易币种 :code 与所要求的币种 :required 不匹配"
 
-#: modules/Invoice/ServiceTransaction.php:668
+#: modules/Invoice/ServiceTransaction.php:669
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
 msgstr "支付网关上的交易状态是“待处理”。只能处理“已完成”或“未关联账单”的交易。"
 
-#: modules/Invoice/ServiceTransaction.php:678
+#: modules/Invoice/ServiceTransaction.php:679
 msgid "Client currency do not match invoice currency"
 msgstr "用户的币种与账单的不匹配"
 
-#: modules/Invoice/ServiceTransaction.php:683
+#: modules/Invoice/ServiceTransaction.php:684
 msgid "Cannot add negative amount to client balance for debit transaction"
 msgstr "不能为借记交易添加负金额"
 
@@ -1439,7 +1445,7 @@ msgstr "发信人不能留空"
 msgid "Add some content before sending message"
 msgstr "请添加内容后发送消息"
 
-#: modules/Massmailer/Controller/Admin.php:34
+#: modules/Massmailer/Controller/Admin.php:35
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:5
 msgid "Mass mailer"
 msgstr "群发邮件"
@@ -1452,21 +1458,21 @@ msgstr "因安全原因禁用 (启用演示模式)"
 msgid "Mass mail message not found"
 msgstr "未找到邮件群发消息"
 
-#: modules/News/Api/Admin.php:46 modules/News/Api/Guest.php:47
-#: modules/Support/Api/Guest.php:141
+#: modules/News/Api/Admin.php:47 modules/News/Api/Guest.php:48
+#: modules/Support/Api/Guest.php:142
 msgid "ID or slug is missing"
 msgstr "缺少 ID 或 别名"
 
-#: modules/News/Api/Admin.php:62 modules/News/Api/Guest.php:60
+#: modules/News/Api/Admin.php:63 modules/News/Api/Guest.php:61
 msgid "News item not found"
 msgstr "未找到消息"
 
-#: modules/News/Controller/Admin.php:34
+#: modules/News/Controller/Admin.php:35
 #: modules/Index/html_client/mod_index_dashboard.html.twig:240
 msgid "Announcements"
 msgstr "通知"
 
-#: modules/Notification/Api/Admin.php:53 modules/Notification/Api/Admin.php:91
+#: modules/Notification/Api/Admin.php:54 modules/Notification/Api/Admin.php:92
 msgid "Notification message was not found"
 msgstr "未找到通知信息"
 
@@ -1490,11 +1496,11 @@ msgstr "自动创建续订账单"
 msgid "Issue invoices manually"
 msgstr "手动创建账单"
 
-#: modules/Order/Api/Client.php:104
+#: modules/Order/Api/Client.php:105
 msgid "Only pending and failed setup orders can be deleted."
 msgstr "只有待处理和上架失败的订单才能删除。"
 
-#: modules/Order/Controller/Admin.php:33
+#: modules/Order/Controller/Admin.php:34
 #: modules/Client/html_admin/mod_client_manage.html.twig:32
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:60
@@ -1545,23 +1551,23 @@ msgstr "只能暂停有效的订单"
 msgid "Cannot cancel "
 msgstr "无法取消 "
 
-#: modules/Product/Api/Admin.php:96
+#: modules/Product/Api/Admin.php:97
 msgid "You have already created domain product."
 msgstr "您已经创建了域名产品。"
 
-#: modules/Product/Api/Admin.php:102
+#: modules/Product/Api/Admin.php:103
 msgid "Product type :type is not registered"
 msgstr "产品类型 :type 未注册"
 
-#: modules/Product/Api/Admin.php:151
+#: modules/Product/Api/Admin.php:152
 msgid "priority params is missing"
 msgstr "缺少优先级参数"
 
-#: modules/Product/Api/Admin.php:226 modules/Product/Api/Admin.php:265
+#: modules/Product/Api/Admin.php:227 modules/Product/Api/Admin.php:266
 msgid "Addon not found"
 msgstr "找不到附加组件"
 
-#: modules/Product/Api/Guest.php:68
+#: modules/Product/Api/Guest.php:69
 msgid "Product ID or slug is missing"
 msgstr "缺少产品 ID 或 别名"
 
@@ -1593,170 +1599,306 @@ msgstr "无法删除有存在有效订单的产品。"
 msgid "Cannot remove product category with products"
 msgstr "无法删除有产品的分类"
 
-#: modules/Product/Service.php:928
+#: modules/Product/Service.php:904
 msgid "This promotion code already exists."
 msgstr "此优惠码已存在。"
 
-#: modules/Profile/Api/Admin.php:117 modules/Profile/Api/Client.php:119
+#: modules/Profile/Api/Admin.php:117 modules/Profile/Api/Client.php:120
 msgid "Current password incorrect"
 msgstr "当前密码不正确"
 
-#: modules/Profile/Service.php:145
+#: modules/Profile/Service.php:146
 msgid "Invalid birthdate value"
 msgstr "无效的出生日期"
 
-#: modules/Profile/Service.php:237
+#: modules/Profile/Service.php:238
 msgid "Unable to invalidate sessions, nobody is logged in"
 msgstr "无法取消会话，没有人登录"
 
-#: modules/Profile/Service.php:256
+#: modules/Profile/Service.php:257
 msgid "Unable to invalidate sessions, an invalid type was used"
 msgstr "无法取消会话，使用了无效的类型"
 
-#: modules/Redirect/Api/Admin.php:131
+#: modules/Redirect/Api/Admin.php:132
 msgid "Redirect not found"
 msgstr "未找到重定向"
 
-#: modules/Serviceapikey/Service.php:54
+#: modules/Security/Api/Admin.php:21
+msgid "You must specify an IP address to lookup."
+msgstr ""
+
+#: modules/Security/Api/Admin.php:45
+msgid "You must specify a check ID to run."
+msgstr ""
+
+#: modules/Security/Checks/dangerousFunctions.php:48
+msgid "Dangerous PHP functions"
+msgstr ""
+
+#: modules/Security/Checks/dangerousFunctions.php:53
+msgid "Checks to see if potentially dangerous PHP functions are enabled."
+msgstr ""
+
+#: modules/Security/Checks/dangerousFunctions.php:62
+msgid ":function: is enabled, potentially being a security concern."
+msgstr ""
+
+#: modules/Security/Checks/dangerousFunctions.php:68
+msgid "No potentially dangerous PHP functions were detected as enabled"
+msgstr ""
+
+#: modules/Security/Checks/generalCheck.php:25
+msgid "General Check"
+msgstr ""
+
+#: modules/Security/Checks/generalCheck.php:30
+msgid "Checks general information such as the FOSSBilling configuration."
+msgstr ""
+
+#: modules/Security/Checks/generalCheck.php:44
+msgid "Warning: Prevention against session hijacking is disabled."
+msgstr ""
+
+#: modules/Security/Checks/generalCheck.php:48
+msgid "Fail: HTTPS is not enforced."
+msgstr ""
+
+#: modules/Security/Checks/generalCheck.php:56
+msgid "Warning: CSRF prevention is not enabled for the API."
+msgstr ""
+
+#: modules/Security/Checks/generalCheck.php:64
+msgid "Warning: Debug mode is enabled for the Twig templating engine."
+msgstr ""
+
+#: modules/Security/Checks/generalCheck.php:68
+msgid "Warning: Debug mode is enabled for your FOSSBilling installation."
+msgstr ""
+
+#: modules/Security/Checks/generalCheck.php:76
+msgid "Warning: FOSSBilling is configured to update to non-release versions of FOSSBilling."
+msgstr ""
+
+#: modules/Security/Checks/generalCheck.php:80
+msgid "Warning: You appear to be using a non-release version of FOSSBilling."
+msgstr ""
+
+#: modules/Security/Checks/generalCheck.php:85
+msgid "No detected issues."
+msgstr ""
+
+#: modules/Security/Checks/phpVersion.php:22
+msgid "PHP Version Check"
+msgstr ""
+
+#: modules/Security/Checks/phpVersion.php:27
+msgid "Checks if the PHP version FOSSBilling is running on is still receiving security support."
+msgstr ""
+
+#: modules/Security/Checks/phpVersion.php:42
+msgid "PHP :version: is the latest version of PHP."
+msgstr ""
+
+#: modules/Security/Checks/phpVersion.php:44
+msgid "PHP :version: isn't the latest, but is still supported."
+msgstr ""
+
+#: modules/Security/Checks/phpVersion.php:46
+msgid "PHP :version: is out of date and does not get security patches."
+msgstr ""
+
+#: modules/Security/Checks/phpVersion.php:53
+msgid "Failed to lookup PHP version status."
+msgstr ""
+
+#: modules/Security/Checks/webserver.php:30
+msgid "Webserver Check"
+msgstr ""
+
+#: modules/Security/Checks/webserver.php:35
+msgid "Performs simple checks to validate your if webserver blocks access to sensitive files."
+msgstr ""
+
+#: modules/Security/Checks/webserver.php:49
+msgid ":url: returned HTTP 200 when it shouldn't have."
+msgstr ""
+
+#: modules/Security/Checks/webserver.php:54
+msgid "All tested URLs were inaccessible."
+msgstr ""
+
+#: modules/Security/Controller/Admin.php:34
+msgid "Security"
+msgstr ""
+
+#: modules/Security/Controller/Admin.php:40
+#: modules/Security/html_admin/mod_security_index.html.twig:5
+#: modules/Security/html_admin/mod_security_index.html.twig:13
+msgid "Security dashboard"
+msgstr ""
+
+#: modules/Security/Controller/Admin.php:47
+#: modules/Security/html_admin/mod_security_iplookup.html.twig:5
+#: modules/Security/html_admin/mod_security_iplookup.html.twig:13
+msgid "IP lookup"
+msgstr ""
+
+#: modules/Security/Service.php:40
+msgid "Run security checks"
+msgstr ""
+
+#: modules/Security/Service.php:41
+msgid "Allows the staff member to run security checks on the FOSSBilling installation."
+msgstr ""
+
+#: modules/Security/Service.php:105
+msgid "The check :checkName: does not exist."
+msgstr ""
+
+#: modules/Security/Service.php:110
+msgid "The check :checkName: does not seem to be a valid check."
+msgstr ""
+
+#: modules/Serviceapikey/Service.php:55
 msgid "Order does not exist."
 msgstr "订单不存在。"
 
-#: modules/Serviceapikey/Service.php:116 modules/Serviceapikey/Service.php:135
+#: modules/Serviceapikey/Service.php:117 modules/Serviceapikey/Service.php:136
 msgid "You must provide an API key to check it's validity."
 msgstr "您必须提供一个 API 密钥来检查其有效性。"
 
-#: modules/Serviceapikey/Service.php:121 modules/Serviceapikey/Service.php:140
-#: modules/Serviceapikey/Service.php:188 modules/Serviceapikey/Service.php:199
-#: modules/Serviceapikey/Service.php:229 modules/Serviceapikey/Service.php:342
+#: modules/Serviceapikey/Service.php:122 modules/Serviceapikey/Service.php:141
+#: modules/Serviceapikey/Service.php:189 modules/Serviceapikey/Service.php:200
+#: modules/Serviceapikey/Service.php:230 modules/Serviceapikey/Service.php:343
 msgid "API key does not exist"
 msgstr "API 密钥不存在"
 
-#: modules/Serviceapikey/Service.php:178
+#: modules/Serviceapikey/Service.php:179
 msgid "You must provide either the API key or API key order ID in order to reset it."
 msgstr "你必须提供 API 密钥或 API 密钥订单的 ID 才能重置。"
 
-#: modules/Serviceapikey/Service.php:221
+#: modules/Serviceapikey/Service.php:222
 msgid "You must provide the API key order ID in order to update it."
 msgstr "你必须提供 API 密钥订单的 ID 才能更新。"
 
-#: modules/Serviceapikey/Service.php:233
+#: modules/Serviceapikey/Service.php:234
 msgid "To change the API key, please use the reset function rather than updating it."
 msgstr "要更改 API 密钥，请使用重置的功能而不是直接编辑。"
 
-#: modules/Serviceapikey/Service.php:296
+#: modules/Serviceapikey/Service.php:297
 msgid "Maximum number of iterations reached while generating API key"
 msgstr "生成 API 密钥时达到最大的迭代次数"
 
-#: modules/Serviceapikey/Service.php:331
+#: modules/Serviceapikey/Service.php:332
 msgid "Unknown uppercase option ':case:'. API generator only accepts 'lower', 'upper', or 'mixed'."
 msgstr "未知的选项 ':case:' 。API 生成器接受 小写、大写 或 大小写 的。"
 
-#: modules/Servicecustom/Api/Admin.php:26 modules/Servicecustom/Api/Admin.php:51
-#: modules/Servicecustom/Api/Client.php:33
-#: modules/Servicedomain/Api/Client.php:116
-#: modules/Servicedownloadable/Api/Client.php:27
+#: modules/Servicecustom/Api/Admin.php:27 modules/Servicecustom/Api/Admin.php:52
+#: modules/Servicecustom/Api/Client.php:34
+#: modules/Servicedomain/Api/Client.php:117
+#: modules/Servicedownloadable/Api/Client.php:28
 #: modules/Servicehosting/Api/Client.php:82
 msgid "Order ID is required"
 msgstr "请输入订单id"
 
-#: modules/Servicecustom/Api/Admin.php:45 modules/Servicecustom/Api/Client.php:27
+#: modules/Servicecustom/Api/Admin.php:46 modules/Servicecustom/Api/Client.php:28
 msgid "API call is missing arguments"
 msgstr "API 调用缺少参数"
 
-#: modules/Servicecustom/Service.php:38
+#: modules/Servicecustom/Service.php:39
 msgid "You must fill in all required fields. "
 msgstr "请填写所有必填的字段。 "
 
-#: modules/Servicecustom/Service.php:45
+#: modules/Servicecustom/Service.php:46
 msgid "Field "
 msgstr "字段 "
 
-#: modules/Servicecustom/Service.php:79 modules/Servicedomain/Service.php:222
-#: modules/Servicelicense/Service.php:109
+#: modules/Servicecustom/Service.php:80 modules/Servicedomain/Service.php:222
+#: modules/Servicelicense/Service.php:110
 msgid "Could not activate order. Service was not created"
 msgstr "无法激活订单。服务未创建"
 
-#: modules/Servicecustom/Service.php:223
+#: modules/Servicecustom/Service.php:224
 msgid "Custom plugin method :method is forbidden"
 msgstr "自定义插件 :method 被禁用"
 
-#: modules/Servicecustom/Service.php:232
+#: modules/Servicecustom/Service.php:233
 msgid "Config must be an array"
 msgstr "配置必须是一个数组"
 
-#: modules/Servicecustom/Service.php:252 modules/Servicedomain/Api/Client.php:127
-#: modules/Servicedownloadable/Api/Admin.php:64
-#: modules/Servicedownloadable/Api/Client.php:38
-#: modules/Servicehosting/Api/Admin.php:427
+#: modules/Servicecustom/Service.php:253 modules/Servicedomain/Api/Client.php:128
+#: modules/Servicedownloadable/Api/Admin.php:66
+#: modules/Servicedownloadable/Api/Client.php:39
+#: modules/Servicehosting/Api/Admin.php:428
 #: modules/Servicehosting/Api/Client.php:93
-#: modules/Servicelicense/Api/Admin.php:83
-#: modules/Servicelicense/Api/Client.php:51
+#: modules/Servicelicense/Api/Admin.php:84
+#: modules/Servicelicense/Api/Client.php:52
 msgid "Order is not activated"
 msgstr "订单未生效"
 
-#: modules/Servicecustom/Service.php:269
+#: modules/Servicecustom/Service.php:270
 msgid "Plugin class file :file was not found"
 msgstr "未找到插件类文件 :file"
 
-#: modules/Servicecustom/Service.php:288
+#: modules/Servicecustom/Service.php:289
 msgid "Plugin :plugin does not support action :action"
 msgstr "插件 :plugin 不支持操作 :action"
 
-#: modules/Servicecustom/Service.php:304 modules/Servicedomain/Service.php:256
+#: modules/Servicecustom/Service.php:305 modules/Servicedomain/Service.php:256
 #: modules/Servicedomain/Service.php:295 modules/Servicehosting/Service.php:103
 #: modules/Servicehosting/Service.php:161 modules/Servicehosting/Service.php:179
 #: modules/Servicehosting/Service.php:198 modules/Servicehosting/Service.php:217
 msgid "Order :id has no active service"
 msgstr "订单 :id 没有有效的服务"
 
-#: modules/Servicedomain/Api/Admin.php:167
-#: modules/Servicedomain/Api/Admin.php:212
-#: modules/Servicedomain/Api/Admin.php:270 modules/Servicedomain/Api/Guest.php:67
+#: modules/Servicedomain/Api/Admin.php:168
+#: modules/Servicedomain/Api/Admin.php:213
+#: modules/Servicedomain/Api/Admin.php:271 modules/Servicedomain/Api/Guest.php:68
 #: modules/Servicedomain/Service.php:94 modules/Servicedomain/Service.php:123
 msgid "TLD not found"
 msgstr "域名后缀未找到"
 
-#: modules/Servicedomain/Api/Admin.php:189
+#: modules/Servicedomain/Api/Admin.php:190
 msgid "ID not found"
 msgstr "ID 未找到"
 
-#: modules/Servicedomain/Api/Admin.php:218
+#: modules/Servicedomain/Api/Admin.php:219
 msgid "TLD is used by :count: domains"
 msgstr "顶级域名后缀被 :count: 个域名所使用"
 
-#: modules/Servicedomain/Api/Admin.php:243
+#: modules/Servicedomain/Api/Admin.php:244
 msgid "TLD already registered"
 msgstr "域名后缀已注册"
 
-#: modules/Servicedomain/Api/Admin.php:333
+#: modules/Servicedomain/Api/Admin.php:334
 msgid "Registrar is not available for installation."
 msgstr "暂不支持该域名注册商"
 
-#: modules/Servicedomain/Api/Admin.php:436
+#: modules/Servicedomain/Api/Admin.php:437
 msgid "Domain order is not activated"
 msgstr "域名订单未生效"
 
-#: modules/Servicedomain/Api/Guest.php:90
+#: modules/Servicedomain/Api/Guest.php:91
 msgid "Domain :domain is invalid"
 msgstr "域名 :domain 无效"
 
-#: modules/Servicedomain/Api/Guest.php:95
+#: modules/Servicedomain/Api/Guest.php:96
 msgid "Domain availability could not be determined. TLD is not active."
 msgstr "无法确认域名是否可注册。因为该域名后缀未启用。"
 
-#: modules/Servicedomain/Api/Guest.php:99
+#: modules/Servicedomain/Api/Guest.php:100
 msgid "Domain is not available."
 msgstr "域名不可用"
 
-#: modules/Servicedomain/Api/Guest.php:121
+#: modules/Servicedomain/Api/Guest.php:122
 msgid "TLD is not active."
 msgstr "域名后缀未启用"
 
-#: modules/Servicedomain/Api/Guest.php:124
+#: modules/Servicedomain/Api/Guest.php:125
 msgid "Domain cannot be transferred."
 msgstr "域名不能转移。"
 
-#: modules/Servicedomain/Controller/Admin.php:34
+#: modules/Servicedomain/Controller/Admin.php:35
 msgid "Domain registration"
 msgstr "域名注册"
 
@@ -1833,36 +1975,36 @@ msgstr "注册商适配器 :adapter 应使用 Registrar_AdapterAbstract"
 msgid "Registrar is used by :count: domains"
 msgstr "该注册服务机构被 :count: 个域名所使用"
 
-#: modules/Servicedownloadable/Api/Admin.php:35
-msgid "File was not uploaded"
-msgstr "文件未上传"
+#: modules/Servicedownloadable/Api/Admin.php:37
+msgid "File was not uploaded."
+msgstr ""
 
 #: modules/Servicedownloadable/Service.php:170
-#: modules/Servicedownloadable/Service.php:228
-msgid "Error uploading file"
-msgstr "上传文件出错"
+#: modules/Servicedownloadable/Service.php:234
+msgid "Error uploading file."
+msgstr ""
 
-#: modules/Servicedownloadable/Service.php:281
-msgid "File cannot be downloaded at the moment. Please contact support"
-msgstr "文件目前无法下载。请联系客服"
+#: modules/Servicedownloadable/Service.php:273
+msgid "File cannot be downloaded at the moment. Please contact support."
+msgstr ""
 
-#: modules/Servicehosting/Api/Admin.php:26
+#: modules/Servicehosting/Api/Admin.php:27
 msgid "plan_id is missing"
 msgstr "缺少 plan_id"
 
-#: modules/Servicehosting/Api/Admin.php:236
+#: modules/Servicehosting/Api/Admin.php:237
 msgid "Hosting server is used by :count: service hostings"
 msgstr "有 :count: 个服务托管在该托管服务器"
 
-#: modules/Servicehosting/Api/Admin.php:349
+#: modules/Servicehosting/Api/Admin.php:350
 msgid "Hosting plan is used by :count: service hostings"
 msgstr "有 :count: 个服务在使用此托管计划"
 
-#: modules/Servicehosting/Api/Guest.php:36
+#: modules/Servicehosting/Api/Guest.php:37
 msgid "Product type"
 msgstr "产品类型"
 
-#: modules/Servicehosting/Controller/Admin.php:34
+#: modules/Servicehosting/Controller/Admin.php:35
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:5
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:12
@@ -1918,19 +2060,19 @@ msgstr "服务器管理器 :adapter 无效"
 msgid "Cannot remove hosting plan which has active accounts"
 msgstr "无法删除有有效账户的虚拟主机套餐"
 
-#: modules/Servicehosting/Service.php:1061
+#: modules/Servicehosting/Service.php:1060
 msgid "Could not find main domain product"
 msgstr "未找到产品的主域名"
 
-#: modules/Servicelicense/Service.php:115
+#: modules/Servicelicense/Service.php:116
 msgid "License plugin :plugin was not found"
 msgstr "找不到授权插件 :plugin"
 
-#: modules/Servicelicense/Service.php:119
+#: modules/Servicelicense/Service.php:120
 msgid "License plugin do not have generate method"
 msgstr "授权插件没有生成 method"
 
-#: modules/Servicelicense/Service.php:130
+#: modules/Servicelicense/Service.php:131
 msgid "Maximum number of iterations reached while generating license key"
 msgstr "生成授权码时达到最大的迭代次数"
 
@@ -1966,142 +2108,142 @@ msgstr "您的 IP 地址列在 Stop Forum Spam 数据库的黑名单中"
 msgid "Disposable email addresses are not allowed"
 msgstr "不允许使用一次性邮箱地址"
 
-#: modules/Staff/Api/Guest.php:32
+#: modules/Staff/Api/Guest.php:33
 msgid "Administrator account already exists"
 msgstr "管理员账号已存在"
 
-#: modules/Staff/Api/Guest.php:79
+#: modules/Staff/Api/Guest.php:80
 msgid "You are not allowed to login to admin area from :ip address"
 msgstr "不允许从 :ip 登录到管理后台"
 
-#: modules/Staff/Api/Guest.php:94 modules/Staff/Api/Guest.php:139
-#: modules/Staff/Controller/Admin.php:118
+#: modules/Staff/Api/Guest.php:95 modules/Staff/Api/Guest.php:140
+#: modules/Staff/Controller/Admin.php:119
 msgid "Password reset has been disabled"
 msgstr "密码重置的功能已被禁用"
 
-#: modules/Staff/Api/Guest.php:112 modules/Staff/Api/Guest.php:116
-#: modules/Staff/Controller/Admin.php:124 modules/Staff/Controller/Admin.php:127
+#: modules/Staff/Api/Guest.php:113 modules/Staff/Api/Guest.php:117
+#: modules/Staff/Controller/Admin.php:125 modules/Staff/Controller/Admin.php:128
 msgid "The link have expired or you have already confirmed password reset."
 msgstr "链接已过期或您已经完成密码重置。"
 
-#: modules/Staff/Controller/Admin.php:36
+#: modules/Staff/Controller/Admin.php:37
 msgid "Staff login history"
 msgstr "员工登录历史记录"
 
-#: modules/Staff/Service.php:34
+#: modules/Staff/Service.php:35
 msgid "Create and edit administrators"
 msgstr "创建和编辑管理员"
 
-#: modules/Staff/Service.php:35 modules/Staff/Service.php:40
-#: modules/Staff/Service.php:45
+#: modules/Staff/Service.php:36 modules/Staff/Service.php:41
+#: modules/Staff/Service.php:46
 msgid "administrator"
 msgstr "管理员"
 
-#: modules/Staff/Service.php:35 modules/Staff/Service.php:50
+#: modules/Staff/Service.php:36 modules/Staff/Service.php:51
 msgid "Allows the staff member to create and edit :type: accounts."
 msgstr "允许工作人员创建和编辑 :type: 账户。"
 
-#: modules/Staff/Service.php:39
+#: modules/Staff/Service.php:40
 msgid "Delete administrators"
 msgstr "删除管理员"
 
-#: modules/Staff/Service.php:40 modules/Staff/Service.php:55
+#: modules/Staff/Service.php:41 modules/Staff/Service.php:56
 msgid "Allows the staff member to delete :type: accounts."
 msgstr "允许工作人员删除:type:账号。"
 
-#: modules/Staff/Service.php:44
+#: modules/Staff/Service.php:45
 msgid "Reset administrator passwords"
 msgstr "重置管理员密码"
 
-#: modules/Staff/Service.php:45 modules/Staff/Service.php:60
+#: modules/Staff/Service.php:46 modules/Staff/Service.php:61
 msgid "Allows the staff member to perform password resets on :type: accounts."
 msgstr "允许工作人员对 :type: 账户执行密码重置。"
 
-#: modules/Staff/Service.php:49
+#: modules/Staff/Service.php:50
 msgid "Create and edit staff members"
 msgstr "创建和编辑工作人员"
 
-#: modules/Staff/Service.php:50 modules/Staff/Service.php:55
-#: modules/Staff/Service.php:60
+#: modules/Staff/Service.php:51 modules/Staff/Service.php:56
+#: modules/Staff/Service.php:61
 msgid "staff"
 msgstr "工作人员"
 
-#: modules/Staff/Service.php:54
+#: modules/Staff/Service.php:55
 msgid "Delete staff members"
 msgstr "删除工作人员"
 
-#: modules/Staff/Service.php:59
+#: modules/Staff/Service.php:60
 msgid "Reset staff passwords"
 msgstr "重置工作人员密码"
 
-#: modules/Staff/Service.php:64
+#: modules/Staff/Service.php:65
 #: modules/Staff/html_admin/mod_staff_index.html.twig:17
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:43
 msgid "Manage groups"
 msgstr "管理群组"
 
-#: modules/Staff/Service.php:65
+#: modules/Staff/Service.php:66
 msgid "Allows the staff member to manage staff member groups."
 msgstr "允许员工管理员工组。"
 
-#: modules/Staff/Service.php:83
+#: modules/Staff/Service.php:84
 msgid "Check your login details"
 msgstr "请检查您的登录信息"
 
-#: modules/Staff/Service.php:508
+#: modules/Staff/Service.php:509
 msgid "This administrator account is protected and cannot be removed"
 msgstr "此管理员账号保留使用，不能删除"
 
-#: modules/Staff/Service.php:579
+#: modules/Staff/Service.php:580
 msgid "Staff member with email :email is already registered"
 msgstr "员工的邮箱 :email 已注册"
 
-#: modules/Staff/Service.php:674
+#: modules/Staff/Service.php:675
 msgid "Administrators group cannot be removed"
 msgstr "无法删除管理员群组"
 
-#: modules/Staff/Service.php:682
+#: modules/Staff/Service.php:683
 msgid "Cannot remove group which has staff members"
 msgstr "无法删除拥有员工的群组"
 
-#: modules/Support/Api/Admin.php:836 modules/Support/Api/Admin.php:910
+#: modules/Support/Api/Admin.php:837 modules/Support/Api/Admin.php:911
 #: modules/Support/Service.php:1651
 msgid "Article not found"
 msgstr "未找到文章"
 
-#: modules/Support/Api/Admin.php:952 modules/Support/Api/Admin.php:997
+#: modules/Support/Api/Admin.php:953 modules/Support/Api/Admin.php:998
 msgid "Article Category not found"
 msgstr "未找到文章分类"
 
-#: modules/Support/Api/Admin.php:1022
+#: modules/Support/Api/Admin.php:1023
 msgid "Category not found"
 msgstr "未找到分类"
 
-#: modules/Support/Api/Client.php:124 modules/Support/Service.php:248
+#: modules/Support/Api/Client.php:125 modules/Support/Service.php:248
 msgid "Ticket not found"
 msgstr "工单未找到"
 
-#: modules/Support/Api/Client.php:128
+#: modules/Support/Api/Client.php:129
 msgid "Ticket cannot be reopened."
 msgstr "不能重新打开工单。"
 
-#: modules/Support/Api/Guest.php:35
+#: modules/Support/Api/Guest.php:36
 msgid "Please enter your message"
 msgstr "请输入您的留言"
 
-#: modules/Support/Api/Guest.php:155
+#: modules/Support/Api/Guest.php:156
 msgid "Article item not found"
 msgstr "未找到文章"
 
-#: modules/Support/Api/Guest.php:203
+#: modules/Support/Api/Guest.php:204
 msgid "Category ID or slug is missing"
 msgstr "缺少文章 ID 或 别名"
 
-#: modules/Support/Api/Guest.php:217
-msgid "Knowledge base category not found"
-msgstr "未找到知识库的分类"
+#: modules/Support/Api/Guest.php:218
+msgid "Knowledge Base category not found"
+msgstr ""
 
-#: modules/Support/Controller/Admin.php:33
+#: modules/Support/Controller/Admin.php:34
 #: modules/Order/html_admin/mod_order_manage.html.twig:63
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:19
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:19
@@ -2146,11 +2288,18 @@ msgid "Canned Responses"
 msgstr "预设的回复"
 
 #: modules/Support/Controller/Admin.php:74
+#: modules/Index/html_client/mod_index_dashboard.html.twig:250
+#: modules/Index/html_client/mod_index_dashboard.html.twig:254
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:22
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:20
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:19
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:23
 #: modules/Support/html_admin/mod_support_settings.html.twig:104
+#: modules/Support/html_client/mod_support_kb_article.html.twig:8
+#: modules/Support/html_client/mod_support_kb_category.html.twig:7
+#: modules/Support/html_client/mod_support_kb_index.html.twig:8
+#: themes/huraga/html/mobile_menu.html.twig:77
+#: themes/huraga/html/partial_menu.html.twig:80
 msgid "Knowledge Base"
 msgstr "知识库"
 
@@ -2190,7 +2339,7 @@ msgstr "未找到工单"
 msgid "Cannot remove category which has articles"
 msgstr "无法删除含有文章的分类"
 
-#: modules/System/Controller/Admin.php:33
+#: modules/System/Controller/Admin.php:34
 msgid "System"
 msgstr "系统"
 
@@ -2234,7 +2383,7 @@ msgid "Settings"
 msgstr "设置"
 
 #: modules/System/Controller/Admin.php:47
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:43
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:56
 #: modules/Client/html_admin/mod_client_group.html.twig:48
 #: modules/Client/html_admin/mod_client_manage.html.twig:277
 #: modules/Client/html_admin/mod_client_manage.html.twig:335
@@ -2273,9 +2422,9 @@ msgstr "设置"
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:96
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:84
 #: modules/Product/html_admin/mod_product_category.html.twig:63
-#: modules/Product/html_admin/mod_product_manage.html.twig:203
-#: modules/Product/html_admin/mod_product_manage.html.twig:260
-#: modules/Product/html_admin/mod_product_manage.html.twig:296
+#: modules/Product/html_admin/mod_product_manage.html.twig:205
+#: modules/Product/html_admin/mod_product_manage.html.twig:262
+#: modules/Product/html_admin/mod_product_manage.html.twig:298
 #: modules/Product/html_admin/mod_product_promo.html.twig:178
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:75
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:75
@@ -2295,7 +2444,7 @@ msgstr "设置"
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:130
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:94
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:169
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:172
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:46
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:56
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:102
@@ -2310,79 +2459,79 @@ msgstr "设置"
 msgid "Update"
 msgstr "更新"
 
-#: modules/System/Service.php:37
+#: modules/System/Service.php:41
 msgid "Manage company details"
 msgstr "管理公司详细信息"
 
-#: modules/System/Service.php:38
+#: modules/System/Service.php:42
 msgid "Allows the staff member to update company details as set under the system module."
 msgstr "允许员工更新系统模块设置的公司详细信息。"
 
-#: modules/System/Service.php:42
+#: modules/System/Service.php:46
 msgid "Manage company legal"
 msgstr "管理公司法律事务"
 
-#: modules/System/Service.php:43
+#: modules/System/Service.php:47
 msgid "Allows the staff member to update company legal as set under the system module."
 msgstr "允许员工更新系统模块设置的公司法律事务。"
 
-#: modules/System/Service.php:47
+#: modules/System/Service.php:51
 #: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "Invalidate cache"
 msgstr "作废缓存"
 
-#: modules/System/Service.php:48
+#: modules/System/Service.php:52
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
 msgstr "允许工作人员从系统设置中使 FOSSBilling 缓存失效。"
 
-#: modules/System/Service.php:52
+#: modules/System/Service.php:56
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:50
 #: modules/System/html_admin/mod_system_update.html.twig:59
 msgid "Update FOSSBilling"
 msgstr "更新 FOSSBilling"
 
-#: modules/System/Service.php:53
+#: modules/System/Service.php:57
 msgid "Allows the staff member to update FOSSBilling."
 msgstr "允许员工更新 FOSSBilling。"
 
-#: modules/System/Service.php:57
+#: modules/System/Service.php:61
 msgid "Manage the network interface"
 msgstr "管理网络界面"
 
-#: modules/System/Service.php:58
+#: modules/System/Service.php:62
 msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
 msgstr "允许工作人员获取所有本地接口 IP 地址列表，并设置FOSSBilling的默认网络接口。"
 
-#: modules/System/Service.php:70
+#: modules/System/Service.php:74
 msgid "Parameter key is missing"
 msgstr "缺少参数"
 
-#: modules/System/Service.php:141
+#: modules/System/Service.php:145
 msgid "Invalid parameter name, received: param_"
 msgstr "无效的参数名称，收到：param_"
 
-#: modules/System/Service.php:541
+#: modules/System/Service.php:530
 msgid "Parameter :param does not exist"
 msgstr "参数 :param 不存在"
 
-#: modules/System/Service.php:1407
+#: modules/System/Service.php:944
 msgid "Country :code phone code is not registered"
 msgstr "国家电话区号 :code 未注册"
 
-#: modules/Theme/Controller/Admin.php:61
+#: modules/Theme/Controller/Admin.php:62
 msgid "Theme \":name\" assets folder is not writable. Files cannot be uploaded and settings cannot be saved. Set folder permissions to 755"
 msgstr "主题 “:name” 的 assets 目录不可写入。无法上传和保存文件。请尝试将目录权限设为755"
 
-#: modules/Theme/Controller/Admin.php:97
+#: modules/Theme/Controller/Admin.php:98
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
 msgstr "主题 “:name” 的 assets 目录不可写入。请尝试将目录 :folder 的权限设为777"
 
-#: modules/Theme/Controller/Admin.php:101
+#: modules/Theme/Controller/Admin.php:102
 msgid "Theme \":name\" is not configurable"
 msgstr "主题 “:name” 无法配置"
 
-#: modules/Theme/Model/Theme.php:18
+#: modules/Theme/Model/Theme.php:19
 msgid "Theme \":name\" does not exist"
 msgstr "主题 “:name” 不存在"
 
@@ -2411,8 +2560,8 @@ msgstr "用户"
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:49
 #: modules/Support/html_admin/mod_support_tickets.html.twig:325
 #: modules/Support/html_admin/mod_support_tickets.html.twig:359
-#: modules/Support/html_client/mod_support_contact_us.html.twig:39
-#: modules/Support/html_client/mod_support_tickets.html.twig:93
+#: modules/Support/html_client/mod_support_contact_us.html.twig:45
+#: modules/Support/html_client/mod_support_tickets.html.twig:98
 msgid "Message"
 msgstr "消息"
 
@@ -2441,8 +2590,9 @@ msgstr "IP"
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:39
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:120
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:177
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:184
 #: modules/Page/html_client/mod_page_signup.html.twig:107
+#: modules/Security/html_admin/mod_security_iplookup.html.twig:33
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:157
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:25
@@ -2521,7 +2671,7 @@ msgstr "日期"
 #: modules/Staff/html_admin/mod_staff_index.html.twig:150
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:54
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:103
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:251
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:254
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:79
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:147
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:94
@@ -2566,8 +2716,8 @@ msgstr "你确定吗？"
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:89
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:220
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:70
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:102
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:65
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:81
 #: modules/News/html_admin/mod_news_index.html.twig:80
 #: modules/Notification/html_admin/mod_notification_index.html.twig:55
@@ -2579,7 +2729,7 @@ msgstr "你确定吗？"
 #: modules/Product/html_admin/mod_product_addons.html.twig:75
 #: modules/Product/html_admin/mod_product_index.html.twig:88
 #: modules/Product/html_admin/mod_product_index.html.twig:167
-#: modules/Product/html_admin/mod_product_manage.html.twig:245
+#: modules/Product/html_admin/mod_product_manage.html.twig:247
 #: modules/Product/html_admin/mod_product_promos.html.twig:106
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:113
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:125
@@ -2590,7 +2740,7 @@ msgstr "你确定吗？"
 #: modules/Staff/html_admin/mod_staff_index.html.twig:157
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:64
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:115
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:263
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:266
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:88
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:157
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:99
@@ -2613,7 +2763,7 @@ msgstr "列表为空"
 msgid "Activity settings"
 msgstr "活动设置"
 
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:32
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:33
 #: modules/Client/html_admin/mod_client_settings.html.twig:28
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:67
@@ -2624,17 +2774,28 @@ msgstr "活动设置"
 msgid "Configuration updated"
 msgstr "已更新配置"
 
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:36
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:37
 msgid "Activity log retention"
 msgstr "保留活动日志"
 
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:39
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:41
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:51
 msgid "Number of days"
 msgstr "天数"
 
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:41
-msgid "FOSSBilling will automatically remove activity logs that are older than the configured number of days. Set to 0 to disable this behavior"
-msgstr "FOSSBilling将自动删除超过配置天数的活动日志。设置为 0 禁用此行为"
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:43
+msgid "FOSSBilling will automatically remove activity logs that are older than the\n"
+"                    configured number of days. Set to 0 to disable this behavior"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:47
+msgid "Email log retention"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:53
+msgid "FOSSBilling will automatically remove sent email logs that are older than the\n"
+"                    configured number of days. Set to 0 to disable this behavior"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_group.html.twig:17
 msgid "Client groups"
@@ -2659,8 +2820,8 @@ msgstr "编辑客户组"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:525
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:620
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:38
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:48
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:81
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:44
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:77
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:197
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:152
 #: modules/News/html_admin/mod_news_index.html.twig:35
@@ -2704,6 +2865,7 @@ msgstr "标题"
 #: modules/Client/html_admin/mod_client_group.html.twig:46
 #: modules/News/html_admin/mod_news_post.html.twig:138
 #: modules/Product/html_admin/mod_product_category.html.twig:61
+#: modules/Support/html_client/mod_support_kb_article.html.twig:32
 msgid "Go back"
 msgstr "返回"
 
@@ -2734,6 +2896,7 @@ msgstr "用户ID"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:109
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:32
 #: modules/Order/html_admin/mod_order_index.html.twig:184
+#: modules/Security/html_admin/mod_security_index.html.twig:20
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:29
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
@@ -2747,10 +2910,10 @@ msgstr "用户ID"
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:62
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:34
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:64
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:185
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:233
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:276
-#: modules/Support/html_client/mod_support_contact_us.html.twig:27
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:188
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:236
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:279
+#: modules/Support/html_client/mod_support_contact_us.html.twig:33
 #: modules/System/html_admin/mod_system_settings.html.twig:62
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
@@ -2790,15 +2953,15 @@ msgstr "公司名称"
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:68
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:40
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:65
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:191
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:194
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:47
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:56
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:99
 #: modules/Support/html_admin/mod_support_settings.html.twig:148
 #: modules/Support/html_admin/mod_support_tickets.html.twig:347
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
-#: modules/Support/html_client/mod_support_contact_us.html.twig:31
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:32
+#: modules/Support/html_client/mod_support_contact_us.html.twig:37
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:35
 #: modules/System/html_admin/mod_system_settings.html.twig:68
 #: themes/huraga/html/mobile_menu.html.twig:50
 #: themes/huraga/html/partial_menu.html.twig:53
@@ -2813,7 +2976,7 @@ msgstr "邮箱"
 #: modules/Staff/html_admin/mod_staff_index.html.twig:80
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:56
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:66
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:179
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:182
 msgid "Group"
 msgstr "组"
 
@@ -2827,7 +2990,7 @@ msgstr "组"
 #: modules/Client/html_admin/mod_client_manage.html.twig:595
 #: modules/Client/html_admin/mod_client_manage.html.twig:814
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:45
-#: modules/Email/html_admin/mod_email_settings.html.twig:194
+#: modules/Email/html_admin/mod_email_settings.html.twig:196
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:214
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:68
@@ -2862,7 +3025,7 @@ msgstr "组"
 #: modules/Staff/html_admin/mod_staff_index.html.twig:117
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:74
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:67
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:210
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:213
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:69
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:60
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:125
@@ -2874,9 +3037,9 @@ msgstr "组"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:219
 #: modules/Support/html_admin/mod_support_tickets.html.twig:64
 #: modules/Support/html_admin/mod_support_tickets.html.twig:209
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:37
-#: modules/Support/html_client/mod_support_ticket.html.twig:47
-#: modules/Support/html_client/mod_support_tickets.html.twig:35
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:40
+#: modules/Support/html_client/mod_support_ticket.html.twig:48
+#: modules/Support/html_client/mod_support_tickets.html.twig:39
 msgid "Status"
 msgstr "状态"
 
@@ -2905,10 +3068,10 @@ msgstr "全部"
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:44
 #: modules/Staff/html_admin/mod_staff_index.html.twig:122
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:78
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:218
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:221
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:77
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:133
-#: themes/admin_default/html/macro_functions.html.twig:107
+#: themes/admin_default/html/macro_functions.html.twig:116
 #: themes/huraga/html/macro_functions.html.twig:31
 msgid "Active"
 msgstr "已启用"
@@ -2918,7 +3081,7 @@ msgstr "已启用"
 #: modules/Client/html_admin/mod_client_manage.html.twig:172
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:71
 #: modules/Order/html_admin/mod_order_index.html.twig:133
-#: themes/admin_default/html/macro_functions.html.twig:115
+#: themes/admin_default/html/macro_functions.html.twig:124
 #: themes/huraga/html/macro_functions.html.twig:39
 msgid "Suspended"
 msgstr "已冻结"
@@ -2931,7 +3094,7 @@ msgstr "已冻结"
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:126
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:140
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:72
-#: themes/admin_default/html/macro_functions.html.twig:117
+#: themes/admin_default/html/macro_functions.html.twig:126
 #: themes/huraga/html/macro_functions.html.twig:41
 msgid "Canceled"
 msgstr "已取消"
@@ -2974,8 +3137,8 @@ msgstr "重置"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:593
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:622
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:142
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:51
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:84
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:47
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:80
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:199
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:154
@@ -2991,8 +3154,8 @@ msgid "Total"
 msgstr "总计"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:182
-msgid "New client"
-msgstr "新客户"
+msgid "New Client"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_index.html.twig:186
 #: modules/Staff/html_admin/mod_staff_group.html.twig:23
@@ -3000,10 +3163,8 @@ msgid "Groups"
 msgstr "组"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:193
-#: modules/Staff/html_admin/mod_staff_index.html.twig:20
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:50
-msgid "New group"
-msgstr "新建组"
+msgid "New Group"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_index.html.twig:210
 #: modules/Client/html_admin/mod_client_index.html.twig:337
@@ -3017,7 +3178,7 @@ msgstr "新建组"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:61
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:113
 #: modules/Invoice/pdf_template/default-pdf.twig:36
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:90
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:93
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:94
 #: modules/Page/html_client/mod_page_signup.html.twig:56
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:186
@@ -3051,7 +3212,7 @@ msgstr "地址 2"
 #: modules/Client/html_admin/mod_client_settings.html.twig:82
 #: modules/Client/html_client/mod_client_profile.html.twig:132
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:166
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:168
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:169
 #: modules/Page/html_client/mod_page_signup.html.twig:99
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
@@ -3066,7 +3227,7 @@ msgstr "城市"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:126
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:192
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:194
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
 #: modules/Page/html_client/mod_page_signup.html.twig:119
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
@@ -3111,9 +3272,9 @@ msgstr "币种"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:397
 #: modules/Client/html_admin/mod_client_manage.html.twig:405
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:33
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:37
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:125
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:36
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:128
 #: modules/Page/html_client/mod_page_login.html.twig:34
 #: modules/Page/html_client/mod_page_signup.html.twig:159
@@ -3128,7 +3289,7 @@ msgstr "币种"
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:43
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:188
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:36
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:198
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:201
 msgid "Password"
 msgstr "密码"
 
@@ -3145,7 +3306,7 @@ msgstr "密码"
 #: modules/Product/html_admin/mod_product_index.html.twig:199
 #: modules/Product/html_admin/mod_product_promos.html.twig:265
 #: modules/Staff/html_admin/mod_staff_index.html.twig:127
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:224
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:227
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:120
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:175
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:144
@@ -3160,10 +3321,6 @@ msgstr "创建"
 msgid "Clients login history"
 msgstr "客户登录记录"
 
-#: modules/Client/html_admin/mod_client_login_history.html.twig:12
-msgid "Clients logins history"
-msgstr "客户登录历史"
-
 #: modules/Client/html_admin/mod_client_manage.html.twig:26
 #: modules/Client/html_client/mod_client_profile.html.twig:6
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:78
@@ -3174,7 +3331,7 @@ msgstr "客户登录历史"
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
 #: themes/admin_default/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:121
+#: themes/huraga/html/layout_default.html.twig:122
 #: themes/huraga/html/mobile_menu.html.twig:110
 msgid "Profile"
 msgstr "个人信息"
@@ -3186,7 +3343,7 @@ msgstr "个人信息"
 #: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:80
 #: modules/Product/html_admin/mod_product_manage.html.twig:78
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:98
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:246
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:249
 #: modules/Support/html_admin/mod_support_settings.html.twig:164
 msgid "Edit"
 msgstr "编辑"
@@ -3244,6 +3401,10 @@ msgstr "资金余额"
 msgid "Notes"
 msgstr "备注"
 
+#: modules/Client/html_admin/mod_client_manage.html.twig:118
+msgid "Unknown"
+msgstr ""
+
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
 #: modules/Client/html_client/mod_client_profile.html.twig:32
 #: modules/Client/html_client/mod_client_profile.html.twig:197
@@ -3261,7 +3422,7 @@ msgstr "API密钥"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:171
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:72
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:125
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:144
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:146
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
 #: modules/Page/html_client/mod_page_signup.html.twig:83
 #: modules/System/html_admin/mod_system_settings.html.twig:80
@@ -3295,7 +3456,7 @@ msgstr "登录客户区域"
 #: modules/Order/html_admin/mod_order_manage.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:314
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:106
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:254
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:257
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:93
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:105
 #: modules/Support/html_admin/mod_support_settings.html.twig:172
@@ -3337,7 +3498,7 @@ msgstr "邮件已批准"
 #: modules/Client/html_admin/mod_client_manage.html.twig:202
 #: modules/Client/html_admin/mod_client_manage.html.twig:356
 #: modules/Email/html_admin/mod_email_settings.html.twig:144
-#: modules/Email/html_admin/mod_email_settings.html.twig:270
+#: modules/Email/html_admin/mod_email_settings.html.twig:272
 #: modules/Email/html_admin/mod_email_template.html.twig:112
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:75
@@ -3352,7 +3513,6 @@ msgstr "邮件已批准"
 #: modules/Order/html_admin/mod_order_settings.html.twig:55
 #: modules/Product/html_admin/mod_product_manage.html.twig:109
 #: modules/Product/html_admin/mod_product_manage.html.twig:163
-#: modules/Product/html_admin/mod_product_manage.html.twig:176
 #: modules/Product/html_admin/mod_product_promo.html.twig:70
 #: modules/Product/html_admin/mod_product_promo.html.twig:83
 #: modules/Product/html_admin/mod_product_promo.html.twig:98
@@ -3389,7 +3549,7 @@ msgstr "邮件已批准"
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:85
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:101
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:135
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:157
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:160
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:70
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:41
 #: modules/System/html_admin/mod_system_settings.html.twig:140
@@ -3403,7 +3563,7 @@ msgstr "确定"
 #: modules/Client/html_admin/mod_client_manage.html.twig:206
 #: modules/Client/html_admin/mod_client_manage.html.twig:360
 #: modules/Email/html_admin/mod_email_settings.html.twig:148
-#: modules/Email/html_admin/mod_email_settings.html.twig:274
+#: modules/Email/html_admin/mod_email_settings.html.twig:276
 #: modules/Email/html_admin/mod_email_template.html.twig:116
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:79
@@ -3419,7 +3579,6 @@ msgstr "确定"
 #: modules/Order/html_admin/mod_order_settings.html.twig:59
 #: modules/Product/html_admin/mod_product_manage.html.twig:113
 #: modules/Product/html_admin/mod_product_manage.html.twig:167
-#: modules/Product/html_admin/mod_product_manage.html.twig:180
 #: modules/Product/html_admin/mod_product_promo.html.twig:74
 #: modules/Product/html_admin/mod_product_promo.html.twig:87
 #: modules/Product/html_admin/mod_product_promo.html.twig:102
@@ -3456,7 +3615,7 @@ msgstr "确定"
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:87
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:103
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:139
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:163
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:166
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:74
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:45
 #: modules/System/html_admin/mod_system_settings.html.twig:144
@@ -3592,9 +3751,7 @@ msgid "Period"
 msgstr "时期"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:507
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:129
 #: modules/Index/html_client/mod_index_dashboard.html.twig:100
-#: modules/Order/html_admin/mod_order_index.html.twig:166
 msgid "New order"
 msgstr "新订单"
 
@@ -3624,8 +3781,8 @@ msgstr "客户服务单"
 #: modules/Order/html_client/mod_order_manage.html.twig:178
 #: modules/Order/html_client/mod_order_manage.html.twig:211
 #: modules/Order/html_client/mod_order_manage.html.twig:245
-#: modules/Support/html_client/mod_support_ticket.html.twig:42
-#: modules/Support/html_client/mod_support_tickets.html.twig:34
+#: modules/Support/html_client/mod_support_ticket.html.twig:43
+#: modules/Support/html_client/mod_support_tickets.html.twig:38
 msgid "Help desk"
 msgstr "客服中心"
 
@@ -3634,7 +3791,7 @@ msgstr "客服中心"
 #: modules/Email/html_admin/mod_email_history.html.twig:33
 #: modules/Email/html_admin/mod_email_settings.html.twig:75
 #: modules/Email/html_admin/mod_email_settings.html.twig:165
-#: modules/Email/html_admin/mod_email_settings.html.twig:191
+#: modules/Email/html_admin/mod_email_settings.html.twig:193
 #: modules/Embed/html_client/mod_embed_contact.html.twig:52
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
@@ -3651,10 +3808,10 @@ msgstr "客服中心"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:208
 #: modules/Support/html_admin/mod_support_tickets.html.twig:319
 #: modules/Support/html_admin/mod_support_tickets.html.twig:353
-#: modules/Support/html_client/mod_support_contact_us.html.twig:35
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:22
-#: modules/Support/html_client/mod_support_tickets.html.twig:33
-#: modules/Support/html_client/mod_support_tickets.html.twig:89
+#: modules/Support/html_client/mod_support_contact_us.html.twig:41
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:25
+#: modules/Support/html_client/mod_support_tickets.html.twig:37
+#: modules/Support/html_client/mod_support_tickets.html.twig:94
 msgid "Subject"
 msgstr "主题"
 
@@ -3675,7 +3832,8 @@ msgstr "客户付款历史"
 #: modules/Product/html_admin/mod_product_addons.html.twig:46
 #: modules/Product/html_admin/mod_product_addons.html.twig:129
 #: modules/Product/html_admin/mod_product_index.html.twig:193
-#: modules/Product/html_admin/mod_product_manage.html.twig:195
+#: modules/Product/html_admin/mod_product_manage.html.twig:197
+#: modules/Security/html_admin/mod_security_index.html.twig:21
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:49
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:193
 #: themes/admin_default/html/partial_extensions.html.twig:28
@@ -3695,8 +3853,8 @@ msgid "Add funds"
 msgstr "添加资金"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:727
-msgid "Logins history"
-msgstr "登录历史"
+msgid "Login history"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:760
 msgid "Emails sent to client"
@@ -3710,7 +3868,7 @@ msgstr "邮件主题"
 #: modules/Client/html_admin/mod_client_manage.html.twig:768
 #: modules/Email/html_admin/mod_email_details.html.twig:37
 #: modules/Email/html_admin/mod_email_history.html.twig:31
-#: modules/Email/html_admin/mod_email_settings.html.twig:192
+#: modules/Email/html_admin/mod_email_settings.html.twig:194
 #: modules/Email/html_client/mod_email_email.html.twig:19
 #: modules/Email/html_client/mod_email_index.html.twig:52
 msgid "To"
@@ -3777,7 +3935,7 @@ msgstr "必填栏"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:75
 #: modules/Client/html_client/mod_client_profile.html.twig:59
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:78
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:81
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:82
 #: modules/Page/html_client/mod_page_signup.html.twig:42
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:174
@@ -3792,7 +3950,7 @@ msgid "Gender"
 msgstr "性别"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:78
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:102
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:103
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:104
 #: modules/Page/html_client/mod_page_signup.html.twig:64
 msgid "Birthday"
@@ -3884,7 +4042,7 @@ msgid "To change your avatar visit"
 msgstr "更换头像"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:55
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:67
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:70
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:71
 #: modules/Page/html_client/mod_page_signup.html.twig:35
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:168
@@ -3893,9 +4051,9 @@ msgid "First Name"
 msgstr "名字"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:65
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:25
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:29
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:57
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:28
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:60
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:61
 #: modules/Page/html_client/mod_page_signup.html.twig:49
 msgid "Email Address"
@@ -3926,27 +4084,27 @@ msgid "Phone Country Code"
 msgstr "手机号国家代码"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:116
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:214
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:218
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:220
 #: modules/Page/html_client/mod_page_signup.html.twig:135
 msgid "Phone Number"
 msgstr "电话号码"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:126
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:155
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:158
 #: modules/Page/html_client/mod_page_signup.html.twig:91
 msgid "Address 2"
 msgstr "地址2"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:138
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:180
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:179
 #: modules/Page/html_client/mod_page_signup.html.twig:109
 msgid "-- Select country --"
 msgstr "-- 选择国家/地区 --"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:152
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:203
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:205
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:206
 #: modules/Page/html_client/mod_page_signup.html.twig:127
 msgid "Zip/Postal Code"
@@ -4200,6 +4358,11 @@ msgstr "货币汇率由 ExchangeRate-API 提供。"
 msgid "Code"
 msgstr "代码"
 
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:148
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:154
+msgid "Leave blank to automatically set"
+msgstr ""
+
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:165
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:62
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:188
@@ -4335,6 +4498,7 @@ msgid "Exchange rate syncing runs via the cronjob and as such is limited by the 
 msgstr "汇率同步通过定时任务运行，因此受限于您的定时任务调度频率（通常为 5 分钟）。"
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:271
+#: modules/Security/html_admin/mod_security_index.html.twig:23
 msgid "Result"
 msgstr "结果"
 
@@ -4353,8 +4517,8 @@ msgstr "别名"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:69
 #: modules/Email/html_client/mod_email_index.html.twig:56
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:97
-#: modules/Support/html_client/mod_support_tickets.html.twig:52
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:93
+#: modules/Support/html_client/mod_support_tickets.html.twig:56
 msgid "View"
 msgstr "查看"
 
@@ -4423,8 +4587,8 @@ msgstr "客户区域"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
 #: themes/admin_default/html/layout_default.html.twig:148
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
-#: themes/huraga/html/layout_default.html.twig:89
-#: themes/huraga/html/layout_default.html.twig:158
+#: themes/huraga/html/layout_default.html.twig:90
+#: themes/huraga/html/layout_default.html.twig:159
 #: themes/huraga/html/mobile_menu.html.twig:5
 #: themes/huraga/html/partial_menu.html.twig:8
 msgid "Dashboard"
@@ -4432,7 +4596,7 @@ msgstr "控制面板"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
 #: modules/Index/html_client/mod_index_dashboard.html.twig:10
-#: themes/huraga/html/layout_default.html.twig:155
+#: themes/huraga/html/layout_default.html.twig:156
 msgid "Home"
 msgstr "主页"
 
@@ -4441,7 +4605,7 @@ msgid "Tickets waiting your reply"
 msgstr "待回复的工单"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:42
-#: modules/Support/html_client/mod_support_tickets.html.twig:32
+#: modules/Support/html_client/mod_support_tickets.html.twig:36
 msgid "Id"
 msgstr "ID"
 
@@ -4452,11 +4616,11 @@ msgstr "更新于"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:47
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:713
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:52
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:85
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:48
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:81
 #: modules/Order/html_client/mod_order_list.html.twig:35
 #: modules/Order/html_client/mod_order_manage.html.twig:140
-#: modules/Support/html_client/mod_support_tickets.html.twig:37
+#: modules/Support/html_client/mod_support_tickets.html.twig:41
 msgid "Actions"
 msgstr "操作"
 
@@ -4469,7 +4633,7 @@ msgstr "操作"
 #: modules/Order/html_admin/mod_order_manage.html.twig:135
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:81
 #: modules/Support/html_admin/mod_support_tickets.html.twig:245
-#: modules/Support/html_client/mod_support_tickets.html.twig:49
+#: modules/Support/html_client/mod_support_tickets.html.twig:53
 #: themes/admin_default/html/mod_index_dashboard.html.twig:335
 #: themes/admin_default/html/mod_index_dashboard.html.twig:498
 #: themes/admin_default/html/mod_index_dashboard.html.twig:525
@@ -4478,10 +4642,10 @@ msgstr "以前"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:58
 #: modules/Index/html_client/mod_index_dashboard.html.twig:39
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:52
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:69
-#: modules/Support/html_client/mod_support_ticket.html.twig:29
-#: modules/Support/html_client/mod_support_tickets.html.twig:54
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:55
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:72
+#: modules/Support/html_client/mod_support_ticket.html.twig:30
+#: modules/Support/html_client/mod_support_tickets.html.twig:58
 msgid "Reply"
 msgstr "答复"
 
@@ -4500,8 +4664,8 @@ msgstr "所有发票"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:144
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:210
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:38
-#: themes/admin_default/html/macro_functions.html.twig:119
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:34
+#: themes/admin_default/html/macro_functions.html.twig:128
 #: themes/huraga/html/macro_functions.html.twig:43
 msgid "Paid"
 msgstr "已付款"
@@ -4511,11 +4675,16 @@ msgstr "已付款"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:130
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:214
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:34
-#: themes/admin_default/html/macro_functions.html.twig:121
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:30
+#: themes/admin_default/html/macro_functions.html.twig:130
 #: themes/huraga/html/macro_functions.html.twig:45
 msgid "Unpaid"
 msgstr "未付款"
+
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:129
+#: modules/Order/html_admin/mod_order_index.html.twig:166
+msgid "New Order"
+msgstr ""
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:130
 #: modules/Index/html_client/mod_index_dashboard.html.twig:102
@@ -4529,7 +4698,7 @@ msgstr "即将过期"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:153
 #: modules/Index/html_client/mod_index_dashboard.html.twig:124
-#: modules/Support/html_client/mod_support_tickets.html.twig:22
+#: modules/Support/html_client/mod_support_tickets.html.twig:26
 msgid "New ticket"
 msgstr "新工单"
 
@@ -4581,6 +4750,7 @@ msgid "Resend"
 msgstr "重新发送"
 
 #: modules/Email/html_admin/mod_email_history.html.twig:13
+#: modules/Extension/html_admin/mod_extension_index.html.twig:19
 #: themes/admin_default/html/mod_index_dashboard.html.twig:38
 msgid "Information"
 msgstr "信息"
@@ -4671,123 +4841,123 @@ msgstr "FOSSBilling 邮件队列让它们在后台通过 cron 发送。 您可�
 msgid "Emails that have been sent or that failed to be sent will not be listed here."
 msgstr "已经发送或未能发送的电子邮件将不会在此列出。"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:193
+#: modules/Email/html_admin/mod_email_settings.html.twig:195
 msgid "To (Email)"
 msgstr "收件人（Email）"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:195
+#: modules/Email/html_admin/mod_email_settings.html.twig:197
 msgid "Tries"
 msgstr "尝试次数"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:196
+#: modules/Email/html_admin/mod_email_settings.html.twig:198
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:265
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:75
 msgid "Created at"
 msgstr "创建时间"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:197
+#: modules/Email/html_admin/mod_email_settings.html.twig:199
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:80
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:105
 msgid "Updated at"
 msgstr "更新日期"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:233
+#: modules/Email/html_admin/mod_email_settings.html.twig:235
 msgid "The list is empty."
 msgstr "空空如也"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:242
+#: modules/Email/html_admin/mod_email_settings.html.twig:244
 msgid "Email settings updated"
 msgstr "电子邮件信息已更新"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:245
+#: modules/Email/html_admin/mod_email_settings.html.twig:247
 msgid "Configure email options"
 msgstr "配置电子邮件选项"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:246
+#: modules/Email/html_admin/mod_email_settings.html.twig:248
 msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can configure your own SMTP server"
 msgstr "FOSSBilling 默认通过 <em>sendmail</em> 来发邮件，您也可配置使用外部的 SMTP 服务器"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:252
+#: modules/Email/html_admin/mod_email_settings.html.twig:254
 msgid "Send emails per cron run (0 = unlimited)"
 msgstr "每次运行的 cron 发送邮件的数量 (0=无限制)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:256
+#: modules/Email/html_admin/mod_email_settings.html.twig:258
 msgid "Max email sending time in minutes (0 = unlimited, default 5 min.)"
 msgstr "以分钟为单位的最大邮件发送时间 (0=无限，默认 5分钟)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:260
+#: modules/Email/html_admin/mod_email_settings.html.twig:262
 msgid "Cancel sending email after unsuccessful tries (0 = do not cancel)"
 msgstr "尝试失败多少次后取消发送邮件 (0=不取消)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:266
+#: modules/Email/html_admin/mod_email_settings.html.twig:268
 msgid "Log sent emails to database"
 msgstr "将发出的邮件记录到数据库中"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:279
+#: modules/Email/html_admin/mod_email_settings.html.twig:281
 msgid "Email transport"
 msgstr "邮件传输"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:283
+#: modules/Email/html_admin/mod_email_settings.html.twig:285
 msgid "SendMail"
 msgstr "SendMail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:287
+#: modules/Email/html_admin/mod_email_settings.html.twig:289
 msgid "SMTP"
 msgstr "SMTP(邮件服务器)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:291
+#: modules/Email/html_admin/mod_email_settings.html.twig:293
 msgid "SendGrid"
 msgstr "SendGrid"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:295
+#: modules/Email/html_admin/mod_email_settings.html.twig:297
 msgid "Custom"
 msgstr "自定义"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:302
+#: modules/Email/html_admin/mod_email_settings.html.twig:304
 msgid "SMTP Hostname"
 msgstr "SMTP 主机名"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:308
+#: modules/Email/html_admin/mod_email_settings.html.twig:310
 msgid "SMTP Port"
 msgstr "SMTP 端口"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:314
+#: modules/Email/html_admin/mod_email_settings.html.twig:316
 msgid "SMTP Username"
 msgstr "SMTP 用户名"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:320
+#: modules/Email/html_admin/mod_email_settings.html.twig:322
 msgid "SMTP Password"
 msgstr "SMTP 密码"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:329
+#: modules/Email/html_admin/mod_email_settings.html.twig:331
 msgid "SendGrid API Key"
 msgstr "SendGrid API Key"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:338
+#: modules/Email/html_admin/mod_email_settings.html.twig:340
 msgid "Custom DSN"
 msgstr "自定义 DSN"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:340
+#: modules/Email/html_admin/mod_email_settings.html.twig:342
 msgid "If one of the available options don't quite meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
 msgstr "如果当前所有选项不能满足您的需求，可自定义 DSN 。需要留意的是，如用户名、密码和主机名等，需要使用 URL-encoded 。"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:341
+#: modules/Email/html_admin/mod_email_settings.html.twig:343
 msgid "More information"
 msgstr "更多信息"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:342
+#: modules/Email/html_admin/mod_email_settings.html.twig:344
 msgid "Example"
 msgstr "示例"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:355
+#: modules/Email/html_admin/mod_email_settings.html.twig:357
 msgid "Send a test email to yourself"
 msgstr "向自己发送测试邮件"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:357
+#: modules/Email/html_admin/mod_email_settings.html.twig:359
 msgid "Update email settings"
 msgstr "更新电子邮件设置"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:371
+#: modules/Email/html_admin/mod_email_settings.html.twig:373
 msgid "Email was successfully sent"
 msgstr "成功发送邮件"
 
@@ -4883,17 +5053,13 @@ msgid "Enter the words above"
 msgstr "输入上面的字词"
 
 #: modules/Embed/html_client/mod_embed_contact.html.twig:102
-#: modules/Support/html_client/mod_support_contact_us.html.twig:46
+#: modules/Support/html_client/mod_support_contact_us.html.twig:52
 msgid "Send"
 msgstr "发送"
 
 #: modules/Extension/html_admin/mod_extension_index.html.twig:16
 msgid "Extension Directory"
 msgstr "扩展目录"
-
-#: modules/Extension/html_admin/mod_extension_index.html.twig:19
-msgid "Learn more about extensions"
-msgstr "了解有关扩展组件的详细信息"
 
 #: modules/Extension/html_admin/mod_extension_index.html.twig:22
 msgid "Hooks"
@@ -5184,11 +5350,11 @@ msgid "No recent orders"
 msgstr "最近没有订单"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:176
-#: modules/Support/html_client/mod_support_ticket.html.twig:13
+#: modules/Support/html_client/mod_support_ticket.html.twig:14
 #: modules/Support/html_client/mod_support_tickets.html.twig:5
 #: modules/Support/html_client/mod_support_tickets.html.twig:6
 #: modules/Support/html_client/mod_support_tickets.html.twig:9
-#: modules/Support/html_client/mod_support_tickets.html.twig:18
+#: modules/Support/html_client/mod_support_tickets.html.twig:22
 msgid "Support tickets"
 msgstr "工单"
 
@@ -5197,8 +5363,8 @@ msgid "No recent support tickets"
 msgstr "最近没有工单"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:212
-msgid "You are logged out"
-msgstr "你已经退出"
+msgid "You are currently logged out"
+msgstr ""
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:214
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:43
@@ -5207,7 +5373,7 @@ msgstr "你已经退出"
 #: modules/Staff/html_admin/mod_staff_login.html.twig:3
 #: modules/Staff/html_admin/mod_staff_login.html.twig:70
 #: themes/admin_default/html/error.html.twig:14
-#: themes/huraga/html/layout_default.html.twig:102
+#: themes/huraga/html/layout_default.html.twig:103
 #: themes/huraga/html/mobile_menu.html.twig:119
 msgid "Login"
 msgstr "登录"
@@ -5216,9 +5382,10 @@ msgstr "登录"
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:251
 #: modules/Page/html_client/mod_page_signup.html.twig:5
 #: modules/Page/html_client/mod_page_signup.html.twig:182
-#: themes/huraga/html/layout_default.html.twig:128
+#: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
+#: themes/huraga/html/layout_default.html.twig:129
 #: themes/huraga/html/mobile_menu.html.twig:123
-msgid "Sign up"
+msgid "Register"
 msgstr "注册"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:223
@@ -5231,15 +5398,15 @@ msgstr "注册"
 #: modules/Order/html_client/mod_order_product.html.twig:12
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:4
 #: themes/admin_default/html/partial_menu_top.html.twig:3
-#: themes/huraga/html/layout_default.html.twig:95
+#: themes/huraga/html/layout_default.html.twig:96
 #: themes/huraga/html/mobile_menu.html.twig:14
 #: themes/huraga/html/partial_menu.html.twig:17
 msgid "Order"
 msgstr "订购"
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:225
-msgid "Products and services"
-msgstr "产品和服务"
+msgid "Order new products and services"
+msgstr ""
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:236
 #: modules/News/html_admin/mod_news_index.html.twig:7
@@ -5256,19 +5423,9 @@ msgstr "公告"
 msgid "Latest news and announcements"
 msgstr "最新消息和公告"
 
-#: modules/Index/html_client/mod_index_dashboard.html.twig:250
-#: modules/Index/html_client/mod_index_dashboard.html.twig:254
-#: modules/Support/html_client/mod_support_kb_article.html.twig:8
-#: modules/Support/html_client/mod_support_kb_category.html.twig:7
-#: modules/Support/html_client/mod_support_kb_index.html.twig:10
-#: themes/huraga/html/mobile_menu.html.twig:77
-#: themes/huraga/html/partial_menu.html.twig:80
-msgid "Knowledge base"
-msgstr "知识库"
-
 #: modules/Index/html_client/mod_index_dashboard.html.twig:252
-msgid "Browse our KB for answers and FAQ"
-msgstr "浏览我们的知识库以获取答案和常见问题"
+msgid "Find answers to frequent questions"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:28
 msgid "Payment gateway configuration"
@@ -5418,7 +5575,7 @@ msgstr "全部状态"
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:68
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:158
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:218
-#: themes/admin_default/html/macro_functions.html.twig:123
+#: themes/admin_default/html/macro_functions.html.twig:132
 #: themes/huraga/html/macro_functions.html.twig:47
 msgid "Refunded"
 msgstr "已退款"
@@ -5454,8 +5611,8 @@ msgstr "已准备"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:28
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:165
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:59
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:92
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:55
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:88
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:7
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:57
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:74
@@ -5503,7 +5660,7 @@ msgid "Last Reminded"
 msgstr "最后提醒"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:129
-#: modules/Product/html_admin/mod_product_manage.html.twig:323
+#: modules/Product/html_admin/mod_product_manage.html.twig:325
 msgid "View as client"
 msgstr "以客户身份查看"
 
@@ -5539,8 +5696,9 @@ msgid "Cancel"
 msgstr "取消"
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:175
+#: modules/Security/html_admin/mod_security_iplookup.html.twig:24
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:201
-#: modules/Support/html_client/mod_support_tickets.html.twig:98
+#: modules/Support/html_client/mod_support_tickets.html.twig:103
 msgid "Submit"
 msgstr "提交"
 
@@ -5801,8 +5959,8 @@ msgid "Payment Gateway"
 msgstr "支付网关"
 
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:19
-msgid "New subscription"
-msgstr "添加订阅"
+msgid "New Subscription"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:21
 msgid "New tax rule"
@@ -6028,28 +6186,28 @@ msgstr "如果此页面在5秒内不会自动重定向，请单击此处继续�
 msgid "Invoice management"
 msgstr "账单管理"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:24
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:20
 msgid "All of your invoices can be found here. You can choose to see either paid or unpaid invoices by clicking corresponding button."
 msgstr "您的所有账单都可以在这里找到。您可以通过点击相应的按钮来选择已支付或未支付的账单。"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:49
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:82
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:45
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:78
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:31
 msgid "Invoice Date"
 msgstr "账单日期"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:50
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:84
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:39
 msgid "Due Date"
 msgstr "截止日期"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:64
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:60
 msgid "Pay"
 msgstr "支付"
 
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:83
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:79
 msgid "Paid Date"
 msgstr "付款日期"
 
@@ -6128,14 +6286,14 @@ msgstr "账单状态"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 #: modules/System/html_admin/mod_system_settings.html.twig:118
-#: themes/huraga/html/layout_default.html.twig:182
+#: themes/huraga/html/layout_default.html.twig:183
 msgid "Bank Name"
 msgstr "银行名称"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 #: modules/System/html_admin/mod_system_settings.html.twig:124
-#: themes/huraga/html/layout_default.html.twig:182
+#: themes/huraga/html/layout_default.html.twig:183
 msgid "BIC / SWIFT Code"
 msgstr "BIC / SWIFT 代码"
 
@@ -6304,12 +6462,13 @@ msgid "Message was sent."
 msgstr "信息已发送。"
 
 #: modules/News/html_admin/mod_news_index.html.twig:12
-msgid "News and announcements"
-msgstr "公告、消息"
+#: modules/News/html_client/mod_news_index.html.twig:16
+msgid "News & Announcements"
+msgstr "消息、公告"
 
 #: modules/News/html_admin/mod_news_index.html.twig:19
-msgid "New announcement"
-msgstr "新公告"
+msgid "New Announcement"
+msgstr ""
 
 #: modules/News/html_admin/mod_news_index.html.twig:107
 #: modules/News/html_admin/mod_news_post.html.twig:69
@@ -6345,10 +6504,6 @@ msgstr "文章已创建"
 #: modules/News/html_admin/mod_news_post.html.twig:104
 msgid "Last update"
 msgstr "更新时间"
-
-#: modules/News/html_client/mod_news_index.html.twig:16
-msgid "News & Announcements"
-msgstr "消息、公告"
 
 #: modules/News/html_client/mod_news_index.html.twig:17
 msgid "Track our latest information."
@@ -6407,7 +6562,7 @@ msgid "Creation date"
 msgstr "创建日期"
 
 #: modules/Order/html_admin/mod_order_index.html.twig:105
-#: themes/admin_default/html/macro_functions.html.twig:109
+#: themes/admin_default/html/macro_functions.html.twig:118
 #: themes/huraga/html/macro_functions.html.twig:33
 msgid "Pending Setup"
 msgstr "等待设置"
@@ -7047,14 +7202,14 @@ msgid "Items"
 msgstr "商品"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:11
-msgid "Login or Sign up"
-msgstr "登录或注册"
+msgid "Login or Register"
+msgstr "登陆 或 注册"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:29
 msgid "You must fill in your email."
 msgstr "必须填写邮箱。"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:37
 msgid "You must fill in your password."
 msgstr "必须填写密码。"
 
@@ -7063,17 +7218,17 @@ msgstr "必须填写密码。"
 msgid "Create account"
 msgstr "注册账号"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:112
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:118
 msgid "You are"
 msgstr "您是"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:134
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:136
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:137
 msgid "Confirm password"
 msgstr "确认密码"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:215
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:218
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:216
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:221
 msgid "Phone Code"
 msgstr "电话代码"
 
@@ -7111,7 +7266,7 @@ msgstr "计费"
 msgid "One-time payment"
 msgstr "一次性付款"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:74
+#: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:86
 msgid "Next"
 msgstr "下一步"
 
@@ -7241,7 +7396,7 @@ msgstr "将服务台设置为收费模式"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:70
 #: modules/Support/html_admin/mod_support_tickets.html.twig:210
 #: modules/Support/html_admin/mod_support_tickets.html.twig:313
-#: modules/Support/html_client/mod_support_tickets.html.twig:85
+#: modules/Support/html_client/mod_support_tickets.html.twig:90
 msgid "Helpdesk"
 msgstr "服务台"
 
@@ -7291,13 +7446,14 @@ msgid "Icon"
 msgstr "图标"
 
 #: modules/Product/html_admin/mod_product_addons.html.twig:33
-msgid "New addon"
-msgstr "新建附加组件"
+msgid "New Addon"
+msgstr ""
 
 #: modules/Product/html_admin/mod_product_category.html.twig:22
 #: modules/Product/html_admin/mod_product_index.html.twig:23
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:25
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:23
+#: modules/Support/html_client/mod_support_kb_index.html.twig:30
 msgid "Categories"
 msgstr "分类"
 
@@ -7307,11 +7463,13 @@ msgid "Category updated"
 msgstr "分类已更新"
 
 #: modules/Product/html_admin/mod_product_index.html.twig:19
-msgid "New product"
-msgstr "新建产品"
+msgid "New Product"
+msgstr ""
 
 #: modules/Product/html_admin/mod_product_index.html.twig:30
-msgid "New category"
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:46
+#: modules/Support/html_admin/mod_support_kb_index.html.twig:46
+msgid "New Category"
 msgstr "新建分类"
 
 #: modules/Product/html_admin/mod_product_index.html.twig:49
@@ -7354,8 +7512,8 @@ msgid "General Settings"
 msgstr "通用设置"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:51
-#: modules/Product/html_admin/mod_product_manage.html.twig:220
-#: modules/Product/html_admin/mod_product_manage.html.twig:268
+#: modules/Product/html_admin/mod_product_manage.html.twig:222
+#: modules/Product/html_admin/mod_product_manage.html.twig:270
 msgid "Product configuration updated"
 msgstr "产品配置已更新"
 
@@ -7383,51 +7541,47 @@ msgstr "价格和库存控制"
 msgid "Enable stock control"
 msgstr "启用库存控制"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:172
-msgid "Allow quantity selection on order form"
-msgstr "允许在订单表单中选择数量"
-
-#: modules/Product/html_admin/mod_product_manage.html.twig:185
+#: modules/Product/html_admin/mod_product_manage.html.twig:187
 msgid "Quantity in stock"
 msgstr "库存数量"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:214
+#: modules/Product/html_admin/mod_product_manage.html.twig:216
 msgid "No additional configuration for this product is required"
 msgstr "此产品无需额外配置"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:223
+#: modules/Product/html_admin/mod_product_manage.html.twig:225
 msgid "Choose which addons you would like to offer with"
 msgstr "选择可提供的附加组件"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:256
+#: modules/Product/html_admin/mod_product_manage.html.twig:258
 msgid "Create new addon"
 msgstr "新建附加组件"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:267
+#: modules/Product/html_admin/mod_product_manage.html.twig:269
 msgid "Choose which products can client upgrade to"
 msgstr "选择哪些产品可以升级"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:271
+#: modules/Product/html_admin/mod_product_manage.html.twig:273
 msgid "Product Upgrades"
 msgstr "产品升级"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:303
+#: modules/Product/html_admin/mod_product_manage.html.twig:305
 msgid "Product Links"
 msgstr "产品链接"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:305
+#: modules/Product/html_admin/mod_product_manage.html.twig:307
 msgid "Order Page (via ID)"
 msgstr "订单页面 (用 ID)"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:311
+#: modules/Product/html_admin/mod_product_manage.html.twig:313
 msgid "Order Page (via Link)"
 msgstr "订单页面 (用链接)"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:341
+#: modules/Product/html_admin/mod_product_manage.html.twig:343
 msgid "Edit form"
 msgstr "编辑表单"
 
-#: modules/Product/html_admin/mod_product_manage.html.twig:346
+#: modules/Product/html_admin/mod_product_manage.html.twig:348
 msgid "Add new form"
 msgstr "添加新表单"
 
@@ -7564,6 +7718,31 @@ msgstr "路径"
 #: modules/Redirect/html_admin/mod_redirect_settings.html.twig:75
 msgid "Target"
 msgstr "指向"
+
+#: modules/Security/html_admin/mod_security_index.html.twig:22
+#: modules/Security/html_admin/mod_security_index.html.twig:36
+msgid "Run check"
+msgstr ""
+
+#: modules/Security/html_admin/mod_security_index.html.twig:25
+msgid "Run all checks"
+msgstr ""
+
+#: modules/Security/html_admin/mod_security_iplookup.html.twig:17
+msgid "Lookup & discover info about IP addresses."
+msgstr ""
+
+#: modules/Security/html_admin/mod_security_iplookup.html.twig:32
+msgid "IP Address"
+msgstr ""
+
+#: modules/Security/html_admin/mod_security_iplookup.html.twig:35
+msgid "ASN Organization"
+msgstr ""
+
+#: modules/Security/html_admin/mod_security_iplookup.html.twig:52
+msgid "ASN stands for autonomous system number. IP address info may not always be accurate."
+msgstr ""
 
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:5
 #: modules/Seo/html_admin/mod_seo_settings.html.twig:21
@@ -8041,10 +8220,6 @@ msgstr "域名转移码是： "
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:4
 msgid "Domain action"
 msgstr "域名操作"
-
-#: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
-msgid "Register"
-msgstr "注册"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:12
 msgid " Transfer"
@@ -9017,10 +9192,15 @@ msgstr "员工"
 msgid "New staff member"
 msgstr "新增员工"
 
+#: modules/Staff/html_admin/mod_staff_index.html.twig:20
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:50
+msgid "New group"
+msgstr "新建组"
+
 #: modules/Staff/html_admin/mod_staff_index.html.twig:110
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:87
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:47
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:204
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:207
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
 #: modules/System/html_admin/mod_system_settings.html.twig:204
@@ -9029,12 +9209,12 @@ msgstr "签名"
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:120
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:82
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:214
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:217
 msgid "Inactive"
 msgstr "非活跃的"
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:175
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:283
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:286
 msgid "Create group"
 msgstr "新增群组"
 
@@ -9055,11 +9235,8 @@ msgid "Forgot your password?"
 msgstr "忘记了密码？"
 
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:5
-msgid "Staff members login history"
-msgstr "员工登录历史记录"
-
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:12
-msgid "Staff members logins history"
+msgid "Staff members login history"
 msgstr "员工登录历史记录"
 
 #: modules/Staff/html_admin/mod_staff_login_history.html.twig:23
@@ -9188,11 +9365,15 @@ msgstr "已生成新的 API 密钥。使用旧密钥的应用程序现在无法�
 msgid "Check login IP"
 msgstr "检查登录IP"
 
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:144
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:145
+msgid "WARNING! Incorrect configuration of allowed IPs can lead to a complete lockout of the administrator panel. Only use when you have static IP addresses."
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:147
 msgid "Allowed IPs. One per line"
 msgstr "允许的 IP，每行一个"
 
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:151
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:154
 msgid "Allow staff reset passwords"
 msgstr "允许员工重设密码"
 
@@ -9216,11 +9397,6 @@ msgstr "新回复"
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:39
 msgid "Manage Categories"
 msgstr "管理分类"
-
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:46
-#: modules/Support/html_admin/mod_support_kb_index.html.twig:46
-msgid "New Category"
-msgstr "新建分类"
 
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:24
 msgid "Helpdesk -"
@@ -9279,7 +9455,7 @@ msgstr "分类已创建"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:31
 #: modules/Support/html_admin/mod_support_ticket.html.twig:36
-#: modules/Support/html_client/mod_support_ticket.html.twig:24
+#: modules/Support/html_client/mod_support_ticket.html.twig:25
 msgid "Ticket"
 msgstr "工单"
 
@@ -9289,7 +9465,7 @@ msgid "Ticket ID"
 msgstr "工单 ID"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:52
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:27
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:30
 msgid "Author"
 msgstr "作者"
 
@@ -9325,33 +9501,31 @@ msgstr "显示/隐藏 消息内容"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:194
 #: modules/Support/html_admin/mod_support_ticket.html.twig:316
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:88
-#: modules/Support/html_client/mod_support_ticket.html.twig:141
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:91
 #: modules/Support/html_client/mod_support_ticket.html.twig:142
+#: modules/Support/html_client/mod_support_ticket.html.twig:143
 msgid "Post"
 msgstr "发出"
 
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:204
 #: modules/Support/html_admin/mod_support_ticket.html.twig:326
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:51
-#: modules/Support/html_client/mod_support_ticket.html.twig:32
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:54
+#: modules/Support/html_client/mod_support_ticket.html.twig:33
 msgid "Close ticket"
 msgstr "结束工单"
 
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:36
-#: modules/Support/html_admin/mod_support_tickets.html.twig:122
-msgid "Tickets waiting for staff reply"
-msgstr "待回复的工单"
+msgid "Client reply"
+msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:50
-#: modules/Support/html_admin/mod_support_tickets.html.twig:136
-msgid "Tickets waiting for client reply"
-msgstr "等待客户回复的工单"
+msgid "Staff reply"
+msgstr ""
 
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:64
 #: modules/Support/html_admin/mod_support_tickets.html.twig:150
-msgid "Solved tickets"
-msgstr "已解决的工单"
+msgid "Solved"
+msgstr ""
 
 #: modules/Support/html_admin/mod_support_settings.html.twig:5
 msgid "Support Settings"
@@ -9465,6 +9639,14 @@ msgstr "工单内容"
 msgid "Created At"
 msgstr "创建于"
 
+#: modules/Support/html_admin/mod_support_tickets.html.twig:122
+msgid "Awaiting staff"
+msgstr ""
+
+#: modules/Support/html_admin/mod_support_tickets.html.twig:136
+msgid "Awaiting client"
+msgstr ""
+
 #: modules/Support/html_admin/mod_support_tickets.html.twig:184
 msgid "New Client Ticket"
 msgstr "新客户服务单"
@@ -9503,32 +9685,28 @@ msgstr "新建服务台"
 
 #: modules/Support/html_client/mod_support_contact_us.html.twig:5
 #: modules/Support/html_client/mod_support_contact_us.html.twig:9
-#: modules/Support/html_client/mod_support_contact_us.html.twig:18
+#: modules/Support/html_client/mod_support_contact_us.html.twig:24
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:9
 msgid "Contact us"
 msgstr "联系我们"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:18
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:21
 msgid "Ticket information"
 msgstr "工单信息"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:44
-#: modules/Support/html_client/mod_support_ticket.html.twig:54
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:47
+#: modules/Support/html_client/mod_support_ticket.html.twig:55
 msgid "Time opened"
 msgstr "打开的时间"
 
-#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:91
-#: modules/Support/html_client/mod_support_ticket.html.twig:128
+#: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:94
+#: modules/Support/html_client/mod_support_ticket.html.twig:129
 msgid "Ticket was closed and cannot be reopened."
 msgstr "工单已关闭，不能重新打开。"
 
 #: modules/Support/html_client/mod_support_kb_article.html.twig:23
 msgid "views"
 msgstr "浏览量"
-
-#: modules/Support/html_client/mod_support_kb_article.html.twig:32
-msgid "Back to all knowledge base articles"
-msgstr "回到所有知识库文章"
 
 #: modules/Support/html_client/mod_support_kb_article.html.twig:34
 msgid "Similar articles"
@@ -9538,60 +9716,59 @@ msgstr "相似文章"
 msgid "Knowledge Base Categories"
 msgstr "知识库分类"
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:14
+#: modules/Support/html_client/mod_support_kb_index.html.twig:13
+msgid "Category List"
+msgstr ""
+
 #: modules/Support/html_client/mod_support_kb_index.html.twig:31
-msgid "Knowledge base categories"
-msgstr "知识库分类"
+msgid "Explore our knowledge base categories and their associated articles below."
+msgstr ""
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:32
-msgid "Below you can find a list of our knowledge base categories and their content."
-msgstr "您可以在下方找到我们的知识库类别及其内容。"
-
-#: modules/Support/html_client/mod_support_kb_index.html.twig:38
+#: modules/Support/html_client/mod_support_kb_index.html.twig:37
 msgid "What are you looking for?"
 msgstr "您在找什么？"
 
-#: modules/Support/html_client/mod_support_kb_index.html.twig:64
+#: modules/Support/html_client/mod_support_kb_index.html.twig:63
 msgid "No results found for:"
 msgstr "没有找到以下结果："
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:60
+#: modules/Support/html_client/mod_support_ticket.html.twig:61
 msgid "Related to"
 msgstr "关联到"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:62
+#: modules/Support/html_client/mod_support_ticket.html.twig:63
 msgid "Service #"
 msgstr "服务编号 #"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:86
+#: modules/Support/html_client/mod_support_ticket.html.twig:87
 msgid "Operator"
 msgstr "操作员"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:90
+#: modules/Support/html_client/mod_support_ticket.html.twig:91
 msgid "You"
 msgstr "您"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:101
+#: modules/Support/html_client/mod_support_ticket.html.twig:102
 msgid "Quote reply"
 msgstr "引用回复"
 
-#: modules/Support/html_client/mod_support_ticket.html.twig:131
+#: modules/Support/html_client/mod_support_ticket.html.twig:132
 msgid "This ticket was closed, but you can still reopen it by replying."
 msgstr "此工单已关闭，但您仍然可以通过回复重新打开它。"
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:19
+#: modules/Support/html_client/mod_support_tickets.html.twig:23
 msgid "Need an answer? We are here to help!"
 msgstr "有疑问吗? 我们为您效劳！"
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:36
+#: modules/Support/html_client/mod_support_tickets.html.twig:40
 msgid "Submitted"
 msgstr "已提交"
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:63
+#: modules/Support/html_client/mod_support_tickets.html.twig:68
 msgid "No support tickets"
 msgstr "没有工票"
 
-#: modules/Support/html_client/mod_support_tickets.html.twig:76
+#: modules/Support/html_client/mod_support_tickets.html.twig:81
 msgid "Open new ticket"
 msgstr "打开新工单"
 
@@ -9943,11 +10120,6 @@ msgstr "哎呀... 您刚发现一个错误页面哩"
 msgid "Back to Dashboard"
 msgstr "返回到仪表板"
 
-#: themes/admin_default/html/layout_default.html.twig:79
-#: themes/admin_default/html/layout_default.html.twig:183
-msgid "Source code"
-msgstr "源代码"
-
 #: themes/admin_default/html/layout_default.html.twig:85
 msgid "Sponsor"
 msgstr "赞助商"
@@ -9976,21 +10148,21 @@ msgstr "文档"
 msgid "Report a bug"
 msgstr "报告错误"
 
-#: themes/admin_default/html/macro_functions.html.twig:111
+#: themes/admin_default/html/macro_functions.html.twig:120
 #: themes/huraga/html/macro_functions.html.twig:35
 msgid "Failed Setup"
 msgstr "设置失败"
 
-#: themes/admin_default/html/macro_functions.html.twig:113
+#: themes/admin_default/html/macro_functions.html.twig:122
 #: themes/huraga/html/macro_functions.html.twig:37
 msgid "Failed Renewal"
 msgstr "更新失败"
 
-#: themes/admin_default/html/macro_functions.html.twig:154
+#: themes/admin_default/html/macro_functions.html.twig:163
 msgid "Search:"
 msgstr "搜索:"
 
-#: themes/admin_default/html/macro_functions.html.twig:154
+#: themes/admin_default/html/macro_functions.html.twig:163
 #: themes/admin_default/html/partial_search.html.twig:14
 msgid "Enter search text..."
 msgstr "输入搜索内容……"
@@ -10176,24 +10348,24 @@ msgstr "哦不！我们找不到你正在寻找的页面了"
 msgid "Go back to home"
 msgstr "返回首页"
 
-#: themes/huraga/html/layout_default.html.twig:123
+#: themes/huraga/html/layout_default.html.twig:124
 #: themes/huraga/html/mobile_menu.html.twig:112
 msgid "Sign out"
 msgstr "退出"
 
-#: themes/huraga/html/layout_default.html.twig:182
+#: themes/huraga/html/layout_default.html.twig:183
 msgid "Payment Information"
 msgstr "付款信息"
 
-#: themes/huraga/html/layout_default.html.twig:182
+#: themes/huraga/html/layout_default.html.twig:183
 msgid "Account Number"
 msgstr "账号"
 
-#: themes/huraga/html/layout_default.html.twig:232
+#: themes/huraga/html/layout_default.html.twig:233
 msgid "FOSSBilling Community"
 msgstr "FOSSBilling 社区"
 
-#: themes/huraga/html/layout_default.html.twig:244
+#: themes/huraga/html/layout_default.html.twig:245
 msgid "Top"
 msgstr "顶部"
 
