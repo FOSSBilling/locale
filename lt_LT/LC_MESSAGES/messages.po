@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2025-04-28 14:49-0700\n"
-"PO-Revision-Date: 2025-04-29 22:00\n"
+"POT-Creation-Date: 2025-06-10 02:51-0700\n"
+"PO-Revision-Date: 2025-06-10 20:54\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Lithuanian\n"
 "MIME-Version: 1.0\n"
@@ -56,27 +56,27 @@ msgstr "Bandant įkelti :url įvyko :err_code HTTP klaida"
 msgid "Mod object is not set for the service"
 msgstr "Mod objektas paslaugai nenustatytas"
 
-#: library/Api/Handler.php:41
+#: library/Api/Handler.php:45
 msgid "Method :method must contain underscore"
 msgstr "Metodas :method privalo turėti apatinį brūkšnį"
 
-#: library/Api/Handler.php:54 library/Box/Mod.php:58
+#: library/Api/Handler.php:58 library/Box/Mod.php:58
 msgid "Invalid module name"
 msgstr "Neteisingas modulio pavadinimas"
 
-#: library/Api/Handler.php:60
+#: library/Api/Handler.php:64
 msgid "FOSSBilling module :mod is not installed/activated"
 msgstr "FOSSBilling modulis :mod neįdiegtas/nesuaktyvintas"
 
-#: library/Api/Handler.php:68
+#: library/Api/Handler.php:72
 msgid "You do not have access to the :mod module"
 msgstr ""
 
-#: library/Api/Handler.php:84
+#: library/Api/Handler.php:88
 msgid "Api class must be an instance of Api_Abstract"
 msgstr ""
 
-#: library/Api/Handler.php:100
+#: library/Api/Handler.php:104
 msgid ":type API call :method does not exist in module :module"
 msgstr ":type API kvietimas :method neegzistuoja modulyje :module"
 
@@ -122,15 +122,6 @@ msgstr "Modulio :mod Kliento valdiklio klasė nerasta"
 
 #: library/Box/Mod.php:220
 msgid "Core modules cannot be updated"
-msgstr ""
-
-#: library/Box/Pagination.php:45 library/Box/Pagination.php:78
-msgid "Invalid page number"
-msgstr ""
-
-#: library/Box/Pagination.php:48 library/Box/Pagination.php:81
-#: modules/Client/Service.php:183
-msgid "Invalid per page number"
 msgstr ""
 
 #: library/Box/Period.php:44
@@ -267,15 +258,15 @@ msgstr ""
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "Neteisingas atsakymas iš FOSSBilling Centrinės Įspėjimų Sistemos."
 
-#: library/FOSSBilling/Config.php:91
+#: library/FOSSBilling/Config.php:90
 msgid "An error occurred when creating a backup of the configuration file."
 msgstr ""
 
-#: library/FOSSBilling/Config.php:97
+#: library/FOSSBilling/Config.php:96
 msgid "An error occurred when writing the updated configuration file."
 msgstr ""
 
-#: library/FOSSBilling/Config.php:146
+#: library/FOSSBilling/Config.php:145
 msgid "Too many iterations were performed while formatting the config file"
 msgstr ""
 
@@ -330,6 +321,14 @@ msgstr "Nepavyko išsiųsti el. pašto per :transport išskyrus :e"
 #: library/FOSSBilling/Mail.php:183
 msgid "SMTP host or port is not configured"
 msgstr "SMTP serveris arba prievadas nesukonfigūruotas"
+
+#: library/FOSSBilling/Pagination.php:74
+msgid ")."
+msgstr ""
+
+#: library/FOSSBilling/Pagination.php:85
+msgid "Invalid SQL query. Missing FROM clause."
+msgstr ""
 
 #: library/FOSSBilling/PasswordManager.php:35
 msgid "Invalid password hash provided"
@@ -489,11 +488,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Peradresuojama į PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:310
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1362
+#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1405
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Apmokėjimas už sąskaitą faktūrą :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:115 modules/Invoice/Service.php:1364
+#: library/Payment/Adapter/Stripe.php:115 modules/Invoice/Service.php:1407
 msgid "Payment for invoice :serie:id"
 msgstr "Apmokėjimas už sąskaitą faktūrą :serie:id"
 
@@ -569,8 +568,8 @@ msgstr ""
 #: library/Server/Manager/CWP.php:358 library/Server/Manager/CWP.php:371
 #: library/Server/Manager/Directadmin.php:133
 #: library/Server/Manager/Directadmin.php:147
-#: library/Server/Manager/Directadmin.php:209
-#: library/Server/Manager/Directadmin.php:458
+#: library/Server/Manager/Directadmin.php:291
+#: library/Server/Manager/Directadmin.php:542
 #: library/Server/Manager/Hestia.php:296 library/Server/Manager/Hestia.php:306
 #: library/Server/Manager/Hestia.php:341 library/Server/Manager/Plesk.php:101
 #: library/Server/Manager/Plesk.php:296 library/Server/Manager/Plesk.php:342
@@ -638,6 +637,16 @@ msgstr "Registruojant RU domeno vardą reikalinga galiojanti kontaktinio paso in
 msgid "Contact not found"
 msgstr "Kontaktas nerastas"
 
+#: library/Server/Manager/CWP.php:34
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:232
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
+msgid "API key"
+msgstr "API raktas"
+
+#: library/Server/Manager/CWP.php:35
+msgid "API key you generated from within CWP."
+msgstr ""
+
 #: library/Server/Manager/CWP.php:53 library/Server/Manager/CWP.php:57
 #: library/Server/Manager/CWP.php:61 library/Server/Manager/Directadmin.php:67
 #: library/Server/Manager/Directadmin.php:72
@@ -646,7 +655,7 @@ msgstr "Kontaktas nerastas"
 msgid "The \":server_manager\" server manager is not fully configured. Please configure the :missing"
 msgstr "\":server_manager\" serverio tvarkyklė nėra pilnai sukonfigūruota. Prašome sukonfigūruoti :missing"
 
-#: library/Server/Manager/CWP.php:116 library/Server/Manager/Directadmin.php:678
+#: library/Server/Manager/CWP.php:116 library/Server/Manager/Directadmin.php:762
 #: library/Server/Manager/Hestia.php:111 library/Server/Manager/Hestia.php:378
 #: library/Server/Manager/Plesk.php:86
 msgid "Failed to connect to the :type: server. Please verify your credentials and configuration"
@@ -659,7 +668,7 @@ msgstr ""
 #: library/Server/Manager/CWP.php:187 library/Server/Manager/CWP.php:214
 #: library/Server/Manager/CWP.php:241 library/Server/Manager/CWP.php:271
 #: library/Server/Manager/CWP.php:300 library/Server/Manager/CWP.php:329
-#: library/Server/Manager/Directadmin.php:694
+#: library/Server/Manager/Directadmin.php:778
 #: library/Server/Manager/Hestia.php:164 library/Server/Manager/Hestia.php:181
 #: library/Server/Manager/Hestia.php:208 library/Server/Manager/Hestia.php:232
 #: library/Server/Manager/Hestia.php:257 library/Server/Manager/Hestia.php:283
@@ -690,7 +699,7 @@ msgstr ""
 msgid "change account password"
 msgstr ""
 
-#: library/Server/Manager/CWP.php:345 library/Server/Manager/Directadmin.php:209
+#: library/Server/Manager/CWP.php:345 library/Server/Manager/Directadmin.php:291
 #: library/Server/Manager/Hestia.php:296 library/Server/Manager/Plesk.php:296
 msgid "username changes"
 msgstr ""
@@ -705,33 +714,37 @@ msgstr ""
 msgid "changing the account IP"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:227
+#: library/Server/Manager/Directadmin.php:309
 msgid "There are no available IPs on this server."
 msgstr "Šiame serveryje nėra prienamų IP."
 
-#: library/Server/Manager/Directadmin.php:343
+#: library/Server/Manager/Directadmin.php:427
 msgid "Unable to assign the Reseller ANY IPs. Make sure to have free, unassigned IPs."
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:347
+#: library/Server/Manager/Directadmin.php:431
 msgid "Error creating user"
 msgstr "Klaida sukuriant vartotoją"
 
-#: library/Server/Manager/Directadmin.php:458
+#: library/Server/Manager/Directadmin.php:542
 msgid "synchronizing the account"
 msgstr ""
 
-#: library/Server/Manager/Directadmin.php:503
+#: library/Server/Manager/Directadmin.php:587
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Serverio tvarkyklės \"DirectAdmin\" Klaida: \"Paskyra nėra sustabdyta\""
 
-#: library/Server/Manager/Directadmin.php:670 library/Server/Manager/Whm.php:610
+#: library/Server/Manager/Directadmin.php:754 library/Server/Manager/Whm.php:610
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
-#: library/Server/Manager/Directadmin.php:683
+#: library/Server/Manager/Directadmin.php:767
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
 msgstr "Serverio tvarkyklės DirectAdmin Klaida: \"Jūsų pateikta užklausa negali būti įvykdyta, nes jos nėra jūsų įgaliojimų lygyje\""
+
+#: library/Server/Manager/Directadmin.php:862
+msgid "Failed to retrieve user packages: "
+msgstr ""
 
 #: library/Server/Manager/Hestia.php:162
 msgid "create user"
@@ -904,8 +917,8 @@ msgstr ""
 #: modules/Client/html_admin/mod_client_index.html.twig:175
 #: modules/Client/html_admin/mod_client_manage.html.twig:17
 #: themes/admin_default/html/mod_index_dashboard.html.twig:178
-#: themes/admin_default/html/mod_index_dashboard.html.twig:453
-#: themes/admin_default/html/mod_index_dashboard.html.twig:549
+#: themes/admin_default/html/mod_index_dashboard.html.twig:439
+#: themes/admin_default/html/mod_index_dashboard.html.twig:535
 msgid "Clients"
 msgstr "Klientai"
 
@@ -936,6 +949,10 @@ msgstr "Netinkama el. pašto patvirtinimo nuoroda"
 #: modules/Client/Service.php:71
 msgid "The password you chose when creating your account."
 msgstr "Slaptažodis, kurį pasirinkote kurdami paskyrą."
+
+#: modules/Client/Service.php:183
+msgid "Invalid per page number"
+msgstr ""
 
 #: modules/Client/Service.php:225
 msgid "Currency cannot be changed. Client already has invoices issued."
@@ -982,7 +999,7 @@ msgid "Cookie consent"
 msgstr "Leidimas naudoti slapukus"
 
 #: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:771
-#: modules/Invoice/Service.php:1468 modules/Invoice/Service.php:1473
+#: modules/Invoice/Service.php:1511 modules/Invoice/Service.php:1516
 #: modules/Staff/Service.php:197
 msgid "You do not have permission to perform this action"
 msgstr ""
@@ -1270,9 +1287,9 @@ msgstr "Mokėjimo būdas nerastas. Trūksta parametro gateway_id"
 #: modules/Order/html_admin/mod_order_manage.html.twig:52
 #: themes/admin_default/html/mod_index_dashboard.html.twig:214
 #: themes/admin_default/html/mod_index_dashboard.html.twig:261
-#: themes/admin_default/html/mod_index_dashboard.html.twig:444
-#: themes/admin_default/html/mod_index_dashboard.html.twig:548
-#: themes/huraga/html/mobile_menu.html.twig:41
+#: themes/admin_default/html/mod_index_dashboard.html.twig:430
+#: themes/admin_default/html/mod_index_dashboard.html.twig:534
+#: themes/huraga/html/mobile_menu.html.twig:43
 #: themes/huraga/html/partial_menu.html.twig:44
 msgid "Invoices"
 msgstr "Sąskaitos faktūros"
@@ -1298,49 +1315,50 @@ msgid "Tax rules"
 msgstr "Mokesčių taisyklės"
 
 #: modules/Invoice/Controller/Admin.php:83
+#: modules/Extension/html_admin/mod_extension_index.html.twig:150
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:7
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:12
 msgid "Payment gateways"
 msgstr "Mokėjimo vartai"
 
-#: modules/Invoice/Service.php:425
+#: modules/Invoice/Service.php:453
 msgid "Unable to determine the next invoice number"
 msgstr ""
 
-#: modules/Invoice/Service.php:641
+#: modules/Invoice/Service.php:684
 msgid "Cannot refund invoice with negative amount"
 msgstr ""
 
-#: modules/Invoice/Service.php:856
+#: modules/Invoice/Service.php:899
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "Sąskaita faktūra susijusi su užsakymu #:id. Pirmiausia atšaukite užsakymą."
 
-#: modules/Invoice/Service.php:923
+#: modules/Invoice/Service.php:966
 msgid "Invoices are not generated for 0 amount orders"
 msgstr "0 sumos užsakymams sąskaitos faktūros negeneruojamos"
 
-#: modules/Invoice/Service.php:1083
+#: modules/Invoice/Service.php:1126
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "Turite turėti bent vieną aktyvų užsakymą, kad galėtumėte pridėti lėšų, todėl šiuo metu negalėsite tęsti!"
 
-#: modules/Invoice/Service.php:1092
+#: modules/Invoice/Service.php:1135
 msgid "Amount must be at least :min_amount"
 msgstr "Suma turi būti bent :min_amount"
 
-#: modules/Invoice/Service.php:1096
+#: modules/Invoice/Service.php:1139
 msgid "Amount cannot exceed :max_amount"
 msgstr "Suma negali viršyti :max_amount"
 
-#: modules/Invoice/Service.php:1123 modules/Invoice/Service.php:1191
+#: modules/Invoice/Service.php:1166 modules/Invoice/Service.php:1234
 msgid "Invoice not found"
 msgstr "Sąskaita faktūra nerasta"
 
-#: modules/Invoice/Service.php:1128
+#: modules/Invoice/Service.php:1171
 msgid "Payment method not found"
 msgstr "Mokėjimo būdas nerastas"
 
-#: modules/Invoice/Service.php:1132
+#: modules/Invoice/Service.php:1175
 msgid "Payment method not enabled"
 msgstr "Mokėjimo būdas neįjungtas"
 
@@ -1434,16 +1452,16 @@ msgid "Only approved transaction can be processed"
 msgstr "Galima apdoroti tik patvirtintą operaciją"
 
 #: modules/Invoice/ServiceTransaction.php:664
-msgid "Transaction currency :code do not match required currency :required"
-msgstr "Operacijos valiuta :code nesutampa su reikalaujama valiuta :required"
+msgid "Transaction currency :code does not match required currency :required"
+msgstr ""
 
 #: modules/Invoice/ServiceTransaction.php:669
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
 msgstr "Mokėjimo vartų operacijos būsena Laukiama. Galima apdoroti tik užbaigtas arba Nežinomas operacijas."
 
 #: modules/Invoice/ServiceTransaction.php:679
-msgid "Client currency do not match invoice currency"
-msgstr "Kliento valiuta nesutampa su sąskaitos faktūros valiuta"
+msgid "Client currency does not match invoice currency"
+msgstr ""
 
 #: modules/Invoice/ServiceTransaction.php:684
 msgid "Cannot add negative amount to client balance for debit transaction"
@@ -1522,8 +1540,8 @@ msgstr "Galima ištrinti tik laukiančius ir nepavykusius sąrankos užsakymus."
 #: modules/Order/html_admin/mod_order_manage.html.twig:17
 #: modules/Order/html_admin/mod_order_new.html.twig:17
 #: themes/admin_default/html/mod_index_dashboard.html.twig:196
-#: themes/admin_default/html/mod_index_dashboard.html.twig:435
-#: themes/admin_default/html/mod_index_dashboard.html.twig:547
+#: themes/admin_default/html/mod_index_dashboard.html.twig:421
+#: themes/admin_default/html/mod_index_dashboard.html.twig:533
 msgid "Orders"
 msgstr "Užsakymai"
 
@@ -1543,23 +1561,23 @@ msgstr "Trūksta papildomo produkto užsakymo grupės ID parametro"
 msgid "Parent order :group_id was not found"
 msgstr "Pirminė tvarka :group_id nerasta"
 
-#: modules/Order/Service.php:690
+#: modules/Order/Service.php:695
 msgid "Only pending setup or failed orders can be activated"
 msgstr "Galima suaktyvinti tik laukiančius sąranką arba nepavykusius užsakymus"
 
-#: modules/Order/Service.php:718
+#: modules/Order/Service.php:723
 msgid "Error creating "
 msgstr "Įvyko klaida kuriant "
 
-#: modules/Order/Service.php:787
+#: modules/Order/Service.php:792
 msgid "Service "
 msgstr "Paslauga "
 
-#: modules/Order/Service.php:992
+#: modules/Order/Service.php:1004
 msgid "Only active orders can be suspended"
 msgstr "Sustabdyti galima tik aktyvius užsakymus"
 
-#: modules/Order/Service.php:1044
+#: modules/Order/Service.php:1056
 msgid "Cannot cancel "
 msgstr ""
 
@@ -1651,11 +1669,15 @@ msgstr ""
 msgid "Checks to see if potentially dangerous PHP functions are enabled."
 msgstr ""
 
-#: modules/Security/Checks/dangerousFunctions.php:62
+#: modules/Security/Checks/dangerousFunctions.php:69
 msgid ":function: is enabled, potentially being a security concern."
 msgstr ""
 
-#: modules/Security/Checks/dangerousFunctions.php:68
+#: modules/Security/Checks/dangerousFunctions.php:72
+msgid "The following PHP functions are enabled, potentially being a security concern:\n"
+msgstr ""
+
+#: modules/Security/Checks/dangerousFunctions.php:82
 msgid "No potentially dangerous PHP functions were detected as enabled"
 msgstr ""
 
@@ -1841,7 +1863,7 @@ msgstr "Konfigūracija turi būti masyvas"
 #: modules/Servicecustom/Service.php:253 modules/Servicedomain/Api/Client.php:128
 #: modules/Servicedownloadable/Api/Admin.php:66
 #: modules/Servicedownloadable/Api/Client.php:39
-#: modules/Servicehosting/Api/Admin.php:428
+#: modules/Servicehosting/Api/Admin.php:464
 #: modules/Servicehosting/Api/Client.php:93
 #: modules/Servicelicense/Api/Admin.php:84
 #: modules/Servicelicense/Api/Client.php:52
@@ -2004,11 +2026,11 @@ msgstr ""
 msgid "plan_id is missing"
 msgstr "Trūksta plan_id"
 
-#: modules/Servicehosting/Api/Admin.php:237
+#: modules/Servicehosting/Api/Admin.php:273
 msgid "Hosting server is used by :count: service hostings"
 msgstr ""
 
-#: modules/Servicehosting/Api/Admin.php:350
+#: modules/Servicehosting/Api/Admin.php:386
 msgid "Hosting plan is used by :count: service hostings"
 msgstr ""
 
@@ -2019,7 +2041,6 @@ msgstr ""
 #: modules/Servicehosting/Controller/Admin.php:35
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:5
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:12
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:17
 msgid "Hosting plans and servers"
 msgstr "Hostingo planai ir serveriai"
@@ -2060,19 +2081,19 @@ msgstr ""
 msgid "Account password is missing or is invalid"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:771
+#: modules/Servicehosting/Service.php:811
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Netinkama serverio tvarkyklė. Serveris nebuvo tinkamai sukonfigūruotas."
 
-#: modules/Servicehosting/Service.php:793
+#: modules/Servicehosting/Service.php:833
 msgid "Server manager :adapter is invalid"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:840
+#: modules/Servicehosting/Service.php:880
 msgid "Cannot remove hosting plan which has active accounts"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:1060
+#: modules/Servicehosting/Service.php:1100
 msgid "Could not find main domain product"
 msgstr "Nepavyko rasti pagrindinio domeno produkto"
 
@@ -2081,8 +2102,8 @@ msgid "License plugin :plugin was not found"
 msgstr "Licencijos papildinys :plugin nerastas"
 
 #: modules/Servicelicense/Service.php:120
-msgid "License plugin do not have generate method"
-msgstr "Licencijos papildinys neturi generavimo metodo"
+msgid "License plugin does not have generate method"
+msgstr ""
 
 #: modules/Servicelicense/Service.php:131
 msgid "Maximum number of iterations reached while generating license key"
@@ -2135,8 +2156,8 @@ msgstr "Slaptažodžio atstatymas buvo išjungtas"
 
 #: modules/Staff/Api/Guest.php:113 modules/Staff/Api/Guest.php:117
 #: modules/Staff/Controller/Admin.php:125 modules/Staff/Controller/Admin.php:128
-msgid "The link have expired or you have already confirmed password reset."
-msgstr "Nuorodos galiojimo laikas baigėsi arba jūs jau patvirtinote slaptažodį."
+msgid "The link has expired or you have already confirmed the password reset."
+msgstr ""
 
 #: modules/Staff/Controller/Admin.php:37
 msgid "Staff login history"
@@ -2269,7 +2290,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_settings.html.twig:21
 #: modules/Support/html_admin/mod_support_ticket.html.twig:17
 #: modules/Support/html_admin/mod_support_tickets.html.twig:17
-#: themes/huraga/html/mobile_menu.html.twig:23
+#: themes/huraga/html/mobile_menu.html.twig:25
 #: themes/huraga/html/partial_menu.html.twig:26
 msgid "Support"
 msgstr "Pagalba"
@@ -2281,9 +2302,10 @@ msgstr ""
 
 #: modules/Support/Controller/Admin.php:47
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:22
+#: modules/Support/html_admin/mod_support_public_tickets.html.twig:5
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:19
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:88
-#: modules/Support/html_admin/mod_support_settings.html.twig:115
+#: modules/Support/html_admin/mod_support_settings.html.twig:114
 msgid "Public Tickets"
 msgstr ""
 
@@ -2295,6 +2317,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:22
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:22
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:19
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:23
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:28
 msgid "Canned Responses"
 msgstr ""
@@ -2306,11 +2329,11 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:20
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:19
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:23
-#: modules/Support/html_admin/mod_support_settings.html.twig:104
+#: modules/Support/html_admin/mod_support_settings.html.twig:103
 #: modules/Support/html_client/mod_support_kb_article.html.twig:8
 #: modules/Support/html_client/mod_support_kb_category.html.twig:7
 #: modules/Support/html_client/mod_support_kb_index.html.twig:8
-#: themes/huraga/html/mobile_menu.html.twig:77
+#: themes/huraga/html/mobile_menu.html.twig:79
 #: themes/huraga/html/partial_menu.html.twig:80
 msgid "Knowledge Base"
 msgstr ""
@@ -2380,6 +2403,7 @@ msgstr "Sistema"
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:19
 #: modules/Support/html_admin/mod_support_settings.html.twig:19
 #: modules/System/html_admin/mod_system_index.html.twig:5
+#: modules/System/html_admin/mod_system_index.html.twig:13
 #: modules/System/html_admin/mod_system_settings.html.twig:19
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:15
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:17
@@ -2394,7 +2418,369 @@ msgstr "Sistema"
 msgid "Settings"
 msgstr "Nustatymai"
 
-#: modules/System/Controller/Admin.php:47
+#: modules/System/Controller/Admin.php:47 modules/System/Service.php:56
+#: modules/System/html_admin/mod_system_update.html.twig:5
+#: modules/System/html_admin/mod_system_update.html.twig:11
+#: modules/System/html_admin/mod_system_update.html.twig:50
+#: modules/System/html_admin/mod_system_update.html.twig:59
+msgid "Update FOSSBilling"
+msgstr "Atnaujinti FOSSBilling"
+
+#: modules/System/Service.php:41
+msgid "Manage company details"
+msgstr ""
+
+#: modules/System/Service.php:42
+msgid "Allows the staff member to update company details as set under the system module."
+msgstr ""
+
+#: modules/System/Service.php:46
+msgid "Manage company legal"
+msgstr ""
+
+#: modules/System/Service.php:47
+msgid "Allows the staff member to update company legal as set under the system module."
+msgstr ""
+
+#: modules/System/Service.php:51
+#: modules/System/html_admin/mod_system_settings.html.twig:510
+msgid "Invalidate cache"
+msgstr "Panaikinti talpyklą"
+
+#: modules/System/Service.php:52
+msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
+msgstr ""
+
+#: modules/System/Service.php:57
+msgid "Allows the staff member to update FOSSBilling."
+msgstr ""
+
+#: modules/System/Service.php:61
+msgid "Manage the network interface"
+msgstr ""
+
+#: modules/System/Service.php:62
+msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
+msgstr ""
+
+#: modules/System/Service.php:74
+msgid "Parameter key is missing"
+msgstr "Trūksta parametro rakto"
+
+#: modules/System/Service.php:145
+msgid "Invalid parameter name, received: param_"
+msgstr "Netinkamas parametro pavadinimas, gautas: param_"
+
+#: modules/System/Service.php:304
+msgid "Cron was never executed, please ensure you have configured the cronjob or else scheduled tasks within FOSSBilling will not behave correctly."
+msgstr ""
+
+#: modules/System/Service.php:309
+msgid "FOSSBilling has detected that cron hasn't been run in an abnormal time period. Please ensure the cronjob is configured to be run every 5 minutes."
+msgstr ""
+
+#: modules/System/Service.php:330
+msgid "We'd appreciate it if you'd consider opting into error reporting for FOSSBilling. Doing so will help us improve the software and provide you with a better experience. (Message will remain for 15 minutes)"
+msgstr ""
+
+#: modules/System/Service.php:341
+msgid "Error reporting in FOSSBilling has changed since you last reviewed it. You may want to consider reviewing the changes to see what's been changed. (This message will remain for 24 hours)"
+msgstr ""
+
+#: modules/System/Service.php:531
+msgid "Parameter :param does not exist"
+msgstr "Parametras :param neegzistuoja"
+
+#: modules/System/Service.php:945
+msgid "Country :code phone code is not registered"
+msgstr "Šalis :code telefono kodas neregistruotas"
+
+#: modules/Theme/Controller/Admin.php:62
+msgid "Theme \":name\" assets folder is not writable. Files cannot be uploaded and settings cannot be saved. Set folder permissions to 755"
+msgstr ""
+
+#: modules/Theme/Controller/Admin.php:98
+msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
+msgstr "Temos \":name\" išteklių aplankas neįrašomas. Nustatykite aplanko :folder leidimus į 777"
+
+#: modules/Theme/Controller/Admin.php:102
+msgid "Theme \":name\" is not configurable"
+msgstr "Temos \":name\" negalima konfigūruoti"
+
+#: modules/Theme/Model/Theme.php:19
+msgid "Theme \":name\" does not exist"
+msgstr "Tema \":name\" neegzistuoja"
+
+#: modules/Theme/Service.php:320
+msgid "Theme was not found in path :path"
+msgstr "Temos kelyje :path nerasta"
+
+#: modules/Theme/Service.php:337
+msgid "Unable to decode theme manifest file :file"
+msgstr "Nepavyko iššifruoti temos aprašo failo :file"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:5
+#: modules/Activity/html_admin/mod_activity_index.html.twig:12
+msgid "System activity"
+msgstr "Sistemos veikla"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:25
+#: modules/Client/html_admin/mod_client_login_history.html.twig:23
+msgid "User"
+msgstr "Vartotojas"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:26
+#: modules/Embed/html_client/mod_embed_contact.html.twig:57
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:115
+#: modules/Notification/html_admin/mod_notification_index.html.twig:34
+#: modules/Order/html_client/mod_order_manage.html.twig:219
+#: modules/Support/html_admin/mod_support_canned_response.html.twig:49
+#: modules/Support/html_admin/mod_support_tickets.html.twig:325
+#: modules/Support/html_admin/mod_support_tickets.html.twig:359
+#: modules/Support/html_client/mod_support_contact_us.html.twig:45
+#: modules/Support/html_client/mod_support_tickets.html.twig:98
+msgid "Message"
+msgstr "Pranešimas"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:27
+#: modules/Client/html_admin/mod_client_login_history.html.twig:24
+#: modules/Client/html_admin/mod_client_manage.html.twig:734
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:85
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:46
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:162
+#: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:142
+#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:43
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:24
+msgid "IP"
+msgstr "IP"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:28
+#: modules/Client/html_admin/mod_client_index.html.twig:368
+#: modules/Client/html_admin/mod_client_login_history.html.twig:25
+#: modules/Client/html_admin/mod_client_manage.html.twig:295
+#: modules/Client/html_admin/mod_client_manage.html.twig:735
+#: modules/Client/html_admin/mod_client_settings.html.twig:81
+#: modules/Client/html_client/mod_client_profile.html.twig:136
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:30
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:87
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:482
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:39
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:120
+#: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:184
+#: modules/Page/html_client/mod_page_signup.html.twig:107
+#: modules/Security/html_admin/mod_security_iplookup.html.twig:33
+#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:157
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:25
+msgid "Country"
+msgstr "Šalis"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:29
+#: modules/Client/html_admin/mod_client_index.html.twig:212
+#: modules/Client/html_admin/mod_client_login_history.html.twig:26
+#: modules/Client/html_admin/mod_client_manage.html.twig:658
+#: modules/Client/html_admin/mod_client_manage.html.twig:736
+#: modules/Client/html_admin/mod_client_manage.html.twig:769
+#: modules/Client/html_admin/mod_client_manage.html.twig:815
+#: modules/Client/html_client/mod_client_balance.html.twig:33
+#: modules/Email/html_admin/mod_email_history.html.twig:34
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:681
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:170
+#: modules/News/html_admin/mod_news_index.html.twig:37
+#: modules/Notification/html_admin/mod_notification_index.html.twig:35
+#: modules/Order/html_admin/mod_order_manage.html.twig:592
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:26
+#: modules/Support/html_admin/mod_support_public_tickets.html.twig:101
+msgid "Date"
+msgstr "Data"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:64
+#: modules/Client/html_admin/mod_client_login_history.html.twig:47
+#: modules/Client/html_admin/mod_client_manage.html.twig:118
+#: modules/Client/html_admin/mod_client_manage.html.twig:745
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:86
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:49
+msgid "Unknown"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:69
+#: modules/Client/html_admin/mod_client_group.html.twig:51
+#: modules/Client/html_admin/mod_client_index.html.twig:262
+#: modules/Client/html_admin/mod_client_index.html.twig:428
+#: modules/Client/html_admin/mod_client_login_history.html.twig:52
+#: modules/Client/html_admin/mod_client_manage.html.twig:148
+#: modules/Client/html_admin/mod_client_manage.html.twig:672
+#: modules/Email/html_admin/mod_email_details.html.twig:59
+#: modules/Email/html_admin/mod_email_history.html.twig:60
+#: modules/Email/html_admin/mod_email_settings.html.twig:110
+#: modules/Email/html_admin/mod_email_template.html.twig:76
+#: modules/Extension/html_admin/mod_extension_index.html.twig:74
+#: modules/Extension/html_admin/mod_extension_index.html.twig:84
+#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:73
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:262
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:131
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:185
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:552
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:719
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:91
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:76
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:77
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:120
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:211
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:69
+#: modules/News/html_admin/mod_news_index.html.twig:70
+#: modules/Notification/html_admin/mod_notification_index.html.twig:46
+#: modules/Notification/html_admin/mod_notification_index.html.twig:63
+#: modules/Order/html_admin/mod_order_index.html.twig:240
+#: modules/Order/html_admin/mod_order_manage.html.twig:173
+#: modules/Order/html_admin/mod_order_manage.html.twig:186
+#: modules/Order/html_admin/mod_order_manage.html.twig:255
+#: modules/Order/html_admin/mod_order_manage.html.twig:265
+#: modules/Order/html_admin/mod_order_manage.html.twig:283
+#: modules/Order/html_admin/mod_order_manage.html.twig:303
+#: modules/Order/html_admin/mod_order_manage.html.twig:625
+#: modules/Product/html_admin/mod_product_addons.html.twig:66
+#: modules/Product/html_admin/mod_product_index.html.twig:86
+#: modules/Product/html_admin/mod_product_index.html.twig:165
+#: modules/Product/html_admin/mod_product_promos.html.twig:103
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:100
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:21
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:30
+#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:89
+#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:223
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:79
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:129
+#: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:91
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:92
+#: modules/Staff/html_admin/mod_staff_index.html.twig:57
+#: modules/Staff/html_admin/mod_staff_index.html.twig:150
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:54
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:103
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:254
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:79
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:146
+#: modules/Support/html_admin/mod_support_helpdesk.html.twig:94
+#: modules/Support/html_admin/mod_support_kb_index.html.twig:90
+#: modules/Support/html_admin/mod_support_kb_index.html.twig:165
+#: modules/Support/html_admin/mod_support_public_ticket.html.twig:100
+#: modules/Support/html_admin/mod_support_public_ticket.html.twig:199
+#: modules/Support/html_admin/mod_support_settings.html.twig:170
+#: modules/Support/html_admin/mod_support_ticket.html.twig:106
+#: modules/Support/html_admin/mod_support_ticket.html.twig:116
+#: modules/Support/html_admin/mod_support_ticket.html.twig:179
+#: modules/Support/html_admin/mod_support_ticket.html.twig:321
+#: modules/Support/html_admin/mod_support_tickets.html.twig:267
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:54
+#: themes/admin_default/html/partial_batch_delete.html.twig:36
+msgid "Are you sure?"
+msgstr "Ar jūs tuo tikras?"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:79
+#: modules/Client/html_admin/mod_client_index.html.twig:271
+#: modules/Client/html_admin/mod_client_index.html.twig:437
+#: modules/Client/html_admin/mod_client_login_history.html.twig:62
+#: modules/Client/html_admin/mod_client_manage.html.twig:495
+#: modules/Client/html_admin/mod_client_manage.html.twig:564
+#: modules/Client/html_admin/mod_client_manage.html.twig:630
+#: modules/Client/html_admin/mod_client_manage.html.twig:681
+#: modules/Client/html_admin/mod_client_manage.html.twig:750
+#: modules/Client/html_admin/mod_client_manage.html.twig:791
+#: modules/Client/html_admin/mod_client_manage.html.twig:838
+#: modules/Client/html_client/mod_client_balance.html.twig:47
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:115
+#: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:62
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:192
+#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:216
+#: modules/Email/html_admin/mod_email_history.html.twig:69
+#: modules/Extension/html_admin/mod_extension_index.html.twig:109
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:72
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:131
+#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:85
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:272
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:85
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:89
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:220
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:65
+#: modules/Invoice/html_client/mod_invoice_index.html.twig:97
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:81
+#: modules/News/html_admin/mod_news_index.html.twig:80
+#: modules/Notification/html_admin/mod_notification_index.html.twig:55
+#: modules/Order/html_admin/mod_order_index.html.twig:249
+#: modules/Order/html_admin/mod_order_manage.html.twig:578
+#: modules/Order/html_admin/mod_order_manage.html.twig:634
+#: modules/Order/html_admin/mod_order_manage.html.twig:689
+#: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:89
+#: modules/Product/html_admin/mod_product_addons.html.twig:75
+#: modules/Product/html_admin/mod_product_index.html.twig:95
+#: modules/Product/html_admin/mod_product_index.html.twig:174
+#: modules/Product/html_admin/mod_product_manage.html.twig:247
+#: modules/Product/html_admin/mod_product_promos.html.twig:112
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:112
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:125
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:164
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:88
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:138
+#: modules/Staff/html_admin/mod_staff_index.html.twig:67
+#: modules/Staff/html_admin/mod_staff_index.html.twig:157
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:64
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:115
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:266
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:88
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:156
+#: modules/Support/html_admin/mod_support_kb_index.html.twig:99
+#: modules/Support/html_admin/mod_support_kb_index.html.twig:175
+#: modules/Support/html_admin/mod_support_public_tickets.html.twig:139
+#: modules/Support/html_admin/mod_support_settings.html.twig:183
+#: modules/Support/html_admin/mod_support_ticket.html.twig:254
+#: modules/Support/html_admin/mod_support_tickets.html.twig:277
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:84
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:151
+#: themes/admin_default/html/mod_index_dashboard.html.twig:345
+#: themes/admin_default/html/mod_index_dashboard.html.twig:488
+#: themes/admin_default/html/mod_index_dashboard.html.twig:515
+msgid "The list is empty"
+msgstr "Sąrašas tuščias"
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:5
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:21
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:29
+msgid "Activity settings"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:32
+#: modules/Client/html_admin/mod_client_settings.html.twig:28
+#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
+#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
+#: modules/Seo/html_admin/mod_seo_settings.html.twig:34
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
+#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
+msgid "Configuration updated"
+msgstr "Konfigūracija atnaujinta"
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:37
+msgid "Activity log retention"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:40
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:49
+msgid "Number of days"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:42
+msgid "FOSSBilling will automatically remove activity logs that are older than the configured number of days. Set to 0 to disable this behavior"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:46
+msgid "Email log retention"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_settings.html.twig:51
+msgid "FOSSBilling will automatically remove sent email logs that are older than the configured number of days. Set to 0 to disable this behavior"
+msgstr ""
+
 #: modules/Activity/html_admin/mod_activity_settings.html.twig:56
 #: modules/Client/html_admin/mod_client_group.html.twig:48
 #: modules/Client/html_admin/mod_client_manage.html.twig:277
@@ -2408,10 +2794,10 @@ msgstr "Nustatymai"
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:258
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:65
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:81
-#: modules/Email/html_admin/mod_email_template.html.twig:93
-#: modules/Email/html_admin/mod_email_template.html.twig:128
+#: modules/Email/html_admin/mod_email_template.html.twig:92
+#: modules/Email/html_admin/mod_email_template.html.twig:126
 #: modules/Formbuilder/html_admin/mod_formbuilder_manage.html.twig:88
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:157
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:156
 #: modules/Index/html_client/mod_index_dashboard.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:127
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:347
@@ -2455,359 +2841,19 @@ msgstr "Nustatymai"
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:130
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:94
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:172
-#: modules/Support/html_admin/mod_support_canned_category.html.twig:46
+#: modules/Support/html_admin/mod_support_canned_category.html.twig:45
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:56
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:102
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:92
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:65
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:137
-#: modules/Support/html_admin/mod_support_settings.html.twig:126
+#: modules/Support/html_admin/mod_support_settings.html.twig:125
 #: modules/Support/html_admin/mod_support_ticket.html.twig:163
 #: modules/System/html_admin/mod_system_settings.html.twig:614
-#: modules/System/html_admin/mod_system_update.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr "Atnaujinti"
-
-#: modules/System/Service.php:41
-msgid "Manage company details"
-msgstr ""
-
-#: modules/System/Service.php:42
-msgid "Allows the staff member to update company details as set under the system module."
-msgstr ""
-
-#: modules/System/Service.php:46
-msgid "Manage company legal"
-msgstr ""
-
-#: modules/System/Service.php:47
-msgid "Allows the staff member to update company legal as set under the system module."
-msgstr ""
-
-#: modules/System/Service.php:51
-#: modules/System/html_admin/mod_system_settings.html.twig:510
-msgid "Invalidate cache"
-msgstr "Panaikinti talpyklą"
-
-#: modules/System/Service.php:52
-msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
-msgstr ""
-
-#: modules/System/Service.php:56
-#: modules/System/html_admin/mod_system_update.html.twig:11
-#: modules/System/html_admin/mod_system_update.html.twig:50
-#: modules/System/html_admin/mod_system_update.html.twig:59
-msgid "Update FOSSBilling"
-msgstr "Atnaujinti FOSSBilling"
-
-#: modules/System/Service.php:57
-msgid "Allows the staff member to update FOSSBilling."
-msgstr ""
-
-#: modules/System/Service.php:61
-msgid "Manage the network interface"
-msgstr ""
-
-#: modules/System/Service.php:62
-msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
-msgstr ""
-
-#: modules/System/Service.php:74
-msgid "Parameter key is missing"
-msgstr "Trūksta parametro rakto"
-
-#: modules/System/Service.php:145
-msgid "Invalid parameter name, received: param_"
-msgstr "Netinkamas parametro pavadinimas, gautas: param_"
-
-#: modules/System/Service.php:530
-msgid "Parameter :param does not exist"
-msgstr "Parametras :param neegzistuoja"
-
-#: modules/System/Service.php:944
-msgid "Country :code phone code is not registered"
-msgstr "Šalis :code telefono kodas neregistruotas"
-
-#: modules/Theme/Controller/Admin.php:62
-msgid "Theme \":name\" assets folder is not writable. Files cannot be uploaded and settings cannot be saved. Set folder permissions to 755"
-msgstr ""
-
-#: modules/Theme/Controller/Admin.php:98
-msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
-msgstr "Temos \":name\" išteklių aplankas neįrašomas. Nustatykite aplanko :folder leidimus į 777"
-
-#: modules/Theme/Controller/Admin.php:102
-msgid "Theme \":name\" is not configurable"
-msgstr "Temos \":name\" negalima konfigūruoti"
-
-#: modules/Theme/Model/Theme.php:19
-msgid "Theme \":name\" does not exist"
-msgstr "Tema \":name\" neegzistuoja"
-
-#: modules/Theme/Service.php:320
-msgid "Theme was not found in path :path"
-msgstr "Temos kelyje :path nerasta"
-
-#: modules/Theme/Service.php:337
-msgid "Unable to decode theme manifest file :file"
-msgstr "Nepavyko iššifruoti temos aprašo failo :file"
-
-#: modules/Activity/html_admin/mod_activity_index.html.twig:12
-msgid "System activity"
-msgstr "Sistemos veikla"
-
-#: modules/Activity/html_admin/mod_activity_index.html.twig:23
-#: modules/Client/html_admin/mod_client_login_history.html.twig:23
-msgid "User"
-msgstr "Vartotojas"
-
-#: modules/Activity/html_admin/mod_activity_index.html.twig:24
-#: modules/Embed/html_client/mod_embed_contact.html.twig:57
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:115
-#: modules/Notification/html_admin/mod_notification_index.html.twig:34
-#: modules/Order/html_client/mod_order_manage.html.twig:219
-#: modules/Support/html_admin/mod_support_canned_response.html.twig:49
-#: modules/Support/html_admin/mod_support_tickets.html.twig:325
-#: modules/Support/html_admin/mod_support_tickets.html.twig:359
-#: modules/Support/html_client/mod_support_contact_us.html.twig:45
-#: modules/Support/html_client/mod_support_tickets.html.twig:98
-msgid "Message"
-msgstr "Pranešimas"
-
-#: modules/Activity/html_admin/mod_activity_index.html.twig:25
-#: modules/Client/html_admin/mod_client_login_history.html.twig:24
-#: modules/Client/html_admin/mod_client_manage.html.twig:734
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:85
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:42
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:153
-#: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:142
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:43
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:24
-msgid "IP"
-msgstr "IP"
-
-#: modules/Activity/html_admin/mod_activity_index.html.twig:26
-#: modules/Client/html_admin/mod_client_index.html.twig:368
-#: modules/Client/html_admin/mod_client_login_history.html.twig:25
-#: modules/Client/html_admin/mod_client_manage.html.twig:295
-#: modules/Client/html_admin/mod_client_manage.html.twig:735
-#: modules/Client/html_admin/mod_client_settings.html.twig:81
-#: modules/Client/html_client/mod_client_profile.html.twig:136
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:30
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:87
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:482
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:39
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:120
-#: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:32
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:184
-#: modules/Page/html_client/mod_page_signup.html.twig:107
-#: modules/Security/html_admin/mod_security_iplookup.html.twig:33
-#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:157
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:25
-msgid "Country"
-msgstr "Šalis"
-
-#: modules/Activity/html_admin/mod_activity_index.html.twig:27
-#: modules/Client/html_admin/mod_client_index.html.twig:212
-#: modules/Client/html_admin/mod_client_login_history.html.twig:26
-#: modules/Client/html_admin/mod_client_manage.html.twig:658
-#: modules/Client/html_admin/mod_client_manage.html.twig:736
-#: modules/Client/html_admin/mod_client_manage.html.twig:769
-#: modules/Client/html_admin/mod_client_manage.html.twig:815
-#: modules/Client/html_client/mod_client_balance.html.twig:33
-#: modules/Email/html_admin/mod_email_history.html.twig:34
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:681
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:170
-#: modules/News/html_admin/mod_news_index.html.twig:37
-#: modules/Notification/html_admin/mod_notification_index.html.twig:35
-#: modules/Order/html_admin/mod_order_manage.html.twig:592
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:26
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:101
-msgid "Date"
-msgstr "Data"
-
-#: modules/Activity/html_admin/mod_activity_index.html.twig:67
-#: modules/Client/html_admin/mod_client_group.html.twig:51
-#: modules/Client/html_admin/mod_client_index.html.twig:262
-#: modules/Client/html_admin/mod_client_index.html.twig:428
-#: modules/Client/html_admin/mod_client_login_history.html.twig:52
-#: modules/Client/html_admin/mod_client_manage.html.twig:148
-#: modules/Client/html_admin/mod_client_manage.html.twig:672
-#: modules/Email/html_admin/mod_email_details.html.twig:59
-#: modules/Email/html_admin/mod_email_history.html.twig:60
-#: modules/Email/html_admin/mod_email_settings.html.twig:110
-#: modules/Email/html_admin/mod_email_template.html.twig:77
-#: modules/Extension/html_admin/mod_extension_index.html.twig:74
-#: modules/Extension/html_admin/mod_extension_index.html.twig:84
-#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:73
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:262
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:131
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:185
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:552
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:719
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:91
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:76
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:77
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:120
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:211
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:69
-#: modules/News/html_admin/mod_news_index.html.twig:70
-#: modules/Notification/html_admin/mod_notification_index.html.twig:46
-#: modules/Notification/html_admin/mod_notification_index.html.twig:63
-#: modules/Order/html_admin/mod_order_index.html.twig:240
-#: modules/Order/html_admin/mod_order_manage.html.twig:173
-#: modules/Order/html_admin/mod_order_manage.html.twig:186
-#: modules/Order/html_admin/mod_order_manage.html.twig:255
-#: modules/Order/html_admin/mod_order_manage.html.twig:265
-#: modules/Order/html_admin/mod_order_manage.html.twig:283
-#: modules/Order/html_admin/mod_order_manage.html.twig:303
-#: modules/Order/html_admin/mod_order_manage.html.twig:625
-#: modules/Product/html_admin/mod_product_addons.html.twig:66
-#: modules/Product/html_admin/mod_product_index.html.twig:79
-#: modules/Product/html_admin/mod_product_index.html.twig:158
-#: modules/Product/html_admin/mod_product_promos.html.twig:97
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:101
-#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:21
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:30
-#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:89
-#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:223
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:74
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:120
-#: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:91
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:92
-#: modules/Staff/html_admin/mod_staff_index.html.twig:57
-#: modules/Staff/html_admin/mod_staff_index.html.twig:150
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:54
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:103
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:254
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:79
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:147
-#: modules/Support/html_admin/mod_support_helpdesk.html.twig:94
-#: modules/Support/html_admin/mod_support_kb_index.html.twig:90
-#: modules/Support/html_admin/mod_support_kb_index.html.twig:165
-#: modules/Support/html_admin/mod_support_public_ticket.html.twig:100
-#: modules/Support/html_admin/mod_support_public_ticket.html.twig:199
-#: modules/Support/html_admin/mod_support_settings.html.twig:171
-#: modules/Support/html_admin/mod_support_ticket.html.twig:106
-#: modules/Support/html_admin/mod_support_ticket.html.twig:116
-#: modules/Support/html_admin/mod_support_ticket.html.twig:179
-#: modules/Support/html_admin/mod_support_ticket.html.twig:321
-#: modules/Support/html_admin/mod_support_tickets.html.twig:267
-#: modules/Theme/html_admin/mod_theme_preset.html.twig:54
-#: themes/admin_default/html/partial_batch_delete.html.twig:36
-msgid "Are you sure?"
-msgstr "Ar jūs tuo tikras?"
-
-#: modules/Activity/html_admin/mod_activity_index.html.twig:77
-#: modules/Client/html_admin/mod_client_index.html.twig:271
-#: modules/Client/html_admin/mod_client_index.html.twig:437
-#: modules/Client/html_admin/mod_client_login_history.html.twig:62
-#: modules/Client/html_admin/mod_client_manage.html.twig:495
-#: modules/Client/html_admin/mod_client_manage.html.twig:564
-#: modules/Client/html_admin/mod_client_manage.html.twig:630
-#: modules/Client/html_admin/mod_client_manage.html.twig:681
-#: modules/Client/html_admin/mod_client_manage.html.twig:750
-#: modules/Client/html_admin/mod_client_manage.html.twig:791
-#: modules/Client/html_admin/mod_client_manage.html.twig:838
-#: modules/Client/html_client/mod_client_balance.html.twig:47
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:115
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:62
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:192
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:216
-#: modules/Email/html_admin/mod_email_history.html.twig:69
-#: modules/Extension/html_admin/mod_extension_index.html.twig:109
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:72
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:131
-#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:85
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:272
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:85
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:89
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:220
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:65
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:97
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:81
-#: modules/News/html_admin/mod_news_index.html.twig:80
-#: modules/Notification/html_admin/mod_notification_index.html.twig:55
-#: modules/Order/html_admin/mod_order_index.html.twig:249
-#: modules/Order/html_admin/mod_order_manage.html.twig:578
-#: modules/Order/html_admin/mod_order_manage.html.twig:634
-#: modules/Order/html_admin/mod_order_manage.html.twig:689
-#: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:89
-#: modules/Product/html_admin/mod_product_addons.html.twig:75
-#: modules/Product/html_admin/mod_product_index.html.twig:88
-#: modules/Product/html_admin/mod_product_index.html.twig:167
-#: modules/Product/html_admin/mod_product_manage.html.twig:247
-#: modules/Product/html_admin/mod_product_promos.html.twig:106
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:113
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:125
-#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:164
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:83
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:129
-#: modules/Staff/html_admin/mod_staff_index.html.twig:67
-#: modules/Staff/html_admin/mod_staff_index.html.twig:157
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:64
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:115
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:266
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:88
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:157
-#: modules/Support/html_admin/mod_support_kb_index.html.twig:99
-#: modules/Support/html_admin/mod_support_kb_index.html.twig:175
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:139
-#: modules/Support/html_admin/mod_support_settings.html.twig:184
-#: modules/Support/html_admin/mod_support_ticket.html.twig:254
-#: modules/Support/html_admin/mod_support_tickets.html.twig:277
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:84
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:151
-#: themes/admin_default/html/mod_index_dashboard.html.twig:345
-#: themes/admin_default/html/mod_index_dashboard.html.twig:502
-#: themes/admin_default/html/mod_index_dashboard.html.twig:529
-msgid "The list is empty"
-msgstr "Sąrašas tuščias"
-
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:5
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:21
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:29
-msgid "Activity settings"
-msgstr ""
-
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:33
-#: modules/Client/html_admin/mod_client_settings.html.twig:28
-#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:15
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:67
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:34
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:33
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:125
-#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:27
-msgid "Configuration updated"
-msgstr "Konfigūracija atnaujinta"
-
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:37
-msgid "Activity log retention"
-msgstr ""
-
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:41
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:51
-msgid "Number of days"
-msgstr ""
-
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:43
-msgid "FOSSBilling will automatically remove activity logs that are older than the\n"
-"                    configured number of days. Set to 0 to disable this behavior"
-msgstr ""
-
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:47
-msgid "Email log retention"
-msgstr ""
-
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:53
-msgid "FOSSBilling will automatically remove sent email logs that are older than the\n"
-"                    configured number of days. Set to 0 to disable this behavior"
-msgstr ""
 
 #: modules/Client/html_admin/mod_client_group.html.twig:17
 msgid "Client groups"
@@ -2847,29 +2893,29 @@ msgstr "Redaguoti klientų grupę"
 #: modules/Product/html_admin/mod_product_addons.html.twig:45
 #: modules/Product/html_admin/mod_product_addons.html.twig:123
 #: modules/Product/html_admin/mod_product_category.html.twig:36
-#: modules/Product/html_admin/mod_product_index.html.twig:47
-#: modules/Product/html_admin/mod_product_index.html.twig:125
-#: modules/Product/html_admin/mod_product_index.html.twig:141
-#: modules/Product/html_admin/mod_product_index.html.twig:179
+#: modules/Product/html_admin/mod_product_index.html.twig:53
+#: modules/Product/html_admin/mod_product_index.html.twig:132
+#: modules/Product/html_admin/mod_product_index.html.twig:148
+#: modules/Product/html_admin/mod_product_index.html.twig:186
 #: modules/Product/html_admin/mod_product_manage.html.twig:143
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:202
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:105
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:144
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:41
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:96
-#: modules/Support/html_admin/mod_support_canned_category.html.twig:39
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:45
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:104
+#: modules/Support/html_admin/mod_support_canned_category.html.twig:38
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:43
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:58
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:107
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:129
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:169
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:106
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:128
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:167
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:41
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:45
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:37
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:58
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:119
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:187
-#: modules/Support/html_admin/mod_support_settings.html.twig:147
+#: modules/Support/html_admin/mod_support_settings.html.twig:146
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:12
 msgid "Title"
 msgstr "Pavadinimas"
@@ -2908,18 +2954,18 @@ msgstr "Kliento ID"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:109
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:32
 #: modules/Order/html_admin/mod_order_index.html.twig:184
-#: modules/Security/html_admin/mod_security_index.html.twig:20
+#: modules/Security/html_admin/mod_security_index.html.twig:23
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:29
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:30
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:141
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:254
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:150
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:263
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:31
 #: modules/Staff/html_admin/mod_staff_group.html.twig:37
 #: modules/Staff/html_admin/mod_staff_index.html.twig:30
 #: modules/Staff/html_admin/mod_staff_index.html.twig:88
 #: modules/Staff/html_admin/mod_staff_index.html.twig:137
 #: modules/Staff/html_admin/mod_staff_index.html.twig:169
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:62
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:66
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:34
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:64
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:188
@@ -2960,22 +3006,22 @@ msgstr "Įmonės pavadinimas"
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:133
 #: modules/Staff/html_admin/mod_staff_index.html.twig:31
 #: modules/Staff/html_admin/mod_staff_index.html.twig:96
-#: modules/Staff/html_admin/mod_staff_login.html.twig:21
-#: modules/Staff/html_admin/mod_staff_login.html.twig:42
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:68
+#: modules/Staff/html_admin/mod_staff_login.html.twig:22
+#: modules/Staff/html_admin/mod_staff_login.html.twig:43
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:72
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:40
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:65
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:194
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:47
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:56
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:99
-#: modules/Support/html_admin/mod_support_settings.html.twig:148
+#: modules/Support/html_admin/mod_support_settings.html.twig:147
 #: modules/Support/html_admin/mod_support_tickets.html.twig:347
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:37
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:35
 #: modules/System/html_admin/mod_system_settings.html.twig:68
-#: themes/huraga/html/mobile_menu.html.twig:50
+#: themes/huraga/html/mobile_menu.html.twig:52
 #: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
 msgstr "El. paštas"
@@ -2986,11 +3032,15 @@ msgstr "El. paštas"
 #: modules/Client/html_admin/mod_client_manage.html.twig:211
 #: modules/Staff/html_admin/mod_staff_index.html.twig:32
 #: modules/Staff/html_admin/mod_staff_index.html.twig:80
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:56
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:60
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:66
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:182
 msgid "Group"
 msgstr "Grupė"
+
+#: modules/Client/html_admin/mod_client_index.html.twig:47
+msgid "All groups"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_index.html.twig:52
 #: modules/Client/html_admin/mod_client_index.html.twig:211
@@ -3002,7 +3052,7 @@ msgstr "Grupė"
 #: modules/Client/html_admin/mod_client_manage.html.twig:595
 #: modules/Client/html_admin/mod_client_manage.html.twig:814
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:45
-#: modules/Email/html_admin/mod_email_settings.html.twig:196
+#: modules/Email/html_admin/mod_email_settings.html.twig:195
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:52
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:214
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:68
@@ -3030,12 +3080,12 @@ msgstr "Grupė"
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:33
 #: modules/Product/html_admin/mod_product_addons.html.twig:47
 #: modules/Product/html_admin/mod_product_addons.html.twig:87
-#: modules/Product/html_admin/mod_product_index.html.twig:48
+#: modules/Product/html_admin/mod_product_index.html.twig:54
 #: modules/Product/html_admin/mod_product_manage.html.twig:92
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:12
 #: modules/Staff/html_admin/mod_staff_index.html.twig:33
 #: modules/Staff/html_admin/mod_staff_index.html.twig:117
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:74
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:78
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:67
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:213
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:69
@@ -3074,12 +3124,12 @@ msgstr "Visi"
 #: modules/News/html_admin/mod_news_post.html.twig:73
 #: modules/Order/html_admin/mod_order_index.html.twig:119
 #: modules/Product/html_admin/mod_product_promo.html.twig:66
-#: modules/Product/html_admin/mod_product_promos.html.twig:155
+#: modules/Product/html_admin/mod_product_promos.html.twig:161
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:175
 #: modules/Servicedomain/html_admin/mod_servicedomain_tld.html.twig:93
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:44
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:48
 #: modules/Staff/html_admin/mod_staff_index.html.twig:122
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:78
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:82
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:221
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:77
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:133
@@ -3125,8 +3175,8 @@ msgid "Filter"
 msgstr "Filtruoti"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:104
-#: modules/Email/html_admin/mod_email_template.html.twig:78
-#: modules/Email/html_admin/mod_email_template.html.twig:81
+#: modules/Email/html_admin/mod_email_template.html.twig:77
+#: modules/Email/html_admin/mod_email_template.html.twig:80
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:114
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:83
 #: modules/Order/html_admin/mod_order_index.html.twig:89
@@ -3203,6 +3253,11 @@ msgstr "Bendrovė"
 msgid "Export Clients"
 msgstr "Exportuoti klientus"
 
+#: modules/Client/html_admin/mod_client_index.html.twig:314
+#: modules/Client/html_admin/mod_client_manage.html.twig:213
+msgid "Select group"
+msgstr ""
+
 #: modules/Client/html_admin/mod_client_index.html.twig:343
 #: modules/Client/html_admin/mod_client_manage.html.twig:282
 #: modules/Client/html_admin/mod_client_settings.html.twig:84
@@ -3247,6 +3302,12 @@ msgstr "Miestas"
 msgid "State"
 msgstr "Valstija"
 
+#: modules/Client/html_admin/mod_client_index.html.twig:370
+#: modules/Client/html_admin/mod_client_manage.html.twig:297
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:484
+msgid "Select country"
+msgstr ""
+
 #: modules/Client/html_admin/mod_client_index.html.twig:374
 #: modules/Client/html_admin/mod_client_manage.html.twig:314
 msgid "Postcode"
@@ -3282,6 +3343,13 @@ msgstr "Telefonas"
 msgid "Currency"
 msgstr "Valiuta"
 
+#: modules/Client/html_admin/mod_client_index.html.twig:393
+#: modules/Client/html_admin/mod_client_manage.html.twig:348
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:145
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:159
+msgid "Select currency"
+msgstr ""
+
 #: modules/Client/html_admin/mod_client_index.html.twig:397
 #: modules/Client/html_admin/mod_client_manage.html.twig:405
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:36
@@ -3296,10 +3364,10 @@ msgstr "Valiuta"
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:52
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:88
 #: modules/Staff/html_admin/mod_staff_index.html.twig:103
-#: modules/Staff/html_admin/mod_staff_login.html.twig:27
-#: modules/Staff/html_admin/mod_staff_login.html.twig:54
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:43
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:188
+#: modules/Staff/html_admin/mod_staff_login.html.twig:28
+#: modules/Staff/html_admin/mod_staff_login.html.twig:55
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:44
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:221
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:36
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:201
 msgid "Password"
@@ -3308,19 +3376,20 @@ msgstr "Slaptažodis"
 #: modules/Client/html_admin/mod_client_index.html.twig:403
 #: modules/Client/html_admin/mod_client_index.html.twig:455
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:138
-#: modules/Email/html_admin/mod_email_settings.html.twig:178
+#: modules/Email/html_admin/mod_email_settings.html.twig:177
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:272
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:163
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:133
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:105
 #: modules/News/html_admin/mod_news_index.html.twig:123
 #: modules/Product/html_admin/mod_product_addons.html.twig:135
-#: modules/Product/html_admin/mod_product_index.html.twig:131
-#: modules/Product/html_admin/mod_product_index.html.twig:199
-#: modules/Product/html_admin/mod_product_promos.html.twig:265
+#: modules/Product/html_admin/mod_product_index.html.twig:138
+#: modules/Product/html_admin/mod_product_index.html.twig:206
+#: modules/Product/html_admin/mod_product_promos.html.twig:271
 #: modules/Staff/html_admin/mod_staff_index.html.twig:127
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:227
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:120
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:175
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:119
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:173
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:144
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:199
 #: modules/Support/html_admin/mod_support_tickets.html.twig:330
@@ -3339,12 +3408,12 @@ msgstr "Klientų prisijungimo istorija"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:51
 #: modules/Index/html_client/mod_index_dashboard.html.twig:210
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:5
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:37
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:38
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:3
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:14
 #: themes/admin_default/html/layout_default.html.twig:123
-#: themes/huraga/html/layout_default.html.twig:122
-#: themes/huraga/html/mobile_menu.html.twig:110
+#: themes/huraga/html/layout_default.html.twig:132
+#: themes/huraga/html/mobile_menu.html.twig:114
 msgid "Profile"
 msgstr "Profilis"
 
@@ -3356,7 +3425,7 @@ msgstr "Profilis"
 #: modules/Product/html_admin/mod_product_manage.html.twig:78
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:98
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:249
-#: modules/Support/html_admin/mod_support_settings.html.twig:164
+#: modules/Support/html_admin/mod_support_settings.html.twig:163
 msgid "Edit"
 msgstr "Redaguoti"
 
@@ -3367,8 +3436,8 @@ msgstr "Redaguoti"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:19
 #: modules/Support/html_admin/mod_support_tickets.html.twig:177
 #: themes/admin_default/html/mod_index_dashboard.html.twig:232
-#: themes/admin_default/html/mod_index_dashboard.html.twig:462
-#: themes/admin_default/html/mod_index_dashboard.html.twig:550
+#: themes/admin_default/html/mod_index_dashboard.html.twig:448
+#: themes/admin_default/html/mod_index_dashboard.html.twig:536
 msgid "Tickets"
 msgstr "Bilietai"
 
@@ -3412,10 +3481,6 @@ msgstr "Papildyti balansą"
 #: modules/System/html_admin/mod_system_settings.html.twig:229
 msgid "Notes"
 msgstr "Pastabos"
-
-#: modules/Client/html_admin/mod_client_manage.html.twig:118
-msgid "Unknown"
-msgstr ""
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:121
 #: modules/Client/html_client/mod_client_profile.html.twig:32
@@ -3461,19 +3526,23 @@ msgstr "Prisijungti prie klientų sistemos"
 #: modules/Email/html_admin/mod_email_settings.html.twig:115
 #: modules/Email/html_client/mod_email_email.html.twig:26
 #: modules/Email/html_client/mod_email_index.html.twig:62
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:236
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:256
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:720
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:124
 #: modules/Order/html_admin/mod_order_manage.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:314
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:102
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:106
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:257
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:93
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:105
-#: modules/Support/html_admin/mod_support_settings.html.twig:172
-#: modules/Support/html_admin/mod_support_settings.html.twig:175
+#: modules/Support/html_admin/mod_support_settings.html.twig:171
+#: modules/Support/html_admin/mod_support_settings.html.twig:174
 #: modules/Support/html_admin/mod_support_ticket.html.twig:121
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:55
 msgid "Delete"
 msgstr "Ištrinti"
 
@@ -3490,8 +3559,8 @@ msgstr "Kliento profilis atnaujintas"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:677
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:166
 #: modules/Order/html_admin/mod_order_index.html.twig:35
-#: modules/Product/html_admin/mod_product_index.html.twig:45
-#: modules/Product/html_admin/mod_product_index.html.twig:113
+#: modules/Product/html_admin/mod_product_index.html.twig:51
+#: modules/Product/html_admin/mod_product_index.html.twig:120
 msgid "Type"
 msgstr "Tipas"
 
@@ -3509,9 +3578,9 @@ msgstr "Paštas patvirtintas"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:202
 #: modules/Client/html_admin/mod_client_manage.html.twig:356
-#: modules/Email/html_admin/mod_email_settings.html.twig:144
-#: modules/Email/html_admin/mod_email_settings.html.twig:272
-#: modules/Email/html_admin/mod_email_template.html.twig:112
+#: modules/Email/html_admin/mod_email_settings.html.twig:143
+#: modules/Email/html_admin/mod_email_settings.html.twig:270
+#: modules/Email/html_admin/mod_email_template.html.twig:110
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:75
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:93
@@ -3528,9 +3597,9 @@ msgstr "Paštas patvirtintas"
 #: modules/Product/html_admin/mod_product_promo.html.twig:70
 #: modules/Product/html_admin/mod_product_promo.html.twig:83
 #: modules/Product/html_admin/mod_product_promo.html.twig:98
-#: modules/Product/html_admin/mod_product_promos.html.twig:159
-#: modules/Product/html_admin/mod_product_promos.html.twig:172
-#: modules/Product/html_admin/mod_product_promos.html.twig:187
+#: modules/Product/html_admin/mod_product_promos.html.twig:165
+#: modules/Product/html_admin/mod_product_promos.html.twig:178
+#: modules/Product/html_admin/mod_product_promos.html.twig:193
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:22
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:50
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:76
@@ -3547,8 +3616,8 @@ msgstr "Paštas patvirtintas"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:24
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:37
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:79
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:169
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:233
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:242
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:100
@@ -3569,14 +3638,28 @@ msgstr "Paštas patvirtintas"
 #: modules/System/html_admin/mod_system_settings.html.twig:171
 #: modules/System/html_admin/mod_system_settings.html.twig:192
 #: themes/admin_default/html/macro_functions.html.twig:3
+#: themes/huraga/config/settings.html.twig:20
+#: themes/huraga/config/settings.html.twig:28
+#: themes/huraga/config/settings.html.twig:56
+#: themes/huraga/config/settings.html.twig:69
+#: themes/huraga/config/settings.html.twig:77
+#: themes/huraga/config/settings.html.twig:91
+#: themes/huraga/config/settings.html.twig:98
+#: themes/huraga/config/settings.html.twig:112
+#: themes/huraga/config/settings.html.twig:119
+#: themes/huraga/config/settings.html.twig:129
+#: themes/huraga/config/settings.html.twig:174
+#: themes/huraga/config/settings.html.twig:234
+#: themes/huraga/config/settings.html.twig:242
+#: themes/huraga/config/settings.html.twig:297
 msgid "Yes"
 msgstr "Taip"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:206
 #: modules/Client/html_admin/mod_client_manage.html.twig:360
-#: modules/Email/html_admin/mod_email_settings.html.twig:148
-#: modules/Email/html_admin/mod_email_settings.html.twig:276
-#: modules/Email/html_admin/mod_email_template.html.twig:116
+#: modules/Email/html_admin/mod_email_settings.html.twig:147
+#: modules/Email/html_admin/mod_email_settings.html.twig:274
+#: modules/Email/html_admin/mod_email_template.html.twig:114
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:79
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:97
@@ -3594,9 +3677,9 @@ msgstr "Taip"
 #: modules/Product/html_admin/mod_product_promo.html.twig:74
 #: modules/Product/html_admin/mod_product_promo.html.twig:87
 #: modules/Product/html_admin/mod_product_promo.html.twig:102
-#: modules/Product/html_admin/mod_product_promos.html.twig:163
-#: modules/Product/html_admin/mod_product_promos.html.twig:176
-#: modules/Product/html_admin/mod_product_promos.html.twig:191
+#: modules/Product/html_admin/mod_product_promos.html.twig:169
+#: modules/Product/html_admin/mod_product_promos.html.twig:182
+#: modules/Product/html_admin/mod_product_promos.html.twig:197
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:26
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:54
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:76
@@ -3613,8 +3696,8 @@ msgstr "Taip"
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:28
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:41
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:83
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:173
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:237
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:182
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:246
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:63
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:104
@@ -3635,6 +3718,20 @@ msgstr "Taip"
 #: modules/System/html_admin/mod_system_settings.html.twig:177
 #: modules/System/html_admin/mod_system_settings.html.twig:198
 #: themes/admin_default/html/macro_functions.html.twig:5
+#: themes/huraga/config/settings.html.twig:21
+#: themes/huraga/config/settings.html.twig:29
+#: themes/huraga/config/settings.html.twig:57
+#: themes/huraga/config/settings.html.twig:70
+#: themes/huraga/config/settings.html.twig:78
+#: themes/huraga/config/settings.html.twig:92
+#: themes/huraga/config/settings.html.twig:99
+#: themes/huraga/config/settings.html.twig:113
+#: themes/huraga/config/settings.html.twig:120
+#: themes/huraga/config/settings.html.twig:130
+#: themes/huraga/config/settings.html.twig:175
+#: themes/huraga/config/settings.html.twig:235
+#: themes/huraga/config/settings.html.twig:243
+#: themes/huraga/config/settings.html.twig:298
 msgid "No"
 msgstr "Ne"
 
@@ -3802,8 +3899,8 @@ msgstr "Pagalbos tarnyba"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:43
 #: modules/Email/html_admin/mod_email_history.html.twig:33
 #: modules/Email/html_admin/mod_email_settings.html.twig:75
-#: modules/Email/html_admin/mod_email_settings.html.twig:165
-#: modules/Email/html_admin/mod_email_settings.html.twig:193
+#: modules/Email/html_admin/mod_email_settings.html.twig:164
+#: modules/Email/html_admin/mod_email_settings.html.twig:192
 #: modules/Embed/html_client/mod_embed_contact.html.twig:52
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:43
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
@@ -3843,9 +3940,9 @@ msgstr "Kliento mokėjimų istorija"
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:75
 #: modules/Product/html_admin/mod_product_addons.html.twig:46
 #: modules/Product/html_admin/mod_product_addons.html.twig:129
-#: modules/Product/html_admin/mod_product_index.html.twig:193
+#: modules/Product/html_admin/mod_product_index.html.twig:200
 #: modules/Product/html_admin/mod_product_manage.html.twig:197
-#: modules/Security/html_admin/mod_security_index.html.twig:21
+#: modules/Security/html_admin/mod_security_index.html.twig:24
 #: modules/Support/html_admin/mod_support_kb_category.html.twig:49
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:193
 #: themes/admin_default/html/partial_extensions.html.twig:28
@@ -3873,14 +3970,14 @@ msgid "Emails sent to client"
 msgstr "Laiškai išsiųsti klientui"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:767
-#: modules/Email/html_admin/mod_email_template.html.twig:56
+#: modules/Email/html_admin/mod_email_template.html.twig:55
 msgid "Email subject"
 msgstr "El. laiško tema"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:768
 #: modules/Email/html_admin/mod_email_details.html.twig:37
 #: modules/Email/html_admin/mod_email_history.html.twig:31
-#: modules/Email/html_admin/mod_email_settings.html.twig:194
+#: modules/Email/html_admin/mod_email_settings.html.twig:193
 #: modules/Email/html_client/mod_email_email.html.twig:19
 #: modules/Email/html_client/mod_email_index.html.twig:52
 msgid "To"
@@ -3918,6 +4015,7 @@ msgstr "Kliento nustatymai"
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:33
 #: modules/Support/html_admin/mod_support_settings.html.twig:29
+#: themes/huraga/config/settings.html.twig:13
 msgid "General"
 msgstr "Pagrindinis"
 
@@ -3988,7 +4086,7 @@ msgstr "Laukelio pavadinimas"
 #: modules/Client/html_client/mod_client_balance.html.twig:5
 #: modules/Client/html_client/mod_client_balance.html.twig:6
 #: modules/Client/html_client/mod_client_balance.html.twig:18
-#: themes/huraga/html/mobile_menu.html.twig:59
+#: themes/huraga/html/mobile_menu.html.twig:61
 #: themes/huraga/html/partial_menu.html.twig:62
 msgid "Wallet"
 msgstr ""
@@ -4042,6 +4140,7 @@ msgid "Change Password"
 msgstr "Keisti slaptažodį"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:39
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:99
 msgid "Update details"
 msgstr "Atnaujinti informaciją"
 
@@ -4123,8 +4222,8 @@ msgid "Zip/Postal Code"
 msgstr "Pašto kodas"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:175
-msgid "Please enter new password two times in order avoid mistypes"
-msgstr "Du kartus įveskite naują slaptažodį, kad išvengtumėte klaidų"
+msgid "Enter your new password twice to avoid mistakes. "
+msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:179
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:63
@@ -4171,7 +4270,7 @@ msgid "Your profile currency is"
 msgstr "Jūsų profilio valiuta yra"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:220
-msgid "Create new client profile if you want to manage your money in other currency."
+msgid "You will need to create a new client profile to use an alternative currency."
 msgstr ""
 
 #: modules/Client/html_client/mod_client_profile.html.twig:223
@@ -4202,13 +4301,17 @@ msgstr ""
 msgid "Back to login"
 msgstr ""
 
+#: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:5
+msgid "Cookie consent settings"
+msgstr ""
+
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit cookie consent message text"
 msgstr "Redaguoti sutikimo dėl slapukų tekstą"
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:20
-msgid "Here you can specify message which will be shown to user. It will be shown until user will click <strong>Close &times;</strong> button, however it will not be intrusive and will not disturb to perform any actions."
-msgstr "Čia galite nurodyti pranešimą, kuris bus rodomas vartotojui. Jis bus rodomas tol, kol vartotojas paspaus mygtuką <strong>Uždaryti &times;</strong>, tačiau jis nebus įkyrus ir netrukdys atlikti jokių veiksmų."
+msgid "Specify a message which will be shown to the user. The message will be shown until dismissed with the <strong>Close &times;</strong> button. An undismissed message does not affect functionality or prevent users from performing any actions."
+msgstr ""
 
 #: modules/Cookieconsent/html_admin/mod_cookieconsent_index.html.twig:22
 msgid "If there is a need to change the way notification looks or is being displayed, you can do it by editing"
@@ -4218,6 +4321,27 @@ msgstr "Jei reikia pakeisti pranešimo išvaizdą arba rodymo būdą, galite tai
 #: modules/Notification/html_admin/mod_notification_index.html.twig:80
 msgid "Add note or todo task"
 msgstr "Pridėti pastabą arba užduotį"
+
+#: modules/Cookieconsent/html_client/mod_cookieconsent_index.html.twig:4
+#: modules/Email/html_admin/mod_email_history.html.twig:15
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:7
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:155
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:261
+#: modules/Order/html_client/mod_order_manage.html.twig:169
+#: modules/Order/html_client/mod_order_manage.html.twig:203
+#: modules/Order/html_client/mod_order_manage.html.twig:236
+#: modules/Support/html_admin/mod_support_public_ticket.html.twig:95
+#: modules/Support/html_admin/mod_support_ticket.html.twig:111
+#: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:8
+#: modules/Support/html_client/mod_support_tickets.html.twig:82
+#: themes/admin_default/html/mod_index_dashboard.html.twig:20
+#: themes/admin_default/html/mod_index_dashboard.html.twig:27
+#: themes/admin_default/html/mod_index_dashboard.html.twig:33
+#: themes/admin_default/html/mod_index_dashboard.html.twig:39
+#: themes/admin_default/html/partial_extensions.html.twig:13
+#: themes/admin_default/html/partial_extensions.html.twig:18
+msgid "Close"
+msgstr "Uždaryti"
 
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:5
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:21
@@ -4246,8 +4370,8 @@ msgid "Scheduled tasks were never executed"
 msgstr "Suplanuotos užduotys niekada nebuvo įvykdytos"
 
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:59
-msgid "Unix crontab setup"
-msgstr "Unix crontab sąranka"
+msgid "Recommended crontab setup"
+msgstr ""
 
 #: modules/Cron/html_admin/mod_cron_settings.html.twig:72
 msgid "Enable the cron API endpoint for guests"
@@ -4364,7 +4488,7 @@ msgstr ""
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:90
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:40
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:111
-#: modules/Product/html_admin/mod_product_promos.html.twig:47
+#: modules/Product/html_admin/mod_product_promos.html.twig:52
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:255
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:25
 msgid "Code"
@@ -4376,7 +4500,7 @@ msgid "Leave blank to automatically set"
 msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:165
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:62
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:61
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:188
 msgid "Add"
 msgstr "Pridėti"
@@ -4460,10 +4584,10 @@ msgstr ""
 msgid "Currency exchange rate data provider"
 msgstr ""
 
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:232
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
-msgid "API key"
-msgstr "API raktas"
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:224
+#: modules/Currency/html_admin/mod_currency_settings.html.twig:243
+msgid "Currency data provider selection"
+msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:237
 msgid "Leave this blank to use the ExchangeRate-API \"Open Access Endpoint\"."
@@ -4510,7 +4634,7 @@ msgid "Exchange rate syncing runs via the cronjob and as such is limited by the 
 msgstr ""
 
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:271
-#: modules/Security/html_admin/mod_security_index.html.twig:23
+#: modules/Security/html_admin/mod_security_index.html.twig:25
 msgid "Result"
 msgstr "Rezultatas"
 
@@ -4546,11 +4670,11 @@ msgstr "Meta Raktažodžiai"
 
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:131
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:58
-#: modules/Email/html_admin/mod_email_settings.html.twig:171
+#: modules/Email/html_admin/mod_email_settings.html.twig:170
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:207
 #: modules/News/html_admin/mod_news_index.html.twig:116
 #: modules/News/html_admin/mod_news_post.html.twig:40
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:114
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:113
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:51
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:138
 msgid "Content"
@@ -4599,8 +4723,9 @@ msgstr "Klientų sistema"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:11
 #: themes/admin_default/html/layout_default.html.twig:148
 #: themes/admin_default/html/mod_index_dashboard.html.twig:5
-#: themes/huraga/html/layout_default.html.twig:90
-#: themes/huraga/html/layout_default.html.twig:159
+#: themes/huraga/config/settings.html.twig:106
+#: themes/huraga/html/layout_default.html.twig:100
+#: themes/huraga/html/layout_default.html.twig:171
 #: themes/huraga/html/mobile_menu.html.twig:5
 #: themes/huraga/html/partial_menu.html.twig:8
 msgid "Dashboard"
@@ -4608,7 +4733,7 @@ msgstr "Skydelis"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:11
 #: modules/Index/html_client/mod_index_dashboard.html.twig:10
-#: themes/huraga/html/layout_default.html.twig:156
+#: themes/huraga/html/layout_default.html.twig:168
 msgid "Home"
 msgstr "Pradžia"
 
@@ -4647,8 +4772,8 @@ msgstr "Veiksmai"
 #: modules/Support/html_admin/mod_support_tickets.html.twig:245
 #: modules/Support/html_client/mod_support_tickets.html.twig:53
 #: themes/admin_default/html/mod_index_dashboard.html.twig:335
-#: themes/admin_default/html/mod_index_dashboard.html.twig:498
-#: themes/admin_default/html/mod_index_dashboard.html.twig:525
+#: themes/admin_default/html/mod_index_dashboard.html.twig:484
+#: themes/admin_default/html/mod_index_dashboard.html.twig:511
 msgid "ago"
 msgstr "prieš"
 
@@ -4791,6 +4916,26 @@ msgstr ""
 msgid "Email settings"
 msgstr "El. pašto nustatymai"
 
+#: modules/Email/html_admin/mod_email_settings.html.twig:55
+msgid "Regenerate templates"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:57
+msgid "All email templates enabled"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:61
+msgid "Enable all"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:63
+msgid "All email templates disabled"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:67
+msgid "Disable all"
+msgstr ""
+
 #: modules/Email/html_admin/mod_email_settings.html.twig:76
 #: modules/Extension/html_admin/mod_extension_index.html.twig:41
 #: modules/Extension/html_admin/mod_extension_index.html.twig:170
@@ -4799,14 +4944,14 @@ msgid "Extension"
 msgstr "Plėtinys"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:78
-#: modules/Email/html_admin/mod_email_settings.html.twig:140
-#: modules/Email/html_admin/mod_email_template.html.twig:108
+#: modules/Email/html_admin/mod_email_settings.html.twig:139
+#: modules/Email/html_admin/mod_email_template.html.twig:106
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:56
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:41
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:37
 #: modules/Product/html_admin/mod_product_addons.html.twig:91
 #: modules/Product/html_admin/mod_product_manage.html.twig:96
-#: modules/Product/html_admin/mod_product_promos.html.twig:52
+#: modules/Product/html_admin/mod_product_promos.html.twig:57
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:51
 msgid "Enabled"
 msgstr "Įjungtas"
@@ -4819,159 +4964,167 @@ msgstr "Ar tikrai norite ištrinti šį šabloną?"
 msgid "The list is empty. Depending on modules enabled email templates will be inserted after first event occurrence."
 msgstr "Sąrašas tuščias. Priklausomai nuo įgalintų modulių, el. pašto šablonai bus įterpti po pirmojo įvykio."
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:136
+#: modules/Email/html_admin/mod_email_settings.html.twig:135
 msgid "Where I can use new email template?"
 msgstr "Kur galiu naudoti naują el. pašto šabloną?"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:137
+#: modules/Email/html_admin/mod_email_settings.html.twig:136
 msgid "Newly created email templates can be used in custom event hooks."
 msgstr "Naujai sukurti el. pašto šablonai gali būti naudojami tinkintuose įvykių kabliukuose."
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:153
-#: modules/Email/html_admin/mod_email_template.html.twig:121
-#: modules/Product/html_admin/mod_product_index.html.twig:46
-#: modules/Product/html_admin/mod_product_index.html.twig:119
+#: modules/Email/html_admin/mod_email_settings.html.twig:152
+#: modules/Email/html_admin/mod_email_template.html.twig:119
+#: modules/Product/html_admin/mod_product_index.html.twig:52
+#: modules/Product/html_admin/mod_product_index.html.twig:126
 #: modules/Product/html_admin/mod_product_manage.html.twig:55
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:37
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:59
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:101
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:100
 #: modules/Support/html_admin/mod_support_kb_article.html.twig:39
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:59
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:113
 msgid "Category"
 msgstr "Kategorija"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:159
+#: modules/Email/html_admin/mod_email_settings.html.twig:158
 msgid "Action code"
 msgstr "Veiksmo kodas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:186
+#: modules/Email/html_admin/mod_email_settings.html.twig:185
 msgid "FOSSBilling queues emails to have them be sent via cron in the background. Here you may find the list of queued emails and how many times the system has tried to send them."
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:187
+#: modules/Email/html_admin/mod_email_settings.html.twig:186
 msgid "Emails that have been sent or that failed to be sent will not be listed here."
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:195
+#: modules/Email/html_admin/mod_email_settings.html.twig:194
 msgid "To (Email)"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:197
+#: modules/Email/html_admin/mod_email_settings.html.twig:196
 msgid "Tries"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:198
+#: modules/Email/html_admin/mod_email_settings.html.twig:197
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:265
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:75
 msgid "Created at"
 msgstr "Sukurta"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:199
+#: modules/Email/html_admin/mod_email_settings.html.twig:198
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:80
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:105
 msgid "Updated at"
 msgstr "Atnaujinta"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:235
+#: modules/Email/html_admin/mod_email_settings.html.twig:234
 msgid "The list is empty."
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:244
+#: modules/Email/html_admin/mod_email_settings.html.twig:243
 msgid "Email settings updated"
 msgstr "El. pašto nustatymai atnaujinti"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:247
+#: modules/Email/html_admin/mod_email_settings.html.twig:245
 msgid "Configure email options"
 msgstr "Konfigūruoti el. pašto parinktis"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:248
+#: modules/Email/html_admin/mod_email_settings.html.twig:246
 msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can configure your own SMTP server"
 msgstr "FOSSBilling pagal numatytuosius nustatymus siunčia el. laiškus naudojant <em>sendmail</em> arba galite sukonfigūruoti savo SMTP serverį"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:254
+#: modules/Email/html_admin/mod_email_settings.html.twig:249
+msgid "Queue options"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:252
 msgid "Send emails per cron run (0 = unlimited)"
 msgstr "Siųsti el. laiškus per cron paleidimą (0 = neribota)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:258
+#: modules/Email/html_admin/mod_email_settings.html.twig:256
 msgid "Max email sending time in minutes (0 = unlimited, default 5 min.)"
 msgstr "Maksimalus el. laiškų siuntimo laikas minutėmis (0 = neribotas, numatytoji 5 min.)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:262
+#: modules/Email/html_admin/mod_email_settings.html.twig:260
 msgid "Cancel sending email after unsuccessful tries (0 = do not cancel)"
 msgstr "Atšaukti el. laiško siuntimą po nesėkmingų bandymų (0 = neatšaukti)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:268
+#: modules/Email/html_admin/mod_email_settings.html.twig:266
 msgid "Log sent emails to database"
 msgstr "Išsaugoti išsiųstus el. laiškus į žurnalo duom. bazę"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:281
+#: modules/Email/html_admin/mod_email_settings.html.twig:279
 msgid "Email transport"
 msgstr "El. pašto transportavimas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:285
+#: modules/Email/html_admin/mod_email_settings.html.twig:283
 msgid "SendMail"
 msgstr "SendMail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:289
+#: modules/Email/html_admin/mod_email_settings.html.twig:287
 msgid "SMTP"
 msgstr "SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:293
+#: modules/Email/html_admin/mod_email_settings.html.twig:291
 msgid "SendGrid"
 msgstr "SendGrid"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:297
+#: modules/Email/html_admin/mod_email_settings.html.twig:295
 msgid "Custom"
 msgstr "Pasirinktinis"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:304
+#: modules/Email/html_admin/mod_email_settings.html.twig:302
 msgid "SMTP Hostname"
 msgstr "SMTP serveris"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:310
+#: modules/Email/html_admin/mod_email_settings.html.twig:308
 msgid "SMTP Port"
 msgstr "SMTP prievadas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:316
+#: modules/Email/html_admin/mod_email_settings.html.twig:314
 msgid "SMTP Username"
 msgstr "SMTP vartotojo vardas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:322
+#: modules/Email/html_admin/mod_email_settings.html.twig:320
 msgid "SMTP Password"
 msgstr "SMTP slaptažodis"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:331
+#: modules/Email/html_admin/mod_email_settings.html.twig:329
 msgid "SendGrid API Key"
 msgstr "SendGrid API raktas"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:340
+#: modules/Email/html_admin/mod_email_settings.html.twig:338
 msgid "Custom DSN"
 msgstr "Pasirinktinis DSN"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:342
-msgid "If one of the available options don't quite meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
-msgstr "Jei viena iš galimų parinkčių ne visai atitinka jūsų poreikius, galite apibrėžti tinkintą DSN. Atminkite, kad naudotojų vardai, slaptažodžiai ir serverių pavadinimai su specialiais simboliais turi būti URL-užkoduoti."
+#: modules/Email/html_admin/mod_email_settings.html.twig:340
+msgid "If none of the available options exactly meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
+msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:343
+#: modules/Email/html_admin/mod_email_settings.html.twig:341
 msgid "More information"
 msgstr "Daugiau informacijos"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:344
+#: modules/Email/html_admin/mod_email_settings.html.twig:342
 msgid "Example"
 msgstr "Pavyzdys"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:357
+#: modules/Email/html_admin/mod_email_settings.html.twig:355
 msgid "Send a test email to yourself"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:359
+#: modules/Email/html_admin/mod_email_settings.html.twig:357
 msgid "Update email settings"
 msgstr "Atnaujinti el. pašto nustatymus"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:373
+#: modules/Email/html_admin/mod_email_settings.html.twig:371
 msgid "Email was successfully sent"
 msgstr "El. laiškas sėkmingai išsiųstas"
+
+#: modules/Email/html_admin/mod_email_template.html.twig:3
+msgid "Email template"
+msgstr ""
 
 #: modules/Email/html_admin/mod_email_template.html.twig:34
 msgid "Template"
@@ -4990,63 +5143,68 @@ msgid "Examples"
 msgstr "Pavyzdžiai"
 
 #: modules/Email/html_admin/mod_email_template.html.twig:49
-#: modules/Email/html_admin/mod_email_template.html.twig:100
+#: modules/Email/html_admin/mod_email_template.html.twig:99
 msgid "Template updated"
 msgstr "Šablonas atnaujintas"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:53
+#: modules/Email/html_admin/mod_email_template.html.twig:52
 msgid "Manage email template"
 msgstr "Tvarkyti el. pašto šabloną"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:54
-msgid "Most email templates receives parameters from FOSSBilling. You can browse them on \"Variables\" tab. Copy variable name to email template and hit preview to see parsed content. Please note that values will be different when actual email is sent."
-msgstr "Dauguma el. pašto šablonų gauna parametrus iš FOSSBilling. Galite juos naršyti skirtuke \"Kintamieji\". Nukopijuokite kintamojo pavadinimą į el. pašto šabloną ir paspauskite peržiūrą, kad pamatytumėte analizuotą turinį. Atminkite, kad vertės skirsis, kai bus išsiųstas tikrasis el."
+#: modules/Email/html_admin/mod_email_template.html.twig:53
+msgid "Email templates can receive variables from FOSSBilling. Available variables are listed under the \"Variables\" tab. Copy a variable name to your email template and hit preview to see parsed content. Please note that values will be different when an actual email is sent."
+msgstr ""
 
-#: modules/Email/html_admin/mod_email_template.html.twig:62
+#: modules/Email/html_admin/mod_email_template.html.twig:61
 msgid "Email message"
 msgstr "El. pašto žinutė"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:91
-#: modules/Email/html_admin/mod_email_template.html.twig:231
+#: modules/Email/html_admin/mod_email_template.html.twig:90
+#: modules/Email/html_admin/mod_email_template.html.twig:229
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:119
 msgid "Preview"
 msgstr "Peržiūra"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:104
+#: modules/Email/html_admin/mod_email_template.html.twig:102
 msgid "Template settings"
 msgstr "Šablono nustatymai"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:105
+#: modules/Email/html_admin/mod_email_template.html.twig:103
 msgid "Enable or disable this email template."
 msgstr "Įgalinti arba išjungti šį el. pašto šabloną."
 
-#: modules/Email/html_admin/mod_email_template.html.twig:136
+#: modules/Email/html_admin/mod_email_template.html.twig:134
 msgid "List of variables used in this email"
 msgstr "Šiame el. laiške naudotų kintamųjų sąrašas"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:137
+#: modules/Email/html_admin/mod_email_template.html.twig:135
 msgid "These values will change when real email is sent. You can pass these variables to admin or guest API to get additional information from database."
 msgstr "Šios reikšmės pasikeis, kai bus išsiųstas tikras El. laiškas. Galite perduoti šiuos kintamuosius administratoriui arba svečio API, kad gautumėte papildomos informacijos iš duomenų bazės."
 
-#: modules/Email/html_admin/mod_email_template.html.twig:143
+#: modules/Email/html_admin/mod_email_template.html.twig:141
 msgid "Variable"
 msgstr "Kintamasis"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:144
+#: modules/Email/html_admin/mod_email_template.html.twig:142
 msgid "Example value"
 msgstr "Pavyzdinė vertė"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:180
+#: modules/Email/html_admin/mod_email_template.html.twig:178
 msgid "This template has no known parameters, you may need to take an action to trigger its sending before they become known."
 msgstr "Šiam šablonui nėra žinomų parametrų, gali tekti imtis veiksmų, kad suaktyvintumėte jo siuntimą, kol jie tamps žinomi."
 
-#: modules/Email/html_admin/mod_email_template.html.twig:190
+#: modules/Email/html_admin/mod_email_template.html.twig:188
 msgid "Email templates examples"
 msgstr "El. pašto šablonų pavyzdžiai"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:191
+#: modules/Email/html_admin/mod_email_template.html.twig:189
 msgid "Email template playground. Use this tool to try rendering email templates."
 msgstr "El. pašto šablono žaidimų aikštelė. Naudokite šį įrankį norėdami pabandyti sugeneruoti el. pašto šablonus."
+
+#: modules/Email/html_client/mod_email_email.html.twig:22
+#: modules/Email/html_client/mod_email_index.html.twig:55
+msgid "Mail Action"
+msgstr ""
 
 #: modules/Email/html_client/mod_email_index.html.twig:18
 msgid "Here you can find all the emails we've sent you."
@@ -5055,6 +5213,41 @@ msgstr ""
 #: modules/Email/html_client/mod_email_index.html.twig:25
 msgid "There are no emails to display"
 msgstr "Nėra rodomų el. laiškų"
+
+#: modules/Embed/html_admin/mod_embed_index.html.twig:2
+msgid "Embed parts of FOSSBilling"
+msgstr ""
+
+#: modules/Embed/html_admin/mod_embed_index.html.twig:10
+msgid "Embed parts"
+msgstr ""
+
+#: modules/Embed/html_admin/mod_embed_index.html.twig:11
+msgid "Copy and paste the embed code to your website"
+msgstr ""
+
+#: modules/Embed/html_admin/mod_embed_index.html.twig:16
+msgid "Client area login form"
+msgstr ""
+
+#: modules/Embed/html_admin/mod_embed_index.html.twig:22
+#: modules/Embed/html_admin/mod_embed_index.html.twig:37
+#: modules/Embed/html_admin/mod_embed_index.html.twig:52
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:291
+#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:60
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:222
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:237
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:258
+msgid "Copy"
+msgstr "Kopijuoti"
+
+#: modules/Embed/html_admin/mod_embed_index.html.twig:31
+msgid "Domain checker form"
+msgstr ""
+
+#: modules/Embed/html_admin/mod_embed_index.html.twig:46
+msgid "Contact us form"
+msgstr ""
 
 #: modules/Embed/html_client/mod_embed_contact.html.twig:79
 msgid "Incorrect please try again"
@@ -5077,6 +5270,10 @@ msgstr "Plėtinių Katalogas"
 msgid "Hooks"
 msgstr "Kabliukai"
 
+#: modules/Extension/html_admin/mod_extension_index.html.twig:32
+msgid "FOSSBilling extensions"
+msgstr ""
+
 #: modules/Extension/html_admin/mod_extension_index.html.twig:33
 msgid "Activate or deactivate extensions"
 msgstr "Suaktyvinti arba išjungti plėtinius"
@@ -5095,6 +5292,14 @@ msgstr "Išjungti"
 msgid "Activate"
 msgstr "Suaktyvinti"
 
+#: modules/Extension/html_admin/mod_extension_index.html.twig:120
+msgid "Modules on the extension directory"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:121
+msgid "These are all modules available for installation from the <a href=\"https://extensions.fossbilling.org/\">extension directory</a> at the click of a button."
+msgstr ""
+
 #: modules/Extension/html_admin/mod_extension_index.html.twig:130
 msgid "Extending FOSSBilling"
 msgstr "FOSSBilling pratęsimas"
@@ -5102,6 +5307,85 @@ msgstr "FOSSBilling pratęsimas"
 #: modules/Extension/html_admin/mod_extension_index.html.twig:131
 msgid "FOSSBilling gives developers all the capabilities to customize, integrate & extend the core system into your own website & applications."
 msgstr "FOSSBilling suteikia programuotojams visas galimybes tinkinti, integruoti ir išplėsti pagrindinę sistemą į savo svetainę & aplikacijas."
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:135
+msgid "More extensions"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:136
+msgid "If you cannot find the extensions you are looking for in the admin area, please visit the extension directory at <a href=\"https://extensions.fossbilling.org\" target=\"_blank\">https://extensions.fossbilling.org</a>."
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:138
+msgid "How to create a new extension"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:140
+msgid "Create a <a href=\"https://github.com/signup/free\" target=\"_blank\">GitHub</a> account for free."
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:141
+msgid "Create a new public repository dedicated to the extension only."
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:142
+msgid "The repository must have a valid manifest file for your extension in the JSON format. For more information, please refer <a href=\"https://github.com/FOSSBilling/example-extension\" target=\"_blank\">to our example extension</a>."
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:143
+msgid "Create a pull request <a href=\"https://github.com/FOSSBilling/extension-directory\">here</a>."
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:144
+msgid "The FOSSBilling team will review your extension and contact you if there are any issues."
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:145
+msgid "Registered extensions will then appear on the extension directory."
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:148
+msgid "Supported extension types"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:151
+msgid "Server managers"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:152
+#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:195
+msgid "Domain registrars"
+msgstr "Domenų registrai"
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:153
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:26
+msgid "Client area themes"
+msgstr "Klientų sistemos temos"
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:154
+#: modules/Theme/html_admin/mod_theme_settings.html.twig:93
+msgid "Admin area themes"
+msgstr "Administravimo sistemos temos"
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:155
+msgid "Translations for client and admin areas"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:156
+msgid "Event hooks - Hooks can be injected into the process, change its behaviour, stop executing actions"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:157
+msgid "API module - External program which uses FOSSBilling API"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:160
+msgid "Extension support"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:161
+msgid "Contact extensions developers directly for support. You can find issue tracker on the extension directory."
+msgstr ""
 
 #: modules/Extension/html_admin/mod_extension_index.html.twig:171
 msgid "Hook"
@@ -5151,7 +5435,11 @@ msgid "FOSSBilling in your language"
 msgstr "FOSSBilling jūsų kalboje"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:144
-msgid "Although FOSSBilling displays in U.S. English by default, it has the capability to be used in any language. Follow instructions bellow to install new language."
+msgid "Although FOSSBilling displays in U.S. English by default, it has the capability to be used in any language. Follow the instructions below to install new language."
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:147
+msgid "Check the FOSSBilling locale repository to see if the language you are looking for is available."
 msgstr ""
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:147
@@ -5162,20 +5450,12 @@ msgstr ""
 msgid "Follow the instructions on the FOSSBilling documentation to install the new language's translation files."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:148
-msgid "Installing a new language"
-msgstr ""
-
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:152
-msgid "Changing default language"
-msgstr "Numatytosios kalbos keitimas"
+msgid "Changing the default language"
+msgstr ""
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:153
 msgid "Instructions for changing the default language can be found on the FOSSBilling documentation."
-msgstr ""
-
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:153
-msgid "Changing the default language"
 msgstr ""
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:6
@@ -5254,8 +5534,20 @@ msgstr "Aukštis"
 msgid "Default value"
 msgstr "Numatytoji reikšmė"
 
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:162
+msgid "Select a default value"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:181
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:270
+#: modules/Order/html_admin/mod_order_manage.html.twig:248
+#: modules/Order/html_admin/mod_order_manage.html.twig:313
+msgid "Cancel"
+msgstr "Atšaukti"
+
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:182
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:173
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:206
 msgid "Save"
 msgstr "Išsaugoti"
 
@@ -5265,12 +5557,14 @@ msgstr "Išsaugoti"
 msgid "Please click on \"Edit\" in order to add options"
 msgstr "Norėdami pridėti parinkčių, spustelėkite \"Redaguoti\""
 
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:5
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:22
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:26
 msgid "Custom form builder"
 msgstr ""
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:38
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:47
 msgid "Custom forms"
 msgstr "Pasirinktinės formos"
 
@@ -5282,6 +5576,11 @@ msgstr "Importo forma"
 msgid "Create new form"
 msgstr "Sukurti naują formą"
 
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:51
+#: modules/Product/html_admin/mod_product_manage.html.twig:83
+msgid "Add new"
+msgstr "Pridėti naują"
+
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:61
 #: modules/Order/html_client/mod_order_index.html.twig:23
 #: modules/Order/html_client/mod_order_product.html.twig:23
@@ -5290,6 +5589,7 @@ msgstr "Sukurti naują formą"
 #: modules/Product/html_admin/mod_product_category.html.twig:19
 #: modules/Product/html_admin/mod_product_index.html.twig:7
 #: modules/Product/html_admin/mod_product_index.html.twig:12
+#: modules/Product/html_admin/mod_product_index.html.twig:39
 #: modules/Product/html_admin/mod_product_manage.html.twig:19
 #: modules/Product/html_admin/mod_product_promo.html.twig:17
 #: modules/Product/html_admin/mod_product_promos.html.twig:19
@@ -5304,59 +5604,99 @@ msgstr "Formos parinktys"
 msgid "Form options were updated"
 msgstr "Formos parinktys buvo atnaujintos"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:126
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:125
 msgid "Form title"
 msgstr "Formos pavadinimas"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:133
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:132
 msgid "Labels position"
 msgstr "Žymų padėtis"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:136
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:135
 msgid "Labels on\n"
 "                            top"
 msgstr "Etiketės\n"
 "                            viršuje"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:139
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:138
 msgid "Labels on the left"
 msgstr "Žymos kairėje"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:144
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:143
 msgid "Form title visibility"
 msgstr "Formos pavadinimo matomumas"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:147
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:146
 msgid "Show form\n"
 "                            title"
 msgstr "Rodyti formos\n"
 "                            pavadinimą"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:149
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:148
 msgid "Do not show form\n"
 "                            title"
 msgstr "Nerodyti formos\n"
 "                            pavadinimo"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:175
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:174
 msgid "Text"
 msgstr "Tekstas"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:182
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:181
 msgid "Dropdown"
 msgstr "Išskl. sąrašas"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:189
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:188
 msgid "Radio"
 msgstr "Radio"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:196
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:195
 msgid "Checkbox"
 msgstr "Žymės langelis"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:203
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:202
 msgid "Textarea"
 msgstr "Teksto laukas"
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:234
+msgid "Delete field?"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:235
+msgid "Are you sure you want to delete this custom field?"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:254
+msgid "Delete Form?"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:255
+msgid "Are you sure you want to delete this form?"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:269
+msgid "New form"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:270
+msgid "Give your new form a title"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:271
+msgid "My new form"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:288
+msgid "Copy form"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:289
+msgid "Give your duplicate form a title"
+msgstr ""
+
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:290
+msgid "My duplicate form"
+msgstr ""
 
 #: modules/Index/html_client/mod_index_dashboard.html.twig:166
 msgid "No recent orders"
@@ -5384,10 +5724,10 @@ msgstr ""
 #: modules/Page/html_client/mod_page_login.html.twig:11
 #: modules/Page/html_client/mod_page_login.html.twig:37
 #: modules/Staff/html_admin/mod_staff_login.html.twig:3
-#: modules/Staff/html_admin/mod_staff_login.html.twig:70
+#: modules/Staff/html_admin/mod_staff_login.html.twig:71
 #: themes/admin_default/html/error.html.twig:14
-#: themes/huraga/html/layout_default.html.twig:103
-#: themes/huraga/html/mobile_menu.html.twig:119
+#: themes/huraga/html/layout_default.html.twig:113
+#: themes/huraga/html/mobile_menu.html.twig:123
 msgid "Login"
 msgstr "Prisijungti"
 
@@ -5396,8 +5736,8 @@ msgstr "Prisijungti"
 #: modules/Page/html_client/mod_page_signup.html.twig:5
 #: modules/Page/html_client/mod_page_signup.html.twig:182
 #: modules/Servicedomain/html_admin/mod_servicedomain_order.html.twig:8
-#: themes/huraga/html/layout_default.html.twig:129
-#: themes/huraga/html/mobile_menu.html.twig:123
+#: themes/huraga/html/layout_default.html.twig:139
+#: themes/huraga/html/mobile_menu.html.twig:127
 msgid "Register"
 msgstr "Registruotis"
 
@@ -5411,7 +5751,7 @@ msgstr "Registruotis"
 #: modules/Order/html_client/mod_order_product.html.twig:12
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:4
 #: themes/admin_default/html/partial_menu_top.html.twig:3
-#: themes/huraga/html/layout_default.html.twig:96
+#: themes/huraga/html/layout_default.html.twig:106
 #: themes/huraga/html/mobile_menu.html.twig:14
 #: themes/huraga/html/partial_menu.html.twig:17
 msgid "Order"
@@ -5427,7 +5767,7 @@ msgstr ""
 #: modules/News/html_client/mod_news_index.html.twig:3
 #: modules/News/html_client/mod_news_index.html.twig:7
 #: modules/News/html_client/mod_news_post.html.twig:8
-#: themes/huraga/html/mobile_menu.html.twig:68
+#: themes/huraga/html/mobile_menu.html.twig:70
 #: themes/huraga/html/partial_menu.html.twig:71
 msgid "News"
 msgstr "Naujienos"
@@ -5487,17 +5827,13 @@ msgstr ""
 msgid "Allow subscriptions"
 msgstr "Leisti prenumeratas"
 
-#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:60
-msgid "Copy"
-msgstr "Kopijuoti"
-
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:94
 msgid "Adding new payment gateway"
 msgstr "Pridedami nauji mokėjimo vartai"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:95
-msgid "Although FOSSBilling ships with most popular payment gateways, you can install other gateways."
-msgstr "Nors FOSSBilling pristatomas su populiariausiomis mokėjimo sistemomis, galite įdiegti kitus vartus."
+msgid "FOSSBilling ships with a few popular payment gateways included. You can install other payment gateways to fit your needs."
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:96
 msgid "Follow these instructions to install new payment gateway."
@@ -5506,6 +5842,11 @@ msgstr "Vykdykite šias instrukcijas, kad įdiegtumėte naujus mokėjimo vartus.
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:98
 msgid "Check for payment gateway at"
 msgstr "Patikrinkite, ar nėra mokėjimo vartų"
+
+#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:98
+#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:242
+msgid "FOSSBilling extensions site"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:98
 msgid "for more payment gateways"
@@ -5533,12 +5874,20 @@ msgid "For developers. Read"
 msgstr "Kūrėjams. Skaityti"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:103
-msgid "to learn how to create your own payment gateway and share it with community"
-msgstr "kad sužinotumėte, kaip susikurti savo mokėjimo vartus ir pasidalyti juo su bendruomene"
+#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:246
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
+msgid "FOSSBilling documentation"
+msgstr "FOSSBilling dokumentacija"
+
+#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:103
+msgid "to learn how to create your own payment gateway and share it with the community"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:112
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:122
+#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:213
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:256
+#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:264
 msgid "Install"
 msgstr "Įrašyti"
 
@@ -5546,6 +5895,10 @@ msgstr "Įrašyti"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:275
 msgid "All payment gateways installed"
 msgstr "Visi įdiegti mokėjimo vartai"
+
+#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:143
+msgid "List of payment gateways on the Extension Directory"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:13
 msgid "Filter invoices"
@@ -5581,7 +5934,15 @@ msgstr "Klientas"
 msgid "Start typing the client name or ID"
 msgstr "Pradėti rašyti kliento vardą arba ID"
 
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:48
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:37
+msgid "All currencies"
+msgstr ""
+
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:56
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:43
+#: modules/Order/html_admin/mod_order_index.html.twig:31
+#: modules/Support/html_admin/mod_support_tickets.html.twig:66
 msgid "All statuses"
 msgstr "Visos būsenos"
 
@@ -5631,6 +5992,7 @@ msgstr "Paruošti"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:74
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:18
 #: themes/admin_default/html/partial_menu_top.html.twig:7
+#: themes/huraga/config/settings.html.twig:292
 msgid "Invoice"
 msgstr "Sąskaita faktūra"
 
@@ -5701,16 +6063,9 @@ msgstr ""
 msgid "This should be the transaction ID you use to reconcile your bank statement."
 msgstr ""
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:174
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:270
-#: modules/Order/html_admin/mod_order_manage.html.twig:248
-#: modules/Order/html_admin/mod_order_manage.html.twig:313
-msgid "Cancel"
-msgstr "Atšaukti"
-
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:175
 #: modules/Security/html_admin/mod_security_iplookup.html.twig:24
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:201
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:236
 #: modules/Support/html_client/mod_support_tickets.html.twig:103
 msgid "Submit"
 msgstr "Pateikti"
@@ -5751,6 +6106,10 @@ msgstr "Mokesčiai"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:259
 msgid "Payment method"
 msgstr "Apmokėjimo būdas"
+
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:261
+msgid "Select payment method"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:290
 msgid "Due at"
@@ -5895,6 +6254,10 @@ msgstr ""
 msgid "Allow access to invoices without authentication"
 msgstr ""
 
+#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:129
+msgid "If enabled, invoices can be accessed by anyone who knows the invoice hash, although it's quite a long hash and would not be brute-forceable."
+msgstr ""
+
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:133
 msgid "Refunds settings"
 msgstr "Grąžinimo nustatymai"
@@ -5971,6 +6334,17 @@ msgstr "PG prenumeratos ID"
 msgid "Payment Gateway"
 msgstr "Mokėjimo vartai"
 
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:108
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:122
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:157
+msgid "Select payment gateway"
+msgstr ""
+
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:133
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:147
+msgid "Select period"
+msgstr ""
+
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:19
 msgid "New Subscription"
 msgstr ""
@@ -6007,13 +6381,19 @@ msgid "Tax title"
 msgstr "Mokesčio pavadinimas"
 
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:107
-msgid "Sales TAX"
-msgstr "Pardavimų mokestis"
+#: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:19
+msgid "Sales Tax"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:114
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:26
 msgid "18"
 msgstr "18"
+
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:122
+#: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:34
+msgid "Apply to all countries"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:129
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:41
@@ -6031,10 +6411,6 @@ msgstr "Įgalinti mokesčių palaikymą"
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:12
 msgid "Update tax rule"
 msgstr "Atnaujinti mokesčių taisyklę"
-
-#: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:19
-msgid "sales Tax"
-msgstr "pardavimų mokestis"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:28
 msgid "Transaction"
@@ -6111,9 +6487,18 @@ msgstr "Informacija apie operaciją mokėjimo vartuose"
 msgid "Transaction type"
 msgstr "Operacijos tipas"
 
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:178
+msgid "Select transaction type"
+msgstr ""
+
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:182
 msgid "Transaction status on Payment Gateway"
 msgstr "Operacijos būsena mokėjimo vartuose"
+
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:184
+#: modules/Order/html_admin/mod_order_manage.html.twig:335
+msgid "Select status"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:188
 msgid "Transaction ID on Payment Gateway"
@@ -6162,6 +6547,10 @@ msgstr "Filtruoti operacijas"
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:23
 msgid "ID on payment gateway"
 msgstr "ID mokėjimo vartuose"
+
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:49
+msgid "All payment gateways"
+msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:100
 msgid "Processed"
@@ -6248,13 +6637,16 @@ msgstr "Paskyra"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:196
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:151
+#: modules/Product/html_admin/mod_product_index.html.twig:50
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:44
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:103
 msgid "#"
 msgstr "#"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:185
 #: modules/Invoice/pdf_template/default-pdf.twig:90
-#: modules/Product/html_admin/mod_product_promos.html.twig:48
+#: modules/Product/html_admin/mod_product_promos.html.twig:53
 msgid "Discount"
 msgstr "Nuolaida"
 
@@ -6299,14 +6691,14 @@ msgstr "Sąskaitos faktūros būsena"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
 #: modules/System/html_admin/mod_system_settings.html.twig:118
-#: themes/huraga/html/layout_default.html.twig:183
+#: themes/huraga/html/layout_default.html.twig:195
 msgid "Bank Name"
 msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
 #: modules/System/html_admin/mod_system_settings.html.twig:124
-#: themes/huraga/html/layout_default.html.twig:183
+#: themes/huraga/html/layout_default.html.twig:195
 msgid "BIC / SWIFT Code"
 msgstr ""
 
@@ -6350,7 +6742,7 @@ msgstr ""
 
 #: modules/Invoice/pdf_template/default-pdf.twig:64
 #: modules/Order/html_admin/mod_order_index.html.twig:41
-#: modules/Order/html_admin/mod_order_index.html.twig:295
+#: modules/Order/html_admin/mod_order_index.html.twig:296
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
 #: themes/admin_default/html/partial_menu_top.html.twig:15
 msgid "Product"
@@ -6490,6 +6882,11 @@ msgstr ""
 msgid "Draft"
 msgstr "Juodraštis"
 
+#: modules/News/html_admin/mod_news_index.html.twig:119
+#: modules/News/html_admin/mod_news_post.html.twig:43
+msgid "If the text is very long you can use <strong>&lt;!--more--&gt;</strong> tag. Inserting this tag within the post will create and excerpt of text (before the tag) to be displayed in posts list. Users will be able to see whole content when they click on \"Read more\" button."
+msgstr ""
+
 #: modules/News/html_admin/mod_news_post.html.twig:27
 msgid "Post updated"
 msgstr "Įrašas atnaujintas"
@@ -6507,6 +6904,7 @@ msgid "https://www.yourdomain.com/image.jpg"
 msgstr "https://www.jusudomenas.lt/nuotrauka.jpg"
 
 #: modules/News/html_admin/mod_news_post.html.twig:53
+#: themes/huraga/config/settings.html.twig:206
 msgid "Meta description"
 msgstr "Meta aprašymas"
 
@@ -6564,6 +6962,20 @@ msgstr "Pridėti pastabą"
 msgid "Filter orders"
 msgstr "Filtruoti užsakymus"
 
+#: modules/Order/html_admin/mod_order_index.html.twig:37
+#: modules/Order/html_admin/mod_order_index.html.twig:55
+msgid "All types"
+msgstr ""
+
+#: modules/Order/html_admin/mod_order_index.html.twig:43
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:201
+msgid "All products"
+msgstr ""
+
+#: modules/Order/html_admin/mod_order_index.html.twig:49
+msgid "All periods"
+msgstr ""
+
 #: modules/Order/html_admin/mod_order_index.html.twig:53
 #: modules/Order/html_admin/mod_order_manage.html.twig:339
 #: modules/Order/html_admin/mod_order_new.html.twig:34
@@ -6585,7 +6997,7 @@ msgstr ""
 msgid "Export Orders"
 msgstr "Exportuoti užsakymus"
 
-#: modules/Order/html_admin/mod_order_index.html.twig:300
+#: modules/Order/html_admin/mod_order_index.html.twig:301
 #: themes/huraga/html/partial_pricing.html.twig:78
 msgid "Continue"
 msgstr "Tęsti"
@@ -6709,12 +7121,12 @@ msgid "Suspend"
 msgstr "Sustabdyti"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:242
-msgid "Reason of cancelation"
-msgstr "Atšaukimo priežastis"
+msgid "Reason of cancellation"
+msgstr ""
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:243
-msgid "Cancelation reason"
-msgstr "Atšaukimo priežastis"
+msgid "Cancellation reason"
+msgstr ""
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:244
 msgid "Order canceled"
@@ -6748,6 +7160,10 @@ msgstr "Pakeičia būseną neatlikus veiksmo"
 #: modules/Order/html_client/mod_order_manage.html.twig:186
 msgid "Reason"
 msgstr "Priežastis"
+
+#: modules/Order/html_admin/mod_order_manage.html.twig:359
+msgid "Not recurrent"
+msgstr ""
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:363
 msgid "Date Expires"
@@ -6809,15 +7225,23 @@ msgstr "kam"
 msgid "Activate order"
 msgstr "Aktyvuoti užsakymą"
 
-#: modules/Order/html_admin/mod_order_new.html.twig:73
+#: modules/Order/html_admin/mod_order_new.html.twig:72
+msgid "Mark invoice as paid"
+msgstr ""
+
+#: modules/Order/html_admin/mod_order_new.html.twig:76
+msgid "Confirm that the first invoice has already been paid by the client"
+msgstr ""
+
+#: modules/Order/html_admin/mod_order_new.html.twig:83
 msgid "Place new order"
 msgstr "Sukurti naują užsakymą"
 
-#: modules/Order/html_admin/mod_order_new.html.twig:93
+#: modules/Order/html_admin/mod_order_new.html.twig:103
 msgid "Selected price is 0.00"
 msgstr "Pasirinkta kaina 0.00"
 
-#: modules/Order/html_admin/mod_order_new.html.twig:97
+#: modules/Order/html_admin/mod_order_new.html.twig:107
 msgid "Product is disabled in configuration"
 msgstr "Produktas išjungtas konfigūracijoje"
 
@@ -6887,7 +7311,7 @@ msgstr "Mano produktai & Paslaugos"
 #: modules/Order/html_client/mod_order_list.html.twig:9
 #: modules/Order/html_client/mod_order_list.html.twig:19
 #: modules/Order/html_client/mod_order_manage.html.twig:11
-#: themes/huraga/html/mobile_menu.html.twig:32
+#: themes/huraga/html/mobile_menu.html.twig:34
 #: themes/huraga/html/partial_menu.html.twig:35
 msgid "Services"
 msgstr "Paslaugos"
@@ -7019,9 +7443,17 @@ msgstr "Mėlyna"
 msgid "Dark"
 msgstr "Tamsi"
 
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:83
+msgid "Sizing"
+msgstr ""
+
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:94
 msgid "Border radius"
 msgstr "Rėmelio spindulys"
+
+#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:105
+msgid "Background"
+msgstr ""
 
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:109
 msgid "Color"
@@ -7195,6 +7627,7 @@ msgid "privacy policy"
 msgstr ""
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:194
+#: themes/huraga/config/settings.html.twig:305
 msgid "Checkout"
 msgstr "Atsiskaityti"
 
@@ -7280,6 +7713,7 @@ msgid "One-time payment"
 msgstr ""
 
 #: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:86
+#: themes/huraga/html/partial_pagination.html.twig:51
 msgid "Next"
 msgstr "Toliau"
 
@@ -7299,15 +7733,15 @@ msgstr ""
 
 #: modules/Page/html_client/mod_page_login.html.twig:31
 #: modules/Page/html_client/mod_page_password-reset.html.twig:31
-#: modules/Staff/html_admin/mod_staff_login.html.twig:23
-#: modules/Staff/html_admin/mod_staff_login.html.twig:48
+#: modules/Staff/html_admin/mod_staff_login.html.twig:24
+#: modules/Staff/html_admin/mod_staff_login.html.twig:49
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:27
 msgid "Enter your email address"
 msgstr "Įveskite savo el. pašto adresą"
 
 #: modules/Page/html_client/mod_page_login.html.twig:35
-#: modules/Staff/html_admin/mod_staff_login.html.twig:29
-#: modules/Staff/html_admin/mod_staff_login.html.twig:66
+#: modules/Staff/html_admin/mod_staff_login.html.twig:30
+#: modules/Staff/html_admin/mod_staff_login.html.twig:67
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:41
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:51
 msgid "Enter your password"
@@ -7485,17 +7919,17 @@ msgstr ""
 msgid "New Category"
 msgstr ""
 
-#: modules/Product/html_admin/mod_product_index.html.twig:49
+#: modules/Product/html_admin/mod_product_index.html.twig:55
 #: modules/Support/html_admin/mod_support_ticket.html.twig:156
 #: modules/Support/html_admin/mod_support_tickets.html.twig:58
 msgid "Priority"
 msgstr "Prioritetas"
 
-#: modules/Product/html_admin/mod_product_index.html.twig:101
+#: modules/Product/html_admin/mod_product_index.html.twig:108
 msgid "Update priority"
 msgstr "Atnaujinti prioritetą"
 
-#: modules/Product/html_admin/mod_product_index.html.twig:186
+#: modules/Product/html_admin/mod_product_index.html.twig:193
 msgid "Icon URL"
 msgstr "Piktogramos nuoroda"
 
@@ -7516,6 +7950,7 @@ msgid "Upgrades"
 msgstr "Atnaujinimai"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:40
+#: themes/huraga/config/settings.html.twig:253
 msgid "Links"
 msgstr "Nuorodos"
 
@@ -7533,10 +7968,6 @@ msgstr "Produkto konfigūracija atnaujinta"
 #: modules/Product/html_admin/mod_product_manage.html.twig:62
 msgid "Order Form"
 msgstr "Užsakymo forma"
-
-#: modules/Product/html_admin/mod_product_manage.html.twig:83
-msgid "Add new"
-msgstr "Pridėti naują"
 
 #: modules/Product/html_admin/mod_product_manage.html.twig:105
 msgid "Hidden"
@@ -7603,82 +8034,82 @@ msgid "Manage Promotion"
 msgstr "Tvarkyti reklamą"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:33
-#: modules/Product/html_admin/mod_product_promos.html.twig:122
+#: modules/Product/html_admin/mod_product_promos.html.twig:128
 msgid "Promo Code"
 msgstr "Promo Kodas"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:39
-#: modules/Product/html_admin/mod_product_promos.html.twig:128
+#: modules/Product/html_admin/mod_product_promos.html.twig:134
 msgid "Discount Type"
 msgstr "Nuolaidos Tipas"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:43
-#: modules/Product/html_admin/mod_product_promos.html.twig:132
+#: modules/Product/html_admin/mod_product_promos.html.twig:138
 msgid "Absolute"
 msgstr "Absoliutus"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:47
-#: modules/Product/html_admin/mod_product_promos.html.twig:136
+#: modules/Product/html_admin/mod_product_promos.html.twig:142
 msgid "Percentage"
 msgstr "Procentas"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:53
-#: modules/Product/html_admin/mod_product_promos.html.twig:142
+#: modules/Product/html_admin/mod_product_promos.html.twig:148
 msgid "Recurring"
 msgstr "Pasikartojantys"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:57
-#: modules/Product/html_admin/mod_product_promos.html.twig:146
+#: modules/Product/html_admin/mod_product_promos.html.twig:152
 msgid "Apply to first order only"
 msgstr "Suteikti tik pirmam užsakymui"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:61
-#: modules/Product/html_admin/mod_product_promos.html.twig:150
+#: modules/Product/html_admin/mod_product_promos.html.twig:156
 msgid "Apply to first order and renewals"
 msgstr "Pateikti pirmam užsakymui ir pratęsimams"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:79
-#: modules/Product/html_admin/mod_product_promos.html.twig:168
+#: modules/Product/html_admin/mod_product_promos.html.twig:174
 msgid "Free Setup"
 msgstr "Nemokama sąranka"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:92
-#: modules/Product/html_admin/mod_product_promos.html.twig:181
+#: modules/Product/html_admin/mod_product_promos.html.twig:187
 msgid "Promotion Limitations"
 msgstr "Promo apribojimai"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:94
-#: modules/Product/html_admin/mod_product_promos.html.twig:183
+#: modules/Product/html_admin/mod_product_promos.html.twig:189
 msgid "Once per Client"
 msgstr "Vienam klientui vieną kartą"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:107
-#: modules/Product/html_admin/mod_product_promos.html.twig:197
+#: modules/Product/html_admin/mod_product_promos.html.twig:203
 msgid "Max Uses (Zero for Unlimited)"
 msgstr "Maksimalus vartotojų skaičius (nulis neribotam)"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:109
-#: modules/Product/html_admin/mod_product_promos.html.twig:199
+#: modules/Product/html_admin/mod_product_promos.html.twig:205
 msgid "Leave blank for unlimited uses"
 msgstr "Palikite tuščią, kad būtų neribotas vartotojų skaičius"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:113
-#: modules/Product/html_admin/mod_product_promos.html.twig:203
+#: modules/Product/html_admin/mod_product_promos.html.twig:209
 msgid "Validity Period (Blank for Indefinite)"
 msgstr "Galiojimo laikotarpis (tuščia neapibrėžtam laikui)"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:136
-#: modules/Product/html_admin/mod_product_promos.html.twig:227
+#: modules/Product/html_admin/mod_product_promos.html.twig:233
 msgid "Applicable Products (Select None to Apply to All)"
 msgstr "Taikomi produktai (pasirinkite Nėra, jei norite taikyti visiems)"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:150
-#: modules/Product/html_admin/mod_product_promos.html.twig:240
+#: modules/Product/html_admin/mod_product_promos.html.twig:246
 msgid "Applicable Periods (Select None to Apply to All)"
 msgstr "Taikomi laikotarpiai (pasirinkite Nėra, jei norite taikyti visiems)"
 
 #: modules/Product/html_admin/mod_product_promo.html.twig:164
-#: modules/Product/html_admin/mod_product_promos.html.twig:253
+#: modules/Product/html_admin/mod_product_promos.html.twig:259
 msgid "Applicable Client Groups (Select None to Apply to All)"
 msgstr "Taikomos klientų grupės (pasirinkite Nėra, jei norite taikyti visiems)"
 
@@ -7690,27 +8121,39 @@ msgstr "Nuolaidos kodai"
 msgid "New Promotion"
 msgstr "Nauja nuolaida"
 
-#: modules/Product/html_admin/mod_product_promos.html.twig:49
+#: modules/Product/html_admin/mod_product_promos.html.twig:44
+msgid "Promo codes"
+msgstr ""
+
+#: modules/Product/html_admin/mod_product_promos.html.twig:54
 msgid "Applies To"
 msgstr "Taikoma"
 
-#: modules/Product/html_admin/mod_product_promos.html.twig:50
+#: modules/Product/html_admin/mod_product_promos.html.twig:55
 msgid "Client Groups"
 msgstr "Klientų grupės"
 
-#: modules/Product/html_admin/mod_product_promos.html.twig:51
+#: modules/Product/html_admin/mod_product_promos.html.twig:56
 msgid "Validity Period"
 msgstr "Galiojimo laikas"
 
-#: modules/Product/html_admin/mod_product_promos.html.twig:53
+#: modules/Product/html_admin/mod_product_promos.html.twig:58
 msgid "Usage"
 msgstr "Naudojimas"
 
-#: modules/Product/html_admin/mod_product_promos.html.twig:117
+#: modules/Product/html_admin/mod_product_promos.html.twig:73
+msgid "All Products"
+msgstr ""
+
+#: modules/Product/html_admin/mod_product_promos.html.twig:79
+msgid "All Client groups"
+msgstr ""
+
+#: modules/Product/html_admin/mod_product_promos.html.twig:123
 msgid "Create New Promotional Code"
 msgstr "Sukurkite naują nuolaidos kodą"
 
-#: modules/Product/html_admin/mod_product_promos.html.twig:118
+#: modules/Product/html_admin/mod_product_promos.html.twig:124
 msgid "Create special offers for your clients by creating promo codes."
 msgstr "Sukurkite specialius pasiūlymus savo klientams, sukurdami nuolaidos kodus."
 
@@ -7724,25 +8167,30 @@ msgstr "Peradresavimai"
 msgid "Create new redirect"
 msgstr "Sukurti naują peradresavimą"
 
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:73
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:35
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:72
 msgid "Path"
 msgstr "Kelias"
 
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:75
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:46
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:74
 msgid "Target"
 msgstr "Tikslas"
 
-#: modules/Security/html_admin/mod_security_index.html.twig:22
-#: modules/Security/html_admin/mod_security_index.html.twig:36
-msgid "Run check"
+#: modules/Security/html_admin/mod_security_index.html.twig:15
+msgid "Run all checks"
 msgstr ""
 
-#: modules/Security/html_admin/mod_security_index.html.twig:25
-msgid "Run all checks"
+#: modules/Security/html_admin/mod_security_index.html.twig:35
+msgid "Run check"
 msgstr ""
 
 #: modules/Security/html_admin/mod_security_iplookup.html.twig:17
 msgid "Lookup & discover info about IP addresses."
+msgstr ""
+
+#: modules/Security/html_admin/mod_security_iplookup.html.twig:23
+msgid "IP address to lookup"
 msgstr ""
 
 #: modules/Security/html_admin/mod_security_iplookup.html.twig:32
@@ -7814,6 +8262,10 @@ msgstr ""
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:42
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:69
 msgid "API key capitalization"
+msgstr ""
+
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:44
+msgid "API key capitalization options"
 msgstr ""
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:45
@@ -7929,7 +8381,7 @@ msgstr "Naujas domenų registras"
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:289
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:110
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:15
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:178
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:187
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:122
 msgid "Nameservers"
 msgstr "Vardų serveriai"
@@ -8025,10 +8477,6 @@ msgstr "Leisti registruoti"
 msgid "Allow transfer"
 msgstr "Leisti perkėlimą"
 
-#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:195
-msgid "Domain registrars"
-msgstr "Domenų registrai"
-
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:196
 msgid "Manage domain registrars"
 msgstr "Tvarkyti domenų registrus"
@@ -8058,11 +8506,6 @@ msgid "Click on install button. Now you will be able to create top level domains
 msgstr "Spustelėkite diegimo mygtuką. Dabar galėsite kurti aukščiausio lygio domenus su nauju domenų registru"
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:246
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
-msgid "FOSSBilling documentation"
-msgstr "FOSSBilling dokumentacija"
-
-#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:246
 msgid "to learn how to create your own domain registrar."
 msgstr "norėdami sužinoti, kaip sukurti savo domenų registrą."
 
@@ -8070,9 +8513,13 @@ msgstr "norėdami sužinoti, kaip sukurti savo domenų registrą."
 msgid "Domain registrar installed"
 msgstr "Domenų registras įdiegtas"
 
+#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:284
+msgid "List of domain registrars on the Extension Directory"
+msgstr ""
+
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:290
-msgid "Setup default nameservers that will be used for new domain registrations if client have not provided his own nameservers in order form"
-msgstr "Nustatykite numatytuosius vardų serverius, kurie bus naudojami naujoms domenų registracijoms jei klientas nepateikė savo vardų serverių užsakymo formoje"
+msgid "Set default nameservers that will be used for new domain registrations if a client has not provided their own nameservers while ordering a domain"
+msgstr ""
 
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:292
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:111
@@ -8085,7 +8532,7 @@ msgstr "Vardų serveriai atnaujinti"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:114
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:82
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:50
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:180
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:189
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:42
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:124
 msgid "Nameserver 1"
@@ -8096,7 +8543,7 @@ msgstr "Vardinis serveris 1"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:120
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:87
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:53
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:186
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:195
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:46
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:130
 msgid "Nameserver 2"
@@ -8107,7 +8554,7 @@ msgstr "Vardinis serveris 2"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:126
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:94
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:56
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:192
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:201
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:51
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:136
 msgid "Nameserver 3"
@@ -8118,7 +8565,7 @@ msgstr "Vardinis serveris 3"
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:132
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:99
 #: modules/Servicedomain/html_client/mod_servicedomain_order_form.html.twig:59
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:198
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:207
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:57
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:142
 msgid "Nameserver 4"
@@ -8308,7 +8755,7 @@ msgid "Domain Protection"
 msgstr "Domeno apsauga"
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:48
-msgid "Domain locking is a security feature which acts to prevent your domain name from being transferred without first unlocking it. When this is enabled, a domain cannot be transferred even with the transfer code."
+msgid "Domain locking is a security feature which prevents your domain name from being transferred without first unlocking it. When this is enabled, a domain cannot be transferred even with the transfer code."
 msgstr ""
 
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:63
@@ -8465,11 +8912,19 @@ msgstr "Hostingo nustatymai atnaujinti"
 msgid "Server"
 msgstr "Serveris"
 
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:10
+msgid "Select server"
+msgstr ""
+
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:14
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:26
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:57
 msgid "Hosting plan"
 msgstr "Hostingo planas"
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:16
+msgid "Select hosting plan"
+msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:20
 msgid "Reseller hosting"
@@ -8505,23 +8960,22 @@ msgid "Free domain transfer"
 msgstr "Nemokamas domeno perkėlimas"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:94
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:91
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:15
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:97
 msgid "Hosting plans"
 msgstr "Hostingo planai"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:99
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:27
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:106
 msgid "New hosting plan"
 msgstr "Naujas hostingo planas"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:133
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:36
 msgid "Servers"
 msgstr "Serveriai"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:138
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:19
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:22
 msgid "New server"
 msgstr "Naujas serveris"
 
@@ -8539,7 +8993,7 @@ msgid "Hosting plan updated"
 msgstr "Hostingo planas atnaujintas"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:32
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:256
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:265
 msgid "Unique name to identify this hosting plan"
 msgstr "Unikalus šio hostingo plano pavadinimas"
 
@@ -8550,7 +9004,7 @@ msgid "Disk quota"
 msgstr "Disko Talpa"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:42
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:99
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:107
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:62
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:62
 msgid "Bandwidth"
@@ -8596,125 +9050,151 @@ msgstr "Hostingo plano papildomi parametrai"
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters. List of parameters server managers requires you can find on extensions page."
 msgstr "Priklausomai nuo serverio tvarkyklės, naudojamos hostingo paskyrai nustatyti, gali reikėti pateikti papildomų parametrų. Serverio tvarkyklėms reikalingų parametrų sąrašą galite rasti plėtinių puslapyje."
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:43
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:204
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:206
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:12
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:39
+msgid "Hosting servers"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:30
+msgid "New plan"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:47
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:213
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:215
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:69
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:71
 msgid "Server manager"
 msgstr "Serverio tvarkyklė"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:64
+msgid "Log into the control panel"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:69
 msgid "Test connection"
 msgstr "Tikrinti ryšį"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:64
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:69
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:174
 msgid "Server connected"
 msgstr "Serveris prijungtas"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:97
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:74
+msgid "Edit server details"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:79
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:129
+msgid "Delete the server"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:105
 msgid "Addon domains"
 msgstr "Pridėtiniai domenai"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:98
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:106
 msgid "Disk space"
 msgstr "Disko talpa"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:143
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:124
+msgid "Edit plan details"
+msgstr ""
+
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:152
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:33
 msgid "Unique name to identify this server"
 msgstr "Unikalus pavadinimas šiam serveriui identifikuoti"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:147
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:156
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:37
 msgid "Hostname"
 msgstr "Hostname"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:149
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:158
 msgid "server1.yourserverdomain.com"
 msgstr "server1.jūsųserveriodomenas.lt"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:155
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:164
 msgid "Primary IP address of the server used to connect to it like: 123.123.123.123"
 msgstr "Pirminis serverio IP adresas, naudojamas prie jo prisijungti, pvz.: 123.123.123.123"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:159
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:168
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:49
 msgid "Assigned IP Addresses"
 msgstr "Priskirti IP adresai"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:161
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:170
 msgid "List the IP Addresses assigned to the server (One per line)"
 msgstr "Sąrašas IP adresų, priskirtų prie serverio (po vieną eilutėje)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:165
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:174
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:55
 msgid "Enable/Disable"
 msgstr "Įjungti/Išjungti"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:182
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:191
 msgid "ns1.yourdomain.com"
 msgstr "ns1.jūsųdomenas.lt"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:188
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:197
 msgid "ns2.yourdomain.com"
 msgstr "ns2.jūsųdomenas.lt"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:194
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:203
 msgid "ns3.yourdomain.com"
 msgstr "ns3.jūsųdomenas.lt"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:200
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:209
 msgid "ns4.yourdomain.com"
 msgstr "ns4.jūsųdomenas.lt"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:217
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:226
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:84
 msgid "Connection port"
 msgstr "Prisijungimo prievadas"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:219
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:228
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:86
 msgid "Custom port. Use blank to use default. Used to connect to the API"
 msgstr "Pasirinktinis prievadas. Jei norite naudoti numatytąjį, naudokite tuščią. Naudojamas prisijungti prie API"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:223
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:232
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:90
 msgid "Password length"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:225
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:234
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:92
 msgid "Length of generated passwords when creating user accounts. Defaults to 10"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:229
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:238
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:96
 msgid "Use secure connection"
 msgstr ""
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:241
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:250
 msgid "Add server"
 msgstr "Pridėti serverį"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:248
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:257
 msgid "Adding new hosting plan"
 msgstr "Pridedamas naujas hostingo planas"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:249
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:258
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters in next step. In this step provide basic hosting plan information."
 msgstr "Priklausomai nuo serverio tvarkyklės, naudojamos hostingo paskyrai nustatyti, kitame žingsnyje gali reikėti pateikti papildomų parametrų. Šiame žingsnyje pateikite pagrindinę hostingo plano informaciją."
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:260
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:269
 msgid "Disk quota (MB)"
 msgstr "Disko talpa (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:266
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:275
 msgid "Bandwidth (MB)"
 msgstr "Duomenų srautas (MB)"
 
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:272
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:281
 msgid "Create hosting plan"
 msgstr "Sukurti hostingo planą"
 
@@ -8843,8 +9323,8 @@ msgid "Server updated"
 msgstr "Serveris atnaujintas"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:45
-msgid "Primary IP address of the server used to connect to it like: 127.0.0.1"
-msgstr "Pirminis serverio IP adresas, naudojamas prie jo prisijungti, pavyzdžiui: 127.0.0.1"
+msgid "Primary IP address used to connect to the server. i.e. 127.0.0.1"
+msgstr ""
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:109
 msgid "Update and test connection"
@@ -8960,8 +9440,8 @@ msgid "License plugins"
 msgstr "Licencijos papildiniai"
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:82
-msgid "FOSSBilling gives you ability to provide your own license generation script. Follow the instructions bellow to install new license plugin"
-msgstr "FOSSBilling suteikia galimybę pateikti savo licencijos generavimo skriptą. Norėdami įdiegti naują licencijos papildinį, vadovaukitės toliau pateiktomis instrukcijomis"
+msgid "FOSSBilling gives you the ability to provide your own license generation script. Follow the instructions below to install new license plugin"
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:84
 msgid "License plugin is PHP class \"License_PluginName\" with one method"
@@ -9188,7 +9668,7 @@ msgid "Staff"
 msgstr "Personalas"
 
 #: modules/Staff/html_admin/mod_staff_group.html.twig:32
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:51
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:52
 msgid "Manage staff member details"
 msgstr "Tvarkyti personalo narių duomenis"
 
@@ -9211,7 +9691,7 @@ msgid "New group"
 msgstr "Nauja grupė"
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:110
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:87
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:91
 #: modules/Staff/html_admin/mod_staff_profile.html.twig:47
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:207
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
@@ -9221,7 +9701,7 @@ msgid "Signature"
 msgstr "Parašas"
 
 #: modules/Staff/html_admin/mod_staff_index.html.twig:120
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:82
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:86
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:217
 msgid "Inactive"
 msgstr "Neaktyvus"
@@ -9231,19 +9711,19 @@ msgstr "Neaktyvus"
 msgid "Create group"
 msgstr "Sukurti grupę"
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:17
+#: modules/Staff/html_admin/mod_staff_login.html.twig:18
 msgid "Create main administrator account"
 msgstr "Sukurti pagrindinio administratoriaus paskyrą"
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:33
+#: modules/Staff/html_admin/mod_staff_login.html.twig:34
 msgid "Create administrator account"
 msgstr "Sukurti administratoriaus paskyrą"
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:38
+#: modules/Staff/html_admin/mod_staff_login.html.twig:39
 msgid "Log into your account"
 msgstr "Prisijungti prie paskyros"
 
-#: modules/Staff/html_admin/mod_staff_login.html.twig:57
+#: modules/Staff/html_admin/mod_staff_login.html.twig:58
 msgid "Forgot your password?"
 msgstr "Pamiršote savo slaptažodį?"
 
@@ -9257,65 +9737,85 @@ msgid "Admin"
 msgstr "Administratorius"
 
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:31
-#: modules/Theme/html_admin/mod_theme_preset.html.twig:35
-msgid "INFORMATION"
-msgstr "INFORMACIJA"
-
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:31
 msgid "This staff member is used by FOSSBilling to perform system tasks and cannot be removed."
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:40
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:41
 msgid "Permissions"
 msgstr "Teisės"
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:53
-msgid "This staff member updated."
-msgstr "Šis darbuotojas atnaujintas."
-
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:102
-msgid "Permissions for: "
-msgstr ""
-
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:105
-msgid "Give all permissions"
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:55
+msgid "Staff member details updated."
 msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:106
+msgid "Permissions for: "
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:110
+msgid "Grant all permissions"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:111
 msgid "Revoke all permissions"
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:112
-msgid "This administrator is allowed to do everything"
-msgstr "Šiam administratoriui leidžiama daryti viską"
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:121
+msgid "Full Access Granted"
+msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:116
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:122
+msgid "This administrator has unrestricted access to all system modules and actions."
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:129
+msgid "Can manage staff and assign permissions"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:133
+msgid "Can access all client and billing records"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:137
+msgid "Can configure system settings and modules"
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:142
+msgid "Administrators cannot have their permissions restricted."
+msgstr ""
+
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:147
 msgid "Permissions updated"
 msgstr "Leidimai atnaujinti"
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:130
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:161
 msgid "Module access"
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:131
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:162
 msgid "Can be disabled to prevent the staff member from using any part of this module."
 msgstr ""
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:153
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:184
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:108
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:116
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:124
+#: themes/huraga/config/settings.html.twig:313
+#: themes/huraga/config/settings.html.twig:329
 msgid "None"
 msgstr "Nėra"
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:183
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:215
 msgid "Change staff member password"
 msgstr "Pakeisti darbuotojo slaptažodį"
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:185
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:217
 msgid "Staff member password changed"
 msgstr "Darbuotojo slaptažodis pakeistas"
 
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:194
-msgid "Repeat same password"
-msgstr "Pakartokite slaptažodį"
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:227
+msgid "Password confirmation"
+msgstr ""
 
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:17
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
@@ -9389,6 +9889,10 @@ msgstr "Leidžiami IP. Po vieną eilutėje"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:154
 msgid "Allow staff reset passwords"
 msgstr "Leisti darbuotojams iš naujo nustatyti slaptažodžius"
+
+#: modules/Support/html_admin/mod_support_canned_category.html.twig:5
+msgid "Canned Category"
+msgstr ""
 
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:34
 msgid "Canned category"
@@ -9487,12 +9991,6 @@ msgstr "Autorius"
 msgid "Time Opened"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_public_ticket.html.twig:95
-#: modules/Support/html_admin/mod_support_ticket.html.twig:111
-#: themes/admin_default/html/partial_extensions.html.twig:18
-msgid "Close"
-msgstr "Uždaryti"
-
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:113
 msgid "View as Client"
 msgstr ""
@@ -9552,60 +10050,64 @@ msgstr ""
 msgid "Configuration Updated"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:43
+#: modules/Support/html_admin/mod_support_settings.html.twig:42
 msgid "Auto Responder"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:45
+#: modules/Support/html_admin/mod_support_settings.html.twig:44
 msgid "Enable Auto Responder"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:54
+#: modules/Support/html_admin/mod_support_settings.html.twig:53
 msgid "Auto Response Message"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:66
+#: modules/Support/html_admin/mod_support_settings.html.twig:65
 msgid "Ticket Delay"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:68
+#: modules/Support/html_admin/mod_support_settings.html.twig:67
 msgid "Enable Delay Message"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:73
+#: modules/Support/html_admin/mod_support_settings.html.twig:72
 msgid "If enabled, the selected canned response will be added to default reply message."
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:78
+#: modules/Support/html_admin/mod_support_settings.html.twig:77
 msgid "Delay (in hours)"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:84
+#: modules/Support/html_admin/mod_support_settings.html.twig:83
 msgid "Delay Message"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:95
+#: modules/Support/html_admin/mod_support_settings.html.twig:94
 msgid "Wait Time (in hours)"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:98
+#: modules/Support/html_admin/mod_support_settings.html.twig:97
 msgid "If set, the time in hour(s) the user must wait between consequent ticket submission."
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:106
+#: modules/Support/html_admin/mod_support_settings.html.twig:105
 msgid "Enable Knowledge Base"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:117
+#: modules/Support/html_admin/mod_support_settings.html.twig:116
 msgid "Disable Public Tickets"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:138
+#: modules/Support/html_admin/mod_support_settings.html.twig:137
 msgid "New Helpdesk"
 msgstr ""
 
-#: modules/Support/html_admin/mod_support_settings.html.twig:149
+#: modules/Support/html_admin/mod_support_settings.html.twig:148
 msgid "Close Tickets After"
+msgstr ""
+
+#: modules/Support/html_admin/mod_support_settings.html.twig:160
+msgid "hour(s)"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_ticket.html.twig:5
@@ -9646,6 +10148,10 @@ msgstr ""
 
 #: modules/Support/html_admin/mod_support_tickets.html.twig:52
 msgid "Ticket Messages"
+msgstr ""
+
+#: modules/Support/html_admin/mod_support_tickets.html.twig:72
+msgid "All helpdesks"
 msgstr ""
 
 #: modules/Support/html_admin/mod_support_tickets.html.twig:76
@@ -9830,6 +10336,7 @@ msgid "Address line 3"
 msgstr "Adreso eilutė 3"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:88
+#: themes/huraga/config/settings.html.twig:62
 msgid "Logo URL"
 msgstr "Logotipo URL"
 
@@ -9926,7 +10433,7 @@ msgid "Error reporting is enabled."
 msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:551
-msgid "This FOSSBilling instance is automatically sending errors which allows us to more easily improve the software and keep it stable. Thanks!"
+msgid "This FOSSBilling instance is automatically sending error reports which allows us to more easily improve the software and keep it stable. Thanks!"
 msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:552
@@ -9989,6 +10496,10 @@ msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:592
 msgid "Select the default network interface:"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:593
+msgid "Available network interfaces"
 msgstr ""
 
 #: modules/System/html_admin/mod_system_settings.html.twig:594
@@ -10077,6 +10588,10 @@ msgstr "Šablonai"
 msgid "Settings for"
 msgstr "Nustatymai, skirti"
 
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:35
+msgid "INFORMATION"
+msgstr "INFORMACIJA"
+
 #: modules/Theme/html_admin/mod_theme_preset.html.twig:43
 msgid "Switch to a predefined set of theme settings from the dropdown. Adjust each section and apply the changes once you're done."
 msgstr "Išskleidžiamajame meniu perjunkite į iš anksto nustatytą temos nustatymų rinkinį. Pakoreguokite kiekvieną skyrių ir pritaikykite pakeitimus, kai baigsite."
@@ -10101,18 +10616,10 @@ msgstr "Išsaugokite esamus nustatymus kaip naują išankstinį nustatymą"
 msgid "Apply changes"
 msgstr "Pritaikyti pakeitimus"
 
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:26
-msgid "Client area themes"
-msgstr "Klientų sistemos temos"
-
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:33
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:100
 msgid "Default"
 msgstr ""
-
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:93
-msgid "Admin area themes"
-msgstr "Administravimo sistemos temos"
 
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:5
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:21
@@ -10132,6 +10639,11 @@ msgstr "Oi... Ką tik radote klaidos puslapį"
 msgid "Back to Dashboard"
 msgstr "Grįžti į valdymo skydelį"
 
+#: themes/admin_default/html/layout_default.html.twig:52
+#: themes/huraga/html/layout_default.html.twig:80
+msgid "Toggle navigation"
+msgstr ""
+
 #: themes/admin_default/html/layout_default.html.twig:85
 msgid "Sponsor"
 msgstr "Rėmėjas"
@@ -10143,6 +10655,10 @@ msgstr "Įjungti tamsujį režimą"
 #: themes/admin_default/html/layout_default.html.twig:103
 msgid "Enable light mode"
 msgstr "Įjungti šviesujį režimą"
+
+#: themes/admin_default/html/layout_default.html.twig:113
+msgid "Open user menu"
+msgstr ""
 
 #: themes/admin_default/html/layout_default.html.twig:129
 msgid "Logout"
@@ -10176,6 +10692,7 @@ msgstr "Ieškoti:"
 
 #: themes/admin_default/html/macro_functions.html.twig:163
 #: themes/admin_default/html/partial_search.html.twig:14
+#: themes/admin_default/html/partial_search_action.html.twig:3
 msgid "Enter search text..."
 msgstr "Įveskite paieškos tekstą..."
 
@@ -10237,8 +10754,8 @@ msgid "Last month"
 msgstr "Praeitą mėnesį"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:160
-#: themes/admin_default/html/mod_index_dashboard.html.twig:426
-#: themes/admin_default/html/mod_index_dashboard.html.twig:546
+#: themes/admin_default/html/mod_index_dashboard.html.twig:391
+#: themes/admin_default/html/mod_index_dashboard.html.twig:532
 msgid "Income"
 msgstr "Pajamos"
 
@@ -10246,19 +10763,19 @@ msgstr "Pajamos"
 msgid "Latest orders"
 msgstr "Naujausi užsakymai"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:391
+#: themes/admin_default/html/mod_index_dashboard.html.twig:396
 msgid "Define date interval for graphs"
 msgstr "Nurodykite datos intervalą diagramoms"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:416
+#: themes/admin_default/html/mod_index_dashboard.html.twig:408
 msgid "Update graphs"
 msgstr "Atnaujinti diagramas"
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:473
-msgid "Recent clients activity"
-msgstr "Naujausia klientų veikla"
+#: themes/admin_default/html/mod_index_dashboard.html.twig:459
+msgid "Recent client activity"
+msgstr ""
 
-#: themes/admin_default/html/mod_index_dashboard.html.twig:476
+#: themes/admin_default/html/mod_index_dashboard.html.twig:462
 msgid "Recent staff activity"
 msgstr "Naujausia darbuotojų veikla"
 
@@ -10310,6 +10827,11 @@ msgstr "Darbuotojas"
 msgid "Announcement"
 msgstr "Pranešimas"
 
+#: themes/admin_default/html/partial_pagination.html.twig:16
+#: themes/huraga/html/partial_pagination.html.twig:15
+msgid "Pagination"
+msgstr ""
+
 #: themes/admin_default/html/partial_pricing.html.twig:3
 msgid "Payment type"
 msgstr "Mokėjimo būdas"
@@ -10345,12 +10867,274 @@ msgid "Monthly"
 msgstr "Mėnesinis"
 
 #: themes/admin_default/html/partial_search.html.twig:15
+#: themes/admin_default/html/partial_search_action.html.twig:3
 msgid "Search"
 msgstr "Ieškoti"
 
 #: themes/admin_default/html/partial_search.html.twig:20
+#: themes/admin_default/html/partial_search_action.html.twig:5
 msgid "Search settings"
 msgstr "Paieškos nustatymai"
+
+#: themes/huraga/config/settings.html.twig:3
+msgid "Look and Feel"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:5
+msgid "Theme"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:7
+msgid "Bootstrap Light"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:8
+msgid "Bootstrap Dark"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:15
+msgid "Header items"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:18
+msgid "Show company logo"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:26
+msgid "Show client balance"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:34
+msgid "Menu items which are visible in top right menu"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:37
+msgid "Select which menu items"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:39
+#: themes/huraga/config/settings.html.twig:156
+msgid "Show dashboard link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:40
+#: themes/huraga/config/settings.html.twig:157
+msgid "Show order link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:41
+msgid "Show profile link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:42
+msgid "Show sign out link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:50
+msgid "Login page"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:54
+msgid "Show logo"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:67
+msgid "Show password reset link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:75
+msgid "Show signup link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:85
+msgid "Breadcrumbs"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:89
+msgid "Show breadcrumbs"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:96
+msgid "Hide breadcrumbs on dashboard"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:110
+msgid "Enable Dashboard for Guests"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:117
+msgid "Hide nav menu for guests"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:124
+msgid "Showcase"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:127
+msgid "Enable Showcase"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:134
+msgid "Showcase text"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:138
+msgid "Showcase button title"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:142
+msgid "Showcase link URL"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:149
+msgid "Sidebar"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:151
+msgid "Menu items which are visible in left menu"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:154
+msgid "Select menu items"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:158
+msgid "Show support link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:159
+msgid "Show knowledge base link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:160
+msgid "Show services link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:161
+msgid "Show invoices link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:162
+msgid "Show emails link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:163
+msgid "Show payments link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:164
+msgid "Show news link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:169
+msgid "Simple Sidebar Note"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:172
+msgid "Show sidebar note"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:180
+msgid "Note title"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:185
+msgid "Note text"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:192
+msgid "Meta fields"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:196
+msgid "Meta title prefix"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:201
+msgid "Meta title suffix"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:211
+msgid "Meta keywords"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:216
+msgid "Meta robots"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:221
+msgid "Meta author"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:228
+msgid "Footer"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:232
+msgid "Show Footer"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:240
+msgid "Show \"Top\" link"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:248
+msgid "Footer text (instead of company signature)"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:256
+msgid "Footer link #1"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:261
+msgid "Footer link #2"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:266
+msgid "Footer link #3"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:271
+msgid "Footer link #4"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:276
+msgid "Footer link #5"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:282
+msgid "Javascript"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:285
+msgid "Add javascript to client area footer"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:295
+msgid "Allow clients to choose between one-time and subscription payments"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:308
+msgid "Terms of service / privacy policy requirement for the checkout screen"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:311
+#: themes/huraga/config/settings.html.twig:327
+msgid "Explicit agreement"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:312
+#: themes/huraga/config/settings.html.twig:328
+msgid "Implicit agreement"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:321
+msgid "Signup page"
+msgstr ""
+
+#: themes/huraga/config/settings.html.twig:324
+msgid "Terms of service / privacy policy requirement for the signup page"
+msgstr ""
 
 #: themes/huraga/html/error.html.twig:23
 msgid "Whoops! Unable to find the page you are looking for"
@@ -10360,31 +11144,55 @@ msgstr ""
 msgid "Go back to home"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:124
-#: themes/huraga/html/mobile_menu.html.twig:112
+#: themes/huraga/html/layout_default.html.twig:134
+#: themes/huraga/html/mobile_menu.html.twig:116
 msgid "Sign out"
 msgstr "Atsijungti"
 
-#: themes/huraga/html/layout_default.html.twig:183
+#: themes/huraga/html/layout_default.html.twig:166
+msgid "breadcrumb"
+msgstr ""
+
+#: themes/huraga/html/layout_default.html.twig:195
 msgid "Payment Information"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:183
+#: themes/huraga/html/layout_default.html.twig:195
 msgid "Account Number"
 msgstr ""
 
-#: themes/huraga/html/layout_default.html.twig:233
-msgid "FOSSBilling Community"
+#: themes/huraga/html/layout_default.html.twig:242
+msgid "Powered by the"
 msgstr ""
 
 #: themes/huraga/html/layout_default.html.twig:245
+msgid "FOSSBilling Community"
+msgstr ""
+
+#: themes/huraga/html/layout_default.html.twig:257
 msgid "Top"
 msgstr "Į viršų"
 
-#: themes/huraga/html/mobile_menu.html.twig:84
+#: themes/huraga/html/layout_default.html.twig:263
+msgid "NOTE: Many features on FOSSBilling require Javascript and cookies. You can enable both in your browser's preference settings."
+msgstr ""
+
+#: themes/huraga/html/mobile_menu.html.twig:86
 #: themes/huraga/html/partial_menu.html.twig:87
 msgid "Account balance"
 msgstr "Paskyros balansas"
+
+#: themes/huraga/html/partial_pagination.html.twig:20
+msgid "First"
+msgstr ""
+
+#: themes/huraga/html/partial_pagination.html.twig:30
+msgid "Previous"
+msgstr ""
+
+#: themes/huraga/html/partial_pagination.html.twig:61
+msgid "Last"
+msgstr ""
 
 #: themes/huraga/html/partial_pricing.html.twig:8
 #: themes/huraga/html/partial_pricing.html.twig:20
