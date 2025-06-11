@@ -49,7 +49,7 @@ return [
     'sl_SI' => 'Slovenščina',
     'sr_RS' => 'Srpski',
     'sv_SE' => 'Svenska',
-    'ta_IN' => 'Tamil'
+    'ta_IN' => 'Tamil',
     'th_TH' => 'ภาษาไทย',
     'tr_TR' => 'Türkçe',
     'uk_UA' => 'Українська',
