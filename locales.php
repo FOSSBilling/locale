@@ -45,6 +45,7 @@ return [
     'pt_BR' => 'Português (Brasil)',
     'ro_RO' => 'Română',
     'ru_RU' => 'Русский',
+    'si_LK' => 'Sinhala',
     'sk_SK' => 'Slovenčina',
     'sl_SI' => 'Slovenščina',
     'sr_RS' => 'Srpski',
