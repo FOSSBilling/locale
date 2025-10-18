@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2025-06-10 02:51-0700\n"
-"PO-Revision-Date: 2025-06-14 13:58\n"
+"POT-Creation-Date: 2025-10-18 00:24-0700\n"
+"PO-Revision-Date: 2025-10-18 11:21\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-5: vendor\n"
 "X-Poedit-SearchPathExcluded-6: load.php\n"
 "X-Poedit-SearchPathExcluded-7: install\n"
+"X-Poedit-SearchPathExcluded-8: data\n"
 "X-Crowdin-Project: ddc573f086bad0aea827918f4284d176\n"
 "X-Crowdin-Project-ID: 4\n"
 "X-Crowdin-Language: hu\n"
@@ -28,23 +29,23 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: hu_HU\n"
 
-#: di.php:343 di.php:417
+#: di.php:347 di.php:421
 msgid "Client is not logged in"
 msgstr "Ügyfél nincs belépve"
 
-#: di.php:383 di.php:455
+#: di.php:387 di.php:459
 msgid "Admin is not logged in"
 msgstr "Ügyfél nincs belépve"
 
-#: di.php:495
+#: di.php:499
 msgid "Unrecognized Handler type: "
 msgstr "Felismeretlen kezelőtípus: "
 
-#: di.php:505
+#: di.php:509
 msgid "Please check your mailbox and confirm your email address."
 msgstr "Kérjük, ellenőrizze postafiókját és erősítse meg e-mail címét."
 
-#: index.php:75 library/Box/App.php:335 library/Box/AppClient.php:70
+#: index.php:75 library/Box/App.php:337 library/Box/AppClient.php:71
 msgid "Page :url not found"
 msgstr "A(z) :url oldal nem található"
 
@@ -60,7 +61,7 @@ msgstr "Mod objektum nincs beállítva a szolgáltatáshoz"
 msgid "Method :method must contain underscore"
 msgstr "Módszer :metódusnak aláhúzást kell tartalmaznia"
 
-#: library/Api/Handler.php:58 library/Box/Mod.php:58
+#: library/Api/Handler.php:58 library/Box/Mod.php:61
 msgid "Invalid module name"
 msgstr "Érvénytelen modulnév"
 
@@ -84,11 +85,11 @@ msgstr ":type API hívás :method nem létezik a modulban :module"
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "A rendszer karbantartás alatt áll. Kérjük, próbálja újra később"
 
-#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:757
+#: library/Box/AppAdmin.php:36 modules/Extension/Service.php:757
 msgid "You do not have permission to access the :mod: module"
 msgstr "Nincs engedélye a :mod: modul elérésére"
 
-#: library/Box/AppClient.php:89
+#: library/Box/AppClient.php:90
 msgid "Page not found"
 msgstr "Az oldal nem található"
 
@@ -104,23 +105,23 @@ msgstr "Hiányzó naplóüzenet"
 msgid "Bad log priority"
 msgstr "Rossz napló prioritás"
 
-#: library/Box/Mod.php:77
-msgid "Module :mod manifest file is missing"
-msgstr "Modul :mod manifeszt fájl hiányzik"
+#: library/Box/Mod.php:84
+msgid "Module :mod manifest file is missing or not readable."
+msgstr ""
 
-#: library/Box/Mod.php:82
+#: library/Box/Mod.php:86
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr "Modul:mod manifest fájl érvénytelen. Ellenőrizze a fájl szintaxisát és engedélyeit."
 
-#: library/Box/Mod.php:126
+#: library/Box/Mod.php:127
 msgid "Module :mod does not have service class"
 msgstr "A :mod modulnak nincs szolgáltatási osztálya"
 
-#: library/Box/Mod.php:145
+#: library/Box/Mod.php:146
 msgid "Module :mod Client controller class was not found"
 msgstr "A :mod ügyfélvezérlő osztály modul nem található"
 
-#: library/Box/Mod.php:220
+#: library/Box/Mod.php:221
 msgid "Core modules cannot be updated"
 msgstr "Az alapmodulok nem frissíthetők"
 
@@ -237,16 +238,16 @@ msgstr "év"
 msgid "decade"
 msgstr "évtized"
 
-#: library/Box/TwigLoader.php:24 library/Box/TwigLoader.php:28
-#: library/Box/TwigLoader.php:32
+#: library/Box/TwigLoader.php:29 library/Box/TwigLoader.php:33
+#: library/Box/TwigLoader.php:37
 msgid "Missing :missing: param for Box_TwigLoader"
 msgstr "Hiányzó :hiányzik: param a Box_TwigLoader számára"
 
-#: library/FOSSBilling/CentralAlerts.php:119
+#: library/FOSSBilling/CentralAlerts.php:118
 msgid "Unable to fetch alerts from Central Alerts System. See the error log for more information."
 msgstr "Nem lehet riasztásokat lekérni a központi riasztórendszerből. További információkért lásd a hibanaplót."
 
-#: library/FOSSBilling/CentralAlerts.php:127
+#: library/FOSSBilling/CentralAlerts.php:126
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "Érvénytelen válasz a FOSSBilling központi riasztási rendszerétől."
 
@@ -262,63 +263,59 @@ msgstr "Hiba történt a frissített konfigurációs fájl írásakor."
 msgid "Too many iterations were performed while formatting the config file"
 msgstr "Túl sok iteráció történt a konfigurációs fájl formázása során"
 
-#: library/FOSSBilling/ExtensionManager.php:57
+#: library/FOSSBilling/ExtensionManager.php:56
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "Nem lehet lekérni a bővítmény részleteit a FOSSBilling bővítménykönyvtárból."
 
-#: library/FOSSBilling/ExtensionManager.php:79
+#: library/FOSSBilling/ExtensionManager.php:78
 msgid "An error occurred when fetching the extensions releases"
 msgstr "Hiba történt a kiterjesztések kiadásainak lekérésekor"
 
-#: library/FOSSBilling/ExtensionManager.php:102
+#: library/FOSSBilling/ExtensionManager.php:101
 msgid "Unable to fetch the latest extension release."
 msgstr "Nem sikerült lekérni a legújabb kiterjesztés kiadását."
 
-#: library/FOSSBilling/ExtensionManager.php:175
+#: library/FOSSBilling/ExtensionManager.php:174
 msgid "Unable to connect to the FOSSBilling extension directory."
 msgstr "Nem lehet csatlakozni a FOSSBilling bővítménykönyvtárhoz."
 
-#: library/FOSSBilling/ExtensionManager.php:183
+#: library/FOSSBilling/ExtensionManager.php:182
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr "Érvénytelen válasz a FOSSBilling bővítménykönyvtárból."
 
-#: library/FOSSBilling/GeoIP/Reader.php:188
-msgid "Got a "
-msgstr "Megvan a "
-
-#: library/FOSSBilling/Mail.php:119
+#: library/FOSSBilling/Mail.php:118
 msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
 msgstr "Feltéve, hogy a prioritás (:p rioritás) érvénytelen. Kérjük, adjon meg egy 1 és 5 közötti egész számot, vagy használja az előre definiált symfony állandókat."
 
-#: library/FOSSBilling/Mail.php:136
+#: library/FOSSBilling/Mail.php:135
 msgid "FOSSBilling requires the proc_open PHP function to be enabled when using the sendmail transport"
 msgstr "A FOSSBilling megköveteli a proc_open PHP funkció engedélyezését a sendmail átvitel használatakor"
 
-#: library/FOSSBilling/Mail.php:146
+#: library/FOSSBilling/Mail.php:145
 msgid "A SendGrid API key is required to send emails via SendGrid"
 msgstr "A SendGrid API kulcs szükséges az e-mailek SendGrid-en keresztüli küldéséhez"
 
-#: library/FOSSBilling/Mail.php:153
+#: library/FOSSBilling/Mail.php:152
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
 msgstr "Nem lehet e-mailt küldeni: Az \"Egyéni\" szállítási mód egyéni DSN nélkül lett kiválasztva"
 
-#: library/FOSSBilling/Mail.php:159
+#: library/FOSSBilling/Mail.php:158
 msgid "Unknown mail transport: :transport"
 msgstr "Ismeretlen levélszállítás: :transport"
 
-#: library/FOSSBilling/Mail.php:167
+#: library/FOSSBilling/Mail.php:166
 msgid "Failed to send email via :transport with the exception :e"
 msgstr "Nem sikerült e-mailt küldeni a :transport segítségével, kivéve :e"
 
-#: library/FOSSBilling/Mail.php:183
+#: library/FOSSBilling/Mail.php:182
 msgid "SMTP host or port is not configured"
 msgstr "Az SMTP-állomás vagy -port nincs konfigurálva"
 
-#: library/FOSSBilling/Pagination.php:74
+#: library/FOSSBilling/Pagination.php:84 library/FOSSBilling/Pagination.php:146
 msgid ")."
 msgstr ")."
 
-#: library/FOSSBilling/Pagination.php:85
+#: library/FOSSBilling/Pagination.php:157
 msgid "Invalid SQL query. Missing FROM clause."
 msgstr "Hibás SQL lekérdezés. Hiányzó FORM kikötés."
 
@@ -326,86 +323,86 @@ msgstr "Hibás SQL lekérdezés. Hiányzó FORM kikötés."
 msgid "Invalid password hash provided"
 msgstr "Érvénytelen jelszó hash került megadásra"
 
-#: library/FOSSBilling/StandardsHelper.php:32
+#: library/FOSSBilling/StandardsHelper.php:31
 msgid "Exact matches cannot be provided unless you provide an Alpha2 language code."
 msgstr "Pontos egyezéseket csak akkor lehet megadni, ha megad egy alfa2 nyelvi kódot."
 
-#: library/FOSSBilling/Tools.php:60 library/FOSSBilling/Tools.php:253
-msgid "Service class :class was not found in :path"
-msgstr "Szolgáltatás osztály :class nem található a :path-ban"
-
-#: library/FOSSBilling/Tools.php:162
+#: library/FOSSBilling/Tools.php:119
 msgid "We were unable to generate a password with the required parameters"
 msgstr "Nem tudtunk a szükséges paraméterekkel rendelkező jelszót generálni"
 
-#: library/FOSSBilling/Tools.php:302
+#: library/FOSSBilling/Tools.php:180
+msgid "Service class :class was not found in :path"
+msgstr "Szolgáltatás osztály :class nem található a :path-ban"
+
+#: library/FOSSBilling/Tools.php:229
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Email cím"
 
-#: library/FOSSBilling/Tools.php:304 library/FOSSBilling/Validate.php:187
+#: library/FOSSBilling/Tools.php:231 library/FOSSBilling/Validate.php:195
 #: modules/Servicehosting/Api/Guest.php:39
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: érvénytelen"
 
-#: library/FOSSBilling/Update.php:147
+#: library/FOSSBilling/Update.php:153
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Nem sikerült letölteni a legújabb verzióinformációkat. További részletek a hibanaplóban találhatók."
 
-#: library/FOSSBilling/Update.php:212 modules/System/Api/Admin.php:192
+#: library/FOSSBilling/Update.php:218 modules/System/Api/Admin.php:190
 msgid "You have the latest version of FOSSBilling. You do not need to update."
 msgstr "A legújabb FOSSBilling verziót használod, nincs szükség frissítésre."
 
-#: library/FOSSBilling/Update.php:224
+#: library/FOSSBilling/Update.php:230
 msgid "FOSSBilling :version: requires at least PHP :min_php:, but you are running :current_php:."
 msgstr "A FOSSBilling :version: legalább PHP :min_php: verziót igényel, de te a :current_php: verziót futtatod:."
 
-#: library/FOSSBilling/Update.php:235
+#: library/FOSSBilling/Update.php:241
 msgid "The download URL for this release was not specified as a trusted one. Update canceled for security reasons."
 msgstr "A megadott letöltési URL nem volt megbízhatóként megjelölve. A frissítés biztonsági okokból törölve."
 
-#: library/FOSSBilling/Update.php:256
+#: library/FOSSBilling/Update.php:262
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Nem sikerült letölteni a frissítési archívumot. További részletek a hibanaplóban találhatók."
 
-#: library/FOSSBilling/Update.php:270 modules/Extension/Service.php:481
+#: library/FOSSBilling/Update.php:276 modules/Extension/Service.php:490
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Nem sikerült kibontani a fájlt, ellenőrizze a fájl- és mappaengedélyeket. További részletek a hibanaplóban találhatók."
 
-#: library/FOSSBilling/Update.php:298
+#: library/FOSSBilling/Update.php:302
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "Nem lehet törölni a gyorsítótárat és/vagy eltávolítani a telepítési mappát. További részletek a hibanaplóban találhatók."
 
-#: library/FOSSBilling/UpdatePatcher.php:49
+#: library/FOSSBilling/UpdatePatcher.php:55
 msgid "Unable to load existing configuration"
 msgstr "Nem lehet betölteni a meglévő konfigurációt"
 
-#: library/FOSSBilling/UpdatePatcher.php:158
+#: library/FOSSBilling/UpdatePatcher.php:162
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr "Hiba történt az adatbázis-javítások alkalmazása során. Kérjük, ellenőrizze a hibanaplóban a hibával kapcsolatos információkat, javítsa ki, majd hajtsa végre a biztonsági mentési javítási módszert a frissítés befejezéséhez."
 
-#: library/FOSSBilling/Validate.php:130
+#: library/FOSSBilling/Validate.php:138
 msgid "Minimum password length is 8 characters."
 msgstr "A jelszó minimális hossza 8 karakter."
 
-#: library/FOSSBilling/Validate.php:134
+#: library/FOSSBilling/Validate.php:142
 msgid "Maximum password length is 256 characters."
 msgstr "A jelszó maximális hossza 256 karakter."
 
-#: library/FOSSBilling/Validate.php:138
+#: library/FOSSBilling/Validate.php:146
 msgid "Password must include at least one number."
 msgstr "A jelszónak legalább egy számot kell tartalmaznia."
 
-#: library/FOSSBilling/Validate.php:142
+#: library/FOSSBilling/Validate.php:150
 msgid "Password must include at least one lowercase letter."
 msgstr "A jelszónak legalább egy kisbetűt kell tartalmaznia."
 
-#: library/FOSSBilling/Validate.php:146
+#: library/FOSSBilling/Validate.php:154
 msgid "Password must include at least one uppercase letter."
 msgstr "A jelszónak legalább egy nagybetűt kell tartalmaznia."
 
-#: library/FOSSBilling/Validate.php:185
+#: library/FOSSBilling/Validate.php:193
 #: modules/Client/html_client/mod_client_profile.html.twig:71
 msgid "Birthdate"
 msgstr "Születési dátum"
@@ -426,23 +423,23 @@ msgstr "Ismeretlen TLD. Nem sikerült meghatározni a regisztrációs árat"
 msgid "Domain product cannot be removed."
 msgstr "A domain termék nem törölhető."
 
-#: library/Model/ProductTable.php:62
+#: library/Model/ProductTable.php:59
 msgid "Unknown period selected "
 msgstr "Ismeretlen kiválasztott időszak "
 
-#: library/Model/ProductTable.php:75
+#: library/Model/ProductTable.php:72
 msgid "Product pricing could not be determined. "
 msgstr "A termék árképzését nem lehetett meghatározni. "
 
-#: library/Model/ProductTable.php:105
+#: library/Model/ProductTable.php:102
 msgid "Unknown period selected for setup price"
 msgstr "Ismeretlen időszak van kiválasztva a beállítási árhoz"
 
-#: library/Model/ProductTable.php:127
+#: library/Model/ProductTable.php:124
 msgid "Product :id payment type is recurrent, but period was not selected"
 msgstr "Termék :id a fizetés típusa ismétlődő, de az időszakot nem választották ki"
 
-#: library/Model/ProductTable.php:139
+#: library/Model/ProductTable.php:136
 msgid "Unknown Period selected for price"
 msgstr "Ismeretlen Az árhoz kiválasztott időszak"
 
@@ -480,11 +477,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Átirányítás a PayPal.com-ra"
 
 #: library/Payment/Adapter/PayPalEmail.php:310
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1405
+#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1407
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Számla kifizetése :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:115 modules/Invoice/Service.php:1407
+#: library/Payment/Adapter/Stripe.php:115 modules/Invoice/Service.php:1409
 msgid "Payment for invoice :serie:id"
 msgstr "Fizetés számla :serie:id"
 
@@ -492,19 +489,19 @@ msgstr "Fizetés számla :serie:id"
 msgid "There was an error when processing the transaction"
 msgstr "Hiba történt a tranzakció feldolgozása során"
 
-#: library/Payment/AdapterAbstract.php:51
+#: library/Payment/AdapterAbstract.php:52
 msgid "Return URL for the payment gateway was not set"
 msgstr "A fizetési átjáró visszatérési URL-je nem lett beállítva"
 
-#: library/Payment/AdapterAbstract.php:58
+#: library/Payment/AdapterAbstract.php:59
 msgid "Cancel URL for the payment gateway was not set"
 msgstr "A fizetési átjáró lemondási URL-je nem lett beállítva"
 
-#: library/Payment/AdapterAbstract.php:66
+#: library/Payment/AdapterAbstract.php:67
 msgid "IPN Notification URL for the payment gateway was not set"
 msgstr "A fizetési átjáró IPN értesítési URL-je nem lett beállítva"
 
-#: library/Payment/AdapterAbstract.php:76
+#: library/Payment/AdapterAbstract.php:77
 msgid "IPN redirect URL for the payment gateway was not set"
 msgstr "A fizetési átjáró IPN átirányítási URL-je nem lett beállítva"
 
@@ -536,27 +533,27 @@ msgstr "domain adatok lekérése"
 #: library/Registrar/Adapter/Internetbs.php:163
 #: library/Registrar/Adapter/Namecheap.php:158
 #: library/Registrar/Adapter/Namecheap.php:165
-#: library/Registrar/Adapter/Namecheap.php:241
-#: library/Registrar/Adapter/Namecheap.php:346
-#: library/Registrar/Adapter/Namecheap.php:593
-#: library/Registrar/Adapter/Namecheap.php:660
-#: library/Registrar/Adapter/Namecheap.php:687
-#: library/Registrar/Adapter/Namecheap.php:719
+#: library/Registrar/Adapter/Namecheap.php:232
+#: library/Registrar/Adapter/Namecheap.php:331
+#: library/Registrar/Adapter/Namecheap.php:574
+#: library/Registrar/Adapter/Namecheap.php:639
+#: library/Registrar/Adapter/Namecheap.php:664
+#: library/Registrar/Adapter/Namecheap.php:694
 #: library/Registrar/Adapter/Resellerclub.php:393
-#: library/Registrar/Adapter/Resellerclub.php:713
-#: library/Registrar/Adapter/Resellerclub.php:720
-#: library/Registrar/Adapter/Resellerclub.php:727
+#: library/Registrar/Adapter/Resellerclub.php:708
+#: library/Registrar/Adapter/Resellerclub.php:715
+#: library/Registrar/Adapter/Resellerclub.php:722
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr "Nem sikerült: action: a :type: regisztrátorral további részletekért ellenőrizze a hibanaplókat"
 
 #: library/Registrar/Adapter/Internetbs.php:169
-#: library/Registrar/Adapter/Namecheap.php:568
+#: library/Registrar/Adapter/Namecheap.php:549
 msgid "deleting domains"
 msgstr "tartományok törlése"
 
 #: library/Registrar/Adapter/Internetbs.php:169
-#: library/Registrar/Adapter/Namecheap.php:428
-#: library/Registrar/Adapter/Namecheap.php:568 library/Server/Manager/CWP.php:345
+#: library/Registrar/Adapter/Namecheap.php:413
+#: library/Registrar/Adapter/Namecheap.php:549 library/Server/Manager/CWP.php:345
 #: library/Server/Manager/CWP.php:358 library/Server/Manager/CWP.php:371
 #: library/Server/Manager/Directadmin.php:133
 #: library/Server/Manager/Directadmin.php:147
@@ -572,28 +569,28 @@ msgstr ":type: nem támogatja a :action:"
 msgid "Premium domains cannot be registered."
 msgstr "Prémium domaineket nem lehet regisztrálni."
 
-#: library/Registrar/Adapter/Namecheap.php:239
+#: library/Registrar/Adapter/Namecheap.php:230
 msgid "update nameservers"
 msgstr "névkiszolgálók frissítése"
 
-#: library/Registrar/Adapter/Namecheap.php:344
+#: library/Registrar/Adapter/Namecheap.php:329
 msgid "retrieve domain details"
 msgstr "domain részleteinek lekérése"
 
-#: library/Registrar/Adapter/Namecheap.php:428
+#: library/Registrar/Adapter/Namecheap.php:413
 msgid "retrieving the transfer code"
 msgstr "az átutalási kód lekérése"
 
-#: library/Registrar/Adapter/Namecheap.php:591
+#: library/Registrar/Adapter/Namecheap.php:572
 msgid "retrieve privacy information"
 msgstr "adatvédelmi információk lekérése"
 
-#: library/Registrar/Adapter/Namecheap.php:658
+#: library/Registrar/Adapter/Namecheap.php:637
 msgid "get the domain lock status"
 msgstr "a domainzárolás állapotának lekérése"
 
-#: library/Registrar/Adapter/Namecheap.php:685
-#: library/Registrar/Adapter/Namecheap.php:717
+#: library/Registrar/Adapter/Namecheap.php:662
+#: library/Registrar/Adapter/Namecheap.php:692
 msgid "set the domain lock status"
 msgstr "a tartományzárolási állapot beállítása"
 
@@ -609,23 +606,23 @@ msgstr "szerezd meg az átutalási kódot"
 msgid "You are already registered as reseller"
 msgstr "Már regisztrált viszonteladó vagy"
 
-#: library/Registrar/Adapter/Resellerclub.php:851
+#: library/Registrar/Adapter/Resellerclub.php:844
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr "Az ES domain név regisztrálásakor érvényes kapcsolattartási útlevél adatok szükségesek"
 
-#: library/Registrar/Adapter/Resellerclub.php:870
+#: library/Registrar/Adapter/Resellerclub.php:863
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr "Az ASIA domain név regisztrálásakor érvényes kapcsolattartási útlevél adatok szükségesek"
 
-#: library/Registrar/Adapter/Resellerclub.php:894
+#: library/Registrar/Adapter/Resellerclub.php:887
 msgid "Valid contact birthdate is required while registering RU domain name"
 msgstr "Érvényes kapcsolattartó születési dátuma szükséges az RU domain név regisztrálásakor"
 
-#: library/Registrar/Adapter/Resellerclub.php:898
+#: library/Registrar/Adapter/Resellerclub.php:891
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr "Érvényes kapcsolattartási útlevél adatok szükségesek a RU domain név regisztrálásakor"
 
-#: library/Registrar/Adapter/Resellerclub.php:985
+#: library/Registrar/Adapter/Resellerclub.php:978
 msgid "Contact not found"
 msgstr "Kapcsolat nem található"
 
@@ -665,9 +662,9 @@ msgstr "fiók létrehozása"
 #: library/Server/Manager/Hestia.php:208 library/Server/Manager/Hestia.php:232
 #: library/Server/Manager/Hestia.php:257 library/Server/Manager/Hestia.php:283
 #: library/Server/Manager/Hestia.php:328 library/Server/Manager/Plesk.php:146
-#: library/Server/Manager/Whm.php:627 library/Server/Manager/Whm.php:634
-#: library/Server/Manager/Whm.php:641 library/Server/Manager/Whm.php:648
-#: library/Server/Manager/Whm.php:655
+#: library/Server/Manager/Whm.php:625 library/Server/Manager/Whm.php:632
+#: library/Server/Manager/Whm.php:639 library/Server/Manager/Whm.php:646
+#: library/Server/Manager/Whm.php:653
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr "Nem sikerült :action: a :type: kiszolgálón további részletekért tekintse meg a hibanaplókat"
 
@@ -726,7 +723,7 @@ msgstr "felhasználói fiók szinkronizálása"
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Kiszolgálókezelő DirectAdmin hiba: \"A fiók nincs felfüggesztve\""
 
-#: library/Server/Manager/Directadmin.php:754 library/Server/Manager/Whm.php:610
+#: library/Server/Manager/Directadmin.php:754 library/Server/Manager/Whm.php:608
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
@@ -778,25 +775,25 @@ msgstr "Tevékenység törlése"
 msgid "Allows the staff member to delete recorded activity."
 msgstr "Lehetővé teszi a munkatárs számára a rögzített tevékenységek törlését."
 
-#: modules/Api/Controller/Client.php:50 modules/Api/Controller/Client.php:260
+#: modules/Api/Controller/Client.php:58 modules/Api/Controller/Client.php:276
 msgid "Unknown API call :call"
 msgstr "Ismeretlen API hívás :call"
 
-#: modules/Api/Controller/Client.php:136
+#: modules/Api/Controller/Client.php:150
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Érvénytelen kérés. Győződj meg róla, hogy a kérés eredete :from"
 
-#: modules/Api/Controller/Client.php:147
+#: modules/Api/Controller/Client.php:161
 msgid "Unauthorized IP"
 msgstr "Jogosulatlan IP"
 
-#: modules/Api/Controller/Client.php:202 modules/Api/Controller/Client.php:206
-#: modules/Api/Controller/Client.php:210 modules/Api/Controller/Client.php:224
-#: modules/Api/Controller/Client.php:233 modules/Api/Controller/Client.php:247
+#: modules/Api/Controller/Client.php:218 modules/Api/Controller/Client.php:222
+#: modules/Api/Controller/Client.php:226 modules/Api/Controller/Client.php:240
+#: modules/Api/Controller/Client.php:249 modules/Api/Controller/Client.php:263
 msgid "Authentication Failed"
 msgstr "A hitelesítés sikertelen"
 
-#: modules/Api/Controller/Client.php:339
+#: modules/Api/Controller/Client.php:355
 msgid "CSRF token invalid"
 msgstr "A CSRF token érvénytelen"
 
@@ -808,11 +805,11 @@ msgid "Currency not found"
 msgstr "Pénznem nem található"
 
 #: modules/Cart/Api/Guest.php:97 modules/Cart/Api/Guest.php:105
-#: modules/Cart/Service.php:456
+#: modules/Cart/Service.php:452
 msgid "The promo code has expired or does not exist"
 msgstr "A promóciós kód lejárt vagy nem létezik"
 
-#: modules/Cart/Api/Guest.php:101 modules/Cart/Service.php:460
+#: modules/Cart/Api/Guest.php:101 modules/Cart/Service.php:456
 msgid "Promo code cannot be applied to your account"
 msgstr "A promóciós kód nem alkalmazható a fiókodra"
 
@@ -844,46 +841,46 @@ msgstr "Nem talált termék"
 msgid "Add products to your cart before applying promo code"
 msgstr "Először adj hozzá termékeket a kosaradhoz, mielőtt alkalmaznád a promóciós kódot"
 
-#: modules/Cart/Service.php:452
+#: modules/Cart/Service.php:448
 msgid "You have already used this promo code. Please remove the promo code and checkout again."
 msgstr "Már felhasználta ezt a promóciós kódot. Kérjük, távolítsa el a promóciós kódot, és próbálkozzon újra a vásárlással."
 
-#: modules/Cart/Service.php:512
+#: modules/Cart/Service.php:508
 msgid "Cannot checkout an empty cart"
 msgstr "Nem lehet üres kosarat fizetni"
 
-#: modules/Cart/Service.php:524
+#: modules/Cart/Service.php:520
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
 msgstr "A kiválasztott pénznem :selected nem egyezik a profil pénznemével :code. Kérjük, a folytatáshoz változtassa meg a kosár pénznemét."
 
-#: modules/Cart/Service.php:540
+#: modules/Cart/Service.php:536
 msgid "Unable to complete order. One or more of the selected products are invalid."
 msgstr "Nem sikerült teljesíteni a megrendelést. A kiválasztott termékek közül egy vagy több érvénytelen."
 
-#: modules/Cart/Service.php:615
+#: modules/Cart/Service.php:611
 msgid "Discount: :product"
 msgstr "Kedvezmény: :product"
 
-#: modules/Cart/Service.php:627
+#: modules/Cart/Service.php:623
 msgid ":product setup"
 msgstr ":termék beállítása"
 
-#: modules/Client/Api/Admin.php:150 modules/Client/Api/Admin.php:240
+#: modules/Client/Api/Admin.php:150 modules/Client/Api/Admin.php:236
 #: modules/Client/Api/Guest.php:84 modules/Profile/Service.php:134
 msgid "This email address is already registered."
 msgstr "Ez az e-mail cím már regisztrált."
 
-#: modules/Client/Api/Admin.php:324 modules/Client/Api/Guest.php:227
-#: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:114
-#: modules/Staff/Api/Admin.php:124 modules/Staff/Api/Guest.php:108
+#: modules/Client/Api/Admin.php:318 modules/Client/Api/Guest.php:225
+#: modules/Profile/Api/Admin.php:109 modules/Profile/Api/Client.php:114
+#: modules/Staff/Api/Admin.php:124 modules/Staff/Api/Guest.php:106
 msgid "Passwords do not match"
 msgstr "A jelszavak nem egyeznek"
 
-#: modules/Client/Api/Admin.php:484
+#: modules/Client/Api/Admin.php:470
 msgid "Event not found"
 msgstr "Esemény nem található"
 
-#: modules/Client/Api/Admin.php:568
+#: modules/Client/Api/Admin.php:554
 msgid "Group has clients assigned. Please reassign them first."
 msgstr "A csoporthoz ügyfelek vannak hozzárendelve. Kérjük, először rendelje újra őket."
 
@@ -899,8 +896,8 @@ msgstr "A jelszavak nem egyeznek."
 msgid "Please check your login details."
 msgstr "Kérjük, ellenőrizze bejelentkezési adatait."
 
-#: modules/Client/Api/Guest.php:232 modules/Client/Api/Guest.php:236
-#: modules/Client/Service.php:695
+#: modules/Client/Api/Guest.php:230 modules/Client/Api/Guest.php:234
+#: modules/Client/Service.php:698
 msgid "The link has expired or you have already reset your password."
 msgstr "A link lejárt, vagy már visszaállította a jelszavát."
 
@@ -978,11 +975,11 @@ msgstr "Ügyfél nem található"
 msgid "Cannot remove groups with clients"
 msgstr "Nem lehet eltávolítani a csoportot az ügyfelekkel"
 
-#: modules/Client/Service.php:625 modules/Profile/Service.php:126
+#: modules/Client/Service.php:628 modules/Profile/Service.php:126
 msgid "Email address cannot be changed"
 msgstr "Email nem módosítható"
 
-#: modules/Client/Service.php:639 modules/Client/Service.php:655
+#: modules/Client/Service.php:642 modules/Client/Service.php:658
 msgid "Field :field cannot be empty"
 msgstr "Mező :mező nem lehet üres"
 
@@ -991,8 +988,8 @@ msgid "Cookie consent"
 msgstr "Cookie hozzájárulás"
 
 #: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:771
-#: modules/Invoice/Service.php:1511 modules/Invoice/Service.php:1516
-#: modules/Staff/Service.php:197
+#: modules/Invoice/Service.php:1510 modules/Invoice/Service.php:1515
+#: modules/Staff/Service.php:204
 msgid "You do not have permission to perform this action"
 msgstr "Nincs engedélye a művelet végrehajtásához"
 
@@ -1051,17 +1048,17 @@ msgstr "Hiba történt az árfolyamok lekérésekor a currencylayer-től. Kérj�
 msgid "Custom Pages"
 msgstr "Egyéni oldalak"
 
-#: modules/Email/Api/Admin.php:115 modules/Email/Api/Admin.php:138
+#: modules/Email/Api/Admin.php:115 modules/Email/Api/Admin.php:136
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:89
-#: modules/Email/Api/Client.php:111 modules/Email/Service.php:495
+#: modules/Email/Api/Client.php:111 modules/Email/Service.php:513
 msgid "Email not found"
 msgstr "Email nem található"
 
-#: modules/Email/Api/Admin.php:210
+#: modules/Email/Api/Admin.php:206
 msgid "Email template not found"
 msgstr "Email sablon nem található"
 
-#: modules/Email/Api/Admin.php:386
+#: modules/Email/Api/Admin.php:382
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "A vevő nincs meghatározva. A to vagy to_client vagy to_staff paraméterek meghatározása"
 
@@ -1072,19 +1069,19 @@ msgstr "A vevő nincs meghatározva. A to vagy to_client vagy to_staff paraméte
 msgid "Email history"
 msgstr "Email előzmények"
 
-#: modules/Email/Service.php:146
+#: modules/Email/Service.php:152
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "A vevő nincs meghatározva. A to vagy to_client vagy to_staff vagy to_admin paraméterek meghatározása"
 
-#: modules/Email/Service.php:205
+#: modules/Email/Service.php:222
 msgid "The \"from\" email address cannot be empty"
 msgstr "A küldő e-mail cím nem lehet üres"
 
-#: modules/Email/Service.php:480
+#: modules/Email/Service.php:498
 msgid "Email template :code was not found"
 msgstr "Email sablon :kód nem található"
 
-#: modules/Email/Service.php:677
+#: modules/Email/Service.php:692
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr "A hibaüzenet hossza miatt csonkolva, kérjük, ellenőrizze a hibanaplóban a teljes üzenetet: "
 
@@ -1092,11 +1089,11 @@ msgstr "A hibaüzenet hossza miatt csonkolva, kérjük, ellenőrizze a hibanapl�
 msgid "Embed and integrate"
 msgstr "Beágyazás és integrálás"
 
-#: modules/Extension/Api/Admin.php:295
+#: modules/Extension/Api/Admin.php:293
 msgid "Extension not found"
 msgstr "Nem talált kiterjesztés"
 
-#: modules/Extension/Api/Guest.php:60
+#: modules/Extension/Api/Guest.php:58
 msgid "Parameter ext is missing"
 msgstr "Az ext paraméter hiányzik"
 
@@ -1110,59 +1107,59 @@ msgstr "Bővítések"
 msgid "Languages"
 msgstr "Nyelvek"
 
-#: modules/Extension/Service.php:38
+#: modules/Extension/Service.php:47
 msgid "Manage extensions"
 msgstr "Bővítmények kezelése"
 
-#: modules/Extension/Service.php:39
+#: modules/Extension/Service.php:48
 msgid "Allows the staff member to install, update, or remove extensions."
 msgstr "Lehetővé teszi a munkatárs számára bővítmények telepítését, frissítését vagy eltávolítását."
 
-#: modules/Extension/Service.php:343
+#: modules/Extension/Service.php:352
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "A bővítmény frissítésével kapcsolatos további információkért keresd fel a bővítmények könyvtárát."
 
-#: modules/Extension/Service.php:395
+#: modules/Extension/Service.php:404
 msgid "FOSSBilling core modules cannot be managed"
 msgstr "A FOSSBilling alapmodulok nem kezelhetők"
 
-#: modules/Extension/Service.php:444
+#: modules/Extension/Service.php:453
 msgid "Coudn't find a valid download URL for the extension."
 msgstr "Nem talál érvényes letöltési URL-t a bővítményhez."
 
-#: modules/Extension/Service.php:448
+#: modules/Extension/Service.php:457
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
 msgstr "Ez a bővítmény nem kompatibilis a FOSSBilling verzióddal. Kérjük, frissítsd a FOSSBilling szolgáltatást a legújabb verzióra, és próbáld újra."
 
-#: modules/Extension/Service.php:464
+#: modules/Extension/Service.php:473
 msgid "Failed to download the extension with error :code"
 msgstr "Nem sikerült letölteni a kiterjesztést a következő hibával: kód"
 
-#: modules/Extension/Service.php:505
+#: modules/Extension/Service.php:514
 msgid "Extension :id seems to be already installed."
 msgstr "Úgy tűnik, hogy a :id bővítmény már telepítve van."
 
-#: modules/Extension/Service.php:508
+#: modules/Extension/Service.php:520
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "Nem sikerült áthelyezni a bővítményt a végső rendeltetési helyre. Kérjük, ellenőrizze a célmappa engedélyeit. (:destination)"
 
-#: modules/Extension/Service.php:511
+#: modules/Extension/Service.php:523
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "A bővítmény típusa (:type) nem telepíthető automatikusan."
 
-#: modules/Extension/Service.php:544
+#: modules/Extension/Service.php:556
 msgid "FOSSBilling core modules cannot be installed or removed"
 msgstr "A FOSSBilling alapmodulok nem telepíthetők vagy távolíthatók el"
 
-#: modules/Extension/Service.php:549
+#: modules/Extension/Service.php:561
 msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr "A modul nem telepíthető. A FOSSBilling legalább :min verziója szükséges hozzá. Az általad használt verzió :v"
 
-#: modules/Extension/Service.php:732
+#: modules/Extension/Service.php:733
 msgid "Manage settings"
 msgstr "Beállítások kezelése"
 
-#: modules/Extension/Service.php:733
+#: modules/Extension/Service.php:734
 msgid "Allows the staff member to edit settings for this module."
 msgstr "Lehetővé teszi a munkatársak számára a modul beállításainak szerkesztését."
 
@@ -1174,24 +1171,24 @@ msgstr "Az űrlap stílusa nem található az előre definiált listában"
 msgid "Form field type is invalid"
 msgstr "Az űrlapmező típusa érvénytelen"
 
-#: modules/Formbuilder/Api/Admin.php:77 modules/Formbuilder/Api/Admin.php:232
+#: modules/Formbuilder/Api/Admin.php:77 modules/Formbuilder/Api/Admin.php:228
 msgid "This input type must have unique values"
 msgstr "Ennek a bemeneti típusnak egyedi értékekkel kell rendelkeznie"
 
-#: modules/Formbuilder/Api/Admin.php:80 modules/Formbuilder/Api/Admin.php:258
-#: modules/Formbuilder/Api/Admin.php:277
+#: modules/Formbuilder/Api/Admin.php:80 modules/Formbuilder/Api/Admin.php:254
+#: modules/Formbuilder/Api/Admin.php:273
 msgid "Form id was not passed"
 msgstr "Az űrlap azonosítója nem került átadásra"
 
-#: modules/Formbuilder/Api/Admin.php:261 modules/Formbuilder/Api/Admin.php:280
+#: modules/Formbuilder/Api/Admin.php:257 modules/Formbuilder/Api/Admin.php:276
 msgid "Form name was not passed"
 msgstr "Az űrlap neve nem került átadásra"
 
-#: modules/Formbuilder/Api/Admin.php:284
+#: modules/Formbuilder/Api/Admin.php:280
 msgid "Form type was not passed"
 msgstr "Az űrlap típusa nem került átadásra"
 
-#: modules/Formbuilder/Api/Admin.php:288
+#: modules/Formbuilder/Api/Admin.php:284
 msgid "Field type not supported"
 msgstr "Nem támogatott mezőtípus"
 
@@ -1237,17 +1234,17 @@ msgstr "Előfizetés nem található"
 
 #: modules/Invoice/Api/Client.php:56 modules/Invoice/Api/Client.php:80
 #: modules/Invoice/Api/Client.php:166 modules/Invoice/Api/Guest.php:36
-#: modules/Invoice/Api/Guest.php:60
+#: modules/Invoice/Api/Guest.php:62
 msgid "Invoice was not found"
 msgstr "A számla nem található"
 
-#: modules/Invoice/Api/Client.php:83 modules/Invoice/Api/Guest.php:63
+#: modules/Invoice/Api/Client.php:83 modules/Invoice/Api/Guest.php:65
 msgid "Paid Invoice cannot be modified"
 msgstr "A kifizetett számla nem módosítható"
 
 #: modules/Invoice/Api/Client.php:111 modules/Order/Api/Client.php:120
 #: modules/Servicedomain/Api/Client.php:123
-#: modules/Servicedownloadable/Api/Client.php:33
+#: modules/Servicedownloadable/Api/Client.php:31
 #: modules/Servicehosting/Api/Client.php:87
 #: modules/Servicelicense/Api/Client.php:46
 msgid "Order not found"
@@ -1257,11 +1254,11 @@ msgstr "Nem talált megrendelés"
 msgid "You need to enter numeric value"
 msgstr "Numerikus értéket kell megadnia"
 
-#: modules/Invoice/Api/Guest.php:103
+#: modules/Invoice/Api/Guest.php:105
 msgid "Invoice hash not passed. Missing param hash"
 msgstr "A számla hash-ja nem került átadásra. Hiányzó param hash"
 
-#: modules/Invoice/Api/Guest.php:107
+#: modules/Invoice/Api/Guest.php:109
 msgid "Payment method not found. Missing param gateway_id"
 msgstr "Fizetési mód nem található. Hiányzó paraméter: gateway_id"
 
@@ -1270,7 +1267,7 @@ msgstr "Fizetési mód nem található. Hiányzó paraméter: gateway_id"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
 #: modules/Index/html_client/mod_index_dashboard.html.twig:73
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:5
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:185
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:182
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:19
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:6
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:8
@@ -1307,163 +1304,166 @@ msgid "Tax rules"
 msgstr "Adózási szabályok"
 
 #: modules/Invoice/Controller/Admin.php:83
-#: modules/Extension/html_admin/mod_extension_index.html.twig:150
+#: modules/Extension/html_admin/mod_extension_index.html.twig:152
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:7
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:12
 msgid "Payment gateways"
 msgstr "Fizetési átjárók"
 
-#: modules/Invoice/Service.php:453
+#: modules/Invoice/Service.php:459
 msgid "Unable to determine the next invoice number"
 msgstr "Nem lehet meghatározni a következő számlaszámot"
 
-#: modules/Invoice/Service.php:684
+#: modules/Invoice/Service.php:688
 msgid "Cannot refund invoice with negative amount"
 msgstr "Nem lehet negatív összegű számlát visszatéríteni"
 
-#: modules/Invoice/Service.php:899
+#: modules/Invoice/Service.php:903
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "A számla a #:id rendeléshez kapcsolódik. Kérjük, először törölje a megrendelést."
 
-#: modules/Invoice/Service.php:966
-msgid "Invoices are not generated for 0 amount orders"
-msgstr "0 összegű megrendelésekről nem készül számla"
+#: modules/Invoice/Service.php:970
+msgid "Invoices are not generated for 0 amount orders."
+msgstr ""
 
-#: modules/Invoice/Service.php:1126
+#: modules/Invoice/Service.php:1130
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "Legalább egy aktív megrendeléssel kell rendelkeznie, mielőtt pénzt adhat hozzá, így jelenleg nem tud továbblépni!"
 
-#: modules/Invoice/Service.php:1135
+#: modules/Invoice/Service.php:1139
 msgid "Amount must be at least :min_amount"
 msgstr "Az összegnek legalább :min_amountnak kell lennie"
 
-#: modules/Invoice/Service.php:1139
+#: modules/Invoice/Service.php:1143
 msgid "Amount cannot exceed :max_amount"
 msgstr "Az összeg nem haladhatja meg :max_amount"
 
-#: modules/Invoice/Service.php:1166 modules/Invoice/Service.php:1234
+#: modules/Invoice/Service.php:1170 modules/Invoice/Service.php:1239
 msgid "Invoice not found"
 msgstr "Számla nem található"
 
-#: modules/Invoice/Service.php:1171
+#: modules/Invoice/Service.php:1175
 msgid "Payment method not found"
 msgstr "Fizetési mód nem található"
 
-#: modules/Invoice/Service.php:1175
+#: modules/Invoice/Service.php:1179
 msgid "Payment method not enabled"
 msgstr "Fizetési mód nem engedélyezett"
 
-#: modules/Invoice/ServiceInvoiceItem.php:62
+#: modules/Invoice/ServiceInvoiceItem.php:60
 msgid "Could not activate proforma item. Order :id not found"
 msgstr "Nem sikerült aktiválni a proforma elemet. Rendelés :id nem található"
 
-#: modules/Invoice/ServiceInvoiceItem.php:129
+#: modules/Invoice/ServiceInvoiceItem.php:127
 msgid "Invoice item title is missing"
 msgstr "A számlatétel címe hiányzik"
 
-#: modules/Invoice/ServiceInvoiceItem.php:219
+#: modules/Invoice/ServiceInvoiceItem.php:217
 msgid "Add funds to account"
 msgstr "Pénzösszeg hozzáadása a számlához"
 
-#: modules/Invoice/ServiceInvoiceItem.php:334
+#: modules/Invoice/ServiceInvoiceItem.php:332
 msgid "Promotional Code: :code - :value Discount"
 msgstr "Promóciós kód: :code - :value Discount"
 
-#: modules/Invoice/ServiceInvoiceItem.php:337
+#: modules/Invoice/ServiceInvoiceItem.php:335
 msgid "Promotional Code: :code - :value%"
 msgstr "Promóciós kód: :code - :value%"
 
-#: modules/Invoice/ServicePayGateway.php:105
+#: modules/Invoice/ServicePayGateway.php:126
 msgid "Payment gateway is not available for installation."
 msgstr "A fizetési átjáró nem áll rendelkezésre a telepítéshez."
 
-#: modules/Invoice/ServicePayGateway.php:270
-#: modules/Invoice/ServicePayGateway.php:299
+#: modules/Invoice/ServicePayGateway.php:294
+msgid "Payment gateway :adapter was not found."
+msgstr ""
+
+#: modules/Invoice/ServicePayGateway.php:323
 msgid "Payment gateway :adapter was not found"
 msgstr "Fizetési átjáró :adapter nem található"
 
-#: modules/Invoice/ServiceTransaction.php:83
+#: modules/Invoice/ServiceTransaction.php:84
 msgid "Transaction invoice ID is missing"
 msgstr "A tranzakció számla azonosítója hiányzik"
 
-#: modules/Invoice/ServiceTransaction.php:87
+#: modules/Invoice/ServiceTransaction.php:88
 msgid "Payment gateway ID is missing"
 msgstr "A fizetési átjáró azonosítója hiányzik"
 
-#: modules/Invoice/ServiceTransaction.php:348
+#: modules/Invoice/ServiceTransaction.php:374
 msgid "Transaction :id not found."
 msgstr "Tranzakció :id nem található."
 
-#: modules/Invoice/ServiceTransaction.php:352
-#: modules/Invoice/ServiceTransaction.php:477
+#: modules/Invoice/ServiceTransaction.php:378
+#: modules/Invoice/ServiceTransaction.php:547
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
 msgstr "Nem sikerült meghatározni a tranzakció eredetét. A tranzakció fizetési átjárója ismeretlen."
 
-#: modules/Invoice/ServiceTransaction.php:357
-#: modules/Invoice/ServiceTransaction.php:482
+#: modules/Invoice/ServiceTransaction.php:383
+#: modules/Invoice/ServiceTransaction.php:552
 msgid "Cannot handle transaction received from unknown payment gateway: :id"
 msgstr "Nem tudja kezelni az ismeretlen fizetési átjárótól kapott tranzakciót: :id"
 
-#: modules/Invoice/ServiceTransaction.php:363
-#: modules/Invoice/ServiceTransaction.php:512
+#: modules/Invoice/ServiceTransaction.php:389
+#: modules/Invoice/ServiceTransaction.php:582
 msgid "Payment adapter :adapter does not support action :action"
 msgstr "Fizetési adapter :adapter nem támogatja a műveletet :action"
 
-#: modules/Invoice/ServiceTransaction.php:397
+#: modules/Invoice/ServiceTransaction.php:423
 msgid "Unknown transaction #:id type: :type"
 msgstr "Ismeretlen tranzakció #:id típus: :type"
 
-#: modules/Invoice/ServiceTransaction.php:491
-#: modules/Invoice/ServiceTransaction.php:657
+#: modules/Invoice/ServiceTransaction.php:561
+#: modules/Invoice/ServiceTransaction.php:726
 msgid "Transaction :id is not associated with an invoice."
 msgstr "A tranzakció :id nem tartozik számlához."
 
-#: modules/Invoice/ServiceTransaction.php:496
+#: modules/Invoice/ServiceTransaction.php:566
 msgid "Invoice #:id not found"
 msgstr "Számla #:id nem található"
 
-#: modules/Invoice/ServiceTransaction.php:506
+#: modules/Invoice/ServiceTransaction.php:576
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
 msgstr "Az azonnali fizetési értesítés (IPN) nem ment át az átjáró :id érvényesítésén"
 
-#: modules/Invoice/ServiceTransaction.php:517
+#: modules/Invoice/ServiceTransaction.php:587
 msgid "Payment gateway :id method getTransaction should return Payment_Transaction object"
 msgstr "Fizetési átjáró :id módszer getTransaction visszaadja a Payment_Transaction objektumot"
 
-#: modules/Invoice/ServiceTransaction.php:605
+#: modules/Invoice/ServiceTransaction.php:674
 msgid "Cannot create subscription. Subscription ID from payment gateway was not received"
 msgstr "Nem tud előfizetést létrehozni. Az előfizetési azonosító nem érkezett meg a fizetési átjárótól"
 
-#: modules/Invoice/ServiceTransaction.php:640
+#: modules/Invoice/ServiceTransaction.php:709
 msgid "Subscription #:id was not found. Could not unsubscribe"
 msgstr "Az előfizetés #:id nem található. Nem sikerült leiratkozni"
 
-#: modules/Invoice/ServiceTransaction.php:653
+#: modules/Invoice/ServiceTransaction.php:722
 msgid "Only approved transaction can be processed"
 msgstr "Csak jóváhagyott tranzakciót lehet feldolgozni"
 
-#: modules/Invoice/ServiceTransaction.php:664
+#: modules/Invoice/ServiceTransaction.php:733
 msgid "Transaction currency :code does not match required currency :required"
 msgstr "Tranzakció pénzneme :code nem egyezik a szükséges pénznemmel :required"
 
-#: modules/Invoice/ServiceTransaction.php:669
+#: modules/Invoice/ServiceTransaction.php:738
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
 msgstr "A tranzakció státusza a fizetési átjárónál függőben van. Csak a Teljes vagy Ismeretlen tranzakciókat lehet feldolgozni."
 
-#: modules/Invoice/ServiceTransaction.php:679
+#: modules/Invoice/ServiceTransaction.php:748
 msgid "Client currency does not match invoice currency"
 msgstr "Az ügyfél pénzneme nem egyezik a számla pénznemével"
 
-#: modules/Invoice/ServiceTransaction.php:684
+#: modules/Invoice/ServiceTransaction.php:753
 msgid "Cannot add negative amount to client balance for debit transaction"
 msgstr "Nem lehet negatív összeget hozzáadni az ügyfél egyenlegéhez terhelési tranzakció esetén"
 
-#: modules/Massmailer/Api/Admin.php:73
+#: modules/Massmailer/Api/Admin.php:71
 msgid "Message from name cannot be empty"
 msgstr "A névből származó üzenet nem lehet üres"
 
-#: modules/Massmailer/Api/Admin.php:155 modules/Massmailer/Api/Admin.php:176
+#: modules/Massmailer/Api/Admin.php:151 modules/Massmailer/Api/Admin.php:170
 msgid "Add some content before sending message"
 msgstr "Tartalom hozzáadása az üzenet elküldése előtt"
 
@@ -1476,25 +1476,28 @@ msgstr "Tömeges levelező"
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "Biztonsági okokból letiltva (Demo mód engedélyezve)"
 
-#: modules/Massmailer/Service.php:193
+#: modules/Massmailer/Service.php:189
 msgid "Mass mail message not found"
 msgstr "A tömeges e-mail nem található"
 
-#: modules/News/Api/Admin.php:47 modules/News/Api/Guest.php:48
-#: modules/Support/Api/Guest.php:142
-msgid "ID or slug is missing"
-msgstr "ID vagy slug hiányzik"
+#: modules/News/Api/Admin.php:50 modules/News/Api/Guest.php:52
+msgid "ID or slug is required."
+msgstr ""
 
-#: modules/News/Api/Admin.php:63 modules/News/Api/Guest.php:61
+#: modules/News/Api/Admin.php:64 modules/News/Api/Guest.php:66
+msgid "News item not found."
+msgstr ""
+
+#: modules/News/Api/Admin.php:88 modules/News/Api/Admin.php:156
 msgid "News item not found"
 msgstr "Nem talált hír"
 
-#: modules/News/Controller/Admin.php:35
+#: modules/News/Controller/Admin.php:36
 #: modules/Index/html_client/mod_index_dashboard.html.twig:240
 msgid "Announcements"
 msgstr "Közlemények"
 
-#: modules/Notification/Api/Admin.php:54 modules/Notification/Api/Admin.php:92
+#: modules/Notification/Api/Admin.php:54 modules/Notification/Api/Admin.php:90
 msgid "Notification message was not found"
 msgstr "Értesítési üzenet nem található"
 
@@ -1510,11 +1513,11 @@ msgstr "Csak a törölt megrendeléseket lehet visszavonni"
 msgid "Order config not passed"
 msgstr "A rendelési konfiguráció nem került átadásra"
 
-#: modules/Order/Api/Admin.php:348
+#: modules/Order/Api/Admin.php:346
 msgid "Automatically issue renewal invoices"
 msgstr "Automatikusan állítson ki megújítási számlákat"
 
-#: modules/Order/Api/Admin.php:349
+#: modules/Order/Api/Admin.php:347
 msgid "Issue invoices manually"
 msgstr "Számlák kézi kiállítása"
 
@@ -1537,39 +1540,39 @@ msgstr "Csak a függőben lévő és a sikertelen beállítási megbízások tö
 msgid "Orders"
 msgstr "Megrendelések"
 
-#: modules/Order/Service.php:506
+#: modules/Order/Service.php:498
 msgid "Currency could not be determined for order"
 msgstr "A rendelés pénznemét nem lehetett meghatározni"
 
-#: modules/Order/Service.php:522
+#: modules/Order/Service.php:514
 msgid "Product :id is out of stock."
 msgstr "Termék :id nincs raktáron."
 
-#: modules/Order/Service.php:528
+#: modules/Order/Service.php:520
 msgid "Group ID parameter is missing for addon product order"
 msgstr "A csoport azonosító paraméter hiányzik az addon termékrendeléshez"
 
-#: modules/Order/Service.php:534
+#: modules/Order/Service.php:526
 msgid "Parent order :group_id was not found"
 msgstr "Nem találtuk a :group_id szülői sorrendet"
 
-#: modules/Order/Service.php:695
+#: modules/Order/Service.php:687
 msgid "Only pending setup or failed orders can be activated"
 msgstr "Csak a függőben lévő beállítási vagy sikertelen megbízások aktiválhatók"
 
-#: modules/Order/Service.php:723
+#: modules/Order/Service.php:715
 msgid "Error creating "
 msgstr "Hiba létrehozása "
 
-#: modules/Order/Service.php:792
+#: modules/Order/Service.php:784
 msgid "Service "
 msgstr "Szolgáltatás "
 
-#: modules/Order/Service.php:1004
+#: modules/Order/Service.php:990
 msgid "Only active orders can be suspended"
 msgstr "Csak az aktív megrendelések függeszthetők fel"
 
-#: modules/Order/Service.php:1056
+#: modules/Order/Service.php:1042
 msgid "Cannot cancel "
 msgstr "Nem lehet törölni "
 
@@ -1578,8 +1581,8 @@ msgid "You have already created domain product."
 msgstr "Már létrehoztál egy domain szolgáltatást."
 
 #: modules/Product/Api/Admin.php:103
-msgid "Product type :type is not registered"
-msgstr "Terméktípus :típus nincs regisztrálva"
+msgid "Product type :type is not registered."
+msgstr ""
 
 #: modules/Product/Api/Admin.php:152
 msgid "priority params is missing"
@@ -1609,39 +1612,39 @@ msgstr "Termék kiegészítők"
 msgid "Product Promotions"
 msgstr "Termék promóciók"
 
-#: modules/Product/Service.php:214
+#: modules/Product/Service.php:210
 msgid "Pricing type is required"
 msgstr "Az árképzés típusa szükséges"
 
-#: modules/Product/Service.php:436
+#: modules/Product/Service.php:424
 msgid "Cannot remove product which has active orders."
 msgstr "Nem lehet eltávolítani olyan terméket, amelyre aktív megrendelések vannak."
 
-#: modules/Product/Service.php:498
+#: modules/Product/Service.php:486
 msgid "Cannot remove product category with products"
 msgstr "Nem lehet eltávolítani a termékkategóriát a termékekkel"
 
-#: modules/Product/Service.php:904
+#: modules/Product/Service.php:875
 msgid "This promotion code already exists."
 msgstr "Ez a promóciós kód már létezik."
 
-#: modules/Profile/Api/Admin.php:117 modules/Profile/Api/Client.php:120
+#: modules/Profile/Api/Admin.php:115 modules/Profile/Api/Client.php:120
 msgid "Current password incorrect"
 msgstr "Az aktuális jelszó helytelen"
 
-#: modules/Profile/Service.php:146
+#: modules/Profile/Service.php:150
 msgid "Invalid birthdate value"
 msgstr "Érvénytelen születési dátum érték"
 
-#: modules/Profile/Service.php:238
+#: modules/Profile/Service.php:243
 msgid "Unable to invalidate sessions, nobody is logged in"
 msgstr "Nem lehet érvényteleníteni a munkameneteket, senki sincs bejelentkezve"
 
-#: modules/Profile/Service.php:257
+#: modules/Profile/Service.php:262
 msgid "Unable to invalidate sessions, an invalid type was used"
 msgstr "Nem sikerült érvényteleníteni a munkameneteket, érvénytelen típust használtak"
 
-#: modules/Redirect/Api/Admin.php:132
+#: modules/Redirect/Api/Admin.php:130
 msgid "Redirect not found"
 msgstr "Átirányítás nem található"
 
@@ -1769,118 +1772,118 @@ msgstr "Biztonsági műszerfal"
 msgid "IP lookup"
 msgstr "IP keresés"
 
-#: modules/Security/Service.php:40
+#: modules/Security/Service.php:42
 msgid "Run security checks"
 msgstr "Futtasson biztonsági ellenőrzéseket"
 
-#: modules/Security/Service.php:41
+#: modules/Security/Service.php:43
 msgid "Allows the staff member to run security checks on the FOSSBilling installation."
 msgstr "Lehetővé teszi a személyzet számára, hogy biztonsági ellenőrzéseket hajtson végre a FOSSBilling telepítésen."
 
-#: modules/Security/Service.php:105
+#: modules/Security/Service.php:110
 msgid "The check :checkName: does not exist."
 msgstr "A :checkName: ellenőrzés nem létezik."
 
-#: modules/Security/Service.php:110
+#: modules/Security/Service.php:115
 msgid "The check :checkName: does not seem to be a valid check."
 msgstr "A :checkName: csekk nem tűnik érvényes csekknek."
 
-#: modules/Serviceapikey/Service.php:55
+#: modules/Serviceapikey/Service.php:56
 msgid "Order does not exist."
 msgstr "A rendelés nem létezik."
 
-#: modules/Serviceapikey/Service.php:117 modules/Serviceapikey/Service.php:136
+#: modules/Serviceapikey/Service.php:118 modules/Serviceapikey/Service.php:137
 msgid "You must provide an API key to check it's validity."
 msgstr "Meg kell adnia egy API-kulcsot az érvényesség ellenőrzéséhez."
 
-#: modules/Serviceapikey/Service.php:122 modules/Serviceapikey/Service.php:141
-#: modules/Serviceapikey/Service.php:189 modules/Serviceapikey/Service.php:200
-#: modules/Serviceapikey/Service.php:230 modules/Serviceapikey/Service.php:343
+#: modules/Serviceapikey/Service.php:123 modules/Serviceapikey/Service.php:142
+#: modules/Serviceapikey/Service.php:190 modules/Serviceapikey/Service.php:201
+#: modules/Serviceapikey/Service.php:231 modules/Serviceapikey/Service.php:344
 msgid "API key does not exist"
 msgstr "Az API-kulcs nem létezik"
 
-#: modules/Serviceapikey/Service.php:179
+#: modules/Serviceapikey/Service.php:180
 msgid "You must provide either the API key or API key order ID in order to reset it."
 msgstr "Az alaphelyzetbe állításhoz meg kell adnia az API-kulcsot vagy az API-kulcs rendelési azonosítóját."
 
-#: modules/Serviceapikey/Service.php:222
+#: modules/Serviceapikey/Service.php:223
 msgid "You must provide the API key order ID in order to update it."
 msgstr "A frissítéshez meg kell adnia az API-kulcs rendelési azonosítóját."
 
-#: modules/Serviceapikey/Service.php:234
+#: modules/Serviceapikey/Service.php:235
 msgid "To change the API key, please use the reset function rather than updating it."
 msgstr "Az API-kulcs módosításához használd a reset funkciót a frissítés helyett."
 
-#: modules/Serviceapikey/Service.php:297
+#: modules/Serviceapikey/Service.php:298
 msgid "Maximum number of iterations reached while generating API key"
 msgstr "Az API-kulcs generálása során elért iterációk maximális száma"
 
-#: modules/Serviceapikey/Service.php:332
+#: modules/Serviceapikey/Service.php:333
 msgid "Unknown uppercase option ':case:'. API generator only accepts 'lower', 'upper', or 'mixed'."
 msgstr "Ismeretlen nagybetűs beállítás ':case:'. Az API-generátor csak \"alsó\", \"felső\" vagy \"vegyes\" értékeket fogad el."
 
-#: modules/Servicecustom/Api/Admin.php:27 modules/Servicecustom/Api/Admin.php:52
+#: modules/Servicecustom/Api/Admin.php:25 modules/Servicecustom/Api/Admin.php:50
 #: modules/Servicecustom/Api/Client.php:34
 #: modules/Servicedomain/Api/Client.php:117
-#: modules/Servicedownloadable/Api/Client.php:28
+#: modules/Servicedownloadable/Api/Client.php:26
 #: modules/Servicehosting/Api/Client.php:82
 msgid "Order ID is required"
 msgstr "A rendelési azonosító szükséges"
 
-#: modules/Servicecustom/Api/Admin.php:46 modules/Servicecustom/Api/Client.php:28
+#: modules/Servicecustom/Api/Admin.php:44 modules/Servicecustom/Api/Client.php:28
 msgid "API call is missing arguments"
 msgstr "Az API-hívásból hiányoznak az argumentumok"
 
-#: modules/Servicecustom/Service.php:39
+#: modules/Servicecustom/Service.php:47
 msgid "You must fill in all required fields. "
 msgstr "Minden kötelező mezőt ki kell töltenie. "
 
-#: modules/Servicecustom/Service.php:46
+#: modules/Servicecustom/Service.php:54
 msgid "Field "
 msgstr "Mező "
 
-#: modules/Servicecustom/Service.php:80 modules/Servicedomain/Service.php:222
-#: modules/Servicelicense/Service.php:110
+#: modules/Servicecustom/Service.php:85 modules/Servicedomain/Service.php:232
+#: modules/Servicelicense/Service.php:102
 msgid "Could not activate order. Service was not created"
 msgstr "Nem sikerült aktiválni a rendelést. A szolgáltatás nem jött létre"
 
-#: modules/Servicecustom/Service.php:224
+#: modules/Servicecustom/Service.php:207
 msgid "Custom plugin method :method is forbidden"
 msgstr "Egyéni plugin módszer :módszer tiltott"
 
-#: modules/Servicecustom/Service.php:233
+#: modules/Servicecustom/Service.php:216
 msgid "Config must be an array"
 msgstr "A Confignak egy tömbnek kell lennie"
 
-#: modules/Servicecustom/Service.php:253 modules/Servicedomain/Api/Client.php:128
+#: modules/Servicecustom/Service.php:236 modules/Servicedomain/Api/Client.php:128
 #: modules/Servicedownloadable/Api/Admin.php:66
-#: modules/Servicedownloadable/Api/Client.php:39
-#: modules/Servicehosting/Api/Admin.php:464
+#: modules/Servicedownloadable/Api/Client.php:37
+#: modules/Servicehosting/Api/Admin.php:440
 #: modules/Servicehosting/Api/Client.php:93
 #: modules/Servicelicense/Api/Admin.php:84
 #: modules/Servicelicense/Api/Client.php:52
 msgid "Order is not activated"
 msgstr "A megrendelés nem aktivált"
 
-#: modules/Servicecustom/Service.php:270
+#: modules/Servicecustom/Service.php:253
 msgid "Plugin class file :file was not found"
 msgstr "Plugin osztályfájl :file nem található"
 
-#: modules/Servicecustom/Service.php:289
+#: modules/Servicecustom/Service.php:268
 msgid "Plugin :plugin does not support action :action"
 msgstr "A plugin :plugin nem támogatja a műveletet :action"
 
-#: modules/Servicecustom/Service.php:305 modules/Servicedomain/Service.php:256
-#: modules/Servicedomain/Service.php:295 modules/Servicehosting/Service.php:103
-#: modules/Servicehosting/Service.php:161 modules/Servicehosting/Service.php:179
-#: modules/Servicehosting/Service.php:198 modules/Servicehosting/Service.php:217
+#: modules/Servicecustom/Service.php:284 modules/Servicedomain/Service.php:263
+#: modules/Servicedomain/Service.php:295 modules/Servicehosting/Service.php:112
+#: modules/Servicehosting/Service.php:170 modules/Servicehosting/Service.php:188
+#: modules/Servicehosting/Service.php:207 modules/Servicehosting/Service.php:226
 msgid "Order :id has no active service"
 msgstr "Megrendelés :id nincs aktív szolgáltatás"
 
 #: modules/Servicedomain/Api/Admin.php:168
 #: modules/Servicedomain/Api/Admin.php:213
 #: modules/Servicedomain/Api/Admin.php:271 modules/Servicedomain/Api/Guest.php:68
-#: modules/Servicedomain/Service.php:94 modules/Servicedomain/Service.php:123
+#: modules/Servicedomain/Service.php:104 modules/Servicedomain/Service.php:133
 msgid "TLD not found"
 msgstr "TLD nem található"
 
@@ -1928,76 +1931,76 @@ msgstr "A domain nem ruházható át."
 msgid "Domain registration"
 msgstr "Domain regisztráció"
 
-#: modules/Servicedomain/Service.php:34
+#: modules/Servicedomain/Service.php:44
 msgid "Domain :domain registration"
 msgstr "Domain :domain regisztráció"
 
-#: modules/Servicedomain/Service.php:41
+#: modules/Servicedomain/Service.php:51
 msgid "Domain :domain transfer"
 msgstr "Domain :domain átruházás"
 
-#: modules/Servicedomain/Service.php:58
+#: modules/Servicedomain/Service.php:68
 msgid "Invalid domain action."
 msgstr "Érvénytelen domain művelet."
 
-#: modules/Servicedomain/Service.php:71 modules/Servicedomain/Service.php:89
-#: modules/Servicedomain/Service.php:118 modules/Servicedomain/Service.php:555
+#: modules/Servicedomain/Service.php:81 modules/Servicedomain/Service.php:99
+#: modules/Servicedomain/Service.php:128 modules/Servicedomain/Service.php:549
 msgid "Domain name :domain is invalid"
 msgstr "A :d omain tartománynév érvénytelen"
 
-#: modules/Servicedomain/Service.php:75
+#: modules/Servicedomain/Service.php:85
 msgid "TLD is invalid"
 msgstr "A TLD érvénytelen"
 
-#: modules/Servicedomain/Service.php:99
+#: modules/Servicedomain/Service.php:109
 msgid ":domain cannot be transferred!"
 msgstr ":domain nem átruházható!"
 
-#: modules/Servicedomain/Service.php:128
+#: modules/Servicedomain/Service.php:138
 msgid ":tld can be registered for at least :years years"
 msgstr ":tld legalább :évig lehet regisztrálni évekre"
 
-#: modules/Servicedomain/Service.php:133
+#: modules/Servicedomain/Service.php:143
 msgid ":domain is already registered!"
 msgstr ":domain már regisztrálva van!"
 
-#: modules/Servicedomain/Service.php:170
+#: modules/Servicedomain/Service.php:180
 msgid "Default domain nameservers are not configured"
 msgstr "Az alapértelmezett domain névszerverek nincsenek konfigurálva"
 
-#: modules/Servicedomain/Service.php:371
+#: modules/Servicedomain/Service.php:365
 msgid "Nameserver 1 is required"
 msgstr "Nameserver 1 szükséges"
 
-#: modules/Servicedomain/Service.php:374
+#: modules/Servicedomain/Service.php:368
 msgid "Nameserver 2 is required"
 msgstr "Nameserver 2 szükséges"
 
-#: modules/Servicedomain/Service.php:527 modules/Servicedomain/Service.php:548
+#: modules/Servicedomain/Service.php:521 modules/Servicedomain/Service.php:542
 msgid "Domain name is invalid"
 msgstr "A domain név érvénytelen"
 
-#: modules/Servicedomain/Service.php:531
+#: modules/Servicedomain/Service.php:525
 msgid "Domain cannot be transferred"
 msgstr "A domain nem ruházható át"
 
-#: modules/Servicedomain/Service.php:559
+#: modules/Servicedomain/Service.php:553
 msgid "Domain cannot be registered"
 msgstr "Domain nem regisztrálható"
 
-#: modules/Servicedomain/Service.php:958
+#: modules/Servicedomain/Service.php:950
 msgid "Domain registrar :adapter was not found"
 msgstr "Domain regisztrátor :adapter nem található"
 
-#: modules/Servicedomain/Service.php:963
+#: modules/Servicedomain/Service.php:955
 msgid "Registrar :adapter was not found"
 msgstr "Nem találtuk a :adapter regisztrátort"
 
-#: modules/Servicedomain/Service.php:975
+#: modules/Servicedomain/Service.php:967
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr "Nyilvántartó adapter :adapter bővíti a Registrar_AdapterAbstract-ot"
 
-#: modules/Servicedomain/Service.php:1040
+#: modules/Servicedomain/Service.php:1032
 msgid "Registrar is used by :count: domains"
 msgstr "A regisztrátort a :count: domains használja"
 
@@ -2005,24 +2008,24 @@ msgstr "A regisztrátort a :count: domains használja"
 msgid "File was not uploaded."
 msgstr "A fájl nem lett feltöltve."
 
-#: modules/Servicedownloadable/Service.php:170
-#: modules/Servicedownloadable/Service.php:234
+#: modules/Servicedownloadable/Service.php:162
+#: modules/Servicedownloadable/Service.php:220
 msgid "Error uploading file."
 msgstr "Hiba a fájl feltöltésekor."
 
-#: modules/Servicedownloadable/Service.php:273
+#: modules/Servicedownloadable/Service.php:258
 msgid "File cannot be downloaded at the moment. Please contact support."
 msgstr "A fájl jelenleg nem tölthető le. Kérjük, fordulj az ügyfélszolgálathoz."
 
-#: modules/Servicehosting/Api/Admin.php:27
+#: modules/Servicehosting/Api/Admin.php:25
 msgid "plan_id is missing"
 msgstr "plan_id hiányzik"
 
-#: modules/Servicehosting/Api/Admin.php:273
+#: modules/Servicehosting/Api/Admin.php:257
 msgid "Hosting server is used by :count: service hostings"
 msgstr "A tárhelykiszolgálót a :count: service hostings használja"
 
-#: modules/Servicehosting/Api/Admin.php:386
+#: modules/Servicehosting/Api/Admin.php:364
 msgid "Hosting plan is used by :count: service hostings"
 msgstr "A tárhely-tervet a :count: service hostings használja"
 
@@ -2037,39 +2040,39 @@ msgstr "Típus"
 msgid "Hosting plans and servers"
 msgstr "Tárhelycsomagok és szerverek"
 
-#: modules/Servicehosting/Service.php:37
+#: modules/Servicehosting/Service.php:46
 msgid ":hosting for :domain"
 msgstr ":hosting a :domain számára"
 
-#: modules/Servicehosting/Service.php:49
+#: modules/Servicehosting/Service.php:58
 msgid "Hosting product is not configured completely. Configure server for hosting product."
 msgstr "A tárhely termék nincs teljesen konfigurálva. Konfigurálja a szervert a tárhely termékhez."
 
-#: modules/Servicehosting/Service.php:52
+#: modules/Servicehosting/Service.php:61
 msgid "Hosting product is not configured completely. Configure hosting plan for hosting product."
 msgstr "A tárhely termék nincs teljesen konfigurálva. Konfigurálja a tárhelyszolgáltatási csomagot a tárhelytermékhez."
 
-#: modules/Servicehosting/Service.php:55
+#: modules/Servicehosting/Service.php:64
 msgid "Domain name is invalid."
 msgstr "A domain név érvénytelen."
 
-#: modules/Servicehosting/Service.php:58
+#: modules/Servicehosting/Service.php:67
 msgid "Domain extension is invalid."
 msgstr "A tartománykiterjesztés érvénytelen."
 
-#: modules/Servicehosting/Service.php:292
+#: modules/Servicehosting/Service.php:298
 msgid "Account username is missing or is invalid"
 msgstr "A fiók felhasználóneve hiányzik vagy érvénytelen"
 
-#: modules/Servicehosting/Service.php:314
+#: modules/Servicehosting/Service.php:320
 msgid "Account IP address is missing or is invalid"
 msgstr "A fiók IP-címe hiányzik vagy érvénytelen"
 
-#: modules/Servicehosting/Service.php:338
+#: modules/Servicehosting/Service.php:344
 msgid "Domain SLD or TLD is missing"
 msgstr "Domain sld vagy tld hiányzik"
 
-#: modules/Servicehosting/Service.php:364
+#: modules/Servicehosting/Service.php:370
 msgid "Account password is missing or is invalid"
 msgstr "A fiók jelszava hiányzik vagy érvénytelen"
 
@@ -2077,76 +2080,76 @@ msgstr "A fiók jelszava hiányzik vagy érvénytelen"
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Érvénytelen kiszolgálókezelő. A kiszolgálót nem megfelelően konfigurálták."
 
-#: modules/Servicehosting/Service.php:833
-msgid "Server manager :adapter is invalid"
-msgstr "Kiszolgálókezelő :adapter érvénytelen"
+#: modules/Servicehosting/Service.php:829
+msgid "Server manager :adapter is invalid."
+msgstr ""
 
-#: modules/Servicehosting/Service.php:880
+#: modules/Servicehosting/Service.php:876
 msgid "Cannot remove hosting plan which has active accounts"
 msgstr "Nem lehet eltávolítani a tárhelyet, amely aktív fiókokkal rendelkezik"
 
-#: modules/Servicehosting/Service.php:1100
+#: modules/Servicehosting/Service.php:1084
 msgid "Could not find main domain product"
 msgstr "Nem találta a fő domain terméket"
 
-#: modules/Servicelicense/Service.php:116
-msgid "License plugin :plugin was not found"
-msgstr "Licenc plugin :plugin nem található"
+#: modules/Servicelicense/Service.php:108
+msgid "License plugin :plugin was not found."
+msgstr ""
 
-#: modules/Servicelicense/Service.php:120
+#: modules/Servicelicense/Service.php:112
 msgid "License plugin does not have generate method"
 msgstr "A licenc plugin nem rendelkezik generáló módszerrel"
 
-#: modules/Servicelicense/Service.php:131
+#: modules/Servicelicense/Service.php:123
 msgid "Maximum number of iterations reached while generating license key"
 msgstr "A licenckulcs generálásakor elért maximális iterációk száma"
 
-#: modules/Spamchecker/Service.php:63
+#: modules/Spamchecker/Service.php:71
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
 msgstr "A Te IP-címed (:ip) blokkolva van. Kérjük, lépj kapcsolatba ügyfélszolgálatunkkal a blokkolás feloldása érdekében."
 
-#: modules/Spamchecker/Service.php:84
+#: modules/Spamchecker/Service.php:92
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
 msgstr "A reCAPTCHA használatához API-kulcsot kell szereznie a <a href='https://www.google.com/recaptcha/admin/create'>honnan</a>"
 
-#: modules/Spamchecker/Service.php:88
+#: modules/Spamchecker/Service.php:96
 msgid "You have to complete the CAPTCHA to continue"
 msgstr "A folytatáshoz ki kell töltenie a CAPTCHA-t"
 
-#: modules/Spamchecker/Service.php:102 modules/Spamchecker/Service.php:105
+#: modules/Spamchecker/Service.php:110 modules/Spamchecker/Service.php:113
 msgid "reCAPTCHA verification failed."
 msgstr "reCAPTCHA ellenőrzés sikertelen."
 
-#: modules/Spamchecker/Service.php:151
+#: modules/Spamchecker/Service.php:163
 msgid "Your username is blacklisted in the Stop Forum Spam database"
 msgstr "A felhasználóneved feketelistára került a Stop Forum Spam adatbázisban"
 
-#: modules/Spamchecker/Service.php:154
+#: modules/Spamchecker/Service.php:166
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
 msgstr "A e-mail címed feketelistára került a Stop Forum Spam adatbázisában"
 
-#: modules/Spamchecker/Service.php:157
+#: modules/Spamchecker/Service.php:169
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "A Te IP-címed feketelistára került a Stop Forum Spam adatbázisában"
 
-#: modules/Spamchecker/Service.php:191
+#: modules/Spamchecker/Service.php:203
 msgid "Disposable email addresses are not allowed"
 msgstr "Az eldobható e-mail címek nem engedélyezettek"
 
-#: modules/Staff/Api/Guest.php:33
+#: modules/Staff/Api/Guest.php:31
 msgid "Administrator account already exists"
 msgstr "Rendszergazda fiók már létezik"
 
-#: modules/Staff/Api/Guest.php:80
-msgid "You are not allowed to login to admin area from :ip address"
-msgstr "Nem engedélyezett az adminisztrációs területre való bejelentkezés a :ip címről"
+#: modules/Staff/Api/Guest.php:78
+msgid "You are not allowed to login to admin area from :ip address."
+msgstr ""
 
-#: modules/Staff/Api/Guest.php:95 modules/Staff/Api/Guest.php:140
+#: modules/Staff/Api/Guest.php:93 modules/Staff/Api/Guest.php:138
 #: modules/Staff/Controller/Admin.php:119
 msgid "Password reset has been disabled"
 msgstr "A jelszó visszaállítása letiltásra került"
 
-#: modules/Staff/Api/Guest.php:113 modules/Staff/Api/Guest.php:117
+#: modules/Staff/Api/Guest.php:111 modules/Staff/Api/Guest.php:115
 #: modules/Staff/Controller/Admin.php:125 modules/Staff/Controller/Admin.php:128
 msgid "The link has expired or you have already confirmed the password reset."
 msgstr "A link lejárt, vagy már megerősítette a jelszó visszaállítását."
@@ -2215,46 +2218,50 @@ msgstr "Lehetővé teszi a munkatárs számára a munkatársak csoportjainak kez
 msgid "Check your login details"
 msgstr "Ellenőrizze bejelentkezési adatait"
 
-#: modules/Staff/Service.php:509
+#: modules/Staff/Service.php:516
 msgid "This administrator account is protected and cannot be removed"
 msgstr "Ez a rendszergazdai fiók védett, és nem távolítható el"
 
-#: modules/Staff/Service.php:580
-msgid "Staff member with email :email is already registered"
-msgstr "Személyzeti tag e-mail címmel :email már regisztrálva van"
+#: modules/Staff/Service.php:587
+msgid "Staff member with email :email is already registered."
+msgstr ""
 
-#: modules/Staff/Service.php:675
+#: modules/Staff/Service.php:682
 msgid "Administrators group cannot be removed"
 msgstr "A Rendszergazdák csoport nem távolítható el"
 
-#: modules/Staff/Service.php:683
+#: modules/Staff/Service.php:690
 msgid "Cannot remove group which has staff members"
 msgstr "Nem lehet eltávolítani a személyzet tagjait tartalmazó csoportot"
 
-#: modules/Support/Api/Admin.php:837 modules/Support/Api/Admin.php:911
+#: modules/Support/Api/Admin.php:829 modules/Support/Api/Admin.php:901
 #: modules/Support/Service.php:1651
 msgid "Article not found"
 msgstr "Cikk nem található"
 
-#: modules/Support/Api/Admin.php:953 modules/Support/Api/Admin.php:998
+#: modules/Support/Api/Admin.php:943 modules/Support/Api/Admin.php:988
 msgid "Article Category not found"
 msgstr "Cikk kategória nem található"
 
-#: modules/Support/Api/Admin.php:1023
+#: modules/Support/Api/Admin.php:1013
 msgid "Category not found"
 msgstr "Nem talált kategória"
 
-#: modules/Support/Api/Client.php:125 modules/Support/Service.php:248
+#: modules/Support/Api/Client.php:123 modules/Support/Service.php:248
 msgid "Ticket not found"
 msgstr "Jegy nem található"
 
-#: modules/Support/Api/Client.php:129
+#: modules/Support/Api/Client.php:127
 msgid "Ticket cannot be reopened."
 msgstr "A jegyet nem lehet újra megnyitni."
 
 #: modules/Support/Api/Guest.php:36
 msgid "Please enter your message"
 msgstr "Kérjük, adja meg üzenetét"
+
+#: modules/Support/Api/Guest.php:142
+msgid "ID or slug is missing"
+msgstr "ID vagy slug hiányzik"
 
 #: modules/Support/Api/Guest.php:156
 msgid "Article item not found"
@@ -2378,7 +2385,7 @@ msgstr "Rendszer"
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:20
 #: modules/Email/html_admin/mod_email_settings.html.twig:16
 #: modules/Email/html_admin/mod_email_template.html.twig:16
-#: modules/Extension/html_admin/mod_extension_index.html.twig:99
+#: modules/Extension/html_admin/mod_extension_index.html.twig:101
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:19
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:30
@@ -2410,7 +2417,7 @@ msgstr "Rendszer"
 msgid "Settings"
 msgstr "Beállítások"
 
-#: modules/System/Controller/Admin.php:47 modules/System/Service.php:56
+#: modules/System/Controller/Admin.php:47 modules/System/Service.php:64
 #: modules/System/html_admin/mod_system_update.html.twig:5
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:50
@@ -2418,72 +2425,72 @@ msgstr "Beállítások"
 msgid "Update FOSSBilling"
 msgstr "FOSSBilling frissítése"
 
-#: modules/System/Service.php:41
+#: modules/System/Service.php:49
 msgid "Manage company details"
 msgstr "Cégadatok kezelése"
 
-#: modules/System/Service.php:42
+#: modules/System/Service.php:50
 msgid "Allows the staff member to update company details as set under the system module."
 msgstr "Lehetővé teszi a munkatársak számára, hogy frissítsék a cégadatokat a rendszermodulban beállítottak szerint."
 
-#: modules/System/Service.php:46
+#: modules/System/Service.php:54
 msgid "Manage company legal"
 msgstr "Vállalati jogi kezelés"
 
-#: modules/System/Service.php:47
+#: modules/System/Service.php:55
 msgid "Allows the staff member to update company legal as set under the system module."
 msgstr "Lehetővé teszi a munkatárs számára, hogy frissítse a vállalati jogi szabályozást a rendszermodulban meghatározottak szerint."
 
-#: modules/System/Service.php:51
-#: modules/System/html_admin/mod_system_settings.html.twig:510
+#: modules/System/Service.php:59
+#: modules/System/html_admin/mod_system_settings.html.twig:528
 msgid "Invalidate cache"
 msgstr "Gyorsítótár érvénytelenítése"
 
-#: modules/System/Service.php:52
+#: modules/System/Service.php:60
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
 msgstr "Lehetővé teszi a munkatársak számára a FOSSBilling gyorsítótár érvénytelenítését a rendszerbeállításokon belül."
 
-#: modules/System/Service.php:57
+#: modules/System/Service.php:65
 msgid "Allows the staff member to update FOSSBilling."
 msgstr "Lehetővé teszi a munkatárs számára a FOSSBilling frissítését."
 
-#: modules/System/Service.php:61
+#: modules/System/Service.php:69
 msgid "Manage the network interface"
 msgstr "A hálózati interfész kezelése"
 
-#: modules/System/Service.php:62
+#: modules/System/Service.php:70
 msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
 msgstr "Lehetővé teszi a munkatárs számára, hogy lekérje az összes helyi interfész IP-címének listáját, és beállítsa a FOSSBilling által használt alapértelmezett hálózati interfészt."
 
-#: modules/System/Service.php:74
+#: modules/System/Service.php:82
 msgid "Parameter key is missing"
 msgstr "A paraméterkulcs hiányzik"
 
-#: modules/System/Service.php:145
+#: modules/System/Service.php:153
 msgid "Invalid parameter name, received: param_"
 msgstr "Érvénytelen paraméternév, kapott: param_"
 
-#: modules/System/Service.php:304
+#: modules/System/Service.php:312
 msgid "Cron was never executed, please ensure you have configured the cronjob or else scheduled tasks within FOSSBilling will not behave correctly."
 msgstr "A Cron folyamat még sosem futott le, ellenőrizze hogy a cron feladat konfigurálva lett, különben a FOSSBilling időzített feladatai nem fognak megfelelően működni"
 
-#: modules/System/Service.php:309
+#: modules/System/Service.php:317
 msgid "FOSSBilling has detected that cron hasn't been run in an abnormal time period. Please ensure the cronjob is configured to be run every 5 minutes."
 msgstr "A FOSSBilling észlelte hogy a cron feladat abnormális ideje nem futott le. Ellenőrizze hogy a cron feladat 5 percenkénti futása konfigurálva legyen."
 
-#: modules/System/Service.php:330
+#: modules/System/Service.php:338
 msgid "We'd appreciate it if you'd consider opting into error reporting for FOSSBilling. Doing so will help us improve the software and provide you with a better experience. (Message will remain for 15 minutes)"
 msgstr "Nagyra értékeljük hogy a hibajelzések küldését választotta a FOSSBilling számára. Ez lehetővé teszi a program fejlődését és a jobb élmény biztosítását. (Ez az üzenet 15 percig lesz látható)"
 
-#: modules/System/Service.php:341
+#: modules/System/Service.php:349
 msgid "Error reporting in FOSSBilling has changed since you last reviewed it. You may want to consider reviewing the changes to see what's been changed. (This message will remain for 24 hours)"
 msgstr "Hibajelzések küldése változásokon esett át, mióta utoljára ellenőrizte. Érdemes lehet megfontolni a változtatások újbóli áttekintését. (Ez az üzenet 24 órán át lesz látható)"
 
-#: modules/System/Service.php:531
+#: modules/System/Service.php:540
 msgid "Parameter :param does not exist"
 msgstr "Paraméter :param nem létezik"
 
-#: modules/System/Service.php:945
+#: modules/System/Service.php:954
 msgid "Country :code phone code is not registered"
 msgstr "Ország :kód telefonkód nincs regisztrálva"
 
@@ -2491,23 +2498,23 @@ msgstr "Ország :kód telefonkód nincs regisztrálva"
 msgid "Theme \":name\" assets folder is not writable. Files cannot be uploaded and settings cannot be saved. Set folder permissions to 755"
 msgstr "A téma \":name\" eszközmappa nem írható. A fájlokat nem lehet feltölteni és a beállításokat nem lehet elmenteni. Állítsa be a mappa engedélyeit 755-re"
 
-#: modules/Theme/Controller/Admin.php:98
+#: modules/Theme/Controller/Admin.php:96
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
 msgstr "A téma \":name\" eszközmappa nem írható. Állítsa be a mappa :folder jogosultságait 777-re"
 
-#: modules/Theme/Controller/Admin.php:102
+#: modules/Theme/Controller/Admin.php:100
 msgid "Theme \":name\" is not configurable"
 msgstr "A \":name\" téma nem konfigurálható"
 
-#: modules/Theme/Model/Theme.php:19
-msgid "Theme \":name\" does not exist"
-msgstr "A \":name\" téma nem létezik"
+#: modules/Theme/Model/Theme.php:25
+msgid "Theme ':name' does not exist."
+msgstr ""
 
-#: modules/Theme/Service.php:320
+#: modules/Theme/Service.php:325
 msgid "Theme was not found in path :path"
 msgstr "A téma nem található az elérési útvonalban :path"
 
-#: modules/Theme/Service.php:337
+#: modules/Theme/Service.php:342
 msgid "Unable to decode theme manifest file :file"
 msgstr "Nem sikerült dekódolni a téma manifeszt fájlját :file"
 
@@ -2525,10 +2532,10 @@ msgstr "Felhasználó"
 #: modules/Embed/html_client/mod_embed_contact.html.twig:57
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:115
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
-#: modules/Order/html_client/mod_order_manage.html.twig:219
+#: modules/Order/html_client/mod_order_manage.html.twig:223
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:49
-#: modules/Support/html_admin/mod_support_tickets.html.twig:325
-#: modules/Support/html_admin/mod_support_tickets.html.twig:359
+#: modules/Support/html_admin/mod_support_tickets.html.twig:324
+#: modules/Support/html_admin/mod_support_tickets.html.twig:358
 #: modules/Support/html_client/mod_support_contact_us.html.twig:45
 #: modules/Support/html_client/mod_support_tickets.html.twig:98
 msgid "Message"
@@ -2547,10 +2554,10 @@ msgid "IP"
 msgstr "IP"
 
 #: modules/Activity/html_admin/mod_activity_index.html.twig:28
-#: modules/Client/html_admin/mod_client_index.html.twig:368
 #: modules/Client/html_admin/mod_client_login_history.html.twig:25
 #: modules/Client/html_admin/mod_client_manage.html.twig:295
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
+#: modules/Client/html_admin/mod_client_new_form.html.twig:131
 #: modules/Client/html_admin/mod_client_settings.html.twig:81
 #: modules/Client/html_client/mod_client_profile.html.twig:136
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:30
@@ -2599,7 +2606,7 @@ msgstr "Ismeretlen"
 #: modules/Activity/html_admin/mod_activity_index.html.twig:69
 #: modules/Client/html_admin/mod_client_group.html.twig:51
 #: modules/Client/html_admin/mod_client_index.html.twig:262
-#: modules/Client/html_admin/mod_client_index.html.twig:428
+#: modules/Client/html_admin/mod_client_index.html.twig:318
 #: modules/Client/html_admin/mod_client_login_history.html.twig:52
 #: modules/Client/html_admin/mod_client_manage.html.twig:148
 #: modules/Client/html_admin/mod_client_manage.html.twig:672
@@ -2607,10 +2614,10 @@ msgstr "Ismeretlen"
 #: modules/Email/html_admin/mod_email_history.html.twig:60
 #: modules/Email/html_admin/mod_email_settings.html.twig:110
 #: modules/Email/html_admin/mod_email_template.html.twig:76
-#: modules/Extension/html_admin/mod_extension_index.html.twig:74
-#: modules/Extension/html_admin/mod_extension_index.html.twig:84
+#: modules/Extension/html_admin/mod_extension_index.html.twig:75
+#: modules/Extension/html_admin/mod_extension_index.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:73
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:262
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:259
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:185
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:552
@@ -2670,7 +2677,7 @@ msgstr "Biztos vagy benne?"
 
 #: modules/Activity/html_admin/mod_activity_index.html.twig:79
 #: modules/Client/html_admin/mod_client_index.html.twig:271
-#: modules/Client/html_admin/mod_client_index.html.twig:437
+#: modules/Client/html_admin/mod_client_index.html.twig:327
 #: modules/Client/html_admin/mod_client_login_history.html.twig:62
 #: modules/Client/html_admin/mod_client_manage.html.twig:495
 #: modules/Client/html_admin/mod_client_manage.html.twig:564
@@ -2686,11 +2693,11 @@ msgstr "Biztos vagy benne?"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:192
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:216
 #: modules/Email/html_admin/mod_email_history.html.twig:69
-#: modules/Extension/html_admin/mod_extension_index.html.twig:109
+#: modules/Extension/html_admin/mod_extension_index.html.twig:111
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:72
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:85
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:272
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:269
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:89
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:220
@@ -2802,7 +2809,7 @@ msgstr "A FOSSBilling automatikusan eltávolítja a beállított napok számán�
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:195
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:214
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:143
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:142
 #: modules/News/html_admin/mod_news_post.html.twig:140
 #: modules/Order/html_admin/mod_order_manage.html.twig:395
 #: modules/Order/html_admin/mod_order_manage.html.twig:464
@@ -2829,7 +2836,7 @@ msgstr "A FOSSBilling automatikusan eltávolítja a beállított napok számán�
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:105
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:193
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:76
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:130
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
@@ -2842,7 +2849,7 @@ msgstr "A FOSSBilling automatikusan eltávolítja a beállított napok számán�
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:137
 #: modules/Support/html_admin/mod_support_settings.html.twig:125
 #: modules/Support/html_admin/mod_support_ticket.html.twig:163
-#: modules/System/html_admin/mod_system_settings.html.twig:614
+#: modules/System/html_admin/mod_system_settings.html.twig:659
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr "Frissítés"
@@ -2856,8 +2863,8 @@ msgid "Edit client group"
 msgstr "Ügyfélcsoport szerkesztése"
 
 #: modules/Client/html_admin/mod_client_group.html.twig:32
-#: modules/Client/html_admin/mod_client_index.html.twig:412
-#: modules/Client/html_admin/mod_client_index.html.twig:449
+#: modules/Client/html_admin/mod_client_index.html.twig:302
+#: modules/Client/html_admin/mod_client_index.html.twig:339
 #: modules/Client/html_admin/mod_client_manage.html.twig:453
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:36
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:68
@@ -2933,12 +2940,13 @@ msgstr "Ügyfél azonosító"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:24
 #: modules/Client/html_admin/mod_client_index.html.twig:209
-#: modules/Client/html_admin/mod_client_index.html.twig:324
 #: modules/Client/html_admin/mod_client_manage.html.twig:67
 #: modules/Client/html_admin/mod_client_manage.html.twig:223
+#: modules/Client/html_admin/mod_client_new_form.html.twig:12
+#: modules/Client/html_admin/mod_client_new_form.html.twig:89
 #: modules/Embed/html_client/mod_embed_contact.html.twig:42
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:15
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:210
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:207
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:35
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:107
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:151
@@ -2964,7 +2972,7 @@ msgstr "Ügyfél azonosító"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:236
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:279
 #: modules/Support/html_client/mod_support_contact_us.html.twig:33
-#: modules/System/html_admin/mod_system_settings.html.twig:62
+#: modules/System/html_admin/mod_system_settings.html.twig:60
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
 msgid "Name"
@@ -2976,7 +2984,6 @@ msgid "Company name"
 msgstr "Cégnév"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:38
-#: modules/Client/html_admin/mod_client_index.html.twig:318
 #: modules/Client/html_admin/mod_client_manage.html.twig:75
 #: modules/Client/html_admin/mod_client_manage.html.twig:217
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:89
@@ -3008,20 +3015,20 @@ msgstr "Cégnév"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:56
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:99
 #: modules/Support/html_admin/mod_support_settings.html.twig:147
-#: modules/Support/html_admin/mod_support_tickets.html.twig:347
+#: modules/Support/html_admin/mod_support_tickets.html.twig:346
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:37
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:35
-#: modules/System/html_admin/mod_system_settings.html.twig:68
+#: modules/System/html_admin/mod_system_settings.html.twig:66
 #: themes/huraga/html/mobile_menu.html.twig:52
 #: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
 msgstr "E-mail"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:45
-#: modules/Client/html_admin/mod_client_index.html.twig:312
 #: modules/Client/html_admin/mod_client_manage.html.twig:94
 #: modules/Client/html_admin/mod_client_manage.html.twig:211
+#: modules/Client/html_admin/mod_client_new_form.html.twig:47
 #: modules/Staff/html_admin/mod_staff_index.html.twig:32
 #: modules/Staff/html_admin/mod_staff_index.html.twig:80
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:60
@@ -3036,24 +3043,24 @@ msgstr "Összes csoport"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:52
 #: modules/Client/html_admin/mod_client_index.html.twig:211
-#: modules/Client/html_admin/mod_client_index.html.twig:299
 #: modules/Client/html_admin/mod_client_manage.html.twig:79
 #: modules/Client/html_admin/mod_client_manage.html.twig:164
 #: modules/Client/html_admin/mod_client_manage.html.twig:456
 #: modules/Client/html_admin/mod_client_manage.html.twig:525
 #: modules/Client/html_admin/mod_client_manage.html.twig:595
 #: modules/Client/html_admin/mod_client_manage.html.twig:814
+#: modules/Client/html_admin/mod_client_new_form.html.twig:37
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:45
 #: modules/Email/html_admin/mod_email_settings.html.twig:195
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:52
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:214
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:50
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:68
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:206
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:680
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:63
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:118
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:39
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:132
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:81
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:41
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:167
@@ -3068,7 +3075,7 @@ msgstr "Összes csoport"
 #: modules/Order/html_admin/mod_order_manage.html.twig:593
 #: modules/Order/html_admin/mod_order_manage.html.twig:651
 #: modules/Order/html_client/mod_order_list.html.twig:34
-#: modules/Order/html_client/mod_order_manage.html.twig:139
+#: modules/Order/html_client/mod_order_manage.html.twig:143
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:33
 #: modules/Product/html_admin/mod_product_addons.html.twig:47
 #: modules/Product/html_admin/mod_product_addons.html.twig:87
@@ -3103,13 +3110,13 @@ msgstr "Minden"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:60
 #: modules/Client/html_admin/mod_client_index.html.twig:120
-#: modules/Client/html_admin/mod_client_index.html.twig:303
 #: modules/Client/html_admin/mod_client_manage.html.twig:168
+#: modules/Client/html_admin/mod_client_new_form.html.twig:40
 #: modules/Client/html_admin/mod_client_settings.html.twig:108
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:138
 #: modules/Index/html_client/mod_index_dashboard.html.twig:109
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:122
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:136
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:135
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:70
 #: modules/News/html_admin/mod_news_index.html.twig:36
 #: modules/News/html_admin/mod_news_index.html.twig:111
@@ -3133,6 +3140,7 @@ msgstr "Aktív"
 #: modules/Client/html_admin/mod_client_index.html.twig:64
 #: modules/Client/html_admin/mod_client_index.html.twig:134
 #: modules/Client/html_admin/mod_client_manage.html.twig:172
+#: modules/Client/html_admin/mod_client_new_form.html.twig:41
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:71
 #: modules/Order/html_admin/mod_order_index.html.twig:133
 #: themes/admin_default/html/macro_functions.html.twig:124
@@ -3142,11 +3150,11 @@ msgstr "Felfüggesztett"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:68
 #: modules/Client/html_admin/mod_client_index.html.twig:148
-#: modules/Client/html_admin/mod_client_index.html.twig:307
 #: modules/Client/html_admin/mod_client_manage.html.twig:176
+#: modules/Client/html_admin/mod_client_new_form.html.twig:42
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:222
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:126
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:140
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:139
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:72
 #: themes/admin_default/html/macro_functions.html.twig:126
 #: themes/huraga/html/macro_functions.html.twig:41
@@ -3159,7 +3167,7 @@ msgid "Registration date"
 msgstr "Regisztráció dátuma"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:103
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:113
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:110
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:82
 #: modules/Order/html_admin/mod_order_index.html.twig:88
 #: modules/Support/html_admin/mod_support_tickets.html.twig:105
@@ -3169,7 +3177,7 @@ msgstr "Szűrő"
 #: modules/Client/html_admin/mod_client_index.html.twig:104
 #: modules/Email/html_admin/mod_email_template.html.twig:77
 #: modules/Email/html_admin/mod_email_template.html.twig:80
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:114
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:111
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:83
 #: modules/Order/html_admin/mod_order_index.html.twig:89
 #: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
@@ -3186,7 +3194,7 @@ msgstr "Újrakezdés"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:81
 #: modules/Index/html_client/mod_index_dashboard.html.twig:107
 #: modules/Index/html_client/mod_index_dashboard.html.twig:130
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:172
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:169
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:92
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:593
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:622
@@ -3221,9 +3229,9 @@ msgid "New Group"
 msgstr "Új csoport"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:210
-#: modules/Client/html_admin/mod_client_index.html.twig:337
 #: modules/Client/html_admin/mod_client_manage.html.twig:71
 #: modules/Client/html_admin/mod_client_manage.html.twig:189
+#: modules/Client/html_admin/mod_client_new_form.html.twig:85
 #: modules/Client/html_admin/mod_client_settings.html.twig:76
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:383
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:445
@@ -3245,132 +3253,11 @@ msgstr "Cég"
 msgid "Export Clients"
 msgstr "Ügyfelek exportálása"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:314
-#: modules/Client/html_admin/mod_client_manage.html.twig:213
-msgid "Select group"
-msgstr "Csoport kiválasztása"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:343
-#: modules/Client/html_admin/mod_client_manage.html.twig:282
-#: modules/Client/html_admin/mod_client_settings.html.twig:84
-#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:192
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:145
-msgid "Address Line 1"
-msgstr "Címsor 1"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:349
-#: modules/Client/html_admin/mod_client_manage.html.twig:288
-#: modules/Client/html_admin/mod_client_settings.html.twig:85
-#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:198
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:150
-msgid "Address Line 2"
-msgstr "Címsor 2"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:355
-#: modules/Client/html_admin/mod_client_manage.html.twig:308
-#: modules/Client/html_admin/mod_client_settings.html.twig:82
-#: modules/Client/html_client/mod_client_profile.html.twig:132
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:168
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:169
-#: modules/Page/html_client/mod_page_signup.html.twig:99
-#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
-msgid "City"
-msgstr "Város"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:361
-#: modules/Client/html_admin/mod_client_manage.html.twig:301
-#: modules/Client/html_admin/mod_client_settings.html.twig:83
-#: modules/Client/html_client/mod_client_profile.html.twig:148
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:126
-#: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:194
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
-#: modules/Page/html_client/mod_page_signup.html.twig:119
-#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
-msgid "State"
-msgstr "Állam"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:370
-#: modules/Client/html_admin/mod_client_manage.html.twig:297
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:484
-msgid "Select country"
-msgstr "Ország kiválasztása"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:374
-#: modules/Client/html_admin/mod_client_manage.html.twig:314
-msgid "Postcode"
-msgstr "Irányítószám"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:380
-#: modules/Client/html_admin/mod_client_manage.html.twig:320
-#: modules/Client/html_admin/mod_client_settings.html.twig:87
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:488
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:122
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:76
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:131
-#: modules/Invoice/pdf_template/default-pdf.twig:41
-#: modules/Invoice/pdf_template/default-pdf.twig:53
-#: modules/Invoice/pdf_template/default-pdf.twig:110
-#: modules/System/html_admin/mod_system_settings.html.twig:74
-msgid "Phone"
-msgstr "Telefon"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:391
-#: modules/Client/html_admin/mod_client_manage.html.twig:98
-#: modules/Client/html_admin/mod_client_manage.html.twig:346
-#: modules/Client/html_client/mod_client_profile.html.twig:34
-#: modules/Client/html_client/mod_client_profile.html.twig:216
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:157
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:147
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:35
-msgid "Currency"
-msgstr "Pénznem"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:393
-#: modules/Client/html_admin/mod_client_manage.html.twig:348
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:145
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:159
-msgid "Select currency"
-msgstr "Pénznem kiválasztása"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:397
-#: modules/Client/html_admin/mod_client_manage.html.twig:405
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:36
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:128
-#: modules/Page/html_client/mod_page_login.html.twig:34
-#: modules/Page/html_client/mod_page_signup.html.twig:159
-#: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:121
-#: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:33
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:12
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:52
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:88
-#: modules/Staff/html_admin/mod_staff_index.html.twig:103
-#: modules/Staff/html_admin/mod_staff_login.html.twig:28
-#: modules/Staff/html_admin/mod_staff_login.html.twig:55
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:44
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:221
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:36
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:201
-msgid "Password"
-msgstr "Jelszó"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:403
-#: modules/Client/html_admin/mod_client_index.html.twig:455
+#: modules/Client/html_admin/mod_client_index.html.twig:345
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:138
 #: modules/Email/html_admin/mod_email_settings.html.twig:177
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:272
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:163
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:162
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:133
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:105
 #: modules/News/html_admin/mod_news_index.html.twig:123
@@ -3384,8 +3271,8 @@ msgstr "Jelszó"
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:173
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:144
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:199
-#: modules/Support/html_admin/mod_support_tickets.html.twig:330
-#: modules/Support/html_admin/mod_support_tickets.html.twig:364
+#: modules/Support/html_admin/mod_support_tickets.html.twig:329
+#: modules/Support/html_admin/mod_support_tickets.html.twig:363
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:52
 msgid "Create"
 msgstr "Hozzon létre"
@@ -3457,6 +3344,20 @@ msgstr "E-mailek"
 msgid "Transactions"
 msgstr "Tranzakciók"
 
+#: modules/Client/html_admin/mod_client_manage.html.twig:98
+#: modules/Client/html_admin/mod_client_manage.html.twig:346
+#: modules/Client/html_admin/mod_client_new_form.html.twig:53
+#: modules/Client/html_client/mod_client_profile.html.twig:34
+#: modules/Client/html_client/mod_client_profile.html.twig:216
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:44
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:156
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:147
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:35
+msgid "Currency"
+msgstr "Pénznem"
+
 #: modules/Client/html_admin/mod_client_manage.html.twig:102
 msgid "Fund balance"
 msgstr "Alapegyenleg"
@@ -3467,10 +3368,10 @@ msgstr "Alapegyenleg"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:340
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:34
 #: modules/Order/html_admin/mod_order_manage.html.twig:388
-#: modules/Order/html_client/mod_order_manage.html.twig:257
+#: modules/Order/html_client/mod_order_manage.html.twig:261
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
-#: modules/Support/html_admin/mod_support_tickets.html.twig:390
-#: modules/System/html_admin/mod_system_settings.html.twig:229
+#: modules/Support/html_admin/mod_support_tickets.html.twig:389
+#: modules/System/html_admin/mod_system_settings.html.twig:227
 msgid "Notes"
 msgstr "Megjegyzések"
 
@@ -3494,7 +3395,7 @@ msgstr "API kulcs"
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:146
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
 #: modules/Page/html_client/mod_page_signup.html.twig:83
-#: modules/System/html_admin/mod_system_settings.html.twig:80
+#: modules/System/html_admin/mod_system_settings.html.twig:78
 msgid "Address"
 msgstr "Cím"
 
@@ -3571,7 +3472,7 @@ msgstr "Email cím visszaigazolva"
 #: modules/Client/html_admin/mod_client_manage.html.twig:202
 #: modules/Client/html_admin/mod_client_manage.html.twig:356
 #: modules/Email/html_admin/mod_email_settings.html.twig:143
-#: modules/Email/html_admin/mod_email_settings.html.twig:270
+#: modules/Email/html_admin/mod_email_settings.html.twig:291
 #: modules/Email/html_admin/mod_email_template.html.twig:110
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:75
@@ -3613,10 +3514,10 @@ msgstr "Email cím visszaigazolva"
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:100
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:29
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:42
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:55
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:68
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:28
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:41
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:54
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:67
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:53
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:69
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:85
@@ -3625,10 +3526,10 @@ msgstr "Email cím visszaigazolva"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:160
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:70
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:41
-#: modules/System/html_admin/mod_system_settings.html.twig:140
-#: modules/System/html_admin/mod_system_settings.html.twig:153
-#: modules/System/html_admin/mod_system_settings.html.twig:171
-#: modules/System/html_admin/mod_system_settings.html.twig:192
+#: modules/System/html_admin/mod_system_settings.html.twig:138
+#: modules/System/html_admin/mod_system_settings.html.twig:151
+#: modules/System/html_admin/mod_system_settings.html.twig:169
+#: modules/System/html_admin/mod_system_settings.html.twig:190
 #: themes/admin_default/html/macro_functions.html.twig:3
 #: themes/huraga/config/settings.html.twig:20
 #: themes/huraga/config/settings.html.twig:28
@@ -3650,7 +3551,7 @@ msgstr "Igen"
 #: modules/Client/html_admin/mod_client_manage.html.twig:206
 #: modules/Client/html_admin/mod_client_manage.html.twig:360
 #: modules/Email/html_admin/mod_email_settings.html.twig:147
-#: modules/Email/html_admin/mod_email_settings.html.twig:274
+#: modules/Email/html_admin/mod_email_settings.html.twig:295
 #: modules/Email/html_admin/mod_email_template.html.twig:114
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:79
@@ -3693,10 +3594,10 @@ msgstr "Igen"
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:63
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:104
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:33
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:46
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:59
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:72
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:32
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:45
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:58
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:71
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:55
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:71
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:87
@@ -3705,10 +3606,10 @@ msgstr "Igen"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:166
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:74
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:45
-#: modules/System/html_admin/mod_system_settings.html.twig:144
-#: modules/System/html_admin/mod_system_settings.html.twig:157
-#: modules/System/html_admin/mod_system_settings.html.twig:177
-#: modules/System/html_admin/mod_system_settings.html.twig:198
+#: modules/System/html_admin/mod_system_settings.html.twig:142
+#: modules/System/html_admin/mod_system_settings.html.twig:155
+#: modules/System/html_admin/mod_system_settings.html.twig:175
+#: modules/System/html_admin/mod_system_settings.html.twig:196
 #: themes/admin_default/html/macro_functions.html.twig:5
 #: themes/huraga/config/settings.html.twig:21
 #: themes/huraga/config/settings.html.twig:29
@@ -3727,12 +3628,17 @@ msgstr "Igen"
 msgid "No"
 msgstr "Nem"
 
+#: modules/Client/html_admin/mod_client_manage.html.twig:213
+#: modules/Client/html_admin/mod_client_new_form.html.twig:49
+msgid "Select group"
+msgstr "Csoport kiválasztása"
+
 #: modules/Client/html_admin/mod_client_manage.html.twig:236
 msgid "Date of birth"
 msgstr "Születési dátum"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:262
-#: modules/System/html_admin/mod_system_settings.html.twig:33
+#: modules/System/html_admin/mod_system_settings.html.twig:31
 msgid "Company details"
 msgstr "A vállalat adatai"
 
@@ -3749,6 +3655,73 @@ msgstr "Vállalat HÉA-szám"
 #: modules/Client/html_admin/mod_client_manage.html.twig:280
 msgid "Address and contact details"
 msgstr "Cím és elérhetőségek"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:282
+#: modules/Client/html_admin/mod_client_settings.html.twig:84
+#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:192
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:145
+msgid "Address Line 1"
+msgstr "Címsor 1"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:288
+#: modules/Client/html_admin/mod_client_settings.html.twig:85
+#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:198
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:150
+msgid "Address Line 2"
+msgstr "Címsor 2"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:297
+#: modules/Client/html_admin/mod_client_new_form.html.twig:133
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:484
+msgid "Select country"
+msgstr "Ország kiválasztása"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:301
+#: modules/Client/html_admin/mod_client_settings.html.twig:83
+#: modules/Client/html_client/mod_client_profile.html.twig:148
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:126
+#: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:194
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
+#: modules/Page/html_client/mod_page_signup.html.twig:119
+#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
+msgid "State"
+msgstr "Állam"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:308
+#: modules/Client/html_admin/mod_client_new_form.html.twig:113
+#: modules/Client/html_admin/mod_client_settings.html.twig:82
+#: modules/Client/html_client/mod_client_profile.html.twig:132
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:168
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:169
+#: modules/Page/html_client/mod_page_signup.html.twig:99
+#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
+msgid "City"
+msgstr "Város"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:314
+#: modules/Client/html_admin/mod_client_new_form.html.twig:125
+msgid "Postcode"
+msgstr "Irányítószám"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:320
+#: modules/Client/html_admin/mod_client_settings.html.twig:87
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:488
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:122
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:76
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:131
+#: modules/Invoice/pdf_template/default-pdf.twig:41
+#: modules/Invoice/pdf_template/default-pdf.twig:53
+#: modules/Invoice/pdf_template/default-pdf.twig:110
+#: modules/System/html_admin/mod_system_settings.html.twig:72
+msgid "Phone"
+msgstr "Telefon"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:330
 #: modules/Client/html_client/mod_client_profile.html.twig:156
@@ -3767,6 +3740,13 @@ msgstr "Alternatív azonosító"
 #: modules/Client/html_admin/mod_client_manage.html.twig:342
 msgid "Used to identify client on foreign system. Usually used by importers"
 msgstr "Az ügyfél azonosítására szolgál az idegen rendszerben. Általában az importőrök használják"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:348
+#: modules/Client/html_admin/mod_client_new_form.html.twig:55
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:145
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:158
+msgid "Select currency"
+msgstr "Pénznem kiválasztása"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:352
 msgid "Exempt from tax"
@@ -3792,6 +3772,29 @@ msgstr "Jelszó módosítása"
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:84
 msgid "Password changed"
 msgstr "Jelszó megváltozott"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:405
+#: modules/Client/html_admin/mod_client_new_form.html.twig:31
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:36
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:128
+#: modules/Page/html_client/mod_page_login.html.twig:34
+#: modules/Page/html_client/mod_page_signup.html.twig:159
+#: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:121
+#: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:33
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:12
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:52
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:88
+#: modules/Staff/html_admin/mod_staff_index.html.twig:103
+#: modules/Staff/html_admin/mod_staff_login.html.twig:28
+#: modules/Staff/html_admin/mod_staff_login.html.twig:55
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:44
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:221
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:36
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:201
+msgid "Password"
+msgstr "Jelszó"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:412
 #: modules/Page/html_client/mod_page_signup.html.twig:165
@@ -3826,12 +3829,12 @@ msgstr "Ügyfélmegrendelések"
 #: modules/Client/html_admin/mod_client_manage.html.twig:813
 #: modules/Client/html_client/mod_client_balance.html.twig:34
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:269
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:208
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:679
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:50
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:137
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:37
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:151
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:150
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:65
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:141
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:169
@@ -3842,7 +3845,7 @@ msgstr "Összeg"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:455
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:131
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:145
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:144
 #: modules/Order/html_admin/mod_order_index.html.twig:47
 #: modules/Order/html_admin/mod_order_index.html.twig:186
 #: modules/Order/html_admin/mod_order_manage.html.twig:357
@@ -3879,9 +3882,9 @@ msgstr "Ügyféltámogatási jegyek"
 #: modules/Client/html_admin/mod_client_manage.html.twig:593
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:44
 #: modules/Order/html_admin/mod_order_manage.html.twig:649
-#: modules/Order/html_client/mod_order_manage.html.twig:178
-#: modules/Order/html_client/mod_order_manage.html.twig:211
-#: modules/Order/html_client/mod_order_manage.html.twig:245
+#: modules/Order/html_client/mod_order_manage.html.twig:182
+#: modules/Order/html_client/mod_order_manage.html.twig:215
+#: modules/Order/html_client/mod_order_manage.html.twig:249
 #: modules/Support/html_client/mod_support_ticket.html.twig:43
 #: modules/Support/html_client/mod_support_tickets.html.twig:38
 msgid "Help desk"
@@ -3898,17 +3901,17 @@ msgstr "Help desk"
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:51
 #: modules/Order/html_admin/mod_order_manage.html.twig:650
-#: modules/Order/html_client/mod_order_manage.html.twig:182
-#: modules/Order/html_client/mod_order_manage.html.twig:215
-#: modules/Order/html_client/mod_order_manage.html.twig:249
+#: modules/Order/html_client/mod_order_manage.html.twig:186
+#: modules/Order/html_client/mod_order_manage.html.twig:219
+#: modules/Order/html_client/mod_order_manage.html.twig:253
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:48
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:123
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:98
 #: modules/Support/html_admin/mod_support_ticket.html.twig:138
 #: modules/Support/html_admin/mod_support_ticket.html.twig:218
 #: modules/Support/html_admin/mod_support_tickets.html.twig:208
-#: modules/Support/html_admin/mod_support_tickets.html.twig:319
-#: modules/Support/html_admin/mod_support_tickets.html.twig:353
+#: modules/Support/html_admin/mod_support_tickets.html.twig:318
+#: modules/Support/html_admin/mod_support_tickets.html.twig:352
 #: modules/Support/html_client/mod_support_contact_us.html.twig:41
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:25
 #: modules/Support/html_client/mod_support_tickets.html.twig:37
@@ -3981,7 +3984,7 @@ msgstr "Beérkezett tranzakciók"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:810
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:16
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:676
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
@@ -3999,6 +4002,84 @@ msgstr "ID"
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:168
 msgid "Gateway"
 msgstr "Átjáró"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:5
+msgid "Create a new client"
+msgstr ""
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:16
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:433
+msgid "First name"
+msgstr "Vezetéknév"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:19
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:439
+msgid "Last name"
+msgstr "Keresztnév"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:25
+#: modules/Client/html_client/mod_client_profile.html.twig:65
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:28
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:60
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:61
+#: modules/Page/html_client/mod_page_signup.html.twig:49
+msgid "Email Address"
+msgstr "E-mail cím"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:59
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:31
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:88
+msgid "Language"
+msgstr "Nyelv"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:63
+msgid "System default"
+msgstr ""
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:71
+#: modules/Client/html_client/mod_client_profile.html.twig:116
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:218
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:220
+#: modules/Page/html_client/mod_page_signup.html.twig:135
+msgid "Phone Number"
+msgstr "Telefonszám"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:92
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:22
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:58
+msgid "Number"
+msgstr "Szám"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:95
+#: modules/System/html_admin/mod_system_settings.html.twig:110
+msgid "VAT number"
+msgstr "ÁFASZÁM"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:101
+msgid "Address 1"
+msgstr ""
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:107
+#: modules/Client/html_client/mod_client_profile.html.twig:126
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:158
+#: modules/Page/html_client/mod_page_signup.html.twig:91
+msgid "Address 2"
+msgstr "Cím 2"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:119
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:40
+msgid "State/Region"
+msgstr "Állam/régió"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:143
+msgid "Admin Notes"
+msgstr ""
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:152
+msgid "Create client"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:5
 #: modules/Client/html_admin/mod_client_settings.html.twig:21
@@ -4153,15 +4234,6 @@ msgstr "Változtasd meg az avatarodat itt"
 msgid "First Name"
 msgstr "Vezetéknév"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:65
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:28
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:60
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:61
-#: modules/Page/html_client/mod_page_signup.html.twig:49
-msgid "Email Address"
-msgstr "E-mail cím"
-
 #: modules/Client/html_client/mod_client_profile.html.twig:96
 msgid "Company Name"
 msgstr "Cégnév"
@@ -4185,20 +4257,6 @@ msgstr "Cégszám"
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:182
 msgid "Phone Country Code"
 msgstr "Telefon Országkód"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:116
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:218
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:220
-#: modules/Page/html_client/mod_page_signup.html.twig:135
-msgid "Phone Number"
-msgstr "Telefonszám"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:126
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:158
-#: modules/Page/html_client/mod_page_signup.html.twig:91
-msgid "Address 2"
-msgstr "Cím 2"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:138
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:179
@@ -4319,9 +4377,9 @@ msgstr "Jegyzet vagy todo feladat hozzáadása"
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:7
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:155
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:261
-#: modules/Order/html_client/mod_order_manage.html.twig:169
-#: modules/Order/html_client/mod_order_manage.html.twig:203
-#: modules/Order/html_client/mod_order_manage.html.twig:236
+#: modules/Order/html_client/mod_order_manage.html.twig:173
+#: modules/Order/html_client/mod_order_manage.html.twig:207
+#: modules/Order/html_client/mod_order_manage.html.twig:240
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:95
 #: modules/Support/html_admin/mod_support_ticket.html.twig:111
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:8
@@ -4748,7 +4806,7 @@ msgstr "Legutóbb frissítve"
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:48
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:81
 #: modules/Order/html_client/mod_order_list.html.twig:35
-#: modules/Order/html_client/mod_order_manage.html.twig:140
+#: modules/Order/html_client/mod_order_manage.html.twig:144
 #: modules/Support/html_client/mod_support_tickets.html.twig:41
 msgid "Actions"
 msgstr "Tevékenységek"
@@ -4790,8 +4848,8 @@ msgstr "Minden számla"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:112
 #: modules/Index/html_client/mod_index_dashboard.html.twig:83
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:60
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:144
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:58
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:141
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:210
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:34
 #: themes/admin_default/html/macro_functions.html.twig:128
@@ -4801,8 +4859,8 @@ msgstr "Fizetett"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:114
 #: modules/Index/html_client/mod_index_dashboard.html.twig:85
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:64
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:130
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:62
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:127
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:214
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:30
 #: themes/admin_default/html/macro_functions.html.twig:130
@@ -4930,7 +4988,7 @@ msgstr "Összes letiltása"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:76
 #: modules/Extension/html_admin/mod_extension_index.html.twig:41
-#: modules/Extension/html_admin/mod_extension_index.html.twig:170
+#: modules/Extension/html_admin/mod_extension_index.html.twig:172
 #: themes/admin_default/html/partial_extensions.html.twig:27
 msgid "Extension"
 msgstr "Hosszabbítás"
@@ -5027,90 +5085,108 @@ msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can co
 msgstr "A FOSSBilling alapértelmezés szerint a <em>sendmail</em> használatával küldi az e-maileket, vagy beállíthatja saját SMTP-kiszolgálóját"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:249
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:41
+msgid "From name"
+msgstr "Feladó neve"
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:252
+msgid "Leave blank to use company public name"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:257
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:45
+msgid "From email"
+msgstr "Feladó email címe"
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:260
+msgid "Leave blank to use company public email"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:267
 msgid "Queue options"
 msgstr "Várólista beállításai"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:252
+#: modules/Email/html_admin/mod_email_settings.html.twig:270
 msgid "Send emails per cron run (0 = unlimited)"
 msgstr "E-mail küldése cron futásonként (0 = korlátlan)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:256
+#: modules/Email/html_admin/mod_email_settings.html.twig:274
 msgid "Max email sending time in minutes (0 = unlimited, default 5 min.)"
 msgstr "Maximális e-mail küldési idő percben (0 = korlátlan, alapértelmezett 5 perc)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:260
+#: modules/Email/html_admin/mod_email_settings.html.twig:278
 msgid "Cancel sending email after unsuccessful tries (0 = do not cancel)"
 msgstr "Sikertelen próbálkozások után az e-mail küldésének törlése (0 = nem törli)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:266
+#: modules/Email/html_admin/mod_email_settings.html.twig:287
 msgid "Log sent emails to database"
 msgstr "Naplózza az elküldött e-maileket az adatbázisba"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:279
+#: modules/Email/html_admin/mod_email_settings.html.twig:300
 msgid "Email transport"
 msgstr "Email szállítás"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:283
+#: modules/Email/html_admin/mod_email_settings.html.twig:304
 msgid "SendMail"
 msgstr "SendMail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:287
+#: modules/Email/html_admin/mod_email_settings.html.twig:308
 msgid "SMTP"
 msgstr "SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:291
+#: modules/Email/html_admin/mod_email_settings.html.twig:312
 msgid "SendGrid"
 msgstr "SendGrid"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:295
+#: modules/Email/html_admin/mod_email_settings.html.twig:316
 msgid "Custom"
 msgstr "Custom"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:302
+#: modules/Email/html_admin/mod_email_settings.html.twig:323
 msgid "SMTP Hostname"
 msgstr "SMTP Hostnév"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:308
+#: modules/Email/html_admin/mod_email_settings.html.twig:329
 msgid "SMTP Port"
 msgstr "SMTP port"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:314
+#: modules/Email/html_admin/mod_email_settings.html.twig:335
 msgid "SMTP Username"
 msgstr "SMTP felhasználónév"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:320
+#: modules/Email/html_admin/mod_email_settings.html.twig:341
 msgid "SMTP Password"
 msgstr "SMTP jelszó"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:329
+#: modules/Email/html_admin/mod_email_settings.html.twig:350
 msgid "SendGrid API Key"
 msgstr "SendGrid API-kulcs"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:338
+#: modules/Email/html_admin/mod_email_settings.html.twig:359
 msgid "Custom DSN"
 msgstr "Egyéni DSN"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:340
+#: modules/Email/html_admin/mod_email_settings.html.twig:361
 msgid "If none of the available options exactly meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
 msgstr "Ha a rendelkezésre álló lehetőségek egyike nem felel meg teljesen az igényeidnek, definiálhatsz egy egyéni DSN-t. Ne feled, hogy a felhasználóneveknek, jelszavaknak és speciális karaktereket tartalmazó gazdagépneveknek URL-kódolásúaknak kell lenniük."
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:341
+#: modules/Email/html_admin/mod_email_settings.html.twig:362
 msgid "More information"
 msgstr "További információk"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:342
+#: modules/Email/html_admin/mod_email_settings.html.twig:363
 msgid "Example"
 msgstr "Példa"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:355
+#: modules/Email/html_admin/mod_email_settings.html.twig:376
 msgid "Send a test email to yourself"
 msgstr "Teszt e-mail küldése saját magának"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:357
+#: modules/Email/html_admin/mod_email_settings.html.twig:378
 msgid "Update email settings"
 msgstr "E-mail beállítások frissítése"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:371
+#: modules/Email/html_admin/mod_email_settings.html.twig:392
 msgid "Email was successfully sent"
 msgstr "E-mail sikeresen elküldésre került"
 
@@ -5270,116 +5346,116 @@ msgstr "FOSSBilling bővítmények"
 msgid "Activate or deactivate extensions"
 msgstr "Bővítmények aktiválása vagy deaktiválása"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:65
+#: modules/Extension/html_admin/mod_extension_index.html.twig:66
 msgid "Learn more"
 msgstr "Tudjon meg többet"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:76
+#: modules/Extension/html_admin/mod_extension_index.html.twig:77
 msgid "Deactivate"
 msgstr "Kikapcsolás"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:87
+#: modules/Extension/html_admin/mod_extension_index.html.twig:88
 #: modules/Order/html_admin/mod_order_manage.html.twig:178
 #: modules/Order/html_admin/mod_order_manage.html.twig:269
 msgid "Activate"
 msgstr "Aktiválás"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:120
+#: modules/Extension/html_admin/mod_extension_index.html.twig:122
 msgid "Modules on the extension directory"
 msgstr "Modulok a bővítmények könyvtárában"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:121
+#: modules/Extension/html_admin/mod_extension_index.html.twig:123
 msgid "These are all modules available for installation from the <a href=\"https://extensions.fossbilling.org/\">extension directory</a> at the click of a button."
 msgstr "Ez mind egy kattintással telepíthető modul a <a href=\"https://extensions.fossbilling.org/\">bővítmények könyvtárból</a>."
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:130
+#: modules/Extension/html_admin/mod_extension_index.html.twig:132
 msgid "Extending FOSSBilling"
 msgstr "A FOSSBilling kiterjesztése"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:131
+#: modules/Extension/html_admin/mod_extension_index.html.twig:133
 msgid "FOSSBilling gives developers all the capabilities to customize, integrate & extend the core system into your own website & applications."
 msgstr "A FOSSBilling minden lehetőséget megad a fejlesztőknek, hogy az alaprendszert testre szabhassák, integrálhassák és bővíthessék a saját weboldalukba és alkalmazásaikba."
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:135
+#: modules/Extension/html_admin/mod_extension_index.html.twig:137
 msgid "More extensions"
 msgstr "További bővítmények"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:136
+#: modules/Extension/html_admin/mod_extension_index.html.twig:138
 msgid "If you cannot find the extensions you are looking for in the admin area, please visit the extension directory at <a href=\"https://extensions.fossbilling.org\" target=\"_blank\">https://extensions.fossbilling.org</a>."
 msgstr "Amennyiben nem találja a keresett bővítményt az admin felületen, kérem látogasson el a bővítmények könyvtárba a <a href=\"https://extensions.fossbilling.org\" target=\"_blank\">https://extensions.fossbilling.org</a> weboldalon."
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:138
+#: modules/Extension/html_admin/mod_extension_index.html.twig:140
 msgid "How to create a new extension"
 msgstr "Hogyan készíts egy új bővítményt"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:140
+#: modules/Extension/html_admin/mod_extension_index.html.twig:142
 msgid "Create a <a href=\"https://github.com/signup/free\" target=\"_blank\">GitHub</a> account for free."
 msgstr "Készíts ingyenes <a href=\"https://github.com/signup/free\" target=\"_blank\">Github</a> fiókot."
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:141
+#: modules/Extension/html_admin/mod_extension_index.html.twig:143
 msgid "Create a new public repository dedicated to the extension only."
 msgstr "Készíts egy új publikus gyűjteményt amely csak a bővítményhez van dedikálva."
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:142
+#: modules/Extension/html_admin/mod_extension_index.html.twig:144
 msgid "The repository must have a valid manifest file for your extension in the JSON format. For more information, please refer <a href=\"https://github.com/FOSSBilling/example-extension\" target=\"_blank\">to our example extension</a>."
 msgstr "A gyűjteménynek tartalmaznia kell egy érvényes JSON formátumú manifest fájlt. További információért kövesse <a href=\"https://github.com/FOSSBilling/example-extension\" target=\"_blank\">a példa kiterjesztést</a>."
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:143
+#: modules/Extension/html_admin/mod_extension_index.html.twig:145
 msgid "Create a pull request <a href=\"https://github.com/FOSSBilling/extension-directory\">here</a>."
 msgstr "Hozz létre egy pull requestet <a href=\"https://github.com/FOSSBilling/extension-directory\">itt</a>."
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:144
+#: modules/Extension/html_admin/mod_extension_index.html.twig:146
 msgid "The FOSSBilling team will review your extension and contact you if there are any issues."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:145
+#: modules/Extension/html_admin/mod_extension_index.html.twig:147
 msgid "Registered extensions will then appear on the extension directory."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:148
+#: modules/Extension/html_admin/mod_extension_index.html.twig:150
 msgid "Supported extension types"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:151
+#: modules/Extension/html_admin/mod_extension_index.html.twig:153
 msgid "Server managers"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:152
+#: modules/Extension/html_admin/mod_extension_index.html.twig:154
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:195
 msgid "Domain registrars"
 msgstr "Tartományregisztrálók"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:153
+#: modules/Extension/html_admin/mod_extension_index.html.twig:155
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:26
 msgid "Client area themes"
 msgstr "Ügyfélköri témák"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:154
+#: modules/Extension/html_admin/mod_extension_index.html.twig:156
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:93
 msgid "Admin area themes"
 msgstr "Adminisztrációs terület témái"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:155
+#: modules/Extension/html_admin/mod_extension_index.html.twig:157
 msgid "Translations for client and admin areas"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:156
+#: modules/Extension/html_admin/mod_extension_index.html.twig:158
 msgid "Event hooks - Hooks can be injected into the process, change its behaviour, stop executing actions"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:157
+#: modules/Extension/html_admin/mod_extension_index.html.twig:159
 msgid "API module - External program which uses FOSSBilling API"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:160
+#: modules/Extension/html_admin/mod_extension_index.html.twig:162
 msgid "Extension support"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:161
+#: modules/Extension/html_admin/mod_extension_index.html.twig:163
 msgid "Contact extensions developers directly for support. You can find issue tracker on the extension directory."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:171
+#: modules/Extension/html_admin/mod_extension_index.html.twig:173
 msgid "Hook"
 msgstr "Hook"
 
@@ -5395,11 +5471,6 @@ msgstr "Új fordítások"
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:26
 msgid "Enabled translations"
 msgstr "Engedélyezett fordítások"
-
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:31
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:88
-msgid "Language"
-msgstr "Nyelv"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:32
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:89
@@ -5488,7 +5559,7 @@ msgid "Read only"
 msgstr "Csak olvasás"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:87
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:7
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:6
 msgid "Prefix"
 msgstr "Előtag"
 
@@ -5738,7 +5809,7 @@ msgstr "Regisztráció"
 #: modules/Order/html_admin/mod_order_manage.html.twig:75
 #: modules/Order/html_client/mod_order_index.html.twig:5
 #: modules/Order/html_client/mod_order_index.html.twig:12
-#: modules/Order/html_client/mod_order_manage.html.twig:35
+#: modules/Order/html_client/mod_order_manage.html.twig:39
 #: modules/Order/html_client/mod_order_product.html.twig:5
 #: modules/Order/html_client/mod_order_product.html.twig:12
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:4
@@ -5867,7 +5938,6 @@ msgstr "Fejlesztőknek. Olvassa el"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:103
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:246
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
 msgid "FOSSBilling documentation"
 msgstr "FOSSBilling dokumentáció"
 
@@ -5896,13 +5966,8 @@ msgstr ""
 msgid "Filter invoices"
 msgstr "Számlák szűrése"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:23
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:58
-msgid "Number"
-msgstr "Szám"
-
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:29
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:299
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:28
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:295
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:62
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
@@ -5917,8 +5982,8 @@ msgstr "Szám"
 msgid "Client"
 msgstr "Ügyfél"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:32
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:303
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:31
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:299
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:106
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:127
 #: modules/Order/html_admin/mod_order_index.html.twig:281
@@ -5926,51 +5991,51 @@ msgstr "Ügyfél"
 msgid "Start typing the client name or ID"
 msgstr "Kezdje el beírni az ügyfél nevét vagy azonosítóját"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:48
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:37
 msgid "All currencies"
 msgstr ""
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:56
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:43
 #: modules/Order/html_admin/mod_order_index.html.twig:31
 #: modules/Support/html_admin/mod_support_tickets.html.twig:66
 msgid "All statuses"
 msgstr "Minden státusz"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:68
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:158
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:66
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:155
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:218
 #: themes/admin_default/html/macro_functions.html.twig:132
 #: themes/huraga/html/macro_functions.html.twig:47
 msgid "Refunded"
 msgstr "Visszatérített"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:84
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:82
 msgid "Issue date"
 msgstr "A kiadás dátuma"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:192
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:189
 msgid "New Invoice"
 msgstr "Új számla"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:212
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:209
 #: modules/Order/html_admin/mod_order_manage.html.twig:539
 msgid "Issued at"
 msgstr "Kiadva"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:213
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:210
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:315
 #: modules/Order/html_admin/mod_order_manage.html.twig:540
 msgid "Paid at"
 msgstr "Fizetett"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:284
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:288
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:281
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:285
 msgid "Export Invoices"
 msgstr "Számlák exportálása"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:316
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:311
 msgid "Prepare"
 msgstr "Elkészítés"
 
@@ -5991,7 +6056,7 @@ msgstr "Számla"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:36
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:31
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:31
-#: modules/Order/html_client/mod_order_manage.html.twig:154
+#: modules/Order/html_client/mod_order_manage.html.twig:158
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:5
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:34
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
@@ -6123,14 +6188,6 @@ msgstr "A cég adatai a vásárlás pillanatában"
 msgid "Client details at the moment of purchase"
 msgstr "Ügyfél adatai a vásárlás pillanatában"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:433
-msgid "First name"
-msgstr "Vezetéknév"
-
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:439
-msgid "Last name"
-msgstr "Keresztnév"
-
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:494
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:222
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:175
@@ -6152,7 +6209,7 @@ msgstr "Mennyiség"
 #: modules/Order/html_admin/mod_order_manage.html.twig:345
 #: modules/Order/html_admin/mod_order_manage.html.twig:478
 #: modules/Order/html_client/mod_order_list.html.twig:32
-#: modules/Order/html_client/mod_order_manage.html.twig:136
+#: modules/Order/html_client/mod_order_manage.html.twig:140
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:17
 #: themes/admin_default/html/partial_pricing.html.twig:25
 #: themes/huraga/html/partial_pricing.html.twig:54
@@ -6288,9 +6345,9 @@ msgid "Maximum amount for add funds invoice"
 msgstr "Az összeg hozzáadása számla maximális összege"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:169
-#: modules/System/html_admin/mod_system_settings.html.twig:211
-#: modules/System/html_admin/mod_system_settings.html.twig:234
-#: modules/System/html_admin/mod_system_settings.html.twig:499
+#: modules/System/html_admin/mod_system_settings.html.twig:209
+#: modules/System/html_admin/mod_system_settings.html.twig:232
+#: modules/System/html_admin/mod_system_settings.html.twig:517
 msgid "Update settings"
 msgstr "Beállítások mentése"
 
@@ -6311,7 +6368,7 @@ msgstr "Fizetési mód"
 
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:58
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:112
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:126
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:125
 msgid "Subscription ID on payment gateway"
 msgstr "Előfizetés-azonosító a fizetési átjárón"
 
@@ -6320,20 +6377,20 @@ msgid "Subscription ID on PG"
 msgstr "Előfizetés azonosítója PG-n"
 
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:106
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:120
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:119
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:155
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:47
 msgid "Payment Gateway"
 msgstr "Fizetési átjáró"
 
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:108
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:122
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:121
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:157
 msgid "Select payment gateway"
 msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:133
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:147
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:146
 msgid "Select period"
 msgstr ""
 
@@ -6348,10 +6405,6 @@ msgstr "Új adószabály"
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:25
 msgid "Tax settings"
 msgstr "Adó beállítások"
-
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:40
-msgid "State/Region"
-msgstr "Állam/régió"
 
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:41
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:111
@@ -6682,14 +6735,14 @@ msgid "Invoice Status"
 msgstr "Számla státusza"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
-#: modules/System/html_admin/mod_system_settings.html.twig:118
+#: modules/System/html_admin/mod_system_settings.html.twig:116
 #: themes/huraga/html/layout_default.html.twig:195
 msgid "Bank Name"
 msgstr "Bank neve"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
-#: modules/System/html_admin/mod_system_settings.html.twig:124
+#: modules/System/html_admin/mod_system_settings.html.twig:122
 #: themes/huraga/html/layout_default.html.twig:195
 msgid "BIC / SWIFT Code"
 msgstr "BIC / SWIFT kód"
@@ -6734,7 +6787,7 @@ msgstr "Státusz"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:64
 #: modules/Order/html_admin/mod_order_index.html.twig:41
-#: modules/Order/html_admin/mod_order_index.html.twig:296
+#: modules/Order/html_admin/mod_order_index.html.twig:295
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
 #: themes/admin_default/html/partial_menu_top.html.twig:15
 msgid "Product"
@@ -6792,21 +6845,13 @@ msgstr "Mass Mail beállítások"
 msgid "Client to send test email"
 msgstr "Ügyfél teszt e-mail küldéséhez"
 
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:139
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:138
 msgid "Test emails will be sent to: "
 msgstr "A teszt e-maileket a következő címre küldjük: "
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:11
 msgid "Send Email Message"
 msgstr "E-mail küldése"
-
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:41
-msgid "From name"
-msgstr "Feladó neve"
-
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:45
-msgid "From email"
-msgstr "Feladó email címe"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:60
 msgid "Recipients filter"
@@ -6989,7 +7034,7 @@ msgstr "Függőben lévő beállítás"
 msgid "Export Orders"
 msgstr "Rendelések EXPORT"
 
-#: modules/Order/html_admin/mod_order_index.html.twig:301
+#: modules/Order/html_admin/mod_order_index.html.twig:300
 #: themes/huraga/html/partial_pricing.html.twig:78
 msgid "Continue"
 msgstr "Folytatás"
@@ -7012,7 +7057,7 @@ msgid "Service management"
 msgstr "Szolgáltatásmenedzsment"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:56
-#: modules/Order/html_client/mod_order_manage.html.twig:126
+#: modules/Order/html_client/mod_order_manage.html.twig:130
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:20
 #: modules/Product/html_admin/mod_product_addons.html.twig:5
 #: modules/Product/html_admin/mod_product_addons.html.twig:19
@@ -7026,7 +7071,7 @@ msgid "History"
 msgstr "Előzmények"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:87
-#: modules/Order/html_client/mod_order_manage.html.twig:45
+#: modules/Order/html_client/mod_order_manage.html.twig:49
 msgid "Payment amount"
 msgstr "Fizetési összeg"
 
@@ -7039,12 +7084,12 @@ msgid "Payment amount after discount"
 msgstr "Fizetési összeg kedvezmény után"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:101
-#: modules/Order/html_client/mod_order_manage.html.twig:57
+#: modules/Order/html_client/mod_order_manage.html.twig:61
 msgid "Order status"
 msgstr "Rendelés állapota"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:120
-#: modules/Order/html_client/mod_order_manage.html.twig:82
+#: modules/Order/html_client/mod_order_manage.html.twig:86
 msgid "Order notes"
 msgstr "Megjegyzés, üzenet"
 
@@ -7073,7 +7118,7 @@ msgid "Order promo code"
 msgstr "Promóciós kód megrendelése"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:156
-#: modules/Order/html_client/mod_order_manage.html.twig:89
+#: modules/Order/html_client/mod_order_manage.html.twig:93
 msgid "Active support tickets"
 msgstr "Aktív támogatást jegyek"
 
@@ -7149,7 +7194,7 @@ msgid "Changes status without performing action"
 msgstr "Állapot módosítása művelet végrehajtása nélkül"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:351
-#: modules/Order/html_client/mod_order_manage.html.twig:186
+#: modules/Order/html_client/mod_order_manage.html.twig:190
 msgid "Reason"
 msgstr "Ok"
 
@@ -7170,24 +7215,24 @@ msgid "Please be cautious and make sure you know what you are doing when editing
 msgstr "Kérjük, legyen óvatos, és győződjön meg róla, hogy tudja, mit csinál a rendelési konfiguráció szerkesztésekor! A FOSSBilling ezekre a paraméterekre támaszkodik, és váratlan eredményeket kaphat, ha néhányat megváltoztat."
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:471
-#: modules/Order/html_client/mod_order_manage.html.twig:127
+#: modules/Order/html_client/mod_order_manage.html.twig:131
 msgid "Addons you have ordered with this service"
 msgstr "A szolgáltatással megrendelt kiegészítők"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:476
 #: modules/Order/html_client/mod_order_list.html.twig:31
-#: modules/Order/html_client/mod_order_manage.html.twig:135
+#: modules/Order/html_client/mod_order_manage.html.twig:139
 msgid "Product/Service"
 msgstr "Termék/szolgáltatás"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:477
-#: modules/Order/html_client/mod_order_manage.html.twig:137
+#: modules/Order/html_client/mod_order_manage.html.twig:141
 msgid "Billing Cycle"
 msgstr "Számlázási ciklus"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:479
 #: modules/Order/html_client/mod_order_list.html.twig:33
-#: modules/Order/html_client/mod_order_manage.html.twig:138
+#: modules/Order/html_client/mod_order_manage.html.twig:142
 msgid "Next due date"
 msgstr "Következő esedékesség dátuma"
 
@@ -7321,74 +7366,74 @@ msgstr "Megrendelés azonosító"
 msgid "No orders yet"
 msgstr "Még nincs megrendelés"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:26
+#: modules/Order/html_client/mod_order_manage.html.twig:30
 msgid "Service details"
 msgstr "Szolgáltatás részletei"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:27
+#: modules/Order/html_client/mod_order_manage.html.twig:31
 msgid "All information about your service"
 msgstr "Minden információ a szolgáltatásról"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:40
+#: modules/Order/html_client/mod_order_manage.html.twig:44
 msgid "Product name"
 msgstr "Termék neve"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:51
+#: modules/Order/html_client/mod_order_manage.html.twig:55
 #: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:33
 msgid "Billing cycle"
 msgstr "Számlázási ciklus"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:64
+#: modules/Order/html_client/mod_order_manage.html.twig:68
 msgid "Order created"
 msgstr "Rendelés létrehozva"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:69
+#: modules/Order/html_client/mod_order_manage.html.twig:73
 msgid "Activated at"
 msgstr "Aktiválva"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:75
+#: modules/Order/html_client/mod_order_manage.html.twig:79
 msgid "Renewal date"
 msgstr "Megújítás dátuma"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:102
+#: modules/Order/html_client/mod_order_manage.html.twig:106
 msgid "Renew now"
 msgstr "Megújítás most"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:105
+#: modules/Order/html_client/mod_order_manage.html.twig:109
 msgid "Request Upgrade"
 msgstr "Frissítés kérése"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:107
-#: modules/Order/html_client/mod_order_manage.html.twig:224
+#: modules/Order/html_client/mod_order_manage.html.twig:111
+#: modules/Order/html_client/mod_order_manage.html.twig:228
 msgid "Open ticket"
 msgstr "Nyitott jegy"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:109
+#: modules/Order/html_client/mod_order_manage.html.twig:113
 msgid "Request cancellation"
 msgstr "Lemondás kérése"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:168
+#: modules/Order/html_client/mod_order_manage.html.twig:172
 msgid "Submit cancellation request"
 msgstr "Törlési kérelem benyújtása"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:191
-#: modules/Order/html_client/mod_order_manage.html.twig:262
+#: modules/Order/html_client/mod_order_manage.html.twig:195
+#: modules/Order/html_client/mod_order_manage.html.twig:266
 msgid "Request"
 msgstr "Kérés"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:202
+#: modules/Order/html_client/mod_order_manage.html.twig:206
 msgid "Submit new support ticket"
 msgstr "Új támogatási jegy elküldése"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:235
+#: modules/Order/html_client/mod_order_manage.html.twig:239
 msgid "Submit upgrade request"
 msgstr "Frissítési kérelem elküldése"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:253
+#: modules/Order/html_client/mod_order_manage.html.twig:257
 msgid "Upgrade to"
 msgstr "Frissítse most"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:258
+#: modules/Order/html_client/mod_order_manage.html.twig:262
 msgid "I would like to upgrade"
 msgstr "Frissíteni szeretnék"
 
@@ -7601,7 +7646,7 @@ msgid "Total amount will be deducted from account balance"
 msgstr "A teljes összeg levonásra kerül a számlaegyenlegből"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:190
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:200
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:201
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:261
 #: modules/Page/html_client/mod_page_signup.html.twig:176
@@ -7610,7 +7655,7 @@ msgid "terms of service"
 msgstr "Felhasználási feltételek"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:190
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:200
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:201
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:261
 #: modules/Page/html_client/mod_page_signup.html.twig:176
@@ -7623,11 +7668,15 @@ msgstr "adatvédelmi irányelvek"
 msgid "Checkout"
 msgstr "Pénztár"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:217
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:195
+msgid "You must first login / create an account before you can checkout."
+msgstr ""
+
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:218
 msgid "Are you sure you want to remove this item from cart?"
 msgstr "Biztosan el akarja távolítani ezt a terméket a kosárból?"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:221
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:222
 msgid "Item was removed from cart"
 msgstr "A terméket eltávolították a kosárból"
 
@@ -7684,7 +7733,7 @@ msgid "Powered by"
 msgstr "Készítette"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:109
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:128
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:130
 msgid "You logged in successfully"
 msgstr "Sikeresen bejelentkezett"
 
@@ -7715,7 +7764,7 @@ msgid "About us"
 msgstr "Rólunk"
 
 #: modules/Page/html_client/mod_page_about-us.html.twig:9
-#: modules/System/html_admin/mod_system_settings.html.twig:45
+#: modules/System/html_admin/mod_system_settings.html.twig:43
 msgid "About"
 msgstr "Rólunk"
 
@@ -7834,7 +7883,7 @@ msgstr "Fizetős támogatás beállítása az ügyfélszolgálatokhoz"
 #: modules/Support/html_admin/mod_support_ticket.html.twig:217
 #: modules/Support/html_admin/mod_support_tickets.html.twig:70
 #: modules/Support/html_admin/mod_support_tickets.html.twig:210
-#: modules/Support/html_admin/mod_support_tickets.html.twig:313
+#: modules/Support/html_admin/mod_support_tickets.html.twig:312
 #: modules/Support/html_client/mod_support_tickets.html.twig:90
 msgid "Helpdesk"
 msgstr "Ügyfélszolgálat"
@@ -8229,7 +8278,7 @@ msgstr "Itt konfigurálhatja a generálandó API-kulcsok hosszát. Javasoljuk, h
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:8
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:37
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:13
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:12
 msgid "Length"
 msgstr "Hossz"
 
@@ -8320,7 +8369,7 @@ msgid "Stock control settings"
 msgstr "Készletszabályozási beállítások"
 
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:4
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:19
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:18
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:14
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:43
 msgid "Plugin"
@@ -9410,54 +9459,62 @@ msgstr "Licencbeállítások"
 msgid "License settings updated"
 msgstr "Licencbeállítások frissítve"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:25
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:24
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:51
 msgid "Validate IP"
 msgstr "IP-cím ellenőrzése"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:38
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:37
 msgid "Validate Hostname"
 msgstr "Állomásnév érvényesítése"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:51
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:50
 msgid "Validate Version"
 msgstr "Verzió ellenőrzése"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:64
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:63
 msgid "Validate Path"
 msgstr "Elérési út érvényesítése"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:81
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:80
 msgid "License plugins"
 msgstr "Licencbővítmények"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:82
-msgid "FOSSBilling gives you the ability to provide your own license generation script. Follow the instructions below to install new license plugin"
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:81
+msgid "You can create your own license generation plugins for FOSSBilling. Follow these steps to add a new one:"
+msgstr ""
+
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:83
+msgid "A license plugin is a PHP class named"
+msgstr ""
+
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:83
+msgid "that must include a"
+msgstr ""
+
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:83
+msgid "method."
 msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:84
-msgid "License plugin is PHP class \"License_PluginName\" with one method"
-msgstr "A licencbővítmény PHP \"License_PluginName\" osztály, egy módszerrel"
+msgid "See the default example plugin at"
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:85
-msgid "Take a look at default plugin at"
-msgstr "Vessen egy pillantást az alapértelmezett bővítményre a"
+msgid "Save your custom plugin in"
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:86
-msgid "Create your plugin and place it to"
-msgstr "Hozza létre a bővítményt, és helyezze el"
+msgid "FOSSBilling will automatically detect your new plugin."
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:87
-msgid "FOSSBilling will automatically detect new plugin"
-msgstr "A FOSSBilling automatikusan felismeri az új bővítményt"
+msgid "Read the documentation"
+msgstr ""
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
-msgid "Read"
-msgstr "Olvassa el"
-
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
-msgid "for more information."
-msgstr "további információkért."
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:87
+msgid "for more details."
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:10
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:11
@@ -9688,7 +9745,7 @@ msgstr "Új csoport"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:207
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
-#: modules/System/html_admin/mod_system_settings.html.twig:204
+#: modules/System/html_admin/mod_system_settings.html.twig:202
 msgid "Signature"
 msgstr "Aláírás"
 
@@ -10170,23 +10227,23 @@ msgstr "Új nyilvános jegy"
 msgid "Open Ticket for Existing Client"
 msgstr "Jegy megnyitása meglévő ügyfélhez"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:337
+#: modules/Support/html_admin/mod_support_tickets.html.twig:336
 msgid "Open Public Ticket for Non-client"
 msgstr "Nyilvános jegy megnyitása nem ügyfél számára"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:341
+#: modules/Support/html_admin/mod_support_tickets.html.twig:340
 msgid "Receiver Name"
 msgstr "Címzett neve"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:343
+#: modules/Support/html_admin/mod_support_tickets.html.twig:342
 msgid "John Smith"
 msgstr "Kovács János"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:349
+#: modules/Support/html_admin/mod_support_tickets.html.twig:348
 msgid "user@domail.com"
 msgstr "user@domail.com"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:355
+#: modules/Support/html_admin/mod_support_tickets.html.twig:354
 msgid "Email Subject"
 msgstr "E-mail tárgya"
 
@@ -10288,225 +10345,241 @@ msgstr "Új jegy nyitása"
 msgid "System settings"
 msgstr "Rendszerbeállítások"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:36
+#: modules/System/html_admin/mod_system_settings.html.twig:34
 msgid "Company legal"
 msgstr "Vállalati jogi"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:39
+#: modules/System/html_admin/mod_system_settings.html.twig:37
 msgid "Countries"
 msgstr "Országok"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:42
+#: modules/System/html_admin/mod_system_settings.html.twig:40
 msgid "Cache"
 msgstr "Gyorsítótár"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:48
-#: modules/System/html_admin/mod_system_settings.html.twig:544
+#: modules/System/html_admin/mod_system_settings.html.twig:46
+#: modules/System/html_admin/mod_system_settings.html.twig:600
 msgid "Error reporting"
 msgstr "Hibajelentés"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:51
-#: modules/System/html_admin/mod_system_settings.html.twig:575
+#: modules/System/html_admin/mod_system_settings.html.twig:49
+#: modules/System/html_admin/mod_system_settings.html.twig:631
 msgid "Network interface"
 msgstr "Hálózati interfész"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:58
-#: modules/System/html_admin/mod_system_settings.html.twig:217
+#: modules/System/html_admin/mod_system_settings.html.twig:56
+#: modules/System/html_admin/mod_system_settings.html.twig:215
 msgid "Company updated"
 msgstr "Vállalat frissítve"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:82
+#: modules/System/html_admin/mod_system_settings.html.twig:80
 msgid "Address line 1"
 msgstr "Cím első sora"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:83
+#: modules/System/html_admin/mod_system_settings.html.twig:81
 msgid "Address line 2"
 msgstr "Cím második sora"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:84
+#: modules/System/html_admin/mod_system_settings.html.twig:82
 msgid "Address line 3"
 msgstr "Címsor 3"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:88
+#: modules/System/html_admin/mod_system_settings.html.twig:86
 #: themes/huraga/config/settings.html.twig:62
 msgid "Logo URL"
 msgstr "Logo URL-címe"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:94
+#: modules/System/html_admin/mod_system_settings.html.twig:92
 msgid "Logo URL (dark mode)"
 msgstr "Embléma URL-címe (sötét mód)"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:100
+#: modules/System/html_admin/mod_system_settings.html.twig:98
 msgid "Favicon"
 msgstr "Favicon"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:106
+#: modules/System/html_admin/mod_system_settings.html.twig:104
 msgid "Company number, chamber of commerce number"
 msgstr "Cégszám, kereskedelmi kamarai szám"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:112
-msgid "VAT number"
-msgstr "ÁFASZÁM"
-
-#: modules/System/html_admin/mod_system_settings.html.twig:130
+#: modules/System/html_admin/mod_system_settings.html.twig:128
 msgid "Bank Account number"
 msgstr "Bankszámlaszám"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:136
+#: modules/System/html_admin/mod_system_settings.html.twig:134
 msgid "Display bank account information on documents?"
 msgstr "Bankszámlaadatok megjelenítése a dokumentumokon?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:149
+#: modules/System/html_admin/mod_system_settings.html.twig:147
 msgid "Display bank account information on the bottom of every page?"
 msgstr "Bankszámlaadatok megjelenítése minden oldal alján?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:163
+#: modules/System/html_admin/mod_system_settings.html.twig:161
 msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr "A vendég API letiltása a FOSSBilling-verzió lekéréséhez"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:165
+#: modules/System/html_admin/mod_system_settings.html.twig:163
 msgid "Enabling this functionality may affect modules that depend on it."
 msgstr "A funkció engedélyezése hatással lehet a tőle függő modulokra."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:184
+#: modules/System/html_admin/mod_system_settings.html.twig:182
 msgid "Hide some company information in the guest API"
 msgstr "Néhány vállalati információ elrejtése a vendég API-ban"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:186
+#: modules/System/html_admin/mod_system_settings.html.twig:184
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
 msgstr "Ennek engedélyezése elrejt néhány információt a \"vállalati\" vendég API-végpontról, például a címet, a telefonszámot, az e-mail-címet, az adószámot stb."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:221
+#: modules/System/html_admin/mod_system_settings.html.twig:219
 msgid "Company terms of service, legal regulation"
 msgstr "Vállalati szolgáltatási feltételek, jogi szabályozás"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:225
+#: modules/System/html_admin/mod_system_settings.html.twig:223
 msgid "Company privacy policy"
 msgstr "Vállalati adatvédelmi szabályzat"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:240
+#: modules/System/html_admin/mod_system_settings.html.twig:238
 msgid "Countries updated"
 msgstr "Frissített országok"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:492
+#: modules/System/html_admin/mod_system_settings.html.twig:491
+msgid "Default country for new users"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:495
+msgid "No default country"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "List of countries"
 msgstr "Országok listája"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:506
+#: modules/System/html_admin/mod_system_settings.html.twig:524
 msgid "Cache control"
 msgstr "Gyorsítótár-vezérlés"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:508
+#: modules/System/html_admin/mod_system_settings.html.twig:526
 msgid "Cache directory is cleared"
 msgstr "A gyorsítótár könyvtára törölve van"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:518
+#: modules/System/html_admin/mod_system_settings.html.twig:536
 msgid "About FOSSBilling"
 msgstr "A FOSSBilling-ről"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:523
+#: modules/System/html_admin/mod_system_settings.html.twig:541
 msgid "FOSSBilling version"
 msgstr "FOSSBilling verzió"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:527
+#: modules/System/html_admin/mod_system_settings.html.twig:545
 msgid "PHP version"
 msgstr "PHP verzió"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:531
+#: modules/System/html_admin/mod_system_settings.html.twig:549
 msgid "Instance ID"
 msgstr "Példány azonosítója"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:535
+#: modules/System/html_admin/mod_system_settings.html.twig:553
 msgid "License"
 msgstr "Licensz"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:550
+#: modules/System/html_admin/mod_system_settings.html.twig:562
+msgid "Enabled modules"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:579
+msgid "This is a core module included with FOSSBilling and cannot be disabled."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:606
 msgid "Error reporting is enabled."
 msgstr "A hibajelentés engedélyezve van."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:551
+#: modules/System/html_admin/mod_system_settings.html.twig:607
 msgid "This FOSSBilling instance is automatically sending error reports which allows us to more easily improve the software and keep it stable. Thanks!"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:552
+#: modules/System/html_admin/mod_system_settings.html.twig:608
 msgid "Error reporting is now disabled."
 msgstr "A hibajelentés le van tiltva."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:552
+#: modules/System/html_admin/mod_system_settings.html.twig:608
 msgid "Disable error reporting"
 msgstr "Hibajelentés letiltása"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:556
+#: modules/System/html_admin/mod_system_settings.html.twig:612
 msgid "Error reporting is disabled."
 msgstr "A hibajelentés le van tiltva."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:557
+#: modules/System/html_admin/mod_system_settings.html.twig:613
 msgid "Please consider enabling error reporting. Doing so allows us to provide you with better technical support and helps us to proactively improve FOSSBilling."
 msgstr "Kérjük, fontolja meg a hibajelentés engedélyezését. Ez lehetővé teszi számunkra, hogy jobb technikai támogatást nyújtsunk Önnek, és segít nekünk a FOSSBilling proaktív fejlesztésében."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:558
+#: modules/System/html_admin/mod_system_settings.html.twig:614
 msgid "Error reporting is now enabled."
 msgstr "A hibajelentés most már engedélyezve van."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:558
+#: modules/System/html_admin/mod_system_settings.html.twig:614
 msgid "Enable error reporting"
 msgstr "Hibajelentés engedélyezése"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:561
+#: modules/System/html_admin/mod_system_settings.html.twig:617
 msgid "FOSSBilling optionally includes automated error reporting to help aid the project's development and stability. To find the most up-to-date information about it, you should review the links and information below."
 msgstr "A FOSSBilling opcionálisan automatikus hibajelentést is tartalmaz, amely segíti a projekt fejlődését és stabilitását. A legfrissebb információk megtalálásához tekintse át az alábbi linkeket és információkat."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:563
+#: modules/System/html_admin/mod_system_settings.html.twig:619
 msgid "Learn more about error reporting"
 msgstr "További információ a hibajelentésről"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:565
+#: modules/System/html_admin/mod_system_settings.html.twig:621
 msgid "Error reporting changelog"
 msgstr "Hibajelentés változásnaplója"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:566
+#: modules/System/html_admin/mod_system_settings.html.twig:622
 msgid "Last applicable behavior change: "
 msgstr "Utolsó alkalmazható viselkedésváltozás: "
 
-#: modules/System/html_admin/mod_system_settings.html.twig:569
+#: modules/System/html_admin/mod_system_settings.html.twig:625
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
 msgstr "Az utolsó alkalmazható viselkedésmódosítás a legutóbbi FOSSBilling-verzió, amely megváltoztatta a hibajelentést, és ez a jelenlegi verzióra is vonatkozik. Lehetséges, hogy a felsoroltaknál újabb változások történtek."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:580
-#: modules/System/html_admin/mod_system_settings.html.twig:632
-msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
-msgstr "A jelenlegi beállításokkal a FOSSBilling példány külső IP-címe a következő lesz: "
-
-#: modules/System/html_admin/mod_system_settings.html.twig:582
 #: modules/System/html_admin/mod_system_settings.html.twig:635
-msgid "The currently selected network interface does not appear to be able to reach the internet!"
-msgstr "Úgy tűnik, hogy az aktuálisan kiválasztott hálózati interfész nem képes elérni az internetet!"
+#: modules/System/html_admin/mod_system_settings.html.twig:675
+msgid "Checking external IP..."
+msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:588
+#: modules/System/html_admin/mod_system_settings.html.twig:639
 msgid "If your server has multiple network interfaces, you may select the default one for FOSSBilling to use when making requests here."
 msgstr "Ha a szerver több hálózati interfésszel rendelkezik, itt kiválaszthatja az alapértelmezettet, amelyet a FOSSBilling a kérések során használni fog."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:592
+#: modules/System/html_admin/mod_system_settings.html.twig:642
 msgid "Select the default network interface:"
 msgstr "Válassza ki az alapértelmezett hálózati interfészt:"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:593
-msgid "Available network interfaces"
-msgstr ""
-
-#: modules/System/html_admin/mod_system_settings.html.twig:594
+#: modules/System/html_admin/mod_system_settings.html.twig:644
+#: modules/System/html_admin/mod_system_settings.html.twig:695
 msgid "None (Default PHP Behavior)"
 msgstr "Nincs (alapértelmezett PHP viselkedés)"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:604
+#: modules/System/html_admin/mod_system_settings.html.twig:651
 msgid "Enter a custom interface to use:"
 msgstr "Adja meg a használni kívánt egyéni interfészt:"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:611
+#: modules/System/html_admin/mod_system_settings.html.twig:655
 msgid "If the dropdown menu doesn't have the appropriate network interface, please enter the IP address or name (e.g., eth0) of the correct one above."
 msgstr "Ha a legördülő menüben nem szerepel a megfelelő hálózati interfész, kérjük, adja meg a megfelelő IP-címét vagy nevét (pl.: eth0)."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:630
+#: modules/System/html_admin/mod_system_settings.html.twig:680
+msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
+msgstr "A jelenlegi beállításokkal a FOSSBilling példány külső IP-címe a következő lesz: "
+
+#: modules/System/html_admin/mod_system_settings.html.twig:683
+msgid "The currently selected network interface does not appear to be able to reach the internet!"
+msgstr "Úgy tűnik, hogy az aktuálisan kiválasztott hálózati interfész nem képes elérni az internetet!"
+
+#: modules/System/html_admin/mod_system_settings.html.twig:692
+msgid "Loading interfaces..."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:724
 msgid "Network interface updated."
 msgstr "Hálózati interfész frissítve."
 
