@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2025-06-10 02:51-0700\n"
-"PO-Revision-Date: 2025-06-10 20:53\n"
+"POT-Creation-Date: 2025-10-18 00:24-0700\n"
+"PO-Revision-Date: 2025-10-18 11:21\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Bulgarian\n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-5: vendor\n"
 "X-Poedit-SearchPathExcluded-6: load.php\n"
 "X-Poedit-SearchPathExcluded-7: install\n"
+"X-Poedit-SearchPathExcluded-8: data\n"
 "X-Crowdin-Project: ddc573f086bad0aea827918f4284d176\n"
 "X-Crowdin-Project-ID: 4\n"
 "X-Crowdin-Language: bg\n"
@@ -28,23 +29,23 @@ msgstr ""
 "X-Crowdin-File-ID: 303\n"
 "Language: bg_BG\n"
 
-#: di.php:343 di.php:417
+#: di.php:347 di.php:421
 msgid "Client is not logged in"
 msgstr "Клиентът не е влязъл в системата"
 
-#: di.php:383 di.php:455
+#: di.php:387 di.php:459
 msgid "Admin is not logged in"
 msgstr "Админа не е влязъл в системата"
 
-#: di.php:495
+#: di.php:499
 msgid "Unrecognized Handler type: "
 msgstr "Неразпознат Handler type: "
 
-#: di.php:505
+#: di.php:509
 msgid "Please check your mailbox and confirm your email address."
 msgstr "Моля, проверете пощата си и потвърдете вашия имейл адрес."
 
-#: index.php:75 library/Box/App.php:335 library/Box/AppClient.php:70
+#: index.php:75 library/Box/App.php:337 library/Box/AppClient.php:71
 msgid "Page :url not found"
 msgstr "Страницата :url не е открита"
 
@@ -60,7 +61,7 @@ msgstr "Обектът Mod не е зададен за услугата"
 msgid "Method :method must contain underscore"
 msgstr "Метода :method трябва да съдържа долна черта"
 
-#: library/Api/Handler.php:58 library/Box/Mod.php:58
+#: library/Api/Handler.php:58 library/Box/Mod.php:61
 msgid "Invalid module name"
 msgstr "Невалидно име на модул"
 
@@ -84,11 +85,11 @@ msgstr ":type API повикване :method не съществува в мод
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "Системата ни в момента е в процес на поддръжка. Моля, опитайте отново по-късно"
 
-#: library/Box/AppAdmin.php:35 modules/Extension/Service.php:757
+#: library/Box/AppAdmin.php:36 modules/Extension/Service.php:757
 msgid "You do not have permission to access the :mod: module"
 msgstr "Нямате права за достъп до този :mod: модул"
 
-#: library/Box/AppClient.php:89
+#: library/Box/AppClient.php:90
 msgid "Page not found"
 msgstr "Страницата не е открита"
 
@@ -104,23 +105,23 @@ msgstr "Липсва съобщение в лога"
 msgid "Bad log priority"
 msgstr "Лош приоритет на лога"
 
-#: library/Box/Mod.php:77
-msgid "Module :mod manifest file is missing"
-msgstr "Manifest файла за модул :mod липсва"
+#: library/Box/Mod.php:84
+msgid "Module :mod manifest file is missing or not readable."
+msgstr ""
 
-#: library/Box/Mod.php:82
+#: library/Box/Mod.php:86
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
 msgstr "Manifest файла за модул :mod е невалиден. Проверете синтаксиса на файла и правата за достъп до него."
 
-#: library/Box/Mod.php:126
+#: library/Box/Mod.php:127
 msgid "Module :mod does not have service class"
 msgstr "Модул :mod няма класа за обслужване"
 
-#: library/Box/Mod.php:145
+#: library/Box/Mod.php:146
 msgid "Module :mod Client controller class was not found"
 msgstr "Модул :mod Класът на клиентския контролер не бе намерен"
 
-#: library/Box/Mod.php:220
+#: library/Box/Mod.php:221
 msgid "Core modules cannot be updated"
 msgstr "Основният модул не може да бъде актуализиран"
 
@@ -237,16 +238,16 @@ msgstr "година"
 msgid "decade"
 msgstr "десетилетие"
 
-#: library/Box/TwigLoader.php:24 library/Box/TwigLoader.php:28
-#: library/Box/TwigLoader.php:32
+#: library/Box/TwigLoader.php:29 library/Box/TwigLoader.php:33
+#: library/Box/TwigLoader.php:37
 msgid "Missing :missing: param for Box_TwigLoader"
 msgstr "Липсва :missing: параван тип за Box_TwigLoader"
 
-#: library/FOSSBilling/CentralAlerts.php:119
+#: library/FOSSBilling/CentralAlerts.php:118
 msgid "Unable to fetch alerts from Central Alerts System. See the error log for more information."
 msgstr "Невъзможно е да се изтеглят сигнали от Централната система за сигнали. За повече информация отворете дневника/лога с грешки."
 
-#: library/FOSSBilling/CentralAlerts.php:127
+#: library/FOSSBilling/CentralAlerts.php:126
 msgid "Invalid response from the FOSSBilling Central Alerts System."
 msgstr "Невалиден отговор от централната система за сигнали на FOSSBilling."
 
@@ -262,63 +263,59 @@ msgstr "Упс стана грешка в писането на актуализ
 msgid "Too many iterations were performed while formatting the config file"
 msgstr "Извършени са твърде много итерации при форматирането на конфигурационният файл"
 
-#: library/FOSSBilling/ExtensionManager.php:57
+#: library/FOSSBilling/ExtensionManager.php:56
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
 msgstr "Не е възможно да се извлекат данните за разширението от директорията/папката за разширения на FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:79
+#: library/FOSSBilling/ExtensionManager.php:78
 msgid "An error occurred when fetching the extensions releases"
 msgstr "Възникна грешка при извличането на версиите на разширенията"
 
-#: library/FOSSBilling/ExtensionManager.php:102
+#: library/FOSSBilling/ExtensionManager.php:101
 msgid "Unable to fetch the latest extension release."
 msgstr "Не е възможно да се изтегли последната версия на разширението."
 
-#: library/FOSSBilling/ExtensionManager.php:175
+#: library/FOSSBilling/ExtensionManager.php:174
 msgid "Unable to connect to the FOSSBilling extension directory."
 msgstr "Не мога да се свържа със сайта за разширения на FOSSBilling."
 
-#: library/FOSSBilling/ExtensionManager.php:183
+#: library/FOSSBilling/ExtensionManager.php:182
 msgid "Invalid response from the FOSSBilling extension directory."
 msgstr "Невалиден отговор от директорията/папката за разширения на FOSSBilling."
 
-#: library/FOSSBilling/GeoIP/Reader.php:188
-msgid "Got a "
-msgstr ""
-
-#: library/FOSSBilling/Mail.php:119
+#: library/FOSSBilling/Mail.php:118
 msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
 msgstr "Предоставеният приоритет (:priority) е невалиден. Моля, посочете цяло число между 1 и 5 или използвайте предварително дефинираните константи на symfony."
 
-#: library/FOSSBilling/Mail.php:136
+#: library/FOSSBilling/Mail.php:135
 msgid "FOSSBilling requires the proc_open PHP function to be enabled when using the sendmail transport"
 msgstr "FOSSBilling изисква PHP функцията proc_open да бъде активирана, когато се използва sendmail транспортът"
 
-#: library/FOSSBilling/Mail.php:146
+#: library/FOSSBilling/Mail.php:145
 msgid "A SendGrid API key is required to send emails via SendGrid"
 msgstr "Необходим е API ключ на Sendgrid, за да изпращате имейли чрез Sendgrid"
 
-#: library/FOSSBilling/Mail.php:153
+#: library/FOSSBilling/Mail.php:152
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
 msgstr "Не мога да изпратя имейл: 'Персонализиран' транспорт метод е избран но не е избран персонализиран DSN"
 
-#: library/FOSSBilling/Mail.php:159
+#: library/FOSSBilling/Mail.php:158
 msgid "Unknown mail transport: :transport"
 msgstr "Непознат имейл transport: :transport"
 
-#: library/FOSSBilling/Mail.php:167
+#: library/FOSSBilling/Mail.php:166
 msgid "Failed to send email via :transport with the exception :e"
 msgstr "Неуспешно изпращане на имейл чрез :transport с изключение :e"
 
-#: library/FOSSBilling/Mail.php:183
+#: library/FOSSBilling/Mail.php:182
 msgid "SMTP host or port is not configured"
 msgstr "SMTP хостът или портът не са конфигурирани"
 
-#: library/FOSSBilling/Pagination.php:74
+#: library/FOSSBilling/Pagination.php:84 library/FOSSBilling/Pagination.php:146
 msgid ")."
 msgstr ""
 
-#: library/FOSSBilling/Pagination.php:85
+#: library/FOSSBilling/Pagination.php:157
 msgid "Invalid SQL query. Missing FROM clause."
 msgstr ""
 
@@ -326,87 +323,87 @@ msgstr ""
 msgid "Invalid password hash provided"
 msgstr "Предоставен е невалиден хеш на паролата"
 
-#: library/FOSSBilling/StandardsHelper.php:32
+#: library/FOSSBilling/StandardsHelper.php:31
 msgid "Exact matches cannot be provided unless you provide an Alpha2 language code."
 msgstr ""
 
-#: library/FOSSBilling/Tools.php:60 library/FOSSBilling/Tools.php:253
-msgid "Service class :class was not found in :path"
-msgstr "Клас на обслужване :клас не е намерен в :път"
-
-#: library/FOSSBilling/Tools.php:162
+#: library/FOSSBilling/Tools.php:119
 msgid "We were unable to generate a password with the required parameters"
 msgstr "Не успяхме да генерираме парола със изисканите параметри"
 
-#: library/FOSSBilling/Tools.php:302
+#: library/FOSSBilling/Tools.php:180
+msgid "Service class :class was not found in :path"
+msgstr "Клас на обслужване :клас не е намерен в :път"
+
+#: library/FOSSBilling/Tools.php:229
 #: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
 #: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Електронна поща"
 
-#: library/FOSSBilling/Tools.php:304 library/FOSSBilling/Validate.php:187
+#: library/FOSSBilling/Tools.php:231 library/FOSSBilling/Validate.php:195
 #: modules/Servicehosting/Api/Guest.php:39
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: е невалиден"
 
-#: library/FOSSBilling/Update.php:147
+#: library/FOSSBilling/Update.php:153
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Не успях да изтегля архива с актуализациите. Допълнителна информация е налична в дневника/логът за грешки."
 
-#: library/FOSSBilling/Update.php:212 modules/System/Api/Admin.php:192
+#: library/FOSSBilling/Update.php:218 modules/System/Api/Admin.php:190
 msgid "You have the latest version of FOSSBilling. You do not need to update."
 msgstr "Вие имате най-новата версия на FOSSBilling. Не е необходимо да актуализирате."
 
-#: library/FOSSBilling/Update.php:224
+#: library/FOSSBilling/Update.php:230
 msgid "FOSSBilling :version: requires at least PHP :min_php:, but you are running :current_php:."
 msgstr "Версията :version: на FossBilling като минимум изисква PHP :min_php:, но вие сте със :current_php:."
 
-#: library/FOSSBilling/Update.php:235
+#: library/FOSSBilling/Update.php:241
 msgid "The download URL for this release was not specified as a trusted one. Update canceled for security reasons."
 msgstr "URL адресът за изтеглянето на тази версия не е посочен като доверен. Актуализацията е отменена от съображения за сигурност."
 
-#: library/FOSSBilling/Update.php:256
+#: library/FOSSBilling/Update.php:262
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Не успях да изтегля архива с актуализациите. Допълнителна информация е налична в дневника/логът за грешки."
 
-#: library/FOSSBilling/Update.php:270 modules/Extension/Service.php:481
+#: library/FOSSBilling/Update.php:276 modules/Extension/Service.php:490
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Неуспешно извличане на файла, моля, проверете разрешенията на файловете и папките. Допълнителна информация е налична в дневника/логът за грешки."
 
-#: library/FOSSBilling/Update.php:298
+#: library/FOSSBilling/Update.php:302
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
 msgstr "Не успях да изчистя кеша и/или да премахна папката за инсталиране. Допълнителна информация е налична в лога/дневника за грешки."
 
-#: library/FOSSBilling/UpdatePatcher.php:49
+#: library/FOSSBilling/UpdatePatcher.php:55
 msgid "Unable to load existing configuration"
 msgstr "Не успях да заредя вече съществуващата конфигурация"
 
-#: library/FOSSBilling/UpdatePatcher.php:158
+#: library/FOSSBilling/UpdatePatcher.php:162
 msgid "There was an error while applying database patches. Please check the error log for information on the error, correct it, and then perform the backup patching method to complete the update."
 msgstr "Имаше грешка при прилагането на поправки на базата данни. Моля, проверете лога/дневника с грешки за информация относно грешката, отстранете я и след това изпълнете метода за архивиране на кръпките, за да завършите актуализацията."
 
-#: library/FOSSBilling/Validate.php:130
+#: library/FOSSBilling/Validate.php:138
 msgid "Minimum password length is 8 characters."
 msgstr "Минималната дължина на паролата трябва да е\n"
 "минимум 8 символа."
 
-#: library/FOSSBilling/Validate.php:134
+#: library/FOSSBilling/Validate.php:142
 msgid "Maximum password length is 256 characters."
 msgstr "Максимално позволената дължина на паролата е 256 символа."
 
-#: library/FOSSBilling/Validate.php:138
+#: library/FOSSBilling/Validate.php:146
 msgid "Password must include at least one number."
 msgstr "Паролата трябва да съдържа поне едно число."
 
-#: library/FOSSBilling/Validate.php:142
+#: library/FOSSBilling/Validate.php:150
 msgid "Password must include at least one lowercase letter."
 msgstr "Паролата трябва да съдържа поне една малка буква."
 
-#: library/FOSSBilling/Validate.php:146
+#: library/FOSSBilling/Validate.php:154
 msgid "Password must include at least one uppercase letter."
 msgstr "Паролата трябва да съдържа поне една главна буква."
 
-#: library/FOSSBilling/Validate.php:185
+#: library/FOSSBilling/Validate.php:193
 #: modules/Client/html_client/mod_client_profile.html.twig:71
 msgid "Birthdate"
 msgstr "Дата на раждане"
@@ -427,23 +424,23 @@ msgstr "Неизвестен TLD. Цената за регистрация не 
 msgid "Domain product cannot be removed."
 msgstr "Домейна не може да бъде премахнат."
 
-#: library/Model/ProductTable.php:62
+#: library/Model/ProductTable.php:59
 msgid "Unknown period selected "
 msgstr "Избран е несъществуващ период "
 
-#: library/Model/ProductTable.php:75
+#: library/Model/ProductTable.php:72
 msgid "Product pricing could not be determined. "
 msgstr "Цената на продукта не може да бъде определена. "
 
-#: library/Model/ProductTable.php:105
+#: library/Model/ProductTable.php:102
 msgid "Unknown period selected for setup price"
 msgstr "Не може да се настрои цена - избран е несъществуващ период"
 
-#: library/Model/ProductTable.php:127
+#: library/Model/ProductTable.php:124
 msgid "Product :id payment type is recurrent, but period was not selected"
 msgstr "Продукт: Типът плащане за плащане е повтарящ се, но периодът не е избран"
 
-#: library/Model/ProductTable.php:139
+#: library/Model/ProductTable.php:136
 msgid "Unknown Period selected for price"
 msgstr "Неизвестен период, избран за цена"
 
@@ -481,11 +478,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Пренасочване към PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:310
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1405
+#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1407
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Плащане за фактура: :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:115 modules/Invoice/Service.php:1407
+#: library/Payment/Adapter/Stripe.php:115 modules/Invoice/Service.php:1409
 msgid "Payment for invoice :serie:id"
 msgstr "Плащане за фактура: :serie:id"
 
@@ -493,19 +490,19 @@ msgstr "Плащане за фактура: :serie:id"
 msgid "There was an error when processing the transaction"
 msgstr "Възникна грешка при обработката на вашата транзакция"
 
-#: library/Payment/AdapterAbstract.php:51
+#: library/Payment/AdapterAbstract.php:52
 msgid "Return URL for the payment gateway was not set"
 msgstr "URL адресът за връщане на метода за плащане не е зададен"
 
-#: library/Payment/AdapterAbstract.php:58
+#: library/Payment/AdapterAbstract.php:59
 msgid "Cancel URL for the payment gateway was not set"
 msgstr "URL адрес при отказване на плащане не е зададен за този метод за плащане"
 
-#: library/Payment/AdapterAbstract.php:66
+#: library/Payment/AdapterAbstract.php:67
 msgid "IPN Notification URL for the payment gateway was not set"
 msgstr "URL адресът за IPN известие на платежния метод не беше зададен"
 
-#: library/Payment/AdapterAbstract.php:76
+#: library/Payment/AdapterAbstract.php:77
 msgid "IPN redirect URL for the payment gateway was not set"
 msgstr "URL адресът за пренасочване на IPN на платежния метод не беше зададен"
 
@@ -537,27 +534,27 @@ msgstr "детайли относно домейна"
 #: library/Registrar/Adapter/Internetbs.php:163
 #: library/Registrar/Adapter/Namecheap.php:158
 #: library/Registrar/Adapter/Namecheap.php:165
-#: library/Registrar/Adapter/Namecheap.php:241
-#: library/Registrar/Adapter/Namecheap.php:346
-#: library/Registrar/Adapter/Namecheap.php:593
-#: library/Registrar/Adapter/Namecheap.php:660
-#: library/Registrar/Adapter/Namecheap.php:687
-#: library/Registrar/Adapter/Namecheap.php:719
+#: library/Registrar/Adapter/Namecheap.php:232
+#: library/Registrar/Adapter/Namecheap.php:331
+#: library/Registrar/Adapter/Namecheap.php:574
+#: library/Registrar/Adapter/Namecheap.php:639
+#: library/Registrar/Adapter/Namecheap.php:664
+#: library/Registrar/Adapter/Namecheap.php:694
 #: library/Registrar/Adapter/Resellerclub.php:393
-#: library/Registrar/Adapter/Resellerclub.php:713
-#: library/Registrar/Adapter/Resellerclub.php:720
-#: library/Registrar/Adapter/Resellerclub.php:727
+#: library/Registrar/Adapter/Resellerclub.php:708
+#: library/Registrar/Adapter/Resellerclub.php:715
+#: library/Registrar/Adapter/Resellerclub.php:722
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
 msgstr "Неуспешно :action: с :type: регистратор, проверете лога/дневника с грешки за повече подробности"
 
 #: library/Registrar/Adapter/Internetbs.php:169
-#: library/Registrar/Adapter/Namecheap.php:568
+#: library/Registrar/Adapter/Namecheap.php:549
 msgid "deleting domains"
 msgstr "изтриване на домейните"
 
 #: library/Registrar/Adapter/Internetbs.php:169
-#: library/Registrar/Adapter/Namecheap.php:428
-#: library/Registrar/Adapter/Namecheap.php:568 library/Server/Manager/CWP.php:345
+#: library/Registrar/Adapter/Namecheap.php:413
+#: library/Registrar/Adapter/Namecheap.php:549 library/Server/Manager/CWP.php:345
 #: library/Server/Manager/CWP.php:358 library/Server/Manager/CWP.php:371
 #: library/Server/Manager/Directadmin.php:133
 #: library/Server/Manager/Directadmin.php:147
@@ -573,28 +570,28 @@ msgstr ":type: не поддържа :action:"
 msgid "Premium domains cannot be registered."
 msgstr "Премиум домейните не могат да бъдат регистрирани."
 
-#: library/Registrar/Adapter/Namecheap.php:239
+#: library/Registrar/Adapter/Namecheap.php:230
 msgid "update nameservers"
 msgstr "обновяване на сървърните имена"
 
-#: library/Registrar/Adapter/Namecheap.php:344
+#: library/Registrar/Adapter/Namecheap.php:329
 msgid "retrieve domain details"
 msgstr "покажи детайли относно домейна"
 
-#: library/Registrar/Adapter/Namecheap.php:428
+#: library/Registrar/Adapter/Namecheap.php:413
 msgid "retrieving the transfer code"
 msgstr "извличане на трансферния код"
 
-#: library/Registrar/Adapter/Namecheap.php:591
+#: library/Registrar/Adapter/Namecheap.php:572
 msgid "retrieve privacy information"
 msgstr "показване на поверителната информация"
 
-#: library/Registrar/Adapter/Namecheap.php:658
+#: library/Registrar/Adapter/Namecheap.php:637
 msgid "get the domain lock status"
 msgstr "получи заключено състоянието на домейна"
 
-#: library/Registrar/Adapter/Namecheap.php:685
-#: library/Registrar/Adapter/Namecheap.php:717
+#: library/Registrar/Adapter/Namecheap.php:662
+#: library/Registrar/Adapter/Namecheap.php:692
 msgid "set the domain lock status"
 msgstr "направи състоянието на домейна заключено"
 
@@ -610,23 +607,23 @@ msgstr "получаване на трансферния код"
 msgid "You are already registered as reseller"
 msgstr "Вие вече сте регистрирани като препродавач"
 
-#: library/Registrar/Adapter/Resellerclub.php:851
+#: library/Registrar/Adapter/Resellerclub.php:844
 msgid "Valid contact passport information is required while registering ES domain name"
 msgstr "При регистрацията на ES домейн се изисква валидна паспортна информация за контакт"
 
-#: library/Registrar/Adapter/Resellerclub.php:870
+#: library/Registrar/Adapter/Resellerclub.php:863
 msgid "Valid contact passport information is required while registering ASIA domain name"
 msgstr "При регистрацията на ASIA домейн се изисква валидна паспортна информация за контакт"
 
-#: library/Registrar/Adapter/Resellerclub.php:894
+#: library/Registrar/Adapter/Resellerclub.php:887
 msgid "Valid contact birthdate is required while registering RU domain name"
 msgstr "При регистрацията на RU домейн се изисква валидна рождена дата за контакт"
 
-#: library/Registrar/Adapter/Resellerclub.php:898
+#: library/Registrar/Adapter/Resellerclub.php:891
 msgid "Valid contact passport information is required while registering RU domain name"
 msgstr "При регистрацията на RU домейн се изисква валидна паспортна информация за контакт"
 
-#: library/Registrar/Adapter/Resellerclub.php:985
+#: library/Registrar/Adapter/Resellerclub.php:978
 msgid "Contact not found"
 msgstr "Контактът не е намерен"
 
@@ -666,9 +663,9 @@ msgstr "създайте профил"
 #: library/Server/Manager/Hestia.php:208 library/Server/Manager/Hestia.php:232
 #: library/Server/Manager/Hestia.php:257 library/Server/Manager/Hestia.php:283
 #: library/Server/Manager/Hestia.php:328 library/Server/Manager/Plesk.php:146
-#: library/Server/Manager/Whm.php:627 library/Server/Manager/Whm.php:634
-#: library/Server/Manager/Whm.php:641 library/Server/Manager/Whm.php:648
-#: library/Server/Manager/Whm.php:655
+#: library/Server/Manager/Whm.php:625 library/Server/Manager/Whm.php:632
+#: library/Server/Manager/Whm.php:639 library/Server/Manager/Whm.php:646
+#: library/Server/Manager/Whm.php:653
 msgid "Failed to :action: on the :type: server, check the error logs for further details"
 msgstr "Неуспях да :action: на :type: сървър, проверете лога/дневника с грешки за повече подробности"
 
@@ -727,7 +724,7 @@ msgstr "акаунта се синхронизира"
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
 msgstr "Грешка в DirectAdmin на сървърния мениджър: \"Акаунтът не е прекратен\""
 
-#: library/Server/Manager/Directadmin.php:754 library/Server/Manager/Whm.php:610
+#: library/Server/Manager/Directadmin.php:754 library/Server/Manager/Whm.php:608
 msgid "HttpClientException: :error"
 msgstr "HttpClientException: :error"
 
@@ -779,25 +776,25 @@ msgstr "Изтриване на дейност"
 msgid "Allows the staff member to delete recorded activity."
 msgstr "Позволява на стафф модератора да изтрива записаната дейност."
 
-#: modules/Api/Controller/Client.php:50 modules/Api/Controller/Client.php:260
+#: modules/Api/Controller/Client.php:58 modules/Api/Controller/Client.php:276
 msgid "Unknown API call :call"
 msgstr "Непознато API повикване :call"
 
-#: modules/Api/Controller/Client.php:136
+#: modules/Api/Controller/Client.php:150
 msgid "Invalid request. Make sure request origin is :from"
 msgstr "Невалидна заявка. Уверете се, че произходът на заявката е :from"
 
-#: modules/Api/Controller/Client.php:147
+#: modules/Api/Controller/Client.php:161
 msgid "Unauthorized IP"
 msgstr "Неупълномощен IP адрес"
 
-#: modules/Api/Controller/Client.php:202 modules/Api/Controller/Client.php:206
-#: modules/Api/Controller/Client.php:210 modules/Api/Controller/Client.php:224
-#: modules/Api/Controller/Client.php:233 modules/Api/Controller/Client.php:247
+#: modules/Api/Controller/Client.php:218 modules/Api/Controller/Client.php:222
+#: modules/Api/Controller/Client.php:226 modules/Api/Controller/Client.php:240
+#: modules/Api/Controller/Client.php:249 modules/Api/Controller/Client.php:263
 msgid "Authentication Failed"
 msgstr "Удостоверяването е неуспешно"
 
-#: modules/Api/Controller/Client.php:339
+#: modules/Api/Controller/Client.php:355
 msgid "CSRF token invalid"
 msgstr "CSRF токенът е невалиден"
 
@@ -809,11 +806,11 @@ msgid "Currency not found"
 msgstr "Валутата не е намерена"
 
 #: modules/Cart/Api/Guest.php:97 modules/Cart/Api/Guest.php:105
-#: modules/Cart/Service.php:456
+#: modules/Cart/Service.php:452
 msgid "The promo code has expired or does not exist"
 msgstr "Промо кодът е изтекъл или не съществува"
 
-#: modules/Cart/Api/Guest.php:101 modules/Cart/Service.php:460
+#: modules/Cart/Api/Guest.php:101 modules/Cart/Service.php:456
 msgid "Promo code cannot be applied to your account"
 msgstr "Промо кода не може да се приложи към профила ви"
 
@@ -845,46 +842,46 @@ msgstr "Продуктът не беше намерен"
 msgid "Add products to your cart before applying promo code"
 msgstr "Добавете продукти в количката ви преди да кандидатствате за промоционален код"
 
-#: modules/Cart/Service.php:452
+#: modules/Cart/Service.php:448
 msgid "You have already used this promo code. Please remove the promo code and checkout again."
 msgstr "Вече сте използвали този промоционален код. Моля, премахнете промоционалният код и опитайте да завършите с плащането отново."
 
-#: modules/Cart/Service.php:512
+#: modules/Cart/Service.php:508
 msgid "Cannot checkout an empty cart"
 msgstr "Не може да се извърши плащането ако количката е празна"
 
-#: modules/Cart/Service.php:524
+#: modules/Cart/Service.php:520
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
 msgstr "Избраната валута :selected не съответства на валутата на вашия профил :code. Моля, променете валутата на количката, за да продължите."
 
-#: modules/Cart/Service.php:540
+#: modules/Cart/Service.php:536
 msgid "Unable to complete order. One or more of the selected products are invalid."
 msgstr "Невъзможно е да бъде завършена поръчката. Един или повече от избраните продукти са невалидни."
 
-#: modules/Cart/Service.php:615
+#: modules/Cart/Service.php:611
 msgid "Discount: :product"
 msgstr "Отстъпка: :продукт"
 
-#: modules/Cart/Service.php:627
+#: modules/Cart/Service.php:623
 msgid ":product setup"
 msgstr ":настройка на продукта"
 
-#: modules/Client/Api/Admin.php:150 modules/Client/Api/Admin.php:240
+#: modules/Client/Api/Admin.php:150 modules/Client/Api/Admin.php:236
 #: modules/Client/Api/Guest.php:84 modules/Profile/Service.php:134
 msgid "This email address is already registered."
 msgstr "Този имейл адрес вече е регистриран."
 
-#: modules/Client/Api/Admin.php:324 modules/Client/Api/Guest.php:227
-#: modules/Profile/Api/Admin.php:111 modules/Profile/Api/Client.php:114
-#: modules/Staff/Api/Admin.php:124 modules/Staff/Api/Guest.php:108
+#: modules/Client/Api/Admin.php:318 modules/Client/Api/Guest.php:225
+#: modules/Profile/Api/Admin.php:109 modules/Profile/Api/Client.php:114
+#: modules/Staff/Api/Admin.php:124 modules/Staff/Api/Guest.php:106
 msgid "Passwords do not match"
 msgstr "Паролите не съвпадат"
 
-#: modules/Client/Api/Admin.php:484
+#: modules/Client/Api/Admin.php:470
 msgid "Event not found"
 msgstr "Събитието не е намерено"
 
-#: modules/Client/Api/Admin.php:568
+#: modules/Client/Api/Admin.php:554
 msgid "Group has clients assigned. Please reassign them first."
 msgstr "Групата има назначени клиенти. Моля, първо ги махнете от нея или преместете."
 
@@ -900,8 +897,8 @@ msgstr "Паролите не съвпадат."
 msgid "Please check your login details."
 msgstr "Моля проверете данните си за вписване."
 
-#: modules/Client/Api/Guest.php:232 modules/Client/Api/Guest.php:236
-#: modules/Client/Service.php:695
+#: modules/Client/Api/Guest.php:230 modules/Client/Api/Guest.php:234
+#: modules/Client/Service.php:698
 msgid "The link has expired or you have already reset your password."
 msgstr "Срокът на връзката е изтекъл или вече сте променили паролата си."
 
@@ -979,11 +976,11 @@ msgstr "Клиентът не е намерен"
 msgid "Cannot remove groups with clients"
 msgstr "Не можете да премахнете група с клиенти"
 
-#: modules/Client/Service.php:625 modules/Profile/Service.php:126
+#: modules/Client/Service.php:628 modules/Profile/Service.php:126
 msgid "Email address cannot be changed"
 msgstr "Имейл адреса не може да бъде променен"
 
-#: modules/Client/Service.php:639 modules/Client/Service.php:655
+#: modules/Client/Service.php:642 modules/Client/Service.php:658
 msgid "Field :field cannot be empty"
 msgstr "Полето :field не може да бъде празно"
 
@@ -992,8 +989,8 @@ msgid "Cookie consent"
 msgstr "Съгласие за бисквитки"
 
 #: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:771
-#: modules/Invoice/Service.php:1511 modules/Invoice/Service.php:1516
-#: modules/Staff/Service.php:197
+#: modules/Invoice/Service.php:1510 modules/Invoice/Service.php:1515
+#: modules/Staff/Service.php:204
 msgid "You do not have permission to perform this action"
 msgstr "Нямате права за да извършите тази операция"
 
@@ -1052,17 +1049,17 @@ msgstr ""
 msgid "Custom Pages"
 msgstr "Персонализирани страници"
 
-#: modules/Email/Api/Admin.php:115 modules/Email/Api/Admin.php:138
+#: modules/Email/Api/Admin.php:115 modules/Email/Api/Admin.php:136
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:89
-#: modules/Email/Api/Client.php:111 modules/Email/Service.php:495
+#: modules/Email/Api/Client.php:111 modules/Email/Service.php:513
 msgid "Email not found"
 msgstr "Имейл адреса не е намерен"
 
-#: modules/Email/Api/Admin.php:210
+#: modules/Email/Api/Admin.php:206
 msgid "Email template not found"
 msgstr "Шаблонът за имейла не бе намерен"
 
-#: modules/Email/Api/Admin.php:386
+#: modules/Email/Api/Admin.php:382
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "Приемникът не е дефиниран. Определете параметъра на или to_client или to_staff"
 
@@ -1073,19 +1070,19 @@ msgstr "Приемникът не е дефиниран. Определете п
 msgid "Email history"
 msgstr "История на имейлите"
 
-#: modules/Email/Service.php:146
+#: modules/Email/Service.php:152
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
 msgstr "Приемникът не е дефиниран. Определете параметъра на или to_client или на to_staff или пък на to_admin"
 
-#: modules/Email/Service.php:205
+#: modules/Email/Service.php:222
 msgid "The \"from\" email address cannot be empty"
 msgstr ""
 
-#: modules/Email/Service.php:480
+#: modules/Email/Service.php:498
 msgid "Email template :code was not found"
 msgstr "Шаблон за имейл: кодът не е намерен"
 
-#: modules/Email/Service.php:677
+#: modules/Email/Service.php:692
 msgid "Error message truncated due to length, please check the error log for the complete message: "
 msgstr "Съобщението за грешка е съкратено поради дължина, моля, проверете лога/дневника за грешки за пълното съобщение: "
 
@@ -1093,11 +1090,11 @@ msgstr "Съобщението за грешка е съкратено пора�
 msgid "Embed and integrate"
 msgstr "Вграждане и интегриране"
 
-#: modules/Extension/Api/Admin.php:295
+#: modules/Extension/Api/Admin.php:293
 msgid "Extension not found"
 msgstr "Разширението не бе намерено"
 
-#: modules/Extension/Api/Guest.php:60
+#: modules/Extension/Api/Guest.php:58
 msgid "Parameter ext is missing"
 msgstr "Параметъра ext липсва"
 
@@ -1111,59 +1108,59 @@ msgstr "Разширения"
 msgid "Languages"
 msgstr "Езици"
 
-#: modules/Extension/Service.php:38
+#: modules/Extension/Service.php:47
 msgid "Manage extensions"
 msgstr "Управление на разширенията"
 
-#: modules/Extension/Service.php:39
+#: modules/Extension/Service.php:48
 msgid "Allows the staff member to install, update, or remove extensions."
 msgstr "Позволява на стафф модератора да инсталира, актуализира или премахва разширения."
 
-#: modules/Extension/Service.php:343
+#: modules/Extension/Service.php:352
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "Посетете директорията с разширения за повече информация относно актуализирането на това разширение."
 
-#: modules/Extension/Service.php:395
+#: modules/Extension/Service.php:404
 msgid "FOSSBilling core modules cannot be managed"
 msgstr ""
 
-#: modules/Extension/Service.php:444
+#: modules/Extension/Service.php:453
 msgid "Coudn't find a valid download URL for the extension."
 msgstr "Не е намерен валиден URL адрес за изтегляне на разширението."
 
-#: modules/Extension/Service.php:448
+#: modules/Extension/Service.php:457
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
 msgstr "Това разширение не е съвместимо с вашата версия на FOSSBilling. Моля, актуализирайте FOSSBilling до най-новата версия и опитайте отново."
 
-#: modules/Extension/Service.php:464
+#: modules/Extension/Service.php:473
 msgid "Failed to download the extension with error :code"
 msgstr "Не успях да изтегля разширението с код за грешка :code"
 
-#: modules/Extension/Service.php:505
+#: modules/Extension/Service.php:514
 msgid "Extension :id seems to be already installed."
 msgstr "Разширението :id изглежда че вече е инсталирано."
 
-#: modules/Extension/Service.php:508
+#: modules/Extension/Service.php:520
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "Не успях да преместя разширението до крайната му дестинация. Моля, проверете какви разрешения има за папката на дестинацията. (:destination)"
 
-#: modules/Extension/Service.php:511
+#: modules/Extension/Service.php:523
 msgid "Extension type (:type) cannot be automatically installed."
 msgstr "Типът на разширението (:type) не може да се инсталира автоматично."
 
-#: modules/Extension/Service.php:544
+#: modules/Extension/Service.php:556
 msgid "FOSSBilling core modules cannot be installed or removed"
 msgstr ""
 
-#: modules/Extension/Service.php:549
+#: modules/Extension/Service.php:561
 msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr ""
 
-#: modules/Extension/Service.php:732
+#: modules/Extension/Service.php:733
 msgid "Manage settings"
 msgstr "Управление на настройките"
 
-#: modules/Extension/Service.php:733
+#: modules/Extension/Service.php:734
 msgid "Allows the staff member to edit settings for this module."
 msgstr "Позволява на стафф модератора да редактира настройките за този модул."
 
@@ -1175,24 +1172,24 @@ msgstr "Форматът на стила не е намерен в предва�
 msgid "Form field type is invalid"
 msgstr "Типът поле за формуляр не е валиден"
 
-#: modules/Formbuilder/Api/Admin.php:77 modules/Formbuilder/Api/Admin.php:232
+#: modules/Formbuilder/Api/Admin.php:77 modules/Formbuilder/Api/Admin.php:228
 msgid "This input type must have unique values"
 msgstr "Този тип на входа трябва да има уникални стойности"
 
-#: modules/Formbuilder/Api/Admin.php:80 modules/Formbuilder/Api/Admin.php:258
-#: modules/Formbuilder/Api/Admin.php:277
+#: modules/Formbuilder/Api/Admin.php:80 modules/Formbuilder/Api/Admin.php:254
+#: modules/Formbuilder/Api/Admin.php:273
 msgid "Form id was not passed"
 msgstr "Идентификационният номер на формуляра не бе приет"
 
-#: modules/Formbuilder/Api/Admin.php:261 modules/Formbuilder/Api/Admin.php:280
+#: modules/Formbuilder/Api/Admin.php:257 modules/Formbuilder/Api/Admin.php:276
 msgid "Form name was not passed"
 msgstr "Името на формуляра не беше прието"
 
-#: modules/Formbuilder/Api/Admin.php:284
+#: modules/Formbuilder/Api/Admin.php:280
 msgid "Form type was not passed"
 msgstr "Типът на формуляра не бе приет"
 
-#: modules/Formbuilder/Api/Admin.php:288
+#: modules/Formbuilder/Api/Admin.php:284
 msgid "Field type not supported"
 msgstr "Типът поле не се поддържа"
 
@@ -1238,17 +1235,17 @@ msgstr "Абонаментът не е намерен"
 
 #: modules/Invoice/Api/Client.php:56 modules/Invoice/Api/Client.php:80
 #: modules/Invoice/Api/Client.php:166 modules/Invoice/Api/Guest.php:36
-#: modules/Invoice/Api/Guest.php:60
+#: modules/Invoice/Api/Guest.php:62
 msgid "Invoice was not found"
 msgstr "Фактурата не е намерена"
 
-#: modules/Invoice/Api/Client.php:83 modules/Invoice/Api/Guest.php:63
+#: modules/Invoice/Api/Client.php:83 modules/Invoice/Api/Guest.php:65
 msgid "Paid Invoice cannot be modified"
 msgstr ""
 
 #: modules/Invoice/Api/Client.php:111 modules/Order/Api/Client.php:120
 #: modules/Servicedomain/Api/Client.php:123
-#: modules/Servicedownloadable/Api/Client.php:33
+#: modules/Servicedownloadable/Api/Client.php:31
 #: modules/Servicehosting/Api/Client.php:87
 #: modules/Servicelicense/Api/Client.php:46
 msgid "Order not found"
@@ -1258,11 +1255,11 @@ msgstr "Поръчката не е открита"
 msgid "You need to enter numeric value"
 msgstr "Трябва да въведете цифрова стойност"
 
-#: modules/Invoice/Api/Guest.php:103
+#: modules/Invoice/Api/Guest.php:105
 msgid "Invoice hash not passed. Missing param hash"
 msgstr "Не е минал хеша на фактурата. Липсва парам хеша"
 
-#: modules/Invoice/Api/Guest.php:107
+#: modules/Invoice/Api/Guest.php:109
 msgid "Payment method not found. Missing param gateway_id"
 msgstr "Метода за плащане не е намерен. Липсва param gateway_id"
 
@@ -1271,7 +1268,7 @@ msgstr "Метода за плащане не е намерен. Липсва pa
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
 #: modules/Index/html_client/mod_index_dashboard.html.twig:73
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:5
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:185
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:182
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:19
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:6
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:8
@@ -1308,163 +1305,166 @@ msgid "Tax rules"
 msgstr "Данъчни правила"
 
 #: modules/Invoice/Controller/Admin.php:83
-#: modules/Extension/html_admin/mod_extension_index.html.twig:150
+#: modules/Extension/html_admin/mod_extension_index.html.twig:152
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:7
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:12
 msgid "Payment gateways"
 msgstr "Методи за плащане"
 
-#: modules/Invoice/Service.php:453
+#: modules/Invoice/Service.php:459
 msgid "Unable to determine the next invoice number"
 msgstr "Не може да се определи следващият номер на фактурата"
 
-#: modules/Invoice/Service.php:684
+#: modules/Invoice/Service.php:688
 msgid "Cannot refund invoice with negative amount"
 msgstr ""
 
-#: modules/Invoice/Service.php:899
+#: modules/Invoice/Service.php:903
 msgid "Invoice is related to order #:id. Please cancel order first."
 msgstr "Фактурата е свързана с поръчка #:id. Моля, първо отменете поръчката."
 
-#: modules/Invoice/Service.php:966
-msgid "Invoices are not generated for 0 amount orders"
-msgstr "Фактурите не се генерират за поръчки с нулеви суми"
+#: modules/Invoice/Service.php:970
+msgid "Invoices are not generated for 0 amount orders."
+msgstr ""
 
-#: modules/Invoice/Service.php:1126
+#: modules/Invoice/Service.php:1130
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
 msgstr "Трябва да имате поне една активна поръчка, преди да можете да добавите средства, и чак тогава ще можете да продължите напред!"
 
-#: modules/Invoice/Service.php:1135
+#: modules/Invoice/Service.php:1139
 msgid "Amount must be at least :min_amount"
 msgstr "Сумата трябва да е минимум :min_amount"
 
-#: modules/Invoice/Service.php:1139
+#: modules/Invoice/Service.php:1143
 msgid "Amount cannot exceed :max_amount"
 msgstr "Сумата не може да надхвърля :max_amount"
 
-#: modules/Invoice/Service.php:1166 modules/Invoice/Service.php:1234
+#: modules/Invoice/Service.php:1170 modules/Invoice/Service.php:1239
 msgid "Invoice not found"
 msgstr "Фактурата не е намерена"
 
-#: modules/Invoice/Service.php:1171
+#: modules/Invoice/Service.php:1175
 msgid "Payment method not found"
 msgstr "Метода за плащане не е намерен"
 
-#: modules/Invoice/Service.php:1175
+#: modules/Invoice/Service.php:1179
 msgid "Payment method not enabled"
 msgstr "Метода за плащане не е активиран"
 
-#: modules/Invoice/ServiceInvoiceItem.php:62
+#: modules/Invoice/ServiceInvoiceItem.php:60
 msgid "Could not activate proforma item. Order :id not found"
 msgstr "Елементът за проформа не можа да се активира. Поръчката с :id не е намерена"
 
-#: modules/Invoice/ServiceInvoiceItem.php:129
+#: modules/Invoice/ServiceInvoiceItem.php:127
 msgid "Invoice item title is missing"
 msgstr "Името на фактурата липсва"
 
-#: modules/Invoice/ServiceInvoiceItem.php:219
+#: modules/Invoice/ServiceInvoiceItem.php:217
 msgid "Add funds to account"
 msgstr "Добавете средства към профила"
 
-#: modules/Invoice/ServiceInvoiceItem.php:334
+#: modules/Invoice/ServiceInvoiceItem.php:332
 msgid "Promotional Code: :code - :value Discount"
 msgstr "Промоционален код: :code - :value Отстъпка"
 
-#: modules/Invoice/ServiceInvoiceItem.php:337
+#: modules/Invoice/ServiceInvoiceItem.php:335
 msgid "Promotional Code: :code - :value%"
 msgstr "Промоционален код: :code - :value%"
 
-#: modules/Invoice/ServicePayGateway.php:105
+#: modules/Invoice/ServicePayGateway.php:126
 msgid "Payment gateway is not available for installation."
 msgstr "Платежният метод не е наличен за инсталиране."
 
-#: modules/Invoice/ServicePayGateway.php:270
-#: modules/Invoice/ServicePayGateway.php:299
+#: modules/Invoice/ServicePayGateway.php:294
+msgid "Payment gateway :adapter was not found."
+msgstr ""
+
+#: modules/Invoice/ServicePayGateway.php:323
 msgid "Payment gateway :adapter was not found"
 msgstr "Платежният метод :adapter не е намерен"
 
-#: modules/Invoice/ServiceTransaction.php:83
+#: modules/Invoice/ServiceTransaction.php:84
 msgid "Transaction invoice ID is missing"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:87
+#: modules/Invoice/ServiceTransaction.php:88
 msgid "Payment gateway ID is missing"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:348
+#: modules/Invoice/ServiceTransaction.php:374
 msgid "Transaction :id not found."
 msgstr "Транзакцията с :id не беше намерена."
 
-#: modules/Invoice/ServiceTransaction.php:352
-#: modules/Invoice/ServiceTransaction.php:477
+#: modules/Invoice/ServiceTransaction.php:378
+#: modules/Invoice/ServiceTransaction.php:547
 msgid "Could not determine transaction origin. Transaction payment gateway is unknown."
 msgstr "Не може да се определи произходът на транзакцията. Метода за транзакционни плащания не е известен."
 
-#: modules/Invoice/ServiceTransaction.php:357
-#: modules/Invoice/ServiceTransaction.php:482
+#: modules/Invoice/ServiceTransaction.php:383
+#: modules/Invoice/ServiceTransaction.php:552
 msgid "Cannot handle transaction received from unknown payment gateway: :id"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:363
-#: modules/Invoice/ServiceTransaction.php:512
+#: modules/Invoice/ServiceTransaction.php:389
+#: modules/Invoice/ServiceTransaction.php:582
 msgid "Payment adapter :adapter does not support action :action"
 msgstr "Адаптера за плащания :adapter не поддържа следното действие :action"
 
-#: modules/Invoice/ServiceTransaction.php:397
+#: modules/Invoice/ServiceTransaction.php:423
 msgid "Unknown transaction #:id type: :type"
 msgstr "Неизвестна транзакция #:id type: :type"
 
-#: modules/Invoice/ServiceTransaction.php:491
-#: modules/Invoice/ServiceTransaction.php:657
+#: modules/Invoice/ServiceTransaction.php:561
+#: modules/Invoice/ServiceTransaction.php:726
 msgid "Transaction :id is not associated with an invoice."
 msgstr "Транзакцията :id не е свързана с никоя фактура."
 
-#: modules/Invoice/ServiceTransaction.php:496
+#: modules/Invoice/ServiceTransaction.php:566
 msgid "Invoice #:id not found"
 msgstr "Фактурата #:id не беше намерена"
 
-#: modules/Invoice/ServiceTransaction.php:506
+#: modules/Invoice/ServiceTransaction.php:576
 msgid "Instant payment notification (IPN) did not pass gateway :id validation"
 msgstr "Известието за автоматично плащане (IPN) не преминава през портала за плащане :id потвърждение"
 
-#: modules/Invoice/ServiceTransaction.php:517
+#: modules/Invoice/ServiceTransaction.php:587
 msgid "Payment gateway :id method getTransaction should return Payment_Transaction object"
 msgstr "Метода за плащане :id метод getTransaction трябва да върне Payment_Transaction обект"
 
-#: modules/Invoice/ServiceTransaction.php:605
+#: modules/Invoice/ServiceTransaction.php:674
 msgid "Cannot create subscription. Subscription ID from payment gateway was not received"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:640
+#: modules/Invoice/ServiceTransaction.php:709
 msgid "Subscription #:id was not found. Could not unsubscribe"
 msgstr "Абонамента #:id не е намерен. Абонаментът не можа да се прекрати"
 
-#: modules/Invoice/ServiceTransaction.php:653
+#: modules/Invoice/ServiceTransaction.php:722
 msgid "Only approved transaction can be processed"
 msgstr "Може да се обработва само одобрена транзакция"
 
-#: modules/Invoice/ServiceTransaction.php:664
+#: modules/Invoice/ServiceTransaction.php:733
 msgid "Transaction currency :code does not match required currency :required"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:669
+#: modules/Invoice/ServiceTransaction.php:738
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
 msgstr "Състоянието на транзакцията в платежния метод е В процес на изпълнение. Могат да бъдат обработени само пълни или неизвестни транзакции."
 
-#: modules/Invoice/ServiceTransaction.php:679
+#: modules/Invoice/ServiceTransaction.php:748
 msgid "Client currency does not match invoice currency"
 msgstr ""
 
-#: modules/Invoice/ServiceTransaction.php:684
+#: modules/Invoice/ServiceTransaction.php:753
 msgid "Cannot add negative amount to client balance for debit transaction"
 msgstr ""
 
-#: modules/Massmailer/Api/Admin.php:73
+#: modules/Massmailer/Api/Admin.php:71
 msgid "Message from name cannot be empty"
 msgstr ""
 
-#: modules/Massmailer/Api/Admin.php:155 modules/Massmailer/Api/Admin.php:176
+#: modules/Massmailer/Api/Admin.php:151 modules/Massmailer/Api/Admin.php:170
 msgid "Add some content before sending message"
 msgstr "Добавете малко съдържание, преди да изпратите съобщението"
 
@@ -1477,25 +1477,28 @@ msgstr "Масов пощенски оператор"
 msgid "Disabled for security reasons (Demo mode enabled)"
 msgstr "Деактивирано от съображения за сигурност (включен демонстративен режим)"
 
-#: modules/Massmailer/Service.php:193
+#: modules/Massmailer/Service.php:189
 msgid "Mass mail message not found"
 msgstr "Съобщението за масова поща не е намерено"
 
-#: modules/News/Api/Admin.php:47 modules/News/Api/Guest.php:48
-#: modules/Support/Api/Guest.php:142
-msgid "ID or slug is missing"
-msgstr "ID или приятелска връзка липсват"
+#: modules/News/Api/Admin.php:50 modules/News/Api/Guest.php:52
+msgid "ID or slug is required."
+msgstr ""
 
-#: modules/News/Api/Admin.php:63 modules/News/Api/Guest.php:61
+#: modules/News/Api/Admin.php:64 modules/News/Api/Guest.php:66
+msgid "News item not found."
+msgstr ""
+
+#: modules/News/Api/Admin.php:88 modules/News/Api/Admin.php:156
 msgid "News item not found"
 msgstr "Елемента Вестникът не е намерен"
 
-#: modules/News/Controller/Admin.php:35
+#: modules/News/Controller/Admin.php:36
 #: modules/Index/html_client/mod_index_dashboard.html.twig:240
 msgid "Announcements"
 msgstr "Новини"
 
-#: modules/Notification/Api/Admin.php:54 modules/Notification/Api/Admin.php:92
+#: modules/Notification/Api/Admin.php:54 modules/Notification/Api/Admin.php:90
 msgid "Notification message was not found"
 msgstr "Съобщението за известяване не бе намерено"
 
@@ -1511,11 +1514,11 @@ msgstr "Само прекратените поръчки могат да бъд�
 msgid "Order config not passed"
 msgstr "Конфигурацията на поръчката не бе приета"
 
-#: modules/Order/Api/Admin.php:348
+#: modules/Order/Api/Admin.php:346
 msgid "Automatically issue renewal invoices"
 msgstr "Автоматично издаване на фактури за подновяване"
 
-#: modules/Order/Api/Admin.php:349
+#: modules/Order/Api/Admin.php:347
 msgid "Issue invoices manually"
 msgstr "Издаване на фактури ръчно"
 
@@ -1538,39 +1541,39 @@ msgstr "Само изчакващи и неуспешни поръчки за н
 msgid "Orders"
 msgstr "Поръчки"
 
-#: modules/Order/Service.php:506
+#: modules/Order/Service.php:498
 msgid "Currency could not be determined for order"
 msgstr "Валутата не може да бъде определена за тази поръчка"
 
-#: modules/Order/Service.php:522
+#: modules/Order/Service.php:514
 msgid "Product :id is out of stock."
 msgstr "Продукта с :id е изчерпан."
 
-#: modules/Order/Service.php:528
+#: modules/Order/Service.php:520
 msgid "Group ID parameter is missing for addon product order"
 msgstr "Параметърът ID на групата липсва за поръчка на добавен продукт"
 
-#: modules/Order/Service.php:534
+#: modules/Order/Service.php:526
 msgid "Parent order :group_id was not found"
 msgstr "Пряка поръчка :group_id не бе намерена"
 
-#: modules/Order/Service.php:695
+#: modules/Order/Service.php:687
 msgid "Only pending setup or failed orders can be activated"
 msgstr "Може да се активират само чакащи настройки или неуспешни поръчки"
 
-#: modules/Order/Service.php:723
+#: modules/Order/Service.php:715
 msgid "Error creating "
 msgstr "Грешка при създаването "
 
-#: modules/Order/Service.php:792
+#: modules/Order/Service.php:784
 msgid "Service "
 msgstr "Услуга "
 
-#: modules/Order/Service.php:1004
+#: modules/Order/Service.php:990
 msgid "Only active orders can be suspended"
 msgstr "Само активните поръчки могат да бъдат деактивирани"
 
-#: modules/Order/Service.php:1056
+#: modules/Order/Service.php:1042
 msgid "Cannot cancel "
 msgstr ""
 
@@ -1579,8 +1582,8 @@ msgid "You have already created domain product."
 msgstr "Вече сте създали продукт на домейна."
 
 #: modules/Product/Api/Admin.php:103
-msgid "Product type :type is not registered"
-msgstr "Тип продукт :type не е регистриран"
+msgid "Product type :type is not registered."
+msgstr ""
 
 #: modules/Product/Api/Admin.php:152
 msgid "priority params is missing"
@@ -1610,39 +1613,39 @@ msgstr "Разширения на продукта"
 msgid "Product Promotions"
 msgstr "Промоции на продукта"
 
-#: modules/Product/Service.php:214
+#: modules/Product/Service.php:210
 msgid "Pricing type is required"
 msgstr "Необходим е ценовия тип"
 
-#: modules/Product/Service.php:436
+#: modules/Product/Service.php:424
 msgid "Cannot remove product which has active orders."
 msgstr ""
 
-#: modules/Product/Service.php:498
+#: modules/Product/Service.php:486
 msgid "Cannot remove product category with products"
 msgstr ""
 
-#: modules/Product/Service.php:904
+#: modules/Product/Service.php:875
 msgid "This promotion code already exists."
 msgstr "Промоционалният код вече съществува."
 
-#: modules/Profile/Api/Admin.php:117 modules/Profile/Api/Client.php:120
+#: modules/Profile/Api/Admin.php:115 modules/Profile/Api/Client.php:120
 msgid "Current password incorrect"
 msgstr "Текущата парола е неправилна"
 
-#: modules/Profile/Service.php:146
+#: modules/Profile/Service.php:150
 msgid "Invalid birthdate value"
 msgstr "Невалидна стойност на рождената дата"
 
-#: modules/Profile/Service.php:238
+#: modules/Profile/Service.php:243
 msgid "Unable to invalidate sessions, nobody is logged in"
 msgstr "Невъзможно е да се анулират сесиите, защото никой не е влязъл в системата"
 
-#: modules/Profile/Service.php:257
+#: modules/Profile/Service.php:262
 msgid "Unable to invalidate sessions, an invalid type was used"
 msgstr "Невъзможно е да се анулират сесиите, използван е невалиден тип"
 
-#: modules/Redirect/Api/Admin.php:132
+#: modules/Redirect/Api/Admin.php:130
 msgid "Redirect not found"
 msgstr "Пренасочването не е намерено"
 
@@ -1770,118 +1773,118 @@ msgstr ""
 msgid "IP lookup"
 msgstr ""
 
-#: modules/Security/Service.php:40
+#: modules/Security/Service.php:42
 msgid "Run security checks"
 msgstr ""
 
-#: modules/Security/Service.php:41
+#: modules/Security/Service.php:43
 msgid "Allows the staff member to run security checks on the FOSSBilling installation."
 msgstr ""
 
-#: modules/Security/Service.php:105
+#: modules/Security/Service.php:110
 msgid "The check :checkName: does not exist."
 msgstr ""
 
-#: modules/Security/Service.php:110
+#: modules/Security/Service.php:115
 msgid "The check :checkName: does not seem to be a valid check."
 msgstr ""
 
-#: modules/Serviceapikey/Service.php:55
+#: modules/Serviceapikey/Service.php:56
 msgid "Order does not exist."
 msgstr "Поръчката не съществува."
 
-#: modules/Serviceapikey/Service.php:117 modules/Serviceapikey/Service.php:136
+#: modules/Serviceapikey/Service.php:118 modules/Serviceapikey/Service.php:137
 msgid "You must provide an API key to check it's validity."
 msgstr "Трябва да предоставите API ключ, за да проверите неговата валидност."
 
-#: modules/Serviceapikey/Service.php:122 modules/Serviceapikey/Service.php:141
-#: modules/Serviceapikey/Service.php:189 modules/Serviceapikey/Service.php:200
-#: modules/Serviceapikey/Service.php:230 modules/Serviceapikey/Service.php:343
+#: modules/Serviceapikey/Service.php:123 modules/Serviceapikey/Service.php:142
+#: modules/Serviceapikey/Service.php:190 modules/Serviceapikey/Service.php:201
+#: modules/Serviceapikey/Service.php:231 modules/Serviceapikey/Service.php:344
 msgid "API key does not exist"
 msgstr "API ключът не съществува"
 
-#: modules/Serviceapikey/Service.php:179
+#: modules/Serviceapikey/Service.php:180
 msgid "You must provide either the API key or API key order ID in order to reset it."
 msgstr "За да го отмените, трябва да предоставите API ключа или идентификатора на поръчката на API ключа."
 
-#: modules/Serviceapikey/Service.php:222
+#: modules/Serviceapikey/Service.php:223
 msgid "You must provide the API key order ID in order to update it."
 msgstr "За да го актуализирате, трябва да предоставите идентификатора на поръчката на API ключа."
 
-#: modules/Serviceapikey/Service.php:234
+#: modules/Serviceapikey/Service.php:235
 msgid "To change the API key, please use the reset function rather than updating it."
 msgstr "За да промените API ключа, използвайте функцията за рестартиране, вместо да го актуализирате."
 
-#: modules/Serviceapikey/Service.php:297
+#: modules/Serviceapikey/Service.php:298
 msgid "Maximum number of iterations reached while generating API key"
 msgstr "Максимален брой итерации, достигнат при генерирането на API ключа"
 
-#: modules/Serviceapikey/Service.php:332
+#: modules/Serviceapikey/Service.php:333
 msgid "Unknown uppercase option ':case:'. API generator only accepts 'lower', 'upper', or 'mixed'."
 msgstr "Неизвестна опция за главни букви ':case:'. Генераторът на API to приема само 'lower', 'upper' или 'mixed'."
 
-#: modules/Servicecustom/Api/Admin.php:27 modules/Servicecustom/Api/Admin.php:52
+#: modules/Servicecustom/Api/Admin.php:25 modules/Servicecustom/Api/Admin.php:50
 #: modules/Servicecustom/Api/Client.php:34
 #: modules/Servicedomain/Api/Client.php:117
-#: modules/Servicedownloadable/Api/Client.php:28
+#: modules/Servicedownloadable/Api/Client.php:26
 #: modules/Servicehosting/Api/Client.php:82
 msgid "Order ID is required"
 msgstr ""
 
-#: modules/Servicecustom/Api/Admin.php:46 modules/Servicecustom/Api/Client.php:28
+#: modules/Servicecustom/Api/Admin.php:44 modules/Servicecustom/Api/Client.php:28
 msgid "API call is missing arguments"
 msgstr "При обаждането в API липсват аргументи"
 
-#: modules/Servicecustom/Service.php:39
+#: modules/Servicecustom/Service.php:47
 msgid "You must fill in all required fields. "
 msgstr "Трябва да попълните всички задължителни полета. "
 
-#: modules/Servicecustom/Service.php:46
+#: modules/Servicecustom/Service.php:54
 msgid "Field "
 msgstr "Поле "
 
-#: modules/Servicecustom/Service.php:80 modules/Servicedomain/Service.php:222
-#: modules/Servicelicense/Service.php:110
+#: modules/Servicecustom/Service.php:85 modules/Servicedomain/Service.php:232
+#: modules/Servicelicense/Service.php:102
 msgid "Could not activate order. Service was not created"
 msgstr "Поръчката не можа да се активира. Услугата не бе създадена"
 
-#: modules/Servicecustom/Service.php:224
+#: modules/Servicecustom/Service.php:207
 msgid "Custom plugin method :method is forbidden"
 msgstr "Персонализиран метод на плъгина :method е забранен"
 
-#: modules/Servicecustom/Service.php:233
+#: modules/Servicecustom/Service.php:216
 msgid "Config must be an array"
 msgstr "Конфигурацията трябва да е масив"
 
-#: modules/Servicecustom/Service.php:253 modules/Servicedomain/Api/Client.php:128
+#: modules/Servicecustom/Service.php:236 modules/Servicedomain/Api/Client.php:128
 #: modules/Servicedownloadable/Api/Admin.php:66
-#: modules/Servicedownloadable/Api/Client.php:39
-#: modules/Servicehosting/Api/Admin.php:464
+#: modules/Servicedownloadable/Api/Client.php:37
+#: modules/Servicehosting/Api/Admin.php:440
 #: modules/Servicehosting/Api/Client.php:93
 #: modules/Servicelicense/Api/Admin.php:84
 #: modules/Servicelicense/Api/Client.php:52
 msgid "Order is not activated"
 msgstr "Поръчката не е активирана"
 
-#: modules/Servicecustom/Service.php:270
+#: modules/Servicecustom/Service.php:253
 msgid "Plugin class file :file was not found"
 msgstr "Plugin class файлът :file не е намерен"
 
-#: modules/Servicecustom/Service.php:289
+#: modules/Servicecustom/Service.php:268
 msgid "Plugin :plugin does not support action :action"
 msgstr "Приставката :plugin не поддържа действието :action"
 
-#: modules/Servicecustom/Service.php:305 modules/Servicedomain/Service.php:256
-#: modules/Servicedomain/Service.php:295 modules/Servicehosting/Service.php:103
-#: modules/Servicehosting/Service.php:161 modules/Servicehosting/Service.php:179
-#: modules/Servicehosting/Service.php:198 modules/Servicehosting/Service.php:217
+#: modules/Servicecustom/Service.php:284 modules/Servicedomain/Service.php:263
+#: modules/Servicedomain/Service.php:295 modules/Servicehosting/Service.php:112
+#: modules/Servicehosting/Service.php:170 modules/Servicehosting/Service.php:188
+#: modules/Servicehosting/Service.php:207 modules/Servicehosting/Service.php:226
 msgid "Order :id has no active service"
 msgstr "Поръчката с :id няма активна услуга"
 
 #: modules/Servicedomain/Api/Admin.php:168
 #: modules/Servicedomain/Api/Admin.php:213
 #: modules/Servicedomain/Api/Admin.php:271 modules/Servicedomain/Api/Guest.php:68
-#: modules/Servicedomain/Service.php:94 modules/Servicedomain/Service.php:123
+#: modules/Servicedomain/Service.php:104 modules/Servicedomain/Service.php:133
 msgid "TLD not found"
 msgstr "TLD не е намерен"
 
@@ -1929,76 +1932,76 @@ msgstr ""
 msgid "Domain registration"
 msgstr "Регистрация на домейн"
 
-#: modules/Servicedomain/Service.php:34
+#: modules/Servicedomain/Service.php:44
 msgid "Domain :domain registration"
 msgstr "Регистрация на домейна :domain"
 
-#: modules/Servicedomain/Service.php:41
+#: modules/Servicedomain/Service.php:51
 msgid "Domain :domain transfer"
 msgstr "Прехвърляне на домейна :domain"
 
-#: modules/Servicedomain/Service.php:58
+#: modules/Servicedomain/Service.php:68
 msgid "Invalid domain action."
 msgstr "Невалидно действие на домейн."
 
-#: modules/Servicedomain/Service.php:71 modules/Servicedomain/Service.php:89
-#: modules/Servicedomain/Service.php:118 modules/Servicedomain/Service.php:555
+#: modules/Servicedomain/Service.php:81 modules/Servicedomain/Service.php:99
+#: modules/Servicedomain/Service.php:128 modules/Servicedomain/Service.php:549
 msgid "Domain name :domain is invalid"
 msgstr "Домейнът :domain не е валиден"
 
-#: modules/Servicedomain/Service.php:75
+#: modules/Servicedomain/Service.php:85
 msgid "TLD is invalid"
 msgstr ""
 
-#: modules/Servicedomain/Service.php:99
+#: modules/Servicedomain/Service.php:109
 msgid ":domain cannot be transferred!"
 msgstr ""
 
-#: modules/Servicedomain/Service.php:128
+#: modules/Servicedomain/Service.php:138
 msgid ":tld can be registered for at least :years years"
 msgstr ":tld може да се регистрира за минимум :years години"
 
-#: modules/Servicedomain/Service.php:133
+#: modules/Servicedomain/Service.php:143
 msgid ":domain is already registered!"
 msgstr ":domain вече е регистриран!"
 
-#: modules/Servicedomain/Service.php:170
+#: modules/Servicedomain/Service.php:180
 msgid "Default domain nameservers are not configured"
 msgstr "Имената на сървърите по подразбиране не са конфигурирани"
 
-#: modules/Servicedomain/Service.php:371
+#: modules/Servicedomain/Service.php:365
 msgid "Nameserver 1 is required"
 msgstr "Необходим е сървър на име 1"
 
-#: modules/Servicedomain/Service.php:374
+#: modules/Servicedomain/Service.php:368
 msgid "Nameserver 2 is required"
 msgstr "Необходим е сървър на име 2"
 
-#: modules/Servicedomain/Service.php:527 modules/Servicedomain/Service.php:548
+#: modules/Servicedomain/Service.php:521 modules/Servicedomain/Service.php:542
 msgid "Domain name is invalid"
 msgstr "Домейнът не е валиден"
 
-#: modules/Servicedomain/Service.php:531
+#: modules/Servicedomain/Service.php:525
 msgid "Domain cannot be transferred"
 msgstr ""
 
-#: modules/Servicedomain/Service.php:559
+#: modules/Servicedomain/Service.php:553
 msgid "Domain cannot be registered"
 msgstr ""
 
-#: modules/Servicedomain/Service.php:958
+#: modules/Servicedomain/Service.php:950
 msgid "Domain registrar :adapter was not found"
 msgstr "Регистратор на домейни :adapter не бе намерен"
 
-#: modules/Servicedomain/Service.php:963
+#: modules/Servicedomain/Service.php:955
 msgid "Registrar :adapter was not found"
 msgstr "Регистратор :adapter не е намерен"
 
-#: modules/Servicedomain/Service.php:975
+#: modules/Servicedomain/Service.php:967
 msgid "Registrar adapter :adapter should extend Registrar_AdapterAbstract"
 msgstr "Адаптер за регистратор :adapter трябва да разшири Registrar_AdapterAbstract"
 
-#: modules/Servicedomain/Service.php:1040
+#: modules/Servicedomain/Service.php:1032
 msgid "Registrar is used by :count: domains"
 msgstr "Регистраторът се използва от :count: домейни"
 
@@ -2006,24 +2009,24 @@ msgstr "Регистраторът се използва от :count: домей
 msgid "File was not uploaded."
 msgstr ""
 
-#: modules/Servicedownloadable/Service.php:170
-#: modules/Servicedownloadable/Service.php:234
+#: modules/Servicedownloadable/Service.php:162
+#: modules/Servicedownloadable/Service.php:220
 msgid "Error uploading file."
 msgstr ""
 
-#: modules/Servicedownloadable/Service.php:273
+#: modules/Servicedownloadable/Service.php:258
 msgid "File cannot be downloaded at the moment. Please contact support."
 msgstr ""
 
-#: modules/Servicehosting/Api/Admin.php:27
+#: modules/Servicehosting/Api/Admin.php:25
 msgid "plan_id is missing"
 msgstr "plan_id липсва"
 
-#: modules/Servicehosting/Api/Admin.php:273
+#: modules/Servicehosting/Api/Admin.php:257
 msgid "Hosting server is used by :count: service hostings"
 msgstr "Сървърът за хостинг се използва от :count: хостинг услуги"
 
-#: modules/Servicehosting/Api/Admin.php:386
+#: modules/Servicehosting/Api/Admin.php:364
 msgid "Hosting plan is used by :count: service hostings"
 msgstr "Планът за хостинг се използва от :count: хостинг услуги"
 
@@ -2038,39 +2041,39 @@ msgstr "Тип на продукта"
 msgid "Hosting plans and servers"
 msgstr "Хостинг планове и сървъри"
 
-#: modules/Servicehosting/Service.php:37
+#: modules/Servicehosting/Service.php:46
 msgid ":hosting for :domain"
 msgstr ":hosting за :domain"
 
-#: modules/Servicehosting/Service.php:49
+#: modules/Servicehosting/Service.php:58
 msgid "Hosting product is not configured completely. Configure server for hosting product."
 msgstr "Хостинг продукта не е конфигуриран напълно. Конфигурирайте сървъра за хостинг продукта."
 
-#: modules/Servicehosting/Service.php:52
+#: modules/Servicehosting/Service.php:61
 msgid "Hosting product is not configured completely. Configure hosting plan for hosting product."
 msgstr "Продуктът за хостинг не е конфигуриран напълно. Конфигурирайте хостинг плана за хостинг продукта."
 
-#: modules/Servicehosting/Service.php:55
+#: modules/Servicehosting/Service.php:64
 msgid "Domain name is invalid."
 msgstr "Домейнът не е валиден."
 
-#: modules/Servicehosting/Service.php:58
+#: modules/Servicehosting/Service.php:67
 msgid "Domain extension is invalid."
 msgstr "Разширението на домейна не е валидено."
 
-#: modules/Servicehosting/Service.php:292
+#: modules/Servicehosting/Service.php:298
 msgid "Account username is missing or is invalid"
 msgstr "Липсва потребителското име на акаунта или то е невалидно"
 
-#: modules/Servicehosting/Service.php:314
+#: modules/Servicehosting/Service.php:320
 msgid "Account IP address is missing or is invalid"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:338
+#: modules/Servicehosting/Service.php:344
 msgid "Domain SLD or TLD is missing"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:364
+#: modules/Servicehosting/Service.php:370
 msgid "Account password is missing or is invalid"
 msgstr "Паролата за профила липсва или не е валидна"
 
@@ -2078,76 +2081,76 @@ msgstr "Паролата за профила липсва или не е вал�
 msgid "Invalid server manager. Server was not configured properly."
 msgstr "Невалиден мениджър на сървъра. Сървърът не е конфигуриран правилно."
 
-#: modules/Servicehosting/Service.php:833
-msgid "Server manager :adapter is invalid"
-msgstr "Сървърния мениджър :adapter не е валиден"
+#: modules/Servicehosting/Service.php:829
+msgid "Server manager :adapter is invalid."
+msgstr ""
 
-#: modules/Servicehosting/Service.php:880
+#: modules/Servicehosting/Service.php:876
 msgid "Cannot remove hosting plan which has active accounts"
 msgstr ""
 
-#: modules/Servicehosting/Service.php:1100
+#: modules/Servicehosting/Service.php:1084
 msgid "Could not find main domain product"
 msgstr "Не можах да намеря продукт на основния домейн"
 
-#: modules/Servicelicense/Service.php:116
-msgid "License plugin :plugin was not found"
-msgstr "Лиценз разширението :plugin не е намерен"
+#: modules/Servicelicense/Service.php:108
+msgid "License plugin :plugin was not found."
+msgstr ""
 
-#: modules/Servicelicense/Service.php:120
+#: modules/Servicelicense/Service.php:112
 msgid "License plugin does not have generate method"
 msgstr ""
 
-#: modules/Servicelicense/Service.php:131
+#: modules/Servicelicense/Service.php:123
 msgid "Maximum number of iterations reached while generating license key"
 msgstr "Максимален брой итерации, достигнат при генерирането на лиценз ключ"
 
-#: modules/Spamchecker/Service.php:63
+#: modules/Spamchecker/Service.php:71
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
 msgstr "Вашият ИП адрес (:ip) е блокиран. Моля, свържете се с нашата поддръжка, за да премахнем блокирането."
 
-#: modules/Spamchecker/Service.php:84
+#: modules/Spamchecker/Service.php:92
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
 msgstr "За да използвате reCAPTCHA, трябва да се сдобиете с API ключ от <a href='https://www.google.com/recaptcha/admin/create'>тук</a>"
 
-#: modules/Spamchecker/Service.php:88
+#: modules/Spamchecker/Service.php:96
 msgid "You have to complete the CAPTCHA to continue"
 msgstr "За да продължите, трябва да попълните CAPTCHA теста"
 
-#: modules/Spamchecker/Service.php:102 modules/Spamchecker/Service.php:105
+#: modules/Spamchecker/Service.php:110 modules/Spamchecker/Service.php:113
 msgid "reCAPTCHA verification failed."
 msgstr "проверката на reCAPTCHA не беше успешна."
 
-#: modules/Spamchecker/Service.php:151
+#: modules/Spamchecker/Service.php:163
 msgid "Your username is blacklisted in the Stop Forum Spam database"
 msgstr "Вашето потребителско име е включено в черния списък на базата данни Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:154
+#: modules/Spamchecker/Service.php:166
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
 msgstr "Вашият имейл адрес е включен в черния списък на базата данни Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:157
+#: modules/Spamchecker/Service.php:169
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "Вашият IP адрес е включен в черния списък на базата данни Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:191
+#: modules/Spamchecker/Service.php:203
 msgid "Disposable email addresses are not allowed"
 msgstr "Не се разрешава използването на имейл адреси за еднократна употреба"
 
-#: modules/Staff/Api/Guest.php:33
+#: modules/Staff/Api/Guest.php:31
 msgid "Administrator account already exists"
 msgstr "Профилът на администратора вече съществува"
 
-#: modules/Staff/Api/Guest.php:80
-msgid "You are not allowed to login to admin area from :ip address"
-msgstr "Не ви е позволено да влизате в администраторска област от този :ip адрес"
+#: modules/Staff/Api/Guest.php:78
+msgid "You are not allowed to login to admin area from :ip address."
+msgstr ""
 
-#: modules/Staff/Api/Guest.php:95 modules/Staff/Api/Guest.php:140
+#: modules/Staff/Api/Guest.php:93 modules/Staff/Api/Guest.php:138
 #: modules/Staff/Controller/Admin.php:119
 msgid "Password reset has been disabled"
 msgstr "Възстановяването на пароли е деактивирано"
 
-#: modules/Staff/Api/Guest.php:113 modules/Staff/Api/Guest.php:117
+#: modules/Staff/Api/Guest.php:111 modules/Staff/Api/Guest.php:115
 #: modules/Staff/Controller/Admin.php:125 modules/Staff/Controller/Admin.php:128
 msgid "The link has expired or you have already confirmed the password reset."
 msgstr ""
@@ -2216,46 +2219,50 @@ msgstr "Позволява на модератора да управлява г�
 msgid "Check your login details"
 msgstr "Моля проверете данните си за вписване"
 
-#: modules/Staff/Service.php:509
+#: modules/Staff/Service.php:516
 msgid "This administrator account is protected and cannot be removed"
 msgstr ""
 
-#: modules/Staff/Service.php:580
-msgid "Staff member with email :email is already registered"
-msgstr "Член на персонала с имейл :email вече е регистриран"
+#: modules/Staff/Service.php:587
+msgid "Staff member with email :email is already registered."
+msgstr ""
 
-#: modules/Staff/Service.php:675
+#: modules/Staff/Service.php:682
 msgid "Administrators group cannot be removed"
 msgstr ""
 
-#: modules/Staff/Service.php:683
+#: modules/Staff/Service.php:690
 msgid "Cannot remove group which has staff members"
 msgstr ""
 
-#: modules/Support/Api/Admin.php:837 modules/Support/Api/Admin.php:911
+#: modules/Support/Api/Admin.php:829 modules/Support/Api/Admin.php:901
 #: modules/Support/Service.php:1651
 msgid "Article not found"
 msgstr "Статията не е намерена"
 
-#: modules/Support/Api/Admin.php:953 modules/Support/Api/Admin.php:998
+#: modules/Support/Api/Admin.php:943 modules/Support/Api/Admin.php:988
 msgid "Article Category not found"
 msgstr "Категорията на статията не е намерена"
 
-#: modules/Support/Api/Admin.php:1023
+#: modules/Support/Api/Admin.php:1013
 msgid "Category not found"
 msgstr "Категорията не е намерена"
 
-#: modules/Support/Api/Client.php:125 modules/Support/Service.php:248
+#: modules/Support/Api/Client.php:123 modules/Support/Service.php:248
 msgid "Ticket not found"
 msgstr "Билетът не е намерен"
 
-#: modules/Support/Api/Client.php:129
+#: modules/Support/Api/Client.php:127
 msgid "Ticket cannot be reopened."
 msgstr ""
 
 #: modules/Support/Api/Guest.php:36
 msgid "Please enter your message"
 msgstr "Моля, въведете вашето съобщение"
+
+#: modules/Support/Api/Guest.php:142
+msgid "ID or slug is missing"
+msgstr "ID или приятелска връзка липсват"
 
 #: modules/Support/Api/Guest.php:156
 msgid "Article item not found"
@@ -2379,7 +2386,7 @@ msgstr "Система"
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:20
 #: modules/Email/html_admin/mod_email_settings.html.twig:16
 #: modules/Email/html_admin/mod_email_template.html.twig:16
-#: modules/Extension/html_admin/mod_extension_index.html.twig:99
+#: modules/Extension/html_admin/mod_extension_index.html.twig:101
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:19
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:30
@@ -2411,7 +2418,7 @@ msgstr "Система"
 msgid "Settings"
 msgstr "Настройки"
 
-#: modules/System/Controller/Admin.php:47 modules/System/Service.php:56
+#: modules/System/Controller/Admin.php:47 modules/System/Service.php:64
 #: modules/System/html_admin/mod_system_update.html.twig:5
 #: modules/System/html_admin/mod_system_update.html.twig:11
 #: modules/System/html_admin/mod_system_update.html.twig:50
@@ -2419,72 +2426,72 @@ msgstr "Настройки"
 msgid "Update FOSSBilling"
 msgstr "Актуализиране на FOSSBilling"
 
-#: modules/System/Service.php:41
+#: modules/System/Service.php:49
 msgid "Manage company details"
 msgstr "Управляване на детайлите на компанията"
 
-#: modules/System/Service.php:42
+#: modules/System/Service.php:50
 msgid "Allows the staff member to update company details as set under the system module."
 msgstr "Позволява на модераторите стафф потребителите да актуализират данните на фирмата, зададени в модула на системата."
 
-#: modules/System/Service.php:46
+#: modules/System/Service.php:54
 msgid "Manage company legal"
 msgstr "Управление на легалната информация относно фирмата"
 
-#: modules/System/Service.php:47
+#: modules/System/Service.php:55
 msgid "Allows the staff member to update company legal as set under the system module."
 msgstr "Позволява на модераторите стафф потребителите да актуализират легалните данни на фирмата, зададени в модула на системата."
 
-#: modules/System/Service.php:51
-#: modules/System/html_admin/mod_system_settings.html.twig:510
+#: modules/System/Service.php:59
+#: modules/System/html_admin/mod_system_settings.html.twig:528
 msgid "Invalidate cache"
 msgstr "Невалиден кеш"
 
-#: modules/System/Service.php:52
+#: modules/System/Service.php:60
 msgid "Allows the staff member to invalidate the FOSSBilling cache from within the system settings."
 msgstr "Позволява на модератора стафф потребителя да анулира кеша на FOSSBilling от системните настройки."
 
-#: modules/System/Service.php:57
+#: modules/System/Service.php:65
 msgid "Allows the staff member to update FOSSBilling."
 msgstr "Позволява на модератора стафф потребителя да актуализира FOSSBilling."
 
-#: modules/System/Service.php:61
+#: modules/System/Service.php:69
 msgid "Manage the network interface"
 msgstr ""
 
-#: modules/System/Service.php:62
+#: modules/System/Service.php:70
 msgid "Allows the staff member to fetch a list of all local interface IP addresses and set the default network interface for FOSSBilling to use."
 msgstr ""
 
-#: modules/System/Service.php:74
+#: modules/System/Service.php:82
 msgid "Parameter key is missing"
 msgstr "Параметърният ключ липсва"
 
-#: modules/System/Service.php:145
+#: modules/System/Service.php:153
 msgid "Invalid parameter name, received: param_"
 msgstr "Невалидно име на параметър, получено: param_"
 
-#: modules/System/Service.php:304
+#: modules/System/Service.php:312
 msgid "Cron was never executed, please ensure you have configured the cronjob or else scheduled tasks within FOSSBilling will not behave correctly."
 msgstr ""
 
-#: modules/System/Service.php:309
+#: modules/System/Service.php:317
 msgid "FOSSBilling has detected that cron hasn't been run in an abnormal time period. Please ensure the cronjob is configured to be run every 5 minutes."
 msgstr ""
 
-#: modules/System/Service.php:330
+#: modules/System/Service.php:338
 msgid "We'd appreciate it if you'd consider opting into error reporting for FOSSBilling. Doing so will help us improve the software and provide you with a better experience. (Message will remain for 15 minutes)"
 msgstr ""
 
-#: modules/System/Service.php:341
+#: modules/System/Service.php:349
 msgid "Error reporting in FOSSBilling has changed since you last reviewed it. You may want to consider reviewing the changes to see what's been changed. (This message will remain for 24 hours)"
 msgstr ""
 
-#: modules/System/Service.php:531
+#: modules/System/Service.php:540
 msgid "Parameter :param does not exist"
 msgstr "Параметър :param не съществува"
 
-#: modules/System/Service.php:945
+#: modules/System/Service.php:954
 msgid "Country :code phone code is not registered"
 msgstr "Телефонният код :code на страната не е регистриран"
 
@@ -2492,23 +2499,23 @@ msgstr "Телефонният код :code на страната не е рег
 msgid "Theme \":name\" assets folder is not writable. Files cannot be uploaded and settings cannot be saved. Set folder permissions to 755"
 msgstr ""
 
-#: modules/Theme/Controller/Admin.php:98
+#: modules/Theme/Controller/Admin.php:96
 msgid "Theme \":name\" assets folder is not writable. Set folder :folder permissions to 777"
 msgstr "Темата \":name\" папката с активи няма достъп да се пише в нея.Задайте разрешенията на папката :folder на 777"
 
-#: modules/Theme/Controller/Admin.php:102
+#: modules/Theme/Controller/Admin.php:100
 msgid "Theme \":name\" is not configurable"
 msgstr "Темата \":name\" не е конфигурируема"
 
-#: modules/Theme/Model/Theme.php:19
-msgid "Theme \":name\" does not exist"
-msgstr "Темата \":name\" не съществува"
+#: modules/Theme/Model/Theme.php:25
+msgid "Theme ':name' does not exist."
+msgstr ""
 
-#: modules/Theme/Service.php:320
+#: modules/Theme/Service.php:325
 msgid "Theme was not found in path :path"
 msgstr "Темата не бе намерена в пътя :path"
 
-#: modules/Theme/Service.php:337
+#: modules/Theme/Service.php:342
 msgid "Unable to decode theme manifest file :file"
 msgstr "Невъзможност за декодиране на файла :file с манифеста на темата"
 
@@ -2526,10 +2533,10 @@ msgstr "Потребител"
 #: modules/Embed/html_client/mod_embed_contact.html.twig:57
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:115
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
-#: modules/Order/html_client/mod_order_manage.html.twig:219
+#: modules/Order/html_client/mod_order_manage.html.twig:223
 #: modules/Support/html_admin/mod_support_canned_response.html.twig:49
-#: modules/Support/html_admin/mod_support_tickets.html.twig:325
-#: modules/Support/html_admin/mod_support_tickets.html.twig:359
+#: modules/Support/html_admin/mod_support_tickets.html.twig:324
+#: modules/Support/html_admin/mod_support_tickets.html.twig:358
 #: modules/Support/html_client/mod_support_contact_us.html.twig:45
 #: modules/Support/html_client/mod_support_tickets.html.twig:98
 msgid "Message"
@@ -2548,10 +2555,10 @@ msgid "IP"
 msgstr "ИП"
 
 #: modules/Activity/html_admin/mod_activity_index.html.twig:28
-#: modules/Client/html_admin/mod_client_index.html.twig:368
 #: modules/Client/html_admin/mod_client_login_history.html.twig:25
 #: modules/Client/html_admin/mod_client_manage.html.twig:295
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
+#: modules/Client/html_admin/mod_client_new_form.html.twig:131
 #: modules/Client/html_admin/mod_client_settings.html.twig:81
 #: modules/Client/html_client/mod_client_profile.html.twig:136
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:30
@@ -2600,7 +2607,7 @@ msgstr ""
 #: modules/Activity/html_admin/mod_activity_index.html.twig:69
 #: modules/Client/html_admin/mod_client_group.html.twig:51
 #: modules/Client/html_admin/mod_client_index.html.twig:262
-#: modules/Client/html_admin/mod_client_index.html.twig:428
+#: modules/Client/html_admin/mod_client_index.html.twig:318
 #: modules/Client/html_admin/mod_client_login_history.html.twig:52
 #: modules/Client/html_admin/mod_client_manage.html.twig:148
 #: modules/Client/html_admin/mod_client_manage.html.twig:672
@@ -2608,10 +2615,10 @@ msgstr ""
 #: modules/Email/html_admin/mod_email_history.html.twig:60
 #: modules/Email/html_admin/mod_email_settings.html.twig:110
 #: modules/Email/html_admin/mod_email_template.html.twig:76
-#: modules/Extension/html_admin/mod_extension_index.html.twig:74
-#: modules/Extension/html_admin/mod_extension_index.html.twig:84
+#: modules/Extension/html_admin/mod_extension_index.html.twig:75
+#: modules/Extension/html_admin/mod_extension_index.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:73
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:262
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:259
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:185
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:552
@@ -2671,7 +2678,7 @@ msgstr "Сигурен/а ли сте?"
 
 #: modules/Activity/html_admin/mod_activity_index.html.twig:79
 #: modules/Client/html_admin/mod_client_index.html.twig:271
-#: modules/Client/html_admin/mod_client_index.html.twig:437
+#: modules/Client/html_admin/mod_client_index.html.twig:327
 #: modules/Client/html_admin/mod_client_login_history.html.twig:62
 #: modules/Client/html_admin/mod_client_manage.html.twig:495
 #: modules/Client/html_admin/mod_client_manage.html.twig:564
@@ -2687,11 +2694,11 @@ msgstr "Сигурен/а ли сте?"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:192
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:216
 #: modules/Email/html_admin/mod_email_history.html.twig:69
-#: modules/Extension/html_admin/mod_extension_index.html.twig:109
+#: modules/Extension/html_admin/mod_extension_index.html.twig:111
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:72
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:85
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:272
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:269
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:85
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:89
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:220
@@ -2803,7 +2810,7 @@ msgstr ""
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:195
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:214
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:143
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:142
 #: modules/News/html_admin/mod_news_post.html.twig:140
 #: modules/Order/html_admin/mod_order_manage.html.twig:395
 #: modules/Order/html_admin/mod_order_manage.html.twig:464
@@ -2830,7 +2837,7 @@ msgstr ""
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:105
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:193
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:77
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:76
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:130
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
@@ -2843,7 +2850,7 @@ msgstr ""
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:137
 #: modules/Support/html_admin/mod_support_settings.html.twig:125
 #: modules/Support/html_admin/mod_support_ticket.html.twig:163
-#: modules/System/html_admin/mod_system_settings.html.twig:614
+#: modules/System/html_admin/mod_system_settings.html.twig:659
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr "Актуализиране"
@@ -2857,8 +2864,8 @@ msgid "Edit client group"
 msgstr "Редактиране на клиентската група"
 
 #: modules/Client/html_admin/mod_client_group.html.twig:32
-#: modules/Client/html_admin/mod_client_index.html.twig:412
-#: modules/Client/html_admin/mod_client_index.html.twig:449
+#: modules/Client/html_admin/mod_client_index.html.twig:302
+#: modules/Client/html_admin/mod_client_index.html.twig:339
 #: modules/Client/html_admin/mod_client_manage.html.twig:453
 #: modules/Currency/html_admin/mod_currency_manage.html.twig:36
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:68
@@ -2934,12 +2941,13 @@ msgstr "Идент. № на клиента"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:24
 #: modules/Client/html_admin/mod_client_index.html.twig:209
-#: modules/Client/html_admin/mod_client_index.html.twig:324
 #: modules/Client/html_admin/mod_client_manage.html.twig:67
 #: modules/Client/html_admin/mod_client_manage.html.twig:223
+#: modules/Client/html_admin/mod_client_new_form.html.twig:12
+#: modules/Client/html_admin/mod_client_new_form.html.twig:89
 #: modules/Embed/html_client/mod_embed_contact.html.twig:42
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:15
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:210
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:207
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:35
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:107
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:151
@@ -2965,7 +2973,7 @@ msgstr "Идент. № на клиента"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:236
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:279
 #: modules/Support/html_client/mod_support_contact_us.html.twig:33
-#: modules/System/html_admin/mod_system_settings.html.twig:62
+#: modules/System/html_admin/mod_system_settings.html.twig:60
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:31
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:98
 msgid "Name"
@@ -2977,7 +2985,6 @@ msgid "Company name"
 msgstr "Име на фирмата"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:38
-#: modules/Client/html_admin/mod_client_index.html.twig:318
 #: modules/Client/html_admin/mod_client_manage.html.twig:75
 #: modules/Client/html_admin/mod_client_manage.html.twig:217
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:89
@@ -3009,20 +3016,20 @@ msgstr "Име на фирмата"
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:56
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:99
 #: modules/Support/html_admin/mod_support_settings.html.twig:147
-#: modules/Support/html_admin/mod_support_tickets.html.twig:347
+#: modules/Support/html_admin/mod_support_tickets.html.twig:346
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:18
 #: modules/Support/html_client/mod_support_contact_us.html.twig:37
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:35
-#: modules/System/html_admin/mod_system_settings.html.twig:68
+#: modules/System/html_admin/mod_system_settings.html.twig:66
 #: themes/huraga/html/mobile_menu.html.twig:52
 #: themes/huraga/html/partial_menu.html.twig:53
 msgid "Email"
 msgstr "Имейл"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:45
-#: modules/Client/html_admin/mod_client_index.html.twig:312
 #: modules/Client/html_admin/mod_client_manage.html.twig:94
 #: modules/Client/html_admin/mod_client_manage.html.twig:211
+#: modules/Client/html_admin/mod_client_new_form.html.twig:47
 #: modules/Staff/html_admin/mod_staff_index.html.twig:32
 #: modules/Staff/html_admin/mod_staff_index.html.twig:80
 #: modules/Staff/html_admin/mod_staff_manage.html.twig:60
@@ -3037,24 +3044,24 @@ msgstr ""
 
 #: modules/Client/html_admin/mod_client_index.html.twig:52
 #: modules/Client/html_admin/mod_client_index.html.twig:211
-#: modules/Client/html_admin/mod_client_index.html.twig:299
 #: modules/Client/html_admin/mod_client_manage.html.twig:79
 #: modules/Client/html_admin/mod_client_manage.html.twig:164
 #: modules/Client/html_admin/mod_client_manage.html.twig:456
 #: modules/Client/html_admin/mod_client_manage.html.twig:525
 #: modules/Client/html_admin/mod_client_manage.html.twig:595
 #: modules/Client/html_admin/mod_client_manage.html.twig:814
+#: modules/Client/html_admin/mod_client_new_form.html.twig:37
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:45
 #: modules/Email/html_admin/mod_email_settings.html.twig:195
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:52
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:214
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:50
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:68
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:206
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:680
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:63
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:118
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:39
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:132
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:81
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:41
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:167
@@ -3069,7 +3076,7 @@ msgstr ""
 #: modules/Order/html_admin/mod_order_manage.html.twig:593
 #: modules/Order/html_admin/mod_order_manage.html.twig:651
 #: modules/Order/html_client/mod_order_list.html.twig:34
-#: modules/Order/html_client/mod_order_manage.html.twig:139
+#: modules/Order/html_client/mod_order_manage.html.twig:143
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:33
 #: modules/Product/html_admin/mod_product_addons.html.twig:47
 #: modules/Product/html_admin/mod_product_addons.html.twig:87
@@ -3104,13 +3111,13 @@ msgstr "Всички"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:60
 #: modules/Client/html_admin/mod_client_index.html.twig:120
-#: modules/Client/html_admin/mod_client_index.html.twig:303
 #: modules/Client/html_admin/mod_client_manage.html.twig:168
+#: modules/Client/html_admin/mod_client_new_form.html.twig:40
 #: modules/Client/html_admin/mod_client_settings.html.twig:108
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:138
 #: modules/Index/html_client/mod_index_dashboard.html.twig:109
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:122
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:136
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:135
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:70
 #: modules/News/html_admin/mod_news_index.html.twig:36
 #: modules/News/html_admin/mod_news_index.html.twig:111
@@ -3134,6 +3141,7 @@ msgstr "Активен"
 #: modules/Client/html_admin/mod_client_index.html.twig:64
 #: modules/Client/html_admin/mod_client_index.html.twig:134
 #: modules/Client/html_admin/mod_client_manage.html.twig:172
+#: modules/Client/html_admin/mod_client_new_form.html.twig:41
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:71
 #: modules/Order/html_admin/mod_order_index.html.twig:133
 #: themes/admin_default/html/macro_functions.html.twig:124
@@ -3143,11 +3151,11 @@ msgstr "Прекратен"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:68
 #: modules/Client/html_admin/mod_client_index.html.twig:148
-#: modules/Client/html_admin/mod_client_index.html.twig:307
 #: modules/Client/html_admin/mod_client_manage.html.twig:176
+#: modules/Client/html_admin/mod_client_new_form.html.twig:42
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:222
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:126
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:140
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:139
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:72
 #: themes/admin_default/html/macro_functions.html.twig:126
 #: themes/huraga/html/macro_functions.html.twig:41
@@ -3160,7 +3168,7 @@ msgid "Registration date"
 msgstr "Дата на регистрация"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:103
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:113
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:110
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:82
 #: modules/Order/html_admin/mod_order_index.html.twig:88
 #: modules/Support/html_admin/mod_support_tickets.html.twig:105
@@ -3170,7 +3178,7 @@ msgstr "Филтър"
 #: modules/Client/html_admin/mod_client_index.html.twig:104
 #: modules/Email/html_admin/mod_email_template.html.twig:77
 #: modules/Email/html_admin/mod_email_template.html.twig:80
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:114
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:111
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:83
 #: modules/Order/html_admin/mod_order_index.html.twig:89
 #: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:21
@@ -3187,7 +3195,7 @@ msgstr "Анулиране"
 #: modules/Index/html_client/mod_index_dashboard.html.twig:81
 #: modules/Index/html_client/mod_index_dashboard.html.twig:107
 #: modules/Index/html_client/mod_index_dashboard.html.twig:130
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:172
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:169
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:92
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:593
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:622
@@ -3222,9 +3230,9 @@ msgid "New Group"
 msgstr ""
 
 #: modules/Client/html_admin/mod_client_index.html.twig:210
-#: modules/Client/html_admin/mod_client_index.html.twig:337
 #: modules/Client/html_admin/mod_client_manage.html.twig:71
 #: modules/Client/html_admin/mod_client_manage.html.twig:189
+#: modules/Client/html_admin/mod_client_new_form.html.twig:85
 #: modules/Client/html_admin/mod_client_settings.html.twig:76
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:383
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:445
@@ -3246,132 +3254,11 @@ msgstr "Фирма"
 msgid "Export Clients"
 msgstr "Експортиране на клиентите"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:314
-#: modules/Client/html_admin/mod_client_manage.html.twig:213
-msgid "Select group"
-msgstr ""
-
-#: modules/Client/html_admin/mod_client_index.html.twig:343
-#: modules/Client/html_admin/mod_client_manage.html.twig:282
-#: modules/Client/html_admin/mod_client_settings.html.twig:84
-#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:192
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:145
-msgid "Address Line 1"
-msgstr "Първи адрес"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:349
-#: modules/Client/html_admin/mod_client_manage.html.twig:288
-#: modules/Client/html_admin/mod_client_settings.html.twig:85
-#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:198
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:150
-msgid "Address Line 2"
-msgstr "Втори адрес"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:355
-#: modules/Client/html_admin/mod_client_manage.html.twig:308
-#: modules/Client/html_admin/mod_client_settings.html.twig:82
-#: modules/Client/html_client/mod_client_profile.html.twig:132
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:168
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:169
-#: modules/Page/html_client/mod_page_signup.html.twig:99
-#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
-msgid "City"
-msgstr "Град"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:361
-#: modules/Client/html_admin/mod_client_manage.html.twig:301
-#: modules/Client/html_admin/mod_client_settings.html.twig:83
-#: modules/Client/html_client/mod_client_profile.html.twig:148
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:126
-#: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:194
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
-#: modules/Page/html_client/mod_page_signup.html.twig:119
-#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
-#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
-msgid "State"
-msgstr "Област"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:370
-#: modules/Client/html_admin/mod_client_manage.html.twig:297
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:484
-msgid "Select country"
-msgstr ""
-
-#: modules/Client/html_admin/mod_client_index.html.twig:374
-#: modules/Client/html_admin/mod_client_manage.html.twig:314
-msgid "Postcode"
-msgstr "Пощенски код"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:380
-#: modules/Client/html_admin/mod_client_manage.html.twig:320
-#: modules/Client/html_admin/mod_client_settings.html.twig:87
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:488
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:122
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:76
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:131
-#: modules/Invoice/pdf_template/default-pdf.twig:41
-#: modules/Invoice/pdf_template/default-pdf.twig:53
-#: modules/Invoice/pdf_template/default-pdf.twig:110
-#: modules/System/html_admin/mod_system_settings.html.twig:74
-msgid "Phone"
-msgstr "Телефонен номер"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:391
-#: modules/Client/html_admin/mod_client_manage.html.twig:98
-#: modules/Client/html_admin/mod_client_manage.html.twig:346
-#: modules/Client/html_client/mod_client_profile.html.twig:34
-#: modules/Client/html_client/mod_client_profile.html.twig:216
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:157
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:147
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:35
-msgid "Currency"
-msgstr "Валута"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:393
-#: modules/Client/html_admin/mod_client_manage.html.twig:348
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:145
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:159
-msgid "Select currency"
-msgstr ""
-
-#: modules/Client/html_admin/mod_client_index.html.twig:397
-#: modules/Client/html_admin/mod_client_manage.html.twig:405
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:36
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:128
-#: modules/Page/html_client/mod_page_login.html.twig:34
-#: modules/Page/html_client/mod_page_signup.html.twig:159
-#: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:121
-#: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:33
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:12
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:52
-#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:88
-#: modules/Staff/html_admin/mod_staff_index.html.twig:103
-#: modules/Staff/html_admin/mod_staff_login.html.twig:28
-#: modules/Staff/html_admin/mod_staff_login.html.twig:55
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:44
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:221
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:36
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:201
-msgid "Password"
-msgstr "Парола"
-
-#: modules/Client/html_admin/mod_client_index.html.twig:403
-#: modules/Client/html_admin/mod_client_index.html.twig:455
+#: modules/Client/html_admin/mod_client_index.html.twig:345
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:138
 #: modules/Email/html_admin/mod_email_settings.html.twig:177
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:272
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:163
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:162
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:133
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:105
 #: modules/News/html_admin/mod_news_index.html.twig:123
@@ -3385,8 +3272,8 @@ msgstr "Парола"
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:173
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:144
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:199
-#: modules/Support/html_admin/mod_support_tickets.html.twig:330
-#: modules/Support/html_admin/mod_support_tickets.html.twig:364
+#: modules/Support/html_admin/mod_support_tickets.html.twig:329
+#: modules/Support/html_admin/mod_support_tickets.html.twig:363
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:52
 msgid "Create"
 msgstr "Създаване"
@@ -3458,6 +3345,20 @@ msgstr "Имейли"
 msgid "Transactions"
 msgstr "Транзакции"
 
+#: modules/Client/html_admin/mod_client_manage.html.twig:98
+#: modules/Client/html_admin/mod_client_manage.html.twig:346
+#: modules/Client/html_admin/mod_client_new_form.html.twig:53
+#: modules/Client/html_client/mod_client_profile.html.twig:34
+#: modules/Client/html_client/mod_client_profile.html.twig:216
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:44
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:96
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:143
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:156
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:147
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:35
+msgid "Currency"
+msgstr "Валута"
+
 #: modules/Client/html_admin/mod_client_manage.html.twig:102
 msgid "Fund balance"
 msgstr "Баланс на фонда"
@@ -3468,10 +3369,10 @@ msgstr "Баланс на фонда"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:340
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:34
 #: modules/Order/html_admin/mod_order_manage.html.twig:388
-#: modules/Order/html_client/mod_order_manage.html.twig:257
+#: modules/Order/html_client/mod_order_manage.html.twig:261
 #: modules/Support/html_admin/mod_support_ticket.html.twig:42
-#: modules/Support/html_admin/mod_support_tickets.html.twig:390
-#: modules/System/html_admin/mod_system_settings.html.twig:229
+#: modules/Support/html_admin/mod_support_tickets.html.twig:389
+#: modules/System/html_admin/mod_system_settings.html.twig:227
 msgid "Notes"
 msgstr "Бележки"
 
@@ -3495,7 +3396,7 @@ msgstr "API ключ"
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:146
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:147
 #: modules/Page/html_client/mod_page_signup.html.twig:83
-#: modules/System/html_admin/mod_system_settings.html.twig:80
+#: modules/System/html_admin/mod_system_settings.html.twig:78
 msgid "Address"
 msgstr "Адрес"
 
@@ -3572,7 +3473,7 @@ msgstr "Одобрен имейл"
 #: modules/Client/html_admin/mod_client_manage.html.twig:202
 #: modules/Client/html_admin/mod_client_manage.html.twig:356
 #: modules/Email/html_admin/mod_email_settings.html.twig:143
-#: modules/Email/html_admin/mod_email_settings.html.twig:270
+#: modules/Email/html_admin/mod_email_settings.html.twig:291
 #: modules/Email/html_admin/mod_email_template.html.twig:110
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:75
@@ -3614,10 +3515,10 @@ msgstr "Одобрен имейл"
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:6
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:59
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:100
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:29
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:42
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:55
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:68
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:28
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:41
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:54
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:67
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:53
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:69
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:85
@@ -3626,10 +3527,10 @@ msgstr "Одобрен имейл"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:160
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:70
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:41
-#: modules/System/html_admin/mod_system_settings.html.twig:140
-#: modules/System/html_admin/mod_system_settings.html.twig:153
-#: modules/System/html_admin/mod_system_settings.html.twig:171
-#: modules/System/html_admin/mod_system_settings.html.twig:192
+#: modules/System/html_admin/mod_system_settings.html.twig:138
+#: modules/System/html_admin/mod_system_settings.html.twig:151
+#: modules/System/html_admin/mod_system_settings.html.twig:169
+#: modules/System/html_admin/mod_system_settings.html.twig:190
 #: themes/admin_default/html/macro_functions.html.twig:3
 #: themes/huraga/config/settings.html.twig:20
 #: themes/huraga/config/settings.html.twig:28
@@ -3651,7 +3552,7 @@ msgstr "Да"
 #: modules/Client/html_admin/mod_client_manage.html.twig:206
 #: modules/Client/html_admin/mod_client_manage.html.twig:360
 #: modules/Email/html_admin/mod_email_settings.html.twig:147
-#: modules/Email/html_admin/mod_email_settings.html.twig:274
+#: modules/Email/html_admin/mod_email_settings.html.twig:295
 #: modules/Email/html_admin/mod_email_template.html.twig:114
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:79
@@ -3694,10 +3595,10 @@ msgstr "Да"
 #: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:10
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:63
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:104
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:33
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:46
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:59
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:72
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:32
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:45
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:58
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:71
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:55
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:71
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:87
@@ -3706,10 +3607,10 @@ msgstr "Да"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:166
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:74
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:45
-#: modules/System/html_admin/mod_system_settings.html.twig:144
-#: modules/System/html_admin/mod_system_settings.html.twig:157
-#: modules/System/html_admin/mod_system_settings.html.twig:177
-#: modules/System/html_admin/mod_system_settings.html.twig:198
+#: modules/System/html_admin/mod_system_settings.html.twig:142
+#: modules/System/html_admin/mod_system_settings.html.twig:155
+#: modules/System/html_admin/mod_system_settings.html.twig:175
+#: modules/System/html_admin/mod_system_settings.html.twig:196
 #: themes/admin_default/html/macro_functions.html.twig:5
 #: themes/huraga/config/settings.html.twig:21
 #: themes/huraga/config/settings.html.twig:29
@@ -3728,12 +3629,17 @@ msgstr "Да"
 msgid "No"
 msgstr "Не"
 
+#: modules/Client/html_admin/mod_client_manage.html.twig:213
+#: modules/Client/html_admin/mod_client_new_form.html.twig:49
+msgid "Select group"
+msgstr ""
+
 #: modules/Client/html_admin/mod_client_manage.html.twig:236
 msgid "Date of birth"
 msgstr "Рожденна дата"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:262
-#: modules/System/html_admin/mod_system_settings.html.twig:33
+#: modules/System/html_admin/mod_system_settings.html.twig:31
 msgid "Company details"
 msgstr "Детайли на фирмата"
 
@@ -3750,6 +3656,73 @@ msgstr "ДДС номер на фирмата"
 #: modules/Client/html_admin/mod_client_manage.html.twig:280
 msgid "Address and contact details"
 msgstr "Адрес и данни за връзка"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:282
+#: modules/Client/html_admin/mod_client_settings.html.twig:84
+#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:192
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:145
+msgid "Address Line 1"
+msgstr "Първи адрес"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:288
+#: modules/Client/html_admin/mod_client_settings.html.twig:85
+#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:198
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:150
+msgid "Address Line 2"
+msgstr "Втори адрес"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:297
+#: modules/Client/html_admin/mod_client_new_form.html.twig:133
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:484
+msgid "Select country"
+msgstr ""
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:301
+#: modules/Client/html_admin/mod_client_settings.html.twig:83
+#: modules/Client/html_client/mod_client_profile.html.twig:148
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:475
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:126
+#: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:38
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:194
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:195
+#: modules/Page/html_client/mod_page_signup.html.twig:119
+#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:216
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:169
+msgid "State"
+msgstr "Област"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:308
+#: modules/Client/html_admin/mod_client_new_form.html.twig:113
+#: modules/Client/html_admin/mod_client_settings.html.twig:82
+#: modules/Client/html_client/mod_client_profile.html.twig:132
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:469
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:168
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:169
+#: modules/Page/html_client/mod_page_signup.html.twig:99
+#: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:210
+#: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:162
+msgid "City"
+msgstr "Град"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:314
+#: modules/Client/html_admin/mod_client_new_form.html.twig:125
+msgid "Postcode"
+msgstr "Пощенски код"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:320
+#: modules/Client/html_admin/mod_client_settings.html.twig:87
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:407
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:488
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:122
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:178
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:76
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:131
+#: modules/Invoice/pdf_template/default-pdf.twig:41
+#: modules/Invoice/pdf_template/default-pdf.twig:53
+#: modules/Invoice/pdf_template/default-pdf.twig:110
+#: modules/System/html_admin/mod_system_settings.html.twig:72
+msgid "Phone"
+msgstr "Телефонен номер"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:330
 #: modules/Client/html_client/mod_client_profile.html.twig:156
@@ -3768,6 +3741,13 @@ msgstr "Алтернативен ИД"
 #: modules/Client/html_admin/mod_client_manage.html.twig:342
 msgid "Used to identify client on foreign system. Usually used by importers"
 msgstr "Използва се за идентифициране на клиент на чуждестранна система. Обикновено се използва от вносителите"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:348
+#: modules/Client/html_admin/mod_client_new_form.html.twig:55
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:145
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:158
+msgid "Select currency"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:352
 msgid "Exempt from tax"
@@ -3793,6 +3773,29 @@ msgstr "Смяна на парола"
 #: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:84
 msgid "Password changed"
 msgstr "Паролата е променена"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:405
+#: modules/Client/html_admin/mod_client_new_form.html.twig:31
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:36
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:38
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:127
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:128
+#: modules/Page/html_client/mod_page_login.html.twig:34
+#: modules/Page/html_client/mod_page_signup.html.twig:159
+#: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:121
+#: modules/Servicehosting/html_admin/mod_servicehosting_order.html.twig:33
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:12
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:52
+#: modules/Servicehosting/html_client/mod_servicehosting_manage.html.twig:88
+#: modules/Staff/html_admin/mod_staff_index.html.twig:103
+#: modules/Staff/html_admin/mod_staff_login.html.twig:28
+#: modules/Staff/html_admin/mod_staff_login.html.twig:55
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:44
+#: modules/Staff/html_admin/mod_staff_manage.html.twig:221
+#: modules/Staff/html_admin/mod_staff_password_update.html.twig:36
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:201
+msgid "Password"
+msgstr "Парола"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:412
 #: modules/Page/html_client/mod_page_signup.html.twig:165
@@ -3827,12 +3830,12 @@ msgstr "Клиентски поръчки"
 #: modules/Client/html_admin/mod_client_manage.html.twig:813
 #: modules/Client/html_client/mod_client_balance.html.twig:34
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:269
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:211
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:208
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:679
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:50
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:137
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:37
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:151
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:150
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:65
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:141
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:169
@@ -3843,7 +3846,7 @@ msgstr "Сума"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:455
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:131
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:145
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:144
 #: modules/Order/html_admin/mod_order_index.html.twig:47
 #: modules/Order/html_admin/mod_order_index.html.twig:186
 #: modules/Order/html_admin/mod_order_manage.html.twig:357
@@ -3880,9 +3883,9 @@ msgstr "Билети за поддръжка на клиента"
 #: modules/Client/html_admin/mod_client_manage.html.twig:593
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:44
 #: modules/Order/html_admin/mod_order_manage.html.twig:649
-#: modules/Order/html_client/mod_order_manage.html.twig:178
-#: modules/Order/html_client/mod_order_manage.html.twig:211
-#: modules/Order/html_client/mod_order_manage.html.twig:245
+#: modules/Order/html_client/mod_order_manage.html.twig:182
+#: modules/Order/html_client/mod_order_manage.html.twig:215
+#: modules/Order/html_client/mod_order_manage.html.twig:249
 #: modules/Support/html_client/mod_support_ticket.html.twig:43
 #: modules/Support/html_client/mod_support_tickets.html.twig:38
 msgid "Help desk"
@@ -3899,17 +3902,17 @@ msgstr "Помощно бюро"
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:97
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:51
 #: modules/Order/html_admin/mod_order_manage.html.twig:650
-#: modules/Order/html_client/mod_order_manage.html.twig:182
-#: modules/Order/html_client/mod_order_manage.html.twig:215
-#: modules/Order/html_client/mod_order_manage.html.twig:249
+#: modules/Order/html_client/mod_order_manage.html.twig:186
+#: modules/Order/html_client/mod_order_manage.html.twig:219
+#: modules/Order/html_client/mod_order_manage.html.twig:253
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:48
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:123
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:98
 #: modules/Support/html_admin/mod_support_ticket.html.twig:138
 #: modules/Support/html_admin/mod_support_ticket.html.twig:218
 #: modules/Support/html_admin/mod_support_tickets.html.twig:208
-#: modules/Support/html_admin/mod_support_tickets.html.twig:319
-#: modules/Support/html_admin/mod_support_tickets.html.twig:353
+#: modules/Support/html_admin/mod_support_tickets.html.twig:318
+#: modules/Support/html_admin/mod_support_tickets.html.twig:352
 #: modules/Support/html_client/mod_support_contact_us.html.twig:41
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:25
 #: modules/Support/html_client/mod_support_tickets.html.twig:37
@@ -3982,7 +3985,7 @@ msgstr "Получени транзакции"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:810
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:17
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:16
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:676
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:36
@@ -4000,6 +4003,84 @@ msgstr "ИД"
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:168
 msgid "Gateway"
 msgstr "Шлюз"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:5
+msgid "Create a new client"
+msgstr ""
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:16
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:433
+msgid "First name"
+msgstr "Име"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:19
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:439
+msgid "Last name"
+msgstr "Фамилия"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:25
+#: modules/Client/html_client/mod_client_profile.html.twig:65
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:28
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:60
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:61
+#: modules/Page/html_client/mod_page_signup.html.twig:49
+msgid "Email Address"
+msgstr "Имейл адрес"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:59
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:31
+#: modules/Extension/html_admin/mod_extension_languages.html.twig:88
+msgid "Language"
+msgstr "Език"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:63
+msgid "System default"
+msgstr ""
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:71
+#: modules/Client/html_client/mod_client_profile.html.twig:116
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:218
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:220
+#: modules/Page/html_client/mod_page_signup.html.twig:135
+msgid "Phone Number"
+msgstr "Телефонен номер"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:92
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:22
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:58
+msgid "Number"
+msgstr "Номер"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:95
+#: modules/System/html_admin/mod_system_settings.html.twig:110
+msgid "VAT number"
+msgstr "Номер по ДДС"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:101
+msgid "Address 1"
+msgstr ""
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:107
+#: modules/Client/html_client/mod_client_profile.html.twig:126
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
+#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:158
+#: modules/Page/html_client/mod_page_signup.html.twig:91
+msgid "Address 2"
+msgstr "Допълнителен адрес"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:119
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:40
+msgid "State/Region"
+msgstr "Област/Регион"
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:143
+msgid "Admin Notes"
+msgstr ""
+
+#: modules/Client/html_admin/mod_client_new_form.html.twig:152
+msgid "Create client"
+msgstr ""
 
 #: modules/Client/html_admin/mod_client_settings.html.twig:5
 #: modules/Client/html_admin/mod_client_settings.html.twig:21
@@ -4154,15 +4235,6 @@ msgstr "За да промените вашият аватар, посетете
 msgid "First Name"
 msgstr "Име"
 
-#: modules/Client/html_client/mod_client_profile.html.twig:65
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:28
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:30
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:60
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:61
-#: modules/Page/html_client/mod_page_signup.html.twig:49
-msgid "Email Address"
-msgstr "Имейл адрес"
-
 #: modules/Client/html_client/mod_client_profile.html.twig:96
 msgid "Company Name"
 msgstr "Име на фирма"
@@ -4186,20 +4258,6 @@ msgstr "Номер на фирмата"
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:182
 msgid "Phone Country Code"
 msgstr "Телефонен код на страната"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:116
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:218
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:220
-#: modules/Page/html_client/mod_page_signup.html.twig:135
-msgid "Phone Number"
-msgstr "Телефонен номер"
-
-#: modules/Client/html_client/mod_client_profile.html.twig:126
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:157
-#: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:158
-#: modules/Page/html_client/mod_page_signup.html.twig:91
-msgid "Address 2"
-msgstr "Допълнителен адрес"
 
 #: modules/Client/html_client/mod_client_profile.html.twig:138
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:179
@@ -4320,9 +4378,9 @@ msgstr "Добавете забележка или задача за изпъл�
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:7
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:155
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:261
-#: modules/Order/html_client/mod_order_manage.html.twig:169
-#: modules/Order/html_client/mod_order_manage.html.twig:203
-#: modules/Order/html_client/mod_order_manage.html.twig:236
+#: modules/Order/html_client/mod_order_manage.html.twig:173
+#: modules/Order/html_client/mod_order_manage.html.twig:207
+#: modules/Order/html_client/mod_order_manage.html.twig:240
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:95
 #: modules/Support/html_admin/mod_support_ticket.html.twig:111
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:8
@@ -4749,7 +4807,7 @@ msgstr "Последно обновен"
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:48
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:81
 #: modules/Order/html_client/mod_order_list.html.twig:35
-#: modules/Order/html_client/mod_order_manage.html.twig:140
+#: modules/Order/html_client/mod_order_manage.html.twig:144
 #: modules/Support/html_client/mod_support_tickets.html.twig:41
 msgid "Actions"
 msgstr "Действия"
@@ -4791,8 +4849,8 @@ msgstr "Всички фактури"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:112
 #: modules/Index/html_client/mod_index_dashboard.html.twig:83
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:60
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:144
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:58
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:141
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:210
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:34
 #: themes/admin_default/html/macro_functions.html.twig:128
@@ -4802,8 +4860,8 @@ msgstr "Платено"
 
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:114
 #: modules/Index/html_client/mod_index_dashboard.html.twig:85
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:64
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:130
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:62
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:127
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:214
 #: modules/Invoice/html_client/mod_invoice_index.html.twig:30
 #: themes/admin_default/html/macro_functions.html.twig:130
@@ -4931,7 +4989,7 @@ msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:76
 #: modules/Extension/html_admin/mod_extension_index.html.twig:41
-#: modules/Extension/html_admin/mod_extension_index.html.twig:170
+#: modules/Extension/html_admin/mod_extension_index.html.twig:172
 #: themes/admin_default/html/partial_extensions.html.twig:27
 msgid "Extension"
 msgstr "Разширения"
@@ -5028,90 +5086,108 @@ msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can co
 msgstr "FOSSBilling по подразбиране изпраща имейли посредством <em> sendmail </em> или можете да конфигурирате своя SMTP сървър"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:249
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:41
+msgid "From name"
+msgstr "От име"
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:252
+msgid "Leave blank to use company public name"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:257
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:45
+msgid "From email"
+msgstr "От имейл"
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:260
+msgid "Leave blank to use company public email"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_settings.html.twig:267
 msgid "Queue options"
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:252
+#: modules/Email/html_admin/mod_email_settings.html.twig:270
 msgid "Send emails per cron run (0 = unlimited)"
 msgstr "Изпращане на имейли за всяко изпълнение на cron (0 = неограничени)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:256
+#: modules/Email/html_admin/mod_email_settings.html.twig:274
 msgid "Max email sending time in minutes (0 = unlimited, default 5 min.)"
 msgstr "Максимално време за изпращане на имейли в минути (0 = неограничено, по подразбиране 5 минути)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:260
+#: modules/Email/html_admin/mod_email_settings.html.twig:278
 msgid "Cancel sending email after unsuccessful tries (0 = do not cancel)"
 msgstr "Анулиране на изпращане на имейл след еди колко си неуспешни опита (0 = не се анулира)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:266
+#: modules/Email/html_admin/mod_email_settings.html.twig:287
 msgid "Log sent emails to database"
 msgstr "Изпращайте имейлите в базата данни"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:279
+#: modules/Email/html_admin/mod_email_settings.html.twig:300
 msgid "Email transport"
 msgstr "Имейл транспорт"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:283
+#: modules/Email/html_admin/mod_email_settings.html.twig:304
 msgid "SendMail"
 msgstr "Sendmail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:287
+#: modules/Email/html_admin/mod_email_settings.html.twig:308
 msgid "SMTP"
 msgstr "Протокол SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:291
+#: modules/Email/html_admin/mod_email_settings.html.twig:312
 msgid "SendGrid"
 msgstr "SendGrid"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:295
+#: modules/Email/html_admin/mod_email_settings.html.twig:316
 msgid "Custom"
 msgstr "Персонализиран"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:302
+#: modules/Email/html_admin/mod_email_settings.html.twig:323
 msgid "SMTP Hostname"
 msgstr "Име на SMTP хост"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:308
+#: modules/Email/html_admin/mod_email_settings.html.twig:329
 msgid "SMTP Port"
 msgstr "Порт на SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:314
+#: modules/Email/html_admin/mod_email_settings.html.twig:335
 msgid "SMTP Username"
 msgstr "SMTP Потребителско име"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:320
+#: modules/Email/html_admin/mod_email_settings.html.twig:341
 msgid "SMTP Password"
 msgstr "SMTP парола"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:329
+#: modules/Email/html_admin/mod_email_settings.html.twig:350
 msgid "SendGrid API Key"
 msgstr "SendGrid API Ключ"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:338
+#: modules/Email/html_admin/mod_email_settings.html.twig:359
 msgid "Custom DSN"
 msgstr "Персонализиран DSN"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:340
+#: modules/Email/html_admin/mod_email_settings.html.twig:361
 msgid "If none of the available options exactly meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
 msgstr ""
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:341
+#: modules/Email/html_admin/mod_email_settings.html.twig:362
 msgid "More information"
 msgstr "Повече информация"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:342
+#: modules/Email/html_admin/mod_email_settings.html.twig:363
 msgid "Example"
 msgstr "Пример"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:355
+#: modules/Email/html_admin/mod_email_settings.html.twig:376
 msgid "Send a test email to yourself"
 msgstr "Изпратете тестов имейл до себе си"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:357
+#: modules/Email/html_admin/mod_email_settings.html.twig:378
 msgid "Update email settings"
 msgstr "Актуализиране на настройките за имейли"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:371
+#: modules/Email/html_admin/mod_email_settings.html.twig:392
 msgid "Email was successfully sent"
 msgstr "Имейла беше успешно изпратен"
 
@@ -5271,116 +5347,116 @@ msgstr ""
 msgid "Activate or deactivate extensions"
 msgstr "Активиране или деактивиране на разширения"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:65
+#: modules/Extension/html_admin/mod_extension_index.html.twig:66
 msgid "Learn more"
 msgstr "Научете повече"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:76
+#: modules/Extension/html_admin/mod_extension_index.html.twig:77
 msgid "Deactivate"
 msgstr "Деактивиране"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:87
+#: modules/Extension/html_admin/mod_extension_index.html.twig:88
 #: modules/Order/html_admin/mod_order_manage.html.twig:178
 #: modules/Order/html_admin/mod_order_manage.html.twig:269
 msgid "Activate"
 msgstr "Активиране"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:120
+#: modules/Extension/html_admin/mod_extension_index.html.twig:122
 msgid "Modules on the extension directory"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:121
+#: modules/Extension/html_admin/mod_extension_index.html.twig:123
 msgid "These are all modules available for installation from the <a href=\"https://extensions.fossbilling.org/\">extension directory</a> at the click of a button."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:130
+#: modules/Extension/html_admin/mod_extension_index.html.twig:132
 msgid "Extending FOSSBilling"
 msgstr "Обогатяване на FOSSBilling"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:131
+#: modules/Extension/html_admin/mod_extension_index.html.twig:133
 msgid "FOSSBilling gives developers all the capabilities to customize, integrate & extend the core system into your own website & applications."
 msgstr "FOSSBilling дава на разработчиците всички възможности за персонализиране, интегриране и обогатяване на основната система в собствения ви уеб сайт и приложения."
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:135
+#: modules/Extension/html_admin/mod_extension_index.html.twig:137
 msgid "More extensions"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:136
+#: modules/Extension/html_admin/mod_extension_index.html.twig:138
 msgid "If you cannot find the extensions you are looking for in the admin area, please visit the extension directory at <a href=\"https://extensions.fossbilling.org\" target=\"_blank\">https://extensions.fossbilling.org</a>."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:138
+#: modules/Extension/html_admin/mod_extension_index.html.twig:140
 msgid "How to create a new extension"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:140
+#: modules/Extension/html_admin/mod_extension_index.html.twig:142
 msgid "Create a <a href=\"https://github.com/signup/free\" target=\"_blank\">GitHub</a> account for free."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:141
+#: modules/Extension/html_admin/mod_extension_index.html.twig:143
 msgid "Create a new public repository dedicated to the extension only."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:142
+#: modules/Extension/html_admin/mod_extension_index.html.twig:144
 msgid "The repository must have a valid manifest file for your extension in the JSON format. For more information, please refer <a href=\"https://github.com/FOSSBilling/example-extension\" target=\"_blank\">to our example extension</a>."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:143
+#: modules/Extension/html_admin/mod_extension_index.html.twig:145
 msgid "Create a pull request <a href=\"https://github.com/FOSSBilling/extension-directory\">here</a>."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:144
+#: modules/Extension/html_admin/mod_extension_index.html.twig:146
 msgid "The FOSSBilling team will review your extension and contact you if there are any issues."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:145
+#: modules/Extension/html_admin/mod_extension_index.html.twig:147
 msgid "Registered extensions will then appear on the extension directory."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:148
+#: modules/Extension/html_admin/mod_extension_index.html.twig:150
 msgid "Supported extension types"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:151
+#: modules/Extension/html_admin/mod_extension_index.html.twig:153
 msgid "Server managers"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:152
+#: modules/Extension/html_admin/mod_extension_index.html.twig:154
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:195
 msgid "Domain registrars"
 msgstr "Регистратори на домейни"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:153
+#: modules/Extension/html_admin/mod_extension_index.html.twig:155
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:26
 msgid "Client area themes"
 msgstr "Теми за областта на клиента"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:154
+#: modules/Extension/html_admin/mod_extension_index.html.twig:156
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:93
 msgid "Admin area themes"
 msgstr "Теми за областта на администрацията"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:155
+#: modules/Extension/html_admin/mod_extension_index.html.twig:157
 msgid "Translations for client and admin areas"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:156
+#: modules/Extension/html_admin/mod_extension_index.html.twig:158
 msgid "Event hooks - Hooks can be injected into the process, change its behaviour, stop executing actions"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:157
+#: modules/Extension/html_admin/mod_extension_index.html.twig:159
 msgid "API module - External program which uses FOSSBilling API"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:160
+#: modules/Extension/html_admin/mod_extension_index.html.twig:162
 msgid "Extension support"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:161
+#: modules/Extension/html_admin/mod_extension_index.html.twig:163
 msgid "Contact extensions developers directly for support. You can find issue tracker on the extension directory."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:171
+#: modules/Extension/html_admin/mod_extension_index.html.twig:173
 msgid "Hook"
 msgstr "Уеб кука"
 
@@ -5396,11 +5472,6 @@ msgstr "Нови преводи"
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:26
 msgid "Enabled translations"
 msgstr "Активирани преводи"
-
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:31
-#: modules/Extension/html_admin/mod_extension_languages.html.twig:88
-msgid "Language"
-msgstr "Език"
 
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:32
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:89
@@ -5489,7 +5560,7 @@ msgid "Read only"
 msgstr "Само за четене"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_field.html.twig:87
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:7
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:6
 msgid "Prefix"
 msgstr "Префикс"
 
@@ -5739,7 +5810,7 @@ msgstr "Регистър"
 #: modules/Order/html_admin/mod_order_manage.html.twig:75
 #: modules/Order/html_client/mod_order_index.html.twig:5
 #: modules/Order/html_client/mod_order_index.html.twig:12
-#: modules/Order/html_client/mod_order_manage.html.twig:35
+#: modules/Order/html_client/mod_order_manage.html.twig:39
 #: modules/Order/html_client/mod_order_product.html.twig:5
 #: modules/Order/html_client/mod_order_product.html.twig:12
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:4
@@ -5868,7 +5939,6 @@ msgstr "Ако сте разработчик. Моля, прочетете"
 
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:103
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:246
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
 msgid "FOSSBilling documentation"
 msgstr "FOSSBilling документация"
 
@@ -5897,13 +5967,8 @@ msgstr ""
 msgid "Filter invoices"
 msgstr "Филтриране на фактурите"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:23
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:58
-msgid "Number"
-msgstr "Номер"
-
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:29
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:299
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:28
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:295
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:62
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
@@ -5918,8 +5983,8 @@ msgstr "Номер"
 msgid "Client"
 msgstr "Клиент"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:32
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:303
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:31
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:299
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:106
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:127
 #: modules/Order/html_admin/mod_order_index.html.twig:281
@@ -5927,51 +5992,51 @@ msgstr "Клиент"
 msgid "Start typing the client name or ID"
 msgstr "Можете да започнете с въвеждането на името или ид номер на клиента"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:48
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:37
 msgid "All currencies"
 msgstr ""
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:56
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:43
 #: modules/Order/html_admin/mod_order_index.html.twig:31
 #: modules/Support/html_admin/mod_support_tickets.html.twig:66
 msgid "All statuses"
 msgstr "Всички статуси"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:68
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:158
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:66
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:155
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:218
 #: themes/admin_default/html/macro_functions.html.twig:132
 #: themes/huraga/html/macro_functions.html.twig:47
 msgid "Refunded"
 msgstr "Върнато"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:84
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:82
 msgid "Issue date"
 msgstr "Дата на издаване"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:192
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:189
 msgid "New Invoice"
 msgstr "Нова фактура"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:212
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:209
 #: modules/Order/html_admin/mod_order_manage.html.twig:539
 msgid "Issued at"
 msgstr "Издадено на"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:213
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:210
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:315
 #: modules/Order/html_admin/mod_order_manage.html.twig:540
 msgid "Paid at"
 msgstr "Платено на"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:284
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:288
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:281
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:285
 msgid "Export Invoices"
 msgstr "Експортиране на фактурите"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:316
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:311
 msgid "Prepare"
 msgstr "Подготви"
 
@@ -5992,7 +6057,7 @@ msgstr "Фактура"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:36
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:31
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:31
-#: modules/Order/html_client/mod_order_manage.html.twig:154
+#: modules/Order/html_client/mod_order_manage.html.twig:158
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:5
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:34
 #: modules/Support/html_admin/mod_support_ticket.html.twig:39
@@ -6124,14 +6189,6 @@ msgstr "Данни за фирмата в момента на покупката
 msgid "Client details at the moment of purchase"
 msgstr "Данни за клиента в момента на покупката"
 
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:433
-msgid "First name"
-msgstr "Име"
-
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:439
-msgid "Last name"
-msgstr "Фамилия"
-
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:494
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:222
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:175
@@ -6153,7 +6210,7 @@ msgstr "Количество"
 #: modules/Order/html_admin/mod_order_manage.html.twig:345
 #: modules/Order/html_admin/mod_order_manage.html.twig:478
 #: modules/Order/html_client/mod_order_list.html.twig:32
-#: modules/Order/html_client/mod_order_manage.html.twig:136
+#: modules/Order/html_client/mod_order_manage.html.twig:140
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:17
 #: themes/admin_default/html/partial_pricing.html.twig:25
 #: themes/huraga/html/partial_pricing.html.twig:54
@@ -6289,9 +6346,9 @@ msgid "Maximum amount for add funds invoice"
 msgstr "Максимална сума за фактура за добавяне на средства"
 
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:169
-#: modules/System/html_admin/mod_system_settings.html.twig:211
-#: modules/System/html_admin/mod_system_settings.html.twig:234
-#: modules/System/html_admin/mod_system_settings.html.twig:499
+#: modules/System/html_admin/mod_system_settings.html.twig:209
+#: modules/System/html_admin/mod_system_settings.html.twig:232
+#: modules/System/html_admin/mod_system_settings.html.twig:517
 msgid "Update settings"
 msgstr "Обновяване на настройките"
 
@@ -6312,7 +6369,7 @@ msgstr "Метод за плащане"
 
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:58
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:112
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:126
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:125
 msgid "Subscription ID on payment gateway"
 msgstr "Идент. № на абонамента в метода за плащане"
 
@@ -6321,20 +6378,20 @@ msgid "Subscription ID on PG"
 msgstr "Ид. номер на абонамент в PG"
 
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:106
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:120
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:119
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:155
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:47
 msgid "Payment Gateway"
 msgstr "Метод за плащане"
 
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:108
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:122
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:121
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:157
 msgid "Select payment gateway"
 msgstr ""
 
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:133
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:147
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:146
 msgid "Select period"
 msgstr ""
 
@@ -6349,10 +6406,6 @@ msgstr "Ново данъчно правило"
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:25
 msgid "Tax settings"
 msgstr "Данъчни настройки"
-
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:40
-msgid "State/Region"
-msgstr "Област/Регион"
 
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:41
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:111
@@ -6683,14 +6736,14 @@ msgid "Invoice Status"
 msgstr "Статус на фактурата"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:84
-#: modules/System/html_admin/mod_system_settings.html.twig:118
+#: modules/System/html_admin/mod_system_settings.html.twig:116
 #: themes/huraga/html/layout_default.html.twig:195
 msgid "Bank Name"
 msgstr "Име на банката"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
 #: modules/Invoice/pdf_template/default-pdf.twig:104
-#: modules/System/html_admin/mod_system_settings.html.twig:124
+#: modules/System/html_admin/mod_system_settings.html.twig:122
 #: themes/huraga/html/layout_default.html.twig:195
 msgid "BIC / SWIFT Code"
 msgstr "BIC / SWIFT код"
@@ -6735,7 +6788,7 @@ msgstr "Статус на фактурата"
 
 #: modules/Invoice/pdf_template/default-pdf.twig:64
 #: modules/Order/html_admin/mod_order_index.html.twig:41
-#: modules/Order/html_admin/mod_order_index.html.twig:296
+#: modules/Order/html_admin/mod_order_index.html.twig:295
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
 #: themes/admin_default/html/partial_menu_top.html.twig:15
 msgid "Product"
@@ -6793,21 +6846,13 @@ msgstr "Настройки за масова поща"
 msgid "Client to send test email"
 msgstr "Клиент на който трябва да се изпрати тестовия имейл"
 
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:139
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:138
 msgid "Test emails will be sent to: "
 msgstr "Тестовете имейли ще бъдат изпратени до: "
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:11
 msgid "Send Email Message"
 msgstr "Изпращане на съобщение по имейл"
-
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:41
-msgid "From name"
-msgstr "От име"
-
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:45
-msgid "From email"
-msgstr "От имейл"
 
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:60
 msgid "Recipients filter"
@@ -6990,7 +7035,7 @@ msgstr ""
 msgid "Export Orders"
 msgstr "Експортиране на поръчките"
 
-#: modules/Order/html_admin/mod_order_index.html.twig:301
+#: modules/Order/html_admin/mod_order_index.html.twig:300
 #: themes/huraga/html/partial_pricing.html.twig:78
 msgid "Continue"
 msgstr "Продължаване"
@@ -7013,7 +7058,7 @@ msgid "Service management"
 msgstr "Управление на услугите"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:56
-#: modules/Order/html_client/mod_order_manage.html.twig:126
+#: modules/Order/html_client/mod_order_manage.html.twig:130
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:20
 #: modules/Product/html_admin/mod_product_addons.html.twig:5
 #: modules/Product/html_admin/mod_product_addons.html.twig:19
@@ -7027,7 +7072,7 @@ msgid "History"
 msgstr "История"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:87
-#: modules/Order/html_client/mod_order_manage.html.twig:45
+#: modules/Order/html_client/mod_order_manage.html.twig:49
 msgid "Payment amount"
 msgstr "Сума за плащане"
 
@@ -7040,12 +7085,12 @@ msgid "Payment amount after discount"
 msgstr "Размер на плащането след отстъпката"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:101
-#: modules/Order/html_client/mod_order_manage.html.twig:57
+#: modules/Order/html_client/mod_order_manage.html.twig:61
 msgid "Order status"
 msgstr "Статус на поръчката"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:120
-#: modules/Order/html_client/mod_order_manage.html.twig:82
+#: modules/Order/html_client/mod_order_manage.html.twig:86
 msgid "Order notes"
 msgstr "Бележки към поръчката"
 
@@ -7074,7 +7119,7 @@ msgid "Order promo code"
 msgstr "Промокод на поръчката"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:156
-#: modules/Order/html_client/mod_order_manage.html.twig:89
+#: modules/Order/html_client/mod_order_manage.html.twig:93
 msgid "Active support tickets"
 msgstr "Активни билети за поддръжка"
 
@@ -7150,7 +7195,7 @@ msgid "Changes status without performing action"
 msgstr "Променя състоянието без да извършва действия"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:351
-#: modules/Order/html_client/mod_order_manage.html.twig:186
+#: modules/Order/html_client/mod_order_manage.html.twig:190
 msgid "Reason"
 msgstr "Причина"
 
@@ -7171,24 +7216,24 @@ msgid "Please be cautious and make sure you know what you are doing when editing
 msgstr "Моля, бъдете внимателни и се уверете, че знаете какво правите, когато редактирате конфигурацията на поръчката! FOSSBilling разчита на тези параметри и може да получите неочаквани резултати, ако промените някои от тях."
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:471
-#: modules/Order/html_client/mod_order_manage.html.twig:127
+#: modules/Order/html_client/mod_order_manage.html.twig:131
 msgid "Addons you have ordered with this service"
 msgstr "Добавки който сте поръчали с тази услуга"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:476
 #: modules/Order/html_client/mod_order_list.html.twig:31
-#: modules/Order/html_client/mod_order_manage.html.twig:135
+#: modules/Order/html_client/mod_order_manage.html.twig:139
 msgid "Product/Service"
 msgstr "Продукт/Услуга"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:477
-#: modules/Order/html_client/mod_order_manage.html.twig:137
+#: modules/Order/html_client/mod_order_manage.html.twig:141
 msgid "Billing Cycle"
 msgstr "Платежен цикъл"
 
 #: modules/Order/html_admin/mod_order_manage.html.twig:479
 #: modules/Order/html_client/mod_order_list.html.twig:33
-#: modules/Order/html_client/mod_order_manage.html.twig:138
+#: modules/Order/html_client/mod_order_manage.html.twig:142
 msgid "Next due date"
 msgstr "Следваща дата за плащане"
 
@@ -7322,74 +7367,74 @@ msgstr "Ид на поръчката"
 msgid "No orders yet"
 msgstr "Все още няма поръчки"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:26
+#: modules/Order/html_client/mod_order_manage.html.twig:30
 msgid "Service details"
 msgstr "Детайли за услугата"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:27
+#: modules/Order/html_client/mod_order_manage.html.twig:31
 msgid "All information about your service"
 msgstr "Цялата информация относно вашата услуга"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:40
+#: modules/Order/html_client/mod_order_manage.html.twig:44
 msgid "Product name"
 msgstr "Име на продукта"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:51
+#: modules/Order/html_client/mod_order_manage.html.twig:55
 #: modules/Orderbutton/html_client/mod_orderbutton_product_configuration.html.twig:33
 msgid "Billing cycle"
 msgstr "Платежен цикъл"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:64
+#: modules/Order/html_client/mod_order_manage.html.twig:68
 msgid "Order created"
 msgstr "Поръчката е създадена"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:69
+#: modules/Order/html_client/mod_order_manage.html.twig:73
 msgid "Activated at"
 msgstr "Активирана на"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:75
+#: modules/Order/html_client/mod_order_manage.html.twig:79
 msgid "Renewal date"
 msgstr "Дата на подновяване"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:102
+#: modules/Order/html_client/mod_order_manage.html.twig:106
 msgid "Renew now"
 msgstr "Поднови сега"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:105
+#: modules/Order/html_client/mod_order_manage.html.twig:109
 msgid "Request Upgrade"
 msgstr "Заяви надграждане"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:107
-#: modules/Order/html_client/mod_order_manage.html.twig:224
+#: modules/Order/html_client/mod_order_manage.html.twig:111
+#: modules/Order/html_client/mod_order_manage.html.twig:228
 msgid "Open ticket"
 msgstr "Отвори билет"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:109
+#: modules/Order/html_client/mod_order_manage.html.twig:113
 msgid "Request cancellation"
 msgstr "Заяви анулиране"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:168
+#: modules/Order/html_client/mod_order_manage.html.twig:172
 msgid "Submit cancellation request"
 msgstr "Подай заявката за анулиране"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:191
-#: modules/Order/html_client/mod_order_manage.html.twig:262
+#: modules/Order/html_client/mod_order_manage.html.twig:195
+#: modules/Order/html_client/mod_order_manage.html.twig:266
 msgid "Request"
 msgstr "Заявка"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:202
+#: modules/Order/html_client/mod_order_manage.html.twig:206
 msgid "Submit new support ticket"
 msgstr "Подай нов билет за подръжка"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:235
+#: modules/Order/html_client/mod_order_manage.html.twig:239
 msgid "Submit upgrade request"
 msgstr "Подай заявка за надграждане"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:253
+#: modules/Order/html_client/mod_order_manage.html.twig:257
 msgid "Upgrade to"
 msgstr "Надграждане до"
 
-#: modules/Order/html_client/mod_order_manage.html.twig:258
+#: modules/Order/html_client/mod_order_manage.html.twig:262
 msgid "I would like to upgrade"
 msgstr "Бих искал да надстроя"
 
@@ -7602,7 +7647,7 @@ msgid "Total amount will be deducted from account balance"
 msgstr "Общата сума ще бъде приспадната от салдото в профила ви"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:190
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:200
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:201
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:261
 #: modules/Page/html_client/mod_page_signup.html.twig:176
@@ -7611,7 +7656,7 @@ msgid "terms of service"
 msgstr ""
 
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:190
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:200
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:201
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:246
 #: modules/Orderbutton/html_client/mod_orderbutton_client.html.twig:261
 #: modules/Page/html_client/mod_page_signup.html.twig:176
@@ -7624,11 +7669,15 @@ msgstr ""
 msgid "Checkout"
 msgstr "Плащане"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:217
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:195
+msgid "You must first login / create an account before you can checkout."
+msgstr ""
+
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:218
 msgid "Are you sure you want to remove this item from cart?"
 msgstr "Наистина ли искате да премахнете този продукт от кошницата ви?"
 
-#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:221
+#: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:222
 msgid "Item was removed from cart"
 msgstr "Продукта бе премахнат от кошницата"
 
@@ -7685,7 +7734,7 @@ msgid "Powered by"
 msgstr "Осъществено от"
 
 #: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:109
-#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:128
+#: modules/Orderbutton/html_client/mod_orderbutton_index.html.twig:130
 msgid "You logged in successfully"
 msgstr "Успешно сте влезли в системата"
 
@@ -7716,7 +7765,7 @@ msgid "About us"
 msgstr "За нас"
 
 #: modules/Page/html_client/mod_page_about-us.html.twig:9
-#: modules/System/html_admin/mod_system_settings.html.twig:45
+#: modules/System/html_admin/mod_system_settings.html.twig:43
 msgid "About"
 msgstr "Относно"
 
@@ -7835,7 +7884,7 @@ msgstr "Задаване на платена поддръжка за бюрат�
 #: modules/Support/html_admin/mod_support_ticket.html.twig:217
 #: modules/Support/html_admin/mod_support_tickets.html.twig:70
 #: modules/Support/html_admin/mod_support_tickets.html.twig:210
-#: modules/Support/html_admin/mod_support_tickets.html.twig:313
+#: modules/Support/html_admin/mod_support_tickets.html.twig:312
 #: modules/Support/html_client/mod_support_tickets.html.twig:90
 msgid "Helpdesk"
 msgstr "Помощно бюро"
@@ -8230,7 +8279,7 @@ msgstr ""
 
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_config.html.twig:8
 #: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:37
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:13
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:12
 msgid "Length"
 msgstr "Дължина"
 
@@ -8321,7 +8370,7 @@ msgid "Stock control settings"
 msgstr "Настройки за контрол на стоката"
 
 #: modules/Servicecustom/html_admin/mod_servicecustom_config.html.twig:4
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:19
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:18
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:14
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:43
 msgid "Plugin"
@@ -9411,54 +9460,62 @@ msgstr "Настройки на лиценза"
 msgid "License settings updated"
 msgstr "Настройките на лиценза бяха актуализирани"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:25
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:24
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:51
 msgid "Validate IP"
 msgstr "Проверете ИП"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:38
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:37
 msgid "Validate Hostname"
 msgstr "Удостоверяване на името на хоста"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:51
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:50
 msgid "Validate Version"
 msgstr "Валидирайте версията"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:64
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:63
 msgid "Validate Path"
 msgstr "Проверка на пътя"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:81
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:80
 msgid "License plugins"
 msgstr "Плъгини с лиценз"
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:82
-msgid "FOSSBilling gives you the ability to provide your own license generation script. Follow the instructions below to install new license plugin"
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:81
+msgid "You can create your own license generation plugins for FOSSBilling. Follow these steps to add a new one:"
+msgstr ""
+
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:83
+msgid "A license plugin is a PHP class named"
+msgstr ""
+
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:83
+msgid "that must include a"
+msgstr ""
+
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:83
+msgid "method."
 msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:84
-msgid "License plugin is PHP class \"License_PluginName\" with one method"
-msgstr "Лиценз плъгин е PHP клас \"License_PluginName \" с един метод"
+msgid "See the default example plugin at"
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:85
-msgid "Take a look at default plugin at"
-msgstr "Разгледайте приставката по подразбиране на"
+msgid "Save your custom plugin in"
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:86
-msgid "Create your plugin and place it to"
-msgstr "Създайте вашия собствен плъгин и го поставете на"
+msgid "FOSSBilling will automatically detect your new plugin."
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:87
-msgid "FOSSBilling will automatically detect new plugin"
-msgstr "FOSSBilling автоматично ще открие новият плъгин"
+msgid "Read the documentation"
+msgstr ""
 
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
-msgid "Read"
-msgstr "Прочетете"
-
-#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:88
-msgid "for more information."
-msgstr "за повече информация."
+#: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:87
+msgid "for more details."
+msgstr ""
 
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:10
 #: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:11
@@ -9689,7 +9746,7 @@ msgstr "Нова група"
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:207
 #: modules/Support/html_admin/mod_support_helpdesk.html.twig:53
 #: modules/Support/html_admin/modal/mod_support_new_helpdesk.html.twig:24
-#: modules/System/html_admin/mod_system_settings.html.twig:204
+#: modules/System/html_admin/mod_system_settings.html.twig:202
 msgid "Signature"
 msgstr "Подпис"
 
@@ -10171,23 +10228,23 @@ msgstr "Нов публичен билет"
 msgid "Open Ticket for Existing Client"
 msgstr "Отвори билет за съществуващ клиент"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:337
+#: modules/Support/html_admin/mod_support_tickets.html.twig:336
 msgid "Open Public Ticket for Non-client"
 msgstr "Отвори публичен билет за несъществуващ клиент"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:341
+#: modules/Support/html_admin/mod_support_tickets.html.twig:340
 msgid "Receiver Name"
 msgstr "Име на получател"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:343
+#: modules/Support/html_admin/mod_support_tickets.html.twig:342
 msgid "John Smith"
 msgstr "Валя Балканска"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:349
+#: modules/Support/html_admin/mod_support_tickets.html.twig:348
 msgid "user@domail.com"
 msgstr "потребител@домейн.com"
 
-#: modules/Support/html_admin/mod_support_tickets.html.twig:355
+#: modules/Support/html_admin/mod_support_tickets.html.twig:354
 msgid "Email Subject"
 msgstr "Тема на имейла"
 
@@ -10289,225 +10346,241 @@ msgstr "Отваряне на нов билет"
 msgid "System settings"
 msgstr "Системни настройки"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:36
+#: modules/System/html_admin/mod_system_settings.html.twig:34
 msgid "Company legal"
 msgstr "Легални детайли относно фирмата"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:39
+#: modules/System/html_admin/mod_system_settings.html.twig:37
 msgid "Countries"
 msgstr "Държави"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:42
+#: modules/System/html_admin/mod_system_settings.html.twig:40
 msgid "Cache"
 msgstr "Кеш"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:48
-#: modules/System/html_admin/mod_system_settings.html.twig:544
+#: modules/System/html_admin/mod_system_settings.html.twig:46
+#: modules/System/html_admin/mod_system_settings.html.twig:600
 msgid "Error reporting"
 msgstr "Грешка при оплакването"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:51
-#: modules/System/html_admin/mod_system_settings.html.twig:575
+#: modules/System/html_admin/mod_system_settings.html.twig:49
+#: modules/System/html_admin/mod_system_settings.html.twig:631
 msgid "Network interface"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:58
-#: modules/System/html_admin/mod_system_settings.html.twig:217
+#: modules/System/html_admin/mod_system_settings.html.twig:56
+#: modules/System/html_admin/mod_system_settings.html.twig:215
 msgid "Company updated"
 msgstr "Фирмата беше актуализирана"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:82
+#: modules/System/html_admin/mod_system_settings.html.twig:80
 msgid "Address line 1"
 msgstr "Адрес 1"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:83
+#: modules/System/html_admin/mod_system_settings.html.twig:81
 msgid "Address line 2"
 msgstr "Адрес 2"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:84
+#: modules/System/html_admin/mod_system_settings.html.twig:82
 msgid "Address line 3"
 msgstr "Адрес 3"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:88
+#: modules/System/html_admin/mod_system_settings.html.twig:86
 #: themes/huraga/config/settings.html.twig:62
 msgid "Logo URL"
 msgstr "Лого URL връзка"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:94
+#: modules/System/html_admin/mod_system_settings.html.twig:92
 msgid "Logo URL (dark mode)"
 msgstr "Лого URL връзка (тъмен режим)"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:100
+#: modules/System/html_admin/mod_system_settings.html.twig:98
 msgid "Favicon"
 msgstr "Иконка на сайта фавикон"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:106
+#: modules/System/html_admin/mod_system_settings.html.twig:104
 msgid "Company number, chamber of commerce number"
 msgstr "Номер на фирмата, номер на търговската камара"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:112
-msgid "VAT number"
-msgstr "Номер по ДДС"
-
-#: modules/System/html_admin/mod_system_settings.html.twig:130
+#: modules/System/html_admin/mod_system_settings.html.twig:128
 msgid "Bank Account number"
 msgstr "Номер на банкова сметка"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:136
+#: modules/System/html_admin/mod_system_settings.html.twig:134
 msgid "Display bank account information on documents?"
 msgstr "Показване на информацията за банковата сметка в документи?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:149
+#: modules/System/html_admin/mod_system_settings.html.twig:147
 msgid "Display bank account information on the bottom of every page?"
 msgstr "Показвате информация за банковата сметка в долната част на всяка страница?"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:163
+#: modules/System/html_admin/mod_system_settings.html.twig:161
 msgid "Disallow guest API to fetch FOSSBilling version"
 msgstr "Забраняване на API ключа за гости да извлича версията на FOSSBilling"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:165
+#: modules/System/html_admin/mod_system_settings.html.twig:163
 msgid "Enabling this functionality may affect modules that depend on it."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:184
+#: modules/System/html_admin/mod_system_settings.html.twig:182
 msgid "Hide some company information in the guest API"
 msgstr "Скриване на част от информацията за фирмата в API ключа за гости"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:186
+#: modules/System/html_admin/mod_system_settings.html.twig:184
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
 msgstr "Активирането на тази опция ще скрие част от информацията от крайната точка на API ключа за гости \"фирма\", като адрес, телефонен номер, имейл, номер на ДДС и др."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:221
+#: modules/System/html_admin/mod_system_settings.html.twig:219
 msgid "Company terms of service, legal regulation"
 msgstr "Общите условия на фирмата, правната уредба"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:225
+#: modules/System/html_admin/mod_system_settings.html.twig:223
 msgid "Company privacy policy"
 msgstr "Декларация за поверителност на фирмата"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:240
+#: modules/System/html_admin/mod_system_settings.html.twig:238
 msgid "Countries updated"
 msgstr "Държавите бяха актуализирани"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:492
+#: modules/System/html_admin/mod_system_settings.html.twig:491
+msgid "Default country for new users"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:495
+msgid "No default country"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:510
 msgid "List of countries"
 msgstr "Списък с държави"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:506
+#: modules/System/html_admin/mod_system_settings.html.twig:524
 msgid "Cache control"
 msgstr "Контрол на кеша"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:508
+#: modules/System/html_admin/mod_system_settings.html.twig:526
 msgid "Cache directory is cleared"
 msgstr "Директорията с кеш беше изчистена"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:518
+#: modules/System/html_admin/mod_system_settings.html.twig:536
 msgid "About FOSSBilling"
 msgstr "Относно FOSSBilling"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:523
+#: modules/System/html_admin/mod_system_settings.html.twig:541
 msgid "FOSSBilling version"
 msgstr "FOSSBilling версия"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:527
+#: modules/System/html_admin/mod_system_settings.html.twig:545
 msgid "PHP version"
 msgstr "PHP версия"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:531
+#: modules/System/html_admin/mod_system_settings.html.twig:549
 msgid "Instance ID"
 msgstr "Ид. на екземпляра"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:535
+#: modules/System/html_admin/mod_system_settings.html.twig:553
 msgid "License"
 msgstr "Лиценз"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:550
+#: modules/System/html_admin/mod_system_settings.html.twig:562
+msgid "Enabled modules"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:579
+msgid "This is a core module included with FOSSBilling and cannot be disabled."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:606
 msgid "Error reporting is enabled."
 msgstr "Отчитането и докладването на грешки е включено."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:551
+#: modules/System/html_admin/mod_system_settings.html.twig:607
 msgid "This FOSSBilling instance is automatically sending error reports which allows us to more easily improve the software and keep it stable. Thanks!"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:552
+#: modules/System/html_admin/mod_system_settings.html.twig:608
 msgid "Error reporting is now disabled."
 msgstr "Отчитането и докладването на грешки беше изключено."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:552
+#: modules/System/html_admin/mod_system_settings.html.twig:608
 msgid "Disable error reporting"
 msgstr "Изключване на отчитането и докладването на грешки"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:556
+#: modules/System/html_admin/mod_system_settings.html.twig:612
 msgid "Error reporting is disabled."
 msgstr "Отчитането и докладването на грешки беше изключено."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:557
+#: modules/System/html_admin/mod_system_settings.html.twig:613
 msgid "Please consider enabling error reporting. Doing so allows us to provide you with better technical support and helps us to proactively improve FOSSBilling."
 msgstr "Моля, помислете дали да разрешите докладването на грешки. Това ни позволява да ви осигурим по-добра техническа поддръжка и ни помага да подобряваме всеки ден FOSSBilling."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:558
+#: modules/System/html_admin/mod_system_settings.html.twig:614
 msgid "Error reporting is now enabled."
 msgstr "Отчитането и докладването на грешки беше включено."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:558
+#: modules/System/html_admin/mod_system_settings.html.twig:614
 msgid "Enable error reporting"
 msgstr "Включване на отчитането и докладването на грешки"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:561
+#: modules/System/html_admin/mod_system_settings.html.twig:617
 msgid "FOSSBilling optionally includes automated error reporting to help aid the project's development and stability. To find the most up-to-date information about it, you should review the links and information below."
 msgstr "FOSSBilling по желание включва и автоматизирано отчитане на грешки, за да подпомогне развитието и стабилността на проекта. За да намерите най-актуалната информация за него, трябва да прегледате връзките и информацията по-долу."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:563
+#: modules/System/html_admin/mod_system_settings.html.twig:619
 msgid "Learn more about error reporting"
 msgstr "Научете повече за отчитането и докладването на грешки"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:565
+#: modules/System/html_admin/mod_system_settings.html.twig:621
 msgid "Error reporting changelog"
 msgstr "Отчитането и докладването на грешки списък с промени"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:566
+#: modules/System/html_admin/mod_system_settings.html.twig:622
 msgid "Last applicable behavior change: "
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:569
+#: modules/System/html_admin/mod_system_settings.html.twig:625
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
 msgstr "Последната приложима промяна в поведението представлява най-новата версия на FOSSBilling, която е променила отчитането на грешки, което се отнася и за настоящата версия. Възможно е да е имало и по-скорошни промени от изброените."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:580
-#: modules/System/html_admin/mod_system_settings.html.twig:632
-msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
-msgstr ""
-
-#: modules/System/html_admin/mod_system_settings.html.twig:582
 #: modules/System/html_admin/mod_system_settings.html.twig:635
-msgid "The currently selected network interface does not appear to be able to reach the internet!"
+#: modules/System/html_admin/mod_system_settings.html.twig:675
+msgid "Checking external IP..."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:588
+#: modules/System/html_admin/mod_system_settings.html.twig:639
 msgid "If your server has multiple network interfaces, you may select the default one for FOSSBilling to use when making requests here."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:592
+#: modules/System/html_admin/mod_system_settings.html.twig:642
 msgid "Select the default network interface:"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:593
-msgid "Available network interfaces"
-msgstr ""
-
-#: modules/System/html_admin/mod_system_settings.html.twig:594
+#: modules/System/html_admin/mod_system_settings.html.twig:644
+#: modules/System/html_admin/mod_system_settings.html.twig:695
 msgid "None (Default PHP Behavior)"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:604
+#: modules/System/html_admin/mod_system_settings.html.twig:651
 msgid "Enter a custom interface to use:"
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:611
+#: modules/System/html_admin/mod_system_settings.html.twig:655
 msgid "If the dropdown menu doesn't have the appropriate network interface, please enter the IP address or name (e.g., eth0) of the correct one above."
 msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:630
+#: modules/System/html_admin/mod_system_settings.html.twig:680
+msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:683
+msgid "The currently selected network interface does not appear to be able to reach the internet!"
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:692
+msgid "Loading interfaces..."
+msgstr ""
+
+#: modules/System/html_admin/mod_system_settings.html.twig:724
 msgid "Network interface updated."
 msgstr ""
 
