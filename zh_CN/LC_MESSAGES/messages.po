@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2025-10-18 00:24-0700\n"
-"PO-Revision-Date: 2025-10-18 11:22\n"
+"POT-Creation-Date: 2025-11-03 20:23-0800\n"
+"PO-Revision-Date: 2025-11-04 03:39\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -45,11 +45,11 @@ msgstr "未知的处理类型： "
 msgid "Please check your mailbox and confirm your email address."
 msgstr "请先完成邮箱地址验证，我们已经向您的邮箱发送了验证邮件。"
 
-#: index.php:75 library/Box/App.php:337 library/Box/AppClient.php:71
+#: index.php:91 library/Box/App.php:337 library/Box/AppClient.php:71
 msgid "Page :url not found"
 msgstr "找不到 :url 页面"
 
-#: index.php:82
+#: index.php:98
 msgid "HTTP Error :err_code occurred while attempting to load :url"
 msgstr "HTTP 错误 :err_code 尝试加载 :url 时出错"
 
@@ -85,7 +85,7 @@ msgstr ":type API 调用 :method 在模块 :module 中不存在"
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "系统正在维护，请稍后再试"
 
-#: library/Box/AppAdmin.php:36 modules/Extension/Service.php:757
+#: library/Box/AppAdmin.php:36 modules/Extension/Service.php:794
 msgid "You do not have permission to access the :mod: module"
 msgstr "你没有权限访问 :mod: 模块"
 
@@ -307,10 +307,6 @@ msgstr "通过 :e 传输发送邮件失败"
 msgid "SMTP host or port is not configured"
 msgstr "SMTP 主机或端口未配置"
 
-#: library/FOSSBilling/Pagination.php:84 library/FOSSBilling/Pagination.php:146
-msgid ")."
-msgstr ""
-
 #: library/FOSSBilling/Pagination.php:157
 msgid "Invalid SQL query. Missing FROM clause."
 msgstr ""
@@ -362,7 +358,7 @@ msgstr "此版本的下载 URL 未被指定为可信的 URL。由于安全原因
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "无法下载更新归档。在错误日志中可获得更多详细信息。"
 
-#: library/FOSSBilling/Update.php:276 modules/Extension/Service.php:490
+#: library/FOSSBilling/Update.php:276 modules/Extension/Service.php:526
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "提取文件失败，请检查文件和文件夹权限。在错误日志中有更多详细信息。"
 
@@ -983,7 +979,7 @@ msgstr ":field 此字段不能为空"
 msgid "Cookie consent"
 msgstr "Cookie 政策"
 
-#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:771
+#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:808
 #: modules/Invoice/Service.php:1510 modules/Invoice/Service.php:1515
 #: modules/Staff/Service.php:204
 msgid "You do not have permission to perform this action"
@@ -1085,7 +1081,7 @@ msgstr "由于长度过长错误消息被截断，请检查错误日志以获取
 msgid "Embed and integrate"
 msgstr "插入和整合"
 
-#: modules/Extension/Api/Admin.php:293
+#: modules/Extension/Api/Admin.php:301
 msgid "Extension not found"
 msgstr "找不到扩展"
 
@@ -1108,54 +1104,82 @@ msgid "Manage extensions"
 msgstr "管理扩展"
 
 #: modules/Extension/Service.php:48
-msgid "Allows the staff member to install, update, or remove extensions."
-msgstr "允许员工安装、更新或删除扩展。"
+msgid "Allows the staff member to install, update, or deactivate extensions."
+msgstr ""
 
-#: modules/Extension/Service.php:352
+#: modules/Extension/Service.php:52
+msgid "Uninstall extensions"
+msgstr ""
+
+#: modules/Extension/Service.php:53
+msgid "Allow the staff member to uninstall extensions, including their associated database records and files."
+msgstr ""
+
+#: modules/Extension/Service.php:357
 msgid "Visit the extension directory for more information on updating this extension."
 msgstr "请访问扩展目录以了解更多关于更新扩展的信息。"
 
-#: modules/Extension/Service.php:404
-msgid "FOSSBilling core modules cannot be managed"
-msgstr "FOSSBilling 核心模块无法管理"
+#: modules/Extension/Service.php:420
+msgid "Core modules are an integral part of the FOSSBilling system and cannot be deactivated."
+msgstr ""
 
-#: modules/Extension/Service.php:453
-msgid "Coudn't find a valid download URL for the extension."
-msgstr "找不到有效的扩展下载 URL。"
+#: modules/Extension/Service.php:446
+msgid "Core modules are an integral part of the FOSSBilling system and cannot be uninstalled."
+msgstr ""
 
-#: modules/Extension/Service.php:457
+#: modules/Extension/Service.php:450
+msgid "Cannot uninstall an active module. Please deactivate it first."
+msgstr ""
+
+#: modules/Extension/Service.php:462
+msgid "An exception was thrown by the :name module: :err"
+msgstr ""
+
+#: modules/Extension/Service.php:473
+msgid "Failed to remove extension files. Please check file permissions and try again or manually remove the files from :path"
+msgstr ""
+
+#: modules/Extension/Service.php:476
+msgid "Could not find the extension files in the supposed path. Please remove them from the disk manually."
+msgstr ""
+
+#: modules/Extension/Service.php:489
+msgid "Couldn't find a valid download URL for the extension."
+msgstr ""
+
+#: modules/Extension/Service.php:493
 msgid "This extension is not compatible with your version of FOSSBilling. Please update FOSSBilling to the latest version and try again."
 msgstr "此扩展与 FOSSBilling 版本不兼容。请更新FOSSBilling 到最新版本，然后重试。"
 
-#: modules/Extension/Service.php:473
+#: modules/Extension/Service.php:509
 msgid "Failed to download the extension with error :code"
 msgstr "下载扩展时出现错误 :code"
 
-#: modules/Extension/Service.php:514
+#: modules/Extension/Service.php:533
 msgid "Extension :id seems to be already installed."
 msgstr "扩展 :id 似乎已经安装。"
 
-#: modules/Extension/Service.php:520
+#: modules/Extension/Service.php:539
 msgid "Failed to move extension to it's final destination. Please check permissions for the destination folder. (:destination)"
 msgstr "无法移动扩展。请检查目标目录的权限。(:destination)"
 
-#: modules/Extension/Service.php:523
-msgid "Extension type (:type) cannot be automatically installed."
-msgstr "不能自动安装扩展类型 (:type) 。"
-
-#: modules/Extension/Service.php:556
+#: modules/Extension/Service.php:572
 msgid "FOSSBilling core modules cannot be installed or removed"
 msgstr "FOSSBilling 核心模块无法安装或删除"
 
-#: modules/Extension/Service.php:561
+#: modules/Extension/Service.php:577
 msgid "Module cannot be installed. It requires at least :min version of FOSSBilling. You are using :v"
 msgstr "无法安装模块。它至少需要 :min 版本的 FOSSBilling。您正在使用 :v"
 
-#: modules/Extension/Service.php:733
+#: modules/Extension/Service.php:697
+msgid "Extension type (:type) is not supported for automatic path determination."
+msgstr ""
+
+#: modules/Extension/Service.php:770
 msgid "Manage settings"
 msgstr "管理设置"
 
-#: modules/Extension/Service.php:734
+#: modules/Extension/Service.php:771
 msgid "Allows the staff member to edit settings for this module."
 msgstr "允许工作人员编辑此模块的设置。"
 
@@ -1300,7 +1324,7 @@ msgid "Tax rules"
 msgstr "税率"
 
 #: modules/Invoice/Controller/Admin.php:83
-#: modules/Extension/html_admin/mod_extension_index.html.twig:152
+#: modules/Extension/html_admin/mod_extension_index.html.twig:165
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:7
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:12
@@ -2381,7 +2405,7 @@ msgstr "系统"
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:20
 #: modules/Email/html_admin/mod_email_settings.html.twig:16
 #: modules/Email/html_admin/mod_email_template.html.twig:16
-#: modules/Extension/html_admin/mod_extension_index.html.twig:101
+#: modules/Extension/html_admin/mod_extension_index.html.twig:114
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:19
 #: modules/Invoice/html_admin/mod_invoice_settings.html.twig:19
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:30
@@ -2506,11 +2530,11 @@ msgstr "主题 “:name” 无法配置"
 msgid "Theme ':name' does not exist."
 msgstr ""
 
-#: modules/Theme/Service.php:325
+#: modules/Theme/Service.php:370
 msgid "Theme was not found in path :path"
 msgstr "在路径 :path 里找不到主题"
 
-#: modules/Theme/Service.php:342
+#: modules/Theme/Service.php:387
 msgid "Unable to decode theme manifest file :file"
 msgstr "无法解码主题清单文件 :file"
 
@@ -2611,7 +2635,7 @@ msgstr ""
 #: modules/Email/html_admin/mod_email_settings.html.twig:110
 #: modules/Email/html_admin/mod_email_template.html.twig:76
 #: modules/Extension/html_admin/mod_extension_index.html.twig:75
-#: modules/Extension/html_admin/mod_extension_index.html.twig:85
+#: modules/Extension/html_admin/mod_extension_index.html.twig:101
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:73
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:259
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:131
@@ -2689,7 +2713,7 @@ msgstr "你确定吗？"
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:192
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:216
 #: modules/Email/html_admin/mod_email_history.html.twig:69
-#: modules/Extension/html_admin/mod_extension_index.html.twig:111
+#: modules/Extension/html_admin/mod_extension_index.html.twig:124
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:72
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:131
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:85
@@ -2792,7 +2816,7 @@ msgstr ""
 #: modules/Email/html_admin/mod_email_template.html.twig:92
 #: modules/Email/html_admin/mod_email_template.html.twig:126
 #: modules/Formbuilder/html_admin/mod_formbuilder_manage.html.twig:88
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:156
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:153
 #: modules/Index/html_client/mod_index_dashboard.html.twig:54
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:127
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:347
@@ -2993,7 +3017,7 @@ msgstr "公司名称"
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:500
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:127
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:80
-#: modules/Invoice/pdf_template/default-pdf.twig:109
+#: modules/Invoice/pdf_template/default-pdf.twig:111
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:35
 #: modules/Page/html_client/mod_page_login.html.twig:30
 #: modules/Page/html_client/mod_page_password-reset.html.twig:30
@@ -3201,8 +3225,8 @@ msgstr "重置"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:239
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:154
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:190
-#: modules/Invoice/pdf_template/default-pdf.twig:66
-#: modules/Invoice/pdf_template/default-pdf.twig:95
+#: modules/Invoice/pdf_template/default-pdf.twig:68
+#: modules/Invoice/pdf_template/default-pdf.twig:97
 #: modules/Order/html_admin/mod_order_index.html.twig:147
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:78
 #: modules/Support/html_admin/mod_support_tickets.html.twig:164
@@ -3252,7 +3276,7 @@ msgstr "导出客户"
 #: modules/Client/html_admin/mod_client_index.html.twig:345
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:138
 #: modules/Email/html_admin/mod_email_settings.html.twig:177
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:272
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:269
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:162
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:133
 #: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:105
@@ -3415,8 +3439,8 @@ msgstr "登录客户区域"
 #: modules/Email/html_admin/mod_email_settings.html.twig:115
 #: modules/Email/html_client/mod_email_email.html.twig:26
 #: modules/Email/html_client/mod_email_index.html.twig:62
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:236
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:256
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:233
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:253
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:135
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:720
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:96
@@ -3713,8 +3737,8 @@ msgstr "邮政编码"
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:76
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:131
 #: modules/Invoice/pdf_template/default-pdf.twig:41
-#: modules/Invoice/pdf_template/default-pdf.twig:53
-#: modules/Invoice/pdf_template/default-pdf.twig:110
+#: modules/Invoice/pdf_template/default-pdf.twig:54
+#: modules/Invoice/pdf_template/default-pdf.twig:112
 #: modules/System/html_admin/mod_system_settings.html.twig:72
 msgid "Phone"
 msgstr "手机号码"
@@ -4984,7 +5008,7 @@ msgstr ""
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:76
 #: modules/Extension/html_admin/mod_extension_index.html.twig:41
-#: modules/Extension/html_admin/mod_extension_index.html.twig:172
+#: modules/Extension/html_admin/mod_extension_index.html.twig:185
 #: themes/admin_default/html/partial_extensions.html.twig:27
 msgid "Extension"
 msgstr "扩展程序"
@@ -5297,7 +5321,7 @@ msgstr ""
 #: modules/Embed/html_admin/mod_embed_index.html.twig:22
 #: modules/Embed/html_admin/mod_embed_index.html.twig:37
 #: modules/Embed/html_admin/mod_embed_index.html.twig:52
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:291
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:288
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:60
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:222
 #: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:237
@@ -5350,108 +5374,116 @@ msgstr "了解详情"
 msgid "Deactivate"
 msgstr "停用"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:88
+#: modules/Extension/html_admin/mod_extension_index.html.twig:85
+msgid "Are you sure?<br /><br />Uninstalling this module will permanently delete all its database tables and remove its files from the disk. This action cannot be undone."
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:89
+msgid "Uninstall"
+msgstr ""
+
+#: modules/Extension/html_admin/mod_extension_index.html.twig:104
 #: modules/Order/html_admin/mod_order_manage.html.twig:178
 #: modules/Order/html_admin/mod_order_manage.html.twig:269
 msgid "Activate"
 msgstr "激活"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:122
+#: modules/Extension/html_admin/mod_extension_index.html.twig:135
 msgid "Modules on the extension directory"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:123
+#: modules/Extension/html_admin/mod_extension_index.html.twig:136
 msgid "These are all modules available for installation from the <a href=\"https://extensions.fossbilling.org/\">extension directory</a> at the click of a button."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:132
+#: modules/Extension/html_admin/mod_extension_index.html.twig:145
 msgid "Extending FOSSBilling"
 msgstr "扩展FOSSBilling"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:133
+#: modules/Extension/html_admin/mod_extension_index.html.twig:146
 msgid "FOSSBilling gives developers all the capabilities to customize, integrate & extend the core system into your own website & applications."
 msgstr "FOSSBilling为开发者提供了可自定义、 整合和扩展的核心系统，方便为您自己的网站和应用程序进行二次开发。"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:137
+#: modules/Extension/html_admin/mod_extension_index.html.twig:150
 msgid "More extensions"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:138
+#: modules/Extension/html_admin/mod_extension_index.html.twig:151
 msgid "If you cannot find the extensions you are looking for in the admin area, please visit the extension directory at <a href=\"https://extensions.fossbilling.org\" target=\"_blank\">https://extensions.fossbilling.org</a>."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:140
+#: modules/Extension/html_admin/mod_extension_index.html.twig:153
 msgid "How to create a new extension"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:142
+#: modules/Extension/html_admin/mod_extension_index.html.twig:155
 msgid "Create a <a href=\"https://github.com/signup/free\" target=\"_blank\">GitHub</a> account for free."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:143
+#: modules/Extension/html_admin/mod_extension_index.html.twig:156
 msgid "Create a new public repository dedicated to the extension only."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:144
+#: modules/Extension/html_admin/mod_extension_index.html.twig:157
 msgid "The repository must have a valid manifest file for your extension in the JSON format. For more information, please refer <a href=\"https://github.com/FOSSBilling/example-extension\" target=\"_blank\">to our example extension</a>."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:145
+#: modules/Extension/html_admin/mod_extension_index.html.twig:158
 msgid "Create a pull request <a href=\"https://github.com/FOSSBilling/extension-directory\">here</a>."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:146
+#: modules/Extension/html_admin/mod_extension_index.html.twig:159
 msgid "The FOSSBilling team will review your extension and contact you if there are any issues."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:147
+#: modules/Extension/html_admin/mod_extension_index.html.twig:160
 msgid "Registered extensions will then appear on the extension directory."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:150
+#: modules/Extension/html_admin/mod_extension_index.html.twig:163
 msgid "Supported extension types"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:153
+#: modules/Extension/html_admin/mod_extension_index.html.twig:166
 msgid "Server managers"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:154
+#: modules/Extension/html_admin/mod_extension_index.html.twig:167
 #: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:195
 msgid "Domain registrars"
 msgstr "域名注册"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:155
+#: modules/Extension/html_admin/mod_extension_index.html.twig:168
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:26
 msgid "Client area themes"
 msgstr "客户中心主题"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:156
+#: modules/Extension/html_admin/mod_extension_index.html.twig:169
 #: modules/Theme/html_admin/mod_theme_settings.html.twig:93
 msgid "Admin area themes"
 msgstr "管理中心主题"
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:157
+#: modules/Extension/html_admin/mod_extension_index.html.twig:170
 msgid "Translations for client and admin areas"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:158
+#: modules/Extension/html_admin/mod_extension_index.html.twig:171
 msgid "Event hooks - Hooks can be injected into the process, change its behaviour, stop executing actions"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:159
+#: modules/Extension/html_admin/mod_extension_index.html.twig:172
 msgid "API module - External program which uses FOSSBilling API"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:162
+#: modules/Extension/html_admin/mod_extension_index.html.twig:175
 msgid "Extension support"
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:163
+#: modules/Extension/html_admin/mod_extension_index.html.twig:176
 msgid "Contact extensions developers directly for support. You can find issue tracker on the extension directory."
 msgstr ""
 
-#: modules/Extension/html_admin/mod_extension_index.html.twig:173
+#: modules/Extension/html_admin/mod_extension_index.html.twig:186
 msgid "Hook"
 msgstr "挂钩"
 
@@ -5672,87 +5704,82 @@ msgid "Labels position"
 msgstr "标签位置"
 
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:135
-msgid "Labels on\n"
-"                            top"
-msgstr "顶部标签"
+msgid "Labels on top"
+msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:138
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:137
 msgid "Labels on the left"
 msgstr "左侧标签"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:143
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:142
 msgid "Form title visibility"
 msgstr "表单标题可见性"
 
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:145
+msgid "Show form title"
+msgstr ""
+
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:146
-msgid "Show form\n"
-"                            title"
-msgstr "显示表单\n"
-"                            标题"
+msgid "Do not show form title"
+msgstr "不显示表单标题"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:148
-msgid "Do not show form\n"
-"                            title"
-msgstr "不显示表单\n"
-"                            标题"
-
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:174
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:171
 msgid "Text"
 msgstr "文本"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:181
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:178
 msgid "Dropdown"
 msgstr "下拉列表"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:188
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:185
 msgid "Radio"
 msgstr "Radio 单选框组件"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:195
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:192
 msgid "Checkbox"
 msgstr "选择框"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:202
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:199
 msgid "Textarea"
 msgstr "文本区"
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:234
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:231
 msgid "Delete field?"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:235
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:232
 msgid "Are you sure you want to delete this custom field?"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:254
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:251
 msgid "Delete Form?"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:255
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:252
 msgid "Are you sure you want to delete this form?"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:269
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:266
 msgid "New form"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:270
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:267
 msgid "Give your new form a title"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:271
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:268
 msgid "My new form"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:288
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:285
 msgid "Copy form"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:289
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:286
 msgid "Give your duplicate form a title"
 msgstr ""
 
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:290
+#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:287
 msgid "My duplicate form"
 msgstr ""
 
@@ -5967,7 +5994,7 @@ msgstr "筛选发票"
 #: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:44
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:102
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:148
-#: modules/Invoice/pdf_template/default-pdf.twig:48
+#: modules/Invoice/pdf_template/default-pdf.twig:49
 #: modules/Order/html_admin/mod_order_index.html.twig:277
 #: modules/Order/html_admin/mod_order_manage.html.twig:79
 #: modules/Support/html_admin/mod_support_ticket.html.twig:58
@@ -6425,11 +6452,6 @@ msgstr "税名"
 msgid "Sales Tax"
 msgstr ""
 
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:114
-#: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:26
-msgid "18"
-msgstr "18"
-
 #: modules/Invoice/html_admin/mod_invoice_tax.html.twig:122
 #: modules/Invoice/html_admin/mod_invoice_taxupdate.html.twig:34
 msgid "Apply to all countries"
@@ -6469,9 +6491,10 @@ msgid "If you are sure that this transaction is valid you can update transaction
 msgstr "如果您确定此交易是有效的，您可以在 &quot;管理&quot; 选项卡中更新交易详情并再次尝试处理交易"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:59
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:135
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:29
-msgid "Invoice Id"
-msgstr "账单 Id"
+msgid "Invoice ID"
+msgstr "账单 ID"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:73
 msgid "Transaction ID on payment gateway"
@@ -6506,10 +6529,6 @@ msgstr "交易已更新"
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:133
 msgid "Transaction payment information"
 msgstr "交易信息"
-
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:135
-msgid "Invoice ID"
-msgstr "账单 ID"
 
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:153
 msgid "Transaction processing information"
@@ -6603,8 +6622,8 @@ msgid "Error"
 msgstr "错误"
 
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:186
-msgid "n/a"
-msgstr "n/a"
+msgid "N/A"
+msgstr ""
 
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:3
 #: modules/Invoice/html_client/mod_invoice_banklink.html.twig:16
@@ -6685,7 +6704,7 @@ msgstr "#"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:185
-#: modules/Invoice/pdf_template/default-pdf.twig:90
+#: modules/Invoice/pdf_template/default-pdf.twig:92
 #: modules/Product/html_admin/mod_product_promos.html.twig:53
 msgid "Discount"
 msgstr "折扣"
@@ -6736,7 +6755,7 @@ msgid "Bank Name"
 msgstr "银行名称"
 
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:88
-#: modules/Invoice/pdf_template/default-pdf.twig:104
+#: modules/Invoice/pdf_template/default-pdf.twig:106
 #: modules/System/html_admin/mod_system_settings.html.twig:122
 #: themes/huraga/html/layout_default.html.twig:195
 msgid "BIC / SWIFT Code"
@@ -6780,7 +6799,12 @@ msgstr "截止日期"
 msgid "Invoice status"
 msgstr "账单状态"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:64
+#: modules/Invoice/pdf_template/default-pdf.twig:42
+#: modules/Invoice/pdf_template/default-pdf.twig:55
+msgid "VAT Number"
+msgstr ""
+
+#: modules/Invoice/pdf_template/default-pdf.twig:66
 #: modules/Order/html_admin/mod_order_index.html.twig:41
 #: modules/Order/html_admin/mod_order_index.html.twig:295
 #: modules/Orderbutton/html_client/mod_orderbutton_checkout.html.twig:16
@@ -6788,35 +6812,35 @@ msgstr "账单状态"
 msgid "Product"
 msgstr "产品"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:65
+#: modules/Invoice/pdf_template/default-pdf.twig:67
 msgid "Quantity & Price"
 msgstr "数量 & 价格"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:103
+#: modules/Invoice/pdf_template/default-pdf.twig:105
 msgid "Payment details"
 msgstr "付款详情"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:104
+#: modules/Invoice/pdf_template/default-pdf.twig:106
 msgid "Account Owner"
 msgstr "账户持有人"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:104
+#: modules/Invoice/pdf_template/default-pdf.twig:106
 msgid "Bank"
 msgstr "银行"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:104
+#: modules/Invoice/pdf_template/default-pdf.twig:106
 msgid "Account number"
 msgstr "账户号码"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:111
+#: modules/Invoice/pdf_template/default-pdf.twig:113
 msgid "VAT ID"
 msgstr "增值税号"
 
-#: modules/Invoice/pdf_template/default-pdf.twig:112
+#: modules/Invoice/pdf_template/default-pdf.twig:114
 msgid "Company Registration #:"
 msgstr "公司注册号："
 
-#: modules/Invoice/pdf_template/default-pdf.twig:113
+#: modules/Invoice/pdf_template/default-pdf.twig:115
 msgid "Website"
 msgstr "网址"
 
@@ -6930,10 +6954,6 @@ msgstr "编辑文章"
 #: modules/News/html_admin/mod_news_post.html.twig:47
 msgid "Image"
 msgstr "图片"
-
-#: modules/News/html_admin/mod_news_post.html.twig:49
-msgid "https://www.yourdomain.com/image.jpg"
-msgstr "https://www.yourdomain.com/image.jpg"
 
 #: modules/News/html_admin/mod_news_post.html.twig:53
 #: themes/huraga/config/settings.html.twig:206
@@ -9168,22 +9188,6 @@ msgstr "列出服务器的 IP 地址 (每行一个)"
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:55
 msgid "Enable/Disable"
 msgstr "启用/禁用"
-
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:191
-msgid "ns1.yourdomain.com"
-msgstr "ns1.yourdomain.com"
-
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:197
-msgid "ns2.yourdomain.com"
-msgstr "ns2.yourdomain.com"
-
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:203
-msgid "ns3.yourdomain.com"
-msgstr "ns3.yourdomain.com"
-
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:209
-msgid "ns4.yourdomain.com"
-msgstr "ns4.yourdomain.com"
 
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:226
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:84
