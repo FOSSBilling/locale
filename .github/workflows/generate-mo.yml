@@ -65,6 +65,8 @@ jobs:
     steps:
       - name: Download the artifact
         uses: actions/download-artifact@v6
+        with:
+          path: translations
 
       - name: Calculate the Translation Tag (messages.pot hash)
         working-directory: translations
