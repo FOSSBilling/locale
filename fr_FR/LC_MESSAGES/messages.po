@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2025-11-03 20:23-0800\n"
-"PO-Revision-Date: 2025-11-04 03:38\n"
+"POT-Creation-Date: 2025-11-06 20:54-0800\n"
+"PO-Revision-Date: 2025-11-06 21:17\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ../FOSSBilling/src\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -61,7 +61,7 @@ msgstr "Mod object n'est pas mis en service"
 msgid "Method :method must contain underscore"
 msgstr "Méthode :method doit contenir un tiret du bas"
 
-#: library/Api/Handler.php:58 library/Box/Mod.php:61
+#: library/Api/Handler.php:58
 msgid "Invalid module name"
 msgstr "Le nom du module est invalide"
 
@@ -85,7 +85,7 @@ msgstr ":type API call :method n'existe pas dans le module :module"
 msgid "The system is undergoing maintenance. Please try again later"
 msgstr "Le système est en maintenance. Veuillez réessayer ultérieurement"
 
-#: library/Box/AppAdmin.php:36 modules/Extension/Service.php:794
+#: library/Box/AppAdmin.php:36
 msgid "You do not have permission to access the :mod: module"
 msgstr "Vous n'avez pas la permission d'accéder à ce :mod: module"
 
@@ -146,27 +146,22 @@ msgid "Every month"
 msgstr "Chaque mois"
 
 #: library/Box/Period.php:86
-#: themes/admin_default/html/partial_pricing.html.twig:90
 msgid "Every 3 months"
 msgstr "Tous les 3 mois"
 
 #: library/Box/Period.php:87
-#: themes/admin_default/html/partial_pricing.html.twig:108
 msgid "Every 6 months"
 msgstr "Tous les 6 mois"
 
 #: library/Box/Period.php:88
-#: themes/admin_default/html/partial_pricing.html.twig:125
 msgid "Every year"
 msgstr "Chaque année"
 
 #: library/Box/Period.php:89
-#: themes/admin_default/html/partial_pricing.html.twig:142
 msgid "Every 2 years"
 msgstr "Tous les 2 ans"
 
 #: library/Box/Period.php:90
-#: themes/admin_default/html/partial_pricing.html.twig:160
 msgid "Every 3 years"
 msgstr "Tous les 3 ans"
 
@@ -332,13 +327,10 @@ msgid "Service class :class was not found in :path"
 msgstr "Class de service :class introuvable dans :path"
 
 #: library/FOSSBilling/Tools.php:229
-#: modules/Staff/html_admin/mod_staff_password_reset.html.twig:21
-#: modules/Staff/html_admin/mod_staff_password_update.html.twig:21
 msgid "Email address"
 msgstr "Adresse e-mail"
 
 #: library/FOSSBilling/Tools.php:231 library/FOSSBilling/Validate.php:195
-#: modules/Servicehosting/Api/Guest.php:39
 msgid ":friendlyName: is invalid"
 msgstr ":friendlyName: est invalide"
 
@@ -346,7 +338,7 @@ msgstr ":friendlyName: est invalide"
 msgid "Failed to download the latest version information. Further details are available in the error log."
 msgstr "Impossible de télécharger les dernières informations de version. Des détails supplémentaires sont disponibles dans le journal des erreurs."
 
-#: library/FOSSBilling/Update.php:218 modules/System/Api/Admin.php:190
+#: library/FOSSBilling/Update.php:218
 msgid "You have the latest version of FOSSBilling. You do not need to update."
 msgstr "Vous avez la dernière version de FOSSBilling. Vous n'avez pas besoin de mettre à jour."
 
@@ -362,7 +354,7 @@ msgstr "L'URL de téléchargement de cette version n'a pas été spécifiée com
 msgid "Failed to download the update archive. Further details are available in the error log."
 msgstr "Impossible de télécharger l'archive de mise à jour. Des détails supplémentaires sont disponibles dans le journal des erreurs."
 
-#: library/FOSSBilling/Update.php:276 modules/Extension/Service.php:526
+#: library/FOSSBilling/Update.php:276
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
 msgstr "Impossible d'extraire le fichier, veuillez vérifier les permissions du fichier et du dossier. Des détails supplémentaires sont disponibles dans le journal des erreurs."
 
@@ -399,7 +391,6 @@ msgid "Password must include at least one uppercase letter."
 msgstr "Le mot de passe doit contenir au moins une lettre majuscule."
 
 #: library/FOSSBilling/Validate.php:193
-#: modules/Client/html_client/mod_client_profile.html.twig:71
 msgid "Birthdate"
 msgstr "Date de naissance"
 
@@ -473,11 +464,11 @@ msgid "Redirecting to PayPal.com"
 msgstr "Redirection vers PayPal.com"
 
 #: library/Payment/Adapter/PayPalEmail.php:310
-#: library/Payment/Adapter/Stripe.php:113 modules/Invoice/Service.php:1407
+#: library/Payment/Adapter/Stripe.php:113
 msgid "Payment for invoice :serie:id [:title]"
 msgstr "Paiement de la facture :serie:id [:title]"
 
-#: library/Payment/Adapter/Stripe.php:115 modules/Invoice/Service.php:1409
+#: library/Payment/Adapter/Stripe.php:115
 msgid "Payment for invoice :serie:id"
 msgstr "Paiement de la facture :serie:id"
 
@@ -549,15 +540,7 @@ msgstr "suppression de domaines"
 
 #: library/Registrar/Adapter/Internetbs.php:169
 #: library/Registrar/Adapter/Namecheap.php:413
-#: library/Registrar/Adapter/Namecheap.php:549 library/Server/Manager/CWP.php:345
-#: library/Server/Manager/CWP.php:358 library/Server/Manager/CWP.php:371
-#: library/Server/Manager/Directadmin.php:133
-#: library/Server/Manager/Directadmin.php:147
-#: library/Server/Manager/Directadmin.php:291
-#: library/Server/Manager/Directadmin.php:542
-#: library/Server/Manager/Hestia.php:296 library/Server/Manager/Hestia.php:306
-#: library/Server/Manager/Hestia.php:341 library/Server/Manager/Plesk.php:101
-#: library/Server/Manager/Plesk.php:296 library/Server/Manager/Plesk.php:342
+#: library/Registrar/Adapter/Namecheap.php:549
 msgid ":type: does not support :action:"
 msgstr ":type: ne prends pas en charge :action:"
 
@@ -623,8 +606,6 @@ msgid "Contact not found"
 msgstr "Contact introuvable"
 
 #: library/Server/Manager/CWP.php:34
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:232
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:11
 msgid "API key"
 msgstr "Clé API"
 
@@ -793,10 +774,7 @@ msgstr "Échec de l'authentification"
 msgid "CSRF token invalid"
 msgstr "Token CSRF invalide"
 
-#: modules/Cart/Api/Guest.php:58 modules/Currency/Api/Admin.php:68
-#: modules/Currency/Api/Admin.php:199 modules/Currency/Api/Guest.php:47
-#: modules/Currency/Service.php:208 modules/Currency/Service.php:288
-#: modules/Currency/Service.php:540
+#: modules/Cart/Api/Guest.php:58
 msgid "Currency not found"
 msgstr "Devise introuvable"
 
@@ -829,7 +807,7 @@ msgstr "Cet article est actuellement en rupture de stock"
 msgid "Selected billing period is invalid for the selected add-on"
 msgstr "La période de facturation sélectionnée n'est pas valide pour l'extension sélectionnée"
 
-#: modules/Cart/Service.php:236 modules/Product/Api/Guest.php:83
+#: modules/Cart/Service.php:236
 msgid "Product not found"
 msgstr "Le produit est introuvable"
 
@@ -862,13 +840,11 @@ msgid ":product setup"
 msgstr "Configuration de :product"
 
 #: modules/Client/Api/Admin.php:150 modules/Client/Api/Admin.php:236
-#: modules/Client/Api/Guest.php:84 modules/Profile/Service.php:134
+#: modules/Client/Api/Guest.php:84
 msgid "This email address is already registered."
 msgstr "Cette adresse e-mail est déjà utilisée."
 
 #: modules/Client/Api/Admin.php:318 modules/Client/Api/Guest.php:225
-#: modules/Profile/Api/Admin.php:109 modules/Profile/Api/Client.php:114
-#: modules/Staff/Api/Admin.php:124 modules/Staff/Api/Guest.php:106
 msgid "Passwords do not match"
 msgstr "Les mots de passe renseignés ne correspondent pas"
 
@@ -898,28 +874,18 @@ msgid "The link has expired or you have already reset your password."
 msgstr "Le lien a expiré ou vous avez déjà réinitialisé votre mot de passe."
 
 #: modules/Client/Controller/Admin.php:34
-#: modules/Client/html_admin/mod_client_index.html.twig:7
-#: modules/Client/html_admin/mod_client_index.html.twig:175
-#: modules/Client/html_admin/mod_client_manage.html.twig:17
-#: themes/admin_default/html/mod_index_dashboard.html.twig:178
-#: themes/admin_default/html/mod_index_dashboard.html.twig:439
-#: themes/admin_default/html/mod_index_dashboard.html.twig:535
 msgid "Clients"
 msgstr "Clients"
 
 #: modules/Client/Controller/Admin.php:41
-#: modules/Extension/Controller/Admin.php:40
-#: modules/Invoice/Controller/Admin.php:41 modules/Order/Controller/Admin.php:42
 msgid "Overview"
 msgstr "Vue d'ensemble"
 
-#: modules/Client/Controller/Admin.php:48 modules/Invoice/Controller/Admin.php:48
-#: modules/Order/Controller/Admin.php:49
+#: modules/Client/Controller/Admin.php:48
 msgid "Advanced search"
 msgstr "Recherche avancée"
 
 #: modules/Client/Controller/Admin.php:56
-#: modules/Client/html_admin/mod_client_login_history.html.twig:12
 msgid "Client login history"
 msgstr "Historique de connexion du client"
 
@@ -971,7 +937,7 @@ msgstr "Client introuvable"
 msgid "Cannot remove groups with clients"
 msgstr "Impossible de supprimer un groupe avec des clients"
 
-#: modules/Client/Service.php:628 modules/Profile/Service.php:126
+#: modules/Client/Service.php:628
 msgid "Email address cannot be changed"
 msgstr "L'adresse email ne peut pas être modifiée"
 
@@ -983,9 +949,7 @@ msgstr "Le champ :field ne peut pas être vide"
 msgid "Cookie consent"
 msgstr "Consentement des cookies"
 
-#: modules/Cron/Api/Guest.php:30 modules/Extension/Service.php:808
-#: modules/Invoice/Service.php:1510 modules/Invoice/Service.php:1515
-#: modules/Staff/Service.php:204
+#: modules/Cron/Api/Guest.php:30
 msgid "You do not have permission to perform this action"
 msgstr "Vous n'êtes pas autorisé à effectuer cette action"
 
@@ -1038,15 +1002,12 @@ msgid "There was an error when fetching currency rates from currencylayer. See t
 msgstr "Il y a eu une erreur lors de la récupération des taux de change depuis ExchangeRate-Api. Consultez le journal des erreurs pour plus de détails."
 
 #: modules/Custompages/Controller/Admin.php:34
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:4
-#: modules/Custompages/html_admin/mod_custompages_index.html.twig:11
-#: modules/Custompages/html_admin/mod_custompages_page.html.twig:19
 msgid "Custom Pages"
 msgstr "Pages personnalisées"
 
 #: modules/Email/Api/Admin.php:115 modules/Email/Api/Admin.php:136
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:89
-#: modules/Email/Api/Client.php:111 modules/Email/Service.php:513
+#: modules/Email/Api/Client.php:111
 msgid "Email not found"
 msgstr "E-mail introuvable"
 
@@ -1059,9 +1020,6 @@ msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "Le récepteur n'est pas défini. Définissez le paramètre « to_client» ou « to_staff»"
 
 #: modules/Email/Controller/Admin.php:35
-#: modules/Email/html_admin/mod_email_details.html.twig:17
-#: modules/Email/html_admin/mod_email_history.html.twig:5
-#: modules/Email/html_admin/mod_email_history.html.twig:21
 msgid "Email history"
 msgstr "Historique E-mail"
 
@@ -1094,8 +1052,6 @@ msgid "Parameter ext is missing"
 msgstr "Le paramètre ext est manquant"
 
 #: modules/Extension/Controller/Admin.php:34
-#: modules/Extension/html_admin/mod_extension_index.html.twig:5
-#: modules/Extension/html_admin/mod_extension_index.html.twig:13
 msgid "Extensions"
 msgstr "Extensions"
 
@@ -1244,7 +1200,7 @@ msgstr "La taille de la zone de texte doit être une valeur entière"
 msgid "You must set the payment gateway in the invoice manage tab before marking it as paid."
 msgstr "Vous devez définir la passerelle de paiement dans l'onglet de gestion des factures avant de la marquer comme payée."
 
-#: modules/Invoice/Api/Admin.php:251 modules/Invoice/Api/Client.php:114
+#: modules/Invoice/Api/Admin.php:251
 msgid "Order :id is free. No need to generate invoice."
 msgstr "La commande :id est gratuite. Inutile de générer une facture."
 
@@ -1266,11 +1222,7 @@ msgstr "Facture introuvable"
 msgid "Paid Invoice cannot be modified"
 msgstr "Facture payée ne peut pas être modifiée"
 
-#: modules/Invoice/Api/Client.php:111 modules/Order/Api/Client.php:120
-#: modules/Servicedomain/Api/Client.php:123
-#: modules/Servicedownloadable/Api/Client.php:31
-#: modules/Servicehosting/Api/Client.php:87
-#: modules/Servicelicense/Api/Client.php:46
+#: modules/Invoice/Api/Client.php:111
 msgid "Order not found"
 msgstr "Commande introuvable"
 
@@ -1287,30 +1239,10 @@ msgid "Payment method not found. Missing param gateway_id"
 msgstr "Méthode de paiement introuvable. Le paramètre gateway_id est manquant"
 
 #: modules/Invoice/Controller/Admin.php:34
-#: modules/Client/html_admin/mod_client_manage.html.twig:35
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:101
-#: modules/Index/html_client/mod_index_dashboard.html.twig:73
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:5
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:182
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:19
-#: modules/Invoice/html_client/mod_invoice_banklink.html.twig:6
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:8
-#: modules/Invoice/html_client/mod_invoice_index.html.twig:18
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:12
-#: modules/Order/html_admin/mod_order_manage.html.twig:52
-#: themes/admin_default/html/mod_index_dashboard.html.twig:214
-#: themes/admin_default/html/mod_index_dashboard.html.twig:261
-#: themes/admin_default/html/mod_index_dashboard.html.twig:430
-#: themes/admin_default/html/mod_index_dashboard.html.twig:534
-#: themes/huraga/html/mobile_menu.html.twig:43
-#: themes/huraga/html/partial_menu.html.twig:44
 msgid "Invoices"
 msgstr "Factures"
 
 #: modules/Invoice/Controller/Admin.php:55
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:19
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:5
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:12
 msgid "Subscriptions"
 msgstr "Abonnements"
 
@@ -1323,15 +1255,10 @@ msgid "Transactions search"
 msgstr "Recherche de transaction"
 
 #: modules/Invoice/Controller/Admin.php:76
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:14
 msgid "Tax rules"
 msgstr "Règles de taxes"
 
 #: modules/Invoice/Controller/Admin.php:83
-#: modules/Extension/html_admin/mod_extension_index.html.twig:165
-#: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:19
-#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:7
-#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:12
 msgid "Payment gateways"
 msgstr "Passerelles de paiement"
 
@@ -1492,7 +1419,6 @@ msgid "Add some content before sending message"
 msgstr "Ajoutez du contenu avant d'envoyer le message"
 
 #: modules/Massmailer/Controller/Admin.php:35
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:5
 msgid "Mass mailer"
 msgstr "Courrier de masse"
 
@@ -1517,7 +1443,6 @@ msgid "News item not found"
 msgstr "Article d'actualité introuvable"
 
 #: modules/News/Controller/Admin.php:36
-#: modules/Index/html_client/mod_index_dashboard.html.twig:240
 msgid "Announcements"
 msgstr "Annonces"
 
@@ -1550,17 +1475,6 @@ msgid "Only pending and failed setup orders can be deleted."
 msgstr "Seules les commandes en attente et échouées peuvent être supprimées."
 
 #: modules/Order/Controller/Admin.php:34
-#: modules/Client/html_admin/mod_client_manage.html.twig:32
-#: modules/Dashboard/html_client/mod_dashboard_index.html.twig:126
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:60
-#: modules/Index/html_client/mod_index_dashboard.html.twig:97
-#: modules/Order/html_admin/mod_order_index.html.twig:7
-#: modules/Order/html_admin/mod_order_index.html.twig:159
-#: modules/Order/html_admin/mod_order_manage.html.twig:17
-#: modules/Order/html_admin/mod_order_new.html.twig:17
-#: themes/admin_default/html/mod_index_dashboard.html.twig:196
-#: themes/admin_default/html/mod_index_dashboard.html.twig:421
-#: themes/admin_default/html/mod_index_dashboard.html.twig:533
 msgid "Orders"
 msgstr "Commandes"
 
@@ -1629,10 +1543,6 @@ msgid "Product Addons"
 msgstr "Extensions de produits"
 
 #: modules/Product/Controller/Admin.php:56
-#: modules/Product/html_admin/mod_product_promo.html.twig:3
-#: modules/Product/html_admin/mod_product_promo.html.twig:20
-#: modules/Product/html_admin/mod_product_promos.html.twig:5
-#: modules/Product/html_admin/mod_product_promos.html.twig:21
 msgid "Product Promotions"
 msgstr "Promotions de produit"
 
@@ -1785,14 +1695,10 @@ msgid "Security"
 msgstr "Sécurité"
 
 #: modules/Security/Controller/Admin.php:40
-#: modules/Security/html_admin/mod_security_index.html.twig:5
-#: modules/Security/html_admin/mod_security_index.html.twig:13
 msgid "Security dashboard"
 msgstr "Tableau de bord de sécurité"
 
 #: modules/Security/Controller/Admin.php:47
-#: modules/Security/html_admin/mod_security_iplookup.html.twig:5
-#: modules/Security/html_admin/mod_security_iplookup.html.twig:13
 msgid "IP lookup"
 msgstr "Recherche IP"
 
@@ -1849,8 +1755,6 @@ msgstr "Option majuscule inconnue ':case:'. Le générateur d'API n'accepte que 
 #: modules/Servicecustom/Api/Admin.php:25 modules/Servicecustom/Api/Admin.php:50
 #: modules/Servicecustom/Api/Client.php:34
 #: modules/Servicedomain/Api/Client.php:117
-#: modules/Servicedownloadable/Api/Client.php:26
-#: modules/Servicehosting/Api/Client.php:82
 msgid "Order ID is required"
 msgstr "ID de commande requise"
 
@@ -1867,7 +1771,6 @@ msgid "Field "
 msgstr "Champ "
 
 #: modules/Servicecustom/Service.php:85 modules/Servicedomain/Service.php:232
-#: modules/Servicelicense/Service.php:102
 msgid "Could not activate order. Service was not created"
 msgstr "Impossible d'activer la commande. Le service n'a pas été créé"
 
@@ -1880,12 +1783,6 @@ msgid "Config must be an array"
 msgstr "La configuration doit être un tableau"
 
 #: modules/Servicecustom/Service.php:236 modules/Servicedomain/Api/Client.php:128
-#: modules/Servicedownloadable/Api/Admin.php:66
-#: modules/Servicedownloadable/Api/Client.php:37
-#: modules/Servicehosting/Api/Admin.php:440
-#: modules/Servicehosting/Api/Client.php:93
-#: modules/Servicelicense/Api/Admin.php:84
-#: modules/Servicelicense/Api/Client.php:52
 msgid "Order is not activated"
 msgstr "La commande n'est pas activée"
 
@@ -1898,9 +1795,7 @@ msgid "Plugin :plugin does not support action :action"
 msgstr "Le plugin :plugin ne supporte pas l'action :action"
 
 #: modules/Servicecustom/Service.php:284 modules/Servicedomain/Service.php:263
-#: modules/Servicedomain/Service.php:295 modules/Servicehosting/Service.php:112
-#: modules/Servicehosting/Service.php:170 modules/Servicehosting/Service.php:188
-#: modules/Servicehosting/Service.php:207 modules/Servicehosting/Service.php:226
+#: modules/Servicedomain/Service.php:295
 msgid "Order :id has no active service"
 msgstr "La commande :id n'a pas de service actif"
 
@@ -2058,9 +1953,6 @@ msgid "Product type"
 msgstr "Type de produit"
 
 #: modules/Servicehosting/Controller/Admin.php:35
-#: modules/Servicehosting/html_admin/mod_servicehosting_hp.html.twig:17
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:5
-#: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:17
 msgid "Hosting plans and servers"
 msgstr "Plans d'hébergement et serveurs"
 
@@ -2132,31 +2024,47 @@ msgstr "Nombre maximum d'itérations atteint lors de la génération de clé de 
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
 msgstr "Votre adresse IP (:ip) est bloquée. Veuillez contacter notre support pour lever votre block."
 
-#: modules/Spamchecker/Service.php:92
+#: modules/Spamchecker/Service.php:94
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
 msgstr "Pour utiliser reCAPTCHA vous devez vous procurer une clé API depuis <a href='https://www.google.com/recaptcha/admin/create'>ici</a>"
 
-#: modules/Spamchecker/Service.php:96
+#: modules/Spamchecker/Service.php:98
 msgid "You have to complete the CAPTCHA to continue"
 msgstr "Vous devez compléter le CAPTCHA pour continuer"
 
-#: modules/Spamchecker/Service.php:110 modules/Spamchecker/Service.php:113
+#: modules/Spamchecker/Service.php:112
 msgid "reCAPTCHA verification failed."
 msgstr "Échec de la vérification reCAPTCHA."
 
-#: modules/Spamchecker/Service.php:163
+#: modules/Spamchecker/Service.php:117
+msgid "Cloudflare Turnstile secret key is not configured."
+msgstr ""
+
+#: modules/Spamchecker/Service.php:122 modules/Spamchecker/Service.php:145
+msgid "Please complete the CAPTCHA verification."
+msgstr ""
+
+#: modules/Spamchecker/Service.php:136 modules/Spamchecker/Service.php:159
+msgid "CAPTCHA verification failed. Please try again."
+msgstr ""
+
+#: modules/Spamchecker/Service.php:140
+msgid "hCaptcha secret key is not configured."
+msgstr ""
+
+#: modules/Spamchecker/Service.php:209
 msgid "Your username is blacklisted in the Stop Forum Spam database"
 msgstr "Votre nom d'utilisateur est sur la liste noire dans la base de données de Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:166
+#: modules/Spamchecker/Service.php:212
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
 msgstr "Votre email est sur la liste noire dans la base de données Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:169
+#: modules/Spamchecker/Service.php:215
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
 msgstr "Votre adresse IP est sur la liste noire dans la base de données Stop Forum Spam"
 
-#: modules/Spamchecker/Service.php:203
+#: modules/Spamchecker/Service.php:249
 msgid "Disposable email addresses are not allowed"
 msgstr "Les adresses email jetables ne sont pas autorisées"
 
@@ -2229,8 +2137,6 @@ msgid "Reset staff passwords"
 msgstr "Réinitialise les mots de passes de l'équipe"
 
 #: modules/Staff/Service.php:65
-#: modules/Staff/html_admin/mod_staff_index.html.twig:17
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:43
 msgid "Manage groups"
 msgstr "Gestion des groupes"
 
@@ -2300,35 +2206,14 @@ msgid "Knowledge Base category not found"
 msgstr "La catégorie de la base de connaissances est introuvable"
 
 #: modules/Support/Controller/Admin.php:34
-#: modules/Order/html_admin/mod_order_manage.html.twig:63
-#: modules/Support/html_admin/mod_support_canned_category.html.twig:19
-#: modules/Support/html_admin/mod_support_canned_response.html.twig:19
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:17
-#: modules/Support/html_admin/mod_support_helpdesk.html.twig:22
-#: modules/Support/html_admin/mod_support_kb_article.html.twig:19
-#: modules/Support/html_admin/mod_support_kb_category.html.twig:17
-#: modules/Support/html_admin/mod_support_kb_index.html.twig:17
-#: modules/Support/html_admin/mod_support_public_ticket.html.twig:19
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:17
-#: modules/Support/html_admin/mod_support_settings.html.twig:21
-#: modules/Support/html_admin/mod_support_ticket.html.twig:17
-#: modules/Support/html_admin/mod_support_tickets.html.twig:17
-#: themes/huraga/html/mobile_menu.html.twig:25
-#: themes/huraga/html/partial_menu.html.twig:26
 msgid "Support"
 msgstr "Support"
 
 #: modules/Support/Controller/Admin.php:40
-#: modules/Support/html_admin/mod_support_ticket.html.twig:45
 msgid "Client Tickets"
 msgstr "Tickets Client"
 
 #: modules/Support/Controller/Admin.php:47
-#: modules/Support/html_admin/mod_support_public_ticket.html.twig:22
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:5
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:19
-#: modules/Support/html_admin/mod_support_public_tickets.html.twig:88
-#: modules/Support/html_admin/mod_support_settings.html.twig:114
 msgid "Public Tickets"
 msgstr "Tickets Publiques"
 
@@ -2337,27 +2222,10 @@ msgid "Advanced Ticket Search"
 msgstr "Recherche avancée de tickets"
 
 #: modules/Support/Controller/Admin.php:61
-#: modules/Support/html_admin/mod_support_canned_category.html.twig:22
-#: modules/Support/html_admin/mod_support_canned_response.html.twig:22
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:19
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:23
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:28
 msgid "Canned Responses"
 msgstr "Réponses prédéfinies"
 
 #: modules/Support/Controller/Admin.php:74
-#: modules/Index/html_client/mod_index_dashboard.html.twig:250
-#: modules/Index/html_client/mod_index_dashboard.html.twig:254
-#: modules/Support/html_admin/mod_support_kb_article.html.twig:22
-#: modules/Support/html_admin/mod_support_kb_category.html.twig:20
-#: modules/Support/html_admin/mod_support_kb_index.html.twig:19
-#: modules/Support/html_admin/mod_support_kb_index.html.twig:23
-#: modules/Support/html_admin/mod_support_settings.html.twig:103
-#: modules/Support/html_client/mod_support_kb_article.html.twig:8
-#: modules/Support/html_client/mod_support_kb_category.html.twig:7
-#: modules/Support/html_client/mod_support_kb_index.html.twig:8
-#: themes/huraga/html/mobile_menu.html.twig:79
-#: themes/huraga/html/partial_menu.html.twig:80
 msgid "Knowledge Base"
 msgstr "Base de connaissances"
 
@@ -2402,50 +2270,10 @@ msgid "System"
 msgstr "Système"
 
 #: modules/System/Controller/Admin.php:40
-#: modules/Activity/html_admin/mod_activity_settings.html.twig:19
-#: modules/Client/html_admin/mod_client_settings.html.twig:19
-#: modules/Cron/html_admin/mod_cron_settings.html.twig:19
-#: modules/Currency/html_admin/mod_currency_manage.html.twig:19
-#: modules/Currency/html_admin/mod_currency_settings.html.twig:20
-#: modules/Email/html_admin/mod_email_settings.html.twig:16
-#: modules/Email/html_admin/mod_email_template.html.twig:16
-#: modules/Extension/html_admin/mod_extension_index.html.twig:114
-#: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:19
-#: modules/Invoice/html_admin/mod_invoice_settings.html.twig:19
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:30
-#: modules/Order/html_admin/mod_order_settings.html.twig:19
-#: modules/Orderbutton/html_admin/mod_orderbutton_settings.html.twig:20
-#: modules/Paidsupport/html_admin/mod_paidsupport_settings.html.twig:19
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:19
-#: modules/Seo/html_admin/mod_seo_settings.html.twig:19
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:19
-#: modules/Staff/html_admin/mod_staff_group.html.twig:17
-#: modules/Staff/html_admin/mod_staff_manage.html.twig:19
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:19
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:32
-#: modules/Support/html_admin/mod_support_helpdesk.html.twig:19
-#: modules/Support/html_admin/mod_support_settings.html.twig:19
-#: modules/System/html_admin/mod_system_index.html.twig:5
-#: modules/System/html_admin/mod_system_index.html.twig:13
-#: modules/System/html_admin/mod_system_settings.html.twig:19
-#: modules/Theme/html_admin/mod_theme_preset.html.twig:15
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:17
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:32
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:49
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:56
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:99
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:116
-#: modules/Theme/html_admin/mod_theme_settings.html.twig:123
-#: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:19
-#: themes/admin_default/html/layout_default.html.twig:125
 msgid "Settings"
 msgstr "Paramètres"
 
 #: modules/System/Controller/Admin.php:47 modules/System/Service.php:64
-#: modules/System/html_admin/mod_system_update.html.twig:5
-#: modules/System/html_admin/mod_system_update.html.twig:11
-#: modules/System/html_admin/mod_system_update.html.twig:50
-#: modules/System/html_admin/mod_system_update.html.twig:59
 msgid "Update FOSSBilling"
 msgstr "Mettre à jour FOSSBilling"
 
@@ -2466,7 +2294,6 @@ msgid "Allows the staff member to update company legal as set under the system m
 msgstr "Permet au membre du personnel de mettre à jour les mentions légales de la société telles que définies dans le module système."
 
 #: modules/System/Service.php:59
-#: modules/System/html_admin/mod_system_settings.html.twig:528
 msgid "Invalidate cache"
 msgstr "Invalider le cache"
 
@@ -2862,7 +2689,7 @@ msgstr ""
 #: modules/Servicehosting/html_admin/mod_servicehosting_config.html.twig:89
 #: modules/Servicelicense/html_admin/mod_servicelicense_config.html.twig:76
 #: modules/Servicelicense/html_admin/mod_servicelicense_manage.html.twig:114
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:130
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:158
 #: modules/Staff/html_admin/mod_staff_group.html.twig:44
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:172
 #: modules/Support/html_admin/mod_support_canned_category.html.twig:45
@@ -9648,62 +9475,86 @@ msgid "Blocked IPs are not allowed to login, register or open public ticket. (On
 msgstr "Les adresses IP bloquées ne sont pas autorisées à se connecter, à s'inscrire ou à ouvrir un ticket public. (Une IP par ligne)"
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:54
-msgid "reCAPTCHA settings"
-msgstr "Paramètres reCAPTCHA"
+msgid "CAPTCHA settings"
+msgstr ""
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:56
 msgid "Enable captcha for client registration and contact forms"
 msgstr "Activer le captcha pour l'inscription du client et les formulaires de contact"
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:57
-msgid "Sign up for reCAPTCHA key for your domain at"
-msgstr "Inscrivez-vous à la clé reCAPTCHA pour votre domaine sur"
+msgid "Get keys from %recaptcha%, %turnstile% or %hcaptcha%."
+msgstr ""
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:61
-msgid "Enable reCAPTCHA"
-msgstr "Activer reCAPTCHA"
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:60
+msgid "Enable CAPTCHA"
+msgstr ""
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:70
-msgid "reCAPTCHA version"
-msgstr "version reCAPTCHA"
+msgid "CAPTCHA Provider"
+msgstr ""
+
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:73
+msgid "Google reCAPTCHA v2"
+msgstr ""
+
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:74
+msgid "Cloudflare Turnstile"
+msgstr ""
 
 #: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:75
-msgid "v2"
-msgstr "v2"
+msgid "hCaptcha"
+msgstr ""
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:85
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:82
 msgid "reCAPTCHA Public key"
 msgstr "clé reCAPTCHA publique"
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:92
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:89
 msgid "reCAPTCHA Secret key"
 msgstr "Clé reCAPTCHA secrète"
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:101
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:99
+msgid "Turnstile Site Key"
+msgstr ""
+
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:105
+msgid "Turnstile Secret Key"
+msgstr ""
+
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:114
+msgid "hCaptcha Site Key"
+msgstr ""
+
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:120
+msgid "hCaptcha Secret Key"
+msgstr ""
+
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:129
 msgid "Stop Forum Spam settings"
 msgstr "Paramètres de la base de données Stop Forum Spam"
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:102
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:130
 msgid "If enabled, client IP will be checked on the <a href=\"https://stopforumspam.com/\" target=\"_blank\">Stop Forum Spam</a> database before registration"
 msgstr "Si activé, l'adresse IP du client sera vérifiée sur la base de données <a href=\"https://stopforumspam.com/\" target=\"_blank\">Stop Forum Spam</a> avant l'inscription"
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:104
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:132
 msgid "Enable Stop Forum Spam"
 msgstr "Activer la base de données Stop Forum Spam"
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:115
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:143
 msgid "Temporary / disposable email protection"
 msgstr "Protection temporaire / jetable des emails"
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:116
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:144
 msgid "If enabled, email addresses will be checked against a database of disposable email domains."
 msgstr "Si activé, les adresses email seront vérifiées par rapport à une base de données de domaines de messagerie jetables."
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:117
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:145
 msgid "This database is updated daily and provided free of charge by the FakeFilter project under the BSD 3-Clause License."
 msgstr "Cette base de données est mise à jour quotidiennement et fournie gratuitement par le projet FakeFilter sous licence BSD 3-Clause License."
 
-#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:119
+#: modules/Spamchecker/html_admin/mod_spamchecker_settings.html.twig:147
 msgid "Check for temporary / disposable email addresses."
 msgstr "Vérifier s'il y a des adresses temporaires ou jetables."
 
