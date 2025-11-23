@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2025-11-06 20:54-0800\n"
-"PO-Revision-Date: 2025-11-06 21:18\n"
+"PO-Revision-Date: 2025-11-23 12:26\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Traditional\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "管理員未登入"
 
 #: di.php:499
 msgid "Unrecognized Handler type: "
-msgstr ""
+msgstr "無法辨識的處理器類型： "
 
 #: di.php:509
 msgid "Please check your mailbox and confirm your email address."
@@ -55,11 +55,11 @@ msgstr "嘗試載入 :url 時發生 HTTP 錯誤 :err_code"
 
 #: library/Api/Abstract.php:60
 msgid "Mod object is not set for the service"
-msgstr ""
+msgstr "此服務尚未設定模組物件"
 
 #: library/Api/Handler.php:45
 msgid "Method :method must contain underscore"
-msgstr ""
+msgstr "方法 :method 必須包含底線"
 
 #: library/Api/Handler.php:58
 msgid "Invalid module name"
@@ -75,15 +75,15 @@ msgstr "您沒有權限存取 :mod 模組"
 
 #: library/Api/Handler.php:88
 msgid "Api class must be an instance of Api_Abstract"
-msgstr ""
+msgstr "Api 類別必須是 Api_Abstract 的實例"
 
 #: library/Api/Handler.php:104
 msgid ":type API call :method does not exist in module :module"
-msgstr ""
+msgstr ":type API 呼叫 :method 不存在於 :module 模組中"
 
 #: library/Box/App.php:297
 msgid "The system is undergoing maintenance. Please try again later"
-msgstr ""
+msgstr "系統正在進行維護，請稍後再試"
 
 #: library/Box/AppAdmin.php:36
 msgid "You do not have permission to access the :mod: module"
@@ -107,27 +107,27 @@ msgstr "錯誤記錄的優先順序"
 
 #: library/Box/Mod.php:84
 msgid "Module :mod manifest file is missing or not readable."
-msgstr ""
+msgstr "模組 :mod 的資訊清單檔案遺失或無法讀取。"
 
 #: library/Box/Mod.php:86
 msgid "Module :mod manifest file is invalid. Check file syntax and permissions."
-msgstr ""
+msgstr "模組 :mod 的資訊清單檔案無效。請檢查檔案語法與權限。"
 
 #: library/Box/Mod.php:127
 msgid "Module :mod does not have service class"
-msgstr ""
+msgstr "模組 :mod 未包含服務類別"
 
 #: library/Box/Mod.php:146
 msgid "Module :mod Client controller class was not found"
-msgstr ""
+msgstr "找不到模組 :mod 的客戶端控制器類別"
 
 #: library/Box/Mod.php:221
 msgid "Core modules cannot be updated"
-msgstr ""
+msgstr "核心模組無法更新"
 
 #: library/Box/Period.php:44
 msgid "Invalid period code. Period definition must be 2 chars length"
-msgstr ""
+msgstr "無效的期間代碼。期間定義必須為 2 個字元長度"
 
 #: library/Box/Period.php:53
 msgid "Period Error. Unit :unit is not defined"
@@ -135,7 +135,7 @@ msgstr "期間錯誤。單位 :unit 未定義"
 
 #: library/Box/Period.php:64
 msgid "Invalid period quantity :qty for unit :unit. Allowed range is from :from to :to"
-msgstr ""
+msgstr "單位 :unit 的期間數量 :qty 無效。允許的範圍為 :from 至 :to"
 
 #: library/Box/Period.php:84
 msgid "Every week"
@@ -232,7 +232,7 @@ msgstr "十年"
 #: library/Box/TwigLoader.php:29 library/Box/TwigLoader.php:33
 #: library/Box/TwigLoader.php:37
 msgid "Missing :missing: param for Box_TwigLoader"
-msgstr ""
+msgstr "Box_TwigLoader 缺少 :missing: 參數"
 
 #: library/FOSSBilling/CentralAlerts.php:118
 msgid "Unable to fetch alerts from Central Alerts System. See the error log for more information."
@@ -244,15 +244,15 @@ msgstr ""
 
 #: library/FOSSBilling/Config.php:90
 msgid "An error occurred when creating a backup of the configuration file."
-msgstr ""
+msgstr "建立設定檔備份時發生錯誤。"
 
 #: library/FOSSBilling/Config.php:96
 msgid "An error occurred when writing the updated configuration file."
-msgstr ""
+msgstr "寫入更新後的設定檔時發生錯誤。"
 
 #: library/FOSSBilling/Config.php:145
 msgid "Too many iterations were performed while formatting the config file"
-msgstr ""
+msgstr "格式化設定檔時執行的遞迴次數過多"
 
 #: library/FOSSBilling/ExtensionManager.php:56
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
@@ -276,19 +276,19 @@ msgstr "FOSSBilling 擴充套件目錄的回應無效。"
 
 #: library/FOSSBilling/Mail.php:118
 msgid "Provided priority (:priority) is invalid. Please provide an integer between 1 and 5 or use the pre-defined symfony constants."
-msgstr ""
+msgstr "提供的優先順序 (:priority) 無效。請提供 1 到 5 之間的整數，或使用預定義的 Symfony 常數。"
 
 #: library/FOSSBilling/Mail.php:135
 msgid "FOSSBilling requires the proc_open PHP function to be enabled when using the sendmail transport"
-msgstr ""
+msgstr "使用 sendmail 傳輸時，FOSSBilling 需要啟用 proc_open PHP 函式"
 
 #: library/FOSSBilling/Mail.php:145
 msgid "A SendGrid API key is required to send emails via SendGrid"
-msgstr ""
+msgstr "透過 SendGrid 發送電子郵件需要 SendGrid API 金鑰"
 
 #: library/FOSSBilling/Mail.php:152
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
-msgstr ""
+msgstr "無法發送電子郵件：已選擇「自訂」傳輸方式，但未設定自訂 DSN"
 
 #: library/FOSSBilling/Mail.php:158
 msgid "Unknown mail transport: :transport"
@@ -408,7 +408,7 @@ msgstr "無法刪除網域產品。"
 
 #: library/Model/ProductTable.php:59
 msgid "Unknown period selected "
-msgstr ""
+msgstr "選擇了未知的期間 "
 
 #: library/Model/ProductTable.php:72
 msgid "Product pricing could not be determined. "
@@ -424,7 +424,7 @@ msgstr "產品 :id 的付款類型為定期付款，但未選擇期間"
 
 #: library/Model/ProductTable.php:136
 msgid "Unknown Period selected for price"
-msgstr ""
+msgstr "設定價格中選擇了未知的期間"
 
 #: library/Payment/Adapter/ClientBalance.php:60
 msgid "Your account balance is insufficient to cover this invoice."
@@ -434,7 +434,7 @@ msgstr "您的帳戶餘額不足以付款此發票。"
 #: library/Payment/Adapter/ClientBalance.php:98
 #: library/Payment/Adapter/ClientBalance.php:133
 msgid "You may not pay a deposit invoice with this payment gateway."
-msgstr ""
+msgstr "您無法使用此付款閘道支付訂金發票。"
 
 #: library/Payment/Adapter/ClientBalance.php:83
 #: library/Payment/Adapter/PayPalEmail.php:77
@@ -474,19 +474,19 @@ msgstr "處理交易時發生錯誤"
 
 #: library/Payment/AdapterAbstract.php:52
 msgid "Return URL for the payment gateway was not set"
-msgstr ""
+msgstr "未設定付款閘道的返回網址"
 
 #: library/Payment/AdapterAbstract.php:59
 msgid "Cancel URL for the payment gateway was not set"
-msgstr ""
+msgstr "未設定付款閘道的取消網址"
 
 #: library/Payment/AdapterAbstract.php:67
 msgid "IPN Notification URL for the payment gateway was not set"
-msgstr ""
+msgstr "未設定付款閘道的 IPN 通知網址"
 
 #: library/Payment/AdapterAbstract.php:77
 msgid "IPN redirect URL for the payment gateway was not set"
-msgstr ""
+msgstr "未設定付款閘道的 IPN 重新導向網址"
 
 #: library/Registrar/Adapter/Email.php:24
 #: library/Registrar/Adapter/Internetbs.php:18
@@ -503,7 +503,7 @@ msgstr ""
 #: library/Registrar/Adapter/Resellerid.php:11
 #: library/Registrar/Adapter/Resellerid.php:18
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
-msgstr ""
+msgstr "\":domain_registrar\" 網域註冊商尚未完成設定。請設定 :missing"
 
 #: library/Registrar/Adapter/Email.php:65 library/Registrar/Adapter/Email.php:70
 msgid ":type: registrar is unable to :action:"
@@ -571,7 +571,7 @@ msgstr "設定網域鎖狀態"
 
 #: library/Registrar/Adapter/Resellerclub.php:324
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
-msgstr ""
+msgstr "註冊 .AU 網域名稱時，必須提供有效的公司聯絡電話號碼"
 
 #: library/Registrar/Adapter/Resellerclub.php:391
 msgid "get the transfer code"
@@ -607,7 +607,7 @@ msgstr "API 金鑰"
 
 #: library/Server/Manager/CWP.php:35
 msgid "API key you generated from within CWP."
-msgstr ""
+msgstr "您從 CWP 內部產生的 API 金鑰。"
 
 #: library/Server/Manager/CWP.php:53 library/Server/Manager/CWP.php:57
 #: library/Server/Manager/CWP.php:61 library/Server/Manager/Directadmin.php:67
@@ -706,7 +706,7 @@ msgstr "伺服器管理 DirectAdmin 錯誤：“您要求的操作無法執行�
 
 #: library/Server/Manager/Directadmin.php:862
 msgid "Failed to retrieve user packages: "
-msgstr ""
+msgstr "無法取得使用者方案： "
 
 #: library/Server/Manager/Hestia.php:162
 msgid "create user"
