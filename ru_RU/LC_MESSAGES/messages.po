@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
-"POT-Creation-Date: 2025-11-06 20:54-0800\n"
-"PO-Revision-Date: 2025-11-07 21:22\n"
+"POT-Creation-Date: 2025-12-22 12:26-0800\n"
+"PO-Revision-Date: 2025-12-28 00:54\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
@@ -749,16 +749,8 @@ msgid "Activity"
 msgstr "Активность"
 
 #: modules/Activity/Controller/Admin.php:40
-msgid "Event history"
-msgstr "История событий"
-
-#: modules/Activity/Service.php:35
-msgid "Delete activity"
-msgstr "Удалить активность"
-
-#: modules/Activity/Service.php:36
-msgid "Allows the staff member to delete recorded activity."
-msgstr "Позволяет сотруднику удалять записанные действия."
+msgid "System activity"
+msgstr "Системная активность"
 
 #: modules/Api/Controller/Client.php:58 modules/Api/Controller/Client.php:276
 msgid "Unknown API call :call"
@@ -856,11 +848,7 @@ msgstr "Этот адрес электронной почты уже зарег�
 msgid "Passwords do not match"
 msgstr "Пароли не совпадают"
 
-#: modules/Client/Api/Admin.php:470
-msgid "Event not found"
-msgstr "Событие не найдено"
-
-#: modules/Client/Api/Admin.php:554
+#: modules/Client/Api/Admin.php:535
 msgid "Group has clients assigned. Please reassign them first."
 msgstr "Группе назначены клиенты. Пожалуйста, сначала переназначьте их."
 
@@ -1013,17 +1001,17 @@ msgstr "Произошла ошибка при получении курсов �
 msgid "Custom Pages"
 msgstr "Пользовательские страницы"
 
-#: modules/Email/Api/Admin.php:115 modules/Email/Api/Admin.php:136
+#: modules/Email/Api/Admin.php:114 modules/Email/Api/Admin.php:135
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:89
 #: modules/Email/Api/Client.php:111
 msgid "Email not found"
 msgstr "Электронное письмо не найдено"
 
-#: modules/Email/Api/Admin.php:206
+#: modules/Email/Api/Admin.php:205
 msgid "Email template not found"
 msgstr "Шаблон электронной почты не найден"
 
-#: modules/Email/Api/Admin.php:382
+#: modules/Email/Api/Admin.php:381
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
 msgstr "Получатель не определен. Определите параметр to, to_client или to_staff"
 
@@ -2156,40 +2144,40 @@ msgstr "Позволяет сотруднику управлять группа�
 msgid "Check your login details"
 msgstr "Проверьте ваши данные для входа"
 
-#: modules/Staff/Service.php:516
+#: modules/Staff/Service.php:534
 msgid "This administrator account is protected and cannot be removed"
 msgstr "Эта учетная запись администратора защищена и не может быть удалена"
 
-#: modules/Staff/Service.php:587
+#: modules/Staff/Service.php:605
 msgid "Staff member with email :email is already registered."
 msgstr "Сотрудник с email :email уже зарегистрирован."
 
-#: modules/Staff/Service.php:682
+#: modules/Staff/Service.php:700
 msgid "Administrators group cannot be removed"
 msgstr "Группа администраторов не может быть удалена"
 
-#: modules/Staff/Service.php:690
+#: modules/Staff/Service.php:708
 msgid "Cannot remove group which has staff members"
 msgstr "Невозможно удалить группу, в которой есть сотрудники"
 
-#: modules/Support/Api/Admin.php:829 modules/Support/Api/Admin.php:901
+#: modules/Support/Api/Admin.php:840 modules/Support/Api/Admin.php:914
 #: modules/Support/Service.php:1651
 msgid "Article not found"
 msgstr "Статья не найдена"
 
-#: modules/Support/Api/Admin.php:943 modules/Support/Api/Admin.php:988
+#: modules/Support/Api/Admin.php:956 modules/Support/Api/Admin.php:1001
 msgid "Article Category not found"
 msgstr "Категория статьи не найдена"
 
-#: modules/Support/Api/Admin.php:1013
+#: modules/Support/Api/Admin.php:1026
 msgid "Category not found"
 msgstr "Kategoriya topilmadi"
 
-#: modules/Support/Api/Client.php:123 modules/Support/Service.php:248
+#: modules/Support/Api/Client.php:125 modules/Support/Service.php:248
 msgid "Ticket not found"
 msgstr "Тикет не найден"
 
-#: modules/Support/Api/Client.php:127
+#: modules/Support/Api/Client.php:129
 msgid "Ticket cannot be reopened."
 msgstr "Тикет не может быть reopened."
 
@@ -2197,19 +2185,19 @@ msgstr "Тикет не может быть reopened."
 msgid "Please enter your message"
 msgstr "Пожалуйста, введите ваше сообщение"
 
-#: modules/Support/Api/Guest.php:142
+#: modules/Support/Api/Guest.php:145
 msgid "ID or slug is missing"
 msgstr "Отсутствует ID или slug"
 
-#: modules/Support/Api/Guest.php:156
+#: modules/Support/Api/Guest.php:159
 msgid "Article item not found"
 msgstr "Элемент статьи не найден"
 
-#: modules/Support/Api/Guest.php:204
+#: modules/Support/Api/Guest.php:207
 msgid "Category ID or slug is missing"
 msgstr "Отсутствует ID категории или slug"
 
-#: modules/Support/Api/Guest.php:218
+#: modules/Support/Api/Guest.php:221
 msgid "Knowledge Base category not found"
 msgstr "Категория базы знаний не найдена"
 
@@ -2345,11 +2333,11 @@ msgstr "Мы будем признательны, если вы рассмотр
 msgid "Error reporting in FOSSBilling has changed since you last reviewed it. You may want to consider reviewing the changes to see what's been changed. (This message will remain for 24 hours)"
 msgstr "Отчетность об ошибках в FOSSBilling изменилась с момента вашего последнего просмотра. Возможно, вам стоит ознакомиться с изменениями, чтобы увидеть, что было изменено. (Это сообщение будет отображаться 24 часа)"
 
-#: modules/System/Service.php:540
+#: modules/System/Service.php:542
 msgid "Parameter :param does not exist"
 msgstr "Параметр :param не существует"
 
-#: modules/System/Service.php:954
+#: modules/System/Service.php:956
 msgid "Country :code phone code is not registered"
 msgstr "Телефонный код страны :code не зарегистрирован"
 
@@ -2377,17 +2365,207 @@ msgstr "Тема не найдена по пути :path"
 msgid "Unable to decode theme manifest file :file"
 msgstr "Не удалось декодировать файл манифеста темы :file"
 
-#: modules/Activity/html_admin/mod_activity_index.html.twig:5
-#: modules/Activity/html_admin/mod_activity_index.html.twig:12
-msgid "System activity"
-msgstr "Системная активность"
+#: modules/Activity/html_admin/mod_activity_index.html.twig:13
+msgid "Filter activity logs"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:16
+#: themes/admin_default/html/partial_search.html.twig:14
+#: themes/admin_default/html/partial_search_action.html.twig:3
+msgid "Search"
+msgstr "Search"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:18
+msgid "Search in message"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:23
+msgid "IP address"
+msgstr ""
 
 #: modules/Activity/html_admin/mod_activity_index.html.twig:25
-#: modules/Client/html_admin/mod_client_login_history.html.twig:23
+msgid "Filter by IP address"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:26
+msgid "Show logs from a specific IP address"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:31
+msgid "User type"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:35
+msgid "All users"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:39
+msgid "Staff only"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:43
+msgid "Clients only"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:49
+msgid "Specific admin"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:52
+msgid "Start typing the admin name or ID"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:62
+msgid "Leave empty to show all staff members"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:67
+msgid "Specific client"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:70
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:31
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:299
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:106
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:127
+#: modules/Order/html_admin/mod_order_index.html.twig:281
+#: modules/Support/html_admin/mod_support_tickets.html.twig:299
+msgid "Start typing the client name or ID"
+msgstr "Начните вводить имя или ID клиента"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:80
+msgid "Leave empty to show all clients"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:85
+msgid "Date range"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:102
+msgid "Filter activity logs by date range"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:107
+msgid "Minimum priority"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:110
+msgid "Emergency and above"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:111
+msgid "Alert and above"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:112
+msgid "Critical and above"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:113
+msgid "Error and above"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:114
+msgid "Warning and above"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:115
+msgid "Notice and above"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:116
+msgid "Info and above"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:117
+msgid "Debug and above"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:119
+msgid "Show logs with minimum priority level (disabled when exact priority is selected)"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:124
+msgid "Exact priority"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:127
+msgid "All priorities"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:128
+msgid "Emergency"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:129
+msgid "Alert"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:130
+msgid "Critical"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:131
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:128
+#: themes/admin_default/html/error.html.twig:3
+#: themes/huraga/html/error.html.twig:3
+msgid "Error"
+msgstr "Ошибка"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:132
+#: themes/admin_default/html/mod_index_dashboard.html.twig:32
+msgid "Warning"
+msgstr "Предупреждение"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:133
+msgid "Notice"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:134
+msgid "Info"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:135
+msgid "Debug"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:137
+msgid "Show only logs with this exact priority level (takes precedence over minimum priority)"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:146
+#: modules/Client/html_admin/mod_client_index.html.twig:103
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:110
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:82
+#: modules/Order/html_admin/mod_order_index.html.twig:88
+#: modules/Support/html_admin/mod_support_tickets.html.twig:105
+msgid "Filter"
+msgstr "Filtrlash"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:190
+#: modules/Client/html_admin/mod_client_login_history.html.twig:19
+#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:196
+#: modules/Invoice/html_client/mod_invoice_print.html.twig:151
+#: modules/Product/html_admin/mod_product_index.html.twig:50
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:44
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:103
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:19
+msgid "#"
+msgstr "№"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:192
+#: modules/Client/html_admin/mod_client_login_history.html.twig:21
 msgid "User"
 msgstr "Foydalanuvchi"
 
-#: modules/Activity/html_admin/mod_activity_index.html.twig:26
+#: modules/Activity/html_admin/mod_activity_index.html.twig:193
+#: modules/Product/html_admin/mod_product_index.html.twig:55
+#: modules/Support/html_admin/mod_support_ticket.html.twig:156
+#: modules/Support/html_admin/mod_support_tickets.html.twig:58
+msgid "Priority"
+msgstr "Muhimlik darajasi"
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:194
 #: modules/Embed/html_client/mod_embed_contact.html.twig:57
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:115
 #: modules/Notification/html_admin/mod_notification_index.html.twig:34
@@ -2400,20 +2578,20 @@ msgstr "Foydalanuvchi"
 msgid "Message"
 msgstr "Сообщение"
 
-#: modules/Activity/html_admin/mod_activity_index.html.twig:27
-#: modules/Client/html_admin/mod_client_login_history.html.twig:24
+#: modules/Activity/html_admin/mod_activity_index.html.twig:195
+#: modules/Client/html_admin/mod_client_login_history.html.twig:22
 #: modules/Client/html_admin/mod_client_manage.html.twig:734
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:85
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:46
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:162
 #: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:142
 #: modules/Servicehosting/html_admin/mod_servicehosting_server.html.twig:43
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:24
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:22
 msgid "IP"
 msgstr "IP"
 
-#: modules/Activity/html_admin/mod_activity_index.html.twig:28
-#: modules/Client/html_admin/mod_client_login_history.html.twig:25
+#: modules/Activity/html_admin/mod_activity_index.html.twig:196
+#: modules/Client/html_admin/mod_client_login_history.html.twig:23
 #: modules/Client/html_admin/mod_client_manage.html.twig:295
 #: modules/Client/html_admin/mod_client_manage.html.twig:735
 #: modules/Client/html_admin/mod_client_new_form.html.twig:131
@@ -2430,17 +2608,17 @@ msgstr "IP"
 #: modules/Security/html_admin/mod_security_iplookup.html.twig:33
 #: modules/Servicedomain/html_admin/mod_servicedomain_manage.html.twig:204
 #: modules/Servicedomain/html_client/mod_servicedomain_manage.html.twig:157
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:25
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:23
 msgid "Country"
 msgstr "Страна"
 
-#: modules/Activity/html_admin/mod_activity_index.html.twig:29
+#: modules/Activity/html_admin/mod_activity_index.html.twig:197
 #: modules/Client/html_admin/mod_client_index.html.twig:212
-#: modules/Client/html_admin/mod_client_login_history.html.twig:26
+#: modules/Client/html_admin/mod_client_login_history.html.twig:24
 #: modules/Client/html_admin/mod_client_manage.html.twig:658
 #: modules/Client/html_admin/mod_client_manage.html.twig:736
 #: modules/Client/html_admin/mod_client_manage.html.twig:769
-#: modules/Client/html_admin/mod_client_manage.html.twig:815
+#: modules/Client/html_admin/mod_client_manage.html.twig:823
 #: modules/Client/html_client/mod_client_balance.html.twig:33
 #: modules/Email/html_admin/mod_email_history.html.twig:34
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:681
@@ -2448,110 +2626,54 @@ msgstr "Страна"
 #: modules/News/html_admin/mod_news_index.html.twig:37
 #: modules/Notification/html_admin/mod_notification_index.html.twig:35
 #: modules/Order/html_admin/mod_order_manage.html.twig:592
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:26
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:24
 #: modules/Support/html_admin/mod_support_public_tickets.html.twig:101
 msgid "Date"
 msgstr "Sana"
 
-#: modules/Activity/html_admin/mod_activity_index.html.twig:64
-#: modules/Client/html_admin/mod_client_login_history.html.twig:47
+#: modules/Activity/html_admin/mod_activity_index.html.twig:221
+msgid "Show all activity from this client"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:228
+msgid "Show all activity from this admin"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:234
+msgid "Guest"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:262
+msgid "Show all activity from this IP address"
+msgstr ""
+
+#: modules/Activity/html_admin/mod_activity_index.html.twig:269
+#: modules/Client/html_admin/mod_client_login_history.html.twig:42
 #: modules/Client/html_admin/mod_client_manage.html.twig:118
 #: modules/Client/html_admin/mod_client_manage.html.twig:745
 #: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:86
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:49
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:44
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: modules/Activity/html_admin/mod_activity_index.html.twig:69
-#: modules/Client/html_admin/mod_client_group.html.twig:51
-#: modules/Client/html_admin/mod_client_index.html.twig:262
-#: modules/Client/html_admin/mod_client_index.html.twig:318
-#: modules/Client/html_admin/mod_client_login_history.html.twig:52
-#: modules/Client/html_admin/mod_client_manage.html.twig:148
-#: modules/Client/html_admin/mod_client_manage.html.twig:672
-#: modules/Email/html_admin/mod_email_details.html.twig:59
-#: modules/Email/html_admin/mod_email_history.html.twig:60
-#: modules/Email/html_admin/mod_email_settings.html.twig:110
-#: modules/Email/html_admin/mod_email_template.html.twig:76
-#: modules/Extension/html_admin/mod_extension_index.html.twig:75
-#: modules/Extension/html_admin/mod_extension_index.html.twig:101
-#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:73
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:259
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:131
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:185
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:552
-#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:719
-#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:91
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:76
-#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:77
-#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:120
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:211
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:69
-#: modules/News/html_admin/mod_news_index.html.twig:70
-#: modules/Notification/html_admin/mod_notification_index.html.twig:46
-#: modules/Notification/html_admin/mod_notification_index.html.twig:63
-#: modules/Order/html_admin/mod_order_index.html.twig:240
-#: modules/Order/html_admin/mod_order_manage.html.twig:173
-#: modules/Order/html_admin/mod_order_manage.html.twig:186
-#: modules/Order/html_admin/mod_order_manage.html.twig:255
-#: modules/Order/html_admin/mod_order_manage.html.twig:265
-#: modules/Order/html_admin/mod_order_manage.html.twig:283
-#: modules/Order/html_admin/mod_order_manage.html.twig:303
-#: modules/Order/html_admin/mod_order_manage.html.twig:625
-#: modules/Product/html_admin/mod_product_addons.html.twig:66
-#: modules/Product/html_admin/mod_product_index.html.twig:86
-#: modules/Product/html_admin/mod_product_index.html.twig:165
-#: modules/Product/html_admin/mod_product_promos.html.twig:103
-#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:100
-#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:21
-#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:30
-#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:89
-#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:223
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:79
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:129
-#: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:91
-#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:92
-#: modules/Staff/html_admin/mod_staff_index.html.twig:57
-#: modules/Staff/html_admin/mod_staff_index.html.twig:150
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:54
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:103
-#: modules/Staff/html_admin/mod_staff_settings.html.twig:254
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:79
-#: modules/Support/html_admin/mod_support_canned_responses.html.twig:146
-#: modules/Support/html_admin/mod_support_helpdesk.html.twig:94
-#: modules/Support/html_admin/mod_support_kb_index.html.twig:90
-#: modules/Support/html_admin/mod_support_kb_index.html.twig:165
-#: modules/Support/html_admin/mod_support_public_ticket.html.twig:100
-#: modules/Support/html_admin/mod_support_public_ticket.html.twig:199
-#: modules/Support/html_admin/mod_support_settings.html.twig:170
-#: modules/Support/html_admin/mod_support_ticket.html.twig:106
-#: modules/Support/html_admin/mod_support_ticket.html.twig:116
-#: modules/Support/html_admin/mod_support_ticket.html.twig:179
-#: modules/Support/html_admin/mod_support_ticket.html.twig:321
-#: modules/Support/html_admin/mod_support_tickets.html.twig:267
-#: modules/Theme/html_admin/mod_theme_preset.html.twig:54
-#: themes/admin_default/html/partial_batch_delete.html.twig:36
-msgid "Are you sure?"
-msgstr "Вы уверены?"
-
-#: modules/Activity/html_admin/mod_activity_index.html.twig:79
+#: modules/Activity/html_admin/mod_activity_index.html.twig:274
 #: modules/Client/html_admin/mod_client_index.html.twig:271
 #: modules/Client/html_admin/mod_client_index.html.twig:327
-#: modules/Client/html_admin/mod_client_login_history.html.twig:62
+#: modules/Client/html_admin/mod_client_login_history.html.twig:47
 #: modules/Client/html_admin/mod_client_manage.html.twig:495
 #: modules/Client/html_admin/mod_client_manage.html.twig:564
 #: modules/Client/html_admin/mod_client_manage.html.twig:630
 #: modules/Client/html_admin/mod_client_manage.html.twig:681
 #: modules/Client/html_admin/mod_client_manage.html.twig:750
-#: modules/Client/html_admin/mod_client_manage.html.twig:791
-#: modules/Client/html_admin/mod_client_manage.html.twig:838
+#: modules/Client/html_admin/mod_client_manage.html.twig:799
+#: modules/Client/html_admin/mod_client_manage.html.twig:846
 #: modules/Client/html_client/mod_client_balance.html.twig:47
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:115
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:97
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:62
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:192
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:216
-#: modules/Email/html_admin/mod_email_history.html.twig:69
+#: modules/Email/html_admin/mod_email_history.html.twig:77
 #: modules/Extension/html_admin/mod_extension_index.html.twig:124
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:72
 #: modules/Extension/html_admin/mod_extension_languages.html.twig:131
@@ -2582,7 +2704,7 @@ msgstr "Вы уверены?"
 #: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:138
 #: modules/Staff/html_admin/mod_staff_index.html.twig:67
 #: modules/Staff/html_admin/mod_staff_index.html.twig:157
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:64
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:49
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:115
 #: modules/Staff/html_admin/mod_staff_settings.html.twig:266
 #: modules/Support/html_admin/mod_support_canned_responses.html.twig:88
@@ -2652,8 +2774,8 @@ msgstr "FOSSBilling will automatically remove sent email logs that are older tha
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:258
 #: modules/Custompages/html_admin/mod_custompages_page.html.twig:65
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:81
-#: modules/Email/html_admin/mod_email_template.html.twig:92
-#: modules/Email/html_admin/mod_email_template.html.twig:126
+#: modules/Email/html_admin/mod_email_template.html.twig:81
+#: modules/Email/html_admin/mod_email_template.html.twig:115
 #: modules/Formbuilder/html_admin/mod_formbuilder_manage.html.twig:88
 #: modules/Formbuilder/html_admin/mod_formbuilder_settings.html.twig:153
 #: modules/Index/html_client/mod_index_dashboard.html.twig:54
@@ -2708,7 +2830,7 @@ msgstr "FOSSBilling will automatically remove sent email logs that are older tha
 #: modules/Support/html_admin/mod_support_public_ticket.html.twig:137
 #: modules/Support/html_admin/mod_support_settings.html.twig:125
 #: modules/Support/html_admin/mod_support_ticket.html.twig:163
-#: modules/System/html_admin/mod_system_settings.html.twig:659
+#: modules/System/html_admin/mod_system_settings.html.twig:681
 #: modules/Wysiwyg/html_admin/mod_wysiwyg_settings.html.twig:47
 msgid "Update"
 msgstr "Обновления"
@@ -2784,6 +2906,75 @@ msgstr "Название"
 #: modules/Support/html_client/mod_support_kb_article.html.twig:32
 msgid "Go back"
 msgstr "Назад"
+
+#: modules/Client/html_admin/mod_client_group.html.twig:51
+#: modules/Client/html_admin/mod_client_index.html.twig:262
+#: modules/Client/html_admin/mod_client_index.html.twig:318
+#: modules/Client/html_admin/mod_client_manage.html.twig:148
+#: modules/Client/html_admin/mod_client_manage.html.twig:672
+#: modules/Email/html_admin/mod_email_details.html.twig:67
+#: modules/Email/html_admin/mod_email_history.html.twig:68
+#: modules/Email/html_admin/mod_email_settings.html.twig:110
+#: modules/Email/html_admin/mod_email_template.html.twig:65
+#: modules/Extension/html_admin/mod_extension_index.html.twig:75
+#: modules/Extension/html_admin/mod_extension_index.html.twig:101
+#: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:73
+#: modules/Invoice/html_admin/mod_invoice_index.html.twig:259
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:131
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:185
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:552
+#: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:719
+#: modules/Invoice/html_admin/mod_invoice_subscription.html.twig:91
+#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:76
+#: modules/Invoice/html_admin/mod_invoice_tax.html.twig:77
+#: modules/Invoice/html_admin/mod_invoice_transaction.html.twig:120
+#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:211
+#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:69
+#: modules/News/html_admin/mod_news_index.html.twig:70
+#: modules/Notification/html_admin/mod_notification_index.html.twig:46
+#: modules/Notification/html_admin/mod_notification_index.html.twig:63
+#: modules/Order/html_admin/mod_order_index.html.twig:240
+#: modules/Order/html_admin/mod_order_manage.html.twig:173
+#: modules/Order/html_admin/mod_order_manage.html.twig:186
+#: modules/Order/html_admin/mod_order_manage.html.twig:255
+#: modules/Order/html_admin/mod_order_manage.html.twig:265
+#: modules/Order/html_admin/mod_order_manage.html.twig:283
+#: modules/Order/html_admin/mod_order_manage.html.twig:303
+#: modules/Order/html_admin/mod_order_manage.html.twig:625
+#: modules/Product/html_admin/mod_product_addons.html.twig:66
+#: modules/Product/html_admin/mod_product_index.html.twig:86
+#: modules/Product/html_admin/mod_product_index.html.twig:165
+#: modules/Product/html_admin/mod_product_promos.html.twig:103
+#: modules/Redirect/html_admin/mod_redirect_settings.html.twig:100
+#: modules/Serviceapikey/html_admin/mod_serviceapikey_manage.html.twig:21
+#: modules/Serviceapikey/html_client/mod_serviceapikey_manage.html.twig:30
+#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:89
+#: modules/Servicedomain/html_admin/mod_servicedomain_index.html.twig:223
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:79
+#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:129
+#: modules/Servicehosting/html_admin/mod_servicehosting_manage.html.twig:91
+#: modules/Servicelicense/html_client/mod_servicelicense_manage.html.twig:92
+#: modules/Staff/html_admin/mod_staff_index.html.twig:57
+#: modules/Staff/html_admin/mod_staff_index.html.twig:150
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:103
+#: modules/Staff/html_admin/mod_staff_settings.html.twig:254
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:79
+#: modules/Support/html_admin/mod_support_canned_responses.html.twig:146
+#: modules/Support/html_admin/mod_support_helpdesk.html.twig:94
+#: modules/Support/html_admin/mod_support_kb_index.html.twig:90
+#: modules/Support/html_admin/mod_support_kb_index.html.twig:165
+#: modules/Support/html_admin/mod_support_public_ticket.html.twig:100
+#: modules/Support/html_admin/mod_support_public_ticket.html.twig:199
+#: modules/Support/html_admin/mod_support_settings.html.twig:170
+#: modules/Support/html_admin/mod_support_ticket.html.twig:106
+#: modules/Support/html_admin/mod_support_ticket.html.twig:116
+#: modules/Support/html_admin/mod_support_ticket.html.twig:179
+#: modules/Support/html_admin/mod_support_ticket.html.twig:321
+#: modules/Support/html_admin/mod_support_tickets.html.twig:267
+#: modules/Theme/html_admin/mod_theme_preset.html.twig:54
+#: themes/admin_default/html/partial_batch_delete.html.twig:36
+msgid "Are you sure?"
+msgstr "Вы уверены?"
 
 #: modules/Client/html_admin/mod_client_index.html.twig:13
 msgid "Filter clients"
@@ -2907,7 +3098,7 @@ msgstr "Все группы"
 #: modules/Client/html_admin/mod_client_manage.html.twig:456
 #: modules/Client/html_admin/mod_client_manage.html.twig:525
 #: modules/Client/html_admin/mod_client_manage.html.twig:595
-#: modules/Client/html_admin/mod_client_manage.html.twig:814
+#: modules/Client/html_admin/mod_client_manage.html.twig:822
 #: modules/Client/html_admin/mod_client_new_form.html.twig:37
 #: modules/Dashboard/html_client/mod_dashboard_index.html.twig:45
 #: modules/Email/html_admin/mod_email_settings.html.twig:195
@@ -3025,17 +3216,9 @@ msgstr "Отменен"
 msgid "Registration date"
 msgstr "Ro'yxatga olish sanasi"
 
-#: modules/Client/html_admin/mod_client_index.html.twig:103
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:110
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:82
-#: modules/Order/html_admin/mod_order_index.html.twig:88
-#: modules/Support/html_admin/mod_support_tickets.html.twig:105
-msgid "Filter"
-msgstr "Filtrlash"
-
 #: modules/Client/html_admin/mod_client_index.html.twig:104
-#: modules/Email/html_admin/mod_email_template.html.twig:77
-#: modules/Email/html_admin/mod_email_template.html.twig:80
+#: modules/Email/html_admin/mod_email_template.html.twig:66
+#: modules/Email/html_admin/mod_email_template.html.twig:69
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:111
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:83
 #: modules/Order/html_admin/mod_order_index.html.twig:89
@@ -3273,7 +3456,7 @@ msgstr "Войти в клиентскую зону"
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:82
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:85
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:87
-#: modules/Email/html_admin/mod_email_details.html.twig:64
+#: modules/Email/html_admin/mod_email_details.html.twig:72
 #: modules/Email/html_admin/mod_email_settings.html.twig:113
 #: modules/Email/html_admin/mod_email_settings.html.twig:115
 #: modules/Email/html_client/mod_email_email.html.twig:26
@@ -3307,7 +3490,7 @@ msgid "Client Profile updated"
 msgstr "Профиль клиента обновлен"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:181
-#: modules/Client/html_admin/mod_client_manage.html.twig:811
+#: modules/Client/html_admin/mod_client_manage.html.twig:819
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:677
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:166
 #: modules/Order/html_admin/mod_order_index.html.twig:35
@@ -3331,8 +3514,8 @@ msgstr "Почта подтверждена"
 #: modules/Client/html_admin/mod_client_manage.html.twig:202
 #: modules/Client/html_admin/mod_client_manage.html.twig:356
 #: modules/Email/html_admin/mod_email_settings.html.twig:143
-#: modules/Email/html_admin/mod_email_settings.html.twig:291
-#: modules/Email/html_admin/mod_email_template.html.twig:110
+#: modules/Email/html_admin/mod_email_settings.html.twig:302
+#: modules/Email/html_admin/mod_email_template.html.twig:99
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:60
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:75
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:93
@@ -3410,8 +3593,8 @@ msgstr "Ha"
 #: modules/Client/html_admin/mod_client_manage.html.twig:206
 #: modules/Client/html_admin/mod_client_manage.html.twig:360
 #: modules/Email/html_admin/mod_email_settings.html.twig:147
-#: modules/Email/html_admin/mod_email_settings.html.twig:295
-#: modules/Email/html_admin/mod_email_template.html.twig:114
+#: modules/Email/html_admin/mod_email_settings.html.twig:306
+#: modules/Email/html_admin/mod_email_template.html.twig:103
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:64
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:79
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:97
@@ -3685,7 +3868,7 @@ msgstr "Заказы клиента"
 #: modules/Client/html_admin/mod_client_manage.html.twig:522
 #: modules/Client/html_admin/mod_client_manage.html.twig:656
 #: modules/Client/html_admin/mod_client_manage.html.twig:697
-#: modules/Client/html_admin/mod_client_manage.html.twig:813
+#: modules/Client/html_admin/mod_client_manage.html.twig:821
 #: modules/Client/html_client/mod_client_balance.html.twig:34
 #: modules/Currency/html_admin/mod_currency_settings.html.twig:269
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:208
@@ -3775,6 +3958,7 @@ msgstr "Служба поддержки"
 #: modules/Support/html_client/mod_support_contact_us_conversation.html.twig:25
 #: modules/Support/html_client/mod_support_tickets.html.twig:37
 #: modules/Support/html_client/mod_support_tickets.html.twig:94
+#: themes/admin_default/html/partial_email_preview.html.twig:55
 msgid "Subject"
 msgstr "Тема"
 
@@ -3824,7 +4008,7 @@ msgid "Emails sent to client"
 msgstr "Письма, отправленные клиенту"
 
 #: modules/Client/html_admin/mod_client_manage.html.twig:767
-#: modules/Email/html_admin/mod_email_template.html.twig:55
+#: modules/Email/html_admin/mod_email_template.html.twig:50
 msgid "Email subject"
 msgstr "Тема письма"
 
@@ -3837,11 +4021,21 @@ msgstr "Тема письма"
 msgid "To"
 msgstr "Кому"
 
-#: modules/Client/html_admin/mod_client_manage.html.twig:802
+#: modules/Client/html_admin/mod_client_manage.html.twig:785
+#: modules/Email/html_admin/mod_email_details.html.twig:55
+#: modules/Email/html_admin/mod_email_history.html.twig:55
+#: modules/Email/html_admin/mod_email_settings.html.twig:236
+#: modules/Email/html_admin/mod_email_template.html.twig:79
+#: modules/Email/html_admin/mod_email_template.html.twig:218
+#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:119
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: modules/Client/html_admin/mod_client_manage.html.twig:810
 msgid "Transactions received"
 msgstr "Полученные транзакции"
 
-#: modules/Client/html_admin/mod_client_manage.html.twig:810
+#: modules/Client/html_admin/mod_client_manage.html.twig:818
 #: modules/Custompages/html_admin/mod_custompages_index.html.twig:51
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:16
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:54
@@ -3854,7 +4048,7 @@ msgstr "Полученные транзакции"
 msgid "ID"
 msgstr "ID"
 
-#: modules/Client/html_admin/mod_client_manage.html.twig:812
+#: modules/Client/html_admin/mod_client_manage.html.twig:820
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:5
 #: modules/Invoice/html_admin/mod_invoice_invoice.html.twig:678
 #: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:38
@@ -4247,6 +4441,7 @@ msgstr "Добавить заметку или задачу"
 #: themes/admin_default/html/mod_index_dashboard.html.twig:27
 #: themes/admin_default/html/mod_index_dashboard.html.twig:33
 #: themes/admin_default/html/mod_index_dashboard.html.twig:39
+#: themes/admin_default/html/partial_email_preview.html.twig:78
 #: themes/admin_default/html/partial_extensions.html.twig:13
 #: themes/admin_default/html/partial_extensions.html.twig:18
 msgid "Close"
@@ -4785,11 +4980,11 @@ msgstr "От"
 msgid "Sent"
 msgstr "Отправлено"
 
-#: modules/Email/html_admin/mod_email_details.html.twig:51
+#: modules/Email/html_admin/mod_email_details.html.twig:59
 msgid "Email resent"
 msgstr "Письмо отправлено повторно"
 
-#: modules/Email/html_admin/mod_email_details.html.twig:55
+#: modules/Email/html_admin/mod_email_details.html.twig:63
 #: modules/Email/html_client/mod_email_email.html.twig:23
 #: modules/Email/html_client/mod_email_index.html.twig:59
 msgid "Resend"
@@ -4854,7 +5049,7 @@ msgstr "Расширение"
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:78
 #: modules/Email/html_admin/mod_email_settings.html.twig:139
-#: modules/Email/html_admin/mod_email_template.html.twig:106
+#: modules/Email/html_admin/mod_email_template.html.twig:95
 #: modules/Invoice/html_admin/mod_invoice_gateway.html.twig:56
 #: modules/Invoice/html_admin/mod_invoice_gateways.html.twig:41
 #: modules/Product/html_admin/mod_product_addon_manage.html.twig:37
@@ -4882,7 +5077,7 @@ msgid "Newly created email templates can be used in custom event hooks."
 msgstr "Новые шаблоны писем можно использовать в пользовательских хуках событий."
 
 #: modules/Email/html_admin/mod_email_settings.html.twig:152
-#: modules/Email/html_admin/mod_email_template.html.twig:119
+#: modules/Email/html_admin/mod_email_template.html.twig:108
 #: modules/Product/html_admin/mod_product_index.html.twig:52
 #: modules/Product/html_admin/mod_product_index.html.twig:126
 #: modules/Product/html_admin/mod_product_manage.html.twig:55
@@ -4927,125 +5122,125 @@ msgstr "Создано"
 msgid "Updated at"
 msgstr "Обновлено"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:234
+#: modules/Email/html_admin/mod_email_settings.html.twig:245
 msgid "The list is empty."
 msgstr "Список пуст."
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:243
+#: modules/Email/html_admin/mod_email_settings.html.twig:254
 msgid "Email settings updated"
 msgstr "Настройки почты обновлены"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:245
+#: modules/Email/html_admin/mod_email_settings.html.twig:256
 msgid "Configure email options"
 msgstr "Настройка параметров почты"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:246
+#: modules/Email/html_admin/mod_email_settings.html.twig:257
 msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can configure your own SMTP server"
 msgstr "FOSSBilling отправляет письма с помощью <em>sendmail</em> по умолчанию или вы можете настроить свой SMTP-сервер"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:249
+#: modules/Email/html_admin/mod_email_settings.html.twig:260
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:41
 msgid "From name"
 msgstr "Имя отправителя"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:252
+#: modules/Email/html_admin/mod_email_settings.html.twig:263
 msgid "Leave blank to use company public name"
 msgstr "Оставьте пустым для использования публичного имени компании"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:257
+#: modules/Email/html_admin/mod_email_settings.html.twig:268
 #: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:45
 msgid "From email"
 msgstr "Email отправителя"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:260
+#: modules/Email/html_admin/mod_email_settings.html.twig:271
 msgid "Leave blank to use company public email"
 msgstr "Оставьте пустым для использования публичного email компании"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:267
+#: modules/Email/html_admin/mod_email_settings.html.twig:278
 msgid "Queue options"
 msgstr "Параметры очереди"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:270
+#: modules/Email/html_admin/mod_email_settings.html.twig:281
 msgid "Send emails per cron run (0 = unlimited)"
 msgstr "Отправлять писем за запуск cron (0 = без ограничений)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:274
+#: modules/Email/html_admin/mod_email_settings.html.twig:285
 msgid "Max email sending time in minutes (0 = unlimited, default 5 min.)"
 msgstr "Максимальное время отправки писем в минутах (0 = без ограничений, по умолчанию 5 мин.)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:278
+#: modules/Email/html_admin/mod_email_settings.html.twig:289
 msgid "Cancel sending email after unsuccessful tries (0 = do not cancel)"
 msgstr "Отменить отправку письма после неудачных попыток (0 = не отменять)"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:287
+#: modules/Email/html_admin/mod_email_settings.html.twig:298
 msgid "Log sent emails to database"
 msgstr "Сохранять отправленные письма в базе данных"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:300
+#: modules/Email/html_admin/mod_email_settings.html.twig:311
 msgid "Email transport"
 msgstr "Транспорт почты"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:304
+#: modules/Email/html_admin/mod_email_settings.html.twig:315
 msgid "SendMail"
 msgstr "SendMail"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:308
+#: modules/Email/html_admin/mod_email_settings.html.twig:319
 msgid "SMTP"
 msgstr "SMTP"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:312
+#: modules/Email/html_admin/mod_email_settings.html.twig:323
 msgid "SendGrid"
 msgstr "SendGrid"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:316
+#: modules/Email/html_admin/mod_email_settings.html.twig:327
 msgid "Custom"
 msgstr "Пользовательский"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:323
+#: modules/Email/html_admin/mod_email_settings.html.twig:334
 msgid "SMTP Hostname"
 msgstr "SMTP хост"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:329
+#: modules/Email/html_admin/mod_email_settings.html.twig:340
 msgid "SMTP Port"
 msgstr "SMTP порт"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:335
+#: modules/Email/html_admin/mod_email_settings.html.twig:346
 msgid "SMTP Username"
 msgstr "SMTP пользователь"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:341
+#: modules/Email/html_admin/mod_email_settings.html.twig:352
 msgid "SMTP Password"
 msgstr "SMTP пароль"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:350
+#: modules/Email/html_admin/mod_email_settings.html.twig:361
 msgid "SendGrid API Key"
 msgstr "SendGrid API ключ"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:359
+#: modules/Email/html_admin/mod_email_settings.html.twig:370
 msgid "Custom DSN"
 msgstr "Пользовательский DSN"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:361
+#: modules/Email/html_admin/mod_email_settings.html.twig:372
 msgid "If none of the available options exactly meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
 msgstr "Если ни один из доступных вариантов не соответствует вашим потребностям, вы можете определить пользовательский DSN. Учтите, что имена пользователей, пароли и имена хостов со специальными символами должны быть URL-кодированы."
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:362
+#: modules/Email/html_admin/mod_email_settings.html.twig:373
 msgid "More information"
 msgstr "Подробнее"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:363
+#: modules/Email/html_admin/mod_email_settings.html.twig:374
 msgid "Example"
 msgstr "Namuna"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:376
+#: modules/Email/html_admin/mod_email_settings.html.twig:387
 msgid "Send a test email to yourself"
 msgstr "Отправить тестовое письмо себе"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:378
+#: modules/Email/html_admin/mod_email_settings.html.twig:389
 msgid "Update email settings"
 msgstr "Обновить настройки почты"
 
-#: modules/Email/html_admin/mod_email_settings.html.twig:392
+#: modules/Email/html_admin/mod_email_settings.html.twig:404
 msgid "Email was successfully sent"
 msgstr "Письмо успешно отправлено"
 
@@ -5053,80 +5248,90 @@ msgstr "Письмо успешно отправлено"
 msgid "Email template"
 msgstr "Шаблон письма"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:34
+#: modules/Email/html_admin/mod_email_template.html.twig:29
 msgid "Template"
 msgstr "Shablon"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:37
+#: modules/Email/html_admin/mod_email_template.html.twig:32
 msgid "Variables"
 msgstr "Переменные"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:40
+#: modules/Email/html_admin/mod_email_template.html.twig:35
 msgid "Template Settings"
 msgstr "Настройки шаблона"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:43
+#: modules/Email/html_admin/mod_email_template.html.twig:38
 msgid "Examples"
 msgstr "Namunalar"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:49
-#: modules/Email/html_admin/mod_email_template.html.twig:99
+#: modules/Email/html_admin/mod_email_template.html.twig:44
+#: modules/Email/html_admin/mod_email_template.html.twig:88
 msgid "Template updated"
 msgstr "Shablon yangilandi"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:52
+#: modules/Email/html_admin/mod_email_template.html.twig:47
 msgid "Manage email template"
 msgstr "Управление шаблоном письма"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:53
+#: modules/Email/html_admin/mod_email_template.html.twig:48
 msgid "Email templates can receive variables from FOSSBilling. Available variables are listed under the \"Variables\" tab. Copy a variable name to your email template and hit preview to see parsed content. Please note that values will be different when an actual email is sent."
 msgstr "Шаблоны писем могут получать переменные из FOSSBilling. Доступные переменные перечислены на вкладке \"Переменные\". Скопируйте имя переменной в шаблон письма и нажмите предпросмотр, чтобы увидеть обработанное содержимое. Учтите, что значения будут отличаться при реальной отправке письма."
 
-#: modules/Email/html_admin/mod_email_template.html.twig:61
+#: modules/Email/html_admin/mod_email_template.html.twig:56
 msgid "Email message"
 msgstr "Текст письма"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:90
-#: modules/Email/html_admin/mod_email_template.html.twig:229
-#: modules/Massmailer/html_admin/mod_massmailer_message.html.twig:119
-msgid "Preview"
-msgstr "Предпросмотр"
-
-#: modules/Email/html_admin/mod_email_template.html.twig:102
+#: modules/Email/html_admin/mod_email_template.html.twig:91
 msgid "Template settings"
 msgstr "Настройки шаблона"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:103
+#: modules/Email/html_admin/mod_email_template.html.twig:92
 msgid "Enable or disable this email template."
 msgstr "Включить или отключить этот шаблон письма."
 
-#: modules/Email/html_admin/mod_email_template.html.twig:134
+#: modules/Email/html_admin/mod_email_template.html.twig:123
 msgid "List of variables used in this email"
 msgstr "Список переменных, используемых в этом письме"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:135
+#: modules/Email/html_admin/mod_email_template.html.twig:124
 msgid "These values will change when real email is sent. You can pass these variables to admin or guest API to get additional information from database."
 msgstr "Эти значения изменятся при отправке реального письма. Вы можете передать эти переменные в API администратора или гостя для получения дополнительной информации из базы данных."
 
-#: modules/Email/html_admin/mod_email_template.html.twig:141
+#: modules/Email/html_admin/mod_email_template.html.twig:130
 msgid "Variable"
 msgstr "Переменная"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:142
+#: modules/Email/html_admin/mod_email_template.html.twig:131
 msgid "Example value"
 msgstr "Пример значения"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:178
+#: modules/Email/html_admin/mod_email_template.html.twig:167
 msgid "This template has no known parameters, you may need to take an action to trigger its sending before they become known."
 msgstr "У этого шаблона нет известных параметров, вам может потребоваться выполнить действие для запуска его отправки, прежде чем они станут известны."
 
-#: modules/Email/html_admin/mod_email_template.html.twig:188
+#: modules/Email/html_admin/mod_email_template.html.twig:177
 msgid "Email templates examples"
 msgstr "Примеры шаблонов писем"
 
-#: modules/Email/html_admin/mod_email_template.html.twig:189
+#: modules/Email/html_admin/mod_email_template.html.twig:178
 msgid "Email template playground. Use this tool to try rendering email templates."
 msgstr "Песочница шаблонов писем. Используйте этот инструмент для тестирования рендеринга шаблонов писем."
+
+#: modules/Email/html_admin/mod_email_template.html.twig:257
+msgid "Failed to render email content"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_template.html.twig:260
+msgid "Failed to render email subject"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_template.html.twig:274
+msgid "No subject for example preview"
+msgstr ""
+
+#: modules/Email/html_admin/mod_email_template.html.twig:276
+msgid "Failed to render template"
+msgstr ""
 
 #: modules/Email/html_client/mod_email_email.html.twig:22
 #: modules/Email/html_client/mod_email_index.html.twig:55
@@ -5843,15 +6048,6 @@ msgstr "Фильтровать счета"
 msgid "Client"
 msgstr "Клиент"
 
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:31
-#: modules/Invoice/html_admin/mod_invoice_index.html.twig:299
-#: modules/Invoice/html_admin/mod_invoice_subscriptions.html.twig:106
-#: modules/Massmailer/html_admin/mod_massmailer_index.html.twig:127
-#: modules/Order/html_admin/mod_order_index.html.twig:281
-#: modules/Support/html_admin/mod_support_tickets.html.twig:299
-msgid "Start typing the client name or ID"
-msgstr "Начните вводить имя или ID клиента"
-
 #: modules/Invoice/html_admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:37
 msgid "All currencies"
@@ -6454,12 +6650,6 @@ msgstr "Все платежные шлюзы"
 msgid "Processed"
 msgstr "Обработано"
 
-#: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:128
-#: themes/admin_default/html/error.html.twig:3
-#: themes/huraga/html/error.html.twig:3
-msgid "Error"
-msgstr "Ошибка"
-
 #: modules/Invoice/html_admin/mod_invoice_transactions.html.twig:186
 msgid "N/A"
 msgstr "N/A"
@@ -6532,14 +6722,6 @@ msgstr "НДС"
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:132
 msgid "Account"
 msgstr "Akkaunt"
-
-#: modules/Invoice/html_client/mod_invoice_invoice.html.twig:196
-#: modules/Invoice/html_client/mod_invoice_print.html.twig:151
-#: modules/Product/html_admin/mod_product_index.html.twig:50
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:44
-#: modules/Servicehosting/html_admin/mod_servicehosting_index.html.twig:103
-msgid "#"
-msgstr "№"
 
 #: modules/Invoice/html_client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/html_client/mod_invoice_print.html.twig:185
@@ -7813,12 +7995,6 @@ msgstr "Новый продукт"
 #: modules/Support/html_admin/mod_support_kb_index.html.twig:46
 msgid "New Category"
 msgstr "Новая категория"
-
-#: modules/Product/html_admin/mod_product_index.html.twig:55
-#: modules/Support/html_admin/mod_support_ticket.html.twig:156
-#: modules/Support/html_admin/mod_support_tickets.html.twig:58
-msgid "Priority"
-msgstr "Muhimlik darajasi"
 
 #: modules/Product/html_admin/mod_product_index.html.twig:108
 msgid "Update priority"
@@ -9643,7 +9819,7 @@ msgstr "Забыли пароль?"
 msgid "Staff members login history"
 msgstr "История входов сотрудников"
 
-#: modules/Staff/html_admin/mod_staff_login_history.html.twig:23
+#: modules/Staff/html_admin/mod_staff_login_history.html.twig:21
 msgid "Admin"
 msgstr "Админ"
 
@@ -10225,7 +10401,7 @@ msgid "Error reporting"
 msgstr "Отчет об ошибках"
 
 #: modules/System/html_admin/mod_system_settings.html.twig:49
-#: modules/System/html_admin/mod_system_settings.html.twig:631
+#: modules/System/html_admin/mod_system_settings.html.twig:653
 msgid "Network interface"
 msgstr "Network interface"
 
@@ -10351,97 +10527,97 @@ msgstr "Включенные модули"
 msgid "This is a core module included with FOSSBilling and cannot be disabled."
 msgstr "Это основной модуль, входящий в FOSSBilling, и его нельзя отключить."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:606
+#: modules/System/html_admin/mod_system_settings.html.twig:613
 msgid "Error reporting is enabled."
 msgstr "Отчет об ошибках включен."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:607
-msgid "This FOSSBilling instance is automatically sending error reports which allows us to more easily improve the software and keep it stable. Thanks!"
-msgstr "Этот экземпляр FOSSBilling автоматически отправляет отчеты об ошибках, что позволяет нам легче улучшать программное обеспечение и поддерживать его стабильность. Спасибо!"
+#: modules/System/html_admin/mod_system_settings.html.twig:614
+msgid "This FOSSBilling instance is automatically sending error reports which helps us improve the software and keep it stable. Thanks!"
+msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:608
+#: modules/System/html_admin/mod_system_settings.html.twig:617
 msgid "Error reporting is now disabled."
 msgstr "Отчет об ошибках теперь отключен."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:608
+#: modules/System/html_admin/mod_system_settings.html.twig:618
 msgid "Disable error reporting"
 msgstr "Отключить отчет об ошибках"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:612
+#: modules/System/html_admin/mod_system_settings.html.twig:630
 msgid "Error reporting is disabled."
 msgstr "Отчет об ошибках отключен."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:613
-msgid "Please consider enabling error reporting. Doing so allows us to provide you with better technical support and helps us to proactively improve FOSSBilling."
-msgstr "Пожалуйста, рассмотрите возможность включения отчетов об ошибках. Это позволяет нам предоставлять вам лучшую техническую поддержку и помогает нам активно улучшать FOSSBilling."
+#: modules/System/html_admin/mod_system_settings.html.twig:631
+msgid "Please consider enabling error reporting. This allows us to provide better technical support and helps us proactively improve FOSSBilling."
+msgstr ""
 
-#: modules/System/html_admin/mod_system_settings.html.twig:614
+#: modules/System/html_admin/mod_system_settings.html.twig:634
 msgid "Error reporting is now enabled."
 msgstr "Отчет об ошибках теперь включен."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:614
+#: modules/System/html_admin/mod_system_settings.html.twig:635
 msgid "Enable error reporting"
 msgstr "Включить отчет об ошибках"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:617
+#: modules/System/html_admin/mod_system_settings.html.twig:639
 msgid "FOSSBilling optionally includes automated error reporting to help aid the project's development and stability. To find the most up-to-date information about it, you should review the links and information below."
 msgstr "FOSSBilling опционально включает автоматизированный отчет об ошибках, чтобы помочь развитию и стабильности проекта. Чтобы найти самую актуальную информацию об этом, ознакомьтесь с ссылками и информацией ниже."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:619
+#: modules/System/html_admin/mod_system_settings.html.twig:641
 msgid "Learn more about error reporting"
 msgstr "Узнать больше об отчетах об ошибках"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:621
+#: modules/System/html_admin/mod_system_settings.html.twig:643
 msgid "Error reporting changelog"
 msgstr "Журнал изменений отчетов об ошибках"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:622
+#: modules/System/html_admin/mod_system_settings.html.twig:644
 msgid "Last applicable behavior change: "
 msgstr "Последнее применимое изменение поведения: "
 
-#: modules/System/html_admin/mod_system_settings.html.twig:625
+#: modules/System/html_admin/mod_system_settings.html.twig:647
 msgid "The last applicable behavior change represents the most recent FOSSBilling version that changed error reporting which also applies to this current version. There may have been more recent changes than what's listed."
 msgstr "Последнее применимое изменение поведения представляет самую последнюю версию FOSSBilling, которая изменила отчетность об ошибках и которая также применима к текущей версии. Возможно, были более поздние изменения, чем перечисленные."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:635
-#: modules/System/html_admin/mod_system_settings.html.twig:675
+#: modules/System/html_admin/mod_system_settings.html.twig:657
+#: modules/System/html_admin/mod_system_settings.html.twig:697
 msgid "Checking external IP..."
 msgstr "Проверка внешнего IP..."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:639
+#: modules/System/html_admin/mod_system_settings.html.twig:661
 msgid "If your server has multiple network interfaces, you may select the default one for FOSSBilling to use when making requests here."
 msgstr "Если ваш сервер имеет несколько сетевых интерфейсов, вы можете выбрать интерфейс по умолчанию для использования FOSSBilling при выполнении запросов."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:642
+#: modules/System/html_admin/mod_system_settings.html.twig:664
 msgid "Select the default network interface:"
 msgstr "Выберите сетевой интерфейс по умолчанию:"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:644
-#: modules/System/html_admin/mod_system_settings.html.twig:695
+#: modules/System/html_admin/mod_system_settings.html.twig:666
+#: modules/System/html_admin/mod_system_settings.html.twig:717
 msgid "None (Default PHP Behavior)"
 msgstr "Нет (поведение PHP по умолчанию)"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:651
+#: modules/System/html_admin/mod_system_settings.html.twig:673
 msgid "Enter a custom interface to use:"
 msgstr "Введите пользовательский интерфейс для использования:"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:655
+#: modules/System/html_admin/mod_system_settings.html.twig:677
 msgid "If the dropdown menu doesn't have the appropriate network interface, please enter the IP address or name (e.g., eth0) of the correct one above."
 msgstr "Если в выпадающем меню нет подходящего сетевого интерфейса, введите IP-адрес или имя (например, eth0) правильного интерфейса выше."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:680
+#: modules/System/html_admin/mod_system_settings.html.twig:702
 msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
 msgstr "При текущих настройках ваш экземпляр FOSSBilling будет иметь внешний IP-адрес: "
 
-#: modules/System/html_admin/mod_system_settings.html.twig:683
+#: modules/System/html_admin/mod_system_settings.html.twig:705
 msgid "The currently selected network interface does not appear to be able to reach the internet!"
 msgstr "Выбранный сетевой интерфейс, похоже, не может выйти в интернет!"
 
-#: modules/System/html_admin/mod_system_settings.html.twig:692
+#: modules/System/html_admin/mod_system_settings.html.twig:714
 msgid "Loading interfaces..."
 msgstr "Загрузка интерфейсов..."
 
-#: modules/System/html_admin/mod_system_settings.html.twig:724
+#: modules/System/html_admin/mod_system_settings.html.twig:746
 msgid "Network interface updated."
 msgstr "Сетевой интерфейс обновлен."
 
@@ -10618,7 +10794,7 @@ msgid "Search:"
 msgstr "Искать:"
 
 #: themes/admin_default/html/macro_functions.html.twig:163
-#: themes/admin_default/html/partial_search.html.twig:14
+#: themes/admin_default/html/partial_search.html.twig:13
 #: themes/admin_default/html/partial_search_action.html.twig:3
 msgid "Enter search text..."
 msgstr "Введите текст для поиска..."
@@ -10626,10 +10802,6 @@ msgstr "Введите текст для поиска..."
 #: themes/admin_default/html/mod_index_dashboard.html.twig:26
 msgid "Danger!"
 msgstr "Опасность!"
-
-#: themes/admin_default/html/mod_index_dashboard.html.twig:32
-msgid "Warning"
-msgstr "Предупреждение"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:67
 msgid "clients"
@@ -10722,6 +10894,14 @@ msgstr "Нет выделенных элементов"
 msgid "You need to select at least one item to delete"
 msgstr "Вам нужно выбрать хотя бы один элемент для удаления"
 
+#: themes/admin_default/html/partial_email_preview.html.twig:63
+msgid "Message Content"
+msgstr ""
+
+#: themes/admin_default/html/partial_email_preview.html.twig:76
+msgid "Email Preview"
+msgstr ""
+
 #: themes/admin_default/html/partial_extensions.html.twig:47
 msgid "View on the extension directory"
 msgstr "Посмотреть в каталоге расширений"
@@ -10793,12 +10973,7 @@ msgstr "Каждую неделю"
 msgid "Monthly"
 msgstr "Ежемесячная"
 
-#: themes/admin_default/html/partial_search.html.twig:15
-#: themes/admin_default/html/partial_search_action.html.twig:3
-msgid "Search"
-msgstr "Search"
-
-#: themes/admin_default/html/partial_search.html.twig:20
+#: themes/admin_default/html/partial_search.html.twig:19
 #: themes/admin_default/html/partial_search_action.html.twig:5
 msgid "Search settings"
 msgstr "Параметры поиска"
