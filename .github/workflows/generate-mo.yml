@@ -1,5 +1,8 @@
 name: Automated compiling of translations
 
+permissions:
+  contents: read
+
 on:
   push:
     branches: main
@@ -10,6 +13,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     name: Compile to .mo
     steps:
       - name: Checkout repository
@@ -62,6 +67,8 @@ jobs:
     name: Publish to release
     runs-on: ubuntu-latest
     needs: build
+    permissions:
+      contents: write
     steps:
       - name: Download the artifact
         uses: actions/download-artifact@v7
