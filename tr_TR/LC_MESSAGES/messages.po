@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2026-05-06 10:58-0700\n"
-"PO-Revision-Date: 2026-07-21 13:15\n"
+"PO-Revision-Date: 2026-07-29 18:21\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
@@ -99,7 +99,7 @@ msgstr "structure.sql dosyası okunamıyor"
 
 #: install/install.php:430
 msgid "Unable to write required .htaccess file to "
-msgstr ""
+msgstr "Gerekli .htaccess dosyası yazılamıyor."
 
 #: install/install.php:440
 msgid "Configuration file is not writable or does not exist. Please create the file at "
@@ -292,11 +292,11 @@ msgstr "Yapılandırma dosyası biçimlendirilirken çok fazla yineleme gerçekl
 
 #: library/FOSSBilling/Doctrine/DriverManagerFactory.php:55
 msgid "Database configuration missing required key: :key."
-msgstr ""
+msgstr "Veritabanı yapılandırmasında gerekli anahtar eksik: :key"
 
 #: library/FOSSBilling/Doctrine/DriverManagerFactory.php:60
 msgid "Unsupported database driver :driver. Supported drivers are: :supported."
-msgstr ""
+msgstr "Desteklenmeyen veritabanı sürücüsü: :driver. Desteklenen sürücüler: :supported"
 
 #: library/FOSSBilling/ExtensionManager.php:56
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
@@ -352,23 +352,23 @@ msgstr "Geçersiz modül adı (:mod)."
 
 #: library/FOSSBilling/Module.php:68
 msgid "Missing manifest file for the :mod module."
-msgstr ""
+msgstr ":mod modülü için manifest dosyası eksik."
 
 #: library/FOSSBilling/Module.php:76
 msgid "Invalid manifest file for the :mod module. Please check file syntax and permissions."
-msgstr ""
+msgstr ":mod modülü için geçersiz manifest dosyası. Lütfen dosya sözdizimini ve izinlerini kontrol edin."
 
 #: library/FOSSBilling/Module.php:117
 msgid "Module :mod does not have a service class. Make sure Service.php exists and is valid."
-msgstr ""
+msgstr "`:mod` modülünde bir servis sınıfı bulunmamaktadır. Lütfen `Service.php` dosyasının mevcut ve geçerli olduğundan emin olun."
 
 #: library/FOSSBilling/Module.php:140
 msgid "Client controller class for the module :mod was not found."
-msgstr ""
+msgstr ":mod modülü için istemci denetleyici sınıfı bulunamadı."
 
 #: library/FOSSBilling/Module.php:210
 msgid "Core modules cannot be updated separately. Please update to the latest FOSSBilling version to have the module updated."
-msgstr ""
+msgstr "Temel modüller ayrı olarak güncellenemez. Modülün güncellenmesi için lütfen FOSSBilling'in en son sürümüne güncelleyin."
 
 #: library/FOSSBilling/Pagination.php:111
 msgid "Invalid SQL query. Missing FROM clause."
@@ -380,7 +380,7 @@ msgstr "Geçersiz şifre karması sağlandı"
 
 #: library/FOSSBilling/Security/RateLimiter.php:85
 msgid "Rate limiter policy :policy is not defined or invalid"
-msgstr ""
+msgstr "Hız sınırlayıcı politikası: politika tanımlanmamış veya geçersiz."
 
 #: library/FOSSBilling/StandardsHelper.php:31
 msgid "Exact matches cannot be provided unless you provide an Alpha2 language code."
@@ -404,11 +404,11 @@ msgstr ":friendlyName: geçersiz"
 
 #: library/FOSSBilling/Tools.php:373
 msgid "Unable to determine external IP address from any service."
-msgstr ""
+msgstr "Herhangi bir servisten harici IP adresini belirlemek mümkün değil."
 
 #: library/FOSSBilling/Tools.php:439
 msgid "The provided phone country code does not appear to be valid."
-msgstr ""
+msgstr "Verilen telefon ülke kodu geçerli görünmüyor."
 
 #: library/FOSSBilling/Tools.php:449
 msgid "The provided phone number does not appear to be valid."
@@ -416,7 +416,7 @@ msgstr "Verilen telefon numarası geçerli görünmüyor."
 
 #: library/FOSSBilling/Tools.php:453
 msgid "Please use the separate field for the phone country code."
-msgstr ""
+msgstr "Lütfen telefonunuzun ülke kodunu ayrı bir alanda belirtin."
 
 #: library/FOSSBilling/Update.php:153
 msgid "Failed to download the latest version information. Further details are available in the error log."
@@ -548,7 +548,7 @@ msgstr "Bu faturayı müşteri bakiyenizle ödeyemezsiniz."
 
 #: library/Payment/Adapter/ClientBalance.php:110
 msgid "Invoice is not configured to use this payment gateway."
-msgstr ""
+msgstr "Fatura bu ödeme ağ geçidini kullanacak şekilde yapılandırılmamış."
 
 #: library/Payment/Adapter/ClientBalance.php:141
 msgid "ClientBalance gateway is not enabled"
@@ -587,7 +587,7 @@ msgstr "İşlem gerçekleştirilirken bir hata oluştu"
 
 #: library/Payment/Adapter/Stripe.php:253
 msgid "Unable to determine client for transaction. No invoice or customer information available."
-msgstr ""
+msgstr "İşlem için müşteri belirlenemedi. Fatura veya müşteri bilgisi mevcut değil."
 
 #: library/Payment/AdapterAbstract.php:52
 msgid "Return URL for the payment gateway was not set"
@@ -947,7 +947,7 @@ msgstr "Bilinmeyen API çağrısı :call"
 
 #: modules/Api/Controller/Client.php:85
 msgid "Malformed JSON input: :error"
-msgstr ""
+msgstr "Hatalı JSON girişi: :error"
 
 #: modules/Api/Controller/Client.php:159
 msgid "Invalid request. Make sure request origin is :from"
@@ -976,7 +976,7 @@ msgstr "Para birimi bulunamadı"
 
 #: modules/Cart/Api/Guest.php:83
 msgid "No currency available"
-msgstr ""
+msgstr "Para birimi mevcut değil."
 
 #: modules/Cart/Api/Guest.php:102 modules/Cart/Api/Guest.php:110
 #: modules/Cart/Service.php:555
@@ -1025,7 +1025,7 @@ msgstr "Promosyon kodunu uygulamadan önce ürünleri sepetinize ekleyin"
 
 #: modules/Cart/Service.php:443
 msgid "Currency not found and no default currency is configured"
-msgstr ""
+msgstr "Para birimi bulunamadı ve varsayılan para birimi yapılandırılmamış."
 
 #: modules/Cart/Service.php:551
 msgid "You have already used this promo code. Please remove the promo code and checkout again."
@@ -1049,7 +1049,7 @@ msgstr "Sipariş tamamlanamıyor. Seçilen ürünlerden biri veya birkaçı geç
 
 #: modules/Cart/Service.php:656
 msgid "Unable to complete order. One or more selected products are out of stock."
-msgstr ""
+msgstr "Sipariş tamamlanamadı. Seçilen ürünlerden bir veya daha fazlası stokta yok."
 
 #: modules/Cart/Service.php:731
 msgid "Discount: :product"
@@ -1061,7 +1061,7 @@ msgstr ":product kurulumu"
 
 #: modules/Cart/Service.php:819
 msgid "This promo code has reached its maximum number of uses."
-msgstr ""
+msgstr "Bu promosyon kodunun kullanım limiti dolmuştur."
 
 #: modules/Client/Api/Admin.php:157 modules/Client/Api/Admin.php:241
 #: modules/Client/Api/Guest.php:81
@@ -11660,7 +11660,7 @@ msgstr "Grafikleri Güncelle"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:459
 msgid "Recent Client Activity"
-msgstr ""
+msgstr "Son Müşteri Hareketleri"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:462
 msgid "Recent Staff Activity"
