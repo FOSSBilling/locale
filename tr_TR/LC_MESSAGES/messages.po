@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2026-05-06 10:58-0700\n"
-"PO-Revision-Date: 2026-07-29 18:21\n"
+"PO-Revision-Date: 2026-07-30 18:19\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
@@ -47,7 +47,7 @@ msgstr "Yönetici hesabı aktif değil"
 
 #: di.php:520
 msgid "Unrecognized Handler type: "
-msgstr "Tanınmayan İşleyici türü: "
+msgstr "Tanınmayan işleyici türü: "
 
 #: di.php:530
 msgid "Please check your mailbox and confirm your email address."
@@ -55,11 +55,11 @@ msgstr "Lütfen posta kutunuzu kontrol edin ve e-posta adresinizi doğrulayın."
 
 #: index.php:99 library/Box/App.php:351 library/Box/AppClient.php:72
 msgid "Page :url not found"
-msgstr "Ulaşmaya çalıştığınız :url sayfası bulunamadı"
+msgstr "Sayfa bulunamadı: :url"
 
 #: index.php:106
 msgid "HTTP Error :err_code occurred while attempting to load :url"
-msgstr ":url adresi yüklenmeye çalışılırken \"HTTP Hata Kodu :err_code\" oluştu"
+msgstr ":url yüklenmeye çalışılırken HTTP hatası :err_code oluştu"
 
 #: install/install.php:39
 msgid "The composer packages are missing."
@@ -99,7 +99,7 @@ msgstr "structure.sql dosyası okunamıyor"
 
 #: install/install.php:430
 msgid "Unable to write required .htaccess file to "
-msgstr "Gerekli .htaccess dosyası yazılamıyor."
+msgstr "Gerekli .htaccess dosyası şu konuma yazılamadı: "
 
 #: install/install.php:440
 msgid "Configuration file is not writable or does not exist. Please create the file at "
@@ -107,11 +107,11 @@ msgstr "Yapılandırma dosyası mevcut değil veya üzerine yazılamıyor. Lütf
 
 #: library/Api/Abstract.php:61
 msgid "Mod object is not set for the service"
-msgstr "Mod nesnesi hizmet için ayarlanmamış"
+msgstr "Hizmet için modül nesnesi ayarlanmamış"
 
 #: library/Api/Handler.php:46
 msgid "Method :method must contain underscore"
-msgstr "Metot :method alt çizgi içermelidir"
+msgstr ":method yöntemi alt çizgi içermelidir"
 
 #: library/Api/Handler.php:59
 msgid "Invalid module name"
@@ -119,7 +119,7 @@ msgstr "Geçersiz modül adı"
 
 #: library/Api/Handler.php:65
 msgid "FOSSBilling module :mod is not installed/activated"
-msgstr "FOSSBilling modülü :mod yüklü/etkin değil"
+msgstr "FOSSBilling :mod modülü kurulu veya etkin değil"
 
 #: library/Api/Handler.php:73
 msgid "You do not have access to the :mod module"
@@ -127,7 +127,7 @@ msgstr ":mod modülüne erişiminiz yok"
 
 #: library/Api/Handler.php:88
 msgid "Api class must be an instance of Api_Abstract"
-msgstr "Api sınıfı Api_Abstract'ın bir örneği olmalıdır"
+msgstr "API sınıfı Api_Abstract sınıfının bir örneği olmalıdır"
 
 #: library/Api/Handler.php:104
 msgid ":type API call :method does not exist in module :module"
@@ -147,11 +147,11 @@ msgstr "Sayfa bulunamadı"
 
 #: library/Box/Crypt.php:25
 msgid "The PHP OpenSSL extension must be enabled on your server"
-msgstr "Sunucunuzda PHP OpenSSL uzantısı etkinleştirilmelidir"
+msgstr "Sunucunuzda PHP OpenSSL eklentisinin etkinleştirilmiş olması gerekir."
 
 #: library/Box/Log.php:95
 msgid "Missing log message"
-msgstr "Eksik günlük mesajı"
+msgstr "Günlük iletisi eksik"
 
 #: library/Box/Log.php:111 library/Box/Log.php:126
 msgid "Bad log priority"
@@ -159,15 +159,15 @@ msgstr "Hatalı günlük önceliği"
 
 #: library/Box/Period.php:45
 msgid "Invalid period code. Period definition must be 2 chars length"
-msgstr "Periyot kodu geçersiz. Periyot kodu 2 karakter uzunluğunda olmalı"
+msgstr "Geçersiz dönem kodu. Dönem tanımı 2 karakter uzunluğunda olmalıdır"
 
 #: library/Box/Period.php:54
 msgid "Period Error. Unit :unit is not defined"
-msgstr "Periyot hatası. :unit adlı birim tanımlı değil"
+msgstr "Dönem hatası. unit :unit tanımlanmamış."
 
 #: library/Box/Period.php:65
 msgid "Invalid period quantity :qty for unit :unit. Allowed range is from :from to :to"
-msgstr ":unit için geçersiz dönem miktarı :qty. İzin verilen aralık :from -> :to"
+msgstr ":unit birimi için geçersiz dönem miktarı: :qty. İzin verilen aralık :from ile :to arasındadır"
 
 #: library/Box/Period.php:85
 msgid "Every week"
@@ -200,7 +200,7 @@ msgstr "3 yılda bir"
 #: library/Box/Period.php:126
 msgid "Every :number day"
 msgid_plural "Every :number days"
-msgstr[0] "Her :number günde bir"
+msgstr[0] "Her :number günü"
 msgstr[1] "Her :number günde bir"
 
 #: library/Box/Period.php:127
@@ -223,11 +223,11 @@ msgstr[1] "Her :number yılda bir"
 
 #: library/Box/Period.php:130 library/Box/Period.php:166
 msgid "Unit not defined"
-msgstr "Birim (Unit) tanımlanmadı"
+msgstr "Birim tanımlanmadı"
 
 #: library/Box/Period.php:151
 msgid "Unable to get the number of months for :unit"
-msgstr ":unit için ayların sayısı alınamıyor"
+msgstr ":unit birimi için ay sayısı alınamıyor"
 
 #: library/Box/Translate.php:45
 msgid "Unable to set up FOSSBilling translation functionality, locale was undefined."
@@ -292,11 +292,11 @@ msgstr "Yapılandırma dosyası biçimlendirilirken çok fazla yineleme gerçekl
 
 #: library/FOSSBilling/Doctrine/DriverManagerFactory.php:55
 msgid "Database configuration missing required key: :key."
-msgstr "Veritabanı yapılandırmasında gerekli anahtar eksik: :key"
+msgstr "Veritabanı yapılandırmasında gerekli anahtar eksik: :key."
 
 #: library/FOSSBilling/Doctrine/DriverManagerFactory.php:60
 msgid "Unsupported database driver :driver. Supported drivers are: :supported."
-msgstr "Desteklenmeyen veritabanı sürücüsü: :driver. Desteklenen sürücüler: :supported"
+msgstr "Desteklenmeyen veritabanı sürücüsü: :driver. Desteklenen sürücüler: :supported."
 
 #: library/FOSSBilling/ExtensionManager.php:56
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
@@ -352,23 +352,23 @@ msgstr "Geçersiz modül adı (:mod)."
 
 #: library/FOSSBilling/Module.php:68
 msgid "Missing manifest file for the :mod module."
-msgstr ":mod modülü için manifest dosyası eksik."
+msgstr ":mod modülünün manifest dosyası eksik."
 
 #: library/FOSSBilling/Module.php:76
 msgid "Invalid manifest file for the :mod module. Please check file syntax and permissions."
-msgstr ":mod modülü için geçersiz manifest dosyası. Lütfen dosya sözdizimini ve izinlerini kontrol edin."
+msgstr ":mod modülünün manifest dosyası geçersiz. Lütfen dosya söz dizimini ve izinlerini kontrol edin."
 
 #: library/FOSSBilling/Module.php:117
 msgid "Module :mod does not have a service class. Make sure Service.php exists and is valid."
-msgstr "`:mod` modülünde bir servis sınıfı bulunmamaktadır. Lütfen `Service.php` dosyasının mevcut ve geçerli olduğundan emin olun."
+msgstr ":mod modülünde bir servis sınıfı yok. Service.php dosyasının mevcut ve geçerli olduğundan emin olun."
 
 #: library/FOSSBilling/Module.php:140
 msgid "Client controller class for the module :mod was not found."
-msgstr ":mod modülü için istemci denetleyici sınıfı bulunamadı."
+msgstr ":mod modülünün müşteri denetleyici sınıfı bulunamadı."
 
 #: library/FOSSBilling/Module.php:210
 msgid "Core modules cannot be updated separately. Please update to the latest FOSSBilling version to have the module updated."
-msgstr "Temel modüller ayrı olarak güncellenemez. Modülün güncellenmesi için lütfen FOSSBilling'in en son sürümüne güncelleyin."
+msgstr "Çekirdek modüller ayrı olarak güncellenemez. Modülü güncellemek için lütfen FOSSBilling'in en son sürümüne güncelleyin."
 
 #: library/FOSSBilling/Pagination.php:111
 msgid "Invalid SQL query. Missing FROM clause."
@@ -376,11 +376,11 @@ msgstr "Geçersiz SQL sorgusu. FROM ifadesi eksik."
 
 #: library/FOSSBilling/PasswordManager.php:35
 msgid "Invalid password hash provided"
-msgstr "Geçersiz şifre karması sağlandı"
+msgstr "Geçersiz parola karması belirtildi"
 
 #: library/FOSSBilling/Security/RateLimiter.php:85
 msgid "Rate limiter policy :policy is not defined or invalid"
-msgstr "Hız sınırlayıcı politikası: politika tanımlanmamış veya geçersiz."
+msgstr "Hız sınırlayıcı ilkesi :policy tanımlanmamış veya geçersiz"
 
 #: library/FOSSBilling/StandardsHelper.php:31
 msgid "Exact matches cannot be provided unless you provide an Alpha2 language code."
@@ -404,11 +404,11 @@ msgstr ":friendlyName: geçersiz"
 
 #: library/FOSSBilling/Tools.php:373
 msgid "Unable to determine external IP address from any service."
-msgstr "Herhangi bir servisten harici IP adresini belirlemek mümkün değil."
+msgstr "Harici IP adresi hiçbir hizmetten belirlenemedi."
 
 #: library/FOSSBilling/Tools.php:439
 msgid "The provided phone country code does not appear to be valid."
-msgstr "Verilen telefon ülke kodu geçerli görünmüyor."
+msgstr "Girilen telefon ülke kodu geçerli görünmüyor."
 
 #: library/FOSSBilling/Tools.php:449
 msgid "The provided phone number does not appear to be valid."
@@ -416,7 +416,7 @@ msgstr "Verilen telefon numarası geçerli görünmüyor."
 
 #: library/FOSSBilling/Tools.php:453
 msgid "Please use the separate field for the phone country code."
-msgstr "Lütfen telefonunuzun ülke kodunu ayrı bir alanda belirtin."
+msgstr "Lütfen telefon ülke kodu için ayrı alanı kullanın."
 
 #: library/FOSSBilling/Update.php:153
 msgid "Failed to download the latest version information. Further details are available in the error log."
@@ -464,23 +464,23 @@ msgstr "Şifre gereklidir."
 
 #: library/FOSSBilling/Validate.php:158
 msgid "Minimum password length is 8 characters."
-msgstr "Şifre uzunluğu en az 8 karakter uzunluğunda olmalı."
+msgstr "Parola en az 8 karakter uzunluğunda olmalıdır."
 
 #: library/FOSSBilling/Validate.php:162
 msgid "Maximum password length is 256 characters."
-msgstr "Şifre uzunluğu maksimum 256 karakter uzunluğunda olmalı."
+msgstr "Parola en fazla 256 karakter uzunluğunda olmalıdır."
 
 #: library/FOSSBilling/Validate.php:166
 msgid "Password must include at least one number."
-msgstr "Şifrenizde en az bir rakam olmalı."
+msgstr "Parola en az bir rakam içermelidir."
 
 #: library/FOSSBilling/Validate.php:170
 msgid "Password must include at least one lowercase letter."
-msgstr "Şifrenizde en az bir küçük harf olmalı."
+msgstr "Parola en az bir küçük harf içermelidir."
 
 #: library/FOSSBilling/Validate.php:174
 msgid "Password must include at least one uppercase letter."
-msgstr "Şifrenizde en az bir büyük harf olmalıdır."
+msgstr "Parola en az bir büyük harf içermelidir."
 
 #: library/FOSSBilling/Validate.php:208
 msgid "Birthdate"
@@ -493,7 +493,7 @@ msgstr "Dil dosyası olması gereken klasörde olmadığından, etkinleştirilem
 #: library/Model/ProductDomainTable.php:37
 #: library/Model/ProductDomainTable.php:279
 msgid "Could not determine domain price. Domain action is missing"
-msgstr "Domain fiyatı belirlenemedi. Domain eylemi eksik"
+msgstr "Alan adı fiyatı belirlenemedi. Alan adı işlemi eksik"
 
 #: library/Model/ProductDomainTable.php:50
 msgid "Unknown TLD. Could not determine registration price"
@@ -587,7 +587,7 @@ msgstr "İşlem gerçekleştirilirken bir hata oluştu"
 
 #: library/Payment/Adapter/Stripe.php:253
 msgid "Unable to determine client for transaction. No invoice or customer information available."
-msgstr "İşlem için müşteri belirlenemedi. Fatura veya müşteri bilgisi mevcut değil."
+msgstr "İşlemin müşterisi belirlenemedi. Fatura veya müşteri bilgisi bulunmuyor."
 
 #: library/Payment/AdapterAbstract.php:52
 msgid "Return URL for the payment gateway was not set"
@@ -947,7 +947,7 @@ msgstr "Bilinmeyen API çağrısı :call"
 
 #: modules/Api/Controller/Client.php:85
 msgid "Malformed JSON input: :error"
-msgstr "Hatalı JSON girişi: :error"
+msgstr "Hatalı JSON girdisi: :error"
 
 #: modules/Api/Controller/Client.php:159
 msgid "Invalid request. Make sure request origin is :from"
@@ -976,7 +976,7 @@ msgstr "Para birimi bulunamadı"
 
 #: modules/Cart/Api/Guest.php:83
 msgid "No currency available"
-msgstr "Para birimi mevcut değil."
+msgstr "Kullanılabilir para birimi yok"
 
 #: modules/Cart/Api/Guest.php:102 modules/Cart/Api/Guest.php:110
 #: modules/Cart/Service.php:555
@@ -1025,7 +1025,7 @@ msgstr "Promosyon kodunu uygulamadan önce ürünleri sepetinize ekleyin"
 
 #: modules/Cart/Service.php:443
 msgid "Currency not found and no default currency is configured"
-msgstr "Para birimi bulunamadı ve varsayılan para birimi yapılandırılmamış."
+msgstr "Para birimi bulunamadı ve varsayılan para birimi yapılandırılmamış"
 
 #: modules/Cart/Service.php:551
 msgid "You have already used this promo code. Please remove the promo code and checkout again."
@@ -1061,7 +1061,7 @@ msgstr ":product kurulumu"
 
 #: modules/Cart/Service.php:819
 msgid "This promo code has reached its maximum number of uses."
-msgstr "Bu promosyon kodunun kullanım limiti dolmuştur."
+msgstr "Bu promosyon kodu azami kullanım sayısına ulaştı."
 
 #: modules/Client/Api/Admin.php:157 modules/Client/Api/Admin.php:241
 #: modules/Client/Api/Guest.php:81
@@ -1111,7 +1111,7 @@ msgstr "Müşteri detaylarını görüntüle"
 
 #: modules/Client/Service.php:29
 msgid "Allows the staff member to view client account details and listings."
-msgstr ""
+msgstr "Personelin müşteri hesap ayrıntılarını ve listelerini görüntülemesine izin verir."
 
 #: modules/Client/Service.php:33
 msgid "Create clients"
@@ -1119,7 +1119,7 @@ msgstr "Müşteri oluştur"
 
 #: modules/Client/Service.php:34
 msgid "Allows the staff member to create new client accounts."
-msgstr ""
+msgstr "Personelin yeni müşteri hesapları oluşturmasına izin verir."
 
 #: modules/Client/Service.php:38
 msgid "Edit client profiles"
@@ -1127,7 +1127,7 @@ msgstr "Müşteri profilini düzenle"
 
 #: modules/Client/Service.php:39
 msgid "Allows the staff member to update client profile details and account settings."
-msgstr ""
+msgstr "Personelin müşteri profil bilgilerini ve hesap ayarlarını güncellemesine izin verir."
 
 #: modules/Client/Service.php:43
 msgid "Login as client"
@@ -1143,7 +1143,7 @@ msgstr "Müşterinin API anahtarlarını yönet"
 
 #: modules/Client/Service.php:49
 msgid "Allows the staff member to view and generate API keys for client accounts."
-msgstr ""
+msgstr "Personelin müşteri hesaplarının API anahtarlarını görüntülemesine ve oluşturmasına izin verir."
 
 #: modules/Client/Service.php:53
 msgid "Change client passwords"
@@ -1151,7 +1151,7 @@ msgstr "Müşterinin şifresini değiştir"
 
 #: modules/Client/Service.php:54
 msgid "Allows the staff member to set new passwords for client accounts."
-msgstr ""
+msgstr "Personelin müşteri hesapları için yeni parola belirlemesine izin verir."
 
 #: modules/Client/Service.php:58
 msgid "Manage client balance"
@@ -1159,7 +1159,7 @@ msgstr "Müşterinin bakiyesini yönet"
 
 #: modules/Client/Service.php:59
 msgid "Allows the staff member to add or remove balance entries for client accounts."
-msgstr ""
+msgstr "Personelin müşteri hesaplarına bakiye kaydı eklemesine veya kaldırmasına izin verir."
 
 #: modules/Client/Service.php:63
 msgid "View client login history"
@@ -1167,7 +1167,7 @@ msgstr "Müşterinin oturum açma geçmişini görüntüle"
 
 #: modules/Client/Service.php:64
 msgid "Allows the staff member to view client login history and IP addresses."
-msgstr ""
+msgstr "Personelin müşteri giriş geçmişini ve IP adreslerini görüntülemesine izin verir."
 
 #: modules/Client/Service.php:68
 msgid "Manage client groups"
@@ -1175,7 +1175,7 @@ msgstr "Müşteri gruplarını yönet"
 
 #: modules/Client/Service.php:69
 msgid "Allows the staff member to create, update, and delete client groups."
-msgstr ""
+msgstr "Personelin müşteri grupları oluşturmasına, güncellemesine ve silmesine izin verir."
 
 #: modules/Client/Service.php:73
 msgid "Delete clients"
@@ -1183,7 +1183,7 @@ msgstr "Müşteri sil"
 
 #: modules/Client/Service.php:74
 msgid "Allows the staff member to permanently remove client accounts."
-msgstr ""
+msgstr "Personelin müşteri hesaplarını kalıcı olarak kaldırmasına izin verir."
 
 #: modules/Client/Service.php:78
 msgid "Bulk delete clients"
@@ -1191,7 +1191,7 @@ msgstr "Müşteri toplu sil"
 
 #: modules/Client/Service.php:79
 msgid "Allows the staff member to permanently remove multiple client accounts in a single action."
-msgstr ""
+msgstr "Personelin birden fazla müşteri hesabını tek işlemle kalıcı olarak kaldırmasına izin verir."
 
 #: modules/Client/Service.php:83
 msgid "Export clients"
@@ -1199,7 +1199,7 @@ msgstr "Müşteri bilgisini dışa aktar"
 
 #: modules/Client/Service.php:84
 msgid "Allows the staff member to export client account data."
-msgstr ""
+msgstr "Personelin müşteri hesabı verilerini dışa aktarmasına izin verir."
 
 #: modules/Client/Service.php:88
 msgid "Manage client settings"
@@ -1207,7 +1207,7 @@ msgstr "Müşteri ayarlarını değiştir"
 
 #: modules/Client/Service.php:89
 msgid "Allows the staff member to manage client module settings and configuration."
-msgstr ""
+msgstr "Personelin müşteri modülü ayarlarını ve yapılandırmasını yönetmesine izin verir."
 
 #: modules/Client/Service.php:109
 msgid "Invalid email confirmation link"
@@ -1275,7 +1275,7 @@ msgstr "Para birimi kodu geçersiz"
 
 #: modules/Currency/Service.php:43
 msgid "The dependency injection container has not been set."
-msgstr ""
+msgstr "Bağımlılık enjeksiyonu kapsayıcısı ayarlanmamış."
 
 #: modules/Currency/Service.php:58
 msgid "Create currencies"
@@ -1283,7 +1283,7 @@ msgstr "Para birimi oluştur"
 
 #: modules/Currency/Service.php:59
 msgid "Allows the staff member to add new currencies to the system."
-msgstr ""
+msgstr "Personelin sisteme yeni para birimleri eklemesine izin verir."
 
 #: modules/Currency/Service.php:63
 msgid "Edit currencies"
@@ -1291,7 +1291,7 @@ msgstr "Para birimlerini düzenle"
 
 #: modules/Currency/Service.php:64
 msgid "Allows the staff member to update currency titles, formats, and conversion rates."
-msgstr ""
+msgstr "Personelin para birimi adlarını, biçimlerini ve dönüşüm oranlarını güncellemesine izin verir."
 
 #: modules/Currency/Service.php:68
 msgid "Delete currencies"
@@ -1299,7 +1299,7 @@ msgstr "Para birimi sil"
 
 #: modules/Currency/Service.php:69
 msgid "Allows the staff member to remove currencies from the system."
-msgstr ""
+msgstr "Personelin sistemden para birimlerini kaldırmasına izin verir."
 
 #: modules/Currency/Service.php:73
 msgid "Set default currency"
@@ -1307,7 +1307,7 @@ msgstr "Varsayılan para birimini değiştir"
 
 #: modules/Currency/Service.php:74
 msgid "Allows the staff member to change the system default currency."
-msgstr ""
+msgstr "Personelin sistemin varsayılan para birimini değiştirmesine izin verir."
 
 #: modules/Currency/Service.php:78
 msgid "Update currency rates"
@@ -1315,7 +1315,7 @@ msgstr "Kur çevirme oranlarını güncelle"
 
 #: modules/Currency/Service.php:79
 msgid "Allows the staff member to refresh all currency conversion rates."
-msgstr ""
+msgstr "Personelin tüm para birimi dönüşüm oranlarını yenilemesine izin verir."
 
 #: modules/Currency/Service.php:132
 msgid "Currency conversion rate cannot be zero"
@@ -1323,7 +1323,7 @@ msgstr "Para birimi dönüştürme oranı sıfır olamaz"
 
 #: modules/Currency/Service.php:192
 msgid "Currency code not provided"
-msgstr "Para birimi kodu karşılanamadı"
+msgstr "Para birimi kodu belirtilmedi"
 
 #: modules/Currency/Service.php:271
 msgid "Cannot remove default currency"
@@ -1371,7 +1371,7 @@ msgstr "Özel Sayfalar"
 
 #: modules/Custompages/Service.php:76
 msgid "Invalid column type: :type"
-msgstr ""
+msgstr "Geçersiz sütun türü: :type"
 
 #: modules/Email/Api/Admin.php:118 modules/Email/Api/Admin.php:137
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
@@ -1381,7 +1381,7 @@ msgstr "E-posta bulunamadı"
 
 #: modules/Email/Api/Admin.php:206
 msgid "Only custom email templates can be deleted"
-msgstr ""
+msgstr "Yalnızca özel e-posta şablonları silinebilir"
 
 #: modules/Email/Api/Admin.php:390
 msgid "Receiver is not defined. Define to or to_client or to_staff parameter"
@@ -1397,39 +1397,39 @@ msgstr "E-posta geçmişini görüntüle"
 
 #: modules/Email/Service.php:64
 msgid "Allows the staff member to view sent emails and queued email messages."
-msgstr ""
+msgstr "Personelin gönderilmiş ve kuyruğa alınmış e-postaları görüntülemesine izin verir."
 
 #: modules/Email/Service.php:68
 msgid "Delete email history"
-msgstr ""
+msgstr "E-posta geçmişini sil"
 
 #: modules/Email/Service.php:69
 msgid "Allows the staff member to delete sent email log entries."
-msgstr ""
+msgstr "Personelin gönderilmiş e-posta günlük kayıtlarını silmesine izin verir."
 
 #: modules/Email/Service.php:73
 msgid "Send emails"
-msgstr ""
+msgstr "E-posta gönder"
 
 #: modules/Email/Service.php:74
 msgid "Allows the staff member to send, resend, and process queued emails."
-msgstr ""
+msgstr "Personelin e-posta göndermesine, yeniden göndermesine ve kuyruğa alınmış e-postaları işlemesine izin verir."
 
 #: modules/Email/Service.php:78
 msgid "View email templates"
-msgstr ""
+msgstr "E-posta şablonlarını görüntüle"
 
 #: modules/Email/Service.php:79
 msgid "Allows the staff member to view email templates and template details."
-msgstr ""
+msgstr "Personelin e-posta şablonlarını ve şablon ayrıntılarını görüntülemesine izin verir."
 
 #: modules/Email/Service.php:83
 msgid "Manage email templates"
-msgstr ""
+msgstr "E-posta şablonlarını yönet"
 
 #: modules/Email/Service.php:84
 msgid "Allows the staff member to create, update, delete, reset, and regenerate email templates."
-msgstr ""
+msgstr "Personelin e-posta şablonları oluşturmasına, güncellemesine, silmesine, sıfırlamasına ve yeniden üretmesine izin verir."
 
 #: modules/Email/Service.php:191
 msgid "Receiver is not defined. Define to or to_client or to_staff or to_admin parameter"
@@ -1441,11 +1441,11 @@ msgstr "Gönderen e-posta adresi boş bırakılamaz"
 
 #: modules/Email/Service.php:693
 msgid "Email template :code does not have a file-backed default"
-msgstr ""
+msgstr ":code e-posta şablonunun dosya tabanlı varsayılanı yok"
 
 #: modules/Email/Service.php:698
 msgid "Custom email template :code cannot be reset to a default"
-msgstr "Özel e-posta şablonu varsayılana sıfırlanamaz"
+msgstr ":code özel e-posta şablonu varsayılana sıfırlanamaz"
 
 #: modules/Email/Service.php:798
 msgid "Email template not found"
@@ -1461,7 +1461,7 @@ msgstr "Yerleştirin ve entegre edin"
 
 #: modules/Extension/Api/Admin.php:260
 msgid "Extension not found"
-msgstr "Eklenti bulunamadı"
+msgstr "Uzantı bulunamadı"
 
 #: modules/Extension/Controller/Admin.php:35
 msgid "Extensions"
@@ -1597,7 +1597,7 @@ msgstr "Metin alanı boyut seçenekleri tamsayı değerler olmalıdır"
 
 #: modules/Formbuilder/Service.php:252
 msgid "Form was not found"
-msgstr ""
+msgstr "Form bulunamadı"
 
 #: modules/Formbuilder/Service.php:314 modules/Formbuilder/Service.php:345
 msgid "Field was not found"
@@ -1605,19 +1605,19 @@ msgstr "Alan bulunamadı"
 
 #: modules/Hook/Service.php:36
 msgid "Manage hooks"
-msgstr ""
+msgstr "Kancaları yönet"
 
 #: modules/Hook/Service.php:37
 msgid "Allows the staff member to view and reconnect registered event hooks."
-msgstr ""
+msgstr "Personelin kayıtlı olay kancalarını görüntülemesine ve yeniden bağlamasına izin verir."
 
 #: modules/Hook/Service.php:41
 msgid "Trigger hooks"
-msgstr ""
+msgstr "Kancaları tetikle"
 
 #: modules/Hook/Service.php:42
 msgid "Allows the staff member to invoke hooks manually with custom event payloads."
-msgstr ""
+msgstr "Personelin özel olay yükleriyle kancaları elle çağırmasına izin verir."
 
 #: modules/Invoice/Api/Admin.php:75
 msgid "You must set the payment gateway in the invoice manage tab before marking it as paid."
@@ -1686,7 +1686,7 @@ msgstr "Ödeme Yöntemleri"
 
 #: modules/Invoice/Controller/Admin.php:195
 msgid "Invoice PDF response could not be generated"
-msgstr ""
+msgstr "Fatura PDF yanıtı oluşturulamadı"
 
 #: modules/Invoice/Service.php:529
 msgid "Unable to determine the next invoice number"
@@ -1694,7 +1694,7 @@ msgstr "Sonraki fatura numarası belirlenemiyor"
 
 #: modules/Invoice/Service.php:680
 msgid "Payment amount does not match the expected invoice total. Expected :expected, received :received."
-msgstr ""
+msgstr "Ödeme tutarı beklenen fatura toplamıyla eşleşmiyor. Beklenen: :expected, alınan: :received."
 
 #: modules/Invoice/Service.php:787
 msgid "Cannot refund invoice with negative amount"
@@ -1730,7 +1730,7 @@ msgstr "Proforma etkinleştirilemedi. :id siparişi bulunamadı"
 
 #: modules/Invoice/ServiceInvoiceItem.php:128
 msgid "Invoice item title is missing"
-msgstr "Fatura öğesi başlığı eksik"
+msgstr "Fatura kalemi başlığı eksik"
 
 #: modules/Invoice/ServiceInvoiceItem.php:218
 msgid "Add funds to account"
@@ -1738,7 +1738,7 @@ msgstr "Hesaba para yükle"
 
 #: modules/Invoice/ServiceInvoiceItem.php:354
 msgid "Promotional Code: :code - :value Discount"
-msgstr "Promosyon kodu: :code - :value İndirim"
+msgstr "Promosyon Kodu: :code - :value İndirim"
 
 #: modules/Invoice/ServiceInvoiceItem.php:357
 msgid "Promotional Code: :code - :value%"
@@ -1746,7 +1746,7 @@ msgstr "Promosyon Kodu: :code - %:value"
 
 #: modules/Invoice/ServicePayGateway.php:128
 msgid "Payment gateway is not available for installation."
-msgstr "Ödeme yöntemi kurulum için mevcut değil."
+msgstr "Ödeme ağ geçidi kuruluma uygun değil."
 
 #: modules/Invoice/ServicePayGateway.php:296
 msgid "Payment gateway :adapter was not found."
@@ -1754,11 +1754,11 @@ msgstr "Ödeme ağ geçidi :adapter bulunamadı."
 
 #: modules/Invoice/ServicePayGateway.php:325
 msgid "Payment gateway :adapter was not found"
-msgstr "Ödeme yöntemi :adapter bulunamadı"
+msgstr ":adapter ödeme ağ geçidi bulunamadı"
 
 #: modules/Invoice/ServiceTransaction.php:94
 msgid "Invalid payment gateway"
-msgstr ""
+msgstr "Geçersiz ödeme ağ geçidi"
 
 #: modules/Invoice/ServiceTransaction.php:99
 msgid "Transaction invoice ID is missing"
@@ -1842,7 +1842,7 @@ msgstr "Gönderici ismi boş olamaz"
 
 #: modules/Massmailer/Api/Admin.php:136
 msgid "Failed to retrieve ID of created mail message."
-msgstr ""
+msgstr "Oluşturulan posta iletisinin kimliği alınamadı."
 
 #: modules/Massmailer/Api/Admin.php:153 modules/Massmailer/Api/Admin.php:171
 msgid "Add some content before sending message"
@@ -1850,15 +1850,15 @@ msgstr "Mesaj göndermeden önce biraz içerik ekleyin"
 
 #: modules/Massmailer/Api/Admin.php:210
 msgid "Failed to retrieve ID of copied mail message."
-msgstr ""
+msgstr "Kopyalanan posta iletisinin kimliği alınamadı."
 
 #: modules/Massmailer/Api/Admin.php:309
 msgid "Message not found"
-msgstr ""
+msgstr "İleti bulunamadı"
 
 #: modules/Massmailer/Controller/Admin.php:36
 msgid "Mass mailer"
-msgstr "Toplu Mesaj Gönderici"
+msgstr "Toplu E-posta Gönderimi"
 
 #: modules/Massmailer/Service.php:226
 msgid "Disabled for security reasons (Demo mode enabled)"
@@ -1890,7 +1890,7 @@ msgstr "Bildirim mesajı bulunamadı"
 
 #: modules/Notification/Service.php:88
 msgid "Failed to create notification message: missing ID after persistence."
-msgstr ""
+msgstr "Bildirim iletisi oluşturulamadı: kaydetme sonrasında kimlik eksik."
 
 #: modules/Order/Api/Admin.php:169
 msgid "Only suspended orders can be unsuspended"
@@ -1958,11 +1958,11 @@ msgstr "İptal edilemiyor "
 
 #: modules/Order/Service.php:1399
 msgid "Field \":field\" is required"
-msgstr ""
+msgstr "\":field\" alanı zorunludur"
 
 #: modules/Order/Service.php:1406 modules/Order/Service.php:1412
 msgid "Invalid value for field \":field\""
-msgstr ""
+msgstr "\":field\" alanı için geçersiz değer"
 
 #: modules/Product/Api/Admin.php:96
 msgid "You have already created domain product."
@@ -2018,11 +2018,11 @@ msgstr "Parolalar uyuşmuyor"
 
 #: modules/Profile/Api/Admin.php:119 modules/Profile/Api/Client.php:122
 msgid "Current password incorrect"
-msgstr "Mevcut şifre hatalı"
+msgstr "Mevcut parola yanlış"
 
 #: modules/Profile/ClientValidator.php:22
 msgid "Invalid gender value. Allowed: male, female, nonbinary, other"
-msgstr ""
+msgstr "Geçersiz cinsiyet değeri. İzin verilenler: erkek, kadın, nonbinary, diğer"
 
 #: modules/Profile/ClientValidator.php:39
 msgid "Invalid birthdate value"
@@ -2030,15 +2030,15 @@ msgstr "Geçersiz Doğum Tarihi değeri"
 
 #: modules/Profile/ClientValidator.php:47
 msgid "Birthdate cannot be more than 120 years ago."
-msgstr ""
+msgstr "Doğum tarihi 120 yıldan daha eski olamaz."
 
 #: modules/Profile/ClientValidator.php:51
 msgid "Birthdate cannot be in the future."
-msgstr ""
+msgstr "Doğum tarihi gelecekte olamaz."
 
 #: modules/Profile/ClientValidator.php:64
 msgid "Invalid document type. Allowed: :list"
-msgstr ""
+msgstr "Geçersiz belge türü. İzin verilenler: :list"
 
 #: modules/Profile/Service.php:242
 msgid "Unable to invalidate sessions, nobody is logged in"
@@ -2050,19 +2050,19 @@ msgstr "Oturumlar geçersiz kılınamadı, geçersiz bir tür kullanıldı"
 
 #: modules/Redirect/Service.php:42
 msgid "Create and edit redirects"
-msgstr ""
+msgstr "Yönlendirmeleri oluştur ve düzenle"
 
 #: modules/Redirect/Service.php:43
 msgid "Allows the staff member to create and edit redirects."
-msgstr ""
+msgstr "Personelin yönlendirmeler oluşturmasına ve düzenlemesine izin verir."
 
 #: modules/Redirect/Service.php:47
 msgid "Delete redirects"
-msgstr ""
+msgstr "Yönlendirmeleri sil"
 
 #: modules/Redirect/Service.php:48
 msgid "Allows the staff member to delete redirects."
-msgstr ""
+msgstr "Personelin yönlendirmeleri silmesine izin verir."
 
 #: modules/Redirect/Service.php:85
 msgid "Redirect not found"
@@ -2070,23 +2070,23 @@ msgstr "Yönlendirme bulunamadı"
 
 #: modules/Redirect/Service.php:106
 msgid "Failed to create redirect."
-msgstr ""
+msgstr "Yönlendirme oluşturulamadı."
 
 #: modules/Redirect/Service.php:149
 msgid "Invalid redirect target."
-msgstr ""
+msgstr "Geçersiz yönlendirme hedefi."
 
 #: modules/Redirect/Service.php:154
 msgid "Only HTTP and HTTPS redirect targets are allowed."
-msgstr ""
+msgstr "Yalnızca HTTP ve HTTPS yönlendirme hedeflerine izin verilir."
 
 #: modules/Redirect/Service.php:165
 msgid "Invalid redirect path."
-msgstr ""
+msgstr "Geçersiz yönlendirme yolu."
 
 #: modules/Redirect/Service.php:169
 msgid "Redirect path must not contain path traversal sequences."
-msgstr ""
+msgstr "Yönlendirme yolu, dizin geçişi dizileri içermemelidir."
 
 #: modules/Security/Checks/dangerousFunctions.php:49
 msgid "Dangerous PHP functions"
@@ -2228,11 +2228,11 @@ msgstr "API anahtarı mevcut değil"
 
 #: modules/Serviceapikey/Service.php:184
 msgid "You must provide either the API key or API key order ID in order to reset it."
-msgstr "Sıfırlamak için API key veya API key order ID sağlamalısınız."
+msgstr "Sıfırlamak için API anahtarını veya API anahtarı sipariş kimliğini belirtmelisiniz."
 
 #: modules/Serviceapikey/Service.php:227
 msgid "You must provide the API key order ID in order to update it."
-msgstr "Güncelleme için API key order ID sağlamalısınız."
+msgstr "Güncellemek için API anahtarı sipariş kimliğini belirtmelisiniz."
 
 #: modules/Serviceapikey/Service.php:240
 msgid "To change the API key, please use the reset function rather than updating it."
@@ -2317,7 +2317,7 @@ msgstr "Kayıt Operatörü kurulum için uygun değil."
 
 #: modules/Servicedomain/Api/Admin.php:399
 msgid "Domain order is not activated"
-msgstr "Alan adı siparişleri aktif edilmedi"
+msgstr "Alan adı siparişi etkinleştirilmedi"
 
 #: modules/Servicedomain/Api/Guest.php:90
 msgid "Domain :domain is invalid"
@@ -2325,15 +2325,15 @@ msgstr ":domain Alan Adı geçersiz"
 
 #: modules/Servicedomain/Api/Guest.php:95
 msgid "Domain availability could not be determined. TLD is not active."
-msgstr "Alan adının kullanabilirliği tespit edilmedi. TLD aktif değil."
+msgstr "Alan adının kullanılabilirliği belirlenemedi. TLD etkin değil."
 
 #: modules/Servicedomain/Api/Guest.php:99
 msgid "Domain is not available."
-msgstr "Etki alanı kullanılabilir değil."
+msgstr "Alan adı kullanılamıyor."
 
 #: modules/Servicedomain/Api/Guest.php:121
 msgid "TLD is not active."
-msgstr "TLD aktif değil."
+msgstr "TLD etkin değil."
 
 #: modules/Servicedomain/Api/Guest.php:124
 msgid "Domain cannot be transferred."
@@ -2422,20 +2422,20 @@ msgstr "Dosya yüklenemedi."
 
 #: modules/Servicedownloadable/Service.php:110
 msgid "File extension :ext is not allowed. Allowed extensions: :allowed"
-msgstr ""
+msgstr ":ext dosya uzantısına izin verilmiyor. İzin verilen uzantılar: :allowed"
 
 #: modules/Servicedownloadable/Service.php:253
 msgid "File upload failed: no files in request."
-msgstr ""
+msgstr "Dosya yüklenemedi: istekte dosya yok."
 
 #: modules/Servicedownloadable/Service.php:260
 #: modules/Servicedownloadable/Service.php:329
 msgid "File upload failed: "
-msgstr ""
+msgstr "Dosya yüklenemedi: "
 
 #: modules/Servicedownloadable/Service.php:347
 msgid "No filename available for order file update"
-msgstr ""
+msgstr "Sipariş dosyası güncellemesi için dosya adı yok"
 
 #: modules/Servicedownloadable/Service.php:379
 #: modules/Servicedownloadable/Service.php:449
@@ -2444,7 +2444,7 @@ msgstr "Dosya şu anda indirilemiyor. Lütfen destek ile iletişime geçin."
 
 #: modules/Servicedownloadable/Service.php:442
 msgid "No file associated with this product."
-msgstr ""
+msgstr "Bu ürünle ilişkilendirilmiş dosya yok."
 
 #: modules/Servicehosting/Api/Admin.php:253
 msgid "Hosting server is used by :count: service hostings"
@@ -2512,19 +2512,19 @@ msgstr "Aktif hesapları olan hosting planı kaldırılamaz"
 
 #: modules/Servicehosting/Service.php:1085
 msgid "Domain registration is not available for this product."
-msgstr ""
+msgstr "Bu ürün için alan adı kaydı kullanılamıyor."
 
 #: modules/Servicehosting/Service.php:1086
 msgid "Domain transfer is not available for this product."
-msgstr ""
+msgstr "Bu ürün için alan adı transferi kullanılamıyor."
 
 #: modules/Servicehosting/Service.php:1087
 msgid "Using your own domain is not allowed for this product."
-msgstr ""
+msgstr "Bu üründe kendi alan adınızı kullanmanıza izin verilmiyor."
 
 #: modules/Servicehosting/Service.php:1088
 msgid "Invalid domain action specified."
-msgstr ""
+msgstr "Geçersiz alan adı işlemi belirtildi."
 
 #: modules/Servicehosting/Service.php:1127
 msgid "Could not find main domain product"
@@ -2548,7 +2548,7 @@ msgstr "Administrator hesabı zaten var"
 
 #: modules/Staff/Api/Guest.php:79
 msgid "You are not allowed to login to admin area from this IP address."
-msgstr ""
+msgstr "Bu IP adresinden yönetim alanına giriş yapmanıza izin verilmiyor."
 
 #: modules/Staff/Api/Guest.php:101 modules/Staff/Api/Guest.php:160
 msgid "Password reset has been disabled"
@@ -2716,11 +2716,11 @@ msgstr "Şu anda kayıtlı olmayan kullanıcılardan gelen destek taleplerini ka
 
 #: modules/Support/Service.php:1089
 msgid "rel_id must be a valid integer, received: :value"
-msgstr ""
+msgstr "rel_id geçerli bir tam sayı olmalıdır, alınan: :value"
 
 #: modules/Support/Service.php:1107
 msgid "You do not have permission to reference this order."
-msgstr ""
+msgstr "Bu siparişe başvurma izniniz yok."
 
 #: modules/Support/Service.php:1113 modules/Support/SupportTicketValidator.php:50
 msgid "You must provide both an order ID and a new product ID in order to request an upgrade."
@@ -2728,7 +2728,7 @@ msgstr "Yükseltme talebinde bulunmak için hem Sipariş ID hem de Yeni Ürün I
 
 #: modules/Support/Service.php:1117
 msgid "rel_new_value must be a valid positive integer product ID, received: :value"
-msgstr ""
+msgstr "rel_new_value geçerli bir pozitif tam sayı ürün kimliği olmalıdır, alınan: :value"
 
 #: modules/Support/Service.php:1128
 msgid "Sorry, but \":product\" is not allowed to be upgraded to \":upgrade\""
@@ -2752,23 +2752,23 @@ msgstr "Makaleleri olan kategori kaldırılamaz"
 
 #: modules/Support/SupportTicketValidator.php:27
 msgid "Invalid related status."
-msgstr ""
+msgstr "Geçersiz ilişkili durum."
 
 #: modules/Support/SupportTicketValidator.php:34
 msgid "Invalid related type."
-msgstr ""
+msgstr "Geçersiz ilişkili tür."
 
 #: modules/Support/SupportTicketValidator.php:41
 msgid "Invalid related task."
-msgstr ""
+msgstr "Geçersiz ilişkili görev."
 
 #: modules/System/Api/Admin.php:288
 msgid "Invalid interface IP address"
-msgstr ""
+msgstr "Geçersiz arayüz IP adresi"
 
 #: modules/System/Api/Admin.php:296
 msgid "Invalid custom interface. Must be a valid IP address or hostname."
-msgstr ""
+msgstr "Geçersiz özel arayüz. Geçerli bir IP adresi veya ana bilgisayar adı olmalıdır."
 
 #: modules/System/Controller/Admin.php:35
 msgid "System"
@@ -2784,11 +2784,11 @@ msgstr "FOSSBilling'i Güncelle"
 
 #: modules/System/Service.php:51
 msgid "Manage company details"
-msgstr "Şirket detaylarını yönet"
+msgstr "Firma ayrıntılarını yönet"
 
 #: modules/System/Service.php:52
 msgid "Allows the staff member to update company details as set under the system module."
-msgstr "Personelin, sistem modülü altından ayarlanan şirket ayrıntılarını güncellemesine izin verir."
+msgstr "Personelin sistem modülündeki firma ayrıntılarını güncellemesine izin verir."
 
 #: modules/System/Service.php:56
 msgid "Manage company legal"
@@ -2796,15 +2796,15 @@ msgstr "Şirketin yasal mevzuatını yönetin"
 
 #: modules/System/Service.php:57
 msgid "Allows the staff member to update company legal as set under the system module."
-msgstr "Personelin, sistem modülü altından belirlenen şirket mevzuatını güncellemesine izin verir."
+msgstr "Personelin sistem modülündeki firma yasal bilgilerini güncellemesine izin verir."
 
 #: modules/System/Service.php:61
 msgid "Update system parameters"
-msgstr ""
+msgstr "Sistem parametrelerini güncelle"
 
 #: modules/System/Service.php:62
 msgid "Allows the staff member to update system parameters through the system API endpoint."
-msgstr ""
+msgstr "Personelin sistem API uç noktası üzerinden sistem parametrelerini güncellemesine izin verir."
 
 #: modules/System/Service.php:66
 msgid "Invalidate cache"
@@ -2820,15 +2820,15 @@ msgstr "Personelin, FOSSBilling'i güncellemesine izin verir."
 
 #: modules/System/Service.php:76
 msgid "Recheck for updates"
-msgstr ""
+msgstr "Güncellemeleri yeniden denetle"
 
 #: modules/System/Service.php:77
 msgid "Allows the staff member to clear cached update information and fetch the latest update metadata."
-msgstr ""
+msgstr "Personelin önbelleğe alınmış güncelleme bilgilerini temizlemesine ve en son güncelleme meta verilerini almasına izin verir."
 
 #: modules/System/Service.php:81
 msgid "Toggle error reporting"
-msgstr ""
+msgstr "Hata raporlamayı aç/kapat"
 
 #: modules/System/Service.php:82
 msgid "Allows the staff member to enable or disable error reporting for this FOSSBilling instance."
@@ -2892,7 +2892,7 @@ msgstr "':name' teması mevcut değil."
 
 #: modules/Theme/Service.php:341
 msgid "Theme was not found in path :path"
-msgstr ":path adlı yolda tema bulunamadı"
+msgstr "Tema :path yolunda bulunamadı"
 
 #: modules/Theme/Service.php:358
 msgid "Unable to decode theme manifest file :file"
@@ -2900,7 +2900,7 @@ msgstr "Tema manifesto dosyası :file kodu çözülemiyor"
 
 #: modules/Widgets/Controller/Admin.php:34
 msgid "Widgets"
-msgstr ""
+msgstr "Bileşenler"
 
 #: modules/Activity/templates/admin/mod_activity_index.html.twig:5
 #: modules/Activity/templates/admin/mod_activity_index.html.twig:181
@@ -3187,7 +3187,7 @@ msgstr "Bu IP adresinden gelen tüm etkinlikleri göster"
 #: modules/Activity/templates/admin/mod_activity_index.html.twig:267
 #: modules/Client/templates/admin/mod_client_login_history.html.twig:45
 msgid "Block IP"
-msgstr ""
+msgstr "IP'yi engelle"
 
 #: modules/Activity/templates/admin/mod_activity_index.html.twig:267
 #: modules/Client/templates/admin/mod_client_login_history.html.twig:45
@@ -3270,7 +3270,7 @@ msgstr "Liste boş"
 #: modules/Activity/templates/admin/mod_activity_settings.html.twig:21
 #: modules/Activity/templates/admin/mod_activity_settings.html.twig:29
 msgid "Activity Settings"
-msgstr ""
+msgstr "Etkinlik Ayarları"
 
 #: modules/Activity/templates/admin/mod_activity_settings.html.twig:32
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:32
@@ -3383,7 +3383,7 @@ msgstr "Güncelle"
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:21
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:28
 msgid "Anti-Spam Settings"
-msgstr ""
+msgstr "İstenmeyen Posta Önleme Ayarları"
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:36
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:36
@@ -3438,12 +3438,12 @@ msgstr "hCaptcha"
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:80
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:80
 msgid "reCAPTCHA Public key"
-msgstr "reCAPTCHA Public key"
+msgstr "reCAPTCHA genel anahtarı"
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:87
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:87
 msgid "reCAPTCHA Secret key"
-msgstr "reCAPTCHA Secret key"
+msgstr "reCAPTCHA gizli anahtarı"
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:97
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:97
@@ -3468,7 +3468,7 @@ msgstr "hCaptcha Gizli Anahtarı"
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:127
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:127
 msgid "Stop Forum Spam Settings"
-msgstr ""
+msgstr "Stop Forum Spam Ayarları"
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:128
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:128
@@ -3483,7 +3483,7 @@ msgstr "\"Stop Forum Spam\" Etkinleştir"
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:141
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:141
 msgid "Temporary / Disposable Email Protection"
-msgstr ""
+msgstr "Geçici / Kullan-at E-posta Koruması"
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:142
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:142
@@ -3502,32 +3502,32 @@ msgstr "Geçici / tek kullanımlık e-posta adreslerini kontrol edin."
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:156
 msgid "Honeypot Protection"
-msgstr ""
+msgstr "Tuzak Alanı Koruması"
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:157
 msgid "Honeypot is a hidden field that bots will fill out but humans will not. If enabled, registration will fail if this field is filled."
-msgstr ""
+msgstr "Tuzak alanı, botların dolduracağı ancak insanların doldurmayacağı gizli bir alandır. Etkinleştirilirse bu alan doldurulduğunda kayıt başarısız olur."
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:159
 msgid "Enable honeypot protection"
-msgstr ""
+msgstr "Tuzak alanı korumasını etkinleştir"
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:168
 msgid "Honeypot field name"
-msgstr ""
+msgstr "Tuzak alanı adı"
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:171
 msgid "The name of the hidden form field. Change this if you suspect bots are bypassing the honeypot."
-msgstr ""
+msgstr "Gizli form alanının adı. Botların tuzak alanını aştığından şüpheleniyorsanız bunu değiştirin."
 
 #: modules/Branding/templates/client/widgets/mod_branding_footer.html.twig:2
 #: modules/Orderbutton/templates/client/mod_orderbutton_content.html.twig:41
 msgid "Powered by"
-msgstr "Powered by"
+msgstr "Altyapı sağlayıcısı"
 
 #: modules/Branding/templates/client/widgets/mod_branding_footer.html.twig:5
 msgid "FOSSBilling"
-msgstr ""
+msgstr "FOSSBilling"
 
 #: modules/Client/templates/admin/mod_client_group.html.twig:18
 msgid "Client groups"
@@ -3680,7 +3680,7 @@ msgstr "Emin misiniz?"
 
 #: modules/Client/templates/admin/mod_client_group.html.twig:60
 msgid "You do not have permission to manage client groups."
-msgstr ""
+msgstr "Müşteri gruplarını yönetme izniniz yok."
 
 #: modules/Client/templates/admin/mod_client_index.html.twig:18
 msgid "Filter clients"
@@ -3731,12 +3731,12 @@ msgstr "Müşteri ID"
 #: modules/Theme/templates/admin/mod_theme_settings.html.twig:31
 #: modules/Theme/templates/admin/mod_theme_settings.html.twig:97
 msgid "Name"
-msgstr "İsim"
+msgstr "Ad"
 
 #: modules/Client/templates/admin/mod_client_index.html.twig:34
 #: modules/Client/templates/admin/mod_client_manage.html.twig:292
 msgid "Company name"
-msgstr "Şirket ismi"
+msgstr "Firma adı"
 
 #: modules/Client/templates/admin/mod_client_index.html.twig:41
 #: modules/Client/templates/admin/mod_client_manage.html.twig:92
@@ -3890,7 +3890,7 @@ msgstr "Tümü"
 #: themes/admin_default/html/macro_functions.html.twig:131
 #: themes/huraga/html/macro_functions.html.twig:31
 msgid "Active"
-msgstr "Aktif"
+msgstr "Etkin"
 
 #: modules/Client/templates/admin/mod_client_index.html.twig:67
 #: modules/Client/templates/admin/mod_client_index.html.twig:137
@@ -3988,7 +3988,7 @@ msgstr "Yeni Grup"
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:183
 #: modules/Servicedomain/templates/client/mod_servicedomain_manage.html.twig:136
 msgid "Company"
-msgstr "Şirket"
+msgstr "Firma"
 
 #: modules/Client/templates/admin/mod_client_index.html.twig:301
 #: modules/Client/templates/admin/mod_client_index.html.twig:305
@@ -4021,11 +4021,11 @@ msgstr "Oluştur"
 
 #: modules/Client/templates/admin/mod_client_login_history.html.twig:6
 msgid "Clients Login History"
-msgstr ""
+msgstr "Müşteri Giriş Geçmişi"
 
 #: modules/Client/templates/admin/mod_client_login_history.html.twig:69
 msgid "You do not have permission to view client login history."
-msgstr ""
+msgstr "Müşteri giriş geçmişini görüntüleme izniniz yok."
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:35
 #: modules/Client/templates/client/mod_client_profile.html.twig:6
@@ -4148,7 +4148,7 @@ msgstr "Kayıt Tarihi"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:168
 msgid "Login to client area"
-msgstr "Müşteri paneline giriş yapın"
+msgstr "Müşteri paneline giriş yap"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:177
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:101
@@ -4180,11 +4180,11 @@ msgstr "Sil"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:187
 msgid "Client profile details"
-msgstr "Müşteri profili detayları"
+msgstr "Müşteri profili ayrıntıları"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:188
 msgid "Client Profile Updated"
-msgstr ""
+msgstr "Müşteri Profili Güncellendi"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:207
 #: modules/Client/templates/admin/mod_client_manage.html.twig:849
@@ -4388,17 +4388,17 @@ msgstr "Doğum tarihi"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:288
 msgid "Company details"
-msgstr "Şirket detayları"
+msgstr "Firma ayrıntıları"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:295
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:161
 #: modules/Invoice/templates/client/mod_invoice_print.html.twig:130
 msgid "Company number"
-msgstr "Şirket numarası"
+msgstr "Firma numarası"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:298
 msgid "Company VAT number"
-msgstr "Şirket vergi numarası"
+msgstr "Firma KDV numarası"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:306
 msgid "Address and contact details"
@@ -4514,13 +4514,13 @@ msgstr "Profili güncelle"
 #: modules/Client/templates/admin/mod_client_manage.html.twig:446
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:102
 msgid "Change password"
-msgstr "Şifreni değiştir"
+msgstr "Parolayı değiştir"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:430
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:84
 #: modules/Staff/templates/admin/mod_staff_profile.html.twig:57
 msgid "Password Changed"
-msgstr "Şifre Değiştirildi"
+msgstr "Parola Değiştirildi"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:432
 #: modules/Client/templates/admin/mod_client_new_form.html.twig:32
@@ -4543,13 +4543,13 @@ msgstr "Şifre Değiştirildi"
 #: modules/Staff/templates/admin/mod_staff_password_update.html.twig:35
 #: modules/Staff/templates/admin/mod_staff_settings.html.twig:197
 msgid "Password"
-msgstr "Şifre"
+msgstr "Parola"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:439
 #: modules/Page/templates/client/mod_page_signup.html.twig:173
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:93
 msgid "Password confirm"
-msgstr "Şifreni onayla"
+msgstr "Parola doğrulaması"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:453
 #: modules/Client/templates/admin/mod_client_settings.html.twig:35
@@ -4562,7 +4562,7 @@ msgstr "Özel müşteri detaylarını tanımlamak için bu alanları kullanın"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:455
 msgid "Client Profile Custom Fields Updated"
-msgstr ""
+msgstr "Müşteri Profili Özel Alanları Güncellendi"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:459
 msgid "Custom field"
@@ -4570,7 +4570,7 @@ msgstr "Özel Alan"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:476
 msgid "Client Orders"
-msgstr ""
+msgstr "Müşteri Siparişleri"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:485
 #: modules/Client/templates/admin/mod_client_manage.html.twig:553
@@ -4626,7 +4626,7 @@ msgstr "Yeni fatura"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:614
 msgid "Client support tickets"
-msgstr "Müşteri destek biletleri"
+msgstr "Müşteri destek talepleri"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:622
 #: modules/Order/templates/admin/mod_order_manage.html.twig:713
@@ -4668,7 +4668,7 @@ msgstr "Konu"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:671
 msgid "New support ticket"
-msgstr "Yeni destek bileti"
+msgstr "Yeni destek talebi"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:679
 msgid "Client payments history"
@@ -4709,7 +4709,7 @@ msgstr "Oturum açma geçmişi"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:789
 msgid "Emails Sent to Client"
-msgstr ""
+msgstr "Müşteriye Gönderilen E-postalar"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:796
 msgid "Email subject"
@@ -4836,7 +4836,7 @@ msgstr "Müşteri oluştur"
 #: modules/Client/templates/admin/mod_client_settings.html.twig:5
 #: modules/Client/templates/admin/mod_client_settings.html.twig:21
 msgid "Client Settings"
-msgstr ""
+msgstr "Müşteri Ayarları"
 
 #: modules/Client/templates/admin/mod_client_settings.html.twig:28
 msgid "Configuration updated"
@@ -4927,7 +4927,7 @@ msgstr "Bakiye ekle"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:3
 msgid "Profile Details"
-msgstr ""
+msgstr "Profil Ayrıntıları"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:4
 msgid "User profile settings"
@@ -4939,11 +4939,11 @@ msgstr "Hizmetlerimize erişmeden önce e-posta adresinizi doğrulamanız gereki
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:17
 msgid "Verification Email Re-sent"
-msgstr ""
+msgstr "Doğrulama E-postası Yeniden Gönderildi"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:17
 msgid "Resend Verification Email"
-msgstr ""
+msgstr "Doğrulama E-postasını Yeniden Gönder"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:27
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:33
@@ -4955,7 +4955,7 @@ msgstr ""
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:24
 #: modules/Servicelicense/templates/admin/mod_servicelicense_manage.html.twig:6
 msgid "Details"
-msgstr "Detaylar"
+msgstr "Ayrıntılar"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:29
 #: modules/Client/templates/client/mod_client_profile.html.twig:170
@@ -4963,11 +4963,11 @@ msgstr "Detaylar"
 #: modules/Staff/templates/admin/mod_staff_profile.html.twig:17
 #: modules/Staff/templates/admin/mod_staff_profile.html.twig:77
 msgid "Change Password"
-msgstr "Şifre Değiştir"
+msgstr "Parolayı Değiştir"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:38
 msgid "Update Details"
-msgstr ""
+msgstr "Bilgileri Güncelle"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:39
 msgid "Keep your personal data up to date."
@@ -4976,11 +4976,11 @@ msgstr "Kişisel bilgilerinizi güncel tutun."
 #: modules/Client/templates/client/mod_client_profile.html.twig:40
 #: modules/Staff/templates/admin/mod_staff_profile.html.twig:28
 msgid "Profile Updated"
-msgstr ""
+msgstr "Profil Güncellendi"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:46
 msgid "Avatar is generated locally based on your email address."
-msgstr ""
+msgstr "Avatar, e-posta adresinize göre yerel olarak oluşturulur."
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:51
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:430
@@ -4996,7 +4996,7 @@ msgstr "Ad"
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:381
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:442
 msgid "Company Name"
-msgstr "Şirket Adı"
+msgstr "Firma Adı"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:98
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:387
@@ -5004,13 +5004,13 @@ msgstr "Şirket Adı"
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:166
 #: modules/Invoice/templates/client/mod_invoice_print.html.twig:134
 msgid "Company VAT"
-msgstr "Firma KDV"
+msgstr "Firma KDV Numarası"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:102
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:393
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:454
 msgid "Company Number"
-msgstr "Şirket Vergi Numarası"
+msgstr "Firma Numarası"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:108
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:225
@@ -5038,17 +5038,17 @@ msgstr "Emin olmak için şifrenizi iki kez girin. "
 #: modules/Client/templates/client/mod_client_profile.html.twig:174
 #: modules/Staff/templates/admin/mod_staff_profile.html.twig:59
 msgid "Current Password"
-msgstr "Mevcut Şifre"
+msgstr "Mevcut Parola"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:179
 #: modules/Staff/templates/admin/mod_staff_profile.html.twig:65
 msgid "New Password"
-msgstr "Yeni Şifre"
+msgstr "Yeni Parola"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:184
 #: modules/Staff/templates/admin/mod_staff_profile.html.twig:71
 msgid "Confirm Password"
-msgstr "Yeni Şifre (Tekrar)"
+msgstr "Parolayı Doğrula"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:193
 #: modules/Staff/templates/admin/mod_staff_profile.html.twig:85
@@ -5057,7 +5057,7 @@ msgstr "API anahtarı, harici uygulamalarla entegrasyona izin verir. Kimlik doğ
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:194
 msgid "API Key Changed"
-msgstr ""
+msgstr "API Anahtarı Değiştirildi"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:197
 msgid "Warning!"
@@ -5095,12 +5095,12 @@ msgstr "Henüz profilinizle ilişkilendirilmiş bir para biriminiz yok. İlk sip
 #: modules/Client/templates/client/mod_client_set_new_password.html.twig:20
 #: modules/Client/templates/client/mod_client_set_new_password.html.twig:31
 msgid "Set New Password"
-msgstr ""
+msgstr "Yeni Parola Belirle"
 
 #: modules/Client/templates/client/mod_client_set_new_password.html.twig:24
 #: modules/Client/templates/client/mod_client_set_new_password.html.twig:25
 msgid "New password"
-msgstr "Yeni şifre"
+msgstr "Yeni parola"
 
 #: modules/Client/templates/client/mod_client_set_new_password.html.twig:28
 #: modules/Client/templates/client/mod_client_set_new_password.html.twig:29
@@ -5114,11 +5114,11 @@ msgstr "Oturum açmaya geri dön"
 
 #: modules/Cookieconsent/templates/admin/mod_cookieconsent_index.html.twig:5
 msgid "Cookie Consent Settings"
-msgstr ""
+msgstr "Çerez Onayı Ayarları"
 
 #: modules/Cookieconsent/templates/admin/mod_cookieconsent_index.html.twig:12
 msgid "Edit Cookie Consent Message Text"
-msgstr ""
+msgstr "Çerez Onayı İleti Metnini Düzenle"
 
 #: modules/Cookieconsent/templates/admin/mod_cookieconsent_index.html.twig:19
 msgid "Specify a message which will be shown to the user. The message will be shown until dismissed with the <strong>Close &times;</strong> button. An undismissed message does not effect functionality or prevent users from performing any actions."
@@ -5159,7 +5159,7 @@ msgstr "Kapat"
 #: modules/Cron/templates/admin/mod_cron_settings.html.twig:21
 #: modules/Cron/templates/admin/mod_cron_settings.html.twig:29
 msgid "Cron Settings"
-msgstr ""
+msgstr "Cron Ayarları"
 
 #: modules/Cron/templates/admin/mod_cron_settings.html.twig:33
 msgid "Scheduled tasks must be enabled immediately after installation. Cron is responsible for sending your clients reminder about payments, domain renewal notices and many more."
@@ -5195,7 +5195,7 @@ msgstr "Etkinleştirilirse, bu URL cronjob'u çalıştırmak için kullanılabil
 
 #: modules/Cron/templates/admin/mod_cron_settings.html.twig:86
 msgid "Cron Executed"
-msgstr ""
+msgstr "Cron Çalıştırıldı"
 
 #: modules/Cron/templates/admin/mod_cron_settings.html.twig:90
 msgid "Execute now"
@@ -5203,7 +5203,7 @@ msgstr "Şimdi Çalıştır"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:8
 msgid "Currency Management"
-msgstr ""
+msgstr "Para Birimi Yönetimi"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:23
 msgid "Currency settings"
@@ -5211,11 +5211,11 @@ msgstr "Para Birimi Ayarları"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:32
 msgid "Currency Updated"
-msgstr ""
+msgstr "Para Birimi Güncellendi"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:34
 msgid "Edit Currency Information"
-msgstr ""
+msgstr "Para Birimi Bilgilerini Düzenle"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:43
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:76
@@ -5226,7 +5226,7 @@ msgstr "Dönüşüm oranı"
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:49
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:167
 msgid "Format"
-msgstr "Format"
+msgstr "Biçim"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:55
 msgid "Price format"
@@ -5234,12 +5234,12 @@ msgstr "Fiyat Formatı"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:86
 msgid "You do not have permission to edit currencies."
-msgstr ""
+msgstr "Para birimlerini düzenleme izniniz yok."
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:13
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:27
 msgid "Currency Settings"
-msgstr ""
+msgstr "Para Birimi Ayarları"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:35
 msgid "Currencies"
@@ -5259,7 +5259,7 @@ msgstr "Dönüştürücü"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:58
 msgid "Manage Currencies"
-msgstr ""
+msgstr "Para Birimlerini Yönet"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:59
 msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics."
@@ -5322,11 +5322,11 @@ msgstr "Ekle"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:181
 msgid "Successfully Updated Settings"
-msgstr ""
+msgstr "Ayarlar Başarıyla Güncellendi"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:184
 msgid "Available Exchange Rate Data Providers"
-msgstr ""
+msgstr "Kullanılabilir Döviz Kuru Veri Sağlayıcıları"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:185
 msgid "FOSSBilling provides integration with various currency exchange rate data providers, allowing you to choose whichever one best suits your needs. By default, FOSSBilling will use the ExchangeRate-API \"Open Access Endpoint\" which does not require any configuration."
@@ -5505,7 +5505,7 @@ msgstr "Özel Sayfayı Düzenle"
 
 #: modules/Custompages/templates/admin/mod_custompages_page.html.twig:29
 msgid "Custom Page Updated"
-msgstr ""
+msgstr "Özel Sayfa Güncellendi"
 
 #: modules/Custompages/templates/admin/mod_custompages_page.html.twig:35
 msgid "Enter page title here."
@@ -5531,7 +5531,7 @@ msgstr "Sayfa içeriğini buraya girin."
 #: modules/Email/templates/admin/mod_email_history.html.twig:5
 #: modules/Email/templates/admin/mod_email_history.html.twig:28
 msgid "Email History"
-msgstr ""
+msgstr "E-posta Geçmişi"
 
 #: modules/Email/templates/admin/mod_email_details.html.twig:34
 #: modules/Email/templates/admin/mod_email_history.html.twig:42
@@ -5548,7 +5548,7 @@ msgstr "Gönderilme tarihi"
 
 #: modules/Email/templates/admin/mod_email_details.html.twig:61
 msgid "Email Resent"
-msgstr ""
+msgstr "E-posta Yeniden Gönderildi"
 
 #: modules/Email/templates/admin/mod_email_details.html.twig:65
 #: modules/Email/templates/client/mod_email_email.html.twig:23
@@ -5569,47 +5569,47 @@ msgstr "E-posta kaydı etkinleştirilmemiş. Gönderilen postaları veritabanın
 #: modules/Email/templates/admin/mod_email_history.html.twig:18
 #: modules/Email/templates/admin/mod_email_history.html.twig:20
 msgid "Email Settings."
-msgstr ""
+msgstr "E-posta Ayarları."
 
 #: modules/Email/templates/admin/mod_email_history.html.twig:104
 msgid "You do not have permission to view email history."
-msgstr ""
+msgstr "E-posta geçmişini görüntüleme izniniz yok."
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:36
 msgid "Email Templates"
-msgstr ""
+msgstr "E-posta Şablonları"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:45
 msgid "New Template"
-msgstr ""
+msgstr "Yeni Şablon"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:51
 msgid "Email Queue"
-msgstr ""
+msgstr "E-posta Kuyruğu"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:56
 msgid "Email Settings"
-msgstr ""
+msgstr "E-posta Ayarları"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:71
 msgid "Regenerate Templates"
-msgstr ""
+msgstr "Şablonları Yeniden Oluştur"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:73
 msgid "All Email Templates Enabled"
-msgstr ""
+msgstr "Tüm E-posta Şablonları Etkinleştirildi"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:77
 msgid "Enable All"
-msgstr ""
+msgstr "Tümünü Etkinleştir"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:79
 msgid "All Email Templates Disabled"
-msgstr ""
+msgstr "Tüm E-posta Şablonları Devre Dışı Bırakıldı"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:83
 msgid "Disable All"
-msgstr ""
+msgstr "Tümünü Devre Dışı Bırak"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:93
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:44
@@ -5639,19 +5639,19 @@ msgstr "Özel"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:105
 msgid "Built-in"
-msgstr ""
+msgstr "Yerleşik"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:108
 msgid "Database Only"
-msgstr ""
+msgstr "Yalnızca Veritabanı"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:111
 msgid "Missing Default"
-msgstr ""
+msgstr "Varsayılan Eksik"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:114
 msgid "Customized"
-msgstr ""
+msgstr "Özelleştirilmiş"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:117
 #: modules/Theme/templates/admin/mod_theme_settings.html.twig:33
@@ -5661,19 +5661,19 @@ msgstr "Varsayılan"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:147
 msgid "This action will delete the email template"
-msgstr ""
+msgstr "Bu işlem e-posta şablonunu silecek"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:157
 msgid "The list is empty. Built-in templates are discovered from active modules, while custom templates are stored only in the database."
-msgstr ""
+msgstr "Liste boş. Yerleşik şablonlar etkin modüllerden bulunurken özel şablonlar yalnızca veritabanında saklanır."
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:170
 msgid "Where Can I Use a New Email Template?"
-msgstr ""
+msgstr "Yeni Bir E-posta Şablonunu Nerede Kullanabilirim?"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:171
 msgid "Newly created email templates can be used in custom event hooks."
-msgstr "Yeni oluşturulan e-posta şablonları, özel olay kancalarında (hooks) kullanılabilir."
+msgstr "Yeni oluşturulan e-posta şablonları özel olay kancalarında kullanılabilir."
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:187
 #: modules/Email/templates/admin/mod_email_template.html.twig:138
@@ -5691,7 +5691,7 @@ msgstr "Kategori"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:193
 msgid "Action Code"
-msgstr ""
+msgstr "İşlem Kodu"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:222
 msgid "FOSSBilling queues emails to have them be sent via cron in the background. Here you may find the list of queued emails and how many times the system has tried to send them."
@@ -5716,7 +5716,7 @@ msgstr "Oluşturma Tarihi"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:235
 msgid "Updated At"
-msgstr ""
+msgstr "Güncellenme Tarihi"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:282
 msgid "The list is empty."
@@ -5724,11 +5724,11 @@ msgstr "Liste boş."
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:293
 msgid "Email Settings Updated"
-msgstr ""
+msgstr "E-posta Ayarları Güncellendi"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:295
 msgid "Configure Email Options"
-msgstr ""
+msgstr "E-posta Seçeneklerini Yapılandır"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:296
 msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can configure your own SMTP server"
@@ -5736,7 +5736,7 @@ msgstr "FOSSBilling e-postaları varsayılan olarak <em>sendmail</em> kullanarak
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:299
 msgid "From Name"
-msgstr ""
+msgstr "Gönderen Adı"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:302
 msgid "Leave blank to use company public name"
@@ -5744,7 +5744,7 @@ msgstr "Şirketin halka açık adını kullanmak için boş bırakın"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:307
 msgid "From Email"
-msgstr ""
+msgstr "Gönderen E-posta Adresi"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:310
 msgid "Leave blank to use company public email"
@@ -5752,7 +5752,7 @@ msgstr "Şirketin herkese açık e-posta adresini kullanmak için boş bırakın
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:317
 msgid "Queue Options"
-msgstr ""
+msgstr "Kuyruk Seçenekleri"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:320
 msgid "Send emails per cron run (0 = unlimited)"
@@ -5768,11 +5768,11 @@ msgstr "Başarısız denemelerden sonra e-posta göndermeyi iptal et (0 = iptal 
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:337
 msgid "Log Sent Emails to Database"
-msgstr ""
+msgstr "Gönderilen E-postaları Veritabanına Kaydet"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:350
 msgid "Email Transport"
-msgstr ""
+msgstr "E-posta Aktarım Yöntemi"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:354
 msgid "SendMail"
@@ -5824,15 +5824,15 @@ msgstr "Örnek"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:427
 msgid "Send a Test Email to Yourself"
-msgstr ""
+msgstr "Kendinize Test E-postası Gönderin"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:430
 msgid "Update Email Settings"
-msgstr ""
+msgstr "E-posta Ayarlarını Güncelle"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:439
 msgid "You do not have permission to manage email settings."
-msgstr ""
+msgstr "E-posta ayarlarını yönetme izniniz yok."
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:457
 msgid "Email was successfully sent"
@@ -5840,7 +5840,7 @@ msgstr "E-posta başarıyla gönderildi"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:3
 msgid "Email Template"
-msgstr ""
+msgstr "E-posta Şablonu"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:35
 msgid "Template"
@@ -5862,11 +5862,11 @@ msgstr "Örnekler"
 #: modules/Email/templates/admin/mod_email_template.html.twig:54
 #: modules/Email/templates/admin/mod_email_template.html.twig:118
 msgid "Template Updated"
-msgstr ""
+msgstr "Şablon Güncellendi"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:57
 msgid "Manage Email Template"
-msgstr ""
+msgstr "E-posta Şablonunu Yönet"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:58
 msgid "Email templates can receive variables from FOSSBilling. Available variables are listed under the \"Variables\" tab. Copy a variable name to your email template and hit preview to see parsed content. Please note that values will be different when an actual email is sent."
@@ -5874,23 +5874,23 @@ msgstr "E-posta şablonları FOSSBilling'den bilgi çekebilir. Kullanılabilecek
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:60
 msgid "You can view this email template, but you do not have permission to edit or preview it."
-msgstr ""
+msgstr "Bu e-posta şablonunu görüntüleyebilirsiniz ancak düzenleme veya önizleme izniniz yok."
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:63
 msgid "This is a custom template stored in the database."
-msgstr ""
+msgstr "Bu, veritabanında saklanan özel bir şablondur."
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:65
 msgid "This template no longer has a file-backed default."
-msgstr ""
+msgstr "Bu şablonun artık dosya tabanlı bir varsayılanı yok."
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:67
 msgid "This built-in template is customized. Reset it to use the file-backed default."
-msgstr ""
+msgstr "Bu yerleşik şablon özelleştirilmiştir. Dosya tabanlı varsayılanı kullanmak için sıfırlayın."
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:69
 msgid "This built-in template is using the file-backed default."
-msgstr ""
+msgstr "Bu yerleşik şablon dosya tabanlı varsayılanı kullanıyor."
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:72
 #: modules/Support/templates/admin/mod_support_tickets.html.twig:349
@@ -5899,7 +5899,7 @@ msgstr "E-Posta Konusu"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:78
 msgid "Email Message"
-msgstr ""
+msgstr "E-posta İletisi"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:122
 msgid "Enable or disable this email template."
@@ -5907,7 +5907,7 @@ msgstr "Bu e-posta şablonunu etkinleştirin veya devre dışı bırakın."
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:154
 msgid "List of Variables Used in This Email"
-msgstr ""
+msgstr "Bu E-postada Kullanılan Değişkenlerin Listesi"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:155
 msgid "These values will change when real email is sent. You can pass these variables to admin or guest API to get additional information from database."
@@ -5919,7 +5919,7 @@ msgstr "Değişken"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:162
 msgid "Example Value"
-msgstr ""
+msgstr "Örnek Değer"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:198
 msgid "This template has no known parameters, you may need to take an action to trigger its sending before they become known."
@@ -5927,7 +5927,7 @@ msgstr "Şablonun bilinen bir parametresi bulunamadı. Parametre için başka bi
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:209
 msgid "Email Templates Examples"
-msgstr ""
+msgstr "E-posta Şablonu Örnekleri"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:210
 msgid "Email template playground. Use this tool to try rendering email templates."
@@ -5964,11 +5964,11 @@ msgstr "Görüntülenecek e-posta yok"
 
 #: modules/Embed/templates/admin/mod_embed_index.html.twig:2
 msgid "Embed Parts of FOSSBilling"
-msgstr ""
+msgstr "FOSSBilling Bölümlerini Göm"
 
 #: modules/Embed/templates/admin/mod_embed_index.html.twig:10
 msgid "Embed Parts"
-msgstr ""
+msgstr "Bölümleri Göm"
 
 #: modules/Embed/templates/admin/mod_embed_index.html.twig:11
 msgid "Copy and paste the embed code to your website"
@@ -6016,11 +6016,11 @@ msgstr "Eklenti Kataloğu"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:24
 msgid "Hooks"
-msgstr "Hooks"
+msgstr "Olay Kancaları"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:35
 msgid "FOSSBilling Extensions"
-msgstr ""
+msgstr "FOSSBilling Uzantıları"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:36
 msgid "Activate or deactivate extensions"
@@ -6042,7 +6042,7 @@ msgstr "Kaldır"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:85
 msgid "Uninstalling this module will permanently delete all its database tables and remove its files from the disk. This action cannot be undone."
-msgstr ""
+msgstr "Bu modülün kaldırılması, tüm veritabanı tablolarını kalıcı olarak silecek ve dosyalarını diskten kaldıracaktır. Bu işlem geri alınamaz."
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:98
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:99
@@ -6053,7 +6053,7 @@ msgstr "Etkinleştir"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:127
 msgid "Modules on the Extension Directory"
-msgstr ""
+msgstr "Uzantı Dizinindeki Modüller"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:128
 msgid "These are all modules available for installation from the <a href=\"https://extensions.fossbilling.org/\">extension directory</a> at the click of a button."
@@ -6069,7 +6069,7 @@ msgstr "FOSSBilling, geliştiricilere çekirdek sistemi özelleştirmek, entegre
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:142
 msgid "More Extensions"
-msgstr ""
+msgstr "Daha Fazla Uzantı"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:143
 msgid "If you cannot find the extensions you are looking for in the admin area, please visit the extension directory at <a href=\"https://extensions.fossbilling.org\" target=\"_blank\">https://extensions.fossbilling.org</a>."
@@ -6077,7 +6077,7 @@ msgstr "Yönetici alanında aradığınız eklentileri bulamıyorsanız, lütfen
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:145
 msgid "How to Create a New Extension"
-msgstr ""
+msgstr "Yeni Bir Eklenti Nasıl Oluşturulur?"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:147
 msgid "Create a <a href=\"https://github.com/signup/free\" target=\"_blank\">GitHub</a> account for free."
@@ -6105,7 +6105,7 @@ msgstr "Kayıt edilen uzantılar daha sonra uzantı dizininde görünecektir."
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:155
 msgid "Supported Extension Types"
-msgstr ""
+msgstr "Desteklenen Uzantı Türleri"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:158
 msgid "Server managers"
@@ -6137,7 +6137,7 @@ msgstr "API modülü - FOSSBilling API'sini kullanan harici program"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:167
 msgid "Extension Support"
-msgstr ""
+msgstr "Uzantı Desteği"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:168
 msgid "Contact extensions developers directly for support. You can find issue tracker on the extension directory."
@@ -6145,12 +6145,12 @@ msgstr "Destek için doğrudan eklenti geliştiricileriyle iletişime geçin. So
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:179
 msgid "Hook"
-msgstr "Hook"
+msgstr "Olay Kancası"
 
 #: modules/Extension/templates/admin/mod_extension_languages.html.twig:3
 #: modules/Extension/templates/admin/mod_extension_languages.html.twig:11
 msgid "Manage Translations"
-msgstr ""
+msgstr "Çevirileri Yönet"
 
 #: modules/Extension/templates/admin/mod_extension_languages.html.twig:18
 msgid "New translations"
@@ -6158,7 +6158,7 @@ msgstr "Yeni çeviriler"
 
 #: modules/Extension/templates/admin/mod_extension_languages.html.twig:26
 msgid "Enabled Translations"
-msgstr ""
+msgstr "Etkin Çeviriler"
 
 #: modules/Extension/templates/admin/mod_extension_languages.html.twig:32
 #: modules/Extension/templates/admin/mod_extension_languages.html.twig:87
@@ -6171,7 +6171,7 @@ msgstr "Devre dışı bırak"
 
 #: modules/Extension/templates/admin/mod_extension_languages.html.twig:81
 msgid "Disabled Translations"
-msgstr ""
+msgstr "Devre Dışı Çeviriler"
 
 #: modules/Extension/templates/admin/mod_extension_languages.html.twig:89
 msgid "Enable"
@@ -6183,7 +6183,7 @@ msgstr "Eklenti Kataloğundaki çevirilerin listesi"
 
 #: modules/Extension/templates/admin/mod_extension_languages.html.twig:139
 msgid "FOSSBilling in Your Language"
-msgstr ""
+msgstr "Kendi Dilinizde FOSSBilling"
 
 #: modules/Extension/templates/admin/mod_extension_languages.html.twig:140
 msgid "Although FOSSBilling displays in U.S. English by default, it has the capability to be used in any language. Follow the instructions below to install new language."
@@ -6304,7 +6304,7 @@ msgstr "Kaydet"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_manage.html.twig:3
 msgid "Order Updated"
-msgstr ""
+msgstr "Sipariş Güncellendi"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_preview.html.twig:27
 #: modules/Formbuilder/templates/admin/mod_formbuilder_preview.html.twig:42
@@ -6316,16 +6316,16 @@ msgstr "Seçenekleri eklemek için lütfen \"Düzenle\"ye tıklayın"
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:22
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:26
 msgid "Custom Form Builder"
-msgstr ""
+msgstr "Özel Form Oluşturucu"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:38
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:47
 msgid "Custom Forms"
-msgstr ""
+msgstr "Özel Formlar"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:41
 msgid "Import Form"
-msgstr ""
+msgstr "Formu İçe Aktar"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:51
 #: modules/Product/templates/admin/mod_product_manage.html.twig:82
@@ -6349,11 +6349,11 @@ msgstr "Ürünler"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:114
 msgid "Form Options"
-msgstr ""
+msgstr "Form Seçenekleri"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:116
 msgid "Form Options Updated"
-msgstr ""
+msgstr "Form Seçenekleri Güncellendi"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:122
 msgid "Form title"
@@ -6405,11 +6405,11 @@ msgstr "Yazı Alanı"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:277
 msgid "New Form"
-msgstr ""
+msgstr "Yeni Form"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:278
 msgid "Give your form a new title"
-msgstr ""
+msgstr "Formunuza yeni bir başlık verin"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:279
 msgid "My new form"
@@ -6417,7 +6417,7 @@ msgstr "Yeni formum"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:299
 msgid "Copy Form"
-msgstr ""
+msgstr "Formu Kopyala"
 
 #: modules/Formbuilder/templates/admin/mod_formbuilder_settings.html.twig:300
 msgid "Give your duplicate form a title"
@@ -6505,7 +6505,7 @@ msgstr "Yeni Sipariş"
 
 #: modules/Index/templates/client/mod_index_dashboard.html.twig:105
 msgid "All Orders"
-msgstr ""
+msgstr "Tüm Siparişler"
 
 #: modules/Index/templates/client/mod_index_dashboard.html.twig:114
 msgid "Expiring"
@@ -6514,11 +6514,11 @@ msgstr "Süresi Bitenler"
 #: modules/Index/templates/client/mod_index_dashboard.html.twig:127
 #: modules/Support/templates/client/mod_support_tickets.html.twig:26
 msgid "New Ticket"
-msgstr ""
+msgstr "Yeni Destek Talebi"
 
 #: modules/Index/templates/client/mod_index_dashboard.html.twig:128
 msgid "All Tickets"
-msgstr ""
+msgstr "Tüm Destek Talepleri"
 
 #: modules/Index/templates/client/mod_index_dashboard.html.twig:135
 msgid "Open"
@@ -6530,7 +6530,7 @@ msgstr "Beklemede"
 
 #: modules/Index/templates/client/mod_index_dashboard.html.twig:147
 msgid "Recent Orders"
-msgstr ""
+msgstr "Son Siparişler"
 
 #: modules/Index/templates/client/mod_index_dashboard.html.twig:169
 msgid "No recent orders"
@@ -6617,11 +6617,11 @@ msgstr "Sık sorulan soruların yanıtlarını bulun"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateway.html.twig:28
 msgid "Payment Gateway Configuration"
-msgstr ""
+msgstr "Ödeme Ağ Geçidi Yapılandırması"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateway.html.twig:32
 msgid "Gateway Updated"
-msgstr ""
+msgstr "Ağ Geçidi Güncellendi"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateway.html.twig:34
 msgid "Payment gateway title"
@@ -6652,7 +6652,7 @@ msgstr "IPN Callback Adresi (URL)"
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:7
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:12
 msgid "Payment Gateways"
-msgstr ""
+msgstr "Ödeme Ağ Geçitleri"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:19
 msgid "New payment gateway"
@@ -6669,7 +6669,7 @@ msgstr "Aboneliklere İzin Ver"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:90
 msgid "Adding New Payment Gateway"
-msgstr ""
+msgstr "Yeni Ödeme Ağ Geçidi Ekleme"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:91
 msgid "FOSSBilling ships with a few popular payment gateways included. You can install other payment gateways to fit your needs."
@@ -6711,12 +6711,12 @@ msgstr "Ödeme yöntemi, FOSSBilling'e yüklenecek ve \"Ödeme Yöntemleri\" sek
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:99
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:247
 msgid "For developers. Read"
-msgstr "For developers. Read"
+msgstr "Geliştiriciler için. Okuyun"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:99
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:247
 msgid "FOSSBilling documentation"
-msgstr "FOSSBilling documentation"
+msgstr "FOSSBilling dokümantasyonu"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:99
 msgid "to learn how to create your own payment gateway and share it with the community"
@@ -6739,7 +6739,7 @@ msgstr "Eklenti Dizinindeki ödeme yöntemleri listesi"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:13
 msgid "Filter Invoices"
-msgstr ""
+msgstr "Faturaları Filtrele"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:16
 #: modules/Invoice/templates/admin/mod_invoice_transaction.html.twig:59
@@ -6777,7 +6777,7 @@ msgstr "Müşteri"
 #: modules/Order/templates/admin/mod_order_index.html.twig:280
 #: modules/Support/templates/admin/mod_support_tickets.html.twig:295
 msgid "Start Typing the Client Name or ID"
-msgstr ""
+msgstr "Müşteri Adını veya Kimliğini Yazmaya Başlayın"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/templates/admin/mod_invoice_transactions.html.twig:37
@@ -6794,7 +6794,7 @@ msgstr "Geri Ödenmiş"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:82
 msgid "Date Issued"
-msgstr ""
+msgstr "Düzenlenme Tarihi"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:189
 msgid "New Invoice"
@@ -6834,11 +6834,11 @@ msgstr "Ürün"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:315
 msgid "Start typing to select product (optional)"
-msgstr ""
+msgstr "Ürün seçmek için yazmaya başlayın (isteğe bağlı)"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:320
 msgid "Optionally select a product to pre-fill title and price"
-msgstr ""
+msgstr "Başlığı ve fiyatı önceden doldurmak için isteğe bağlı olarak bir ürün seçin"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:323
 msgid "Prepare"
@@ -6846,11 +6846,11 @@ msgstr "Hazırla"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:360
 msgid "This product has already been added"
-msgstr ""
+msgstr "Bu ürün zaten eklendi"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:373
 msgid "Selected products to be added as invoice items"
-msgstr ""
+msgstr "Fatura kalemi olarak eklenecek seçili ürünler"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:399
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:521
@@ -6903,11 +6903,11 @@ msgstr "İlave Yazılar"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:42
 msgid "Client Credentials"
-msgstr ""
+msgstr "Müşteri Bilgileri"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:45
 msgid "Company Credentials"
-msgstr ""
+msgstr "Firma Bilgileri"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:100
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:265
@@ -6935,15 +6935,15 @@ msgstr "Müşteri olarak görüntüle"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:139
 msgid "Payment Reminder Sent"
-msgstr ""
+msgstr "Ödeme Hatırlatması Gönderildi"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:143
 msgid "Send Reminder"
-msgstr ""
+msgstr "Hatırlatma Gönder"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:149
 msgid "Mark as Paid"
-msgstr ""
+msgstr "Ödendi Olarak İşaretle"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:155
 msgid "Enter Custom Transaction ID"
@@ -6996,7 +6996,7 @@ msgstr "Vergi"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:259
 msgid "Payment Method"
-msgstr ""
+msgstr "Ödeme Yöntemi"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:261
 msgid "Select payment method"
@@ -7006,23 +7006,23 @@ msgstr "Ödeme yöntemi seçin"
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:379
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:428
 msgid "Invoice Updated"
-msgstr ""
+msgstr "Fatura Güncellendi"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:356
 msgid "Text Before Invoice Item Table"
-msgstr ""
+msgstr "Fatura Kalemleri Tablosundan Önceki Metin"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:362
 msgid "Text After Invoice Item Table"
-msgstr ""
+msgstr "Fatura Kalemleri Tablosundan Sonraki Metin"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:376
 msgid "Company Details at Time of Purchase"
-msgstr ""
+msgstr "Satın Alma Anındaki Firma Bilgileri"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:425
 msgid "Client Details at Time of Purchase"
-msgstr ""
+msgstr "Satın Alma Anındaki Müşteri Bilgileri"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:491
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:219
@@ -7032,7 +7032,7 @@ msgstr "Posta Kodu"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:513
 msgid "Invoice Items"
-msgstr ""
+msgstr "Fatura Kalemleri"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:576
 msgid "Subtotal"
@@ -7060,14 +7060,14 @@ msgstr "Yazdır"
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:21
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:28
 msgid "Invoice Settings"
-msgstr ""
+msgstr "Fatura Ayarları"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:30
 #: modules/Order/templates/admin/mod_order_settings.html.twig:31
 #: modules/Servicecustom/templates/admin/mod_servicecustom_config.html.twig:5
 #: modules/Servicedownloadable/templates/admin/mod_servicedownloadable_config.html.twig:4
 msgid "Settings Updated"
-msgstr ""
+msgstr "Ayarlar Güncellendi"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:34
 msgid "Number of days to generate new invoice before order expiration"
@@ -7119,7 +7119,7 @@ msgstr "Fatura numarası doldurma uzunluğu"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:101
 msgid "Document Settings"
-msgstr ""
+msgstr "Belge Ayarları"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:103
 msgid "Document format"
@@ -7143,7 +7143,7 @@ msgstr "Etkinleştirilirse, fatura kodunu bilen herkes faturaya erişebilir; anc
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:131
 msgid "Refunds Settings"
-msgstr ""
+msgstr "İade Ayarları"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:133
 msgid "Refunds logic"
@@ -7163,7 +7163,7 @@ msgstr "Manuel. İşlem yapılmadı"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:151
 msgid "Add Funds Settings"
-msgstr ""
+msgstr "Bakiye Yükleme Ayarları"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:153
 msgid "Minimum amount for add funds invoice"
@@ -7193,7 +7193,7 @@ msgstr "Abonelik"
 
 #: modules/Invoice/templates/admin/mod_invoice_subscription.html.twig:39
 msgid "Subscription Details"
-msgstr ""
+msgstr "Abonelik Ayrıntıları"
 
 #: modules/Invoice/templates/admin/mod_invoice_subscription.html.twig:54
 #: modules/Invoice/templates/admin/mod_invoice_transaction.html.twig:69
@@ -7243,7 +7243,7 @@ msgstr "Yeni Abonelik"
 
 #: modules/Invoice/templates/admin/mod_invoice_tax.html.twig:14
 msgid "Tax Rules"
-msgstr ""
+msgstr "Vergi Kuralları"
 
 #: modules/Invoice/templates/admin/mod_invoice_tax.html.twig:21
 msgid "New tax rule"
@@ -7251,7 +7251,7 @@ msgstr "Yeni Vergi Kuralı"
 
 #: modules/Invoice/templates/admin/mod_invoice_tax.html.twig:25
 msgid "Tax Settings"
-msgstr ""
+msgstr "Vergi Ayarları"
 
 #: modules/Invoice/templates/admin/mod_invoice_tax.html.twig:41
 #: modules/Invoice/templates/admin/mod_invoice_tax.html.twig:108
@@ -7289,7 +7289,7 @@ msgstr "Tüm eyaletlere uygulamak için boş bırakın"
 
 #: modules/Invoice/templates/admin/mod_invoice_tax.html.twig:137
 msgid "Tax Settings Updated"
-msgstr ""
+msgstr "Vergi Ayarları Güncellendi"
 
 #: modules/Invoice/templates/admin/mod_invoice_tax.html.twig:139
 msgid "Enable tax support"
@@ -7297,7 +7297,7 @@ msgstr "Vergi desteğini etkinleştir"
 
 #: modules/Invoice/templates/admin/mod_invoice_taxupdate.html.twig:12
 msgid "Update Tax Rule"
-msgstr ""
+msgstr "Vergi Kuralını Güncelle"
 
 #: modules/Invoice/templates/admin/mod_invoice_transaction.html.twig:28
 msgid "Transaction"
@@ -7309,7 +7309,7 @@ msgstr "IPN"
 
 #: modules/Invoice/templates/admin/mod_invoice_transaction.html.twig:45
 msgid "Transaction Details"
-msgstr ""
+msgstr "İşlem Ayrıntıları"
 
 #: modules/Invoice/templates/admin/mod_invoice_transaction.html.twig:49
 msgid "If you are sure that this transaction is valid you can update transaction details in &quot;Manage&quot; tab and try processing transaction again"
@@ -7380,11 +7380,11 @@ msgstr "Ödeme Ağ Geçidindeki işlem ID'si"
 
 #: modules/Invoice/templates/admin/mod_invoice_transaction.html.twig:202
 msgid "Note About This Transaction"
-msgstr ""
+msgstr "Bu İşlem Hakkında Not"
 
 #: modules/Invoice/templates/admin/mod_invoice_transaction.html.twig:204
 msgid "Transaction Note Updated"
-msgstr ""
+msgstr "İşlem Notu Güncellendi"
 
 #: modules/Invoice/templates/admin/mod_invoice_transaction.html.twig:220
 msgid "GET"
@@ -7444,7 +7444,7 @@ msgstr "Yok"
 #: modules/Invoice/templates/client/mod_invoice_banklink.html.twig:3
 #: modules/Invoice/templates/client/mod_invoice_banklink.html.twig:16
 msgid "Processing Payment..."
-msgstr ""
+msgstr "Ödeme İşleniyor..."
 
 #: modules/Invoice/templates/client/mod_invoice_banklink.html.twig:17
 msgid "Thank you for your patience."
@@ -7452,7 +7452,7 @@ msgstr "Beklediğiniz için teşekkürler."
 
 #: modules/Invoice/templates/client/mod_invoice_banklink.html.twig:24
 msgid "Redirecting to Payment Gateway..."
-msgstr ""
+msgstr "Ödeme Ağ Geçidine Yönlendiriliyor..."
 
 #: modules/Invoice/templates/client/mod_invoice_banklink.html.twig:29
 msgid "Please click here to continue if this page does not redirect automatically in 5 seconds"
@@ -7461,7 +7461,7 @@ msgstr "Bu sayfa 5 saniye içinde otomatik olarak yönlendirilmezse devam etmek 
 #: modules/Invoice/templates/client/mod_invoice_index.html.twig:3
 #: modules/Invoice/templates/client/mod_invoice_index.html.twig:4
 msgid "Invoice Management"
-msgstr ""
+msgstr "Fatura Yönetimi"
 
 #: modules/Invoice/templates/client/mod_invoice_index.html.twig:20
 msgid "All of your invoices can be found here. You can choose to see either paid or unpaid invoices by clicking corresponding button."
@@ -7576,7 +7576,7 @@ msgstr "Fatura ve Teslimat Adresi"
 #: modules/Invoice/templates/client/mod_invoice_thankyou.html.twig:4
 #: modules/Invoice/templates/client/mod_invoice_thankyou.html.twig:10
 msgid "Thank You"
-msgstr ""
+msgstr "Teşekkürler"
 
 #: modules/Invoice/templates/client/mod_invoice_thankyou.html.twig:11
 msgid "Your payment has been submitted and will be processed shortly. It may take some time for your invoice to be marked as paid."
@@ -7629,7 +7629,7 @@ msgstr "İnternet sitesi"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_index.html.twig:5
 msgid "Mass Mailer"
-msgstr ""
+msgstr "Toplu E-posta Gönderimi"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_index.html.twig:14
 msgid "Messages"
@@ -7669,7 +7669,7 @@ msgstr "Gönderici E-posta"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:58
 msgid "Recipients Filter"
-msgstr ""
+msgstr "Alıcı Filtresi"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:63
 msgid "Client status and group"
@@ -7681,7 +7681,7 @@ msgstr "Siparişi var"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:107
 msgid "Email Content"
-msgstr ""
+msgstr "E-posta İçeriği"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:123
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:205
@@ -7695,7 +7695,7 @@ msgstr "Güncelleme ve önizleme butonuna tıklayın"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:159
 msgid "Message Recipients"
-msgstr ""
+msgstr "İleti Alıcıları"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:175
 msgid "Update and preview"
@@ -7740,11 +7740,11 @@ msgstr "Eğer metin çok uzunsa <strong>&lt;!--daha fazlası--&gt;</strong> etik
 
 #: modules/News/templates/admin/mod_news_post.html.twig:27
 msgid "Post Updated"
-msgstr ""
+msgstr "Gönderi Güncellendi"
 
 #: modules/News/templates/admin/mod_news_post.html.twig:29
 msgid "Edit Post"
-msgstr ""
+msgstr "Gönderiyi Düzenle"
 
 #: modules/News/templates/admin/mod_news_post.html.twig:46
 msgid "Image"
@@ -7785,7 +7785,7 @@ msgstr "Listeye geri dön"
 
 #: modules/Notification/templates/admin/mod_notification_index.html.twig:5
 msgid "Notifications Center"
-msgstr ""
+msgstr "Bildirim Merkezi"
 
 #: modules/Notification/templates/admin/mod_notification_index.html.twig:12
 #: modules/Notification/templates/admin/mod_notification_index.html.twig:28
@@ -7856,15 +7856,15 @@ msgstr "Sipariş Yönetimi"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:41
 msgid "Edit Order"
-msgstr ""
+msgstr "Siparişi Düzenle"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:44
 msgid "Edit Order Config"
-msgstr ""
+msgstr "Sipariş Yapılandırmasını Düzenle"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:48
 msgid "Service Management"
-msgstr ""
+msgstr "Hizmet Yönetimi"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:56
 #: modules/Order/templates/client/mod_order_manage.html.twig:130
@@ -7939,12 +7939,12 @@ msgstr "Yenile"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:192
 msgid "Suspension Reason"
-msgstr ""
+msgstr "Askıya Alma Nedeni"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:192
 #: modules/Order/templates/admin/mod_order_manage.html.twig:203
 msgid "Reason for Suspension"
-msgstr ""
+msgstr "Askıya Alma Gerekçesi"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:196
 #: modules/Order/templates/admin/mod_order_manage.html.twig:213
@@ -7958,11 +7958,11 @@ msgstr "Askıya alma nedeni"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:226
 msgid "Cancellation Reason"
-msgstr ""
+msgstr "İptal Nedeni"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:226
 msgid "Reason for Cancellation"
-msgstr ""
+msgstr "İptal Gerekçesi"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:240
 msgid "Unsuspend"
@@ -8011,7 +8011,7 @@ msgstr "Lütfen dikkatli olun! Sipariş yapılandırmasını düzenlerken ne yap
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:534
 msgid "Addons You Have Ordered With This Service"
-msgstr ""
+msgstr "Bu Hizmetle Birlikte Sipariş Verdiğiniz Eklentiler"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:539
 #: modules/Order/templates/client/mod_order_list.html.twig:31
@@ -8032,25 +8032,25 @@ msgstr "Sonraki ödeme tarihi"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:595
 msgid "Order Invoices"
-msgstr ""
+msgstr "Sipariş Faturaları"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:650
 msgid "Order Status History"
-msgstr ""
+msgstr "Sipariş Durumu Geçmişi"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:707
 msgid "Support Tickets Regarding This Order"
-msgstr ""
+msgstr "Bu Siparişle İlgili Destek Talepleri"
 
 #: modules/Order/templates/admin/mod_order_new.html.twig:19
 #: modules/Order/templates/admin/mod_order_new.html.twig:23
 #: modules/Order/templates/admin/mod_order_new.html.twig:28
 msgid "Create New Order"
-msgstr ""
+msgstr "Yeni Sipariş Oluştur"
 
 #: modules/Order/templates/admin/mod_order_new.html.twig:29
 msgid "for"
-msgstr "for"
+msgstr "için"
 
 #: modules/Order/templates/admin/mod_order_new.html.twig:39
 msgid "Activate order"
@@ -8080,7 +8080,7 @@ msgstr "Ürün yapılandırmada devre dışı bırakıldı"
 #: modules/Order/templates/admin/mod_order_settings.html.twig:21
 #: modules/Order/templates/admin/mod_order_settings.html.twig:28
 msgid "Orders Settings"
-msgstr ""
+msgstr "Sipariş Ayarları"
 
 #: modules/Order/templates/admin/mod_order_settings.html.twig:33
 msgid "Expiration date"
@@ -8157,7 +8157,7 @@ msgstr "Henüz sipariş yok"
 
 #: modules/Order/templates/client/mod_order_manage.html.twig:30
 msgid "Service Details"
-msgstr ""
+msgstr "Hizmet Ayrıntıları"
 
 #: modules/Order/templates/client/mod_order_manage.html.twig:31
 msgid "All information about your service"
@@ -8207,7 +8207,7 @@ msgstr "Bu hizmetle birlikte sipariş ettiğiniz ürün eklentileri"
 
 #: modules/Order/templates/client/mod_order_manage.html.twig:172
 msgid "Submit Cancellation Request"
-msgstr ""
+msgstr "İptal Talebi Gönder"
 
 #: modules/Order/templates/client/mod_order_manage.html.twig:194
 #: modules/Order/templates/client/mod_order_manage.html.twig:263
@@ -8216,11 +8216,11 @@ msgstr "Gönder"
 
 #: modules/Order/templates/client/mod_order_manage.html.twig:205
 msgid "Submit New Support Ticket"
-msgstr ""
+msgstr "Yeni Destek Talebi Gönder"
 
 #: modules/Order/templates/client/mod_order_manage.html.twig:237
 msgid "Submit Upgrade Request"
-msgstr ""
+msgstr "Yükseltme Talebi Gönder"
 
 #: modules/Order/templates/client/mod_order_manage.html.twig:254
 msgid "Upgrade to"
@@ -8233,20 +8233,20 @@ msgstr "Yükseltmek istediğim hizmet:"
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:5
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:22
 msgid "Order Button Settings"
-msgstr ""
+msgstr "Sipariş Düğmesi Ayarları"
 
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:32
 msgid "Order Window Settings"
-msgstr ""
+msgstr "Sipariş Penceresi Ayarları"
 
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:35
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:74
 msgid "Advanced Settings"
-msgstr ""
+msgstr "Gelişmiş Ayarlar"
 
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:46
 msgid "Order Popup Settings"
-msgstr ""
+msgstr "Sipariş Açılır Pencere Ayarları"
 
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:47
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:75
@@ -8315,7 +8315,7 @@ msgstr "Kullanıcı girişi, özel form için ödeme işleminden önce gösteril
 
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:181
 msgid "Order Button Code"
-msgstr ""
+msgstr "Sipariş Düğmesi Kodu"
 
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:189
 msgid "Clicking on an HTML element with the classname or ID"
@@ -8336,7 +8336,7 @@ msgstr "ÖNEMLİ"
 
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:211
 msgid "You need to add ID (if you want to use it for one html element) or class (if you want to use it for multiple elements) in order for it to work"
-msgstr "You need to add ID (if you want to use it for one html element) or class (if you want to use it for multiple elements) in order for it to work"
+msgstr "Çalışması için bir HTML öğesinde kullanacaksanız ID, birden fazla öğede kullanacaksanız class eklemelisiniz"
 
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:213
 msgid "Add order-button class to your elements which must call popup. For example:"
@@ -8404,7 +8404,7 @@ msgstr "Promosyon kodunuz mu var?"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_checkout.html.twig:116
 msgid "Promo Code Applied to Order"
-msgstr ""
+msgstr "Promosyon Kodu Siparişe Uygulandı"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_checkout.html.twig:121
 msgid "Enter code"
@@ -8533,7 +8533,7 @@ msgstr "Ürün Yapılandırıcısı"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_product_configuration.html.twig:16
 msgid "Product Added to Shopping Cart"
-msgstr ""
+msgstr "Ürün Alışveriş Sepetine Eklendi"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_product_configuration.html.twig:26
 msgid "Billing"
@@ -8551,7 +8551,7 @@ msgstr "Devam et"
 #: modules/Page/templates/client/mod_page_about-us.html.twig:3
 #: modules/Page/templates/client/mod_page_about-us.html.twig:19
 msgid "About Us"
-msgstr ""
+msgstr "Hakkımızda"
 
 #: modules/Page/templates/client/mod_page_about-us.html.twig:9
 #: modules/System/templates/admin/mod_system_settings.html.twig:47
@@ -8586,11 +8586,11 @@ msgstr "Şifremi unuttum"
 #: modules/Page/templates/client/mod_page_password-reset.html.twig:5
 #: modules/Page/templates/client/mod_page_password-reset.html.twig:36
 msgid "Reset Password"
-msgstr ""
+msgstr "Parolayı Sıfırla"
 
 #: modules/Page/templates/client/mod_page_password-reset.html.twig:28
 msgid "Reset Your Password"
-msgstr ""
+msgstr "Parolanızı Sıfırlayın"
 
 #: modules/Page/templates/client/mod_page_password-reset.html.twig:29
 #: modules/Staff/templates/admin/mod_staff_password_reset.html.twig:21
@@ -8647,7 +8647,7 @@ msgstr "Ürün eklentisini düzenle"
 
 #: modules/Product/templates/admin/mod_product_addon_manage.html.twig:30
 msgid "Addon Updated"
-msgstr ""
+msgstr "Eklenti Güncellendi"
 
 #: modules/Product/templates/admin/mod_product_addon_manage.html.twig:40
 #: modules/Product/templates/admin/mod_product_addons.html.twig:95
@@ -8702,7 +8702,7 @@ msgstr "Kategoriler"
 #: modules/Product/templates/admin/mod_product_category.html.twig:30
 #: modules/Support/templates/admin/mod_support_kb_category.html.twig:31
 msgid "Category Updated"
-msgstr ""
+msgstr "Kategori Güncellendi"
 
 #: modules/Product/templates/admin/mod_product_index.html.twig:19
 msgid "New Product"
@@ -8716,7 +8716,7 @@ msgstr "Yeni Kategori"
 
 #: modules/Product/templates/admin/mod_product_index.html.twig:108
 msgid "Update Priority"
-msgstr ""
+msgstr "Önceliği Güncelle"
 
 #: modules/Product/templates/admin/mod_product_index.html.twig:192
 msgid "Icon URL"
@@ -8745,7 +8745,7 @@ msgstr "Linkler"
 #: modules/Product/templates/admin/mod_product_manage.html.twig:221
 #: modules/Product/templates/admin/mod_product_manage.html.twig:268
 msgid "Product Configuration Updated"
-msgstr ""
+msgstr "Ürün Yapılandırması Güncellendi"
 
 #: modules/Product/templates/admin/mod_product_manage.html.twig:61
 msgid "Order Form"
@@ -8809,11 +8809,11 @@ msgstr "Müşteri olarak görüntüle"
 
 #: modules/Product/templates/admin/mod_product_manage.html.twig:340
 msgid "Edit Form"
-msgstr ""
+msgstr "Formu Düzenle"
 
 #: modules/Product/templates/admin/mod_product_manage.html.twig:344
 msgid "Add New Form"
-msgstr ""
+msgstr "Yeni Form Ekle"
 
 #: modules/Product/templates/admin/mod_product_promo.html.twig:29
 msgid "Manage Promotion"
@@ -8909,7 +8909,7 @@ msgstr "Yeni Promosyon"
 
 #: modules/Product/templates/admin/mod_product_promos.html.twig:44
 msgid "Promo Codes"
-msgstr ""
+msgstr "Promosyon Kodları"
 
 #: modules/Product/templates/admin/mod_product_promos.html.twig:54
 msgid "Applies To"
@@ -8951,7 +8951,7 @@ msgstr "Yönlendirmeler"
 
 #: modules/Redirect/templates/admin/mod_redirect_settings.html.twig:30
 msgid "Create New Redirect"
-msgstr ""
+msgstr "Yeni Yönlendirme Oluştur"
 
 #: modules/Redirect/templates/admin/mod_redirect_settings.html.twig:34
 #: modules/Redirect/templates/admin/mod_redirect_settings.html.twig:71
@@ -8965,20 +8965,20 @@ msgstr "Hedef"
 
 #: modules/Redirect/templates/admin/mod_redirect_settings.html.twig:51
 msgid "e.g. /new-page or https://example.com"
-msgstr ""
+msgstr "ör. /yeni-sayfa veya https://example.com"
 
 #: modules/Security/templates/admin/mod_security_index.html.twig:5
 #: modules/Security/templates/admin/mod_security_index.html.twig:13
 msgid "Security Dashboard"
-msgstr ""
+msgstr "Güvenlik Panosu"
 
 #: modules/Security/templates/admin/mod_security_index.html.twig:15
 msgid "Run All Checks"
-msgstr ""
+msgstr "Tüm Denetimleri Çalıştır"
 
 #: modules/Security/templates/admin/mod_security_index.html.twig:32
 msgid "Run Check"
-msgstr ""
+msgstr "Denetimi Çalıştır"
 
 #: modules/Security/templates/admin/mod_security_iplookup.html.twig:17
 msgid "Lookup & discover info about IP addresses."
@@ -9020,11 +9020,11 @@ msgstr "Henüz PING gönderilmedi"
 
 #: modules/Serviceapikey/templates/admin/mod_serviceapikey_config.html.twig:3
 msgid "API Key Settings"
-msgstr ""
+msgstr "API Anahtarı Ayarları"
 
 #: modules/Serviceapikey/templates/admin/mod_serviceapikey_config.html.twig:4
 msgid "API Key Settings Updated"
-msgstr ""
+msgstr "API Anahtarı Ayarları Güncellendi"
 
 #: modules/Serviceapikey/templates/admin/mod_serviceapikey_config.html.twig:6
 msgid "Here you can configure the length of the API keys that will be generated. We recommend making this no less than 16 at a minimum. When in doubt, leave this at 32."
@@ -9104,7 +9104,7 @@ msgstr "API Anahtarını sıfırla"
 
 #: modules/Serviceapikey/templates/admin/mod_serviceapikey_manage.html.twig:29
 msgid "API Key Configuration"
-msgstr ""
+msgstr "API Anahtarı Yapılandırması"
 
 #: modules/Serviceapikey/templates/admin/mod_serviceapikey_manage.html.twig:30
 msgid "Changing the API key generation options will not automatically regenerate the API key. You must do so manually."
@@ -9112,11 +9112,11 @@ msgstr "API anahtarı oluşturma seçeneklerinin değiştirilmesi, API anahtarı
 
 #: modules/Serviceapikey/templates/admin/mod_serviceapikey_manage.html.twig:32
 msgid "API Key Updated"
-msgstr ""
+msgstr "API Anahtarı Güncellendi"
 
 #: modules/Serviceapikey/templates/client/mod_serviceapikey_manage.html.twig:7
 msgid "API Key Details"
-msgstr ""
+msgstr "API Anahtarı Ayrıntıları"
 
 #: modules/Servicecustom/templates/admin/mod_servicecustom_config.html.twig:2
 msgid "Stock control settings"
@@ -9153,7 +9153,7 @@ msgstr "Yönetim"
 
 #: modules/Servicecustom/templates/admin/mod_servicecustom_manage.html.twig:12
 msgid "Service Updated"
-msgstr ""
+msgstr "Hizmet Güncellendi"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_config.html.twig:2
 msgid "Domains management"
@@ -9161,11 +9161,11 @@ msgstr "Alan Adı Yönetimi"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:12
 msgid "Top Level Domains"
-msgstr ""
+msgstr "Üst Düzey Alan Adları"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:19
 msgid "New Top Level Domain"
-msgstr ""
+msgstr "Yeni Üst Düzey Alan Adı"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:23
 #: modules/Servicedomain/templates/admin/mod_servicedomain_registrar.html.twig:22
@@ -9174,7 +9174,7 @@ msgstr "Kayıt Operatörleri"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:30
 msgid "New Domain Registrar"
-msgstr ""
+msgstr "Yeni Alan Adı Kayıt Kuruluşu"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:42
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:290
@@ -9233,7 +9233,7 @@ msgstr "Aktif:"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:104
 msgid "Add New Top Level Domain"
-msgstr ""
+msgstr "Yeni Üst Düzey Alan Adı Ekle"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:105
 msgid "Setup new TLD prices and properties"
@@ -9279,15 +9279,15 @@ msgstr "Transfere İzin Ver"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:195
 msgid "Domain Registrars"
-msgstr ""
+msgstr "Alan Adı Kayıt Kuruluşları"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:196
 msgid "Manage Domain Registrars"
-msgstr ""
+msgstr "Alan Adı Kayıt Kuruluşlarını Yönet"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:238
 msgid "Adding New Domain Registrar"
-msgstr ""
+msgstr "Yeni Alan Adı Kayıt Kuruluşu Ekleme"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:239
 msgid "Follow instructions below to install new domain registrar."
@@ -9311,11 +9311,11 @@ msgstr "Yükle butonuna tıklayın. Artık yeni alan adı kayıt operatörü ile
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:247
 msgid "to learn how to create your own domain registrar."
-msgstr "to learn how to create your own domain registrar."
+msgstr "kendi alan adı kayıt kuruluşunuzu nasıl oluşturacağınızı öğrenmek için."
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:265
 msgid "Domain Registrar Installed"
-msgstr ""
+msgstr "Alan Adı Kayıt Kuruluşu Kuruldu"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:285
 msgid "List of domain registrars on the Extension Directory"
@@ -9329,7 +9329,7 @@ msgstr "Müşteri, alan adı siparişi verirken kendi ad sunucularını belirtme
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:111
 #: modules/Servicedomain/templates/client/mod_servicedomain_manage.html.twig:76
 msgid "Nameservers Updated"
-msgstr ""
+msgstr "Ad Sunucuları Güncellendi"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_index.html.twig:296
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:18
@@ -9381,7 +9381,7 @@ msgstr "İsim Sunucularını (NS) Güncelle"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:2
 msgid "Domain Details"
-msgstr ""
+msgstr "Alan Adı Ayrıntıları"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:8
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:16
@@ -9436,11 +9436,11 @@ msgstr "Gizliliği etkinleştir"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:142
 msgid "Domain Data"
-msgstr ""
+msgstr "Alan Adı Verileri"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:143
 msgid "Domain Data Updated"
-msgstr ""
+msgstr "Alan Adı Verileri Güncellendi"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:145
 msgid "Transfer code (EPP)"
@@ -9448,11 +9448,11 @@ msgstr "Transfer Kodu (EPP)"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:162
 msgid "Update Domain Contact Details"
-msgstr ""
+msgstr "Alan Adı İletişim Bilgilerini Güncelle"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:163
 msgid "Domain Contact Details Updated"
-msgstr ""
+msgstr "Alan Adı İletişim Bilgileri Güncellendi"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_manage.html.twig:231
 #: modules/Servicedomain/templates/client/mod_servicedomain_manage.html.twig:185
@@ -9522,11 +9522,11 @@ msgstr "Alan Adı Yönetimi"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_registrar.html.twig:31
 msgid "Registrar Configuration"
-msgstr ""
+msgstr "Kayıt Kuruluşu Yapılandırması"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_registrar.html.twig:35
 msgid "Registrar Updated"
-msgstr ""
+msgstr "Kayıt Kuruluşu Güncellendi"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_registrar.html.twig:51
 msgid "Registrar title"
@@ -9538,7 +9538,7 @@ msgstr "Üst Düzey Alan Adı Yönetimi"
 
 #: modules/Servicedomain/templates/admin/mod_servicedomain_tld.html.twig:30
 msgid "Top Level Domain Settings Updated"
-msgstr ""
+msgstr "Üst Düzey Alan Adı Ayarları Güncellendi"
 
 #: modules/Servicedomain/templates/client/mod_servicedomain_manage.html.twig:11
 msgid "Protection"
@@ -9598,7 +9598,7 @@ msgstr "Birisi hizmetinizin (genel olan) WHOIS çıktısını kontrol ettiğinde
 
 #: modules/Servicedomain/templates/client/mod_servicedomain_manage.html.twig:116
 msgid "Contact Details Updated"
-msgstr ""
+msgstr "İletişim Bilgileri Güncellendi"
 
 #: modules/Servicedomain/templates/client/mod_servicedomain_manage.html.twig:198
 msgid "Domain Secret"
@@ -9654,12 +9654,12 @@ msgstr "Alan Adı transfer kodunu girin"
 #: modules/Servicedomain/templates/client/mod_servicedomain_order_form.html.twig:232
 #: modules/Servicehosting/templates/client/mod_servicehosting_order_form.html.twig:222
 msgid " Year @ "
-msgstr ""
+msgstr " Yıl @ "
 
 #: modules/Servicedomain/templates/client/mod_servicedomain_order_form.html.twig:233
 #: modules/Servicehosting/templates/client/mod_servicehosting_order_form.html.twig:223
 msgid " Years @ "
-msgstr ""
+msgstr " Yıl @ "
 
 #: modules/Servicedownloadable/templates/admin/mod_servicedownloadable_config.html.twig:2
 msgid "File"
@@ -9694,7 +9694,7 @@ msgstr "Dosya yüklendi"
 
 #: modules/Servicedownloadable/templates/admin/mod_servicedownloadable_manage.html.twig:2
 msgid "File Information"
-msgstr ""
+msgstr "Dosya Bilgileri"
 
 #: modules/Servicedownloadable/templates/admin/mod_servicedownloadable_manage.html.twig:7
 msgid "Filename"
@@ -9710,7 +9710,7 @@ msgstr "İndirmeler"
 
 #: modules/Servicedownloadable/templates/admin/mod_servicedownloadable_manage.html.twig:22
 msgid "Upload New File for This Order"
-msgstr ""
+msgstr "Bu Sipariş İçin Yeni Dosya Yükle"
 
 #: modules/Servicedownloadable/templates/admin/mod_servicedownloadable_manage.html.twig:23
 msgid "Use this function to update existing order file. Client will be able to download new file from client area"
@@ -9723,11 +9723,11 @@ msgstr "İndir"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:4
 msgid "Hosting Settings"
-msgstr ""
+msgstr "Hosting Ayarları"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:5
 msgid "Hosting Settings Updated"
-msgstr ""
+msgstr "Hosting Ayarları Güncellendi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:7
 msgid "Server"
@@ -9753,31 +9753,31 @@ msgstr "Bayi Hosting"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:34
 msgid "Domain Configuration"
-msgstr ""
+msgstr "Alan Adı Yapılandırması"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:35
 msgid "Select which domain options are available to customers when ordering this product."
-msgstr ""
+msgstr "Müşterilerin bu ürünü sipariş ederken kullanabileceği alan adı seçeneklerini belirleyin."
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:38
 msgid "Allow domain registration"
-msgstr ""
+msgstr "Alan adı kaydına izin ver"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:51
 msgid "Allow domain transfer"
-msgstr ""
+msgstr "Alan adı transferine izin ver"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:64
 msgid "Allow using own domain"
-msgstr ""
+msgstr "Kendi alan adını kullanmaya izin ver"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:81
 msgid "At least one domain option must be enabled. Customers will not be able to order this product if all domain options are disabled."
-msgstr ""
+msgstr "En az bir alan adı seçeneği etkinleştirilmelidir. Tüm alan adı seçenekleri devre dışı bırakılırsa müşteriler bu ürünü sipariş edemez."
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:86
 msgid "Free Domain Options"
-msgstr ""
+msgstr "Ücretsiz Alan Adı Seçenekleri"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:89
 msgid "Free domain registration"
@@ -9812,7 +9812,7 @@ msgstr "Ücretsiz Alan Adı Transferi"
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:15
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:99
 msgid "Hosting Plans"
-msgstr ""
+msgstr "Hosting Planları"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_config.html.twig:156
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:103
@@ -9830,20 +9830,20 @@ msgstr "Yeni Sunucu"
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:3
 #: modules/Servicehosting/templates/admin/mod_servicehosting_server.html.twig:3
 msgid "Hosting Management"
-msgstr ""
+msgstr "Hosting Yönetimi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:17
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:5
 msgid "Hosting Plans and Servers"
-msgstr ""
+msgstr "Hosting Planları ve Sunucular"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:26
 msgid "Manage Hosting Plan"
-msgstr ""
+msgstr "Hosting Planını Yönet"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:29
 msgid "Hosting Plan Updated"
-msgstr ""
+msgstr "Hosting Planı Güncellendi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:32
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:282
@@ -9853,7 +9853,7 @@ msgstr "Bu hosting planını tanımlayan benzersiz ad"
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:35
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:285
 msgid "Disk Quota"
-msgstr ""
+msgstr "Disk Kotası"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:42
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:109
@@ -9865,31 +9865,31 @@ msgstr "Bant Genişliği"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:49
 msgid "Maximum Addon Domains"
-msgstr ""
+msgstr "Azami Ek Alan Adı Sayısı"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:53
 msgid "Maximum FTP Accounts"
-msgstr ""
+msgstr "Azami FTP Hesabı Sayısı"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:57
 msgid "Maximum Databases"
-msgstr ""
+msgstr "Azami Veritabanı Sayısı"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:61
 msgid "Maximum Email Accounts"
-msgstr ""
+msgstr "Azami E-posta Hesabı Sayısı"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:65
 msgid "Maximum Subdomains"
-msgstr ""
+msgstr "Azami Alt Alan Adı Sayısı"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:69
 msgid "Maximum Parked Domains"
-msgstr ""
+msgstr "Azami Park Edilmiş Alan Adı Sayısı"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:73
 msgid "Server Manager Specific Parameters"
-msgstr ""
+msgstr "Sunucu Yöneticisine Özel Parametreler"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:83
 msgid "Update hosting plan"
@@ -9897,7 +9897,7 @@ msgstr "Hosting Planını Güncelle"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:87
 msgid "Hosting Plan Additional Parameters"
-msgstr ""
+msgstr "Hosting Planı Ek Parametreleri"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:88
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters. List of parameters server managers requires you can find on extensions page."
@@ -9906,15 +9906,15 @@ msgstr "Hosting hesabını ayarlamak için kullanılan sunucu türüne bağlı o
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:12
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:39
 msgid "Hosting Servers"
-msgstr ""
+msgstr "Hosting Sunucuları"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:22
 msgid "New Server"
-msgstr ""
+msgstr "Yeni Sunucu"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:30
 msgid "New Plan"
-msgstr ""
+msgstr "Yeni Plan"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:47
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:216
@@ -9930,11 +9930,11 @@ msgstr "Kontrol paneline giriş yapın"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:69
 msgid "Test Connection"
-msgstr ""
+msgstr "Bağlantıyı Test Et"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:69
 msgid "Server Connected"
-msgstr ""
+msgstr "Sunucuya Bağlanıldı"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:74
 msgid "Edit server details"
@@ -9960,7 +9960,7 @@ msgstr "Plan ayrıntılarını düzenle"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:132
 msgid "Delete the plan"
-msgstr ""
+msgstr "Planı sil"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:155
 #: modules/Servicehosting/templates/admin/mod_servicehosting_server.html.twig:33
@@ -10022,17 +10022,17 @@ msgstr "Güvenli Bağlantı Kullan"
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:251
 #: modules/Servicehosting/templates/admin/mod_servicehosting_server.html.twig:106
 msgid "Controls whether HTTPS or HTTP is used for API requests."
-msgstr ""
+msgstr "API isteklerinde HTTPS mi yoksa HTTP mi kullanılacağını belirler."
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:255
 #: modules/Servicehosting/templates/admin/mod_servicehosting_server.html.twig:110
 msgid "Verify TLS certificate"
-msgstr ""
+msgstr "TLS sertifikasını doğrula"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:265
 #: modules/Servicehosting/templates/admin/mod_servicehosting_server.html.twig:120
 msgid "Recommended: keep enabled unless your server uses a self-signed or otherwise invalid certificate."
-msgstr ""
+msgstr "Önerilir: Sunucunuz kendinden imzalı veya başka şekilde geçersiz bir sertifika kullanmıyorsa etkin bırakın."
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:268
 msgid "Add server"
@@ -10040,7 +10040,7 @@ msgstr "Sunucu Ekle"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:275
 msgid "Add New Hosting Plan"
-msgstr ""
+msgstr "Yeni Hosting Planı Ekle"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:278
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters in next step. In this step provide basic hosting plan information."
@@ -10087,7 +10087,7 @@ msgstr "Bayi Yönetim Paneli"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:90
 msgid "Account Synced"
-msgstr ""
+msgstr "Hesap Eşitlendi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:94
 msgid "Sync with server"
@@ -10095,11 +10095,11 @@ msgstr "Sunucuyla Eşitle"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:99
 msgid "Change Hosting Plan"
-msgstr ""
+msgstr "Hosting Planını Değiştir"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:101
 msgid "Hosting Plan Changed"
-msgstr ""
+msgstr "Hosting Planı Değiştirildi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:110
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:130
@@ -10111,11 +10111,11 @@ msgstr "Değiştir"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:114
 msgid "Change Account Password"
-msgstr ""
+msgstr "Hesap Parolasını Değiştir"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:115
 msgid "Account Password Changed"
-msgstr ""
+msgstr "Hesap Parolası Değiştirildi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:123
 msgid "Password Confirm"
@@ -10127,25 +10127,25 @@ msgstr "IP Adresini Değiştir"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:135
 msgid "Account IP Changed"
-msgstr ""
+msgstr "Hesap IP Adresi Değiştirildi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:148
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:131
 msgid "Change Username"
-msgstr ""
+msgstr "Kullanıcı Adını Değiştir"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:149
 msgid "Account Username Changed"
-msgstr ""
+msgstr "Hesap Kullanıcı Adı Değiştirildi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:162
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:110
 msgid "Change Domain"
-msgstr ""
+msgstr "Alan Adını Değiştir"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:163
 msgid "Account Domain Changed"
-msgstr ""
+msgstr "Hesap Alan Adı Değiştirildi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_order.html.twig:2
 msgid "Import existing"
@@ -10166,11 +10166,11 @@ msgstr "Üretmek için boş bırakın"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_server.html.twig:27
 msgid "Server Management"
-msgstr ""
+msgstr "Sunucu Yönetimi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_server.html.twig:29
 msgid "Server Updated"
-msgstr ""
+msgstr "Sunucu Güncellendi"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_server.html.twig:45
 msgid "Primary IP address used to connect to the server. i.e. 127.0.0.1"
@@ -10206,7 +10206,7 @@ msgstr "Sunucuya bağlantı sağlandı"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:4
 msgid "Manage Hosting Account"
-msgstr ""
+msgstr "Hosting Hesabını Yönet"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:42
 msgid "Server Hostname"
@@ -10218,15 +10218,15 @@ msgstr "Alan Adını Yönet"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:77
 msgid "Login to Control Panel"
-msgstr ""
+msgstr "Kontrol Paneline Giriş Yap"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:83
 msgid "Change Your Control Panel/FTP/SSH Password"
-msgstr ""
+msgstr "Kontrol Paneli/FTP/SSH Parolanızı Değiştirin"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:111
 msgid "Domain Name Changed"
-msgstr ""
+msgstr "Alan Adı Değiştirildi"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:114
 msgid "New domain"
@@ -10238,7 +10238,7 @@ msgstr "Alan Adını Değiştir"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:132
 msgid "Username Changed"
-msgstr ""
+msgstr "Kullanıcı Adı Değiştirildi"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_manage.html.twig:144
 msgid "Change username"
@@ -10246,15 +10246,15 @@ msgstr "Kullanıcı Adını Değiştir"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_order_form.html.twig:50
 msgid "Own domain"
-msgstr ""
+msgstr "Kendi alan adınız"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_order_form.html.twig:91
 msgid "Transfer your existing domain"
-msgstr ""
+msgstr "Mevcut alan adınızı transfer edin"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_order_form.html.twig:120
 msgid "Use your existing domain"
-msgstr ""
+msgstr "Mevcut alan adınızı kullanın"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_order_form.html.twig:124
 msgid "Your existing domain"
@@ -10262,7 +10262,7 @@ msgstr "Mevcut alan adınız"
 
 #: modules/Servicehosting/templates/client/mod_servicehosting_order_form.html.twig:130
 msgid "You will need to update your nameservers to point to our servers."
-msgstr ""
+msgstr "Ad sunucularınızı sunucularımıza yönlendirecek şekilde güncellemeniz gerekir."
 
 #: modules/Servicelicense/templates/admin/mod_servicelicense_config.html.twig:3
 msgid "License settings"
@@ -10270,7 +10270,7 @@ msgstr "Lisans Ayarları"
 
 #: modules/Servicelicense/templates/admin/mod_servicelicense_config.html.twig:4
 msgid "License Settings Updated"
-msgstr ""
+msgstr "Lisans Ayarları Güncellendi"
 
 #: modules/Servicelicense/templates/admin/mod_servicelicense_config.html.twig:24
 #: modules/Servicelicense/templates/admin/mod_servicelicense_manage.html.twig:50
@@ -10291,7 +10291,7 @@ msgstr "Konumu Doğrula"
 
 #: modules/Servicelicense/templates/admin/mod_servicelicense_config.html.twig:80
 msgid "License Plugins"
-msgstr ""
+msgstr "Lisans Eklentileri"
 
 #: modules/Servicelicense/templates/admin/mod_servicelicense_config.html.twig:81
 msgid "You can create your own license generation plugins for FOSSBilling. Follow these steps to add a new one:"
@@ -10340,11 +10340,11 @@ msgstr "Son Ping"
 
 #: modules/Servicelicense/templates/admin/mod_servicelicense_manage.html.twig:32
 msgid "License Configuration"
-msgstr ""
+msgstr "Lisans Yapılandırması"
 
 #: modules/Servicelicense/templates/admin/mod_servicelicense_manage.html.twig:34
 msgid "License Updated"
-msgstr ""
+msgstr "Lisans Güncellendi"
 
 #: modules/Servicelicense/templates/admin/mod_servicelicense_manage.html.twig:36
 msgid "License key"
@@ -10384,7 +10384,7 @@ msgstr "Geçerli versiyonlar (Her satırda bir tane)"
 
 #: modules/Servicelicense/templates/client/mod_servicelicense_manage.html.twig:7
 msgid "License Details"
-msgstr ""
+msgstr "Lisans Ayrıntıları"
 
 #: modules/Servicelicense/templates/client/mod_servicelicense_manage.html.twig:20
 msgid "Valid IPs"
@@ -10420,7 +10420,7 @@ msgstr "Bütün konumlar"
 
 #: modules/Servicelicense/templates/client/mod_servicelicense_manage.html.twig:80
 msgid "Reset License"
-msgstr ""
+msgstr "Lisansı Sıfırla"
 
 #: modules/Servicelicense/templates/client/mod_servicelicense_manage.html.twig:81
 msgid "You can reset your license parameters if you have changed your server"
@@ -10434,11 +10434,11 @@ msgstr "Lisans sıfırlandı"
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:21
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:28
 msgid "SpamChecker Settings"
-msgstr ""
+msgstr "SpamChecker Ayarları"
 
 #: modules/Staff/templates/admin/mod_staff_group.html.twig:3
 msgid "Staff Group Management"
-msgstr ""
+msgstr "Personel Grubu Yönetimi"
 
 #: modules/Staff/templates/admin/mod_staff_group.html.twig:20
 #: modules/Staff/templates/admin/mod_staff_index.html.twig:3
@@ -10455,7 +10455,7 @@ msgstr "Personel ayrıntılarını yönet"
 
 #: modules/Staff/templates/admin/mod_staff_group.html.twig:34
 msgid "Staff Group Updated"
-msgstr ""
+msgstr "Personel Grubu Güncellendi"
 
 #: modules/Staff/templates/admin/mod_staff_index.html.twig:11
 msgid "Staff members"
@@ -10510,7 +10510,7 @@ msgstr "Şifrenizi mi unuttunuz?"
 
 #: modules/Staff/templates/admin/mod_staff_login_history.html.twig:5
 msgid "Staff Members Login History"
-msgstr ""
+msgstr "Personel Giriş Geçmişi"
 
 #: modules/Staff/templates/admin/mod_staff_login_history.html.twig:12
 msgid "Staff members login history"
@@ -10531,11 +10531,11 @@ msgstr "Yetkiler"
 
 #: modules/Staff/templates/admin/mod_staff_manage.html.twig:52
 msgid "Manage Staff Member Details"
-msgstr ""
+msgstr "Personel Bilgilerini Yönet"
 
 #: modules/Staff/templates/admin/mod_staff_manage.html.twig:55
 msgid "Staff Member Details Updated"
-msgstr ""
+msgstr "Personel Bilgileri Güncellendi"
 
 #: modules/Staff/templates/admin/mod_staff_manage.html.twig:98
 msgid "Update details"
@@ -10579,7 +10579,7 @@ msgstr "Yöneticilerin yetkileri kısıtlanamaz."
 
 #: modules/Staff/templates/admin/mod_staff_manage.html.twig:146
 msgid "Permissions Updated"
-msgstr ""
+msgstr "İzinler Güncellendi"
 
 #: modules/Staff/templates/admin/mod_staff_manage.html.twig:159
 msgid "Module access"
@@ -10600,11 +10600,11 @@ msgstr "Hiçbiri"
 
 #: modules/Staff/templates/admin/mod_staff_manage.html.twig:212
 msgid "Change Staff Member Password"
-msgstr ""
+msgstr "Personel Parolasını Değiştir"
 
 #: modules/Staff/templates/admin/mod_staff_manage.html.twig:214
 msgid "Staff Member Password Changed"
-msgstr ""
+msgstr "Personel Parolası Değiştirildi"
 
 #: modules/Staff/templates/admin/mod_staff_manage.html.twig:223
 msgid "Password confirmation"
@@ -10656,7 +10656,7 @@ msgstr "Uyarı! Anahtarın sıfırlanması, onu kullanan mevcut uygulamaları bo
 
 #: modules/Staff/templates/admin/mod_staff_profile.html.twig:97
 msgid "Generate New Key"
-msgstr ""
+msgstr "Yeni Anahtar Oluştur"
 
 #: modules/Staff/templates/admin/mod_staff_profile.html.twig:111
 msgid "New API key generated. Applications using old key are now not working."
@@ -10664,7 +10664,7 @@ msgstr "Yeni API anahtarı oluşturuldu. Eski anahtarı kullanan uygulamalar art
 
 #: modules/Staff/templates/admin/mod_staff_settings.html.twig:43
 msgid "Manage Groups"
-msgstr ""
+msgstr "Grupları Yönet"
 
 #: modules/Staff/templates/admin/mod_staff_settings.html.twig:128
 msgid "Check login IP"
@@ -10735,7 +10735,7 @@ msgstr "Biletleri şu süreden sonra kapat (saat olarak)"
 #: modules/Support/templates/admin/mod_support_helpdesk.html.twig:61
 #: modules/Support/templates/admin/modal/mod_support_new_helpdesk.html.twig:33
 msgid "Define a very large number of hours to disable auto close ticket option."
-msgstr "Otomatik bilet kapatma seçeneğini devre dışı bırakmak için çok büyük bir saat süresi tanımlayın."
+msgstr "Destek taleplerini otomatik kapatma seçeneğini devre dışı bırakmak için çok yüksek bir saat değeri belirleyin."
 
 #: modules/Support/templates/admin/mod_support_helpdesk.html.twig:65
 #: modules/Support/templates/admin/modal/mod_support_new_helpdesk.html.twig:37
@@ -10986,7 +10986,7 @@ msgstr "Yeni Yardım Masası Oluştur"
 #: modules/Support/templates/client/mod_support_contact_us.html.twig:9
 #: modules/Support/templates/client/mod_support_contact_us.html.twig:24
 msgid "Contact Us"
-msgstr ""
+msgstr "Bize Ulaşın"
 
 #: modules/Support/templates/client/mod_support_contact_us_conversation.html.twig:9
 msgid "Contact us"
@@ -10994,7 +10994,7 @@ msgstr "Bizimle İletişime Geçin"
 
 #: modules/Support/templates/client/mod_support_contact_us_conversation.html.twig:21
 msgid "Ticket Information"
-msgstr ""
+msgstr "Destek Talebi Bilgileri"
 
 #: modules/Support/templates/client/mod_support_contact_us_conversation.html.twig:47
 #: modules/Support/templates/client/mod_support_ticket.html.twig:55
@@ -11072,7 +11072,7 @@ msgstr "Id"
 
 #: modules/Support/templates/client/mod_support_tickets.html.twig:38
 msgid "Help Desk"
-msgstr ""
+msgstr "Yardım Masası"
 
 #: modules/Support/templates/client/mod_support_tickets.html.twig:40
 msgid "Submitted"
@@ -11080,20 +11080,20 @@ msgstr "Gönderilme Tarihi"
 
 #: modules/Support/templates/client/mod_support_tickets.html.twig:68
 msgid "No Support Tickets"
-msgstr ""
+msgstr "Destek Talebi Yok"
 
 #: modules/Support/templates/client/mod_support_tickets.html.twig:81
 msgid "Open New Ticket"
-msgstr ""
+msgstr "Yeni Destek Talebi Aç"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:5
 #: modules/System/templates/admin/mod_system_settings.html.twig:21
 msgid "System Settings"
-msgstr ""
+msgstr "Sistem Ayarları"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:35
 msgid "Company Details"
-msgstr ""
+msgstr "Firma Bilgileri"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:38
 msgid "Company Legal"
@@ -11110,17 +11110,17 @@ msgstr "Önbellek"
 #: modules/System/templates/admin/mod_system_settings.html.twig:50
 #: modules/System/templates/admin/mod_system_settings.html.twig:579
 msgid "Error Reporting"
-msgstr ""
+msgstr "Hata Raporlama"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:53
 #: modules/System/templates/admin/mod_system_settings.html.twig:640
 msgid "Network Interface"
-msgstr ""
+msgstr "Ağ Arayüzü"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:60
 #: modules/System/templates/admin/mod_system_settings.html.twig:197
 msgid "Company Updated"
-msgstr ""
+msgstr "Firma Güncellendi"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:83
 msgid "Address line 1"
@@ -11136,7 +11136,7 @@ msgstr "Adres satırı 3"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:89
 msgid "Logo URL"
-msgstr "Logo URL"
+msgstr "Logo URL'si"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:95
 msgid "Logo URL (dark mode)"
@@ -11172,15 +11172,15 @@ msgstr "Bunu etkinleştirmek, \"şirket\" konuk API uç noktasından adres, tele
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:200
 msgid "Company Terms of Service, Legal Regulation"
-msgstr ""
+msgstr "Firma Hizmet Koşulları ve Yasal Düzenlemeler"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:204
 msgid "Company Privacy Policy"
-msgstr ""
+msgstr "Firma Gizlilik Politikası"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:219
 msgid "Countries Updated"
-msgstr ""
+msgstr "Ülkeler Güncellendi"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:471
 msgid "Default country for new users"
@@ -11196,11 +11196,11 @@ msgstr "Ülkeler Listesi"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:504
 msgid "Cache Control"
-msgstr ""
+msgstr "Önbellek Denetimi"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:506
 msgid "Cache Directory Cleared"
-msgstr ""
+msgstr "Önbellek Dizini Temizlendi"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:515
 msgid "About FOSSBilling"
@@ -11216,7 +11216,7 @@ msgstr "PHP sürümü"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:528
 msgid "Instance ID"
-msgstr "Instance ID"
+msgstr "Kurulum Kimliği"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:532
 msgid "License"
@@ -11228,7 +11228,7 @@ msgstr "Etkin modüller"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:558
 msgid "This is a core module included with FOSSBilling and cannot be disabled."
-msgstr ""
+msgstr "Bu, FOSSBilling ile birlikte gelen bir çekirdek modüldür ve devre dışı bırakılamaz."
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:592
 msgid "Error reporting is enabled."
@@ -11236,11 +11236,11 @@ msgstr "Hata raporlama etkinleştirildi."
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:593
 msgid "This FOSSBilling instance is automatically sending error reports which helps us improve the software and keep it stable. Thanks!"
-msgstr ""
+msgstr "Bu FOSSBilling kurulumu otomatik olarak hata raporları gönderiyor; bu, yazılımı geliştirmemize ve kararlı tutmamıza yardımcı olur. Teşekkürler!"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:597
 msgid "Error Reporting Disabled"
-msgstr ""
+msgstr "Hata Raporlama Devre Dışı Bırakıldı"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:598
 #: modules/System/templates/admin/mod_system_settings.html.twig:601
@@ -11257,7 +11257,7 @@ msgstr "Lütfen hata raporlamayı etkinleştirmeyi düşünün. Bu, daha iyi tek
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:618
 msgid "Error Reporting Enabled"
-msgstr ""
+msgstr "Hata Raporlama Etkinleştirildi"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:619
 #: modules/System/templates/admin/mod_system_settings.html.twig:622
@@ -11312,7 +11312,7 @@ msgstr "Eğer açılır menüde uygun ağ arayüzü yoksa lütfen yukarıdaki do
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:672
 msgid "You do not have permission to manage the network interface."
-msgstr ""
+msgstr "Ağ arayüzünü yönetme izniniz yok."
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:695
 msgid "With the current settings, your FOSSBilling instance will have an external IP address of: "
@@ -11333,7 +11333,7 @@ msgstr "Ağ arayüzü güncellendi."
 #: modules/System/templates/admin/mod_system_update.html.twig:16
 #: modules/System/templates/admin/mod_system_update.html.twig:18
 msgid "Update Release Notes"
-msgstr ""
+msgstr "Güncelleme Sürüm Notları"
 
 #: modules/System/templates/admin/mod_system_update.html.twig:19
 msgid "Required PHP version:"
@@ -11349,7 +11349,7 @@ msgstr "Bu güncelleme küçük bir güncelleme olarak değerlendirilmektedir, u
 
 #: modules/System/templates/admin/mod_system_update.html.twig:35
 msgid "There Is No Update Available"
-msgstr ""
+msgstr "Kullanılabilir Güncelleme Yok"
 
 #: modules/System/templates/admin/mod_system_update.html.twig:36
 msgid "You appear to be running the latest version of FOSSBilling, so no action is needed at the moment. If you think this is a mistake, you may use the button below to check again."
@@ -11361,7 +11361,7 @@ msgstr "Güncellemeleri Denetle"
 
 #: modules/System/templates/admin/mod_system_update.html.twig:65
 msgid "Patches Applied and Configuration Updated"
-msgstr ""
+msgstr "Yamalar Uygulandı ve Yapılandırma Güncellendi"
 
 #: modules/System/templates/admin/mod_system_update.html.twig:69
 msgid "Apply Patches & Update Configuration"
@@ -11382,7 +11382,7 @@ msgstr "Sonraki güncelleme kontrolü:"
 #: modules/System/templates/client/mod_system_maintenance.html.twig:3
 #: modules/System/templates/client/mod_system_maintenance.html.twig:24
 msgid "System Undergoing Maintenance"
-msgstr ""
+msgstr "Sistem Bakımda"
 
 #: modules/System/templates/client/mod_system_maintenance.html.twig:25
 msgid "Our systems are undergoing maintenance. We'll be back soon."
@@ -11434,83 +11434,83 @@ msgstr "Değişiklikleri Uygula"
 
 #: modules/Theme/templates/admin/mod_theme_settings.html.twig:26
 msgid "Client Area Themes"
-msgstr ""
+msgstr "Müşteri Alanı Temaları"
 
 #: modules/Theme/templates/admin/mod_theme_settings.html.twig:92
 msgid "Admin Area Themes"
-msgstr ""
+msgstr "Yönetim Alanı Temaları"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:31
 msgid "Widget Registry"
-msgstr ""
+msgstr "Bileşen Kayıt Defteri"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:32
 msgid "Modules can register widgets to dynamically display content in theme slots"
-msgstr ""
+msgstr "Modüller, tema alanlarında dinamik içerik görüntülemek için bileşenler kaydedebilir"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:36
 msgid "Widget cache rebuilt successfully"
-msgstr ""
+msgstr "Bileşen önbelleği başarıyla yeniden oluşturuldu"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:40
 msgid "Rediscover Widgets"
-msgstr ""
+msgstr "Bileşenleri Yeniden Bul"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:53
 msgid "No widgets registered"
-msgstr ""
+msgstr "Kayıtlı bileşen yok"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:55
 msgid "Widgets will appear here when modules that provide them are activated."
-msgstr ""
+msgstr "Bileşen sağlayan modüller etkinleştirildiğinde bileşenler burada görünür."
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:56
 msgid "Modules register widgets by implementing a <code>getWidgets()</code> method in their Service class."
-msgstr ""
+msgstr "Modüller, Service sınıflarında bir <code>getWidgets()</code> yöntemi uygulayarak bileşenleri kaydeder."
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:63
 msgid "Manage Extensions"
-msgstr ""
+msgstr "Uzantıları Yönet"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:72
 msgid "Showing"
-msgstr ""
+msgstr "Gösteriliyor"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:74
 msgid "slot"
-msgstr ""
+msgstr "alan"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:74
 msgid "slots"
-msgstr ""
+msgstr "alan"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:75
 msgid "with"
-msgstr ""
+msgstr "ile"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:77
 msgid "widget"
-msgstr ""
+msgstr "bileşen"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:77
 msgid "widgets"
-msgstr ""
+msgstr "bileşen"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:86
 msgid "Slot"
-msgstr ""
+msgstr "Alan"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:111
 msgid "Theme layout slot"
-msgstr ""
+msgstr "Tema yerleşim alanı"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:113
 msgid "Module slot"
-msgstr ""
+msgstr "Modül alanı"
 
 #: modules/Widgets/templates/admin/mod_widgets_index.html.twig:149
 msgid "Widgets are registered automatically when modules are activated. Lower priority numbers are rendered first."
-msgstr ""
+msgstr "Bileşenler, modüller etkinleştirildiğinde otomatik olarak kaydedilir. Daha düşük öncelik numaraları önce oluşturulur."
 
 #: modules/Wysiwyg/templates/admin/mod_wysiwyg_settings.html.twig:5
 #: modules/Wysiwyg/templates/admin/mod_wysiwyg_settings.html.twig:21
@@ -11648,7 +11648,7 @@ msgstr "Kazanç"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:318
 msgid "Latest Orders"
-msgstr ""
+msgstr "Son Siparişler"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:396
 msgid "Define date interval for graphs"
@@ -11660,11 +11660,11 @@ msgstr "Grafikleri Güncelle"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:459
 msgid "Recent Client Activity"
-msgstr "Son Müşteri Hareketleri"
+msgstr "Son Müşteri Etkinlikleri"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:462
 msgid "Recent Staff Activity"
-msgstr ""
+msgstr "Son Personel Etkinlikleri"
 
 #: themes/admin_default/html/partial_batch_delete.html.twig:5
 msgid "Delete selected"
@@ -11704,7 +11704,7 @@ msgstr "Eklenti yükle"
 
 #: themes/admin_default/html/partial_extensions.html.twig:59
 msgid "\", you agree with terms and conditions. Only install extensions you trust. You also might want to have a full backup ready in case something goes wrong."
-msgstr ""
+msgstr "\", şartlar ve koşulları kabul etmiş olursunuz. Yalnızca güvendiğiniz uzantıları kurun. Bir sorun çıkması ihtimaline karşı tam bir yedeği hazır bulundurmanız da önerilir."
 
 #: themes/admin_default/html/partial_extensions.html.twig:69
 msgid "Explore FOSSBilling extensions"
@@ -11788,7 +11788,7 @@ msgstr "Bootstrap Koyu Mod"
 
 #: themes/huraga/config/settings.html.twig:15
 msgid "Header Items"
-msgstr ""
+msgstr "Üst Bilgi Öğeleri"
 
 #: themes/huraga/config/settings.html.twig:18
 msgid "Show company logo"
@@ -11800,7 +11800,7 @@ msgstr "Müşteri bakiyesini göster"
 
 #: themes/huraga/config/settings.html.twig:34
 msgid "Menu Items Which Are Visible in Top Right Menu"
-msgstr ""
+msgstr "Sağ Üst Menüde Görünen Menü Öğeleri"
 
 #: themes/huraga/config/settings.html.twig:37
 msgid "Select which menu items"
@@ -11808,23 +11808,23 @@ msgstr "Hangi menü öğelerinin seçileceğini belirleyin"
 
 #: themes/huraga/config/settings.html.twig:39
 msgid "Show Dashboard Link"
-msgstr ""
+msgstr "Pano Bağlantısını Göster"
 
 #: themes/huraga/config/settings.html.twig:40
 msgid "Show Order Link"
-msgstr ""
+msgstr "Sipariş Bağlantısını Göster"
 
 #: themes/huraga/config/settings.html.twig:41
 msgid "Show Profile Link"
-msgstr ""
+msgstr "Profil Bağlantısını Göster"
 
 #: themes/huraga/config/settings.html.twig:42
 msgid "Show Sign Out Link"
-msgstr ""
+msgstr "Çıkış Bağlantısını Göster"
 
 #: themes/huraga/config/settings.html.twig:50
 msgid "Login Page"
-msgstr ""
+msgstr "Giriş Sayfası"
 
 #: themes/huraga/config/settings.html.twig:54
 msgid "Show logo"
@@ -11832,7 +11832,7 @@ msgstr "Logoyu göster"
 
 #: themes/huraga/config/settings.html.twig:62
 msgid "Logo link URL"
-msgstr ""
+msgstr "Logo bağlantı URL'si"
 
 #: themes/huraga/config/settings.html.twig:67
 msgid "Show password reset link"
@@ -11888,7 +11888,7 @@ msgstr "Kenar çubuğu"
 
 #: themes/huraga/config/settings.html.twig:151
 msgid "Menu Items Which Are Visible in Left Menu"
-msgstr ""
+msgstr "Sol Menüde Görünen Menü Öğeleri"
 
 #: themes/huraga/config/settings.html.twig:154
 msgid "Select menu items"
@@ -12008,7 +12008,7 @@ msgstr "5. altbilgi linki"
 
 #: themes/huraga/config/settings.html.twig:282
 msgid "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: themes/huraga/config/settings.html.twig:285
 msgid "Add javascript to client area footer"
@@ -12051,7 +12051,7 @@ msgstr "Ana Sayfaya dön"
 #: themes/huraga/html/layout_default.html.twig:123
 #: themes/huraga/html/mobile_menu.html.twig:116
 msgid "Sign Out"
-msgstr ""
+msgstr "Çıkış Yap"
 
 #: themes/huraga/html/layout_default.html.twig:157
 msgid "breadcrumb"
@@ -12076,7 +12076,7 @@ msgstr "NOT: FOSSBilling'deki birçok özellik Javascript ve çerezleri kullanı
 #: themes/huraga/html/mobile_menu.html.twig:86
 #: themes/huraga/html/partial_menu.html.twig:87
 msgid "Account Balance"
-msgstr ""
+msgstr "Hesap Bakiyesi"
 
 #: themes/huraga/html/partial_pagination.html.twig:20
 msgid "First"
