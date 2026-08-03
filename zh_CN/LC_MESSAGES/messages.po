@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2026-05-06 10:58-0700\n"
-"PO-Revision-Date: 2026-05-30 15:54\n"
+"PO-Revision-Date: 2026-08-03 21:16\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -63,7 +63,7 @@ msgstr "HTTP 错误 :err_code 尝试加载 :url 时出错"
 
 #: install/install.php:39
 msgid "The composer packages are missing."
-msgstr ""
+msgstr "缺失 composer 依赖包。"
 
 #: install/install.php:150
 msgid "FOSSBilling is already installed."
@@ -75,35 +75,35 @@ msgstr "管理员电子邮件不是有效的地址。"
 
 #: install/install.php:331
 msgid "Minimum admin password length is 8 characters."
-msgstr ""
+msgstr "管理员密码最小长度为8个字符。"
 
 #: install/install.php:335
 msgid "Admin password must include at least one number."
-msgstr ""
+msgstr "管理员密码必须包含至少一个数字。"
 
 #: install/install.php:339
 msgid "Admin password must include at least one lowercase letter."
-msgstr ""
+msgstr "管理员密码必须包含至少一个小写字母。"
 
 #: install/install.php:343
 msgid "Admin password must include at least one uppercase letter."
-msgstr ""
+msgstr "管理员密码必须包含至少一个大写字母。"
 
 #: install/install.php:347
 msgid "You must enter an Admin Name."
-msgstr ""
+msgstr "您必须输入一个管理员名称。"
 
 #: install/install.php:378
 msgid "Could not read structure.sql file"
-msgstr ""
+msgstr "无法读取 structure.sql 文件"
 
 #: install/install.php:430
 msgid "Unable to write required .htaccess file to "
-msgstr ""
+msgstr "无法将所需的 .htaccess 文件写入到 "
 
 #: install/install.php:440
 msgid "Configuration file is not writable or does not exist. Please create the file at "
-msgstr ""
+msgstr "配置文件不可写或不存在。请在以下位置创建该文件： "
 
 #: library/Api/Abstract.php:61
 msgid "Mod object is not set for the service"
@@ -288,11 +288,11 @@ msgstr "在格式化配置文件时发生了过多的循环"
 
 #: library/FOSSBilling/Doctrine/DriverManagerFactory.php:55
 msgid "Database configuration missing required key: :key."
-msgstr ""
+msgstr "数据库配置缺少必需的密钥： :key。"
 
 #: library/FOSSBilling/Doctrine/DriverManagerFactory.php:60
 msgid "Unsupported database driver :driver. Supported drivers are: :supported."
-msgstr ""
+msgstr "不支持的数据库驱动 :driver。支持的数据库驱动为：:support。"
 
 #: library/FOSSBilling/ExtensionManager.php:56
 msgid "Unable to fetch the extension details from the FOSSBilling extension directory."
@@ -344,27 +344,27 @@ msgstr "SMTP 主机或端口未配置"
 
 #: library/FOSSBilling/Module.php:51
 msgid "Invalid module name (:mod)."
-msgstr ""
+msgstr "模块名称无效(:mod)。"
 
 #: library/FOSSBilling/Module.php:68
 msgid "Missing manifest file for the :mod module."
-msgstr ""
+msgstr "在 :mod 模块中缺少清单文件。"
 
 #: library/FOSSBilling/Module.php:76
 msgid "Invalid manifest file for the :mod module. Please check file syntax and permissions."
-msgstr ""
+msgstr ":mod 模块的清单文件无效。请检查文件语法和权限。"
 
 #: library/FOSSBilling/Module.php:117
 msgid "Module :mod does not have a service class. Make sure Service.php exists and is valid."
-msgstr ""
+msgstr "模块 :mod 没有服务类。请确保Service.php存在并且有效。"
 
 #: library/FOSSBilling/Module.php:140
 msgid "Client controller class for the module :mod was not found."
-msgstr ""
+msgstr "未找到模块 :mod 的客户端控制器类。"
 
 #: library/FOSSBilling/Module.php:210
 msgid "Core modules cannot be updated separately. Please update to the latest FOSSBilling version to have the module updated."
-msgstr ""
+msgstr "核心模块无法单独更新。请更新到最新的 FOSSBilling 版本以更新模块。"
 
 #: library/FOSSBilling/Pagination.php:111
 msgid "Invalid SQL query. Missing FROM clause."
@@ -376,7 +376,7 @@ msgstr "提供的密码哈希值无效。"
 
 #: library/FOSSBilling/Security/RateLimiter.php:85
 msgid "Rate limiter policy :policy is not defined or invalid"
-msgstr ""
+msgstr "速率限制策略 :policy 未定义或无效"
 
 #: library/FOSSBilling/StandardsHelper.php:31
 msgid "Exact matches cannot be provided unless you provide an Alpha2 language code."
@@ -384,7 +384,7 @@ msgstr "除非您提供 Alpha2 语言代码，否则无法提供精确匹配。"
 
 #: library/FOSSBilling/Tools.php:82
 msgid "Password length must be at least "
-msgstr ""
+msgstr "密码长度必须至少为 "
 
 #: library/FOSSBilling/Tools.php:160
 msgid "Service class :class was not found in :path"
