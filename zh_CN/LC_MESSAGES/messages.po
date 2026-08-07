@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ddc573f086bad0aea827918f4284d176\n"
 "POT-Creation-Date: 2026-05-06 10:58-0700\n"
-"PO-Revision-Date: 2026-08-03 21:16\n"
+"PO-Revision-Date: 2026-08-07 13:44\n"
 "Last-Translator: FOSSBilling TM <info@fossbilling.org>\n"
 "Language-Team: Chinese Simplified\n"
 "MIME-Version: 1.0\n"
@@ -39,11 +39,11 @@ msgstr "管理员未登录"
 
 #: di.php:427
 msgid "Client account is not active"
-msgstr "客户帐户未激活"
+msgstr "客户端账户未激活"
 
 #: di.php:469
 msgid "Admin account is not active"
-msgstr "管理员帐户未激活"
+msgstr "管理员账户未激活"
 
 #: di.php:520
 msgid "Unrecognized Handler type: "
@@ -71,7 +71,7 @@ msgstr "FOSBilling已经安装。"
 
 #: install/install.php:327
 msgid "The admin email is not a valid address."
-msgstr "管理员电子邮件不是有效的地址。"
+msgstr "管理员电子邮件地址不是一个有效的地址。"
 
 #: install/install.php:331
 msgid "Minimum admin password length is 8 characters."
@@ -320,15 +320,15 @@ msgstr "提供的优先级(:priority) 无效。请提供介于 1 和 5 之间的
 
 #: library/FOSSBilling/Mail.php:133
 msgid "FOSSBilling requires the proc_open PHP function to be enabled when using the sendmail transport"
-msgstr "FOSSBilling 需要在使用发送邮件传输时启用 proc_open PHP 函数"
+msgstr "通过sendmail发送时，FOSSBilling需要启用proc_open PHP函数"
 
 #: library/FOSSBilling/Mail.php:143
 msgid "A SendGrid API key is required to send emails via SendGrid"
-msgstr "请先配置 SendGrid API Key 之后再发送邮件。"
+msgstr "通过SendGrid发送电子邮件需要使用SendGrid API密钥"
 
 #: library/FOSSBilling/Mail.php:150
 msgid "Unable to send email: 'Custom' transport method was selected without a custom DSN"
-msgstr "无法发送邮件：在没有自定义DSN的情况下选择了“自定义”传输方式"
+msgstr "无法发送电子邮件：选择了“自定义”发送方法，但未提供自定义DSN"
 
 #: library/FOSSBilling/Mail.php:156
 msgid "Unknown mail transport: :transport"
@@ -336,7 +336,7 @@ msgstr "未知的邮件传输: :transport"
 
 #: library/FOSSBilling/Mail.php:164
 msgid "Failed to send email via :transport with the exception :e"
-msgstr "通过 :e 传输发送邮件失败"
+msgstr "通过 :transport 发送电子邮件失败，出现异常 :e"
 
 #: library/FOSSBilling/Mail.php:180
 msgid "SMTP host or port is not configured"
@@ -392,7 +392,7 @@ msgstr "在 :path 中找不到服务类 :class。"
 
 #: library/FOSSBilling/Tools.php:210
 msgid "Email address"
-msgstr "邮箱"
+msgstr "电子邮件地址"
 
 #: library/FOSSBilling/Tools.php:212 library/FOSSBilling/Validate.php:210
 msgid ":friendlyName: is invalid"
@@ -400,19 +400,19 @@ msgstr ":friendlyName: 无效"
 
 #: library/FOSSBilling/Tools.php:373
 msgid "Unable to determine external IP address from any service."
-msgstr ""
+msgstr "无法从任何服务中确定外部 IP 地址。"
 
 #: library/FOSSBilling/Tools.php:439
 msgid "The provided phone country code does not appear to be valid."
-msgstr ""
+msgstr "提供的电话国家代码似乎无效。"
 
 #: library/FOSSBilling/Tools.php:449
 msgid "The provided phone number does not appear to be valid."
-msgstr ""
+msgstr "提供的电话号码似乎无效。"
 
 #: library/FOSSBilling/Tools.php:453
 msgid "Please use the separate field for the phone country code."
-msgstr ""
+msgstr "请为电话国家代码使用单独的字段。"
 
 #: library/FOSSBilling/Update.php:153
 msgid "Failed to download the latest version information. Further details are available in the error log."
@@ -432,15 +432,15 @@ msgstr "此版本的下载 URL 未被指定为可信的 URL。由于安全原因
 
 #: library/FOSSBilling/Update.php:261
 msgid "Failed to download the update archive. Further details are available in the error log."
-msgstr "无法下载更新归档。在错误日志中可获得更多详细信息。"
+msgstr "下载最新版本信息失败。在错误日志中可获得更多详细信息。"
 
 #: library/FOSSBilling/Update.php:275
 msgid "Failed to extract file, please check file and folder permissions. Further details are available in the error log."
-msgstr "提取文件失败，请检查文件和文件夹权限。在错误日志中有更多详细信息。"
+msgstr "提取文件失败，请检查文件和文件夹权限。在错误日志中可获得更多详细信息。"
 
 #: library/FOSSBilling/Update.php:301
 msgid "Unable to clear cache and/or remove install folder. Further details are available in the error log."
-msgstr "无法清除缓存或删除安装目录。通过错误日志可查看详情。"
+msgstr "无法清除缓存或删除安装目录。在错误日志中可获得更多详细信息。"
 
 #: library/FOSSBilling/UpdatePatcher.php:57
 msgid "Unable to load existing configuration"
@@ -456,7 +456,7 @@ msgstr "密码不一致。"
 
 #: library/FOSSBilling/Validate.php:154
 msgid "Password is required."
-msgstr ""
+msgstr "需要输入密码。"
 
 #: library/FOSSBilling/Validate.php:158
 msgid "Minimum password length is 8 characters."
@@ -484,7 +484,7 @@ msgstr "生日"
 
 #: library/FOSSBilling/i18n.php:157
 msgid "Unable to enable / disable the locale as it is not present in the locale folder."
-msgstr "无法启用/禁用语言，因为它不在语言文件夹中。"
+msgstr "无法启用/禁用本地化语言，因为它不存在于本地化文件夹中。"
 
 #: library/Model/ProductDomainTable.php:37
 #: library/Model/ProductDomainTable.php:279
@@ -513,7 +513,7 @@ msgstr "为设置价格选择的未知周期"
 
 #: library/Model/ProductTable.php:140
 msgid "Product :id payment type is recurrent, but period was not selected"
-msgstr "产品号 :id 的付款类型是自动续费，但周期没有被选择"
+msgstr "产品号 :id 的支付类型是自动续费，但周期没有被选择"
 
 #: library/Model/ProductTable.php:152
 msgid "Unknown Period selected for price"
@@ -521,13 +521,13 @@ msgstr "为设置价格选择的未知周期"
 
 #: library/Payment/Adapter/ClientBalance.php:61
 msgid "Your account balance is insufficient to cover this invoice."
-msgstr "您的帐户余额不足以支付此账单。"
+msgstr "您的账户余额不足以支付此账单。"
 
 #: library/Payment/Adapter/ClientBalance.php:66
 #: library/Payment/Adapter/ClientBalance.php:115
 #: library/Payment/Adapter/ClientBalance.php:147
 msgid "You may not pay a deposit invoice with this payment gateway."
-msgstr "您无法通过此支付网关支付定金发票。"
+msgstr "您无法使用此支付网关支付押金账单。"
 
 #: library/Payment/Adapter/ClientBalance.php:89
 #: library/Payment/Adapter/PayPalEmail.php:78
@@ -540,11 +540,11 @@ msgstr "找不到账单"
 
 #: library/Payment/Adapter/ClientBalance.php:106
 msgid "You are not authorized to pay this invoice with client balance."
-msgstr ""
+msgstr "您无权使用客户端余额支付此账单。"
 
 #: library/Payment/Adapter/ClientBalance.php:110
 msgid "Invoice is not configured to use this payment gateway."
-msgstr ""
+msgstr "账单配置中未使用此支付网关。"
 
 #: library/Payment/Adapter/ClientBalance.php:141
 msgid "ClientBalance gateway is not enabled"
@@ -552,7 +552,7 @@ msgstr "客户端余额网关未启用"
 
 #: library/Payment/Adapter/Custom.php:87
 msgid "Custom payment gateway callbacks must be confirmed by an administrator."
-msgstr ""
+msgstr "自定义支付网关回调必须由管理员确认。"
 
 #: library/Payment/Adapter/PayPalEmail.php:32
 #: library/Payment/Adapter/Stripe.php:35 library/Payment/Adapter/Stripe.php:38
@@ -571,11 +571,11 @@ msgstr "正在重定向到 PayPal.com"
 #: library/Payment/Adapter/PayPalEmail.php:372
 #: library/Payment/Adapter/Stripe.php:114
 msgid "Payment for invoice :serie:id [:title]"
-msgstr "发票 :serie:id [:title]"
+msgstr "账单 :serie:id [:title]"
 
 #: library/Payment/Adapter/Stripe.php:116
 msgid "Payment for invoice :serie:id"
-msgstr "发票 :serie:id"
+msgstr "账单 :serie:id"
 
 #: library/Payment/Adapter/Stripe.php:223
 msgid "There was an error when processing the transaction"
@@ -583,11 +583,11 @@ msgstr "处理交易时发生错误"
 
 #: library/Payment/Adapter/Stripe.php:253
 msgid "Unable to determine client for transaction. No invoice or customer information available."
-msgstr ""
+msgstr "无法确定交易客户端。没有账单或客户信息。"
 
 #: library/Payment/AdapterAbstract.php:52
 msgid "Return URL for the payment gateway was not set"
-msgstr "未设置支付网关的返回网址"
+msgstr "未设置支付网关的返回 URL"
 
 #: library/Payment/AdapterAbstract.php:59
 msgid "Cancel URL for the payment gateway was not set"
@@ -595,11 +595,11 @@ msgstr "未设置支付网关的取消 URL"
 
 #: library/Payment/AdapterAbstract.php:67
 msgid "IPN Notification URL for the payment gateway was not set"
-msgstr "支付网关的通知 URL 未设置"
+msgstr "未设置支付网关的 IPN 通知 URL"
 
 #: library/Payment/AdapterAbstract.php:77
 msgid "IPN redirect URL for the payment gateway was not set"
-msgstr "支付网关的重定向 URL 未设置"
+msgstr "未设置支付网关的 IPN 重定向 URL"
 
 #: library/Registrar/Adapter/Email.php:25
 #: library/Registrar/Adapter/Internetbs.php:19
@@ -616,11 +616,11 @@ msgstr "支付网关的重定向 URL 未设置"
 #: library/Registrar/Adapter/Resellerid.php:12
 #: library/Registrar/Adapter/Resellerid.php:19
 msgid "The \":domain_registrar\" domain registrar is not fully configured. Please configure the :missing"
-msgstr "\":domain_registrar\"域名注册商未配置好。请配置 :missing"
+msgstr "\":domain_registrar\"域名注册商未完全配置。请配置 :missing"
 
 #: library/Registrar/Adapter/Email.php:66 library/Registrar/Adapter/Email.php:71
 msgid ":type: registrar is unable to :action:"
-msgstr "注册商无法"
+msgstr ":type: 注册商无法执行 :action:"
 
 #: library/Registrar/Adapter/Internetbs.php:162
 msgid "get domain details"
@@ -640,12 +640,12 @@ msgstr "获取域名详情"
 #: library/Registrar/Adapter/Resellerclub.php:714
 #: library/Registrar/Adapter/Resellerclub.php:721
 msgid "Failed to :action: with the :type: registrar, check the error logs for further details"
-msgstr "在 :type: 的 :action: 失败，请在错误日志中查看详情"
+msgstr "使用:type:注册商执行:action:失败，请检查错误日志以获取更多详细信息"
 
 #: library/Registrar/Adapter/Internetbs.php:169
 #: library/Registrar/Adapter/Namecheap.php:548
 msgid "deleting domains"
-msgstr "等待删除域名"
+msgstr "正在删除域名"
 
 #: library/Registrar/Adapter/Internetbs.php:169
 #: library/Registrar/Adapter/Namecheap.php:412
@@ -655,32 +655,32 @@ msgstr ":type: 不支持 :action:"
 
 #: library/Registrar/Adapter/Namecheap.php:100
 msgid "Premium domains cannot be registered."
-msgstr "不能注册精品域名。"
+msgstr "高级域名无法注册。"
 
 #: library/Registrar/Adapter/Namecheap.php:229
 msgid "update nameservers"
-msgstr "修改DNS服务器"
+msgstr "更新DNS服务器"
 
 #: library/Registrar/Adapter/Namecheap.php:328
 msgid "retrieve domain details"
-msgstr "获取域名详情"
+msgstr "检索域名详情"
 
 #: library/Registrar/Adapter/Namecheap.php:412
 msgid "retrieving the transfer code"
-msgstr "获取域名转移密码"
+msgstr "检索域名转移码"
 
 #: library/Registrar/Adapter/Namecheap.php:571
 msgid "retrieve privacy information"
-msgstr "获取隐私信息"
+msgstr "检索隐私信息"
 
 #: library/Registrar/Adapter/Namecheap.php:636
 msgid "get the domain lock status"
-msgstr "获取域名锁定与否状态"
+msgstr "获取域名锁状态"
 
 #: library/Registrar/Adapter/Namecheap.php:661
 #: library/Registrar/Adapter/Namecheap.php:691
 msgid "set the domain lock status"
-msgstr "设定域名锁定状态"
+msgstr "设置域名锁状态"
 
 #: library/Registrar/Adapter/Resellerclub.php:325
 msgid "A valid contact company number is mandatory for registering an .AU domain name"
@@ -688,11 +688,11 @@ msgstr "注册 .AU 域名必须持有有效的公司注册号"
 
 #: library/Registrar/Adapter/Resellerclub.php:392
 msgid "get the transfer code"
-msgstr "获取域名转移密码"
+msgstr "获取域名转移码"
 
 #: library/Registrar/Adapter/Resellerclub.php:591
 msgid "You are already registered as reseller"
-msgstr "您已经注册为代理商"
+msgstr "您已经注册为经销商"
 
 #: library/Registrar/Adapter/Resellerclub.php:843
 msgid "Valid contact passport information is required while registering ES domain name"
@@ -720,7 +720,7 @@ msgstr "API 密钥"
 
 #: library/Server/Manager/CWP.php:36
 msgid "API key you generated from within CWP."
-msgstr ""
+msgstr "您在 CWP 内生成的 API 密钥。"
 
 #: library/Server/Manager/CWP.php:54 library/Server/Manager/CWP.php:58
 #: library/Server/Manager/CWP.php:62 library/Server/Manager/Directadmin.php:68
@@ -738,7 +738,7 @@ msgstr ":type: 服务器连接失败。请正确填写连接信息和配置内�
 
 #: library/Server/Manager/CWP.php:185 library/Server/Manager/Plesk.php:145
 msgid "create account"
-msgstr "创建账号"
+msgstr "创建账户"
 
 #: library/Server/Manager/CWP.php:187 library/Server/Manager/CWP.php:214
 #: library/Server/Manager/CWP.php:241 library/Server/Manager/CWP.php:271
@@ -756,23 +756,23 @@ msgstr "在 :type: 服务器的 :action: 失败，请在错误日志中查看详
 
 #: library/Server/Manager/CWP.php:212 library/Server/Manager/Hestia.php:208
 msgid "suspend account"
-msgstr "暂停账号"
+msgstr "暂停账户"
 
 #: library/Server/Manager/CWP.php:239 library/Server/Manager/Hestia.php:232
 msgid "unsuspend account"
-msgstr "恢复账号"
+msgstr "恢复账户"
 
 #: library/Server/Manager/CWP.php:269 library/Server/Manager/Hestia.php:257
 msgid "cancel account"
-msgstr "取消账号"
+msgstr "取消账户"
 
 #: library/Server/Manager/CWP.php:298 library/Server/Manager/Hestia.php:283
 msgid "change account package"
-msgstr "更换账号套餐"
+msgstr "更换账户套餐"
 
 #: library/Server/Manager/CWP.php:327 library/Server/Manager/Hestia.php:328
 msgid "change account password"
-msgstr "修改账号密码"
+msgstr "修改账户密码"
 
 #: library/Server/Manager/CWP.php:345 library/Server/Manager/Directadmin.php:292
 #: library/Server/Manager/Hestia.php:298 library/Server/Manager/Plesk.php:296
@@ -782,20 +782,20 @@ msgstr "用户名修改"
 #: library/Server/Manager/CWP.php:358 library/Server/Manager/Directadmin.php:134
 #: library/Server/Manager/Hestia.php:308
 msgid "changing the account domain"
-msgstr "修改账号的域名"
+msgstr "修改账户的域名"
 
 #: library/Server/Manager/CWP.php:371 library/Server/Manager/Directadmin.php:148
 #: library/Server/Manager/Hestia.php:343 library/Server/Manager/Plesk.php:342
 msgid "changing the account IP"
-msgstr "修改账号的IP地址"
+msgstr "修改账户的IP地址"
 
 #: library/Server/Manager/Directadmin.php:310
 msgid "There are no available IPs on this server."
-msgstr "此服务器上没有可用的 IP 地址。"
+msgstr "此服务器上没有可用的 IP。"
 
 #: library/Server/Manager/Directadmin.php:428
 msgid "Unable to assign the Reseller ANY IPs. Make sure to have free, unassigned IPs."
-msgstr "无法为经销商分配任何 IP。请确保有空闲的、未分配的 IP。"
+msgstr "无法为经销商分配任何 IP。请确保有空闲且未分配的 IP。"
 
 #: library/Server/Manager/Directadmin.php:432
 msgid "Error creating user"
@@ -803,11 +803,11 @@ msgstr "创建用户时出错"
 
 #: library/Server/Manager/Directadmin.php:544
 msgid "synchronizing the account"
-msgstr "同步账户"
+msgstr "同步账号"
 
 #: library/Server/Manager/Directadmin.php:589
 msgid "Server Manager DirectAdmin Error: \"Account is not suspended\""
-msgstr "服务器管理器 DirectAdmin 错误: \"暂停账号失败\""
+msgstr "服务器管理器 DirectAdmin 错误：“账户未暂停”"
 
 #: library/Server/Manager/Directadmin.php:758 library/Server/Manager/Whm.php:610
 msgid "HttpClientException: :error"
@@ -815,11 +815,11 @@ msgstr "HttpClientException：:error"
 
 #: library/Server/Manager/Directadmin.php:771
 msgid "Server Manager DirectAdmin Error: \"The request you have made cannot be executed because it does not exist in your authority level\""
-msgstr "DirectAdmin 错误: \"The request you have made cannot be executed because it does not exist in your authority level\""
+msgstr "服务器管理器 DirectAdmin 错误: \"您提出的请求不能执行，因为它不在于您的授权级别\""
 
 #: library/Server/Manager/Directadmin.php:866
 msgid "Failed to retrieve user packages: "
-msgstr ""
+msgstr "检索用户套餐失败： "
 
 #: library/Server/Manager/Hestia.php:164
 msgid "create user"
@@ -839,7 +839,7 @@ msgstr "在执行 :action2: 失败后在 :type: 服务器执行 :action1: 失败
 
 #: library/Server/Manager/Plesk.php:102
 msgid "account synchronization"
-msgstr "账号同步"
+msgstr "账户同步"
 
 #: library/Server/Manager/Plesk.php:244
 msgid "Can't modify client"
@@ -847,7 +847,7 @@ msgstr "无法修改用户"
 
 #: load.php:40
 msgid "For security reasons, you have to delete the install directory before you can use FOSSBilling."
-msgstr ""
+msgstr "出于安全原因，您必须先删除安装目录才能使用 FOSSBilling。"
 
 #: load.php:114
 msgid "Missing .htaccess file"
@@ -855,7 +855,7 @@ msgstr "缺少了 .htaccess 文件"
 
 #: load.php:231
 msgid "The FOSSBilling configuration file is empty or invalid."
-msgstr ""
+msgstr "FOSSBilling 配置文件为空或无效。"
 
 #: modules/Activity/Controller/Admin.php:35
 msgid "Activity"
@@ -867,27 +867,27 @@ msgstr "系统活动"
 
 #: modules/Activity/Service.php:219
 msgid "Client not found"
-msgstr "找不到用户"
+msgstr "未找到客户端"
 
 #: modules/Antispam/Api/Admin.php:42 modules/Antispam/Api/Admin.php:47
 msgid "IP address is required"
-msgstr ""
+msgstr "IP 地址为必填项"
 
 #: modules/Antispam/Api/Admin.php:51
 msgid "Invalid IP address"
-msgstr ""
+msgstr "IP地址无效"
 
 #: modules/Antispam/Api/Admin.php:68
 msgid ":ip is already blocked."
-msgstr ""
+msgstr ":ip 已被封禁。"
 
 #: modules/Antispam/Api/Admin.php:94
 msgid ":ip is not currently blocked."
-msgstr ""
+msgstr ":ip 目前未被封禁。"
 
 #: modules/Antispam/Service.php:91
 msgid "Your IP address (:ip) is blocked. Please contact our support to lift your block."
-msgstr "您的 IP 地址 (:ip) 已被屏蔽。请联系我们解封。"
+msgstr "您的 IP 地址 (:ip) 已被封禁。请联系我们解封。"
 
 #: modules/Antispam/Service.php:129
 msgid "To use reCAPTCHA you must get an API key from <a href='https://www.google.com/recaptcha/admin/create'>here</a>"
@@ -899,7 +899,7 @@ msgstr "请先过验证码 CAPTCHA 后继续"
 
 #: modules/Antispam/Service.php:147
 msgid "reCAPTCHA verification failed."
-msgstr "reCaptcha 验证失败。"
+msgstr "reCAPTCHA 验证失败。"
 
 #: modules/Antispam/Service.php:151
 msgid "Cloudflare Turnstile secret key is not configured."
@@ -911,7 +911,7 @@ msgstr "请完成人机验证。"
 
 #: modules/Antispam/Service.php:170 modules/Antispam/Service.php:193
 msgid "CAPTCHA verification failed. Please try again."
-msgstr "验证失败，请再试一次。"
+msgstr "人机验证失败。请重试。"
 
 #: modules/Antispam/Service.php:174
 msgid "hCaptcha secret key is not configured."
@@ -919,23 +919,23 @@ msgstr "hCaptcha 密钥未配置。"
 
 #: modules/Antispam/Service.php:225
 msgid "Registration failed."
-msgstr ""
+msgstr "注册失败。"
 
 #: modules/Antispam/Service.php:254
 msgid "Your username is blacklisted in the Stop Forum Spam database"
-msgstr "您的用户名列在 Stop Forum Spam 数据库的黑名单中"
+msgstr "您的用户名在 Stop Forum Spam 数据库的黑名单中"
 
 #: modules/Antispam/Service.php:257
 msgid "Your e-mail is blacklisted in the Stop Forum Spam database"
-msgstr "您的电子邮箱列在 Stop Forum Spam 数据库的黑名单中"
+msgstr "您的电子邮件地址在 Stop Forum Spam 数据库的黑名单中"
 
 #: modules/Antispam/Service.php:260
 msgid "Your IP address is blacklisted in the Stop Forum Spam database"
-msgstr "您的 IP 地址列在 Stop Forum Spam 数据库的黑名单中"
+msgstr "您的 IP 地址在 Stop Forum Spam 数据库的黑名单中"
 
 #: modules/Antispam/Service.php:293
 msgid "Disposable email addresses are not allowed"
-msgstr "不允许使用一次性邮箱地址"
+msgstr "不允许使用一次性电子邮件地址"
 
 #: modules/Api/Controller/Client.php:60 modules/Api/Controller/Client.php:427
 msgid "Unknown API call :call"
@@ -943,7 +943,7 @@ msgstr "未知的 API 调用 :calls"
 
 #: modules/Api/Controller/Client.php:85
 msgid "Malformed JSON input: :error"
-msgstr ""
+msgstr "JSON 输入格式错误： :error"
 
 #: modules/Api/Controller/Client.php:159
 msgid "Invalid request. Make sure request origin is :from"
@@ -972,16 +972,16 @@ msgstr "未找到该币种"
 
 #: modules/Cart/Api/Guest.php:83
 msgid "No currency available"
-msgstr ""
+msgstr "没有可用货币"
 
 #: modules/Cart/Api/Guest.php:102 modules/Cart/Api/Guest.php:110
 #: modules/Cart/Service.php:555
 msgid "The promo code has expired or does not exist"
-msgstr "优惠码已过期或不存在"
+msgstr "促销码已过期或不存在"
 
 #: modules/Cart/Api/Guest.php:106 modules/Cart/Service.php:559
 msgid "Promo code cannot be applied to your account"
-msgstr "促销代码不能应用到您的帐户"
+msgstr "您的账户不能使用此促销码"
 
 #: modules/Cart/Api/Guest.php:158
 msgid "Addon products cannot be added separately."
@@ -993,7 +993,7 @@ msgstr "您所选的一个或多个附加组件对产品无效。"
 
 #: modules/Cart/Service.php:86
 msgid "Default currency not found"
-msgstr ""
+msgstr "未找到默认货币"
 
 #: modules/Cart/Service.php:114
 msgid "Selected billing period is invalid"
@@ -1001,7 +1001,7 @@ msgstr "选定的计费周期无效"
 
 #: modules/Cart/Service.php:154
 msgid "This domain is already in the cart."
-msgstr ""
+msgstr "此域名已在购物车中。"
 
 #: modules/Cart/Service.php:187
 msgid "Selected billing period is invalid for the selected add-on"
@@ -1017,23 +1017,23 @@ msgstr "未找到产品"
 
 #: modules/Cart/Service.php:399
 msgid "Add products to your cart before applying promo code"
-msgstr "请将产品加到购物车后再使用优惠码"
+msgstr "请将产品加到购物车后再使用促销码"
 
 #: modules/Cart/Service.php:443
 msgid "Currency not found and no default currency is configured"
-msgstr ""
+msgstr "找不到货币且没有配置默认货币"
 
 #: modules/Cart/Service.php:551
 msgid "You have already used this promo code. Please remove the promo code and checkout again."
-msgstr "你已经使用了这个促销代码 请删除促销代码并再次结账"
+msgstr "您已经使用了此促销码。请删除此促销码后重新结账。"
 
 #: modules/Cart/Service.php:611
 msgid "Cannot checkout an empty cart"
-msgstr "无法结帐空购物车"
+msgstr "无法结账空购物车"
 
 #: modules/Cart/Service.php:621
 msgid "Default currency not found."
-msgstr ""
+msgstr "未找到默认货币。"
 
 #: modules/Cart/Service.php:633
 msgid "Selected currency :selected does not match your profile currency :code. Please change cart currency to continue."
@@ -1041,23 +1041,23 @@ msgstr "所选货币 :selected 与您的个人资料中的货币 :code 不匹配
 
 #: modules/Cart/Service.php:650
 msgid "Unable to complete order. One or more of the selected products are invalid."
-msgstr "无法完成订单。所选产品的一个或多个无效。"
+msgstr "无法完成订单。一个或多个选定的产品无效。"
 
 #: modules/Cart/Service.php:656
 msgid "Unable to complete order. One or more selected products are out of stock."
-msgstr ""
+msgstr "无法完成订单。一个或多个选定的产品缺货。"
 
 #: modules/Cart/Service.php:731
 msgid "Discount: :product"
-msgstr "折扣：产品"
+msgstr "折扣： :product"
 
 #: modules/Cart/Service.php:743
 msgid ":product setup"
-msgstr ":产品 设置"
+msgstr ":product 设置"
 
 #: modules/Cart/Service.php:819
 msgid "This promo code has reached its maximum number of uses."
-msgstr ""
+msgstr "此促销码已达到最大使用数量。"
 
 #: modules/Client/Api/Admin.php:157 modules/Client/Api/Admin.php:241
 #: modules/Client/Api/Guest.php:81
@@ -1066,11 +1066,11 @@ msgstr "此电子邮件地址已被注册。"
 
 #: modules/Client/Api/Admin.php:515
 msgid "Group has clients assigned. Please reassign them first."
-msgstr "仍有客户所在该群组，请先将他们分配到其他群组"
+msgstr "组别有已分配的客户端。请先重新分配这些客户端。"
 
 #: modules/Client/Api/Guest.php:66
 msgid "New registrations are temporary disabled"
-msgstr "暂停注册"
+msgstr "新注册功能已暂时禁用"
 
 #: modules/Client/Api/Guest.php:126
 msgid "Please check your login details."
@@ -1079,7 +1079,7 @@ msgstr "请检查您的登录信息。"
 #: modules/Client/Api/Guest.php:268 modules/Client/Api/Guest.php:274
 #: modules/Client/Api/Guest.php:281
 msgid "The link has expired or you have already reset your password."
-msgstr "链接已过期或您已经完成密码重置。"
+msgstr "链接已过期或您已经重置了密码。"
 
 #: modules/Client/Controller/Admin.php:35
 msgid "Clients"
@@ -1095,163 +1095,163 @@ msgstr "高级搜索"
 
 #: modules/Client/Controller/Admin.php:57
 msgid "Client login history"
-msgstr "用户登录记录"
+msgstr "客户端登录历史"
 
 #: modules/Client/Controller/Client.php:63
 msgid "Email address was confirmed"
-msgstr "邮箱地址已确认"
+msgstr "电子邮件地址已确认"
 
 #: modules/Client/Service.php:28
 msgid "View client details"
-msgstr ""
+msgstr "查看客户端详情"
 
 #: modules/Client/Service.php:29
 msgid "Allows the staff member to view client account details and listings."
-msgstr ""
+msgstr "允许工作人员查看客户端账户详细信息和列表。"
 
 #: modules/Client/Service.php:33
 msgid "Create clients"
-msgstr ""
+msgstr "创建客户端"
 
 #: modules/Client/Service.php:34
 msgid "Allows the staff member to create new client accounts."
-msgstr ""
+msgstr "允许工作人员创建新客户端账户。"
 
 #: modules/Client/Service.php:38
 msgid "Edit client profiles"
-msgstr ""
+msgstr "编辑客户端资料"
 
 #: modules/Client/Service.php:39
 msgid "Allows the staff member to update client profile details and account settings."
-msgstr ""
+msgstr "允许工作人员更新客户端详细信息和账户设置。"
 
 #: modules/Client/Service.php:43
 msgid "Login as client"
-msgstr ""
+msgstr "以客户端登录"
 
 #: modules/Client/Service.php:44
 msgid "Allows the staff member to authenticate as any client account."
-msgstr ""
+msgstr "允许工作人员以任何客户端账户的身份进行身份验证。"
 
 #: modules/Client/Service.php:48
 msgid "Manage client API keys"
-msgstr ""
+msgstr "管理客户端 API 密钥"
 
 #: modules/Client/Service.php:49
 msgid "Allows the staff member to view and generate API keys for client accounts."
-msgstr ""
+msgstr "允许工作人员查看和生成客户端账户的 API 密钥。"
 
 #: modules/Client/Service.php:53
 msgid "Change client passwords"
-msgstr ""
+msgstr "修改客户端密码"
 
 #: modules/Client/Service.php:54
 msgid "Allows the staff member to set new passwords for client accounts."
-msgstr ""
+msgstr "允许工作人员为客户端账户设置新密码。"
 
 #: modules/Client/Service.php:58
 msgid "Manage client balance"
-msgstr ""
+msgstr "管理客户端余额"
 
 #: modules/Client/Service.php:59
 msgid "Allows the staff member to add or remove balance entries for client accounts."
-msgstr ""
+msgstr "允许工作人员添加或删除客户端账号的余额条目。"
 
 #: modules/Client/Service.php:63
 msgid "View client login history"
-msgstr ""
+msgstr "查看客户端登录历史"
 
 #: modules/Client/Service.php:64
 msgid "Allows the staff member to view client login history and IP addresses."
-msgstr ""
+msgstr "允许工作人员查看客户端登录历史和IP地址。"
 
 #: modules/Client/Service.php:68
 msgid "Manage client groups"
-msgstr ""
+msgstr "管理客户端组别"
 
 #: modules/Client/Service.php:69
 msgid "Allows the staff member to create, update, and delete client groups."
-msgstr ""
+msgstr "允许工作人员创建、更新和删除客户端组别。"
 
 #: modules/Client/Service.php:73
 msgid "Delete clients"
-msgstr ""
+msgstr "删除客户端"
 
 #: modules/Client/Service.php:74
 msgid "Allows the staff member to permanently remove client accounts."
-msgstr ""
+msgstr "允许工作人员永久移除客户端账户。"
 
 #: modules/Client/Service.php:78
 msgid "Bulk delete clients"
-msgstr ""
+msgstr "批量删除客户端"
 
 #: modules/Client/Service.php:79
 msgid "Allows the staff member to permanently remove multiple client accounts in a single action."
-msgstr ""
+msgstr "允许工作人员在单个操作中永久移除多个客户端账号。"
 
 #: modules/Client/Service.php:83
 msgid "Export clients"
-msgstr ""
+msgstr "导出客户端"
 
 #: modules/Client/Service.php:84
 msgid "Allows the staff member to export client account data."
-msgstr ""
+msgstr "允许工作人员导出客户端账户数据。"
 
 #: modules/Client/Service.php:88
 msgid "Manage client settings"
-msgstr ""
+msgstr "管理客户端设置"
 
 #: modules/Client/Service.php:89
 msgid "Allows the staff member to manage client module settings and configuration."
-msgstr ""
+msgstr "允许工作人员管理客户端模块设置和配置。"
 
 #: modules/Client/Service.php:109
 msgid "Invalid email confirmation link"
-msgstr "无效的邮件确认链接"
+msgstr "无效的电子邮件地址确认链接"
 
 #: modules/Client/Service.php:145
 msgid "The password you chose when creating your account."
-msgstr "在创建账号时选定的密码。"
+msgstr "您在创建账户时选择的密码。"
 
 #: modules/Client/Service.php:257
 msgid "Invalid per page number"
-msgstr "每页的无效个数"
+msgstr "无效的每页个数"
 
 #: modules/Client/Service.php:299
 msgid "Currency cannot be changed. Client already has invoices issued."
-msgstr "无法更换币种，因为已经出账单了。"
+msgstr "无法更改货币。客户端已经签发了账单。"
 
 #: modules/Client/Service.php:304
 msgid "Currency cannot be changed. Client already has orders."
-msgstr "无法更换币种，因为用户已经提交订单了。"
+msgstr "无法更改货币。客户端已经有订单。"
 
 #: modules/Client/Service.php:313
 msgid "You must define the client's currency before adding funds."
-msgstr "充值前必须设置币种。"
+msgstr "在添加资金之前，您必须设置客户端的货币。"
 
 #: modules/Client/Service.php:317 modules/Client/ServiceBalance.php:127
 msgid "Funds amount is invalid"
-msgstr "充值金额无效"
+msgstr "资金金额无效"
 
 #: modules/Client/Service.php:321 modules/Client/ServiceBalance.php:131
 msgid "Funds description is invalid"
-msgstr "充值的描述无效。"
+msgstr "资金描述无效"
 
 #: modules/Client/Service.php:497
 msgid "Client ID or email is required"
-msgstr "必须有用户 ID 或邮箱"
+msgstr "需要客户端ID或电子邮件地址"
 
 #: modules/Client/Service.php:554
 msgid "Cannot remove groups with clients"
-msgstr "无法移除用户组"
+msgstr "无法删除有客户端的组别"
 
 #: modules/Client/Service.php:744
 msgid "Email address cannot be changed"
-msgstr "无法修改邮箱"
+msgstr "无法更改电子邮件地址"
 
 #: modules/Client/Service.php:758 modules/Client/Service.php:774
 msgid "Field :field cannot be empty"
-msgstr ":field 此字段不能为空"
+msgstr "字段 :field 不能为空"
 
 #: modules/Cookieconsent/Controller/Admin.php:35
 msgid "Cookie consent"
@@ -1259,11 +1259,11 @@ msgstr "Cookie 政策"
 
 #: modules/Cron/Api/Guest.php:31
 msgid "You do not have permission to perform this action"
-msgstr "您没有权限执行此操作"
+msgstr "您没有执行此操作的权限"
 
 #: modules/Currency/Api/Admin.php:107
 msgid "Currency already registered"
-msgstr "币种已设置"
+msgstr "货币已注册"
 
 #: modules/Currency/Api/Admin.php:111 modules/Currency/Service.php:249
 msgid "Currency code is invalid"
@@ -1271,63 +1271,63 @@ msgstr "货币代码无效"
 
 #: modules/Currency/Service.php:43
 msgid "The dependency injection container has not been set."
-msgstr ""
+msgstr "依赖注入容器尚未设置。"
 
 #: modules/Currency/Service.php:58
 msgid "Create currencies"
-msgstr ""
+msgstr "新建货币"
 
 #: modules/Currency/Service.php:59
 msgid "Allows the staff member to add new currencies to the system."
-msgstr ""
+msgstr "允许工作人员添加新货币到系统。"
 
 #: modules/Currency/Service.php:63
 msgid "Edit currencies"
-msgstr ""
+msgstr "编辑货币"
 
 #: modules/Currency/Service.php:64
 msgid "Allows the staff member to update currency titles, formats, and conversion rates."
-msgstr ""
+msgstr "允许工作人员更新货币名称、格式和汇率。"
 
 #: modules/Currency/Service.php:68
 msgid "Delete currencies"
-msgstr ""
+msgstr "删除货币"
 
 #: modules/Currency/Service.php:69
 msgid "Allows the staff member to remove currencies from the system."
-msgstr ""
+msgstr "允许工作人员从系统中移除货币。"
 
 #: modules/Currency/Service.php:73
 msgid "Set default currency"
-msgstr ""
+msgstr "设置默认货币"
 
 #: modules/Currency/Service.php:74
 msgid "Allows the staff member to change the system default currency."
-msgstr ""
+msgstr "允许工作人员更改系统默认货币。"
 
 #: modules/Currency/Service.php:78
 msgid "Update currency rates"
-msgstr ""
+msgstr "更新货币汇率"
 
 #: modules/Currency/Service.php:79
 msgid "Allows the staff member to refresh all currency conversion rates."
-msgstr ""
+msgstr "允许工作人员刷新所有货币汇率。"
 
 #: modules/Currency/Service.php:132
 msgid "Currency conversion rate cannot be zero"
-msgstr "汇率不能为零"
+msgstr "货币汇率不能为零"
 
 #: modules/Currency/Service.php:192
 msgid "Currency code not provided"
-msgstr "货币代码未写明"
+msgstr "未提供货币代码"
 
 #: modules/Currency/Service.php:271
 msgid "Cannot remove default currency"
-msgstr "不能删除默认币种"
+msgstr "无法删除默认货币"
 
 #: modules/Currency/Service.php:275
 msgid "Currency code is invalid or missing"
-msgstr ""
+msgstr "货币代码无效或丢失"
 
 #: modules/Currency/Service.php:344
 msgid "Currency format must include {{price}} tag"
@@ -1335,11 +1335,11 @@ msgstr "货币格式必须包含 {{price}} 标签"
 
 #: modules/Currency/Service.php:382
 msgid "Currency rate is invalid"
-msgstr "汇率无效"
+msgstr "货币汇率无效"
 
 #: modules/Currency/Service.php:407
 msgid "Default currency not found. Cannot update rates."
-msgstr ""
+msgstr "未找到默认货币。无法更新汇率。"
 
 #: modules/Currency/Service.php:469
 msgid "You must configure your API key to use Currency Data API as an exchange rate data source."
@@ -1373,7 +1373,7 @@ msgstr ""
 #: modules/Email/Api/Client.php:67 modules/Email/Api/Client.php:90
 #: modules/Email/Api/Client.php:108 modules/Email/Service.php:714
 msgid "Email not found"
-msgstr "未找到邮箱"
+msgstr "未找到此电子邮件地址"
 
 #: modules/Email/Api/Admin.php:206
 msgid "Only custom email templates can be deleted"
@@ -1433,7 +1433,7 @@ msgstr "未指定收件人。可设置用户、员工或管理员作为参数"
 
 #: modules/Email/Service.php:248
 msgid "The \"from\" email address cannot be empty"
-msgstr "发件人邮箱不能为空"
+msgstr "“发件人”电子邮件地址不能为空"
 
 #: modules/Email/Service.php:693
 msgid "Email template :code does not have a file-backed default"
@@ -1617,7 +1617,7 @@ msgstr ""
 
 #: modules/Invoice/Api/Admin.php:75
 msgid "You must set the payment gateway in the invoice manage tab before marking it as paid."
-msgstr "您必须在发票管理选项卡中设置支付网关，然后将其标记为已支付。"
+msgstr "您必须在账单管理选项卡中设置支付网关，然后将其标记为已支付。"
 
 #: modules/Invoice/Api/Admin.php:241 modules/Invoice/Api/Client.php:108
 msgid "Order :id is free. No need to generate invoice."
@@ -1625,11 +1625,11 @@ msgstr "订单 :id 是免费的。无需生成账单。"
 
 #: modules/Invoice/Api/Admin.php:726
 msgid "Client currency must match subscription currency. Check if clients currency is defined."
-msgstr "用户的币种必须与订阅付款的相同。请检查用户是否已经设置币种。"
+msgstr "客户端货币必须与订阅货币匹配。检查客户端货币是否设置。"
 
 #: modules/Invoice/Api/Admin.php:781
 msgid "Subscription not found"
-msgstr "没有找到订阅付款"
+msgstr "未找到订阅"
 
 #: modules/Invoice/Api/Client.php:58 modules/Invoice/Api/Client.php:79
 #: modules/Invoice/Api/Guest.php:35 modules/Invoice/Api/Guest.php:57
@@ -1654,7 +1654,7 @@ msgstr "账单哈希未通过。缺少哈希参数"
 
 #: modules/Invoice/Api/Guest.php:108
 msgid "Payment method not found. Missing param gateway_id"
-msgstr "找不到付款方式。缺少参数 gateway id"
+msgstr "找不到支付方式。缺少参数 gateway_id"
 
 #: modules/Invoice/Controller/Admin.php:38
 msgid "Invoices"
@@ -1682,15 +1682,15 @@ msgstr "支付网关"
 
 #: modules/Invoice/Controller/Admin.php:195
 msgid "Invoice PDF response could not be generated"
-msgstr ""
+msgstr "无法生成账单的PDF回复"
 
 #: modules/Invoice/Service.php:529
 msgid "Unable to determine the next invoice number"
-msgstr "无法确定下一个发票编号"
+msgstr "无法确定下一个账单编号"
 
 #: modules/Invoice/Service.php:680
 msgid "Payment amount does not match the expected invoice total. Expected :expected, received :received."
-msgstr ""
+msgstr "支付金额与预期账单总额不符。预期金额 :expected，实收金额 :received。"
 
 #: modules/Invoice/Service.php:787
 msgid "Cannot refund invoice with negative amount"
@@ -1698,27 +1698,27 @@ msgstr "无法退还负金额的账单"
 
 #: modules/Invoice/Service.php:1051
 msgid "Invoices are not generated for 0 amount orders."
-msgstr ""
+msgstr "金额为0的订单不会生成账单。"
 
 #: modules/Invoice/Service.php:1242
 msgid "You must have at least one active order before you can add funds so you cannot proceed at the current time!"
-msgstr "充值前，您名下必须有一个有效的订单。"
+msgstr "您必须至少有一个有效订单才能进行充值，因此您当前无法继续操作！"
 
 #: modules/Invoice/Service.php:1251
 msgid "Amount must be at least :min_amount"
-msgstr "充值金额最低 :min_amount 始"
+msgstr "金额必须至少 :min_amount"
 
 #: modules/Invoice/Service.php:1255
 msgid "Amount cannot exceed :max_amount"
-msgstr "充值金额最高为 :max_amount"
+msgstr "金额不能超过 :max_amount"
 
 #: modules/Invoice/Service.php:1289
 msgid "Payment method not found"
-msgstr "找不到付款方式"
+msgstr "未找到支付方式"
 
 #: modules/Invoice/Service.php:1293
 msgid "Payment method not enabled"
-msgstr "付款方式未启用"
+msgstr "支付方式未启用"
 
 #: modules/Invoice/ServiceInvoiceItem.php:61
 msgid "Could not activate proforma item. Order :id not found"
@@ -1730,23 +1730,23 @@ msgstr "缺少账单项目名称"
 
 #: modules/Invoice/ServiceInvoiceItem.php:218
 msgid "Add funds to account"
-msgstr "充值"
+msgstr "给账户添加资金"
 
 #: modules/Invoice/ServiceInvoiceItem.php:354
 msgid "Promotional Code: :code - :value Discount"
-msgstr "优惠码：:code - :value 折扣"
+msgstr "促销码：:code - :value 折扣"
 
 #: modules/Invoice/ServiceInvoiceItem.php:357
 msgid "Promotional Code: :code - :value%"
-msgstr "优惠码：:code - :value%"
+msgstr "促销码：:code - :value%"
 
 #: modules/Invoice/ServicePayGateway.php:128
 msgid "Payment gateway is not available for installation."
-msgstr "支付网关不可用。"
+msgstr "支付网关无法安装。"
 
 #: modules/Invoice/ServicePayGateway.php:296
 msgid "Payment gateway :adapter was not found."
-msgstr ""
+msgstr "未找到支付网关 :adapter。"
 
 #: modules/Invoice/ServicePayGateway.php:325
 msgid "Payment gateway :adapter was not found"
@@ -1754,15 +1754,15 @@ msgstr "未找到支付网关 :adapter"
 
 #: modules/Invoice/ServiceTransaction.php:94
 msgid "Invalid payment gateway"
-msgstr ""
+msgstr "无效的支付网关"
 
 #: modules/Invoice/ServiceTransaction.php:99
 msgid "Transaction invoice ID is missing"
-msgstr "缺少交易编号 id"
+msgstr "缺少交易账单 ID"
 
 #: modules/Invoice/ServiceTransaction.php:103
 msgid "Payment gateway ID is missing"
-msgstr "缺少支付网关的 id"
+msgstr "缺少支付网关 ID"
 
 #: modules/Invoice/ServiceTransaction.php:443
 msgid "Transaction :id not found."
@@ -1776,7 +1776,7 @@ msgstr "无法确定交易的来源。交易支付网关未知。"
 #: modules/Invoice/ServiceTransaction.php:452
 #: modules/Invoice/ServiceTransaction.php:611
 msgid "Cannot handle transaction received from unknown payment gateway: :id"
-msgstr "无法处理从未知支付网关收到的交易：:id"
+msgstr "无法处理来自未知支付网关的交易：:id"
 
 #: modules/Invoice/ServiceTransaction.php:458
 #: modules/Invoice/ServiceTransaction.php:641
@@ -1806,7 +1806,7 @@ msgstr "支付网关 :id method getTransaction 应该返回 Payment_Transaction 
 
 #: modules/Invoice/ServiceTransaction.php:733
 msgid "Cannot create subscription. Subscription ID from payment gateway was not received"
-msgstr "无法创建订阅。未接收到付款网关的订阅 id"
+msgstr "无法创建订阅。未收到支付网关的订阅 ID"
 
 #: modules/Invoice/ServiceTransaction.php:768
 msgid "Subscription #:id was not found. Could not unsubscribe"
@@ -1818,7 +1818,7 @@ msgstr "只能处理已批准的交易"
 
 #: modules/Invoice/ServiceTransaction.php:792
 msgid "Transaction currency :code does not match required currency :required"
-msgstr ""
+msgstr "交易货币 :code 与所需货币 :required 不匹配"
 
 #: modules/Invoice/ServiceTransaction.php:797
 msgid "Transaction status on payment gateway is Pending. Only Complete or Unknown transactions can be processed."
@@ -1826,7 +1826,7 @@ msgstr "支付网关上的交易状态是“待处理”。只能处理“已完
 
 #: modules/Invoice/ServiceTransaction.php:807
 msgid "Client currency does not match invoice currency"
-msgstr ""
+msgstr "客户端货币与账单货币不匹配"
 
 #: modules/Invoice/ServiceTransaction.php:812
 msgid "Cannot add negative amount to client balance for debit transaction"
@@ -1854,7 +1854,7 @@ msgstr ""
 
 #: modules/Massmailer/Controller/Admin.php:36
 msgid "Mass mailer"
-msgstr "群发邮件"
+msgstr "群发电子邮件"
 
 #: modules/Massmailer/Service.php:226
 msgid "Disabled for security reasons (Demo mode enabled)"
@@ -1862,7 +1862,7 @@ msgstr "因安全原因禁用 (启用演示模式)"
 
 #: modules/Massmailer/Service.php:258
 msgid "Mass mail message not found"
-msgstr "未找到邮件群发消息"
+msgstr "未找到电子邮件群发消息"
 
 #: modules/News/Api/Admin.php:52 modules/News/Api/Guest.php:53
 msgid "ID or slug is required."
@@ -1918,7 +1918,7 @@ msgstr "订单"
 
 #: modules/Order/Service.php:627
 msgid "Currency could not be determined for order"
-msgstr "无法确定订单的币种"
+msgstr "无法为订单确定货币"
 
 #: modules/Order/Service.php:643 modules/Order/Service.php:953
 msgid "Product :id is out of stock."
@@ -1990,7 +1990,7 @@ msgstr "产品附加组件"
 
 #: modules/Product/Controller/Admin.php:57
 msgid "Product Promotions"
-msgstr "产品优惠码"
+msgstr "产品促销活动"
 
 #: modules/Product/Service.php:239
 msgid "Pricing type is required"
@@ -2006,7 +2006,7 @@ msgstr "无法删除有产品的分类"
 
 #: modules/Product/Service.php:906
 msgid "This promotion code already exists."
-msgstr "此优惠码已存在。"
+msgstr "此促销码已存在。"
 
 #: modules/Profile/Api/Admin.php:110
 msgid "Passwords do not match"
@@ -2480,11 +2480,11 @@ msgstr "域名后缀无效。"
 
 #: modules/Servicehosting/Service.php:302
 msgid "Account username is missing or is invalid"
-msgstr "账号的用户名缺失或无效"
+msgstr "账户的用户名缺失或无效"
 
 #: modules/Servicehosting/Service.php:324
 msgid "Account IP address is missing or is invalid"
-msgstr "账号的IP地址缺失或无效"
+msgstr "账户的IP地址缺失或无效"
 
 #: modules/Servicehosting/Service.php:348
 msgid "Domain SLD or TLD is missing"
@@ -2492,7 +2492,7 @@ msgstr "域名的后缀或次级后缀缺失"
 
 #: modules/Servicehosting/Service.php:374
 msgid "Account password is missing or is invalid"
-msgstr "账号的密码缺失或无效"
+msgstr "账户的密码缺失或无效"
 
 #: modules/Servicehosting/Service.php:817
 msgid "Invalid server manager. Server was not configured properly."
@@ -2504,7 +2504,7 @@ msgstr ""
 
 #: modules/Servicehosting/Service.php:882
 msgid "Cannot remove hosting plan which has active accounts"
-msgstr "无法删除有有效账户的虚拟主机套餐"
+msgstr "无法删除有有效账号的虚拟主机套餐"
 
 #: modules/Servicehosting/Service.php:1085
 msgid "Domain registration is not available for this product."
@@ -2540,7 +2540,7 @@ msgstr "生成授权码时达到最大的迭代次数"
 
 #: modules/Staff/Api/Guest.php:35
 msgid "Administrator account already exists"
-msgstr "管理员账号已存在"
+msgstr "管理员账户已存在"
 
 #: modules/Staff/Api/Guest.php:79
 msgid "You are not allowed to login to admin area from this IP address."
@@ -2570,7 +2570,7 @@ msgstr "管理员"
 
 #: modules/Staff/Service.php:51 modules/Staff/Service.php:66
 msgid "Allows the staff member to create and edit :type: accounts."
-msgstr "允许工作人员创建和编辑 :type: 账户。"
+msgstr "允许工作人员创建和编辑 :type: 账号。"
 
 #: modules/Staff/Service.php:55
 msgid "Delete administrators"
@@ -2578,7 +2578,7 @@ msgstr "删除管理员"
 
 #: modules/Staff/Service.php:56 modules/Staff/Service.php:71
 msgid "Allows the staff member to delete :type: accounts."
-msgstr "允许工作人员删除:type:账号。"
+msgstr "允许工作人员删除:type:账户。"
 
 #: modules/Staff/Service.php:60
 msgid "Reset administrator passwords"
@@ -2586,7 +2586,7 @@ msgstr "重置管理员密码"
 
 #: modules/Staff/Service.php:61 modules/Staff/Service.php:76
 msgid "Allows the staff member to perform password resets on :type: accounts."
-msgstr "允许工作人员对 :type: 账户执行密码重置。"
+msgstr "允许工作人员对 :type: 账号执行密码重置。"
 
 #: modules/Staff/Service.php:65
 msgid "Create and edit staff members"
@@ -2607,7 +2607,7 @@ msgstr "重置工作人员密码"
 
 #: modules/Staff/Service.php:80
 msgid "Manage groups"
-msgstr "管理群组"
+msgstr "管理组别"
 
 #: modules/Staff/Service.php:81
 msgid "Allows the staff member to manage staff member groups."
@@ -2619,7 +2619,7 @@ msgstr "请检查您的登录信息"
 
 #: modules/Staff/Service.php:591
 msgid "This administrator account is protected and cannot be removed"
-msgstr "此管理员账号保留使用，不能删除"
+msgstr "此管理员账户保留使用，不能删除"
 
 #: modules/Staff/Service.php:662
 msgid "Staff member with email :email is already registered."
@@ -2627,11 +2627,11 @@ msgstr ""
 
 #: modules/Staff/Service.php:757
 msgid "Administrators group cannot be removed"
-msgstr "无法删除管理员群组"
+msgstr "无法删除管理员组别"
 
 #: modules/Staff/Service.php:765
 msgid "Cannot remove group which has staff members"
-msgstr "无法删除拥有员工的群组"
+msgstr "无法删除拥有员工的组别"
 
 #: modules/Stats/Service.php:331
 msgid "Invalid table name: :table"
@@ -2684,7 +2684,7 @@ msgstr "帮助"
 
 #: modules/Support/Controller/Admin.php:41
 msgid "Client Tickets"
-msgstr "客户工单"
+msgstr "客户端工单"
 
 #: modules/Support/Controller/Admin.php:48
 msgid "Public Tickets"
@@ -2963,7 +2963,7 @@ msgstr ""
 
 #: modules/Activity/templates/admin/mod_activity_index.html.twig:70
 msgid "Start typing the client name or ID"
-msgstr "开始输入客户人名或 ID"
+msgstr "开始输入客户端名称或ID"
 
 #: modules/Activity/templates/admin/mod_activity_index.html.twig:80
 msgid "Leave empty to show all clients"
@@ -3295,11 +3295,11 @@ msgstr "FOSSBilling将自动删除超过配置天数的活动日志。设置为 
 
 #: modules/Activity/templates/admin/mod_activity_settings.html.twig:45
 msgid "Email log retention"
-msgstr "邮件日志保留"
+msgstr "电子邮件日志保留"
 
 #: modules/Activity/templates/admin/mod_activity_settings.html.twig:50
 msgid "FOSSBilling will automatically remove sent email logs that are older than the configured number of days. Set to 0 to disable this behavior"
-msgstr "FOSSBilling 将自动删除超过设定天数的已发送邮件记录。设置为 0 可禁用此功能"
+msgstr "FOSSBilling将自动删除发送时间超过配置天数的电子邮件日志。设置为0则禁用此功能"
 
 #: modules/Activity/templates/admin/mod_activity_settings.html.twig:55
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:177
@@ -3399,7 +3399,7 @@ msgstr ""
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:54
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:54
 msgid "Enable captcha for client registration and contact forms"
-msgstr "为客户注册和联系表单启用验证码"
+msgstr "为客户端注册和联系表单启用验证码"
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:55
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:55
@@ -3484,7 +3484,7 @@ msgstr ""
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:142
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:142
 msgid "If enabled, email addresses will be checked against a database of disposable email domains."
-msgstr "如果启用，将对照可用电子邮件域的数据库检查电子邮件地址。"
+msgstr "如果启用，系统将根据一次性电子邮件域数据库来检查电子邮件地址。"
 
 #: modules/Antispam/templates/admin/mod_antispam_settings.html.twig:143
 #: modules/Spamchecker/templates/admin/mod_spamchecker_settings.html.twig:143
@@ -3989,7 +3989,7 @@ msgstr "公司"
 #: modules/Client/templates/admin/mod_client_index.html.twig:301
 #: modules/Client/templates/admin/mod_client_index.html.twig:305
 msgid "Export Clients"
-msgstr "导出客户"
+msgstr "导出客户端"
 
 #: modules/Client/templates/admin/mod_client_index.html.twig:365
 #: modules/Custompages/templates/admin/mod_custompages_index.html.twig:131
@@ -4483,14 +4483,14 @@ msgstr "备选ID"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:368
 msgid "Used to identify client on foreign system. Usually used by importers"
-msgstr "用于在其它系统上标识客户。方便导入时使用"
+msgstr "用于在外部系统上标识客户端。通常由导入商使用"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:374
 #: modules/Client/templates/admin/mod_client_new_form.html.twig:56
 #: modules/Invoice/templates/admin/mod_invoice_subscription.html.twig:142
 #: modules/Invoice/templates/admin/mod_invoice_subscriptions.html.twig:158
 msgid "Select currency"
-msgstr ""
+msgstr "选择货币"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:378
 msgid "Exempt from tax"
@@ -4614,7 +4614,7 @@ msgstr "开具日期"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:555
 msgid "Paid on"
-msgstr "付款日期"
+msgstr "支付于"
 
 #: modules/Client/templates/admin/mod_client_manage.html.twig:606
 msgid "New invoice"
@@ -4858,7 +4858,7 @@ msgstr "启用此功能后，所有没有验证过邮箱的用户都将要验证
 
 #: modules/Client/templates/admin/mod_client_settings.html.twig:61
 msgid "Disable email change"
-msgstr "不允许修改邮箱"
+msgstr "禁用电子邮件地址更改"
 
 #: modules/Client/templates/admin/mod_client_settings.html.twig:70
 msgid "Required fields"
@@ -4915,7 +4915,7 @@ msgstr "钱包"
 
 #: modules/Client/templates/client/mod_client_balance.html.twig:19
 msgid "Here you can manage and track your account balance."
-msgstr "在这里，您可以管理和跟踪您的账户余额。"
+msgstr "在这里，您可以管理和跟踪您的账号余额。"
 
 #: modules/Client/templates/client/mod_client_balance.html.twig:23
 msgid "Add fund"
@@ -5073,7 +5073,7 @@ msgstr "生成新密钥"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:210
 msgid "Your profile currency is defined after your first order. Once your currency is set, all your profile accounting will be managed in that currency and cannot be changed."
-msgstr "您的用户货币将会在第一次交易后被锁定，在用户货币被锁定后，所有账户资金管理都会使用您的用户货币，用户货币不能被更改。"
+msgstr "您的账户货币将在您首次下单后确定。一旦您的货币设置完成，您的所有账户结算管理都将以该货币进行，且无法更改。"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:212
 msgid "Your profile currency is"
@@ -5081,7 +5081,7 @@ msgstr "您选择的货币是"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:213
 msgid "You will need to create a new client profile to use an alternative currency."
-msgstr ""
+msgstr "您需要创建一个新的客户端配置文件才能使用替代货币。"
 
 #: modules/Client/templates/client/mod_client_profile.html.twig:216
 msgid "You do not yet have a currency associated with your profile. You can select the correct one when making your first order."
@@ -5159,7 +5159,7 @@ msgstr ""
 
 #: modules/Cron/templates/admin/mod_cron_settings.html.twig:33
 msgid "Scheduled tasks must be enabled immediately after installation. Cron is responsible for sending your clients reminder about payments, domain renewal notices and many more."
-msgstr "计划任务必须在安装后立即启用。Cron 服务用于向您的用户发送付款提醒、域名续费和通知等等。"
+msgstr "安装后必须立即启用计划任务。Cron负责向您的客户发送支付提醒、域名续费通知等。"
 
 #: modules/Cron/templates/admin/mod_cron_settings.html.twig:40
 msgid "Timezone"
@@ -5199,7 +5199,7 @@ msgstr "立即执行"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:8
 msgid "Currency Management"
-msgstr ""
+msgstr "货币管理"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:23
 msgid "Currency settings"
@@ -5207,11 +5207,11 @@ msgstr "币种设置"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:32
 msgid "Currency Updated"
-msgstr ""
+msgstr "货币已更新"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:34
 msgid "Edit Currency Information"
-msgstr ""
+msgstr "编辑货币信息"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:43
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:76
@@ -5230,12 +5230,12 @@ msgstr "价格格式"
 
 #: modules/Currency/templates/admin/mod_currency_manage.html.twig:86
 msgid "You do not have permission to edit currencies."
-msgstr ""
+msgstr "您没有编辑货币的权限。"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:13
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:27
 msgid "Currency Settings"
-msgstr ""
+msgstr "货币设置"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:35
 msgid "Currencies"
@@ -5255,11 +5255,11 @@ msgstr "转换器"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:58
 msgid "Manage Currencies"
-msgstr ""
+msgstr "管理货币"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:59
 msgid "The default currency is the one you define product pricing in. If your client chooses a different currency, pricing will be recalculated according to the conversion rate. Changing the default currency after orders have been placed may have unexpected issues. Nothing is recalculated on default currency change. Your income is calculated in the default currency. Changing the default currency after you have paid invoices will distort income statistics."
-msgstr "默认货币是您定义产品定价时使用的货币。如果客户选择了不同的货币，定价将根据转换汇率重新计算。更改默认货币后，如果已经下单，可能会导致意外问题。默认货币更改后不会重新计算任何内容。您的收入是以默认货币计算的。在支付发票后更改默认货币会影响收入统计数据。"
+msgstr "默认货币是您用来定义产品定价的货币。如果您的客户端选择不同的货币，定价将根据汇率重新计算。在下单后更改默认货币可能会产生意外问题。默认货币更改时，任何内容都不会重新计算。您的收入是以默认货币计算的。在支付账单后更改默认货币会影响收入统计数据。"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:63
 msgid "FOSSBilling is configured to automatically sync currency exchange rates."
@@ -5308,7 +5308,7 @@ msgstr "代码"
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:157
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:163
 msgid "Leave blank to automatically set"
-msgstr ""
+msgstr "留空以自动设置"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:174
 #: modules/Redirect/templates/admin/mod_redirect_settings.html.twig:60
@@ -5318,15 +5318,15 @@ msgstr "添加"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:181
 msgid "Successfully Updated Settings"
-msgstr ""
+msgstr "成功更新设置"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:184
 msgid "Available Exchange Rate Data Providers"
-msgstr ""
+msgstr "可用汇率数据提供商"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:185
 msgid "FOSSBilling provides integration with various currency exchange rate data providers, allowing you to choose whichever one best suits your needs. By default, FOSSBilling will use the ExchangeRate-API \"Open Access Endpoint\" which does not require any configuration."
-msgstr "FOSSBilling 提供与多种货币汇率数据提供商的集成，允许您选择最适合您需求的提供商。默认情况下，FOSSBilling 将使用 ExchangeRate-API 的公开API，无需任何配置。"
+msgstr "FOSSBilling提供与各种货币汇率数据提供商的集成，使您能够选择最适合您需求的数据提供商。默认情况下，FOSSBilling将使用ExchangeRate-API的“开放访问端点”，该端点无需任何配置。"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:189
 msgid "Provider"
@@ -5342,7 +5342,7 @@ msgstr "更新频率"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:192
 msgid "Supported Currencies"
-msgstr "受支持的币种"
+msgstr "受支持的货币"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:193
 msgid "Pricing"
@@ -5361,7 +5361,7 @@ msgstr "1天"
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:215
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:222
 msgid "Supported currencies"
-msgstr "受支持的币种"
+msgstr "受支持的货币"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:202
 #: themes/admin_default/html/partial_pricing.html.twig:7
@@ -5376,7 +5376,7 @@ msgstr "1天 / 1小时 / 5分钟"
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:216
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:223
 msgid "Free / paid"
-msgstr "免费/已支付"
+msgstr "免费/付费"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:214
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:221
@@ -5385,11 +5385,11 @@ msgstr "1天 / 1小时 / 10分钟 / 1分钟"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:227
 msgid "When using ExchangeRate-API, their API informs FOSSBilling when the next update will occur which makes it more efficient for automated exchange rate syncing."
-msgstr "使用 ExchangeRate-API 时，他们的 API 会通知 FOSSBilling 下次更新的时间，这使得自动汇率同步更加高效。"
+msgstr "在使用ExchangeRate-API时，其API会通知FOSSBilling下一次更新时间，从而提高了自动汇率同步的效率。"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:229
 msgid "To the best of our knowledge, \"Currency Data API\" and \"currencylayer\" are both owned by APILayer and provide the same data, but through a different API."
-msgstr "据我们所知，‘Currency Data API’ 和 ‘currencylayer’ 都属于 APILayer，并通过不同的 API 提供相同的数据。"
+msgstr "据我们所知，“Currency Data API”和“currencylayer”均归APILayer所有，它们提供的数据相同，但通过不同的API提供。"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:231
 msgid "Currency exchange rate data provider"
@@ -5398,11 +5398,11 @@ msgstr "货币汇率数据源"
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:233
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:252
 msgid "Currency data provider selection"
-msgstr ""
+msgstr "货币数据提供商选择"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:246
 msgid "Leave this blank to use the ExchangeRate-API \"Open Access Endpoint\"."
-msgstr "将此留空以使用 ExchangeRate-API \"公开\"。"
+msgstr "留空此处以使用ExchangeRate-API的“开放访问端点”。"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:250
 msgid "Automatic sync rate"
@@ -5438,11 +5438,11 @@ msgstr "每分钟"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:261
 msgid "\"Auto\" is only available for ExchangeRate-API and when used will cause API requests to be made only when new data is made available, preventing excess requests."
-msgstr "‘自动’仅适用于 ExchangeRate-API，启用后只有在新数据可用时才会发送 API 请求，从而避免过多的请求。"
+msgstr "“自动”仅适用于ExchangeRate-API，且在使用时将仅在新数据可用时发出API请求，从而防止产生过多请求。"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:262
 msgid "Exchange rate syncing runs via the cronjob and as such is limited by the frequency of your cron schedule (typically 5 minutes)."
-msgstr "汇率同步通过定时任务运行，因此受限于您的定时任务调度频率（通常为 5 分钟）。"
+msgstr "汇率同步是通过cronjob定时运行的，因此受cron调度频率的限制（通常为5分钟）。"
 
 #: modules/Currency/templates/admin/mod_currency_settings.html.twig:279
 #: modules/Security/templates/admin/mod_security_index.html.twig:25
@@ -5560,7 +5560,7 @@ msgstr "信息"
 
 #: modules/Email/templates/admin/mod_email_history.html.twig:16
 msgid "Email logging is not enabled. If you want to log sent mails to database, enable it in"
-msgstr "电子邮件的日志功能未启用。如果您想要将发送的邮件记录到数据库里，请启用它"
+msgstr "电子邮件的日志功能未启用。如果您想要将发送的电子邮件记录到数据库里，请启用它"
 
 #: modules/Email/templates/admin/mod_email_history.html.twig:18
 #: modules/Email/templates/admin/mod_email_history.html.twig:20
@@ -5691,7 +5691,7 @@ msgstr ""
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:222
 msgid "FOSSBilling queues emails to have them be sent via cron in the background. Here you may find the list of queued emails and how many times the system has tried to send them."
-msgstr "FOSSBilling 邮件队列让它们在后台通过 cron 发送。 您可以在这里找到队列中的电子邮件列表以及系统尝试发送它们的次数。"
+msgstr "FOSSBilling会将电子邮件加入队列，以便通过后台的cron定时发送。您可以在这里查看已排队的电子邮件列表以及系统尝试发送这些电子邮件的次数。"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:223
 msgid "Emails that have been sent or that failed to be sent will not be listed here."
@@ -5728,7 +5728,7 @@ msgstr ""
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:296
 msgid "FOSSBilling sends emails using <em>sendmail</em> by default or you can configure your own SMTP server"
-msgstr "FOSSBilling 默认通过 <em>sendmail</em> 来发邮件，您也可配置使用外部的 SMTP 服务器"
+msgstr "FOSSBilling 默认通过 <em>sendmail</em> 来发电子邮件，您也可配置使用外部的 SMTP 服务器"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:299
 msgid "From Name"
@@ -5752,7 +5752,7 @@ msgstr ""
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:320
 msgid "Send emails per cron run (0 = unlimited)"
-msgstr "每次运行的 cron 发送邮件的数量 (0=无限制)"
+msgstr "每次cron定时运行时发送电子邮件（0=无限制）"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:324
 msgid "Max email sending time in minutes (0 = unlimited, default 5 min.)"
@@ -5760,7 +5760,7 @@ msgstr "以分钟为单位的最大邮件发送时间 (0=无限，默认 5分钟
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:328
 msgid "Cancel sending email after unsuccessful tries (0 = do not cancel)"
-msgstr "尝试失败多少次后取消发送邮件 (0=不取消)"
+msgstr "尝试失败多少次后取消发送电子邮件 (0=不取消)"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:337
 msgid "Log Sent Emails to Database"
@@ -5808,7 +5808,7 @@ msgstr "自定义 DSN"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:411
 msgid "If none of the available options exactly meet your needs, you can define a custom DSN. Please keep in mind that usernames, passwords, and hostnames with special characters need to be URL-encoded."
-msgstr ""
+msgstr "如果所有可用选项均无法完全满足您的需求，您可以自定义一个DSN。请留意，用户名、密码和具有特殊字符的主机名必须进行URL编码。"
 
 #: modules/Email/templates/admin/mod_email_settings.html.twig:412
 msgid "More information"
@@ -5899,7 +5899,7 @@ msgstr ""
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:122
 msgid "Enable or disable this email template."
-msgstr "启用或禁用此邮件模板"
+msgstr "启用或禁用此电子邮件模板"
 
 #: modules/Email/templates/admin/mod_email_template.html.twig:154
 msgid "List of Variables Used in This Email"
@@ -6077,7 +6077,7 @@ msgstr ""
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:147
 msgid "Create a <a href=\"https://github.com/signup/free\" target=\"_blank\">GitHub</a> account for free."
-msgstr "创建一个免费的 <a href=\"https://github.com/signup/free\" target=\"_blank\">GitHub</a> 帐户。"
+msgstr "创建一个免费的 <a href=\"https://github.com/signup/free\" target=\"_blank\">GitHub</a> 账户。"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:148
 msgid "Create a new public repository dedicated to the extension only."
@@ -6113,7 +6113,7 @@ msgstr "域名注册"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:160
 msgid "Client area themes"
-msgstr "客户中心主题"
+msgstr "客户端区域主题"
 
 #: modules/Extension/templates/admin/mod_extension_index.html.twig:161
 msgid "Admin area themes"
@@ -6625,16 +6625,16 @@ msgstr "支付网关标题"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateway.html.twig:44
 msgid "Select which currencies can accept this payment gateway (Select none to allow all currencies)"
-msgstr "为支付网关选择可接受的币种(如果选择 none 表示接受所有币种)"
+msgstr "选择哪些货币可以使用此支付网关(不选择则任何货币均可以)"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateway.html.twig:70
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:42
 msgid "Allow one time payments"
-msgstr "允许单次付款"
+msgstr "允许一次性支付"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateway.html.twig:88
 msgid "Allow subscription payments"
-msgstr "允许订阅循环周期自动付款"
+msgstr "允许订阅支付"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateway.html.twig:105
 #: modules/Servicedomain/templates/admin/mod_servicedomain_registrar.html.twig:37
@@ -6661,7 +6661,7 @@ msgstr "从目录安装扩展"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:43
 msgid "Allow subscriptions"
-msgstr "允许订阅自动付款"
+msgstr "允许订阅"
 
 #: modules/Invoice/templates/admin/mod_invoice_gateways.html.twig:90
 msgid "Adding New Payment Gateway"
@@ -6778,7 +6778,7 @@ msgstr ""
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:46
 #: modules/Invoice/templates/admin/mod_invoice_transactions.html.twig:37
 msgid "All currencies"
-msgstr ""
+msgstr "所有货币"
 
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:66
 #: modules/Invoice/templates/admin/mod_invoice_index.html.twig:155
@@ -6918,7 +6918,7 @@ msgstr "截止日期"
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:108
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:315
 msgid "Date Paid"
-msgstr "付款日期"
+msgstr "支付日期"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:112
 msgid "Last Reminded"
@@ -6927,7 +6927,7 @@ msgstr "最后提醒"
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:129
 #: modules/Support/templates/admin/mod_support_public_ticket.html.twig:110
 msgid "View as Client"
-msgstr "以客户身份查看"
+msgstr "以客户端查看"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:139
 msgid "Payment Reminder Sent"
@@ -6951,7 +6951,7 @@ msgstr "交易ID"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:168
 msgid "Add the transaction ID of the payment to mark the invoice as paid."
-msgstr "添加付款交易ID以标记发票已支付。"
+msgstr "添加支付的交易ID以标记账单已支付。"
 
 #: modules/Invoice/templates/admin/mod_invoice_invoice.html.twig:169
 msgid "This should be the transaction ID you use to reconcile your bank statement."
@@ -7079,7 +7079,7 @@ msgstr "自动批准发票"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:59
 msgid "Default invoice note"
-msgstr "默认发票注释"
+msgstr "默认账单注释"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:62
 msgid "Supports markdown format."
@@ -7095,23 +7095,23 @@ msgstr "几天后删除未付账单"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:72
 msgid "Set 0 to keep invoices forever."
-msgstr "设置 0 将永久保留发票。"
+msgstr "设置 0 将永久保留账单。"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:76
 msgid "Invoice prefix/series"
-msgstr "发票前缀"
+msgstr "账单前缀/序列号"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:82
 msgid "Paid invoice prefix/series"
-msgstr "付款账单 前缀/序列"
+msgstr "已支付账单前缀/序列号"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:88
 msgid "Next paid invoice number"
-msgstr "下次付款的账单编号"
+msgstr "下次支付的账单编号"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:94
 msgid "Invoice number padding length"
-msgstr "发票号填充长度"
+msgstr "账单号码填充长度"
 
 #: modules/Invoice/templates/admin/mod_invoice_settings.html.twig:101
 msgid "Document Settings"
@@ -7185,7 +7185,7 @@ msgstr "更新设置"
 #: modules/Invoice/templates/admin/mod_invoice_subscription.html.twig:21
 #: modules/Invoice/templates/admin/mod_invoice_subscription.html.twig:28
 msgid "Subscription"
-msgstr "订阅自动付款"
+msgstr "订阅"
 
 #: modules/Invoice/templates/admin/mod_invoice_subscription.html.twig:39
 msgid "Subscription Details"
@@ -7477,7 +7477,7 @@ msgstr "支付"
 
 #: modules/Invoice/templates/client/mod_invoice_index.html.twig:79
 msgid "Paid Date"
-msgstr "付款日期"
+msgstr "支付日期"
 
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:25
 msgid "Payment methods"
@@ -7485,7 +7485,7 @@ msgstr "支付方式"
 
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:26
 msgid "Please choose a payment type and pay for your chosen products."
-msgstr "请选择付款类型并为您选择的产品付款。"
+msgstr "请选择支付类型并为您选择的产品支付。"
 
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:58
 msgid "You can print this invoice or export it to a PDF file by clicking on the corresponding button."
@@ -7499,7 +7499,7 @@ msgstr "增值税"
 
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:132
 msgid "Account"
-msgstr "账号"
+msgstr "账户"
 
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:234
 #: modules/Invoice/templates/client/mod_invoice_print.html.twig:210
@@ -7522,7 +7522,7 @@ msgstr "立即付款"
 
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:303
 msgid "The invoice you are paying and your chosen payment gateway both support subscription payments. What type of payment would you like to continue with?"
-msgstr "您正在支付的发票和您选择的支付网关支持订阅付款。您想要继续哪种类型的付款？"
+msgstr "您正在支付的账单和您选择的支付网关都支持订阅支付。您希望继续使用哪种支付方式？"
 
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:306
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:312
@@ -7532,7 +7532,7 @@ msgstr "如果您对选定的支付网关很满意，请使用下面的按钮继
 
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:310
 msgid "If you are happy with the selected payment gateway, please use the button below to continue with it. Optionally, you may choose a different payment gateway if you wish to pay using a subscription."
-msgstr "如果您对选定的支付网关很满意，请使用下面的按钮继续。 可选，您可以选择一个不同的支付网关，如果您想要使用订阅付款。"
+msgstr "如果您对选定的支付网关很满意，请使用下面的按钮继续。 可选，您可以选择一个不同的支付网关，如果您想要使用订阅支付。"
 
 #: modules/Invoice/templates/client/mod_invoice_invoice.html.twig:323
 msgid "Pay with"
@@ -7562,7 +7562,7 @@ msgstr "BIC / SWIFT 代码"
 
 #: modules/Invoice/templates/client/mod_invoice_print.html.twig:105
 msgid "Bank Account"
-msgstr "银行账户"
+msgstr "银行账号"
 
 #: modules/Invoice/templates/client/mod_invoice_print.html.twig:119
 msgid "Billing & Delivery address"
@@ -7576,11 +7576,11 @@ msgstr ""
 
 #: modules/Invoice/templates/client/mod_invoice_thankyou.html.twig:11
 msgid "Your payment has been submitted and will be processed shortly. It may take some time for your invoice to be marked as paid."
-msgstr "您的付款已经提交并将很快处理。您的发票可能需要一些时间才能标记为已付款。"
+msgstr "您的支付已提交并将很快处理。您的账单可能需要一些时间才能标记为已支付。"
 
 #: modules/Invoice/templates/client/mod_invoice_thankyou.html.twig:14
 msgid "Payment for invoice received"
-msgstr "已收到付款"
+msgstr "已收到账单支付"
 
 #: modules/Invoice/templates/client/mod_invoice_thankyou.html.twig:15
 msgid "You will be automatically redirected back to the invoice after 1 minute."
@@ -7597,11 +7597,11 @@ msgstr "数量 & 价格"
 
 #: modules/Invoice/templates/pdf/default-invoice.twig:133
 msgid "Payment details"
-msgstr "付款详情"
+msgstr "支付详情"
 
 #: modules/Invoice/templates/pdf/default-invoice.twig:134
 msgid "Account Owner"
-msgstr "账户持有人"
+msgstr "账号持有人"
 
 #: modules/Invoice/templates/pdf/default-invoice.twig:134
 msgid "Bank"
@@ -7641,19 +7641,19 @@ msgstr "消息的主题"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_index.html.twig:108
 msgid "Mass Mail Settings"
-msgstr "群发邮件设置"
+msgstr "群发电子邮件设置"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_index.html.twig:116
 msgid "Client to send test email"
-msgstr "给这些客户发测试邮件"
+msgstr "给这些客户端发测试电子邮件"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_index.html.twig:131
 msgid "Test emails will be sent to: "
-msgstr "测试邮件将发送到： "
+msgstr "测试电子邮件将发送到： "
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:11
 msgid "Send Email Message"
-msgstr "发送电子邮件"
+msgstr "发送电子邮件消息"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:39
 msgid "From name"
@@ -7661,7 +7661,7 @@ msgstr "发件人"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:43
 msgid "From email"
-msgstr "发件人邮箱"
+msgstr "发件人电子邮件"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:58
 msgid "Recipients Filter"
@@ -7669,7 +7669,7 @@ msgstr ""
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:63
 msgid "Client status and group"
-msgstr "客户状态和群组"
+msgstr "客户端状态和组别"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:85
 msgid "Has order"
@@ -7699,15 +7699,15 @@ msgstr "更新并预览"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:176
 msgid "Send test message"
-msgstr "发送测试邮件"
+msgstr "发送测试消息"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:178
 msgid "Send message to clients"
-msgstr "向客户发送消息"
+msgstr "向客户端发送消息"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:220
 msgid "Message was added to mail queue and will be sent with scheduled tasks."
-msgstr "消息已添加到邮件队列，将会按照预定的任务发出。"
+msgstr "消息已添加到电子邮件队列，将会按照预定的任务发出。"
 
 #: modules/Massmailer/templates/admin/mod_massmailer_message.html.twig:234
 msgid "Message was sent."
@@ -7917,11 +7917,11 @@ msgstr "天"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:142
 msgid "Order group ID"
-msgstr "订单群组 ID"
+msgstr "订单组别 ID"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:147
 msgid "Order promo code"
-msgstr "订单优惠码"
+msgstr "订单促销码"
 
 #: modules/Order/templates/admin/mod_order_manage.html.twig:156
 #: modules/Order/templates/client/mod_order_manage.html.twig:93
@@ -8088,7 +8088,7 @@ msgstr "下一个日期是从最近订单到期日期计算"
 
 #: modules/Order/templates/admin/mod_order_settings.html.twig:41
 msgid "Next date is counted from renewal (payment) date"
-msgstr "下一个日期是从续费(付款) 日期计算"
+msgstr "下一个日期是从续费(支付) 日期计算"
 
 #: modules/Order/templates/admin/mod_order_settings.html.twig:45
 msgid "Next date is counted from last expiration date or renewal date whichever is greater"
@@ -8303,7 +8303,7 @@ msgstr "点击背景关闭弹出窗口"
 
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:160
 msgid "Show values of custom form before checkout"
-msgstr "结帐前显示自定义表单的值"
+msgstr "结账前显示自定义表单的值"
 
 #: modules/Orderbutton/templates/admin/mod_orderbutton_settings.html.twig:164
 msgid "User input will be shown before checkout for custom form"
@@ -8396,7 +8396,7 @@ msgstr "设置"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_checkout.html.twig:113
 msgid "Have a coupon code?"
-msgstr "有优惠券代码？"
+msgstr "有优惠券码吗？"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_checkout.html.twig:116
 msgid "Promo Code Applied to Order"
@@ -8428,7 +8428,7 @@ msgstr "总计："
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_checkout.html.twig:172
 msgid "Pay by"
-msgstr "付款方式"
+msgstr "支付方式"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_checkout.html.twig:181
 msgid "Total amount will be deducted from account balance"
@@ -8475,7 +8475,7 @@ msgstr "登陆 或 注册"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_client.html.twig:27
 msgid "You must fill in your email."
-msgstr "必须填写邮箱。"
+msgstr "您必须填写您的电子邮件地址。"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_client.html.twig:35
 msgid "You must fill in your password."
@@ -8484,7 +8484,7 @@ msgstr "必须填写密码。"
 #: modules/Orderbutton/templates/client/mod_orderbutton_client.html.twig:45
 #: modules/Page/templates/client/mod_page_login.html.twig:43
 msgid "Create account"
-msgstr "注册账号"
+msgstr "注册账户"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_client.html.twig:115
 msgid "You are"
@@ -8537,7 +8537,7 @@ msgstr "计费"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_product_configuration.html.twig:33
 msgid "One-time payment"
-msgstr "一次性付款"
+msgstr "一次性支付"
 
 #: modules/Orderbutton/templates/client/mod_orderbutton_product_configuration.html.twig:90
 #: themes/huraga/html/partial_pagination.html.twig:51
@@ -8556,7 +8556,7 @@ msgstr "关于"
 
 #: modules/Page/templates/client/mod_page_login.html.twig:27
 msgid "Login to your account"
-msgstr "登录您的账号"
+msgstr "登录您的账户"
 
 #: modules/Page/templates/client/mod_page_login.html.twig:31
 #: modules/Page/templates/client/mod_page_password-reset.html.twig:32
@@ -8564,7 +8564,7 @@ msgstr "登录您的账号"
 #: modules/Staff/templates/admin/mod_staff_login.html.twig:47
 #: modules/Staff/templates/admin/mod_staff_password_reset.html.twig:29
 msgid "Enter your email address"
-msgstr "请输入邮箱"
+msgstr "请输入您的电子邮件地址"
 
 #: modules/Page/templates/client/mod_page_login.html.twig:35
 #: modules/Staff/templates/admin/mod_staff_login.html.twig:29
@@ -8591,11 +8591,11 @@ msgstr ""
 #: modules/Page/templates/client/mod_page_password-reset.html.twig:29
 #: modules/Staff/templates/admin/mod_staff_password_reset.html.twig:21
 msgid "A password reset confirmation email will be sent to you if we found an account with that email address."
-msgstr "如果邮箱地址有效，我们会发出重置密码的邮件。"
+msgstr "如果我们发现与该电子邮件地址相关的账户，将会向您发送一封密码重置确认邮件。"
 
 #: modules/Page/templates/client/mod_page_password-reset.html.twig:33
 msgid "Enter your email to reset password. You will receive new password after reset link is confirmed."
-msgstr "输入您的电子邮件重置密码。重置链接确认后，您将收到新密码。"
+msgstr "输入您的电子邮件以重置密码。确认重置链接后，您将收到新密码。"
 
 #: modules/Page/templates/client/mod_page_privacy-policy.html.twig:3
 #: modules/Page/templates/client/mod_page_privacy-policy.html.twig:20
@@ -8669,7 +8669,7 @@ msgstr "下订单之后"
 #: modules/Product/templates/admin/mod_product_addons.html.twig:108
 #: modules/Product/templates/admin/mod_product_manage.html.twig:125
 msgid "After payment is received"
-msgstr "收到付款之后"
+msgstr "收到支付之后"
 
 #: modules/Product/templates/admin/mod_product_addon_manage.html.twig:57
 #: modules/Product/templates/admin/mod_product_addons.html.twig:112
@@ -8801,7 +8801,7 @@ msgstr "订单页面 (用链接)"
 
 #: modules/Product/templates/admin/mod_product_manage.html.twig:322
 msgid "View as client"
-msgstr "以客户身份查看"
+msgstr "以客户端查看"
 
 #: modules/Product/templates/admin/mod_product_manage.html.twig:340
 msgid "Edit Form"
@@ -8818,7 +8818,7 @@ msgstr "管理促销活动"
 #: modules/Product/templates/admin/mod_product_promo.html.twig:33
 #: modules/Product/templates/admin/mod_product_promos.html.twig:128
 msgid "Promo Code"
-msgstr "优惠码"
+msgstr "促销码"
 
 #: modules/Product/templates/admin/mod_product_promo.html.twig:39
 #: modules/Product/templates/admin/mod_product_promos.html.twig:134
@@ -8858,12 +8858,12 @@ msgstr "免设置费"
 #: modules/Product/templates/admin/mod_product_promo.html.twig:92
 #: modules/Product/templates/admin/mod_product_promos.html.twig:187
 msgid "Promotion Limitations"
-msgstr "优惠限制"
+msgstr "促销限制"
 
 #: modules/Product/templates/admin/mod_product_promo.html.twig:94
 #: modules/Product/templates/admin/mod_product_promos.html.twig:189
 msgid "Once per Client"
-msgstr "每个客户使用一次"
+msgstr "每个客户端使用一次"
 
 #: modules/Product/templates/admin/mod_product_promo.html.twig:107
 #: modules/Product/templates/admin/mod_product_promos.html.twig:203
@@ -8888,12 +8888,12 @@ msgstr "适用的产品 (不选择则所有产品均适用)"
 #: modules/Product/templates/admin/mod_product_promo.html.twig:150
 #: modules/Product/templates/admin/mod_product_promos.html.twig:246
 msgid "Applicable Periods (Select None to Apply to All)"
-msgstr "适用的付款周期 (不选择则所有付款周期均适用)"
+msgstr "适用的支付周期 (不选择则所有支付周期均适用)"
 
 #: modules/Product/templates/admin/mod_product_promo.html.twig:164
 #: modules/Product/templates/admin/mod_product_promos.html.twig:259
 msgid "Applicable Client Groups (Select None to Apply to All)"
-msgstr "适用的客户和群组 (不选择则所有人均适用)"
+msgstr "适用的客户端和组别(不选择则所有均适用)"
 
 #: modules/Product/templates/admin/mod_product_promos.html.twig:28
 msgid "Promotions"
@@ -8913,7 +8913,7 @@ msgstr "适用于"
 
 #: modules/Product/templates/admin/mod_product_promos.html.twig:55
 msgid "Client Groups"
-msgstr "客户群组"
+msgstr "客户端组别"
 
 #: modules/Product/templates/admin/mod_product_promos.html.twig:56
 msgid "Validity Period"
@@ -8933,11 +8933,11 @@ msgstr ""
 
 #: modules/Product/templates/admin/mod_product_promos.html.twig:124
 msgid "Create New Promotional Code"
-msgstr "生成优惠码"
+msgstr "创建新促销码"
 
 #: modules/Product/templates/admin/mod_product_promos.html.twig:125
 msgid "Create special offers for your clients by creating promo codes."
-msgstr "通过生成优惠码为您的客户创建特殊优惠。"
+msgstr "通过生成促销码为您的客户端创建特殊优惠。"
 
 #: modules/Redirect/templates/admin/mod_redirect_settings.html.twig:5
 #: modules/Redirect/templates/admin/mod_redirect_settings.html.twig:20
@@ -9710,7 +9710,7 @@ msgstr ""
 
 #: modules/Servicedownloadable/templates/admin/mod_servicedownloadable_manage.html.twig:23
 msgid "Use this function to update existing order file. Client will be able to download new file from client area"
-msgstr "使用此功能来更新现有订单的文件。客户将能够从客户中心下载新文件"
+msgstr "使用此功能更新现有的订单文件。客户端将能够从客户端区域下载新文件"
 
 #: modules/Servicedownloadable/templates/client/mod_servicedownloadable_manage.html.twig:4
 #: modules/Servicedownloadable/templates/client/mod_servicedownloadable_manage.html.twig:7
@@ -9897,7 +9897,7 @@ msgstr ""
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_hp.html.twig:88
 msgid "Depending on server manager used to setup hosting account you may require provide additional parameters. List of parameters server managers requires you can find on extensions page."
-msgstr "取决于服务器管理器设置虚拟主机账号的要求，您可能需要提供额外参数。 完整的参数列表可以在扩展的页面里找到。"
+msgstr "取决于服务器管理器设置虚拟主机账户的要求，您可能需要提供额外参数。 完整的参数列表可以在扩展的页面里找到。"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:12
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:39
@@ -10008,7 +10008,7 @@ msgstr "密码长度"
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:237
 #: modules/Servicehosting/templates/admin/mod_servicehosting_server.html.twig:92
 msgid "Length of generated passwords when creating user accounts. Defaults to 10"
-msgstr "创建用户帐户时生成的密码长度。默认值为 10"
+msgstr "创建用户账户时生成的密码长度。默认值为 10"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_index.html.twig:241
 #: modules/Servicehosting/templates/admin/mod_servicehosting_server.html.twig:96
@@ -10057,7 +10057,7 @@ msgstr "服务器 IP"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:34
 msgid "Account IP"
-msgstr "账号 IP"
+msgstr "账户 IP"
 
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:38
 #: modules/Servicehosting/templates/admin/mod_servicehosting_manage.html.twig:151
@@ -10486,7 +10486,7 @@ msgstr "非活跃的"
 #: modules/Staff/templates/admin/mod_staff_index.html.twig:177
 #: modules/Staff/templates/admin/mod_staff_settings.html.twig:279
 msgid "Create group"
-msgstr "新增群组"
+msgstr "新增组别"
 
 #: modules/Staff/templates/admin/mod_staff_login.html.twig:18
 msgid "Create main administrator account"
@@ -10519,7 +10519,7 @@ msgstr "管理员"
 
 #: modules/Staff/templates/admin/mod_staff_manage.html.twig:31
 msgid "This staff member is used by FOSSBilling to perform system tasks and cannot be removed."
-msgstr "这个员工账号是 FOSSBilling 用来执行系统任务的，不能删除。"
+msgstr "这个员工账户是 FOSSBilling 用来执行系统任务的，不能删除。"
 
 #: modules/Staff/templates/admin/mod_staff_manage.html.twig:41
 msgid "Permissions"
@@ -10615,7 +10615,7 @@ msgstr "重置密码"
 
 #: modules/Staff/templates/admin/mod_staff_password_reset.html.twig:19
 msgid "Enter your email address. You will receive a confirmation link if your account exists."
-msgstr "请输入您的邮箱。如果账户存在，您将会收到一个确认链接。"
+msgstr "请输入您的电子邮件地址。如果您的账户存在，您将收到一个确认链接。"
 
 #: modules/Staff/templates/admin/mod_staff_password_reset.html.twig:39
 msgid "Send me the link"
@@ -10717,7 +10717,7 @@ msgstr "服务台"
 
 #: modules/Support/templates/admin/mod_support_helpdesk.html.twig:34
 msgid "Helpdesk name will be visible for clients when submitting a new ticket."
-msgstr "客户在提交新工单时将看到管理名称。"
+msgstr "客户端提交新工单时，服务台名称将对客户端可见。"
 
 #: modules/Support/templates/admin/mod_support_helpdesk.html.twig:37
 msgid "Helpdesk Updated"
@@ -10948,7 +10948,7 @@ msgstr ""
 
 #: modules/Support/templates/admin/mod_support_tickets.html.twig:183
 msgid "New Client Ticket"
-msgstr "新客户服务单"
+msgstr "新客户端工单"
 
 #: modules/Support/templates/admin/mod_support_tickets.html.twig:191
 msgid "New Public Ticket"
@@ -10956,7 +10956,7 @@ msgstr "新建公共工单"
 
 #: modules/Support/templates/admin/mod_support_tickets.html.twig:288
 msgid "Open Ticket for Existing Client"
-msgstr "为现有客户新建工单"
+msgstr "为现有客户端打开工单"
 
 #: modules/Support/templates/admin/mod_support_tickets.html.twig:332
 msgid "Open Public Ticket for Non-client"
@@ -11148,7 +11148,7 @@ msgstr "工商营业执照注册号"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:131
 msgid "Bank Account number"
-msgstr "银行账号"
+msgstr "银行账户"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:137
 msgid "Display bank account information on documents?"
@@ -11164,7 +11164,7 @@ msgstr "在访客API中隐藏一些公司信息"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:166
 msgid "Enabling this will hide some information from the \"company\" guest API endpoint such as the address, phone number, email, VAT number, and more."
-msgstr "启用此选项将隐藏“公司”访客API端点中的一些信息，例如地址、电话号码、电子邮件、增值税号码等等。"
+msgstr "启用此选项将隐藏“公司”访客API端点中的一些信息，例如地址、电话号码、电子邮件地址、增值税号码等等。"
 
 #: modules/System/templates/admin/mod_system_settings.html.twig:200
 msgid "Company Terms of Service, Legal Regulation"
@@ -11387,7 +11387,7 @@ msgstr "我们的系统正在维护中，稍后恢复服务。"
 
 #: modules/System/templates/client/mod_system_maintenance.html.twig:27
 msgid "While we're away, you can still reach us over other channels."
-msgstr "除了客户中心系统，您还可以通过其他渠道联系我们。"
+msgstr "当我们离开时，你仍然可以通过其他渠道联系我们。"
 
 #: modules/Theme/templates/admin/mod_theme_preset.html.twig:18
 #: modules/Theme/templates/admin/mod_theme_settings.html.twig:3
@@ -11590,7 +11590,7 @@ msgstr "警告！"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:67
 msgid "clients"
-msgstr "客户"
+msgstr "客户端"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:68
 #: themes/admin_default/html/mod_index_dashboard.html.twig:90
@@ -11607,7 +11607,7 @@ msgstr "账单"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:112
 msgid "unpaid"
-msgstr "未付款"
+msgstr "未支付"
 
 #: themes/admin_default/html/mod_index_dashboard.html.twig:133
 msgid "tickets"
@@ -11730,7 +11730,7 @@ msgstr ""
 
 #: themes/admin_default/html/partial_pricing.html.twig:3
 msgid "Payment type"
-msgstr "付款方式"
+msgstr "支付类型"
 
 #: themes/admin_default/html/partial_pricing.html.twig:11
 #: themes/admin_default/html/partial_pricing.html.twig:31
@@ -11752,7 +11752,7 @@ msgstr "每期价格"
 
 #: themes/admin_default/html/partial_pricing.html.twig:51
 msgid "First payment sum"
-msgstr "首次付款金额"
+msgstr "首次支付金额"
 
 #: themes/admin_default/html/partial_pricing.html.twig:56
 msgid "Weekly"
@@ -12056,11 +12056,11 @@ msgstr ""
 
 #: themes/huraga/html/layout_default.html.twig:189
 msgid "Payment Information"
-msgstr "付款信息"
+msgstr "支付信息"
 
 #: themes/huraga/html/layout_default.html.twig:189
 msgid "Account Number"
-msgstr "账号"
+msgstr "账户"
 
 #: themes/huraga/html/layout_default.html.twig:226
 msgid "Top"
