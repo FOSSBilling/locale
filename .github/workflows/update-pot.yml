@@ -1,10 +1,7 @@
 name: Update translation template
 
-# Regenerates messages.pot from FOSSBilling/main using the open-source
-# extractor (FOSSBilling/.github/scripts/extract_pot.py) and opens a
-# review PR when the msgid set changed. Never pushes to main directly.
-# Flow after merge: Crowdin ingests the new source -> translators translate
-# -> Crowdin sync bot opens translation PRs -> .mo build + tagged release.
+# Monthly refresh of messages.pot from FOSSBilling/main. Opens a review PR
+# on change; never pushes to main directly.
 
 on:
   schedule:
