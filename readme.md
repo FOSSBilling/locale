@@ -29,10 +29,39 @@ For convenience, you can just create a PR and the workflow will run automaticall
 
 ### Updating the .POT file
 
-1. Ensure you have the pro version of Poedit and that the twig extractor is enabled
-2. Create a custom extractor with the following command:
-   1. `xgettext -L PHP --keyword=__trans --keyword=__pluralTrans:1,2 --keyword=InformationException --keyword=Exception --keyword=Server_Exception --keyword=Registrar_Exception --keyword=Payment_Exception --add-comments=TRANSLATORS: --force-po -o %o %C %F`
-3. Use Poedit's "Update from code" option to load the latest translations from the FOSSBilling source code.
-   1. You may need to edit the project settings to correct the translation source location. Make sure to select the 'src' directory.
-   2. You should also ensure that you either don't have the vendor folder, or that it is excluded from the source list when updating the translations for FOSSBilling.
-4. Save the updated .pot file and commit it to the repository. Crowdin will automatically detect the changes and update all translations.
+`messages.pot` is regenerated automatically by the **Update translation template**
+workflow (`.github/workflows/update-pot.yml`), which runs monthly and on manual
+dispatch. It checks out `FOSSBilling/FOSSBilling@main:src`, runs the open-source
+extractor at `FOSSBilling/.github/scripts/extract_pot.py`, and opens a review PR
+here when the msgid set changed. The workflow never pushes to `main` directly.
+
+What the extractor covers (mirroring the historical Poedit runs):
+
+- Twig templates: string literals passed to the `|trans` filter.
+- PHP sources: first-arg literals of `__trans()`, `__pluralTrans()` (args 1+2)
+  and the exception keywords (`Exception`, `InformationException`,
+  `Server_Exception`, `Registrar_Exception`, `Payment_Exception`),
+  including `new X('...')` — but skipping calls whose message is built at
+  runtime (variables, `sprintf()`, concatenation, `$"..."` interpolation).
+- Scope: `src/` minus `vendor/`, `install/`, `data/`, `load.php`, `*/tests/*`
+  and the `*.js` / `*.html` / `*.css` / `*.scss` / `*.md` extensions.
+
+Deliberate policies:
+
+- **Obsolete msgids are dropped.** Strings no longer present in source are
+  removed from the `.pot`; Crowdin keeps them in translation memory, so no
+  translator work is lost.
+- **Msgids are matched exactly (case-sensitive) by gettext.** Casing-only
+  changes (e.g. a Title-Case migration) invalidate existing translations for
+  those strings until they are retranslated — the update PR body calls these
+  out explicitly, so review it before merging.
+
+If you change what counts as translatable in the FOSSBilling source (new
+helpers, new keywords), update the extractor script in the main repo alongside
+it. To regenerate the `.pot` outside the schedule, use
+Actions → *Update translation template* → *Run workflow* here, or run locally:
+
+```bash
+git clone --depth 1 https://github.com/FOSSBilling/FOSSBilling fossbilling
+python3 fossbilling/.github/scripts/extract_pot.py fossbilling/src messages.pot
+```

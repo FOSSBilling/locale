@@ -1,0 +1,76 @@
+name: Update translation template
+
+# Regenerates messages.pot from FOSSBilling/main using the open-source
+# extractor (FOSSBilling/.github/scripts/extract_pot.py) and opens a
+# review PR when the msgid set changed. Never pushes to main directly.
+# Flow after merge: Crowdin ingests the new source -> translators translate
+# -> Crowdin sync bot opens translation PRs -> .mo build + tagged release.
+
+on:
+  schedule:
+    - cron: '0 6 1 * *' # monthly, 06:00 UTC on the 1st
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-pot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout locale repo
+        uses: actions/checkout@v7
+        with:
+          path: locale
+
+      - name: Checkout FOSSBilling source
+        uses: actions/checkout@v7
+        with:
+          repository: FOSSBilling/FOSSBilling
+          ref: main
+          path: fossbilling
+          sparse-checkout: src
+          sparse-checkout-cone-mode: false
+
+      - name: Regenerate messages.pot
+        id: regen
+        run: |
+          python3 fossbilling/.github/scripts/extract_pot.py fossbilling/src locale/messages.pot.new
+          python3 fossbilling/.github/scripts/extract_pot.py --diff locale/messages.pot locale/messages.pot.new > /tmp/pot-diff.txt 2>&1 || true
+          cat /tmp/pot-diff.txt
+          # Compare msgid sets, not bytes: POT-Creation-Date always differs.
+          if python3 -c "
+          import sys; sys.path.insert(0, 'fossbilling/.github/scripts')
+          from extract_pot import parse_pot_entries
+          sys.exit(0 if parse_pot_entries('locale/messages.pot') == parse_pot_entries('locale/messages.pot.new') else 1)
+          "; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            rm locale/messages.pot.new
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            mv locale/messages.pot.new locale/messages.pot
+          fi
+
+      - name: Open update PR
+        if: steps.regen.outputs.changed == 'true'
+        working-directory: locale
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="bot/messages-pot-$(date -u +%Y%m%d)"
+          git checkout -b "$BRANCH"
+          git add messages.pot
+          git -c user.name="FOSSBilling Bot" -c user.email="bot@fossbilling.org" \
+            commit -m "Regenerate messages.pot from FOSSBilling/main"
+          git push -u origin "$BRANCH"
+          {
+            echo "Regenerated \`messages.pot\` from \`FOSSBilling/main\` using \`.github/scripts/extract_pot.py`."
+            echo ""
+            echo "Review the msgid delta before merging — casing-only changes invalidate existing translations:"
+            echo ""
+            echo '```'
+            cat /tmp/pot-diff.txt
+            echo '```'
+          } > /tmp/pr-body.md
+          gh pr create --title "Regenerate messages.pot from source" --body-file /tmp/pr-body.md
