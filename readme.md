@@ -29,7 +29,7 @@ For convenience, you can just create a PR and the workflow will run automaticall
 ### Updating the .POT file
 
 `messages.pot` is regenerated automatically by the **Update translation template**
-workflow (`.github/workflows/update-pot.yml`), which runs monthly and on manual
+workflow (`.github/workflows/update-pot.yml`), which runs weekly and on manual
 dispatch. It checks out `FOSSBilling/FOSSBilling@main:src`, runs the open-source
 extractor at `FOSSBilling/.github/scripts/extract_pot.py`, and opens a review PR
 here when the msgid set changed. The workflow never pushes to `main` directly.
