@@ -57,10 +57,11 @@ jobs:
           fi
 
       - name: Commit and Push .mo Files
-        uses: actions-js/push@968f4695ca558093eadb24ad83cc5891f47e0cdc # v1.6
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          message: "Automated .mo File Generation"
+        run: |
+          git config user.name "FOSSBilling Bot"
+          git config user.email "bot@fossbilling.org"
+          git diff --cached --quiet || git commit -m "Automated .mo File Generation"
+          git push
 
       - name: Create Artifact
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
@@ -192,11 +193,12 @@ jobs:
         working-directory: translations
 
       - name: Release to GitHub
-        uses: ncipollo/release-action@339a81892b84b4eeb0f6e744e4574d79d0d9b8dd # v1
-        with:
-          name: Translations (${{ env.TRANSLATION_HASH }})
-          tag: ${{ env.TRANSLATION_TAG }}
-          commit: main
-          bodyFile: translations/translations.md
-          artifacts: translations/translations.zip
-          allowUpdates: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Recreate the release so assets and notes always reflect this run.
+        run: |
+          gh release delete "$TRANSLATION_TAG" --yes --cleanup-tag || true
+          gh release create "$TRANSLATION_TAG" translations/translations.zip \
+            --target main \
+            --title "Translations ($TRANSLATION_HASH)" \
+            --notes-file translations/translations.md
