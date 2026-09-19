@@ -41,6 +41,21 @@ jobs:
       - name: Add .mo Files to Git
         run: git add .
 
+      # Crowdin still exports Serbian as srp/ (e.g. sync #605), while the app
+      # only lists sr_RS in locales.php, so rename on every build. Do not
+      # remove: without this, releases ship a dead srp/ directory and a
+      # stale sr_RS translation.
+      - name: Rename the Serbian Folder Name in Git
+        run: |
+          if [ -d ./srp ]; then
+            # Ensure the correctly named folder is removed
+            if [ -d ./sr_RS ]; then
+              rm -rf ./sr_RS
+            fi
+            # Now rename the folder within git
+            git mv ./srp ./sr_RS
+          fi
+
       - name: Commit and Push .mo Files
         uses: actions-js/push@v1.6
         with:
