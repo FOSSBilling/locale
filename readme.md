@@ -16,7 +16,7 @@ If we think think the language is relevant and will be used by a significant num
 
 ## Release Tags
 
-Translation releases are generated automatically and are tagged using the MD5 hash of the `messages.pot` file, allowing users to find and update to the most recent translations that match their FOSSBilling version.
+Translation releases are generated automatically and are tagged using the SHA-256 hash of the `messages.pot` file, allowing users to find and update to the most recent translations that match their FOSSBilling version.
 
 ## Maintenance
 
