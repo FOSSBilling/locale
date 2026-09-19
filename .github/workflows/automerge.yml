@@ -24,11 +24,10 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - id: automerge
-        name: automerge
-        uses: "pascalgn/automerge-action@7961b8b5eec56cc088c140b56d864285eabd3f67" # v0.16.4
+      - name: Enable auto-merge for bot PRs
         env:
-          GITHUB_TOKEN: "${{ secrets.BOT_TOKEN }}"
-          MERGE_METHOD: "squash"
-          MERGE_FILTER_AUTHOR: "fossbilling-bot"
-          MERGE_LABELS: ""
+          GH_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: |
+          for pr in $(gh pr list --author fossbilling-bot --state open --json number --jq '.[].number'); do
+            gh pr merge "$pr" --auto --squash || true
+          done
