@@ -5,16 +5,21 @@ name: Update translation template
 
 on:
   schedule:
-    - cron: '0 6 1 * *' # monthly, 06:00 UTC on the 1st
+    - cron: '0 6 * * 1' # weekly, Mondays at 06:00 UTC
   workflow_dispatch:
 
 permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: update-pot
+  cancel-in-progress: false
+
 jobs:
   update-pot:
     runs-on: ubuntu-slim
+    timeout-minutes: 10
     steps:
       - name: Checkout locale repo
         uses: actions/checkout@v7
@@ -55,7 +60,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          BRANCH="bot/messages-pot-$(date -u +%Y%m%d)"
+          BRANCH="bot/messages-pot-$(date -u +%Y%m%d)-r${{ github.run_number }}"
           git checkout -b "$BRANCH"
           git add messages.pot
           git -c user.name="FOSSBilling Bot" -c user.email="bot@fossbilling.org" \
@@ -67,7 +72,9 @@ jobs:
             echo "Review the msgid delta before merging — casing-only changes invalidate existing translations:"
             echo ""
             echo '```'
-            cat /tmp/pot-diff.txt
+            head -n 250 /tmp/pot-diff.txt
             echo '```'
+            echo ""
+            echo "_Full diff truncated to 250 lines; counts above are complete._"
           } > /tmp/pr-body.md
           gh pr create --title "Regenerate messages.pot from source" --body-file /tmp/pr-body.md

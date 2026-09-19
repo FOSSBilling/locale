@@ -14,7 +14,6 @@ To have a language added, please create a new issue in this repository or join o
 
 If we think think the language is relevant and will be used by a significant number of users, we will add it to Crowdin and you can start translating. A language will be considered relevant if there is an existing userbase that's using the language and willing to contribute to the translations in the long run.
 
-
 ## Release Tags
 
 Translation releases are generated automatically and are tagged using the MD5 hash of the `messages.pot` file, allowing users to find and update to the most recent translations that match their FOSSBilling version.
@@ -30,7 +29,7 @@ For convenience, you can just create a PR and the workflow will run automaticall
 ### Updating the .POT file
 
 `messages.pot` is regenerated automatically by the **Update translation template**
-workflow (`.github/workflows/update-pot.yml`), which runs monthly and on manual
+workflow (`.github/workflows/update-pot.yml`), which runs weekly and on manual
 dispatch. It checks out `FOSSBilling/FOSSBilling@main:src`, runs the open-source
 extractor at `FOSSBilling/.github/scripts/extract_pot.py`, and opens a review PR
 here when the msgid set changed. The workflow never pushes to `main` directly.

@@ -49,7 +49,7 @@ jobs:
         uses: actions-js/push@v1.6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          message: "Automated .mo File Generation"
+          message: "Automated .mo file generation"
 
       - name: Create Artifact
         uses: actions/upload-artifact@v7
@@ -65,7 +65,7 @@ jobs:
 
   release:
     name: Publish to Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     needs: build
     permissions:
       contents: write
@@ -154,7 +154,7 @@ jobs:
           echo '<?php' > completion.php
 
           echo '/**' >> completion.php
-          echo ' * FOSSBilling translations' >> completion.php
+          echo ' * FOSSBilling Translations' >> completion.php
           echo " * Dated: $now" >> completion.php
           echo ' * License: https://github.com/FOSSBilling/locale/blob/main/LICENSE.md' >> completion.php
           echo ' */' >> completion.php
@@ -173,7 +173,7 @@ jobs:
         run: zip -r ./translations.zip .
         working-directory: translations
 
-      - name: Release to GitHub Repository
+      - name: Release to GitHub
         uses: ncipollo/release-action@v1
         with:
           name: Translations (${{ env.TRANSLATION_TAG }})
