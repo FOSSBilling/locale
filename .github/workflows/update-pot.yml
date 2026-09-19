@@ -1,7 +1,7 @@
 name: Update Translation Template
 
-# Weekly refresh of messages.pot from FOSSBilling source. Opens a review PR
-# on change; never pushes to main directly.
+# Weekly refresh of messages.pot from FOSSBilling source. Creates or
+# refreshes a review PR on change; never pushes to main directly.
 
 on:
   schedule:
@@ -38,26 +38,27 @@ jobs:
           repository: FOSSBilling/FOSSBilling
           ref: ${{ inputs.source_ref || 'main' }}
           path: fossbilling
-          sparse-checkout: src
+          sparse-checkout: |
+            /src/
+            /.github/scripts/extract_pot.py
           sparse-checkout-cone-mode: false
 
       - name: Regenerate messages.pot
         id: regen
         run: |
-          python3 fossbilling/.github/scripts/extract_pot.py fossbilling/src locale/messages.pot.new
-          python3 fossbilling/.github/scripts/extract_pot.py --diff locale/messages.pot locale/messages.pot.new > /tmp/pot-diff.txt 2>&1 || true
+          python3 fossbilling/.github/scripts/extract_pot.py fossbilling/src /tmp/messages.pot.new
+          python3 fossbilling/.github/scripts/extract_pot.py --diff locale/messages.pot /tmp/messages.pot.new > /tmp/pot-diff.txt 2>&1 || true
           cat /tmp/pot-diff.txt
           # Compare msgid sets, not bytes: POT-Creation-Date always differs.
           if python3 -c "
           import sys; sys.path.insert(0, 'fossbilling/.github/scripts')
           from extract_pot import parse_pot_entries
-          sys.exit(0 if parse_pot_entries('locale/messages.pot') == parse_pot_entries('locale/messages.pot.new') else 1)
+          sys.exit(0 if parse_pot_entries('locale/messages.pot') == parse_pot_entries('/tmp/messages.pot.new') else 1)
           "; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            rm locale/messages.pot.new
+            rm /tmp/messages.pot.new
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            mv locale/messages.pot.new locale/messages.pot
           fi
 
       - name: Open Update PR
@@ -66,12 +67,16 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          BRANCH="bot/messages-pot-$(date -u +%Y%m%d)-r${{ github.run_number }}"
-          git checkout -b "$BRANCH"
+          BRANCH="bot/messages-pot"
+          # Reset the bot-owned branch to current main so a still-open PR
+          # is refreshed in place instead of duplicated by the next run.
+          git fetch origin main "$BRANCH" || true
+          git checkout -B "$BRANCH" origin/main
+          cp /tmp/messages.pot.new messages.pot
           git add messages.pot
           git -c user.name="FOSSBilling Bot" -c user.email="bot@fossbilling.org" \
-            commit -m "Regenerate messages.pot from FOSSBilling/main"
-          git push -u origin "$BRANCH"
+            commit -m "Regenerate messages.pot from FOSSBilling source"
+          git push --force-with-lease -u origin "$BRANCH"
           {
             echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@${{ inputs.source_ref || 'main' }}\` using \`extract_pot.py\`."
             echo ""
@@ -83,4 +88,9 @@ jobs:
             echo ""
             echo "_Full diff truncated to 250 lines; counts above are complete._"
           } > /tmp/pr-body.md
-          gh pr create --title "Regenerate messages.pot from source" --body-file /tmp/pr-body.md
+          EXISTING=$(gh pr list --state open --head "$BRANCH" --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh pr edit "$EXISTING" --body-file /tmp/pr-body.md
+          else
+            gh pr create --title "Regenerate messages.pot from source" --body-file /tmp/pr-body.md
+          fi
