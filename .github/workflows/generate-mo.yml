@@ -1,4 +1,4 @@
-name: Automated compiling of translations
+name: Automated Compilation of Translations
 
 permissions:
   contents: read
@@ -6,7 +6,7 @@ permissions:
 on:
   push:
     branches: main
-    ignore_paths:
+    paths-ignore:
       - "**/*.mo"
       - "messages.pot"
 
@@ -17,13 +17,13 @@ jobs:
       contents: write
     name: Compile to .mo
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v7
 
       - name: Install gettext
         run: sudo apt-get update && sudo apt-get install gettext -y
 
-      - name: Generate .mo files
+      - name: Generate .mo Files
         run: |
           for po_file in $(find . -name "*.po"); do
             dirname=$(dirname $po_file)
@@ -31,10 +31,10 @@ jobs:
             msgfmt $po_file -o "$dirname/$filename.mo"
           done
 
-      - name: Add .mo files to git
+      - name: Add .mo Files to Git
         run: git add .
 
-      - name: (Workaround) Rename the Serbian Folder Name
+      - name: (Workaround) Rename the Serbian Folder Name in Git
         run: |
           if [ -d ./srp ]; then
             # Ensure the correctly named folder is removed
@@ -45,13 +45,13 @@ jobs:
             git mv ./srp ./sr_RS
           fi
 
-      - name: Commit and push .mo files
+      - name: Commit and Push .mo Files
         uses: actions-js/push@v1.6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          message: "Automated .mo file generation"
+          message: "Automated .mo File Generation"
 
-      - name: Create artifact
+      - name: Create Artifact
         uses: actions/upload-artifact@v7
         with:
           name: translations
@@ -64,13 +64,13 @@ jobs:
             readme.md
 
   release:
-    name: Publish to release
+    name: Publish to Release
     runs-on: ubuntu-latest
     needs: build
     permissions:
       contents: write
     steps:
-      - name: Download the artifact
+      - name: Download the Artifact
         uses: actions/download-artifact@v8
         with:
           path: translations
@@ -79,19 +79,19 @@ jobs:
         working-directory: translations
         run: echo "TRANSLATION_TAG=$(md5sum messages.pot | cut -d' ' -f1)" >> $GITHUB_ENV
 
-      - name: Display structure of downloaded files
+      - name: Display Structure of Downloaded Files
         run: ls -R
 
       - name: Install gettext
         run: sudo apt-get update && sudo apt-get install gettext -y
 
-      - name: Remove translations with low completion
+      - name: Remove Translations with Low Completion
         working-directory: translations
         run: |
           now=$(date)
-          echo "## FOSSBilling Translations" >>translations.md
-          echo "Dated: $now" >>translations.md
-          echo "Translation Tag: [$TRANSLATION_TAG](https://github.com/FOSSBilling/locale/releases/tag/$TRANSLATION_TAG)" >>translations.md
+          echo "## FOSSBilling Translations" >> translations.md
+          echo "Dated: $now" >> translations.md
+          echo "Translation Tag: [$TRANSLATION_TAG](https://github.com/FOSSBilling/locale/releases/tag/$TRANSLATION_TAG)" >> translations.md
 
           rm -f messages.pot
 
@@ -169,11 +169,11 @@ jobs:
 
           rm -f messages.mo
 
-      - name: Create a zip of the translations
+      - name: Create a zip of the Translations
         run: zip -r ./translations.zip .
         working-directory: translations
 
-      - name: Release to GitHub
+      - name: Release to GitHub Repository
         uses: ncipollo/release-action@v1
         with:
           name: Translations (${{ env.TRANSLATION_TAG }})
