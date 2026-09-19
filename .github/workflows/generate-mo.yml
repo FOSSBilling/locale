@@ -89,9 +89,13 @@ jobs:
 
       - name: Calculate the Translation Tag (messages.pot hash)
         working-directory: translations
-        # Prefixed: GitHub rejects bare 40/64-char hex strings as tag
+        # Prefixed tag: GitHub rejects bare 40/64-char hex strings as tag
         # names (ambiguous with object IDs), so the raw hash alone fails.
-        run: echo "TRANSLATION_TAG=pot-$(sha256sum messages.pot | cut -d' ' -f1)" >> $GITHUB_ENV
+        # The display name keeps the bare hash; only the tag needs the prefix.
+        run: |
+          HASH=$(sha256sum messages.pot | cut -d' ' -f1)
+          echo "TRANSLATION_HASH=$HASH" >> $GITHUB_ENV
+          echo "TRANSLATION_TAG=pot-$HASH" >> $GITHUB_ENV
 
       - name: Display Structure of Downloaded Files
         run: ls -R
@@ -190,7 +194,7 @@ jobs:
       - name: Release to GitHub
         uses: ncipollo/release-action@339a81892b84b4eeb0f6e744e4574d79d0d9b8dd # v1
         with:
-          name: Translations (${{ env.TRANSLATION_TAG }})
+          name: Translations (${{ env.TRANSLATION_HASH }})
           tag: ${{ env.TRANSLATION_TAG }}
           commit: main
           bodyFile: translations/translations.md
