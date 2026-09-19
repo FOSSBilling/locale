@@ -1,0 +1,113 @@
+name: Update Translation Template
+
+# Weekly refresh of messages.pot from FOSSBilling source. Creates or
+# refreshes a review PR on change; never pushes to main directly.
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # weekly, Mondays at 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: FOSSBilling ref to extract from (for testing extractor changes)
+        default: main
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-pot
+  cancel-in-progress: false
+
+jobs:
+  update-pot:
+    runs-on: ubuntu-slim
+    timeout-minutes: 10
+    steps:
+      - name: Checkout locale Repo
+        uses: actions/checkout@v7
+        with:
+          path: locale
+
+      - name: Checkout FOSSBilling Source
+        uses: actions/checkout@v7
+        with:
+          repository: FOSSBilling/FOSSBilling
+          ref: ${{ inputs.source_ref || 'main' }}
+          path: fossbilling
+          sparse-checkout: |
+            /src/
+            /.github/scripts/extract_pot.py
+          sparse-checkout-cone-mode: false
+
+      - name: Regenerate messages.pot
+        id: regen
+        run: |
+          python3 fossbilling/.github/scripts/extract_pot.py fossbilling/src /tmp/messages.pot.new
+          python3 fossbilling/.github/scripts/extract_pot.py --diff locale/messages.pot /tmp/messages.pot.new > /tmp/pot-diff.txt 2>&1 || true
+          cat /tmp/pot-diff.txt
+          # Compare msgid sets, not bytes: POT-Creation-Date always differs.
+          if python3 -c "
+          import sys; sys.path.insert(0, 'fossbilling/.github/scripts')
+          from extract_pot import parse_pot_entries
+          sys.exit(0 if parse_pot_entries('locale/messages.pot') == parse_pot_entries('/tmp/messages.pot.new') else 1)
+          "; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            rm /tmp/messages.pot.new
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open Update PR
+        if: steps.regen.outputs.changed == 'true'
+        working-directory: locale
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REF="${{ inputs.source_ref || 'main' }}"
+          if [ "$REF" = "main" ]; then
+            # Scheduled refresh: reset the bot-owned branch to current main
+            # so a still-open PR is refreshed in place instead of duplicated.
+            BRANCH="bot/messages-pot"
+            TITLE="Regenerate messages.pot from source"
+            UPDATE_EXISTING=true
+            git fetch origin main "$BRANCH" || true
+            git checkout -B "$BRANCH" origin/main
+          else
+            # Test dispatch from another ref: isolated throwaway branch so
+            # experimental output can never hijack the scheduled PR.
+            SAFE_REF=$(printf '%s' "$REF" | tr -c 'A-Za-z0-9_.-' '-')
+            BRANCH="bot/messages-pot-test-${SAFE_REF}-r${{ github.run_number }}"
+            TITLE="[test] Regenerate messages.pot from $REF"
+            UPDATE_EXISTING=false
+            git checkout -b "$BRANCH"
+          fi
+          cp /tmp/messages.pot.new messages.pot
+          git add messages.pot
+          git -c user.name="FOSSBilling Bot" -c user.email="bot@fossbilling.org" \
+            commit -m "Regenerate messages.pot from FOSSBilling source ($REF)"
+          if [ "$UPDATE_EXISTING" = true ]; then
+            git push --force-with-lease -u origin "$BRANCH"
+          else
+            git push -u origin "$BRANCH"
+          fi
+          {
+            echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@${{ inputs.source_ref || 'main' }}\` using \`extract_pot.py\`."
+            echo ""
+            echo "Review the msgid delta before merging — casing-only changes invalidate existing translations:"
+            echo ""
+            echo '```'
+            head -n 250 /tmp/pot-diff.txt
+            echo '```'
+            echo ""
+            echo "_Full diff truncated to 250 lines; counts above are complete._"
+          } > /tmp/pr-body.md
+          EXISTING=$(gh pr list --state open --head "$BRANCH" --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ] && [ "$UPDATE_EXISTING" = true ]; then
+            gh pr edit "$EXISTING" --body-file /tmp/pr-body.md
+          else
+            gh pr create --title "$TITLE" --body-file /tmp/pr-body.md
+          fi

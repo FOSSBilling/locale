@@ -3,6 +3,12 @@ name: Automated Compilation of Translations
 permissions:
   contents: read
 
+# Serialize .mo/release runs: concurrent pushes would race on the direct
+# push to main below.
+concurrency:
+  group: generate-mo
+  cancel-in-progress: false
+
 on:
   push:
     branches: main
@@ -12,7 +18,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
+    timeout-minutes: 15
     permissions:
       contents: write
     name: Compile to .mo
@@ -34,7 +41,11 @@ jobs:
       - name: Add .mo Files to Git
         run: git add .
 
-      - name: (Workaround) Rename the Serbian Folder Name in Git
+      # Crowdin still exports Serbian as srp/ (e.g. sync #605), while the app
+      # only lists sr_RS in locales.php, so rename on every build. Do not
+      # remove: without this, releases ship a dead srp/ directory and a
+      # stale sr_RS translation.
+      - name: Rename the Serbian Folder Name in Git
         run: |
           if [ -d ./srp ]; then
             # Ensure the correctly named folder is removed
@@ -49,10 +60,10 @@ jobs:
         uses: actions-js/push@v1.6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          message: "Automated .mo file generation"
+          message: "Automated .mo File Generation"
 
       - name: Create Artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v8
         with:
           name: translations
           path: |
@@ -61,11 +72,12 @@ jobs:
             locales.php
             LICENSE.md
             messages.pot
-            readme.md
+            README.md
 
   release:
     name: Publish to Release
     runs-on: ubuntu-slim
+    timeout-minutes: 15
     needs: build
     permissions:
       contents: write
@@ -77,7 +89,7 @@ jobs:
 
       - name: Calculate the Translation Tag (messages.pot hash)
         working-directory: translations
-        run: echo "TRANSLATION_TAG=$(md5sum messages.pot | cut -d' ' -f1)" >> $GITHUB_ENV
+        run: echo "TRANSLATION_TAG=$(sha256sum messages.pot | cut -d' ' -f1)" >> $GITHUB_ENV
 
       - name: Display Structure of Downloaded Files
         run: ls -R
