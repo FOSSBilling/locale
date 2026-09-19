@@ -3,6 +3,12 @@ name: Automated Compilation of Translations
 permissions:
   contents: read
 
+# Serialize .mo/release runs: concurrent pushes would race on the direct
+# push to main below.
+concurrency:
+  group: generate-mo
+  cancel-in-progress: false
+
 on:
   push:
     branches: main
@@ -13,6 +19,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-slim
+    timeout-minutes: 15
     permissions:
       contents: write
     name: Compile to .mo
@@ -34,17 +41,6 @@ jobs:
       - name: Add .mo Files to Git
         run: git add .
 
-      - name: (Workaround) Rename the Serbian Folder Name in Git
-        run: |
-          if [ -d ./srp ]; then
-            # Ensure the correctly named folder is removed
-            if [ -d ./sr_RS ]; then
-              rm -rf ./sr_RS
-            fi
-            # Now rename the folder within git
-            git mv ./srp ./sr_RS
-          fi
-
       - name: Commit and Push .mo Files
         uses: actions-js/push@v1.6
         with:
@@ -52,7 +48,7 @@ jobs:
           message: "Automated .mo file generation"
 
       - name: Create Artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v8
         with:
           name: translations
           path: |
@@ -66,6 +62,7 @@ jobs:
   release:
     name: Publish to Release
     runs-on: ubuntu-slim
+    timeout-minutes: 15
     needs: build
     permissions:
       contents: write
