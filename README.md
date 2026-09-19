@@ -16,7 +16,7 @@ If we think think the language is relevant and will be used by a significant num
 
 ## Release Tags
 
-Translation releases are generated automatically and are tagged using the SHA-256 hash of the `messages.pot` file, allowing users to find and update to the most recent translations that match their FOSSBilling version.
+Translation releases are generated automatically and are tagged `pot-<sha256>` using the SHA-256 hash of the `messages.pot` file, allowing users to find and update to the most recent translations that match their FOSSBilling version. (The `pot-` prefix is required because GitHub rejects bare 40/64-character hex strings as tag names.)
 
 ## Maintenance
 
