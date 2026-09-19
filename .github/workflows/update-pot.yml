@@ -1,4 +1,4 @@
-name: Update translation template
+name: Update Translation Template
 
 # Monthly refresh of messages.pot from FOSSBilling/main. Opens a review PR
 # on change; never pushes to main directly.
@@ -21,12 +21,12 @@ jobs:
     runs-on: ubuntu-slim
     timeout-minutes: 10
     steps:
-      - name: Checkout locale repo
+      - name: Checkout locale Repo
         uses: actions/checkout@v7
         with:
           path: locale
 
-      - name: Checkout FOSSBilling source
+      - name: Checkout FOSSBilling Source
         uses: actions/checkout@v7
         with:
           repository: FOSSBilling/FOSSBilling
@@ -54,7 +54,7 @@ jobs:
             mv locale/messages.pot.new locale/messages.pot
           fi
 
-      - name: Open update PR
+      - name: Open Update PR
         if: steps.regen.outputs.changed == 'true'
         working-directory: locale
         env:
