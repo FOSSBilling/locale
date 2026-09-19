@@ -195,6 +195,8 @@ jobs:
       - name: Release to GitHub
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # No checkout in this job, so gh cannot infer the repo from git.
+          GH_REPO: ${{ github.repository }}
         # Recreate the release so assets and notes always reflect this run.
         run: |
           gh release delete "$TRANSLATION_TAG" --yes --cleanup-tag || true
