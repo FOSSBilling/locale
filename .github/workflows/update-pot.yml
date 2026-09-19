@@ -67,16 +67,33 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          BRANCH="bot/messages-pot"
-          # Reset the bot-owned branch to current main so a still-open PR
-          # is refreshed in place instead of duplicated by the next run.
-          git fetch origin main "$BRANCH" || true
-          git checkout -B "$BRANCH" origin/main
+          REF="${{ inputs.source_ref || 'main' }}"
+          if [ "$REF" = "main" ]; then
+            # Scheduled refresh: reset the bot-owned branch to current main
+            # so a still-open PR is refreshed in place instead of duplicated.
+            BRANCH="bot/messages-pot"
+            TITLE="Regenerate messages.pot from source"
+            UPDATE_EXISTING=true
+            git fetch origin main "$BRANCH" || true
+            git checkout -B "$BRANCH" origin/main
+          else
+            # Test dispatch from another ref: isolated throwaway branch so
+            # experimental output can never hijack the scheduled PR.
+            SAFE_REF=$(printf '%s' "$REF" | tr -c 'A-Za-z0-9_.-' '-')
+            BRANCH="bot/messages-pot-test-${SAFE_REF}-r${{ github.run_number }}"
+            TITLE="[test] Regenerate messages.pot from $REF"
+            UPDATE_EXISTING=false
+            git checkout -b "$BRANCH"
+          fi
           cp /tmp/messages.pot.new messages.pot
           git add messages.pot
           git -c user.name="FOSSBilling Bot" -c user.email="bot@fossbilling.org" \
-            commit -m "Regenerate messages.pot from FOSSBilling source"
-          git push --force-with-lease -u origin "$BRANCH"
+            commit -m "Regenerate messages.pot from FOSSBilling source ($REF)"
+          if [ "$UPDATE_EXISTING" = true ]; then
+            git push --force-with-lease -u origin "$BRANCH"
+          else
+            git push -u origin "$BRANCH"
+          fi
           {
             echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@${{ inputs.source_ref || 'main' }}\` using \`extract_pot.py\`."
             echo ""
@@ -89,8 +106,8 @@ jobs:
             echo "_Full diff truncated to 250 lines; counts above are complete._"
           } > /tmp/pr-body.md
           EXISTING=$(gh pr list --state open --head "$BRANCH" --json number --jq '.[0].number // empty')
-          if [ -n "$EXISTING" ]; then
+          if [ -n "$EXISTING" ] && [ "$UPDATE_EXISTING" = true ]; then
             gh pr edit "$EXISTING" --body-file /tmp/pr-body.md
           else
-            gh pr create --title "Regenerate messages.pot from source" --body-file /tmp/pr-body.md
+            gh pr create --title "$TITLE" --body-file /tmp/pr-body.md
           fi
