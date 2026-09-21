@@ -27,7 +27,14 @@ jobs:
       - name: Enable auto-merge for bot PRs
         env:
           GH_TOKEN: ${{ secrets.BOT_TOKEN }}
+          # No checkout in this job, so gh cannot infer the repo from git.
+          GH_REPO: ${{ github.repository }}
         run: |
+          failed=0
           for pr in $(gh pr list --author fossbilling-bot --state open --json number --jq '.[].number'); do
-            gh pr merge "$pr" --auto --squash || true
+            if ! gh pr merge "$pr" --auto --squash; then
+              echo "::warning::Failed to enable auto-merge for PR #$pr"
+              failed=1
+            fi
           done
+          exit $failed
