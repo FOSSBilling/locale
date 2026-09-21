@@ -10,19 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: read
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
     - name: Delete Branch
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_REPO: ${{ github.repository }}
       run: |
         git fetch origin
         exists=$(git ls-remote --heads origin l10n_main)
         if [[ -z ${exists} ]]; then
           echo "Branch does not exist"
           exit 0
-        else
-          echo "Branch does exist"
-          git push origin --delete l10n_main
         fi
+        # Never delete the branch while a pull request still uses it as head;
+        # doing so orphans the PR with mergeable_state stuck at UNKNOWN.
+        open_prs=$(gh pr list --head l10n_main --state open --json number --jq 'length')
+        if [[ "$open_prs" -gt 0 ]]; then
+          echo "Branch l10n_main is used by $open_prs open pull request(s); skipping deletion"
+          exit 0
+        fi
+        echo "Branch does exist and has no open PRs; deleting"
+        git push origin --delete l10n_main
