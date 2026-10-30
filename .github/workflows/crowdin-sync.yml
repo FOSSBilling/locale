@@ -64,7 +64,6 @@ jobs:
       - name: Synchronize with Crowdin
         uses: crowdin/github-action@959dc74ac104447731cba99a016f85d0ae719788 # v3.5.0
         with:
-          base_url: https://fossbilling.api.crowdin.com
           upload_sources: true
           upload_translations: false
           download_translations: true
@@ -78,5 +77,4 @@ jobs:
           github_user_email: ${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
-          CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ steps.load-secrets.outputs.CROWDIN_PERSONAL_TOKEN }}
