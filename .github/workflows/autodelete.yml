@@ -5,9 +5,12 @@ on:
   schedule:
     - cron: '0 */6 * * *'  # Run every 6 hours
 
+permissions:
+  contents: read
+
 jobs:
   delete:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     permissions:
       contents: write
       pull-requests: read
