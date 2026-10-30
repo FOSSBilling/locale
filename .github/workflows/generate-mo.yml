@@ -3,6 +3,8 @@ name: Automated Compilation of Translations
 permissions:
   contents: read
 
+# Serialize .mo/release runs: concurrent pushes would race on the direct
+# push to main below.
 concurrency:
   group: generate-mo
   cancel-in-progress: false
@@ -13,6 +15,7 @@ on:
     paths-ignore:
       - "**/*.mo"
       - "messages.pot"
+  # Manual recovery lever, e.g. to rebuild translations if a push event is ever missed.
   workflow_dispatch:
 
 jobs:
