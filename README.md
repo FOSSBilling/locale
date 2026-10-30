@@ -26,6 +26,17 @@ Translations live in Crowdin and are synced here automatically:
 
 Translation releases are generated automatically and are tagged `pot-<sha256>` using the SHA-256 hash of the `messages.pot` file, allowing users to find and update to the most recent translations that match their FOSSBilling version. (The `pot-` prefix is required because GitHub rejects bare 40/64-character hex strings as tag names.) Each release carries a `translations.zip` asset alongside a per-locale completion report.
 
+## Licensing
+
+This repository carries two licenses, split by content type:
+
+| Content | License | File |
+|---|---|---|
+| Code (`locales.php`, workflows) | Apache License 2.0 | `LICENSE.md` |
+| Translations (`*.po`, `*.pot`, `*.mo`) | CC BY 4.0 — attribution to the FOSSBilling contributors via the [Crowdin project](https://translate.fossbilling.org) | `LICENSE.translations` |
+
+Both license files ship inside every translation release.
+
 ## Maintenance
 
 ### Building the .MO Files
