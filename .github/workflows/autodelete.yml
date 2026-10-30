@@ -5,15 +5,18 @@ on:
   schedule:
     - cron: '0 */6 * * *'  # Run every 6 hours
 
+permissions:
+  contents: read
+
 jobs:
   delete:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     permissions:
       contents: write
       pull-requests: read
 
     steps:
-    - name: Checkout repository
+    - name: Checkout Repository
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
     - name: Delete Branch
