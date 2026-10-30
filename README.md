@@ -12,11 +12,19 @@ All contributors are expected to follow our [Code of Conduct](https://fossbillin
 
 To have a language added, please create a new issue in this repository or join our [Discord](https://fossbilling.com/discord) and request your language in the `#localization` channel.
 
-If we think think the language is relevant and will be used by a significant number of users, we will add it to Crowdin and you can start translating. A language will be considered relevant if there is an existing userbase that's using the language and willing to contribute to the translations in the long run.
+If we think the language is relevant and will be used by a significant number of users, we will add it to Crowdin and you can start translating. A language will be considered relevant if there is an existing userbase that's using the language and willing to contribute to the translations in the long run.
+
+## How Translations Flow
+
+Translations live in Crowdin and are synced here automatically:
+
+- A daily synchronization opens a pull request with the latest translations, which is auto-merged.
+- Only translations that are at least 25% complete ship in releases. Less complete languages are listed in the release notes as excluded until they catch up.
+- The `messages.pot` template is regenerated from the FOSSBilling source weekly (see Maintenance below), so new strings appear in Crowdin shortly after they land in the app.
 
 ## Release Tags
 
-Translation releases are generated automatically and are tagged `pot-<sha256>` using the SHA-256 hash of the `messages.pot` file, allowing users to find and update to the most recent translations that match their FOSSBilling version. (The `pot-` prefix is required because GitHub rejects bare 40/64-character hex strings as tag names.)
+Translation releases are generated automatically and are tagged `pot-<sha256>` using the SHA-256 hash of the `messages.pot` file, allowing users to find and update to the most recent translations that match their FOSSBilling version. (The `pot-` prefix is required because GitHub rejects bare 40/64-character hex strings as tag names.) Each release carries a `translations.zip` asset alongside a per-locale completion report.
 
 ## Maintenance
 
