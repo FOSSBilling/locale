@@ -1,0 +1,79 @@
+name: Crowdin Synchronization
+
+# Self-hosted replacement for the native Crowdin GitHub integration:
+# syncs sources and translations via the Crowdin API and opens the
+# translation PR as our Automation App instead of a user account.
+# The native integration in Crowdin project settings must stay disabled
+# while this workflow is active, or the two will fight over l10n_main.
+
+on:
+  schedule:
+    - cron: '0 7 * * *' # daily at 07:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: crowdin-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Synchronize with Crowdin
+    runs-on: ubuntu-slim
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Load Secrets from 1Password
+        id: load-secrets
+        uses: 1password/load-secrets-action@70062d7a876d3eb6334754fa26efd2fbd90c32f2 # v5.0.1
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          # GitHub - FOSSBilling Automation App secrets stored in 1Password.
+          AUTOMATION_APP_CLIENT_ID: op://mkqkefntgcmjlgyxzeaekzuuvq/ts64rykikbva7zplnf5woxx3bi/client-id
+          AUTOMATION_APP_PRIVATE_KEY: op://mkqkefntgcmjlgyxzeaekzuuvq/ts64rykikbva7zplnf5woxx3bi/private-key
+          # Crowdin - locale CI/CD secrets stored in 1Password.
+          CROWDIN_PERSONAL_TOKEN: op://mkqkefntgcmjlgyxzeaekzuuvq/hbe6za7nlozefviu6b6bgm44ku/credential
+
+      - name: Generate Automation Token
+        id: app-token
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: ${{ steps.load-secrets.outputs.AUTOMATION_APP_CLIENT_ID }}
+          private-key: ${{ steps.load-secrets.outputs.AUTOMATION_APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
+
+      - name: Get Automation App User ID
+        id: get-user-id
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout Repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Synchronize with Crowdin
+        uses: crowdin/github-action@959dc74ac104447731cba99a016f85d0ae719788 # v3.5.0
+        with:
+          upload_sources: true
+          upload_translations: false
+          download_translations: true
+          localization_branch_name: l10n_main
+          create_pull_request: true
+          commit_message: '[Automated] Crowdin synchronization'
+          pull_request_title: '[Automated] Crowdin synchronization'
+          pull_request_labels: crowdin
+          pull_request_base_branch_name: main
+          github_user_name: ${{ steps.app-token.outputs.app-slug }}[bot]
+          github_user_email: ${{ steps.get-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com
+        env:
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ steps.load-secrets.outputs.CROWDIN_PERSONAL_TOKEN }}
