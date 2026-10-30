@@ -21,7 +21,9 @@ concurrency:
 jobs:
   sync:
     name: Synchronize with Crowdin
-    runs-on: ubuntu-slim
+    # VM-backed runner: crowdin/github-action is a Docker action and cannot
+    # run on container-based ubuntu-slim runners.
+    runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
       contents: write
