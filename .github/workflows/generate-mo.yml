@@ -3,8 +3,6 @@ name: Automated Compilation of Translations
 permissions:
   contents: read
 
-# Serialize .mo/release runs: concurrent pushes would race on the direct
-# push to main below.
 concurrency:
   group: generate-mo
   cancel-in-progress: false
@@ -15,7 +13,6 @@ on:
     paths-ignore:
       - "**/*.mo"
       - "messages.pot"
-  # Manual recovery lever, e.g. to rebuild translations if a push event is ever missed.
   workflow_dispatch:
 
 jobs:
@@ -26,8 +23,33 @@ jobs:
       contents: write
     name: Compile to .mo
     steps:
+      - name: Load Secrets from 1Password
+        id: load-secrets
+        uses: 1password/load-secrets-action@70062d7a876d3eb6334754fa26efd2fbd90c32f2 # v5.0.1
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          # GitHub - FOSSBilling Automation App secrets stored in 1Password.
+          AUTOMATION_APP_CLIENT_ID: op://mkqkefntgcmjlgyxzeaekzuuvq/ts64rykikbva7zplnf5woxx3bi/client-id
+          AUTOMATION_APP_PRIVATE_KEY: op://mkqkefntgcmjlgyxzeaekzuuvq/ts64rykikbva7zplnf5woxx3bi/private-key
+
+      - name: Generate Automation Token
+        id: app-token
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: ${{ steps.load-secrets.outputs.AUTOMATION_APP_CLIENT_ID }}
+          private-key: ${{ steps.load-secrets.outputs.AUTOMATION_APP_PRIVATE_KEY }}
+          permission-contents: write
+
+      - name: Get Automation App User ID
+        id: get-user-id
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: echo "user-id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+
       - name: Checkout Repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          token: ${{ steps.app-token.outputs.token }}
 
       - name: Install gettext
         run: sudo apt-get update && sudo apt-get install gettext -y
@@ -43,30 +65,18 @@ jobs:
       - name: Add .mo Files to Git
         run: git add .
 
-      # Crowdin still exports Serbian as srp/ (e.g. sync #605), while the app
-      # only lists sr_RS in locales.php, so rename on every build. Do not
-      # remove: without this, releases ship a dead srp/ directory and a
-      # stale sr_RS translation.
-      - name: Rename the Serbian Folder Name in Git
-        run: |
-          if [ -d ./srp ]; then
-            # Ensure the correctly named folder is removed
-            if [ -d ./sr_RS ]; then
-              rm -rf ./sr_RS
-            fi
-            # Now rename the folder within git
-            git mv ./srp ./sr_RS
-          fi
-
       - name: Commit and Push .mo Files
+        env:
+          APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
+          APP_USER_ID: ${{ steps.get-user-id.outputs.user-id }}
         run: |
-          git config user.name "FOSSBilling Bot"
-          git config user.email "bot@fossbilling.org"
+          git config user.name "${APP_SLUG}[bot]"
+          git config user.email "${APP_USER_ID}+${APP_SLUG}[bot]@users.noreply.github.com"
           git diff --cached --quiet || git commit -m "Automated .mo File Generation"
           git push
 
       - name: Create Artifact
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: translations
           path: |
@@ -85,8 +95,25 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Load Secrets from 1Password
+        id: load-secrets
+        uses: 1password/load-secrets-action@70062d7a876d3eb6334754fa26efd2fbd90c32f2 # v5.0.1
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          # GitHub - FOSSBilling Automation App secrets stored in 1Password.
+          AUTOMATION_APP_CLIENT_ID: op://mkqkefntgcmjlgyxzeaekzuuvq/ts64rykikbva7zplnf5woxx3bi/client-id
+          AUTOMATION_APP_PRIVATE_KEY: op://mkqkefntgcmjlgyxzeaekzuuvq/ts64rykikbva7zplnf5woxx3bi/private-key
+
+      - name: Generate Automation Token
+        id: app-token
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: ${{ steps.load-secrets.outputs.AUTOMATION_APP_CLIENT_ID }}
+          private-key: ${{ steps.load-secrets.outputs.AUTOMATION_APP_PRIVATE_KEY }}
+          permission-contents: write
+
       - name: Download the Artifact
-        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
         with:
           path: translations
 
@@ -196,7 +223,7 @@ jobs:
 
       - name: Release to GitHub
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
           # No checkout in this job, so gh cannot infer the repo from git.
           GH_REPO: ${{ github.repository }}
         # Recreate the release so assets and notes always reflect this run.
