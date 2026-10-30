@@ -64,6 +64,7 @@ jobs:
       - name: Synchronize with Crowdin
         uses: crowdin/github-action@959dc74ac104447731cba99a016f85d0ae719788 # v3.5.0
         with:
+          base_url: https://fossbilling.api.crowdin.com
           upload_sources: true
           upload_translations: false
           download_translations: true
