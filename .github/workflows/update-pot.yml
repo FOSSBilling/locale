@@ -4,12 +4,6 @@ on:
   schedule:
     - cron: '0 6 * * 1' # weekly, Mondays at 06:00 UTC
   workflow_dispatch:
-    inputs:
-      source_ref:
-        description: FOSSBilling ref to extract from (for testing extractor changes)
-        default: main
-        required: false
-        type: string
 
 permissions:
   contents: read
@@ -39,7 +33,7 @@ jobs:
         with:
           persist-credentials: false
           repository: FOSSBilling/FOSSBilling
-          ref: ${{ inputs.source_ref || 'main' }}
+          ref: main
           path: fossbilling
           sparse-checkout: |
             /src/
@@ -129,35 +123,19 @@ jobs:
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
           APP_USER_ID: ${{ steps.get-user-id.outputs.user-id }}
         run: |
-          REF="${{ inputs.source_ref || 'main' }}"
-          if [ "$REF" = "main" ]; then
-            # Scheduled refresh: reset the automation-owned branch to current main
-            # so a still-open PR is refreshed in place instead of duplicated.
-            BRANCH="automation/messages-pot"
-            TITLE="Regenerate messages.pot from source"
-            UPDATE_EXISTING=true
-            git fetch origin main "$BRANCH" || true
-            git checkout -B "$BRANCH" origin/main
-          else
-            # Test dispatch from another ref: isolated throwaway branch so
-            # experimental output can never hijack the scheduled PR.
-            SAFE_REF=$(printf '%s' "$REF" | tr -c 'A-Za-z0-9_.-' '-')
-            BRANCH="automation/messages-pot-test-${SAFE_REF}-r${{ github.run_number }}"
-            TITLE="[test] Regenerate messages.pot from $REF"
-            UPDATE_EXISTING=false
-            git checkout -b "$BRANCH"
-          fi
+          # Reset the automation-owned branch to current main so a still-open
+          # PR is refreshed in place instead of duplicated.
+          BRANCH="automation/messages-pot"
+          TITLE="Regenerate messages.pot from source"
+          git fetch origin main "$BRANCH" || true
+          git checkout -B "$BRANCH" origin/main
           cp pot-update/messages.pot.new messages.pot
           git add messages.pot
           git -c user.name="${APP_SLUG}[bot]" -c user.email="${APP_USER_ID}+${APP_SLUG}[bot]@users.noreply.github.com" \
-            commit -m "Regenerate messages.pot from FOSSBilling source ($REF)"
-          if [ "$UPDATE_EXISTING" = true ]; then
-            git push --force-with-lease -u origin "$BRANCH"
-          else
-            git push -u origin "$BRANCH"
-          fi
+            commit -m "Regenerate messages.pot from FOSSBilling source (main)"
+          git push --force-with-lease -u origin "$BRANCH"
           {
-            echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@${{ inputs.source_ref || 'main' }}\` using \`extract_pot.py\`."
+            echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@main\` using \`extract_pot.py\`."
             echo ""
             echo "Review the msgid delta before merging — casing-only changes invalidate existing translations:"
             echo ""
@@ -168,7 +146,7 @@ jobs:
             echo "_Full diff truncated to 250 lines; counts above are complete._"
           } > /tmp/pr-body.md
           EXISTING=$(gh pr list --state open --head "$BRANCH" --json number --jq '.[0].number // empty')
-          if [ -n "$EXISTING" ] && [ "$UPDATE_EXISTING" = true ]; then
+          if [ -n "$EXISTING" ]; then
             gh pr edit "$EXISTING" --body-file /tmp/pr-body.md
           else
             gh pr create --title "$TITLE" --body-file /tmp/pr-body.md
