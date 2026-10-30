@@ -1,4 +1,5 @@
-name: automerge
+name: Automerge Crowdin PRs
+
 on:
   pull_request:
     types:
@@ -16,22 +17,47 @@ on:
   check_suite:
     types:
       - completed
-  status: {}
+  status:
+
+permissions:
+  contents: read
+
 jobs:
   automerge:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     permissions:
       contents: write
       pull-requests: write
     steps:
-      - name: Enable auto-merge for bot PRs
+      - name: Load Secrets from 1Password
+        id: load-secrets
+        uses: 1password/load-secrets-action@70062d7a876d3eb6334754fa26efd2fbd90c32f2 # v5.0.1
         env:
-          GH_TOKEN: ${{ secrets.BOT_TOKEN }}
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          # GitHub - FOSSBilling Automation App secrets stored in 1Password.
+          AUTOMATION_APP_CLIENT_ID: op://mkqkefntgcmjlgyxzeaekzuuvq/ts64rykikbva7zplnf5woxx3bi/client-id
+          AUTOMATION_APP_PRIVATE_KEY: op://mkqkefntgcmjlgyxzeaekzuuvq/ts64rykikbva7zplnf5woxx3bi/private-key
+
+      - name: Generate Automation Token
+        id: app-token
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3.3.0
+        with:
+          client-id: ${{ steps.load-secrets.outputs.AUTOMATION_APP_CLIENT_ID }}
+          private-key: ${{ steps.load-secrets.outputs.AUTOMATION_APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
+
+      - name: Enable auto-merge for Crowdin PRs
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
           # No checkout in this job, so gh cannot infer the repo from git.
           GH_REPO: ${{ github.repository }}
         run: |
           failed=0
-          for pr in $(gh pr list --author fossbilling-bot --state open --json number --jq '.[].number'); do
+          # Filter by the `crowdin` label (set in crowdin.yml) rather than PR
+          # author, so this keeps working regardless of which account or app
+          # the Crowdin GitHub integration authenticates as.
+          for pr in $(gh pr list --label crowdin --state open --json number --jq '.[].number'); do
             if ! gh pr merge "$pr" --auto --squash; then
               echo "::warning::Failed to enable auto-merge for PR #$pr"
               failed=1
