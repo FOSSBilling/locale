@@ -67,6 +67,10 @@ jobs:
           upload_sources: true
           upload_translations: false
           download_translations: true
+          # Translators work in the `main` version branch in Crowdin: without
+          # this, sources upload to and translations download from the root
+          # file, which holds no translations.
+          crowdin_branch_name: main
           localization_branch_name: l10n_main
           create_pull_request: true
           commit_message: '[Automated] Crowdin synchronization'
