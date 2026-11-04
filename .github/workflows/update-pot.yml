@@ -171,30 +171,46 @@ jobs:
             echo "Review the msgid delta before merging — casing-only changes invalidate existing translations:"
             echo ""
             echo '```'
+            DIFF_TAIL="_Full diff truncated to 250 lines; counts above are complete._"
             if [ "$LARGE_REMOVAL" = "true" ]; then
-              cat pot-update/pot-diff.txt
+              # Cap the in-body diff: GitHub rejects bodies over 65,536
+              # characters, which a catastrophic regen could exceed.
+              BODY_BUDGET=50000
+              DIFF_SIZE=$(wc -c < pot-update/pot-diff.txt | tr -d ' ')
+              if [ "$DIFF_SIZE" -gt "$BODY_BUDGET" ]; then
+                head -c "$BODY_BUDGET" pot-update/pot-diff.txt
+                echo ""
+                echo "[... diff truncated at 50 KB — full text is in this run's artifacts ...]"
+                DIFF_TAIL="_Diff capped for the PR body — review every dropped msgid before merging._"
+              else
+                cat pot-update/pot-diff.txt
+                DIFF_TAIL="_Full diff included above — review every dropped msgid before merging._"
+              fi
             else
               head -n 250 pot-update/pot-diff.txt
             fi
             echo '```'
             echo ""
-            if [ "$LARGE_REMOVAL" = "true" ]; then
-              echo "_Full diff included above — review every dropped msgid before merging._"
-            else
-              echo "_Full diff truncated to 250 lines; counts above are complete._"
-            fi
+            echo "$DIFF_TAIL"
           } > /tmp/pr-body.md
           EXISTING=$(gh pr list --state open --head "$BRANCH" --json number --jq '.[0].number // empty')
+          # Labels go on before the body write: if the body submit ever
+          # fails, a destructive update is still flagged instead of sitting
+          # force-pushed with a stale body and no label.
           if [ -n "$EXISTING" ]; then
             PR="$EXISTING"
+            if [ "$LARGE_REMOVAL" = "true" ]; then
+              gh pr edit "$PR" --add-label needs-review
+            else
+              # Best-effort: the label is absent on a normal regen, and only
+              # cosmetic either way — the PR body above is the real record.
+              gh pr edit "$PR" --remove-label needs-review || true
+            fi
             gh pr edit "$PR" --body-file /tmp/pr-body.md
           else
-            PR=$(gh pr create --title "$TITLE" --body-file /tmp/pr-body.md)
-          fi
-          if [ "$LARGE_REMOVAL" = "true" ]; then
-            gh pr edit "$PR" --add-label needs-review
-          else
-            # Best-effort: the label is absent on a normal regen, and only
-            # cosmetic either way — the PR body above is the real record.
-            gh pr edit "$PR" --remove-label needs-review || true
+            if [ "$LARGE_REMOVAL" = "true" ]; then
+              PR=$(gh pr create --title "$TITLE" --body-file /tmp/pr-body.md --label needs-review)
+            else
+              PR=$(gh pr create --title "$TITLE" --body-file /tmp/pr-body.md)
+            fi
           fi
