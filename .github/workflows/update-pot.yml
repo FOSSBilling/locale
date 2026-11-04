@@ -21,6 +21,9 @@ jobs:
       contents: read
     outputs:
       changed: ${{ steps.regen.outputs.changed }}
+      gone: ${{ steps.regen.outputs.gone }}
+      max_gone: ${{ steps.regen.outputs.max_gone }}
+      large_removal: ${{ steps.regen.outputs.large_removal }}
     steps:
       - name: Checkout locale Repo
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
@@ -46,6 +49,27 @@ jobs:
           python3 fossbilling/.github/scripts/extract_pot.py fossbilling/src /tmp/messages.pot.new
           python3 fossbilling/.github/scripts/extract_pot.py --diff locale/messages.pot /tmp/messages.pot.new > /tmp/pot-diff.txt 2>&1 || true
           cat /tmp/pot-diff.txt
+          # Flag destructive regens for mandatory human review. A large
+          # "gone" count means live strings vanished from the template,
+          # which an extractor bug can cause silently (see #682). Loud
+          # failure here is intentional: an unparsable diff must never
+          # degrade into an unflagged PR.
+          MAX_GONE=15
+          GONE=$(python3 -c "
+          import re, sys
+          text = open('/tmp/pot-diff.txt', encoding='utf-8', errors='replace').read()
+          match = re.search(r'^Removed: \d+ \(gone: (\d+)', text, re.M)
+          if match is None:
+              sys.exit('could not parse gone count from pot diff')
+          print(match.group(1))
+          ")
+          echo "gone=$GONE" >> "$GITHUB_OUTPUT"
+          echo "max_gone=$MAX_GONE" >> "$GITHUB_OUTPUT"
+          if [ "$GONE" -gt "$MAX_GONE" ]; then
+            echo "large_removal=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "large_removal=false" >> "$GITHUB_OUTPUT"
+          fi
           # Compare msgid sets, not bytes: POT-Creation-Date always differs.
           if python3 -c "
           import sys; sys.path.insert(0, 'fossbilling/.github/scripts')
@@ -127,6 +151,9 @@ jobs:
           # PR is refreshed in place instead of duplicated.
           BRANCH="automation/messages-pot"
           TITLE="Regenerate messages.pot from source"
+          MAX_GONE="${{ needs.generate.outputs.max_gone }}"
+          GONE="${{ needs.generate.outputs.gone }}"
+          LARGE_REMOVAL="${{ needs.generate.outputs.large_removal }}"
           git fetch origin main "$BRANCH" || true
           git checkout -B "$BRANCH" origin/main
           cp pot-update/messages.pot.new messages.pot
@@ -137,17 +164,53 @@ jobs:
           {
             echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@main\` using \`extract_pot.py\`."
             echo ""
+            if [ "$LARGE_REMOVAL" = "true" ]; then
+              echo "> ⚠️ **Large removal alert:** this regen drops **${GONE}** msgids (threshold: ${MAX_GONE}). Do not merge until every dropped msgid is verified against FOSSBilling source — an extractor bug can silently delete live strings (see #682)."
+              echo ""
+            fi
             echo "Review the msgid delta before merging — casing-only changes invalidate existing translations:"
             echo ""
             echo '```'
-            head -n 250 pot-update/pot-diff.txt
+            DIFF_TAIL="_Full diff truncated to 250 lines; counts above are complete._"
+            if [ "$LARGE_REMOVAL" = "true" ]; then
+              # Cap the in-body diff: GitHub rejects bodies over 65,536
+              # characters, which a catastrophic regen could exceed.
+              BODY_BUDGET=50000
+              DIFF_SIZE=$(wc -c < pot-update/pot-diff.txt | tr -d ' ')
+              if [ "$DIFF_SIZE" -gt "$BODY_BUDGET" ]; then
+                head -c "$BODY_BUDGET" pot-update/pot-diff.txt
+                echo ""
+                echo "[... diff truncated at 50 KB — full text is in this run's artifacts ...]"
+                DIFF_TAIL="_Diff capped for the PR body — review every dropped msgid before merging._"
+              else
+                cat pot-update/pot-diff.txt
+                DIFF_TAIL="_Full diff included above — review every dropped msgid before merging._"
+              fi
+            else
+              head -n 250 pot-update/pot-diff.txt
+            fi
             echo '```'
             echo ""
-            echo "_Full diff truncated to 250 lines; counts above are complete._"
+            echo "$DIFF_TAIL"
           } > /tmp/pr-body.md
           EXISTING=$(gh pr list --state open --head "$BRANCH" --json number --jq '.[0].number // empty')
+          # Labels go on before the body write: if the body submit ever
+          # fails, a destructive update is still flagged instead of sitting
+          # force-pushed with a stale body and no label.
           if [ -n "$EXISTING" ]; then
-            gh pr edit "$EXISTING" --body-file /tmp/pr-body.md
+            PR="$EXISTING"
+            if [ "$LARGE_REMOVAL" = "true" ]; then
+              gh pr edit "$PR" --add-label needs-review
+            else
+              # Best-effort: the label is absent on a normal regen, and only
+              # cosmetic either way — the PR body above is the real record.
+              gh pr edit "$PR" --remove-label needs-review || true
+            fi
+            gh pr edit "$PR" --body-file /tmp/pr-body.md
           else
-            gh pr create --title "$TITLE" --body-file /tmp/pr-body.md
+            if [ "$LARGE_REMOVAL" = "true" ]; then
+              PR=$(gh pr create --title "$TITLE" --body-file /tmp/pr-body.md --label needs-review)
+            else
+              PR=$(gh pr create --title "$TITLE" --body-file /tmp/pr-body.md)
+            fi
           fi
