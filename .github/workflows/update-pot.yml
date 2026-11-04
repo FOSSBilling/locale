@@ -22,6 +22,7 @@ jobs:
     outputs:
       changed: ${{ steps.regen.outputs.changed }}
       gone: ${{ steps.regen.outputs.gone }}
+      max_gone: ${{ steps.regen.outputs.max_gone }}
       large_removal: ${{ steps.regen.outputs.large_removal }}
     steps:
       - name: Checkout locale Repo
@@ -63,6 +64,7 @@ jobs:
           print(match.group(1))
           ")
           echo "gone=$GONE" >> "$GITHUB_OUTPUT"
+          echo "max_gone=$MAX_GONE" >> "$GITHUB_OUTPUT"
           if [ "$GONE" -gt "$MAX_GONE" ]; then
             echo "large_removal=true" >> "$GITHUB_OUTPUT"
           else
@@ -149,8 +151,7 @@ jobs:
           # PR is refreshed in place instead of duplicated.
           BRANCH="automation/messages-pot"
           TITLE="Regenerate messages.pot from source"
-          # Threshold kept in sync with MAX_GONE in the generate job.
-          MAX_GONE=15
+          MAX_GONE="${{ needs.generate.outputs.max_gone }}"
           GONE="${{ needs.generate.outputs.gone }}"
           LARGE_REMOVAL="${{ needs.generate.outputs.large_removal }}"
           git fetch origin main "$BRANCH" || true
@@ -193,5 +194,7 @@ jobs:
           if [ "$LARGE_REMOVAL" = "true" ]; then
             gh pr edit "$PR" --add-label needs-review
           else
+            # Best-effort: the label is absent on a normal regen, and only
+            # cosmetic either way — the PR body above is the real record.
             gh pr edit "$PR" --remove-label needs-review || true
           fi
