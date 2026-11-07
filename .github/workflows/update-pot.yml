@@ -57,8 +57,8 @@ jobs:
       - name: Regenerate messages.pot
         id: regen
         run: |
-          php fossbilling/tools/i18n/console.php extract fossbilling/src /tmp/messages.pot.new
-          php fossbilling/tools/i18n/console.php diff locale/messages.pot /tmp/messages.pot.new > /tmp/pot-diff.txt
+          fossbilling/tools/i18n/bin/console extract fossbilling/src /tmp/messages.pot.new
+          fossbilling/tools/i18n/bin/console diff locale/messages.pot /tmp/messages.pot.new > /tmp/pot-diff.txt
           cat /tmp/pot-diff.txt
           # Flag destructive regens for mandatory human review (see #682).
           # An unparsable diff must never become an unflagged update PR.
@@ -169,7 +169,7 @@ jobs:
             commit -m "Regenerate messages.pot from FOSSBilling source (main)"
           git push --force-with-lease -u origin "$BRANCH"
           {
-            echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@main\` using \`tools/i18n/console.php extract\`."
+            echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@main\` using \`tools/i18n/bin/console extract\`."
             echo ""
             if [ "$LARGE_REMOVAL" = "true" ]; then
               echo "> ⚠️ **Large removal alert:** this regen drops **${GONE}** msgids (threshold: ${MAX_GONE}). Do not merge until every dropped msgid is verified against FOSSBilling source — an extractor bug can silently delete live strings (see #682)."

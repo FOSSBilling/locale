@@ -45,13 +45,9 @@ The .MO files are automatically generated and pushed using GitHub Actions after 
 
 ### Updating the .POT file
 
-`messages.pot` is regenerated automatically by the **Update Translation Template** workflow (`.github/workflows/update-pot.yml`), which runs weekly and on manual dispatch. It checks out `src` and `tools/i18n` from `FOSSBilling/FOSSBilling@main`, installs the standalone tooling dependencies, runs `php tools/i18n/console.php extract`, and opens a review PR here when the `msgid` set changed. The workflow never pushes to `main` directly.
+`messages.pot` is regenerated automatically by the **Update Translation Template** workflow (`.github/workflows/update-pot.yml`), which runs weekly and on manual dispatch. It checks out `src` and `tools/i18n` from `FOSSBilling/FOSSBilling@main`, installs the standalone tooling dependencies, runs `tools/i18n/bin/console extract`, and opens a review PR here when the `msgid` set changed. The workflow never pushes to `main` directly.
 
-What the extractor covers:
-
-- Twig templates: string literals passed to the `|trans` filter.
-- PHP sources: first-arg literals of `__trans()`, `__pluralTrans()` (args 1+2) and the exception keywords (`Exception`, `InformationException`, `Server_Exception`, `Registrar_Exception`, `Payment_Exception`), including `new X('...')` — but skipping calls whose message is built at runtime (variables, `sprintf()`, concatenation, `$"..."` interpolation).
-- Scope: `src/` minus `vendor/`, `install/`, `data/`, `load.php`, `*/tests/*` and the `*.js` / `*.html` / `*.css` / `*.scss` / `*.md` extensions.
+Extraction rules and CLI commands are documented in the [translation tooling guide](https://github.com/FOSSBilling/FOSSBilling/blob/main/tools/i18n/README.md).
 
 Deliberate policies:
 
@@ -63,5 +59,5 @@ If you change what counts as translatable in the FOSSBilling source (new helpers
 ```bash
 git clone --depth 1 https://github.com/FOSSBilling/FOSSBilling fossbilling
 composer install --working-dir=fossbilling/tools/i18n --no-dev
-php fossbilling/tools/i18n/console.php extract fossbilling/src messages.pot
+fossbilling/tools/i18n/bin/console extract fossbilling/src messages.pot
 ```
