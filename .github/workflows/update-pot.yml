@@ -40,49 +40,56 @@ jobs:
           path: fossbilling
           sparse-checkout: |
             /src/
-            /.github/scripts/extract_pot.py
+            /tools/i18n/
           sparse-checkout-cone-mode: false
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # 2.40.0
+        with:
+          php-version: '8.5'
+          extensions: mbstring
+          tools: composer:v2
+          coverage: none
+
+      - name: Install Translation Tooling
+        run: composer install --working-dir=fossbilling/tools/i18n --no-dev --no-interaction --no-progress
 
       - name: Regenerate messages.pot
         id: regen
         run: |
-          python3 fossbilling/.github/scripts/extract_pot.py fossbilling/src /tmp/messages.pot.new
-          python3 fossbilling/.github/scripts/extract_pot.py --diff locale/messages.pot /tmp/messages.pot.new > /tmp/pot-diff.txt 2>&1 || true
+          php fossbilling/tools/i18n/console.php extract fossbilling/src /tmp/messages.pot.new
+          php fossbilling/tools/i18n/console.php diff locale/messages.pot /tmp/messages.pot.new > /tmp/pot-diff.txt
           cat /tmp/pot-diff.txt
-          # Flag destructive regens for mandatory human review. A large
-          # "gone" count means live strings vanished from the template,
-          # which an extractor bug can cause silently (see #682). Loud
-          # failure here is intentional: an unparsable diff must never
-          # degrade into an unflagged PR.
-          MAX_GONE=15
-          GONE=$(python3 -c "
-          import re, sys
-          text = open('/tmp/pot-diff.txt', encoding='utf-8', errors='replace').read()
-          match = re.search(r'^Removed: \d+ \(gone: (\d+)', text, re.M)
-          if match is None:
-              sys.exit('could not parse gone count from pot diff')
-          print(match.group(1))
-          ")
-          echo "gone=$GONE" >> "$GITHUB_OUTPUT"
-          echo "max_gone=$MAX_GONE" >> "$GITHUB_OUTPUT"
-          if [ "$GONE" -gt "$MAX_GONE" ]; then
-            echo "large_removal=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "large_removal=false" >> "$GITHUB_OUTPUT"
-          fi
-          # Compare msgid sets, not bytes: POT-Creation-Date always differs.
-          if python3 -c "
-          import sys; sys.path.insert(0, 'fossbilling/.github/scripts')
-          from extract_pot import parse_pot_entries
-          sys.exit(0 if parse_pot_entries('locale/messages.pot') == parse_pot_entries('/tmp/messages.pot.new') else 1)
-          "; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            mkdir -p pot-update
-            cp /tmp/messages.pot.new pot-update/messages.pot.new
-            cp /tmp/pot-diff.txt pot-update/pot-diff.txt
-          fi
+          # Flag destructive regens for mandatory human review (see #682).
+          # An unparsable diff must never become an unflagged update PR.
+          php <<'PHP' >> "$GITHUB_OUTPUT"
+          <?php
+          require 'fossbilling/tools/i18n/bootstrap.php';
+
+          use FOSSBilling\Tools\I18n\TranslationCatalogue;
+          use Symfony\Component\Filesystem\Filesystem;
+
+          $fs = new Filesystem();
+          if (!preg_match('/^Removed: \d+ \(gone: (\d+)/m', $fs->readFile('/tmp/pot-diff.txt'), $matches)) {
+              throw new RuntimeException('could not parse gone count from pot diff');
+          }
+          $gone = (int) $matches[1];
+          $maxGone = 15;
+          // Compare messages and plural pairs, ignoring dates, references and entry order.
+          $old = TranslationCatalogue::entries('locale/messages.pot');
+          $new = TranslationCatalogue::entries('/tmp/messages.pot.new');
+          ksort($old, SORT_STRING);
+          ksort($new, SORT_STRING);
+          $changed = $old !== $new;
+          if ($changed) {
+              $fs->mkdir('pot-update');
+              $fs->copy('/tmp/messages.pot.new', 'pot-update/messages.pot.new', true);
+              $fs->copy('/tmp/pot-diff.txt', 'pot-update/pot-diff.txt', true);
+          }
+          echo "gone=$gone\nmax_gone=$maxGone\n";
+          echo 'large_removal=' . ($gone > $maxGone ? 'true' : 'false') . "\n";
+          echo 'changed=' . ($changed ? 'true' : 'false') . "\n";
+          PHP
 
       - name: Upload Regenerated Template
         if: steps.regen.outputs.changed == 'true'
@@ -162,7 +169,7 @@ jobs:
             commit -m "Regenerate messages.pot from FOSSBilling source (main)"
           git push --force-with-lease -u origin "$BRANCH"
           {
-            echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@main\` using \`extract_pot.py\`."
+            echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@main\` using \`tools/i18n/console.php extract\`."
             echo ""
             if [ "$LARGE_REMOVAL" = "true" ]; then
               echo "> ⚠️ **Large removal alert:** this regen drops **${GONE}** msgids (threshold: ${MAX_GONE}). Do not merge until every dropped msgid is verified against FOSSBilling source — an extractor bug can silently delete live strings (see #682)."
