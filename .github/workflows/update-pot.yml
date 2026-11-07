@@ -58,38 +58,20 @@ jobs:
         id: regen
         run: |
           fossbilling/tools/i18n/bin/console extract fossbilling/src /tmp/messages.pot.new
-          fossbilling/tools/i18n/bin/console diff locale/messages.pot /tmp/messages.pot.new > /tmp/pot-diff.txt
+          fossbilling/tools/i18n/bin/console diff locale/messages.pot /tmp/messages.pot.new --format=json > /tmp/pot-diff.json
+          jq -er '.report' /tmp/pot-diff.json > /tmp/pot-diff.txt
           cat /tmp/pot-diff.txt
           # Flag destructive regens for mandatory human review (see #682).
-          # An unparsable diff must never become an unflagged update PR.
-          php <<'PHP' >> "$GITHUB_OUTPUT"
-          <?php
-          require 'fossbilling/tools/i18n/bootstrap.php';
-
-          use FOSSBilling\Tools\I18n\TranslationCatalog;
-          use Symfony\Component\Filesystem\Filesystem;
-
-          $fs = new Filesystem();
-          if (!preg_match('/^Removed: \d+ \(gone: (\d+)/m', $fs->readFile('/tmp/pot-diff.txt'), $matches)) {
-              throw new RuntimeException('could not parse gone count from pot diff');
-          }
-          $gone = (int) $matches[1];
-          $maxGone = 15;
-          // Compare messages and plural pairs, ignoring dates, references and entry order.
-          $old = TranslationCatalog::entries('locale/messages.pot');
-          $new = TranslationCatalog::entries('/tmp/messages.pot.new');
-          ksort($old, SORT_STRING);
-          ksort($new, SORT_STRING);
-          $changed = $old !== $new;
-          if ($changed) {
-              $fs->mkdir('pot-update');
-              $fs->copy('/tmp/messages.pot.new', 'pot-update/messages.pot.new', true);
-              $fs->copy('/tmp/pot-diff.txt', 'pot-update/pot-diff.txt', true);
-          }
-          echo "gone=$gone\nmax_gone=$maxGone\n";
-          echo 'large_removal=' . ($gone > $maxGone ? 'true' : 'false') . "\n";
-          echo 'changed=' . ($changed ? 'true' : 'false') . "\n";
-          PHP
+          MAX_GONE=15
+          jq -er --argjson max "$MAX_GONE" '
+            select((.changed | type) == "boolean" and (.gone | type) == "number") |
+            "changed=\(.changed)\ngone=\(.gone)\nmax_gone=\($max)\nlarge_removal=\(.gone > $max)"
+          ' /tmp/pot-diff.json >> "$GITHUB_OUTPUT"
+          if jq -e '.changed' /tmp/pot-diff.json > /dev/null; then
+            mkdir -p pot-update
+            cp /tmp/messages.pot.new pot-update/messages.pot.new
+            cp /tmp/pot-diff.txt pot-update/pot-diff.txt
+          fi
 
       - name: Upload Regenerated Template
         if: steps.regen.outputs.changed == 'true'
