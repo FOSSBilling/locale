@@ -45,22 +45,19 @@ The .MO files are automatically generated and pushed using GitHub Actions after 
 
 ### Updating the .POT file
 
-`messages.pot` is regenerated automatically by the **Update Translation Template** workflow (`.github/workflows/update-pot.yml`), which runs weekly and on manual dispatch. It checks out `FOSSBilling/FOSSBilling@main:src`, runs the open-source extractor at `FOSSBilling/.github/scripts/extract_pot.py`, and opens a review PR here when the `msgid` set changed. The workflow never pushes to `main` directly.
+`messages.pot` is regenerated automatically by the **Update Translation Template** workflow (`.github/workflows/update-pot.yml`), which runs weekly and on manual dispatch. It checks out `src` and `tools/i18n` from `FOSSBilling/FOSSBilling@main`, installs the standalone tooling dependencies, runs `tools/i18n/bin/console extract`, and opens a review PR here when the `msgid` set changed. The workflow never pushes to `main` directly.
 
-What the extractor covers:
-
-- Twig templates: string literals passed to the `|trans` filter.
-- PHP sources: first-arg literals of `__trans()`, `__pluralTrans()` (args 1+2) and the exception keywords (`Exception`, `InformationException`, `Server_Exception`, `Registrar_Exception`, `Payment_Exception`), including `new X('...')` — but skipping calls whose message is built at runtime (variables, `sprintf()`, concatenation, `$"..."` interpolation).
-- Scope: `src/` minus `vendor/`, `install/`, `data/`, `load.php`, `*/tests/*` and the `*.js` / `*.html` / `*.css` / `*.scss` / `*.md` extensions.
+Extraction rules and CLI commands are documented in the [translation tooling guide](https://github.com/FOSSBilling/FOSSBilling/blob/main/tools/i18n/README.md).
 
 Deliberate policies:
 
 - **Obsolete msgids are dropped.** Strings no longer present in source are removed from the `.pot`; Crowdin keeps them in translation memory, so no translator work is lost.
 - **Msgids are matched exactly (case-sensitive) by gettext.** Casing-only changes (e.g. a Title-Case migration) invalidate existing translations for those strings until they are retranslated — the update PR body calls these out explicitly, so review it before merging.
 
-If you change what counts as translatable in the FOSSBilling source (new helpers, new keywords), update the extractor script in the main repo alongside it. To regenerate the `.pot` outside the schedule, use Actions → *Update Translation Template* → *Run workflow* here, or run locally:
+If you change what counts as translatable in the FOSSBilling source (new helpers, new keywords), update the extractor script in the main repo alongside it. To regenerate the `.pot` outside the schedule, use Actions → *Update Translation Template* → *Run workflow* here, or run locally with PHP 8.5 (including tokenizer and mbstring) and Composer:
 
 ```bash
 git clone --depth 1 https://github.com/FOSSBilling/FOSSBilling fossbilling
-python3 fossbilling/.github/scripts/extract_pot.py fossbilling/src messages.pot
+composer install --working-dir=fossbilling/tools/i18n --no-dev
+fossbilling/tools/i18n/bin/console extract fossbilling/src messages.pot
 ```
