@@ -66,7 +66,7 @@ jobs:
           <?php
           require 'fossbilling/tools/i18n/bootstrap.php';
 
-          use FOSSBilling\Tools\I18n\TranslationCatalogue;
+          use FOSSBilling\Tools\I18n\TranslationCatalog;
           use Symfony\Component\Filesystem\Filesystem;
 
           $fs = new Filesystem();
@@ -76,8 +76,8 @@ jobs:
           $gone = (int) $matches[1];
           $maxGone = 15;
           // Compare messages and plural pairs, ignoring dates, references and entry order.
-          $old = TranslationCatalogue::entries('locale/messages.pot');
-          $new = TranslationCatalogue::entries('/tmp/messages.pot.new');
+          $old = TranslationCatalog::entries('locale/messages.pot');
+          $new = TranslationCatalog::entries('/tmp/messages.pot.new');
           ksort($old, SORT_STRING);
           ksort($new, SORT_STRING);
           $changed = $old !== $new;
