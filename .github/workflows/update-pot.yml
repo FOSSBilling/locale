@@ -40,7 +40,7 @@ jobs:
           path: fossbilling
           sparse-checkout: |
             /src/
-            /tools/i18n/
+            /tools/
           sparse-checkout-cone-mode: false
 
       - name: Setup PHP
@@ -52,13 +52,13 @@ jobs:
           coverage: none
 
       - name: Install Translation Tooling
-        run: composer install --working-dir=fossbilling/tools/i18n --no-dev --no-interaction --no-progress
+        run: composer install --working-dir=fossbilling/tools --no-dev --no-interaction --no-progress
 
       - name: Regenerate messages.pot
         id: regen
         run: |
-          fossbilling/tools/i18n/bin/console extract fossbilling/src /tmp/messages.pot.new
-          fossbilling/tools/i18n/bin/console diff locale/messages.pot /tmp/messages.pot.new --format=json > /tmp/pot-diff.json
+          fossbilling/tools/bin/console i18n:extract fossbilling/src /tmp/messages.pot.new
+          fossbilling/tools/bin/console i18n:diff locale/messages.pot /tmp/messages.pot.new --format=json > /tmp/pot-diff.json
           jq -er '.report' /tmp/pot-diff.json > /tmp/pot-diff.txt
           cat /tmp/pot-diff.txt
           # Flag destructive regens for mandatory human review (see #682).
@@ -151,7 +151,7 @@ jobs:
             commit -m "Regenerate messages.pot from FOSSBilling source (main)"
           git push --force-with-lease -u origin "$BRANCH"
           {
-            echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@main\` using \`tools/i18n/bin/console extract\`."
+            echo "Regenerated \`messages.pot\` from \`FOSSBilling/FOSSBilling@main\` using \`tools/bin/console i18n:extract\`."
             echo ""
             if [ "$LARGE_REMOVAL" = "true" ]; then
               echo "> ⚠️ **Large removal alert:** this regen drops **${GONE}** msgids (threshold: ${MAX_GONE}). Do not merge until every dropped msgid is verified against FOSSBilling source — an extractor bug can silently delete live strings (see #682)."
