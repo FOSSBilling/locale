@@ -22,6 +22,18 @@ Translations live in Crowdin and are synced here automatically:
 - Only translations that are at least 25% complete ship in releases. Less complete languages are listed in the release notes as excluded until they catch up.
 - The `messages.pot` template is regenerated from the FOSSBilling source weekly (see Maintenance below), so new strings appear in Crowdin shortly after they land in the app.
 
+## Core and Module Projects
+
+The existing Crowdin project **4** will remain the core translation project, with the planned display name **FOSSBilling Core**. Its configuration stays in [`crowdin.yml`](./crowdin.yml); the project ID, translation URL and `messages.pot` file mapping remain unchanged.
+
+The existing synchronization workflow uses Crowdin's `main` branch and GitHub's `l10n_main` branch. Preserve those identities and the existing integration setup when separating module translations.
+
+Optional module translations, starting with Branding and Cookieconsent, will use a separate **FOSSBilling Modules** project configured in [`FOSSBilling/modules`](https://github.com/FOSSBilling/modules). Project creation, translation imports and activation of module synchronization are separate steps. The one-time translation migration will be carried out directly.
+
+Keep the combined core template and translations until compatible module packages and their translation exports are verified. After the modules are removed from core, regenerate `messages.pot` and review the removed strings; strings still used by core must remain.
+
+This preparation does not rename the live project or change the existing synchronization and release workflows.
+
 ## Release Tags
 
 Translation releases are generated automatically and are tagged `pot-<sha256>` using the SHA-256 hash of the `messages.pot` file, allowing users to find and update to the most recent translations that match their FOSSBilling version. (The `pot-` prefix is required because GitHub rejects bare 40/64-character hex strings as tag names.) Each release carries a `translations.zip` asset alongside a per-locale completion report.
